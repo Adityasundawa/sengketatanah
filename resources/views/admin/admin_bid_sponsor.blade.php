@@ -209,7 +209,8 @@
                     <button type="button" class="btn btn-primary my-3" data-toggle="modal"
                     data-target="#addJadwalMeeting">
                     Tambah Jadwal Meeting
-                </button>
+                   </button>
+                   <a href="{{route('admin.create_zoom_meeting')}}" class="btn btn-info">Tambah Jadwal Meeting Zoom</a>
                     <table id="example" class="table table-striped" style="width:100%">
                         <thead>
                             <tr>

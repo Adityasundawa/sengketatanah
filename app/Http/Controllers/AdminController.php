@@ -12,6 +12,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Crypt;
+use Illuminate\Support\Facades\Http;
 
 class AdminController extends Controller
 {
@@ -128,6 +129,14 @@ class AdminController extends Controller
         return redirect(url('/admin/bid_sponsor/'.$sponsor.'/'.$sengketa.''))->with(['success' => 'Sukses Menambahkan Jadwal']);
     }
 
+    public function create_zoom_meeting()
+    {
+        $response = Http::get('http://anonyzoom.herokuapp.com/');
+      
+        $data['zoomlink'] = json_decode($response);
+        return view('admin.create_zoom_meeting',$data);
+    
+    }
 
     
 }
