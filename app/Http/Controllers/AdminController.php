@@ -125,7 +125,7 @@ class AdminController extends Controller
             'date' => $request['date'],
             'time' => $request['time'],
         ]);
-        return true;
+        return redirect(url('/admin/bid_sponsor/'.$sponsor.'/'.$sengketa.''))->with(['success' => 'Sukses Menambahkan Jadwal']);
     }
 
 

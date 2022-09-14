@@ -200,7 +200,13 @@
                     <h4>Jadwal Meeting Online/Offline</h3>
                 </div>
                 <div class="card-body">
-                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                    @if ($message = Session::get('success'))
+                    <div class="alert alert-success alert-block">
+                      <button type="button" class="close" data-dismiss="alert">×</button>	
+                        <strong>{{ $message }}</strong>
+                    </div>
+                   @endif
+                    <button type="button" class="btn btn-primary my-3" data-toggle="modal"
                     data-target="#addJadwalMeeting">
                     Tambah Jadwal Meeting
                 </button>
