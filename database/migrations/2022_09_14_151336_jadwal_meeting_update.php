@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 class JadwalMeetingUpdate extends Migration
 {
     /**
-     * Run the migrations.s
+     * Run the migrations.ss
      *
      * @return void
      */
