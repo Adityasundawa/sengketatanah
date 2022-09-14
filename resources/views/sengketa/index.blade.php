@@ -250,7 +250,7 @@
             </div>
             <div class="col-6">
                 <a type="button" data-bs-toggle="modal" data-bs-target="#formLawFirmModal"
-                    class="btn btn-glass btn-dark w-100 mt-2 mb-2">Form <br> Law Firm</a>
+                    class="btn btn-glass btn-dark w-100 mt-2 mb-2">Form <br> Pengacara</a>
             </div>
             <div class="col-6">
                 <!-- <a type="button" data-bs-toggle="modal" data-bs-target="#dataSengketaModal"
@@ -359,7 +359,7 @@
                     </div>
                     <div class="col">
                         <h1 class="card-title p-3 pb-0 fw-bolder display-3 text-danger">356</h1>
-                        <p class="card-title p-3 pt-0 fw-bolder">TOTAL <br> LAW FIRM</p>
+                        <p class="card-title p-3 pt-0 fw-bolder">TOTAL <br> PENGACARA</p>
                     </div>
                 </div>
             </div>
@@ -415,7 +415,8 @@
                         style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                         <div class="card-body">
                             <p class="card-text">"Penyidik tidak perlu ragu ragu dalam mengusut tuntas masalah mafia
-                                tanah, penyidik agar tindak tegas siapapun dalang dan bekingannya" <br> -<b> Listyo Sigit Prabowo (Kapolri) </b>
+                                tanah, penyidik agar tindak tegas siapapun dalang dan bekingannya" <br> -<b> Listyo
+                                    Sigit Prabowo (Kapolri) </b>
                             </p>
                         </div>
                     </div>
@@ -466,7 +467,8 @@
                             <div class="card-body">
                                 <p class="card-text">"Penyidik tidak perlu ragu ragu dalam mengusut tuntas masalah mafia
 
-                                    tanah, penyidik agar tindak tegas siapapun dalang dan bekingannya" <br> -<b> Listyo Sigit Prabowo (Kapolri) </b>
+                                    tanah, penyidik agar tindak tegas siapapun dalang dan bekingannya" <br> -<b> Listyo
+                                        Sigit Prabowo (Kapolri) </b>
                                 </p>
                             </div>
                         </div>
@@ -766,35 +768,37 @@
                             </select>
                         </div>
                         <div class="mb-2">
-                            <label class="form-label">Kebutuhan Dana Sponsor</label>
+                            <label class="form-label">Pilih Jenis Pertolongan</label>
                             <select class="form-select rounded-0" aria-label="Default select example"
-                                name="kebutuhan_dana" required>
-                                <option selected disabled>Pilih Kebutuhan</option>
-                                <option value="perlu">Perlu Dana Sponsor</option>
-                                <option value="tidak-perlu">Tidak Perlu Dana Sponsor</option>
+                                name="jenis_pertolongan" required>
+                                <option selected disabled>Pilih Pertolongan</option>
+                                <option value="sponsor">Sponsor</option>
+                                <option value="pengacara">Pengacara</option>
+                                <option value="pemerintah">Pemerintah</option>
                             </select>
-
                         </div>
 
-                        <div class="form-check tidak-perlu-dana">
-                            <input class="form-check-input" type="radio" name="butuh" id="butuh-jasa">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                Membutuhkan jasa Pengacara
-                            </label><br>
-                            <small id="pengembalian_dana" class="form-text text-muted butuh-jasa-h">Saya hanya butuh
+                        <div id="pengembalian_dana" class="alert alert-danger sponsor" role="alert">
+                            <strong>
+                                Saya membutuhkan bantuan pendanaan dari sponsor untuk menyelesaikan permasalahan sengketa tanah saya.
+                            </strong>
+                        </div>
+
+                        <div id="pengembalian_dana" class="alert alert-danger pengacara" role="alert">
+                            <strong>
+                                Saya hanya butuh
                                 bantuan hukum untuk menyelesaikan permasalahan saya dan saya siap memberikan kompensasi
-                                sesuai dengan kesepakatan.</small>
-                        </div>
-                        <div class="form-check  tidak-perlu-dana">
-                            <input class="form-check-input" type="radio" name="butuh" id="butuh-pem">
-                            <label class="form-check-label" for="flexRadioDefault2">
-                                Membutuhkan bantuan laporan ke Pemerintah
-                            </label><br>
-                            <small id="pengembalian_dana" class="form-text text-muted butuh-pem-h">Kami akan meneruskan
-                                laporan ini kepada instansi terkait.</small>
+                                sesuai dengan kesepakatan.
+                            </strong>
                         </div>
 
-                        <div class="mb-2 perlu-dana">
+                        <div id="pengembalian_dana" class="alert alert-danger pemerintah" role="alert">
+                            <strong>
+                                Saya hanya membutuhkan pertolongan agar permasalahan sengketa tanah saya diteruskan pada Pemerintah.
+                            </strong>
+                        </div>
+
+                        <div class="mb-2 sponsor">
                             <label for="keb_dana" class="form-label">Jumlah Dana Sponsor</label>
                             <input type="number" class="form-control rounded-0" id="keb_dana"
                                 placeholder="Sebutkan Nilai Kebutuhan" aria-describedby="input-keb_dana" name="keb_dana"
@@ -802,7 +806,7 @@
                             <div id="input-keb_dana" class="form-text"></div>
                         </div>
 
-                        <div class="mb-2 perlu-dana">
+                        <div class="mb-2 sponsor">
                             <label class="form-label">Pengembalian Dana Sponsor</label>
                             <select class="form-select rounded-0" aria-label="Default select example"
                                 name="pengembalian_dana_sponsor" required>
@@ -815,10 +819,10 @@
                                 <option value="lain">Fee 100% Dari Pinjaman</option>
                             </select>
                             <small id="pengembalian_dana_sponsor" class="form-text text-muted">Bagi hasil di
-                                rekomendasikan untuk kasus-kasus sengketa tanah yang berat.</small>
+                                rekomendasikan untuk kasus-kasus sengketa tanah yang berat. Tanda bintang(*) adalah pembagian untuk sponsor. </small>
                         </div>
 
-                        <div class="mb-2 perlu-dana">
+                        <div class="mb-2 sponsor">
                             <label class="form-label" for="jaminan_dana">Jaminan Dana Sponsor</label>
                             <select class="form-select rounded-0" aria-label="Default select example" name="jaminan"
                                 required>
@@ -859,9 +863,9 @@
                             <label class="form-check-label" style="text-align:justify" for="exampleCheck1">Dengan
                                 mengisi form ini saya
                                 menyatakan bahwa semua data yang diberikan benar adanya dan laporan ini tidak
-                                sedang dalam penanganan hukum pihak lain. Saya bersedia melakukan wawancara mendalam
-                                <b>(PODCAST SENGKETA TANAH)</b> dan bekerja sama dengan
-                                Sponsor melalui <b>PLATFORM SENGKETA TANAH</b> untuk diselesaikan</label>
+                                sedang dalam penanganan hukum pihak lain. Saya bersedia melakukan wawancara mendalam di
+                                <b>PODCAST SENGKETA TANAH</b> dan bekerja sama dengan
+                                Sponsor melalui <b>PLATFORM SENGKETA TANAH</b> untuk diselesaikan.</label>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -929,22 +933,34 @@
                                 <option value="sendiri">Dikelola Sendiri</option>
                                 <option value="platform">Dikelola Platform</option>
                             </select>
-                            <small id="pengembalian_dana" class="form-text text-muted ket-pengelolaan">Dikelola platform
+                        </div>
+
+                        <div id="pengembalian_dana" class="alert alert-danger pengelolaan-sendiri" role="alert">
+                            <strong>
+                                Anda akan mengelola dana Anda sendiri dan bebas memilih sengketa pertanahan yang paling baik untuk Anda selesaikan.
+                            </strong>
+                        </div>
+                        
+                        <div id="pengembalian_dana" class="alert alert-danger pengelolaan-platform" role="alert">
+                            <strong>
+                                Dikelola platform
                                 adalah pengelolaan sumber dana sponsor yang dijalankan oleh platform SENGKETA TANAH.
                                 Platform akan memberikan analisa seputar persengketaan tanah yang bisa diselesaikan dan
                                 menguntungkan. Semua persetujuan penggunaan dana tetap merupakan keputusan
-                                sponsor.</small>
+                                sponsor.
+                            </strong>
                         </div>
+
                         <div class="mb-2 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" style="text-align:justify" for="exampleCheck1">Dengan
                                 mengisi form ini saya
                                 menyatakan bahwa saya selaku pribadi dan atau badan usaha dan atau sebuah kelompok
                                 tertarik untuk membantu persoalan sengketa tanah sebagai Sponsor. Hal-hal lain
-                                yang timbul sebagai Sponsor, baik berupa biaya-biaya operasional termasuk biaya
-                                platform atas keberhasilan dan atau kebutuhan pengacara dan biaya proses-proses
-                                hukum lainnya siap saya tanggung.</label>
+                                yang timbul sebagai Sponsor, baik berupa biaya-biaya operasional korban, biaya pengacara dan biaya proses-proses
+                                hukum lainnya siap saya tanggung termasuk biaya fee platform atas keberhasilan persengketaan.</label>
                         </div>
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -963,11 +979,10 @@
                 <div class="modal-header bg-dark text-white">
                     <div class="row">
                         <div class="col-12 text-center text-uppercase">
-                            <h5 class="modal-title text-uppercase" id="formSponsoranModalLabel">Buat Akun Law Firm</h5>
+                            <h5 class="modal-title text-uppercase" id="formSponsoranModalLabel">Buat Akun Pengacara</h5>
                         </div>
                         <div class="col-12 text-center">
-                            <h6 class="modal-title" style="font-size:12px">Law Firm adalah sebuah badan hukum yang
-                                menangani sengketa tanah*</h6>
+                            <h6 class="modal-title" style="font-size:12px">Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani sengketa tanah*</h6>
                         </div>
                     </div>
                 </div>
@@ -979,10 +994,20 @@
                                 name="nama" required>
                             <div id="input-nama" class="form-text"></div>
                         </div>
+
                         <div class="mb-2">
+                            <label class="form-label">Mewakili</label>
+                            <select class="form-select rounded-0" aria-label="Default select example"
+                                name="mewakili" required>
+                                <option value="pribadi">Pribadi</option>
+                                <option value="law-firm">Law Firm</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-2 law-firm">
                             <label for="nama-law" class="form-label">Nama Law Firm</label>
                             <input type="text" class="form-control rounded-0" id="nama-law"
-                                aria-describedby="input-nama-law" name="nama-law" required>
+                                aria-describedby="input-nama-law" name="nama-law">
                             <div id="input-nama" class="form-text"></div>
                         </div>
                         <div class="mb-2">
@@ -1015,7 +1040,7 @@
                                 required>
                         </div>
                         <div class="mb-2">
-                            <label for="tentang" class="form-label">Tentang Law Firm Anda</label>
+                            <label for="tentang" class="form-label">Tentang Anda/Law Firm Anda</label>
                             <textarea id="tentang" class="form-control rounded-0"
                                 placeholder="Ceritakan Profil Law Firm Anda" aria-describedby="input-tentang"
                                 name="tentang" cols="30" rows="10" required></textarea>
@@ -1026,9 +1051,9 @@
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" style="text-align:justify" for="exampleCheck1">Dengan
                                 mengisi form ini saya
-                                menyatakan bahwa saya mewakili firma hukum tersebut menyatakan minat dan tertarik
+                                menyatakan bahwa saya mewakili pribadi/firma hukum tersebut menyatakan minat dan tertarik
                                 untuk membantu persoalan sengketa tanah sebagai kuasa hukum pada platform SENGKETA
-                                TANAH dan siap dikenakan biaya platform atas sebuah transaski jasa hukum.</label>
+                                TANAH dan siap dikenakan biaya fee platform atas sebuah transaski jasa hukum yang terjadi di dalam platform.</label>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1303,7 +1328,7 @@
                     <!--    </tbody>-->
                     <!--</table>-->
 
-               
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -1351,7 +1376,7 @@
 
         $(function () {
             var hidestuff = function () {
-                $(".ket-pengelolaan").hide();
+                $(".pengelolaan-platform, .pengelolaan-sendiri").hide();
             }
 
             $("select[name='pengelolaan_dana']").change(function () {
@@ -1359,7 +1384,26 @@
 
                 var value = $(this).val();
                 if (value == "platform") {
-                    $(".ket-pengelolaan").show();
+                    $(".pengelolaan-platform").show();
+                }
+                if (value == "sendiri") {
+                    $(".pengelolaan-sendiri").show();
+                }
+            });
+            hidestuff();
+        });
+
+        $(function () {
+            var hidestuff = function () {
+                $(".law-firm").hide();
+            }
+
+            $("select[name='mewakili']").change(function () {
+                hidestuff();
+
+                var value = $(this).val();
+                if (value == "law-firm") {
+                    $(".law-firm").show();
                 }
             });
             hidestuff();
@@ -1375,91 +1419,35 @@
             });
         });
 
-                $(function () {
-                    var hidestuff = function () {
-                        $(".perlu-dana, .tidak-perlu-dana").hide();
-                    }
+        $(function () {
+            var hidestuff = function () {
+                $(".sponsor, .pengacara, .pemerintah").hide();
+            }
 
-                    $("select[name='kebutuhan_dana']").change(function () {
-                        hidestuff();
-
-                        var value = $(this).val();
-                        if (value == "perlu") {
-                            $(".perlu-dana").show();
-                        }
-                        if (value == "tidak-perlu") {
-                            $(".tidak-perlu-dana").show();
-                        }
-                    });
-                    hidestuff();
-                });
-
-
-                $(function () {
-                    var hidestuff = function () {
-                        $(".butuh-jasa-h").hide();
-                    }
-
-                    $("#butuh-jasa").change(function () {
-                        hidestuff();
-
-                        if ($("#butuh-jasa:checked").length) {
-                            $(".butuh-jasa-h").show();
-                            $(".butuh-pem-h").hide();
-                        }
-                    });
-                    hidestuff();
-                });
-
-                $(function () {
-                    var hidestuff = function () {
-                        $(".butuh-pem-h").hide();
-                    }
-
-                    $("#butuh-pem").change(function () {
-                        hidestuff();
-
-                        if ($("#butuh-pem:checked").length) {
-                            $(".butuh-pem-h").show();
-                            $(".butuh-jasa-h").hide();
-                        }
-                    });
-                    hidestuff();
-                });
-
-                $(document).ready(function () {
-                    $("#carouselExampleControls").swiperight(function () {
-                        $(this).carousel('prev');
-                    });
-                    $("#carouselExampleControls").swipeleft(function () {
-                        $(this).carousel('next');
-                    });
-
-            $("#butuh-jasa").change(function () {
+            $("select[name='jenis_pertolongan']").change(function () {
                 hidestuff();
 
-                if ($("#butuh-jasa:checked").length) {
-                    $(".butuh-jasa-h").show();
-                    $(".butuh-pem-h").hide();
+                var value = $(this).val();
+                if (value == "sponsor") {
+                    $(".sponsor").show();
+                }
+                if (value == "pengacara") {
+                    $(".pengacara").show();
+                }
+                if (value == "pemerintah") {
+                    $(".pemerintah").show();
                 }
             });
             hidestuff();
         });
 
-        $(function () {
-            var hidestuff = function () {
-                $(".butuh-pem-h").hide();
-            }
-
-            $("#butuh-pem").change(function () {
-                hidestuff();
-
-                if ($("#butuh-pem:checked").length) {
-                    $(".butuh-pem-h").show();
-                    $(".butuh-jasa-h").hide();
-                }
+        $(document).ready(function () {
+            $("#carouselExampleControls").swiperight(function () {
+                $(this).carousel('prev');
             });
-            hidestuff();
+            $("#carouselExampleControls").swipeleft(function () {
+                $(this).carousel('next');
+            });
         });
 
         $(document).ready(function () {
