@@ -114,6 +114,20 @@ class AdminController extends Controller
         return view('admin.admin_bid_sponsor',$data);
     }
 
+    public function add_meeting(Request $request,$sponsor,$sengketa)
+    {
+        JadwalMeeting::create([
+            'jenis_meeting' => $request['jenis'],
+            'sengketa_id' => Crypt::decrypt($sengketa),
+            'users_id' => Crypt::decrypt($sponsor),
+            'location' => $request['location'],
+            'deskripsi' => $request['deskripsi'],
+            'date' => $request['date'],
+            'time' => $request['time'],
+        ]);
+        return true;
+    }
+
 
     
 }

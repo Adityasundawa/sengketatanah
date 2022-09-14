@@ -194,34 +194,46 @@
     </div>
     <div class="row">
         <div class="col-lg-12">
-            <button class="btn btn-sm btn-primary">Tambah Jadwal meeting</button>
+         
             <div class="card">
                 <div class="card-header">
                     <h4>Jadwal Meeting Online/Offline</h3>
                 </div>
                 <div class="card-body">
-                    <table class="table">
-                        <tr class="bg-dark text-white">
-                            <td>No</td>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                    data-target="#addJadwalMeeting">
+                    Tambah Jadwal Meeting
+                </button>
+                    <table id="example" class="table table-striped" style="width:100%">
+                        <thead>
+                            <tr>
+                               <td>No</td>
                             <td>Jenis Meeting</td>
                             <td>Lokasi / Link</td>
                             <td>Deskripsi </td>
-                        </tr>
-                        <?php if(count($meeting) == 0) : ?>
-                        <tr>
-                            <td colspan="4"><center>Tidak Ada Data</center></td>
-                        </tr>
-                        <?php else : ?>
-                         @foreach ($meeting as $item)
+                            <td>Tanggal & Jam </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($meeting as $item)
                         <tr>
                             <td>{{$item['id']}}</td>
                             <td>{{$item['jenis_meeting']}}</td>
                             <td>{{$item['location']}}</td>
                             <td>{{$item['deskripsi']}}</td>
+                            <td>{{$item['date']}}</td>
                         </tr>
                          @endforeach
-                        <?php endif ?>
-                        
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>No</td>
+                                <td>Jenis Meeting</td>
+                                <td>Lokasi / Link</td>
+                                <td>Deskripsi </td>
+                                <td>Tanggal & Jam </td>
+                            </tr>
+                        </tfoot>
                     </table>
                 </div>
             </div>
@@ -283,4 +295,53 @@
         </div>
     </div>
 </div>
+<div class="modal fade" id="addJadwalMeeting" tabindex="-1" aria-labelledby="addJadwalMeetingLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addJadwalMeetingLabel">Tambah Data Jadwal Meeting</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+           <form action="{{url('/')}}/admin/add_meeting/{{Crypt::encrypt($sponsor['id'])}}/{{Crypt::encrypt($korban['id'])}}" method="post">
+            @csrf
+            <div class="card-body">
+                <div class="form-group">
+                  <label for="company">Jenis Meeting</label>
+                  <select name="jenis" class="form-control" id="">
+                    <option selected>Pilih</option>
+                    <option value="offline">Offline</option>
+                    <option value="online" disabled>Online</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="location">Lokasi</label>
+                  <input class="form-control" id="location" name="location" type="text" placeholder="Sebutkan Nama Jalan,Gedung,Dan lain lain" required>
+                </div>
+                <div class="form-group">
+                  <label for="deskripsi">Deskripsi</label>
+                  <textarea class="form-control" id="deskripsi" name="deskripsi" rows="9" placeholder="Deskripsi.." required></textarea>
+                </div>
+                <div class="row">
+                  <div class="form-group col-sm-6">
+                    <label for="city">Tanggal</label>
+                    <input class="form-control" id="city" type="date" name="date" placeholder="Enter your city">
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <label for="postal-code">Jam /Waktu</label>
+                    <input class="form-control" id="postal-code" type="time" name="time" placeholder="Postal Code">
+                  </div>
+                </div>
+                <!-- /.row-->
+              </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Simpan</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+           </form>
+        </div>
+    </div>
+</div>
+
 @endsection

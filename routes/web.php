@@ -32,6 +32,7 @@ Route::get('/admin/sengketa-tanah/selengkapnya/{id}',[AdminController::class,'se
 Route::get('/admin/sengketa-tanah/proses-verif/{id}',[AdminController::class,'prosesVerif'])->name('admin.proses-verif');
 Route::get('/admin/hasil-bid-sengketa-tanah/',[AdminController::class,'hasil_bid_sengketa'])->name('admin.hasil-bid-sengketa');
 Route::get('/admin/bid_sponsor/{id}/{sengketa}',[AdminController::class,'admin_bid_sponsor'])->name('admin.bid.sponsor');
+Route::post('/admin/add_meeting/{sponsor}/{sengketa}',[AdminController::class,'add_meeting'])->name('admin.add.meeting');
 
 
 
