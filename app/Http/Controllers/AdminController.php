@@ -13,7 +13,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Http;
-use MacsiDigital\Zoom\Facades\Zoom;
+use \MacsiDigital\Zoom\Facades\Zoom;
 
 class AdminController extends Controller
 {
