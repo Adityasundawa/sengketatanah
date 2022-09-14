@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Http;
+use MacsiDigital\Zoom\Facades\Zoom;
 
 class AdminController extends Controller
 {
@@ -131,12 +132,13 @@ class AdminController extends Controller
 
     public function create_zoom_meeting()
     {
-        $response = Http::get('http://anonyzoom.herokuapp.com/');
-      
-        $data['zoomlink'] = json_decode($response);
-        return view('admin.create_zoom_meeting',$data);
-    
+     $data['zoomlink'] = Zoom::user()->find('adityasundawa.co@gmail.com')->meetings()->create([
+        'topic' => 'Meeting Sengketa Tanah',
+        'duration' => 40, // In minutes, optional
+        'start_time' => new Carbon('2022-09-15 03:00:00'),
+        'timezone' => 'Asia/Jakarta',
+        ]);
+     return view('admin.create_zoom_meeting',$data);
     }
-
     
 }

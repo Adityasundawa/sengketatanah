@@ -33,6 +33,28 @@
     <!-- Main styles for this application-->
     <link href="{{url('/')}}/core-ui/css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
+    <style>
+      $text-color: #F7F9F8;
+$button-color: #E17E89;
+
+.row{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.button2{
+  background-color: transparent;
+  border: none;
+  color: $text-color;
+}
+
+.buttons2{
+  background-color: $button-color; 
+}
+
+
+
+    </style>
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
