@@ -135,7 +135,7 @@ class AdminController extends Controller
      $data['zoomlink'] = Zoom::user()->find('adityasundawa.co@gmail.com')->meetings()->create([
         'topic' => 'Meeting Sengketa Tanah',
         'duration' => 40, // In minutes, optional
-        'start_time' => new Carbon('2022-09-15 03:00:00'),
+        'start_time' => new Carbon('2022-09-16 07:00:00'),
         'timezone' => 'Asia/Jakarta',
         ]);
      return view('admin.create_zoom_meeting',$data);
