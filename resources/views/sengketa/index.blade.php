@@ -222,10 +222,13 @@
             <h2>
                 <div class="fw-bold"> <br>SOLUSI SENGKETA TANAH</div>
             </h2>
-            <p style="text-align: justify">Platform SENGKETA TANAH siap membantu anda dalam urusan hukum persengketaan
-                tanah di seluruh wilayah Indonesia. Jika Anda korban dari mafia tanah dan atau Anda seorang sponsor yang
-                dapat membantu para korban, termasuk jika anda seorang pengacara, PLATFORM SENGKETA TANAH adalah tempat
-                yang tepat untuk saling membantu. </p>
+            <p style="text-align: justify">Platform Sengketa Tanah adalah inovator teknologi dalam bidang sengketa
+                pertanahan di Indonesia yang mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
+                pemerintah. Sekarang, semua masalah pertanahan menjadi lebih mudah untuk dibantu.</p>
+            <p style="text-align: justify">Banyak korban sengketa tanah kehabisan biaya dan tenaga untuk memperjuangkan
+                hak mereka. Disini, jika Anda menemui masalah tersebut, Platform Sengketa Tanah adalah alat yang paling
+                tepat untuk menemukan bantuan Sponsor, Pengacara bahkan bantuan Pemerintah untuk membantu perjuangan
+                Anda.</p>
         </div>
 
         <div class="row mb-3">
@@ -780,21 +783,46 @@
 
                         <div id="pengembalian_dana" class="alert alert-danger sponsor" role="alert">
                             <strong>
-                                Saya membutuhkan bantuan pendanaan dari sponsor untuk menyelesaikan permasalahan sengketa tanah saya.
+                                Saya membutuhkan bantuan pendanaan dari sponsor untuk menyelesaikan permasalahan
+                                sengketa tanah saya.
                             </strong>
                         </div>
 
-                        <div id="pengembalian_dana" class="alert alert-danger pengacara" role="alert">
-                            <strong>
-                                Saya hanya butuh
-                                bantuan hukum untuk menyelesaikan permasalahan saya dan saya siap memberikan kompensasi
-                                sesuai dengan kesepakatan.
-                            </strong>
+                        <div class="mb-2 pengacara">
+                            <label class="form-label">Pilih Tindakan Pengacara</label>
+                            <select class="form-select rounded-0" aria-label="Default select example"
+                                name="bantuan_pengacara" required>
+                                <option selected disabled>Pilih Bantuan Pengacara</option>
+                                <option value="konsultasi">Konsultasi</option>
+                                <option value="pendampingan">Pendampingan</option>
+                                <option value="penindakan">Penindakan</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-2 pengacara">
+                            <label for="anggaran_pengacara" class="form-label">Anggaran Pengacara</label>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="number" class="form-control rounded-0" id="anggaran_pengacara-s"
+                                        placeholder="Anggaran mulai dari ..."
+                                        aria-describedby="input-anggaran_pengacara-s" name="anggaran_pengacara-s">
+                                </div>
+                                <div class="col-1 text-center"
+                                    style="width:4% !important; padding-right: 0px !important; padding-left: 0px !important">
+                                    -
+                                </div>
+                                <div class="col">
+                                    <input type="number" class="form-control rounded-0" id="anggaran_pengacara-e"
+                                        placeholder="Sampai ..." aria-describedby="input-anggaran_pengacara-e"
+                                        name="anggaran_pengacara-e">
+                                </div>
+                            </div>
                         </div>
 
                         <div id="pengembalian_dana" class="alert alert-danger pemerintah" role="alert">
                             <strong>
-                                Saya hanya membutuhkan pertolongan agar permasalahan sengketa tanah saya diteruskan pada Pemerintah.
+                                Saya hanya membutuhkan pertolongan agar permasalahan sengketa tanah saya diteruskan pada
+                                Pemerintah.
                             </strong>
                         </div>
 
@@ -819,7 +847,8 @@
                                 <option value="lain">Fee 100% Dari Pinjaman</option>
                             </select>
                             <small id="pengembalian_dana_sponsor" class="form-text text-muted">Bagi hasil di
-                                rekomendasikan untuk kasus-kasus sengketa tanah yang berat. Tanda bintang(*) adalah pembagian untuk sponsor. </small>
+                                rekomendasikan untuk kasus-kasus sengketa tanah yang berat. Tanda bintang(*) adalah
+                                pembagian untuk sponsor. </small>
                         </div>
 
                         <div class="mb-2 sponsor">
@@ -937,10 +966,11 @@
 
                         <div id="pengembalian_dana" class="alert alert-danger pengelolaan-sendiri" role="alert">
                             <strong>
-                                Anda akan mengelola dana Anda sendiri dan bebas memilih sengketa pertanahan yang paling baik untuk Anda selesaikan.
+                                Anda akan mengelola dana Anda sendiri dan bebas memilih sengketa pertanahan yang paling
+                                baik untuk Anda selesaikan.
                             </strong>
                         </div>
-                        
+
                         <div id="pengembalian_dana" class="alert alert-danger pengelolaan-platform" role="alert">
                             <strong>
                                 Dikelola platform
@@ -957,8 +987,10 @@
                                 mengisi form ini saya
                                 menyatakan bahwa saya selaku pribadi dan atau badan usaha dan atau sebuah kelompok
                                 tertarik untuk membantu persoalan sengketa tanah sebagai Sponsor. Hal-hal lain
-                                yang timbul sebagai Sponsor, baik berupa biaya-biaya operasional korban, biaya pengacara dan biaya proses-proses
-                                hukum lainnya siap saya tanggung termasuk biaya fee platform atas keberhasilan persengketaan.</label>
+                                yang timbul sebagai Sponsor, baik berupa biaya-biaya operasional korban, biaya pengacara
+                                dan biaya proses-proses
+                                hukum lainnya siap saya tanggung termasuk biaya fee platform atas keberhasilan
+                                persengketaan.</label>
                         </div>
 
                     </div>
@@ -982,7 +1014,8 @@
                             <h5 class="modal-title text-uppercase" id="formSponsoranModalLabel">Buat Akun Pengacara</h5>
                         </div>
                         <div class="col-12 text-center">
-                            <h6 class="modal-title" style="font-size:12px">Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani sengketa tanah*</h6>
+                            <h6 class="modal-title" style="font-size:12px">Pengacara adalah seorang pribadi atau badan
+                                hukum (Law Firm) yang menangani sengketa tanah*</h6>
                         </div>
                     </div>
                 </div>
@@ -997,8 +1030,8 @@
 
                         <div class="mb-2">
                             <label class="form-label">Mewakili</label>
-                            <select class="form-select rounded-0" aria-label="Default select example"
-                                name="mewakili" required>
+                            <select class="form-select rounded-0" aria-label="Default select example" name="mewakili"
+                                required>
                                 <option value="pribadi">Pribadi</option>
                                 <option value="law-firm">Law Firm</option>
                             </select>
@@ -1051,9 +1084,11 @@
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" style="text-align:justify" for="exampleCheck1">Dengan
                                 mengisi form ini saya
-                                menyatakan bahwa saya mewakili pribadi/firma hukum tersebut menyatakan minat dan tertarik
+                                menyatakan bahwa saya mewakili pribadi/firma hukum tersebut menyatakan minat dan
+                                tertarik
                                 untuk membantu persoalan sengketa tanah sebagai kuasa hukum pada platform SENGKETA
-                                TANAH dan siap dikenakan biaya fee platform atas sebuah transaski jasa hukum yang terjadi di dalam platform.</label>
+                                TANAH dan siap dikenakan biaya fee platform atas sebuah transaski jasa hukum yang
+                                terjadi di dalam platform.</label>
                         </div>
                     </div>
                     <div class="modal-footer">
