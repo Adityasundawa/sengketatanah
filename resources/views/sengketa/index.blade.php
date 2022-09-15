@@ -1073,6 +1073,11 @@
                                 required>
                         </div>
                         <div class="mb-2">
+                            <label for="sertifikasi" class="form-label">Sertifikasi Pengacara</label>
+                            <input class="form-control rounded-0" type="file" id="sertifikasi" name="sertifikasi"
+                                required>
+                        </div>
+                        <div class="mb-2">
                             <label for="tentang" class="form-label">Tentang Anda/Law Firm Anda</label>
                             <textarea id="tentang" class="form-control rounded-0"
                                 placeholder="Ceritakan Profil Law Firm Anda" aria-describedby="input-tentang"
