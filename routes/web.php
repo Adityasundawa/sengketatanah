@@ -5,6 +5,9 @@ use App\Http\Controllers\Controller;
 use App\Http\Controllers\SengketaController;
 use App\Http\Controllers\SponsorDashboardController;
 use App\Http\Controllers\Utama\DashboardUtamaController;
+use App\Http\Controllers\Utama\KorbanController;
+use App\Http\Controllers\Utama\PengacaraController;
+use App\Http\Controllers\Utama\SponsorController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -59,6 +62,25 @@ Route::get('dashboard/publik',[SengketaController::class,'dashboard']);
 
 Route::get('/redirect', [Controller::class, 'redirect']);
 
-Route::group(['middleware' => 'authentication:dashboard'], function () {
-      Route::get('dashboard',[DashboardUtamaController::class,'index'])->name('dashboard.index');
+// Route::get('dashboard',[DashboardUtamaController::class,'index'])->name('dashboard.index');
+
+/// Role Utama
+Route::group(['middleware' => 'role:utama', 'prefix' => 'utama', 'as' => 'utama.'], function () {
+   Route::get('index',[DashboardUtamaController::class,'index'])->name('index');
+});
+
+
+/// Role Korban
+Route::group(['middleware' => 'role:korban', 'prefix' => 'korban', 'as' => 'korban.'], function () {
+   Route::get('index',[KorbanController::class,'index'])->name('index');
+});
+
+/// Role Sponsor
+Route::group(['middleware' => 'role:sponsor', 'prefix' => 'sponsor', 'as' => 'sponsor.'], function () {
+   Route::get('index',[SponsorController::class,'index'])->name('index');
+});
+
+/// Role Pengacara
+Route::group(['middleware' => 'role:pengacara', 'prefix' => 'pengacara', 'as' => 'pengacara.'], function () {
+   Route::get('index',[PengacaraController::class,'index'])->name('index');
 });

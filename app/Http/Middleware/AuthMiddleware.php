@@ -17,18 +17,24 @@ class AuthMiddleware
      */
     public function handle(Request $request, Closure $next,string $role)
     {
-    return $next($request);
-    $role = auth()->user()->role;
-    //   if (Auth::user() &&  Auth::user()->role == 1) {
-    //         return $next($request);
-    //    }
-    //    abort(403);
-    //    return back()->with('error','Opps, You\'re not Admin');
 
-    if ($role == 'dashboard' && $role != 'utama' && $role != 'administrator') {
+    $role_name = auth()->user()->role;
+    
+    // if ($role == 'dashboard' && $role_name != 'utama' && $role_name != 'administrator') {
+    //     abort(403);
+    // }
+    // if ($role == 'korban' && $role_name != 'korban' && $role_name != 'administrator') {
+    //     abort(403);
+    // }
+    // abort(403);
+
+    if ($role == 'utama' && $role_name != 'utama') {
         abort(403);
     }
-
+    if ($role == 'korban' && $role_name != 'korban') {
+        abort(403);
+    }
     
+    return $next($request);
     }
 }
