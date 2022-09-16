@@ -32,6 +32,7 @@
 
                     <div class="tab-content active" data-content='1'>
                         <h3>Form Korban</h3>
+                        <p>Masukan data sengketa anda di sini dan pilih pertolongan yang anda butuhkan</p>
                         <hr>
                         <form method="post" action="{{url('sengketa/send')}}"
                             enctype="multipart/form-data">
@@ -121,10 +122,15 @@
                                 <div class="mb-2">
                                     <label for="kronologi" class="form-label">Kronologi</label>
                                     <textarea id="kronologi" class="form-control rounded-0"
-                                        placeholder="Masukkan Kronologi"
+                                        placeholder="Masukkan Kronologi / Unggah File"
                                         aria-describedby="input-kronologi" name="kronologi" cols="30"
                                         rows="10" required></textarea>
                                     <div id="input-kronologi" class="form-text"></div>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="ktp" class="form-label">Unggah File Kronologi</label>
+                                    <input class="file-input rounded-0" type="file" id="ktp"
+                                        name="foto_ktp" required>
                                 </div>
                                 <div class="mb-2">
                                     <label class="form-label">Status Pelapor</label>
@@ -296,6 +302,7 @@
 
                     <div class="tab-content" data-content='2'  style="display: none">
                         <h3>Form Sponsor</h3>
+                        <p></p>
                         <hr>
                         <form method="post" action="#">
                             <div class="modal-body">
@@ -328,6 +335,17 @@
                                     <div id="input-no_hp" class="form-text"></div>
                                 </div> --}}
                                 <div class="mb-2">
+                                    <label class="form-label">Sumber Dana</label>
+                                    <select class="form-control rounded-0"
+                                        aria-label="Default select example" name="pengelolaan_dana"
+                                        required>
+                                        <option selected disabled>Pilih Sumber Dana</option>
+                                        <option value="sendiri">Pribadi</option>
+                                        <option value="platform">Perusahaan</option>
+                                        <option value="">Investor</option>
+                                        <option value="">Lainnya</option>
+                                </select>
+                                <div class="mb-2">
                                     <label class="form-label">Pengelolaan Dana</label>
                                     <select class="form-control rounded-0"
                                         aria-label="Default select example" name="pengelolaan_dana"
@@ -337,7 +355,13 @@
                                         <option value="platform">Dikelola Platform</option>
                                     </select>
                                 </div>
-
+                                <div class="mb-2">
+                                    <label for="total" class="form-label">Total Pendanaan</label>
+                                    <input type="total" class="form-control rounded-0" id="total"
+                                        placeholder="Masukkan total pendanaan " aria-describedby="input-total"
+                                        name="total" required>
+                                    <div id="input-total" class="form-text"></div>
+                                </div>
                                 <div id="pengembalian_dana"
                                     class="alert alert-danger pengelolaan-sendiri" role="alert">
                                     <strong>
@@ -371,7 +395,7 @@
                                         atau
                                         sebuah kelompok
                                         tertarik untuk membantu persoalan sengketa tanah sebagai
-                                        Sponsor.
+                                        Sponsor. Sumber pendanaan yang saya milikki bukan dari hasil kejahatan,korupsi atau pencucian uang
                                         Hal-hal lain
                                         yang timbul sebagai Sponsor, baik berupa biaya-biaya operasional
                                         korban, biaya pengacara dan biaya proses-proses
