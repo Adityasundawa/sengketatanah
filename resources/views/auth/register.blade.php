@@ -8,7 +8,7 @@
                 @csrf
 				<div class="login__field">
 					<i class="login__icon fas fa-user"></i>
-					<input id="name" type="text" placeholder="Username" class="login__input @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+					<input id="name" type="text" placeholder="Nama" class="login__input @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                     @error('name')
                         <span class="invalid-feedback" role="alert">
