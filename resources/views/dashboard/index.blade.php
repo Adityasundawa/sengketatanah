@@ -1,4 +1,4 @@
-@extends('layouts.template-publik.main')
+@extends('layouts.template-user.main')
 @section('content')
 
 <div class="container-fluid mt-3">
@@ -55,13 +55,19 @@
                                 @endif
 
                                 <div class="mb-2">
-                                    <label for="nama" class="form-label">Nama Pelapor</label>
+                                    <label for="nama" class="form-label">Nama</label>
                                     <input type="text" class="form-control rounded-0" id="nama"
                                         placeholder="Masukkan Nama Anda" aria-describedby="input-nama"
-                                        name="nama" required>
+                                        name="nama" required value="{{$user->name}}" readonly>
                                     <div id="input-nama" class="form-text"></div>
                                 </div>
-
+                                <div class="mb-2">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control rounded-0" id="email"
+                                        placeholder="Masukkan Email Anda" aria-describedby="input-email"
+                                        name="email" required value="{{$user->email}}" readonly>
+                                    <div id="input-email" class="form-text"></div>
+                                </div>
                                 <div class="mb-2">
                                     <label for="Alamat" class="form-label">Alamat</label>
                                     <input type="text" class="form-control rounded-0" id="Alamat"
@@ -75,20 +81,6 @@
                                         placeholder="Masukkan Nomor HP Anda"
                                         aria-describedby="input-no_hp" name="no_hp" required>
                                     <div id="input-no_hp" class="form-text"></div>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control rounded-0" id="email"
-                                        placeholder="Masukkan Email Anda" aria-describedby="input-email"
-                                        name="email" required>
-                                    <div id="input-email" class="form-text"></div>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="password" class="form-label">Password</label>
-                                    <input type="password" class="form-control rounded-0" id="password"
-                                        placeholder="Buat password Anda"
-                                        aria-describedby="input-password" name="password" required>
-                                    <div id="input-password" class="form-text"></div>
                                 </div>
                                 <div class="row">
                                     <div class="col">
@@ -309,38 +301,31 @@
                             <div class="modal-body">
                                 <div class="mb-2">
                                     <label for="nama" class="form-label">Nama</label>
-                                    <input type="text" placeholder="Masukkan Nama Anda"
-                                        class="form-control rounded-0" id="nama"
-                                        aria-describedby="input-nama" name="nama" required>
+                                    <input type="text" class="form-control rounded-0" id="nama"
+                                        placeholder="Masukkan Nama Anda" aria-describedby="input-nama"
+                                        name="nama" required value="{{$user->name}}" readonly>
                                     <div id="input-nama" class="form-text"></div>
                                 </div>
                                 <div class="mb-2">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control rounded-0" id="email"
+                                        placeholder="Masukkan Email Anda" aria-describedby="input-email"
+                                        name="email" required value="{{$user->email}}" readonly>
+                                    <div id="input-email" class="form-text"></div>
+                                </div>
+                                <div class="mb-2">
                                     <label for="Alamat" class="form-label">Alamat</label>
-                                    <input type="text" placeholder="Masukkan Alamat Anda"
-                                        class="form-control rounded-0" id="Alamat"
+                                    <input type="text" class="form-control rounded-0" id="Alamat"
+                                        placeholder="Masukkan Alamat Anda"
                                         aria-describedby="input-Alamat" name="alamat" required>
                                     <div id="input-Alamat" class="form-text"></div>
                                 </div>
                                 <div class="mb-2">
                                     <label for="no_hp" class="form-label">Nomor Hp</label>
-                                    <input type="number" placeholder="Masukkan Nomor HP Anda"
-                                        class="form-control rounded-0" id="no_hp"
+                                    <input type="number" class="form-control rounded-0" id="no_hp"
+                                        placeholder="Masukkan Nomor HP Anda"
                                         aria-describedby="input-no_hp" name="no_hp" required>
                                     <div id="input-no_hp" class="form-text"></div>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" placeholder="Masukkan Email Anda"
-                                        class="form-control rounded-0" id="email"
-                                        aria-describedby="input-email" name="email" required>
-                                    <div id="input-email" class="form-text"></div>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="password" class="form-label">Password</label>
-                                    <input type="password" placeholder="Masukkan Password Anda"
-                                        class="form-control rounded-0" id="password"
-                                        aria-describedby="input-password" name="password" required>
-                                    <div id="input-password" class="form-text"></div>
                                 </div>
                                 <div class="mb-2">
                                     <label class="form-label">Pengelolaan Dana</label>
@@ -409,10 +394,16 @@
                                     <label for="nama" class="form-label">Nama</label>
                                     <input type="text" placeholder="Masukkan Nama Anda"
                                         class="form-control rounded-0" id="nama"
-                                        aria-describedby="input-nama" name="nama" required>
+                                        aria-describedby="input-nama" name="nama" required value="{{$user->name}}" readonly>
                                     <div id="input-nama" class="form-text"></div>
                                 </div>
-
+                                <div class="mb-2">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" placeholder="Masukkan Email Anda"
+                                        class="form-control rounded-0" id="email"
+                                        aria-describedby="input-email" name="email" value="{{$user->email}}" readonly required>
+                                    <div id="input-email" class="form-text"></div>
+                                </div>
                                 <div class="mb-2">
                                     <label class="form-label">Mewakili</label>
                                     <select class="form-control rounded-0"
@@ -442,20 +433,6 @@
                                         class="form-control rounded-0" id="no_hp"
                                         aria-describedby="input-no_hp" name="no_hp" required>
                                     <div id="input-no_hp" class="form-text"></div>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" placeholder="Masukkan Email Anda"
-                                        class="form-control rounded-0" id="email"
-                                        aria-describedby="input-email" name="email" required>
-                                    <div id="input-email" class="form-text"></div>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="password" class="form-label">Password</label>
-                                    <input type="password" placeholder="Masukkan Password Anda"
-                                        class="form-control rounded-0" id="password"
-                                        aria-describedby="input-password" name="password" required>
-                                    <div id="input-password" class="form-text"></div>
                                 </div>
                                 <div class="mb-2">
                                     <label for="logo_lawfirm" class="form-label">Logo Law Firm/Foto
