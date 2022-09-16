@@ -1,0 +1,5 @@
+@include('layouts.template-publik.head')
+@include('layouts.template-publik.sidebar')
+@include('layouts.template-publik.header')
+@yield('content')
+@include('layouts.template-publik.footer')
