@@ -273,7 +273,7 @@
 
                     <div class="tab-content" data-content='2'  style="display: none">
                         <h3>Form Sponsor</h3>
-                        <p>Masukan data pembiayaan Anda di sini. </p>
+                        <p>Masukan data pembiayaan Anda </p>
                         <hr>
                         <form method="post" action="#">
                             <div class="modal-body">
@@ -355,14 +355,15 @@
                     </div>
 
                     <div class="tab-content" data-content='3' style="display: none">
-                        <h3>Form Pengacara</h3>
+                        <h3>Form Pengacaras</h3>
+                        <p>Masukan data Sertifikasi anda  </p>
                         <hr>
                         <form method="post" action="#">
                             <div class="modal-body">
                     
 
                                 <div class="mb-2">
-                                    <label class="form-label">Mewakili</label>
+                                    <label class="form-label">Anda Mewakili sebagai</label>
                                     <select class="form-control rounded-0"
                                         aria-label="Default select example" name="mewakili" required>
                                         <option value="pribadi">Pribadi</option>
