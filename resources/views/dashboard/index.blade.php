@@ -54,7 +54,7 @@
                                 </div>
                                 @endif
 
-                                <div class="mb-2">
+                                {{-- <div class="mb-2">
                                     <label for="nama" class="form-label">Nama</label>
                                     <input type="text" class="form-control rounded-0" id="nama"
                                         placeholder="Masukkan Nama Anda" aria-describedby="input-nama"
@@ -81,9 +81,9 @@
                                         placeholder="Masukkan Nomor HP Anda"
                                         aria-describedby="input-no_hp" name="no_hp" required>
                                     <div id="input-no_hp" class="form-text"></div>
-                                </div>
+                                </div> --}}
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-lg-12">
                                         <div class="mb-2">
                                             <label class="form-label">Objek Sengketa</label>
                                             <select class="form-control rounded-0"
@@ -99,7 +99,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col">
+                                    <div class="col-lg-12">
                                         <div class="mb-2">
                                             <label for="luas" class="form-label">Luas Tanah
                                                 (m/ha)</label>
@@ -299,7 +299,7 @@
                         <hr>
                         <form method="post" action="#">
                             <div class="modal-body">
-                                <div class="mb-2">
+                                {{-- <div class="mb-2">
                                     <label for="nama" class="form-label">Nama</label>
                                     <input type="text" class="form-control rounded-0" id="nama"
                                         placeholder="Masukkan Nama Anda" aria-describedby="input-nama"
@@ -326,7 +326,7 @@
                                         placeholder="Masukkan Nomor HP Anda"
                                         aria-describedby="input-no_hp" name="no_hp" required>
                                     <div id="input-no_hp" class="form-text"></div>
-                                </div>
+                                </div> --}}
                                 <div class="mb-2">
                                     <label class="form-label">Pengelolaan Dana</label>
                                     <select class="form-control rounded-0"
@@ -390,7 +390,7 @@
                         <hr>
                         <form method="post" action="#">
                             <div class="modal-body">
-                                <div class="mb-2">
+                                {{-- <div class="mb-2">
                                     <label for="nama" class="form-label">Nama</label>
                                     <input type="text" placeholder="Masukkan Nama Anda"
                                         class="form-control rounded-0" id="nama"
@@ -403,7 +403,7 @@
                                         class="form-control rounded-0" id="email"
                                         aria-describedby="input-email" name="email" value="{{$user->email}}" readonly required>
                                     <div id="input-email" class="form-text"></div>
-                                </div>
+                                </div> --}}
                                 <div class="mb-2">
                                     <label class="form-label">Mewakili</label>
                                     <select class="form-control rounded-0"
@@ -420,7 +420,7 @@
                                         aria-describedby="input-nama-law" name="nama-law">
                                     <div id="input-nama" class="form-text"></div>
                                 </div>
-                                <div class="mb-2">
+                                {{-- <div class="mb-2">
                                     <label for="Alamat" class="form-label">Alamat</label>
                                     <input type="text" placeholder="Masukkan Alamat Anda"
                                         class="form-control rounded-0" id="Alamat"
@@ -433,7 +433,7 @@
                                         class="form-control rounded-0" id="no_hp"
                                         aria-describedby="input-no_hp" name="no_hp" required>
                                     <div id="input-no_hp" class="form-text"></div>
-                                </div>
+                                </div> --}}
                                 <div class="mb-2">
                                     <label for="logo_lawfirm" class="form-label">Logo Law Firm/Foto
                                         Pribadi</label>
