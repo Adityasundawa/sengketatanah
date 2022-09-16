@@ -54,8 +54,37 @@
                                     {{Session::get('success')}}
                                 </div>
                                 @endif
+
+                                {{-- <div class="mb-2">
+                                    <label for="nama" class="form-label">Nama</label>
+                                    <input type="text" class="form-control rounded-0" id="nama"
+                                        placeholder="Masukkan Nama Anda" aria-describedby="input-nama"
+                                        name="nama" required value="{{$user->name}}" readonly>
+                                    <div id="input-nama" class="form-text"></div>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control rounded-0" id="email"
+                                        placeholder="Masukkan Email Anda" aria-describedby="input-email"
+                                        name="email" required value="{{$user->email}}" readonly>
+                                    <div id="input-email" class="form-text"></div>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="Alamat" class="form-label">Alamat</label>
+                                    <input type="text" class="form-control rounded-0" id="Alamat"
+                                        placeholder="Masukkan Alamat Anda"
+                                        aria-describedby="input-Alamat" name="alamat" required>
+                                    <div id="input-Alamat" class="form-text"></div>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="no_hp" class="form-label">Nomor Hp</label>
+                                    <input type="number" class="form-control rounded-0" id="no_hp"
+                                        placeholder="Masukkan Nomor HP Anda"
+                                        aria-describedby="input-no_hp" name="no_hp" required>
+                                    <div id="input-no_hp" class="form-text"></div>
+                                </div> --}}
                                 <div class="row">
-                                    <div class="col-12">
+                                    <div class="col-lg-12">
                                         <div class="mb-2">
                                             <label class="form-label">Objek Sengketa</label>
                                             <select class="form-control rounded-0"
@@ -71,7 +100,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-lg-12">
                                         <div class="mb-2">
                                             <label for="luas" class="form-label">Luas Tanah
                                                 (m/ha)</label>
@@ -273,10 +302,38 @@
 
                     <div class="tab-content" data-content='2'  style="display: none">
                         <h3>Form Sponsor</h3>
-                        <p>Masukan data pembiayaan Anda di sini </p>
+                        <p>Masukan data pembiayaan anda di sini </p>
                         <hr>
                         <form method="post" action="#">
                             <div class="modal-body">
+                                {{-- <div class="mb-2">
+                                    <label for="nama" class="form-label">Nama</label>
+                                    <input type="text" class="form-control rounded-0" id="nama"
+                                        placeholder="Masukkan Nama Anda" aria-describedby="input-nama"
+                                        name="nama" required value="{{$user->name}}" readonly>
+                                    <div id="input-nama" class="form-text"></div>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control rounded-0" id="email"
+                                        placeholder="Masukkan Email Anda" aria-describedby="input-email"
+                                        name="email" required value="{{$user->email}}" readonly>
+                                    <div id="input-email" class="form-text"></div>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="Alamat" class="form-label">Alamat</label>
+                                    <input type="text" class="form-control rounded-0" id="Alamat"
+                                        placeholder="Masukkan Alamat Anda"
+                                        aria-describedby="input-Alamat" name="alamat" required>
+                                    <div id="input-Alamat" class="form-text"></div>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="no_hp" class="form-label">Nomor Hp</label>
+                                    <input type="number" class="form-control rounded-0" id="no_hp"
+                                        placeholder="Masukkan Nomor HP Anda"
+                                        aria-describedby="input-no_hp" name="no_hp" required>
+                                    <div id="input-no_hp" class="form-text"></div>
+                                </div> --}}
                                 <div class="mb-2">
                                     <label class="form-label">Sumber Dana</label>
                                     <select class="form-control rounded-0"
@@ -288,7 +345,6 @@
                                         <option value="">Investor</option>
                                         <option value="">Lainnya</option>
                                 </select>
-                                </div>
                                 <div class="mb-2">
                                     <label for="total" class="form-label">Total Pendanaan</label>
                                     <input type="total" class="form-control rounded-0" id="total"
@@ -306,7 +362,7 @@
                                         <option value="platform">Dikelola Platform</option>
                                     </select>
                                 </div>
-
+                                
                                 <div id="pengembalian_dana"
                                     class="alert alert-danger pengelolaan-sendiri" role="alert">
                                     <strong>
@@ -363,10 +419,16 @@
                                     <label for="nama" class="form-label">Nama</label>
                                     <input type="text" placeholder="Masukkan Nama Anda"
                                         class="form-control rounded-0" id="nama"
-                                        aria-describedby="input-nama" name="nama" required>
+                                        aria-describedby="input-nama" name="nama" required value="{{$user->name}}" readonly>
                                     <div id="input-nama" class="form-text"></div>
                                 </div>
-
+                                <div class="mb-2">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" placeholder="Masukkan Email Anda"
+                                        class="form-control rounded-0" id="email"
+                                        aria-describedby="input-email" name="email" value="{{$user->email}}" readonly required>
+                                    <div id="input-email" class="form-text"></div>
+                                </div>
                                 <div class="mb-2">
                                     <label class="form-label">Mewakili</label>
                                     <select class="form-control rounded-0"
@@ -383,7 +445,7 @@
                                         aria-describedby="input-nama-law" name="nama-law">
                                     <div id="input-nama" class="form-text"></div>
                                 </div>
-                                <div class="mb-2">
+                                {{-- <div class="mb-2">
                                     <label for="Alamat" class="form-label">Alamat</label>
                                     <input type="text" placeholder="Masukkan Alamat Anda"
                                         class="form-control rounded-0" id="Alamat"
@@ -396,21 +458,7 @@
                                         class="form-control rounded-0" id="no_hp"
                                         aria-describedby="input-no_hp" name="no_hp" required>
                                     <div id="input-no_hp" class="form-text"></div>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" placeholder="Masukkan Email Anda"
-                                        class="form-control rounded-0" id="email"
-                                        aria-describedby="input-email" name="email" required>
-                                    <div id="input-email" class="form-text"></div>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="password" class="form-label">Password</label>
-                                    <input type="password" placeholder="Masukkan Password Anda"
-                                        class="form-control rounded-0" id="password"
-                                        aria-describedby="input-password" name="password" required>
-                                    <div id="input-password" class="form-text"></div>
-                                </div>
+                                </div> --}}
                                 <div class="mb-2">
                                     <label for="logo_lawfirm" class="form-label">Logo Law Firm/Foto
                                         Pribadi</label>
