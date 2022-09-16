@@ -4,7 +4,7 @@
 <div class="container">
 	<div class="screen">
 		<div class="screen__content">
-			<form class="login" style="padding-top: 75px"   method="POST" action="{{ route('register') }}">
+			<form class="login" style="padding-top: 50px"   method="POST" action="{{ route('register') }}">
                 @csrf
 				<div class="login__field">
 					<i class="login__icon fas fa-user"></i>
@@ -47,7 +47,11 @@
 				<button class="button login__submit mt-2">
 					<span class="button__text">Register Now</span>
 					<i class="button__icon fas fa-chevron-right"></i>
-				</button>				
+				</button>
+                <a href="{{url('/login')}}" class="button register mt-3">
+					<span class="button__text">Login Here</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</a>				
 			</form>
 		</div>
 		<div class="screen__background">

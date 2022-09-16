@@ -5,7 +5,7 @@
 <div class="container">
 	<div class="screen">
 		<div class="screen__content">
-			<form class="login" method="POST" action="{{ route('login') }}">
+			<form class="login" style="padding-top: 125px" method="POST" action="{{ route('login') }}">
                 @csrf
 				<div class="login__field">
 					<i class="login__icon fas fa-user"></i>
@@ -35,17 +35,23 @@
                    </label>
                 </div>
 
-				<button class="button login__submit mt-3">
+				<button type="submit" class="button login__submit mt-3">
 					<span class="button__text">Log In Now</span>
 					<i class="button__icon fas fa-chevron-right"></i>
 				</button>
+				<a href="{{url('/register')}}" class="button register mt-3">
+					<span class="button__text">Register Here</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</a>
 
-                @if (Route::has('password.request'))
-                    <a class="btn btn-link" style="color: rgb(94, 53, 0)" href="{{ route('password.request') }}">
+			</form>
+            <div class="social-login">
+				@if (Route::has('password.request'))
+                    <a class="btn btn-link" style="color: #ffffff" href="{{ route('password.request') }}">
                         {{ __('Forgot Your Password?') }}
                     </a>
                 @endif
-			</form>
+			</div>
 		</div>
 		<div class="screen__background">
 			<span class="screen__background__shape screen__background__shape4"></span>
