@@ -2,10 +2,11 @@
 
 @section('content')
 
-<div class="container">
-	<div class="screen">
-		<div class="screen__content">
-			<form class="login" style="padding-top: 125px" method="POST" action="{{ route('login') }}">
+<div class="container" style="min-height:93vh">
+    <div class="screen">
+        <div class="screen__content">
+            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" class="m-4" style="width: 50px" alt="">
+			<form class="login" style="padding-top: 0px" method="POST" action="{{ route('login') }}">
                 @csrf
 				<div class="login__field">
 					<i class="login__icon fas fa-user"></i>

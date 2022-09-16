@@ -1,10 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container" style="min-height:93vh">
 	<div class="screen">
 		<div class="screen__content">
-			<form class="login" style="padding-top: 50px"   method="POST" action="{{ route('register') }}">
+            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" class="m-4" style="width: 50px; margin-bottom: 0px !important" alt="">
+			<form class="login" style="padding-top: 0px"   method="POST" action="{{ route('register') }}">
                 @csrf
 				<div class="login__field">
 					<i class="login__icon fas fa-user"></i>
