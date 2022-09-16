@@ -36,6 +36,7 @@ Route::post('/admin/add_meeting/{sponsor}/{sengketa}',[AdminController::class,'a
 Route::get('/admin/create_zoom_meeting',[AdminController::class,'create_zoom_meeting'])->name('admin.create_zoom_meeting');
 
 
+Route::get('dashboard/publik',[SengketaController::class,'dashboard']);
 
 
 Route::get('/dashboard',[SponsorDashboardController::class,'index'])->name('dashboard');

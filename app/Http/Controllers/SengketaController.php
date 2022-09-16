@@ -94,4 +94,9 @@ class SengketaController extends Controller
         $data['sengketa'] = SengketaTanah::get();
         return view('sengketa.form-law-firm',$data);   
     }
+
+    public function dashboard()
+    {
+        return view('dashboard.index');   
+    }
 }
