@@ -359,13 +359,7 @@
                         <hr>
                         <form method="post" action="#">
                             <div class="modal-body">
-                                <div class="mb-2">
-                                    <label for="nama" class="form-label">Nama</label>
-                                    <input type="text" placeholder="Masukkan Nama Anda"
-                                        class="form-control rounded-0" id="nama"
-                                        aria-describedby="input-nama" name="nama" required>
-                                    <div id="input-nama" class="form-text"></div>
-                                </div>
+                    
 
                                 <div class="mb-2">
                                     <label class="form-label">Mewakili</label>
@@ -383,34 +377,8 @@
                                         aria-describedby="input-nama-law" name="nama-law">
                                     <div id="input-nama" class="form-text"></div>
                                 </div>
-                                <div class="mb-2">
-                                    <label for="Alamat" class="form-label">Alamat</label>
-                                    <input type="text" placeholder="Masukkan Alamat Anda"
-                                        class="form-control rounded-0" id="Alamat"
-                                        aria-describedby="input-Alamat" name="alamat" required>
-                                    <div id="input-Alamat" class="form-text"></div>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="no_hp" class="form-label">Nomor Hp</label>
-                                    <input type="number" placeholder="Masukkan Nomor HP Anda"
-                                        class="form-control rounded-0" id="no_hp"
-                                        aria-describedby="input-no_hp" name="no_hp" required>
-                                    <div id="input-no_hp" class="form-text"></div>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" placeholder="Masukkan Email Anda"
-                                        class="form-control rounded-0" id="email"
-                                        aria-describedby="input-email" name="email" required>
-                                    <div id="input-email" class="form-text"></div>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="password" class="form-label">Password</label>
-                                    <input type="password" placeholder="Masukkan Password Anda"
-                                        class="form-control rounded-0" id="password"
-                                        aria-describedby="input-password" name="password" required>
-                                    <div id="input-password" class="form-text"></div>
-                                </div>
+                              
+                            
                                 <div class="mb-2">
                                     <label for="logo_lawfirm" class="form-label">Logo Law Firm/Foto
                                         Pribadi</label>
