@@ -273,7 +273,7 @@
 
                     <div class="tab-content" data-content='2'  style="display: none">
                         <h3>Form Sponsor</h3>
-                        <p>Masukan data pembiayaan Anda di sini </p>
+                        <p>Masukan data pembiayaan Anda di sini. </p>
                         <hr>
                         <form method="post" action="#">
                             <div class="modal-body">
