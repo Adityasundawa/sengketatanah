@@ -35,10 +35,10 @@ class SponsorDashboardController extends Controller
                'sponsor_id' => Auth::id(),
             ]);
             $request->session()->flash('status', 'Sukses!');
-            return redirect('dashboard');
+            return redirect(route('sponsor.index'));
          }else{
             $request->session()->flash('status', 'Anda Sudah Ngebid!');
-            return redirect(url('browse_sengketa/'.Crypt::encrypt($id)));
+            return redirect(route('sponsor.index'));
          };
     }
 }

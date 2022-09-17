@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class JadwalMeetingBid extends Migration
+class SponsorUser extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class JadwalMeetingBid extends Migration
      */
     public function up()
     {
-        Schema::create('jadwalmeeting', function (Blueprint $table) {
+        Schema::create('sponsor_user', function (Blueprint $table) {
             $table->id();
-            $table->enum('jenis_meeting',['offline','online']);
-            $table->integer('sengketa_id');
-            $table->integer('users_id');
-            $table->longText('location');
-            $table->text('deskripsi');
+            $table->integer('user_id');
+            $table->string('sumber_dana');
+            $table->string('total_dana');
+            $table->string('pengelolaan_dana');
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ class JadwalMeetingBid extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('jadwal_meeting');
+        Schema::dropIfExists('sponsor_user');
     }
 }

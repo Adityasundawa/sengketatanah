@@ -34,11 +34,10 @@
                         <h3>Form Korban</h3>
                         <p>Masukan data sengketa Anda di sini dan pilih pertolongan yang anda butuhkan</p>
                         <hr>
-                        <form method="post" action="{{url('sengketa/send')}}"
+                        <form method="post" action="{{route('utama.add_korban')}}"
                             enctype="multipart/form-data">
                             <div class="modal-body">
                                 @csrf
-
                                 @if ($errors->all())
                                 <div class="alert alert-danger">
                                     <ul>
@@ -99,9 +98,9 @@
                                     <div id="input-kronologi" class="form-text"></div>
                                 </div>
                                 <div class="mb-2">
-                                    <label for="ktp" class="form-label">Unggah File Kronologi</label>
-                                    <input class="file-input rounded-0" type="file" id="ktp"
-                                        name="foto_ktp" required>
+                                    <label for="file_kronologi" class="form-label">Unggah File Kronologi</label>
+                                    <input class="file-input rounded-0" type="file" id="file_kronologi"
+                                        name="file_kronologi" required>
                                 </div>
                                 <div class="mb-2">
                                     <label class="form-label">Status Pelapor</label>
@@ -132,7 +131,6 @@
                                         permasalahan sengketa tanah saya.
                                     </strong>
                                 </div>
-
                                 <div class="mb-2 pengacara">
                                     <label class="form-label">Pilih Tindakan Pengacara</label>
                                     <select class="form-control rounded-0"
@@ -180,27 +178,27 @@
                                 </div>
 
                                 <div class="mb-2 sponsor">
-                                    <label for="keb_dana" class="form-label">Jumlah Dana Sponsor</label>
-                                    <input type="number" class="form-control rounded-0" id="keb_dana"
+                                    <label for="jumlah_dana" class="form-label">Jumlah Dana Sponsor</label>
+                                    <input type="number" class="form-control rounded-0" id="jumlah_dana"
                                         placeholder="Sebutkan Nilai Kebutuhan"
-                                        aria-describedby="input-keb_dana" name="keb_dana">
-                                    <div id="input-keb_dana" class="form-text"></div>
+                                        aria-describedby="input-jumlah_dana" name="jumlah_dana">
+                                    <div id="input-jumlah_dana" class="form-text"></div>
                                 </div>
 
                                 <div class="mb-2 sponsor">
                                     <label class="form-label">Pengembalian Dana Sponsor</label>
                                     <select class="form-control rounded-0"
                                         aria-label="Default select example"
-                                        name="pengembalian_dana_sponsor" required>
+                                        name="pengembalian_dana" required>
                                         <option selected disabled>Pilih Jenis Pengembalian</option>
-                                        <option value="70/30">Bagi Hasil 70/30*</option>
-                                        <option value="60/40">Bagi Hasil 60/40*</option>
-                                        <option value="50/50">Bagi Hasil 50/50*</option>
-                                        <option value="lain">Fee 50% Dari Pinjaman</option>
-                                        <option value="lain">Fee 75% Dari Pinjaman</option>
-                                        <option value="lain">Fee 100% Dari Pinjaman</option>
+                                        <option value="Bagi Hasil 70/30">Bagi Hasil 70/30*</option>
+                                        <option value="Bagi Hasil 60/40">Bagi Hasil 60/40*</option>
+                                        <option value="Bagi Hasil 50/50">Bagi Hasil 50/50*</option>
+                                        <option value="Fee 50% Dari Pinjaman">Fee 50% Dari Pinjaman</option>
+                                        <option value="Fee 75% Dari Pinjaman">Fee 75% Dari Pinjaman</option>
+                                        <option value="Fee 100% Dari Pinjaman">Fee 100% Dari Pinjaman</option>
                                     </select>
-                                    <small id="pengembalian_dana_sponsor"
+                                    <small id="pengembalian_dana"
                                         class="form-text text-muted">Bagi
                                         hasil di
                                         rekomendasikan untuk kasus-kasus sengketa tanah yang berat.
@@ -226,7 +224,6 @@
                                     <select class="form-control rounded-0" id="lokasi"
                                         placeholder="Masukkan Jaminan" aria-describedby="input-jaminan"
                                         name="jaminan_berupa">
-
                                         <option value="Sertifikat Tanah">Sertifikat Tanah</option>
                                         <option value="Sertifikat Rumah">Sertifikat Rumah</option>
 
@@ -250,7 +247,7 @@
                                         name="dokumen_tanah" required>
                                 </div>
                                 <div class="mb-2 form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <input type="checkbox" class="form-check-input" required id="exampleCheck1">
                                     <label class="form-check-label" style="text-align:justify"
                                         for="exampleCheck1">Dengan
                                         mengisi form ini saya
@@ -275,12 +272,13 @@
                         <h3>Form Sponsor</h3>
                         <p>Masukan data pembiayaan Anda </p>
                         <hr>
-                        <form method="post" action="#">
+                        <form method="post" action="{{route('utama.add_sponsor')}}">
+                            @csrf
                             <div class="modal-body">
                                 <div class="mb-2">
                                     <label class="form-label">Sumber Dana</label>
                                     <select class="form-control rounded-0"
-                                        aria-label="Default select example" name="pengelolaan_dana"
+                                        aria-label="Default select example" name="sumber_dana"
                                         required>
                                         <option selected disabled>Pilih Sumber Dana</option>
                                         <option value="sendiri">Pribadi</option>
@@ -293,7 +291,7 @@
                                     <label for="total" class="form-label">Total Pendanaan</label>
                                     <input type="total" class="form-control rounded-0" id="total"
                                         placeholder="Masukkan total pendanaan " aria-describedby="input-total"
-                                        name="total" required>
+                                        name="total_dana" required>
                                     <div id="input-total" class="form-text"></div>
                                 </div>
                                 <div class="mb-2">
@@ -306,7 +304,6 @@
                                         <option value="platform">Dikelola Platform</option>
                                     </select>
                                 </div>
-
                                 <div id="pengembalian_dana"
                                     class="alert alert-danger pengelolaan-sendiri" role="alert">
                                     <strong>
@@ -314,7 +311,6 @@
                                         pertanahan yang paling baik untuk Anda selesaikan.
                                     </strong>
                                 </div>
-
                                 <div id="pengembalian_dana"
                                     class="alert alert-danger pengelolaan-platform" role="alert">
                                     <strong>
@@ -330,7 +326,6 @@
                                         sponsor.
                                     </strong>
                                 </div>
-
                                 <div class="mb-2 form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                     <label class="form-check-label" style="text-align:justify"
@@ -353,10 +348,10 @@
                             </div>
                         </form>
                     </div>
-
                     <div class="tab-content" data-content='3' style="display: none">
                         <h3>Form Pengacara</h3>
                         <p>Masukan data Sertifikasi anda  </p>
+                        
                         <hr>
                         <form method="post" action="#">
                             <div class="modal-body">

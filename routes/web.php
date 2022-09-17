@@ -31,13 +31,23 @@ Route::get('form-penyelesai', [SengketaController::class, 'formPenyelesai']);
 Route::get('form-law-firm', [SengketaController::class, 'formLawFirm']);
 
 Auth::routes();
+
+Route::group(['middleware' => 'role:administrator', 'prefix' => 'administrator', 'as' => 'administrator.'], function () {
+  Route::get('/index',[AdminController::class,'index'])->name('index');
+  Route::get('/sengketa-tanah',[AdminController::class,'sengketa'])->name('sengketa');
+  Route::get('/sengketa-tanah/selengkapnya/{id}',[AdminController::class,'selengkapnya'])->name('sengketa');
+  Route::get('/bid_sponsor/{id}/{sengketa}',[AdminController::class,'admin_bid_sponsor'])->name('bid.sponsor');
+  Route::post('/create_zoom_meeting/{sponsor}/{sengketa}',[AdminController::class,'create_zoom_meeting'])->name('create_zoom_meeting');
+  Route::post('/add_meeting/{sponsor}/{sengketa}',[AdminController::class,'add_meeting'])->name('add.meeting');
+});
+
 // Route::get('/admin',[AdminController::class,'index'])->name('admin.index');
-// Route::get('/admin/sengketa-tanah',[AdminController::class,'sengketa'])->name('admin.sengketa');
-// Route::get('/admin/sengketa-tanah/selengkapnya/{id}',[AdminController::class,'selengkapnya'])->name('admin.sengketa');
+
+
 // Route::get('/admin/sengketa-tanah/proses-verif/{id}',[AdminController::class,'prosesVerif'])->name('admin.proses-verif');
 // Route::get('/admin/hasil-bid-sengketa-tanah/',[AdminController::class,'hasil_bid_sengketa'])->name('admin.hasil-bid-sengketa');
 // Route::get('/admin/bid_sponsor/{id}/{sengketa}',[AdminController::class,'admin_bid_sponsor'])->name('admin.bid.sponsor');
-// Route::post('/admin/add_meeting/{sponsor}/{sengketa}',[AdminController::class,'add_meeting'])->name('admin.add.meeting');
+
 // Route::get('/admin/create_zoom_meeting',[AdminController::class,'create_zoom_meeting'])->name('admin.create_zoom_meeting');
 
 
@@ -67,8 +77,9 @@ Route::get('/redirect', [Controller::class, 'redirect']);
 /// Role Utama
 Route::group(['middleware' => 'role:utama', 'prefix' => 'utama', 'as' => 'utama.'], function () {
    Route::get('index',[DashboardUtamaController::class,'index'])->name('index');
+   Route::post('add_korban',[DashboardUtamaController::class,'add_korban'])->name('add_korban');
+   Route::post('add_sponsor',[DashboardUtamaController::class,'add_sponsor'])->name('add_sponsor');
 });
-
 
 /// Role Korban
 Route::group(['middleware' => 'role:korban', 'prefix' => 'korban', 'as' => 'korban.'], function () {
@@ -78,6 +89,8 @@ Route::group(['middleware' => 'role:korban', 'prefix' => 'korban', 'as' => 'korb
 /// Role Sponsor
 Route::group(['middleware' => 'role:sponsor', 'prefix' => 'sponsor', 'as' => 'sponsor.'], function () {
    Route::get('index',[SponsorController::class,'index'])->name('index');
+   Route::get('bid-sengketa-tanah/{id}',[SponsorController::class,'bid_sengketa'])->name('bid-sengketa');
+
 });
 
 /// Role Pengacara

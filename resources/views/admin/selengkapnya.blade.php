@@ -10,13 +10,13 @@
                         <div class="col-lg-6">
 
                             <h3> Keterangan Data Sengketa Tanah 
-                            @if($selengkapnya->status_laporan == 1)
+                            @if($selengkapnya->status_sengketa == 1)
                             <span class="badge badge-primary">Menunggu Verifikasi</span>
-                            @elseif($selengkapnya->status_laporan == 2)
+                            @elseif($selengkapnya->status_sengketa == 2)
                             <span class="badge badge-dark">Terverifikasi</span>
-                            @elseif($selengkapnya->status_laporan == 3)
+                            @elseif($selengkapnya->status_sengketa == 3)
                             <span class="badge badge-warning">Diproses</span>
-                            @elseif($selengkapnya->status_laporan == 4)
+                            @elseif($selengkapnya->status_sengketa == 4)
                             <span class="badge badge-success">Selesai</span>
                             @endif
                             </h3>
@@ -45,17 +45,17 @@
                             <tr>
                                 <th>Nama</th>
                                 <td>:</td>
-                                <td>{{$selengkapnya->nama}}</td>
+                                <td>{{$selengkapnya->name}}</td>
                             </tr>
                             <tr>
                                 <th>Alamat</th>
                                 <td>:</td>
-                                <td>{{$selengkapnya->alamat}}</td>
+                                <td>{{$selengkapnya->address}}</td>
                             </tr>
                             <tr>
                                 <th>Nomor Hp</th>
                                 <td>:</td>
-                                <td>{{$selengkapnya->no_hp}}</td>
+                                <td>{{$selengkapnya->phone}}</td>
                             </tr>
                             <tr>
                                 <th>Objek Sengketa</th>
@@ -103,11 +103,29 @@
                                     </button>
                                 </td>
                             </tr>
+
+                            @if ($selengkapnya->jenis_pertolongan == "sponsor")
+                                <tr>
+                                    <th>Jumlah Dana Sponsor</th>
+                                    <td>:</td>
+                                    <td>Rp.{{$selengkapnya->jumlah_dana}},00</td>
+                                </tr>
+                                <tr>
+                                    <th>Pengembalian Dana Sponsor</th>
+                                    <td>:</td>
+                                    <td>{{$selengkapnya->pengembalian_dana}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Jaminan Dana Sponsor</th>
+                                    <td>:</td>
+                                    <td>{{$selengkapnya->jaminan_berupa}}</td>
+                                </tr>
+                            @endif
                         </thead>
                     </table>
                 </div>
             </div>
-
+   
 
 
             <div class="card mt-4">
@@ -126,7 +144,7 @@
                                 <div class="col-lg-3">
                                       <div class="card">
                                          <div class="card-body">
-                                           <a href="{{url('/admin/bid_sponsor/')}}/{{Crypt::encrypt($item['id'])}}/{{Crypt::encrypt($selengkapnya->id)}}">{{$item['name']}}</a>
+                                           <a href="{{url('/administrator/bid_sponsor/')}}/{{Crypt::encrypt($item['id'])}}/{{Crypt::encrypt($selengkapnya->id)}}">{{$item['name']}}</a>
                                          </div>
                                       </div>
                                 </div>
@@ -143,9 +161,6 @@
     </div>
 </div>
 <!-- Button trigger modal -->
-
-
-
 <!-- Modal -->
 <div class="modal fade" id="fotoktp" tabindex="-1" aria-labelledby="fotoktpLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -161,7 +176,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-12">
                             <center>
-                                <img src="{{url('/')}}/uploads/{{$selengkapnya->foto_ktp}}" alt="" class="img-fluid">
+                                <img src="{{url('/')}}/images/users/ktp/{{$selengkapnya->foto_ktp}}" alt="" class="img-fluid">
                             </center>
                         </div>
                     </div>
@@ -188,7 +203,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-12">
                             <center>
-                                <img src="{{url('/')}}/uploads/{{$selengkapnya->dokumen_tanah}}" alt=""
+                                <img src="{{url('/')}}/images/users/dokumen_hak_tanah/{{$selengkapnya->foto_dokumen_hak_tanah}}" alt=""
                                     class="img-fluid">
                             </center>
                         </div>
@@ -197,7 +212,6 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
             </div>
         </div>
     </div>

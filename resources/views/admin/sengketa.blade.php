@@ -28,23 +28,23 @@
                         @foreach($sengketa as $data)
                         <tr>
                             <td>{{$i++}}</td>
-                            <td>{{$data->nama}}</td>
+                            <td>{{$data->name}}</td>
                             <td>{{$data->objek_sengketa}}</td>
                           
                             <td>{{$data->luas}} meter</td>
                             <td>
-                            @if($data->status_laporan == 1)
+                            @if($data->status_sengketa == 1)
                             <span class="badge badge-primary">Menunggu Verifikasi</span>
-                            @elseif($data->status_laporan == 2)
+                            @elseif($data->status_sengketa == 2)
                             <span class="badge badge-dark">Terverifikasi</span>
-                            @elseif($data->status_laporan == 3)
+                            @elseif($data->status_sengketa == 3)
                             <span class="badge badge-warning">Diproses</span>
-                            @elseif($data->status_laporan == 4)
+                            @elseif($data->status_sengketa == 4)
                             <span class="badge badge-success">Selesai</span>
                             @endif
                             </td>
                             <td> 
-                                <a href="{{url('/')}}/admin/sengketa-tanah/selengkapnya/{{encrypt($data->id)}}" class="btn btn-primary">Selengkapnya</a>
+                                <a href="{{url('/')}}/administrator/sengketa-tanah/selengkapnya/{{encrypt($data->id)}}" class="btn btn-primary">Selengkapnya</a>
                              </td>
 
                         </tr>

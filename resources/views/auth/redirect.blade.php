@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    
     <h2>Loading ..</h2>
     <div class="bar">
         <span class="full"></span>    
@@ -22,7 +21,10 @@
     @if(auth()->user()->role == "utama")
     <a href="{{route('utama.index')}}">Klik Disini Untuk Melanjutkan</a>
     @endif
-    
+    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+        @csrf
+        <button type="submit">logout</button>
+    </form>
     <script src="{{url('/')}}/loading/js/jquery-3.1.1.min.js"></script>
     <script src="{{url('/')}}/loading/js/plugins.js"></script>
 </body>

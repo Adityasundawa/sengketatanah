@@ -29,6 +29,28 @@
                     @enderror
 				</div>
 
+                <div class="login__field">
+					<i class="login__icon fas fa-envelope"></i>
+					<input id="address" type="address" placeholder="Address" class="login__input @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="address">
+
+                    @error('address')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+				</div>
+
+                <div class="login__field">
+					<i class="login__icon fas fa-envelope"></i>
+					<input id="phone" type="phone" placeholder="Phone" class="login__input @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone">
+
+                    @error('phone')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+				</div>
+
 				<div class="login__field">
 					<i class="login__icon fas fa-lock"></i>
 					<input id="password" type="password" placeholder="Password" class="login__input @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
