@@ -17,13 +17,20 @@
     <span class="pourcentage">
         0%
     </span>
-    <h3>Welcome Username</h3>
+    <h3 class="text-uppercase">Welcome {{auth()->user()->name}}</h3>
     @if(auth()->user()->role == "utama")
     <a href="{{route('utama.index')}}">Klik Disini Untuk Melanjutkan</a>
     @endif
+    @if(auth()->user()->role == "sponsor")
+    <a href="{{route('sponsor.index')}}">Klik Disini Untuk Melanjutkan</a>
+    @endif
+    @if(auth()->user()->role == "administrator")
+    <a href="{{route('administrator.index')}}">Klik Disini Untuk Melanjutkan</a>
+    @endif
+    <br>
     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
         @csrf
-        <button type="submit">logout</button>
+        <button type="submit">logout disini</button>
     </form>
     <script src="{{url('/')}}/loading/js/jquery-3.1.1.min.js"></script>
     <script src="{{url('/')}}/loading/js/plugins.js"></script>
