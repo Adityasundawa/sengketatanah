@@ -477,7 +477,7 @@
                         <div class="col-md mb-3 text-center">
                             <div class="card">
                                 <div class="card-body">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png" style="width:185px">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png" style="width:208px">
                                 </div>
                             </div>
                         </div>
@@ -487,7 +487,7 @@
                                     <h4 class="card-title" style="color:#61481C">
                                         Pemerintah</h4>
                                     <hr>
-                                    Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di bidang agraria/pertanahan dan tata ruang dalam pemerintahan untuk membantu Presiden dalam menyelenggarakan pemerintahan negara
+                                    Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di bidang agraria/pertanahan dan tata ruang dalam pemerintahan untuk membantu Presiden dalam menyelenggarakan pemerintahan negara termasuk masalah persengketaan tanah
                                 </div>
                             </div>
                         </div>
