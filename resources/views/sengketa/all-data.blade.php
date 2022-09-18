@@ -301,6 +301,7 @@
             <div class="col-lg-12">
                 
                 <div class="row mb-2 g-2">
+                    <img src="{{asset('/uploads/sengketa-banner-1.jpg')}}" style="width:100%">
                     <div class="col">
                         <a class="btn btn-sm btn-dark w-100" href="{{url('')}}/register">Daftar Sekarang</a>
                     </div>

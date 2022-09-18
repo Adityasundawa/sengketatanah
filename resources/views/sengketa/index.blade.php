@@ -317,7 +317,7 @@
         @endif
 
         <div class="card-body text-center mt-4">
-            <h2 class="card-title fw-bolder" style="color: #61481C">DUKUNGAN PEMERINTAH</h4>
+            <h2 class="card-title fw-bolder" style="color: #61481C">DUKUNGAN PEMERINTAH BRANTAS MAFIA TANAH</h4>
         </div>
         <div class="row desktop mb-5 mt-3">
             <div class="col-md">
