@@ -287,7 +287,7 @@
     
     <div class="text-white rounded-0 jumbotron">
         <div class="row">
-            <div class="col-md-4 text-center mt-3">
+            <div class="col-md-12 text-center mt-3">
                 <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 150px" alt="" srcset=""
                     class="img-fluid">
             </div>
@@ -471,6 +471,23 @@
                                     <hr>
                                     Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani sengketa
                                     tanah
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md mb-3 text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png" style="width:185px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title" style="color:#61481C"><i class="fa-solid fa-gavel"></i>
+                                        Pemerintah</h4>
+                                    <hr>
+                                    Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di bidang agraria/pertanahan dan tata ruang dalam pemerintahan untuk membantu Presiden dalam menyelenggarakan pemerintahan negara
                                 </div>
                             </div>
                         </div>

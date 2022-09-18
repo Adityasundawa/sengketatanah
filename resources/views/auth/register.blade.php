@@ -1,7 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container" style="min-height:93vh">
+<style>
+    .screen{
+        height: 640px;
+    }
+
+    .login__field {
+        padding: 10px 0px
+    }
+
+    .screen__background__shape1 {
+        top: 5px;
+        right: 100px;
+    }
+</style>
+<div class="container pt-5 pb-5" style="min-height:100vh">
 	<div class="screen">
 		<div class="screen__content">
             <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" class="m-4" style="width: 50px; margin-bottom: 0px !important" alt="">
