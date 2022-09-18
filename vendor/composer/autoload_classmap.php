@@ -37,6 +37,7 @@ return array(
     'App\\Models\\JadwalMeeting' => $baseDir . '/app/Models/JadwalMeeting.php',
     'App\\Models\\KorbanUser' => $baseDir . '/app/Models/KorbanUser.php',
     'App\\Models\\SengketaTanah' => $baseDir . '/app/Models/SengketaTanah.php',
+    'App\\Models\\Sponsoruser' => $baseDir . '/app/Models/Sponsoruser.php',
     'App\\Models\\TimeStatus' => $baseDir . '/app/Models/TimeStatus.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',

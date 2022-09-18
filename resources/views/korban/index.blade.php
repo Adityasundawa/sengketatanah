@@ -1,5 +1,6 @@
 <?php 
 use App\Models\Bid_Sengketa;
+use App\Models\User;
 ?>
 
 
@@ -9,6 +10,7 @@ use App\Models\Bid_Sengketa;
 <div class="container mt-3">
     <div class="row">
         @foreach ($sengketa as $item)
+        <?php $users = User::where('id',$item['user_id'])->first(); ?>
         <div class="col-md-6 mb-3 sp">
             <div class="card mb-2">
                 <div class="card-header bg-dark text-white px-3 py-1">
@@ -41,14 +43,20 @@ use App\Models\Bid_Sengketa;
                                 onclick="return document.querySelector('form.form-sengketa1').submit()">Lihat
                                 Podcast Sengketa</span>
                             <span class="float-end">&nbsp;</span>
-                            <span class="badge bg-danger float-end">Terverifikasi</span>
+                            @if($item['status_sengketa'] == 1)
+                            <span class="badge badge-danger">Menunggu Verifikasi</span>
+                            @elseif($item['status_sengketa'] == 2)
+                            <span class="badge badge-dark">Terverifikasi</span>
+                            @elseif($item['status_sengketa'] == 3)
+                            <span class="badge badge-warning">Diproses</span>
+                            @elseif($item['status_sengketa'] == 4)
+                            <span class="badge badge-success">Selesai</span>
+                            @elseif($item['status_sengketa'] == 0)
+                            <span class="badge badge-danger">Pending</span>
+                            @endif
                         </div>
                     </div>
                 </div>
-
-
-
-
                 <div class="card-body">
                     <table>
                         <tbody>
@@ -56,7 +64,7 @@ use App\Models\Bid_Sengketa;
                                 <td>Owner/Korban</td>
                                 <td></td>
                                 <td>:</td>
-                                <td>&nbsp; {{$item['name']}}</td>
+                                <td>&nbsp; {{$users->name}}</td>
                             </tr>
                             <tr>
                                 <td>Objek Sengketa</td>
@@ -105,10 +113,22 @@ use App\Models\Bid_Sengketa;
                             </tr>
                         </tbody>
                     </table>
+                   
+                    @if ($item['status_sengketa'] == 0)
+
+                    @else
+                    @if ($item['status_file_upload'] == "yes")
+                    <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-success mt-4">Lihat Berkas</a>
+                    @else
+                    <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-success mt-4">Upload File Hak Tanah,ktp, Lokasi</a>
+                    @endif
+                    @endif
                 </div>
             </div>
         </div>    
         @endforeach
+
+
     </div>
 </div>
 @endsection
