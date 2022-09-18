@@ -839,9 +839,25 @@
                         </div>
                     </div>
                 </div>
-                <form method="post" class="text-start" action="http://server2.sengketatanah.id/public/index.php/sengketa/send" enctype="multipart/form-data">
+                <form method="post" action="{{url('sengketa/send')}}" enctype="multipart/form-data">
                     <div class="modal-body">
-                        <input type="hidden" name="_token" value="5cJtevxQiv7jQz0kzdXcAPmIjf58CUH8qggaGC0g">                                                
+                        @csrf
+                        @if ($errors->all())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+
+                        @endif
+                        @if (Session::has('success'))
+                        <div class="alert alert-success">
+                            {{Session::get('success')}}
+                        </div>
+                        @endif
+
                         <div class="mb-2">
                             <label for="nama" class="form-label">Nama Pelapor</label>
                             <input type="text" class="form-control rounded-0" id="nama" placeholder="Masukkan Nama Anda"
@@ -868,6 +884,13 @@
                             <input type="email" class="form-control rounded-0" id="email"
                                 placeholder="Masukkan Email Anda" aria-describedby="input-email" name="email" required>
                             <div id="input-email" class="form-text"></div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control rounded-0" id="password"
+                                placeholder="buat password Anda" aria-describedby="input-password" name="password"
+                                required>
+                            <div id="input-password" class="form-text"></div>
                         </div>
                         <div class="row">
                             <div class="col">
@@ -915,35 +938,62 @@
                             </select>
                         </div>
                         <div class="mb-2">
-                            <label class="form-label">Kebutuhan Dana Sponsor</label>
+                            <label class="form-label">Pilih Jenis Pertolongan</label>
                             <select class="form-select rounded-0" aria-label="Default select example"
-                                name="kebutuhan_dana" required>
-                                <option selected disabled>Pilih Kebutuhan</option>
-                                <option value="perlu">Perlu Dana Sonsor</option>
-                                <option value="tidak-perlu">Tidak Perlu Dana Sponsor</option>
+                                name="jenis_pertolongan" required>
+                                <option selected disabled>Pilih Pertolongan</option>
+                                <option value="sponsor">Sponsor</option>
+                                <option value="pengacara">Pengacara</option>
+                                <option value="pemerintah">Pemerintah</option>
                             </select>
-
                         </div>
 
-                        <div class="form-check tidak-perlu-dana">
-                            <input class="form-check-input" type="radio" name="butuh" id="butuh-jasa">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                Membutuhkan jasa Pengacara
-                            </label><br>
-                            <small id="pengembalian_dana" class="form-text text-muted butuh-jasa-h">Saya hanya butuh
-                                bantuan hukum untuk menyelesaikan permasalahan saya dan saya siap memberikan kompensasi
-                                sesuai dengan kesepakatan, baik berupa uang ataupun bagi hasil.</small>
-                        </div>
-                        <div class="form-check  tidak-perlu-dana">
-                            <input class="form-check-input" type="radio" name="butuh" id="butuh-pem">
-                            <label class="form-check-label" for="flexRadioDefault2">
-                                Membutuhkan bantuan laporan ke Pemerintah
-                            </label><br>
-                            <small id="pengembalian_dana" class="form-text text-muted butuh-pem-h">Kami akan meneruskan
-                                laporan ini kepada instansi terkait.</small>
+                        <div id="pengembalian_dana" class="alert alert-danger sponsor" role="alert">
+                            <strong>
+                                Saya membutuhkan bantuan pendanaan dari sponsor untuk menyelesaikan permasalahan
+                                sengketa tanah saya.
+                            </strong>
                         </div>
 
-                        <div class="mb-2 perlu-dana">
+                        <div class="mb-2 pengacara">
+                            <label class="form-label">Pilih Tindakan Pengacara</label>
+                            <select class="form-select rounded-0" aria-label="Default select example"
+                                name="bantuan_pengacara" required>
+                                <option selected disabled>Pilih Bantuan Pengacara</option>
+                                <option value="konsultasi">Konsultasi</option>
+                                <option value="pendampingan">Pendampingan</option>
+                                <option value="penindakan">Penindakan</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-2 pengacara">
+                            <label for="anggaran_pengacara" class="form-label">Anggaran Pengacara</label>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="number" class="form-control rounded-0" id="anggaran_pengacara-s"
+                                        placeholder="Anggaran mulai dari ..."
+                                        aria-describedby="input-anggaran_pengacara-s" name="anggaran_pengacara-s">
+                                </div>
+                                <div class="col-1 text-center"
+                                    style="width:4% !important; padding-right: 0px !important; padding-left: 0px !important">
+                                    -
+                                </div>
+                                <div class="col">
+                                    <input type="number" class="form-control rounded-0" id="anggaran_pengacara-e"
+                                        placeholder="Sampai ..." aria-describedby="input-anggaran_pengacara-e"
+                                        name="anggaran_pengacara-e">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="pengembalian_dana" class="alert alert-danger pemerintah" role="alert">
+                            <strong>
+                                Saya hanya membutuhkan pertolongan agar permasalahan sengketa tanah saya diteruskan pada
+                                Pemerintah.
+                            </strong>
+                        </div>
+
+                        <div class="mb-2 sponsor">
                             <label for="keb_dana" class="form-label">Jumlah Dana Sponsor</label>
                             <input type="number" class="form-control rounded-0" id="keb_dana"
                                 placeholder="Sebutkan Nilai Kebutuhan" aria-describedby="input-keb_dana" name="keb_dana"
@@ -951,21 +1001,24 @@
                             <div id="input-keb_dana" class="form-text"></div>
                         </div>
 
-                        <div class="mb-2 perlu-dana">
+                        <div class="mb-2 sponsor">
                             <label class="form-label">Pengembalian Dana Sponsor</label>
                             <select class="form-select rounded-0" aria-label="Default select example"
                                 name="pengembalian_dana_sponsor" required>
+                                <option selected disabled>Pilih Jenis Pengembalian</option>
                                 <option value="70/30">Bagi Hasil 70/30*</option>
                                 <option value="60/40">Bagi Hasil 60/40*</option>
                                 <option value="50/50">Bagi Hasil 50/50*</option>
-                                <option value="lain">Lainnya*</option>
+                                <option value="lain">Fee 50% Dari Pinjaman</option>
+                                <option value="lain">Fee 75% Dari Pinjaman</option>
+                                <option value="lain">Fee 100% Dari Pinjaman</option>
                             </select>
-                            <small id="pengembalian_dana_sponsor" class="form-text text-muted">Tanda bintang(*)
-                                pembagian hasil
-                                untuk sponsor.</small>
+                            <small id="pengembalian_dana_sponsor" class="form-text text-muted">Bagi hasil di
+                                rekomendasikan untuk kasus-kasus sengketa tanah yang berat. Tanda bintang(*) adalah
+                                pembagian untuk sponsor. </small>
                         </div>
 
-                        <div class="mb-2 perlu-dana">
+                        <div class="mb-2 sponsor">
                             <label class="form-label" for="jaminan_dana">Jaminan Dana Sponsor</label>
                             <select class="form-select rounded-0" aria-label="Default select example" name="jaminan"
                                 required>
@@ -977,10 +1030,12 @@
 
                         <div class="mb-2 jaminan_berupa">
                             <label for="jaminan_berupa" class="form-label">Jaminan Berupa</label>
-                            <input type="text" class="form-control rounded-0" id="lokasi" placeholder="Masukkan Jaminan"
-                                aria-describedby="input-jaminan" name="jaminan_berupa">
+                            <select class="form-select rounded-0" id="lokasi" placeholder="Masukkan Jaminan"
+                                aria-describedby="input-jaminan" name="jaminan_berupa" required>
+                                <option value="Sertifikat Tanah">Sertifikat Tanah</option>
+                                <option value="Sertifikat Rumah">Sertifikat Rumah</option>
+                            </select>
                         </div>
-
                         <div class="mb-2">
                             <label for="ktp" class="form-label">Foto KTP</label>
                             <input class="form-control rounded-0" type="file" id="ktp" name="foto_ktp" required>
@@ -1000,8 +1055,9 @@
                             <label class="form-check-label" style="text-align:justify" for="exampleCheck1">Dengan
                                 mengisi form ini saya
                                 menyatakan bahwa semua data yang diberikan benar adanya dan laporan ini tidak
-                                sedang dalam penanganan hukum pihak lain. Saya bersedia bekerja sama dengan
-                                Sponsor melalui platform SENGKETA TANAH untuk diselesaikan</label>
+                                sedang dalam penanganan hukum pihak lain. Saya bersedia melakukan wawancara mendalam di
+                                <b>PODCAST SENGKETA TANAH</b> dan bekerja sama dengan
+                                Sponsor melalui <b>PLATFORM SENGKETA TANAH</b> untuk diselesaikan.</label>
                         </div>
                     </div>
                     <div class="modal-footer">
