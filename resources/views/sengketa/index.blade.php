@@ -437,7 +437,7 @@
         <div class="row mt-2" style="padding: 10px">
             <div class="card p-0 rounded-3 shadow">
                 <div class="card-header text-white" style="background-color: #61481C;">
-                    <h4 class="mb-0 fw-bolder text-center">3 ROLE PENGGUNA</h4>
+                    <h4 class="mb-0 fw-bolder text-center">4 ROLE PENGGUNA</h4>
                 </div>
                 <div class="card-body text-dark">
                     <div class="row justify-content-center">
@@ -484,7 +484,7 @@
                         <div class="col-md mb-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title" style="color:#61481C"><i class="fa-solid fa-gavel"></i>
+                                    <h4 class="card-title" style="color:#61481C">
                                         Pemerintah</h4>
                                     <hr>
                                     Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di bidang agraria/pertanahan dan tata ruang dalam pemerintahan untuk membantu Presiden dalam menyelenggarakan pemerintahan negara
