@@ -1,5 +1,8 @@
 <?php 
 use App\Models\Bid_Sengketa;
+use App\Models\User;
+
+
 ?>
 
 @extends('layouts.template-sponsor.main')
@@ -8,6 +11,7 @@ use App\Models\Bid_Sengketa;
 <div class="container mt-3">
     <div class="row">
         @foreach ($sengketa as $item)
+        <?php $user_check = User::where('id',$item['user_id'])->first(); ?>
         <div class="col-md-6 mb-3 sp">
             <div class="card mb-2">
                 <div class="card-header bg-dark text-white px-3 py-1">
@@ -54,7 +58,7 @@ use App\Models\Bid_Sengketa;
                                 <td>Owner/Korban</td>
                                 <td></td>
                                 <td>:</td>
-                                <td>&nbsp; {{$item['name']}}</td>
+                                <td>&nbsp; {{$user_check->name}}</td>
                             </tr>
                             <tr>
                                 <td>Objek Sengketa</td>
@@ -104,12 +108,26 @@ use App\Models\Bid_Sengketa;
                         </tbody>
                     </table>
                     <div class="row justify-content-center no-gutters">
+                        <?php $check_bid = Bid_Sengketa::where([
+                            'sengketa_id' => $item['id'],
+                            'sponsor_id' => Auth::id(),
+                    ])->get();
+                    ?>
+                    @if(count($check_bid) == 0);
                         <div class="col-12">
                             <div class="d-grid gap-2">
                                 <a href="{{route('sponsor.bid-sengketa','/',$item['id'])}}/{{Crypt::encrypt($item['id'])}}" class="btn btn-primary mt-2"
                                     type="button">Bid Sponsor</a>
                             </div>
                         </div>
+                     @else
+                     <div class="col-12">
+                        <div class="d-grid gap-2">
+                            <a href="{{route('sponsor.cancel-bid-sengketa','/',$item['id'])}}/{{Crypt::encrypt($item['id'])}}" class="btn btn-danger mt-2"
+                                type="button">Cancel Bid</a>
+                        </div>
+                    </div>
+                     @endif
                     </div>
                 </div>
             </div>

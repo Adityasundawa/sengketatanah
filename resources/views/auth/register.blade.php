@@ -50,23 +50,27 @@
                         </span>
                     @enderror
 				</div>
-
+                <div class="login__field">
+					<select name="role" req' class="form-select login__input rounded-0" style="border-right:0px; border-left:0px; border-top:0px; background:transparent; font-weight:700" aria-label="Default select example">
+                        <option disabled="">Pilih Role</option>
+                        <option value="korban">Korban Sengketa</option>
+                        <option value="sponsor">Sponsor</option>
+                        <option value="pengacara">Pengacara</option>
+                    </select>
+				</div>
 				<div class="login__field">
 					<i class="login__icon fas fa-lock"></i>
 					<input id="password" type="password" placeholder="Password" class="login__input @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
                     @error('password')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
                     @enderror
 				</div>
-
 				<div class="login__field">
 					<i class="login__icon fas fa-lock"></i>
                     <input id="password-confirm" type="password" placeholder="Confirm Password" class="login__input" name="password_confirmation" required autocomplete="new-password">
 				</div>
-
 				<button class="button login__submit mt-2">
 					<span class="button__text">Register Now</span>
 					<i class="button__icon fas fa-chevron-right"></i>

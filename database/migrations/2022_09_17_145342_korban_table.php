@@ -23,9 +23,9 @@ class KorbanTable extends Migration
             $table->string('file_kronologi')->nullable();
             $table->string('status_pelapor');
             $table->string('jenis_pertolongan');
-            $table->string('foto_ktp');
-            $table->string('foto_lokasi');
-            $table->string('foto_dokumen_hak_tanah');
+            $table->string('foto_ktp')->nullable();
+            $table->string('foto_lokasi')->nullable();
+            $table->string('foto_dokumen_hak_tanah')->nullable();
             $table->string('status_sengketa');
             $table->timestamps();
         });

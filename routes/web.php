@@ -87,13 +87,16 @@ Route::group(['middleware' => 'role:utama', 'prefix' => 'utama', 'as' => 'utama.
 /// Role Korban
 Route::group(['middleware' => 'role:korban', 'prefix' => 'korban', 'as' => 'korban.'], function () {
    Route::get('index',[KorbanController::class,'index'])->name('index');
+   Route::get('list_sengketa_saya',[KorbanController::class,'list_sengketa_saya'])->name('list_sengketa_saya');
+   Route::post('add_korban',[KorbanController::class,'add_korban'])->name('add_korban');
 });
 
 /// Role Sponsor
 Route::group(['middleware' => 'role:sponsor', 'prefix' => 'sponsor', 'as' => 'sponsor.'], function () {
    Route::get('index',[SponsorController::class,'index'])->name('index');
    Route::get('bid-sengketa-tanah/{id}',[SponsorController::class,'bid_sengketa'])->name('bid-sengketa');
-
+   Route::get('cancel-bid-sengketa-tanah/{id}',[SponsorController::class,'cancel_bid_sengketa'])->name('cancel-bid-sengketa');
+   Route::post('add_sponsor',[SponsorController::class,'add_sponsor'])->name('add_sponsor');
 });
 
 /// Role Pengacara

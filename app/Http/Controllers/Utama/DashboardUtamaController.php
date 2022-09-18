@@ -22,14 +22,35 @@ class DashboardUtamaController extends Controller
 
     public function add_korban(Request $request)
     {
-        $imageKtp = time().'.'.$request->foto_ktp->extension();
-        $request->foto_ktp->move(public_path('images/users/ktp'), $imageKtp);
 
-        $imageLokasi = time().'.'.$request->foto_lokasi->extension();
-        $request->foto_lokasi->move(public_path('images/users/lokasi'), $imageLokasi);
 
-        $image_dokumen_hak_tanah = time().'.'.$request->dokumen_tanah->extension();
-        $request->dokumen_tanah->move(public_path('images/users/dokumen_hak_tanah'), $image_dokumen_hak_tanah);
+        if($request['file_kronologi'] == NULL){    
+        $create = KorbanUser::create([
+            'user_id' => Auth::id(),
+            'objek_sengketa' => $request['objek_sengketa'],
+            'luas' => $request['luas'],
+            'lokasi' => $request['lokasi'],
+            'kronologi' => $request['kronologi'],
+            'file_kronologi' =>  'NULL',
+            'status_pelapor' => $request['status_pelapor'],
+            'jenis_pertolongan' => $request['jenis_pertolongan'],
+            'status_sengketa' => 1,
+            'jumlah_dana' => $request['jumlah_dana'],
+            'pengembalian_dana' => $request['pengembalian_dana'],
+            'jaminan_dana' => $request['jaminan'],
+            'jaminan_berupa' => $request['jaminan_berupa'],
+            'status_pelapor' => $request['status_pelapor'],
+        ]);
+        return redirect(route('korban.index'));
+        }
+        // // $imageKtp = time().'.'.$request->foto_ktp->extension();
+        // // $request->foto_ktp->move(public_path('images/users/ktp'), $imageKtp);
+
+        // // $imageLokasi = time().'.'.$request->foto_lokasi->extension();
+        // // $request->foto_lokasi->move(public_path('images/users/lokasi'), $imageLokasi);
+
+        // // $image_dokumen_hak_tanah = time().'.'.$request->dokumen_tanah->extension();
+        // // $request->dokumen_tanah->move(public_path('images/users/dokumen_hak_tanah'), $image_dokumen_hak_tanah);
 
 
         
@@ -46,9 +67,9 @@ class DashboardUtamaController extends Controller
             'file_kronologi' =>  $file_kronologi,
             'status_pelapor' => $request['status_pelapor'],
             'jenis_pertolongan' => $request['jenis_pertolongan'],
-            'foto_ktp' => $imageKtp,
-            'foto_lokasi' => $imageLokasi,
-            'foto_dokumen_hak_tanah' =>  $image_dokumen_hak_tanah,
+            // 'foto_ktp' => $imageKtp,
+            // 'foto_lokasi' => $imageLokasi,
+            // 'foto_dokumen_hak_tanah' =>  $image_dokumen_hak_tanah,
             'status_sengketa' => 1,
             'jumlah_dana' => $request['jumlah_dana'],
             'pengembalian_dana' => $request['pengembalian_dana'],
@@ -59,7 +80,7 @@ class DashboardUtamaController extends Controller
         User::where('id',Auth::id())->update([
             'role' => 'korban',
         ]);
-        return redirect(route('korban.index'));
+
     }
 
     public function add_sponsor(Request $request)
