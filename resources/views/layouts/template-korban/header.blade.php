@@ -48,7 +48,7 @@
                <!-- Breadcrumb-->
                <ol class="breadcrumb border-0 m-0">
                    <li class="breadcrumb-item">Home</li>
-                   <li class="breadcrumb-item"><a href="#">Administrator</a></li>
+                   <li class="breadcrumb-item"><a href="#">Korban</a></li>
                    <li class="breadcrumb-item active">Dashboard</li>
                    <!-- Breadcrumb Menu-->
                </ol>

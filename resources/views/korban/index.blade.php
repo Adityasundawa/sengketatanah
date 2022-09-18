@@ -2,7 +2,8 @@
 use App\Models\Bid_Sengketa;
 ?>
 
-@extends('layouts.template-sponsor.main')
+
+@extends('layouts.template-korban.main')
 @section('content')
 
 <div class="container mt-3">
@@ -103,19 +104,10 @@ use App\Models\Bid_Sengketa;
                             </tr>
                         </tbody>
                     </table>
-                    <div class="row justify-content-center no-gutters">
-                        <div class="col-12">
-                            <div class="d-grid gap-2">
-                                <a href="{{route('sponsor.bid-sengketa','/',$item['id'])}}/{{Crypt::encrypt($item['id'])}}" class="btn btn-primary mt-2"
-                                    type="button">Bid Sponsor</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>    
         @endforeach
-   
     </div>
 </div>
 @endsection

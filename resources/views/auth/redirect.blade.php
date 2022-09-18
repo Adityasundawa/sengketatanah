@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utopian Slideshow</title>
+    <title>Redirect</title>
     <link rel="stylesheet" href="{{url('/')}}/loading/css/style.css">
-    
 </head>
-
 <body>
     <h2>Loading ..</h2>
     <div class="bar">
@@ -20,6 +17,9 @@
     <h3 class="text-uppercase">Welcome {{auth()->user()->name}}</h3>
     @if(auth()->user()->role == "utama")
     <a href="{{route('utama.index')}}">Klik Disini Untuk Melanjutkan</a>
+    @endif
+    @if(auth()->user()->role == "korban")
+    <a href="{{route('korban.index')}}">Klik Disini Untuk Melanjutkan</a>
     @endif
     @if(auth()->user()->role == "sponsor")
     <a href="{{route('sponsor.index')}}">Klik Disini Untuk Melanjutkan</a>

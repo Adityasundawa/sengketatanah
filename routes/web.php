@@ -58,9 +58,6 @@ Route::get('dashboard/publik',[SengketaController::class,'dashboard']);
 // Route::get('/browse_sengketa/{id}',[SponsorDashboardController::class,'browse_sengketa'])->name('browsesengketa');
 // Route::get('/dashboard/bid-sengketa-tanah/{id}',[SponsorDashboardController::class,'bid_sengketa'])->name('bid-sengketa');
 
-
-
-
 // Route::get('/testLog', [App\Http\Controllers\HomeController::class, 'index'])->name('test');
 // Route::get('/home', function () {
 //       if (Auth::user()->role_id == 1) {
