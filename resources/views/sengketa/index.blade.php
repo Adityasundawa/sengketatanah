@@ -308,7 +308,7 @@
 
     </div>
     
-    <div class="container mt-5" id="card2">
+    <div class="container mt-3" id="card2">
 
         @if(Session::has('error'))
         <div class="row mb-3">
@@ -316,7 +316,7 @@
         </div>
         @endif
 
-        <div class="card-body text-center mt-4">
+        <div class="card-body text-center">
             <h2 class="card-title fw-bolder" style="color: #61481C">DUKUNGAN PEMERINTAH BRANTAS MAFIA TANAH</h4>
         </div>
         <div class="row desktop mb-5 mt-3">
@@ -441,6 +441,23 @@
                 </div>
                 <div class="card-body text-dark">
                     <div class="row justify-content-center">
+                        <div class="col-md-6 mb-3 text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png" style="width:208px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title" style="color:#61481C"><img src=""
+                                        Pemerintah</h4>
+                                    <hr>
+                                    Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di bidang agraria/pertanahan dan tata ruang dalam pemerintahan untuk membantu Presiden dalam menyelenggarakan pemerintahan negara termasuk masalah persengketaan tanah
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-md-4 mb-3">
                             <div class="card">
                                 <div class="card-body">
@@ -471,23 +488,6 @@
                                     <hr>
                                     Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani sengketa
                                     tanah
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md mb-3 text-center">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png" style="width:208px">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md mb-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title" style="color:#61481C">
-                                        Pemerintah</h4>
-                                    <hr>
-                                    Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di bidang agraria/pertanahan dan tata ruang dalam pemerintahan untuk membantu Presiden dalam menyelenggarakan pemerintahan negara termasuk masalah persengketaan tanah
                                 </div>
                             </div>
                         </div>
