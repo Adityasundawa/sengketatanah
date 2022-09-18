@@ -449,7 +449,7 @@
 
 
                                             <div class="card-body">
-                                                @if($bs['id'] < 4)
+                                                @if($bs['id'] > 3)
                                                 <div class="ribbon-pop"><i class="fa-solid fa-star"></i>&nbsp;HOT</div>
                                                 @else
                                                 @endif
@@ -529,7 +529,7 @@
                                                     <input type="hidden" name="luas" value="{{$bs['luas']}}">
                                                     <input type="hidden" name="lokasi" value="{{$bs['lokasi']}}">
                                                     <input type="hidden" name="komentar" value="">
-                                                    <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/1I4iEKK1qbQ">
+                                                    <input type="hidden" name="link_yt" value="">
                                                     <input type="hidden" name="form" value="sponsor">
                                                 </form>
 

@@ -22,14 +22,20 @@ use Illuminate\Support\Facades\Route;
   Codee xxxxs
 |
 */
+Route::get('/', [SengketaController::class,'index']);
+Route::post('sengketa/send',[SengketaController::class,'store'])->name('sengketa.store');
+Route::get('bid-sengketa',[SengketaController::class,'dataSengketa']);
+Route::get('bid-sengketa/podcast',[SengketaController::class,'podcastSengketa']);
+Route::get('form-korban',[SengketaController::class,'formKorban']);
+Route::get('form-penyelesai',[SengketaController::class,'formPenyelesai']);
+Route::get('form-law-firm',[SengketaController::class,'formLawFirm']);
+Route::get('layanan',[SengketaController::class,'layanan']);
 
-Route::get('/', [SengketaController::class, 'index']);
-Route::post('sengketa/send', [SengketaController::class, 'store'])->name('sengketa.store');
-Route::get('data-sengketa', [SengketaController::class, 'dataSengketa']);
-Route::get('form-korban', [SengketaController::class, 'formKorban']);
-Route::get('form-penyelesai', [SengketaController::class, 'formPenyelesai']);
-Route::get('form-law-firm', [SengketaController::class, 'formLawFirm']);
-
+Route::get('tentang-pemerintah',function ()
+{
+   return view('sengketa.tentang-pemerintah');
+  
+});
 Auth::routes();
 
 Route::group(['middleware' => 'role:administrator', 'prefix' => 'administrator', 'as' => 'administrator.'], function () {
