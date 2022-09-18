@@ -287,7 +287,7 @@
     
     <div class="text-white rounded-0 jumbotron">
         <div class="row">
-            <div class="col-md-4 text-center mt-3">
+            <div class="col-md-12 text-center mt-3">
                 <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 150px" alt="" srcset=""
                     class="img-fluid">
             </div>
@@ -437,7 +437,7 @@
         <div class="row mt-2" style="padding: 10px">
             <div class="card p-0 rounded-3 shadow">
                 <div class="card-header text-white" style="background-color: #61481C;">
-                    <h4 class="mb-0 fw-bolder text-center">3 ROLE PENGGUNA</h4>
+                    <h4 class="mb-0 fw-bolder text-center">4 ROLE PENGGUNA</h4>
                 </div>
                 <div class="card-body text-dark">
                     <div class="row justify-content-center">
@@ -471,6 +471,23 @@
                                     <hr>
                                     Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani sengketa
                                     tanah
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md mb-3 text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png" style="width:208px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title" style="color:#61481C">
+                                        Pemerintah</h4>
+                                    <hr>
+                                    Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di bidang agraria/pertanahan dan tata ruang dalam pemerintahan untuk membantu Presiden dalam menyelenggarakan pemerintahan negara termasuk masalah persengketaan tanah
                                 </div>
                             </div>
                         </div>
