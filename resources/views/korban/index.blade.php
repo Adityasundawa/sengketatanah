@@ -36,6 +36,7 @@ use App\Models\Bid_Sengketa;
                                 <input type="hidden" name="link_yt" value="">
                                 <input type="hidden" name="form" value="sponsor">
                             </form>
+                            <br>
                             <span class="badge bg-dark float-end"
                                 onclick="return document.querySelector('form.form-sengketa1').submit()">Lihat
                                 Podcast Sengketa</span>
