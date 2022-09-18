@@ -430,8 +430,8 @@
         </div>
         <hr>
 
-        <div class="row text-center fw-bold fs-3" style="padding:10px; color: #61481C">
-            "Platform Sengketa Tanah adalah aplikasi yang paling tepat untuk membantu perjuangan Anda dalam persengketaan masalah tanah"
+        <div class="text-center fs-3" style="padding:10px; color: #61481C">
+            "Platform Sengketa Tanah adalah aplikasi yang paling tepat untuk membantu perjuangan Anda dalam persengketaan masalah tanah dan melawan <b>MAFIA TANAH</b>"
         </div>
 
         <div class="row mt-2" style="padding: 10px">
@@ -451,7 +451,7 @@
                         <div class="col-md-6 mb-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title" style="color:#61481C"><img src=""
+                                    <h4 class="card-title" style="color:#61481C">
                                         Pemerintah</h4>
                                     <hr>
                                     Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di bidang agraria/pertanahan dan tata ruang dalam pemerintahan untuk membantu Presiden dalam menyelenggarakan pemerintahan negara termasuk masalah persengketaan tanah
