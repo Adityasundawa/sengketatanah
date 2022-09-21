@@ -10,6 +10,9 @@ use App\Models\Bid_Sengketa;
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
+                <div class="card-header">
+                    <h4>Formulir Sengketa Tanah</h4>
+                </div>
                   <div class="card-body">
                     <form method="post" action="{{route('korban.add_korban')}}"
                     enctype="multipart/form-data">
@@ -84,6 +87,7 @@ use App\Models\Bid_Sengketa;
                             <select class="form-control rounded-0"
                                 aria-label="Default select example" name="status_pelapor"
                                 required>
+                                <option selected>Pilih Status</option>
                                 <option value="Pemilik">Pemilik</option>
                                 <option value="Kuasa Pemilik">Kuasa Pemilik</option>
                             </select>
