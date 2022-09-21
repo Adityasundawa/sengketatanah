@@ -69,7 +69,7 @@ use App\Models\User;
                 <div class="card-body">
                     @if($item['status_sengketa'] == 1)
                     <div class="alert alert-danger" role="alert">
-                       Data Anda telah kami terima dan mohon menunggu petugas kami melakukan verifikasi. Pastikan Telepon/hp dapat di hubungi
+                       Data Anda telah kami terima dan mohon menunggu petugas kami melakukan verifikasi. Saat ini anda belum dapat mengirimkan dokumen. Pastikan telepon/hp dapat di hubungi
                     </div>
                     @elseif($item['status_sengketa'] == 2)
                     <div class="alert alert-warning" role="alert">
@@ -166,7 +166,7 @@ use App\Models\User;
                        @if ($item['status_file_upload'] == "yes")
                         <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-success mt-4">Lihat Berkas</a>
                        @else
-                        <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-success mt-4 disabled" disable>Upload Dokumen</a>
+                        <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-success mt-4 disabled" disable>Upload Dokumen*</a>
                        @endif
                     @else
                        @if ($item['status_file_upload'] == "yes")
