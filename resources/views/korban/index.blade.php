@@ -8,7 +8,13 @@ use App\Models\User;
 @section('content')
 
 <div class="container mt-3">
-    <a class="btn btn-success my-4" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a>
+    {{-- <a class="btn btn-success my-4" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a> --}}
+    <div class="row justify-content-center ">
+        <button type="button" class="btn btn-secondary ml-2">Project</button>
+        <button type="button" class="btn btn-secondary ml-2">Bidding</button>
+        <button type="button" class="btn btn-secondary ml-2">Agenda</button>
+        <button type="button" class="btn btn-secondary ml-2">Progress</button>
+    </div>
     <div class="row">
         <?php $i = 1;    ?>
         @foreach ($sengketa as $item)
@@ -29,14 +35,14 @@ use App\Models\User;
                     {{-- <span class="badge badge-danger">Menunggu Verifikasi</span> --}}
                     @elseif($item['status_sengketa'] == 2)
                     <div class="alert alert-warning" role="alert">
-                        <b>Selamat</b> ,Anda berhasil melewati tahap 1. Silahkan pilih lampiran dokumen Anda untuk melewati tahap berikutnya
-                      </div>
-                    @elseif($item['status_sengketa'] == 3)
+                        <b>Selamat, </b>Anda berhasil melewati tahap 1. Silahkan pilih lampiran dokumen Anda untuk melewati tahap berikutnya
+                    </div>
+                    {{-- @elseif($item['status_sengketa'] == 3)
                     <span class="badge badge-warning">Diproses</span>
                     @elseif($item['status_sengketa'] == 4)
                     <span class="badge badge-success">Selesai</span>
                     @elseif($item['status_sengketa'] == 0)
-                    <span class="badge badge-danger">Pending</span>
+                    <span class="badge badge-danger">Pending</span> --}}
                     @endif
                     
                     <table>
