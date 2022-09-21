@@ -88,6 +88,7 @@ Route::group(['middleware' => 'role:utama', 'prefix' => 'utama', 'as' => 'utama.
 /// Role Korban
 Route::group(['middleware' => 'role:korban', 'prefix' => 'korban', 'as' => 'korban.'], function () {
    Route::get('index',[KorbanController::class,'index'])->name('index');
+   Route::get('tambah_sengketa',[KorbanController::class,'tambah_sengketa'])->name('tambah_sengketa');
    Route::get('list_sengketa_saya',[KorbanController::class,'list_sengketa_saya'])->name('list_sengketa_saya');
    Route::post('add_korban',[KorbanController::class,'add_korban'])->name('add_korban');
    Route::get('add_korban_file/{id}',[KorbanController::class,'add_korban_file'])->name('add_korban_file');

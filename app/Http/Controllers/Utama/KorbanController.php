@@ -25,6 +25,11 @@ class KorbanController extends Controller
         }
     }
     
+    public function tambah_sengketa()
+    {
+        $data['sengketa'] = KorbanUser::where('user_id',Auth::id())->get();
+        return view('korban.utama',$data);
+    }
     public function list_sengketa_saya()
     {
         // $data['sengketa'] = KorbanUser::join('users','users.id','=','korban_user.user_id')->where('jenis_pertolongan','sponsor')->get();
@@ -49,7 +54,7 @@ class KorbanController extends Controller
                 'file_kronologi' =>  'NULL',
                 'status_pelapor' => $request['status_pelapor'],
                 'jenis_pertolongan' => $request['jenis_pertolongan'],
-                'status_sengketa' => 0,
+                'status_sengketa' => 1,
                 'jumlah_dana' => $request['jumlah_dana'],
                 'pengembalian_dana' => $request['pengembalian_dana'],
                 'jaminan_dana' => $request['jaminan'],

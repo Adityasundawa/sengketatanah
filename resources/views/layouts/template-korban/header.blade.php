@@ -27,6 +27,21 @@
                                src="{{url('/')}}/core-ui/assets/img/avatars/6.jpg" alt="user@email.com"></div>
                    </a>
                    <div class="dropdown-menu dropdown-menu-right pt-0">
+                    <a class="dropdown-item" href="{{ route('logout') }}" >
+                        <svg class="c-icon mr-2">
+                            <use
+                                xlink:href="{{url('/')}}/core-ui/vendors/@coreui/icons/svg/free.svg#cil-user">
+                            </use>
+                           </svg>  Profile
+                       </a>
+                       <a class="dropdown-item" href="{{ route('logout') }}" >
+                        <svg class="c-icon mr-2">
+                            <use
+                                xlink:href="{{url('/')}}/core-ui/vendors/@coreui/icons/svg/free.svg#cil-settings">
+                            </use>
+                           </svg>  Ubah Password
+                       </a>
+                       
                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                            <svg class="c-icon mr-2">
@@ -45,11 +60,12 @@
                </li>
            </ul>
            <div class="c-subheader px-3">
+
                <!-- Breadcrumb-->
                <ol class="breadcrumb border-0 m-0">
-                   <li class="breadcrumb-item">Home</li>
-                   <li class="breadcrumb-item"><a href="#">Korban</a></li>
-                   <li class="breadcrumb-item active">Dashboard</li>
+                   {{-- <li class="breadcrumb-item">Home</li>
+                   <li class="breadcrumb-item"><a href="#">Korban</a></li> --}}
+                   <li class="breadcrumb-item active">Dashboard Sengketa Tanah</li>
                    <!-- Breadcrumb Menu-->
                </ol>
            </div>

@@ -34,6 +34,9 @@
     <link href="{{url('/')}}/core-ui/css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
     <style>
+      .disabled {
+    pointer-events: none;
+}
       $text-color: #F7F9F8;
 $button-color: #E17E89;
 
