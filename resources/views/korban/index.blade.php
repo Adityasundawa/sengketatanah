@@ -69,7 +69,7 @@ use App\Models\User;
                 <div class="card-body">
                     @if($item['status_sengketa'] == 1)
                     <div class="alert alert-danger" role="alert">
-                       Data anda telah kami terima dan menunggu petugas kami melakukan Verifikasi. Pastikan Telephone dapat di hubungi
+                       Data Anda telah kami terima dan mohon menunggu petugas kami melakukan verifikasi. Pastikan Telepon/hp dapat di hubungi
                     </div>
                     @elseif($item['status_sengketa'] == 2)
                     <div class="alert alert-warning" role="alert">

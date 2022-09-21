@@ -37,6 +37,13 @@
                        <a class="dropdown-item" href="{{ route('logout') }}" >
                         <svg class="c-icon mr-2">
                             <use
+                                xlink:href="{{url('/')}}/core-ui/vendors/@coreui/icons/svg/free.svg#cil-user">
+                            </use>
+                           </svg>  Role
+                       </a>
+                       <a class="dropdown-item" href="{{ route('logout') }}" >
+                        <svg class="c-icon mr-2">
+                            <use
                                 xlink:href="{{url('/')}}/core-ui/vendors/@coreui/icons/svg/free.svg#cil-settings">
                             </use>
                            </svg>  Ubah Password
@@ -65,7 +72,7 @@
                <ol class="breadcrumb border-0 m-0">
                    {{-- <li class="breadcrumb-item">Home</li>
                    <li class="breadcrumb-item"><a href="#">Korban</a></li> --}}
-                   <li class="breadcrumb-item active">Dashboard Sengketa Tanah</li>
+                   <li class="breadcrumb-item active text-capitalize">Dashboard Sengketa Tanah ( {{auth()->user()->role}} )</li>
                    <!-- Breadcrumb Menu-->
                </ol>
            </div>

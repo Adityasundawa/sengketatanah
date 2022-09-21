@@ -10,21 +10,31 @@
                 <div class="card-body">
                     <form action="{{route('korban.action_add_korban_file',Crypt::encrypt($korban['id']))}}" method="post" enctype="multipart/form-data">
                         @csrf
-                        <div class="mb-2">
-                            <label for="ktp" class="form-label">Foto KTP</label>
-                            <input class="file-input rounded-0" type="file" id="ktp" name="imagektp" required>
-                        </div>
-                        <div class="mb-2">
-                            <label for="foto_lokasi" class="form-label">Foto Lokasi</label>
-                            <input class="file-input rounded-0" type="file" id="foto_lokasi" name="imagelokasi"
-                                required>
-                        </div>
-                        <div class="mb-2">
-                            <label for="dokumenTanah" class="form-label">Foto Dokumen Hak
-                                Tanah</label>
-                            <input class="file-input rounded-0" type="file" id="dokumenTanah" name="image_dokumen_hak_tanah"
-                                >
-                        </div>
+                        <table>
+                            <tr>
+                                <td>Foto KTP</td>
+                                <td>:</td>
+                                <td>&nbsp;</td>
+                                <td>  <input class="file-input rounded-0" type="file" id="ktp" name="imagektp" required></td>
+                            </tr>
+                            <tr>
+                                <td>Foto Lokasi</td>
+                                <td>:</td>
+                                <td>&nbsp;</td>
+                                <td> <input class="file-input rounded-0" type="file" id="foto_lokasi" name="imagelokasi"
+                                    required></td>
+                            </tr>
+                            <tr>
+                                <td>Foto Dokumen Hak
+                                    Tanah</td>
+                                <td>:</td>
+                                <td>&nbsp;</td>
+                                <td> <input class="file-input rounded-0" type="file" id="dokumenTanah" name="image_dokumen_hak_tanah"></td>
+                            </tr>
+                            
+                        </table>
+                       
+                      
                         <button type="submit" class="btn btn-sm btn-success">Upload</button>
                     </form>
                 </div>
