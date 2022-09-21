@@ -9,18 +9,46 @@ use App\Models\User;
 
 <div class="container mt-3">
     {{-- <a class="btn btn-successs my-4" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a> --}}
-    <div class="row justify-content-center mb-3">
+    <div class="row justify-content-center mb-2">
         <div class="col-3">
-            <button type="button" class="btn btn-block btn-secondary ml-2">Project</button>
+             <div class="row">
+                <div class="col-12">
+                    <img src="{{asset('/')}}images/icon/icon_rounded.png" alt="" class="img-fluid" style="width: 100px;height: auto;">
+                </div>
+                <div class="col-12 text-center">
+                   Project
+                </div>
+             </div>
         </div>
         <div class="col-3">
-            <button type="button" class="btn btn-block btn-secondary ml-2">Bidding</button>
+            <div class="row">
+                <div class="col-12">
+                    <img src="{{asset('/')}}images/icon/icon_rounded.png" alt="" class="img-fluid" style="width: 100px;height: auto;">
+                </div>
+                <div class="col-12 text-center">
+                   Biding
+                </div>
+             </div>
         </div>
         <div class="col-3">
-            <button type="button" class="btn btn-block btn-secondary ml-2">Agenda</button>
+            <div class="row">
+                <div class="col-12">
+                    <img src="{{asset('/')}}images/icon/icon_rounded.png" alt="" class="img-fluid" style="width: 100px;height: auto;">
+                </div>
+                <div class="col-12 text-center">
+                   Agenda
+                </div>
+             </div>
         </div>
         <div class="col-3">
-            <button type="button" class="btn btn-block btn-secondary ml-2">Progress</button>
+            <div class="row">
+                <div class="col-12">
+                    <img src="{{asset('/')}}images/icon/icon_rounded.png" alt="" class="img-fluid" style="width: 100px;height: auto;">
+                </div>
+                <div class="col-12 text-center">
+                   Progress
+                </div>
+             </div>
         </div>
     </div>
     <div class="row">
