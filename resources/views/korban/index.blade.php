@@ -29,7 +29,7 @@ use App\Models\User;
                     {{-- <span class="badge badge-danger">Menunggu Verifikasi</span> --}}
                     @elseif($item['status_sengketa'] == 2)
                     <div class="alert alert-warning" role="alert">
-                        Selamat,Anda berhasil melewati tahap 1. Silahkan pilih lampiran dokumen anda
+                        <b>Selamat</b> ,Anda berhasil melewati tahap 1. Silahkan pilih lampiran dokumen Anda untuk melewati tahap berikutnya
                       </div>
                     @elseif($item['status_sengketa'] == 3)
                     <span class="badge badge-warning">Diproses</span>
