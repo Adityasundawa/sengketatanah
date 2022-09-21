@@ -72,7 +72,7 @@
                <ol class="breadcrumb border-0 m-0">
                    {{-- <li class="breadcrumb-item">Home</li>
                    <li class="breadcrumb-item"><a href="#">Korban</a></li> --}}
-                   <li class="breadcrumb-item active text-capitalize">Dashboard Sengketa Tanah &nbsp; <b class="text-success">({{auth()->user()->role}})</b></li>
+                   <li class="breadcrumb-item active text-capitalize">Dashboard Sengketa Tanah <b class="text-success">({{auth()->user()->role}})</b></li>
                    <!-- Breadcrumb Menu-->
                </ol>
            </div>
