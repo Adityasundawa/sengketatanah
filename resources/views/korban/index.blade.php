@@ -9,11 +9,19 @@ use App\Models\User;
 
 <div class="container mt-3">
     {{-- <a class="btn btn-successs my-4" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a> --}}
-    <div class="row justify-content-center ">
-        <button type="button" class="btn btn-secondary ml-2">Project</button>
-        <button type="button" class="btn btn-secondary ml-2">Bidding</button>
-        <button type="button" class="btn btn-secondary ml-2">Agenda</button>
-        <button type="button" class="btn btn-secondary ml-2">Progress</button>
+    <div class="row justify-content-center mb-3">
+        <div class="col-3">
+            <button type="button" class="btn btn-block btn-secondary ml-2">Project</button>
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-block btn-secondary ml-2">Bidding</button>
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-block btn-secondary ml-2">Agenda</button>
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-block btn-secondary ml-2">Progress</button>
+        </div>
     </div>
     <div class="row">
         <?php $i = 1;    ?>
