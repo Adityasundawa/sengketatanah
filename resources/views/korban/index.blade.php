@@ -16,33 +16,13 @@ use App\Models\User;
                 <div class="card-header bg-dark text-white px-3 py-1">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h5 class="mb-0">Kode Bid SP-00{{$item['id']}}</h5>
+                            <h5>e   </h5>
                         </div>
                     </div>
                 </div>
                 <div class="card-header bg-white">
                     <div class="row">
                         <div class="col-lg-12">
-                            <span class="badge bg-secondary float-end"><a
-                                    href="https://sengketatanah.id/login?title=Bid Sponsor" class="text-white"
-                                    style="text-decoration:none">Lihat
-                                    Berkas</a></span>
-                            <span class="float-end">&nbsp;</span>
-                            <form action="https://sengketatanah.id/bid-sengketa/podcast" class="form-sengketa1"
-                                method="get">
-                                <input type="hidden" name="owner" value=" Ali Shadiqin">
-                                <input type="hidden" name="objek" value=" Sengketa Pertanahan">
-                                <input type="hidden" name="luas" value=" 2.4 Ha">
-                                <input type="hidden" name="lokasi" value=" Blitar, Jawa timur">
-                                <input type="hidden" name="komentar" value="">
-                                <input type="hidden" name="link_yt" value="">
-                                <input type="hidden" name="form" value="sponsor">
-                            </form>
-                            <br>
-                            <span class="badge bg-dark float-end"
-                                onclick="return document.querySelector('form.form-sengketa1').submit()">Lihat
-                                Podcast Sengketa</span>
-                            <span class="float-end">&nbsp;</span>
                             @if($item['status_sengketa'] == 1)
                             <span class="badge badge-danger">Menunggu Verifikasi</span>
                             @elseif($item['status_sengketa'] == 2)
@@ -110,6 +90,12 @@ use App\Models\User;
                                 <td></td>
                                 <td>:</td>
                                 <td>&nbsp;{{count(Bid_Sengketa::where('sengketa_id',$item['id'])->get());}}</td>
+                            </tr>
+                            <tr>
+                                <td>Kode Bid</td>
+                                <td></td>
+                                <td>:</td>
+                                <td>SP-00{{$item['id']}}</td>
                             </tr>
                         </tbody>
                     </table>
