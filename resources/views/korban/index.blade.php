@@ -13,7 +13,7 @@ use App\Models\User;
         <div class="col-3">
              <div class="row">
                 <div class="col-12">
-                    <img src="{{asset('/')}}images/icon/icon_rounded.png" alt="" class="img-fluid" style="width: 100px;height: auto;">
+                    <center><img src="{{asset('/')}}images/icon/icon_rounded.png" alt="" class="img-fluid" style="width: 100px;height: auto;"></center>
                 </div>
                 <div class="col-12 text-center">
                    Project
@@ -23,17 +23,17 @@ use App\Models\User;
         <div class="col-3">
             <div class="row">
                 <div class="col-12">
-                    <img src="{{asset('/')}}images/icon/icon_rounded.png" alt="" class="img-fluid" style="width: 100px;height: auto;">
+                    <center><img src="{{asset('/')}}images/icon/icon_rounded.png" alt="" class="img-fluid" style="width: 100px;height: auto;"></center>
                 </div>
                 <div class="col-12 text-center">
-                   Biding
+                   Bidding
                 </div>
              </div>
         </div>
         <div class="col-3">
             <div class="row">
                 <div class="col-12">
-                    <img src="{{asset('/')}}images/icon/icon_rounded.png" alt="" class="img-fluid" style="width: 100px;height: auto;">
+                    <center><img src="{{asset('/')}}images/icon/icon_rounded.png" alt="" class="img-fluid" style="width: 100px;height: auto;"></center>
                 </div>
                 <div class="col-12 text-center">
                    Agenda
@@ -43,7 +43,7 @@ use App\Models\User;
         <div class="col-3">
             <div class="row">
                 <div class="col-12">
-                    <img src="{{asset('/')}}images/icon/icon_rounded.png" alt="" class="img-fluid" style="width: 100px;height: auto;">
+                    <center><img src="{{asset('/')}}images/icon/icon_rounded.png" alt="" class="img-fluid" style="width: 100px;height: auto;"></center>
                 </div>
                 <div class="col-12 text-center">
                    Progress
@@ -68,7 +68,9 @@ use App\Models\User;
                 </div>
                 <div class="card-body">
                     @if($item['status_sengketa'] == 1)
-                    {{-- <span class="badge badge-danger">Menunggu Verifikasi</span> --}}
+                    <div class="alert alert-warning" role="alert">
+                       Data anda telah kami terima dan menunggu petugas kami melakukan Verifikasi. Pastikan Telephone dapat di hubungi
+                    </div>
                     @elseif($item['status_sengketa'] == 2)
                     <div class="alert alert-warning" role="alert">
                         <b>Selamat, </b>Anda berhasil melewati tahap 1. Silahkan pilih lampiran dokumen Anda untuk melewati tahap berikutnya
