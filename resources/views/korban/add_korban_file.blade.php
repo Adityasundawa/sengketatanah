@@ -15,15 +15,14 @@
                             <input class="file-input rounded-0" type="file" id="ktp" name="imagektp" required>
                         </div>
                         <div class="mb-2">
-                            <label for="foto_lokasi" class="form-label">Foto Lokasi</label>
+                            <label for="foto_lokasi" class="form-label">Foto Lokasi Tanah</label>
                             <input class="file-input rounded-0" type="file" id="foto_lokasi" name="imagelokasi"
                                 required>
                         </div>
                         <div class="mb-2">
                             <label for="dokumenTanah" class="form-label">Foto Dokumen Hak
                                 Tanah</label>
-                            <input class="file-input rounded-0" type="file" id="dokumenTanah" name="image_dokumen_hak_tanah"
-                                >
+                            <input class="file-input rounded-0" type="file" id="dokumenTanah" name="image_dokumen_hak_tanah">
                         </div>
                         <button type="submit" class="btn btn-sm btn-success">Upload</button>
                     </form>
