@@ -56,7 +56,7 @@ use App\Models\User;
         @foreach ($sengketa as $item)
         <?php $users = User::where('id',$item['user_id'])->first(); ?>
         <div class="col-md-6 mb-3 sp">
-            <div class="card mb-2">
+            <div class="card mb-2"> 
                 <div class="card-header bg-white">
                     <table>
                         <tbody>
@@ -75,7 +75,7 @@ use App\Models\User;
                     <div class="alert alert-warning" role="alert">
                         <b>Selamat, </b>Anda berhasil melewati tahap 1. Silahkan pilih lampiran dokumen Anda untuk melewati tahap berikutnya
                     </div>
-                    {{-- @elseif($item['status_sengketa'] == 3)
+                    {{-- @elseif($item['status_sengketa']s == 3)
                     <span class="badge badge-warning">Diproses</span>
                     @elseif($item['status_sengketa'] == 4)
                     <span class="badge badge-success">Selesai</span>
