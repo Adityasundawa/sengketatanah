@@ -11,7 +11,7 @@
                     <form action="{{route('korban.action_add_korban_file',Crypt::encrypt($korban['id']))}}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="mb-2">
-                            <label for="imagektp" class="form-label">Foto KTP</label>
+                            <label for="imagektp" class="form-label">Foto KTP Elektronik</label>
                             <input class="file-input rounded-0" type="file" id="ktp" name="imagektp" required>
                         </div>
                         <div class="mb-2">
