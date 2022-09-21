@@ -8,6 +8,7 @@ use App\Models\User;
 @section('content')
 
 <div class="container mt-3">
+    <a class="btn btn-success my-4" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a>
     <div class="row">
         <?php $i = 1;    ?>
         @foreach ($sengketa as $item)
@@ -18,12 +19,26 @@ use App\Models\User;
                     <table>
                         <tbody>
                             <tr>
-                                <td><b>PROJECT {{$i++}}</b></td>
+                                <td><b>PROJECT SPONSOR {{$i++}}</b></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="card-body">
+                    @if($item['status_sengketa'] == 1)
+                    {{-- <span class="badge badge-danger">Menunggu Verifikasi</span> --}}
+                    @elseif($item['status_sengketa'] == 2)
+                    <div class="alert alert-warning" role="alert">
+                        Selamat,Anda berhasil melewati tahap 1. Silahkan pilih lampiran dokumen anda
+                      </div>
+                    @elseif($item['status_sengketa'] == 3)
+                    <span class="badge badge-warning">Diproses</span>
+                    @elseif($item['status_sengketa'] == 4)
+                    <span class="badge badge-success">Selesai</span>
+                    @elseif($item['status_sengketa'] == 0)
+                    <span class="badge badge-danger">Pending</span>
+                    @endif
+                    
                     <table>
                         <tbody>
                             <tr>
@@ -87,10 +102,11 @@ use App\Models\User;
                                 <td>Status</td>
                                 <td></td>
                                 <td>:</td>
-                                <td>&nbsp; @if($item['status_sengketa'] == 1)
+                                <td>&nbsp; 
+                                    @if($item['status_sengketa'] == 1)
                                     <span class="badge badge-danger">Menunggu Verifikasi</span>
                                     @elseif($item['status_sengketa'] == 2)
-                                    <span class="badge badge-dark">Terverifikasi</span>
+                                    <span class="badge badge-success">Terverifikasi Tahap 1</span>
                                     @elseif($item['status_sengketa'] == 3)
                                     <span class="badge badge-warning">Diproses</span>
                                     @elseif($item['status_sengketa'] == 4)
