@@ -69,7 +69,7 @@ Route::get('dashboard/publik',[SengketaController::class,'dashboard']);
 // Route::get('/home', function () {
 //       if (Auth::user()->role_id == 1) {
 //          return redirect('/admin');
-//       } else {
+//       } else {s
 //          return redirect('/dashboard');
 //       }
 //    })->name('home');
