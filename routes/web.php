@@ -24,7 +24,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', [SengketaController::class,'index']);
 Route::post('sengketa/send',[SengketaController::class,'store'])->name('sengketa.store');
-Route::get('bid-sengketa',[SengketaController::class,'dataSengketa']);
+Route::get('bid-sengketa',[SengketaController::class,'dataSengketa'])->name('bid-sengketa');
 Route::get('bid-sengketa/podcast',[SengketaController::class,'podcastSengketa']);
 Route::get('form-korban',[SengketaController::class,'formKorban']);
 Route::get('form-penyelesai',[SengketaController::class,'formPenyelesai']);
