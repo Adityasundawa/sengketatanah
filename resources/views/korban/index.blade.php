@@ -75,7 +75,7 @@ use App\Models\User;
                     <div class="alert alert-warning" role="alert">
                         <b>Selamat, </b>Anda berhasil melewati tahap 1. Silahkan pilih lampiran dokumen Anda untuk melewati tahap berikutnya
                     </div>
-                    {{-- @elseif($item['status_sengketa']s == 3)
+                    {{-- @elseif($item['status_sengketa']s == 3)s
                     <span class="badge badge-warning">Diproses</span>
                     @elseif($item['status_sengketa'] == 4)
                     <span class="badge badge-success">Selesai</span>
