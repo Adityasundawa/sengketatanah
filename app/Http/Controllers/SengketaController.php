@@ -119,31 +119,31 @@ class SengketaController extends Controller
         return [
             [
                 'id'=>1,
-                'owner'=>" Ali Shadiqin",
+                'owner'=>" Bahru",
                 'objek'=>" Sengketa Pertanahan",
                 "kode_objek"=>"sp",
                 "kode"=>"SP-001",
-                "luas"=>" 2.4 Ha",
-                'lokasi'=>" Blitar, Jawa timur",
+                "luas"=>" 1 Ha",
+                'lokasi'=>" Pancawati, Bogor",
                 'dana'=>" Rp.450.000.000",
                 "imbal_hasil"=>" Fee 50% Dari Pinjaman",
                 "jaminan"=>" Sertifikat Tanah",
                 "jumlah_bid"=>3,
-                "link_yt"=>'https://www.youtube.com/embed/1I4iEKK1qbQ'
+                "link_yt"=>'https://www.youtube.com/embed/-RkCcavzXq8'
             ],
             [
                 'id'=>2,
-                'owner'=>" Yessi Zulaika",
+                'owner'=>" Fatah",
                 'objek'=>" Konflik Pertanahan",
                 "kode_objek"=>"kp",
                 "kode"=>"KP-001",
-                "luas"=>" 4.1 Ha",
-                'lokasi'=>" Semarang, Jawatengah",
+                "luas"=>" 5000 m",
+                'lokasi'=>" Pancawati, Bogor",
                 'dana'=>" Rp.500.000.000",
                 "imbal_hasil"=>" Bagi Hasil 70/30*",
                 "jaminan"=>" Sertifikat Rumah",
                 "jumlah_bid"=>4,
-                "link_yt"=>''
+                "link_yt"=>'https://www.youtube.com/embed/byby3HJ3OCI'
             ],
             [
                 'id'=>3,
@@ -157,7 +157,7 @@ class SengketaController extends Controller
                 "imbal_hasil"=>" Bagi Hasil 60/40*",
                 "jaminan"=>" Sertifikat Tanah",
                 "jumlah_bid"=>6,
-                "link_yt"=>''
+                "link_yt"=>'https://www.youtube.com/embed/1I4iEKK1qbQ'
             ],
             [
                 'id'=>4,
