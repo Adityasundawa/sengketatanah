@@ -71,7 +71,7 @@
         <div class="row g-3">
             <div class="col-lg-6">
                 @if($request->link_yt != null)
-                <iframe width="100%" height="200" src="https://www.youtube.com/embed/1I4iEKK1qbQ"
+                <iframe width="100%" height="200" src="{{$request->link_yt}}"
                     title="onewsritv_Pak Menteri ATR/BPN Ditantang Mafia Tanah" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>

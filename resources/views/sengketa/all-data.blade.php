@@ -11,6 +11,7 @@
         href="https://cdn.datatables.net/v/bs5/dt-1.12.1/b-2.2.3/datatables.min.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+        
     <style>
         html,
         body {
@@ -126,6 +127,11 @@
             background: linear-gradient(90deg, hsla(337, 85%, 31%, 1) 42%, hsla(337, 83%, 30%, 1) 64%, hsla(318, 57%, 22%, 1) 86%);
 
         }
+        
+        .btn.btn-outline-abu:hover {
+            color: #fff;
+            background: linear-gradient(90deg, hsla(337, 85%, 31%, 1) 42%, hsla(337, 83%, 30%, 1) 64%, hsla(318, 57%, 22%, 1) 86%);
+        }
 
         .btn .btn-outline.abu {
             color: rgba(146, 111, 52, 1);
@@ -223,7 +229,7 @@
                 <a class="navbar-brand fw-bold fs-4" href="{{url('/')}}">
                     <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px"
                         class="img-fluid me-2">SENGKETA TANAH</a>
-                <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href="#" class="text-danger" style="text-decoration:none"><i class="fa-solid fa-bell"></i> (0)</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -234,7 +240,7 @@
                             <a class="nav-link" href="{{url('/')}}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="{{url('/')}}/layanan">Layanan</a>
+                            <a class="nav-link" href="#">Produk</a>
                         </li>
                         <!--<li class="nav-item">-->
                         <!--    <a class="nav-link" href="{{url("/")}}/role">Role Pengguna</a>-->
@@ -246,13 +252,13 @@
                         <!--    <a class="nav-link" href="#">Jaminan</a>-->
                         <!--</li>-->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Bid Sengketa</a>
+                            <a class="nav-link" href="{{url('')}}/bid-sengketa">Bid Sengketa</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Podcast Sengketa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('/')}}/tentang-pemerintah">Tentang Pemerintah</a>
+                            <a class="nav-link" href="{{url('/')}}/tentang-pemerintah">Tentang Aplikasi</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('/')}}/tentang">Tentang Kami</a>
@@ -272,14 +278,11 @@
                         class="fa-solid fa-right-to-bracket"></i> Login</a>
             </div>
             <div class="col text-center">
-                <a href="https://server.sengketatanah.id/register" class="text-dark" style="text-decoration:none"><i
+                <a href="{{url('')}}/register" class="text-dark" style="text-decoration:none"><i
                         class="fa-solid fa-pen-to-square"></i> Register</a>
             </div>
             <div class="col text-center">
                 <a href="#" class="text-dark" style="text-decoration:none"><i class="fa-solid fa-key"></i> Forgot</a>
-            </div>
-            <div class="col text-center">
-                <a href="#" class="text-danger" style="text-decoration:none"><i class="fa-solid fa-bell"></i> (0)</a>
             </div>
         </div>
 
@@ -300,28 +303,50 @@
 
             <div class="col-lg-12">
                 
-                <img src="{{asset('/uploads/sengketa-banner-1.jpg')}}" style="width:100%">
+                <img src="{{asset('/uploads/sengketa-banner-2.jpg')}}" style="width:100%" class="mb-2">
                 
-                <div class="row mb-2 g-2 mt-2">
+                <div class="row mb-3 g-2">
                     <div class="col">
-                        <a class="btn btn-sm btn-dark w-100" href="https://server.sengketatanah.id/register">Daftar Sekarang</a>
+                        <a class="btn btn-sm btn-dark w-100" href="{{url('')}}/register">Daftar Sekarang</a>
                     </div>
                     <div class="col">
-                        <a class="btn btn-sm btn-danger w-100">Buat Laporan</a>
+                        <a class="btn btn-sm btn-danger w-100" data-bs-toggle="modal" data-bs-target="#korbanSengketaModal" >Buat Laporan</a>
                     </div>
+                  
                 </div>
+
+                <style>
+                    .dropdown-item.ini {
+                        box-shadow: 0px 6px 23px 0px rgb(0 0 0 / 25%);
+                        background-color: white;
+                        margin-top: 2px;
+                        margin-bottom: 2px;
+                        border-left: 5px solid #06ad5f;
+                    } .dropdown-menu.ini{
+                        position: relative !important;
+                        margin-top: 10px !important;
+                        transform: translate(0px, 0px) !important;
+                    }
+                </style>
 
                 <form action="">
                     <div class="row">
                         <div class="col">
                             <div class="mb-1">
-                                <select name="jenis_objek" id="jenis_objek" class="form-select">
-                                    <option value="" selected disabled>Sort Objek Sengketa</option>
-                                    <option value="sp">Sengketa Pertanahan</option>
-                                    <option value="pp">Perkara Pertanahan</option>
-                                    <option value="kp">Konflik Pertanahan</option>
-                                    <option value="all">Tampil Semua</option>
-                                </select>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle text-white w-100 rounded-0" style="background: #06ad5f" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Pilih Layanan Lain
+                                    </button>
+                                    <ul class="dropdown-menu w-100 p-0 ini" style="border: 0px; position:relative !important">
+                                        <li><a class="dropdown-item ini" href="#">Konsultasi Tenaga Ahli Pertanahan</a></li>
+                                        <li><a class="dropdown-item ini" href="#">Edukasi Pertanahan</a></li>
+                                        <li><a class="dropdown-item ini" href="#">Pengamanan Lahan</a></li>
+                                        <li><a class="dropdown-item ini" href="#">Jual Beli Lahan</a></li>
+                                        <li><a class="dropdown-item ini" href="#">Pelelangan Lahan</a></li>
+                                        <li><a class="dropdown-item ini" href="#">Jasa Tukang Ukur</a></li>
+                                    </ul>
+                                </div>
+                                <!--<a class="btn btn-sm btn-success w-100" href="{{url('')}}/register">Konsultasi Tenaga Ahli Pertanahan</a>-->
                             </div>
                         </div>
                     </div>
@@ -334,7 +359,7 @@
                     </div>
                 </form>
 
-                <div class="card">
+                <div class="card mt-2">
                     <div class="card-body">
                         <div class="row justify-content-center">
                             <form action="">
@@ -380,17 +405,26 @@
                             <div class=" mb-3">
                                 <center>
                                     <div class="row g-0">
-                                        <div class="col">
+                                        <div class="col-12">
+                                            <select name="jenis_objek" id="jenis_objek" class="form-select">
+                                                <option value="" selected disabled>Sort Objek Sengketa</option>
+                                                <option value="sp">Sengketa Pertanahan</option>
+                                                <option value="pp">Perkara Pertanahan</option>
+                                                <option value="kp">Konflik Pertanahan</option>
+                                                <option value="all">Tampil Semua</option>
+                                            </select>
+                                        </div>
+                                        <div class="col mt-2">
                                             <a class="tab btn btn-outline-secondary rounded-0 active"
                                                 style="width:100%;border:1px solid rgba(146,111,52,1)  "
                                                 id="btnSponsor">Sponsor </a>
                                         </div>
-                                        <div class="col">
+                                        <div class="col mt-2">
                                             <a class="tab btn btn-outline-abu rounded-0"
                                                 style="width:100%;border:1px solid hsla(337, 85%, 31%, 1)"
                                                 id="btnLawyer">Pengacara </a>
                                         </div>
-                                        <div class="col">
+                                        <div class="col mt-2">
                                             <a class="tab btn btn-outline-secondary rounded-0"
                                                 style="width:100%;border:1px solid #581845" id="btnPemerintah"
                                                 id="btnPemerintah">Pemerintah</a>
@@ -409,6 +443,7 @@
 
                             <div class="col-lg-12 mt-2 show" id="dataSponsor">
                                 <div class="row">
+                                    <?php $counter = 1 ?>
                                     @foreach($bid_sengketa as $bs)
                                     <div class="col-md-6 mb-3 {{$bs['kode_objek']}}">
                                         <div class="card mb-2">
@@ -451,7 +486,7 @@
 
 
                                             <div class="card-body">
-                                                @if($bs['id'] < 4)
+                                                @if($bs['id'] < 5)
                                                 <div class="ribbon-pop"><i class="fa-solid fa-star"></i>&nbsp;HOT</div>
                                                 @else
                                                 @endif
@@ -514,9 +549,29 @@
                                                 <div class="row g-0">
                                                     <div class="col text-center" style="border-right: 1px solid">
 
-                                                        <a href="{{url('')}}/login?title=Bid Sponsor"
-                                                            style="text-decoration:none" class="text-dark  mx-auto">
-                                                            <i class="fa-solid fa-eye"></i> Lihat Berkas (12)</a>
+                                                        <a href="#" class="text-dark  mx-auto" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                          <i class="fa-solid fa-eye"></i> Lihat Berkas (12)
+                                                        </a>
+                                                        
+                                                        <!-- Modal -->
+                                                        <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                          <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header p-0">
+                                                                  <h1 class="modal-title mx-auto text-danger display-1"><i class="fa-regular fa-circle-xmark"></i></h1>
+                                                                </div>
+                                                              <div class="modal-body">
+                                                                    Anda harus masuk sebagai sponsor sebelum melihat berkas.
+                                                              </div>
+                                                              <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        
                                                     </div>
                                                     <div class="col text-center">
                                                         <span onclick="return document.querySelector('form.form-sengketa<?=$bs['id']?>').submit()" style="cursor:pointer"><i
@@ -549,8 +604,31 @@
                                                             <!--    background: linear-gradient(90deg, rgba(223,189,105,1) 0%, rgba(146,111,52,1) 100%);-->
                                                             <!--    height: 45px" -->
                                                             <!--    type="button"><i class="fa-solid fa-gavel"></i> Bid Sponsor</a>-->
-                                                            <a href="{{url('/')}}/login?title=Bid Sponsor"
-                                                                class='text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark'>BID</a>
+                                                            <!-- Button trigger modal -->
+                                                            <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                              BID
+                                                            </button>
+                                                            
+                                                            <!-- Modal -->
+                                                            <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                              <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                      <h1 class="modal-title mx-auto text-danger display-1"><i class="fa-regular fa-circle-xmark"></i></h1>
+                                                                    </div>
+                                                                  <div class="modal-body">
+                                                                        Anda harus masuk sebagai sponsor sebelum melakukan bid.
+                                                                  </div>
+                                                                  <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            
+                                                            
                                                         </div>
                                                     </div>
 
@@ -558,6 +636,12 @@
                                             </div>
                                         </div>
                                     </div>
+                                    @if ($counter % 4 == 0) 
+                                        <!--<div class="col-md-12 mb-3">-->
+                                        <!--    TEST-->
+                                        <!--</div>-->
+                                    @endif
+                                    <?php $counter++ ?>
                                     @endforeach
                                 </div>
                                 <nav aria-label="Page navigation example">
@@ -580,351 +664,397 @@
                                     </ul>
                                 </nav>
                             </div>
-                            <div class="row g-2" id="dataLawyer" style="display:none">
+                            
+                            <div class="col-lg-12 mt-2" id="dataLawyer" style="display:none">
+                                <div class="row" >
 
-                                      @foreach($bid_pengacara as $bp)
-                                <div class="col-lg-6 mt-1 mb-1">
-
-                                    <div class="card">
-                                        <div class="card-header text-white px-3 py-1" style="        
-                                        background: linear-gradient(90deg, hsla(337, 85%, 31%, 1) 42%, hsla(337, 83%, 30%, 1) 64%, hsla(318, 57%, 22%, 1) 86%);
-                                        ">
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                                    <h5 class="mb-0 text-center">Kode Bid {{$bp['kode']}} <img
-                                                            src="{{url('/')}}/uploads/biru_centang.png" alt=""
-                                                            class="mb-1" style="height:20px"></h4>
-                                                        </h4>
+                                    @foreach($bid_pengacara as $bp)
+                                    <div class="col-lg-6 mt-1 mb-1">
+    
+                                        <div class="card">
+                                            <div class="card-header text-white px-3 py-1" style="        
+                                            background: linear-gradient(90deg, hsla(337, 85%, 31%, 1) 42%, hsla(337, 83%, 30%, 1) 64%, hsla(318, 57%, 22%, 1) 86%);
+                                            ">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Bid {{$bp['kode']}} <img
+                                                                src="{{url('/')}}/uploads/biru_centang.png" alt=""
+                                                                class="mb-1" style="height:20px"></h4>
+                                                            </h4>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!--<div class="card-header bg-white">-->
-                                        <!--    <div class="row">-->
-                                        <!--        <div class="col-lg-12">-->
-                                        <!--            <span class="badge bg-secondary float-end"><a-->
-                                        <!--                    href="{{url('')}}/login?title=Bid Sponsor" class="text-white"-->
-                                        <!--                    style="text-decoration:none">Lihat Berkas</a></span>-->
-                                        <!--            <span class="float-end">&nbsp;</span>-->
-                                        <!--            <span class="badge bg-dark float-end" data-bs-toggle="modal"-->
-                                        <!--                data-bs-target="#podcastLawyer">Lihat Podcast Sengketa</span>-->
-                                        <!--            <span class="float-end">&nbsp;</span>-->
-                                        <!--            <span class="badge bg-danger float-end">Terverifikasi</span>-->
-                                        <!--        </div>-->
-                                        <!--    </div>-->
-                                        <!--</div>-->
-
-
-
-
-
-
-
-
-                                        <div class="card-body">
-                                            @if($bp['id'] >3)
-                                            <div class="ribbon-pop"><i class="fa-solid fa-star"></i>&nbsp;HOT</div>
-                                            @else
-                                            @endif
-
-
-                                            <table>
-                                                <tr>
-                                                    <td>Owner/Korban</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bp['owner']}}</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Objek Sengketa</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bp['objek']}}</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Luas Objek</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bp['luas']}}</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Lokasi</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bp['lokasi']}}</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Kebutuhan</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bp['kebutuhan']}}</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Anggaran</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bp['anggaran']}}</td>
-                                                </tr>
-
-
-                                                <tr>
-                                                    <td>Jumlah Bid</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bp['jumlah_bid']}}</td>
-                                                </tr>
-
-                                            </table>
-
-                                            <hr>
-
-                                            <div class="row g-0">
-                                                <div class="col text-center" style="border-right: 1px solid">
-                                                    <a href="{{url('')}}/login?title=Bid Sponsor"
-                                                        style="text-decoration:none" class="text-dark  mx-auto">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas (12)</a>
+                                            <!--<div class="card-header bg-white">-->
+                                            <!--    <div class="row">-->
+                                            <!--        <div class="col-lg-12">-->
+                                            <!--            <span class="badge bg-secondary float-end"><a-->
+                                            <!--                    href="{{url('')}}/login?title=Bid Sponsor" class="text-white"-->
+                                            <!--                    style="text-decoration:none">Lihat Berkas</a></span>-->
+                                            <!--            <span class="float-end">&nbsp;</span>-->
+                                            <!--            <span class="badge bg-dark float-end" data-bs-toggle="modal"-->
+                                            <!--                data-bs-target="#podcastLawyer">Lihat Podcast Sengketa</span>-->
+                                            <!--            <span class="float-end">&nbsp;</span>-->
+                                            <!--            <span class="badge bg-danger float-end">Terverifikasi</span>-->
+                                            <!--        </div>-->
+                                            <!--    </div>-->
+                                            <!--</div>-->
+    
+    
+    
+    
+    
+    
+    
+    
+                                            <div class="card-body">
+                                                @if($bp['id'] >3)
+                                                <div class="ribbon-pop"><i class="fa-solid fa-star"></i>&nbsp;HOT</div>
+                                                @else
+                                                @endif
+    
+    
+                                                <table>
+                                                    <tr>
+                                                        <td>Owner/Korban</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;{{$bp['owner']}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Objek Sengketa</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;{{$bp['objek']}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Luas Objek</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;{{$bp['luas']}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lokasi</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;{{$bp['lokasi']}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Kebutuhan</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;{{$bp['kebutuhan']}}</td>
+                                                    </tr>
+    
+                                                    <tr>
+                                                        <td>Anggaran</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;{{$bp['anggaran']}}</td>
+                                                    </tr>
+    
+    
+                                                    <tr>
+                                                        <td>Jumlah Bid</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;{{$bp['jumlah_bid']}}</td>
+                                                    </tr>
+    
+                                                </table>
+    
+                                                <hr>
+    
+                                                <div class="row g-0">
+                                                    <div class="col text-center" style="border-right: 1px solid">
+                                                        <a href="#" class="text-dark  mx-auto" data-bs-toggle="modal" data-bs-target="#berkasPengacara" style="text-decoration:none">
+                                                          <i class="fa-solid fa-eye"></i> Lihat Berkas (12)
+                                                        </a>
+                                                        
+                                                        <!-- Modal -->
+                                                        <div class="modal fade my-auto" id="berkasPengacara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                          <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header p-0">
+                                                                  <h1 class="modal-title mx-auto text-danger display-1"><i class="fa-regular fa-circle-xmark"></i></h1>
+                                                                </div>
+                                                              <div class="modal-body">
+                                                                    Anda harus masuk sebagai pengacara sebelum melihat berkas.
+                                                              </div>
+                                                              <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col text-center">
+                                                        <span
+                                                            onclick="return document.querySelector('form.form-sengketa<?=$bp['id']?>').submit()"
+                                                            style="cursor:pointer"><i
+                                                                class="fa-solid fa-play text-danger"></i> Lihat Podcast
+                                                            (9)</span>
+                                                    </div>
                                                 </div>
-                                                <div class="col text-center">
-                                                    <span
-                                                        onclick="return document.querySelector('form.form-sengketa<?=$bp['id']?>').submit()"
-                                                        style="cursor:pointer"><i
-                                                            class="fa-solid fa-play text-danger"></i> Lihat Podcast
-                                                        (9)</span>
-                                                </div>
-                                            </div>
-                                            <form action="{{url('/')}}/bid-sengketa/podcast" class="form-sengketa90"
-                                                method="get">
-                                                <input type="hidden" name="owner" value="{{$bp['owner']}}">
-                                                <input type="hidden" name="objek" value="{{$bp['objek']}}">
-                                                <input type="hidden" name="luas" value="{{$bp['luas']}}">
-                                                <input type="hidden" name="lokasi" value="{{$bp['lokasi']}}">
-                                                <input type="hidden" name="komentar" value="">
-                                                <input type="hidden" name="link_yt" value="">
-                                                <input type="hidden" name="form" value="pengacara">
-                                            </form>
-                                            <hr>
-                                            <div class="row justify-content-center no-gutters"
-                                                style="margin-top:-15px;">
-
-                                                <div class="col-4">
-                                                    <!--<div class="d-grid gap-2">-->
-                                                    <!--    <a href="{{url('/')}}/login?title=Bid Sengketa"-->
-                                                    <!--        class="btn btn-success mt-2" type="button">Bid Pengacara</a>-->
-
-                                                    <div class="d-grid gap-2 ">
-
-                                                        <!--<a href="{{url('/')}}/login?title=Bid Sponsor"-->
-                                                        <!--            class="btn mt-3 rounded-5 text-white" style="-->
-                                                        <!--            border: 0px;-->
-                                                        <!--            background: rgb(223,189,105);-->
-                                                        <!--        background: linear-gradient(90deg, hsla(337, 85%, 31%, 1) 42%, hsla(337, 83%, 30%, 1) 64%, hsla(318, 57%, 22%, 1) 86%);-->
-                                                        <!--            height: 45px" -->
-                                                        <!--            type="button"><i class="fa-solid fa-gavel"></i> Bid Pengacara</a>-->
-                                                        <a href="{{url('/')}}/login?title=Bid Sponsor"
-                                                            class='text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark'>BID</a>
+                                                <form action="{{url('/')}}/bid-sengketa/podcast" class="form-sengketa90"
+                                                    method="get">
+                                                    <input type="hidden" name="owner" value="{{$bp['owner']}}">
+                                                    <input type="hidden" name="objek" value="{{$bp['objek']}}">
+                                                    <input type="hidden" name="luas" value="{{$bp['luas']}}">
+                                                    <input type="hidden" name="lokasi" value="{{$bp['lokasi']}}">
+                                                    <input type="hidden" name="komentar" value="">
+                                                    <input type="hidden" name="link_yt" value="">
+                                                    <input type="hidden" name="form" value="pengacara">
+                                                </form>
+                                                <hr>
+                                                <div class="row justify-content-center no-gutters"
+                                                    style="margin-top:-15px;">
+    
+                                                    <div class="col-4">
+                                                        <!--<div class="d-grid gap-2">-->
+                                                        <!--    <a href="{{url('/')}}/login?title=Bid Sengketa"-->
+                                                        <!--        class="btn btn-success mt-2" type="button">Bid Pengacara</a>-->
+    
+                                                        <div class="d-grid gap-2 ">
+    
+                                                            <!--<a href="{{url('/')}}/login?title=Bid Sponsor"-->
+                                                            <!--            class="btn mt-3 rounded-5 text-white" style="-->
+                                                            <!--            border: 0px;-->
+                                                            <!--            background: rgb(223,189,105);-->
+                                                            <!--        background: linear-gradient(90deg, hsla(337, 85%, 31%, 1) 42%, hsla(337, 83%, 30%, 1) 64%, hsla(318, 57%, 22%, 1) 86%);-->
+                                                            <!--            height: 45px" -->
+                                                            <!--            type="button"><i class="fa-solid fa-gavel"></i> Bid Pengacara</a>-->
+                                                            <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#examplePengacara">
+                                                              BID
+                                                            </button>
+                                                            
+                                                            <!-- Modal -->
+                                                            <div class="modal fade my-auto" id="examplePengacara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                              <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                      <h1 class="modal-title mx-auto text-danger display-1"><i class="fa-regular fa-circle-xmark"></i></h1>
+                                                                    </div>
+                                                                  <div class="modal-body">
+                                                                        Anda harus masuk sebagai pengacara sebelum melakukan bid.
+                                                                  </div>
+                                                                  <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            
+                                                            
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    @endforeach
                                 </div>
-                                @endforeach
                             </div>
 
-                            <div class="row" id="dataPemerintah" style="display:none">
-                                 @foreach($bid_pemerintah as $bpm)
-                            <div class="col-lg-6 mt-2 mb-2">
-                                <div class="card">
-                                    <div class="card-header text-white px-3 py-1  bg-secondary">
-                                        <div class="row">
-                                            <div class="col-lg-12 text-center">
-                                                <h5 class="mb-0 text-center">Data Terusan</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="podcastPemerintah" tabindex="-1"
-                                            aria-labelledby="podcastLawyer" aria-hidden="true">
-                                            <div class="modal-dialog modal-xl">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-
-                                                        <div class="row g-0">
-                                                            <div class="col-12">
-                                                                <h5 id="exampleModalLabel">Podcast Sengketa Tanah</h5>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <small class="text-dark">
-                                                                    Hasil Wawancara Korban
-                                                                </small>
-                                                            </div>
-                                                        </div>
-
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
+                            <div class="col-lg-12" id="dataPemerintah" style="display:none">
+                                <div class="row">
+                                         @foreach($bid_pemerintah as $bpm)
+                                    <div class="col-lg-6 mt-2 mb-2">
+                                        <div class="card">
+                                            <div class="card-header text-white px-3 py-1  bg-secondary">
+                                                <div class="row">
+                                                    <div class="col-lg-12 text-center">
+                                                        <h5 class="mb-0 text-center">Data Terusan</h4>
                                                     </div>
-                                                    <div class="modal-body">
-
-
-                                                        <div class="row justify-content-center">
-                                                            <div class="col-lg-6">
-
-                                                                <div class="card bg-dark rounded-0" width="100%"
-                                                                    style="height:200px">
-                                                                    <div class="card-body center">
-                                                                        <h3
-                                                                            class="text-white text-uppercase text-center">
-                                                                            Belum ada Video
-                                                                        </h3>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+        
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="podcastPemerintah" tabindex="-1"
+                                                    aria-labelledby="podcastLawyer" aria-hidden="true">
+                                                    <div class="modal-dialog modal-xl">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+        
+                                                                <div class="row g-0">
+                                                                    <div class="col-12">
+                                                                        <h5 id="exampleModalLabel">Podcast Sengketa Tanah</h5>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <small class="text-dark">
+                                                                            Hasil Wawancara Korban
+                                                                        </small>
                                                                     </div>
                                                                 </div>
-
-                                                                <table class="table">
-                                                                    <tr>
-                                                                        <td> Owner/Korban</td>
-                                                                        <td>:</td>
-                                                                        <td>&nbsp;Rival Santoso</td>
-                                                                    </tr>
-
-                                                                    <tr>
-                                                                        <td>Objek Sengketa</td>
-                                                                        <td>:</td>
-                                                                        <td>&nbsp;Sengketa Pertanahan</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Luas Objek</td>
-
-                                                                        <td>:</td>
-                                                                        <td>&nbsp;12.3 Ha</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Lokasi</td>
-
-                                                                        <td>:</td>
-                                                                        <td>&nbsp;Ngawi, Jawa Timur</td>
-                                                                    </tr>
-                                                                </table>
-                                                                <div class="d-grid gap-2">
-                                                                    <button class="alert alert-warning mt-2"
-                                                                        type="button">Keterangan: Data sengketa tanah
-                                                                        ini telah diterima oleh Platform
-                                                                        Sengketa Tanah dan akan diteruskan pada instansi
-                                                                        terkait. </button>
-                                                                </div>
+        
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                    aria-label="Close"></button>
                                                             </div>
-                                                            <div class="col-lg-6">
-                                                                <div class="row">
-                                                                    <div class="d-flex flex-column col-md-12">
-
-                                                                        <div class="coment-bottom bg-white p-1">
-                                                                            <div
-                                                                                class="d-flex flex-row add-comment-section mt-4 mb-4">
-                                                                                <img class="img-fluid img-responsive rounded-circle me-2"
-                                                                                    src="https://i.imgur.com/qdiP4DB.jpg"
-                                                                                    width="38">
-                                                                                <input type="text"
-                                                                                    class="form-control me-3 rounded-0"
-                                                                                    placeholder="Tambah Komentar">
-                                                                                <button
-                                                                                    class="btn btn-primary rounded-0"
-                                                                                    type="button">Komentar</button>
-                                                                            </div>
-                                                                            <hr>
-                                                                            <div class="center">
+                                                            <div class="modal-body">
+        
+        
+                                                                <div class="row justify-content-center">
+                                                                    <div class="col-lg-6">
+        
+                                                                        <div class="card bg-dark rounded-0" width="100%"
+                                                                            style="height:200px">
+                                                                            <div class="card-body center">
                                                                                 <h3
-                                                                                    class="text-dark text-uppercase text-center">
-                                                                                    Belum ada Komentar
+                                                                                    class="text-white text-uppercase text-center">
+                                                                                    Belum ada Video
                                                                                 </h3>
                                                                             </div>
                                                                         </div>
+        
+                                                                        <table class="table">
+                                                                            <tr>
+                                                                                <td> Owner/Korban</td>
+                                                                                <td>:</td>
+                                                                                <td>&nbsp;Rival Santoso</td>
+                                                                            </tr>
+        
+                                                                            <tr>
+                                                                                <td>Objek Sengketa</td>
+                                                                                <td>:</td>
+                                                                                <td>&nbsp;Sengketa Pertanahan</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Luas Objek</td>
+        
+                                                                                <td>:</td>
+                                                                                <td>&nbsp;12.3 Ha</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Lokasi</td>
+        
+                                                                                <td>:</td>
+                                                                                <td>&nbsp;Ngawi, Jawa Timur</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <div class="d-grid gap-2">
+                                                                            <button class="alert alert-warning mt-2"
+                                                                                type="button">Keterangan: Data sengketa tanah
+                                                                                ini telah diterima oleh Platform
+                                                                                Sengketa Tanah dan akan diteruskan pada instansi
+                                                                                terkait. </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <div class="row">
+                                                                            <div class="d-flex flex-column col-md-12">
+        
+                                                                                <div class="coment-bottom bg-white p-1">
+                                                                                    <div
+                                                                                        class="d-flex flex-row add-comment-section mt-4 mb-4">
+                                                                                        <img class="img-fluid img-responsive rounded-circle me-2"
+                                                                                            src="https://i.imgur.com/qdiP4DB.jpg"
+                                                                                            width="38">
+                                                                                        <input type="text"
+                                                                                            class="form-control me-3 rounded-0"
+                                                                                            placeholder="Tambah Komentar">
+                                                                                        <button
+                                                                                            class="btn btn-primary rounded-0"
+                                                                                            type="button">Komentar</button>
+                                                                                    </div>
+                                                                                    <hr>
+                                                                                    <div class="center">
+                                                                                        <h3
+                                                                                            class="text-dark text-uppercase text-center">
+                                                                                            Belum ada Komentar
+                                                                                        </h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+        
+                                                                </div>
+        
+        
+                                                                <hr>
+                                                                <div class="row" style="margin-top:-20px">
+                                                                    <div class="col-12 p-2">
+        
+                                                                        <span class="fa-stack fa-lg float-end">
+                                                                            <i class="fa fa-circle fa-stack-2x "
+                                                                                style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                                                                            <i
+                                                                                class="fa-solid fa-share fa-stack-1x fa-inverse"></i>
+        
+                                                                        </span> <span class="float-start mt-2">Bagikan Video
+                                                                            ini</span>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-
-                                                        </div>
-
-
-                                                        <hr>
-                                                        <div class="row" style="margin-top:-20px">
-                                                            <div class="col-12 p-2">
-
-                                                                <span class="fa-stack fa-lg float-end">
-                                                                    <i class="fa fa-circle fa-stack-2x "
-                                                                        style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
-                                                                    <i
-                                                                        class="fa-solid fa-share fa-stack-1x fa-inverse"></i>
-
-                                                                </span> <span class="float-start mt-2">Bagikan Video
-                                                                    ini</span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-
-
-
-
-
-
-                                        <table>
-                                            <tr>
-                                                <td>Owner/Korban</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;{{$bpm['owner']}}</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Objek Sengketa</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;{{$bpm['objek']}}</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Luas Objek</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;{{$bpm['luas']}}</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Lokasi</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;{{$bpm['lokasi']}}</td>
-                                            </tr>
-                                            <!--<tr>-->
-                                            <!--    <td>Status Data</td>-->
-                                            <!--    <td></td>-->
-                                            <!--    <td>:</td>-->
-                                            <!--    <td></td>-->
-                                            <!--</tr>-->
-
-
-
-                                        </table>
-
-
-                                        <div class="row justify-content-center no-gutters">
-                                            <div class="col-12">
-                                                <div class="d-grid gap-2">
-                                                    <button class="alert alert-warning mt-2" type="button">Keterangan:
-                                                        Data sengketa tanah ini telah diterima oleh Platform
-                                                        Sengketa Tanah dan akan diteruskan pada instansi terkait.
-                                                    </button>
+        
+        
+        
+        
+        
+        
+                                                <table>
+                                                    <tr>
+                                                        <td>Owner/Korban</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;{{$bpm['owner']}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Objek Sengketa</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;{{$bpm['objek']}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Luas Objek</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;{{$bpm['luas']}}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lokasi</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;{{$bpm['lokasi']}}</td>
+                                                    </tr>
+                                                    <!--<tr>-->
+                                                    <!--    <td>Status Data</td>-->
+                                                    <!--    <td></td>-->
+                                                    <!--    <td>:</td>-->
+                                                    <!--    <td></td>-->
+                                                    <!--</tr>-->
+        
+        
+        
+                                                </table>
+        
+        
+                                                <div class="row justify-content-center no-gutters">
+                                                    <div class="col-12">
+                                                        <div class="d-grid gap-2">
+                                                            <button class="alert alert-warning mt-2" type="button">Keterangan:
+                                                                Data sengketa tanah ini telah diterima oleh Platform
+                                                                Sengketa Tanah dan akan diteruskan pada instansi terkait.
+                                                            </button>
+                                                        </div>
+                                                    </div>
                                                 </div>
+        
                                             </div>
                                         </div>
-
+        
+        
+        
                                     </div>
-                                </div>
-
-
-
-                            </div>
-                            @endforeach
+                                    @endforeach
+                                    </div>
                             </div>
 
 
@@ -1018,9 +1148,25 @@
                         </div>
                     </div>
                 </div>
-                <form method="post" action="http://server2.sengketatanah.id/public/index.php/sengketa/send" enctype="multipart/form-data">
+                <form method="post" class="text-start" action="{{url('sengketa/send')}}" enctype="multipart/form-data">
                     <div class="modal-body">
-                        <input type="hidden" name="_token" value="5cJtevxQiv7jQz0kzdXcAPmIjf58CUH8qggaGC0g">                                                
+                        @csrf
+                        @if ($errors->all())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+
+                        @endif
+                        @if (Session::has('success'))
+                        <div class="alert alert-success">
+                            {{Session::get('success')}}
+                        </div>
+                        @endif
+
                         <div class="mb-2">
                             <label for="nama" class="form-label">Nama Pelapor</label>
                             <input type="text" class="form-control rounded-0" id="nama" placeholder="Masukkan Nama Anda"
@@ -1048,6 +1194,13 @@
                                 placeholder="Masukkan Email Anda" aria-describedby="input-email" name="email" required>
                             <div id="input-email" class="form-text"></div>
                         </div>
+                        <div class="mb-2">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control rounded-0" id="password"
+                                placeholder="buat password Anda" aria-describedby="input-password" name="password"
+                                required>
+                            <div id="input-password" class="form-text"></div>
+                        </div>
                         <div class="row">
                             <div class="col">
                                 <div class="mb-2">
@@ -1057,6 +1210,7 @@
                                         <option value="Sengketa Pertanahan">Sengketa Pertanahan</option>
                                         <option value="Konflik Pertanahan">Konflik Pertanahan</option>
                                         <option value="Perkara Pertanahan">Perkara Pertanahan</option>
+                                        <option value="Penjualan Lahan">Penjualan Lahan</option>
                                     </select>
                                 </div>
                             </div>
@@ -1094,35 +1248,62 @@
                             </select>
                         </div>
                         <div class="mb-2">
-                            <label class="form-label">Kebutuhan Dana Sponsor</label>
+                            <label class="form-label">Pilih Jenis Pertolongan</label>
                             <select class="form-select rounded-0" aria-label="Default select example"
-                                name="kebutuhan_dana" required>
-                                <option selected disabled>Pilih Kebutuhan</option>
-                                <option value="perlu">Perlu Dana Sonsor</option>
-                                <option value="tidak-perlu">Tidak Perlu Dana Sponsor</option>
+                                name="jenis_pertolongan" required>
+                                <option selected disabled>Pilih Pertolongan</option>
+                                <option value="sponsor">Sponsor</option>
+                                <option value="pengacara">Pengacara</option>
+                                <option value="pemerintah">Pemerintah</option>
                             </select>
-
                         </div>
 
-                        <div class="form-check tidak-perlu-dana">
-                            <input class="form-check-input" type="radio" name="butuh" id="butuh-jasa">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                Membutuhkan jasa Pengacara
-                            </label><br>
-                            <small id="pengembalian_dana" class="form-text text-muted butuh-jasa-h">Saya hanya butuh
-                                bantuan hukum untuk menyelesaikan permasalahan saya dan saya siap memberikan kompensasi
-                                sesuai dengan kesepakatan, baik berupa uang ataupun bagi hasil.</small>
-                        </div>
-                        <div class="form-check  tidak-perlu-dana">
-                            <input class="form-check-input" type="radio" name="butuh" id="butuh-pem">
-                            <label class="form-check-label" for="flexRadioDefault2">
-                                Membutuhkan bantuan laporan ke Pemerintah
-                            </label><br>
-                            <small id="pengembalian_dana" class="form-text text-muted butuh-pem-h">Kami akan meneruskan
-                                laporan ini kepada instansi terkait.</small>
+                        <div id="pengembalian_dana" class="alert alert-danger sponsor" role="alert">
+                            <strong>
+                                Saya membutuhkan bantuan pendanaan dari sponsor untuk menyelesaikan permasalahan
+                                sengketa tanah saya.
+                            </strong>
                         </div>
 
-                        <div class="mb-2 perlu-dana">
+                        <div class="mb-2 pengacara">
+                            <label class="form-label">Pilih Tindakan Pengacara</label>
+                            <select class="form-select rounded-0" aria-label="Default select example"
+                                name="bantuan_pengacara" required>
+                                <option selected disabled>Pilih Bantuan Pengacara</option>
+                                <option value="konsultasi">Konsultasi</option>
+                                <option value="pendampingan">Pendampingan</option>
+                                <option value="penindakan">Penindakan</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-2 pengacara">
+                            <label for="anggaran_pengacara" class="form-label">Anggaran Pengacara</label>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="number" class="form-control rounded-0" id="anggaran_pengacara-s"
+                                        placeholder="Anggaran mulai dari ..."
+                                        aria-describedby="input-anggaran_pengacara-s" name="anggaran_pengacara-s">
+                                </div>
+                                <div class="col-1 text-center"
+                                    style="width:4% !important; padding-right: 0px !important; padding-left: 0px !important">
+                                    -
+                                </div>
+                                <div class="col">
+                                    <input type="number" class="form-control rounded-0" id="anggaran_pengacara-e"
+                                        placeholder="Sampai ..." aria-describedby="input-anggaran_pengacara-e"
+                                        name="anggaran_pengacara-e">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="pengembalian_dana" class="alert alert-danger pemerintah" role="alert">
+                            <strong>
+                                Saya hanya membutuhkan pertolongan agar permasalahan sengketa tanah saya diteruskan pada
+                                Pemerintah.
+                            </strong>
+                        </div>
+
+                        <div class="mb-2 sponsor">
                             <label for="keb_dana" class="form-label">Jumlah Dana Sponsor</label>
                             <input type="number" class="form-control rounded-0" id="keb_dana"
                                 placeholder="Sebutkan Nilai Kebutuhan" aria-describedby="input-keb_dana" name="keb_dana"
@@ -1130,21 +1311,24 @@
                             <div id="input-keb_dana" class="form-text"></div>
                         </div>
 
-                        <div class="mb-2 perlu-dana">
+                        <div class="mb-2 sponsor">
                             <label class="form-label">Pengembalian Dana Sponsor</label>
                             <select class="form-select rounded-0" aria-label="Default select example"
                                 name="pengembalian_dana_sponsor" required>
+                                <option selected disabled>Pilih Jenis Pengembalian</option>
                                 <option value="70/30">Bagi Hasil 70/30*</option>
                                 <option value="60/40">Bagi Hasil 60/40*</option>
                                 <option value="50/50">Bagi Hasil 50/50*</option>
-                                <option value="lain">Lainnya*</option>
+                                <option value="lain">Fee 50% Dari Pinjaman</option>
+                                <option value="lain">Fee 75% Dari Pinjaman</option>
+                                <option value="lain">Fee 100% Dari Pinjaman</option>
                             </select>
-                            <small id="pengembalian_dana_sponsor" class="form-text text-muted">Tanda bintang(*)
-                                pembagian hasil
-                                untuk sponsor.</small>
+                            <small id="pengembalian_dana_sponsor" class="form-text text-muted">Bagi hasil di
+                                rekomendasikan untuk kasus-kasus sengketa tanah yang berat. Tanda bintang(*) adalah
+                                pembagian untuk sponsor. </small>
                         </div>
 
-                        <div class="mb-2 perlu-dana">
+                        <div class="mb-2 sponsor">
                             <label class="form-label" for="jaminan_dana">Jaminan Dana Sponsor</label>
                             <select class="form-select rounded-0" aria-label="Default select example" name="jaminan"
                                 required>
@@ -1156,10 +1340,12 @@
 
                         <div class="mb-2 jaminan_berupa">
                             <label for="jaminan_berupa" class="form-label">Jaminan Berupa</label>
-                            <input type="text" class="form-control rounded-0" id="lokasi" placeholder="Masukkan Jaminan"
-                                aria-describedby="input-jaminan" name="jaminan_berupa">
+                            <select class="form-select rounded-0" id="lokasi" placeholder="Masukkan Jaminan"
+                                aria-describedby="input-jaminan" name="jaminan_berupa" required>
+                                <option value="Sertifikat Tanah">Sertifikat Tanah</option>
+                                <option value="Sertifikat Rumah">Sertifikat Rumah</option>
+                            </select>
                         </div>
-
                         <div class="mb-2">
                             <label for="ktp" class="form-label">Foto KTP</label>
                             <input class="form-control rounded-0" type="file" id="ktp" name="foto_ktp" required>
@@ -1179,8 +1365,9 @@
                             <label class="form-check-label" style="text-align:justify" for="exampleCheck1">Dengan
                                 mengisi form ini saya
                                 menyatakan bahwa semua data yang diberikan benar adanya dan laporan ini tidak
-                                sedang dalam penanganan hukum pihak lain. Saya bersedia bekerja sama dengan
-                                Sponsor melalui platform SENGKETA TANAH untuk diselesaikan</label>
+                                sedang dalam penanganan hukum pihak lain. Saya bersedia melakukan wawancara mendalam di
+                                <b>PODCAST SENGKETA TANAH</b> dan bekerja sama dengan
+                                Sponsor melalui <b>PLATFORM SENGKETA TANAH</b> untuk diselesaikan.</label>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1295,6 +1482,93 @@
             	$(this).toggleClass('open');
             });
         });
+        
+        
+
+            $(function () {
+                var hidestuff = function () {
+                    $(".jaminan_berupa").hide();
+                }
+
+                $("select[name='jaminan']").change(function () {
+                    hidestuff();
+
+                    var value = $(this).val();
+                    if (value == "ada") {
+                        $(".jaminan_berupa").show();
+                    }
+                });
+                hidestuff();
+            });
+
+            $(function () {
+                var hidestuff = function () {
+                    $(".pengelolaan-platform, .pengelolaan-sendiri").hide();
+                }
+
+                $("select[name='pengelolaan_dana']").change(function () {
+                    hidestuff();
+
+                    var value = $(this).val();
+                    if (value == "platform") {
+                        $(".pengelolaan-platform").show();
+                    }
+                    if (value == "sendiri") {
+                        $(".pengelolaan-sendiri").show();
+                    }
+                });
+                hidestuff();
+            });
+
+            $(function () {
+                var hidestuff = function () {
+                    $(".law-firm").hide();
+                }
+
+                $("select[name='mewakili']").change(function () {
+                    hidestuff();
+
+                    var value = $(this).val();
+                    if (value == "law-firm") {
+                        $(".law-firm").show();
+                    }
+                });
+                hidestuff();
+            });
+
+
+            $(document).ready(function () {
+                $("#carouselExampleControls").swiperight(function () {
+                    $(this).carousel('prev');
+                });
+                $("#carouselExampleControls").swipeleft(function () {
+                    $(this).carousel('next');
+                });
+            });
+
+            $(function () {
+                var hidestuff = function () {
+                    $(".sponsor, .pengacara, .pemerintah").hide();
+                }
+
+                $("select[name='jenis_pertolongan']").change(function () {
+                    hidestuff();
+
+                    var value = $(this).val();
+                    if (value == "sponsor") {
+                        $(".sponsor").show();
+                    }
+                    if (value == "pengacara") {
+                        $(".pengacara").show();
+                    }
+                    if (value == "pemerintah") {
+                        $(".pemerintah").show();
+                    }
+                });
+                hidestuff();
+            });
+
+        
     </script>
 </body>
 

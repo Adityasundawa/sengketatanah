@@ -253,7 +253,7 @@
                         <a class="nav-link" href="{{url('/')}}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{{url('/')}}/layanan">Layanan</a>
+                        <a class="nav-link" href="#">Produk</a>
                     </li>
                     <!--<li class="nav-item">-->
                     <!--    <a class="nav-link" href="{{url("/")}}/role">Role Pengguna</a>-->
@@ -265,13 +265,13 @@
                     <!--    <a class="nav-link" href="#">Jaminan</a>-->
                     <!--</li>-->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Bid Sengketa</a>
+                        <a class="nav-link" href="{{url('')}}/bid-sengketa">Bid Sengketa</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Podcast Sengketa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('/')}}/tentang-pemerintah">Tentang Pemerintah</a>
+                        <a class="nav-link" href="{{url('/')}}/tentang-pemerintah">Tentang Aplikasi</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('/')}}/tentang">Tentang Kami</a>
@@ -317,7 +317,7 @@
         @endif
 
         <div class="card-body text-center">
-            <h2 class="card-title fw-bolder" style="color: #61481C">DUKUNGAN PEMERINTAH BRANTAS MAFIA TANAH</h4>
+            <h2 class="card-title fw-bolder" style="color: #61481C">DUKUNGAN PEMERINTAH MENGATASI PERSENGKETAAN TANAH</h4>
         </div>
         <div class="row desktop mb-5 mt-3">
             <div class="col-md">
@@ -431,7 +431,7 @@
         <hr>
 
         <div class="text-center fs-3" style="padding:10px; color: #61481C">
-            "Platform Sengketa Tanah adalah aplikasi yang paling tepat untuk membantu perjuangan Anda dalam persengketaan masalah tanah dan melawan <b>MAFIA TANAH</b>"
+            "Platform Sengketa Tanah adalah aplikasi yang paling tepat untuk membantu perjuangan Anda dalam mengatasi persengketaan masalah tanah"
         </div>
 
         <div class="row mt-2" style="padding: 10px">
@@ -452,7 +452,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="card-title" style="color:#61481C">
-                                        Pemerintah</h4>
+                                        1. Pemerintah</h4>
                                     <hr>
                                     Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di bidang agraria/pertanahan dan tata ruang dalam pemerintahan untuk membantu Presiden dalam menyelenggarakan pemerintahan negara termasuk masalah persengketaan tanah
                                 </div>
@@ -461,10 +461,9 @@
                         <div class="col-md-4 mb-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title" style="color:#61481C"><i class="fa-solid fa-person"></i>
-                                        Korban Sengketa</h4>
+                                    <h4 class="card-title" style="color:#61481C">2. Korban Sengketa</h4>
                                     <hr>
-                                    Korban adalah orang yang dirugikan, dirampas, atau kehilangan hak atas tanah yang
+                                    Korban adalah orang yang dirugikan, dirampas, atau terancam kehilangan hak atas tanah yang
                                     dimilikinya
                                 </div>
                             </div>
@@ -472,8 +471,7 @@
                         <div class="col-md-4 mb-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title" style="color:#61481C"><i
-                                            class="fa-solid fa-user-tie"></i> Sponsor</h4>
+                                    <h4 class="card-title" style="color:#61481C">3. Sponsor</h4>
                                     <hr>
                                     Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan hukum korban
                                     sengketa tanah
@@ -483,8 +481,7 @@
                         <div class="col-md-4 mb-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title" style="color:#61481C"><i class="fa-solid fa-gavel"></i>
-                                        Pengacara</h4>
+                                    <h4 class="card-title" style="color:#61481C">4. Pengacara</h4>
                                     <hr>
                                     Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani sengketa
                                     tanah
@@ -714,7 +711,8 @@
             </div>
             
             <div class="col-md-12 mt-4 text-center">
-                <a class="btn text-white mt-4" data-bs-toggle="modal" data-bs-target="#korbanSengketaModal" style="background: #61481C">Daftar Sekarang</a>
+                <a class="btn text-white mt-4" href="{{url('')}}/register" style="background: #61481C">Daftar Sekarang</a>
+                <!--<a data-bs-toggle="modal" data-bs-target="#korbanSengketaModal" class="btn text-white mt-4" style="background: #61481C">Daftar Sekarang</a>-->
             </div>
 
             
@@ -732,7 +730,7 @@
                     masalah
                     sengketa tanah di seluruh wilayah Indonesia. Kami mempertemukan korban sengketa tanah atau korban
                     mafia
-                    tanah dengan Sponsor dan Kantor hukum untuk menuntaskan masalah persengketaan tanah tersebut.</p>
+                    tanah dengan Sponsor, Kantor hukum, dan Pemerintah untuk menuntaskan masalah persengketaan tanah tersebut.</p>
 
             </div>
 
@@ -901,6 +899,7 @@
                                         <option value="Sengketa Pertanahan">Sengketa Pertanahan</option>
                                         <option value="Konflik Pertanahan">Konflik Pertanahan</option>
                                         <option value="Perkara Pertanahan">Perkara Pertanahan</option>
+                                        <option value="Penjualan Lahan">Penjualan Lahan</option>
                                     </select>
                                 </div>
                             </div>
