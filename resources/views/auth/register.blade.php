@@ -65,8 +65,8 @@
                     @enderror
 				</div>
                 <div class="login__field">
-					<select name="role" req' class="form-select login__input rounded-0" style="border-right:0px; border-left:0px; border-top:0px; background:transparent; font-weight:700" aria-label="Default select example">
-                        <option disabled="">Pilih Role</option>
+					<select name="role" req' class="form-select login__input rounded-0" style="border-right:0px; border-left:0px; border-top:0px; font-weight:700" aria-label="Default select example">
+                        <option disabled selected>Pilih Role</option>
                         <option value="korban">Korban Sengketa</option>
                         <option value="sponsor">Sponsor</option>
                         <option value="pengacara">Pengacara</option>
