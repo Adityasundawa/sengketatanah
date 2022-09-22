@@ -800,7 +800,7 @@
                            
                             <input type="checkbox" id="check">
                             <label class="chat-btn" for="check">
-                                <img src="{{url('/')}}/images/kol_senter1.jpg" alt="" srcset="" class="rounded-circle ilangono"style="width: 50px;height:auto">
+                                <img src="{{asset('/')}}/images/kol_senter1.jpg" alt="" srcset="" class="rounded-circle ilangono"style="width: 50px;height:auto">
                                 <i class="fa fa-close close"></i> </label>
                             <div class="wrapper btn-chatz">
                                 <div class="header btn-chatz">
