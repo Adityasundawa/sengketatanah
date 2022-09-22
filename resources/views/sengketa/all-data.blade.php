@@ -274,11 +274,11 @@
 
         <div class="row d-flex mb-1 mt-1">
             <div class="col text-center">
-                <a href="{{url('')}}/login" class="text-dark" style="text-decoration:none"><i
+                <a href="{{url('/')}}/login" class="text-dark" style="text-decoration:none"><i
                         class="fa-solid fa-right-to-bracket"></i> Login</a>
             </div>
             <div class="col text-center">
-                <a href="{{url('')}}/register" class="text-dark" style="text-decoration:none"><i
+                <a href="{{url('/')}}/register" class="text-dark" style="text-decoration:none"><i
                         class="fa-solid fa-pen-to-square"></i> Register</a>
             </div>
             <div class="col text-center">
