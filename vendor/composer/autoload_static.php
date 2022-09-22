@@ -573,6 +573,7 @@ class ComposerStaticInitbd3a7cefa1612710cb8116e402fd583f
         'App\\Models\\JadwalMeeting' => __DIR__ . '/../..' . '/app/Models/JadwalMeeting.php',
         'App\\Models\\KorbanUser' => __DIR__ . '/../..' . '/app/Models/KorbanUser.php',
         'App\\Models\\SengketaTanah' => __DIR__ . '/../..' . '/app/Models/SengketaTanah.php',
+        'App\\Models\\Sponsoruser' => __DIR__ . '/../..' . '/app/Models/Sponsoruser.php',
         'App\\Models\\TimeStatus' => __DIR__ . '/../..' . '/app/Models/TimeStatus.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',

@@ -1,3 +1,9 @@
+<?php 
+use App\Models\User;
+
+$users = User::where('id',$selengkapnya->user_id)->first();
+?>
+
 @extends('layouts.template-admin.main')
 @section('content')
 
@@ -18,6 +24,8 @@
                             <span class="badge badge-warning">Diproses</span>
                             @elseif($selengkapnya->status_sengketa == 4)
                             <span class="badge badge-success">Selesai</span>
+                            @elseif($selengkapnya->status_sengketa == 0)
+                            <span class="badge badge-danger">Pending</span>
                             @endif
                             </h3>
                         </div>
@@ -29,9 +37,10 @@
                                         Status Laporan
                                     </button>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="{{url('/')}}/admin/sengketa-tanah/proses-verif/{{encrypt($selengkapnya->id)}}?status={{encrypt(2)}}">Verifikasi</a>
-                                        <a class="dropdown-item" href="{{url('/')}}/admin/sengketa-tanah/proses-verif/{{encrypt($selengkapnya->id)}}?status={{encrypt(3)}}">Diproses</a>
-                                        <a class="dropdown-item" href="{{url('/')}}/admin/sengketa-tanah/proses-verif/{{encrypt($selengkapnya->id)}}?status={{encrypt(4)}}">Selesai</a>
+                                        <a class="dropdown-item" href="{{url('/')}}/administrator/sengketa-tanah/proses-verif/{{encrypt($selengkapnya->id)}}?status={{encrypt(1)}}">Izinkan Upload Dokumen</a>
+                                        <a class="dropdown-item" href="{{url('/')}}/administrator/sengketa-tanah/proses-verif/{{encrypt($selengkapnya->id)}}?status={{encrypt(2)}}">Verifikasi</a>
+                                        <a class="dropdown-item" href="{{url('/')}}/administrator/sengketa-tanah/proses-verif/{{encrypt($selengkapnya->id)}}?status={{encrypt(3)}}">Diproses</a>
+                                        <a class="dropdown-item" href="{{url('/')}}/administrator/sengketa-tanah/proses-verif/{{encrypt($selengkapnya->id)}}?status={{encrypt(4)}}">Selesai</a>
                                     </div>
                                 </div>
                             </div>
@@ -45,17 +54,17 @@
                             <tr>
                                 <th>Nama</th>
                                 <td>:</td>
-                                <td>{{$selengkapnya->name}}</td>
+                                <td>{{$users->name}}</td>
                             </tr>
                             <tr>
                                 <th>Alamat</th>
                                 <td>:</td>
-                                <td>{{$selengkapnya->address}}</td>
+                                <td>{{$users->address}}</td>
                             </tr>
                             <tr>
                                 <th>Nomor Hp</th>
                                 <td>:</td>
-                                <td>{{$selengkapnya->phone}}</td>
+                                <td>{{$users->phone}}</td>
                             </tr>
                             <tr>
                                 <th>Objek Sengketa</th>

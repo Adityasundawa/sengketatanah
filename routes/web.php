@@ -45,12 +45,13 @@ Route::group(['middleware' => 'role:administrator', 'prefix' => 'administrator',
   Route::get('/bid_sponsor/{id}/{sengketa}',[AdminController::class,'admin_bid_sponsor'])->name('bid.sponsor');
   Route::post('/create_zoom_meeting/{sponsor}/{sengketa}',[AdminController::class,'create_zoom_meeting'])->name('create_zoom_meeting');
   Route::post('/add_meeting/{sponsor}/{sengketa}',[AdminController::class,'add_meeting'])->name('add.meeting');
+  Route::get('/sengketa-tanah/proses-verif/{id}',[AdminController::class,'prosesVerif'])->name('proses-verif');
 });
 
 // Route::get('/admin',[AdminController::class,'index'])->name('admin.index');
 
 
-// Route::get('/admin/sengketa-tanah/proses-verif/{id}',[AdminController::class,'prosesVerif'])->name('admin.proses-verif');
+
 // Route::get('/admin/hasil-bid-sengketa-tanah/',[AdminController::class,'hasil_bid_sengketa'])->name('admin.hasil-bid-sengketa');
 // Route::get('/admin/bid_sponsor/{id}/{sengketa}',[AdminController::class,'admin_bid_sponsor'])->name('admin.bid.sponsor');
 
@@ -68,7 +69,7 @@ Route::get('dashboard/publik',[SengketaController::class,'dashboard']);
 // Route::get('/home', function () {
 //       if (Auth::user()->role_id == 1) {
 //          return redirect('/admin');
-//       } else {
+//       } else {s
 //          return redirect('/dashboard');
 //       }
 //    })->name('home');
@@ -87,8 +88,12 @@ Route::group(['middleware' => 'role:utama', 'prefix' => 'utama', 'as' => 'utama.
 /// Role Korban
 Route::group(['middleware' => 'role:korban', 'prefix' => 'korban', 'as' => 'korban.'], function () {
    Route::get('index',[KorbanController::class,'index'])->name('index');
+   Route::get('tambah_sengketa',[KorbanController::class,'tambah_sengketa'])->name('tambah_sengketa');
    Route::get('list_sengketa_saya',[KorbanController::class,'list_sengketa_saya'])->name('list_sengketa_saya');
    Route::post('add_korban',[KorbanController::class,'add_korban'])->name('add_korban');
+   Route::get('add_korban_file/{id}',[KorbanController::class,'add_korban_file'])->name('add_korban_file');
+   Route::get('hasil_berkas_sengketa/{id}',[KorbanController::class,'hasil_berkas_sengketa'])->name('hasil_berkas_sengketa');
+   Route::post('action_add_korban_file/{id}',[KorbanController::class,'action_add_korban_file'])->name('action_add_korban_file');
 });
 
 /// Role Sponsor

@@ -1,5 +1,6 @@
 <?php 
 use App\Models\Bid_Sengketa;
+use App\Models\User;
 ?>
 
 
@@ -7,56 +8,88 @@ use App\Models\Bid_Sengketa;
 @section('content')
 
 <div class="container mt-3">
+    {{-- <a class="btn btn-successs my-4" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a> --}}
+    <div class="row justify-content-center mb-2">
+        <div class="col-3">
+             <div class="row">
+                <div class="col-12">
+                    <center><img src="{{asset('/')}}images/icon/icon_rounded.png" alt="" class="img-fluid" style="width: 100px;height: auto;"></center>
+                </div>
+                <div class="col-12 text-center">
+                   Project
+                </div>
+             </div>
+        </div>
+        <div class="col-3">
+            <div class="row">
+                <div class="col-12">
+                    <center><img src="{{asset('/')}}images/icon/icon_rounded.png" alt="" class="img-fluid" style="width: 100px;height: auto;"></center>
+                </div>
+                <div class="col-12 text-center">
+                   Bidding
+                </div>
+             </div>
+        </div>
+        <div class="col-3">
+            <div class="row">
+                <div class="col-12">
+                    <center><img src="{{asset('/')}}images/icon/icon_rounded.png" alt="" class="img-fluid" style="width: 100px;height: auto;"></center>
+                </div>
+                <div class="col-12 text-center">
+                   Agenda
+                </div>
+             </div>
+        </div>
+        <div class="col-3">
+            <div class="row">
+                <div class="col-12">
+                    <center><img src="{{asset('/')}}images/icon/icon_rounded.png" alt="" class="img-fluid" style="width: 100px;height: auto;"></center>
+                </div>
+                <div class="col-12 text-center">
+                   Progress
+                </div>
+             </div>
+        </div>
+    </div>
     <div class="row">
+        <?php $i = 1;    ?>
         @foreach ($sengketa as $item)
+        <?php $users = User::where('id',$item['user_id'])->first(); ?>
         <div class="col-md-6 mb-3 sp">
-            <div class="card mb-2">
-                <div class="card-header bg-dark text-white px-3 py-1">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h5 class="mb-0">Kode Bid SP-00{{$item['id']}}</h5>
-                        </div>
-                    </div>
-                </div>
+            <div class="card mb-2"> 
                 <div class="card-header bg-white">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <span class="badge bg-secondary float-end"><a
-                                    href="https://sengketatanah.id/login?title=Bid Sponsor" class="text-white"
-                                    style="text-decoration:none">Lihat
-                                    Berkas</a></span>
-                            <span class="float-end">&nbsp;</span>
-                            <form action="https://sengketatanah.id/bid-sengketa/podcast" class="form-sengketa1"
-                                method="get">
-                                <input type="hidden" name="owner" value=" Ali Shadiqin">
-                                <input type="hidden" name="objek" value=" Sengketa Pertanahan">
-                                <input type="hidden" name="luas" value=" 2.4 Ha">
-                                <input type="hidden" name="lokasi" value=" Blitar, Jawa timur">
-                                <input type="hidden" name="komentar" value="">
-                                <input type="hidden" name="link_yt" value="">
-                                <input type="hidden" name="form" value="sponsor">
-                            </form>
-                            <br>
-                            <span class="badge bg-dark float-end"
-                                onclick="return document.querySelector('form.form-sengketa1').submit()">Lihat
-                                Podcast Sengketa</span>
-                            <span class="float-end">&nbsp;</span>
-                            <span class="badge bg-danger float-end">Terverifikasi</span>
-                        </div>
-                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><b>PROJECT SPONSOR {{$i++}}</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-
-
-
-
                 <div class="card-body">
+                    @if($item['status_sengketa'] == 1)
+                    <div class="alert alert-danger" role="alert">
+                       Data Anda telah kami terima dan mohon menunggu petugas kami melakukan verifikasi. Saat ini anda belum dapat mengirimkan dokumen. Pastikan telepon/hp Anda dapat di hubungi
+                    </div>
+                    @elseif($item['status_sengketa'] == 2)
+                    <div class="alert alert-warning" role="alert">
+                        <b>Selamat, </b>Anda berhasil melewati tahap 1. Silahkan pilih lampiran dokumen Anda untuk melewati tahap berikutnya
+                    </div>
+                    {{-- @elseif($item['status_sengketa']s == 3)
+                    <span class="badge badge-warning">Diproses</span>
+                    @elseif($item['status_sengketa'] == 4)
+                    <span class="badge badge-success">Selesai</span>
+                    @elseif($item['status_sengketa'] == 0)
+                    <span class="badge badge-danger">Pending</span> --}}
+                    @endif
+                    
                     <table>
                         <tbody>
                             <tr>
                                 <td>Owner/Korban</td>
                                 <td></td>
                                 <td>:</td>
-                                <td>&nbsp; {{$item['name']}}</td>
+                                <td>&nbsp; {{$users->name}}</td>
                             </tr>
                             <tr>
                                 <td>Objek Sengketa</td>
@@ -101,14 +134,55 @@ use App\Models\Bid_Sengketa;
                                 <td>Jumlah Bid</td>
                                 <td></td>
                                 <td>:</td>
-                                <td>&nbsp;{{count(Bid_Sengketa::where('sengketa_id',$item['id'])->get());}}</td>
+                                <td>&nbsp; {{count(Bid_Sengketa::where('sengketa_id',$item['id'])->get());}}</td>
+                            </tr>
+                            <tr>
+                                <td>Kode Bid</td>
+                                <td></td>
+                                <td>:</td>
+                                <td>&nbsp; <b class="text-danger">SP-00{{$item['id']}}</b></td>
+                            </tr>
+                            <tr>
+                                <td>Status</td>
+                                <td></td>
+                                <td>:</td>
+                                <td>&nbsp; 
+                                    @if($item['status_sengketa'] == 1)
+                                    <span class="badge badge-danger">Menunggu Verifikasi</span>
+                                    @elseif($item['status_sengketa'] == 2)
+                                    <span class="badge badge-success">Terverifikasi Tahap 1</span>
+                                    @elseif($item['status_sengketa'] == 3)
+                                    <span class="badge badge-warning">Diproses</span>
+                                    @elseif($item['status_sengketa'] == 4)
+                                    <span class="badge badge-success">Selesai</span>
+                                    @elseif($item['status_sengketa'] == 0)
+                                    <span class="badge badge-danger">Pending</span>
+                                    @endif</td>
                             </tr>
                         </tbody>
                     </table>
+
+                    @if ($item['status_sengketa'] == 1)
+                       @if ($item['status_file_upload'] == "yes")
+                        <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-success mt-4">Lihat Berkas</a>
+                       @else
+                        <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-success mt-4 disabled" disable>Upload Dokumen</a>
+                       @endif
+                    @else
+                       @if ($item['status_file_upload'] == "yes")
+                       <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-success mt-4">Lihat Berkas</a>
+                    @else
+                       <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-success mt-4">Upload Dokumen</a>
+                    @endif
+                    @endif
                 </div>
             </div>
-        </div>    
+        </div>
         @endforeach
+
+
     </div>
+
+    <a class="btn btn-success" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a>
 </div>
 @endsection

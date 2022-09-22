@@ -4,9 +4,11 @@ namespace App\Http\Controllers\Utama;
 
 use App\Http\Controllers\Controller;
 use App\Models\KorbanUser;
+use App\Models\Sponsoruser;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Crypt;
 
 class KorbanController extends Controller
 {
@@ -14,15 +16,29 @@ class KorbanController extends Controller
 
    public function index()
     {
-        $data['sengketa'] = KorbanUser::join('users','users.id','=','korban_user.user_id')->where('jenis_pertolongan','sponsor')->get();
-        return view('korban.utama',$data);
+        $data['sengketa'] = KorbanUser::where('user_id',Auth::id())->get();
+        $get = KorbanUser::where('user_id',Auth::id())->get();
+        if(count($get) == 0){
+           return view('korban.utama',$data);
+        }else{
+           return view('korban.index',$data);
+        }
     }
     
+    public function tambah_sengketa()
+    {
+        $data['sengketa'] = KorbanUser::where('user_id',Auth::id())->get();
+        return view('korban.utama',$data);
+    }
     public function list_sengketa_saya()
     {
         // $data['sengketa'] = KorbanUser::join('users','users.id','=','korban_user.user_id')->where('jenis_pertolongan','sponsor')->get();
-        $data['sengketa'] = KorbanUser::join('users','users.id','=','korban_user.user_id')->where('user_id',Auth::id())->get();
+        // $data['sengketa'] = KorbanUser::join('users','users.id','=','korban_user.user_id')->where('user_id',Auth::id())->get();
+        // return view('korban.index',$data);
+        
+        $data['sengketa'] = KorbanUser::where('user_id',Auth::id())->get();
         return view('korban.index',$data);
+
     }
 
     public function add_korban(Request $request)
@@ -75,5 +91,60 @@ class KorbanController extends Controller
             }
 
 
+    }
+
+
+    public function add_korban_file($id)
+    {
+        $id = Crypt::decrypt($id);
+        $data['korban'] = KorbanUser::where('id',$id)->first();
+        return view('korban.add_korban_file',$data);
+
+    }
+
+
+    public function action_add_korban_file(Request $request,$id)
+    {
+        $id = Crypt::decrypt($id);
+        if($request['file_kronologi'] == NULL){    
+            $imageKtp = time().'.'.$request->imagektp->extension();
+            $request->imagektp->move(public_path('images/users/ktp'), $imageKtp);
+    
+            $imageLokasi = time().'.'.$request->imagelokasi->extension();
+            $request->imagelokasi->move(public_path('images/users/lokasi'), $imageLokasi);
+    
+         $korban = KorbanUser::where('id',$id)->update([
+                        'foto_ktp' => $imageKtp,
+                        'foto_lokasi' => $imageLokasi,
+                        'foto_dokumen_hak_tanah' =>  "NULL",
+                        'status_file_upload' => 'yes',
+            ]);
+           return redirect(route('korban.list_sengketa_saya'));
+        }else{
+            $imageKtp = time().'.'.$request->imagektp->extension();
+            $request->imagektp->move(public_path('images/users/ktp'), $imageKtp);
+    
+            $imageLokasi = time().'.'.$request->imagelokasi->extension();
+            $request->imagelokasi->move(public_path('images/users/lokasi'), $imageLokasi);
+    
+            $image_dokumen_hak_tanah = time().'.'.$request->image_dokumen_hak_tanah->extension();
+            $request->image_dokumen_hak_tanah->move(public_path('images/users/dokumen_hak_tanah'), $image_dokumen_hak_tanah);
+    
+            $korban = KorbanUser::where('id',$id)->update([
+                        'foto_ktp' => $imageKtp,
+                        'foto_lokasi' => $imageLokasi,
+                        'foto_dokumen_hak_tanah' =>  $image_dokumen_hak_tanah,
+                        'status_file_upload' => 'yes',
+            ]);
+            return redirect(route('korban.list_sengketa_saya'));
+        }
+
+    }
+
+    public function hasil_berkas_sengketa($id)
+    {
+        $id = Crypt::decrypt($id);
+        $data['sengketa'] = KorbanUser::where('id',$id)->first();
+        return view('korban.hasil_berkas_sengketa',$data);
     }
 }
