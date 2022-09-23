@@ -419,7 +419,6 @@
                     .dropdown-item.ini {
                         box-shadow: 0px 6px 23px 0px rgb(0 0 0 / 25%);
                         background-color: white;
-                        margin-top: 2px;
                         margin-bottom: 2px;
                         border-left: 5px solid #06ad5f;
                     }
@@ -444,8 +443,7 @@
                                     </button>
                                     <ul class="dropdown-menu w-100 p-0 ini"
                                         style="border: 0px; position:relative !important">
-                                        <li><a class="dropdown-item ini" href="#">Konsultasi Tenaga Ahli Pertanahan</a>
-                                        </li>
+                                        {{-- <li><a class="dropdown-item ini" href="#">Konsultasi Tenaga Ahli Pertanahan</a></li> --}}
                                         {{-- <li><a class="dropdown-item ini" href="#">Edukasi Pertanahan</a></li>
                                         <li><a class="dropdown-item ini" href="#">Pengamanan Lahan</a></li> --}}
                                         <li><a class="dropdown-item ini" href="#">Jual Beli Lahan</a></li>
