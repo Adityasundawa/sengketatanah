@@ -55,6 +55,8 @@ use App\Models\User;
             </div>
         </div>
     </div>
+
+    <hr>
     <div class="row">
         <style>
             @media (min-width: 768px) {
