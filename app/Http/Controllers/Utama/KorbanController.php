@@ -45,6 +45,7 @@ class KorbanController extends Controller
         // return view('korban.index',$data);
         
         $data['sengketa'] = KorbanUser::where('user_id',Auth::id())->get();
+        $data['title'] = "Project";
         return view('korban.index',$data);
 
     }
