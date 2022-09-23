@@ -71,20 +71,41 @@ use App\Models\User;
                                     <b>PROJECT</b><b class="text-danger"> SP-00{{$item['id']}}</b>
                                 </div>
 
-                                <div class="col-6  ">
-                                    <div class="d-flex  justify-content-end">
-                                        @if($item['status_sengketa'] == 1)
-                                    <span class="badge badge-danger">Menunggu Terifikasi</span>
-                                    @elseif($item['status_sengketa'] == 2)
-                                    <span class="badge badge-success">Terverifikasi Tahap 1</span>
-                                    @elseif($item['status_sengketa'] == 3)
-                                    <span class="badge badge-warning">Terverifikasi Tahap 2</span>
-                                    @elseif($item['status_sengketa'] == 4)
-                                    <span class="badge badge-success">Selesai</span>
-                                    @elseif($item['status_sengketa'] == 0)
-                                    <span class="badge badge-danger">Pending</span>
-                                    @endif
+                                <div class="col-6">
+                                  <div class="row">
+                                    <div class="col-10 mt-1">
+                                        <div class="d-flex  justify-content-end">
+                                            @if($item['status_sengketa'] == 1)
+                                        <span class="badge badge-danger">Menunggu Verifikasi</span>
+                                        @elseif($item['status_sengketa'] == 2)
+                                        <span class="badge badge-success">Terverifikasi Tahap 1</span>
+                                        @elseif($item['status_sengketa'] == 3)
+                                        <span class="badge badge-success">Terverifikasi Tahap 2</span>
+                                        @elseif($item['status_sengketa'] == 4)
+                                        <span class="badge badge-success">Selesai</span>
+                                        @elseif($item['status_sengketa'] == 0)
+                                        <span class="badge badge-danger">Pending</span>
+                                        @endif
+                                        </div>
+                                      
                                     </div>
+                                    <div class="col-1">
+                                        <div class="dropdown d-flex  justify-content-end">
+                                            <a id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <svg class="c-icon mr-2">
+                                                    <use
+                                                        xlink:href="{{url('/')}}/core-ui/vendors/@coreui/icons/svg/free.svg#cil-menu">
+                                                    </use>
+                                                   </svg> 
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item" href="#">Action</a></li>
+                                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                          </div>
+                                      </div>
+                                  </div>
                                     
                                 </div>
                             </div>
@@ -231,6 +252,6 @@ use App\Models\User;
 
     </div>
 
-    <a class="btn text-white" style="background:#8f8f8f" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a>
+    <a class="btn text-white btn-success"  href="{{route('korban.tambah_sengketa')}}">Tambah Project</a>
 </div>
 @endsection
