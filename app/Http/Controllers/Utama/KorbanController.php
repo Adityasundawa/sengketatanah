@@ -25,6 +25,13 @@ class KorbanController extends Controller
            return view('korban.index',$data);
         }
     }
+
+    public function bidding()
+    {
+        $data['title'] = "Bidding";
+        $data['sengketa'] = KorbanUser::where('user_id',Auth::id())->get();
+        return view('korban.bidding', $data);
+    }
     
     public function tambah_sengketa()
     {

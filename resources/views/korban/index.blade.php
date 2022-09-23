@@ -7,8 +7,8 @@ use App\Models\User;
 @extends('layouts.template-korban.main')
 @section('content')
 
-<div class="container mt-3 mb-5">
-    {{-- <a class="btn btn-secondarys my-4" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a> --}}
+<div class="container-fluid mt-3 mb-5">
+    {{-- <a class="btn btn-successs my-4" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a> --}}
     <div class="row justify-content-center mb-2">
         <div class="col-3">
             <div class="row">
@@ -28,7 +28,7 @@ use App\Models\User;
                             style="width: 100px;height: auto;"></center>
                 </div>
                 <div class="col-12 text-center">
-                    Bidding
+                    <a href="{{url('')}}/korban/bidding" class="text-dark" style="text-decoration: none">Bidding</a>
                 </div>
             </div>
         </div>
@@ -61,21 +61,9 @@ use App\Models\User;
         <?php $i = 1;    ?>
         @foreach ($sengketa as $item)
         <?php $users = User::where('id',$item['user_id'])->first(); ?>
-        <style>
-            @media (min-width: 768px) {
-                .col-md-8.sp {
-                    padding-right: 0px !important
-                }
-
-                .col-md-4.sp {
-                    padding-left: 0px !important
-                }
-            }
-
-        </style>
         <div class="col-md-12">
             <div class="row mb-3">
-                <div class="col-md-8 sp">
+                <div class="col-md-12 sp">
                     <div class="card mb-0">
                         <div class="card-header bg-white">
                             <div class="row">
