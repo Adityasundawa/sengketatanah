@@ -17,6 +17,7 @@ class KorbanController extends Controller
    public function index()
     {
         $data['sengketa'] = KorbanUser::where('user_id',Auth::id())->get();
+        $data['title'] = "Project";
         $get = KorbanUser::where('user_id',Auth::id())->get();
         if(count($get) == 0){
            return view('korban.utama',$data);

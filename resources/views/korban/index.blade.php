@@ -78,13 +78,26 @@ use App\Models\User;
                 <div class="col-md-8 sp">
                     <div class="card mb-0">
                         <div class="card-header bg-white">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td><b>PROJECT SPONSOR {{$i++}}</b></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="row">
+                                <div class="col-6">
+                                    <b>PROJECT SPONSOR SP-00{{$item['id']}}</b>
+                                </div>
+
+                                <div class="col-6  d-flex  justify-content-end">
+                                    @if($item['status_sengketa'] == 1)
+                                    <span class="badge badge-danger">Menunggu Terifikasi</span>
+                                    @elseif($item['status_sengketa'] == 2)
+                                    <span class="badge badge-success">Terverifikasi Tahap 1</span>
+                                    @elseif($item['status_sengketa'] == 3)
+                                    <span class="badge badge-warning">Terverifikasi Tahap 2</span>
+                                    @elseif($item['status_sengketa'] == 4)
+                                    <span class="badge badge-success">Selesai</span>
+                                    @elseif($item['status_sengketa'] == 0)
+                                    <span class="badge badge-danger">Pending</span>
+                                    @endif
+                                </div>
+                            </div>
+                          
                         </div>
                         <div class="card-body">
                             @if($item['status_sengketa'] == 1)
@@ -164,13 +177,13 @@ use App\Models\User;
                                         <td>&nbsp; {{count(Bid_Sengketa::where('sengketa_id',$item['id'])->get());}}
                                         </td>
                                     </tr>
-                                    <tr>
+                                    {{-- <tr>
                                         <td>Kode Bid</td>
                                         <td></td>
                                         <td>:</td>
                                         <td>&nbsp; <b class="text-danger">SP-00{{$item['id']}}</b></td>
-                                    </tr>
-                                    <tr>
+                                    </tr> --}}
+                                    {{-- <tr>
                                         <td>Status</td>
                                         <td></td>
                                         <td>:</td>
@@ -186,7 +199,7 @@ use App\Models\User;
                                             @elseif($item['status_sengketa'] == 0)
                                             <span class="badge badge-danger">Pending</span>
                                             @endif</td>
-                                    </tr>
+                                    </tr> --}}
                                 </tbody>
                             </table>
 
@@ -305,17 +318,7 @@ use App\Models\User;
                                 <td></td>
                                 <td>:</td>
                                 <td>&nbsp; 
-                                    @if($item['status_sengketa'] == 1)
-                                    <span class="badge badge-danger">Menunggu verifikasi</span>
-                                    @elseif($item['status_sengketa'] == 2)
-                                    <span class="badge badge-success">Terverifikasi tahap 1</span>
-                                    @elseif($item['status_sengketa'] == 3)
-                                    <span class="badge badge-warning">Terverifikasi tahap 2</span>
-                                    @elseif($item['status_sengketa'] == 4)
-                                    <span class="badge badge-success">Selesai</span>
-                                    @elseif($item['status_sengketa'] == 0)
-                                    <span class="badge badge-danger">Pending</span>
-                                    @endif</td>
+                                   </td>
                             </tr>
                         </tbody>
                     </table>
