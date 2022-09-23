@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
 <div class="container" style="min-height:93vh">
     <div class="screen">
         <div class="screen__content">
@@ -84,21 +83,13 @@
                     <span class="button__text">Register Here</span>
                     <i class="button__icon fas fa-chevron-right"></i>
                 </a>
-
-            </form>
-            <div class="social-login">
                 @if (Route::has('password.request'))
-                <a class="btn btn-link" style="color: #ffffff" href="{{ route('password.request') }}">
+                <a class="btn btn-link text-dark" href="{{ route('password.request') }}">
                     {{ __('Forgot Your Password?') }}
                 </a>
                 @endif
-            </div>
-        </div>
-        <div class="screen__background">
-            <span class="screen__background__shape screen__background__shape4"></span>
-            <span class="screen__background__shape screen__background__shape3"></span>
-            <span class="screen__background__shape screen__background__shape2"></span>
-            <span class="screen__background__shape screen__background__shape1"></span>
+
+            </form>
         </div>
     </div>
 </div>
