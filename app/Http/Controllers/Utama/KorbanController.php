@@ -29,6 +29,7 @@ class KorbanController extends Controller
     public function tambah_sengketa()
     {
         $data['sengketa'] = KorbanUser::where('user_id',Auth::id())->get();
+        $data['title'] = "Project";
         return view('korban.utama',$data);
     }
     public function list_sengketa_saya()
@@ -98,6 +99,7 @@ class KorbanController extends Controller
     public function add_korban_file($id)
     {
         $id = Crypt::decrypt($id);
+        $data['title'] = "Project";
         $data['korban'] = KorbanUser::where('id',$id)->first();
         return view('korban.add_korban_file',$data);
 
