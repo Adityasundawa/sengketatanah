@@ -73,7 +73,7 @@ use App\Models\User;
 
                                 <div class="col-6">
                                   <div class="row">
-                                    <div class="col-10 mt-1">
+                                    <div class="col-9 mt-1">
                                         <div class="d-flex  justify-content-end">
                                             @if($item['status_sengketa'] == 1)
                                         <span class="badge badge-danger">Menunggu Verifikasi</span>
@@ -88,6 +88,15 @@ use App\Models\User;
                                         @endif
                                         </div>
                                       
+                                    </div>
+                                    <div class="col-1">
+                                       <a id="show">
+                                        <svg class="c-icon mr-2">
+                                            <use
+                                                xlink:href="{{url('/')}}/core-ui/vendors/@coreui/icons/svg/free.svg#cil-bell">
+                                            </use>
+                                           </svg> 
+                                       </a>
                                     </div>
                                     <div class="col-1">
                                         <div class="dropdown d-flex  justify-content-end">
@@ -111,19 +120,21 @@ use App\Models\User;
                             </div>
                           
                         </div>
+                        
                         <div class="card-body">
                             @if($item['status_sengketa'] == 1)
-                            <div class="alert alert-danger" role="alert">
+                            <div class="alert alert-danger" id="alert" style="display: none" role="alert">
                                 Data Anda telah kami terima dan mohon menunggu petugas kami melakukan verifikasi. Saat
                                 ini anda belum dapat mengirimkan dokumen. Pastikan telepon/hp Anda dapat di hubungi
                             </div>
+                            
                             @elseif($item['status_sengketa'] == 2)
-                            <div class="alert alert-warning" role="alert">
+                            <div class="alert alert-warning" id="alert" style="display: none" role="alert">
                                 <b>Selamat, </b>Anda berhasil melewati tahap verifikasi 1. Silahkan pilih lampiran
                                 dokumen Anda untuk melewati tahap berikutnya
                             </div>
                             @elseif($item['status_sengketa'] == 3)
-                            <div class="alert alert-warning" role="alert">
+                            <div class="alert alert-warning" id="alert" style="display: none" role="alert">
                                 <b>Selamat, </b>Anda berhasil melewati verifikasi tahap 2. Untuk menampilkan project,
                                 Anda harus melewati sesi wawancara via Podcast Sengketa Tanah atau Zoom.
                             </div>
@@ -255,3 +266,4 @@ use App\Models\User;
     <a class="btn text-white btn-success"  href="{{route('korban.tambah_sengketa')}}">Tambah Project</a>
 </div>
 @endsection
+
