@@ -10,7 +10,7 @@
         </svg>
       </div>
       <ul class="c-sidebar-nav">
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="{{url('/korban')}}">
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="{{url('/korban/index')}}">
             <svg class="c-sidebar-nav-icon">
               <use xlink:href="{{url('/')}}/core-ui/vendors/@coreui/icons/svg/free.svg#cil-speedometer"></use>
             </svg> Dashboard</a></li>

@@ -10,9 +10,17 @@
         padding: 10px 0px
     }
 
+    .login__icon {
+        top: 23px
+    }
+
     .screen__background__shape1 {
-        top: 5px;
+        top: -5px;
         right: 100px;
+        height: 745px;
+        width: 605px;
+        background: #fff;
+        border-radius: 0 72px 0 0;
     }
 </style>
 <div class="container pt-5 pb-5" style="min-height:100vh">
@@ -44,7 +52,7 @@
 				</div>
 
                 <div class="login__field">
-					<i class="login__icon fas fa-envelope"></i>
+					<i class="login__icon fas fa-location-dot"></i>
 					<input id="address" type="address" placeholder="Address" class="login__input @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="address">
 
                     @error('address')
@@ -55,7 +63,7 @@
 				</div>
 
                 <div class="login__field">
-					<i class="login__icon fas fa-envelope"></i>
+					<i class="login__icon fas fa-phone"></i>
 					<input id="phone" type="phone" placeholder="Phone" class="login__input @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone">
 
                     @error('phone')
