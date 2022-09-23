@@ -7,7 +7,7 @@ use App\Models\User;
 @extends('layouts.template-korban.main')
 @section('content')
 
-<div class="container mt-3 mb-5">
+<div class="container mt-3">
     {{-- <a class="btn btn-successs my-4" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a> --}}
     <div class="row justify-content-center mb-2">
         <div class="col-3">
@@ -58,23 +58,25 @@ use App\Models\User;
 
     <hr>
     <div class="row">
+        <?php $i = 1;    ?>
+        @foreach ($sengketa as $item)
+        <?php $users = User::where('id',$item['user_id'])->first(); ?>
         <style>
             @media (min-width: 768px) {
                 .col-md-8.sp {
                     padding-right: 0px !important
                 }
+
                 .col-md-4.sp {
                     padding-left: 0px !important
                 }
             }
+
         </style>
-        <?php $i = 1;    ?>
-        @foreach ($sengketa as $item)
-        <?php $users = User::where('id',$item['user_id'])->first(); ?>
-        <div class="col-12 mb-4">
-            <div class="row">
+        <div class="col-md-12">
+            <div class="row mb-3">
                 <div class="col-md-8 sp">
-                    <div class="card mb-0">
+                    <div class="card mb-2">
                         <div class="card-header bg-white">
                             <table>
                                 <tbody>
@@ -92,13 +94,13 @@ use App\Models\User;
                             </div>
                             @elseif($item['status_sengketa'] == 2)
                             <div class="alert alert-warning" role="alert">
-                                <b>Selamat, </b>Anda berhasil melewati tahap 1. Silahkan pilih lampiran dokumen Anda
-                                untuk melewati tahap berikutnya
+                                <b>Selamat, </b>Anda berhasil melewati tahap verifikasi 1. Silahkan pilih lampiran
+                                dokumen Anda untuk melewati tahap berikutnya
                             </div>
                             @elseif($item['status_sengketa'] == 3)
                             <div class="alert alert-warning" role="alert">
-                                <b>Selamat, </b>Anda berhasil melewati Verifikasi tahap 2. Untuk menampilkan project
-                                anda harus melewati sesi wawancara via Podcast Sengketa Tanah atau zoom.
+                                <b>Selamat, </b>Anda berhasil melewati verifikasi tahap 2. Untuk menampilkan project,
+                                Anda harus melewati sesi wawancara via Podcast Sengketa Tanah atau Zoom.
                             </div>
                             {{-- @elseif($item['status_sengketa']s == 3)s
                             <span class="badge badge-warning">Diproses</span>
@@ -174,11 +176,11 @@ use App\Models\User;
                                         <td>:</td>
                                         <td>&nbsp;
                                             @if($item['status_sengketa'] == 1)
-                                            <span class="badge badge-danger">Menunggu Verifikasi</span>
+                                            <span class="badge badge-danger">Menunggu verifikasi</span>
                                             @elseif($item['status_sengketa'] == 2)
-                                            <span class="badge badge-success">Terverifikasi Tahap 1</span>
+                                            <span class="badge badge-success">Terverifikasi tahap 1</span>
                                             @elseif($item['status_sengketa'] == 3)
-                                            <span class="badge badge-warning">Diproses</span>
+                                            <span class="badge badge-warning">Terverifikasi tahap 2</span>
                                             @elseif($item['status_sengketa'] == 4)
                                             <span class="badge badge-success">Selesai</span>
                                             @elseif($item['status_sengketa'] == 0)
@@ -191,15 +193,26 @@ use App\Models\User;
                             @if ($item['status_sengketa'] == 1)
                             @if ($item['status_file_upload'] == "yes")
                             <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}"
-                                class="btn btn-block btn-sm btn-success mt-4">Lihat Berkas</a>
+                                class="btn btn-block btn-sm btn-info mt-4">Lihat Berkas</a>
                             @else
                             <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}"
                                 class="btn btn-block btn-sm btn-success mt-4 disabled" disable>Upload Dokumen</a>
                             @endif
+
+                            @elseif($item['status_sengketa'] == 3)
+                            <div class="row mt-4">
+                                <div class="col-6">
+                                    <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}"
+                                        class="btn btn-block btn-sm btn-info">Lihat Berkas</a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="btn btn-block btn-sm btn-warning">Jadwalkan Wawancara</a>
+                                </div>
+                            </div>
                             @else
                             @if ($item['status_file_upload'] == "yes")
                             <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}"
-                                class="btn btn-block btn-sm btn-success mt-4">Lihat Berkas</a>
+                                class="btn btn-block btn-sm btn-info mt-4">Lihat Berkas</a>
                             @else
                             <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}"
                                 class="btn btn-block btn-sm btn-success mt-4">Upload Dokumen</a>
@@ -215,7 +228,6 @@ use App\Models\User;
                         allowfullscreen></iframe>
                 </div>
             </div>
-
         </div>
         @endforeach
 
