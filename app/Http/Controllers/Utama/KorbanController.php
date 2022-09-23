@@ -155,6 +155,7 @@ class KorbanController extends Controller
     public function hasil_berkas_sengketa($id)
     {
         $id = Crypt::decrypt($id);
+        $data['title'] = "Project";
         $data['sengketa'] = KorbanUser::where('id',$id)->first();
         return view('korban.hasil_berkas_sengketa',$data);
     }
