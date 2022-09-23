@@ -1527,7 +1527,7 @@
                                     <option value="Sertifikat Rumah">Sertifikat Rumah</option>
                                 </select>
                             </div>
-                            <div class="mb-2">
+                            {{-- <div class="mb-2">
                                 <label for="ktp" class="form-label">Foto KTP</label>
                                 <input class="form-control rounded-0" type="file" id="ktp" name="foto_ktp" required>
                             </div>
@@ -1540,7 +1540,7 @@
                                 <label for="dokumenTanah" class="form-label">Foto Dokumen Hak Tanah</label>
                                 <input class="form-control rounded-0" type="file" id="dokumenTanah" name="dokumen_tanah"
                                     required>
-                            </div>
+                            </div> --}}
                             <div class="mb-2 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" style="text-align:justify" for="exampleCheck1">Dengan
