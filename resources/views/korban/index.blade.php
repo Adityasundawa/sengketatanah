@@ -76,7 +76,7 @@ use App\Models\User;
         <div class="col-md-12">
             <div class="row mb-3">
                 <div class="col-md-8 sp">
-                    <div class="card mb-2">
+                    <div class="card mb-0">
                         <div class="card-header bg-white">
                             <table>
                                 <tbody>
