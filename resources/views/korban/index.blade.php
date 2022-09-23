@@ -8,7 +8,7 @@ use App\Models\User;
 @section('content')
 
 <div class="container mt-3 mb-5">
-    {{-- <a class="btn btn-successs my-4" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a> --}}
+    {{-- <a class="btn btn-secondarys my-4" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a> --}}
     <div class="row justify-content-center mb-2">
         <div class="col-3">
             <div class="row">
@@ -209,28 +209,28 @@ use App\Models\User;
                             @if ($item['status_sengketa'] == 1)
                             @if ($item['status_file_upload'] == "yes")
                             <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}"
-                                class="btn btn-block btn-sm btn-info mt-4">Lihat Berkas</a>
+                                class="btn btn-block btn-sm btn-secondary mt-4">Lihat Berkas</a>
                             @else
                             <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}"
-                                class="btn btn-block btn-sm btn-success mt-4 disabled" disable>Upload Dokumen</a>
+                                class="btn btn-block btn-sm btn-secondary mt-4 disabled" disable>Upload Dokumen</a>
                             @endif
 
                             @elseif($item['status_sengketa'] == 3)
                             <div class="row mt-4">
                                 <div class="col-6">
-                                    <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}"class="btn btn-block btn-sm btn-info">Lihat Berkas</a>
+                                    <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}"class="btn btn-block btn-sm btn-secondary">Lihat Berkas</a>
                                 </div>
                                 <div class="col-6">
-                                    <a href="#" class="btn btn-block btn-sm btn-warning">Jadwalkan Wawancara</a>
+                                    <a href="#" class="btn btn-block btn-sm btn-secondary">Jadwalkan Wawancara</a>
                                 </div>
                             </div>
                             @else
                             @if ($item['status_file_upload'] == "yes")
                             <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}"
-                                class="btn btn-block btn-sm btn-info mt-4">Lihat Berkas</a>
+                                class="btn btn-block btn-sm btn-secondary mt-4">Lihat Berkas</a>
                             @else
                             <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}"
-                                class="btn btn-block btn-sm btn-success mt-4">Upload Dokumen</a>
+                                class="btn btn-block btn-sm btn-secondary mt-4">Upload Dokumen</a>
                             @endif
                             @endif
                         </div>
@@ -328,25 +328,25 @@ use App\Models\User;
 
                     @if ($item['status_sengketa'] == 1)
                        @if ($item['status_file_upload'] == "yes")
-                        <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-info mt-4">Lihat Berkas</a>
+                        <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-secondary mt-4">Lihat Berkas</a>
                        @else
-                        <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-success mt-4 disabled" disable>Upload Dokumen</a>
+                        <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-secondary mt-4 disabled" disable>Upload Dokumen</a>
                        @endif
 
                     @elseif($item['status_sengketa'] == 3)
                      <div class="row mt-4">
                        <div class="col-6">
-                        <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-info">Lihat Berkas</a>
+                        <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-secondary">Lihat Berkas</a>
                        </div>
                        <div class="col-6">
-                        <a href="#" class="btn btn-block btn-sm btn-warning">Jadwalkan Wawancara</a>
+                        <a href="#" class="btn btn-block btn-sm btn-secondary">Jadwalkan Wawancara</a>
                        </div>
                      </div>
                     @else
                        @if ($item['status_file_upload'] == "yes")
-                       <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-info mt-4">Lihat Berkas</a>
+                       <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-secondary mt-4">Lihat Berkas</a>
                     @else
-                       <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-success mt-4">Upload Dokumen</a>
+                       <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-secondary mt-4">Upload Dokumen</a>
                     @endif
                     @endif
                 <div class="col-md-4 sp">
@@ -362,6 +362,6 @@ use App\Models\User;
 
     </div>
 
-    <a class="btn btn-success" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a>
+    <a class="btn btn-secondary" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a>
 </div>
 @endsection
