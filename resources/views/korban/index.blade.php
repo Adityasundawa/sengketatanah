@@ -171,7 +171,7 @@ use App\Models\User;
                         <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-info mt-4">Lihat Berkas</a>
                        @else
                         <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-success mt-4 disabled" disable>Upload Dokumen</a>
-                        <a href="{{route('korban.jadwal_wawancara')}}" class="btn btn-block btn-sm btn-warning mt-4">Jadwalkan Wawancara</a>
+                        <a href="#" class="btn btn-block btn-sm btn-warning mt-4">Jadwalkan Wawancara</a>
                        @endif
                     @else
                        @if ($item['status_file_upload'] == "yes")
