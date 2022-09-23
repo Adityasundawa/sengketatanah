@@ -159,10 +159,12 @@ use App\Models\User;
                     </div>
                 </div>
                 <div class="col-md-3 sp text-white">
-                    <div class="my-auto bg-dark h-100">
-                        <h1 class="text-center">
-                            Video Tidak Ada
-                        </h1>
+                    <div class="card mb-0 bg-dark h-100 rounded-0 d-flex">
+                        <div class="card-body align-items-center d-flex justify-content-center">
+                            <h1 class="text-center">
+                                Video Tidak Ada
+                            </h1>
+                        </div>
                     </div>
                 </div>
             </div>
