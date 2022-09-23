@@ -179,7 +179,7 @@ use App\Models\User;
                         <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-info">Lihat Berkas</a>
                        </div>
                        <div class="col-6">
-                        <a href="#" class="btn btn-block btn-sm btn-warning">Jadwalkan Wawancara</a>
+                        <a href="{{route('korban.hasil_berkas_sengketa')}}" class="btn btn-block btn-sm btn-warning">Jadwalkan Wawancara</a>
                        </div>
                      </div>
                     @else
