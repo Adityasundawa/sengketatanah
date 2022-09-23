@@ -7,7 +7,7 @@ use App\Models\User;
 @extends('layouts.template-korban.main')
 @section('content')
 
-<div class="container mt-3">
+<div class="container mt-3 mb-5">
     {{-- <a class="btn btn-successs my-4" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a> --}}
     <div class="row justify-content-center mb-2">
         <div class="col-3">
