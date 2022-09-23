@@ -6,9 +6,7 @@
                    <use xlink:href="{{url('/')}}/core-ui/vendors/@coreui/icons/svg/free.svg#cil-menu"></use>
                </svg>
            </button><a class="c-header-brand d-lg-none" href="#">
-               <svg width="118" height="46" alt="CoreUI Logo">
-                   <use xlink:href="{{url('/')}}/core-ui/assets/brand/coreui.svg#full"></use>
-               </svg></a>
+               <img class="c-sidebar-brand-full" src="{{asset('/')}}uploads/sengketa_tanah.png" alt="" width="100px">
            <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar"
                data-class="c-sidebar-lg-show" responsive="true">
                <svg class="c-icon c-icon-lg">

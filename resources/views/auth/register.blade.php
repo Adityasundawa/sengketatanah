@@ -3,7 +3,7 @@
 @section('content')
 <style>
     .screen {
-        height: 800px;
+        height: 930px !important;
     }
 
     .login__field {
