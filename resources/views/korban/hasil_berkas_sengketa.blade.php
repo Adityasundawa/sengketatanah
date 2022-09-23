@@ -7,7 +7,7 @@
         <div class="col-lg-6">
             <div class="card">
                 <div class="card-header">
-                    Berkas Foto Ktp
+                    Berkas Foto KTP Elektronik
                 </div>
                 <div class="card-body">
                      <img class="img-fluid" src="{{asset('/')}}images/users/ktp/{{$sengketa['foto_ktp']}}" alt="">
@@ -36,5 +36,6 @@
         </div>
     </div>
 </div>
+
 
 @endsection

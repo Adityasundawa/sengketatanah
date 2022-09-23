@@ -17,6 +17,7 @@ class KorbanController extends Controller
    public function index()
     {
         $data['sengketa'] = KorbanUser::where('user_id',Auth::id())->get();
+        $data['title'] = "Project";
         $get = KorbanUser::where('user_id',Auth::id())->get();
         if(count($get) == 0){
            return view('korban.utama',$data);
@@ -24,10 +25,18 @@ class KorbanController extends Controller
            return view('korban.index',$data);
         }
     }
+
+    public function bidding()
+    {
+        $data['title'] = "Bidding";
+        $data['sengketa'] = KorbanUser::where('user_id',Auth::id())->get();
+        return view('korban.bidding', $data);
+    }
     
     public function tambah_sengketa()
     {
         $data['sengketa'] = KorbanUser::where('user_id',Auth::id())->get();
+        $data['title'] = "Project";
         return view('korban.utama',$data);
     }
     public function list_sengketa_saya()
@@ -37,6 +46,7 @@ class KorbanController extends Controller
         // return view('korban.index',$data);
         
         $data['sengketa'] = KorbanUser::where('user_id',Auth::id())->get();
+        $data['title'] = "Project";
         return view('korban.index',$data);
 
     }
@@ -97,6 +107,7 @@ class KorbanController extends Controller
     public function add_korban_file($id)
     {
         $id = Crypt::decrypt($id);
+        $data['title'] = "Project";
         $data['korban'] = KorbanUser::where('id',$id)->first();
         return view('korban.add_korban_file',$data);
 
@@ -144,6 +155,7 @@ class KorbanController extends Controller
     public function hasil_berkas_sengketa($id)
     {
         $id = Crypt::decrypt($id);
+        $data['title'] = "Project";
         $data['sengketa'] = KorbanUser::where('id',$id)->first();
         return view('korban.hasil_berkas_sengketa',$data);
     }

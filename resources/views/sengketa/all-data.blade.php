@@ -421,7 +421,6 @@
                     .dropdown-item.ini {
                         box-shadow: 0px 6px 23px 0px rgb(0 0 0 / 25%);
                         background-color: white;
-                        margin-top: 2px;
                         margin-bottom: 2px;
                         border-left: 5px solid #06ad5f;
                     }
@@ -446,11 +445,11 @@
                                     </button>
                                     <ul class="dropdown-menu w-100 p-0 ini"
                                         style="border: 0px; position:relative !important">
-                                        <li><a class="dropdown-item ini" href="#">Konsultasi Tenaga Ahli Pertanahan</a>
-                                        </li>
-                                        <li><a class="dropdown-item ini" href="#">Edukasi Pertanahan</a></li>
-                                        <li><a class="dropdown-item ini" href="#">Pengamanan Lahan</a></li>
+                                        {{-- <li><a class="dropdown-item ini" href="#">Konsultasi Tenaga Ahli Pertanahan</a></li> --}}
+                                        {{-- <li><a class="dropdown-item ini" href="#">Edukasi Pertanahan</a></li>
+                                        <li><a class="dropdown-item ini" href="#">Pengamanan Lahan</a></li> --}}
                                         <li><a class="dropdown-item ini" href="#">Jual Beli Lahan</a></li>
+                                        <li><a class="dropdown-item ini" href="#">Kerjasama Lahan</a></li>
                                         <li><a class="dropdown-item ini" href="#">Pelelangan Lahan</a></li>
                                         <li><a class="dropdown-item ini" href="#">Jasa Tukang Ukur</a></li>
                                     </ul>
@@ -1524,7 +1523,7 @@
                                     <option value="Sertifikat Rumah">Sertifikat Rumah</option>
                                 </select>
                             </div>
-                            <div class="mb-2">
+                            {{-- <div class="mb-2">
                                 <label for="ktp" class="form-label">Foto KTP</label>
                                 <input class="form-control rounded-0" type="file" id="ktp" name="foto_ktp" required>
                             </div>
@@ -1537,7 +1536,7 @@
                                 <label for="dokumenTanah" class="form-label">Foto Dokumen Hak Tanah</label>
                                 <input class="form-control rounded-0" type="file" id="dokumenTanah" name="dokumen_tanah"
                                     required>
-                            </div>
+                            </div> --}}
                             <div class="mb-2 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" style="text-align:justify" for="exampleCheck1">Dengan

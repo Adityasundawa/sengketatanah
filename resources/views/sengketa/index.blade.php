@@ -296,7 +296,7 @@
                 <p>Platform Sengketa Tanah adalah inovator teknologi dalam bidang Sengketa
                     pertanahan di Indonesia yang mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
                     pemerintah.</p>
-                    <a type="button" href="{{route('bid-sengketa')}}" 
+                    <a type="button" href="{{url('/')}}/bid-sengketa" 
                     style="
                     border: 0px;
                     background: linear-gradient(90deg, rgba(223,189,105,1) 0%, rgba(146,111,52,1) 100%);"

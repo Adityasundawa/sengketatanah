@@ -10,7 +10,7 @@
         </svg>
       </div>
       <ul class="c-sidebar-nav">
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="{{url('/korban')}}">
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="{{url('/korban/index')}}">
             <svg class="c-sidebar-nav-icon">
               <use xlink:href="{{url('/')}}/core-ui/vendors/@coreui/icons/svg/free.svg#cil-speedometer"></use>
             </svg> Dashboard</a></li>
@@ -27,12 +27,12 @@
        
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="{{url('/korban/list_sengketa_saya')}}">
             <svg class="c-sidebar-nav-icon">
-              <use xlink:href="{{url('/')}}/core-ui/vendors/@coreui/icons/svg/free.svg#cil-chart-pie"></use>
+              <use xlink:href="{{url('/')}}/core-ui/vendors/@coreui/icons/svg/free.svg#cil-list"></use>
             </svg>List Sengketa Tanah</a>
         </li>
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="{{url('/korban/sengketa-tanah')}}">
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="{{url('/korban/tambah_sengketa')}}">
           <svg class="c-sidebar-nav-icon">
-            <use xlink:href="{{url('/')}}/core-ui/vendors/@coreui/icons/svg/free.svg#cil-chart-pie"></use>
+            <use xlink:href="{{url('/')}}/core-ui/vendors/@coreui/icons/svg/free.svg#cil-library-add"></use>
           </svg>Tambah Sengketa Tanah</a>
       </li>
       </ul>

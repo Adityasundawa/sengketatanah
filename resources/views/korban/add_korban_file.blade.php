@@ -20,9 +20,9 @@
                                 required>
                         </div>
                         <div class="mb-2">
-                            <label for="dokumenTanah" class="form-label">Dokumen Hak
+                            <label for="dokumenTanah" class="form-label">Dokumen Alas Hak
                                 Tanah</label>
-                            {{-- <input class="file-input rounded-0" type="file" id="dokumenTanah" name="image_dokumen_hak_tanah"> --}}
+                            <input class="file-input rounded-0" type="file" id="dokumenTanah" name="image_dokumen_hak_tanah">
                             <select name="" class="form-control" id="">
                                 <option selected>Pilih</option>
                                 <option value="">Data Di Kirim Via Kurir</option>
