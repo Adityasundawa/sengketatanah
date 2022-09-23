@@ -61,9 +61,22 @@ use App\Models\User;
         <?php $i = 1;    ?>
         @foreach ($sengketa as $item)
         <?php $users = User::where('id',$item['user_id'])->first(); ?>
-        
-        <div class="col-md-12 mb-3">
-            <div class="card mb-0 rounded-0">
+        <style>
+            @media (min-width: 768px) {
+                .col-md-9.sp {
+                    padding-right: 0px !important
+                }
+
+                .col-md-3.sp {
+                    padding-left: 0px !important
+                }
+            }
+
+        </style>
+        <div class="col-md-12">
+            <div class="row mb-3">
+                <div class="col-md-9 sp">
+                    <div class="card mb-0 rounded-0">
                         <div class="card-header bg-white">
                             <table>
                                 <tbody>
@@ -207,6 +220,15 @@ use App\Models\User;
                             @endif
                             @endif
                         </div>
+                    </div>
+                </div>
+                <div class="col-md-3 sp text-white">
+                    <div class="my-auto bg-dark h-100">
+                        <h1 class="text-center">
+                            Video Tidak Ada
+                        </h1>
+                    </div>
+                </div>
             </div>
         </div>
         @endforeach
