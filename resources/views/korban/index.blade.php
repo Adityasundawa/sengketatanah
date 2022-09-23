@@ -156,7 +156,7 @@ use App\Models\User;
                                     @elseif($item['status_sengketa'] == 2)
                                     <span class="badge badge-success">Terverifikasi Tahap 1</span>
                                     @elseif($item['status_sengketa'] == 3)
-                                    <span class="badge badge-warning">Diproses</span>
+                                    <span class="badge badge-warning">Terverifikasi Tahap 2</span>
                                     @elseif($item['status_sengketa'] == 4)
                                     <span class="badge badge-success">Selesai</span>
                                     @elseif($item['status_sengketa'] == 0)
