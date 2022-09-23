@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\EmailController;
 use App\Http\Controllers\SengketaController;
 use App\Http\Controllers\SponsorDashboardController;
 use App\Http\Controllers\Utama\DashboardUtamaController;
@@ -10,7 +11,8 @@ use App\Http\Controllers\Utama\PengacaraController;
 use App\Http\Controllers\Utama\SponsorController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-
+use GuzzleHttp\Client;
+use App\Http\Controllers\WilayahIndoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,6 +25,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', [SengketaController::class,'index']);
+
 Route::post('sengketa/send',[SengketaController::class,'store'])->name('sengketa.store');
 Route::get('bid-sengketa',[SengketaController::class,'dataSengketa'])->name('bid-sengketa');
 Route::get('bid-sengketa/podcast',[SengketaController::class,'podcastSengketa']);
@@ -30,10 +33,18 @@ Route::get('form-korban',[SengketaController::class,'formKorban']);
 Route::get('form-penyelesai',[SengketaController::class,'formPenyelesai']);
 Route::get('form-law-firm',[SengketaController::class,'formLawFirm']);
 Route::get('layanan',[SengketaController::class,'layanan']);
+Route::get('kota-prov-id',[WilayahIndoController::class,'getKotaIdProv']);
+Route::get('kec-kot-id',[WilayahIndoController::class,'getKecIdKota']);
+Route::get('des-kec-id',[WilayahIndoController::class,'getDesaIdKec']);
+Route::get('send-email',[EmailController::class,'sendEmail']);
+
+
+
 
 Route::get('tentang-pemerintah',function ()
 {
    return view('sengketa.tentang-pemerintah');
+ 
   
 });
 Auth::routes();

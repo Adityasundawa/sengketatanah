@@ -272,11 +272,13 @@
 
         .wrapper.btn-chatz {
             position: absolute;
-            right: 20px;
+            /* right: 20px; */
             bottom: 100px;
-            width: 300px;
+            width: 340px;
+            height:auto;
             background-color: #fff;
             border-radius: 5px;
+            border: 2px solid white;
             opacity: 0;
             transition: all 0.4s
         }
@@ -812,10 +814,12 @@
                                         placeholder="Masukan Pesan"></textarea> <button class="btn btn-success btn-block">Kirim</button>
                                 </div>
                             </div>
-
-
-
+                        
                         </div>
+                      
+
+
+
 
                         <div class="col-lg-12 mt-2" id="dataLawyer" style="display:none">
                             <div class="row">
@@ -850,14 +854,6 @@
                                         <!--        </div>-->
                                         <!--    </div>-->
                                         <!--</div>-->
-
-
-
-
-
-
-
-
                                         <div class="card-body">
                                             @if($bp['id'] >3)
                                             <div class="ribbon-pop"><i class="fa-solid fa-star"></i>&nbsp;HOT</div>
