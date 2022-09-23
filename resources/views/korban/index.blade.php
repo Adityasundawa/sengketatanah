@@ -231,6 +231,6 @@ use App\Models\User;
 
     </div>
 
-    <a class="btn btn-secondary" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a>
+    <a class="btn" style="background:#8f8f8f" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a>
 </div>
 @endsection
