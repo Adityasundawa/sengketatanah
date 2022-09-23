@@ -17,7 +17,7 @@ use App\Models\User;
                             style="width: 100px;height: auto;"></center>
                 </div>
                 <div class="col-12 text-center">
-                    Project
+                    <a href="{{url('')}}/korban/list_sengketa_saya" class="text-dark" style="text-decoration: none">Project</a>
                 </div>
             </div>
         </div>
@@ -28,7 +28,7 @@ use App\Models\User;
                             style="width: 100px;height: auto;"></center>
                 </div>
                 <div class="col-12 text-center">
-                    Bidding
+                    <a href="{{url('')}}/korban/bidding" class="text-dark" style="text-decoration: none">Bidding</a>
                 </div>
             </div>
         </div>
