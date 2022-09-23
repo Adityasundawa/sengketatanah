@@ -73,11 +73,11 @@ use App\Models\User;
                     </div>
                     @elseif($item['status_sengketa'] == 2)
                     <div class="alert alert-warning" role="alert">
-                        <b>Selamat, </b>Anda berhasil melewati tahap 1. Silahkan pilih lampiran dokumen Anda untuk melewati tahap berikutnya
+                        <b>Selamat, </b>Anda berhasil melewati tahap verifikasi 1. Silahkan pilih lampiran dokumen Anda untuk melewati tahap berikutnya
                     </div>
                     @elseif($item['status_sengketa'] == 3)
                     <div class="alert alert-warning" role="alert">
-                        <b>Selamat, </b>Anda berhasil melewati Verifikasi tahap 2. Untuk menampilkan project anda harus melewati sesi wawancara via Podcast Sengketa Tanah atau zoom.
+                        <b>Selamat, </b>Anda berhasil melewati verifikasi tahap 2. Untuk menampilkan project, Anda harus melewati sesi wawancara via Podcast Sengketa Tanah atau Zoom.
                     </div>
                     {{-- @elseif($item['status_sengketa']s == 3)s
                     <span class="badge badge-warning">Diproses</span>
@@ -152,11 +152,11 @@ use App\Models\User;
                                 <td>:</td>
                                 <td>&nbsp; 
                                     @if($item['status_sengketa'] == 1)
-                                    <span class="badge badge-danger">Menunggu Verifikasi</span>
+                                    <span class="badge badge-danger">Menunggu verifikasi</span>
                                     @elseif($item['status_sengketa'] == 2)
-                                    <span class="badge badge-success">Terverifikasi Tahap 1</span>
+                                    <span class="badge badge-success">Terverifikasi tahap 1</span>
                                     @elseif($item['status_sengketa'] == 3)
-                                    <span class="badge badge-warning">Terverifikasi Tahap 2</span>
+                                    <span class="badge badge-warning">Terverifikasi tahap 2</span>
                                     @elseif($item['status_sengketa'] == 4)
                                     <span class="badge badge-success">Selesai</span>
                                     @elseif($item['status_sengketa'] == 0)
@@ -168,13 +168,14 @@ use App\Models\User;
 
                     @if ($item['status_sengketa'] == 1)
                        @if ($item['status_file_upload'] == "yes")
-                        <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-success mt-4">Lihat Berkas</a>
+                        <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-info mt-4">Lihat Berkas</a>
                        @else
                         <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-success mt-4 disabled" disable>Upload Dokumen</a>
+                        <a href="{{route('korban.jadwal_wawancara')}}" class="btn btn-block btn-sm btn-warning mt-4">Jadwalkan Wawancara</a>
                        @endif
                     @else
                        @if ($item['status_file_upload'] == "yes")
-                       <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-success mt-4">Lihat Berkas</a>
+                       <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-info mt-4">Lihat Berkas</a>
                     @else
                        <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm btn-success mt-4">Upload Dokumen</a>
                     @endif
