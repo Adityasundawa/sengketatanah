@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
-| API Routessssssssss tests
+| API Routessssssssss testss
 |--------------------------------------------------------------------------
 |
 | Here is where you can register API routes for your application. These
