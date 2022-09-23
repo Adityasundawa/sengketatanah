@@ -446,9 +446,10 @@
                                         style="border: 0px; position:relative !important">
                                         <li><a class="dropdown-item ini" href="#">Konsultasi Tenaga Ahli Pertanahan</a>
                                         </li>
-                                        <li><a class="dropdown-item ini" href="#">Edukasi Pertanahan</a></li>
+                                        {{-- <li><a class="dropdown-item ini" href="#">Edukasi Pertanahan</a></li>
+                                        <li><a class="dropdown-item ini" href="#">Pengamanan Lahan</a></li> --}}
                                         <li><a class="dropdown-item ini" href="#">Jual Beli Lahan</a></li>
-                                        <li><a class="dropdown-item ini" href="#">Kerja Sama Lahan</a></li>
+                                        <li><a class="dropdown-item ini" href="#">Kerjasama Lahan</a></li>
                                         <li><a class="dropdown-item ini" href="#">Pelelangan Lahan</a></li>
                                         <li><a class="dropdown-item ini" href="#">Jasa Tukang Ukur</a></li>
                                     </ul>
