@@ -68,12 +68,14 @@
            </ul>
            <div class="c-subheader px-3">
 
-               <!-- Breadcrumb-->
+              
                <ol class="breadcrumb border-0 m-0">
-                   {{-- <li class="breadcrumb-item">Home</li>
-                   <li class="breadcrumb-item"><a href="#">Korban</a></li> --}}
-                   <li class="breadcrumb-item active text-capitalize">Dashboard Sengketa Tanah &nbsp;<b class="text-success">({{auth()->user()->role}})</b></li>
-                   <!-- Breadcrumb Menu-->
-               </ol>
+                <li class="breadcrumb-item">Dashboard</li>
+                <li class="breadcrumb-item text-capitalize text-success">{{auth()->user()->role}}</li>
+                <li class="breadcrumb-item"><a href="#">{{$title}}</a></li>
+
+                <!-- Breadcrumb Menu-->
+                {{-- <li class="breadcrumb-item active text-capitalize">Dashboard Sengketa Tanah &nbsp;<b class="text-success">({{auth()->user()->role}})</b></li> --}}
+            </ol>
            </div>
        </header>
