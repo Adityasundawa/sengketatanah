@@ -80,11 +80,12 @@ use App\Models\User;
                         <div class="card-header bg-white">
                             <div class="row">
                                 <div class="col-6">
-                                    <b>PROJECT SPONSOR SP-00{{$item['id']}}</b>
+                                    <b>PROJECT</b><b class="text-danger"> SP-00{{$item['id']}}</b>
                                 </div>
 
-                                <div class="col-6  d-flex  justify-content-end">
-                                    @if($item['status_sengketa'] == 1)
+                                <div class="col-6  ">
+                                    <div class="d-flex  justify-content-end">
+                                        @if($item['status_sengketa'] == 1)
                                     <span class="badge badge-danger">Menunggu Terifikasi</span>
                                     @elseif($item['status_sengketa'] == 2)
                                     <span class="badge badge-success">Terverifikasi Tahap 1</span>
@@ -95,6 +96,8 @@ use App\Models\User;
                                     @elseif($item['status_sengketa'] == 0)
                                     <span class="badge badge-danger">Pending</span>
                                     @endif
+                                    </div>
+                                    
                                 </div>
                             </div>
                           
