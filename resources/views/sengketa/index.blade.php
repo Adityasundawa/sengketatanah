@@ -317,36 +317,41 @@
         @endif
 
         <div class="card mb-3">
-            <div class="card-body">
-                <div class="row justify-content-between g-0 text-center">
-                    <div class="col mt-1 mb-1">
-                        <button class="btn p-0">
-                            <img src="{{asset('/')}}images/icon/icon_rounded.png" class="" style="width:65px;" alt="">
-                            <div class="mt-0" style="font-size: 12px">Bid Sengketa</div>
+            <div class="card-body pb-0">
+                <div class="row justify-content-between text-center" style="overflow-x: auto; flex-wrap: nowrap">
+                    <div class="col mb-4">
+                        <button class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                            <img src="{{asset('/')}}images/icon/icon_rounded.png" class="" style="width: 85px;" alt="">
+                            <div class="mt-0" style="font-size: 12px">Bid <br> Sengketa</div>
                         </button>
                     </div>
-                    <div class="col mt-1 mb-1">
-                        <button class="btn p-0">
-                            <img src="{{asset('/')}}images/icon/icon_rounded.png" class="" style="width:65px;" alt="">
-                            <div class="mt-0" style="font-size: 12px">Jual Beli Lahan</div>
+                    <div class="col mb-4">
+                        <button class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                            <img src="{{asset('/')}}images/icon/icon_rounded.png" class="" style="width: 85px;" alt="">
+                            <div class="mt-0" style="font-size: 12px">Jual Beli <br> Lahan</div>
                         </button>
                     </div>
-                    <div class="col mt-1 mb-1">
-                        <button class="btn p-0">
-                            <img src="{{asset('/')}}images/icon/icon_rounded.png" class="" style="width:65px;" alt="">
-                            <div class="mt-0" style="font-size: 12px">Kerjasama Lahan</div>
+                    <div class="col mb-4">
+                        <button class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                            <img src="{{asset('/')}}images/icon/icon_rounded.png" class="" style="width: 85px;" alt="">
+                            <div class="mt-0" style="font-size: 12px">Kerjasama <br> Lahan</div>
                         </button>
                     </div>
-                    <div class="col mt-1 mb-1">
-                        <button class="btn p-0">
-                            <img src="{{asset('/')}}images/icon/icon_rounded.png" class="" style="width:65px;" alt="">
-                            <div class="mt-0" style="font-size: 12px">Pelelangan Lahan</div>
+                    <div class="col mb-4">
+                        <button class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                            <img src="{{asset('/')}}images/icon/icon_rounded.png" class="" style="width: 85px;" alt="">
+                            <div class="mt-0" style="font-size: 12px">Pelelangan <br> Lahan</div>
                         </button>
                     </div>
-                    <div class="col mt-1 mb-1">
-                        <button class="btn p-0">
-                            <img src="{{asset('/')}}images/icon/icon_rounded.png" class="" style="width:65px;" alt="">
-                            <div class="mt-0" style="font-size: 12px">Jasa Tukang Ukur</div>
+                    <div class="col mb-4">
+                        <button class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                            <img src="{{asset('/')}}images/icon/icon_rounded.png" class="" style="width: 85px;" alt="">
+                            <div class="mt-0" style="font-size: 12px">Jasa <br> Tukang Ukur</div>
+                        </button>
+                    </div>
+                    <div class="col mb-4">
+                        <button class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                            <img src="{{asset('/')}}images/icon/icon_rounded.png" class="" style="width: 85px;" alt="">
                         </button>
                     </div>
                 </div>
@@ -354,7 +359,7 @@
         </div>
 
         <div class="card-body text-center">
-            <h2 class="card-title fw-bolder" style="col mt-1or: #61481C">DUKUNGAN PEMERINTAH MENGATASI PERSENGKETAAN TANAH</h4>
+            <h2 class="card-title fw-bolder" style="color:#61481C">DUKUNGAN PEMERINTAH MENGATASI PERSENGKETAAN TANAH</h4>
         </div>
         <div class="row desktop mb-5 mt-3">
             <div class="col-md">
