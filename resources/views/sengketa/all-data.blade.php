@@ -1175,7 +1175,69 @@
 
                             <ol id="tentang" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3"
                                 style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
-                                
+                                SENGKETA TANAH adalah platform digital dengan spesialisasi penanganan
+                    masalah
+                    sengketa tanah di seluruh wilayah Indonesia. Kami mempertemukan korban sengketa tanah atau korban
+                    mafia
+                    tanah dengan Sponsor, Kantor hukum, dan Pemerintah untuk menuntaskan masalah persengketaan tanah
+                    tersebut.
+                    <div class="card mb-3 mt-3">
+                        <div class="card-body pb-0">
+                            <div class="row justify-content-between text-center" style="overflow-x: auto; flex-wrap: nowrap">
+                                <div class="col-11 mb-3">
+                                    <div class="card bg-brown h-100">
+                                        <div class="card-body d-flex align-items-center justify-content-center">
+                                            <div class="text-center fs-3">
+                                                "Platform Sengketa Tanah memiliki 4 Roles diantaranya"
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-11 mb-3">
+                                    <div class="card bg-danger text-white">
+                                        <div class="card-body">
+                                            <h4 class="card-title">
+                                                1. Pemerintah</h4>
+                                            <hr>
+                                            Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di bidang
+                                            agraria/pertanahan dan tata ruang.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-11 mb-3">
+                                    <div class="card bg-primary text-white">
+                                        <div class="card-body">
+                                            <h4 class="card-title">2. Korban Sengketa</h4>
+                                            <hr>
+                                            Korban adalah orang yang dirugikan, dirampas, atau terancam kehilangan hak atas
+                                            tanah yang
+                                            dimilikinya.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-11 mb-3">
+                                    <div class="card bg-success text-white">
+                                        <div class="card-body">
+                                            <h4 class="card-title">3. Sponsor</h4>
+                                            <hr>
+                                            Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan hukum korban
+                                            sengketa tanah.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-11 mb-3">
+                                    <div class="card bg-info text-white">  
+                                        <div class="card-body">
+                                            <h4 class="card-title">4. Pengacara</h4>
+                                            <hr>
+                                            Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani sengketa
+                                            tanah.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                             </ol>
                         </div>
 
@@ -1194,7 +1256,7 @@
                     </div>
 
                     {{-- <img src="{{asset('/uploads/sengketa-banner-2.jpg')}}" style="width:100%" class="mb-2"> --}}
-                    <div class="card mt-3">
+                    <div class="card mt-4">
                         <div class="card-body">
                             <div class="row desktop mb-4">
                                 <div class="col-md">
