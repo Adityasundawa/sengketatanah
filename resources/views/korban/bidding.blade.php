@@ -10,7 +10,7 @@ use App\Models\User;
 <div class="page-wrapper">
     <div class="page-content">
 
-        <div class="container-fluid mt-3 mb-5">
+  
             {{-- <a class="btn btn-successs my-4" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a> --}}
        
             <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
@@ -219,5 +219,4 @@ use App\Models\User;
             </div>
         </div>
     </div>
-</div>
 @endsection
