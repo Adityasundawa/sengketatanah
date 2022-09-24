@@ -27,8 +27,8 @@
             padding: 0px;
             overflow-x: hidden;
         }
-     
-      
+
+
 
         .line-1 {
             height: 3px;
@@ -232,9 +232,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .chat-btn {
-            position: absolute;
+            /* position: absolute;
             right: 14px;
-            bottom: 30px;
+            bottom: 30px; */
             cursor: pointer
         }
 
@@ -270,7 +270,7 @@
         .chat-btn {
             width: 50px;
             height: 50px;
-            display: flex;
+            /* display: flex; */
             justify-content: center;
             align-items: center;
             border-radius: 50px;
@@ -299,7 +299,7 @@
         }
 
         .header.btn-chatz {
-            padding: 13px;
+            /* padding: 13px; */
             background-color: #007bff !important;
             border-radius: 5px 5px 0px 0px;
             margin-bottom: 10px;
@@ -886,6 +886,7 @@
                                     <div class="mt-0" style="font-size: 12px">Podcast <br> Sengketa</div>
                                 </a>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -904,8 +905,8 @@
                     </div>
 
                     <div class="card-body" style="background-color:#F6D471;">
-                    <style>
-                        #lelang-card::-webkit-scrollbar
+                        <style>
+                            /* #lelang-card::-webkit-scrollbar
                     {
                         width: 5px;
                         height: 10px;
@@ -915,17 +916,23 @@
                               #lelang-card::-webkit-scrollbar-thumb
                             {
                                 background-color: #61481C;
-                            }
-                    </style>
-                        <div class="row justify-content-between"id="lelang-card"style="overflow-x: auto; flex-wrap: nowrap">
+                            } */
+
+                        </style>
+                        <div class="row justify-content-between" id="lelang-card"
+                            style="overflow-x: auto; flex-wrap: nowrap">
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
                                     <img src="{{asset('')}}images/lahan1.jpeg" class="card-img-top" alt="..."
                                         style="height:200px;width:auto;object-fit:cover">
                                     <div class="card-body">
                                         <h5 class="card-title">Rp. 600.000.000</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the
-                                            bulk of the card's content.</p>
+                                        <p class="card-text">
+                                            <b>Jawa Barat</b><br> 200 Meter ,Sukabumi
+                                        </p>
+                                         
+
+                                      
                                         <a href="#" class="btn btn-white"
                                             style="background-color:#61481C !important;color:white">Bid Lelang</a>
                                     </div>
@@ -937,8 +944,9 @@
                                         style="height:200px;width:auto;object-fit:cover">
                                     <div class="card-body">
                                         <h5 class="card-title">Rp. 350.000.000</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the
-                                            bulk of the card's content.</p>
+                                        <p class="card-text">
+                                            <b>Banten</b><br> 100 Meter ,Tangerang Selatan
+                                        </p>
                                         <a href="#" class="btn btn-white"
                                             style="background-color:#61481C !important;color:white">Bid Lelang</a>
                                     </div>
@@ -950,8 +958,9 @@
                                         style="height:200px;width:auto;object-fit:cover">
                                     <div class="card-body">
                                         <h5 class="card-title">Rp. 760.000.000</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the
-                                            bulk of the card's content.</p>
+                                        <p class="card-text">
+                                            <b>Jawa Timur</b><br> 400 Meter ,Malang
+                                        </p>
                                         <a href="#" class="btn btn-white"
                                             style="background-color:#61481C !important;color:white">Bid Lelang</a>
                                     </div>
@@ -962,9 +971,10 @@
                                     <img src="{{asset('')}}images/lahan4.jpeg" class="card-img-top" alt="..."
                                         style="height:200px;width:auto;object-fit:cover">
                                     <div class="card-body">
-                                        <h5 class="card-title">Rp. 400.000.000</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the
-                                            bulk of the card's content.</p>
+                                        <h5 class="card-title">Rp. 500.000.000</h5>
+                                        <p class="card-text">
+                                            <b>Jawa Tengah</b><br> 250 Meter ,Solo
+                                        </p>
                                         <a href="#" class="btn btn-white"
                                             style="background-color:#61481C !important;color:white">Bid Lelang</a>
                                     </div>
@@ -972,7 +982,7 @@
                             </div>
 
                         </div>
-                       
+
 
                     </div>
 
@@ -982,7 +992,7 @@
                 <div class="card border-0 shadow-sm">
                     <div class="card-body pb-1 pt-2">
                         <div class="row">
-                            <div class="col-4 panduan text-center mb-2">
+                            <div class="col-3 panduan text-center mb-2">
 
                                 <button class="btn btn-sm" id="btn-panduan" type="button">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -1059,7 +1069,7 @@
 
 
 
-                            <div class="col-4 text-center mb-2">
+                            <div class="col-3 text-center mb-2">
                                 <button class="btn btn-sm" id="btn-jaminan" type="button">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
@@ -1091,8 +1101,16 @@
                                 </script>
 
                             </div>
-                            <div class="col-4 text-center mb-2">
-                                <button class="btn btn-sm" id="btn-tentang" type="button">
+                          
+                            <div class="col-3 text-center mb-2">
+                                  <button class="btn btn-sm" id="btn-tentang" type="button">
+                                    <img src="{{asset('')}}images/cus.svg"style="width:55px;margin-top:9px" alt="" srcset="">
+                                    <h6 class=" mb-0" style="font-weight:bold;margin-top:13px">CHAT</h6>
+                                </button>
+
+                            </div>
+                            <div class="col-3 text-center mb-2">
+                                <button class="btn btn-sm" id="btn-tentang" type="button"style="margin-left:-10px">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                         width="70px" x="0" y="0" viewBox="0 0 24 24"
