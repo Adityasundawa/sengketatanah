@@ -289,7 +289,9 @@ use App\Models\User;
                 </div>
             </div>
             @endforeach
+          
         </div>
+        <a class="btn text-white btn-success my-4" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a>
         <div class="row">
             <div class="col-12 col-lg-8 col-xl-8 d-flex">
                 <div class="card radius-10 w-100">
