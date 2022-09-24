@@ -545,7 +545,7 @@
         <div class="row mt-2" style="padding: 10px">
             <div class="card p-0 rounded-3 shadow">
                 <div class="card-body text-dark">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
                         <div class="carousel-inner">
                             <div class="carousel-item active">
