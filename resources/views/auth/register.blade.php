@@ -22,14 +22,6 @@
         background: #fff;
         border-radius: 0 72px 0 0;
     }
-    input[type=password]::placeholder{
-        color: white;
-    }
-    select {
-   
-    background-color: rgba(255,255,255,.5) !important;
-    padding: 5px;
-}
 </style>
 <div class="container pt-5 pb-5" style="min-height:100vh">
     <div class="screen">

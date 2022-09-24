@@ -2,8 +2,8 @@
   <body class="c-app">
     <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
       <div class="c-sidebar-brand d-lg-down-none">
-        <img class="c-sidebar-brand-full" src="{{asset('/')}}uploads/sengketa_tanah.png" alt="" width="100px">
-        <img class="c-sidebar-brand-full" src="{{asset('/')}}uploads/sengketa_tanah.png" alt="" width="100px">
+        <img class="c-sidebar-brand-minimized m-3" src="{{asset('/')}}uploads/sengketa-logo.png" alt="" width="150px">
+        <img class="c-sidebar-brand-full m-3" src="{{asset('/')}}uploads/sengketa_tanah.png" alt="" width="150px">
       </div>
       <ul class="c-sidebar-nav">
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="{{url('/administrator')}}">
