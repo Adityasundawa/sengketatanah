@@ -1173,8 +1173,11 @@
                                 </div>
                             </ol>
 
-                            <ol id="tentang" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3"
+                            <ol id="tentang" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center"
                                 style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                                <h2>
+                                    <div class="fw-bold" style="color: #61481C"> <br>TENTANG KAMI</div>
+                                </h2>
                                 SENGKETA TANAH adalah platform digital dengan spesialisasi penanganan
                     masalah
                     sengketa tanah di seluruh wilayah Indonesia. Kami mempertemukan korban sengketa tanah atau korban
@@ -1188,7 +1191,7 @@
                                     <div class="card bg-brown h-100">
                                         <div class="card-body d-flex align-items-center justify-content-center">
                                             <div class="text-center fs-3">
-                                                "Platform Sengketa Tanah memiliki 4 Roles diantaranya"
+                                                Platform Sengketa Tanah memiliki 4 Roles
                                             </div>
                                         </div>
                                     </div>
@@ -1199,7 +1202,7 @@
                                             <h4 class="card-title">
                                                 1. Pemerintah</h4>
                                             <hr>
-                                            Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di bidang
+                                            Kementerian yang mempunyai tugas menyelenggarakan urusan di bidang
                                             agraria/pertanahan dan tata ruang.
                                         </div>
                                     </div>
