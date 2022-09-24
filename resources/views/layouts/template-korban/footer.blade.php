@@ -1,19 +1,33 @@
-  <!-- CoreUI and necessary plugins-->
-</div>
-  <script src="{{url('/')}}/core-ui/vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
-    <!--[if IE]><!-->
-    <script src="{{url('/')}}/core-ui/vendors/@coreui/icons/js/svgxuse.min.js"></script>
-    <!--<![endif]-->
-    <!-- Plugins and scripts required by this view-->
-    <script src="{{url('/')}}/core-ui/vendors/@coreui/chartjs/js/coreui-chartjs.bundle.js"></script>
-    <script src="{{url('/')}}/core-ui/vendors/@coreui/utils/js/coreui-utils.js"></script>
-    <script src="{{url('/')}}/core-ui/js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.js"
-        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> -->
-
-    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.12.1/b-2.2.3/datatables.min.js"></script>
-    
+<div class="overlay toggle-icon"></div>
+<!--end overlay-->
+<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+<!--End Back To Top Button-->
+<footer class="page-footer">
+    <p class="mb-0">Copyright © 2021. All right reserved.</p>
+</footer>
+    	</div>
+    <!-- Bootstrap JS -->
+	<script src="{{asset('/')}}rukada/js/bootstrap.bundle.min.js"></script>
+	<!--plugins-->
+	<script src="{{asset('/')}}rukada/js/jquery.min.js"></script>
+	<script src="{{asset('/')}}rukada/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="{{asset('/')}}rukada/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="{{asset('/')}}rukada/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<script src="{{asset('/')}}rukada/plugins/chartjs/js/Chart.min.js"></script>
+	<script src="{{asset('/')}}rukada/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="{{asset('/')}}rukada/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+	<script src="{{asset('/')}}rukada/plugins/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+	<script src="{{asset('/')}}rukada/plugins/sparkline-charts/jquery.sparkline.min.js"></script>
+	<script src="{{asset('/')}}rukada/plugins/jquery-knob/excanvas.js"></script>
+	<script src="{{asset('/')}}rukada/plugins/jquery-knob/jquery.knob.js"></script>
+	  <script>
+		  $(function() {
+			  $(".knob").knob();
+		  });
+	  </script>
+	  <script src="{{asset('/')}}rukada/js/index.js"></script>
+	<!--app JS-->
+	<script src="{{asset('/')}}rukada/js/app.js"></script>
         <script>
 
 $(document).ready(function(){
