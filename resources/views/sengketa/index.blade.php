@@ -927,9 +927,12 @@
                                         style="height:200px;width:auto;object-fit:cover">
                                     <div class="card-body">
                                         <h5 class="card-title">Rp. 600.000.000</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the
-                                            bulk of the card's content.</p>
+                                        <p class="card-text">
+                                            <b>Jawa Barat</b><br> 200 Meter ,Sukabumi
+                                        </p>
+                                         
+
+                                      
                                         <a href="#" class="btn btn-white"
                                             style="background-color:#61481C !important;color:white">Bid Lelang</a>
                                     </div>
@@ -941,9 +944,9 @@
                                         style="height:200px;width:auto;object-fit:cover">
                                     <div class="card-body">
                                         <h5 class="card-title">Rp. 350.000.000</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the
-                                            bulk of the card's content.</p>
+                                        <p class="card-text">
+                                            <b>Banten</b><br> 100 Meter ,Tangerang Selatan
+                                        </p>
                                         <a href="#" class="btn btn-white"
                                             style="background-color:#61481C !important;color:white">Bid Lelang</a>
                                     </div>
@@ -955,9 +958,9 @@
                                         style="height:200px;width:auto;object-fit:cover">
                                     <div class="card-body">
                                         <h5 class="card-title">Rp. 760.000.000</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the
-                                            bulk of the card's content.</p>
+                                        <p class="card-text">
+                                            <b>Jawa Timur</b><br> 400 Meter ,Malang
+                                        </p>
                                         <a href="#" class="btn btn-white"
                                             style="background-color:#61481C !important;color:white">Bid Lelang</a>
                                     </div>
@@ -968,10 +971,10 @@
                                     <img src="{{asset('')}}images/lahan4.jpeg" class="card-img-top" alt="..."
                                         style="height:200px;width:auto;object-fit:cover">
                                     <div class="card-body">
-                                        <h5 class="card-title">Rp. 400.000.000</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the
-                                            bulk of the card's content.</p>
+                                        <h5 class="card-title">Rp. 500.000.000</h5>
+                                        <p class="card-text">
+                                            <b>Jawa Tengah</b><br> 250 Meter ,Solo
+                                        </p>
                                         <a href="#" class="btn btn-white"
                                             style="background-color:#61481C !important;color:white">Bid Lelang</a>
                                     </div>
@@ -1098,8 +1101,16 @@
                                 </script>
 
                             </div>
+                          
                             <div class="col-3 text-center mb-2">
-                                <button class="btn btn-sm" id="btn-tentang" type="button">
+                                  <button class="btn btn-sm" id="btn-tentang" type="button">
+                                    <img src="{{asset('')}}images/cus.svg"style="width:55px;margin-top:9px" alt="" srcset="">
+                                    <h6 class=" mb-0" style="font-weight:bold;margin-top:13px">CHAT</h6>
+                                </button>
+
+                            </div>
+                            <div class="col-3 text-center mb-2">
+                                <button class="btn btn-sm" id="btn-tentang" type="button"style="margin-left:-10px">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                         width="70px" x="0" y="0" viewBox="0 0 24 24"
@@ -1130,16 +1141,6 @@
                                 </script>
 
                             </div>
-                            <div class="col-3 text-center mb-2">
-                              
-
-                                  <button class="btn btn-sm" id="btn-tentang" type="button">
-                                    <img src="{{asset('')}}images/cus.svg"style="width:55px;margin-top:9px" alt="" srcset="">
-                                    <h6 class="mt-3 mb-0" style="font-weight:bold;">CUSTOMER SERVICE</h6>
-                                </button>
-
-                            </div>
-                           
 
                             <ol id="panduan"
                                 class="list-group panduan list-group-numbered shadow dropdown-menu rounded-0 p-0"
