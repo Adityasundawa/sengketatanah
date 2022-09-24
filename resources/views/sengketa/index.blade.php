@@ -315,7 +315,7 @@
             <div class="card-body pb-0">
                 <div class="row justify-content-between text-center" style="overflow-x: auto; flex-wrap: nowrap">
                     <div class="col mb-4">
-                        <button class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                        <a href="{{url('/')}}/bid-sengketa" class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                 width="71px" x="0" y="0" viewBox="0 0 50 60" style="enable-background:new 0 0 512 512"
@@ -341,10 +341,10 @@
                                 </g>
                             </svg>
                             <div class="mt-0" style="font-size: 12px">Bid <br> Sengketa</div>
-                        </button>
+                        </a>
                     </div>
                     <div class="col mb-4">
-                        <button class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                        <a class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                 width="85px" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512"
@@ -392,10 +392,10 @@
                                 </g>
                             </svg>
                             <div class="mt-0" style="font-size: 12px">Jual Beli <br> Lahan</div>
-                        </button>
+                        </a>
                     </div>
                     <div class="col mb-4">
-                        <button class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                        <a class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                 width="85px" x="0" y="0" viewBox="0 0 511.99992 511"
@@ -420,10 +420,10 @@
                                 </g>
                             </svg>
                             <div class="mt-0" style="font-size: 12px">Kerjasama <br> Lahan</div>
-                        </button>
+                        </a>
                     </div>
                     <div class="col mb-4">
-                        <button class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                        <a class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                 width="85px" x="0" y="0" viewBox="0 0 479.976 479.976"
@@ -505,10 +505,10 @@
                                 </g>
                             </svg>
                             <div class="mt-0" style="font-size: 12px">Pelelangan <br> Lahan</div>
-                        </button>
+                        </a>
                     </div>
                     <div class="col mb-4">
-                        <button class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                        <a class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                 width="77px" x="0" y="0" viewBox="0 0 54 60" style="enable-background:new 0 0 512 512"
@@ -535,10 +535,10 @@
                                 </g>
                             </svg>
                             <div class="mt-0" style="font-size: 12px">Jasa <br> Tukang Ukur</div>
-                        </button>
+                        </a>
                     </div>
                     <div class="col mb-4">
-                        <button class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                        <a class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                 width="85px" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
@@ -582,7 +582,7 @@
                                 </g>
                             </svg>
                             <div class="mt-0" style="font-size: 12px">Podcast <br> Sengketa</div>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
