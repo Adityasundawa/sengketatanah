@@ -145,7 +145,6 @@
                                 })
                                 $('input[name=provinsi]').val($('select#provinsi option:selected').text());
                             }
-
                         });
                     })
                     $('select#kota').on('change', function () {
