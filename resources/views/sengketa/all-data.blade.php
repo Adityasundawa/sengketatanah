@@ -224,20 +224,6 @@
             background-color: #f00f00;
         }
 
-        .mobile {
-            display: none;
-        }
-
-        @media (max-width: 1000px) {
-            .mobile {
-                display: block;
-            }
-
-            .desktop {
-                display: none;
-            }
-        }
-
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -445,7 +431,7 @@
                         <div class="card bg-brown">
                             <div class="card-body">
                                 <div class="text-center fs-3" >
-                                    "Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
+                                    "Platform Sengketa Tanah mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
                                     pemerintah."
                                 </div>
                             </div>
@@ -496,67 +482,6 @@
                 </div>
             </div>
         </div>
-
-        {{-- <div class="row mt-2 desktop" style="padding: 10px">
-            <div class="card p-0 rounded-3 shadow">
-                <div class="card-body text-dark">
-                    <div class="row justify-content-center fr-role" style="overflow-x: auto;">
-                        <div class="col-6 mb-3 fr-roles text-center">
-                            <div class="card bg-brown text-white">
-                                <div class="card-body">
-                                    <div class="text-center fs-3">
-                                        "Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
-                                        pemerintah."
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 mb-3 fr-roles">
-                            <div class="card bg-danger text-white">
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        1. Pemerintah</h4>
-                                    <hr>
-                                    Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di bidang
-                                    agraria/pertanahan dan tata ruang.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4 mb-3 fr-roles">
-                            <div class="card bg-primary text-white">
-                                <div class="card-body">
-                                    <h4 class="card-title">2. Korban Sengketa</h4>
-                                    <hr>
-                                    Korban adalah orang yang dirugikan, dirampas, atau terancam kehilangan hak atas
-                                    tanah yang
-                                    dimilikinya.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4 mb-3 fr-roles">
-                            <div class="card">
-                                <div class="card-body bg-success text-white">
-                                    <h4 class="card-title">3. Sponsor</h4>
-                                    <hr>
-                                    Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan hukum korban
-                                    sengketa tanah.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4 mb-3 fr-roles">
-                            <div class="card">
-                                <div class="card-body bg-info text-white">
-                                    <h4 class="card-title">4. Pengacara</h4>
-                                    <hr>
-                                    Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani sengketa
-                                    tanah.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
 
         <div class="row justify-content-center mb-4">
 
@@ -849,24 +774,158 @@
                 <div class="card mb-4 border-0 shadow-sm ">
                     <div class="card-body pb-1 pt-2">
                     <div class="row">
-                        <div class="col-4 text-center mb-2">
+                        <div class="col-md-4 text-center mb-2">
 
-                            <img  src="{{asset('/')}}images/panduan.svg" alt=""
+                            <button class="btn" type="button" data-bs-toggle="dropdown">
+                                <img  src="{{asset('/')}}images/panduan.svg" alt=""
                                 class="img-thumbnail rounded-circle shadow" style="border: 2px solid white;width:100px">
-                                <h6 class="mt-2 mb-0" style="font-weight:400;">PANDUAN</h6>
+                                <h6 class="mt-2 mb-0" style="font-weight:bold;">PANDUAN</h6>
+                            </button>
+
+                            <ol class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-0" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold" style="color: #61481C">Buat Akun Sengketa Tanah</div>
+                                        Daftarkan diri Anda sesuai dengan role yang diinginkan (Korban, Sponsor, Pengacara).
+                                    </div>
+                                    <i class="fa-solid fa-user-plus fs-6" style="color: #61481C"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold" style="color: #61481C">Buat Laporan Sengketa Tanah</div>
+                                        Laporkan dengan jelas melalui formulir korban tentang masalah sengketa tanah Anda.
+                                    </div>
+                                    <i class="fa-solid fa-file-circle-plus fs-6" style="color: #61481C"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold" style="color: #61481C">Tampilkan Dokumen</div>
+                                        Upload dan kirimkan dokumen pendukung laporan Anda.
+                                    </div>
+                                    <i class="fa-solid fa-file-lines fs-6" style="color: #61481C"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold" style="color: #61481C">Temukan Bantuan</div>
+                                        Pilih bantuan yang diinginkan mulai dari bantuan pendanaan sponsor, bantuan hukum pengacara, dan
+                                        bantuan pemerintah.
+                                    </div>
+                                    <i class="fa fa-circle-question fs-6" style="color: #61481C"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold" style="color: #61481C">Pilih Bantuan</div>
+                                        Pilih bantuan yang masuk sesuai dengan kesepakatanmu.
+                                    </div>
+                                    <i class="fa-regular fa-circle-question fs-6" style="color: #61481C"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold" style="color: #61481C">Dapatkan Bantuan</div>
+                                        Yay! Selamat, kamu telah mendapatkan.
+                                    </div>
+                                    <i class="fa-solid fa-handshake-angle fs-6" style="color: #61481C"></i>
+                                </li>
+                            </ol>
 
                         </div>
-                        <div class="col-4  text-center mb-2">
-
-                            <img  src="{{asset('/')}}images/jaminan.svg" alt=""
+                        <div class="col-md-4  text-center mb-2">
+                            <button class="btn" type="button" data-bs-toggle="dropdown">
+                                <img  src="{{asset('/')}}images/jaminan.svg" alt=""
                                 class="img-thumbnail rounded-circle shadow" style="border: 2px solid white;width:100px;height:100px;object-fit:cover">
-                                <h6 class="mt-2 mb-0" style="font-weight:400;">JAMINAN</h6>
+                                <h6 class="mt-2 mb-0" style="font-weight:bold;">JAMINAN</h6>
+                            </button>
+                            <ol class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                                <div class="col-md-12">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-tie"></i></b></h5>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h5 style="color: #61481C" class="mb-0"><b>Sponsor Terverifikasi</b></h5>
+                                            Setiap sponsor yang terlibat di verifikasi kemampuan dan sumber dananya.
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="col-md-12 mt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-gavel"></i></b></h5>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 ms-3">
+                                                <h5 style="color: #61481C" class="mb-0"><b>Pengacara Terverifikasi</b></h5>
+                                                Setiap pengacara wajib memiliki sertifikasi advokat yang dibutuhkan.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="col-md-12 mt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-hand-holding-dollar"></i></b>
+                                            </h5>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 ms-3">
+                                                <h5 style="color: #61481C" class="mb-0"><b>Pembayaran Aman</b></h5>
+                                                Setiap transaksi yang terjadi menggunakan platform pembayaran Sengketa Tanah.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="col-md-12 mt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-chart-line"></i></b></h5>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 ms-3">
+                                                <h5 style="color: #61481C" class="mb-0"><b>Bantuan Analisa</b></h5>
+                                                Kami memberikan bantuan analisa terhadap permasalahan yang relevan untuk diatasi.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="col-md-12 mt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-handshake"></i></b></h5>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 ms-3">
+                                                <h5 style="color: #61481C" class="mb-0"><b>Kesepakatan Terlindungi</b></h5>
+                                                Semua kesepakatan yang terjadi dilindungi perjanjian hukum yang ketat dan mengikat.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="col-md-12 mt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-gear"></i></b></h5>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 ms-3">
+                                                <h5 style="color: #61481C" class="mb-0"><b>Bantuan Customer Support</b></h5>
+                                                Layanan CS 24 jam siap membantu anda.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ol>
+                            
 
                         </div>
-                        <div class="col-4  text-center mb-2">
+                        <div class="col-md-4 text-center mb-2">
                             <img  src="{{asset('/')}}images/jaminan.svg" alt=""
                                 class="img-thumbnail rounded-circle shadow" style="border: 2px solid white;width:100px;height:100px;object-fit:cover">
-                                <h6 class="mt-2 mb-0" style="font-weight:400;">TENTANG</h6>
+                                <h6 class="mt-2 mb-0" style="font-weight:bold;">TENTANG</h6>
                         </div>
                     </div>
 

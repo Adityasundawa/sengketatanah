@@ -861,7 +861,7 @@
                 </button>
 
                 <ol class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="d-flex">
                             <div class="flex-shrink-0">
                                 <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-tie"></i></b></h5>
@@ -873,7 +873,7 @@
                         </div>
                     </div>
         
-                    <div class="col-md-6 mt-4">
+                    <div class="col-md-12 mt-4">
                         <div class="d-flex">
                             <div class="flex-shrink-0">
                                 <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-gavel"></i></b></h5>
@@ -887,7 +887,7 @@
                         </div>
                     </div>
         
-                    <div class="col-md-6 mt-4">
+                    <div class="col-md-12 mt-4">
                         <div class="d-flex">
                             <div class="flex-shrink-0">
                                 <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-hand-holding-dollar"></i></b>
@@ -902,7 +902,7 @@
                         </div>
                     </div>
         
-                    <div class="col-md-6 mt-4">
+                    <div class="col-md-12 mt-4">
                         <div class="d-flex">
                             <div class="flex-shrink-0">
                                 <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-chart-line"></i></b></h5>
@@ -916,7 +916,7 @@
                         </div>
                     </div>
         
-                    <div class="col-md-6 mt-4">
+                    <div class="col-md-12 mt-4">
                         <div class="d-flex">
                             <div class="flex-shrink-0">
                                 <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-handshake"></i></b></h5>
@@ -930,7 +930,7 @@
                         </div>
                     </div>
         
-                    <div class="col-md-6 mt-4">
+                    <div class="col-md-12 mt-4">
                         <div class="d-flex">
                             <div class="flex-shrink-0">
                                 <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-gear"></i></b></h5>
