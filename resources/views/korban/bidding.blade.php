@@ -141,7 +141,7 @@ use App\Models\User;
                                 </div>
                             </div>
                             <div class="card-body">
-                                  <div class="card">
+                                  <div class="card bg-info text-white">
                                     <div class="card-header">
                                         Data Project
                                     </div>
