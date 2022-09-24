@@ -27,6 +27,8 @@
             padding: 0px;
             overflow-x: hidden;
         }
+     
+      
 
         .line-1 {
             height: 3px;
@@ -902,7 +904,20 @@
                     </div>
 
                     <div class="card-body" style="background-color:#F6D471;">
-                        <div class="row justify-content-between"style="overflow-x: auto; flex-wrap: nowrap">
+                    <style>
+                        #lelang-card::-webkit-scrollbar
+                    {
+                        width: 5px;
+                        height: 10px;
+                        background-color: white;
+                      
+                    }
+                              #lelang-card::-webkit-scrollbar-thumb
+                            {
+                                background-color: #61481C;
+                            }
+                    </style>
+                        <div class="row justify-content-between"id="lelang-card"style="overflow-x: auto; flex-wrap: nowrap">
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
                                     <img src="{{asset('')}}images/lahan1.jpeg" class="card-img-top" alt="..."
@@ -935,6 +950,19 @@
                                         style="height:200px;width:auto;object-fit:cover">
                                     <div class="card-body">
                                         <h5 class="card-title">Rp. 760.000.000</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the
+                                            bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-white"
+                                            style="background-color:#61481C !important;color:white">Bid Lelang</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="{{asset('')}}images/lahan4.jpeg" class="card-img-top" alt="..."
+                                        style="height:200px;width:auto;object-fit:cover">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Rp. 400.000.000</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the
                                             bulk of the card's content.</p>
                                         <a href="#" class="btn btn-white"
