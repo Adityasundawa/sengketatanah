@@ -427,7 +427,7 @@
         <!--    </div>-->
         <!--</div>-->
 
-        <div class="card mb-3">
+        {{-- <div class="card mb-3">
             <div class="card-body pb-0">
                 <div class="row justify-content-between text-center" style="overflow-x: auto; flex-wrap: nowrap">
                     <div class="col-11 mb-3">
@@ -485,14 +485,14 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <div class="row justify-content-center mb-4">
 
             <div class="col-lg-12">
 
 
-                <!-- <img src="{{asset('/uploads/sengketa-banner-2.jpg')}}" style="width:100%" class="mb-2"> -->
+                <img src="{{asset('/uploads/sengketa-banner-2.jpg')}}" style="width:100%" class="mb-2">
                 <div class="card mb-3 border-0">
                     <div class="card-body pb-0">
                         <div class="row justify-content-between text-center"
