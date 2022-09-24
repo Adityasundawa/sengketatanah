@@ -128,9 +128,8 @@ use App\Models\User;
                                     <i class='bx bx-dots-horizontal-rounded'></i>
                                 </div>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="javascript:;">Action</a></li>
-                                    <li><a class="dropdown-item" href="javascript:;">Another action</a></li>
-                                    <li><a class="dropdown-item" href="javascript:;">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="javascript:;">Edit</a></li>
+                                    <li><a class="dropdown-item" href="javascript:;">Delete</a></li>    
                                 </ul>
                             </div>
                         </div>
