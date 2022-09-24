@@ -928,7 +928,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Rp. 600.000.000</h5>
                                         <p class="card-text">
-                                            <b>Jawa Barat</b><br> 200 Meter ,Sukabumi
+                                            <b>Jawa Barat</b><br> 200 Meter <br> Sukabumi
                                         </p>
                                          
 
@@ -945,7 +945,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Rp. 350.000.000</h5>
                                         <p class="card-text">
-                                            <b>Banten</b><br> 100 Meter ,Tangerang Selatan
+                                            <b>Banten</b><br> 100 Meter <br> Tangerang Selatan
                                         </p>
                                         <a href="#" class="btn btn-white"
                                             style="background-color:#61481C !important;color:white">Bid Lelang</a>
@@ -959,7 +959,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Rp. 760.000.000</h5>
                                         <p class="card-text">
-                                            <b>Jawa Timur</b><br> 400 Meter ,Malang
+                                            <b>Jawa Timur</b><br> 400 Meter <br> Malang
                                         </p>
                                         <a href="#" class="btn btn-white"
                                             style="background-color:#61481C !important;color:white">Bid Lelang</a>
@@ -973,7 +973,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Rp. 500.000.000</h5>
                                         <p class="card-text">
-                                            <b>Jawa Tengah</b><br> 250 Meter ,Solo
+                                            <b>Jawa Tengah</b><br> 250 Meter <br> Solo
                                         </p>
                                         <a href="#" class="btn btn-white"
                                             style="background-color:#61481C !important;color:white">Bid Lelang</a>
