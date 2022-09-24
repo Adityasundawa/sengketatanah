@@ -107,30 +107,45 @@ use App\Models\User;
             <div class="col-lg-6">
                 <div class="card">
                     <div class="card-header bg-white">
-                        <div class="row">
-                            <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <div>
                                 <b>PROJECT</b><b class="text-danger"> SP-00{{$item['id']}}</b>
+                                @if($item['status_sengketa'] == 1)
+                                <span class="badge mr-4 bg-danger">Menunggu Verifikasi</span>
+                                @elseif($item['status_sengketa'] == 2)
+                                <span class="badge mr-4 bg-success">Terverifikasi Tahap 1</span>
+                                @elseif($item['status_sengketa'] == 3)
+                                <span class="badge mr-4 bg-success">Terverifikasi Tahap 2</span>
+                                @elseif($item['status_sengketa'] == 4)
+                                <span class="badge mr-4 bg-success">Selesai</span>
+                                @elseif($item['status_sengketa'] == 0)
+                                <span class="badge mr-4 bg-danger">Pending</span>
+                                @endif
                             </div>
-                            <div class="col-6">
-                                <div class="row">
-                                    <div class="col-9 mt-1">
-                                        <div class="d-flex  justify-content-end">
-                                            @if($item['status_sengketa'] == 1)
-                                            <span class="badge badge-danger">Menunggu Verifikasi</span>
-                                            @elseif($item['status_sengketa'] == 2)
-                                            <span class="badge badge-success">Terverifikasi Tahap 1</span>
-                                            @elseif($item['status_sengketa'] == 3)
-                                            <span class="badge badge-success">Terverifikasi Tahap 2</span>
-                                            @elseif($item['status_sengketa'] == 4)
-                                            <span class="badge badge-success">Selesai</span>
-                                            @elseif($item['status_sengketa'] == 0)
-                                            <span class="badge badge-danger">Pending</span>
-                                            @endif
-                                        </div>
-                                    </div>
-
+                            
+                            <div class="dropdown options ms-auto">
+                                <div class="dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown">
+                                    <i class='bx bx-dots-horizontal-rounded'></i>
                                 </div>
+                                @if($item['status_sengketa'] == 1)
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="javascript:;">Edit</a></li>
+                                    <li><a class="dropdown-item" href="javascript:;">Delete</a></li>    
+                                </ul>
+                                @elseif($item['status_sengketa'] == 2)
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item disabled" href="javascript:;">Edit</a></li>
+                                    <li><a class="dropdown-item disabled" href="javascript:;">Delete</a></li>    
+                                </ul>
+                                @elseif($item['status_sengketa'] == 3)
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item disabled" href="javascript:;">Edit</a></li>
+                                    <li><a class="dropdown-item disabled" href="javascript:;">Delete</a></li>    
+                                </ul>
+                                @endif
 
+                                
+                            
                             </div>
                         </div>
                     </div>
