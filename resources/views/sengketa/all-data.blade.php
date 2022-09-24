@@ -1194,110 +1194,114 @@
                     </div>
 
                     {{-- <img src="{{asset('/uploads/sengketa-banner-2.jpg')}}" style="width:100%" class="mb-2"> --}}
-                    <div class="row desktop mb-2 mt-3">
-                        <div class="col-md">
-                            <div class="card-body text-center container" style="height:500px">
-                                <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}"
-                                    style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
-                                <div class="card rounded-0"
-                                    style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
-                                    <div class="card-body">
-                                        <p class="card-text">"Presiden Joko Widodo menegaskan kepada Kementerian ATR/BPN untuk
-                                            serius dalam memberantas mafia tanah"
-                                            <br> -<b> Ir. H. Joko Widodo (Presiden RI)</b>
-                                        </p>
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <div class="row desktop mb-4">
+                                <div class="col-md">
+                                    <div class="card-body text-center container" style="height:500px">
+                                        <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}"
+                                            style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                        <div class="card rounded-0"
+                                            style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                            <div class="card-body">
+                                                <p class="card-text">"Presiden Joko Widodo menegaskan kepada Kementerian ATR/BPN untuk
+                                                    serius dalam memberantas mafia tanah"
+                                                    <br> -<b> Ir. H. Joko Widodo (Presiden RI)</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="card-title fw-bolder text-dark"></p>
                                     </div>
                                 </div>
-                                <p class="card-title fw-bolder text-dark"></p>
-                            </div>
-                        </div>
-                        <div class="col-md">
-                            <div class="card-body text-center container" style="height:500px">
-                                <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}"
-                                    style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
-                                <div class="card rounded-0"
-                                    style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
-                                    <div class="card-body">
-                                        <p class="card-text">"Sesuai perintah Bapak Presiden, semua kasus mafia tanah yang ada
-                                            di
-                                            Indonesia harus
-                                            diselesaikan" <br> -<b> Hadi Tjahjanto (Mentri ATR/BPN) </b>
-                                        </p>
+                                <div class="col-md">
+                                    <div class="card-body text-center container" style="height:500px">
+                                        <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}"
+                                            style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                        <div class="card rounded-0"
+                                            style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                            <div class="card-body">
+                                                <p class="card-text">"Sesuai perintah Bapak Presiden, semua kasus mafia tanah yang ada
+                                                    di
+                                                    Indonesia harus
+                                                    diselesaikan" <br> -<b> Hadi Tjahjanto (Mentri ATR/BPN) </b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="card-title fw-bolder text-dark"></p>
                                     </div>
                                 </div>
-                                <p class="card-title fw-bolder text-dark"></p>
-                            </div>
-                        </div>
-                        <div class="col-md">
-                            <div class="card-body text-center container" style="height:500px">
-                                <img src="{{asset('/uploads/kapolri.png')}}" style="width:300px; height:400px;object-fit:cover"
-                                    alt="" srcset="" class="img-fluid">
-                                <div class="card rounded-0"
-                                    style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
-                                    <div class="card-body">
-                                        <p class="card-text">"Penyidik tidak perlu ragu ragu dalam mengusut tuntas masalah mafia
-                                            tanah, penyidik agar tindak tegas siapapun dalang dan bekingannya" <br> -<b> Listyo
-                                                Sigit Prabowo (Kapolri) </b>
-                                        </p>
+                                <div class="col-md">
+                                    <div class="card-body text-center container" style="height:500px">
+                                        <img src="{{asset('/uploads/kapolri.png')}}" style="width:300px; height:400px;object-fit:cover"
+                                            alt="" srcset="" class="img-fluid">
+                                        <div class="card rounded-0"
+                                            style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                            <div class="card-body">
+                                                <p class="card-text">"Penyidik tidak perlu ragu ragu dalam mengusut tuntas masalah mafia
+                                                    tanah, penyidik agar tindak tegas siapapun dalang dan bekingannya" <br> -<b> Listyo
+                                                        Sigit Prabowo (Kapolri) </b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="card-title fw-bolder text-dark"></p>
                                     </div>
                                 </div>
-                                <p class="card-title fw-bolder text-dark"></p>
                             </div>
-                        </div>
-                    </div>
-                    <div id="carouselExampleControlsPres" class="carousel slide mobile mt-3" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="card-body text-center container" style="height:505px">
-                                    <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}"
-                                        style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
-                                    <div class="card rounded-0"
-                                        style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);z-index:10">
-                                        <div class="card-body">
-                                            <p class="card-text">"Presiden Joko Widodo menegaskan kepada Kementerian ATR/BPN
-                                                untuk
-                                                serius dalam memberantas mafia tanah" <br> -<b> Ir. H. Joko Widodo (Presiden
-                                                    RI)</b>
-                                            </p>
+                            <div id="carouselExampleControlsPres" class="carousel slide mobile  mb-4" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="card-body text-center container" style="height:505px">
+                                            <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}"
+                                                style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                            <div class="card rounded-0"
+                                                style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);z-index:10">
+                                                <div class="card-body">
+                                                    <p class="card-text">"Presiden Joko Widodo menegaskan kepada Kementerian ATR/BPN
+                                                        untuk
+                                                        serius dalam memberantas mafia tanah" <br> -<b> Ir. H. Joko Widodo (Presiden
+                                                            RI)</b>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p class="card-title fw-bolder text-dark"></p>
                                         </div>
                                     </div>
-                                    <p class="card-title fw-bolder text-dark"></p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card-body text-center container" style="height:505px">
-                                    <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}"
-                                        style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
-                                    <div class="card rounded-0"
-                                        style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
-                                        <div class="card-body">
-                                            <p class="card-text">"Sesuai perintah Bapak Presiden, semua kasus mafia tanah yang
-                                                ada
-                                                di Indonesia harus
-                                                diselesaikan"<br> -<b> Hadi Tjahjanto (Mentri ATR/BPN) </b>
-                                            </p>
+                                    <div class="carousel-item">
+                                        <div class="card-body text-center container" style="height:505px">
+                                            <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}"
+                                                style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                            <div class="card rounded-0"
+                                                style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                <div class="card-body">
+                                                    <p class="card-text">"Sesuai perintah Bapak Presiden, semua kasus mafia tanah yang
+                                                        ada
+                                                        di Indonesia harus
+                                                        diselesaikan"<br> -<b> Hadi Tjahjanto (Mentri ATR/BPN) </b>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p class="card-title fw-bolder text-dark"></p>
                                         </div>
                                     </div>
-                                    <p class="card-title fw-bolder text-dark"></p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card-body text-center container" style="height:505px">
-                                    <img src="{{asset('/uploads/kapolri.png')}}" style="width:300px; height:400px;object-fit:cover"
-                                        alt="" srcset="" class="img-fluid">
-                                    <div class="card rounded-0"
-                                        style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
-                                        <div class="card-body">
-                                            <p class="card-text">"Penyidik tidak perlu ragu ragu dalam mengusut tuntas masalah
-                                                mafia
-            
-                                                tanah, penyidik agar tindak tegas siapapun dalang dan bekingannya" <br> -<b>
-                                                    Listyo
-                                                    Sigit Prabowo (Kapolri) </b>
-                                            </p>
+                                    <div class="carousel-item">
+                                        <div class="card-body text-center container" style="height:505px">
+                                            <img src="{{asset('/uploads/kapolri.png')}}" style="width:300px; height:400px;object-fit:cover"
+                                                alt="" srcset="" class="img-fluid">
+                                            <div class="card rounded-0"
+                                                style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                <div class="card-body">
+                                                    <p class="card-text">"Penyidik tidak perlu ragu ragu dalam mengusut tuntas masalah
+                                                        mafia
+                    
+                                                        tanah, penyidik agar tindak tegas siapapun dalang dan bekingannya" <br> -<b>
+                                                            Listyo
+                                                            Sigit Prabowo (Kapolri) </b>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p class="card-title fw-bolder text-dark"></p>
                                         </div>
                                     </div>
-                                    <p class="card-title fw-bolder text-dark"></p>
                                 </div>
                             </div>
                         </div>
