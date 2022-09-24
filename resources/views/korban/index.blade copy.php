@@ -17,7 +17,8 @@ use App\Models\User;
                             style="width: 100px;height: auto;"></center>
                 </div>
                 <div class="col-12 text-center">
-                    <a href="{{url('')}}/korban/list_sengketa_saya" class="text-dark" style="text-decoration: none">Project</a>
+                    <a href="{{url('')}}/korban/list_sengketa_saya" class="text-dark"
+                        style="text-decoration: none">Project</a>
                 </div>
             </div>
         </div>
@@ -72,62 +73,63 @@ use App\Models\User;
                                 </div>
 
                                 <div class="col-6">
-                                  <div class="row">
-                                    <div class="col-9 mt-1">
-                                        <div class="d-flex  justify-content-end">
-                                            @if($item['status_sengketa'] == 1)
-                                        <span class="badge badge-danger">Menunggu Verifikasi</span>
-                                        @elseif($item['status_sengketa'] == 2)
-                                        <span class="badge badge-success">Terverifikasi Tahap 1</span>
-                                        @elseif($item['status_sengketa'] == 3)
-                                        <span class="badge badge-success">Terverifikasi Tahap 2</span>
-                                        @elseif($item['status_sengketa'] == 4)
-                                        <span class="badge badge-success">Selesai</span>
-                                        @elseif($item['status_sengketa'] == 0)
-                                        <span class="badge badge-danger">Pending</span>
-                                        @endif
+                                    <div class="row">
+                                        <div class="col-9 mt-1">
+                                            <div class="d-flex  justify-content-end">
+                                                @if($item['status_sengketa'] == 1)
+                                                <span class="badge badge-danger">Menunggu Verifikasi</span>
+                                                @elseif($item['status_sengketa'] == 2)
+                                                <span class="badge badge-success">Terverifikasi Tahap 1</span>
+                                                @elseif($item['status_sengketa'] == 3)
+                                                <span class="badge badge-success">Terverifikasi Tahap 2</span>
+                                                @elseif($item['status_sengketa'] == 4)
+                                                <span class="badge badge-success">Selesai</span>
+                                                @elseif($item['status_sengketa'] == 0)
+                                                <span class="badge badge-danger">Pending</span>
+                                                @endif
+                                            </div>
+
                                         </div>
-                                      
-                                    </div>
-                                    <div class="col-1">
-                                       <a id="show">
-                                        <svg class="c-icon mr-2">
-                                            <use
-                                                xlink:href="{{url('/')}}/core-ui/vendors/@coreui/icons/svg/free.svg#cil-bell">
-                                            </use>
-                                           </svg> 
-                                       </a>
-                                    </div>
-                                    <div class="col-1">
-                                        <div class="dropdown d-flex  justify-content-end">
-                                            <a id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="col-1">
+                                            <a id="show">
                                                 <svg class="c-icon mr-2">
                                                     <use
-                                                        xlink:href="{{url('/')}}/core-ui/vendors/@coreui/icons/svg/free.svg#cil-menu">
+                                                        xlink:href="{{url('/')}}/core-ui/vendors/@coreui/icons/svg/free.svg#cil-bell">
                                                     </use>
-                                                   </svg> 
+                                                </svg>
                                             </a>
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                              <li><a class="dropdown-item" href="#">Action</a></li>
-                                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            </ul>
-                                          </div>
-                                      </div>
-                                  </div>
-                                    
+                                        </div>
+                                        <div class="col-1">
+                                            <div class="dropdown d-flex  justify-content-end">
+                                                <a id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <svg class="c-icon mr-2">
+                                                        <use
+                                                            xlink:href="{{url('/')}}/core-ui/vendors/@coreui/icons/svg/free.svg#cil-menu">
+                                                        </use>
+                                                    </svg>
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-                          
+
                         </div>
-                        
+
                         <div class="card-body">
                             @if($item['status_sengketa'] == 1)
                             <div class="alert alert-danger" id="alert" style="display: none" role="alert">
                                 Data Anda telah kami terima dan mohon menunggu petugas kami melakukan verifikasi. Saat
                                 ini anda belum dapat mengirimkan dokumen. Pastikan telepon/hp Anda dapat di hubungi
                             </div>
-                            
+
                             @elseif($item['status_sengketa'] == 2)
                             <div class="alert alert-warning" id="alert" style="display: none" role="alert">
                                 <b>Selamat, </b>Anda berhasil melewati tahap verifikasi 1. Silahkan pilih lampiran
@@ -232,16 +234,20 @@ use App\Models\User;
                                 class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f">Lihat Berkas</a>
                             @else
                             <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}"
-                                class="btn btn-block btn-sm text-white mt-4 disabled" style="background:#8f8f8f" disable>Upload Dokumen</a>
+                                class="btn btn-block btn-sm text-white mt-4 disabled" style="background:#8f8f8f"
+                                disable>Upload Dokumen</a>
                             @endif
 
                             @elseif($item['status_sengketa'] == 3)
                             <div class="row mt-4">
                                 <div class="col-6">
-                                    <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}"class="btn btn-block btn-sm text-white" style="background:#8f8f8f">Lihat Berkas</a>
+                                    <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}"
+                                        class="btn btn-block btn-sm text-white" style="background:#8f8f8f">Lihat
+                                        Berkas</a>
                                 </div>
                                 <div class="col-6">
-                                    <a href="#" class="btn btn-block btn-sm text-white" style="background:#8f8f8f">Jadwalkan Wawancara</a>
+                                    <a href="#" class="btn btn-block btn-sm text-white"
+                                        style="background:#8f8f8f">Jadwalkan Wawancara</a>
                                 </div>
                             </div>
                             @else
@@ -250,7 +256,8 @@ use App\Models\User;
                                 class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f">Lihat Berkas</a>
                             @else
                             <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}"
-                                class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f">Upload Dokumen</a>
+                                class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f">Upload
+                                Dokumen</a>
                             @endif
                             @endif
                         </div>
@@ -263,7 +270,6 @@ use App\Models\User;
 
     </div>
 
-    <a class="btn text-white btn-success"  href="{{route('korban.tambah_sengketa')}}">Tambah Project</a>
+    <a class="btn text-white btn-success" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a>
 </div>
 @endsection
-
