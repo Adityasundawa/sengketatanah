@@ -27,8 +27,8 @@
             padding: 0px;
             overflow-x: hidden;
         }
-     
-      
+
+
 
         .line-1 {
             height: 3px;
@@ -232,9 +232,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .chat-btn {
-            position: absolute;
+            /* position: absolute;
             right: 14px;
-            bottom: 30px;
+            bottom: 30px; */
             cursor: pointer
         }
 
@@ -270,7 +270,7 @@
         .chat-btn {
             width: 50px;
             height: 50px;
-            display: flex;
+            /* display: flex; */
             justify-content: center;
             align-items: center;
             border-radius: 50px;
@@ -299,7 +299,7 @@
         }
 
         .header.btn-chatz {
-            padding: 13px;
+            /* padding: 13px; */
             background-color: #007bff !important;
             border-radius: 5px 5px 0px 0px;
             margin-bottom: 10px;
@@ -886,6 +886,7 @@
                                     <div class="mt-0" style="font-size: 12px">Podcast <br> Sengketa</div>
                                 </a>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -904,8 +905,8 @@
                     </div>
 
                     <div class="card-body" style="background-color:#F6D471;">
-                    <style>
-                        #lelang-card::-webkit-scrollbar
+                        <style>
+                            /* #lelang-card::-webkit-scrollbar
                     {
                         width: 5px;
                         height: 10px;
@@ -915,16 +916,19 @@
                               #lelang-card::-webkit-scrollbar-thumb
                             {
                                 background-color: #61481C;
-                            }
-                    </style>
-                        <div class="row justify-content-between"id="lelang-card"style="overflow-x: auto; flex-wrap: nowrap">
+                            } */
+
+                        </style>
+                        <div class="row justify-content-between" id="lelang-card"
+                            style="overflow-x: auto; flex-wrap: nowrap">
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
                                     <img src="{{asset('')}}images/lahan1.jpeg" class="card-img-top" alt="..."
                                         style="height:200px;width:auto;object-fit:cover">
                                     <div class="card-body">
                                         <h5 class="card-title">Rp. 600.000.000</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the
                                             bulk of the card's content.</p>
                                         <a href="#" class="btn btn-white"
                                             style="background-color:#61481C !important;color:white">Bid Lelang</a>
@@ -937,7 +941,8 @@
                                         style="height:200px;width:auto;object-fit:cover">
                                     <div class="card-body">
                                         <h5 class="card-title">Rp. 350.000.000</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the
                                             bulk of the card's content.</p>
                                         <a href="#" class="btn btn-white"
                                             style="background-color:#61481C !important;color:white">Bid Lelang</a>
@@ -950,7 +955,8 @@
                                         style="height:200px;width:auto;object-fit:cover">
                                     <div class="card-body">
                                         <h5 class="card-title">Rp. 760.000.000</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the
                                             bulk of the card's content.</p>
                                         <a href="#" class="btn btn-white"
                                             style="background-color:#61481C !important;color:white">Bid Lelang</a>
@@ -963,7 +969,8 @@
                                         style="height:200px;width:auto;object-fit:cover">
                                     <div class="card-body">
                                         <h5 class="card-title">Rp. 400.000.000</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the
                                             bulk of the card's content.</p>
                                         <a href="#" class="btn btn-white"
                                             style="background-color:#61481C !important;color:white">Bid Lelang</a>
@@ -972,7 +979,7 @@
                             </div>
 
                         </div>
-                       
+
 
                     </div>
 
@@ -982,7 +989,7 @@
                 <div class="card border-0 shadow-sm">
                     <div class="card-body pb-1 pt-2">
                         <div class="row">
-                            <div class="col-4 panduan text-center mb-2">
+                            <div class="col-3 panduan text-center mb-2">
 
                                 <button class="btn btn-sm" id="btn-panduan" type="button">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -1059,7 +1066,7 @@
 
 
 
-                            <div class="col-4 text-center mb-2">
+                            <div class="col-3 text-center mb-2">
                                 <button class="btn btn-sm" id="btn-jaminan" type="button">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
@@ -1091,7 +1098,7 @@
                                 </script>
 
                             </div>
-                            <div class="col-4 text-center mb-2">
+                            <div class="col-3 text-center mb-2">
                                 <button class="btn btn-sm" id="btn-tentang" type="button">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
@@ -1123,6 +1130,16 @@
                                 </script>
 
                             </div>
+                            <div class="col-3 text-center mb-2">
+                              
+
+                                  <button class="btn btn-sm" id="btn-tentang" type="button">
+                                    <img src="{{asset('')}}images/cus.svg"style="width:55px;margin-top:9px" alt="" srcset="">
+                                    <h6 class="mt-3 mb-0" style="font-weight:bold;">CUSTOMER SERVICE</h6>
+                                </button>
+
+                            </div>
+                           
 
                             <ol id="panduan"
                                 class="list-group panduan list-group-numbered shadow dropdown-menu rounded-0 p-0"
