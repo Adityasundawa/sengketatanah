@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Utama;
 
 use App\Http\Controllers\Controller;
+use App\Models\JadwalMeeting;
 use App\Models\KorbanUser;
 use App\Models\Sponsoruser;
 use App\Models\User;
@@ -158,5 +159,13 @@ class KorbanController extends Controller
         $data['title'] = "Project";
         $data['sengketa'] = KorbanUser::where('id',$id)->first();
         return view('korban.hasil_berkas_sengketa',$data);
+    }
+
+    public function jadwal_wawancara($id)
+    {
+        $id = Crypt::decrypt($id);
+        $data['jadwal_meeting'] = JadwalMeeting::where('sengketa_id',$id);
+        return view('korban.jadwal_wawancara',$data);
+
     }
 }
