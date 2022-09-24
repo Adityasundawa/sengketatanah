@@ -258,6 +258,12 @@
         </div>
         @endif
 
+        <div class="text-center fs-3" style="padding:10px; color: #61481C">
+            "Platform Sengketa Tanah adalah aplikasi yang paling tepat untuk membantu perjuangan
+            Anda dalam mengatasi
+            persengketaan masalah tanah."
+        </div>
+
         <div class="card mb-3">
             <div class="card-body pb-0">
                 <div class="row justify-content-between text-center" style="overflow-x: auto; flex-wrap: nowrap">
@@ -539,14 +545,13 @@
         <div class="row mt-2" style="padding: 10px">
             <div class="card p-0 rounded-3 shadow">
                 <div class="card-body text-dark">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="text-center fs-3" style="padding:10px; color: #61481C">
-                                    "Platform Sengketa Tanah adalah aplikasi yang paling tepat untuk membantu perjuangan
-                                    Anda dalam mengatasi
-                                    persengketaan masalah tanah"
+                                    "Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
+                                    pemerintah."
                                 </div>
                             </div>
                             <div class="carousel-item">
@@ -555,7 +560,7 @@
                                         <h4 class="card-title">
                                             1. Pemerintah</h4>
                                         <hr>
-                                        Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di
+                                        Kementerian yang mempunyai tugas menyelenggarakan urusan di
                                         bidang agraria/pertanahan dan tata ruang.
                                     </div>
                                 </div>
