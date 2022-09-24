@@ -1073,7 +1073,7 @@
                                 <li class="list-group-item d-flex justify-content-between align-items-start">
                                     <div class="ms-2 me-auto">
                                         <div class="fw-bold" style="color: #61481C">Dapatkan Bantuan</div>
-                                        Yay! Selamat, kamu telah mendapatkan.
+                                        Yay! Selamat, kamu telah mendapatkan bantuan.
                                     </div>
                                     <i class="fa-solid fa-handshake-angle fs-6" style="color: #61481C"></i>
                                 </li>
