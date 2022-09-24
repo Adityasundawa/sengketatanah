@@ -99,6 +99,11 @@
                 padding: 3rem 20rem;
             }
         }
+        .bg-brown{
+            color: #fff;
+            background: #61481C;
+            border: 1px solid #61481C;
+        }
 
         .btn.btn-outline-brown {
             color: #61481C;
@@ -533,9 +538,6 @@
 
         <div class="row mt-2" style="padding: 10px">
             <div class="card p-0 rounded-3 shadow">
-                <div class="card-header text-white" style="background-color: #61481C;">
-                    <h4 class="mb-0 fw-bolder text-center">4 ROLE PENGGUNA</h4>
-                </div>
                 <div class="card-body text-dark">
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 
@@ -548,23 +550,20 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card">
+                                <div class="card bg-brown">
                                     <div class="card-body">
-                                        <h4 class="card-title" style="color:#61481C">
+                                        <h4 class="card-title">
                                             1. Pemerintah</h4>
                                         <hr>
                                         Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di
-                                        bidang
-                                        agraria/pertanahan dan tata ruang dalam pemerintahan untuk membantu Presiden
-                                        dalam
-                                        menyelenggarakan pemerintahan negara termasuk masalah persengketaan tanah
+                                        bidang agraria/pertanahan dan tata ruang.
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card">
+                                <div class="card text-white bg-danger">
                                     <div class="card-body">
-                                        <h4 class="card-title" style="color:#61481C">2. Korban Sengketa</h4>
+                                        <h4 class="card-title">2. Korban Sengketa</h4>
                                         <hr>
                                         Korban adalah orang yang dirugikan, dirampas, atau terancam kehilangan hak atas
                                         tanah yang
@@ -573,9 +572,9 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card">
+                                <div class="card text-white bg-primary">
                                     <div class="card-body">
-                                        <h4 class="card-title" style="color:#61481C">3. Sponsor</h4>
+                                        <h4 class="card-title">3. Sponsor</h4>
                                         <hr>
                                         Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan hukum korban
                                         sengketa tanah
@@ -583,9 +582,9 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card">
+                                <div class="card text-white bg-info">
                                     <div class="card-body">
-                                        <h4 class="card-title" style="color:#61481C">4. Pengacara</h4>
+                                        <h4 class="card-title">4. Pengacara</h4>
                                         <hr>
                                         Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani
                                         sengketa
@@ -597,13 +596,9 @@
 
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                             data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
                             data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
                         </button>
                     </div>
                     <div class="row justify-content-center">
