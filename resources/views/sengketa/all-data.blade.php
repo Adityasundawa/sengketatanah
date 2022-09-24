@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
     <style>
         html,
@@ -334,11 +336,12 @@
             transform: none !important;
             display: none !important
         }
+
         .dropdown-menu.show {
             display: block !important;
         }
 
-        .bg-brown{
+        .bg-brown {
             color: #fff;
             background: #61481C;
             border: 1px solid #61481C;
@@ -430,8 +433,9 @@
                     <div class="col-11 mb-3">
                         <div class="card bg-brown">
                             <div class="card-body">
-                                <div class="text-center fs-3" >
-                                    "Platform Sengketa Tanah mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
+                                <div class="text-center fs-3">
+                                    "Platform Sengketa Tanah mempertemukan korban sengketa tanah dengan sponsor,
+                                    pengacara dan
                                     pemerintah."
                                 </div>
                             </div>
@@ -470,7 +474,7 @@
                         </div>
                     </div>
                     <div class="col-11 mb-3">
-                        <div class="card bg-info text-white">  
+                        <div class="card bg-info text-white">
                             <div class="card-body">
                                 <h4 class="card-title">4. Pengacara</h4>
                                 <hr>
@@ -771,29 +775,164 @@
                         </div>
                     </div>
                 </div>
-                <div class="card mb-4 border-0 shadow-sm ">
+                <div class="card mb-4 border-0 shadow-sm">
                     <div class="card-body pb-1 pt-2">
-                    <div class="row">
-                        <div class="col-md-4 text-center mb-2">
+                        <div class="row">
+                            <div class="col-4 panduan text-center mb-2">
 
-                            <button class="btn" type="button" data-bs-toggle="dropdown">
-                                <img  src="{{asset('/')}}images/panduan.svg" alt=""
-                                class="img-thumbnail rounded-circle shadow" style="border: 2px solid white;width:100px">
-                                <h6 class="mt-2 mb-0" style="font-weight:bold;">PANDUAN</h6>
-                            </button>
+                                <button class="btn btn-sm" id="btn-panduan" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                        width="70px" x="0" y="0" viewBox="0 0 296.999 296.999"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="148.4995" cx="148.4995" cy="148.4995" fill="#ffffff" shape="circle">
+                                        </circle>
+                                        <g transform="matrix(0.7,0,0,0.7,44.54984436035157,44.54998970031738)">
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                    <g>
+                                                        <path
+                                                            d="M45.432,35.049c-0.008,0-0.017,0-0.025,0c-2.809,0-5.451,1.095-7.446,3.085c-2.017,2.012-3.128,4.691-3.128,7.543     v159.365c0,5.844,4.773,10.61,10.641,10.625c24.738,0.059,66.184,5.215,94.776,35.136V84.023c0-1.981-0.506-3.842-1.461-5.382     C115.322,40.849,70.226,35.107,45.432,35.049z"
+                                                            fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path
+                                                            d="M262.167,205.042V45.676c0-2.852-1.111-5.531-3.128-7.543c-1.995-1.99-4.639-3.085-7.445-3.085c-0.009,0-0.018,0-0.026,0     c-24.793,0.059-69.889,5.801-93.357,43.593c-0.955,1.54-1.46,3.401-1.46,5.382v166.779     c28.592-29.921,70.038-35.077,94.776-35.136C257.394,215.651,262.167,210.885,262.167,205.042z"
+                                                            fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path
+                                                            d="M286.373,71.801h-7.706v133.241c0,14.921-12.157,27.088-27.101,27.125c-20.983,0.05-55.581,4.153-80.084,27.344     c42.378-10.376,87.052-3.631,112.512,2.171c3.179,0.724,6.464-0.024,9.011-2.054c2.538-2.025,3.994-5.052,3.994-8.301V82.427     C297,76.568,292.232,71.801,286.373,71.801z"
+                                                            fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path
+                                                            d="M18.332,205.042V71.801h-7.706C4.768,71.801,0,76.568,0,82.427v168.897c0,3.25,1.456,6.276,3.994,8.301     c2.545,2.029,5.827,2.78,9.011,2.054c25.46-5.803,70.135-12.547,112.511-2.171c-24.502-23.19-59.1-27.292-80.083-27.342     C30.49,232.13,18.332,219.963,18.332,205.042z"
+                                                            fill="#61481c" data-original="#000000" class=""></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <h6 class="mt-2 mb-0" style="font-weight:bold;">PANDUAN</h6>
+                                </button>
 
-                            <ol class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-0" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                                <script>
+                                    $("#btn-panduan").click(function(){
+                                        $("#panduan").toggleClass('show');
+                                        $("#jaminan").removeClass('show');
+                                        $("#tentang").removeClass('show');
+                                    });
+                                </script>
+
+
+                            </div>
+
+                            
+
+                            <div class="col-4 text-center mb-2">
+                                <button class="btn btn-sm" id="btn-jaminan" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                        width="70px" x="0" y="0" viewBox="0 0 32 32"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="16" cx="16" cy="16" fill="#ffffff" shape="circle"></circle>
+                                        <g transform="matrix(0.7,0,0,0.7,4.799999713897705,4.800377225875856)">
+                                            <g xmlns="http://www.w3.org/2000/svg" id="_26-Guranteed"
+                                                data-name="26-Guranteed">
+                                                <path
+                                                    d="m27 6c-5.56 0-10.33-3.74-10.38-3.78a1 1 0 0 0 -1.24 0c-.05.04-4.8 3.78-10.38 3.78a1 1 0 0 0 -1 1v9c0 6.71 2.71 10 11.59 13.91a1 1 0 0 0 .82 0c8.88-3.91 11.59-7.2 11.59-13.91v-9a1 1 0 0 0 -1-1zm-11 18a8 8 0 1 1 8-8 8 8 0 0 1 -8 8z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
+                                                <path
+                                                    d="m18.29 13.29-3.29 3.3-1.29-1.3a1 1 0 0 0 -1.42 1.42l2 2a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0 -1.42-1.42z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <h6 class="mt-2 mb-0" style="font-weight:bold;">JAMINAN</h6>
+                                </button>
+
+                                <script>
+                                    $("#btn-jaminan").click(function(){
+                                        $("#panduan").removeClass('show');
+                                        $("#jaminan").toggleClass('show');
+                                        $("#tentang").removeClass('show');
+                                    });
+                                </script>
+
+                            </div>
+                            <div class="col-4 text-center mb-2">
+                                <button class="btn btn-sm" id="btn-tentang" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                        width="70px" x="0" y="0" viewBox="0 0 24 24"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="12" cx="12" cy="12" fill="#ffffff" shape="circle"></circle>
+                                        <g transform="matrix(0.7,0,0,0.7,3.600000000000003,3.600000000000003)">
+                                            <g xmlns="http://www.w3.org/2000/svg" fill="rgb(0,0,0)">
+                                                <path
+                                                    d="m12 0a12 12 0 1 0 12 12 12.013 12.013 0 0 0 -12-12zm0 22a10 10 0 1 1 10-10 10.011 10.011 0 0 1 -10 10z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
+                                                <path d="m12 9a1 1 0 0 0 -1 1v8a1 1 0 0 0 2 0v-8a1 1 0 0 0 -1-1z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
+                                                <circle cx="12" cy="6" r="1" fill="#61481c" data-original="#000000"
+                                                    class=""></circle>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <h6 class="mt-2 mb-0" style="font-weight:bold;">TENTANG</h6>
+                                </button>
+
+                                <script>
+                                    $("#btn-tentang").click(function(){
+                                        $("#panduan").removeClass('show');
+                                        $("#jaminan").removeClass('show');
+                                        $("#tentang").toggleClass('show');
+                                    });
+                                </script>
+
+                            </div>
+
+                            <ol id="panduan" class="list-group panduan list-group-numbered shadow dropdown-menu rounded-0 p-0"
+                                style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                                 <li class="list-group-item d-flex justify-content-between align-items-start">
                                     <div class="ms-2 me-auto">
                                         <div class="fw-bold" style="color: #61481C">Buat Akun Sengketa Tanah</div>
-                                        Daftarkan diri Anda sesuai dengan role yang diinginkan (Korban, Sponsor, Pengacara).
+                                        Daftarkan diri Anda sesuai dengan role yang diinginkan (Korban, Sponsor,
+                                        Pengacara).
                                     </div>
                                     <i class="fa-solid fa-user-plus fs-6" style="color: #61481C"></i>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-start">
                                     <div class="ms-2 me-auto">
-                                        <div class="fw-bold" style="color: #61481C">Buat Laporan Sengketa Tanah</div>
-                                        Laporkan dengan jelas melalui formulir korban tentang masalah sengketa tanah Anda.
+                                        <div class="fw-bold" style="color: #61481C">Buat Laporan Sengketa Tanah
+                                        </div>
+                                        Laporkan dengan jelas melalui formulir korban tentang masalah sengketa tanah
+                                        Anda.
                                     </div>
                                     <i class="fa-solid fa-file-circle-plus fs-6" style="color: #61481C"></i>
                                 </li>
@@ -807,7 +946,8 @@
                                 <li class="list-group-item d-flex justify-content-between align-items-start">
                                     <div class="ms-2 me-auto">
                                         <div class="fw-bold" style="color: #61481C">Temukan Bantuan</div>
-                                        Pilih bantuan yang diinginkan mulai dari bantuan pendanaan sponsor, bantuan hukum pengacara, dan
+                                        Pilih bantuan yang diinginkan mulai dari bantuan pendanaan sponsor, bantuan
+                                        hukum pengacara, dan
                                         bantuan pemerintah.
                                     </div>
                                     <i class="fa fa-circle-question fs-6" style="color: #61481C"></i>
@@ -828,106 +968,105 @@
                                 </li>
                             </ol>
 
-                        </div>
-                        <div class="col-md-4  text-center mb-2">
-                            <button class="btn" type="button" data-bs-toggle="dropdown">
-                                <img  src="{{asset('/')}}images/jaminan.svg" alt=""
-                                class="img-thumbnail rounded-circle shadow" style="border: 2px solid white;width:100px;height:100px;object-fit:cover">
-                                <h6 class="mt-2 mb-0" style="font-weight:bold;">JAMINAN</h6>
-                            </button>
-                            <ol class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                            <ol id="jaminan" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3"
+                                style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                                 <div class="col-md-12">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-tie"></i></b></h5>
+                                            <h5 style="color: #61481C" class="mb-0"><b><i
+                                                        class="fa-solid fa-user-tie"></i></b></h5>
                                         </div>
                                         <div class="flex-grow-1 ms-3">
-                                            <h5 style="color: #61481C" class="mb-0"><b>Sponsor Terverifikasi</b></h5>
+                                            <h5 style="color: #61481C" class="mb-0"><b>Sponsor Terverifikasi</b>
+                                            </h5>
                                             Setiap sponsor yang terlibat di verifikasi kemampuan dan sumber dananya.
                                         </div>
                                     </div>
                                 </div>
-                    
                                 <div class="col-md-12 mt-4">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-gavel"></i></b></h5>
+                                            <h5 style="color: #61481C" class="mb-0"><b><i
+                                                        class="fa-solid fa-gavel"></i></b></h5>
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1 ms-3">
-                                                <h5 style="color: #61481C" class="mb-0"><b>Pengacara Terverifikasi</b></h5>
+                                                <h5 style="color: #61481C" class="mb-0"><b>Pengacara
+                                                        Terverifikasi</b></h5>
                                                 Setiap pengacara wajib memiliki sertifikasi advokat yang dibutuhkan.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                    
                                 <div class="col-md-12 mt-4">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-hand-holding-dollar"></i></b>
+                                            <h5 style="color: #61481C" class="mb-0"><b><i
+                                                        class="fa-solid fa-hand-holding-dollar"></i></b>
                                             </h5>
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1 ms-3">
                                                 <h5 style="color: #61481C" class="mb-0"><b>Pembayaran Aman</b></h5>
-                                                Setiap transaksi yang terjadi menggunakan platform pembayaran Sengketa Tanah.
+                                                Setiap transaksi yang terjadi menggunakan platform pembayaran
+                                                Sengketa Tanah.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                    
                                 <div class="col-md-12 mt-4">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-chart-line"></i></b></h5>
+                                            <h5 style="color: #61481C" class="mb-0"><b><i
+                                                        class="fa-solid fa-chart-line"></i></b></h5>
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1 ms-3">
                                                 <h5 style="color: #61481C" class="mb-0"><b>Bantuan Analisa</b></h5>
-                                                Kami memberikan bantuan analisa terhadap permasalahan yang relevan untuk diatasi.
+                                                Kami memberikan bantuan analisa terhadap permasalahan yang relevan
+                                                untuk diatasi.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                    
                                 <div class="col-md-12 mt-4">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-handshake"></i></b></h5>
+                                            <h5 style="color: #61481C" class="mb-0"><b><i
+                                                        class="fa-solid fa-handshake"></i></b></h5>
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1 ms-3">
-                                                <h5 style="color: #61481C" class="mb-0"><b>Kesepakatan Terlindungi</b></h5>
-                                                Semua kesepakatan yang terjadi dilindungi perjanjian hukum yang ketat dan mengikat.
+                                                <h5 style="color: #61481C" class="mb-0"><b>Kesepakatan
+                                                        Terlindungi</b></h5>
+                                                Semua kesepakatan yang terjadi dilindungi perjanjian hukum yang
+                                                ketat dan mengikat.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                    
                                 <div class="col-md-12 mt-4">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-gear"></i></b></h5>
+                                            <h5 style="color: #61481C" class="mb-0"><b><i
+                                                        class="fa-solid fa-user-gear"></i></b></h5>
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1 ms-3">
-                                                <h5 style="color: #61481C" class="mb-0"><b>Bantuan Customer Support</b></h5>
+                                                <h5 style="color: #61481C" class="mb-0"><b>Bantuan Customer
+                                                        Support</b></h5>
                                                 Layanan CS 24 jam siap membantu anda.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </ol>
-                            
 
+                            <ol id="tentang" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3"
+                                style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                                
+                            </ol>
                         </div>
-                        <div class="col-md-4 text-center mb-2">
-                            <img  src="{{asset('/')}}images/jaminan.svg" alt=""
-                                class="img-thumbnail rounded-circle shadow" style="border: 2px solid white;width:100px;height:100px;object-fit:cover">
-                                <h6 class="mt-2 mb-0" style="font-weight:bold;">TENTANG</h6>
-                        </div>
-                    </div>
 
                     </div>
                 </div>
@@ -1771,291 +1910,293 @@
         </div>
 
 
+        <div class="row justify-content-center mb-3 mt-4 text-center g-0">
+            <p class="fw-bold text-center" style="text-align: justify">Ikuti Sosial Media Kami</a></p>
 
-    </div>
-    </div>
-
-    <div class="row justify-content-center mb-3 mt-4 text-center g-0">
-        <p class="fw-bold text-center" style="text-align: justify">Ikuti Sosial Media Kami</a></p>
-
-        <div class="col">
-            <a class="btn p-0" href="https://www.instagram.com/sengketatanah.id/" role="button">
-                <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x" style="text-shadow: -3px 3px 5px #bbbbbb;color: #8a3ab9"></i>
-                    <i class="fa-brands fa-instagram fa-stack-1x fa-inverse"></i>
-                </span>
-            </a>
-        </div>
-        <div class="col">
-            <a class="btn p-0" href="https://m.youtube.com/channel/UCXQW3lPJ68brYiThnxX18-A" role="button">
-                <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x text-danger" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
-                    <i class="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
-                </span>
-            </a>
-        </div>
-        <div class="col">
-            <a class="btn p-0" href="#" role="button">
-                <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x text-primary" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
-                    <i class="fa-brands fa-facebook fa-stack-1x fa-inverse"></i>
-                </span>
-            </a>
-        </div>
-        <div class="col">
-            <a class="btn p-0" href="https://mobile.twitter.com/sengketatanahid" role="button">
-                <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x text-info" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
-                    <i class="fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-            </a>
-        </div>
-        <div class="col">
-            <div class="dropdown">
-                <button class="btn p-0" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                    id="dropdownMenuButton1">
+            <div class="col">
+                <a class="btn p-0" href="https://www.instagram.com/sengketatanah.id/" role="button">
                     <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x " style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
-                        <i class="fa-solid fa-share fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-circle fa-stack-2x"
+                            style="text-shadow: -3px 3px 5px #bbbbbb;color: #8a3ab9"></i>
+                        <i class="fa-brands fa-instagram fa-stack-1x fa-inverse"></i>
                     </span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-                            data-show-count="false"><i class="fa-brands fa-twitter"></i> Tweet</a></li>
-                    <li>
-                        <a target="_blank"
-                            onClick='window.open("https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse","Ratting","width=550,height=550,left=150,top=200,toolbar=0,status=0,");'
-                            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse"
-                            class="fb-xfbml-parse-ignore dropdown-item"><i class="fa-brands fa-facebook"></i>
-                            Facebook</a>
-                    </li>
-                </ul>
+                </a>
+            </div>
+            <div class="col">
+                <a class="btn p-0" href="https://m.youtube.com/channel/UCXQW3lPJ68brYiThnxX18-A" role="button">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x text-danger" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                        <i class="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="col">
+                <a class="btn p-0" href="#" role="button">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x text-primary" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                        <i class="fa-brands fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="col">
+                <a class="btn p-0" href="https://mobile.twitter.com/sengketatanahid" role="button">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x text-info" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                        <i class="fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="col">
+                <div class="dropdown">
+                    <button class="btn p-0" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        id="dropdownMenuButton1">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x " style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                            <i class="fa-solid fa-share fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+                                data-show-count="false"><i class="fa-brands fa-twitter"></i> Tweet</a></li>
+                        <li>
+                            <a target="_blank"
+                                onClick='window.open("https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse","Ratting","width=550,height=550,left=150,top=200,toolbar=0,status=0,");'
+                                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse"
+                                class="fb-xfbml-parse-ignore dropdown-item"><i class="fa-brands fa-facebook"></i>
+                                Facebook</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="" class=""></a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
             </div>
 
-            <a href="" class=""></a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-        </div>
-
-        <div class="modal fade" id="korbanSengketaModal" tabindex="-1" aria-labelledby="korbanSengketaModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header bg-dark text-white">
-                        <div class="row">
-                            <div class="col-12 text-center text-uppercase">
-                                <h5 class="modal-title" id="formSponsoranModalLabel">Korban Sengketa Tanah</h5>
-                            </div>
-                            <div class="col-12 text-center">
-                                <h6 class="modal-title" style="font-size:12px">Korban adalah orang yang dirugikan,
-                                    dirampas,
-                                    atau kehilangan hak atas tanah yang dimilikinya*</h6>
+            <div class="modal fade" id="korbanSengketaModal" tabindex="-1" aria-labelledby="korbanSengketaModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header bg-dark text-white">
+                            <div class="row">
+                                <div class="col-12 text-center text-uppercase">
+                                    <h5 class="modal-title" id="formSponsoranModalLabel">Korban Sengketa Tanah</h5>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <h6 class="modal-title" style="font-size:12px">Korban adalah orang yang dirugikan,
+                                        dirampas,
+                                        atau kehilangan hak atas tanah yang dimilikinya*</h6>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <form method="post" class="text-start" action="{{url('sengketa/send')}}"
-                        enctype="multipart/form-data">
-                        <div class="modal-body">
-                            @csrf
-                            @if ($errors->all())
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-
-                            @endif
-                            @if (Session::has('success'))
-                            <div class="alert alert-success">
-                                {{Session::get('success')}}
-                            </div>
-                            @endif
-
-                            <div class="mb-2">
-                                <label for="nama" class="form-label">Nama Pelapor</label>
-                                <input type="text" class="form-control rounded-0" id="nama"
-                                    placeholder="Masukkan Nama Anda" aria-describedby="input-nama" name="nama" required>
-                                <div id="input-nama" class="form-text"></div>
-                            </div>
-
-                            <div class="mb-2">
-                                <label for="Alamat" class="form-label">Alamat</label>
-                                <input type="text" class="form-control rounded-0" id="Alamat"
-                                    placeholder="Masukkan Alamat Anda" aria-describedby="input-Alamat" name="alamat"
-                                    required>
-                                <div id="input-Alamat" class="form-text"></div>
-                            </div>
-                            <div class="mb-2">
-                                <label for="no_hp" class="form-label">Nomor Hp</label>
-                                <input type="number" class="form-control rounded-0" id="no_hp"
-                                    placeholder="Masukkan Nomor HP Anda" aria-describedby="input-no_hp" name="no_hp"
-                                    required>
-                                <div id="input-no_hp" class="form-text"></div>
-                            </div>
-                            <div class="mb-2">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control rounded-0" id="email"
-                                    placeholder="Masukkan Email Anda" aria-describedby="input-email" name="email"
-                                    required>
-                                <div id="input-email" class="form-text"></div>
-                            </div>
-                            <div class="mb-2">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control rounded-0" id="password"
-                                    placeholder="buat password Anda" aria-describedby="input-password" name="password"
-                                    required>
-                                <div id="input-password" class="form-text"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="mb-2">
-                                        <label class="form-label">Objek Sengketa</label>
-                                        <select class="form-select rounded-0" aria-label="Default select example"
-                                            name="objek_sengketa" required>
-                                            <option value="Sengketa Pertanahan">Sengketa Pertanahan</option>
-                                            <option value="Konflik Pertanahan">Konflik Pertanahan</option>
-                                            <option value="Perkara Pertanahan">Perkara Pertanahan</option>
-                                            <option value="Penjualan Lahan">Penjualan Lahan</option>
-                                        </select>
-                                    </div>
+                        <form method="post" class="text-start" action="{{url('sengketa/send')}}"
+                            enctype="multipart/form-data">
+                            <div class="modal-body">
+                                @csrf
+                                @if ($errors->all())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
                                 </div>
 
-                                <div class="col">
-                                    <div class="mb-2">
-                                        <label for="luas" class="form-label">Luas Tanah (meter/ha)</label>
-                                        <input type="text" class="form-control rounded-0" id="luas"
-                                            placeholder="Masukkan Luas Tanah" aria-describedby="input-luas" name="luas"
-                                            required>
-                                        <div id="input-luas" class="form-text"></div>
-                                    </div>
+                                @endif
+                                @if (Session::has('success'))
+                                <div class="alert alert-success">
+                                    {{Session::get('success')}}
                                 </div>
-                            </div>
+                                @endif
 
-                            <div class="mb-2">
-                                <label for="lokasi" class="form-label">Lokasi</label>
-                                <input type="text" class="form-control rounded-0" id="lokasi"
-                                    placeholder="Masukkan Lokasi" aria-describedby="input-lokasi" name="lokasi"
-                                    required>
-                                <div id="input-lokasi" class="form-text"></div>
-                            </div>
-                            <div class="mb-2">
-                                <label for="kronologi" class="form-label">Kronologi</label>
-                                <textarea id="kronologi" class="form-control rounded-0" placeholder="Masukkan Kronologi"
-                                    aria-describedby="input-kronologi" name="kronologi" cols="30" rows="10"
-                                    required></textarea>
-                                <div id="input-kronologi" class="form-text"></div>
-                            </div>
-                            <div class="mb-2">
-                                <label class="form-label">Status Pelapor</label>
-                                <select class="form-select rounded-0" aria-label="Default select example"
-                                    name="status_pelapor" required>
-                                    <option value="Pemilik">Pemilik</option>
-                                    <option value="Kuasa Pemilik">Kuasa Pemilik</option>
-                                </select>
-                            </div>
-                            <div class="mb-2">
-                                <label class="form-label">Pilih Jenis Pertolongan</label>
-                                <select class="form-select rounded-0" aria-label="Default select example"
-                                    name="jenis_pertolongan" required>
-                                    <option selected disabled>Pilih Pertolongan</option>
-                                    <option value="sponsor">Sponsor</option>
-                                    <option value="pengacara">Pengacara</option>
-                                    <option value="pemerintah">Pemerintah</option>
-                                </select>
-                            </div>
+                                <div class="mb-2">
+                                    <label for="nama" class="form-label">Nama Pelapor</label>
+                                    <input type="text" class="form-control rounded-0" id="nama"
+                                        placeholder="Masukkan Nama Anda" aria-describedby="input-nama" name="nama"
+                                        required>
+                                    <div id="input-nama" class="form-text"></div>
+                                </div>
 
-                            <div id="pengembalian_dana" class="alert alert-danger sponsor" role="alert">
-                                <strong>
-                                    Saya membutuhkan bantuan pendanaan dari sponsor untuk menyelesaikan permasalahan
-                                    sengketa tanah saya.
-                                </strong>
-                            </div>
-
-                            <div class="mb-2 pengacara">
-                                <label class="form-label">Pilih Tindakan Pengacara</label>
-                                <select class="form-select rounded-0" aria-label="Default select example"
-                                    name="bantuan_pengacara" required>
-                                    <option selected disabled>Pilih Bantuan Pengacara</option>
-                                    <option value="konsultasi">Konsultasi</option>
-                                    <option value="pendampingan">Pendampingan</option>
-                                    <option value="penindakan">Penindakan</option>
-                                </select>
-                            </div>
-
-                            <div class="mb-2 pengacara">
-                                <label for="anggaran_pengacara" class="form-label">Anggaran Pengacara</label>
+                                <div class="mb-2">
+                                    <label for="Alamat" class="form-label">Alamat</label>
+                                    <input type="text" class="form-control rounded-0" id="Alamat"
+                                        placeholder="Masukkan Alamat Anda" aria-describedby="input-Alamat" name="alamat"
+                                        required>
+                                    <div id="input-Alamat" class="form-text"></div>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="no_hp" class="form-label">Nomor Hp</label>
+                                    <input type="number" class="form-control rounded-0" id="no_hp"
+                                        placeholder="Masukkan Nomor HP Anda" aria-describedby="input-no_hp" name="no_hp"
+                                        required>
+                                    <div id="input-no_hp" class="form-text"></div>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control rounded-0" id="email"
+                                        placeholder="Masukkan Email Anda" aria-describedby="input-email" name="email"
+                                        required>
+                                    <div id="input-email" class="form-text"></div>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control rounded-0" id="password"
+                                        placeholder="buat password Anda" aria-describedby="input-password"
+                                        name="password" required>
+                                    <div id="input-password" class="form-text"></div>
+                                </div>
                                 <div class="row">
                                     <div class="col">
-                                        <input type="number" class="form-control rounded-0" id="anggaran_pengacara-s"
-                                            placeholder="Anggaran mulai dari ..."
-                                            aria-describedby="input-anggaran_pengacara-s" name="anggaran_pengacara-s">
+                                        <div class="mb-2">
+                                            <label class="form-label">Objek Sengketa</label>
+                                            <select class="form-select rounded-0" aria-label="Default select example"
+                                                name="objek_sengketa" required>
+                                                <option value="Sengketa Pertanahan">Sengketa Pertanahan</option>
+                                                <option value="Konflik Pertanahan">Konflik Pertanahan</option>
+                                                <option value="Perkara Pertanahan">Perkara Pertanahan</option>
+                                                <option value="Penjualan Lahan">Penjualan Lahan</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="col-1 text-center"
-                                        style="width:4% !important; padding-right: 0px !important; padding-left: 0px !important">
-                                        -
-                                    </div>
+
                                     <div class="col">
-                                        <input type="number" class="form-control rounded-0" id="anggaran_pengacara-e"
-                                            placeholder="Sampai ..." aria-describedby="input-anggaran_pengacara-e"
-                                            name="anggaran_pengacara-e">
+                                        <div class="mb-2">
+                                            <label for="luas" class="form-label">Luas Tanah (meter/ha)</label>
+                                            <input type="text" class="form-control rounded-0" id="luas"
+                                                placeholder="Masukkan Luas Tanah" aria-describedby="input-luas"
+                                                name="luas" required>
+                                            <div id="input-luas" class="form-text"></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div id="pengembalian_dana" class="alert alert-danger pemerintah" role="alert">
-                                <strong>
-                                    Saya hanya membutuhkan pertolongan agar permasalahan sengketa tanah saya diteruskan
-                                    pada
-                                    Pemerintah.
-                                </strong>
-                            </div>
+                                <div class="mb-2">
+                                    <label for="lokasi" class="form-label">Lokasi</label>
+                                    <input type="text" class="form-control rounded-0" id="lokasi"
+                                        placeholder="Masukkan Lokasi" aria-describedby="input-lokasi" name="lokasi"
+                                        required>
+                                    <div id="input-lokasi" class="form-text"></div>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="kronologi" class="form-label">Kronologi</label>
+                                    <textarea id="kronologi" class="form-control rounded-0"
+                                        placeholder="Masukkan Kronologi" aria-describedby="input-kronologi"
+                                        name="kronologi" cols="30" rows="10" required></textarea>
+                                    <div id="input-kronologi" class="form-text"></div>
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label">Status Pelapor</label>
+                                    <select class="form-select rounded-0" aria-label="Default select example"
+                                        name="status_pelapor" required>
+                                        <option value="Pemilik">Pemilik</option>
+                                        <option value="Kuasa Pemilik">Kuasa Pemilik</option>
+                                    </select>
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label">Pilih Jenis Pertolongan</label>
+                                    <select class="form-select rounded-0" aria-label="Default select example"
+                                        name="jenis_pertolongan" required>
+                                        <option selected disabled>Pilih Pertolongan</option>
+                                        <option value="sponsor">Sponsor</option>
+                                        <option value="pengacara">Pengacara</option>
+                                        <option value="pemerintah">Pemerintah</option>
+                                    </select>
+                                </div>
 
-                            <div class="mb-2 sponsor">
-                                <label for="keb_dana" class="form-label">Jumlah Dana Sponsor</label>
-                                <input type="number" class="form-control rounded-0" id="keb_dana"
-                                    placeholder="Sebutkan Nilai Kebutuhan" aria-describedby="input-keb_dana"
-                                    name="keb_dana" required>
-                                <div id="input-keb_dana" class="form-text"></div>
-                            </div>
+                                <div id="pengembalian_dana" class="alert alert-danger sponsor" role="alert">
+                                    <strong>
+                                        Saya membutuhkan bantuan pendanaan dari sponsor untuk menyelesaikan permasalahan
+                                        sengketa tanah saya.
+                                    </strong>
+                                </div>
 
-                            <div class="mb-2 sponsor">
-                                <label class="form-label">Pengembalian Dana Sponsor</label>
-                                <select class="form-select rounded-0" aria-label="Default select example"
-                                    name="pengembalian_dana_sponsor" required>
-                                    <option selected disabled>Pilih Jenis Pengembalian</option>
-                                    <option value="70/30">Bagi Hasil 70/30*</option>
-                                    <option value="60/40">Bagi Hasil 60/40*</option>
-                                    <option value="50/50">Bagi Hasil 50/50*</option>
-                                    <option value="lain">Fee 50% Dari Pinjaman</option>
-                                    <option value="lain">Fee 75% Dari Pinjaman</option>
-                                    <option value="lain">Fee 100% Dari Pinjaman</option>
-                                </select>
-                                <small id="pengembalian_dana_sponsor" class="form-text text-muted">Bagi hasil di
-                                    rekomendasikan untuk kasus-kasus sengketa tanah yang berat. Tanda bintang(*) adalah
-                                    pembagian untuk sponsor. </small>
-                            </div>
+                                <div class="mb-2 pengacara">
+                                    <label class="form-label">Pilih Tindakan Pengacara</label>
+                                    <select class="form-select rounded-0" aria-label="Default select example"
+                                        name="bantuan_pengacara" required>
+                                        <option selected disabled>Pilih Bantuan Pengacara</option>
+                                        <option value="konsultasi">Konsultasi</option>
+                                        <option value="pendampingan">Pendampingan</option>
+                                        <option value="penindakan">Penindakan</option>
+                                    </select>
+                                </div>
 
-                            <div class="mb-2 sponsor">
-                                <label class="form-label" for="jaminan_dana">Jaminan Dana Sponsor</label>
-                                <select class="form-select rounded-0" aria-label="Default select example" name="jaminan"
-                                    required>
-                                    <option selected disabled>Pilih Jaminan</option>
-                                    <option value="ada">Ada Jaminan</option>
-                                    <option value="tidak">Tidak Ada Jaminan</option>
-                                </select>
-                            </div>
+                                <div class="mb-2 pengacara">
+                                    <label for="anggaran_pengacara" class="form-label">Anggaran Pengacara</label>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="number" class="form-control rounded-0"
+                                                id="anggaran_pengacara-s" placeholder="Anggaran mulai dari ..."
+                                                aria-describedby="input-anggaran_pengacara-s"
+                                                name="anggaran_pengacara-s">
+                                        </div>
+                                        <div class="col-1 text-center"
+                                            style="width:4% !important; padding-right: 0px !important; padding-left: 0px !important">
+                                            -
+                                        </div>
+                                        <div class="col">
+                                            <input type="number" class="form-control rounded-0"
+                                                id="anggaran_pengacara-e" placeholder="Sampai ..."
+                                                aria-describedby="input-anggaran_pengacara-e"
+                                                name="anggaran_pengacara-e">
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <div class="mb-2 jaminan_berupa">
-                                <label for="jaminan_berupa" class="form-label">Jaminan Berupa</label>
-                                <select class="form-select rounded-0" id="lokasi" placeholder="Masukkan Jaminan"
-                                    aria-describedby="input-jaminan" name="jaminan_berupa" required>
-                                    <option value="Sertifikat Tanah">Sertifikat Tanah</option>
-                                    <option value="Sertifikat Rumah">Sertifikat Rumah</option>
-                                </select>
-                            </div>
-                            {{-- <div class="mb-2">
+                                <div id="pengembalian_dana" class="alert alert-danger pemerintah" role="alert">
+                                    <strong>
+                                        Saya hanya membutuhkan pertolongan agar permasalahan sengketa tanah saya
+                                        diteruskan
+                                        pada
+                                        Pemerintah.
+                                    </strong>
+                                </div>
+
+                                <div class="mb-2 sponsor">
+                                    <label for="keb_dana" class="form-label">Jumlah Dana Sponsor</label>
+                                    <input type="number" class="form-control rounded-0" id="keb_dana"
+                                        placeholder="Sebutkan Nilai Kebutuhan" aria-describedby="input-keb_dana"
+                                        name="keb_dana" required>
+                                    <div id="input-keb_dana" class="form-text"></div>
+                                </div>
+
+                                <div class="mb-2 sponsor">
+                                    <label class="form-label">Pengembalian Dana Sponsor</label>
+                                    <select class="form-select rounded-0" aria-label="Default select example"
+                                        name="pengembalian_dana_sponsor" required>
+                                        <option selected disabled>Pilih Jenis Pengembalian</option>
+                                        <option value="70/30">Bagi Hasil 70/30*</option>
+                                        <option value="60/40">Bagi Hasil 60/40*</option>
+                                        <option value="50/50">Bagi Hasil 50/50*</option>
+                                        <option value="lain">Fee 50% Dari Pinjaman</option>
+                                        <option value="lain">Fee 75% Dari Pinjaman</option>
+                                        <option value="lain">Fee 100% Dari Pinjaman</option>
+                                    </select>
+                                    <small id="pengembalian_dana_sponsor" class="form-text text-muted">Bagi hasil di
+                                        rekomendasikan untuk kasus-kasus sengketa tanah yang berat. Tanda bintang(*)
+                                        adalah
+                                        pembagian untuk sponsor. </small>
+                                </div>
+
+                                <div class="mb-2 sponsor">
+                                    <label class="form-label" for="jaminan_dana">Jaminan Dana Sponsor</label>
+                                    <select class="form-select rounded-0" aria-label="Default select example"
+                                        name="jaminan" required>
+                                        <option selected disabled>Pilih Jaminan</option>
+                                        <option value="ada">Ada Jaminan</option>
+                                        <option value="tidak">Tidak Ada Jaminan</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-2 jaminan_berupa">
+                                    <label for="jaminan_berupa" class="form-label">Jaminan Berupa</label>
+                                    <select class="form-select rounded-0" id="lokasi" placeholder="Masukkan Jaminan"
+                                        aria-describedby="input-jaminan" name="jaminan_berupa" required>
+                                        <option value="Sertifikat Tanah">Sertifikat Tanah</option>
+                                        <option value="Sertifikat Rumah">Sertifikat Rumah</option>
+                                    </select>
+                                </div>
+                                {{-- <div class="mb-2">
                                 <label for="ktp" class="form-label">Foto KTP</label>
                                 <input class="form-control rounded-0" type="file" id="ktp" name="foto_ktp" required>
                             </div>
@@ -2069,216 +2210,219 @@
                                 <input class="form-control rounded-0" type="file" id="dokumenTanah" name="dokumen_tanah"
                                     required>
                             </div> --}}
-                            <div class="mb-2 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" style="text-align:justify" for="exampleCheck1">Dengan
-                                    mengisi form ini saya
-                                    menyatakan bahwa semua data yang diberikan benar adanya dan laporan ini tidak
-                                    sedang dalam penanganan hukum pihak lain. Saya bersedia melakukan wawancara mendalam
-                                    di
-                                    <b>PODCAST SENGKETA TANAH</b> dan bekerja sama dengan
-                                    Sponsor melalui <b>PLATFORM SENGKETA TANAH</b> untuk diselesaikan.</label>
+                                <div class="mb-2 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" style="text-align:justify"
+                                        for="exampleCheck1">Dengan
+                                        mengisi form ini saya
+                                        menyatakan bahwa semua data yang diberikan benar adanya dan laporan ini tidak
+                                        sedang dalam penanganan hukum pihak lain. Saya bersedia melakukan wawancara
+                                        mendalam
+                                        di
+                                        <b>PODCAST SENGKETA TANAH</b> dan bekerja sama dengan
+                                        Sponsor melalui <b>PLATFORM SENGKETA TANAH</b> untuk diselesaikan.</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-dark">Kirim</button>
-                        </div>
-                    </form>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-dark">Kirim</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
+
         </div>
 
-    </div>
-
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0"
-        nonce="Ee2Zutm6"></script>
-    <div class="row mt-4">
-        <div class="card-body bg-dark text-white text-center">
-            <p></p>
-            <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
-            <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved</p>
-            <hr>
-            <p style="font-size:14px" class="card-title pb-3">Sovereign Plaza. Lt. 19 <br> Jl. TB Simatupang No. 36,
-                TB Simatupang, Jakarta Selatan</p>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0" nonce="Ee2Zutm6"></script>
+        <div class="row mt-4">
+            <div class="card-body bg-dark text-white text-center">
+                <p></p>
+                <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
+                <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved</p>
+                <hr>
+                <p style="font-size:14px" class="card-title pb-3">Sovereign Plaza. Lt. 19 <br> Jl. TB Simatupang No. 36,
+                    TB Simatupang, Jakarta Selatan</p>
+            </div>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
-    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+        </script>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.6.1.js"
-        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <!-- <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> -->
 
-    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/b-2.2.3/datatables.min.js"></script>
-    <script>
-        $('#jenis_objek').on('change', function () {
-            let jenisObjek = $(this).find('option').filter(':selected').val();
-            if (jenisObjek == "sp") {
+        <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/b-2.2.3/datatables.min.js">
+        </script>
+        <script>
+            $('#jenis_objek').on('change', function () {
+                let jenisObjek = $(this).find('option').filter(':selected').val();
+                if (jenisObjek == "sp") {
 
-                $('div.col-md-6.kp').hide()
-                $('div.col-md-6.pp').hide()
-                $('div.col-md-6.sp').show()
-            } else if (jenisObjek == "kp") {
+                    $('div.col-md-6.kp').hide()
+                    $('div.col-md-6.pp').hide()
+                    $('div.col-md-6.sp').show()
+                } else if (jenisObjek == "kp") {
 
-                $('div.col-md-6.kp').show()
-                $('div.col-md-6.pp').hide()
-                $('div.col-md-6.sp').hide()
-            } else if (jenisObjek == "pp") {
-                $('div.col-md-6.kp').hide()
-                $('div.col-md-6.pp').show()
-                $('div.col-md-6.sp').hide()
-            } else {
-                $('div.col-md-6.kp').show()
-                $('div.col-md-6.pp').show()
-                $('div.col-md-6.sp').show()
-            }
+                    $('div.col-md-6.kp').show()
+                    $('div.col-md-6.pp').hide()
+                    $('div.col-md-6.sp').hide()
+                } else if (jenisObjek == "pp") {
+                    $('div.col-md-6.kp').hide()
+                    $('div.col-md-6.pp').show()
+                    $('div.col-md-6.sp').hide()
+                } else {
+                    $('div.col-md-6.kp').show()
+                    $('div.col-md-6.pp').show()
+                    $('div.col-md-6.sp').show()
+                }
 
-        });
-
-        $('#btnLawyer').on('click', function () {
-            $('#dataSponsor').hide()
-            $('#dataPemerintah').hide()
-            $('#dataLawyer').show()
-
-        });
-        $('#btnSponsor').on('click', function () {
-            $('#dataSponsor').show()
-            $('#dataLawyer').hide()
-            $('#dataPemerintah').hide()
-        });
-        $('#btnPemerintah').on('click', function () {
-            $('#dataLawyer').hide()
-            $('#dataSponsor').hide()
-            $('#dataPemerintah').show()
-        });
-
-        $(document).ready(function () {
-            $(".tab").click(function () {
-                $(".tab").removeClass("active");
-                // $(".tab").addClass("active"); // instead of this do the below 
-                $(this).addClass("active");
             });
-        });
 
-        $(document).ready(function () {
-            $('#myTable').DataTable();
-        });
+            $('#btnLawyer').on('click', function () {
+                $('#dataSponsor').hide()
+                $('#dataPemerintah').hide()
+                $('#dataLawyer').show()
 
-        $('#btnLawyer').on('click', function () {
-            $('#titleSponsor').hide()
-            $('#titlePemerintah').hide()
-            $('#titleLawyer').show()
-
-        });
-
-        $('#btnSponsor').on('click', function () {
-            $('#titleSponsor').show()
-            $('#titleLawyer').hide()
-            $('#titlePemerintah').hide()
-        });
-        $('#btnPemerintah').on('click', function () {
-            $('#titleLawyer').hide()
-            $('#titleSponsor').hide()
-            $('#titlePemerintah').show()
-        });
-
-        $(function () {
-            $('#searchlink').on('click', function (e) {
-                $(this).toggleClass('open');
             });
-        });
+            $('#btnSponsor').on('click', function () {
+                $('#dataSponsor').show()
+                $('#dataLawyer').hide()
+                $('#dataPemerintah').hide()
+            });
+            $('#btnPemerintah').on('click', function () {
+                $('#dataLawyer').hide()
+                $('#dataSponsor').hide()
+                $('#dataPemerintah').show()
+            });
+
+            $(document).ready(function () {
+                $(".tab").click(function () {
+                    $(".tab").removeClass("active");
+                    // $(".tab").addClass("active"); // instead of this do the below 
+                    $(this).addClass("active");
+                });
+            });
+
+            $(document).ready(function () {
+                $('#myTable').DataTable();
+            });
+
+            $('#btnLawyer').on('click', function () {
+                $('#titleSponsor').hide()
+                $('#titlePemerintah').hide()
+                $('#titleLawyer').show()
+
+            });
+
+            $('#btnSponsor').on('click', function () {
+                $('#titleSponsor').show()
+                $('#titleLawyer').hide()
+                $('#titlePemerintah').hide()
+            });
+            $('#btnPemerintah').on('click', function () {
+                $('#titleLawyer').hide()
+                $('#titleSponsor').hide()
+                $('#titlePemerintah').show()
+            });
+
+            $(function () {
+                $('#searchlink').on('click', function (e) {
+                    $(this).toggleClass('open');
+                });
+            });
 
 
 
-        $(function () {
-            var hidestuff = function () {
-                $(".jaminan_berupa").hide();
-            }
+            $(function () {
+                var hidestuff = function () {
+                    $(".jaminan_berupa").hide();
+                }
 
-            $("select[name='jaminan']").change(function () {
+                $("select[name='jaminan']").change(function () {
+                    hidestuff();
+
+                    var value = $(this).val();
+                    if (value == "ada") {
+                        $(".jaminan_berupa").show();
+                    }
+                });
                 hidestuff();
-
-                var value = $(this).val();
-                if (value == "ada") {
-                    $(".jaminan_berupa").show();
-                }
             });
-            hidestuff();
-        });
 
-        $(function () {
-            var hidestuff = function () {
-                $(".pengelolaan-platform, .pengelolaan-sendiri").hide();
-            }
+            $(function () {
+                var hidestuff = function () {
+                    $(".pengelolaan-platform, .pengelolaan-sendiri").hide();
+                }
 
-            $("select[name='pengelolaan_dana']").change(function () {
+                $("select[name='pengelolaan_dana']").change(function () {
+                    hidestuff();
+
+                    var value = $(this).val();
+                    if (value == "platform") {
+                        $(".pengelolaan-platform").show();
+                    }
+                    if (value == "sendiri") {
+                        $(".pengelolaan-sendiri").show();
+                    }
+                });
                 hidestuff();
-
-                var value = $(this).val();
-                if (value == "platform") {
-                    $(".pengelolaan-platform").show();
-                }
-                if (value == "sendiri") {
-                    $(".pengelolaan-sendiri").show();
-                }
             });
-            hidestuff();
-        });
 
-        $(function () {
-            var hidestuff = function () {
-                $(".law-firm").hide();
-            }
+            $(function () {
+                var hidestuff = function () {
+                    $(".law-firm").hide();
+                }
 
-            $("select[name='mewakili']").change(function () {
+                $("select[name='mewakili']").change(function () {
+                    hidestuff();
+
+                    var value = $(this).val();
+                    if (value == "law-firm") {
+                        $(".law-firm").show();
+                    }
+                });
                 hidestuff();
+            });
 
-                var value = $(this).val();
-                if (value == "law-firm") {
-                    $(".law-firm").show();
+
+            $(document).ready(function () {
+                $("#carouselExampleControls").swiperight(function () {
+                    $(this).carousel('prev');
+                });
+                $("#carouselExampleControls").swipeleft(function () {
+                    $(this).carousel('next');
+                });
+            });
+
+            $(function () {
+                var hidestuff = function () {
+                    $(".sponsor, .pengacara, .pemerintah").hide();
                 }
-            });
-            hidestuff();
-        });
 
+                $("select[name='jenis_pertolongan']").change(function () {
+                    hidestuff();
 
-        $(document).ready(function () {
-            $("#carouselExampleControls").swiperight(function () {
-                $(this).carousel('prev');
-            });
-            $("#carouselExampleControls").swipeleft(function () {
-                $(this).carousel('next');
-            });
-        });
-
-        $(function () {
-            var hidestuff = function () {
-                $(".sponsor, .pengacara, .pemerintah").hide();
-            }
-
-            $("select[name='jenis_pertolongan']").change(function () {
+                    var value = $(this).val();
+                    if (value == "sponsor") {
+                        $(".sponsor").show();
+                    }
+                    if (value == "pengacara") {
+                        $(".pengacara").show();
+                    }
+                    if (value == "pemerintah") {
+                        $(".pemerintah").show();
+                    }
+                });
                 hidestuff();
-
-                var value = $(this).val();
-                if (value == "sponsor") {
-                    $(".sponsor").show();
-                }
-                if (value == "pengacara") {
-                    $(".pengacara").show();
-                }
-                if (value == "pemerintah") {
-                    $(".pemerintah").show();
-                }
             });
-            hidestuff();
-        });
 
-    </script>
+        </script>
 </body>
 
 </html>
