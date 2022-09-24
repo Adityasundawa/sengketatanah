@@ -410,7 +410,7 @@
             <div class="col-lg-12">
               
 
-                <img src="{{asset('/uploads/sengketa-banner-2.jpg')}}" style="width:100%" class="mb-2">
+                <!-- <img src="{{asset('/uploads/sengketa-banner-2.jpg')}}" style="width:100%" class="mb-2"> -->
                 <div class="card mb-3 border-0">
                     <div class="card-body pb-0">
                         <div class="row justify-content-between text-center"
