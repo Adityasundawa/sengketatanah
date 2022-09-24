@@ -1073,7 +1073,7 @@
 
                             <form action="">
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col" style="margin-top : -12px">
                                         <input type="text" class="form-control" placeholder="Search">
                                     </div>
                                 </div>
