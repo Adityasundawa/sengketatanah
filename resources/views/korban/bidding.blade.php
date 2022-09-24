@@ -10,7 +10,7 @@ use App\Models\User;
 <div class="page-wrapper">
     <div class="page-content">
 
-  
+  {{-- s --}}
             {{-- <a class="btn btn-successs my-4" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a> --}}
        
             <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
@@ -120,13 +120,25 @@ use App\Models\User;
                         <div class="col-md-9 sp">
                             <div class="card mb-0 rounded-0">
                                 <div class="card-header bg-white">
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td><b>Bidding 1</b></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <b>PROJECT</b><b class="text-danger"> SP-001</b>
+            
+                                           
+                                        </div>
+                                        
+                                        <div class="dropdown options ms-auto">
+                                            
+                                            <div class="dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown">
+                                                <span class="badge mr-4 bg-success">Tayang</span>
+                                            </div>
+                                            
+                                            
+            
+                                            
+                                        
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
 
@@ -184,19 +196,8 @@ use App\Models\User;
                                                 <td>&nbsp; Sertifikat Rumah
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td>Kode Bid</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp; <b class="text-danger">SP-002</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Status</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;
-                                                    <span class="badge badge-success">Selesai</span>
-                                            </tr>
+                                            
+                                           
                                         </tbody>
                                     </table>
 
