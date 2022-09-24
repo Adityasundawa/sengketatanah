@@ -195,7 +195,7 @@ use App\Models\User;
                                                 <div class="d-flex align-items-center">
                                                     <div>
                                                         <p class="mb-0 text-secondary">Berkas</p>
-                                                        <h4 class="my-1">0</h4>
+                                                        <h4 class="my-1"></h4>
                                                     </div>
                                                     <div class="text-success ms-auto font-35"><i class="lni lni-empty-file"></i>
                                                     </div>
@@ -209,7 +209,7 @@ use App\Models\User;
                                                 <div class="d-flex align-items-center">
                                                     <div>
                                                         <p class="mb-0 text-secondary">Wawancara</p>
-                                                        <h4 class="my-1">0</h4>
+                                                        <h4 class="my-1"></h4>
                                                     </div>
                                                     <div class="text-success ms-auto font-35"><i
                                                         class="lni lni-mic"></i></i>
