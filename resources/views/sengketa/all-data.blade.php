@@ -886,7 +886,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-4 border-0 shadow-sm">
+                <div class="card border-0 shadow-sm">
                     <div class="card-body pb-1 pt-2">
                         <div class="row">
                             <div class="col-4 panduan text-center mb-2">
@@ -1202,7 +1202,7 @@
                                             <h4 class="card-title">
                                                 1. Pemerintah</h4>
                                             <hr>
-                                            Kementerian yang mempunyai tugas menyelenggarakan urusan di bidang
+                                            Kementerian ATR/BPN yang menyelenggarakan urusan di bidang
                                             agraria/pertanahan dan tata ruang.
                                         </div>
                                     </div>
@@ -1212,8 +1212,7 @@
                                         <div class="card-body">
                                             <h4 class="card-title">2. Korban Sengketa</h4>
                                             <hr>
-                                            Korban adalah orang yang dirugikan, dirampas, atau terancam kehilangan hak atas
-                                            tanah yang
+                                            Korban adalah orang yang dirugikan, dirampas, atau terancam kehilangan hak atas tanah yang
                                             dimilikinya.
                                         </div>
                                     </div>
@@ -1233,7 +1232,7 @@
                                         <div class="card-body">
                                             <h4 class="card-title">4. Pengacara</h4>
                                             <hr>
-                                            Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani sengketa
+                                            Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani persoalan sengketa
                                             tanah.
                                         </div>
                                     </div>
@@ -1259,7 +1258,7 @@
                     </div>
 
                     {{-- <img src="{{asset('/uploads/sengketa-banner-2.jpg')}}" style="width:100%" class="mb-2"> --}}
-                    <div class="card mt-4">
+                    <div class="card mt-2">
                         <div class="card-body">
                             <div class="row desktop mb-4">
                                 <div class="col-md">
