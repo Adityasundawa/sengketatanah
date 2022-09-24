@@ -66,138 +66,6 @@
             }
         }
 
-        . .btn-glass {
-            color: rgba(255, 255, 255, 0.7);
-            background-color: rgba(17, 17, 17, 0);
-        }
-
-        . .btn-glass:hover {
-            border-color: #000000;
-            background-color: #111111;
-        }
-
-        . .btn-glass:active {
-            position: relative;
-            z-index: 1;
-            box-shadow: 0 0 1em 0.5ex rgba(17, 17, 17, 0.5);
-        }
-
-        . .btn-glass.btn-primary {
-            color: rgba(255, 255, 255, 0.7);
-            background-color: rgba(42, 143, 189, 0);
-        }
-
-        . .btn-glass.btn-primary:hover {
-            border-color: #1c607e;
-            background-color: #2a8fbd;
-        }
-
-        . .btn-glass.btn-primary:active {
-            position: relative;
-            z-index: 1;
-            box-shadow: 0 0 1em 0.5ex rgba(42, 143, 189, 0.5);
-        }
-
-        . .btn-glass.btn-success {
-            color: rgba(255, 255, 255, 0.7);
-            background-color: rgba(127, 175, 27, 0);
-        }
-
-        . .btn-glass.btn-success:hover {
-            border-color: #4f6d11;
-            background-color: #3cb22e;
-        }
-
-        . .btn-glass.btn-success:active {
-            position: relative;
-            z-index: 1;
-            box-shadow: 0 0 1em 0.5ex rgba(127, 175, 27, 0.5);
-        }
-
-        . .btn-glass.btn-warning {
-            color: rgba(255, 255, 255, 0.7);
-            background-color: rgba(251, 184, 41, 0);
-        }
-
-        . .btn-glass.btn-warning:hover {
-            border-color: #d49104;
-            background-color: #fbb829;
-        }
-
-        . .btn-glass.btn-warning:active {
-            position: relative;
-            z-index: 1;
-            box-shadow: 0 0 1em 0.5ex rgba(251, 184, 41, 0.5);
-        }
-
-        . .btn-glass.btn-danger {
-            color: rgba(255, 255, 255, 0.7);
-            background-color: rgba(240, 35, 17, 0);
-        }
-
-        . .btn-glass.btn-danger:hover {
-            border-color: #aa180b;
-            background-color: #f02311;
-        }
-
-        . .btn-glass.btn-danger:active {
-            position: relative;
-            z-index: 1;
-            box-shadow: 0 0 1em 0.5ex rgba(240, 35, 17, 0.5);
-        }
-
-        . .btn-glass.btn-info {
-            color: rgba(255, 255, 255, 0.7);
-            background-color: rgba(108, 223, 234, 0);
-        }
-
-        . .btn-glass.btn-info:hover {
-            border-color: #29d0e0;
-            background-color: #6cdfea;
-        }
-
-        . .btn-glass.btn-info:active {
-            position: relative;
-            z-index: 1;
-            box-shadow: 0 0 1em 0.5ex rgba(108, 223, 234, 0.5);
-        }
-
-        .btn-glass {
-            -webkit-box-flex: 1;
-            -webkit-flex-grow: 1;
-            -ms-flex-positive: 1;
-            flex-grow: 1;
-            text-align: center;
-            display: inline-block;
-            color: rgba(255, 255, 255, 0.7);
-            text-decoration: none;
-            padding: 1em 2em;
-            font-family: Lato;
-            font-weight: 300;
-            border: 1px dotted transparent;
-            letter-spacing: 0.98pt;
-            text-transform: uppercase;
-            -webkit-transition: background-position 2s cubic-bezier(0, 1, 0, 1), border-color 500ms, background-color 500ms;
-            transition: background-position 2s cubic-bezier(0, 1, 0, 1), border-color 500ms, background-color 500ms;
-            position: relative;
-            background-attachment: fixed, scroll;
-            background-size: 100vw 100vh, cover;
-            background-position: center center, 0 0;
-
-            background-image: -webkit-repeating-linear-gradient(135deg, rgba(255, 255, 255, 0) 8%, rgba(255, 255, 255, 0.075) 10%, rgba(255, 255, 255, 0.075) 14%, rgba(255, 255, 255, 0.15) 14%, rgba(255, 255, 255, 0.15) 15%, rgba(255, 255, 255, 0.075) 17%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 36%, rgba(255, 255, 255, 0.075) 40%, rgba(255, 255, 255, 0.15) 42%, rgba(255, 255, 255, 0) 43%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0.075) 60%, rgba(255, 255, 255, 0.075) 66%, rgba(255, 255, 255, 0.15) 66%, rgba(255, 255, 255, 0.075) 70%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%), -webkit-radial-gradient(ellipse farthest-corner, transparent, rgba(0, 0, 0, 0.2) 110%);
-
-            background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0) 8%, rgba(255, 255, 255, 0.075) 10%, rgba(255, 255, 255, 0.075) 14%, rgba(255, 255, 255, 0.15) 14%, rgba(255, 255, 255, 0.15) 15%, rgba(255, 255, 255, 0.075) 17%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 36%, rgba(255, 255, 255, 0.075) 40%, rgba(255, 255, 255, 0.15) 42%, rgba(255, 255, 255, 0) 43%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0.075) 60%, rgba(255, 255, 255, 0.075) 66%, rgba(255, 255, 255, 0.15) 66%, rgba(255, 255, 255, 0.075) 70%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%), radial-gradient(ellipse farthest-corner, transparent, rgba(0, 0, 0, 0.2) 110%);
-        }
-
-        .btn-glass:hover {
-            background-position: -100vw 0, 0 0;
-        }
-
-        .btn-glass:active {
-            background-position: -75vw 0, 0 0;
-            border-style: solid;
-        }
-
         .fom-gup {
             background: linear-gradient(to top, #dfdfdf, #ffffff) repeat-x center;
             background-size: 2px 2px;
@@ -232,13 +100,77 @@
             }
         }
 
+        .btn.btn-outline-brown {
+            color: #61481C;
+            background: #fff;
+            border: 1px solid #61481C;
+        }
+
+        .btn.btn-outline-brown:hover {
+            color: #fff;
+            background: #61481C;
+            border: 1px solid #61481C;
+        }
+
+        .btn.btn-brown {
+            color: #fff;
+            background: #61481C;
+            border: 1px solid #61481C;
+        }
+
+        .btn.btn-brown:hover {
+            color: #fff;
+            background: #533e18;
+            border: 1px solid #61481C;
+        }
+
+        .vr.vr-none {
+            display: none !important;
+        }
+
+        hr.hr-none {
+            display: block !important;
+            margin-top: 0px
+        }
+
+        .login-mb {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (min-width: 1000px) {
+            .vr.vr-none {
+                display: block !important;
+            }
+
+            hr.hr-none {
+                display: none !important;
+            }
+
+            .login-mb {
+                margin-bottom: 0rem;
+            }
+        }
+
+        .carousel-item {
+            transition: transform 0.75s ease;
+        }
+
+        .dropdown-menu {
+            position: relative !important;
+            transform: none !important;
+            display: none !important
+        }
+        .dropdown-menu.show {
+            display: block !important;
+        }
+
     </style>
 </head>
 
 <body class="bg-light">
 
 
-    <nav class="navbar navbar-expand-lg bg-light mb-2">
+    <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <a class="navbar-brand fw-bold fs-4" href="{{url('/')}}">
                 <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px"
@@ -270,11 +202,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Podcast Sengketa</a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="{{url('/')}}/tentang-pemerintah">Tentang Aplikasi</a>
-                    </li>
-                    <li class="nav-item">
+                    </li> --}}
+                    <li class="nav-item me-2">
                         <a class="nav-link" href="{{url('/')}}/tentang">Tentang Kami</a>
+                    </li>
+
+                    <div class="vr vr-none me-2"></div>
+                    <hr class="hr-none">
+
+                    <li class="nav-item me-1 ms-1">
+                        <a class="nav-link btn btn-outline-brown rounded-3 login-mb" href="{{url('/')}}/login">Login</a>
+                    </li>
+                    <li class="nav-item me-1 ms-1">
+                        <a class="nav-link btn btn-brown text-white rounded-3" href="{{url('/')}}/register">Register</a>
                     </li>
                     <!--<li class="nav-item">-->
                     <!--    <a class="nav-link" href="{{url('/')}}/contact">Hubungi Kami</a>-->
@@ -314,8 +256,9 @@
         <div class="card mb-3">
             <div class="card-body pb-0">
                 <div class="row justify-content-between text-center" style="overflow-x: auto; flex-wrap: nowrap">
-                    <div class="col mb-4">
-                        <a href="{{url('/')}}/bid-sengketa" class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                    <div class="col mb-3">
+                        <a href="{{url('/')}}/bid-sengketa"
+                            class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                 width="71px" x="0" y="0" viewBox="0 0 50 60" style="enable-background:new 0 0 512 512"
@@ -343,7 +286,7 @@
                             <div class="mt-0" style="font-size: 12px">Bid <br> Sengketa</div>
                         </a>
                     </div>
-                    <div class="col mb-4">
+                    <div class="col mb-3">
                         <a class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
@@ -394,7 +337,7 @@
                             <div class="mt-0" style="font-size: 12px">Jual Beli <br> Lahan</div>
                         </a>
                     </div>
-                    <div class="col mb-4">
+                    <div class="col mb-3">
                         <a class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
@@ -422,7 +365,7 @@
                             <div class="mt-0" style="font-size: 12px">Kerjasama <br> Lahan</div>
                         </a>
                     </div>
-                    <div class="col mb-4">
+                    <div class="col mb-3">
                         <a class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
@@ -507,7 +450,7 @@
                             <div class="mt-0" style="font-size: 12px">Pelelangan <br> Lahan</div>
                         </a>
                     </div>
-                    <div class="col mb-4">
+                    <div class="col mb-3">
                         <a class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
@@ -537,7 +480,7 @@
                             <div class="mt-0" style="font-size: 12px">Jasa <br> Tukang Ukur</div>
                         </a>
                     </div>
-                    <div class="col mb-4">
+                    <div class="col mb-3">
                         <a class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
@@ -587,6 +530,140 @@
                 </div>
             </div>
         </div>
+
+        <div class="row mt-2" style="padding: 10px">
+            <div class="card p-0 rounded-3 shadow">
+                <div class="card-header text-white" style="background-color: #61481C;">
+                    <h4 class="mb-0 fw-bolder text-center">4 ROLE PENGGUNA</h4>
+                </div>
+                <div class="card-body text-dark">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="text-center fs-3" style="padding:10px; color: #61481C">
+                                    "Platform Sengketa Tanah adalah aplikasi yang paling tepat untuk membantu perjuangan
+                                    Anda dalam mengatasi
+                                    persengketaan masalah tanah"
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title" style="color:#61481C">
+                                            1. Pemerintah</h4>
+                                        <hr>
+                                        Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di
+                                        bidang
+                                        agraria/pertanahan dan tata ruang dalam pemerintahan untuk membantu Presiden
+                                        dalam
+                                        menyelenggarakan pemerintahan negara termasuk masalah persengketaan tanah
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title" style="color:#61481C">2. Korban Sengketa</h4>
+                                        <hr>
+                                        Korban adalah orang yang dirugikan, dirampas, atau terancam kehilangan hak atas
+                                        tanah yang
+                                        dimilikinya
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title" style="color:#61481C">3. Sponsor</h4>
+                                        <hr>
+                                        Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan hukum korban
+                                        sengketa tanah
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title" style="color:#61481C">4. Pengacara</h4>
+                                        <hr>
+                                        Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani
+                                        sengketa
+                                        tanah
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="row justify-content-center">
+                        {{-- <div class="col-md-6 mb-3 text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png"
+                                        style="width:208px">
+                                </div>
+                            </div>
+                        </div> --}}
+                        {{-- <div class="col-md-12 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title" style="color:#61481C">
+                                        1. Pemerintah</h4>
+                                    <hr>
+                                    Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di bidang
+                                    agraria/pertanahan dan tata ruang dalam pemerintahan untuk membantu Presiden dalam
+                                    menyelenggarakan pemerintahan negara termasuk masalah persengketaan tanah
+                                </div>
+                            </div>
+                        </div> --}}
+                        {{-- <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title" style="color:#61481C">2. Korban Sengketa</h4>
+                                    <hr>
+                                    Korban adalah orang yang dirugikan, dirampas, atau terancam kehilangan hak atas
+                                    tanah yang
+                                    dimilikinya
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title" style="color:#61481C">3. Sponsor</h4>
+                                    <hr>
+                                    Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan hukum korban
+                                    sengketa tanah
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title" style="color:#61481C">4. Pengacara</h4>
+                                    <hr>
+                                    Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani sengketa
+                                    tanah
+                                </div>
+                            </div>
+                        </div> --}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
 
         <div class="card-body text-center">
             <h2 class="card-title fw-bolder" style="color:#61481C">DUKUNGAN PEMERINTAH MENGATASI PERSENGKETAAN TANAH
@@ -644,7 +721,7 @@
             </div>
         </div>
 
-        <div id="carouselExampleControls" class="carousel slide mobile mt-3" data-bs-ride="carousel">
+        <div id="carouselExampleControlsPres" class="carousel slide mobile mt-3" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="card-body text-center container" style="height:505px">
@@ -703,75 +780,10 @@
         </div>
         <hr>
 
-        <div class="text-center fs-3" style="padding:10px; color: #61481C">
+        {{-- <div class="text-center fs-3" style="padding:10px; color: #61481C">
             "Platform Sengketa Tanah adalah aplikasi yang paling tepat untuk membantu perjuangan Anda dalam mengatasi
             persengketaan masalah tanah"
-        </div>
-
-        <div class="row mt-2" style="padding: 10px">
-            <div class="card p-0 rounded-3 shadow">
-                <div class="card-header text-white" style="background-color: #61481C;">
-                    <h4 class="mb-0 fw-bolder text-center">4 ROLE PENGGUNA</h4>
-                </div>
-                <div class="card-body text-dark">
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 mb-3 text-center">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png"
-                                        style="width:208px">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title" style="color:#61481C">
-                                        1. Pemerintah</h4>
-                                    <hr>
-                                    Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di bidang
-                                    agraria/pertanahan dan tata ruang dalam pemerintahan untuk membantu Presiden dalam
-                                    menyelenggarakan pemerintahan negara termasuk masalah persengketaan tanah
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title" style="color:#61481C">2. Korban Sengketa</h4>
-                                    <hr>
-                                    Korban adalah orang yang dirugikan, dirampas, atau terancam kehilangan hak atas
-                                    tanah yang
-                                    dimilikinya
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title" style="color:#61481C">3. Sponsor</h4>
-                                    <hr>
-                                    Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan hukum korban
-                                    sengketa tanah
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title" style="color:#61481C">4. Pengacara</h4>
-                                    <hr>
-                                    Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani sengketa
-                                    tanah
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
+        </div> --}}
 
         <div class="text-white rounded-0 jumbotron">
             <div class="row">
@@ -783,10 +795,160 @@
 
         </div>
         <div class="row mt-3" style="padding: 10px">
-            <h3 style="color: #61481C" class="fw-semibold text-center"><i class="fa-solid fa-book-open"></i> PANDUAN
+            <h3 style="color: #61481C" class="fw-semibold text-center">
+                <i class="fa-solid fa-book-open"></i> PANDUAN
+                <div class="vr me-auto ms-auto"></div>
+                <i class="fa-solid fa-shield-halved"></i> JAMINAN</h3>
             </h3>
 
-            <ol class="list-group list-group-numbered shadow mt-2" style="padding-right: 0px">
+            <div class="dropdown p-0">
+                <button class="btn btn-brown dropdown-toggle w-100 rounded-0 shadow fw-bold" style="border: 1px solid rgba(0, 0, 0, 0.175)" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Panduan
+                </button>
+
+                <ol class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-0" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold" style="color: #61481C">Buat Akun Sengketa Tanah</div>
+                            Daftarkan diri Anda sesuai dengan role yang diinginkan (Korban, Sponsor, Pengacara).
+                        </div>
+                        <i class="fa-solid fa-user-plus fs-6" style="color: #61481C"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold" style="color: #61481C">Buat Laporan Sengketa Tanah</div>
+                            Laporkan dengan jelas melalui formulir korban tentang masalah sengketa tanah Anda.
+                        </div>
+                        <i class="fa-solid fa-file-circle-plus fs-6" style="color: #61481C"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold" style="color: #61481C">Tampilkan Dokumen</div>
+                            Upload dan kirimkan dokumen pendukung laporan Anda.
+                        </div>
+                        <i class="fa-solid fa-file-lines fs-6" style="color: #61481C"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold" style="color: #61481C">Temukan Bantuan</div>
+                            Pilih bantuan yang diinginkan mulai dari bantuan pendanaan sponsor, bantuan hukum pengacara, dan
+                            bantuan pemerintah.
+                        </div>
+                        <i class="fa fa-circle-question fs-6" style="color: #61481C"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold" style="color: #61481C">Pilih Bantuan</div>
+                            Pilih bantuan yang masuk sesuai dengan kesepakatanmu.
+                        </div>
+                        <i class="fa-regular fa-circle-question fs-6" style="color: #61481C"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold" style="color: #61481C">Dapatkan Bantuan</div>
+                            Yay! Selamat, kamu telah mendapatkan.
+                        </div>
+                        <i class="fa-solid fa-handshake-angle fs-6" style="color: #61481C"></i>
+                    </li>
+                </ol>
+
+            </div>
+
+            <div class="dropdown p-0">
+                <button class="btn dropdown-toggle w-100 rounded-0 shadow fw-bold" style="background: white; border: 1px solid rgba(0, 0, 0, 0.175)" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Jaminan
+                </button>
+
+                <ol class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-tie"></i></b></h5>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 style="color: #61481C" class="mb-0"><b>Sponsor Terverifikasi</b></h5>
+                                Setiap sponsor yang terlibat di verifikasi kemampuan dan sumber dananya.
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6 mt-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-gavel"></i></b></h5>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 style="color: #61481C" class="mb-0"><b>Pengacara Terverifikasi</b></h5>
+                                    Setiap pengacara wajib memiliki sertifikasi advokat yang dibutuhkan.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6 mt-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-hand-holding-dollar"></i></b>
+                                </h5>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 style="color: #61481C" class="mb-0"><b>Pembayaran Aman</b></h5>
+                                    Setiap transaksi yang terjadi menggunakan platform pembayaran Sengketa Tanah.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6 mt-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-chart-line"></i></b></h5>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 style="color: #61481C" class="mb-0"><b>Bantuan Analisa</b></h5>
+                                    Kami memberikan bantuan analisa terhadap permasalahan yang relevan untuk diatasi.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6 mt-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-handshake"></i></b></h5>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 style="color: #61481C" class="mb-0"><b>Kesepakatan Terlindungi</b></h5>
+                                    Semua kesepakatan yang terjadi dilindungi perjanjian hukum yang ketat dan mengikat.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6 mt-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-gear"></i></b></h5>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 style="color: #61481C" class="mb-0"><b>Bantuan Customer Support</b></h5>
+                                    Layanan CS 24 jam siap membantu anda.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ol>
+
+            </div>
+
+            {{-- <ol class="list-group list-group-numbered shadow mt-2" style="padding-right: 0px">
                 <li class="list-group-item d-flex justify-content-between align-items-start">
                     <div class="ms-2 me-auto">
                         <div class="fw-bold" style="color: #61481C">Buat Akun Sengketa Tanah</div>
@@ -830,59 +992,10 @@
                     </div>
                     <i class="fa-solid fa-handshake-angle fs-6" style="color: #61481C"></i>
                 </li>
-            </ol>
+            </ol> --}}
         </div>
-
-        <hr>
-        {{-- <div class="row justify-content-center mb-3 mt-2">
-            <div class="col-lg-12">
-                <div class="row g-2 mt-2">
-                    <div class="col-12">
-                        <h6 class="text-primary"><b>1. Buat Akun Sengketa Tanah</b></h6>
-                        Daftarkan diri Anda sesuai dengan role yang diinginkan (Korban, Sponsor, Pengacara).
-                    </div>
-                </div>
-
-                <div class="row g-2 mt-2">
-                    <div class="col-12">
-                        <h6 class="text-primary"><b>2. Buat Laporan Sengketa Tanah</b></h6>
-                        Laporkan dengan jelas melalui formulir korban tentang masalah sengketa tanah Anda.
-                    </div>
-                </div>
-
-                <div class="row g-2 mt-2">
-                    <div class="col-12">
-                        <h6 class="text-primary"><b>3. Tampilkan Dokumen</b></h6>
-                        Upload dan kirimkan dokumen pendukung laporan Anda.
-                    </div>
-                </div>
-
-                <div class="row g-2 mt-2">
-                    <div class="col-12">
-                        <h6 class="text-primary"><b>4. Temukan Bantuan</b></h6>
-                        Pilih bantuan yang diinginkan mulai dari bantuan pendanaan sponsor, bantuan hukum pengacara, dan
-                        bantuan pemerintah.
-                    </div>
-                </div>
-
-                <div class="row g-2 mt-2">
-                    <div class="col-12">
-                        <h6 class="text-primary"><b>5. Pilih Bantuan</b></h6>
-                        Pilih bantuan yang masuk sesuai dengan kesepakatanmu.
-                    </div>
-                </div>
-
-                <div class="row g-2 mt-2">
-                    <div class="col-12">
-                        <h6 class="text-primary"><b>6. Dapatkan Bantuan</b></h6>
-                        Yay! Selamat, kamu telah mendapatkan.
-                    </div>
-                </div>
-
-            </div>
-        </div> --}}
-
-        <div class="text-white rounded-0 jumbotron">
+        
+        {{-- <div class="text-white rounded-0 jumbotron">
             <div class="row">
                 <div class="col-md text-center">
                     <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 150px" alt="" srcset=""
@@ -890,9 +1003,9 @@
                 </div>
             </div>
 
-        </div>
+        </div> --}}
 
-        <div class="row" style="padding: 10px">
+        {{-- <div class="row" style="padding: 10px">
             <h3 style="color: #61481C" class="fw-semibold text-center mt-3"><i class="fa-solid fa-shield-halved"></i>
                 JAMINAN</h3>
 
@@ -999,7 +1112,7 @@
             </div>
 
 
-        </div>
+        </div> --}}
 
         <hr>
 
@@ -1363,10 +1476,16 @@
             </div>
         </div>
 
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
         <script src="https://code.jquery.com/jquery-3.6.1.js"
             integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
         <!-- <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> -->
@@ -1375,15 +1494,6 @@
         </script>
         <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
         <script>
-            $(document).ready(function () {
-                var table = $('#myTable').DataTable({
-                    rowReorder: {
-                        selector: 'td:nth-child(2)'
-                    },
-                    responsive: true
-                });
-            });
-
             $(function () {
                 var hidestuff = function () {
                     $(".jaminan_berupa").hide();
@@ -1468,19 +1578,10 @@
             });
 
             $(document).ready(function () {
-                $("#carouselExampleControls").swiperight(function () {
+                $("#carouselExampleControlsPres").swiperight(function () {
                     $(this).carousel('prev');
                 });
-                $("#carouselExampleControls").swipeleft(function () {
-                    $(this).carousel('next');
-                });
-            });
-
-            $(document).ready(function () {
-                $("#carouselExampleControls").swiperight(function () {
-                    $(this).carousel('prev');
-                });
-                $("#carouselExampleControls").swipeleft(function () {
+                $("#carouselExampleControlsPres").swipeleft(function () {
                     $(this).carousel('next');
                 });
             });
