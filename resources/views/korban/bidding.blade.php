@@ -130,7 +130,7 @@ use App\Models\User;
                                     <div class="dropdown options ms-auto">
 
                                         <div class="dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown">
-                                            <span class="badge mr-4 bg-success">Tayang</span>
+                                            <span class="badge mr-4 bg-success">Tayang (100)</span>
                                         </div>
 
 
@@ -141,19 +141,78 @@ use App\Models\User;
                                 </div>
                             </div>
                             <div class="card-body">
-                                <div class="row">
+                                  <div class="card">
+                                    <div class="card-header">
+                                        Data Project
+                                    </div>
+                                    <div class="card-body">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Owner/Korban</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp; Yudi Cahya Prawira</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Objek Sengketa</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp; Sengketa Pertanahan</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Luas Objek</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp; 3.1 hektar Ha</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lokasi</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp; Gegesik, Cirebon</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Kebutuhan Dana</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp; Rp.125000000</td>
+                                                </tr>
+        
+                                                <tr>
+                                                    <td>Imbal Hasil</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp; Fee 75% Dari Pinjaman</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jaminan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp; Sertifikat Rumah</td>
+        
+                                                </tr>
+        
+        
+        
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                  </div>
+                                <div class="row mt-3">
+                                    
                                     <div class="col-lg-4">
                                         <div class="card radius-10">
                                             <div class="card-body">
                                                 <div class="d-flex align-items-center">
                                                     <div>
-                                                        <p class="mb-0 text-secondary">BID</p>
+                                                        <p class="mb-0 text-secondary"></p>
                                                         <h4 class="my-1">3</h4>
                                                     </div>
                                                     <div class="text-primary ms-auto font-35"><svg
                                                             xmlns="http://www.w3.org/2000/svg" version="1.1"
                                                             xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                            xmlns:svgjs="http://svgjs.com/svgjs" width="50px" x="0"
+                                                            xmlns:svgjs="http://svgjs.com/svgjs" width="40px" x="0"
                                                             y="0" viewBox="0 0 50 60"
                                                             style="enable-background:new 0 0 512 512"
                                                             xml:space="preserve" class="">
@@ -218,60 +277,11 @@ use App\Models\User;
                                             </div>
                                         </div>
                                     </div>
+                                    <a href="" class="btn btn-block btn-sm mt-3 btn-info text-white">
+                                        Promosikan Project</a>
                                 </div>
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            <td>Owner/Korban</td>
-                                            <td></td>
-                                            <td>:</td>
-                                            <td>&nbsp; Yudi Cahya Prawira</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Objek Sengketa</td>
-                                            <td></td>
-                                            <td>:</td>
-                                            <td>&nbsp; Sengketa Pertanahan</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Luas Objek</td>
-                                            <td></td>
-                                            <td>:</td>
-                                            <td>&nbsp; 3.1 hektar Ha</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Lokasi</td>
-                                            <td></td>
-                                            <td>:</td>
-                                            <td>&nbsp; Gegesik, Cirebon</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Kebutuhan Dana</td>
-                                            <td></td>
-                                            <td>:</td>
-                                            <td>&nbsp; Rp.125000000</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Imbal Hasil</td>
-                                            <td></td>
-                                            <td>:</td>
-                                            <td>&nbsp; Fee 75% Dari Pinjaman</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jaminan</td>
-                                            <td></td>
-                                            <td>:</td>
-                                            <td>&nbsp; Sertifikat Rumah</td>
-
-                                        </tr>
-
-
-
-                                    </tbody>
-                                </table>
-                                <a href="" class="btn btn-block mt-3 btn-info text-white">
-                                    Promosikan Project</a>
+                           
+                                
                             </div>
                         </div>
                     </div>
