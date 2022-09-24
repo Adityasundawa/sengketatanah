@@ -347,12 +347,84 @@
             border: 1px solid #61481C;
         }
 
+        .jumbotron {
+            background: #61481C;
+            padding: 3rem 0.5rem;
+        }
+
+        @media (min-width: 1400px) {
+            .jumbotron {
+                padding: 3rem 10rem;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .jumbotron {
+                padding: 3rem 20rem;
+            }
+        }
+        .bg-brown{
+            color: #fff;
+            background: #61481C;
+            border: 1px solid #61481C;
+        }
+
+        .btn.btn-outline-brown {
+            color: #61481C;
+            background: #fff;
+            border: 1px solid #61481C;
+        }
+
+        .btn.btn-outline-brown:hover {
+            color: #fff;
+            background: #61481C;
+            border: 1px solid #61481C;
+        }
+
+        .btn.btn-brown {
+            color: #fff;
+            background: #61481C;
+            border: 1px solid #61481C;
+        }
+
+        .btn.btn-brown:hover {
+            color: #fff;
+            background: #533e18;
+            border: 1px solid #61481C;
+        }
+
+        .vr.vr-none {
+            display: none !important;
+        }
+
+        hr.hr-none {
+            display: block !important;
+            margin-top: 0px
+        }
+
+        .login-mb {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (min-width: 1000px) {
+            .vr.vr-none {
+                display: block !important;
+            }
+
+            hr.hr-none {
+                display: none !important;
+            }
+
+            .login-mb {
+                margin-bottom: 0rem;
+            }
+        }
     </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-light mb-2">
+    <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <a class="navbar-brand fw-bold fs-4" href="{{url('/')}}">
                 <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px"
@@ -384,11 +456,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Podcast Sengketa</a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="{{url('/')}}/tentang-pemerintah">Tentang Aplikasi</a>
-                    </li>
-                    <li class="nav-item">
+                    </li> --}}
+                    <li class="nav-item me-2">
                         <a class="nav-link" href="{{url('/')}}/tentang">Tentang Kami</a>
+                    </li>
+
+                    <div class="vr vr-none me-2"></div>
+                    <hr class="hr-none">
+
+                    <li class="nav-item me-1 ms-1">
+                        <a class="nav-link btn btn-outline-brown rounded-3 login-mb" href="{{url('/')}}/login">Login</a>
+                    </li>
+                    <li class="nav-item me-1 ms-1">
+                        <a class="nav-link btn btn-brown text-white rounded-3" href="{{url('/')}}/register">Register</a>
                     </li>
                     <!--<li class="nav-item">-->
                     <!--    <a class="nav-link" href="{{url('/')}}/contact">Hubungi Kami</a>-->
@@ -398,6 +480,24 @@
             </div>
         </div>
     </nav>
+
+    <div class="text-white rounded-0 jumbotron">
+        <div class="row">
+            <div class="col-md-12 text-center mt-3">
+                <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 150px" alt="" srcset=""
+                    class="img-fluid">
+            </div>
+            <div class="col-md text-center my-auto mt-3">
+                <h1>Solusi Untuk Anda</h1>
+                <p>Platform Sengketa Tanah adalah inovator teknologi dalam bidang Sengketa
+                    pertanahan di Indonesia yang mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
+                    pemerintah.</p>
+
+            </div>
+        </div>
+
+
+    </div>
     <div class="container">
 
         <div class="row d-flex mb-1 mt-1">
@@ -491,9 +591,7 @@
 
             <div class="col-lg-12">
 
-
-                <img src="{{asset('/uploads/sengketa-banner-2.jpg')}}" style="width:100%" class="mb-2">
-                <div class="card mb-3 border-0">
+                <div class="card mb-2 border-0">
                     <div class="card-body pb-0">
                         <div class="row justify-content-between text-center"
                             style="overflow-x: auto; flex-wrap: nowrap">
@@ -775,6 +873,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="card mb-4 border-0 shadow-sm">
                     <div class="card-body pb-1 pt-2">
                         <div class="row">
@@ -1071,7 +1170,7 @@
                     </div>
                 </div>
 
-                <div class="row mb-3 g-2">
+                <div class="row mt-2 g-2">
 
 
                     <div class="col-6">
@@ -1081,6 +1180,9 @@
                         <a class="btn btn-sm btn-danger w-100" data-bs-toggle="modal"
                             data-bs-target="#korbanSengketaModal">Buat Laporan</a>
                     </div>
+
+                    <img src="{{asset('/uploads/sengketa-banner-2.jpg')}}" style="width:100%" class="mb-2">
+
 
                 </div>
 
