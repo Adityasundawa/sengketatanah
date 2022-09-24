@@ -514,8 +514,6 @@
     </div>
     <div class="container">
 
-        <hr class="mt-2 mb-2">
-
 
         <!--<div class="row mt-3 mb-3">-->
         <!--    <div class="col text-center">-->
