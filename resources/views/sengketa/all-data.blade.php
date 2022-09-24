@@ -847,21 +847,26 @@
                     </div>
                 </div>
                 <div class="card mb-4 border-0 shadow-sm ">
-                    <div class="card-body ">
-                    <div class="row g-0">
-                        <div class="col-6 text-center mb-2">
+                    <div class="card-body pb-1 pt-2">
+                    <div class="row">
+                        <div class="col-4 text-center mb-2">
 
-                            <img src="{{asset('/')}}images/panduan.svg" alt=""
-                                class="img-thumbnail rounded-circle shadow" style="width:100px">
-                                <div class="mb-2" style="font-size: 14px">PANDUAN</div>
+                            <img  src="{{asset('/')}}images/panduan.svg" alt=""
+                                class="img-thumbnail rounded-circle shadow" style="border: 2px solid white;width:100px">
+                                <h6 class="mt-2 mb-0" style="font-weight:400;">PANDUAN</h6>
 
                         </div>
-                        <div class="col-6  text-center mb-2">
+                        <div class="col-4  text-center mb-2">
 
-                            <img src="{{asset('/')}}images/jaminan.svg" alt=""
-                                class="img-thumbnail rounded-circle shadow" style="width:100px;height:100px;object-fit:cover">
-                                <div class="mb-2" style="font-size: 14px">JAMINAN</div>
+                            <img  src="{{asset('/')}}images/jaminan.svg" alt=""
+                                class="img-thumbnail rounded-circle shadow" style="border: 2px solid white;width:100px;height:100px;object-fit:cover">
+                                <h6 class="mt-2 mb-0" style="font-weight:400;">JAMINAN</h6>
 
+                        </div>
+                        <div class="col-4  text-center mb-2">
+                            <img  src="{{asset('/')}}images/jaminan.svg" alt=""
+                                class="img-thumbnail rounded-circle shadow" style="border: 2px solid white;width:100px;height:100px;object-fit:cover">
+                                <h6 class="mt-2 mb-0" style="font-weight:400;">TENTANG</h6>
                         </div>
                     </div>
 
