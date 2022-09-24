@@ -117,7 +117,7 @@ use App\Models\User;
                                 @elseif($item['status_sengketa'] == 3)
                                 <span class="badge mr-4 bg-success">Terverifikasi Tahap 2</span>
                                 @elseif($item['status_sengketa'] == 4)
-                                <span class="badge mr-4 bg-success">Selesai</span>
+                                <span class="badge mr-4 bg-success">Terverifikasi Tahap 3</span>
                                 @elseif($item['status_sengketa'] == 0)
                                 <span class="badge mr-4 bg-danger">Pending</span>
                                 @endif
@@ -255,34 +255,22 @@ use App\Models\User;
                         </table>
 
                         @if ($item['status_sengketa'] == 1)
-                        @if ($item['status_file_upload'] == "yes")
-                        <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}"
-                            class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i class="lni lni-eye"></i> Lihat Berkas</a>
-                        @else
-                        <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}"
-                            class="btn btn-block btn-sm text-white mt-4 disabled" style="background:#8f8f8f"
-                            disable><i class="fadeIn bx bx-lock"></i> Upload Dokumen</a>
-                        @endif
+                            <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm text-white mt-4 disabled" style="background:#8f8f8f" disable><i class="fadeIn bx bx-lock"></i> Upload Dokumen</a>
+                        @elseif ($item['status_sengketa'] == 2)
+                            @if ($item['status_file_upload'] == "yes")
+                                <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i class="lni lni-eye"></i> Lihat Berkas</a>
+                            @else
+                                <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i class="lni lni-cloud-upload"></i> Upload Dokumen</a>
+                            @endif
+                        @elseif ($item['status_sengketa'] == 3)
+                           <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i class="lni lni-eye"></i>  Lihat Berkas</a>
+                           <a href="{{route('korban.jadwal_wawancara',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"> <i class="lni lni-mic"></i> Jadwalkan Wawancara</a>
+                        @elseif ($item['status_sengketa'] == 4)
+                           <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}"class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i class="lni lni-eye"></i>  Lihat Berkas</a>
+                           <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i class="lni lni-mic"></i> Agenda Wawancara</a>
+                        @elseif ($item['status_sengketa'] == 5)
 
-                        @elseif($item['status_sengketa'] == 3)
-                        <div class="row mt-4">
-                            <div class="col-6">
-                                <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}"
-                                    class="btn btn-block btn-sm text-white" style="background:#8f8f8f"><i class="lni lni-eye"></i>  Lihat Berkas</a>
-                            </div>
-                            <div class="col-6">
-                                <a href="{{route('korban.jadwal_wawancara',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm text-white" style="background:#8f8f8f">Jadwalkan
-                                    Wawancara</a>
-                            </div>
-                        </div>
-                        @else
-                        @if ($item['status_file_upload'] == "yes")
-                        <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}"
-                            class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i class="lni lni-eye"></i>  Lihat Berkas</a>
-                        @else
-                        <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}"
-                            class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f">Upload Dokumen</a>
-                        @endif
+                        @elseif ($item['status_sengketa'] == 6)
                         @endif
                     </div>
 
