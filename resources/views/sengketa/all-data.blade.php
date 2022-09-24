@@ -699,14 +699,14 @@
                         <div class="col-6 text-center mb-2">
 
                             <img src="{{asset('/')}}images/panduan.svg" alt=""
-                                class="img-thumbnail rounded-circle shadow" style="width:150px">
+                                class="img-thumbnail rounded-circle shadow" style="width:100px">
                                 <div class="mb-2" style="font-size: 14px">PANDUAN</div>
 
                         </div>
                         <div class="col-6  text-center mb-2">
 
                             <img src="{{asset('/')}}images/jaminan.svg" alt=""
-                                class="img-thumbnail rounded-circle shadow" style="width:150px;height:150px;object-fit:cover">
+                                class="img-thumbnail rounded-circle shadow" style="width:100px;height:100px;object-fit:cover">
                                 <div class="mb-2" style="font-size: 14px">JAMINAN</div>
 
                         </div>
