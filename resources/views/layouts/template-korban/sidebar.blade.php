@@ -2,12 +2,8 @@
   <body class="c-app">
     <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
       <div class="c-sidebar-brand d-lg-down-none">
-        <svg class="c-sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
-          <use xlink:href="{{url('/')}}/core-ui/assets/brand/coreui.svg#full"></use>
-        </svg>
-        <svg class="c-sidebar-brand-minimized" width="46" height="46" alt="CoreUI Logo">
-          <use xlink:href="{{url('/')}}/core-ui/assets/brand/coreui.svg#signet"></use>
-        </svg>
+        <img class="c-sidebar-brand-minimized m-3" src="{{asset('/')}}uploads/sengketa-logo.png" alt="" width="150px">
+        <img class="c-sidebar-brand-full m-3" src="{{asset('/')}}uploads/sengketa_tanah.png" alt="" width="150px">
       </div>
       <ul class="c-sidebar-nav">
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="{{url('/korban/index')}}">

@@ -13,6 +13,16 @@
     <!-- <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> -->
 
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.12.1/b-2.2.3/datatables.min.js"></script>
+    
+        <script>
+
+$(document).ready(function(){
+  $("#show").click(function(){
+    $("#alert").toggle();
+  });
+});
+    </script>
+    
     <script>
         $(document).ready(function () {
             $('#myTable').DataTable();
