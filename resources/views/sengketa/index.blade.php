@@ -890,31 +890,65 @@
 
 
                 <div class="card mb-4 border-0 shadow-sm ">
-    <div class="card-header bg-white">
-        <h5 color="text-dark">Ikuti Lelang Lahan</h5>
-        <p>Berakhir Dalam <span class="badge bg-danger"><i class="fa-solid fa-clock"></i>
-                01:08:59</span>
-            <b class="float-end" style="margin-top:-20px">
-                <span class="text-success">Lihat Semua</span>
-            </b>
-        </p>
+                    <div class="card-header bg-white">
+                        <h5 color="text-dark">Ikuti Lelang Lahan</h5>
+                        <p>Berakhir Dalam <span class="badge bg-danger"><i class="fa-solid fa-clock"></i>
+                                01:08:59</span>
+                            <b class="float-end" style="margin-top:-20px">
+                                <span class="text-success">Lihat Semua</span>
+                            </b>
+                        </p>
 
-    </div>
+                    </div>
 
-    <div class="card-body" style="background-color:#F6D471">
-        <div class="card" style="width: 18rem;">
-            <img src="http://localhost:8000/images/pertanahan.jpg" class="card-img-top" alt="..."
-                style="height:200px;width:auto;object-fit:cover">
-            <div class="card-body">
-                <h5 class="card-title">Rp. 600.000.000</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the
-                    bulk of the card's content.</p>
-                <a href="#" class="btn btn-white" style="background-color:#61481C !important;color:white">Bid Lahan</a>
-            </div>
-        </div>
-    </div>
+                    <div class="card-body" style="background-color:#F6D471;">
+                        <div class="row justify-content-between"style="overflow-x: auto; flex-wrap: nowrap">
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="{{asset('')}}images/lahan1.jpeg" class="card-img-top" alt="..."
+                                        style="height:200px;width:auto;object-fit:cover">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Rp. 600.000.000</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the
+                                            bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-white"
+                                            style="background-color:#61481C !important;color:white">Bid Lahan</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="{{asset('')}}images/lahan2.jpeg" class="card-img-top" alt="..."
+                                        style="height:200px;width:auto;object-fit:cover">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Rp. 350.000.000</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the
+                                            bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-white"
+                                            style="background-color:#61481C !important;color:white">Bid Lahan</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="{{asset('')}}images/lahan3.jpeg" class="card-img-top" alt="..."
+                                        style="height:200px;width:auto;object-fit:cover">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Rp. 760.000.000</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the
+                                            bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-white"
+                                            style="background-color:#61481C !important;color:white">Bid Lahan</a>
+                                    </div>
+                                </div>
+                            </div>
 
-</div>
+                        </div>
+                       
+
+                    </div>
+
+                </div>
 
 
                 <div class="card border-0 shadow-sm">
