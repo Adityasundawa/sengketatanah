@@ -142,7 +142,7 @@ use App\Models\User;
                             </div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-lg-4">
                                         <div class="card radius-10">
                                             <div class="card-body">
                                                 <div class="d-flex align-items-center">
@@ -189,7 +189,7 @@ use App\Models\User;
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-lg-4">
                                         <div class="card radius-10">
                                             <div class="card-body">
                                                 <div class="d-flex align-items-center">
@@ -203,7 +203,7 @@ use App\Models\User;
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-lg-4">
                                         <div class="card radius-10">
                                             <div class="card-body">
                                                 <div class="d-flex align-items-center">
@@ -270,7 +270,7 @@ use App\Models\User;
 
                                     </tbody>
                                 </table>
-                                <a href="" class="btn btn-sm mt-3 btn-info text-white">
+                                <a href="" class="btn btn-block mt-3 btn-info text-white">
                                     Promosikan Project</a>
                             </div>
                         </div>
