@@ -228,13 +228,6 @@ use App\Models\User;
 
                                             </tr>
 
-                                            <tr>
-                                                <td>Jumlah Bid</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp; 3
-                                                </td>
-                                            </tr>
                                             
                                            
                                         </tbody>
