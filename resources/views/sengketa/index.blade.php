@@ -542,126 +542,125 @@
             </div>
         </div>
 
-        <div class="row mt-2" style="padding: 10px">
-            <div class="card p-0 rounded-3 shadow">
-                <div class="card-body text-dark">
-                    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="text-center fs-3" style="padding:10px; color: #61481C">
-                                    "Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
+        <div class="card mb-3">
+            <div class="card-body pb-0">
+                <div class="row justify-content-between text-center" style="overflow-x: auto; flex-wrap: nowrap">
+                    <div class="col-11 mb-3">
+                        <div class="card bg-brown">
+                            <div class="card-body">
+                                <div class="text-center fs-3" >
+                                    "Platform Sengketa Tanah mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
                                     pemerintah."
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="card bg-brown">
-                                    <div class="card-body">
-                                        <h4 class="card-title">
-                                            1. Pemerintah</h4>
-                                        <hr>
-                                        Kementerian yang mempunyai tugas menyelenggarakan urusan di
-                                        bidang agraria/pertanahan dan tata ruang.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card text-white bg-danger">
-                                    <div class="card-body">
-                                        <h4 class="card-title">2. Korban Sengketa</h4>
-                                        <hr>
-                                        Korban adalah orang yang dirugikan, dirampas, atau terancam kehilangan hak atas
-                                        tanah yang
-                                        dimilikinya
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card text-white bg-primary">
-                                    <div class="card-body">
-                                        <h4 class="card-title">3. Sponsor</h4>
-                                        <hr>
-                                        Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan hukum korban
-                                        sengketa tanah
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card text-white bg-info">
-                                    <div class="card-body">
-                                        <h4 class="card-title">4. Pengacara</h4>
-                                        <hr>
-                                        Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani
-                                        sengketa
-                                        tanah
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev">
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next">
-                        </button>
                     </div>
-                    <div class="row justify-content-center">
-                        {{-- <div class="col-md-6 mb-3 text-center">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png"
-                                        style="width:208px">
-                                </div>
-                            </div>
-                        </div> --}}
-                        {{-- <div class="col-md-12 mb-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title" style="color:#61481C">
-                                        1. Pemerintah</h4>
-                                    <hr>
-                                    Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di bidang
-                                    agraria/pertanahan dan tata ruang dalam pemerintahan untuk membantu Presiden dalam
-                                    menyelenggarakan pemerintahan negara termasuk masalah persengketaan tanah
-                                </div>
-                            </div>
-                        </div> --}}
-                        {{-- <div class="col-md-4 mb-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title" style="color:#61481C">2. Korban Sengketa</h4>
-                                    <hr>
-                                    Korban adalah orang yang dirugikan, dirampas, atau terancam kehilangan hak atas
-                                    tanah yang
-                                    dimilikinya
-                                </div>
+                    <div class="col-11 mb-3">
+                        <div class="card bg-danger text-white">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    1. Pemerintah</h4>
+                                <hr>
+                                Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di bidang
+                                agraria/pertanahan dan tata ruang.
                             </div>
                         </div>
-                        <div class="col-md-4 mb-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title" style="color:#61481C">3. Sponsor</h4>
-                                    <hr>
-                                    Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan hukum korban
-                                    sengketa tanah
-                                </div>
+                    </div>
+                    <div class="col-11 mb-3">
+                        <div class="card bg-primary text-white">
+                            <div class="card-body">
+                                <h4 class="card-title">2. Korban Sengketa</h4>
+                                <hr>
+                                Korban adalah orang yang dirugikan, dirampas, atau terancam kehilangan hak atas
+                                tanah yang
+                                dimilikinya.
                             </div>
                         </div>
-                        <div class="col-md-4 mb-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title" style="color:#61481C">4. Pengacara</h4>
-                                    <hr>
-                                    Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani sengketa
-                                    tanah
-                                </div>
+                    </div>
+                    <div class="col-11 mb-3">
+                        <div class="card bg-success text-white">
+                            <div class="card-body">
+                                <h4 class="card-title">3. Sponsor</h4>
+                                <hr>
+                                Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan hukum korban
+                                sengketa tanah.
                             </div>
-                        </div> --}}
+                        </div>
+                    </div>
+                    <div class="col-11 mb-3">
+                        <div class="card bg-info text-white">  
+                            <div class="card-body">
+                                <h4 class="card-title">4. Pengacara</h4>
+                                <hr>
+                                Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani sengketa
+                                tanah.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        {{-- <div class="row mt-2" style="padding: 10px">
+            <div class="card p-0 rounded-3 shadow">
+                <div class="card-body text-dark">
+                    <div class="row justify-content-center fr-role" style="overflow-x: auto;">
+                        <div class="col-6 mb-3 fr-roles text-center">
+                            <div class="card bg-brown text-white">
+                                <div class="card-body">
+                                    <div class="text-center fs-3">
+                                        "Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
+                                        pemerintah."
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3 fr-roles">
+                            <div class="card bg-danger text-white">
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        1. Pemerintah</h4>
+                                    <hr>
+                                    Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di bidang
+                                    agraria/pertanahan dan tata ruang.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-3 fr-roles">
+                            <div class="card bg-primary text-white">
+                                <div class="card-body">
+                                    <h4 class="card-title">2. Korban Sengketa</h4>
+                                    <hr>
+                                    Korban adalah orang yang dirugikan, dirampas, atau terancam kehilangan hak atas
+                                    tanah yang
+                                    dimilikinya.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-3 fr-roles">
+                            <div class="card">
+                                <div class="card-body bg-success text-white">
+                                    <h4 class="card-title">3. Sponsor</h4>
+                                    <hr>
+                                    Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan hukum korban
+                                    sengketa tanah.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-3 fr-roles">
+                            <div class="card">
+                                <div class="card-body bg-info text-white">
+                                    <h4 class="card-title">4. Pengacara</h4>
+                                    <hr>
+                                    Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani sengketa
+                                    tanah.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> --}}
 
         <hr>
 
@@ -862,7 +861,7 @@
                 </button>
 
                 <ol class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="d-flex">
                             <div class="flex-shrink-0">
                                 <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-tie"></i></b></h5>
@@ -874,7 +873,7 @@
                         </div>
                     </div>
         
-                    <div class="col-md-6 mt-4">
+                    <div class="col-md-12 mt-4">
                         <div class="d-flex">
                             <div class="flex-shrink-0">
                                 <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-gavel"></i></b></h5>
@@ -888,7 +887,7 @@
                         </div>
                     </div>
         
-                    <div class="col-md-6 mt-4">
+                    <div class="col-md-12 mt-4">
                         <div class="d-flex">
                             <div class="flex-shrink-0">
                                 <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-hand-holding-dollar"></i></b>
@@ -903,7 +902,7 @@
                         </div>
                     </div>
         
-                    <div class="col-md-6 mt-4">
+                    <div class="col-md-12 mt-4">
                         <div class="d-flex">
                             <div class="flex-shrink-0">
                                 <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-chart-line"></i></b></h5>
@@ -917,7 +916,7 @@
                         </div>
                     </div>
         
-                    <div class="col-md-6 mt-4">
+                    <div class="col-md-12 mt-4">
                         <div class="d-flex">
                             <div class="flex-shrink-0">
                                 <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-handshake"></i></b></h5>
@@ -931,7 +930,7 @@
                         </div>
                     </div>
         
-                    <div class="col-md-6 mt-4">
+                    <div class="col-md-12 mt-4">
                         <div class="d-flex">
                             <div class="flex-shrink-0">
                                 <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-gear"></i></b></h5>
