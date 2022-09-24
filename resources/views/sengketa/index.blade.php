@@ -610,7 +610,7 @@
                         <div class="row justify-content-between text-center"
                             style="overflow-x: auto; flex-wrap: nowrap">
                             <div class="col mb-4">
-                                <a href="http://localhost:8000/bid-sengketa"
+                                <a href="{{url('/')}}/bid-sengketa"
                                     class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
