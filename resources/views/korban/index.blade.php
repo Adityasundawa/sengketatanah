@@ -127,10 +127,25 @@ use App\Models\User;
                                 <div class="dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown">
                                     <i class='bx bx-dots-horizontal-rounded'></i>
                                 </div>
+                                @if($item['status_sengketa'] == 1)
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="javascript:;">Edit</a></li>
                                     <li><a class="dropdown-item" href="javascript:;">Delete</a></li>    
                                 </ul>
+                                @elseif($item['status_sengketa'] == 2)
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item disabled" href="javascript:;">Edit</a></li>
+                                    <li><a class="dropdown-item disabled" href="javascript:;">Delete</a></li>    
+                                </ul>
+                                @elseif($item['status_sengketa'] == 3)
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item disabled" href="javascript:;">Edit</a></li>
+                                    <li><a class="dropdown-item disabled" href="javascript:;">Delete</a></li>    
+                                </ul>
+                                @endif
+
+                                
+                            
                             </div>
                         </div>
                     </div>
