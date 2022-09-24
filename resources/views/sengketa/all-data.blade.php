@@ -408,7 +408,7 @@
         <div class="row justify-content-center mb-4">
 
             <div class="col-lg-12">
-              
+
 
                 <!-- <img src="{{asset('/uploads/sengketa-banner-2.jpg')}}" style="width:100%" class="mb-2"> -->
                 <div class="card mb-3 border-0">
@@ -693,12 +693,35 @@
                         </div>
                     </div>
                 </div>
+                <div class="card mb-4 border-0 shadow-sm ">
+                    <div class="card-body ">
+                    <div class="row g-0">
+                        <div class="col-6 text-center mb-2">
+
+                            <img src="{{asset('/')}}images/panduan.svg" alt=""
+                                class="img-thumbnail rounded-circle shadow" style="width:150px">
+                                <div class="mb-2" style="font-size: 14px">PANDUAN</div>
+
+                        </div>
+                        <div class="col-6  text-center mb-2">
+
+                            <img src="{{asset('/')}}images/jaminan.svg" alt=""
+                                class="img-thumbnail rounded-circle shadow" style="width:150px;height:150px;object-fit:cover">
+                                <div class="mb-2" style="font-size: 14px">JAMINAN</div>
+
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
 
                 <div class="row mb-3 g-2">
-                    <div class="col">
+
+
+                    <div class="col-6">
                         <a class="btn btn-sm btn-dark w-100" href="{{url('')}}/register">Daftar Sekarang</a>
                     </div>
-                    <div class="col">
+                    <div class="col-6">
                         <a class="btn btn-sm btn-danger w-100" data-bs-toggle="modal"
                             data-bs-target="#korbanSengketaModal">Buat Laporan</a>
                     </div>

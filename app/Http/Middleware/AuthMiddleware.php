@@ -34,7 +34,7 @@ class AuthMiddleware
     if ($role == 'korban' && $role_name != 'korban') {
         abort(403);
     }
-    
+   
     return $next($request);
     }
 }
