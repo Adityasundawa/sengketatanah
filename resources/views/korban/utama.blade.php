@@ -6,6 +6,9 @@ use App\Models\Bid_Sengketa;
 @extends('layouts.template-korban.main')
 @section('content')
 
+<div class="page-wrapper">
+    <div class="page-content">
+
 <div class="container mt-3">
     <div class="row">
         <div class="col-lg-12">
@@ -251,5 +254,7 @@ use App\Models\Bid_Sengketa;
             </div>
         </div>
     </div>
+</div>
+</div>
 </div>
 @endsection

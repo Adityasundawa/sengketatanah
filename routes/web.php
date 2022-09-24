@@ -100,6 +100,7 @@ Route::group(['middleware' => 'role:utama', 'prefix' => 'utama', 'as' => 'utama.
 Route::group(['middleware' => 'role:korban', 'prefix' => 'korban', 'as' => 'korban.'], function () {
    Route::get('index',[KorbanController::class,'index'])->name('index');
    Route::get('bidding',[KorbanController::class,'bidding'])->name('bidding');
+   Route::get('progress',[KorbanController::class,'progress'])->name('progress');
    Route::get('tambah_sengketa',[KorbanController::class,'tambah_sengketa'])->name('tambah_sengketa');
    Route::get('jadwal_wawancara/{id}',[KorbanController::class,'jadwal_wawancara'])->name('jadwal_wawancara');
    Route::get('list_sengketa_saya',[KorbanController::class,'list_sengketa_saya'])->name('list_sengketa_saya');
