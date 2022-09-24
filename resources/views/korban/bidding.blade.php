@@ -130,7 +130,7 @@ use App\Models\User;
                                     <div class="dropdown options ms-auto">
 
                                         <div class="dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown">
-                                            <span class="badge mr-4 bg-success">Tayang (100)</span>
+                                            <span class="badge mr-4 bg-success"><i class="lni lni-eye"></i> Tayang (100)</span>
                                         </div>
 
 
