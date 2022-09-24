@@ -112,7 +112,14 @@ use App\Models\User;
                         <div class="d-flex align-items-center">
                             <div>
                                 <b>PROJECT</b><b class="text-danger"> SP-00{{$item['id']}}</b>
-                                @if($item['status_sengketa'] == 1)
+
+                               
+                            </div>
+                            
+                            <div class="dropdown options ms-auto">
+                                
+                                <div class="dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown">
+                                    @if($item['status_sengketa'] == 1)
                                 <span class="badge mr-4 bg-danger">Menunggu Verifikasi</span>
                                 @elseif($item['status_sengketa'] == 2)
                                 <span class="badge mr-4 bg-success">Terverifikasi Tahap 1</span>
@@ -122,13 +129,9 @@ use App\Models\User;
                                 <span class="badge mr-4 bg-success">Terverifikasi Tahap 3</span>
                                 @elseif($item['status_sengketa'] == 0)
                                 <span class="badge mr-4 bg-danger">Pending</span>
-                                @endif
-                            </div>
-                            
-                            <div class="dropdown options ms-auto">
-                                <div class="dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown">
-                                    <i class='bx bx-dots-horizontal-rounded'></i>
+                                @endif <i class='bx bx-dots-horizontal-rounded'></i>
                                 </div>
+                                
                                 @if($item['status_sengketa'] == 1)
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="javascript:;">Edit</a></li>
@@ -140,6 +143,11 @@ use App\Models\User;
                                     <li><a class="dropdown-item disabled" href="javascript:;">Delete</a></li>    
                                 </ul>
                                 @elseif($item['status_sengketa'] == 3)
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item disabled" href="javascript:;">Edit</a></li>
+                                    <li><a class="dropdown-item disabled" href="javascript:;">Delete</a></li>    
+                                </ul>
+                                @elseif($item['status_sengketa'] == 4)
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item disabled" href="javascript:;">Edit</a></li>
                                     <li><a class="dropdown-item disabled" href="javascript:;">Delete</a></li>    
@@ -270,7 +278,7 @@ use App\Models\User;
                             @endif
                         @elseif ($item['status_sengketa'] == 3)
                            <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i class="lni lni-eye"></i>  Lihat Berkas</a>
-                           <a href="{{route('korban.jadwal_wawancara',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"> <i class="lni lni-mic"></i> Jadwalkan Wawancara</a>
+                           <a href="{{route('korban.jadwal_wawancara',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"> <i class="lni lni-mic"></i> Ikuti Wawancara</a>
                         @elseif ($item['status_sengketa'] == 4)
                            <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}"class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i class="lni lni-eye"></i>  Lihat Berkas</a>
                            <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i class="lni lni-mic"></i> Agenda Wawancara</a>
