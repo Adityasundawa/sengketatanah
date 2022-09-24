@@ -168,4 +168,10 @@ class KorbanController extends Controller
         return view('korban.jadwal_wawancara',$data);
 
     }
+
+    public function progress()
+    {
+        $data['title'] = "as";
+        return view('korban.progress',$data);
+    }
 }
