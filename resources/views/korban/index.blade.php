@@ -166,6 +166,10 @@ use App\Models\User;
                             <b>Selamat, </b>Anda berhasil melewati verifikasi tahap 2. Untuk menampilkan project,
                             Anda harus melewati sesi wawancara via Podcast Sengketa Tanah atau Zoom.
                         </div>
+                        @elseif($item['status_sengketa'] == 4)
+                        <div class="alert alert-success" id="alert" role="alert">
+                            <b>Terima Kasih, </b>Anda telah berhasil melewati semua tahapan verifikasi. Mohon menunggu sampai jadwal wawancara Anda tiba
+                        </div>
                         {{-- @elseif($item['status_sengketa']s == 3)s
                         <span class="badge badge-warning">Diproses</span>
                         @elseif($item['status_sengketa'] == 4)
