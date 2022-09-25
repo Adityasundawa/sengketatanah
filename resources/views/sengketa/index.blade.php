@@ -1335,17 +1335,27 @@
                                         </div>
                                     </div>
                                 </div>
-                                <h2>
-                                    <div class="fw-bold" style="color: #61481C"> TENTANG KAMI</div>
-                                </h2>
-                                SENGKETA TANAH adalah platform digital dengan spesialisasi penanganan
-                                masalah
-                                sengketa tanah di seluruh wilayah Indonesia. Kami mempertemukan korban sengketa tanah
-                                atau korban
-                                mafia
-                                tanah dengan Sponsor, Kantor hukum, dan Pemerintah untuk menuntaskan masalah
-                                persengketaan tanah
-                                tersebut.
+                                <style>
+                                    @media (min-width: 1400px){
+                                    .container-lsa {
+                                        max-width: 1000px !important;
+                                    }
+                                }
+                                </style>
+                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" class="mb-2" style="width: 75px" alt="">
+                                <div class="container-lsa mx-auto">
+                                    <h2>
+                                        <div class="fw-bold" style="color: #61481C"> TENTANG KAMI</div>
+                                    </h2>
+                                    SENGKETA TANAH adalah platform digital dengan spesialisasi penanganan
+                                    masalah
+                                    sengketa tanah di seluruh wilayah Indonesia. Kami mempertemukan korban sengketa tanah
+                                    atau korban
+                                    mafia
+                                    tanah dengan Sponsor, Kantor hukum, dan Pemerintah untuk menuntaskan masalah
+                                    persengketaan tanah
+                                    tersebut.
+                                </div>
                                 
                             </ol>
                         </div>
