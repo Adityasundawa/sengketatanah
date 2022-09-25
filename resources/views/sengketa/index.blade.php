@@ -499,17 +499,19 @@
         </div>
     </nav>
 
-    <div class="row d-flex mb-1 mt-1">
-        <div class="col text-center">
-            <a href="{{url('/')}}/login" class="text-dark" style="text-decoration:none"><i
-                    class="fa-solid fa-right-to-bracket"></i> Login</a>
-        </div>
-        <div class="col text-center">
-            <a href="{{url('/')}}/register" class="text-dark" style="text-decoration:none"><i
-                    class="fa-solid fa-pen-to-square"></i> Register</a>
-        </div>
-        <div class="col text-center">
-            <a href="#" class="text-dark" style="text-decoration:none"><i class="fa-solid fa-key"></i> Forgot</a>
+    <div class="mobile">
+        <div class="row d-flex mb-1 mt-1">
+            <div class="col text-center">
+                <a href="{{url('/')}}/login" class="text-dark" style="text-decoration:none"><i
+                        class="fa-solid fa-right-to-bracket"></i> Login</a>
+            </div>
+            <div class="col text-center">
+                <a href="{{url('/')}}/register" class="text-dark" style="text-decoration:none"><i
+                        class="fa-solid fa-pen-to-square"></i> Register</a>
+            </div>
+            <div class="col text-center">
+                <a href="#" class="text-dark" style="text-decoration:none"><i class="fa-solid fa-key"></i> Forgot</a>
+            </div>
         </div>
     </div>
 
@@ -528,80 +530,9 @@
             </div>
         </div>
 
-
     </div>
+
     <div class="container mt-4">
-
-
-        <!--<div class="row mt-3 mb-3">-->
-        <!--    <div class="col text-center">-->
-        <!--        <a href="{{url('/')}}/layanan" style="text-decoration:none">Layanan</a> | -->
-        <!--        <a href="#" style="text-decoration:none"></a> | -->
-        <!--        <a href="#" style="text-decoration:none"></a> | -->
-        <!--        <a href="#" style="text-decoration:none"></a> | -->
-        <!--        <a href="#" style="text-decoration:none"></a> -->
-        <!--    </div>-->
-        <!--</div>-->
-
-        {{-- <div class="card mb-3">
-            <div class="card-body pb-0">
-                <div class="row justify-content-between text-center" style="overflow-x: auto; flex-wrap: nowrap">
-                    <div class="col-11 mb-3">
-                        <div class="card bg-brown">
-                            <div class="card-body">
-                                <div class="text-center fs-3">
-                                    "Platform Sengketa Tanah mempertemukan korban sengketa tanah dengan sponsor,
-                                    pengacara dan
-                                    pemerintah."
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-11 mb-3">
-                        <div class="card bg-danger text-white">
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    1. Pemerintah</h4>
-                                <hr>
-                                Pemerintah adalah kementerian yang mempunyai tugas menyelenggarakan urusan di bidang
-                                agraria/pertanahan dan tata ruang.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-11 mb-3">
-                        <div class="card bg-primary text-white">
-                            <div class="card-body">
-                                <h4 class="card-title">2. Korban Sengketa</h4>
-                                <hr>
-                                Korban adalah orang yang dirugikan, dirampas, atau terancam kehilangan hak atas
-                                tanah yang
-                                dimilikinya.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-11 mb-3">
-                        <div class="card bg-success text-white">
-                            <div class="card-body">
-                                <h4 class="card-title">3. Sponsor</h4>
-                                <hr>
-                                Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan hukum korban
-                                sengketa tanah.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-11 mb-3">
-                        <div class="card bg-info text-white">
-                            <div class="card-body">
-                                <h4 class="card-title">4. Pengacara</h4>
-                                <hr>
-                                Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani sengketa
-                                tanah.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
 
         <div class="row justify-content-center mb-4">
 
@@ -992,7 +923,7 @@
                 <div class="card border-0 shadow-sm">
                     <div class="card-body pb-1 pt-2">
                         <div class="row">
-                            <div class="col-3 panduan text-center mb-2">
+                            <div class="col-3 text-center mb-2">
 
                                 <button class="btn btn-sm" id="btn-panduan" type="button">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -1067,8 +998,6 @@
 
                             </div>
 
-
-
                             <div class="col-3 text-center mb-2">
                                 <button class="btn btn-sm" id="btn-jaminan" type="button">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -1095,6 +1024,7 @@
                                     $("#btn-jaminan").click(function () {
                                         $("#panduan").removeClass('show');
                                         $("#jaminan").toggleClass('show');
+                                        $("#chat").removeClass('show');
                                         $("#tentang").removeClass('show');
                                     });
 
@@ -1103,12 +1033,22 @@
                             </div>
                           
                             <div class="col-3 text-center mb-2">
-                                  <button class="btn btn-sm" id="btn-tentang" type="button">
+                                <button class="btn btn-sm" id="btn-chat" type="button">
                                     <img src="{{asset('')}}images/cus.svg"style="width:55px;margin-top:9px" alt="" srcset="">
                                     <h6 class=" mb-0" style="font-weight:bold;margin-top:13px">CHAT</h6>
                                 </button>
 
+                                <script>
+                                    $("#btn-chat").click(function () {
+                                        $("#panduan").removeClass('show');
+                                        $("#jaminan").removeClass('show');
+                                        $("#chat").toggleClass('show');
+                                        $("#tentang").removeClass('show');
+                                    });
+
+                                </script>
                             </div>
+
                             <div class="col-3 text-center mb-2">
                                 <button class="btn btn-sm" id="btn-tentang" type="button"style="margin-left:-10px">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -1135,6 +1075,7 @@
                                     $("#btn-tentang").click(function () {
                                         $("#panduan").removeClass('show');
                                         $("#jaminan").removeClass('show');
+                                        $("#chat").removeClass('show');
                                         $("#tentang").toggleClass('show');
                                     });
 
@@ -1288,11 +1229,24 @@
                                 </div>
                             </ol>
 
+                            <ol id="chat"
+                                class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center"
+                                style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                                    <h2>
+                                        <div class="fw-bold" style="color: #61481C"> Customer Service</div>
+                                    </h2>
+                                    <div class="chat-form"> <input type="text" class="form-control" placeholder="Nama">
+                                        <input type="text" class="form-control" placeholder="Email"> <textarea
+                                            class="form-control" placeholder="Masukan Pesan"></textarea> <button
+                                            class="btn btn-success btn-block">Kirim</button>
+                                    </div>
+                            </ol>
+
                             <ol id="tentang"
                                 class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center"
                                 style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                                 <h2>
-                                    <div class="fw-bold" style="color: #61481C"> <br>TENTANG KAMI</div>
+                                    <div class="fw-bold" style="color: #61481C"> TENTANG KAMI</div>
                                 </h2>
                                 SENGKETA TANAH adalah platform digital dengan spesialisasi penanganan
                                 masalah
@@ -1381,48 +1335,114 @@
                     </div>
 
                     {{-- <img src="{{asset('/uploads/sengketa-banner-2.jpg')}}" style="width:100%" class="mb-2"> --}}
-                    <div class="card mt-2">
-                        <div class="card-body">
-                            <div class="row desktop mb-4">
-                                <div class="col-md">
-                                    <div class="card-body text-center container" style="height:500px">
+                    
+                    
+                </div>
+                
+                <div class="card mt-2">
+                    <div class="card-body">
+                        <div class="row desktop mb-4">
+                            <div class="col-md">
+                                <div class="card-body text-center container" style="height:500px">
+                                    <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}"
+                                        style="width:300px; height:400px;object-fit:cover" alt="" srcset=""
+                                        class="img-fluid">
+                                    <div class="card rounded-0"
+                                        style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                        <div class="card-body">
+                                            <p class="card-text">"Presiden Joko Widodo menegaskan kepada Kementerian
+                                                ATR/BPN untuk
+                                                serius dalam memberantas mafia tanah"
+                                                <br> -<b> Ir. H. Joko Widodo (Presiden RI)</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="card-title fw-bolder text-dark"></p>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="card-body text-center container" style="height:500px">
+                                    <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}"
+                                        style="width:300px; height:400px;object-fit:cover" alt="" srcset=""
+                                        class="img-fluid">
+                                    <div class="card rounded-0"
+                                        style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                        <div class="card-body">
+                                            <p class="card-text">"Sesuai perintah Bapak Presiden, semua kasus mafia
+                                                tanah yang ada
+                                                di
+                                                Indonesia harus
+                                                diselesaikan" <br> -<b> Hadi Tjahjanto (Mentri ATR/BPN) </b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="card-title fw-bolder text-dark"></p>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="card-body text-center container" style="height:500px">
+                                    <img src="{{asset('/uploads/kapolri.png')}}"
+                                        style="width:300px; height:400px;object-fit:cover" alt="" srcset=""
+                                        class="img-fluid">
+                                    <div class="card rounded-0"
+                                        style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                        <div class="card-body">
+                                            <p class="card-text">"Penyidik tidak perlu ragu ragu dalam mengusut
+                                                tuntas masalah mafia
+                                                tanah, penyidik agar tindak tegas siapapun dalang dan bekingannya"
+                                                <br> -<b> Listyo
+                                                    Sigit Prabowo (Kapolri) </b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="card-title fw-bolder text-dark"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="carouselExampleControlsPres" class="carousel slide mobile  mb-4"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card-body text-center container" style="height:505px">
                                         <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}"
                                             style="width:300px; height:400px;object-fit:cover" alt="" srcset=""
                                             class="img-fluid">
                                         <div class="card rounded-0"
-                                            style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                            style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);z-index:10">
                                             <div class="card-body">
-                                                <p class="card-text">"Presiden Joko Widodo menegaskan kepada Kementerian
-                                                    ATR/BPN untuk
-                                                    serius dalam memberantas mafia tanah"
-                                                    <br> -<b> Ir. H. Joko Widodo (Presiden RI)</b>
+                                                <p class="card-text">"Presiden Joko Widodo menegaskan kepada
+                                                    Kementerian ATR/BPN
+                                                    untuk
+                                                    serius dalam memberantas mafia tanah" <br> -<b> Ir. H. Joko
+                                                        Widodo (Presiden
+                                                        RI)</b>
                                                 </p>
                                             </div>
                                         </div>
                                         <p class="card-title fw-bolder text-dark"></p>
                                     </div>
                                 </div>
-                                <div class="col-md">
-                                    <div class="card-body text-center container" style="height:500px">
+                                <div class="carousel-item">
+                                    <div class="card-body text-center container" style="height:505px">
                                         <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}"
                                             style="width:300px; height:400px;object-fit:cover" alt="" srcset=""
                                             class="img-fluid">
                                         <div class="card rounded-0"
                                             style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                                             <div class="card-body">
-                                                <p class="card-text">"Sesuai perintah Bapak Presiden, semua kasus mafia
-                                                    tanah yang ada
-                                                    di
-                                                    Indonesia harus
-                                                    diselesaikan" <br> -<b> Hadi Tjahjanto (Mentri ATR/BPN) </b>
+                                                <p class="card-text">"Sesuai perintah Bapak Presiden, semua kasus
+                                                    mafia tanah yang
+                                                    ada
+                                                    di Indonesia harus
+                                                    diselesaikan"<br> -<b> Hadi Tjahjanto (Mentri ATR/BPN) </b>
                                                 </p>
                                             </div>
                                         </div>
                                         <p class="card-title fw-bolder text-dark"></p>
                                     </div>
                                 </div>
-                                <div class="col-md">
-                                    <div class="card-body text-center container" style="height:500px">
+                                <div class="carousel-item">
+                                    <div class="card-body text-center container" style="height:505px">
                                         <img src="{{asset('/uploads/kapolri.png')}}"
                                             style="width:300px; height:400px;object-fit:cover" alt="" srcset=""
                                             class="img-fluid">
@@ -1430,9 +1450,12 @@
                                             style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                                             <div class="card-body">
                                                 <p class="card-text">"Penyidik tidak perlu ragu ragu dalam mengusut
-                                                    tuntas masalah mafia
-                                                    tanah, penyidik agar tindak tegas siapapun dalang dan bekingannya"
-                                                    <br> -<b> Listyo
+                                                    tuntas masalah
+                                                    mafia
+
+                                                    tanah, penyidik agar tindak tegas siapapun dalang dan
+                                                    bekingannya" <br> -<b>
+                                                        Listyo
                                                         Sigit Prabowo (Kapolri) </b>
                                                 </p>
                                             </div>
@@ -1441,76 +1464,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="carouselExampleControlsPres" class="carousel slide mobile  mb-4"
-                                data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="card-body text-center container" style="height:505px">
-                                            <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}"
-                                                style="width:300px; height:400px;object-fit:cover" alt="" srcset=""
-                                                class="img-fluid">
-                                            <div class="card rounded-0"
-                                                style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);z-index:10">
-                                                <div class="card-body">
-                                                    <p class="card-text">"Presiden Joko Widodo menegaskan kepada
-                                                        Kementerian ATR/BPN
-                                                        untuk
-                                                        serius dalam memberantas mafia tanah" <br> -<b> Ir. H. Joko
-                                                            Widodo (Presiden
-                                                            RI)</b>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p class="card-title fw-bolder text-dark"></p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="card-body text-center container" style="height:505px">
-                                            <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}"
-                                                style="width:300px; height:400px;object-fit:cover" alt="" srcset=""
-                                                class="img-fluid">
-                                            <div class="card rounded-0"
-                                                style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
-                                                <div class="card-body">
-                                                    <p class="card-text">"Sesuai perintah Bapak Presiden, semua kasus
-                                                        mafia tanah yang
-                                                        ada
-                                                        di Indonesia harus
-                                                        diselesaikan"<br> -<b> Hadi Tjahjanto (Mentri ATR/BPN) </b>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p class="card-title fw-bolder text-dark"></p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="card-body text-center container" style="height:505px">
-                                            <img src="{{asset('/uploads/kapolri.png')}}"
-                                                style="width:300px; height:400px;object-fit:cover" alt="" srcset=""
-                                                class="img-fluid">
-                                            <div class="card rounded-0"
-                                                style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
-                                                <div class="card-body">
-                                                    <p class="card-text">"Penyidik tidak perlu ragu ragu dalam mengusut
-                                                        tuntas masalah
-                                                        mafia
-
-                                                        tanah, penyidik agar tindak tegas siapapun dalang dan
-                                                        bekingannya" <br> -<b>
-                                                            Listyo
-                                                            Sigit Prabowo (Kapolri) </b>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p class="card-title fw-bolder text-dark"></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-
-
                 </div>
 
                 <style>
@@ -1529,43 +1484,208 @@
 
                 </style>
 
-                <!-- <form action="">
-                    <div class="row">
-                        <div class="col">
-                            <div class="mb-1">
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle text-white w-100 rounded-0"
-                                        style="background: #06ad5f" type="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Pilih Layanan Lain
-                                    </button>
-                                    <ul class="dropdown-menu w-100 p-0 ini"
-                                        style="border: 0px; position:relative !important">
-                                        {{-- <li><a class="dropdown-item ini" href="#">Konsultasi Tenaga Ahli Pertanahan</a></li> --}}
-                                        {{-- <li><a class="dropdown-item ini" href="#">Edukasi Pertanahan</a></li>
-                                        <li><a class="dropdown-item ini" href="#">Pengamanan Lahan</a></li> --}}
-                                        <li><a class="dropdown-item ini" href="#">Jual Beli Lahan</a></li>
-                                        <li><a class="dropdown-item ini" href="#">Kerjasama Lahan</a></li>
-                                        <li><a class="dropdown-item ini" href="#">Pelelangan Lahan</a></li>
-                                        <li><a class="dropdown-item ini" href="#">Jasa Tukang Ukur</a></li>
-                                    </ul>
-                                </div> -->
-                <!--<a class="btn btn-sm btn-success w-100" href="{{url('')}}/register">Konsultasi Tenaga Ahli Pertanahan</a>-->
-                <!-- </div>
+                <div class="card mt-2 border-0 shadow-sm ">
+                    <div class="card-header bg-white">
+                        <div class="row">
+                            <div class="col">
+                                <h5 color="text-dark" style="margin-bottom: 0px !important">Sengketa Terbaru</h5>
+                            </div>
+                            <div class="col-5">
+                                <b class="float-end">
+                                    <a href="{{url('')}}/bid-sengketa" style="text-decoration: none" class="text-success">Lihat Semua</a>
+                                </b>
+                            </div>
                         </div>
+                    
                     </div>
+                
+                    <div class="card-body" style="background-color:#8cf671;">
+                        <style>
+                            /* #lelang-card::-webkit-scrollbar
+                    {
+                        width: 5px;
+                        height: 10px;
+                        background-color: white;
+                    
+                    }
+                              #lelang-card::-webkit-scrollbar-thumb
+                            {
+                                background-color: #61481C;
+                            } */
+                        
+                        </style>
+                        <div class="row justify-content-between" id="lelang-card"
+                            style="overflow-x: auto; flex-wrap: nowrap">
 
-                </form> -->
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <h5 class="mb-0 text-center">Kode Bid SP-001 <img src="https://sengketatanah.id/uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                    <div class="card-body">
+                                        <table>
+                                            <tr>
+                                                <td>Owner/Korban &nbsp;</td>
+                                                <td>: &nbsp;</td>
+                                                <td>Bahru</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Objek Sengketa   &nbsp;</td>
+                                                <td>: &nbsp;</td>
+                                                <td>Sengketa Pertanahan</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Luas Objek &nbsp;</td>
+                                                <td>: &nbsp;</td>
+                                                <td>1 Ha</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Kebutuhan Dana &nbsp;</td>
+                                                <td>: &nbsp;</td>
+                                                <td>Rp.450.000.000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Imbal Hasil &nbsp;</td>
+                                                <td>: &nbsp;</td>
+                                                <td>Fee 50% Dari Pinjaman</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jaminan &nbsp;</td>
+                                                <td>: &nbsp;</td>
+                                                <td>Sertifikat Tanah</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jumlah Bid &nbsp;</td>
+                                                <td>: &nbsp;</td>
+                                                <td>3</td>
+                                            </tr>
+                                        </table>    
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
 
-                <form action="">
-                    <div class="row">
-                        <div class="col">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header text-white px-3 py-1" style=" background: linear-gradient(90deg, hsla(337, 85%, 31%, 1) 42%, hsla(337, 83%, 30%, 1) 64%, hsla(318, 57%, 22%, 1) 86%);">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <h5 class="mb-0 text-center">Kode Bid SP-001 <img src="https://sengketatanah.id/uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <table>
+                                                <tbody>
+                                                <tr>
+                                                    <td>Owner/Korban</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp; Ali Shadiqin</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Objek Sengketa</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp; Sengketa Pertanahan</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Luas Objek</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp; 2.4 Ha</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lokasi</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp; Blitar, Jawa timur</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Kebutuhan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Penindakan</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Anggaran</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp; Rp.8.000.000 - 16.000.000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jumlah Bid</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;12</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header text-white px-3 py-1  bg-secondary">
+                                        <div class="row">
+                                            <div class="col-lg-12 text-center">
+                                                <h5 class="mb-0 text-center">Data Terusan</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Owner/Korban</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp; Kasusra Tampubolon</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Objek Sengketa</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp; Sengketa Pertanahan</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Luas Objek</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp; 2.9 Ha</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lokasi</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp; Garut, Jawa Barat</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        
                         </div>
+                    
+                    
                     </div>
-                </form>
+                
+                </div>
 
-                <div class="card mt-2">
+                {{-- <div class="card mt-2">
                     <div class="card-body">
                         <div class="row justify-content-center">
                             <form action="">
@@ -1651,6 +1771,7 @@
                                 <div class="row">
                                     <?php $counter = 1 ?>
                                     @foreach($bid_sengketa as $bs)
+                                    
                                     <div class="col-md-6 mb-3 {{$bs['kode_objek']}}">
                                         <div class="card mb-2">
 
@@ -1874,25 +1995,6 @@
                                 <?php $counter++ ?>
                                 @endforeach
                             </div>
-                            <nav aria-label="Page navigation example">
-                                <ul class="pagination">
-                                    <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Previous">
-                                            <span aria-hidden="true">&laquo;</span>
-                                            <span class="sr-only">Previous</span>
-                                        </a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Next">
-                                            <span aria-hidden="true">&raquo;</span>
-                                            <span class="sr-only">Next</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
 
 
 
@@ -2334,7 +2436,7 @@
 
                     </div>
 
-                </div>
+                </div> --}}
             </div>
         </div>
 
