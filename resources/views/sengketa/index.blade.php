@@ -2650,33 +2650,15 @@
                             style="overflow-x: auto; flex-wrap: nowrap">
 
                             <div class="col-12 bid">
-                                <div class="card mx-auto">
-
-                                    <div class="card-body">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-RkCcavzXq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-
-                                </div>
+                                <iframe width="100%" height="250px" src="https://www.youtube.com/embed/-RkCcavzXq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
 
                             <div class="col-12 bid">
-                                <div class="card mx-auto">
-
-                                    <div class="card-body">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/byby3HJ3OCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-                                    </div>
-
-                                </div>
+                                <iframe width="100%" height="250px" src="https://www.youtube.com/embed/byby3HJ3OCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
                             </div>
 
                             <div class="col-12 bid">
-                                <div class="card mx-auto">
-
-                                    <div class="card-body">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1I4iEKK1qbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-
-                                </div>
+                                <iframe width="100%" height="250px" src="https://www.youtube.com/embed/1I4iEKK1qbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
                             </div>
 
 
