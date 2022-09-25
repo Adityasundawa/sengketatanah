@@ -1395,7 +1395,7 @@
                 <!-- bidding -->
                 <div class="card mb-3 border-0 shadow-sm ">
                     <div class="card-header bg-white">
-                        <h5 color="text-dark">Bidding Sponsor</h5>
+                     <h5 color="text-dark"><img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">&nbsp;Bidding Sponsor</h5>
                         <p>Total Sengketa <span class="badge bg-danger">11,874</span>
                             <b class="float-end" style="margin-top:-20px">
                                 <span class="text-success">Lihat Semua</span>
@@ -2135,7 +2135,7 @@
                 <!-- Jual beli Lahan -->
                 <div class="card mb-3 border-0 shadow-sm ">
                     <div class="card-header bg-white">
-                        <h5 color="text-dark">Jual Beli Lahan</h5>
+                        <h5 color="text-dark"><img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">&nbsp;Jual Beli Lahan</h5>
                         <p>Total Lahan Tersedia <span class="badge bg-danger">4,323</span>
                             <b class="float-end" style="margin-top:-20px">
                                 <span class="text-success">Lihat Semua</span>
@@ -2892,7 +2892,7 @@
                 <!-- podcast Sengketa -->
                 <div class="card mb-3 border-0 shadow-sm ">
                     <div class="card-header bg-white">
-                        <h5 color="text-dark">Podcast Sengketa Tanah</h5>
+                        <h5 color="text-dark"><img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">&nbsp;Podcast Sengketa Tanah</h5>
                         <p>Total Video <span class="badge bg-danger">10</span>
                             <b class="float-end" style="margin-top:-20px">
                                 <span class="text-success">Lihat Semua</span>
@@ -2930,13 +2930,41 @@
 
 
                         </div>
+                        <div class="desktop-2">
+                            <div class="row mt-2 justify-content-between" id="lelang-card"
+                                style="overflow-x: auto; flex-wrap: nowrap">
+                                <div class="col-12 bid">
+                                    <iframe width="100%" height="250px" src="https://www.youtube.com/embed/1I4iEKK1qbQ"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+    
+                                <div class="col-12 bid">
+                                    <iframe width="100%" height="250px" src="https://www.youtube.com/embed/-RkCcavzXq8"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+    
+                                <div class="col-12 bid">
+                                    <iframe width="100%" height="250px" src="https://www.youtube.com/embed/byby3HJ3OCI"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+    
+                               
+    
+                            </div>
+                        </div>
 
                     </div>
                 </div>
                 <!-- Kerja sama lahan -->
                 <div class="card mb-3 border-0 shadow-sm ">
                     <div class="card-header bg-white">
-                        <h5 color="text-dark">Kerja Sama Lahan</h5>
+                        <h5 color="text-dark"><img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">&nbsp;Kerja Sama Lahan</h5>
                         <p>Total Lahan Tersedia <span class="badge bg-danger">4,323</span>
                             <b class="float-end" style="margin-top:-20px">
                                 <span class="text-success">Lihat Semua</span>
@@ -3644,7 +3672,7 @@
                 <!-- lelang -->
                 <div class="card mb-4 border-0 shadow-sm ">
                     <div class="card-header bg-white">
-                        <h5 color="text-dark">Lelang Lahan</h5>
+                        <h5 color="text-dark"><img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">&nbsp;Lelang Lahan</h5>
                         <p>Berakhir Dalam <span class="badge bg-danger"><i class="fa-solid fa-clock"></i>
                                 01:08:59</span>
                             <b class="float-end" style="margin-top:-20px">
