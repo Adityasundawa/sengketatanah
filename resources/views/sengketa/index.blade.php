@@ -1500,8 +1500,25 @@
                         }
                     </style>
 
-                    <div class="card-body" style="background-color:#57575759;">
-                        <div class="row justify-content-between" id="lelang-card"
+                    <div class="card-body" style="background-color:#F6D471;">
+                        <div class="row g-2">
+
+
+                            <div class="col-6">
+                                <a class="btn btn-sm btn-dark w-100" href="{{url('')}}/register">Daftar Sekarang</a>
+                            </div>
+                            <div class="col-6">
+                                <a class="btn btn-sm btn-danger w-100" data-bs-toggle="modal"
+                                    data-bs-target="#korbanSengketaModal">Buat
+                                    Laporan</a>
+                            </div>
+            
+                            {{-- <img src="{{asset('/uploads/sengketa-banner-2.jpg')}}" style="width:100%" class="mb-2"> --}}
+            
+            
+                        </div>
+
+                        <div class="row mt-2 justify-content-between" id="lelang-card"
                             style="overflow-x: auto; flex-wrap: nowrap">
 
                             <div class="col-12 bid">
@@ -2073,22 +2090,6 @@
                 </div>
             </div>
 
-            <div class="row g-2">
-
-
-                <div class="col-6">
-                    <a class="btn btn-sm btn-dark w-100" href="{{url('')}}/register">Daftar Sekarang</a>
-                </div>
-                <div class="col-6">
-                    <a class="btn btn-sm btn-danger w-100" data-bs-toggle="modal"
-                        data-bs-target="#korbanSengketaModal">Buat
-                        Laporan</a>
-                </div>
-
-                {{-- <img src="{{asset('/uploads/sengketa-banner-2.jpg')}}" style="width:100%" class="mb-2"> --}}
-
-
-            </div>
 
 
             <div class="row justify-content-center mb-3 mt-4 text-center g-0">
