@@ -2146,7 +2146,7 @@
                                     <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid SP-001 <img
+                                                <h5 class="mb-0 text-center">Kode Lahan JBL-004 <img
                                                         src="https://sengketatanah.id/uploads/biru_centang.png" alt=""
                                                         class="mb-1" style="height:20px"></h5>
                                             </div>
@@ -2159,15 +2159,31 @@
 
 
 
+                                        <b>
+                                            Rp.450.000.000
+                                        </b>
                                         <table>
                                             <tbody>
+                                                </tr>
+
                                                 <tr>
-                                                    <td>Owner/Korban</td>
+                                                    <td>Owner</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp; Bahru</td>
                                                 </tr>
-
+                                                <tr>
+                                                    <td>Peruntukan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Permukiman</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jenis Lahan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Tanah Darat</td>
+                                                </tr>
                                                 <tr>
                                                     <td>Luas Objek</td>
                                                     <td></td>
@@ -2179,12 +2195,6 @@
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp; Pancawati, Bogor</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Harga</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Rp.450.000.000</td>
                                                 </tr>
 
 
@@ -2204,7 +2214,7 @@
 
                                                 <a href="#" class="text-dark  mx-auto" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas (12)
+                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                 </a>
 
 
@@ -2237,11 +2247,9 @@
                                                 <span
                                                     onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                     style="cursor:pointer"><i class="fa-solid fa-play text-danger"></i>
-                                                    Lihat Podcast
-                                                    (9)</span>
+                                                    Lihat Video</span>
                                             </div>
                                         </div>
-
                                         <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1"
                                             method="get">
                                             <input type="hidden" name="owner" value=" Bahru">
@@ -2315,7 +2323,7 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid KP-001 <img
+                                                <h5 class="mb-0 text-center">Kode Lelang LL-001 <img
                                                         src="http://localhost:8000/uploads/biru_centang.png" alt=""
                                                         class="mb-1" style="height:20px"></h5>
                                             </div>
@@ -2324,15 +2332,31 @@
 
                                     <div class="card-body">
 
+                                        <b>
+                                            Rp.500.000.000
+                                        </b>
+
                                         <table>
                                             <tbody>
+                                                </tr>
                                                 <tr>
-                                                    <td>Owner/Korban</td>
+                                                    <td>Owner</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp; Fatah</td>
                                                 </tr>
-
+                                                <tr>
+                                                    <td>Peruntukan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Permukiman</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jenis Lahan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Tanah Darat</td>
+                                                </tr>
                                                 <tr>
                                                     <td>Luas Objek</td>
                                                     <td></td>
@@ -2345,12 +2369,7 @@
                                                     <td>:</td>
                                                     <td>&nbsp; Pancawati, Bogor</td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Harga</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Rp.500.000.000</td>
-                                                </tr>
+
 
 
                                                 <tr>
@@ -2364,12 +2383,13 @@
                                         <hr>
 
 
+
                                         <div class="row g-0">
                                             <div class="col text-center" style="border-right: 1px solid">
 
                                                 <a href="#" class="text-dark  mx-auto" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas (12)
+                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                 </a>
 
 
@@ -2400,10 +2420,9 @@
                                             </div>
                                             <div class="col text-center">
                                                 <span
-                                                    onclick="return document.querySelector('form.form-sengketa2').submit()"
+                                                    onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                     style="cursor:pointer"><i class="fa-solid fa-play text-danger"></i>
-                                                    Lihat Podcast
-                                                    (9)</span>
+                                                    Lihat Video</span>
                                             </div>
                                         </div>
 
@@ -2478,7 +2497,7 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid PP-001 <img
+                                                <h5 class="mb-0 text-center">Kode Lelang LL-002 <img
                                                         src="http://localhost:8000/uploads/biru_centang.png" alt=""
                                                         class="mb-1" style="height:20px"></h5>
                                             </div>
@@ -2486,15 +2505,30 @@
                                     </div>
 
                                     <div class="card-body">
+                                        <b>
+                                            Rp.200.000.000
+                                        </b>
                                         <table>
                                             <tbody>
+                                                </tr>
                                                 <tr>
-                                                    <td>Owner/Korban</td>
+                                                    <td>Owner</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp; Ophelia Suartini</td>
                                                 </tr>
-
+                                                <tr>
+                                                    <td>Peruntukan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Permukiman</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jenis Lahan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Tanah Darat</td>
+                                                </tr>
                                                 <tr>
                                                     <td>Luas Objek</td>
                                                     <td></td>
@@ -2507,12 +2541,7 @@
                                                     <td>:</td>
                                                     <td>&nbsp; Medan, Sumatra Utara</td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Harga</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Rp.200.000.000</td>
-                                                </tr>
+
 
 
 
@@ -2527,12 +2556,13 @@
                                         <hr>
 
 
+
                                         <div class="row g-0">
                                             <div class="col text-center" style="border-right: 1px solid">
 
                                                 <a href="#" class="text-dark  mx-auto" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas (12)
+                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                 </a>
 
 
@@ -2563,10 +2593,9 @@
                                             </div>
                                             <div class="col text-center">
                                                 <span
-                                                    onclick="return document.querySelector('form.form-sengketa3').submit()"
+                                                    onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                     style="cursor:pointer"><i class="fa-solid fa-play text-danger"></i>
-                                                    Lihat Podcast
-                                                    (9)</span>
+                                                    Lihat Video</span>
                                             </div>
                                         </div>
 
@@ -2640,7 +2669,7 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid PP-001 <img
+                                                <h5 class="mb-0 text-center">Kode Lelang LL-003 <img
                                                         src="http://localhost:8000/uploads/biru_centang.png" alt=""
                                                         class="mb-1" style="height:20px"></h5>
                                             </div>
@@ -2648,15 +2677,30 @@
                                     </div>
 
                                     <div class="card-body">
+                                        <b>
+                                            Rp.200.000.000
+                                        </b>
                                         <table>
                                             <tbody>
+                                                </tr>
                                                 <tr>
-                                                    <td>Owner/Korban</td>
+                                                    <td>Owner</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp; Ophelia Suartini</td>
                                                 </tr>
-
+                                                <tr>
+                                                    <td>Peruntukan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Permukiman</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jenis Lahan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Tanah Darat</td>
+                                                </tr>
                                                 <tr>
                                                     <td>Luas Objek</td>
                                                     <td></td>
@@ -2669,12 +2713,7 @@
                                                     <td>:</td>
                                                     <td>&nbsp; Medan, Sumatra Utara</td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Harga</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Rp.200.000.000</td>
-                                                </tr>
+
 
 
 
@@ -2694,7 +2733,7 @@
 
                                                 <a href="#" class="text-dark  mx-auto" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas (12)
+                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                 </a>
 
 
@@ -2725,10 +2764,9 @@
                                             </div>
                                             <div class="col text-center">
                                                 <span
-                                                    onclick="return document.querySelector('form.form-sengketa3').submit()"
+                                                    onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                     style="cursor:pointer"><i class="fa-solid fa-play text-danger"></i>
-                                                    Lihat Podcast
-                                                    (9)</span>
+                                                    Lihat Video</span>
                                             </div>
                                         </div>
 
@@ -2840,7 +2878,7 @@
                                     <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid SP-001 <img
+                                                <h5 class="mb-0 text-center">Kode Bidang KSL-004 <img
                                                         src="https://sengketatanah.id/uploads/biru_centang.png" alt=""
                                                         class="mb-1" style="height:20px"></h5>
                                             </div>
@@ -2853,19 +2891,30 @@
 
 
 
+                                        <b>
+                                            Rp.450.000.000
+                                        </b>
                                         <table>
                                             <tbody>
+                                                </tr>
+
                                                 <tr>
-                                                    <td>Owner/Korban</td>
+                                                    <td>Owner</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp; Bahru</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Objek Sengketa</td>
+                                                    <td>Peruntukan</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp; Sengketa Pertanahan</td>
+                                                    <td>&nbsp;Permukiman</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jenis Lahan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Tanah Darat</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Luas Objek</td>
@@ -2879,26 +2928,7 @@
                                                     <td>:</td>
                                                     <td>&nbsp; Pancawati, Bogor</td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Kebutuhan Dana</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Rp.450.000.000</td>
-                                                </tr>
 
-                                                <tr>
-                                                    <td>Imbal Hasil</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Fee 50% Dari Pinjaman</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jaminan</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Sertifikat Tanah</td>
-
-                                                </tr>
 
                                                 <tr>
                                                     <td>Jumlah Bid</td>
@@ -2916,7 +2946,7 @@
 
                                                 <a href="#" class="text-dark  mx-auto" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas (12)
+                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                 </a>
 
 
@@ -2949,11 +2979,9 @@
                                                 <span
                                                     onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                     style="cursor:pointer"><i class="fa-solid fa-play text-danger"></i>
-                                                    Lihat Podcast
-                                                    (9)</span>
+                                                    Lihat Video</span>
                                             </div>
                                         </div>
-
                                         <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1"
                                             method="get">
                                             <input type="hidden" name="owner" value=" Bahru">
@@ -3027,7 +3055,7 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid KP-001 <img
+                                                <h5 class="mb-0 text-center">Kode Bidang KSL-001 <img
                                                         src="http://localhost:8000/uploads/biru_centang.png" alt=""
                                                         class="mb-1" style="height:20px"></h5>
                                             </div>
@@ -3036,19 +3064,30 @@
 
                                     <div class="card-body">
 
+                                        <b>
+                                            Rp.500.000.000
+                                        </b>
+
                                         <table>
                                             <tbody>
+                                                </tr>
                                                 <tr>
-                                                    <td>Owner/Korban</td>
+                                                    <td>Owner</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp; Fatah</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Objek Sengketa</td>
+                                                    <td>Peruntukan</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp; Konflik Pertanahan</td>
+                                                    <td>&nbsp;Permukiman</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jenis Lahan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Tanah Darat</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Luas Objek</td>
@@ -3062,26 +3101,8 @@
                                                     <td>:</td>
                                                     <td>&nbsp; Pancawati, Bogor</td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Kebutuhan Dana</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Rp.500.000.000</td>
-                                                </tr>
 
-                                                <tr>
-                                                    <td>Imbal Hasil</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Bagi Hasil 70/30*</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jaminan</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Sertifikat Rumah</td>
 
-                                                </tr>
 
                                                 <tr>
                                                     <td>Jumlah Bid</td>
@@ -3094,12 +3115,13 @@
                                         <hr>
 
 
+
                                         <div class="row g-0">
                                             <div class="col text-center" style="border-right: 1px solid">
 
                                                 <a href="#" class="text-dark  mx-auto" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas (12)
+                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                 </a>
 
 
@@ -3130,10 +3152,9 @@
                                             </div>
                                             <div class="col text-center">
                                                 <span
-                                                    onclick="return document.querySelector('form.form-sengketa2').submit()"
+                                                    onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                     style="cursor:pointer"><i class="fa-solid fa-play text-danger"></i>
-                                                    Lihat Podcast
-                                                    (9)</span>
+                                                    Lihat Video</span>
                                             </div>
                                         </div>
 
@@ -3208,7 +3229,7 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid PP-001 <img
+                                                <h5 class="mb-0 text-center">Kode Bidang KSL-002 <img
                                                         src="http://localhost:8000/uploads/biru_centang.png" alt=""
                                                         class="mb-1" style="height:20px"></h5>
                                             </div>
@@ -3216,19 +3237,29 @@
                                     </div>
 
                                     <div class="card-body">
+                                        <b>
+                                            Rp.200.000.000
+                                        </b>
                                         <table>
                                             <tbody>
+                                                </tr>
                                                 <tr>
-                                                    <td>Owner/Korban</td>
+                                                    <td>Owner</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp; Ophelia Suartini</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Objek Sengketa</td>
+                                                    <td>Peruntukan</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp; Perkara Pertanahan</td>
+                                                    <td>&nbsp;Permukiman</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jenis Lahan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Tanah Darat</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Luas Objek</td>
@@ -3242,26 +3273,9 @@
                                                     <td>:</td>
                                                     <td>&nbsp; Medan, Sumatra Utara</td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Kebutuhan Dana</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Rp.200.000.000</td>
-                                                </tr>
 
-                                                <tr>
-                                                    <td>Imbal Hasil</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Bagi Hasil 60/40*</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jaminan</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Sertifikat Tanah</td>
 
-                                                </tr>
+
 
                                                 <tr>
                                                     <td>Jumlah Bid</td>
@@ -3274,12 +3288,13 @@
                                         <hr>
 
 
+
                                         <div class="row g-0">
                                             <div class="col text-center" style="border-right: 1px solid">
 
                                                 <a href="#" class="text-dark  mx-auto" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas (12)
+                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                 </a>
 
 
@@ -3310,10 +3325,9 @@
                                             </div>
                                             <div class="col text-center">
                                                 <span
-                                                    onclick="return document.querySelector('form.form-sengketa3').submit()"
+                                                    onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                     style="cursor:pointer"><i class="fa-solid fa-play text-danger"></i>
-                                                    Lihat Podcast
-                                                    (9)</span>
+                                                    Lihat Video</span>
                                             </div>
                                         </div>
 
@@ -3387,7 +3401,7 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid PP-001 <img
+                                                <h5 class="mb-0 text-center">Kode Bidang KSL-003 <img
                                                         src="http://localhost:8000/uploads/biru_centang.png" alt=""
                                                         class="mb-1" style="height:20px"></h5>
                                             </div>
@@ -3395,19 +3409,29 @@
                                     </div>
 
                                     <div class="card-body">
+                                        <b>
+                                            Rp.200.000.000
+                                        </b>
                                         <table>
                                             <tbody>
+                                                </tr>
                                                 <tr>
-                                                    <td>Owner/Korban</td>
+                                                    <td>Owner</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp; Ophelia Suartini</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Objek Sengketa</td>
+                                                    <td>Peruntukan</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp; Perkara Pertanahan</td>
+                                                    <td>&nbsp;Permukiman</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jenis Lahan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Tanah Darat</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Luas Objek</td>
@@ -3421,26 +3445,9 @@
                                                     <td>:</td>
                                                     <td>&nbsp; Medan, Sumatra Utara</td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Kebutuhan Dana</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Rp.200.000.000</td>
-                                                </tr>
 
-                                                <tr>
-                                                    <td>Imbal Hasil</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Bagi Hasil 60/40*</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jaminan</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Sertifikat Tanah</td>
 
-                                                </tr>
+
 
                                                 <tr>
                                                     <td>Jumlah Bid</td>
@@ -3458,7 +3465,7 @@
 
                                                 <a href="#" class="text-dark  mx-auto" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas (12)
+                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                 </a>
 
 
@@ -3489,10 +3496,9 @@
                                             </div>
                                             <div class="col text-center">
                                                 <span
-                                                    onclick="return document.querySelector('form.form-sengketa3').submit()"
+                                                    onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                     style="cursor:pointer"><i class="fa-solid fa-play text-danger"></i>
-                                                    Lihat Podcast
-                                                    (9)</span>
+                                                    Lihat Video</span>
                                             </div>
                                         </div>
 
@@ -3636,36 +3642,51 @@
 
                 <div class="row mt-2 justify-content-between" id="lelang-card"
                     style="overflow-x: auto; flex-wrap: nowrap">
-
                     <div class="col-12 ">
                                 <div class="card mx-auto" style="width: 21rem;">
-                                <img src="{{asset('')}}images/lahan1.jpeg" class="card-img-top" alt="..."
+                                    <img src="{{asset('')}}images/lahan1.jpeg" class="card-img-top" alt="..."
                                         style="height:200px;width:auto;object-fit:cover">
                                     <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid SP-001 <img
+                                                <h5 class="mb-0 text-center">Kode Lahan JBL-004 <img
                                                         src="https://sengketatanah.id/uploads/biru_centang.png" alt=""
                                                         class="mb-1" style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
-                                 
+
 
                                     <div class="card-body">
 
-                                    
 
 
+
+                                      <b>
+                                      Rp.450.000.000
+                                      </b>
                                         <table>
                                             <tbody>
+                                                </tr>
+
                                                 <tr>
-                                                    <td>Owner/Korban</td>
+                                                    <td>Owner</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp; Bahru</td>
                                                 </tr>
-                                              
+                                                <tr>
+                                                    <td>Peruntukan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Permukiman</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jenis Lahan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Tanah Darat</td>
+                                                </tr>
                                                 <tr>
                                                     <td>Luas Objek</td>
                                                     <td></td>
@@ -3678,14 +3699,8 @@
                                                     <td>:</td>
                                                     <td>&nbsp; Pancawati, Bogor</td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Harga</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Rp.450.000.000</td>
-                                                </tr>
+                                               
 
-                                              
                                                 <tr>
                                                     <td>Jumlah Bid</td>
                                                     <td></td>
@@ -3702,7 +3717,7 @@
 
                                                 <a href="#" class="text-dark  mx-auto" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas (12)
+                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                 </a>
 
 
@@ -3735,11 +3750,9 @@
                                                 <span
                                                     onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                     style="cursor:pointer"><i class="fa-solid fa-play text-danger"></i>
-                                                    Lihat Podcast
-                                                    (9)</span>
+                                                    Lihat Video</span>
                                             </div>
                                         </div>
-
                                         <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1"
                                             method="get">
                                             <input type="hidden" name="owner" value=" Bahru">
@@ -3806,14 +3819,14 @@
 
                             <div class="col-12">
                                 <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                <img src="{{asset('')}}images/lahan2.jpeg" class="card-img-top" alt="..."
+                                    <img src="{{asset('')}}images/lahan2.jpeg" class="card-img-top" alt="..."
                                         style="height:200px;width:auto;object-fit:cover">
                                     <div class="card-header text-white px-3 py-1" style="
                                     background: #8f8f8f">
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid KP-001 <img
+                                                <h5 class="mb-0 text-center">Kode Lahan JBL-001 <img
                                                         src="http://localhost:8000/uploads/biru_centang.png" alt=""
                                                         class="mb-1" style="height:20px"></h5>
                                             </div>
@@ -3822,15 +3835,31 @@
 
                                     <div class="card-body">
 
+                                      <b>
+                                      Rp.500.000.000
+                                      </b> 
+
                                         <table>
                                             <tbody>
+                                                </tr>
                                                 <tr>
-                                                    <td>Owner/Korban</td>
+                                                    <td>Owner</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp; Fatah</td>
                                                 </tr>
-                                           
+                                                <tr>
+                                                    <td>Peruntukan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Permukiman</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jenis Lahan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Tanah Darat</td>
+                                                </tr>
                                                 <tr>
                                                     <td>Luas Objek</td>
                                                     <td></td>
@@ -3843,14 +3872,9 @@
                                                     <td>:</td>
                                                     <td>&nbsp; Pancawati, Bogor</td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Harga</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Rp.500.000.000</td>
-                                                </tr>
+                                                
 
-                                            
+
                                                 <tr>
                                                     <td>Jumlah Bid</td>
                                                     <td></td>
@@ -3862,12 +3886,13 @@
                                         <hr>
 
 
+                                   
                                         <div class="row g-0">
                                             <div class="col text-center" style="border-right: 1px solid">
 
                                                 <a href="#" class="text-dark  mx-auto" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas (12)
+                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                 </a>
 
 
@@ -3898,10 +3923,9 @@
                                             </div>
                                             <div class="col text-center">
                                                 <span
-                                                    onclick="return document.querySelector('form.form-sengketa2').submit()"
+                                                    onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                     style="cursor:pointer"><i class="fa-solid fa-play text-danger"></i>
-                                                    Lihat Podcast
-                                                    (9)</span>
+                                                    Lihat Video</span>
                                             </div>
                                         </div>
 
@@ -3969,14 +3993,14 @@
 
                             <div class="col-12">
                                 <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                <img src="{{asset('')}}images/lahan3.jpeg" class="card-img-top" alt="..."
+                                    <img src="{{asset('')}}images/lahan3.jpeg" class="card-img-top" alt="..."
                                         style="height:200px;width:auto;object-fit:cover">
                                     <div class="card-header text-white px-3 py-1" style="
                                     background: #8f8f8f">
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid PP-001 <img
+                                                <h5 class="mb-0 text-center">Kode Lahan JBL-002 <img
                                                         src="http://localhost:8000/uploads/biru_centang.png" alt=""
                                                         class="mb-1" style="height:20px"></h5>
                                             </div>
@@ -3984,15 +4008,30 @@
                                     </div>
 
                                     <div class="card-body">
+                                       <b>
+                                       Rp.200.000.000
+                                       </b> 
                                         <table>
                                             <tbody>
+                                                </tr>
                                                 <tr>
-                                                    <td>Owner/Korban</td>
+                                                    <td>Owner</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp; Ophelia Suartini</td>
                                                 </tr>
-                                              
+                                                <tr>
+                                                    <td>Peruntukan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Permukiman</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jenis Lahan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Tanah Darat</td>
+                                                </tr>
                                                 <tr>
                                                     <td>Luas Objek</td>
                                                     <td></td>
@@ -4005,14 +4044,9 @@
                                                     <td>:</td>
                                                     <td>&nbsp; Medan, Sumatra Utara</td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Harga</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Rp.200.000.000</td>
-                                                </tr>
-
                                               
+
+
 
                                                 <tr>
                                                     <td>Jumlah Bid</td>
@@ -4025,12 +4059,13 @@
                                         <hr>
 
 
+                                   
                                         <div class="row g-0">
                                             <div class="col text-center" style="border-right: 1px solid">
 
                                                 <a href="#" class="text-dark  mx-auto" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas (12)
+                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                 </a>
 
 
@@ -4061,10 +4096,9 @@
                                             </div>
                                             <div class="col text-center">
                                                 <span
-                                                    onclick="return document.querySelector('form.form-sengketa3').submit()"
+                                                    onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                     style="cursor:pointer"><i class="fa-solid fa-play text-danger"></i>
-                                                    Lihat Podcast
-                                                    (9)</span>
+                                                    Lihat Video</span>
                                             </div>
                                         </div>
 
@@ -4130,15 +4164,15 @@
                             </div>
                             <div class="col-12">
                                 <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                <img src="{{asset('')}}images/lahan4.jpeg" class="card-img-top" alt="..."
+                                    <img src="{{asset('')}}images/lahan4.jpeg" class="card-img-top" alt="..."
                                         style="height:200px;width:auto;object-fit:cover">
-                                      
+
                                     <div class="card-header text-white px-3 py-1" style="
                                     background: #8f8f8f">
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid PP-001 <img
+                                                <h5 class="mb-0 text-center">Kode Lahan JBL-003 <img
                                                         src="http://localhost:8000/uploads/biru_centang.png" alt=""
                                                         class="mb-1" style="height:20px"></h5>
                                             </div>
@@ -4146,15 +4180,30 @@
                                     </div>
 
                                     <div class="card-body">
+                                      <b>
+                                      Rp.200.000.000
+                                      </b>
                                         <table>
                                             <tbody>
+                                                </tr>
                                                 <tr>
-                                                    <td>Owner/Korban</td>
+                                                    <td>Owner</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp; Ophelia Suartini</td>
                                                 </tr>
-                                             
+                                                <tr>
+                                                    <td>Peruntukan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Permukiman</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jenis Lahan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Tanah Darat</td>
+                                                </tr>
                                                 <tr>
                                                     <td>Luas Objek</td>
                                                     <td></td>
@@ -4167,14 +4216,9 @@
                                                     <td>:</td>
                                                     <td>&nbsp; Medan, Sumatra Utara</td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Harga</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Rp.200.000.000</td>
-                                                </tr>
+                                                
 
-                                             
+
 
                                                 <tr>
                                                     <td>Jumlah Bid</td>
@@ -4192,7 +4236,7 @@
 
                                                 <a href="#" class="text-dark  mx-auto" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas (12)
+                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                 </a>
 
 
@@ -4223,10 +4267,9 @@
                                             </div>
                                             <div class="col text-center">
                                                 <span
-                                                    onclick="return document.querySelector('form.form-sengketa3').submit()"
+                                                    onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                     style="cursor:pointer"><i class="fa-solid fa-play text-danger"></i>
-                                                    Lihat Podcast
-                                                    (9)</span>
+                                                    Lihat Video</span>
                                             </div>
                                         </div>
 
@@ -4290,7 +4333,6 @@
                                     </div>
                                 </div>
                             </div>
-
 
                 </div>
 
