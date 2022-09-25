@@ -495,6 +495,7 @@
 
         table {
             width: 100%;
+            text-align: start
         }
 
     </style>
@@ -1446,7 +1447,7 @@
 
                     </div>
 
-                    <div class="card-body" style="background-color:#F6D471;">
+                    <div class="card-body" style="background-color:#FAFAD2;">
 
                         <div class="row align-items-center justify-content-center">
 
@@ -2271,7 +2272,7 @@
 
                     </div>
 
-                    <div class="card-body" style="background-color:#F6D471;">
+                    <div class="card-body" style="background-color:#FAFAD2;">
 
 
                         <div class="row align-items-center justify-content-center">
@@ -3165,7 +3166,7 @@
 
                     </div>
 
-                    <div class="card-body" style="background-color:#F6D471;">
+                    <div class="card-body" style="background-color:#FAFAD2;">
 
                         <div class="row align-items-center justify-content-center">
 
@@ -4006,13 +4007,13 @@
                             <tr>
                                 <td>
                                     <p class="mb-0">Berakhir Dalam <span class="badge bg-danger"><i
-                                                class="fa-solid fa-clock"></i>01:08:59</span></p>
+                                                class="fa-solid fa-clock"></i> &nbsp;01:08:59</span></p>
                                 </td>
                             </tr>
                         </table>
                     </div>
 
-                    <div class="card-body" style="background-color:#F6D471;">
+                    <div class="card-body" style="background-color:#FAFAD2;">
 
                         <div class="row align-items-center justify-content-center">
 
@@ -4836,8 +4837,36 @@
 
             </div>
         </div>
+        <style>
+            .store {
+                width: 151px;
+            }
+            .appstore {
+                width: 120px;
+                margin-left: 10px
+            }
+            @media screen and (min-width: 768px){
+                .store {
+                    width: 216px;
+                }
+                .appstore {
+                    width: 185px;
+                }
+            }
+        </style>
 
+        <div class="row" style="background: #926c2a">
+            <div class="col-12 mt-2 text-white" style="margin-left: 12px">
+                <b>Download Aplikasinya!</b>
+                <p class="fw-lighter">Situs Jual Beli Properti Online No. 1 di Indonesia</p>
+            </div>
+            <div class="col-12 mb-2 mt-1">
+                <a href="#"><img src="{{asset('/')}}uploads/google-play-badge.png" class="store" alt=""></a>
+                <a href="#"><img src="{{asset('/')}}uploads/appstore-badge.png" class="appstore" alt=""></a>
+            </div>
+        </div>
 
+        
 
         <div class="row justify-content-center mb-3 mt-4 text-center g-0">
             <p class="fw-bold text-center" style="text-align: justify">Ikuti Sosial Media Kami</a></p>
@@ -5166,11 +5195,10 @@
 
         </div>
 
-        <div id="fb-root"></div>
         <script async defer crossorigin="anonymous"
             src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0" nonce="Ee2Zutm6"></script>
         <div class="row mt-4">
-            <div class="card-body bg-dark text-white text-center">
+            <div class="card-body text-white text-center" style="background: #61481C">
                 <p></p>
                 <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
                 <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
