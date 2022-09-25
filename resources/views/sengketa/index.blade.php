@@ -1581,7 +1581,7 @@
 
                             <div class="col-12">
                                 <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                <img src="{{asset('')}}images/lahan1.jpeg" class="card-img-top" alt="..."
+                                <img src="{{asset('')}}images/lahan2.jpeg" class="card-img-top" alt="..."
                                         style="height:200px;width:auto;object-fit:cover">
                                     <div class="card-header text-white px-3 py-1" style="
                                     background: #8f8f8f">
@@ -1762,7 +1762,7 @@
 
                             <div class="col-12">
                                 <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                <img src="{{asset('')}}images/lahan1.jpeg" class="card-img-top" alt="..."
+                                <img src="{{asset('')}}images/lahan3.jpeg" class="card-img-top" alt="..."
                                         style="height:200px;width:auto;object-fit:cover">
                                     <div class="card-header text-white px-3 py-1" style="
                                     background: #8f8f8f">
@@ -1962,7 +1962,7 @@
                             style="overflow-x: auto; flex-wrap: nowrap">
                             <div class="col">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="{{asset('')}}images/lahan1.jpeg" class="card-img-top" alt="..."
+                                    <img src="{{asset('')}}images/lahan4.jpeg" class="card-img-top" alt="..."
                                         style="height:200px;width:auto;object-fit:cover">
                                     <div class="card-body">
                                         <h5 class="card-title">Rp. 600.000.000</h5>
