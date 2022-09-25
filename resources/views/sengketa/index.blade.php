@@ -5087,7 +5087,7 @@
                     </b>
                 </h6>
                 <p style="font-size: small;">
-                    Jual dan beli lahan lebih mudah dan cepat di seluruh wilayah Indonesia dengan platform sengketatanah.id yang efisien dan praktis
+                    Jual dan beli lahan lebih mudah dan cepat di seluruh wilayah Indonesia dengan platform sengketatanah.id yang efisien dan praktis.
                 </p>
                 <a href="{{url('')}}/jual-beli-lahan" class="text-info" style="text-decoration:none">Bergabung</a>
             </div>
