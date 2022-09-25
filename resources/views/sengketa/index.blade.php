@@ -2914,7 +2914,7 @@
                                 </td>
                                 <td>
                                     <h5 color="text-dark">
-                                        &nbsp;Podcast Sengketa Tanah</h5>
+                                        &nbsp;Podcast Sengketa</h5>
                                 </td>
 
                             </tr>
