@@ -5039,7 +5039,7 @@
                 <p style="font-size: small;">
                     Kami membantu para pemilik lahan tidur untuk di kerjasamakan agar bisa menghasilkan.
                 </p>
-                <a href="#" class="text-info" style="text-decoration:none">Cari Lahan ></a>
+                <a href="#" class="text-info" style="text-decoration:none">Pelajari lebih lanjut ></a>
             </div>
         </div>
     </div>
