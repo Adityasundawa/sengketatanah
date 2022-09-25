@@ -116,7 +116,7 @@ $project_di_setujui = KorbanUser::where([
         <div class="row">
             @foreach ($sengketa as $item)
 
-            @if ($item['status_sengketa'] != 4)
+            @if ($item['status_sengketa'] != 5)
             <?php $users = User::where('id',$item['user_id'])->first(); ?>
             <div class="col-lg-6">
                 <div class="card">
