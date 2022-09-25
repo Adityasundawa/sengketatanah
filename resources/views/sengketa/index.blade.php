@@ -4975,7 +4975,7 @@
             }
         </style>
 <h5>
-    Kenapa SengketaTanah.id ?
+    Kenapa Sengketatanah.id ?
 </h5>
 <style>
     .icon-wrapper {
@@ -5015,13 +5015,13 @@
                 </div>
                 <h6 class="mt-1">
                     <b>
-                        Lorem ipsum dolor sit.
+                        Membantu Penyelesaian Sengketa Tanah
                     </b>
                 </h6>
                 <p style="font-size: small;">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, adipisci?
+                   Kami mempertemukan korban sengketa tanah yang membutuhkan bantuan pendanaan sponsor, pengacara atau pemerintah.
                 </p>
-                <a href="#" class="text-info" style="text-decoration:none">Cari Lahan ></a>
+                <a href="#" class="text-info" style="text-decoration:none">Pelajari lebih lanjut ></a>
             </div>
         </div>
     </div>
@@ -5040,11 +5040,11 @@
                 </div>
                 <h6 class="mt-1">
                     <b>
-                        Lorem ipsum dolor sit.
+                        Membantu Korban Sengketa Tanah
                     </b>
                 </h6>
                 <p style="font-size: small;">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, adipisci?
+                    Kami membantu para pemilik lahan tidur untuk di kerjasamakan agar bisa menghasilkan.
                 </p>
                 <a href="#" class="text-info" style="text-decoration:none">Cari Lahan ></a>
             </div>
