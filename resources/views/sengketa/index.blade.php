@@ -3028,8 +3028,7 @@
 }
 .vid-item {
 	display: block;
-	width: 148px;
-	height: 148px;
+	width: 200px;
 	float: left;
 	margin: 0;
 	padding: 10px;
@@ -3037,7 +3036,6 @@
 
 .thumb {
 	overflow:hidden;
-	height: 84px;
 }
 
 .thumb img {
@@ -3049,7 +3047,6 @@
 .vid-item .desc {
 	color: #21A1D2;
 	font-size: 15px;
-	margin-top:5px;
 }
 .arrows {
 	position:relative;
@@ -3079,19 +3076,29 @@
 }
 @media (max-width: 624px) {
 	.arrows {
-		position:relative;
-		margin: 0 auto;
-		width:96px;
+		display: none;
 	}
 	.arrow-left {
-		left: 0;
-		top: -20px;
+        display: none;
 	}
 
 	.arrow-right {
-		right: 0;
-		top: -20px;
+        display: none;
 	}
+
+    .vid-list-container {
+    	overflow: scroll;
+        flex-wrap: wrap;
+        display: flex;
+        height: 200px;
+        margin-left: 0%;
+    }
+
+    .vid-item {
+        margin-bottom: 10px;
+        padding-left: 0px;
+        border-bottom: 1px solid white
+    }
 }
 </style>
 
