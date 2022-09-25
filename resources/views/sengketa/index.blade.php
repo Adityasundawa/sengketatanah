@@ -575,11 +575,8 @@
             </div>
             <div class="col-md text-center my-auto mt-3">
                 <h1>Solusi Untuk Anda</h1>
-                <h3>Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
-                    pemerintah.</h3>
-                <p>Platform Sengketa Tanah adalah inovator teknologi dalam bidang Sengketa
-                    pertanahan di Indonesia yang mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
-                    pemerintah.</p>
+                <h3>"Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
+                    pemerintah dalam satu platform."</h3>
 
             </div>
         </div>
