@@ -426,6 +426,9 @@
         .mobile {
             display: none;
         }
+        .desktop-2 {
+                display: block;
+            }
 
         @media (max-width: 1000px) {
             .mobile {
@@ -433,6 +436,9 @@
             }
 
             .desktop {
+                display: none;
+            }
+            .desktop-2 {
                 display: none;
             }
         }
@@ -539,8 +545,15 @@
     <div class="text-white rounded-0 jumbotron">
         <div class="row">
             <div class="col-md-12 text-center mt-3">
-                <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 150px" alt="" srcset=""
-                    class="img-fluid">
+                <div class="mobile">
+
+                    <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 100px" alt="" srcset=""
+                        class="img-fluid">
+                </div>
+                <div class="desktop-2">
+                    <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 150px" alt="" srcset=""
+                        class="img-fluid">
+                </div>
             </div>
             <div class="col-md text-center my-auto mt-3">
                 <h1>Solusi Untuk Anda</h1>
@@ -1401,9 +1414,7 @@
                                     <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid SP-001 <img
-                                                        src="https://sengketatanah.id/uploads/biru_centang.png" alt=""
-                                                        class="mb-1" style="height:20px"></h5>
+                                                <h5 class="mb-0 text-center">Kode Bid SP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
                                             </div>
                                         </div>
                                     </div>
@@ -1588,9 +1599,7 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid KP-001 <img
-                                                        src="http://localhost:8000/uploads/biru_centang.png" alt=""
-                                                        class="mb-1" style="height:20px"></h5>
+                                                <h5 class="mb-0 text-center">Kode Bid KP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"> </h5>
                                             </div>
                                         </div>
                                     </div>
@@ -1769,9 +1778,7 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid PP-001 <img
-                                                        src="http://localhost:8000/uploads/biru_centang.png" alt=""
-                                                        class="mb-1" style="height:20px"></h5>
+                                                <h5 class="mb-0 text-center">Kode Bid PP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -1948,9 +1955,7 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid PP-001 <img
-                                                        src="http://localhost:8000/uploads/biru_centang.png" alt=""
-                                                        class="mb-1" style="height:20px"></h5>
+                                                <h5 class="mb-0 text-center">Kode Bid PP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -2150,16 +2155,14 @@
                                     <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bidang JBL-004 <img
-                                                        src="https://sengketatanah.id/uploads/biru_centang.png" alt=""
-                                                        class="mb-1" style="height:20px"></h5>
+                                                <h5 class="mb-0 text-center">Kode Bidang JBL-004 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
 
 
                                     <div class="card-body">
-                                    <div class="row p-0 g-0">
+                                        <div class="row p-0 g-0">
                                             <div class="col-6 p-0 g-0">
                                                 <h5>
                                                     <b>
@@ -2333,15 +2336,13 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bidang JBL-001 <img
-                                                        src="http://localhost:8000/uploads/biru_centang.png" alt=""
-                                                        class="mb-1" style="height:20px"></h5>
+                                                <h5 class="mb-0 text-center">Kode Bidang JBL-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="card-body">
-                                    <div class="row p-0 g-0">
+                                        <div class="row p-0 g-0">
                                             <div class="col-6 p-0 g-0">
                                                 <h5>
                                                     <b>
@@ -2515,15 +2516,13 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bidang JBL-002 <img
-                                                        src="http://localhost:8000/uploads/biru_centang.png" alt=""
-                                                        class="mb-1" style="height:20px"></h5>
+                                                <h5 class="mb-0 text-center">Kode Bidang JBL-002 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="card-body">
-                                    <div class="row p-0 g-0">
+                                        <div class="row p-0 g-0">
                                             <div class="col-6 p-0 g-0">
                                                 <h5>
                                                     <b>
@@ -2697,15 +2696,13 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bidang JBL-003 <img
-                                                        src="http://localhost:8000/uploads/biru_centang.png" alt=""
-                                                        class="mb-1" style="height:20px"></h5>
+                                                <h5 class="mb-0 text-center">Kode Bidang JBL-003 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="card-body">
-                                    <div class="row p-0 g-0">
+                                        <div class="row p-0 g-0">
                                             <div class="col-6 p-0 g-0">
                                                 <h5>
                                                     <b>
@@ -2894,7 +2891,7 @@
                 <!-- podcast Sengketa -->
                 <div class="card mb-3 border-0 shadow-sm ">
                     <div class="card-header bg-white">
-                        <h5 color="text-dark">Podcast Sengketa</h5>
+                        <h5 color="text-dark">Podcast Sengketa Tanah</h5>
                         <p>Total Video <span class="badge bg-danger">10</span>
                             <b class="float-end" style="margin-top:-20px">
                                 <span class="text-success">Lihat Semua</span>
@@ -2960,9 +2957,7 @@
                                     <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bidang KSL-004 <img
-                                                        src="https://sengketatanah.id/uploads/biru_centang.png" alt=""
-                                                        class="mb-1" style="height:20px"></h5>
+                                                <h5 class="mb-0 text-center">Kode Bidang KSL-004 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -2972,19 +2967,8 @@
 
 
 
-                                    <div class="row p-0 g-0">
-                                            <div class="col-6 p-0 g-0">
-                                                <h5>
-                                                    <b>
-                                                        Rp.450.000.000
-                                                    </b>
-                                                </h5>
-                                            </div>
-                                            <div class="col-6 p-0 g-0">
-                                                <button class="btn btn-dark float-end">Tawar</button>
-                                            </div>
-                                        </div>
-                                        <hr style="margin-top:-4px">
+
+
                                         <table>
                                             <tbody>
                                                 </tr>
@@ -3147,26 +3131,15 @@
 
                                             <div class="col-lg-12">
                                                 <h5 class="mb-0 text-center">Kode Bidang KSL-001 <img
-                                                        src="http://localhost:8000/uploads/biru_centang.png" alt=""
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt=""
                                                         class="mb-1" style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="card-body">
-                                    <div class="row p-0 g-0">
-                                            <div class="col-6 p-0 g-0">
-                                                <h5>
-                                                    <b>
-                                                        Rp.500.000.000
-                                                    </b>
-                                                </h5>
-                                            </div>
-                                            <div class="col-6 p-0 g-0">
-                                                <button class="btn btn-dark float-end">Tawar</button>
-                                            </div>
-                                        </div>
-                                        <hr style="margin-top:-4px">
+
+
                                         <table>
                                             <tbody>
                                                 </tr>
@@ -3329,26 +3302,15 @@
 
                                             <div class="col-lg-12">
                                                 <h5 class="mb-0 text-center">Kode Bidang KSL-002 <img
-                                                        src="http://localhost:8000/uploads/biru_centang.png" alt=""
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt=""
                                                         class="mb-1" style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="card-body">
-                                    <div class="row p-0 g-0">
-                                            <div class="col-6 p-0 g-0">
-                                                <h5>
-                                                    <b>
-                                                        Rp.200.000.000
-                                                    </b>
-                                                </h5>
-                                            </div>
-                                            <div class="col-6 p-0 g-0">
-                                                <button class="btn btn-dark float-end">Tawar</button>
-                                            </div>
-                                        </div>
-                                        <hr style="margin-top:-4px">
+
+
                                         <table>
                                             <tbody>
                                                 </tr>
@@ -3511,26 +3473,15 @@
 
                                             <div class="col-lg-12">
                                                 <h5 class="mb-0 text-center">Kode Bidang KSL-003 <img
-                                                        src="http://localhost:8000/uploads/biru_centang.png" alt=""
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt=""
                                                         class="mb-1" style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="card-body">
-                                    <div class="row p-0 g-0">
-                                            <div class="col-6 p-0 g-0">
-                                                <h5>
-                                                    <b>
-                                                        Rp.200.000.000
-                                                    </b>
-                                                </h5>
-                                            </div>
-                                            <div class="col-6 p-0 g-0">
-                                                <button class="btn btn-dark float-end">Tawar</button>
-                                            </div>
-                                        </div>
-                                        <hr style="margin-top:-4px">
+
+
                                         <table>
                                             <tbody>
                                                 </tr>
@@ -3724,7 +3675,7 @@
 
 
 
-                                    <div class="row p-0 g-0">
+                                        <div class="row p-0 g-0">
                                             <div class="col-6 p-0 g-0">
                                                 <h5>
                                                     <b>
@@ -3899,14 +3850,14 @@
 
                                             <div class="col-lg-12">
                                                 <h5 class="mb-0 text-center">Kode Lelang LL-001 <img
-                                                        src="http://localhost:8000/uploads/biru_centang.png" alt=""
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt=""
                                                         class="mb-1" style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="card-body">
-                                    <div class="row p-0 g-0">
+                                        <div class="row p-0 g-0">
                                             <div class="col-6 p-0 g-0">
                                                 <h5>
                                                     <b>
@@ -4082,7 +4033,7 @@
 
                                             <div class="col-lg-12">
                                                 <h5 class="mb-0 text-center">Kode Lelang LL-002 <img
-                                                        src="http://localhost:8000/uploads/biru_centang.png" alt=""
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt=""
                                                         class="mb-1" style="height:20px"></h5>
                                             </div>
                                         </div>
@@ -4264,14 +4215,14 @@
 
                                             <div class="col-lg-12">
                                                 <h5 class="mb-0 text-center">Kode Lelang LL-003 <img
-                                                        src="http://localhost:8000/uploads/biru_centang.png" alt=""
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt=""
                                                         class="mb-1" style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="card-body">
-                                    <div class="row p-0 g-0">
+                                        <div class="row p-0 g-0">
                                             <div class="col-6 p-0 g-0">
                                                 <h5>
                                                     <b>
