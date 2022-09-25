@@ -12,7 +12,6 @@ class EmailController extends Controller
     public function sendEmail(Request $request)
     {
         $details = [
-          
             'otp' =>rand(1000,9999)
             ];
             Mail::to($request->email)->send(new OtpEmail($details));
