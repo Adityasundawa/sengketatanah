@@ -2159,12 +2159,19 @@
 
 
                                     <div class="card-body">
-                                        <h5>
-                                            <b>
-                                                Rp.450.000.000
-                                            </b>
-                                        </h5>
-                                        <hr>
+                                    <div class="row p-0 g-0">
+                                            <div class="col-6 p-0 g-0">
+                                                <h5>
+                                                    <b>
+                                                        Rp.450.000.000
+                                                    </b>
+                                                </h5>
+                                            </div>
+                                            <div class="col-6 p-0 g-0">
+                                                <button class="btn btn-dark float-end">Tawar</button>
+                                            </div>
+                                        </div>
+                                        <hr style="margin-top:-4px">
                                         <table>
                                             <tbody>
                                                 </tr>
@@ -2334,13 +2341,19 @@
                                     </div>
 
                                     <div class="card-body">
-                                        <h5>
-
-                                            <b>
-                                                Rp.500.000.000
-                                            </b>
-                                        </h5>
-                                        <hr>
+                                    <div class="row p-0 g-0">
+                                            <div class="col-6 p-0 g-0">
+                                                <h5>
+                                                    <b>
+                                                        Rp.500.000.000
+                                                    </b>
+                                                </h5>
+                                            </div>
+                                            <div class="col-6 p-0 g-0">
+                                                <button class="btn btn-dark float-end">Tawar</button>
+                                            </div>
+                                        </div>
+                                        <hr style="margin-top:-4px">
                                         <table>
                                             <tbody>
                                                 </tr>
@@ -2510,12 +2523,19 @@
                                     </div>
 
                                     <div class="card-body">
-                                        <h5>
-                                            <b>
-                                                Rp.200.000.000
-                                            </b>
-                                        </h5>
-                                        <hr>
+                                    <div class="row p-0 g-0">
+                                            <div class="col-6 p-0 g-0">
+                                                <h5>
+                                                    <b>
+                                                        Rp.200.000.000
+                                                    </b>
+                                                </h5>
+                                            </div>
+                                            <div class="col-6 p-0 g-0">
+                                                <button class="btn btn-dark float-end">Tawar</button>
+                                            </div>
+                                        </div>
+                                        <hr style="margin-top:-4px">
                                         <table>
                                             <tbody>
                                                 </tr>
@@ -2685,12 +2705,19 @@
                                     </div>
 
                                     <div class="card-body">
-                                        <h5>
-                                            <b>
-                                                Rp.200.000.000
-                                            </b>
-                                        </h5>
-                                        <hr>
+                                    <div class="row p-0 g-0">
+                                            <div class="col-6 p-0 g-0">
+                                                <h5>
+                                                    <b>
+                                                        Rp.200.000.000
+                                                    </b>
+                                                </h5>
+                                            </div>
+                                            <div class="col-6 p-0 g-0">
+                                                <button class="btn btn-dark float-end">Tawar</button>
+                                            </div>
+                                        </div>
+                                        <hr style="margin-top:-4px">
                                         <table>
                                             <tbody>
                                                 </tr>
@@ -2945,12 +2972,19 @@
 
 
 
-                                        <h5>
-                                            <b>
-                                                Rp.450.000.000
-                                            </b>
-                                        </h5>
-                                        <hr>
+                                    <div class="row p-0 g-0">
+                                            <div class="col-6 p-0 g-0">
+                                                <h5>
+                                                    <b>
+                                                        Rp.450.000.000
+                                                    </b>
+                                                </h5>
+                                            </div>
+                                            <div class="col-6 p-0 g-0">
+                                                <button class="btn btn-dark float-end">Tawar</button>
+                                            </div>
+                                        </div>
+                                        <hr style="margin-top:-4px">
                                         <table>
                                             <tbody>
                                                 </tr>
@@ -3120,12 +3154,19 @@
                                     </div>
 
                                     <div class="card-body">
-                                        <h5>
-                                            <b>
-                                                Rp.500.000.000
-                                            </b>
-                                        </h5>
-                                        <hr>
+                                    <div class="row p-0 g-0">
+                                            <div class="col-6 p-0 g-0">
+                                                <h5>
+                                                    <b>
+                                                        Rp.500.000.000
+                                                    </b>
+                                                </h5>
+                                            </div>
+                                            <div class="col-6 p-0 g-0">
+                                                <button class="btn btn-dark float-end">Tawar</button>
+                                            </div>
+                                        </div>
+                                        <hr style="margin-top:-4px">
                                         <table>
                                             <tbody>
                                                 </tr>
@@ -3295,12 +3336,19 @@
                                     </div>
 
                                     <div class="card-body">
-                                        <h5>
-                                            <b>
-                                                Rp.200.000.000
-                                            </b>
-                                        </h5>
-                                        <hr>
+                                    <div class="row p-0 g-0">
+                                            <div class="col-6 p-0 g-0">
+                                                <h5>
+                                                    <b>
+                                                        Rp.200.000.000
+                                                    </b>
+                                                </h5>
+                                            </div>
+                                            <div class="col-6 p-0 g-0">
+                                                <button class="btn btn-dark float-end">Tawar</button>
+                                            </div>
+                                        </div>
+                                        <hr style="margin-top:-4px">
                                         <table>
                                             <tbody>
                                                 </tr>
@@ -3470,12 +3518,19 @@
                                     </div>
 
                                     <div class="card-body">
-                                        <h5>
-                                            <b>
-                                                Rp.200.000.000
-                                            </b>
-                                        </h5>
-                                        <hr>
+                                    <div class="row p-0 g-0">
+                                            <div class="col-6 p-0 g-0">
+                                                <h5>
+                                                    <b>
+                                                        Rp.200.000.000
+                                                    </b>
+                                                </h5>
+                                            </div>
+                                            <div class="col-6 p-0 g-0">
+                                                <button class="btn btn-dark float-end">Tawar</button>
+                                            </div>
+                                        </div>
+                                        <hr style="margin-top:-4px">
                                         <table>
                                             <tbody>
                                                 </tr>
@@ -3669,13 +3724,19 @@
 
 
 
-                                        <h5>
-
-                                            <b>
-                                                Rp.450.000.000
-                                            </b>
-                                        </h5>
-                                        <hr>
+                                    <div class="row p-0 g-0">
+                                            <div class="col-6 p-0 g-0">
+                                                <h5>
+                                                    <b>
+                                                        Rp.450.000.000
+                                                    </b>
+                                                </h5>
+                                            </div>
+                                            <div class="col-6 p-0 g-0">
+                                                <button class="btn btn-dark float-end">Tawar</button>
+                                            </div>
+                                        </div>
+                                        <hr style="margin-top:-4px">
                                         <table>
                                             <tbody>
                                                 </tr>
@@ -3845,13 +3906,19 @@
                                     </div>
 
                                     <div class="card-body">
-                                        <h5>
-
-                                            <b>
-                                                Rp.500.000.000
-                                            </b>
-                                        </h5>
-                                        <hr>
+                                    <div class="row p-0 g-0">
+                                            <div class="col-6 p-0 g-0">
+                                                <h5>
+                                                    <b>
+                                                        Rp.500.000.000
+                                                    </b>
+                                                </h5>
+                                            </div>
+                                            <div class="col-6 p-0 g-0">
+                                                <button class="btn btn-dark float-end">Tawar</button>
+                                            </div>
+                                        </div>
+                                        <hr style="margin-top:-4px">
 
                                         <table>
                                             <tbody>
@@ -4022,12 +4089,19 @@
                                     </div>
 
                                     <div class="card-body">
-                                        <h5>
-                                            <b>
-                                                Rp.200.000.000
-                                            </b>
-                                        </h5>
-                                        <hr>
+                                        <div class="row p-0 g-0">
+                                            <div class="col-6 p-0 g-0">
+                                                <h5>
+                                                    <b>
+                                                        Rp.200.000.000
+                                                    </b>
+                                                </h5>
+                                            </div>
+                                            <div class="col-6 p-0 g-0">
+                                                <button class="btn btn-dark float-end">Tawar</button>
+                                            </div>
+                                        </div>
+                                        <hr style="margin-top:-4px">
                                         <table>
                                             <tbody>
                                                 </tr>
@@ -4197,12 +4271,19 @@
                                     </div>
 
                                     <div class="card-body">
-                                        <h5>
-                                            <b>
-                                                Rp.200.000.000
-                                            </b>
-                                        </h5>
-                                        <hr>
+                                    <div class="row p-0 g-0">
+                                            <div class="col-6 p-0 g-0">
+                                                <h5>
+                                                    <b>
+                                                        Rp.200.000.000
+                                                    </b>
+                                                </h5>
+                                            </div>
+                                            <div class="col-6 p-0 g-0">
+                                                <button class="btn btn-dark float-end">Tawar</button>
+                                            </div>
+                                        </div>
+                                        <hr style="margin-top:-4px">
                                         <table>
                                             <tbody>
                                                 </tr>
