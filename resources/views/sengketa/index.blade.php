@@ -4932,13 +4932,13 @@
                 </div>
                 <h6 class="mt-1">
                     <b>
-                        Membantu Penyelesaian Sengketa Tanah
+                        Membantu Persengketa Tanah
                     </b>
                 </h6>
                 <p style="font-size: small;">
                    Kami mempertemukan korban sengketa tanah yang membutuhkan bantuan pendanaan sponsor, pengacara atau pemerintah.
                 </p>
-                <a href="#" class="text-info" style="text-decoration:none">Pelajari lebih lanjut ></a>
+                <a href="{{url('')}}/bidding-sponsor" class="text-info" style="text-decoration:none">Bergabung</a>
             </div>
         </div>
     </div>
@@ -4963,7 +4963,7 @@
                 <p style="font-size: small;">
                     Kami membantu para pemilik lahan tidur di seluruh Indonesia <br> untuk di kerjasamakan agar bisa produktif dan menghasilkan profit.
                 </p>
-                <a href="#" class="text-info" style="text-decoration:none">Pelajari lebih lanjut ></a>
+                <a href="{{url('')}}/kerjasama-lahan" class="text-info" style="text-decoration:none">Bergabung</a>
             </div>
         </div>
     </div>
@@ -5060,7 +5060,7 @@
                 <p style="font-size: small;">
                     Jual dan beli lahan lebih mudah dan cepat di seluruh wilayah Indonesia dengan platform sengketatanah.id yang efisien dan praktis
                 </p>
-                <a href="#" class="text-info" style="text-decoration:none">Pelajari lebih lanjut ></a>
+                <a href="{{url('')}}/jual-beli-lahan" class="text-info" style="text-decoration:none">Bergabung</a>
             </div>
         </div>
     </div>
@@ -5099,7 +5099,7 @@
                 <p style="font-size: small;">
                     Kami melakukan kerjasama dengan berbagai balai lelang pertanahan dan bangunan. Anda juga bisa menjual lahan dengan sistem lelang disini.
                 </p>
-                <a href="#" class="text-info" style="text-decoration:none">Pelajari lebih lanjut ></a>
+                <a href="{{url('')}}/lelang-lahan" class="text-info" style="text-decoration:none">Bergabung</a>
             </div>
         </div>
     </div>
