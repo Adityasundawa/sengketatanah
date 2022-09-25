@@ -11,9 +11,12 @@ class SengketaController extends Controller
     public function index()
     {
         $data['sengketa'] = SengketaTanah::get();
+        // $data['bid_sengketa'] = $this->data_sengketa();
+        // $data['bid_pengacara'] = $this->data_sengketa_pengacara();
+        // $data['bid_pemerintah'] = $this->data_sengketa_pemerintah();
         $data['bid_sengketa'] = $this->data_sengketa();
-         $data['bid_pengacara'] = $this->data_sengketa_pengacara();
-           $data['bid_pemerintah'] = $this->data_sengketa_pemerintah();
+        $data['bid_pengacara'] = $this->data_sengketa_pengacara();
+        $data['bid_pemerintah'] = $this->data_sengketa_pemerintah();
         return view('sengketa.index',$data);   
     }
     public function store(Request $req)
@@ -43,7 +46,7 @@ class SengketaController extends Controller
             $dokumen = time().$req->file('dokumen_tanah')->getClientOriginalName();
             $req->dokumen_tanah->move(public_path('uploads'), $dokumen);
         }
-         if ($req->file('foto_lokasi')) {
+        if ($req->file('foto_lokasi')) {
             $foto_lokasi = time().$req->file('foto_lokasi')->getClientOriginalName();
             $req->foto_lokasi->move(public_path('uploads'), $foto_lokasi);
         }
@@ -59,9 +62,9 @@ class SengketaController extends Controller
         'lokasi' => $req->lokasi,
         'kronologi' => $req->kronologi,
         'status_laporan' => 1, // 1 = data masuk / mengunggu verifikasi, 2 = Terverfikasi , 3 = Sedang diproses ,4 = Selesai
-       'foto_ktp' => $ktp,
+        'foto_ktp' => $ktp,
         'dokumen_tanah' => $dokumen,
-          'foto_lokasi' => $foto_lokasi,
+        'foto_lokasi' => $foto_lokasi,
        ]);
         return redirect()->back()->with('success','Berhasil Mengirim data sengketa');
     }
@@ -114,7 +117,7 @@ class SengketaController extends Controller
         return view('sengketa.role');
     }
     
-      private function data_sengketa()
+    private function data_sengketa()
     {
         return [
             [
@@ -259,7 +262,8 @@ class SengketaController extends Controller
             ],
         ];
     }
-     private function data_sengketa_pengacara()
+     
+    private function data_sengketa_pengacara()
     {
         return [
             [   
@@ -386,7 +390,7 @@ class SengketaController extends Controller
     }
     
     
-       private function data_sengketa_pemerintah()
+    private function data_sengketa_pemerintah()
     {
         return [
             [
