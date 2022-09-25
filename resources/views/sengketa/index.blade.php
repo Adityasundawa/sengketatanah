@@ -4899,12 +4899,12 @@
     </div>
 </div>
 
-        <div class="row shadow" style="background: white">
-            <div class="col-11 mt-2" style="margin-left: 15px">
+        <div class="row shadow justify-content-center" style="background: white">
+            <div class="col-11 mt-2 text-center" style="margin-left: 15px">
                 <b>Download Aplikasinya!</b>
-                <p class="fw-lighter">Platform Seputar Tanah No. 1 di Indonesia</p>
+                <p class="fw-lighter mb-0">Platform Seputar Tanah No. 1 di Indonesia</p>
             </div>
-            <div class="col-11 mb-2 mt-1">
+            <div class="col-12 mb-2">
                 <a href="#"><img src="{{asset('/')}}uploads/google-play-badge.png" class="store" alt=""></a>
                 <a href="#"><img src="{{asset('/')}}uploads/appstore-badge.png" class="appstore" alt=""></a>
             </div>
