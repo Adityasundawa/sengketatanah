@@ -4899,7 +4899,9 @@
     </div>
 </div>
 
-        <div class="row shadow justify-content-center" style="background: white">
+<hr>
+
+        <div class="row justify-content-center">
             <div class="col-11 mt-2 text-center" style="margin-left: 15px">
                 <b>Download Aplikasinya!</b>
                 <p class="fw-lighter mb-0">Platform Seputar Tanah No. 1 di Indonesia</p>
@@ -4910,9 +4912,10 @@
             </div>
         </div>
 
+        <hr>
         
 
-        <div class="row justify-content-center mb-3 mt-4 text-center g-0">
+        <div class="row justify-content-center mb-3 mt-4 text-center g-0" >
             <p class="fw-bold text-center" style="text-align: justify">Ikuti Sosial Media Kami</a></p>
 
             <div class="col">
