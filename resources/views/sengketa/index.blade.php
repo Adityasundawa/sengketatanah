@@ -3024,7 +3024,7 @@
                     <div class="card-body" style="background-color:#000;">
                         <style>
                             .texto {
-                                font-size: 10px;
+                                font-size: 11px;
                             }
                             @media (min-width: 992px) { 
                                 #vid_frame {
