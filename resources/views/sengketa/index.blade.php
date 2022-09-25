@@ -3097,8 +3097,7 @@
     .vid-item {
         margin-bottom: 10px;
         padding-left: 0px;
-        border-top: 1px solid rgba(255, 255, 255, 0.50)
-        )
+        border-top: 1px solid rgba(255, 255, 255, 0.50);
     }
 }
 </style>
