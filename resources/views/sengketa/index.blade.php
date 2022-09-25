@@ -1268,23 +1268,18 @@
                                         </div>
                                         <div id="carouselExampleControlsPres" class="carousel slide mobile  mb-4"
                                             data-bs-ride="carousel">
-                                            <div class="carousel-inner">
+                                            <div class="carousel-inner  mb-5">
                                                 <div class="carousel-item active">
                                                     <div class="card-body text-center container" style="height:505px">
                                                         <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}"
                                                             style="width:300px; height:400px;object-fit:cover" alt=""
                                                             srcset="" class="img-fluid">
                                                         <div class="card rounded-0"
-                                                            style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);z-index:10">
+                                                            style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);z-index:10">
                                                             <div class="card-body">
                                                                 <p class="card-text">"Presiden Joko Widodo menegaskan
-                                                                    kepada
-                                                                    Kementerian ATR/BPN
-                                                                    untuk
-                                                                    serius dalam memberantas mafia tanah" <br> -<b> Ir.
-                                                                        H. Joko
-                                                                        Widodo (Presiden
-                                                                        RI)</b>
+                                                                    kepada Kementerian ATR/BPN untuk serius dalam memberantas mafia tanah" <br> -<b> 
+                                                                        Ir. H. Joko Widodo (Presiden RI)</b>
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -1297,7 +1292,7 @@
                                                             style="width:300px; height:400px;object-fit:cover" alt=""
                                                             srcset="" class="img-fluid">
                                                         <div class="card rounded-0"
-                                                            style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                            style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                                                             <div class="card-body">
                                                                 <p class="card-text">"Sesuai perintah Bapak Presiden,
                                                                     semua kasus
@@ -1318,7 +1313,7 @@
                                                             style="width:300px; height:400px;object-fit:cover" alt=""
                                                             srcset="" class="img-fluid">
                                                         <div class="card rounded-0"
-                                                            style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                            style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                                                             <div class="card-body">
                                                                 <p class="card-text">"Penyidik tidak perlu ragu ragu
                                                                     dalam mengusut
@@ -1351,67 +1346,7 @@
                                 tanah dengan Sponsor, Kantor hukum, dan Pemerintah untuk menuntaskan masalah
                                 persengketaan tanah
                                 tersebut.
-                                <div class="card mb-3 mt-3">
-                                    <div class="card-body pb-0">
-                                        <div class="row justify-content-between text-center"
-                                            style="overflow-x: auto; flex-wrap: nowrap">
-                                            <div class="col-11 mb-3">
-                                                <div class="card bg-brown h-100">
-                                                    <div
-                                                        class="card-body d-flex align-items-center justify-content-center">
-                                                        <div class="text-center fs-3">
-                                                            Platform Sengketa Tanah memiliki 4 Roles
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-11 mb-3">
-                                                <div class="card bg-danger text-white">
-                                                    <div class="card-body">
-                                                        <h4 class="card-title">
-                                                            1. Pemerintah</h4>
-                                                        <hr>
-                                                        Kementerian ATR/BPN yang menyelenggarakan urusan di bidang
-                                                        agraria/pertanahan dan tata ruang.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-11 mb-3">
-                                                <div class="card bg-primary text-white">
-                                                    <div class="card-body">
-                                                        <h4 class="card-title">2. Korban Sengketa</h4>
-                                                        <hr>
-                                                        Korban adalah orang yang dirugikan, dirampas, atau terancam
-                                                        kehilangan hak atas tanah yang
-                                                        dimilikinya.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-11 mb-3">
-                                                <div class="card bg-success text-white">
-                                                    <div class="card-body">
-                                                        <h4 class="card-title">3. Sponsor</h4>
-                                                        <hr>
-                                                        Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan
-                                                        hukum korban
-                                                        sengketa tanah.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-11 mb-3">
-                                                <div class="card bg-info text-white">
-                                                    <div class="card-body">
-                                                        <h4 class="card-title">4. Pengacara</h4>
-                                                        <hr>
-                                                        Pengacara adalah seorang pribadi atau badan hukum (Law Firm)
-                                                        yang menangani persoalan sengketa
-                                                        tanah.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </ol>
                         </div>
 
