@@ -438,6 +438,26 @@
         }
 
     </style>
+    
+            
+    <style>
+        @media (min-width: 1200px) {
+            .col-12 {
+                width: 33.3333% !important
+            }
+            
+            
+        }
+
+        @media (min-width: 760px) {
+            
+
+            .col-12 {
+                width: 50%
+            }
+            
+        }
+    </style>
 </head>
 
 <body>
@@ -961,29 +981,14 @@
                         </p>
 
                     </div>
-            
-                    <style>
-                        @media (min-width: 1200px) {
-                            .col-12.bid {
-                                width: 50%
-                            }
-                        }
-
-                        @media (min-width: 1200px) {
-                            
-                            .col-12.bid {
-                                width: 33.3333%
-                            }
-                        }
-                    </style>
 
                     <div class="card-body" style="background-color:#F6D471;">
                         
-                        <div class="row mt-2 justify-content-between" id="lelang-card"
+                        <div class="row mt-2" id="lelang-card"
                             style="overflow-x: auto; flex-wrap: nowrap">
 
-                            <div class="col-12 bid">
-                                <div class="card">
+                            <div class="col-12 ">
+                                <div class="card mx-auto" style="width: 21rem;">
                                     <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                         <div class="row">
                                             <div class="col-lg-12">
@@ -1161,8 +1166,8 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 bid">
-                                <div class="card mb-2">
+                            <div class="col-12">
+                                <div class="card mb-2 mx-auto" style="width: 21rem;">
 
                                     <div class="card-header text-white px-3 py-1" style="
                                     background: #8f8f8f">
@@ -1341,8 +1346,8 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 bid">
-                                <div class="card mb-2">
+                            <div class="col-12">
+                                <div class="card mb-2 mx-auto" style="width: 21rem;">
 
                                     <div class="card-header text-white px-3 py-1" style="
                                     background: #8f8f8f">
@@ -1538,20 +1543,6 @@
                     </div>
 
                     <div class="card-body" style="background-color:#F6D471;">
-                        <style>
-                            /* #lelang-card::-webkit-scrollbar
-                    {
-                        width: 5px;
-                        height: 10px;
-                        background-color: white;
-                      
-                    }
-                              #lelang-card::-webkit-scrollbar-thumb
-                            {
-                                background-color: #61481C;
-                            } */
-
-                        </style>
                         <div class="row justify-content-between" id="lelang-card"
                             style="overflow-x: auto; flex-wrap: nowrap">
                             <div class="col">
@@ -2045,28 +2036,13 @@
                 <div class="card mb-3 border-0 shadow-sm ">
                     <div class="card-header bg-white">
                         <h5 color="text-dark">Kerja Sama Lahan</h5>
-                        <p>Total Sengketa <span class="badge bg-danger">11,874</span>
+                        <p>Total Lahan Tersedia <span class="badge bg-danger">4,323</span>
                             <b class="float-end" style="margin-top:-20px">
                                 <span class="text-success">Lihat Semua</span>
                             </b>
                         </p>
 
                     </div>
-            
-                    <style>
-                        @media (min-width: 1200px) {
-                            .col-12.bid {
-                                width: 50%
-                            }
-                        }
-
-                        @media (min-width: 1200px) {
-                            
-                            .col-12.bid {
-                                width: 33.3333%
-                            }
-                        }
-                    </style>
 
                     <div class="card-body" style="background-color:#F6D471;">
                         
@@ -2074,8 +2050,8 @@
                         <div class="row mt-2 justify-content-between" id="lelang-card"
                             style="overflow-x: auto; flex-wrap: nowrap">
 
-                            <div class="col-12 bid">
-                                <div class="card">
+                            <div class="col-12">
+                                <div class="card mx-auto" style="width: 21rem">
                                     <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                         <div class="row">
                                             <div class="col-lg-12">
@@ -2253,8 +2229,8 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 bid">
-                                <div class="card mb-2">
+                            <div class="col-12">
+                                <div class="card mx-auto mb-2" style="width: 21rem">
 
                                     <div class="card-header text-white px-3 py-1" style="
                                     background: #8f8f8f">
@@ -2458,8 +2434,8 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 bid">
-                                <div class="card mb-2">
+                            <div class="col-12">
+                                <div class="card mx-auto mb-2" style="width: 21rem">
 
                                     <div class="card-header text-white px-3 py-1" style="
                                     background: #8f8f8f">
@@ -2658,29 +2634,67 @@
 
                 <div class="card mb-3 border-0 shadow-sm ">
                     <div class="card-header bg-white">
-                        <h5 color="text-dark">Jual Beli Lahan</h5>
-                        <p>Total Sengketa <span class="badge bg-danger">11,874</span>
+                        <h5 color="text-dark">Kerja Sama Lahan</h5>
+                        <p>Total Lahan Tersedia <span class="badge bg-danger">4,323</span>
                             <b class="float-end" style="margin-top:-20px">
                                 <span class="text-success">Lihat Semua</span>
                             </b>
                         </p>
 
                     </div>
-            
-                    <style>
-                        @media (min-width: 1200px) {
-                            .col-12.bid {
-                                width: 50%
-                            }
-                        }
 
-                        @media (min-width: 1200px) {
-                            
-                            .col-12.bid {
-                                width: 33.3333%
-                            }
-                        }
-                    </style>
+                    <div class="card-body" style="background-color:#000;">
+                        
+
+                        <div class="row mt-2 justify-content-between" id="lelang-card"
+                            style="overflow-x: auto; flex-wrap: nowrap">
+
+                            <div class="col-11 bid">
+                                <div class="card mx-auto">
+
+                                    <div class="card-body">
+                                        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/-RkCcavzXq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-11 bid">
+                                <div class="card mx-auto">
+
+                                    <div class="card-body">
+                                        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/byby3HJ3OCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-11 bid">
+                                <div class="card mx-auto">
+
+                                    <div class="card-body">
+                                        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/1I4iEKK1qbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card mb-3 border-0 shadow-sm ">
+                    <div class="card-header bg-white">
+                        <h5 color="text-dark">Jual Beli Lahan</h5>
+                        <p>Total Lahan Tersedia <span class="badge bg-danger">4,323</span>
+                            <b class="float-end" style="margin-top:-20px">
+                                <span class="text-success">Lihat Semua</span>
+                            </b>
+                        </p>
+
+                    </div>
 
                     <div class="card-body" style="background-color:#F6D471;">
                         
@@ -2688,8 +2702,8 @@
                         <div class="row mt-2 justify-content-between" id="lelang-card"
                             style="overflow-x: auto; flex-wrap: nowrap">
 
-                            <div class="col-12 bid">
-                                <div class="card">
+                            <div class="col-12">
+                                <div class="card mx-auto" style="width: 21rem;">
                                     <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                         <div class="row">
                                             <div class="col-lg-12">
@@ -2867,8 +2881,8 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 bid">
-                                <div class="card mb-2">
+                            <div class="col-12">
+                                <div class="card mb-2 mx-auto" style="width: 21rem;">
 
                                     <div class="card-header text-white px-3 py-1" style="
                                     background: #8f8f8f">
@@ -3072,8 +3086,8 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 bid">
-                                <div class="card mb-2">
+                            <div class="col-12">
+                                <div class="card mb-2 mx-auto" style="width: 21rem;">
 
                                     <div class="card-header text-white px-3 py-1" style="
                                     background: #8f8f8f">
