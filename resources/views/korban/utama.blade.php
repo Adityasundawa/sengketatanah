@@ -202,6 +202,17 @@ use App\Models\Bid_Sengketa;
                                             <option value="tidak">Tidak Ada Jaminan</option>
                                         </select>
                                     </div>
+
+                                     <div class="mb-2 jaminan_berupa">
+                                        <label for="jaminan_berupa" class="form-label">Jaminan Berupa</label>
+                                        <select class="form-control rounded-0" id="lokasi"
+                                            placeholder="Masukkan Jaminan" aria-describedby="input-jaminan"
+                                            name="jaminan_berupa">
+                                            <option value="Sertifikat Tanah">Sertifikat Tanah</option>
+                                            <option value="Sertifikat Rumah">Sertifikat Rumah</option>
+                                        </select>
+                                    </div>
+                                    
                                     <div class="mb-2 sponsor">
                                         <label class="form-label">Pengembalian Dana Sponsor</label>
                                         <select class="form-control rounded-0" aria-label="Default select example"
@@ -221,18 +232,7 @@ use App\Models\Bid_Sengketa;
                                             bintang(*) adalah pembagian untuk sponsor. </small>
                                     </div>
 
-                                    <div class="mb-2 jaminan_berupa">
-                                        <label for="jaminan_berupa" class="form-label">Jaminan
-                                            Berupa</label>
-
-                                        <select class="form-control rounded-0" id="lokasi"
-                                            placeholder="Masukkan Jaminan" aria-describedby="input-jaminan"
-                                            name="jaminan_berupa">
-                                            <option value="Sertifikat Tanah">Sertifikat Tanah</option>
-                                            <option value="Sertifikat Rumah">Sertifikat Rumah</option>
-
-                                        </select>
-                                    </div>
+                                   
 
                                     {{-- <div class="mb-2">
                             <label for="ktp" class="form-label">Foto KTP</label>

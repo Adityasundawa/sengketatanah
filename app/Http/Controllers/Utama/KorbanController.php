@@ -32,7 +32,7 @@ class KorbanController extends Controller
         $data['title'] = "Bidding";
         $data['sengketa'] = KorbanUser::where([
             'user_id' => Auth::id(),
-            'status_sengketa' => 4,
+            'status_sengketa' => 5,
         ])->get();
         return view('korban.bidding', $data);
     }
