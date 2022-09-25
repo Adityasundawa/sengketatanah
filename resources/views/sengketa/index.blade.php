@@ -4940,7 +4940,7 @@
 
 </style>
 
-<div class="ps-4">
+<div class="ps-4"style="margin-bottom:-20px">
 <h5>
     Kenapa Sengketatanah.id ?
 </h5>
@@ -5133,7 +5133,7 @@
         </div>
     </div>
 </div>
-<div class="ps-4">
+<div class="ps-4"style="margin-bottom:-38px">
 <h5 style="margin-bottom:-30px">
    Bicara tentang Sengketatanah.id
 </h5>
