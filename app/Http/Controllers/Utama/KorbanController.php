@@ -36,6 +36,16 @@ class KorbanController extends Controller
         ])->get();
         return view('korban.bidding', $data);
     }
+
+    public function project_disetujui()
+    {
+        $data['title'] = "Bidding";
+        $data['sengketa'] = KorbanUser::where([
+            'user_id' => Auth::id(),
+            'status_sengketa' => 5,
+        ])->get();
+        return view('korban.project_disetujui', $data);
+    }
     
     public function tambah_sengketa()
     {

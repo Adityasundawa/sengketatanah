@@ -11,7 +11,7 @@ $project = KorbanUser::where([
 
 $project_di_setujui = KorbanUser::where([
     'user_id' => auth()->user()->id,
-    'status_sengketa' => 4,
+    'status_sengketa' => 5,
 ])->get();
 ?>
 
@@ -44,7 +44,7 @@ $project_di_setujui = KorbanUser::where([
                     </div>
                 </div>
             </a>
-            <a href="{{url('')}}/korban/bidding">
+            <a href="{{url('')}}/korban/project_disetujui">
                 <div class="col">
                     <div class="card radius-10 bg-gradient-ohhappiness">
                         <div class="card-body">
@@ -71,7 +71,7 @@ $project_di_setujui = KorbanUser::where([
                     <div class="card radius-10 bg-gradient-ibiza">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
-                                <h5 class="mb-0 text-white">6200</h5>
+                                <h5 class="mb-0 text-white">{{count($project_di_setujui)}}</h5>
                                 <div class="ms-auto">
                                     <i class='bx bx-group fs-3 text-white'></i>
                                 </div>
@@ -82,7 +82,7 @@ $project_di_setujui = KorbanUser::where([
                             </div>
                             <div class="d-flex align-items-center text-white">
                                 <p class="mb-0">Bidding</p>
-                                <p class="mb-0 ms-auto">+5.2%<span><i class='bx bx-up-arrow-alt'></i></span></p>
+                        
                             </div>
                         </div>
                     </div>

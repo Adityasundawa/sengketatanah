@@ -289,51 +289,44 @@ $project_di_setujui = KorbanUser::where([
                                                             </g>
                                                         </svg>
                                                     </div>
-                                                   
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                            
-                                 
-                                </div>
-
-                                 <div class="row">
-                                    <div class="col-lg-3">
-                                        <div class="card">
-                                            <div class="card-header bg-info text-white">
-                                                 Bid 1
-                                            </div>
+                                    <div class="col-lg-4">
+                                        <div class="card radius-10">
                                             <div class="card-body">
-                                                 Nama : Andriano Qalbi
+                                                <div class="d-flex align-items-center">
+                                                    <div>
+                                                        <p class="mb-0 text-secondary">Berkas</p>
+                                                        <h4 class="my-1"></h4>
+                                                    </div>
+                                                    <div class="text-success ms-auto font-35"><i
+                                                            class="lni lni-empty-file"></i>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
-                                        <div class="card">
-                                            <div class="card-header  bg-info text-white">
-                                                 Bid 2
-                                            </div>
+                                    <div class="col-lg-4">
+                                        <div class="card radius-10">
                                             <div class="card-body">
-                                                 Nama : Reza Pardede
+                                                <div class="d-flex align-items-center">
+                                                    <div>
+                                                        <p class="mb-0 text-secondary">Wawancara</p>
+                                                        <h4 class="my-1"></h4>
+                                                    </div>
+                                                    <div class="text-success ms-auto font-35"><i
+                                                            class="lni lni-mic"></i></i>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3">
-                                        <div class="card">
-                                            <div class="card-header  bg-info text-white">
-                                                 Bid 3
-                                            </div>
-                                            <div class="card-body">
-                                                 Nama : Ibob Taligan
-                                            </div>
-                                        </div>
-                                    </div>
-                                 </div>
-                                <div class="row">
                                     <a href="" class="btn btn-block btn-sm mt-3 btn-info text-white">
                                         Promosikan Project</a>
                                 </div>
+
 
                             </div>
                         </div>
