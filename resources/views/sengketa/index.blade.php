@@ -3023,6 +3023,9 @@
 
                     <div class="card-body" style="background-color:#000;">
                         <style>
+                            .texto {
+                                font-size: 10px;
+                            }
                             @media (min-width: 992px) { 
                                 #vid_frame {
                                     height: 500px !important;
@@ -3032,6 +3035,9 @@
                                 }
                                 .pencet {
                                     cursor: pointer;
+                                }
+                                .texto {
+                                    font-size: 16px
                                 }
                              }
                         </style>
@@ -3047,8 +3053,8 @@
 
                                     <div class="row mb-3 g-0">
                                         <div class="row g-2 pencet" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/-RkCcavzXq8?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
-                                            <div class="col-6"><img width="100%" src="https://i.ytimg.com/vi/-RkCcavzXq8/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDYuRgylXJIKoNUa4El8SsT1f88ng"></div>
-                                            <div class="col-6 text-white">Mafia Tanah Sikat Lahan Garapan Petani Pancawati Bogor #PetaniMengadu</div>
+                                            <div class="col-4"><img class="imago" width="100%" src="https://i.ytimg.com/vi/-RkCcavzXq8/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDYuRgylXJIKoNUa4El8SsT1f88ng"></div>
+                                            <div class="col-8 text-white texto">Mafia Tanah Sikat Lahan Garapan Petani Pancawati Bogor #PetaniMengadu</div>
                                         </div>
                                     </div>
 
@@ -3056,8 +3062,8 @@
 
                                     <div class="row mb-3 g-0">
                                         <div class="row g-2 pencet" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/byby3HJ3OCI?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
-                                            <div class="col-6"><img  width="100%" src="https://i.ytimg.com/vi/byby3HJ3OCI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCHbyFGnyjuYbXClrL-dy7-iFeVOQ"></div>
-                                            <div class="col-6 text-white">Mafia Tanah Sikat Lahan Garapan Petani Pancawati Bogor #PodcastSengketaTanah1</div>
+                                            <div class="col-4"><img class="imago"  width="100%" height="100%" src="https://i.ytimg.com/vi/byby3HJ3OCI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCHbyFGnyjuYbXClrL-dy7-iFeVOQ"></div>
+                                            <div class="col-8 text-white texto">Mafia Tanah Sikat Lahan Garapan Petani Pancawati Bogor #PodcastSengketaTanah1</div>
                                        </div>
                                     </div>
 
@@ -3065,8 +3071,8 @@
                                    
                                    <div class="row mb-3 g-0">
                                        <div class="row g-2 pencet" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/-RkCcavzXq8?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
-                                            <div class="col-6"><img  width="100%" src="https://i.ytimg.com/vi/-RkCcavzXq8/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDYuRgylXJIKoNUa4El8SsT1f88ng"></div>
-                                            <div class="col-6 text-white">Mafia Tanah Sikat Lahan Garapan Petani Pancawati Bogor #PetaniMengadu</div>
+                                            <div class="col-4"><img class="imago"  width="100%" src="https://i.ytimg.com/vi/-RkCcavzXq8/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDYuRgylXJIKoNUa4El8SsT1f88ng"></div>
+                                            <div class="col-8 text-white texto">Mafia Tanah Sikat Lahan Garapan Petani Pancawati Bogor #PetaniMengadu</div>
                                        </div>
                                    </div>
 
@@ -3074,8 +3080,8 @@
                                 
                                    <div class="row mb-3 g-0">
                                        <div class="row g-2 pencet" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/byby3HJ3OCI?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
-                                            <div class="col-6"><img  width="100%" src="https://i.ytimg.com/vi/byby3HJ3OCI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCHbyFGnyjuYbXClrL-dy7-iFeVOQ"></div>
-                                            <div class="col-6 text-white">Mafia Tanah Sikat Lahan Garapan Petani Pancawati Bogor #PodcastSengketaTanah1</div>
+                                            <div class="col-4"><img class="imago"  width="100%" src="https://i.ytimg.com/vi/byby3HJ3OCI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCHbyFGnyjuYbXClrL-dy7-iFeVOQ"></div>
+                                            <div class="col-8 text-white texto">Mafia Tanah Sikat Lahan Garapan Petani Pancawati Bogor #PodcastSengketaTanah1</div>
                                        </div>
                                    </div>
 
@@ -3083,8 +3089,8 @@
                                    
                                    <div class="row mb-3 g-0">
                                        <div class="row g-2 pencet" onclick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/-RkCcavzXq8?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
-                                            <div class="col-6"><img  width="100%" src="https://i.ytimg.com/vi/-RkCcavzXq8/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDYuRgylXJIKoNUa4El8SsT1f88ng"></div>
-                                            <div class="col-6 text-white">Mafia Tanah Sikat Lahan Garapan Petani Pancawati Bogor #PetaniMengadu</div>
+                                            <div class="col-4"><img class="imago"  width="100%" src="https://i.ytimg.com/vi/-RkCcavzXq8/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDYuRgylXJIKoNUa4El8SsT1f88ng"></div>
+                                            <div class="col-8 text-white texto">Mafia Tanah Sikat Lahan Garapan Petani Pancawati Bogor #PetaniMengadu</div>
                                        </div>
                                    </div>
 
@@ -3092,8 +3098,8 @@
                                 
                                    <div class="row mb-3 g-0">
                                        <div class="row g-2 pencet" onclick="document.getElementById('vid_frame').src='http://www.youtube.com/embed/byby3HJ3OCI?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
-                                            <div class="col-6"><img  width="100%" src="https://i.ytimg.com/vi/byby3HJ3OCI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCHbyFGnyjuYbXClrL-dy7-iFeVOQ"></div>
-                                            <div class="col-6 text-white">Mafia Tanah Sikat Lahan Garapan Petani Pancawati Bogor #PodcastSengketaTanah1</div>
+                                            <div class="col-4"><img class="imago"  width="100%" src="https://i.ytimg.com/vi/byby3HJ3OCI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCHbyFGnyjuYbXClrL-dy7-iFeVOQ"></div>
+                                            <div class="col-8 text-white texto">Mafia Tanah Sikat Lahan Garapan Petani Pancawati Bogor #PodcastSengketaTanah1</div>
                                        </div>
                                    </div>
                                 </div>
