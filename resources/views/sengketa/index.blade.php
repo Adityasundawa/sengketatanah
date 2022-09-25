@@ -427,9 +427,10 @@
         .mobile {
             display: none;
         }
+
         .desktop-2 {
-                display: block;
-            }
+            display: block;
+        }
 
         @media (max-width: 1000px) {
             .mobile {
@@ -439,6 +440,7 @@
             .desktop {
                 display: none;
             }
+
             .desktop-2 {
                 display: none;
             }
@@ -1395,12 +1397,32 @@
                 <!-- bidding -->
                 <div class="card mb-3 border-0 shadow-sm ">
                     <div class="card-header bg-white">
-                     <h5 color="text-dark"><img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">&nbsp;Bidding Sponsor</h5>
-                        <p>Total Sengketa <span class="badge bg-danger">11,874</span>
-                            <b class="float-end" style="margin-top:-20px">
-                                <span class="text-success">Lihat Semua</span>
-                            </b>
-                        </p>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">
+                                </td>
+                                <td>
+                                    <h5 color="text-dark">
+                                        &nbsp;Bidding Sponsor
+                                    </h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                    <p>&nbsp;Total Sengketa <span class="badge bg-danger">11,874</span>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+
+
+                        <b class="float-end" style="margin-top:-70px">
+                            <span class="text-success">Lihat Semua</span>
+                        </b>
 
                     </div>
 
@@ -1415,7 +1437,9 @@
                                     <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid SP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                                <h5 class="mb-0 text-center">Kode Bid SP-001 <img
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
+                                                        style="height:20px">
                                             </div>
                                         </div>
                                     </div>
@@ -1600,7 +1624,9 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid KP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"> </h5>
+                                                <h5 class="mb-0 text-center">Kode Bid KP-001 <img
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
+                                                        style="height:20px"> </h5>
                                             </div>
                                         </div>
                                     </div>
@@ -1779,7 +1805,9 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid PP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                <h5 class="mb-0 text-center">Kode Bid PP-001 <img
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
+                                                        style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -1956,7 +1984,9 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid PP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                <h5 class="mb-0 text-center">Kode Bid PP-001 <img
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
+                                                        style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -2067,7 +2097,7 @@
                                             method="get">
                                             <input type="hidden" name="owner" value=" Ophelia Suartini">
                                             <input type="hidden" name="objek" value=" Perkara Pertanahan">
-                                            <input type="hidden" name="luas" value=" 3.2 Ha">
+                                            <input type="hidden" name="luas " value=" 3.2 Ha">
                                             <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
                                             <input type="hidden" name="komentar" value="">
                                             <input type="hidden" name="link_yt"
@@ -2135,12 +2165,30 @@
                 <!-- Jual beli Lahan -->
                 <div class="card mb-3 border-0 shadow-sm ">
                     <div class="card-header bg-white">
-                        <h5 color="text-dark"><img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">&nbsp;Jual Beli Lahan</h5>
-                        <p>Total Lahan Tersedia <span class="badge bg-danger">4,323</span>
-                            <b class="float-end" style="margin-top:-20px">
-                                <span class="text-success">Lihat Semua</span>
-                            </b>
-                        </p>
+                        <table>
+                            <tr>
+                                <td> <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px"></td>
+                                <td>
+                                    <h5 color="text-dark">
+                                        Jual Beli Lahan
+                                    </h5>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <p>Total Lahan Tersedia <span class="badge bg-danger">4,323</span>
+
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                        <b class="float-end" style="margin-top:-70px">
+                            <span class="text-success">Lihat Semua</span>
+                        </b>
+
+
 
                     </div>
 
@@ -2156,7 +2204,9 @@
                                     <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bidang JBL-004 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                <h5 class="mb-0 text-center">Kode Bidang JBL-004 <img
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
+                                                        style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -2166,13 +2216,14 @@
                                         <div class="row p-0 g-0">
                                             <div class="col-6 p-0 g-0">
                                                 <h5>
-                                                    <b>
+                                                    <b class="text-primary">
                                                         Rp.450.000.000
                                                     </b>
                                                 </h5>
                                             </div>
                                             <div class="col-6 p-0 g-0">
-                                                <button class="btn btn-dark float-end">Tawar</button>
+                                                <button class="btn btn-dark float-end"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">BID</button>
                                             </div>
                                         </div>
                                         <hr style="margin-top:-4px">
@@ -2283,11 +2334,11 @@
 
                                                 <div class="d-grid gap-2 ">
 
-                                                    <button type="button"
+                                                    <!-- <button type="button"
                                                         class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
                                                         data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                         BID
-                                                    </button>
+                                                    </button> -->
 
 
                                                     <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
@@ -2337,7 +2388,9 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bidang JBL-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                <h5 class="mb-0 text-center">Kode Bidang JBL-001 <img
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
+                                                        style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -2346,13 +2399,14 @@
                                         <div class="row p-0 g-0">
                                             <div class="col-6 p-0 g-0">
                                                 <h5>
-                                                    <b>
+                                                    <b class="text-primary">
                                                         Rp.500.000.000
                                                     </b>
                                                 </h5>
                                             </div>
                                             <div class="col-6 p-0 g-0">
-                                                <button class="btn btn-dark float-end">Tawar</button>
+                                                <button class="btn btn-dark float-end"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">BID</button>
                                             </div>
                                         </div>
                                         <hr style="margin-top:-4px">
@@ -2465,11 +2519,11 @@
 
                                                 <div class="d-grid gap-2 ">
 
-                                                    <button type="button"
+                                                    <!-- <button type="button"
                                                         class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
                                                         data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                         BID
-                                                    </button>
+                                                    </button> -->
 
 
                                                     <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
@@ -2517,7 +2571,9 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bidang JBL-002 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                <h5 class="mb-0 text-center">Kode Bidang JBL-002 <img
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
+                                                        style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -2526,13 +2582,14 @@
                                         <div class="row p-0 g-0">
                                             <div class="col-6 p-0 g-0">
                                                 <h5>
-                                                    <b>
+                                                    <b class="text-primary">
                                                         Rp.200.000.000
                                                     </b>
                                                 </h5>
                                             </div>
                                             <div class="col-6 p-0 g-0">
-                                                <button class="btn btn-dark float-end">Tawar</button>
+                                                <button class="btn btn-dark float-end"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">BID</button>
                                             </div>
                                         </div>
                                         <hr style="margin-top:-4px">
@@ -2645,11 +2702,11 @@
                                             <div class="col-4">
 
                                                 <div class="d-grid gap-2 ">
-                                                    <button type="button"
+                                                    <!-- <button type="button"
                                                         class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
                                                         data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                         BID
-                                                    </button>
+                                                    </button> -->
 
 
                                                     <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
@@ -2697,7 +2754,9 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bidang JBL-003 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                <h5 class="mb-0 text-center">Kode Bidang JBL-003 <img
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
+                                                        style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -2706,13 +2765,14 @@
                                         <div class="row p-0 g-0">
                                             <div class="col-6 p-0 g-0">
                                                 <h5>
-                                                    <b>
+                                                    <b class="text-primary">
                                                         Rp.200.000.000
                                                     </b>
                                                 </h5>
                                             </div>
                                             <div class="col-6 p-0 g-0">
-                                                <button class="btn btn-dark float-end">Tawar</button>
+                                                <button class="btn btn-dark float-end"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">BID</button>
                                             </div>
                                         </div>
                                         <hr style="margin-top:-4px">
@@ -2824,11 +2884,11 @@
                                             <div class="col-4">
 
                                                 <div class="d-grid gap-2 ">
-                                                    <button type="button"
+                                                    <!-- <button type="button"
                                                         class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
                                                         data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                         BID
-                                                    </button>
+                                                    </button> -->
 
 
                                                     <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
@@ -2892,12 +2952,32 @@
                 <!-- podcast Sengketa -->
                 <div class="card mb-3 border-0 shadow-sm ">
                     <div class="card-header bg-white">
-                        <h5 color="text-dark"><img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">&nbsp;Podcast Sengketa Tanah</h5>
-                        <p>Total Video <span class="badge bg-danger">10</span>
-                            <b class="float-end" style="margin-top:-20px">
-                                <span class="text-success">Lihat Semua</span>
-                            </b>
-                        </p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">
+                                </td>
+                                <td>
+                                    <h5 color="text-dark">
+                                        &nbsp;Podcast Sengketa Tanah</h5>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                    <p>&nbsp;Total Video <span class="badge bg-danger">10</span>
+                                    </p>
+
+                                </td>
+                            </tr>
+                        </table>
+
+
+                        <b class="float-end" style="margin-top:-70px">
+                            <span class="text-success">Lihat Semua</span>
+                        </b>
 
                     </div>
 
@@ -2939,23 +3019,23 @@
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
                                 </div>
-    
+
                                 <div class="col-12 bid">
                                     <iframe width="100%" height="250px" src="https://www.youtube.com/embed/-RkCcavzXq8"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
                                 </div>
-    
+
                                 <div class="col-12 bid">
                                     <iframe width="100%" height="250px" src="https://www.youtube.com/embed/byby3HJ3OCI"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
                                 </div>
-    
-                               
-    
+
+
+
                             </div>
                         </div>
 
@@ -2964,12 +3044,32 @@
                 <!-- Kerja sama lahan -->
                 <div class="card mb-3 border-0 shadow-sm ">
                     <div class="card-header bg-white">
-                        <h5 color="text-dark"><img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">&nbsp;Kerja Sama Lahan</h5>
-                        <p>Total Lahan Tersedia <span class="badge bg-danger">4,323</span>
-                            <b class="float-end" style="margin-top:-20px">
-                                <span class="text-success">Lihat Semua</span>
-                            </b>
-                        </p>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">
+                                </td>
+                                <td>
+                                    <h5 color="text-dark">&nbsp;Kerja Sama Lahan</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    </td>
+                                    <td>
+                                    <p>&nbsp;Total Lahan Tersedia <span class="badge bg-danger">4,323</span>
+                                    </p>
+
+                                 
+
+                                </td>
+                            </tr>
+                        </table>
+
+                        <b class="float-end" style="margin-top:-70px">
+                                        <span class="text-success">Lihat Semua</span>
+                                    </b>
 
                     </div>
 
@@ -2986,7 +3086,9 @@
                                     <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bidang KSL-004 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                <h5 class="mb-0 text-center">Kode Bidang KSL-004 <img
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
+                                                        style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -3105,11 +3207,11 @@
 
                                                 <div class="d-grid gap-2 ">
 
-                                                    <button type="button"
+                                                    <!-- <button type="button"
                                                         class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
                                                         data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                         BID
-                                                    </button>
+                                                    </button> -->
 
 
                                                     <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
@@ -3160,8 +3262,8 @@
 
                                             <div class="col-lg-12">
                                                 <h5 class="mb-0 text-center">Kode Bidang KSL-001 <img
-                                                        src="{{asset('')}}uploads/biru_centang.png" alt=""
-                                                        class="mb-1" style="height:20px"></h5>
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
+                                                        style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -3278,11 +3380,11 @@
 
                                                 <div class="d-grid gap-2 ">
 
-                                                    <button type="button"
+                                                    <!-- <button type="button"
                                                         class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
                                                         data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                         BID
-                                                    </button>
+                                                    </button> -->
 
 
                                                     <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
@@ -3331,8 +3433,8 @@
 
                                             <div class="col-lg-12">
                                                 <h5 class="mb-0 text-center">Kode Bidang KSL-002 <img
-                                                        src="{{asset('')}}uploads/biru_centang.png" alt=""
-                                                        class="mb-1" style="height:20px"></h5>
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
+                                                        style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -3449,11 +3551,11 @@
                                             <div class="col-4">
 
                                                 <div class="d-grid gap-2 ">
-                                                    <button type="button"
+                                                    <!-- <button type="button"
                                                         class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
                                                         data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                         BID
-                                                    </button>
+                                                    </button> -->
 
 
                                                     <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
@@ -3502,8 +3604,8 @@
 
                                             <div class="col-lg-12">
                                                 <h5 class="mb-0 text-center">Kode Bidang KSL-003 <img
-                                                        src="{{asset('')}}uploads/biru_centang.png" alt=""
-                                                        class="mb-1" style="height:20px"></h5>
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
+                                                        style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -3619,11 +3721,11 @@
                                             <div class="col-4">
 
                                                 <div class="d-grid gap-2 ">
-                                                    <button type="button"
+                                                    <!-- <button type="button"
                                                         class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
                                                         data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                         BID
-                                                    </button>
+                                                    </button> -->
 
 
                                                     <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
@@ -3672,13 +3774,32 @@
                 <!-- lelang -->
                 <div class="card mb-4 border-0 shadow-sm ">
                     <div class="card-header bg-white">
-                        <h5 color="text-dark"><img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">&nbsp;Lelang Lahan</h5>
-                        <p>Berakhir Dalam <span class="badge bg-danger"><i class="fa-solid fa-clock"></i>
+                        <table>
+                            <tr>
+                                <td>
+                                <img src="{{asset('/uploads/sengketa-logo_pas.png')}}"
+                                style="width:30px">
+                                </td>
+                                <td>
+                                <h5 color="text-dark">&nbsp;Lelang Lahan</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                </td>
+                                <td>
+                                <p>Berakhir Dalam <span class="badge bg-danger"><i class="fa-solid fa-clock"></i>
                                 01:08:59</span>
-                            <b class="float-end" style="margin-top:-20px">
+                            </p>
+                                </td>
+                            </tr>
+                        </table>
+                  
+                       
+                            <b class="float-end" style="margin-top:-70px">
                                 <span class="text-success">Lihat Semua</span>
                             </b>
-                        </p>
 
                     </div>
 
@@ -3707,13 +3828,14 @@
                                         <div class="row p-0 g-0">
                                             <div class="col-6 p-0 g-0">
                                                 <h5>
-                                                    <b>
+                                                    <b class="text-primary">
                                                         Rp.450.000.000
                                                     </b>
                                                 </h5>
                                             </div>
                                             <div class="col-6 p-0 g-0">
-                                                <button class="btn btn-dark float-end">Tawar</button>
+                                                <button class="btn btn-dark float-end"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">BID</button>
                                             </div>
                                         </div>
                                         <hr style="margin-top:-4px">
@@ -3824,11 +3946,11 @@
 
                                                 <div class="d-grid gap-2 ">
 
-                                                    <button type="button"
+                                                    <!-- <button type="button"
                                                         class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
                                                         data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                         BID
-                                                    </button>
+                                                    </button> -->
 
 
                                                     <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
@@ -3879,8 +4001,8 @@
 
                                             <div class="col-lg-12">
                                                 <h5 class="mb-0 text-center">Kode Lelang LL-001 <img
-                                                        src="{{asset('')}}uploads/biru_centang.png" alt=""
-                                                        class="mb-1" style="height:20px"></h5>
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
+                                                        style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -3889,13 +4011,14 @@
                                         <div class="row p-0 g-0">
                                             <div class="col-6 p-0 g-0">
                                                 <h5>
-                                                    <b>
+                                                    <b class="text-primary">
                                                         Rp.500.000.000
                                                     </b>
                                                 </h5>
                                             </div>
                                             <div class="col-6 p-0 g-0">
-                                                <button class="btn btn-dark float-end">Tawar</button>
+                                                <button class="btn btn-dark float-end"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">BID</button>
                                             </div>
                                         </div>
                                         <hr style="margin-top:-4px">
@@ -4009,11 +4132,11 @@
 
                                                 <div class="d-grid gap-2 ">
 
-                                                    <button type="button"
+                                                    <!-- <button type="button"
                                                         class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
                                                         data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                         BID
-                                                    </button>
+                                                    </button> -->
 
 
                                                     <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
@@ -4062,8 +4185,8 @@
 
                                             <div class="col-lg-12">
                                                 <h5 class="mb-0 text-center">Kode Lelang LL-002 <img
-                                                        src="{{asset('')}}uploads/biru_centang.png" alt=""
-                                                        class="mb-1" style="height:20px"></h5>
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
+                                                        style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -4072,13 +4195,14 @@
                                         <div class="row p-0 g-0">
                                             <div class="col-6 p-0 g-0">
                                                 <h5>
-                                                    <b>
+                                                    <b class="text-primary">
                                                         Rp.200.000.000
                                                     </b>
                                                 </h5>
                                             </div>
                                             <div class="col-6 p-0 g-0">
-                                                <button class="btn btn-dark float-end">Tawar</button>
+                                                <button class="btn btn-dark float-end"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">BID</button>
                                             </div>
                                         </div>
                                         <hr style="margin-top:-4px">
@@ -4191,11 +4315,11 @@
                                             <div class="col-4">
 
                                                 <div class="d-grid gap-2 ">
-                                                    <button type="button"
+                                                    <!-- <button type="button"
                                                         class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
                                                         data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                         BID
-                                                    </button>
+                                                    </button> -->
 
 
                                                     <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
@@ -4244,8 +4368,8 @@
 
                                             <div class="col-lg-12">
                                                 <h5 class="mb-0 text-center">Kode Lelang LL-003 <img
-                                                        src="{{asset('')}}uploads/biru_centang.png" alt=""
-                                                        class="mb-1" style="height:20px"></h5>
+                                                        src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
+                                                        style="height:20px"></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -4254,13 +4378,14 @@
                                         <div class="row p-0 g-0">
                                             <div class="col-6 p-0 g-0">
                                                 <h5>
-                                                    <b>
+                                                    <b class="text-primary">
                                                         Rp.200.000.000
                                                     </b>
                                                 </h5>
                                             </div>
                                             <div class="col-6 p-0 g-0">
-                                                <button class="btn btn-dark float-end">Tawar</button>
+                                                <button class="btn btn-dark float-end"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">BID</button>
                                             </div>
                                         </div>
                                         <hr style="margin-top:-4px">
@@ -4372,11 +4497,11 @@
                                             <div class="col-4">
 
                                                 <div class="d-grid gap-2 ">
-                                                    <button type="button"
+                                                    <!-- <button type="button"
                                                         class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
                                                         data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                         BID
-                                                    </button>
+                                                    </button> -->
 
 
                                                     <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
