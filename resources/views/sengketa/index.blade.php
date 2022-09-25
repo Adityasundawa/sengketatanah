@@ -1447,7 +1447,7 @@
 
                     </div>
 
-                    <div class="card-body" style="background-color:#FAFAD2;">
+                    <div class="card-body" style="background-color:#61481C;">
 
                         <div class="row align-items-center justify-content-center">
 
@@ -2272,7 +2272,7 @@
 
                     </div>
 
-                    <div class="card-body" style="background-color:#FAFAD2;">
+                    <div class="card-body" style="background-color:#61481C;">
 
 
                         <div class="row align-items-center justify-content-center">
@@ -3166,7 +3166,7 @@
 
                     </div>
 
-                    <div class="card-body" style="background-color:#FAFAD2;">
+                    <div class="card-body" style="background-color:#61481C;">
 
                         <div class="row align-items-center justify-content-center">
 
@@ -4013,7 +4013,7 @@
                         </table>
                     </div>
 
-                    <div class="card-body" style="background-color:#FAFAD2;">
+                    <div class="card-body" style="background-color:#61481C;">
 
                         <div class="row align-items-center justify-content-center">
 
