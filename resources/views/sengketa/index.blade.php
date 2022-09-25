@@ -1447,7 +1447,7 @@
 
                     </div>
 
-                    <div class="card-body" style="background-color:#61481C;">
+                    <div class="card-body" style="background-color:#926c2a;">
 
                         <div class="row align-items-center justify-content-center">
 
@@ -2272,7 +2272,7 @@
 
                     </div>
 
-                    <div class="card-body" style="background-color:#61481C;">
+                    <div class="card-body" style="background-color:#926c2a;">
 
 
                         <div class="row align-items-center justify-content-center">
@@ -3166,7 +3166,7 @@
 
                     </div>
 
-                    <div class="card-body" style="background-color:#61481C;">
+                    <div class="card-body" style="background-color:#926c2a;">
 
                         <div class="row align-items-center justify-content-center">
 
@@ -4013,7 +4013,7 @@
                         </table>
                     </div>
 
-                    <div class="card-body" style="background-color:#61481C;">
+                    <div class="card-body" style="background-color:#926c2a;">
 
                         <div class="row align-items-center justify-content-center">
 
@@ -4855,12 +4855,12 @@
             }
         </style>
 
-        <div class="row" style="background: #926c2a">
-            <div class="col-12 mt-2 text-white" style="margin-left: 12px">
+        <div class="row">
+            <div class="col-11 mt-2" style="margin-left: 15px">
                 <b>Download Aplikasinya!</b>
-                <p class="fw-lighter">Situs Jual Beli Properti Online No. 1 di Indonesia</p>
+                <p class="fw-lighter">Platform Seputar Tanah No. 1 di Indonesia</p>
             </div>
-            <div class="col-12 mb-2 mt-1">
+            <div class="col-11 mb-2 mt-1">
                 <a href="#"><img src="{{asset('/')}}uploads/google-play-badge.png" class="store" alt=""></a>
                 <a href="#"><img src="{{asset('/')}}uploads/appstore-badge.png" class="appstore" alt=""></a>
             </div>
