@@ -4902,11 +4902,11 @@
 <hr>
 
         <div class="row justify-content-center">
-            <div class="col-11 mt-2 text-center" style="margin-left: 15px">
+            <div class="col-11 mt-2 text-center">
                 <b>Download Aplikasinya!</b>
                 <p class="fw-lighter mb-0">Platform Seputar Tanah No. 1 di Indonesia</p>
             </div>
-            <div class="col-11 mb-2">
+            <div class="col-11 mb-2"  style="margin-left: 15px">
                 <a href="#"><img src="{{asset('/')}}uploads/google-play-badge.png" class="store" alt=""></a>
                 <a href="#"><img src="{{asset('/')}}uploads/appstore-badge.png" class="appstore" alt=""></a>
             </div>
