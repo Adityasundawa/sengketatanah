@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\EmailController;
+use App\Http\Controllers\PublicController;
 use App\Http\Controllers\SengketaController;
 use App\Http\Controllers\SponsorDashboardController;
 use App\Http\Controllers\Utama\DashboardUtamaController;
@@ -37,6 +38,13 @@ Route::get('kota-prov-id',[WilayahIndoController::class,'getKotaIdProv']);
 Route::get('kec-kot-id',[WilayahIndoController::class,'getKecIdKota']);
 Route::get('des-kec-id',[WilayahIndoController::class,'getDesaIdKec']);
 Route::get('send-email',[EmailController::class,'sendEmail']);
+
+
+Route::get('bidding-sponsor',[PublicController::class,'biddingSponsor'])->name('biddingSponsor');
+Route::get('kerjasama-lahan',[PublicController::class,'kerjasamaLahan'])->name('kerjasamaLahan');
+Route::get('podcast-sengketa',[PublicController::class,'podcastSengketa'])->name('podcastSengketa');
+Route::get('jual-beli-lahan',[PublicController::class,'jualBeliLahan'])->name('jualBeliLahan');
+Route::get('lelang-lahan',[PublicController::class,'lelangLahan'])->name('lelangLahan');
 
 
 
