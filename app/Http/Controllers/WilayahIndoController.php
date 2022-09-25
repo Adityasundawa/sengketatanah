@@ -12,8 +12,7 @@ class WilayahIndoController extends Controller
     {
         $client = new Client(); //GuzzleHttp\Client
         $url = "https://emsifa.github.io/api-wilayah-indonesia/api/regencies/".$req->prov_id.".json";
-
-
+        
         $response = $client->request('GET', $url, [
             'verify'  => false,
         ]);

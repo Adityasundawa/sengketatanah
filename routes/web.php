@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ApiIndonesia;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\EmailController;
 use App\Http\Controllers\PublicController;
@@ -129,4 +130,10 @@ Route::group(['middleware' => 'role:sponsor', 'prefix' => 'sponsor', 'as' => 'sp
 /// Role Pengacara
 Route::group(['middleware' => 'role:pengacara', 'prefix' => 'pengacara', 'as' => 'pengacara.'], function () {
    Route::get('index',[PengacaraController::class,'index'])->name('index');
+});
+
+
+
+Route::controller(WilayahIndoController::class)->group(function () {
+   Route::get('/get_kota', 'getKotaIdProv')->name('get_kota');
 });

@@ -78,28 +78,28 @@ use App\Models\User;
                 </div>
             </a>
 
-           <a href="{{route('korban.progress')}}">
-            <div class="col">
-                <div class="card radius-10 bg-gradient-moonlit">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center">
-                            <h5 class="mb-0 text-white">5630</h5>
-                            <div class="ms-auto">
-                                <i class='bx bx-envelope fs-3 text-white'></i>
+            <a href="{{route('korban.progress')}}">
+                <div class="col">
+                    <div class="card radius-10 bg-gradient-moonlit">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <h5 class="mb-0 text-white">5630</h5>
+                                <div class="ms-auto">
+                                    <i class='bx bx-envelope fs-3 text-white'></i>
+                                </div>
                             </div>
-                        </div>
-                        <div class="progress my-2 bg-white-transparent" style="height:4px;">
-                            <div class="progress-bar bg-white" role="progressbar" style="width: 55%" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <div class="d-flex align-items-center text-white">
-                            <p class="mb-0">Proggress</p>
-                            <p class="mb-0 ms-auto">+2.2%<span><i class='bx bx-up-arrow-alt'></i></span></p>
+                            <div class="progress my-2 bg-white-transparent" style="height:4px;">
+                                <div class="progress-bar bg-white" role="progressbar" style="width: 55%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="d-flex align-items-center text-white">
+                                <p class="mb-0">Proggress</p>
+                                <p class="mb-0 ms-auto">+2.2%<span><i class='bx bx-up-arrow-alt'></i></span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-           </a>
+            </a>
         </div>
         <!--end row-->
 
@@ -113,49 +113,49 @@ use App\Models\User;
                             <div>
                                 <b>PROJECT</b><b class="text-danger"> SP-00{{$item['id']}}</b>
 
-                               
+
                             </div>
-                            
+
                             <div class="dropdown options ms-auto">
-                                
+
                                 <div class="dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown">
                                     @if($item['status_sengketa'] == 1)
-                                <span class="badge mr-4 bg-danger">Menunggu Verifikasi</span>
-                                @elseif($item['status_sengketa'] == 2)
-                                <span class="badge mr-4 bg-success">Terverifikasi Tahap 1</span>
-                                @elseif($item['status_sengketa'] == 3)
-                                <span class="badge mr-4 bg-success">Terverifikasi Tahap 2</span>
-                                @elseif($item['status_sengketa'] == 4)
-                                <span class="badge mr-4 bg-success">Terverifikasi Tahap 3</span>
-                                @elseif($item['status_sengketa'] == 0)
-                                <span class="badge mr-4 bg-danger">Pending</span>
-                                @endif <i class='bx bx-dots-horizontal-rounded'></i>
+                                    <span class="badge mr-4 bg-danger">Menunggu Verifikasi</span>
+                                    @elseif($item['status_sengketa'] == 2)
+                                    <span class="badge mr-4 bg-success">Terverifikasi Tahap 1</span>
+                                    @elseif($item['status_sengketa'] == 3)
+                                    <span class="badge mr-4 bg-success">Terverifikasi Tahap 2</span>
+                                    @elseif($item['status_sengketa'] == 4)
+                                    <span class="badge mr-4 bg-success">Terverifikasi Tahap 3</span>
+                                    @elseif($item['status_sengketa'] == 0)
+                                    <span class="badge mr-4 bg-danger">Pending</span>
+                                    @endif <i class='bx bx-dots-horizontal-rounded'></i>
                                 </div>
-                                
+
                                 @if($item['status_sengketa'] == 1)
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="javascript:;">Edit</a></li>
-                                    <li><a class="dropdown-item" href="javascript:;">Delete</a></li>    
+                                    <li><a class="dropdown-item" href="javascript:;">Delete</a></li>
                                 </ul>
                                 @elseif($item['status_sengketa'] == 2)
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item disabled" href="javascript:;">Edit</a></li>
-                                    <li><a class="dropdown-item disabled" href="javascript:;">Delete</a></li>    
+                                    <li><a class="dropdown-item disabled" href="javascript:;">Delete</a></li>
                                 </ul>
                                 @elseif($item['status_sengketa'] == 3)
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item disabled" href="javascript:;">Edit</a></li>
-                                    <li><a class="dropdown-item disabled" href="javascript:;">Delete</a></li>    
+                                    <li><a class="dropdown-item disabled" href="javascript:;">Delete</a></li>
                                 </ul>
                                 @elseif($item['status_sengketa'] == 4)
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item disabled" href="javascript:;">Edit</a></li>
-                                    <li><a class="dropdown-item disabled" href="javascript:;">Delete</a></li>    
+                                    <li><a class="dropdown-item disabled" href="javascript:;">Delete</a></li>
                                 </ul>
                                 @endif
 
-                                
-                            
+
+
                             </div>
                         </div>
                     </div>
@@ -178,7 +178,8 @@ use App\Models\User;
                         </div>
                         @elseif($item['status_sengketa'] == 4)
                         <div class="alert alert-success" id="alert" role="alert">
-                            <b>Terima Kasih, </b>Anda telah berhasil melewati semua tahapan verifikasi. Mohon menunggu sampai jadwal wawancara Anda tiba
+                            <b>Terima Kasih, </b>Anda telah berhasil melewati semua tahapan verifikasi. Mohon menunggu
+                            sampai jadwal wawancara Anda tiba
                         </div>
                         {{-- @elseif($item['status_sengketa']s == 3)s
                         <span class="badge badge-warning">Diproses</span>
@@ -218,7 +219,11 @@ use App\Models\User;
                                     <td>Kebutuhan Dana</td>
                                     <td></td>
                                     <td>:</td>
-                                    <td>&nbsp; Rp.{{$item['jumlah_dana']}}</td>
+                                    <?php
+                                    $angka = $item['jumlah_dana'];
+$format_angka = number_format($angka, "2", ",", ".");
+ ?>
+                                    <td>&nbsp; Rp.{{$format_angka}}</td>
                                 </tr>
 
                                 <tr>
@@ -269,19 +274,33 @@ use App\Models\User;
                         </table>
 
                         @if ($item['status_sengketa'] == 1)
-                            <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm text-white mt-4 disabled" style="background:#8f8f8f" disable><i class="fadeIn bx bx-lock"></i> Upload Dokumen</a>
+                        <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}"
+                            class="btn btn-block btn-sm text-white mt-4 disabled" style="background:#8f8f8f" disable><i
+                                class="fadeIn bx bx-lock"></i> Upload Dokumen</a>
                         @elseif ($item['status_sengketa'] == 2)
-                            @if ($item['status_file_upload'] == "yes")
-                                <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i class="lni lni-eye"></i> Lihat Berkas</a>
-                            @else
-                                <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i class="lni lni-cloud-upload"></i> Upload Dokumen</a>
-                            @endif
+                        @if ($item['status_file_upload'] == "yes")
+                        <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}"
+                            class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i
+                                class="lni lni-eye"></i> Lihat Berkas</a>
+                        @else
+                        <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}"
+                            class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i
+                                class="lni lni-cloud-upload"></i> Upload Dokumen</a>
+                        @endif
                         @elseif ($item['status_sengketa'] == 3)
-                           <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i class="lni lni-eye"></i>  Lihat Berkas</a>
-                           <a href="{{route('korban.jadwal_wawancara',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"> <i class="lni lni-mic"></i> Ikuti Wawancara</a>
+                        <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}"
+                            class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i
+                                class="lni lni-eye"></i> Lihat Berkas</a>
+                        <a href="{{route('korban.jadwal_wawancara',Crypt::encrypt($item['id']).'')}}"
+                            class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"> <i
+                                class="lni lni-mic"></i> Ikuti Wawancara</a>
                         @elseif ($item['status_sengketa'] == 4)
-                           <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}"class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i class="lni lni-eye"></i>  Lihat Berkas</a>
-                           <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}" class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i class="lni lni-mic"></i> Agenda Wawancara</a>
+                        <a href="{{route('korban.hasil_berkas_sengketa',Crypt::encrypt($item['id']).'')}}"
+                            class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i
+                                class="lni lni-eye"></i> Lihat Berkas</a>
+                        <a href="{{route('korban.add_korban_file',Crypt::encrypt($item['id']).'')}}"
+                            class="btn btn-block btn-sm text-white mt-4" style="background:#8f8f8f"><i
+                                class="lni lni-mic"></i> Agenda Wawancara</a>
                         @elseif ($item['status_sengketa'] == 5)
 
                         @elseif ($item['status_sengketa'] == 6)
@@ -291,10 +310,10 @@ use App\Models\User;
                 </div>
             </div>
             @endforeach
-          
+
         </div>
         <a class="btn text-white btn-success my-4" href="{{route('korban.tambah_sengketa')}}">Tambah Project</a>
-        
+
     </div>
 </div>
 @endsection
