@@ -4914,9 +4914,34 @@
         box-shadow: 0px 4px 8pxrgba(41, 128, 185, 0.24);
         border-radius: 100px;
     }
+  /* width */
+#row-why::-webkit-scrollbar {
+  width: 0px;
+}
+#row-why::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+#row-why::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  width: 0px;
+}
+
+/* Handle */
+#row-why::-webkit-scrollbar-thumb {
+  background: #888;
+  width: 0px;
+}
+
+/* Handle on hover */
+#row-why::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  width: 0px;
+}
 
 </style>
-<div class="row justify-content-between p-4" style="overflow-x: scroll; flex-wrap: nowrap;margin-bottom:30px;">
+<div class="row justify-content-between p-4"id="row-why" style="margin-bottom:30px;">
     <div class="col-sm col-lg-3">
         <div class="card border-0 shadow p-1">
             <div class="card-body">
@@ -4961,7 +4986,7 @@
                     </b>
                 </h6>
                 <p style="font-size: small;">
-                    Kami membantu para pemilik lahan tidur di seluruh Indonesia <br> untuk di kerjasamakan agar bisa produktif dan menghasilkan profit.
+                    Kami membantu para pemilik lahan tidur di seluruh Indonesia untuk di kerjasamakan agar bisa produktif dan menghasilkan profit.
                 </p>
                 <a href="{{url('')}}/kerjasama-lahan" class="text-info" style="text-decoration:none">Bergabung</a>
             </div>
@@ -5097,7 +5122,7 @@
                     </b>
                 </h6>
                 <p style="font-size: small;">
-                    Kami melakukan kerjasama dengan berbagai balai lelang pertanahan dan bangunan. Anda juga bisa menjual lahan dengan sistem lelang disini.
+                    Kami melakukan kerjasama dengan berbagai balai lelang pertanahan. Anda juga bisa menjual lahan dengan sistem lelang disini.
                 </p>
                 <a href="{{url('')}}/lelang-lahan" class="text-info" style="text-decoration:none">Bergabung</a>
             </div>
