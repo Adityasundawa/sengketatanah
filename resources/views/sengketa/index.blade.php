@@ -3048,7 +3048,7 @@
                                     <iframe id="vid_frame" src="https://www.youtube.com/embed/-RkCcavzXq8" width="100%" height="250px" frameborder="0"></iframe>
                                 </div>
                                 <div class="vr desktop"></div>
-                                <div class="col-lg-5 vid-lamo" style="height: 180px; overflow-y: scroll">
+                                <div class="col-lg-5 vid-lamo" style="height: 250px; overflow-y: scroll">
                                     <hr class="border-light">
 
                                     <div class="row mb-3 g-0">
