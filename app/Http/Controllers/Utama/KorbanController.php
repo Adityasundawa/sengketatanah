@@ -30,7 +30,10 @@ class KorbanController extends Controller
     public function bidding()
     {
         $data['title'] = "Bidding";
-        $data['sengketa'] = KorbanUser::where('user_id',Auth::id())->get();
+        $data['sengketa'] = KorbanUser::where([
+            'user_id' => Auth::id(),
+            'status_sengketa' => 4,
+        ])->get();
         return view('korban.bidding', $data);
     }
     

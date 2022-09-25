@@ -1,6 +1,19 @@
 <?php 
 use App\Models\Bid_Sengketa;
 use App\Models\User;
+use App\Models\KorbanUser;
+
+
+$project = KorbanUser::where([
+    'user_id' => auth()->user()->id,
+])->get();
+
+
+$project_di_setujui = KorbanUser::where([
+    'user_id' => auth()->user()->id,
+    'status_sengketa' => 4,
+])->get();
+?>
 ?>
 
 
@@ -19,7 +32,7 @@ use App\Models\User;
                     <div class="card radius-10 bg-gradient-deepblue">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
-                                <h5 class="mb-0 text-white">9526</h5>
+                                <h5 class="mb-0 text-white">{{count($project)}}</h5>
                                 <div class="ms-auto">
                                     <i class='bx bx-cart fs-3 text-white'></i>
                                 </div>
@@ -30,7 +43,6 @@ use App\Models\User;
                             </div>
                             <div class="d-flex align-items-center text-white">
                                 <p class="mb-0">Project</p>
-                                <p class="mb-0 ms-auto">+4.2%<span><i class='bx bx-up-arrow-alt'></i></span></p>
                             </div>
                         </div>
                     </div>
@@ -41,7 +53,7 @@ use App\Models\User;
                     <div class="card radius-10 bg-gradient-ohhappiness">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
-                                <h5 class="mb-0 text-white">$8323</h5>
+                                <h5 class="mb-0 text-white">{{count($project_di_setujui)}}</h5>
                                 <div class="ms-auto">
                                     <i class='bx bx-dollar fs-3 text-white'></i>
                                 </div>
@@ -51,7 +63,7 @@ use App\Models\User;
                                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div class="d-flex align-items-center text-white">
-                                <p class="mb-0">Bidding</p>
+                                <p class="mb-0">Project Di Setujui</p>
                                 <p class="mb-0 ms-auto">+1.2%<span><i class='bx bx-up-arrow-alt'></i></span></p>
                             </div>
                         </div>
@@ -73,34 +85,35 @@ use App\Models\User;
                                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div class="d-flex align-items-center text-white">
-                                <p class="mb-0">Agenda</p>
+                                <p class="mb-0">Bidding</p>
                                 <p class="mb-0 ms-auto">+5.2%<span><i class='bx bx-up-arrow-alt'></i></span></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </a>
-
-            <div class="col">
-                <div class="card radius-10 bg-gradient-moonlit">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center">
-                            <h5 class="mb-0 text-white">5630</h5>
-                            <div class="ms-auto">
-                                <i class='bx bx-envelope fs-3 text-white'></i>
+            <a href="{{route('korban.progress')}}">
+                <div class="col">
+                    <div class="card radius-10 bg-gradient-moonlit">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <h5 class="mb-0 text-white">5630</h5>
+                                <div class="ms-auto">
+                                    <i class='bx bx-envelope fs-3 text-white'></i>
+                                </div>
                             </div>
-                        </div>
-                        <div class="progress my-2 bg-white-transparent" style="height:4px;">
-                            <div class="progress-bar bg-white" role="progressbar" style="width: 55%" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <div class="d-flex align-items-center text-white">
-                            <p class="mb-0">Proggress</p>
-                            <p class="mb-0 ms-auto">+2.2%<span><i class='bx bx-up-arrow-alt'></i></span></p>
+                            <div class="progress my-2 bg-white-transparent" style="height:4px;">
+                                <div class="progress-bar bg-white" role="progressbar" style="width: 55%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="d-flex align-items-center text-white">
+                                <p class="mb-0">Closing</p>
+                                <p class="mb-0 ms-auto">+2.2%<span><i class='bx bx-up-arrow-alt'></i></span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
         <hr>
         <div class="row">
@@ -117,12 +130,15 @@ use App\Models\User;
             </style>
             <div class="col-md-12">
                 <div class="row mb-3">
+
+                    @foreach ($sengketa as $item)
+                    <?php $users = User::where('id',$item['user_id'])->first(); ?>
                     <div class="col-md-12 sp">
                         <div class="card mb-0 rounded-0">
                             <div class="card-header bg-white">
                                 <div class="d-flex align-items-center">
                                     <div>
-                                        <b>PROJECT</b><b class="text-danger"> SP-001</b>
+                                        <b>PROJECT</b><b class="text-danger"> SP-00{{$item['id']}}</b>
 
 
                                     </div>
@@ -130,7 +146,8 @@ use App\Models\User;
                                     <div class="dropdown options ms-auto">
 
                                         <div class="dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown">
-                                            <span class="badge mr-4 bg-success"><i class="lni lni-eye"></i> Tayang (100)</span>
+                                            <span class="badge mr-4 bg-success"><i class="lni lni-eye"></i> Tayang
+                                                (0)</span>
                                         </div>
 
 
@@ -141,8 +158,8 @@ use App\Models\User;
                                 </div>
                             </div>
                             <div class="card-body">
-                                  <div class="card bg-info text-white">
-                                    <div class="card-header">
+                                <div class="card text-white">
+                                    <div class="card-header bg-info ">
                                         Data Project
                                     </div>
                                     <div class="card-body">
@@ -152,62 +169,90 @@ use App\Models\User;
                                                     <td>Owner/Korban</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp; Yudi Cahya Prawira</td>
+                                                    <td>&nbsp; {{$users->name}}</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Objek Sengketa</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp; Sengketa Pertanahan</td>
+                                                    <td>&nbsp; {{$item['objek_sengketa']}}</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Luas Objek</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp; 3.1 hektar Ha</td>
+                                                    <td>&nbsp; {{$item['luas']}} Ha</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Lokasi</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp; Gegesik, Cirebon</td>
+                                                    <td>&nbsp; {{$item['lokasi']}}</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Kebutuhan Dana</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp; Rp.125000000</td>
+                                                    <?php
+                                                    $angka = $item['jumlah_dana'];
+                $format_angka = number_format($angka, "2", ",", ".");
+                 ?>
+                                                    <td>&nbsp; Rp.{{$format_angka}}</td>
                                                 </tr>
-        
+
                                                 <tr>
                                                     <td>Imbal Hasil</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp; Fee 75% Dari Pinjaman</td>
+                                                    <td>&nbsp; {{$item['pengembalian_dana']}}</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Jaminan</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp; Sertifikat Rumah</td>
-        
+                                                    <td>&nbsp; {{$item['jaminan_berupa']}}</td>
+
                                                 </tr>
-        
-        
-        
+
+
+                                                {{-- <tr>
+                                                    <td>Kode Bid</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp; <b class="text-danger">SP-00{{$item['id']}}</b></td>
+                                                </tr> --}}
+                                                {{-- <tr>
+                                                    <td>Status</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;
+                                                        @if($item['status_sengketa'] == 1)
+                                                        <span class="badge badge-danger">Menunggu verifikasi</span>
+                                                        @elseif($item['status_sengketa'] == 2)
+                                                        <span class="badge badge-success">Terverifikasi tahap 1</span>
+                                                        @elseif($item['status_sengketa'] == 3)
+                                                        <span class="badge badge-warning">Terverifikasi tahap 2</span>
+                                                        @elseif($item['status_sengketa'] == 4)
+                                                        <span class="badge badge-success">Selesai</span>
+                                                        @elseif($item['status_sengketa'] == 0)
+                                                        <span class="badge badge-danger">Pending</span>
+                                                        @endif</td>
+                                                </tr> --}}
                                             </tbody>
                                         </table>
                                     </div>
-                                  </div>
+                                </div>
                                 <div class="row mt-3">
-                                    
+
                                     <div class="col-lg-4">
                                         <div class="card radius-10">
                                             <div class="card-body">
                                                 <div class="d-flex align-items-center">
                                                     <div>
                                                         <p class="mb-0 text-secondary"></p>
-                                                        <h4 class="my-1">3</h4>
+                                                        <h4 class="my-1">
+                                                            {{count(Bid_Sengketa::where('sengketa_id',$item['id'])->get());}}
+                                                        </h4>
                                                     </div>
                                                     <div class="text-primary ms-auto font-35"><svg
                                                             xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -256,7 +301,8 @@ use App\Models\User;
                                                         <p class="mb-0 text-secondary">Berkas</p>
                                                         <h4 class="my-1"></h4>
                                                     </div>
-                                                    <div class="text-success ms-auto font-35"><i class="lni lni-empty-file"></i>
+                                                    <div class="text-success ms-auto font-35"><i
+                                                            class="lni lni-empty-file"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -271,7 +317,7 @@ use App\Models\User;
                                                         <h4 class="my-1"></h4>
                                                     </div>
                                                     <div class="text-success ms-auto font-35"><i
-                                                        class="lni lni-mic"></i></i>
+                                                            class="lni lni-mic"></i></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -280,12 +326,14 @@ use App\Models\User;
                                     <a href="" class="btn btn-block btn-sm mt-3 btn-info text-white">
                                         Promosikan Project</a>
                                 </div>
-                           
-                                
+
+
                             </div>
                         </div>
                     </div>
-                    
+                    @endforeach
+
+
                 </div>
             </div>
 

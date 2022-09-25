@@ -4948,11 +4948,11 @@
                 </div>
                 <h6 class="mt-1">
                     <b>
-                        Membantu Korban Sengketa Tanah
+                        Membantu Kerjasama Lahan
                     </b>
                 </h6>
                 <p style="font-size: small;">
-                    Kami membantu para pemilik lahan tidur untuk di kerjasamakan agar bisa menghasilkan.
+                    Kami membantu para pemilik lahan tidur di seluruh Indonesia <br> untuk di kerjasamakan agar bisa produktif dan menghasilkan profit.
                 </p>
                 <a href="#" class="text-info" style="text-decoration:none">Pelajari lebih lanjut ></a>
             </div>
@@ -5045,13 +5045,13 @@
                 </div>
                 <h6 class="mt-1">
                     <b>
-                        Lorem ipsum dolor sit.
+                        Membantu Jual Beli Lahan
                     </b>
                 </h6>
                 <p style="font-size: small;">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, adipisci?
+                    Jual dan beli lahan lebih mudah dan cepat di seluruh wilayah Indonesia dengan platform sengketatanah.id yang efisien dan praktis
                 </p>
-                <a href="#" class="text-info" style="text-decoration:none">Cari Lahan ></a>
+                <a href="#" class="text-info" style="text-decoration:none">Pelajari lebih lanjut ></a>
             </div>
         </div>
     </div>
@@ -5084,13 +5084,13 @@
                 </div>
                 <h6 class="mt-1">
                     <b>
-                        Lorem ipsum dolor sit.
+                        Membantu Pelelangan Lahan
                     </b>
                 </h6>
                 <p style="font-size: small;">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, adipisci?
+                    Kami melakukan kerjasama dengan berbagai balai lelang pertanahan dan bangunan. Anda juga bisa menjual lahan dengan sistem lelang disini.
                 </p>
-                <a href="#" class="text-info" style="text-decoration:none">Cari Lahan ></a>
+                <a href="#" class="text-info" style="text-decoration:none">Pelajari lebih lanjut ></a>
             </div>
         </div>
     </div>

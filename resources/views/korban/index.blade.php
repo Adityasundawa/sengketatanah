@@ -1,6 +1,18 @@
 <?php 
 use App\Models\Bid_Sengketa;
 use App\Models\User;
+use App\Models\KorbanUser;
+
+
+$project = KorbanUser::where([
+    'user_id' => auth()->user()->id,
+])->get();
+
+
+$project_di_setujui = KorbanUser::where([
+    'user_id' => auth()->user()->id,
+    'status_sengketa' => 4,
+])->get();
 ?>
 
 
@@ -16,7 +28,7 @@ use App\Models\User;
                     <div class="card radius-10 bg-gradient-deepblue">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
-                                <h5 class="mb-0 text-white">9526</h5>
+                                <h5 class="mb-0 text-white">{{count($project)}}</h5>
                                 <div class="ms-auto">
                                     <i class='bx bx-cart fs-3 text-white'></i>
                                 </div>
@@ -27,7 +39,6 @@ use App\Models\User;
                             </div>
                             <div class="d-flex align-items-center text-white">
                                 <p class="mb-0">Project</p>
-                                <p class="mb-0 ms-auto">+4.2%<span><i class='bx bx-up-arrow-alt'></i></span></p>
                             </div>
                         </div>
                     </div>
@@ -38,7 +49,7 @@ use App\Models\User;
                     <div class="card radius-10 bg-gradient-ohhappiness">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
-                                <h5 class="mb-0 text-white">$8323</h5>
+                                <h5 class="mb-0 text-white">{{count($project_di_setujui)}}</h5>
                                 <div class="ms-auto">
                                     <i class='bx bx-dollar fs-3 text-white'></i>
                                 </div>
@@ -48,7 +59,7 @@ use App\Models\User;
                                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div class="d-flex align-items-center text-white">
-                                <p class="mb-0">Bidding</p>
+                                <p class="mb-0">Project Di Setujui</p>
                                 <p class="mb-0 ms-auto">+1.2%<span><i class='bx bx-up-arrow-alt'></i></span></p>
                             </div>
                         </div>
@@ -70,14 +81,13 @@ use App\Models\User;
                                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div class="d-flex align-items-center text-white">
-                                <p class="mb-0">Agenda</p>
+                                <p class="mb-0">Bidding</p>
                                 <p class="mb-0 ms-auto">+5.2%<span><i class='bx bx-up-arrow-alt'></i></span></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </a>
-
             <a href="{{route('korban.progress')}}">
                 <div class="col">
                     <div class="card radius-10 bg-gradient-moonlit">
@@ -93,7 +103,7 @@ use App\Models\User;
                                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div class="d-flex align-items-center text-white">
-                                <p class="mb-0">Proggress</p>
+                                <p class="mb-0">Closing</p>
                                 <p class="mb-0 ms-auto">+2.2%<span><i class='bx bx-up-arrow-alt'></i></span></p>
                             </div>
                         </div>
@@ -105,6 +115,8 @@ use App\Models\User;
 
         <div class="row">
             @foreach ($sengketa as $item)
+
+            @if ($item['status_sengketa'] != 4)
             <?php $users = User::where('id',$item['user_id'])->first(); ?>
             <div class="col-lg-6">
                 <div class="card">
@@ -309,6 +321,8 @@ $format_angka = number_format($angka, "2", ",", ".");
 
                 </div>
             </div>
+            @endif
+        
             @endforeach
 
         </div>
