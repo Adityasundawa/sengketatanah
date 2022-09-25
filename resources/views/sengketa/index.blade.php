@@ -575,6 +575,8 @@
             </div>
             <div class="col-md text-center my-auto mt-3">
                 <h1>Solusi Untuk Anda</h1>
+                <h3>Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
+                    pemerintah.</h3>
                 <p>Platform Sengketa Tanah adalah inovator teknologi dalam bidang Sengketa
                     pertanahan di Indonesia yang mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
                     pemerintah.</p>
@@ -1447,7 +1449,7 @@
 
                     </div>
 
-                    <div class="card-body" style="background-color:#926c2a;">
+                    <div class="card-body" style="background-color:#FAFAD2;">
 
                         <div class="row align-items-center justify-content-center">
 
@@ -2272,7 +2274,7 @@
 
                     </div>
 
-                    <div class="card-body" style="background-color:#926c2a;">
+                    <div class="card-body" style="background-color:#FAFAD2;">
 
 
                         <div class="row align-items-center justify-content-center">
@@ -3166,7 +3168,7 @@
 
                     </div>
 
-                    <div class="card-body" style="background-color:#926c2a;">
+                    <div class="card-body" style="background-color:#FAFAD2;">
 
                         <div class="row align-items-center justify-content-center">
 
@@ -4013,7 +4015,7 @@
                         </table>
                     </div>
 
-                    <div class="card-body" style="background-color:#926c2a;">
+                    <div class="card-body" style="background-color:#FAFAD2;">
 
                         <div class="row align-items-center justify-content-center">
 
@@ -4839,10 +4841,10 @@
         </div>
         <style>
             .store {
-                width: 151px;
+                width: 171px;
             }
             .appstore {
-                width: 120px;
+                width: 140px;
                 margin-left: 10px
             }
             @media screen and (min-width: 768px){
@@ -4855,7 +4857,7 @@
             }
         </style>
 
-        <div class="row">
+        <div class="row shadow" style="background: white">
             <div class="col-11 mt-2" style="margin-left: 15px">
                 <b>Download Aplikasinya!</b>
                 <p class="fw-lighter">Platform Seputar Tanah No. 1 di Indonesia</p>
