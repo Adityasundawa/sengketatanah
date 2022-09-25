@@ -5,46 +5,44 @@
 <footer class="page-footer">
     <p class="mb-0">Copyright © 2021. All right reserved.</p>
 </footer>
-    	</div>
-    <!-- Bootstrap JS -->
-	<script src="{{asset('/')}}rukada/js/bootstrap.bundle.min.js"></script>
-	<!--plugins-->
-	<script src="{{asset('/')}}rukada/js/jquery.min.js"></script>
-	<script src="{{asset('/')}}rukada/plugins/simplebar/js/simplebar.min.js"></script>
-	<script src="{{asset('/')}}rukada/plugins/metismenu/js/metisMenu.min.js"></script>
-	<script src="{{asset('/')}}rukada/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-	<script src="{{asset('/')}}rukada/plugins/chartjs/js/Chart.min.js"></script>
-	<script src="{{asset('/')}}rukada/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
-    <script src="{{asset('/')}}rukada/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
-	<script src="{{asset('/')}}rukada/plugins/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
-	<script src="{{asset('/')}}rukada/plugins/sparkline-charts/jquery.sparkline.min.js"></script>
-	<script src="{{asset('/')}}rukada/plugins/jquery-knob/excanvas.js"></script>
-	<script src="{{asset('/')}}rukada/plugins/jquery-knob/jquery.knob.js"></script>
-	  <script>
-		  $(function() {
-			  $(".knob").knob();
-		  });
-	  </script>
-	  <script src="{{asset('/')}}rukada/js/index.js"></script>
-	<!--app JS-->
-	<script src="{{asset('/')}}rukada/js/app.js"></script>
-        <script>
-
-$(document).ready(function(){
-  $("#show").click(function(){
-    $("#alert").toggle();
-  });
-});
-    </script>
-    
-    <script>
-        $(document).ready(function () {
-            $('#myTable').DataTable();
+</div>
+<!-- Bootstrap JS -->
+<script src="{{asset('/')}}rukada/js/bootstrap.bundle.min.js"></script>
+<!--plugins-->
+<script src="{{asset('/')}}rukada/js/jquery.min.js"></script>
+<script src="{{asset('/')}}rukada/plugins/simplebar/js/simplebar.min.js"></script>
+<script src="{{asset('/')}}rukada/plugins/metismenu/js/metisMenu.min.js"></script>
+<script src="{{asset('/')}}rukada/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+<script src="{{asset('/')}}rukada/plugins/chartjs/js/Chart.min.js"></script>
+<script src="{{asset('/')}}rukada/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+<script src="{{asset('/')}}rukada/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script src="{{asset('/')}}rukada/plugins/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+<script src="{{asset('/')}}rukada/plugins/sparkline-charts/jquery.sparkline.min.js"></script>
+<script src="{{asset('/')}}rukada/plugins/jquery-knob/excanvas.js"></script>
+<script src="{{asset('/')}}rukada/plugins/jquery-knob/jquery.knob.js"></script>
+<script>
+    $(function () {
+        $(".knob").knob();
+    });
+</script>
+<script src="{{asset('/')}}rukada/js/index.js"></script>
+<!--app JS-->
+<script src="{{asset('/')}}rukada/js/app.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#show").click(function () {
+            $("#alert").toggle();
         });
+    });
+</script>
 
-    </script>
-        <script>
-      $(function () {
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable();
+    });
+</script>
+<script>
+    $(function () {
         var hidestuff = function () {
             $(".korban, .sponsor, .pengacara").hide();
         }
@@ -157,6 +155,118 @@ $(document).ready(function(){
             $(`[data-content=${id}]`).fadeIn();
         }
     });
-    </script>
-  </body>
+</script>
+<script>
+    fetch(`https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json`)
+        .then(response => response.json())
+        .then(provinces => {
+            let provinsi = document.getElementById('provinsi');
+            provinsi.innerHTML += `
+            
+                <option selected disabled>Pilih Provinsi</option>  
+                
+                `;
+            provinces.forEach(function (data) {
+
+                provinsi.innerHTML += `
+                
+                    <option value="${data.id}">${data.name}</option>  
+                    
+                    `;
+            })
+        });
+    $('select#provinsi').on('change', function () {
+        let provId = $(this).val();
+        $.ajax({
+            url: "{{url('/')}}/kota-prov-id",
+            data: {
+                prov_id: $('select#provinsi').val()
+            },
+            type: "get",
+            dataType: "json",
+            success: function (datas) {
+                let kota = document.getElementById('kota');
+                kota.innerHTML += `
+                    
+                        <option selected disabled>Pilih Kota</option>  
+                        
+                        `;
+                datas.forEach(function (data) {
+
+                    kota.innerHTML += `
+                        
+                            <option value="${data.id}">${data.name}</option>  
+                            
+                            `;
+                })
+                $('input[name=provinsi]').val($('select#provinsi option:selected').text());
+            }
+        });
+    })
+    $('select#kota').on('change', function () {
+        let provId = $(this).val();
+        $.ajax({
+            url: "{{url('/')}}/kec-kot-id",
+            data: {
+                kota_id: $('select#kota').val()
+            },
+            type: "get",
+            dataType: "json",
+            success: function (datas) {
+                let kecamatan = document.getElementById('kecamatan');
+                kecamatan.innerHTML += `
+                    
+                        <option selected disabled>Pilih kecamatan</option>  
+                        
+                        `;
+                datas.forEach(function (data) {
+
+                    kecamatan.innerHTML += `
+                        
+                            <option value="${data.id}">${data.name}</option>  
+                            
+                            `;
+                })
+                $('input[name=kota]').val($('select#kota option:selected').text());
+            }
+
+        });
+    })
+    $('select#kecamatan').on('change', function () {
+        let provId = $(this).val();
+        $.ajax({
+            url: "{{url('/')}}/des-kec-id",
+            data: {
+                kec_id: $('select#kecamatan').val()
+            },
+            type: "get",
+            dataType: "json",
+            success: function (datas) {
+                let desa = document.getElementById('desa');
+                desa.innerHTML += `
+                    
+                        <option selected disabled>Pilih desa</option>  
+                        
+                        `;
+                datas.forEach(function (data) {
+
+                    desa.innerHTML += `
+                        
+                            <option value="${data.id}">${data.name}</option>  
+                            
+                            `;
+                })
+                $('input[name=kecamatan]').val($('select#kecamatan option:selected').text());
+            }
+
+        });
+    })
+    $('select#desa').on('change', function () {
+
+        $('input[name=desa]').val($('select#desa option:selected').text());
+
+    })
+</script>
+</body>
+
 </html>
