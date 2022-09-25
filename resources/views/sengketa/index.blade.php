@@ -4891,9 +4891,7 @@
                 }
             }
         </style>
-<h5>
-    Kenapa Sengketatanah.id ?
-</h5>
+
 <style>
     .icon-wrapper {
         width: 62px;
@@ -4941,6 +4939,12 @@
 }
 
 </style>
+
+<div class="p-4">
+<h5>
+    Kenapa Sengketatanah.id ?
+</h5>
+</div>
 <div class="row justify-content-between p-4"id="row-why" style="margin-bottom:30px;">
     <div class="col-sm col-lg-3">
         <div class="card border-0 mt-3 shadow p-1">
@@ -5129,9 +5133,11 @@
         </div>
     </div>
 </div>
+<div class="p-4">
 <h5 style="margin-bottom:-30px">
-    Kata Mereka tentang sengketatanah.id
+   Bicara tentang Sengketatanah.id
 </h5>
+</div>
 
 <div class="row justify-content-between mb-3 p-4" style="overflow-x: auto; flex-wrap: nowrap;margin-top:50px">
 
