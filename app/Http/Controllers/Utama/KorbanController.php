@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Utama;
 
 use App\Http\Controllers\Controller;
-use App\Models\Api\Provinsi;
 use App\Models\JadwalMeeting;
 use App\Models\KorbanUser;
 use App\Models\Sponsoruser;
@@ -38,7 +37,6 @@ class KorbanController extends Controller
     public function tambah_sengketa()
     {
         $data['sengketa'] = KorbanUser::where('user_id',Auth::id())->get();
-        $data['provinsi'] = Provinsi::get();
         $data['title'] = "Project";
         return view('korban.utama',$data);
     }
