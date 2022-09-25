@@ -2634,8 +2634,8 @@
 
                 <div class="card mb-3 border-0 shadow-sm ">
                     <div class="card-header bg-white">
-                        <h5 color="text-dark">Kerja Sama Lahan</h5>
-                        <p>Total Lahan Tersedia <span class="badge bg-danger">4,323</span>
+                        <h5 color="text-dark">Podcast Sengketa</h5>
+                        <p>Total Video <span class="badge bg-danger">10</span>
                             <b class="float-end" style="margin-top:-20px">
                                 <span class="text-success">Lihat Semua</span>
                             </b>
@@ -2649,31 +2649,31 @@
                         <div class="row mt-2 justify-content-between" id="lelang-card"
                             style="overflow-x: auto; flex-wrap: nowrap">
 
-                            <div class="col-11 bid">
+                            <div class="col-12 bid">
                                 <div class="card mx-auto">
 
                                     <div class="card-body">
-                                        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/-RkCcavzXq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-RkCcavzXq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
 
                                 </div>
                             </div>
 
-                            <div class="col-11 bid">
+                            <div class="col-12 bid">
                                 <div class="card mx-auto">
 
                                     <div class="card-body">
-                                        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/byby3HJ3OCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/byby3HJ3OCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
                                     </div>
 
                                 </div>
                             </div>
 
-                            <div class="col-11 bid">
+                            <div class="col-12 bid">
                                 <div class="card mx-auto">
 
                                     <div class="card-body">
-                                        <iframe width="100%" height="300px" src="https://www.youtube.com/embed/1I4iEKK1qbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1I4iEKK1qbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
 
                                 </div>
