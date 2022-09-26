@@ -54,12 +54,15 @@
 
         .ribbon-pop {
             background: linear-gradient(270deg, #4f396a 5.25%, #576bb0 96.68%);
-            display: inline-block;
+            display: block;
             padding: 5px 30px 5px 10px;
             color: white;
-            position: relative;
-            margin-top: -10px;
-            margin-bottom: 10px;
+            position: absolute;
+            width: 100px;
+            z-index: 999;
+            margin-top: 0px;
+            margin-left: -15px;
+            margin-bottom: -10px;
 
         }
 
@@ -70,9 +73,9 @@
             top: 0;
             position: absolute;
             right: 0;
-            border-right: 20px solid #fff;
-            border-top: 20px solid transparent;
-            border-bottom: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 17px solid transparent;
+            border-bottom: 17px solid transparent;
         }
 
         .ribbon-pop:before {
@@ -530,7 +533,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Podcast Sengketa</a>
                     </li>
-                    </li> --}}
+                    </li>
                     <li class="nav-item me-2">
                         <a class="nav-link" href="{{url('/')}}/tentang">Tentang Kami</a>
                     </li>
@@ -1413,7 +1416,8 @@
                                     </h5>
                                 </td>
                                 <td class="text-end" rowspan="2">
-                                    <a href="{{url('')}}/bid-sengketa" class="text-success fw-bold" style="text-decoration: none">Lihat
+                                    <a href="{{url('')}}/bid-sengketa" class="text-success fw-bold"
+                                        style="text-decoration: none">Lihat
                                         Semua</a>
                                 </td>
                             </tr>
@@ -1441,8 +1445,54 @@
 
                                     <div class="col-12 ">
                                         <div class="card mx-auto" style="width: 21rem;">
-                                            <img src="{{asset('')}}images/lahan1.jpeg" class="card-img-top" alt="..."
-                                                style="height:200px;width:auto;object-fit:cover">
+                                            <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div id="bidding1" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#bidding1"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#bidding1"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#bidding1"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#bidding1"
+                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                    data-bs-target="#bidding1" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                    data-bs-target="#bidding1" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+
                                             <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                                 <div class="row">
                                                     <div class="col-lg-12">
@@ -1633,8 +1683,53 @@
 
                                     <div class="col-12">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                            <img src="{{asset('')}}images/lahan2.jpeg" class="card-img-top" alt="..."
-                                                style="height:200px;width:auto;object-fit:cover">
+                                        <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div id="bidding2" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#bidding2"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#bidding2"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#bidding2"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#bidding2"
+                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                    data-bs-target="#bidding2" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                    data-bs-target="#bidding2" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
                                             <div class="card-header text-white px-3 py-1" style="
                                             background: #8f8f8f">
                                                 <div class="row">
@@ -1821,8 +1916,53 @@
 
                                     <div class="col-12">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                            <img src="{{asset('')}}images/lahan3.jpeg" class="card-img-top" alt="..."
-                                                style="height:200px;width:auto;object-fit:cover">
+                                        <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div id="bidding3" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#bidding3"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#bidding3"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#bidding3"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#bidding3"
+                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                    data-bs-target="#bidding3" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                    data-bs-target="#bidding3" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
                                             <div class="card-header text-white px-3 py-1" style="
                                             background: #8f8f8f">
                                                 <div class="row">
@@ -2007,8 +2147,53 @@
 
                                     <div class="col-12">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" class="card-img-top" alt="..."
-                                                style="height:200px;width:auto;object-fit:cover">
+                                        <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div id="bidding4" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#bidding4"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#bidding4"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#bidding4"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#bidding4"
+                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                    data-bs-target="#bidding4" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                    data-bs-target="#bidding4" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
 
                                             <div class="card-header text-white px-3 py-1" style="
                                             background: #8f8f8f">
@@ -2269,8 +2454,53 @@
 
                                     <div class="col-12 ">
                                         <div class="card mx-auto" style="width: 21rem;">
-                                            <img src="{{asset('')}}images/lahan1.jpeg" class="card-img-top" alt="..."
-                                                style="height:200px;width:auto;object-fit:cover">
+                                        <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div id="ksl1" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#ksl1"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#ksl1"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ksl1"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ksl1"
+                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                    data-bs-target="#ksl1" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                    data-bs-target="#ksl1" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
                                             <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                                 <div class="row">
                                                     <div class="col-lg-12">
@@ -2445,9 +2675,56 @@
 
                                     <div class="col-12">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                            <img src="{{asset('')}}images/lahan2.jpeg" class="card-img-top" alt="..."
-                                                style="height:200px;width:auto;object-fit:cover">
-                                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                        <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div id="ksl2" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#ksl2"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#ksl2"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ksl2"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ksl2"
+                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                    data-bs-target="#ksl2" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                    data-bs-target="#ksl2" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                            <div class="card-header text-white px-3 py-1" style="
+                                    background: #8f8f8f">
+
                                                 <div class="row">
 
                                                     <div class="col-lg-12">
@@ -2622,9 +2899,56 @@
 
                                     <div class="col-12">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                            <img src="{{asset('')}}images/lahan3.jpeg" class="card-img-top" alt="..."
-                                                style="height:200px;width:auto;object-fit:cover">
-                                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                        <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div id="ksl3" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#ksl3"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#ksl3"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ksl3"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ksl3"
+                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                    data-bs-target="#ksl3" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                    data-bs-target="#ksl3" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                            <div class="card-header text-white px-3 py-1" style="
+                                    background: #8f8f8f">
+
                                                 <div class="row">
 
                                                     <div class="col-lg-12">
@@ -2799,8 +3123,53 @@
 
                                     <div class="col-12">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" class="card-img-top" alt="..."
-                                                style="height:200px;width:auto;object-fit:cover">
+                                        <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div id="ksl4" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#ksl4"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#ksl4"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ksl4"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ksl4"
+                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                    data-bs-target="#ksl4" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                    data-bs-target="#ksl4" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
 
                                             <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                                 <div class="row">
@@ -3285,8 +3654,53 @@
 
                                     <div class="col-12 ">
                                         <div class="card mx-auto" style="width: 21rem;">
-                                            <img src="{{asset('')}}images/lahan1.jpeg" class="card-img-top" alt="..."
-                                                style="height:200px;width:auto;object-fit:cover">
+                                        <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div id="jbl1" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#jbl1"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#jbl1"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#jbl1"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#jbl1"
+                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                    data-bs-target="#jbl1" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                    data-bs-target="#jbl1" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
                                             <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                                 <div class="row">
                                                     <div class="col-lg-12">
@@ -3477,8 +3891,53 @@
 
                                     <div class="col-12">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                            <img src="{{asset('')}}images/lahan2.jpeg" class="card-img-top" alt="..."
-                                                style="height:200px;width:auto;object-fit:cover">
+                                        <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div id="jbl2" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#jbl2"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#jbl2"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#jbl2"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#jbl2"
+                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                    data-bs-target="#jbl2" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                    data-bs-target="#jbl2" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
                                             <div div class="card-header text-white px-3 py-1"
                                                 style="background: #8f8f8f">
                                                 <div class="row">
@@ -3670,8 +4129,53 @@
 
                                     <div class="col-12">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                            <img src="{{asset('')}}images/lahan3.jpeg" class="card-img-top" alt="..."
-                                                style="height:200px;width:auto;object-fit:cover">
+                                        <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div id="jbl3" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#jbl3"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#jbl3"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#jbl3"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#jbl3"
+                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                    data-bs-target="#jbl3" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                    data-bs-target="#jbl3" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
                                             <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                                 <div class="row">
 
@@ -3862,8 +4366,53 @@
 
                                     <div class="col-12">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" class="card-img-top" alt="..."
-                                                style="height:200px;width:auto;object-fit:cover">
+                                        <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div id="jbl4" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#jbl4"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#jbl4"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#jbl4"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#jbl4"
+                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                    data-bs-target="#jbl4" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                    data-bs-target="#jbl4" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
 
                                             <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                                 <div class="row">
@@ -4135,8 +4684,53 @@
 
                                     <div class="col-12 ">
                                         <div class="card mx-auto" style="width: 21rem;">
-                                            <img src="{{asset('')}}images/lahan1.jpeg" class="card-img-top" alt="..."
-                                                style="height:200px;width:auto;object-fit:cover">
+                                        <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div id="ll4" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#ll4"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#ll4"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ll4"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ll4"
+                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                    data-bs-target="#ll4" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                    data-bs-target="#ll4" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
                                             <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                                 <div class="row">
                                                     <div class="col-lg-12">
@@ -4327,8 +4921,53 @@
 
                                     <div class="col-12">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                            <img src="{{asset('')}}images/lahan2.jpeg" class="card-img-top" alt="..."
-                                                style="height:200px;width:auto;object-fit:cover">
+                                        <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div id="ll2" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#ll2"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#ll2"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ll2"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ll2"
+                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                    data-bs-target="#ll2" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                    data-bs-target="#ll2" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
                                             <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                                 <div class="row">
 
@@ -4520,8 +5159,53 @@
 
                                     <div class="col-12">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                            <img src="{{asset('')}}images/lahan3.jpeg" class="card-img-top" alt="..."
-                                                style="height:200px;width:auto;object-fit:cover">
+                                        <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div id="ll3" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#ll3"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#ll3"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ll3"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ll3"
+                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                    data-bs-target="#ll3" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                    data-bs-target="#ll3" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
                                             <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                                 <div class="row">
 
@@ -4712,9 +5396,53 @@
 
                                     <div class="col-12">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" class="card-img-top" alt="..."
-                                                style="height:200px;width:auto;object-fit:cover">
+                                        <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div id="ll44" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#ll44"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#ll44"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ll44"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ll44"
+                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
 
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100"
+                                                            style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                    data-bs-target="#ll44" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                    data-bs-target="#ll44" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
                                             <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                                 <div class="row">
 
