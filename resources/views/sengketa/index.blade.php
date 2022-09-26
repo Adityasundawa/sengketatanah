@@ -1419,12 +1419,11 @@
                                 </td>
                                 <td>
                                     <h5 color="text-dark" style="margin-bottom: 0px !important">
-                                        Bidding Sponsor
+                                        Bidding Sengketa
                                     </h5>
                                 </td>
                                 <td class="text-end" rowspan="2">
-                                    <a href="{{url('')}}/biding-sengketa" class="text-success fw-bold"
-                                        style="text-decoration: none">Lihat
+                                    <a href="{{url('')}}/bid-sengketa" class="text-success fw-bold" style="text-decoration: none">Lihat
                                         Semua</a>
                                 </td>
                             </tr>

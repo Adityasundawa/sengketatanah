@@ -133,7 +133,11 @@ class SengketaController extends Controller
                 "jaminan"=>" Sertifikat Tanah",
                 "jumlah_bid"=>3,
                 "link_yt"=>'https://www.youtube.com/embed/-RkCcavzXq8',
-                "img"=>"/images/lahan1.jpeg"
+                "img"=>"/images/lahan1.jpeg",
+                "img1"=>"/images/lahan2.jpeg",
+                "img2"=>"/images/lahan3.jpeg",
+                "img3"=>"/images/lahan4.jpeg",
+
             ],
             [
                 'id'=>2,
@@ -148,7 +152,10 @@ class SengketaController extends Controller
                 "jaminan"=>" Sertifikat Rumah",
                 "jumlah_bid"=>4,
                 "link_yt"=>'https://www.youtube.com/embed/byby3HJ3OCI',
-                "img"=>'/images/lahan2.jpeg'
+                "img"=>'/images/lahan2.jpeg',
+                "img1"=>"/images/lahan1.jpeg",
+                "img2"=>"/images/lahan3.jpeg",
+                "img3"=>"/images/lahan4.jpeg",
             ],
             [
                 'id'=>3,
@@ -163,7 +170,10 @@ class SengketaController extends Controller
                 "jaminan"=>" Sertifikat Tanah",
                 "jumlah_bid"=>6,
                 "link_yt"=>'https://www.youtube.com/embed/1I4iEKK1qbQ',
-                "img"=>'/images/lahan3.jpeg'
+                "img"=>'/images/lahan3.jpeg',
+                "img1"=>"/images/lahan1.jpeg",
+                "img2"=>"/images/lahan2.jpeg",
+                "img3"=>"/images/lahan4.jpeg",
             ],
             [
                 'id'=>4,
@@ -178,7 +188,11 @@ class SengketaController extends Controller
                 "jaminan"=>" Sertifikat Rumah",
                 "jumlah_bid"=>1,
                 "link_yt"=>'',
-                "img"=>'/images/lahan1.jpeg'
+                "img"=>'/images/lahan1.jpeg',
+                
+                "img1"=>"/images/lahan2.jpeg",
+                "img2"=>"/images/lahan4.jpeg",
+                "img3"=>"/images/lahan3.jpeg",
             ],
             [
                 'id'=>5,
@@ -193,7 +207,11 @@ class SengketaController extends Controller
                 "jaminan"=>" Sertifikat Tanah",
                 "jumlah_bid"=>12,
                 "link_yt"=>'',
-                "img"=>'/images/lahan3.jpeg'
+                "img"=>'/images/lahan3.jpeg',
+                 
+                "img2"=>"/images/lahan4.jpeg",
+                "img1"=>"/images/lahan2.jpeg",
+                "img3"=>"/images/lahan1.jpeg",
             ],
             [
                 'id'=>6,
@@ -208,7 +226,10 @@ class SengketaController extends Controller
                 "jaminan"=>" Sertifikat Rumah",
                 "jumlah_bid"=>10,
                 "link_yt"=>'',
-                "img"=>'/images/lahan2.jpeg'
+                "img"=>'/images/lahan2.jpeg',
+                "img2"=>"/images/lahan4.jpeg",
+                "img3"=>"/images/lahan3.jpeg",
+                "img1"=>"/images/lahan1.jpeg",
             ],
             [
                 'id'=>7,
@@ -223,7 +244,10 @@ class SengketaController extends Controller
                 "jaminan"=>" Sertifikat Tanah",
                 "jumlah_bid"=>9,
                 "link_yt"=>'',
-                "img"=>'/images/lahan3.jpeg'
+                "img"=>'/images/lahan3.jpeg',
+                "img2"=>"/images/lahan4.jpeg",
+                "img1"=>"/images/lahan2.jpeg",
+                "img3"=>"/images/lahan1.jpeg",
             ],
             [
                 'id'=>8,
@@ -238,7 +262,10 @@ class SengketaController extends Controller
                 "jaminan"=>" Sertifikat Rumah",
                 "jumlah_bid"=>7,
                 "link_yt"=>'',
-                "img"=>'/images/lahan1.jpeg'
+                "img"=>'/images/lahan1.jpeg',
+                "img1"=>"/images/lahan2.jpeg",
+                "img2"=>"/images/lahan4.jpeg",
+                "img3"=>"/images/lahan3.jpeg",
             ],
             [
                 'id'=>9,
@@ -253,7 +280,10 @@ class SengketaController extends Controller
                 "jaminan"=>" Sertifikat Tanah",
                 "jumlah_bid"=>8,
                 "link_yt"=>'',
-                "img"=>'/images/lahan2.jpeg'
+                "img"=>'/images/lahan2.jpeg',
+                "img3"=>"/images/lahan3.jpeg",
+                "img2"=>"/images/lahan4.jpeg",
+                "img1"=>"/images/lahan1.jpeg",
             ],
             [
                 'id'=>10,
@@ -268,7 +298,10 @@ class SengketaController extends Controller
                 "jaminan"=>" Sertifikat Rumah",
                 "jumlah_bid"=>6,
                 "link_yt"=>'',
-                "img"=>'/images/lahan3.jpeg'
+                "img"=>'/images/lahan3.jpeg',
+                "img3"=>"/images/lahan1.jpeg",
+                "img2"=>"/images/lahan4.jpeg",
+                "img1"=>"/images/lahan2.jpeg",
             ],
         ];
     }
