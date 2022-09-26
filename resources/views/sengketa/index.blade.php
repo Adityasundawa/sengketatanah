@@ -3064,7 +3064,7 @@
                             
                             <div class="row">
                                 <div class="col-lg">
-                                    <iframe id="vid_frame" src="https://www.youtube.com/embed/-RkCcavzXq8" width="100%" height="250px" frameborder="0"></iframe>
+                                    <iframe id="vid_frame" src="https://www.youtube.com/embed/-RkCcavzXq8?rel=0&amp;showinfo=0&amp;autohide=1" width="100%" height="250px" frameborder="0"></iframe>
                                 </div>
                                 <div class="vr desktop"></div>
                                 <div class="col-lg-5 vid-lamo" style="height: 320px; overflow-y: scroll">
@@ -4980,7 +4980,7 @@
                 </div>
                 <h6 class="mt-1">
                     <b>
-                        Membantu Persengketa Tanah
+                        Membantu Persengketaan Tanah
                     </b>
                 </h6>
                 <p style="font-size: small;">
