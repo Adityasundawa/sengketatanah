@@ -5009,7 +5009,7 @@
                     </b>
                 </h6>
                 <p style="font-size: small;">
-                    Kami membantu para pemilik lahan tidur di seluruh Indonesia untuk di kerjasamakan agar bisa produktif dan menghasilkan profit.
+                    Kami membantu para pemilik lahan tidur di seluruh Indonesia untuk di kerjasamakan agar bisa produktif dan menghasilkan manfaat.
                 </p>
                 <a href="{{url('')}}/kerjasama-lahan" class="text-info" style="text-decoration:none">Bergabung</a>
             </div>
