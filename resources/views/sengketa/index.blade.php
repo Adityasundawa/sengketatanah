@@ -498,6 +498,10 @@
             text-align: start
         }
 
+        .card {
+            border-radius: 10px
+        }
+
     </style>
 </head>
 
@@ -578,7 +582,7 @@
                 <h3>"Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
                     pemerintah dalam satu platform."</h3>
 
-                <button class="btn rounded-5 mt-3 text-white" style="background: #BF9742" href="#">Bergabung</button>
+                <a class="btn rounded-5 mt-3 text-white" style="background: #BF9742" href="{{url('')}}/join">Bergabung</a>
 
             </div>
         </div>

@@ -46,6 +46,7 @@ Route::get('kerjasama-lahan',[PublicController::class,'kerjasamaLahan'])->name('
 Route::get('podcast-sengketa',[PublicController::class,'podcastSengketa'])->name('podcastSengketa');
 Route::get('jual-beli-lahan',[PublicController::class,'jualBeliLahan'])->name('jualBeliLahan');
 Route::get('lelang-lahan',[PublicController::class,'lelangLahan'])->name('lelangLahan');
+Route::get('join',[PublicController::class,'joinSengketa'])->name('joinSengketa');
 
 
 
