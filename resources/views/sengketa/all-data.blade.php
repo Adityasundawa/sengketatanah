@@ -429,12 +429,20 @@
             display: none;
         }
 
+        .desktop-2 {
+            display: block;
+        }
+
         @media (max-width: 1000px) {
             .mobile {
                 display: block;
             }
 
             .desktop {
+                display: none;
+            }
+
+            .desktop-2 {
                 display: none;
             }
         }
@@ -692,6 +700,8 @@
                                             </div>
                                             @else
                                             @endif
+
+                                            <div class="desktop-2">
                                                 <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
                                                     data-bs-ride="carousel">
                                                     <div class="carousel-indicators">
@@ -728,10 +738,49 @@
                                                         <span class="visually-hidden">Next</span>
                                                     </button>
                                                 </div>
+                                            </div>
+                                            <div class="mobile">
+                                            <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
+                                                    data-bs-ride="carousel">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    </div>
+
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="{{$bs['img']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img1']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img2']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img3']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
 
 
                                               
-                                            <table>
+                                            <table class="mt-3">
                                                 <tr>
                                                     <td>Owner/Korban</td>
                                                     <td></td>
