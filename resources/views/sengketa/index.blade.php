@@ -3842,11 +3842,11 @@
 
                                                         <div class="d-grid gap-2 ">
 
-                                                            <!-- <button type="button"
+                                                            <button type="button"
                                                         class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
                                                         data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                         BID
-                                                    </button> -->
+                                                    </button>
 
 
                                                             <div class="modal fade my-auto" id="exampleSponsor"
