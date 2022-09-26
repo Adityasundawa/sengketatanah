@@ -678,7 +678,7 @@
 
                                             <div class="card-body">
                                                 <div class="img mb-2">
-                                                    <img src="{{$bs['img']}}" style="width: 100%; max-height:425px;" alt="">
+                                                    <img src="{{$bs['img']}}" style="width: 100%; max-height:390px;" alt="">
                                                 </div>
                                             @if($bs['id'] < 5)
                                                 <div class="ribbon-pop"><i class="fa-solid fa-star"></i>&nbsp;HOT</div>
