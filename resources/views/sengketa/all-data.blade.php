@@ -52,12 +52,15 @@
 
         .ribbon-pop {
             background: linear-gradient(270deg, #4f396a 5.25%, #576bb0 96.68%);
-            display: inline-block;
+            display: block;
             padding: 5px 30px 5px 10px;
             color: white;
-            position: relative;
-            margin-top: -10px;
-            margin-bottom: 10px;
+            position: absolute;
+            width: 100px;
+            z-index: 999;
+            margin-top: 0px;
+            margin-left: -15px;
+            margin-bottom: -10px;
 
         }
 
@@ -68,9 +71,9 @@
             top: 0;
             position: absolute;
             right: 0;
-            border-right: 20px solid #fff;
-            border-top: 20px solid transparent;
-            border-bottom: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 17px solid transparent;
+            border-bottom: 17px solid transparent;
         }
 
         .ribbon-pop:before {
@@ -364,7 +367,8 @@
                 padding: 3rem 20rem;
             }
         }
-        .bg-brown{
+
+        .bg-brown {
             color: #fff;
             background: #61481C;
             border: 1px solid #61481C;
@@ -434,6 +438,7 @@
                 display: none;
             }
         }
+
     </style>
 </head>
 
@@ -512,7 +517,7 @@
         </div>
     </div>
 
-    
+
     <div class="container">
 
         <div class="row justify-content-center mb-2">
@@ -677,13 +682,55 @@
 
 
                                             <div class="card-body">
-                                                <div class="img mb-2">
-                                                    <img src="{{$bs['img']}}" style="width: 100%; max-height:390px;" alt="">
-                                                </div>
-                                            @if($bs['id'] < 5)
-                                                <div class="ribbon-pop"><i class="fa-solid fa-star"></i>&nbsp;HOT</div>
+                                                <!-- <div class="img mb-2">
+                                                    <img src="" style="width: 100%; max-height:390px;"
+                                                        alt="">
+                                                </div> -->
+
+                                                @if($bs['id'] < 5) <div class="ribbon-pop"><i
+                                                        class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
                                             @else
                                             @endif
+                                                <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
+                                                    data-bs-ride="carousel">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    </div>
+
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="{{$bs['img']}}" class="d-block w-100"style="height:350px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img1']}}" class="d-block w-100"style="height:350px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img2']}}" class="d-block w-100"style="height:350px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img3']}}" class="d-block w-100"style="height:350px;width:auto;object-fit:cover">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+
+
+                                              
                                             <table>
                                                 <tr>
                                                     <td>Owner/Korban</td>
