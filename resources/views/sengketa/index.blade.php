@@ -1393,7 +1393,7 @@
                                 </td>
                                 <td>
                                     <h5 color="text-dark" style="margin-bottom: 0px !important">
-                                        Bidding Sponsor
+                                        Bidding Sengketa
                                     </h5>
                                 </td>
                                 <td class="text-end" rowspan="2">
