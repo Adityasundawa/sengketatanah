@@ -1357,7 +1357,7 @@
                                     tersebut.
 
                                     <h2>
-                                        <div class="fw-bold mt-3" style="color: #61481C"> VISI MISI</div>
+                                        <div class="fw-bold mt-5" style="color: #61481C"> VISI MISI</div>
                                     </h2>
                                     <div class="text-start">
                                     <h5>VISI</h5> 
