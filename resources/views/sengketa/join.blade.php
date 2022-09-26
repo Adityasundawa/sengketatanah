@@ -226,7 +226,7 @@
                                 <i class="fa-regular fa-circle-check"></i>
                             </div>
                             <div class="flex-grow-1 ms-3">
-                                Rumah terjual lebih cepat
+                                Bantuan pendanaan dari sponsor
                             </div>
                         </div>
                     </div>
@@ -236,7 +236,7 @@
                                 <i class="fa-regular fa-circle-check"></i>
                             </div>
                             <div class="flex-grow-1 ms-3">
-                                Proses jual rumah aman dan mudah
+                                Bantuan tenaga pengacara
                             </div>
                         </div>
                     </div>
@@ -246,11 +246,11 @@
                                 <i class="fa-regular fa-circle-check"></i>
                             </div>
                             <div class="flex-grow-1 ms-3">
-                                Cara jual rumah lebih baik dari cara konvensional
+                                Bantuan mengadvokasi permasalahan sengketa tanah anda kepada pemerintah
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg jual-sekarang text-end"><button class="btn btn-light text-brown rounded-3">Jual Sekarang</button></div>
+                    <div class="col-lg jual-sekarang text-end"><button class="btn btn-light text-brown rounded-3 fw-bold w-100">Daftar</button></div>
                 </div>
             </div>
         </div>
