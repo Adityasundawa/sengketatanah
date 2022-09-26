@@ -524,23 +524,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Produk</a>
                     </li>
-                    <!--<li class="nav-item">-->
-                    <!--    <a class="nav-link" href="{{url("/")}}/role">Role Pengguna</a>-->
-                    <!--</li>-->
-                    <!--<li class="nav-item">-->
-                    <!--    <a class="nav-link" href="#">Panduan</a>-->
-                    <!--</li>-->
-                    <!--<li class="nav-item">-->
-                    <!--    <a class="nav-link" href="#">Jaminan</a>-->
-                    <!--</li>-->
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('')}}/bid-sengketa">Bid Sengketa</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Podcast Sengketa</a>
                     </li>
-                    {{-- <li class="nav-item">
-                        <a class="nav-link" href="{{url('/')}}/tentang-pemerintah">Tentang Aplikasi</a>
                     </li> --}}
                     <li class="nav-item me-2">
                         <a class="nav-link" href="{{url('/')}}/tentang">Tentang Kami</a>
@@ -555,9 +544,6 @@
                     <li class="nav-item me-1 ms-1">
                         <a class="nav-link btn btn-brown text-white rounded-3" href="{{url('/')}}/register">Register</a>
                     </li>
-                    <!--<li class="nav-item">-->
-                    <!--    <a class="nav-link" href="{{url('/')}}/contact">Hubungi Kami</a>-->
-                    <!--</li>-->
                 </ul>
 
             </div>

@@ -65,20 +65,27 @@
         }
 
         .text-brown{
-            color: #61481C;
+            color: #61481C !important;
+        }
+
+        .text-light-brown{
+            color: #BF9742 !important;
         }
 
         .card {
-            border-radius: 10px;
+            border-radius: 15px;
         }
 
         .card.card-main {
             background-color: #E6B325; 
         }
 
+        .card.kriteria {
+            background-color: #BF9742; 
+        }
+
         .card.card-child {
             position: relative;
-            background-color: #BF9742; 
             width: 65%;
             bottom: 45px;
             left: 55px;
@@ -88,6 +95,10 @@
             font-size: 12px
         }
 
+        .image-collab {
+            width: 450px;
+        }
+        
         @media (max-width: 991.98px) { 
             .col-lg.jual-sekarang {
                 margin-top: 5px;
@@ -97,12 +108,15 @@
 
             .card.card-child {
                 position: relative;
-                background-color: #BF9742; 
                 width: 50%;
                 bottom: 45px;
                 left: 0px;
                 margin-left: auto;
                 margin-right: auto;
+            }
+
+            .image-collab {
+                width: 350px;
             }
         }
 
@@ -115,7 +129,6 @@
 
             .card.card-child {
                 position: relative;
-                background-color: #BF9742; 
                 width: 75%;
                 bottom: 45px;
                 left: 0px;
@@ -171,7 +184,7 @@
         </div>
     </nav>
 
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
         <div class="card border-0 card-main">
             <div class="card-body">
                 <div class="row p-5">
@@ -184,7 +197,8 @@
                 </div>
             </div>
         </div>
-        <div class="card border-0 text-white card-child" >
+        
+        <div class="card border-0 text-white card-child bg-brown">
             <div class="card-body">
                 <div class="row align-items-center px-2 text-child-item">
                     <div class="col-lg jual-sekarang">
@@ -217,10 +231,106 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg jual-sekarang text-end"><button class="btn btn-light rounded-3" style="color: #BF9742">Jual Sekarang</button></div>
+                    <div class="col-lg jual-sekarang text-end"><button class="btn btn-light text-brown rounded-3">Jual Sekarang</button></div>
                 </div>
             </div>
         </div>
+
+        <div class="row pt-5 mb-5">
+            <div class="col-12 text-center">
+                <h3 class="text-brown" style="font-weight: 700">Bekerjasama Dengan:</h3>
+                <img class="mt-4 image-collab" src="https://rumalaku.id/wp-content/uploads/2022/06/pngwing.com_.png" alt="">
+            </div>
+        </div>
+        
+
+        <div class="row pt-5 mb-5 justify-content-center">
+            <div class="col-md-12 text-center">
+                <h3 class="text-brown" style="font-weight: 700">3 Langkah Jual Rumah</h3>
+            </div>
+            <div class="col-md-7 mt-4">
+                <div class="row justify-content-center text-center g-2">
+                    <div class="col">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x text-brown"></i>
+                            <i class="fa-solid fa-file-lines fa-stack-1x text-white"></i>
+                        </span>
+                        <div class="mt-3" style="font-size: 14px">Masukkan data rumah</div>
+                    </div>
+                    <div class="col">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x text-white"></i>
+                            <i class="fa-solid fa-file-signature fa-stack-1x text-brown"></i>
+                        </span>
+                        <div class="mt-3" style="font-size: 14px">Buat janji survey rumah dengan tim kami</div>
+                    </div>
+                    <div class="col">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x text-white"></i>
+                            <i class="fa-solid fa-handshake fa-stack-1x text-brown"></i>
+                        </span>
+                        <div class="mt-3" style="font-size: 14px">Proses kesepakatan penjualan</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-5 mb-5 justify-content-center">
+            <div class="col-md-12 text-center">
+                <h3 class="text-brown" style="font-weight: 700">Kriteria Rumah PAS untuk Rumalaku</h3>
+            </div>
+            <div class="card kriteria mt-4">
+                <div class="card-body p-5">
+                    <div class="row">
+                        
+                        <div class="col-md">
+
+                            <div class="card bg-white shadow p-4">
+                                <div class="card-body text-center">
+                                    <span class="fa-stack fa-3x">
+                                        <i class="fa fa-circle fa-stack-2x text-light"></i>
+                                        <i class="fa-solid fa-file-lines fa-stack-1x text-light-brown"></i>
+                                    </span>
+                                    <div class="mt-3">Rumah Berlokasi di Jabodetabek</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md">
+
+                            <div class="card bg-white shadow p-4">
+                                <div class="card-body text-center">
+                                    <span class="fa-stack fa-3x">
+                                        <i class="fa fa-circle fa-stack-2x text-light"></i>
+                                        <i class="fa-solid fa-file-lines fa-stack-1x text-light-brown"></i>
+                                    </span>
+                                    <div class="mt-3">Rumah Berlokasi di Jabodetabek</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md">
+
+                            <div class="card bg-white shadow p-4">
+                                <div class="card-body text-center">
+                                    <span class="fa-stack fa-3x">
+                                        <i class="fa fa-circle fa-stack-2x text-light"></i>
+                                        <i class="fa-solid fa-file-lines fa-stack-1x text-light-brown"></i>
+                                    </span>
+                                    <div class="mt-3">Rumah Berlokasi di Jabodetabek</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
         
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
