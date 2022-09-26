@@ -284,7 +284,7 @@
                 <div class="card-body p-5">
                     <div class="row">
                         
-                        <div class="col-md mt-2 mb-2">
+                        <div class="col-lg-4 mt-2 mb-2">
 
                             <div class="card bg-white shadow p-4">
                                 <div class="card-body text-center">
@@ -298,7 +298,7 @@
 
                         </div>
 
-                        <div class="col-md mt-2 mb-2">
+                        <div class="col-lg-4 mt-2 mb-2">
 
                             <div class="card bg-white shadow p-4">
                                 <div class="card-body text-center">
@@ -312,7 +312,7 @@
 
                         </div>
 
-                        <div class="col-md mt-2 mb-2">
+                        <div class="col-lg-4 mt-2 mb-2">
 
                             <div class="card bg-white shadow p-4">
                                 <div class="card-body text-center">
@@ -337,49 +337,40 @@
             </div>
 
             <div class="col-md-12 mt-4">
-                <div class="d-flex">
+                <div class="d-flex" style="height: 50%">
                     <div class="flex-shrink-0 text-center mx-4">
                         <h1 class="mb-0"><i class="fa-solid fa-circle-question text-brown"></i></h1>
-                        <div class="vr" style="border-color: #61481C; opacity: 1; height: 100%"></div>
+                        <div class="vr" style="border-color: #61481C; opacity: 1; height: 100%; width: 2px;"></div>
                     </div>
-                    <div class="flex-grow-1">
-                        <h6 class="fw-bold text-brown">Renovasi seperti apa yang dilakukan oleh Rumalaku?</h6>
-                        <p style="font-size: 14px">Renovasi yang dilakukan merupakan renovasi nyesuaikan dengan kebutuhan rumah yang dijual.</p>
+                    <div class="flex-grow-1 mt-1">
+                        <h6 class="fw-bold text-brown" style="z-index: 100000">Renovasi seperti apa yang dilakukan oleh Rumalaku?</h6>
+                        <p style="font-size: 14px">Renovasi yang dilakukan merupakan renovasi minor seperti pengecatan kembali hingga renovasi kecil lainnya menyesuaikan dengan kebutuhan rumah yang dijual.</p>
                     </div>
                 </div>
             </div>
+
             <div class="col-md-12 mt-4">
-                <div class="d-flex">
+                <div class="d-flex" style="height: 50%">
                     <div class="flex-shrink-0 text-center mx-4">
                         <h1 class="mb-0"><i class="fa-solid fa-circle-question text-brown"></i></h1>
-                        <div class="vr" style="border-color: #61481C; opacity: 1; height: 100%"></div>
+                        <div class="vr" style="border-color: #61481C; opacity: 1; height: 100%; width: 2px;"></div>
                     </div>
-                    <div class="flex-grow-1">
-                        <h6 class="fw-bold text-brown">Renovasi seperti apa yang dilakukan oleh Rumalaku?</h6>
-                        <p style="font-size: 14px">Renovasi yang dilakukan merupakan renovasi nyesuaikan dengan kebutuhan rumah yang dijual.</p>
+                    <div class="flex-grow-1 mt-1">
+                        <h6 class="fw-bold text-brown" style="z-index: 100000">Apakah penjual perlu mengembalikan dana renovasi?</h6>
+                        <p style="font-size: 14px">Penjual akan mengembalikan dana renovasi setelah rumah berhasil terjual melalui perantara lain atau pribadi (bukan melalui Rumalaku). Jika terjual melalui Rumalaku, dana renovasi akan dipotong dari harga jual.</p>
                     </div>
                 </div>
             </div>
+
             <div class="col-md-12 mt-4">
-                <div class="d-flex">
+                <div class="d-flex" style="height: 50%">
                     <div class="flex-shrink-0 text-center mx-4">
                         <h1 class="mb-0"><i class="fa-solid fa-circle-question text-brown"></i></h1>
-                        <div class="vr" style="border-color: #61481C; opacity: 1; height: 100%"></div>
+                        <div class="vr" style="border-color: #61481C; opacity: 1; height: 100%; width: 2px;"></div>
                     </div>
-                    <div class="flex-grow-1">
-                        <h6 class="fw-bold text-brown">Renovasi seperti apa yang dilakukan oleh Rumalaku?</h6>
-                        <p style="font-size: 14px">Renovasi yang dilakukan merupakan renovasi nyesuaikan dengan kebutuhan rumah yang dijual.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 mt-4">
-                <div class="d-flex">
-                    <div class="flex-shrink-0 text-center mx-4">
-                        <h1 class="mb-0"><i class="fa-solid fa-circle-question text-brown"></i></h1>
-                    </div>
-                    <div class="flex-grow-1">
-                        <h6 class="fw-bold text-brown">Renovasi seperti apa yang dilakukan oleh Rumalaku?</h6>
-                        <p style="font-size: 14px">Renovasi yang dilakukan merupakan renovasi nyesuaikan dengan kebutuhan rumah yang dijual.</p>
+                    <div class="flex-grow-1 mt-1">
+                        <h6 class="fw-bold text-brown" style="z-index: 100000">Renovasi seperti apa yang dilakukan oleh Rumalaku?</h6>
+                        <p style="font-size: 14px">Renovasi yang dilakukan merupakan renovasi minor seperti pengecatan kembali hingga renovasi kecil lainnya menyesuaikan dengan kebutuhan rumah yang dijual.</p>
                     </div>
                 </div>
             </div>
