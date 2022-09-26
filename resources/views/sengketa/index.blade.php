@@ -4961,7 +4961,7 @@
 
 <div class="ps-4"style="margin-bottom:-20px">
 <h5>
-    Kenapa Sengketatanah.id ?
+    Kenapa <a href="sengketatanah.id" class="text-primary" style="text-decoration: none">Sengketatanah.id</a> ?
 </h5>
 </div>
 <div class="row justify-content-between p-4"id="row-why" style="margin-bottom:30px;">
