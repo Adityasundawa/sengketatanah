@@ -96,7 +96,7 @@
         }
 
         .image-collab {
-            width: 450px;
+            width: 230px;
         }
         
         @media (max-width: 991.98px) { 
@@ -116,7 +116,7 @@
             }
 
             .image-collab {
-                width: 350px;
+                width: 200px;
             }
         }
 
@@ -134,6 +134,21 @@
                 left: 0px;
                 margin-left: auto;
                 margin-right: auto;
+            }
+
+            .card-main .card-body .p-5{
+                padding: 0 !important;
+                padding-bottom: 3rem !important
+            }
+
+            .card-main .card-body .p-5 .col-md-7.mt-5{
+                margin-top: 1.5rem !important;
+            }
+        }
+
+        @media (max-width: 320.98px) {
+            .image-collab {
+                width: 180px;
             }
         }
 
@@ -188,12 +203,15 @@
         
         <div class="card border-0 card-main">
             <div class="card-body">
-                <div class="row p-5">
-                    <div class="col-md-7">
-                        <h1 style="font-weight: 700">Pilihan tepat dan terpercaya untuk jual rumah Anda</h1>  
+                <div class="row p-5 g-0">
+                    <div class="col-md-12 text-center mb-3">
+                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                     </div>
-                    <div class="col-md-7 mt-5">
-                        <p class="mb-0">Dikelola oleh <span class="text-brown">Pashouses</span> bersama dengan Sinarmas Land yang merupakan pengembang properti terbesar dan berpengalaman lebih dari 40 tahun, dapatkan harga terbaik dan proses cepat jual rumah Anda</p>  
+                    <div class="col-md-12 text-center">
+                        <h1 style="font-weight: 700">Solusi tepat dan terpercaya untuk membantu masalah pertanahan Anda</h1>  
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <p class="mb-0">SENGKETA TANAH adalah platform digital dengan spesialisasi penanganan masalah sengketa tanah di seluruh wilayah Indonesia. Kami mempertemukan korban sengketa tanah atau korban mafia tanah dengan Sponsor, Kantor hukum, dan Pemerintah untuk menuntaskan masalah persengketaan tanah yang anda alami.</p>  
                     </div>
                 </div>
             </div>
@@ -208,7 +226,7 @@
                                 <i class="fa-regular fa-circle-check"></i>
                             </div>
                             <div class="flex-grow-1 ms-3">
-                                Rumah terjual lebih cepat
+                                Bantuan pendanaan dari sponsor
                             </div>
                         </div>
                     </div>
@@ -218,7 +236,7 @@
                                 <i class="fa-regular fa-circle-check"></i>
                             </div>
                             <div class="flex-grow-1 ms-3">
-                                Proses jual rumah aman dan mudah
+                                Bantuan tenaga pengacara
                             </div>
                         </div>
                     </div>
@@ -228,11 +246,11 @@
                                 <i class="fa-regular fa-circle-check"></i>
                             </div>
                             <div class="flex-grow-1 ms-3">
-                                Cara jual rumah lebih baik dari cara konvensional
+                                Bantuan mengadvokasi permasalahan sengketa tanah anda kepada pemerintah
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg jual-sekarang text-end"><button class="btn btn-light text-brown rounded-3">Jual Sekarang</button></div>
+                    <div class="col-lg jual-sekarang text-end"><button class="btn btn-light text-brown rounded-3 fw-bold w-100">Daftar</button></div>
                 </div>
             </div>
         </div>
@@ -240,7 +258,7 @@
         <div class="row pt-5 mb-5">
             <div class="col-12 text-center">
                 <h3 class="text-brown" style="font-weight: 700">Bekerjasama Dengan:</h3>
-                <img class="mt-4 image-collab" src="https://rumalaku.id/wp-content/uploads/2022/06/pngwing.com_.png" alt="">
+                <img class="mt-4 image-collab" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png" alt="">
             </div>
         </div>
         
