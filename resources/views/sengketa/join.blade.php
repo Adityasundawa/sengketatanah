@@ -207,11 +207,11 @@
                     <div class="col-md-12 text-center mb-3">
                         <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-12 text-center">
                         <h1 style="font-weight: 700">Solusi tepat dan terpercaya untuk membantu masalah pertanahan Anda</h1>  
                     </div>
-                    <div class="col-md-7 mt-4">
-                        <p class="mb-0">SENGKETA TANAH adalah platform digital dengan spesialisasi penanganan masalah sengketa tanah di seluruh wilayah Indonesia. Kami mempertemukan korban sengketa tanah atau korban mafia tanah dengan Sponsor, Kantor hukum, dan Pemerintah untuk menuntaskan masalah persengketaan tanah tersebut.</p>  
+                    <div class="col-md-12 mt-4">
+                        <p class="mb-0">SENGKETA TANAH adalah platform digital dengan spesialisasi penanganan masalah sengketa tanah di seluruh wilayah Indonesia. Kami mempertemukan korban sengketa tanah atau korban mafia tanah dengan Sponsor, Kantor hukum, dan Pemerintah untuk menuntaskan masalah persengketaan tanah yang anda alami.</p>  
                     </div>
                 </div>
             </div>
