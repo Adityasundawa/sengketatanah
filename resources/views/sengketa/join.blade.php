@@ -185,6 +185,7 @@
     </nav>
 
     <div class="container mt-5 mb-5">
+        
         <div class="card border-0 card-main">
             <div class="card-body">
                 <div class="row p-5">
@@ -275,7 +276,7 @@
             </div>
         </div>
 
-        <div class="row pt-5 mb-5 justify-content-center">
+        <div class="pt-5 mb-5 justify-content-center">
             <div class="col-md-12 text-center">
                 <h3 class="text-brown" style="font-weight: 700">Kriteria Rumah PAS untuk Rumalaku</h3>
             </div>
@@ -283,7 +284,7 @@
                 <div class="card-body p-5">
                     <div class="row">
                         
-                        <div class="col-md">
+                        <div class="col-md mt-2 mb-2">
 
                             <div class="card bg-white shadow p-4">
                                 <div class="card-body text-center">
@@ -297,7 +298,7 @@
 
                         </div>
 
-                        <div class="col-md">
+                        <div class="col-md mt-2 mb-2">
 
                             <div class="card bg-white shadow p-4">
                                 <div class="card-body text-center">
@@ -311,7 +312,7 @@
 
                         </div>
 
-                        <div class="col-md">
+                        <div class="col-md mt-2 mb-2">
 
                             <div class="card bg-white shadow p-4">
                                 <div class="card-body text-center">
@@ -325,6 +326,60 @@
 
                         </div>
                         
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row px-1">
+            <div class="col-md-12 text-center">
+                <h3 class="text-brown" style="font-weight: 700">Frequently Asked Questions</h3>
+            </div>
+
+            <div class="col-md-12 mt-4">
+                <div class="d-flex">
+                    <div class="flex-shrink-0 text-center mx-4">
+                        <h1 class="mb-0"><i class="fa-solid fa-circle-question text-brown"></i></h1>
+                        <div class="vr" style="border-color: #61481C; opacity: 1; height: 100%"></div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="fw-bold text-brown">Renovasi seperti apa yang dilakukan oleh Rumalaku?</h6>
+                        <p style="font-size: 14px">Renovasi yang dilakukan merupakan renovasi nyesuaikan dengan kebutuhan rumah yang dijual.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mt-4">
+                <div class="d-flex">
+                    <div class="flex-shrink-0 text-center mx-4">
+                        <h1 class="mb-0"><i class="fa-solid fa-circle-question text-brown"></i></h1>
+                        <div class="vr" style="border-color: #61481C; opacity: 1; height: 100%"></div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="fw-bold text-brown">Renovasi seperti apa yang dilakukan oleh Rumalaku?</h6>
+                        <p style="font-size: 14px">Renovasi yang dilakukan merupakan renovasi nyesuaikan dengan kebutuhan rumah yang dijual.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mt-4">
+                <div class="d-flex">
+                    <div class="flex-shrink-0 text-center mx-4">
+                        <h1 class="mb-0"><i class="fa-solid fa-circle-question text-brown"></i></h1>
+                        <div class="vr" style="border-color: #61481C; opacity: 1; height: 100%"></div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="fw-bold text-brown">Renovasi seperti apa yang dilakukan oleh Rumalaku?</h6>
+                        <p style="font-size: 14px">Renovasi yang dilakukan merupakan renovasi nyesuaikan dengan kebutuhan rumah yang dijual.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mt-4">
+                <div class="d-flex">
+                    <div class="flex-shrink-0 text-center mx-4">
+                        <h1 class="mb-0"><i class="fa-solid fa-circle-question text-brown"></i></h1>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="fw-bold text-brown">Renovasi seperti apa yang dilakukan oleh Rumalaku?</h6>
+                        <p style="font-size: 14px">Renovasi yang dilakukan merupakan renovasi nyesuaikan dengan kebutuhan rumah yang dijual.</p>
                     </div>
                 </div>
             </div>
