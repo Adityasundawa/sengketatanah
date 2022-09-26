@@ -5218,12 +5218,12 @@
 
         <div class="card border-0 shadow">
             <div class="card-body">
-                <img src="https://nugasin.com/template/assets/photo/WhatsApp_Image_2021-06-26_at_09_47_29.jpeg"
+                <img src="https://s.kaskus.id/r540x540/images/2020/11/13/10653066_202011130432060327.jpg"
                     style="width:60px;height:60px;margin-top:-30px;z-index:999;object-fit:cover;"
                     class="img-fluid rounded-circle">
                 <h6 style="margin-top:10px">
                     <b>
-                        Budi Susilo
+                        Ikhsan Jamaludin
                     </b>
                 </h6>
                 <p>
