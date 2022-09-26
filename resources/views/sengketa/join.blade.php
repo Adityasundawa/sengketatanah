@@ -96,7 +96,7 @@
         }
 
         .image-collab {
-            width: 450px;
+            width: 230px;
         }
         
         @media (max-width: 991.98px) { 
@@ -116,7 +116,7 @@
             }
 
             .image-collab {
-                width: 350px;
+                width: 200px;
             }
         }
 
@@ -148,7 +148,7 @@
 
         @media (max-width: 320.98px) {
             .image-collab {
-                width: 280px;
+                width: 180px;
             }
         }
 
@@ -258,7 +258,7 @@
         <div class="row pt-5 mb-5">
             <div class="col-12 text-center">
                 <h3 class="text-brown" style="font-weight: 700">Bekerjasama Dengan:</h3>
-                <img class="mt-4 image-collab" src="https://rumalaku.id/wp-content/uploads/2022/06/pngwing.com_.png" alt="">
+                <img class="mt-4 image-collab" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png" alt="">
             </div>
         </div>
         
