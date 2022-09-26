@@ -3201,7 +3201,7 @@
                         <table style="width:100%">
                             <tr>
                                 <td rowspan="2" style="width: 40px">
-                                    <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:100%">
+                                    <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">
                                 </td>
                                 <td>
                                     <h5 color="text-dark" style="margin-bottom: 0px !important">
