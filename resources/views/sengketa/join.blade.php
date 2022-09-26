@@ -205,7 +205,7 @@
             <div class="card-body">
                 <div class="row p-5 g-0">
                     <div class="col-md-12 text-center mb-3">
-                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 150px" alt="">
+                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                     </div>
                     <div class="col-md-7">
                         <h1 style="font-weight: 700">Solusi tepat dan terpercaya untuk membantu masalah pertanahan Anda</h1>  
