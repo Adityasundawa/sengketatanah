@@ -135,6 +135,21 @@
                 margin-left: auto;
                 margin-right: auto;
             }
+
+            .card-main .card-body .p-5{
+                padding: 0 !important;
+                padding-bottom: 3rem !important
+            }
+
+            .card-main .card-body .p-5 .col-md-7.mt-5{
+                margin-top: 1.5rem !important;
+            }
+        }
+
+        @media (max-width: 320.98px) {
+            .image-collab {
+                width: 280px;
+            }
         }
 
     </style>
@@ -188,15 +203,15 @@
         
         <div class="card border-0 card-main">
             <div class="card-body">
-                <div class="row p-5">
-                    <div class="col-md-12 text-center">
-                        <img src="{{asset('')}}uploads/sengketa-logo.png" alt="" style="width:450px">
+                <div class="row p-5 g-0">
+                    <div class="col-md-12 text-center mb-3">
+                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 150px" alt="">
                     </div>
                     <div class="col-md-7">
-                        <h1 style="font-weight: 700">Pilihan tepat dan terpercaya untuk jual rumah Anda</h1>  
+                        <h1 style="font-weight: 700">Solusi tepat dan terpercaya untuk membantu masalah pertanahan Anda</h1>  
                     </div>
-                    <div class="col-md-7 mt-5">
-                        <p class="mb-0">Dikelola oleh <span class="text-brown">Pashouses</span> bersama dengan Sinarmas Land yang merupakan pengembang properti terbesar dan berpengalaman lebih dari 40 tahun, dapatkan harga terbaik dan proses cepat jual rumah Anda</p>  
+                    <div class="col-md-7 mt-4">
+                        <p class="mb-0">SENGKETA TANAH adalah platform digital dengan spesialisasi penanganan masalah sengketa tanah di seluruh wilayah Indonesia. Kami mempertemukan korban sengketa tanah atau korban mafia tanah dengan Sponsor, Kantor hukum, dan Pemerintah untuk menuntaskan masalah persengketaan tanah tersebut.</p>  
                     </div>
                 </div>
             </div>
