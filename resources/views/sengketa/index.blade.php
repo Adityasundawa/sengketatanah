@@ -1397,7 +1397,7 @@
                                     </h5>
                                 </td>
                                 <td class="text-end" rowspan="2">
-                                    <a href="{{url('')}}/biding-sengketa" class="text-success fw-bold" style="text-decoration: none">Lihat
+                                    <a href="{{url('')}}/bid-sengketa" class="text-success fw-bold" style="text-decoration: none">Lihat
                                         Semua</a>
                                 </td>
                             </tr>
