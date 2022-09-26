@@ -677,8 +677,11 @@
 
 
                                             <div class="card-body">
-                                                @if($bs['id'] < 5) <div class="ribbon-pop"><i
-                                                        class="fa-solid fa-star"></i>&nbsp;HOT</div>
+                                                <div class="img mb-2">
+                                                    <img src="{{$bs['img']}}" style="width: 250px" alt="">
+                                                </div>
+                                            @if($bs['id'] < 5)
+                                                <div class="ribbon-pop"><i class="fa-solid fa-star"></i>&nbsp;HOT</div>
                                             @else
                                             @endif
                                             <table>

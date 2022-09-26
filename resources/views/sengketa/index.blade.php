@@ -1397,7 +1397,7 @@
                                     </h5>
                                 </td>
                                 <td class="text-end" rowspan="2">
-                                    <a href="#" class="text-success fw-bold" style="text-decoration: none">Lihat
+                                    <a href="{{url('')}}/biding-sengketa" class="text-success fw-bold" style="text-decoration: none">Lihat
                                         Semua</a>
                                 </td>
                             </tr>
@@ -2222,7 +2222,7 @@
                                     </h5>
                                 </td>
                                 <td class="text-end" rowspan="2">
-                                    <a href="#" class="text-success fw-bold" style="text-decoration: none">Lihat
+                                    <a href="{{url('')}}/kerjasama-lahan" class="text-success fw-bold" style="text-decoration: none">Lihat
                                         Semua</a>
                                 </td>
                             </tr>
@@ -3027,7 +3027,7 @@
                                     </h5>
                                 </td>
                                 <td class="text-end" rowspan="2">
-                                    <a href="#" class="text-success fw-bold" style="text-decoration: none">Lihat
+                                    <a href="{{url('')}}/podcast-sengketa" class="text-success fw-bold" style="text-decoration: none">Lihat
                                         Semua</a>
                                 </td>
                             </tr>
@@ -3209,7 +3209,7 @@
                                     </h5>
                                 </td>
                                 <td class="text-end" rowspan="2">
-                                    <a href="#" class="text-success fw-bold" style="text-decoration: none">Lihat
+                                    <a href="{{url('')}}/jual-beli-lahan" class="text-success fw-bold" style="text-decoration: none">Lihat
                                         Semua</a>
                                 </td>
                             </tr>
@@ -4056,7 +4056,7 @@
                                     </h5>
                                 </td>
                                 <td class="text-end" rowspan="2">
-                                    <a href="#" class="text-success fw-bold" style="text-decoration: none">Lihat
+                                    <a href="{{url('')}}/lelang-lahan" class="text-success fw-bold" style="text-decoration: none">Lihat
                                         Semua</a>
                                 </td>
                             </tr>

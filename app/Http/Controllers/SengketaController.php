@@ -132,7 +132,8 @@ class SengketaController extends Controller
                 "imbal_hasil"=>" Fee 50% Dari Pinjaman",
                 "jaminan"=>" Sertifikat Tanah",
                 "jumlah_bid"=>3,
-                "link_yt"=>'https://www.youtube.com/embed/-RkCcavzXq8'
+                "link_yt"=>'https://www.youtube.com/embed/-RkCcavzXq8',
+                "img"=>"/images/lahan1.jpeg"
             ],
             [
                 'id'=>2,
@@ -146,7 +147,8 @@ class SengketaController extends Controller
                 "imbal_hasil"=>" Bagi Hasil 70/30*",
                 "jaminan"=>" Sertifikat Rumah",
                 "jumlah_bid"=>4,
-                "link_yt"=>'https://www.youtube.com/embed/byby3HJ3OCI'
+                "link_yt"=>'https://www.youtube.com/embed/byby3HJ3OCI',
+                "img"=>'/images/lahan2.jpeg'
             ],
             [
                 'id'=>3,
@@ -160,7 +162,8 @@ class SengketaController extends Controller
                 "imbal_hasil"=>" Bagi Hasil 60/40*",
                 "jaminan"=>" Sertifikat Tanah",
                 "jumlah_bid"=>6,
-                "link_yt"=>'https://www.youtube.com/embed/1I4iEKK1qbQ'
+                "link_yt"=>'https://www.youtube.com/embed/1I4iEKK1qbQ',
+                "img"=>'/images/lahan3.jpeg'
             ],
             [
                 'id'=>4,
@@ -174,7 +177,8 @@ class SengketaController extends Controller
                 "imbal_hasil"=>" Bagi Hasil 50/50*",
                 "jaminan"=>" Sertifikat Rumah",
                 "jumlah_bid"=>1,
-                "link_yt"=>''
+                "link_yt"=>'',
+                "img"=>'/images/lahan1.jpeg'
             ],
             [
                 'id'=>5,
@@ -188,7 +192,8 @@ class SengketaController extends Controller
                 "imbal_hasil"=>" Fee 75% Dari Pinjaman",
                 "jaminan"=>" Sertifikat Tanah",
                 "jumlah_bid"=>12,
-                "link_yt"=>''
+                "link_yt"=>'',
+                "img"=>'/images/lahan3.jpeg'
             ],
             [
                 'id'=>6,
@@ -202,7 +207,8 @@ class SengketaController extends Controller
                 "imbal_hasil"=>" Fee 100% Dari Pinjaman",
                 "jaminan"=>" Sertifikat Rumah",
                 "jumlah_bid"=>10,
-                "link_yt"=>''
+                "link_yt"=>'',
+                "img"=>'/images/lahan2.jpeg'
             ],
             [
                 'id'=>7,
@@ -216,7 +222,8 @@ class SengketaController extends Controller
                 "imbal_hasil"=>" Bagi Hasil 60/40*",
                 "jaminan"=>" Sertifikat Tanah",
                 "jumlah_bid"=>9,
-                "link_yt"=>''
+                "link_yt"=>'',
+                "img"=>'/images/lahan3.jpeg'
             ],
             [
                 'id'=>8,
@@ -230,7 +237,8 @@ class SengketaController extends Controller
                 "imbal_hasil"=>" Bagi Hasil 70/30*",
                 "jaminan"=>" Sertifikat Rumah",
                 "jumlah_bid"=>7,
-                "link_yt"=>''
+                "link_yt"=>'',
+                "img"=>'/images/lahan1.jpeg'
             ],
             [
                 'id'=>9,
@@ -244,7 +252,8 @@ class SengketaController extends Controller
                 "imbal_hasil"=>" Bagi Hasil 50/50*",
                 "jaminan"=>" Sertifikat Tanah",
                 "jumlah_bid"=>8,
-                "link_yt"=>''
+                "link_yt"=>'',
+                "img"=>'/images/lahan2.jpeg'
             ],
             [
                 'id'=>10,
@@ -258,7 +267,8 @@ class SengketaController extends Controller
                 "imbal_hasil"=>" Fee 75% Dari Pinjaman",
                 "jaminan"=>" Sertifikat Rumah",
                 "jumlah_bid"=>6,
-                "link_yt"=>''
+                "link_yt"=>'',
+                "img"=>'/images/lahan3.jpeg'
             ],
         ];
     }
