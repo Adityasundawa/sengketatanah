@@ -1355,6 +1355,25 @@
                                     tanah dengan Sponsor, Kantor hukum, dan Pemerintah untuk menuntaskan masalah
                                     persengketaan tanah
                                     tersebut.
+
+                                    <h2>
+                                        <div class="fw-bold mt-3" style="color: #61481C"> VISI MISI</div>
+                                    </h2>
+                                    <div class="text-start">
+                                    <h5>VISI</h5> 
+Membantu Masyarakat dan Pemerintah Indonesia dalam penyelesaian Sengketa Pertanahan, Konflik Pertanahan dan Perkara Pertanahan dengan membangun ekosistem steakholder terkait, seperti Korban Sengketa, Sponsor, Pengacara dan Pemerintahnya itu sendiri agar semua jenis permasalahan tanah lebih cepat diselesaikan. Tujuan utama Platform Sengketa Tanah adalah membawa persoalan tanah yang dulunya tabu menjadi lebih terbuka dengan pendekatan ecommerce yang profit oriented.
+<h5 class="mt-3">MISI</h5>
+<ol style="padding-left: 1rem">
+    <li>Membantu masyarakat Indonesia menyelesaikan persolan sengketa pertanahan, konflik pertanahan dan perkara pertanahan dengan menyediakan bantuan akses pada sponsor, pengacara dan pemerintah.</li>
+    <li>Membantu Pemerintah Indonesia dalam hal ini Kementrian ATR/BPN untuk menyelesaikan persolan sengketa pertanahan, konflik pertanahan dan perkara pertanahan dengan menyediakan sortasi data persengketaan tanah yang terjadi di masyarakat.</li>
+    <li>Mengangkat semua jenis persoalan tanah dengan multi komprehensif, mulai dari dokumen pertanahan, analisa, pengecekan sampai kepada wawancara mendalam pada korban dan pihak terkait yang disajikan dengan audio visual untuk memudahkan steak holder mengambil keputusan.
+    <li>Menjadi platform khusus pertanahan yang dipercaya publik dengan komitmen kuat penyelesaian kasus-kasus persengketaan tanah.</li>
+    <li>Mengintegrasikan semua jenis bidang seputar pertanahan dalam satu platform seperti sengketa pertanahan, jual beli lahan, kerja sama lahan sampai dengan pelelangan lahan.</li>
+    <li>Menyediakan berbagai tenaga ahli pertanahan dalam platform untuk membantu desiminasi permasalahan dalam rangka menentukan tindakan yang akan diambil, baik untuk korban, sponsor, pengacara maupun pemerintah.</li>
+    <li>Menjadi platform yang terintegrasi dengan kementrian ATR/BPN</li>
+</ol>
+
+                                    </div>
                                 </div>
                                 
                             </ol>
