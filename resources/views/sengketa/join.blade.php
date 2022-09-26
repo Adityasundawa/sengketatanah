@@ -189,6 +189,9 @@
         <div class="card border-0 card-main">
             <div class="card-body">
                 <div class="row p-5">
+                    <div class="col-md-12 text-center">
+                        <img src="{{asset('')}}uploads/sengketa-logo.png" alt="" style="width:450px">
+                    </div>
                     <div class="col-md-7">
                         <h1 style="font-weight: 700">Pilihan tepat dan terpercaya untuk jual rumah Anda</h1>  
                     </div>
