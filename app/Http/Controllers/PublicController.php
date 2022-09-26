@@ -32,4 +32,9 @@ class PublicController extends Controller
         return view('public.lelang_lahan');
     
     }
+
+    public function joinSengketa()
+    {
+        return view('sengketa.join');   
+    }
 }

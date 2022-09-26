@@ -501,6 +501,10 @@
             text-align: start
         }
 
+        .card {
+            border-radius: 10px
+        }
+
     </style>
 </head>
 
@@ -523,23 +527,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Produk</a>
                     </li>
-                    <!--<li class="nav-item">-->
-                    <!--    <a class="nav-link" href="{{url("/")}}/role">Role Pengguna</a>-->
-                    <!--</li>-->
-                    <!--<li class="nav-item">-->
-                    <!--    <a class="nav-link" href="#">Panduan</a>-->
-                    <!--</li>-->
-                    <!--<li class="nav-item">-->
-                    <!--    <a class="nav-link" href="#">Jaminan</a>-->
-                    <!--</li>-->
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('')}}/bid-sengketa">Bid Sengketa</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Podcast Sengketa</a>
                     </li>
-                    {{-- <li class="nav-item">
-                        <a class="nav-link" href="{{url('/')}}/tentang-pemerintah">Tentang Aplikasi</a>
                     </li> --}}
                     <li class="nav-item me-2">
                         <a class="nav-link" href="{{url('/')}}/tentang">Tentang Kami</a>
@@ -554,9 +547,6 @@
                     <li class="nav-item me-1 ms-1">
                         <a class="nav-link btn btn-brown text-white rounded-3" href="{{url('/')}}/register">Register</a>
                     </li>
-                    <!--<li class="nav-item">-->
-                    <!--    <a class="nav-link" href="{{url('/')}}/contact">Hubungi Kami</a>-->
-                    <!--</li>-->
                 </ul>
 
             </div>
@@ -580,6 +570,8 @@
                 <h1>Solusi Untuk Anda</h1>
                 <h3>"Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
                     pemerintah dalam satu platform."</h3>
+
+                <a class="btn rounded-5 mt-3 text-white" style="background: #BF9742" href="{{url('')}}/join">Bergabung</a>
 
             </div>
         </div>
@@ -1662,7 +1654,7 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body">
-                                                                            Anda harus masuk sebagai sponsor sebelum
+                                                                            Anda harus masuk sebagai akun sponsor sebelum
                                                                             melakukan bid.
                                                                         </div>
                                                                         <div class="modal-footer">
@@ -1831,7 +1823,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus masuk sebagai akun sponsor sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -2063,7 +2055,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus masuk sebagai akun sponsor sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -2295,7 +2287,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus masuk sebagai akun sponsor sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -2522,10 +2514,6 @@
 
                                             <div class="card-body">
 
-
-
-
-
                                                 <table>
                                                     <tbody>
                                                         </tr>
@@ -2594,7 +2582,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus masukkan akun sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -2736,6 +2724,7 @@
                                             </div>
                                             <div class="card-header text-white px-3 py-1" style="
                                     background: #8f8f8f">
+
                                                 <div class="row">
 
                                                     <div class="col-lg-12">
@@ -2818,7 +2807,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus masukkan akun sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -2959,6 +2948,7 @@
                                             </div>
                                             <div class="card-header text-white px-3 py-1" style="
                                     background: #8f8f8f">
+
                                                 <div class="row">
 
                                                     <div class="col-lg-12">
@@ -3042,7 +3032,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus masukkan akun sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -3130,6 +3120,7 @@
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="col-12">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
                                         <div class="ribbon-pop">
@@ -3180,8 +3171,7 @@
                                                 </button>
                                             </div>
 
-                                            <div class="card-header text-white px-3 py-1" style="
-                                    background: #8f8f8f">
+                                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                                 <div class="row">
 
                                                     <div class="col-lg-12">
@@ -3264,7 +3254,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus masukkan akun sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -3403,6 +3393,7 @@
                     }
 
                 </style>
+
                 <!-- podcast Sengketa -->
                 <div class="card mb-3 border-0 shadow-sm ">
                     <div class="card-header bg-white">
@@ -3807,7 +3798,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus masukkan akun sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -4046,7 +4037,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus masukkan akun sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -4284,7 +4275,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus masukkan akun sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -4521,7 +4512,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus masukkan akun sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -4690,6 +4681,7 @@
 
                                 <div class="row mobile-scroll justify-content-between" id="lelang-card3"
                                     style="flex-wrap: nowrap">
+
                                     <div class="col-12 ">
                                         <div class="card mx-auto" style="width: 21rem;">
                                         <div class="ribbon-pop">
@@ -4836,7 +4828,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus masukkan akun sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -5075,7 +5067,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus masukkan akun sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -5313,7 +5305,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus masukkan akun sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -5549,7 +5541,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus masukkan akun sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
