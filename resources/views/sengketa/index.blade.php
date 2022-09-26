@@ -5154,7 +5154,7 @@
 </div>
 <div class="ps-4"style="margin-bottom:-38px">
 <h5 style="margin-bottom:-30px">
-   Bicara tentang Sengketatanah.id
+   Bicara <a href="sengketatanah.id" class="text-primary" style="text-decoration: none">Sengketatanah.id</a>
 </h5>
 </div>
 
