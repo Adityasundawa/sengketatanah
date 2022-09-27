@@ -478,12 +478,12 @@
                     <!--<li class="nav-item">-->
                     <!--    <a class="nav-link" href="#">Jaminan</a>-->
                     <!--</li>-->
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="{{url('')}}/bid-sengketa">Bid Sengketa</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Podcast Sengketa</a>
-                    </li>
+                    </li> -->
                     {{-- <li class="nav-item">
                         <a class="nav-link" href="{{url('/')}}/tentang-pemerintah">Tentang Aplikasi</a>
                     </li> --}}
