@@ -306,12 +306,12 @@
             </div>
         </div>
 
-        <div class="row text-center pt-4">
+        <div class="row text-center pt-4 mb-4">
             <h2 class="fw-bold text-brown">"Jika Anda Membutuhkan Bantuan Pendanaan Untuk Menyelesaikan Masalah Sengketa Pertanahan, Ini Adalah Aplikasi yang Tepat"</h2>
         </div>
         
 
-        <div class="row mb-5 pt-5 justify-content-center">
+        <div class="row mb-5 pt-4 justify-content-center">
             <div class="col-md-12 text-center">
                 <h3 class="text-brown" style="font-weight: 700">3 Langkah Mencari Bantuan Sponsor</h3>
             </div>
@@ -344,7 +344,7 @@
 
         <div class="pt-5 mb-5 justify-content-center">
             <div class="col-md-12 text-center">
-                <h3 class="text-brown" style="font-weight: 700">4 Roles Sengketatanah.id</h3>
+                <h3 class="text-brown" style="font-weight: 700">4 Roles Dalam Penyelesaian Sengketa Tanah</h3>
             </div>
             <div class="card mt-4">
                 <div class="card-body p-5">
@@ -408,7 +408,7 @@
 
         <div class="pt-3 mb-5 justify-content-center">
             <div class="col-md-12 text-center">
-                <h3 class="text-brown" style="font-weight: 700">Apa Saja Layanan Sengketatanah.id</h3>
+                <h3 class="text-brown" style="font-weight: 700"><i class="fa-solid fa-gears"></i> Apa Saja Layanan Sengketatanah.id</h3>
             </div>
             <div class="card kriteria mt-4">
                 <div class="card-body p-5">
