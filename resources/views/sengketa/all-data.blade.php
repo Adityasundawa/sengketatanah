@@ -839,9 +839,9 @@
                                             <div class="row g-0">
                                                 <div class="col text-center" style="border-right: 1px solid">
 
-                                                    <a href="#" class="text-dark  mx-auto" data-bs-toggle="modal"
+                                                    <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                         data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas (12)
+                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                     </a>
 
                                                     <!-- Modal -->
@@ -875,9 +875,9 @@
                                                 <div class="col text-center">
                                                     <span
                                                         onclick="return document.querySelector('form.form-sengketa<?=$bs['id']?>').submit()"
+                                                        class="btn btn-success rounded-5"
                                                         style="cursor:pointer"><i
-                                                            class="fa-solid fa-play text-danger"></i> Lihat Podcast
-                                                        (9)</span>
+                                                            class="fa-solid fa-play text-danger"></i> Lihat Podcast</span>
                                                 </div>
                                             </div>
 
@@ -1097,9 +1097,9 @@
 
                                             <div class="row g-0">
                                                 <div class="col text-center" style="border-right: 1px solid">
-                                                    <a href="#" class="text-dark  mx-auto" data-bs-toggle="modal"
+                                                    <a href="#" class="mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                         data-bs-target="#berkasPengacara" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas (12)
+                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                     </a>
 
                                                     <!-- Modal -->
@@ -1132,9 +1132,9 @@
                                                 <div class="col text-center">
                                                     <span
                                                         onclick="return document.querySelector('form.form-sengketa<?=$bp['id']?>').submit()"
+                                                        class="btn btn-success rounded-5"
                                                         style="cursor:pointer"><i
-                                                            class="fa-solid fa-play text-danger"></i> Lihat Podcast
-                                                        (9)</span>
+                                                            class="fa-solid fa-play text-danger"></i> Lihat Podcast</span>
                                                 </div>
                                             </div>
                                             <form action="{{url('/')}}/bid-sengketa/podcast" class="form-sengketa90"
