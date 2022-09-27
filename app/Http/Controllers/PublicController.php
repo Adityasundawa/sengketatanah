@@ -51,6 +51,21 @@ class PublicController extends Controller
         return view('sengketa.join');   
     }
 
+    public function jasaTukangUkur()
+    {
+        return view('sengketa.jasa_ukur');
+    }
+
+    public function jasaNotaris()
+    {
+        return view('sengketa.jasa_notaris');
+    }
+
+    public function jasaPPAT()
+    {
+        return view('sengketa.jasa_ppat');
+    }
+
 
     private function data_jual_beli()
     {

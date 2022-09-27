@@ -640,7 +640,7 @@
 
                         <div class="col-lg-4 mt-2 mb-2">
 
-                            <a class="text-black" style="text-decoration: none" href="#">
+                            <a class="text-black" style="text-decoration: none" href="{{url('')}}/jasa-tukang-ukur">
                                 <div class="card bg-white shadow p-4">
                                     <div class="card-body text-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -724,6 +724,98 @@
                                             </g>
                                         </svg>
                                         <div class="mt-3">Podcast Sengketa</div>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <div class="col-lg-4 mt-2 mb-2">
+
+                            <a class="text-black" style="text-decoration: none" href="{{url('')}}/jasa-notaris">
+                                <div class="card bg-white shadow p-4">
+                                    <div class="card-body text-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                            width="100px" x="0" y="0" viewBox="0 0 25.916 25.916"
+                                            style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                            <circle r="12.958" cx="12.958" cy="12.958" fill="#ffffff" shape="circle">
+                                            </circle>
+                                            <g transform="matrix(0.7,0,0,0.7,3.8875187158584605,3.88741898238659)">
+                                                <g>
+                                                    <g>
+                                                        <path style="" d="M7.938,8.13c0.09,0.414,0.228,0.682,0.389,0.849c0.383,2.666,2.776,4.938,4.698,4.843
+                                                        c2.445-0.12,4.178-2.755,4.567-4.843c0.161-0.166,0.316-0.521,0.409-0.938c0.104-0.479,0.216-1.201-0.072-1.583
+                                                        c-0.017-0.02-0.127-0.121-0.146-0.138c0.275-0.992,0.879-2.762-0.625-4.353c-0.815-0.862-1.947-1.295-2.97-1.637
+                                                        c-3.02-1.009-5.152,0.406-6.136,2.759C7.981,3.256,7.522,4.313,8.078,6.32C8.024,6.356,7.975,6.402,7.934,6.458
+                                                        C7.645,6.839,7.833,7.651,7.938,8.13z" fill="#BF9742" data-original="#030104" class=""></path>
+                                                                                                <path style="" d="M23.557,22.792c-0.084-1.835-0.188-4.743-1.791-7.122c0,0-0.457-0.623-1.541-1.037
+                                                        c0,0-2.354-0.717-3.438-1.492l-0.495,0.339l0.055,3.218l-2.972,7.934c-0.065,0.174-0.231,0.289-0.416,0.289
+                                                        s-0.351-0.115-0.416-0.289l-2.971-7.934c0,0,0.055-3.208,0.054-3.218c0.007,0.027-0.496-0.339-0.496-0.339
+                                                        c-1.082,0.775-3.437,1.492-3.437,1.492c-1.084,0.414-1.541,1.037-1.541,1.037c-1.602,2.379-1.708,5.287-1.792,7.122
+                                                        c-0.058,1.268,0.208,1.741,0.542,1.876c4.146,1.664,15.965,1.664,20.112,0C23.35,24.534,23.614,24.06,23.557,22.792z"
+                                                                                                    fill="#BF9742" data-original="#030104" class=""></path>
+                                                                                                <path style="" d="M13.065,14.847l-0.134,0.003c-0.432,0-0.868-0.084-1.296-0.232l1.178,1.803l-1.057,1.02
+                                                        l1.088,6.607c0.009,0.057,0.058,0.098,0.116,0.098c0.057,0,0.106-0.041,0.116-0.098l1.088-6.607l-1.058-1.02l1.161-1.776
+                                                        C13.888,14.756,13.487,14.83,13.065,14.847z" fill="#BF9742" data-original="#030104" class=""></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <div class="mt-3">Jasa Notaris</div>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <div class="col-lg-4 mt-2 mb-2">
+
+                            <a class="text-black" style="text-decoration: none" href="https://mitra.atrbpn.go.id">
+                                <div class="card bg-white shadow p-4">
+                                    <div class="card-body text-center">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png"
+                                            class="p-2" width="100px" alt="">
+                                        <div class="mt-3">Mitra BPN</div>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <div class="col-lg-4 mt-2 mb-2">
+
+                            <a class="text-black" style="text-decoration: none" href="{{url('')}}/jasa-ppat">
+                                <div class="card bg-white shadow p-4">
+                                    <div class="card-body text-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                            width="100px" x="0" y="0" viewBox="0 0 25.916 25.916"
+                                            style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                            <circle r="12.958" cx="12.958" cy="12.958" fill="#ffffff" shape="circle">
+                                            </circle>
+                                            <g transform="matrix(0.7,0,0,0.7,3.8875187158584605,3.88741898238659)">
+                                                <g>
+                                                    <g>
+                                                        <path style="" d="M7.938,8.13c0.09,0.414,0.228,0.682,0.389,0.849c0.383,2.666,2.776,4.938,4.698,4.843
+                                                        c2.445-0.12,4.178-2.755,4.567-4.843c0.161-0.166,0.316-0.521,0.409-0.938c0.104-0.479,0.216-1.201-0.072-1.583
+                                                        c-0.017-0.02-0.127-0.121-0.146-0.138c0.275-0.992,0.879-2.762-0.625-4.353c-0.815-0.862-1.947-1.295-2.97-1.637
+                                                        c-3.02-1.009-5.152,0.406-6.136,2.759C7.981,3.256,7.522,4.313,8.078,6.32C8.024,6.356,7.975,6.402,7.934,6.458
+                                                        C7.645,6.839,7.833,7.651,7.938,8.13z" fill="#BF9742" data-original="#030104" class=""></path>
+                                                                                                <path style="" d="M23.557,22.792c-0.084-1.835-0.188-4.743-1.791-7.122c0,0-0.457-0.623-1.541-1.037
+                                                        c0,0-2.354-0.717-3.438-1.492l-0.495,0.339l0.055,3.218l-2.972,7.934c-0.065,0.174-0.231,0.289-0.416,0.289
+                                                        s-0.351-0.115-0.416-0.289l-2.971-7.934c0,0,0.055-3.208,0.054-3.218c0.007,0.027-0.496-0.339-0.496-0.339
+                                                        c-1.082,0.775-3.437,1.492-3.437,1.492c-1.084,0.414-1.541,1.037-1.541,1.037c-1.602,2.379-1.708,5.287-1.792,7.122
+                                                        c-0.058,1.268,0.208,1.741,0.542,1.876c4.146,1.664,15.965,1.664,20.112,0C23.35,24.534,23.614,24.06,23.557,22.792z"
+                                                                                                    fill="#BF9742" data-original="#030104" class=""></path>
+                                                                                                <path style="" d="M13.065,14.847l-0.134,0.003c-0.432,0-0.868-0.084-1.296-0.232l1.178,1.803l-1.057,1.02
+                                                        l1.088,6.607c0.009,0.057,0.058,0.098,0.116,0.098c0.057,0,0.106-0.041,0.116-0.098l1.088-6.607l-1.058-1.02l1.161-1.776
+                                                        C13.888,14.756,13.487,14.83,13.065,14.847z" fill="#BF9742" data-original="#030104" class=""></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <div class="mt-3">Jasa PPAT</div>
                                     </div>
                                 </div>
                             </a>
