@@ -449,26 +449,26 @@
             }
         }
 
-        .col-12 {
+        .col-12.custom {
             width: 33.3333%
         }
 
         @media (max-width: 1400px) {
-            .col-12 {
+            .col-12.custom {
                 width: 38% !important
             }
 
         }
 
         @media (max-width: 992px) {
-            .col-12 {
+            .col-12.custom {
                 width: 51% !important
             }
 
         }
 
         @media (max-width: 768px) {
-            .col-12 {
+            .col-12.custom {
                 width: 100% !important
             }
 
@@ -503,6 +503,11 @@
 
         .card {
             border-radius: 10px
+        }
+
+        .a-image {
+            max-height: 200px;
+            object-fit: cover;
         }
 
     </style>
@@ -571,7 +576,8 @@
                 <h3>"Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
                     pemerintah dalam satu platform."</h3>
 
-                <a class="btn rounded-5 mt-3 text-white" style="background: #BF9742" href="{{url('')}}/join">Bergabung</a>
+                <a class="btn rounded-5 mt-3 text-white" style="background: #BF9742"
+                    href="{{url('')}}/join">Bergabung</a>
 
             </div>
         </div>
@@ -1441,9 +1447,9 @@
                                 </button>
                             </div>
                             <div class="col-10 arrow-desktop text-center">
-                                <div class="row mobile-scroll mt-2" id="lelang-card" style="flex-wrap: nowrap">
+                                <div class="row mobile-scroll mt-2 align-items-center" id="lelang-card" style="flex-wrap: nowrap">
 
-                                    <div class="col-12 ">
+                                    <div class="col-12 custom ">
                                         <div class="card mx-auto" style="width: 21rem;">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
@@ -1654,7 +1660,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body">
-                                                                            Anda harus masuk sebagai akun sponsor sebelum
+                                                                            Anda harus masuk sebagai akun sponsor
+                                                                            sebelum
                                                                             melakukan bid.
                                                                         </div>
                                                                         <div class="modal-footer">
@@ -1681,9 +1688,9 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                        <div class="ribbon-pop">
+                                            <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
                                             <div id="bidding2" class="carousel slide" data-bs-ride="carousel">
@@ -1823,7 +1830,8 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai akun sponsor sebelum melihat
+                                                                        Anda harus masuk sebagai akun sponsor sebelum
+                                                                        melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -1914,9 +1922,9 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                        <div class="ribbon-pop">
+                                            <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
                                             <div id="bidding3" class="carousel slide" data-bs-ride="carousel">
@@ -2055,7 +2063,8 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai akun sponsor sebelum melihat
+                                                                        Anda harus masuk sebagai akun sponsor sebelum
+                                                                        melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -2145,9 +2154,9 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                        <div class="ribbon-pop">
+                                            <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
                                             <div id="bidding4" class="carousel slide" data-bs-ride="carousel">
@@ -2287,7 +2296,8 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai akun sponsor sebelum melihat
+                                                                        Anda harus masuk sebagai akun sponsor sebelum
+                                                                        melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -2377,7 +2387,21 @@
                                         </div>
                                     </div>
 
-
+                                    <div class="col-3 custom text-start">
+                                        <button class="btn btn-sm">
+                                            <div class="row p-4">
+                                                <div class="col-md-12">
+                                                    <span class="fa-stack fa-2x">
+                                                        <i class="fa fa-circle fa-stack-2x text-brown"></i>
+                                                        <i class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-12 mt-1 fw-bold">
+                                                    Lihat Semua
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
 
                                 </div>
                             </div>
@@ -2449,25 +2473,25 @@
                                 </button>
                             </div>
                             <div class="col-10 arrow-desktop text-center">
-                                <div class="row mt-2 mobile-scroll justify-content-between" id="lelang-card1"
+                                <div class="row mt-2 mobile-scroll justify-content-between align-items-center" id="lelang-card1"
                                     style="flex-wrap: nowrap">
 
-                                    <div class="col-12 ">
+                                    <div class="col-12 custom ">
                                         <div class="card mx-auto" style="width: 21rem;">
-                                        <div class="ribbon-pop">
+                                            <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
                                             <div id="ksl1" class="carousel slide" data-bs-ride="carousel">
                                                 <div class="carousel-indicators">
-                                                    <button type="button" data-bs-target="#ksl1"
-                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                    <button type="button" data-bs-target="#ksl1" data-bs-slide-to="0"
+                                                        class="active" aria-current="true"
                                                         aria-label="Slide 1"></button>
-                                                    <button type="button" data-bs-target="#ksl1"
-                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                    <button type="button" data-bs-target="#ksl1"
-                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                    <button type="button" data-bs-target="#ksl1"
-                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    <button type="button" data-bs-target="#ksl1" data-bs-slide-to="1"
+                                                        aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ksl1" data-bs-slide-to="2"
+                                                        aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ksl1" data-bs-slide-to="3"
+                                                        aria-label="Slide 4"></button>
                                                 </div>
 
                                                 <div class="carousel-inner">
@@ -2673,22 +2697,22 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                        <div class="ribbon-pop">
+                                            <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
                                             <div id="ksl2" class="carousel slide" data-bs-ride="carousel">
                                                 <div class="carousel-indicators">
-                                                    <button type="button" data-bs-target="#ksl2"
-                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                    <button type="button" data-bs-target="#ksl2" data-bs-slide-to="0"
+                                                        class="active" aria-current="true"
                                                         aria-label="Slide 1"></button>
-                                                    <button type="button" data-bs-target="#ksl2"
-                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                    <button type="button" data-bs-target="#ksl2"
-                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                    <button type="button" data-bs-target="#ksl2"
-                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    <button type="button" data-bs-target="#ksl2" data-bs-slide-to="1"
+                                                        aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ksl2" data-bs-slide-to="2"
+                                                        aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ksl2" data-bs-slide-to="3"
+                                                        aria-label="Slide 4"></button>
                                                 </div>
 
                                                 <div class="carousel-inner">
@@ -2722,8 +2746,7 @@
                                                     <span class="visually-hidden">Next</span>
                                                 </button>
                                             </div>
-                                            <div class="card-header text-white px-3 py-1" style="
-                                    background: #8f8f8f">
+                                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
 
                                                 <div class="row">
 
@@ -2897,22 +2920,22 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                        <div class="ribbon-pop">
+                                            <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
                                             <div id="ksl3" class="carousel slide" data-bs-ride="carousel">
                                                 <div class="carousel-indicators">
-                                                    <button type="button" data-bs-target="#ksl3"
-                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                    <button type="button" data-bs-target="#ksl3" data-bs-slide-to="0"
+                                                        class="active" aria-current="true"
                                                         aria-label="Slide 1"></button>
-                                                    <button type="button" data-bs-target="#ksl3"
-                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                    <button type="button" data-bs-target="#ksl3"
-                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                    <button type="button" data-bs-target="#ksl3"
-                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    <button type="button" data-bs-target="#ksl3" data-bs-slide-to="1"
+                                                        aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ksl3" data-bs-slide-to="2"
+                                                        aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ksl3" data-bs-slide-to="3"
+                                                        aria-label="Slide 4"></button>
                                                 </div>
 
                                                 <div class="carousel-inner">
@@ -2946,8 +2969,7 @@
                                                     <span class="visually-hidden">Next</span>
                                                 </button>
                                             </div>
-                                            <div class="card-header text-white px-3 py-1" style="
-                                    background: #8f8f8f">
+                                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
 
                                                 <div class="row">
 
@@ -3121,22 +3143,22 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                        <div class="ribbon-pop">
+                                            <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
                                             <div id="ksl4" class="carousel slide" data-bs-ride="carousel">
                                                 <div class="carousel-indicators">
-                                                    <button type="button" data-bs-target="#ksl4"
-                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                    <button type="button" data-bs-target="#ksl4" data-bs-slide-to="0"
+                                                        class="active" aria-current="true"
                                                         aria-label="Slide 1"></button>
-                                                    <button type="button" data-bs-target="#ksl4"
-                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                    <button type="button" data-bs-target="#ksl4"
-                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                    <button type="button" data-bs-target="#ksl4"
-                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    <button type="button" data-bs-target="#ksl4" data-bs-slide-to="1"
+                                                        aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ksl4" data-bs-slide-to="2"
+                                                        aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ksl4" data-bs-slide-to="3"
+                                                        aria-label="Slide 4"></button>
                                                 </div>
 
                                                 <div class="carousel-inner">
@@ -3341,6 +3363,22 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+
+                                    <div class="col-3 custom text-start">
+                                        <button class="btn btn-sm">
+                                            <div class="row p-4">
+                                                <div class="col-md-12">
+                                                    <span class="fa-stack fa-2x">
+                                                        <i class="fa fa-circle fa-stack-2x text-brown"></i>
+                                                        <i class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-12 mt-1 fw-bold">
+                                                    Lihat Semua
+                                                </div>
+                                            </div>
+                                        </button>
                                     </div>
 
                                 </div>
@@ -3553,21 +3591,21 @@
                         {{-- <div class="row mt-2 justify-content-between" id="lelang-card"
                             style="overflow-x: auto; flex-wrap: nowrap">
 
-                            <div class="col-12 bid">
+                            <div class="col-12 custom bid">
                                 <iframe width="100%" height="250px" src="https://www.youtube.com/embed/-RkCcavzXq8"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
 
-                            <div class="col-12 bid">
+                            <div class="col-12 custom bid">
                                 <iframe width="100%" height="250px" src="https://www.youtube.com/embed/byby3HJ3OCI"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
 
-                            <div class="col-12 bid">
+                            <div class="col-12 custom bid">
                                 <iframe width="100%" height="250px" src="https://www.youtube.com/embed/1I4iEKK1qbQ"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -3579,21 +3617,21 @@
                         <div class="desktop-2">
                             <div class="row mt-2 justify-content-between" id="lelang-card"
                                 style="overflow-x: auto; flex-wrap: nowrap">
-                                <div class="col-12 bid">
+                                <div class="col-12 custom bid">
                                     <iframe width="100%" height="250px" src="https://www.youtube.com/embed/1I4iEKK1qbQ"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
                                 </div>
 
-                                <div class="col-12 bid">
+                                <div class="col-12 custom bid">
                                     <iframe width="100%" height="250px" src="https://www.youtube.com/embed/-RkCcavzXq8"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
                                 </div>
 
-                                <div class="col-12 bid">
+                                <div class="col-12 custom bid">
                                     <iframe width="100%" height="250px" src="https://www.youtube.com/embed/byby3HJ3OCI"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -3649,25 +3687,25 @@
 
                             <div class="col-10 arrow-desktop text-center">
 
-                                <div class="row mt-2 mobile-scroll justify-content-between" id="lelang-card2"
+                                <div class="row mt-2 mobile-scroll justify-content-between align-items-center" id="lelang-card2"
                                     style="flex-wrap: nowrap">
 
-                                    <div class="col-12 ">
+                                    <div class="col-12 custom ">
                                         <div class="card mx-auto" style="width: 21rem;">
-                                        <div class="ribbon-pop">
+                                            <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
                                             <div id="jbl1" class="carousel slide" data-bs-ride="carousel">
                                                 <div class="carousel-indicators">
-                                                    <button type="button" data-bs-target="#jbl1"
-                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                    <button type="button" data-bs-target="#jbl1" data-bs-slide-to="0"
+                                                        class="active" aria-current="true"
                                                         aria-label="Slide 1"></button>
-                                                    <button type="button" data-bs-target="#jbl1"
-                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                    <button type="button" data-bs-target="#jbl1"
-                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                    <button type="button" data-bs-target="#jbl1"
-                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    <button type="button" data-bs-target="#jbl1" data-bs-slide-to="1"
+                                                        aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#jbl1" data-bs-slide-to="2"
+                                                        aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#jbl1" data-bs-slide-to="3"
+                                                        aria-label="Slide 4"></button>
                                                 </div>
 
                                                 <div class="carousel-inner">
@@ -3842,13 +3880,6 @@
 
                                                         <div class="d-grid gap-2 ">
 
-                                                            <button type="button"
-                                                        class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                        BID
-                                                    </button>
-
-
                                                             <div class="modal fade my-auto" id="exampleSponsor"
                                                                 tabindex="-1" aria-labelledby="exampleModalLabel"
                                                                 aria-hidden="true">
@@ -3889,22 +3920,22 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                        <div class="ribbon-pop">
+                                            <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
                                             <div id="jbl2" class="carousel slide" data-bs-ride="carousel">
                                                 <div class="carousel-indicators">
-                                                    <button type="button" data-bs-target="#jbl2"
-                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                    <button type="button" data-bs-target="#jbl2" data-bs-slide-to="0"
+                                                        class="active" aria-current="true"
                                                         aria-label="Slide 1"></button>
-                                                    <button type="button" data-bs-target="#jbl2"
-                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                    <button type="button" data-bs-target="#jbl2"
-                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                    <button type="button" data-bs-target="#jbl2"
-                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    <button type="button" data-bs-target="#jbl2" data-bs-slide-to="1"
+                                                        aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#jbl2" data-bs-slide-to="2"
+                                                        aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#jbl2" data-bs-slide-to="3"
+                                                        aria-label="Slide 4"></button>
                                                 </div>
 
                                                 <div class="carousel-inner">
@@ -4127,22 +4158,22 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                        <div class="ribbon-pop">
+                                            <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
                                             <div id="jbl3" class="carousel slide" data-bs-ride="carousel">
                                                 <div class="carousel-indicators">
-                                                    <button type="button" data-bs-target="#jbl3"
-                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                    <button type="button" data-bs-target="#jbl3" data-bs-slide-to="0"
+                                                        class="active" aria-current="true"
                                                         aria-label="Slide 1"></button>
-                                                    <button type="button" data-bs-target="#jbl3"
-                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                    <button type="button" data-bs-target="#jbl3"
-                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                    <button type="button" data-bs-target="#jbl3"
-                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    <button type="button" data-bs-target="#jbl3" data-bs-slide-to="1"
+                                                        aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#jbl3" data-bs-slide-to="2"
+                                                        aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#jbl3" data-bs-slide-to="3"
+                                                        aria-label="Slide 4"></button>
                                                 </div>
 
                                                 <div class="carousel-inner">
@@ -4364,22 +4395,22 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                        <div class="ribbon-pop">
+                                            <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
                                             <div id="jbl4" class="carousel slide" data-bs-ride="carousel">
                                                 <div class="carousel-indicators">
-                                                    <button type="button" data-bs-target="#jbl4"
-                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                    <button type="button" data-bs-target="#jbl4" data-bs-slide-to="0"
+                                                        class="active" aria-current="true"
                                                         aria-label="Slide 1"></button>
-                                                    <button type="button" data-bs-target="#jbl4"
-                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                    <button type="button" data-bs-target="#jbl4"
-                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                    <button type="button" data-bs-target="#jbl4"
-                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    <button type="button" data-bs-target="#jbl4" data-bs-slide-to="1"
+                                                        aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#jbl4" data-bs-slide-to="2"
+                                                        aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#jbl4" data-bs-slide-to="3"
+                                                        aria-label="Slide 4"></button>
                                                 </div>
 
                                                 <div class="carousel-inner">
@@ -4601,6 +4632,22 @@
                                         </div>
                                     </div>
 
+                                    <div class="col-3 custom text-start">
+                                        <button class="btn btn-sm">
+                                            <div class="row p-4">
+                                                <div class="col-md-12">
+                                                    <span class="fa-stack fa-2x">
+                                                        <i class="fa fa-circle fa-stack-2x text-brown"></i>
+                                                        <i class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-12 mt-1 fw-bold">
+                                                    Lihat Semua
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+
                                 </div>
                             </div>
 
@@ -4612,8 +4659,6 @@
                             </div>
 
                         </div>
-
-
 
                         <script>
                             $('#right-button2').click(function () {
@@ -4631,6 +4676,261 @@
                             });
 
                         </script>
+
+                        <div class="row align-items-center justify-content-center">
+
+                            <div class="col-10 arrow-desktop text-center">
+                                <style>
+                                    .scroll-simple::-webkit-scrollbar {
+                                        width: 7px;
+                                        height: 7px;
+                                    }
+
+                                    .scroll-simple::-webkit-scrollbar-track {
+                                        border-radius: 10px;
+                                        background: rgba(0, 0, 0, 0.1);
+                                    }
+
+                                    .scroll-simple::-webkit-scrollbar-thumb {
+                                        border-radius: 10px;
+                                        background: rgba(0, 0, 0, 0.2);
+                                    }
+
+                                    .scroll-simple::-webkit-scrollbar-thumb:hover {
+                                        background: rgba(0, 0, 0, 0.4);
+                                    }
+
+                                    .scroll-simple::-webkit-scrollbar-thumb:active {
+                                        background: rgba(0, 0, 0, .9);
+                                    }
+
+                                </style>
+
+                                <div class="row mt-4 justify-content-between scroll-simple align-items-center" id="lelang-card2"
+                                    style="flex-wrap: nowrap; overflow-x: scroll">
+                                    
+                                    <div class="col-12">
+                                        <div class="row align-items-end" style="flex-wrap: nowrap;">
+
+                                            <div class="col-12 custom">
+                                                <div class="card mx-auto" style="width: 21rem;">
+                                                    <div class="card-body p-0 text-start">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg"
+                                                            class="a-image w-100 rounded-top" alt="">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">1 Ha</h3>
+                                                            </div>                                                
+                                                            <div class="col">
+                                                                <h5 class="mb-0">Rp. 450 Juta</h5>
+                                                            </div>
+                                                            <div class="col-4 text-end">
+                                                                <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h6 class="fw-bold">Bogor</h6>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-12 custom">
+                                                <div class="card mx-auto" style="width: 21rem;">
+                                                    <div class="card-body p-0 text-start">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg"
+                                                            class="a-image w-100 rounded-top" alt="">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">5000 m</h3>
+                                                            </div>                                                
+                                                            <div class="col">
+                                                                <h5 class="mb-0">Rp. 500 Juta</h5>
+                                                            </div>
+                                                            <div class="col-4 text-end">
+                                                                <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h6 class="fw-bold">Bogor</h6>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-12 custom">
+                                                <div class="card mx-auto" style="width: 21rem;">
+                                                    <div class="card-body p-0 text-start">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg"
+                                                            class="a-image w-100 rounded-top" alt="">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">3.2 Ha</h3>
+                                                            </div>                                                
+                                                            <div class="col">
+                                                                <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                            </div>
+                                                            <div class="col-4 text-end">
+                                                                <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h6 class="fw-bold">Bogor</h6>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-12 custom">
+                                                <div class="card mx-auto" style="width: 21rem;">
+                                                    <div class="card-body p-0 text-start">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg"
+                                                            class="a-image w-100 rounded-top" alt="">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">3.2 Ha</h3>
+                                                            </div>                                                
+                                                            <div class="col">
+                                                                <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                            </div>
+                                                            <div class="col-4 text-end">
+                                                                <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h6 class="fw-bold">Bogor</h6>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 custom text-center" style="margin-bottom: -1rem">
+                                                <button class="btn btn-sm">
+                                                    <span class="fa-stack fa-2x">
+                                                        <i class="fa fa-circle fa-stack-2x text-brown"></i>
+                                                        <i class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        
+                                        
+                                        <div class="row mt-3" style="flex-wrap: nowrap;">
+                                            <div class="col-12 custom">
+                                                <div class="card mx-auto" style="width: 21rem;">
+                                                    <div class="card-body p-0 text-start">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg"
+                                                            class="a-image w-100 rounded-top" alt="">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">3.2 Ha</h3>
+                                                            </div>                                                
+                                                            <div class="col">
+                                                                <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                            </div>
+                                                            <div class="col-4 text-end">
+                                                                <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h6 class="fw-bold">Bogor</h6>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-12 custom">
+                                                <div class="card mx-auto" style="width: 21rem;">
+                                                    <div class="card-body p-0 text-start">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg"
+                                                            class="a-image w-100 rounded-top" alt="">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">3.2 Ha</h3>
+                                                            </div>                                                
+                                                            <div class="col">
+                                                                <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                            </div>
+                                                            <div class="col-4 text-end">
+                                                                <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h6 class="fw-bold">Bogor</h6>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-12 custom">
+                                                <div class="card mx-auto" style="width: 21rem;">
+                                                    <div class="card-body p-0 text-start">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg"
+                                                        class="a-image w-100 rounded-top" alt="">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">5000 m</h3>
+                                                            </div>                                                
+                                                            <div class="col">
+                                                                <h5 class="mb-0">Rp. 500 Juta</h5>
+                                                            </div>
+                                                            <div class="col-4 text-end">
+                                                                <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h6 class="fw-bold">Bogor</h6>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-12 custom">
+                                                <div class="card mx-auto" style="width: 21rem;">
+                                                    <div class="card-body p-0 text-start">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg"
+                                                            class="a-image w-100 rounded-top" alt="">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">1 Ha</h3>
+                                                            </div>                                                
+                                                            <div class="col">
+                                                                <h5 class="mb-0">Rp. 450 Juta</h5>
+                                                            </div>
+                                                            <div class="col-4 text-end">
+                                                                <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h6 class="fw-bold">Bogor</h6>
+                                                            </div>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4 custom text-center" style="margin-top: -1rem">
+                                                <button class="btn btn-sm">
+                                                    <div class="col-md-12 mt-1 fw-bold">
+                                                        Lihat Semua
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
 
 
                     </div>
@@ -4682,22 +4982,22 @@
                                 <div class="row mobile-scroll justify-content-between" id="lelang-card3"
                                     style="flex-wrap: nowrap">
 
-                                    <div class="col-12 ">
+                                    <div class="col-12 custom ">
                                         <div class="card mx-auto" style="width: 21rem;">
-                                        <div class="ribbon-pop">
+                                            <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
                                             <div id="ll4" class="carousel slide" data-bs-ride="carousel">
                                                 <div class="carousel-indicators">
-                                                    <button type="button" data-bs-target="#ll4"
-                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                    <button type="button" data-bs-target="#ll4" data-bs-slide-to="0"
+                                                        class="active" aria-current="true"
                                                         aria-label="Slide 1"></button>
-                                                    <button type="button" data-bs-target="#ll4"
-                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                    <button type="button" data-bs-target="#ll4"
-                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                    <button type="button" data-bs-target="#ll4"
-                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    <button type="button" data-bs-target="#ll4" data-bs-slide-to="1"
+                                                        aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ll4" data-bs-slide-to="2"
+                                                        aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ll4" data-bs-slide-to="3"
+                                                        aria-label="Slide 4"></button>
                                                 </div>
 
                                                 <div class="carousel-inner">
@@ -4919,22 +5219,22 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                        <div class="ribbon-pop">
+                                            <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
                                             <div id="ll2" class="carousel slide" data-bs-ride="carousel">
                                                 <div class="carousel-indicators">
-                                                    <button type="button" data-bs-target="#ll2"
-                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                    <button type="button" data-bs-target="#ll2" data-bs-slide-to="0"
+                                                        class="active" aria-current="true"
                                                         aria-label="Slide 1"></button>
-                                                    <button type="button" data-bs-target="#ll2"
-                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                    <button type="button" data-bs-target="#ll2"
-                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                    <button type="button" data-bs-target="#ll2"
-                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    <button type="button" data-bs-target="#ll2" data-bs-slide-to="1"
+                                                        aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ll2" data-bs-slide-to="2"
+                                                        aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ll2" data-bs-slide-to="3"
+                                                        aria-label="Slide 4"></button>
                                                 </div>
 
                                                 <div class="carousel-inner">
@@ -5157,22 +5457,22 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                        <div class="ribbon-pop">
+                                            <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
                                             <div id="ll3" class="carousel slide" data-bs-ride="carousel">
                                                 <div class="carousel-indicators">
-                                                    <button type="button" data-bs-target="#ll3"
-                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                    <button type="button" data-bs-target="#ll3" data-bs-slide-to="0"
+                                                        class="active" aria-current="true"
                                                         aria-label="Slide 1"></button>
-                                                    <button type="button" data-bs-target="#ll3"
-                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                    <button type="button" data-bs-target="#ll3"
-                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                    <button type="button" data-bs-target="#ll3"
-                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    <button type="button" data-bs-target="#ll3" data-bs-slide-to="1"
+                                                        aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ll3" data-bs-slide-to="2"
+                                                        aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ll3" data-bs-slide-to="3"
+                                                        aria-label="Slide 4"></button>
                                                 </div>
 
                                                 <div class="carousel-inner">
@@ -5394,22 +5694,22 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
-                                        <div class="ribbon-pop">
+                                            <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
                                             <div id="ll44" class="carousel slide" data-bs-ride="carousel">
                                                 <div class="carousel-indicators">
-                                                    <button type="button" data-bs-target="#ll44"
-                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                    <button type="button" data-bs-target="#ll44" data-bs-slide-to="0"
+                                                        class="active" aria-current="true"
                                                         aria-label="Slide 1"></button>
-                                                    <button type="button" data-bs-target="#ll44"
-                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                    <button type="button" data-bs-target="#ll44"
-                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                    <button type="button" data-bs-target="#ll44"
-                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    <button type="button" data-bs-target="#ll44" data-bs-slide-to="1"
+                                                        aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ll44" data-bs-slide-to="2"
+                                                        aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ll44" data-bs-slide-to="3"
+                                                        aria-label="Slide 4"></button>
                                                 </div>
 
                                                 <div class="carousel-inner">
@@ -6172,10 +6472,10 @@
                     <div class="modal-content">
                         <div class="modal-header bg-dark text-white">
                             <div class="row">
-                                <div class="col-12 text-center text-uppercase">
+                                <div class="col-12 custom text-center text-uppercase">
                                     <h5 class="modal-title" id="formSponsoranModalLabel">Korban Sengketa Tanah</h5>
                                 </div>
-                                <div class="col-12 text-center">
+                                <div class="col-12 custom text-center">
                                     <h6 class="modal-title" style="font-size:12px">Korban adalah orang yang
                                         dirugikan,
                                         dirampas,
