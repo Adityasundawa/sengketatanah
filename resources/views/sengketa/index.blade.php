@@ -1447,10 +1447,11 @@
                                 </button>
                             </div>
                             <div class="col-10 arrow-desktop text-center">
-                                <div class="row mobile-scroll mt-2 align-items-center" id="lelang-card" style="flex-wrap: nowrap">
+                                <div class="row mobile-scroll mt-2 align-items-center" id="lelang-card"
+                                    style="flex-wrap: nowrap">
 
                                     <div class="col-12 custom ">
-                                        <div class="card mx-auto" style="width: 21rem;">
+                                        <div class="card mx-auto">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
@@ -1689,7 +1690,7 @@
                                     </div>
 
                                     <div class="col-12 custom">
-                                        <div class="card mb-2 mx-auto" style="width: 21rem;">
+                                        <div class="card mb-2 mx-auto">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
@@ -1923,7 +1924,7 @@
                                     </div>
 
                                     <div class="col-12 custom">
-                                        <div class="card mb-2 mx-auto" style="width: 21rem;">
+                                        <div class="card mb-2 mx-auto">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
@@ -2155,7 +2156,7 @@
                                     </div>
 
                                     <div class="col-12 custom">
-                                        <div class="card mb-2 mx-auto" style="width: 21rem;">
+                                        <div class="card mb-2 mx-auto">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
@@ -2464,7 +2465,7 @@
                     <div class="card-body" style="background-color:#FAFAD2;">
 
 
-                        <div class="row align-items-center justify-content-center">
+                        <div class="row  mobile-scroll mt-2 align-items-center">
 
                             <div class="col-1 arrow-desktop text-center">
                                 <button id="left-button1" class="btn rounded-5 text-white"
@@ -2473,11 +2474,11 @@
                                 </button>
                             </div>
                             <div class="col-10 arrow-desktop text-center">
-                                <div class="row mt-2 mobile-scroll justify-content-between align-items-center" id="lelang-card1"
-                                    style="flex-wrap: nowrap">
+                                <div class="row mt-2 mobile-scroll justify-content-between align-items-center"
+                                    id="lelang-card1" style="flex-wrap: nowrap">
 
                                     <div class="col-12 custom ">
-                                        <div class="card mx-auto" style="width: 21rem;">
+                                        <div class="card mx-auto">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
@@ -2698,7 +2699,7 @@
                                     </div>
 
                                     <div class="col-12 custom">
-                                        <div class="card mb-2 mx-auto" style="width: 21rem;">
+                                        <div class="card mb-2 mx-auto">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
@@ -2921,7 +2922,7 @@
                                     </div>
 
                                     <div class="col-12 custom">
-                                        <div class="card mb-2 mx-auto" style="width: 21rem;">
+                                        <div class="card mb-2 mx-auto">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
@@ -3144,7 +3145,7 @@
                                     </div>
 
                                     <div class="col-12 custom">
-                                        <div class="card mb-2 mx-auto" style="width: 21rem;">
+                                        <div class="card mb-2 mx-auto">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
@@ -3687,11 +3688,11 @@
 
                             <div class="col-10 arrow-desktop text-center">
 
-                                <div class="row mt-2 mobile-scroll justify-content-between align-items-center" id="lelang-card2"
-                                    style="flex-wrap: nowrap">
+                                <div class="row mt-2 mobile-scroll justify-content-between align-items-center"
+                                    id="lelang-card2" style="flex-wrap: nowrap">
 
                                     <div class="col-12 custom ">
-                                        <div class="card mx-auto" style="width: 21rem;">
+                                        <div class="card mx-auto">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
@@ -3921,7 +3922,7 @@
                                     </div>
 
                                     <div class="col-12 custom">
-                                        <div class="card mb-2 mx-auto" style="width: 21rem;">
+                                        <div class="card mb-2 mx-auto">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
@@ -4159,7 +4160,7 @@
                                     </div>
 
                                     <div class="col-12 custom">
-                                        <div class="card mb-2 mx-auto" style="width: 21rem;">
+                                        <div class="card mb-2 mx-auto">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
@@ -4396,7 +4397,7 @@
                                     </div>
 
                                     <div class="col-12 custom">
-                                        <div class="card mb-2 mx-auto" style="width: 21rem;">
+                                        <div class="card mb-2 mx-auto">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
@@ -4706,234 +4707,361 @@
 
                                 </style>
 
-                                <div class="row mt-4 justify-content-between scroll-simple align-items-center" id="lelang-card2"
-                                    style="flex-wrap: nowrap; overflow-x: scroll">
-                                    
-                                    <div class="col-12">
-                                        <div class="row align-items-end" style="flex-wrap: nowrap;">
-
-                                            <div class="col-12 custom">
-                                                <div class="card mx-auto" style="width: 21rem;">
-                                                    <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan1.jpeg"
-                                                            class="a-image w-100 rounded-top" alt="">
-                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                            <div class="col-12">
-                                                                <h3 class="mb-0">1 Ha</h3>
-                                                            </div>                                                
-                                                            <div class="col">
-                                                                <h5 class="mb-0">Rp. 450 Juta</h5>
-                                                            </div>
-                                                            <div class="col-4 text-end">
-                                                                <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <h6 class="fw-bold">Bogor</h6>
-                                                            </div>
-                                                        
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-12 custom">
-                                                <div class="card mx-auto" style="width: 21rem;">
-                                                    <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan2.jpeg"
-                                                            class="a-image w-100 rounded-top" alt="">
-                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                            <div class="col-12">
-                                                                <h3 class="mb-0">5000 m</h3>
-                                                            </div>                                                
-                                                            <div class="col">
-                                                                <h5 class="mb-0">Rp. 500 Juta</h5>
-                                                            </div>
-                                                            <div class="col-4 text-end">
-                                                                <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <h6 class="fw-bold">Bogor</h6>
-                                                            </div>
-                                                        
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-12 custom">
-                                                <div class="card mx-auto" style="width: 21rem;">
-                                                    <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan3.jpeg"
-                                                            class="a-image w-100 rounded-top" alt="">
-                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                            <div class="col-12">
-                                                                <h3 class="mb-0">3.2 Ha</h3>
-                                                            </div>                                                
-                                                            <div class="col">
-                                                                <h5 class="mb-0">Rp. 200 Juta</h5>
-                                                            </div>
-                                                            <div class="col-4 text-end">
-                                                                <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <h6 class="fw-bold">Bogor</h6>
-                                                            </div>
-                                                        
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-12 custom">
-                                                <div class="card mx-auto" style="width: 21rem;">
-                                                    <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan4.jpeg"
-                                                            class="a-image w-100 rounded-top" alt="">
-                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                            <div class="col-12">
-                                                                <h3 class="mb-0">3.2 Ha</h3>
-                                                            </div>                                                
-                                                            <div class="col">
-                                                                <h5 class="mb-0">Rp. 200 Juta</h5>
-                                                            </div>
-                                                            <div class="col-4 text-end">
-                                                                <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <h6 class="fw-bold">Bogor</h6>
-                                                            </div>
-                                                        
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-4 custom text-center" style="margin-bottom: -1rem">
-                                                <button class="btn btn-sm">
-                                                    <span class="fa-stack fa-2x">
-                                                        <i class="fa fa-circle fa-stack-2x text-brown"></i>
-                                                        <i class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
-                                                    </span>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        
-                                        
-                                        <div class="row mt-3" style="flex-wrap: nowrap;">
-                                            <div class="col-12 custom">
-                                                <div class="card mx-auto" style="width: 21rem;">
-                                                    <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan4.jpeg"
-                                                            class="a-image w-100 rounded-top" alt="">
-                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                            <div class="col-12">
-                                                                <h3 class="mb-0">3.2 Ha</h3>
-                                                            </div>                                                
-                                                            <div class="col">
-                                                                <h5 class="mb-0">Rp. 200 Juta</h5>
-                                                            </div>
-                                                            <div class="col-4 text-end">
-                                                                <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <h6 class="fw-bold">Bogor</h6>
-                                                            </div>
-                                                        
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-12 custom">
-                                                <div class="card mx-auto" style="width: 21rem;">
-                                                    <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan3.jpeg"
-                                                            class="a-image w-100 rounded-top" alt="">
-                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                            <div class="col-12">
-                                                                <h3 class="mb-0">3.2 Ha</h3>
-                                                            </div>                                                
-                                                            <div class="col">
-                                                                <h5 class="mb-0">Rp. 200 Juta</h5>
-                                                            </div>
-                                                            <div class="col-4 text-end">
-                                                                <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <h6 class="fw-bold">Bogor</h6>
-                                                            </div>
-                                                        
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-12 custom">
-                                                <div class="card mx-auto" style="width: 21rem;">
-                                                    <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan2.jpeg"
-                                                        class="a-image w-100 rounded-top" alt="">
-                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                            <div class="col-12">
-                                                                <h3 class="mb-0">5000 m</h3>
-                                                            </div>                                                
-                                                            <div class="col">
-                                                                <h5 class="mb-0">Rp. 500 Juta</h5>
-                                                            </div>
-                                                            <div class="col-4 text-end">
-                                                                <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <h6 class="fw-bold">Bogor</h6>
-                                                            </div>
-                                                        
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-12 custom">
-                                                <div class="card mx-auto" style="width: 21rem;">
-                                                    <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan1.jpeg"
-                                                            class="a-image w-100 rounded-top" alt="">
-                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                            <div class="col-12">
-                                                                <h3 class="mb-0">1 Ha</h3>
-                                                            </div>                                                
-                                                            <div class="col">
-                                                                <h5 class="mb-0">Rp. 450 Juta</h5>
-                                                            </div>
-                                                            <div class="col-4 text-end">
-                                                                <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <h6 class="fw-bold">Bogor</h6>
-                                                            </div>
-                                                        
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-4 custom text-center" style="margin-top: -1rem">
-                                                <button class="btn btn-sm">
-                                                    <div class="col-md-12 mt-1 fw-bold">
-                                                        Lihat Semua
-                                                    </div>
-                                                </button>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                </div>
                             </div>
 
                         </div>
 
 
                     </div>
+
+
+
+
+                    <div class="card rounded-0 border-0 " style="margin-top:-10px">
+                        <div class="card-header bg-white border-0">
+                        </div>
+                        <div class="card-body" style="background-color:#FAFAD2;">
+                            <div class="row justify-content-center">
+
+                                <div class="col-1 arrow-desktop text-center">
+                                    <button class="btn rounded-5 text-white left-button2"
+                                        style="background-color: #61481C;margin-top:200%;">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                                <div class="col-10">
+                                    <div class="row mt-0 justify-content-center scroll-simple align-items-center mobile-scroll lelang-card"
+                                        style="flex-wrap: nowrap;">
+
+                                        <div class="col-12">
+                                            <div class="row align-items-end" style="flex-wrap: nowrap;">
+
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan1.jpeg"
+                                                                class="a-image w-100 rounded-top" alt="">
+                                                            <div class="row p-4 g-0 text-black"
+                                                                style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h3 class="mb-0">1 Ha</h3>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 450 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan4.jpeg"
+                                                                class="a-image w-100 rounded-top" alt="">
+                                                            <div class="row p-4 g-0 text-black"
+                                                                style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h3 class="mb-0">3.2 Ha</h3>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan2.jpeg"
+                                                                class="a-image w-100 rounded-top" alt="">
+                                                            <div class="row p-4 g-0 text-black"
+                                                                style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h3 class="mb-0">5000 m</h3>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 500 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan3.jpeg"
+                                                                class="a-image w-100 rounded-top" alt="">
+                                                            <div class="row p-4 g-0 text-black"
+                                                                style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h3 class="mb-0">3.2 Ha</h3>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-4 custom text-center" style="margin-bottom: 7rem">
+                                                    <button class="btn btn-sm">
+                                                        <span class="fa-stack fa-2x">
+                                                            <i class="fa fa-circle fa-stack-2x text-brown"></i>
+                                                            <i
+                                                                class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
+                                                        </span> <br>
+                                                        <b>
+                                                            Lihat Semua
+                                                        </b>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-1 arrow-desktop justify-content-center">
+                                    <button class="btn rounded-5 text-white right-button text-center"
+                                        style="background-color: #61481C;margin-top:200%;">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card rounded-0 border-0 " style="margin-top:-10px">
+                        <div class="card-header bg-white border-0">
+
+                        </div>
+                        <div class="card-body" style="background-color:#FAFAD2;">
+                            <div class="row justify-content-center">
+
+                                <div class="col-1 arrow-desktop text-center">
+                                    <button class="btn rounded-5 text-white left-button1"
+                                        style="background-color: #61481C;margin-top:200%;">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                                <div class="col-10">
+                                    <div class="row mt-0 mobile-scroll justify-content-between scroll-simple align-items-center lelang-card1"
+                                        style="flex-wrap: nowrap;">
+
+                                        <div class="col-12">
+                                            <div class="row align-items-end" style="flex-wrap: nowrap;">
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan4.jpeg"
+                                                                class="a-image w-100 rounded-top" alt="">
+                                                            <div class="row p-4 g-0 text-black"
+                                                                style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h3 class="mb-0">3.2 Ha</h3>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan1.jpeg"
+                                                                class="a-image w-100 rounded-top" alt="">
+                                                            <div class="row p-4 g-0 text-black"
+                                                                style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h3 class="mb-0">1 Ha</h3>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 450 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan2.jpeg"
+                                                                class="a-image w-100 rounded-top" alt="">
+                                                            <div class="row p-4 g-0 text-black"
+                                                                style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h3 class="mb-0">5000 m</h3>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 500 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan3.jpeg"
+                                                                class="a-image w-100 rounded-top" alt="">
+                                                            <div class="row p-4 g-0 text-black"
+                                                                style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h3 class="mb-0">3.2 Ha</h3>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-4 custom text-center" style="margin-bottom: 7rem">
+                                                    <button class="btn btn-sm">
+                                                        <span class="fa-stack fa-2x">
+                                                            <i class="fa fa-circle fa-stack-2x text-brown"></i>
+                                                            <i
+                                                                class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
+                                                        </span> <br>
+                                                        <b>
+                                                            Lihat Semua
+                                                        </b>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-1 arrow-desktop justify-content-center">
+                                    <button class="btn rounded-5 text-white right-button1 text-center"
+                                        style="background-color: #61481C;margin-top:200%;">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <script>
+                        $('button.right-button').click(function () {
+                            event.preventDefault();
+                            $('div.lelang-card').animate({
+                                scrollLeft: "+=300px"
+                            }, "slow");
+                        });
+
+                        $('button.left-button2').click(function () {
+                            event.preventDefault();
+                            $('div.lelang-card').animate({
+                                scrollLeft: "-=300px"
+                            }, "slow");
+                        });
+
+                        $('button.right-button1').click(function () {
+                            event.preventDefault();
+                            $('div.lelang-card1').animate({
+                                scrollLeft: "+=300px"
+                            }, "slow");
+                        });
+
+                        $('button.left-button1').click(function () {
+                            event.preventDefault();
+                            $('div.lelang-card1').animate({
+                                scrollLeft: "-=300px"
+                            }, "slow");
+                        });
+
+                    </script>
+
+
+
+
 
                 </div>
                 <!-- lelang -->
@@ -4983,7 +5111,7 @@
                                     style="flex-wrap: nowrap">
 
                                     <div class="col-12 custom ">
-                                        <div class="card mx-auto" style="width: 21rem;">
+                                        <div class="card mx-auto">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
@@ -5220,7 +5348,7 @@
                                     </div>
 
                                     <div class="col-12 custom">
-                                        <div class="card mb-2 mx-auto" style="width: 21rem;">
+                                        <div class="card mb-2 mx-auto">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
@@ -5458,7 +5586,7 @@
                                     </div>
 
                                     <div class="col-12 custom">
-                                        <div class="card mb-2 mx-auto" style="width: 21rem;">
+                                        <div class="card mb-2 mx-auto">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
@@ -5695,7 +5823,7 @@
                                     </div>
 
                                     <div class="col-12 custom">
-                                        <div class="card mb-2 mx-auto" style="width: 21rem;">
+                                        <div class="card mb-2 mx-auto">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
@@ -5964,10 +6092,351 @@
                     </div>
 
                 </div>
+                <div class="card rounded-0 border-0 " style="margin-top:-30px">
+                    <div class="card-header bg-white border-0">
+                    </div>
+                    <div class="card-body" style="background-color:#FAFAD2;">
+                        <div class="row justify-content-center">
+
+                            <div class="col-1 arrow-desktop text-center">
+                                <button class="btn rounded-5 text-white left-button3"
+                                    style="background-color: #61481C;margin-top:200%;">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+                            </div>
+                            <div class="col-10">
+                                <div class="row mt-0 mobile-scroll justify-content-between scroll-simple align-items-center lelang-card3"
+                                    style="flex-wrap: nowrap;">
+
+                                    <div class="col-12">
+                                        <div class="row align-items-end" style="flex-wrap: nowrap;">
+
+                                            <div class="col-12 custom">
+                                                <div class="card mx-auto">
+                                                    <div class="card-body p-0 text-start">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg"
+                                                            class="a-image w-100 rounded-top" alt="">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">1 Ha</h3>
+                                                            </div>
+                                                            <div class="col">
+                                                                <h5 class="mb-0">Rp. 450 Juta</h5>
+                                                            </div>
+                                                            <div class="col-4 text-end">
+                                                                <a href="#" style="text-decoration: none">
+                                                                    <h6 class="text-primary">Lihat</h6>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h6 class="fw-bold">Bogor</h6>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 custom">
+                                                <div class="card mx-auto">
+                                                    <div class="card-body p-0 text-start">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg"
+                                                            class="a-image w-100 rounded-top" alt="">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">3.2 Ha</h3>
+                                                            </div>
+                                                            <div class="col">
+                                                                <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                            </div>
+                                                            <div class="col-4 text-end">
+                                                                <a href="#" style="text-decoration: none">
+                                                                    <h6 class="text-primary">Lihat</h6>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h6 class="fw-bold">Bogor</h6>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 custom">
+                                                <div class="card mx-auto">
+                                                    <div class="card-body p-0 text-start">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg"
+                                                            class="a-image w-100 rounded-top" alt="">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">5000 m</h3>
+                                                            </div>
+                                                            <div class="col">
+                                                                <h5 class="mb-0">Rp. 500 Juta</h5>
+                                                            </div>
+                                                            <div class="col-4 text-end">
+                                                                <a href="#" style="text-decoration: none">
+                                                                    <h6 class="text-primary">Lihat</h6>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h6 class="fw-bold">Bogor</h6>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 custom">
+                                                <div class="card mx-auto">
+                                                    <div class="card-body p-0 text-start">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg"
+                                                            class="a-image w-100 rounded-top" alt="">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">3.2 Ha</h3>
+                                                            </div>
+                                                            <div class="col">
+                                                                <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                            </div>
+                                                            <div class="col-4 text-end">
+                                                                <a href="#" style="text-decoration: none">
+                                                                    <h6 class="text-primary">Lihat</h6>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h6 class="fw-bold">Bogor</h6>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4 custom text-center" style="margin-bottom: 7rem">
+                                                <button class="btn btn-sm">
+                                                    <span class="fa-stack fa-2x">
+                                                        <i class="fa fa-circle fa-stack-2x text-brown"></i>
+                                                        <i class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
+                                                    </span> <br>
+                                                    <b>
+                                                        Lihat Semua
+                                                    </b>
+                                                </button>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-1 arrow-desktop justify-content-center">
+                                <button class="btn rounded-5 text-white right-button3 text-center"
+                                    style="background-color: #61481C;margin-top:200%;">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                     <div class="card rounded-0 border-0 " style="margin-top:-10px">
+                        <div class="card-header bg-white border-0">
+
+                        </div>
+                        <div class="card-body" style="background-color:#FAFAD2;">
+                            <div class="row justify-content-center">
+
+                                <div class="col-1 arrow-desktop text-center">
+                                    <button class="btn rounded-5 text-white left-button4"
+                                        style="background-color: #61481C;margin-top:200%;">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                                <div class="col-10">
+                                    <div class="row mt-0 mobile-scroll justify-content-between scroll-simple align-items-center lelang-card4"
+                                        style="flex-wrap: nowrap;">
+
+                                        <div class="col-12">
+                                            <div class="row align-items-end" style="flex-wrap: nowrap;">
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan4.jpeg"
+                                                                class="a-image w-100 rounded-top" alt="">
+                                                            <div class="row p-4 g-0 text-black"
+                                                                style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h3 class="mb-0">3.2 Ha</h3>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan1.jpeg"
+                                                                class="a-image w-100 rounded-top" alt="">
+                                                            <div class="row p-4 g-0 text-black"
+                                                                style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h3 class="mb-0">1 Ha</h3>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 450 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan2.jpeg"
+                                                                class="a-image w-100 rounded-top" alt="">
+                                                            <div class="row p-4 g-0 text-black"
+                                                                style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h3 class="mb-0">5000 m</h3>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 500 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan3.jpeg"
+                                                                class="a-image w-100 rounded-top" alt="">
+                                                            <div class="row p-4 g-0 text-black"
+                                                                style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h3 class="mb-0">3.2 Ha</h3>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-4 custom text-center" style="margin-bottom: 7rem">
+                                                    <button class="btn btn-sm">
+                                                        <span class="fa-stack fa-2x">
+                                                            <i class="fa fa-circle fa-stack-2x text-brown"></i>
+                                                            <i
+                                                                class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
+                                                        </span> <br>
+                                                        <b>
+                                                            Lihat Semua
+                                                        </b>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-1 arrow-desktop justify-content-center">
+                                    <button class="btn rounded-5 text-white right-button4 text-center"
+                                        style="background-color: #61481C;margin-top:200%;">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
 
 
             </div>
         </div>
+
+
+        <script>
+            $('button.right-button3').click(function () {
+                event.preventDefault();
+                $('div.lelang-card3').animate({
+                    scrollLeft: "+=300px"
+                }, "slow");
+            });
+
+            $('button.left-button3').click(function () {
+                event.preventDefault();
+                $('div.lelang-card3').animate({
+                    scrollLeft: "-=300px"
+                }, "slow");
+            });
+
+            $('button.right-button4').click(function () {
+                event.preventDefault();
+                $('div.lelang-card4').animate({
+                    scrollLeft: "+=300px"
+                }, "slow");
+            });
+
+            $('button.left-button4').click(function () {
+                event.preventDefault();
+                $('div.lelang-card4').animate({
+                    scrollLeft: "-=300px"
+                }, "slow");
+            });
+
+        </script>
+
         <style>
             .store {
                 width: 171px;
