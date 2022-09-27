@@ -603,7 +603,7 @@
                         <div class="row justify-content-between text-center"
                             style="overflow-x: auto; flex-wrap: nowrap">
                             <div class="col mb-4">
-                                <a href="https://mitra.atrbpn.go.id"
+                                <a href="{{url('/')}}/bid-sengketa"
                                     class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
@@ -878,7 +878,7 @@
                                 </a>
                             </div>
                             <div class="col mb-4">
-                                <a class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                                <a class="btn btn-outline-light text-dark w-100 rounded-4 shadow" href="https://mitra.atrbpn.go.id">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png" class="p-2" width="85px" alt="">
                                     <div class="mt-0" style="font-size: 12px">Mitra <br> BPN</div>
                                 </a>
