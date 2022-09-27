@@ -449,26 +449,26 @@
             }
         }
 
-        .col-12 {
+        .col-12.custom {
             width: 33.3333%
         }
 
         @media (max-width: 1400px) {
-            .col-12 {
+            .col-12.custom {
                 width: 38% !important
             }
 
         }
 
         @media (max-width: 992px) {
-            .col-12 {
+            .col-12.custom {
                 width: 51% !important
             }
 
         }
 
         @media (max-width: 768px) {
-            .col-12 {
+            .col-12.custom {
                 width: 100% !important
             }
 
@@ -503,6 +503,11 @@
 
         .card {
             border-radius: 10px
+        }
+
+        .a-image {
+            max-height: 200px;
+            object-fit: cover;
         }
 
     </style>
@@ -1443,7 +1448,7 @@
                             <div class="col-10 arrow-desktop text-center">
                                 <div class="row mobile-scroll mt-2" id="lelang-card" style="flex-wrap: nowrap">
 
-                                    <div class="col-12 ">
+                                    <div class="col-12 custom ">
                                         <div class="card mx-auto" style="width: 21rem;">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
@@ -1681,7 +1686,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
                                         <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
@@ -1914,7 +1919,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
                                         <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
@@ -2145,7 +2150,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
                                         <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
@@ -2452,7 +2457,7 @@
                                 <div class="row mt-2 mobile-scroll justify-content-between" id="lelang-card1"
                                     style="flex-wrap: nowrap">
 
-                                    <div class="col-12 ">
+                                    <div class="col-12 custom ">
                                         <div class="card mx-auto" style="width: 21rem;">
                                         <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
@@ -2673,7 +2678,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
                                         <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
@@ -2897,7 +2902,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
                                         <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
@@ -3121,7 +3126,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
                                         <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
@@ -3553,21 +3558,21 @@
                         {{-- <div class="row mt-2 justify-content-between" id="lelang-card"
                             style="overflow-x: auto; flex-wrap: nowrap">
 
-                            <div class="col-12 bid">
+                            <div class="col-12 custom bid">
                                 <iframe width="100%" height="250px" src="https://www.youtube.com/embed/-RkCcavzXq8"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
 
-                            <div class="col-12 bid">
+                            <div class="col-12 custom bid">
                                 <iframe width="100%" height="250px" src="https://www.youtube.com/embed/byby3HJ3OCI"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
 
-                            <div class="col-12 bid">
+                            <div class="col-12 custom bid">
                                 <iframe width="100%" height="250px" src="https://www.youtube.com/embed/1I4iEKK1qbQ"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -3579,21 +3584,21 @@
                         <div class="desktop-2">
                             <div class="row mt-2 justify-content-between" id="lelang-card"
                                 style="overflow-x: auto; flex-wrap: nowrap">
-                                <div class="col-12 bid">
+                                <div class="col-12 custom bid">
                                     <iframe width="100%" height="250px" src="https://www.youtube.com/embed/1I4iEKK1qbQ"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
                                 </div>
 
-                                <div class="col-12 bid">
+                                <div class="col-12 custom bid">
                                     <iframe width="100%" height="250px" src="https://www.youtube.com/embed/-RkCcavzXq8"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
                                 </div>
 
-                                <div class="col-12 bid">
+                                <div class="col-12 custom bid">
                                     <iframe width="100%" height="250px" src="https://www.youtube.com/embed/byby3HJ3OCI"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -3652,7 +3657,7 @@
                                 <div class="row mt-2 mobile-scroll justify-content-between" id="lelang-card2"
                                     style="flex-wrap: nowrap">
 
-                                    <div class="col-12 ">
+                                    <div class="col-12 custom ">
                                         <div class="card mx-auto" style="width: 21rem;">
                                         <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
@@ -3842,8 +3847,6 @@
 
                                                         <div class="d-grid gap-2 ">
 
-
-
                                                             <div class="modal fade my-auto" id="exampleSponsor"
                                                                 tabindex="-1" aria-labelledby="exampleModalLabel"
                                                                 aria-hidden="true">
@@ -3884,7 +3887,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
                                         <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
@@ -4122,7 +4125,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
                                         <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
@@ -4359,7 +4362,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
                                         <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
@@ -4607,9 +4610,7 @@
                             </div>
 
                         </div>
-
-
-
+                        
                         <script>
                             $('#right-button2').click(function () {
                                 event.preventDefault();
@@ -4626,6 +4627,74 @@
                             });
 
                         </script>
+
+                        <div class="row align-items-center justify-content-center">
+
+                            <div class="col-10 arrow-desktop text-center">
+
+                                <div class="row mt-2 justify-content-between" id="lelang-card2"
+                                    style="flex-wrap: nowrap; overflow-x: scroll">
+
+                                    <div class="col-12 custom">
+                                        <div class="card mx-auto" style="width: 21rem;">
+                                            <div class="card-body p-0 text-start">
+                                                <img src="{{asset('')}}images/lahan1.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                <div class="row p-4 pt-4">
+                                                    <div class="col-12"><h3 class="mb-0">Tanah Darat</h3></div>
+                                                    <div class="col-12 mb-2"><h5 class="fw-lighter">Rp. 450 Juta</h5></div>
+                                                    <div class="col-12 mb-3"><h6 class="fw-bold">Lokasi: Pancawati</h6></div>
+                                                    <div class="col-12 text-end"><a class="fs-6 text-primary" style="text-decoration: none" href="#"><i class="fa-solid fa-eye"></i> Lihat</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 custom">
+                                        <div class="card mx-auto" style="width: 21rem;">
+                                            <div class="card-body p-0 text-start">
+                                                <img src="{{asset('')}}images/lahan2.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                <div class="row p-4 pt-4">
+                                                    <div class="col-12"><h3 class="mb-0">Tanah Darat</h3></div>
+                                                    <div class="col-12 mb-2"><h5 class="fw-lighter">Rp. 500 Juta</h5></div>
+                                                    <div class="col-12 mb-3"><h6 class="fw-bold">Lokasi: Pancawati</h6></div>
+                                                    <div class="col-12 text-end"><a class="fs-6 text-primary" style="text-decoration: none" href="#"><i class="fa-solid fa-eye"></i> Lihat</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-12 custom">
+                                        <div class="card mx-auto" style="width: 21rem;">
+                                            <div class="card-body p-0 text-start">
+                                                <img src="{{asset('')}}images/lahan3.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                <div class="row p-4 pt-4">
+                                                    <div class="col-12"><h3 class="mb-0">Tanah Darat</h3></div>
+                                                    <div class="col-12 mb-2"><h5 class="fw-lighter">Rp. 200 Juta</h5></div>
+                                                    <div class="col-12 mb-3"><h6 class="fw-bold">Lokasi: Pancawati</h6></div>
+                                                    <div class="col-12 text-end"><a class="fs-6 text-primary" style="text-decoration: none" href="#"><i class="fa-solid fa-eye"></i> Lihat</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 custom">
+                                        <div class="card mx-auto" style="width: 21rem;">
+                                            <div class="card-body p-0 text-start">
+                                                <img src="{{asset('')}}images/lahan4.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                <div class="row p-4 pt-4">
+                                                    <div class="col-12"><h3 class="mb-0">Tanah Darat</h3></div>
+                                                    <div class="col-12 mb-2"><h5 class="fw-lighter">Rp. 200 Juta</h5></div>
+                                                    <div class="col-12 mb-3"><h6 class="fw-bold">Lokasi: Pancawati</h6></div>
+                                                    <div class="col-12 text-end"><a class="fs-6 text-primary" style="text-decoration: none" href="#"><i class="fa-solid fa-eye"></i> Lihat</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
 
 
                     </div>
@@ -4677,7 +4746,7 @@
                                 <div class="row mobile-scroll justify-content-between" id="lelang-card3"
                                     style="flex-wrap: nowrap">
 
-                                    <div class="col-12 ">
+                                    <div class="col-12 custom ">
                                         <div class="card mx-auto" style="width: 21rem;">
                                         <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
@@ -4914,7 +4983,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
                                         <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
@@ -5152,7 +5221,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
                                         <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
@@ -5389,7 +5458,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto" style="width: 21rem;">
                                         <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
@@ -6167,10 +6236,10 @@
                     <div class="modal-content">
                         <div class="modal-header bg-dark text-white">
                             <div class="row">
-                                <div class="col-12 text-center text-uppercase">
+                                <div class="col-12 custom text-center text-uppercase">
                                     <h5 class="modal-title" id="formSponsoranModalLabel">Korban Sengketa Tanah</h5>
                                 </div>
-                                <div class="col-12 text-center">
+                                <div class="col-12 custom text-center">
                                     <h6 class="modal-title" style="font-size:12px">Korban adalah orang yang
                                         dirugikan,
                                         dirampas,
