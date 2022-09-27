@@ -254,6 +254,16 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg jual-sekarang">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                Bantuan konsultasi dan mediasi
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg jual-sekarang text-end"><button class="btn btn-light text-brown rounded-3 fw-bold w-100">Daftar</button></div>
                 </div>
             </div>
