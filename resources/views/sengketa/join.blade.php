@@ -336,6 +336,70 @@
 
         <div class="pt-5 mb-5 justify-content-center">
             <div class="col-md-12 text-center">
+                <h3 class="text-brown" style="font-weight: 700">4 Roles Sengketatanah.id</h3>
+            </div>
+            <div class="card kriteria mt-4">
+                <div class="card-body p-5">
+                    <div class="row">
+                        
+                        <div class="col-md-6 mt-2 mb-2">
+
+                            <div class="card bg-white shadow p-4">
+                                <div class="card-body text-center">
+                                    <h3>Pemerintah</h3>
+                                    <div class="mt-3">Kementerian ATR/BPN yang menyelenggarakan urusan di bidang
+                                        agraria/pertanahan dan tata ruang.</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6 mt-2 mb-2">
+
+                            <div class="card bg-white shadow p-4">
+                                <div class="card-body text-center">
+                                    <h3>Korban Sengketa</h3>
+                                    <div class="mt-3">Korban adalah orang yang dirugikan, dirampas, atau terancam kehilangan hak atas tanah yang
+                                        dimilikinya.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6 mt-2 mb-2">
+
+                            <div class="card bg-white shadow p-4">
+                                <div class="card-body text-center">
+                                    <h3>Sponsor</h3>
+                                    <div class="mt-3">Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan hukum korban
+                                        sengketa tanah.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6 mt-2 mb-2">
+
+                            <div class="card bg-white shadow p-4">
+                                <div class="card-body text-center">
+                                    <h3>Pengacara</h3>
+                                    <div class="mt-3">Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani persoalan sengketa
+                                        tanah.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-3 mb-5 justify-content-center">
+            <div class="col-md-12 text-center">
                 <h3 class="text-brown" style="font-weight: 700">Apa Saja Layanan Sengketatanah.id</h3>
             </div>
             <div class="card kriteria mt-4">
