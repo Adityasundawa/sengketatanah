@@ -86,7 +86,7 @@
 
         .card.card-child {
             position: relative;
-            width: 85%;
+            width: 90%;
             bottom: 45px;
             margin-left: auto;
             margin-right: auto;
@@ -102,7 +102,7 @@
         
         @media (max-width: 1199.98px) { 
             .card.card-child {
-                width: 90%;
+                width: 95%;
             }
         }
 
@@ -277,6 +277,16 @@
                             </div>
                             <div class="flex-grow-1 ms-3">
                                 Bantuan negoisasi dan penyelesaian
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg jual-sekarang">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                Bantuan wawancara podcast
                             </div>
                         </div>
                     </div>
