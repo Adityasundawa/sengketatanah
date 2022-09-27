@@ -396,7 +396,7 @@
         </div>
 
         <!-- Kenapa Sengketatanah.id -->
-        <div class="ps-4" style="margin-bottom:-20px">
+        <div class="ps-4 mt-5" style="margin-bottom:-20px">
             <h5>
                 Kenapa <a href="sengketatanah.id" class="text-primary"
                     style="text-decoration: none">Sengketatanah.id</a> ?
