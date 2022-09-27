@@ -583,8 +583,8 @@
             </div>
             <div class="col-md text-center my-auto mt-3">
                 <h1>Solusi Untuk Anda</h1>
-                <h3>"Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
-                    pemerintah dalam satu platform."</h3>
+                <h3>Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
+                    pemerintah dalam satu platform.</h3>
 
                 <a class="btn rounded-5 mt-3 text-white" style="background: #BF9742"
                     href="{{url('')}}/join">Bergabung</a>
@@ -877,6 +877,12 @@
                                         </g>
                                     </svg>
                                     <div class="mt-0" style="font-size: 12px">Podcast <br> Sengketa</div>
+                                </a>
+                            </div>
+                            <div class="col mb-4">
+                                <a class="btn btn-outline-light text-dark w-100 rounded-4 shadow" href="https://mitra.atrbpn.go.id">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png" class="p-2" width="85px" alt="">
+                                    <div class="mt-0" style="font-size: 12px">Mitra <br> BPN</div>
                                 </a>
                             </div>
 
