@@ -474,15 +474,23 @@
 
         }
 
-        .row.mobile-scroll {
+        .mobile-scroll {
             overflow-x: hidden
         }
 
         @media (max-width: 1199.98px) {
-            .row.mobile-scroll {
-                overflow-x: scroll
+            .mobile-scroll {
+                overflow-x: scroll;
+             
+                
             }
-
+            .mobile-scroll::-webkit-scrollbar {
+              opacity: 100;
+            }
+            .mobile-scroll::-webkit-scrollbar-thumb {
+                background: transparent;
+            }
+         
             .col-10.arrow-desktop {
                 width: 100%
             }
@@ -4454,14 +4462,12 @@
                                     scrollLeft: "+=300px"
                                 }, "slow");
                             });
-
                             $('#left-button2').click(function () {
                                 event.preventDefault();
                                 $('#lelang-card2').animate({
                                     scrollLeft: "-=300px"
                                 }, "slow");
                             });
-
                         </script>
 
                         <div class="row align-items-center justify-content-center">
@@ -4516,11 +4522,22 @@
                                     </button>
                                 </div>
                                 <div class="col-10">
+                                    <style>
+ .mobile-scroll::-webkit-scrollbar{
+background: transparent;
+}
+.mobile-scroll::-webkit-scrollbar-thumb{
+background: transparent;
+}
+.mobile-scroll::-webkit-scrollbar-track{
+background: transparent;
+}
+                                    </style>
                                     <div class="row mt-0 justify-content-center scroll-simple align-items-center mobile-scroll lelang-card"
                                         style="flex-wrap: nowrap;">
 
                                         <div class="col-12">
-                                            <div class="row align-items-end" style="flex-wrap: nowrap;">
+                                            <div class="row align-items-end try-1" style="flex-wrap: nowrap;">
 
                                                 <div class="col-12 custom">
                                                     <div class="card mx-auto">
@@ -4629,18 +4646,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col-4 custom text-center" style="margin-bottom: 7rem">
-                                                    <button class="btn btn-sm">
-                                                        <span class="fa-stack fa-2x">
-                                                            <i class="fa fa-circle fa-stack-2x text-brown"></i>
-                                                            <i
-                                                                class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
-                                                        </span> <br>
-                                                        <b>
-                                                            Lihat Semua
-                                                        </b>
-                                                    </button>
-                                                </div>
+                                              
                                             </div>
                                         </div>
 
@@ -4785,16 +4791,7 @@
 
 
                                                 <div class="col-4 custom text-center" style="margin-bottom: 7rem">
-                                                    <button class="btn btn-sm">
-                                                        <span class="fa-stack fa-2x">
-                                                            <i class="fa fa-circle fa-stack-2x text-brown"></i>
-                                                            <i
-                                                                class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
-                                                        </span> <br>
-                                                        <b>
-                                                            Lihat Semua
-                                                        </b>
-                                                    </button>
+                                                   
                                                 </div>
                                             </div>
                                         </div>
@@ -6001,15 +5998,7 @@
                                             </div>
 
                                             <div class="col-4 custom text-center" style="margin-bottom: 7rem">
-                                                <button class="btn btn-sm">
-                                                    <span class="fa-stack fa-2x">
-                                                        <i class="fa fa-circle fa-stack-2x text-brown"></i>
-                                                        <i class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
-                                                    </span> <br>
-                                                    <b>
-                                                        Lihat Semua
-                                                    </b>
-                                                </button>
+                                               
                                             </div>
                                         </div>
 
@@ -6152,7 +6141,7 @@
                                             </div>
 
 
-                                            <div class="col-4 custom text-center" style="margin-bottom: 7rem">
+                                            <!-- <div class="col-4 custom text-center" style="margin-bottom: 7rem">
                                                 <button class="btn btn-sm">
                                                     <span class="fa-stack fa-2x">
                                                         <i class="fa fa-circle fa-stack-2x text-brown"></i>
@@ -6162,7 +6151,7 @@
                                                         Lihat Semua
                                                     </b>
                                                 </button>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
 
