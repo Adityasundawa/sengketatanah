@@ -72,6 +72,10 @@
             color: #BF9742 !important;
         }
 
+        .text-lighter-brown{
+            color: #E6B325 !important;
+        }
+
         .card {
             border-radius: 15px;
         }
@@ -301,9 +305,13 @@
                 <img class="mt-4 image-collab" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png" alt="">
             </div>
         </div>
+
+        <div class="row text-center pt-4 text-light-brown">
+            <h2>"Jika Anda Membutuhkan Bantuan Pendanaan Untuk Menyelesaikan Masalah Sengketa Pertanahan, Ini Adalah Aplikasi yang Tepat"</h2>
+        </div>
         
 
-        <div class="row pt-4 mb-5 justify-content-center">
+        <div class="row mb-5 pt-5 justify-content-center">
             <div class="col-md-12 text-center">
                 <h3 class="text-brown" style="font-weight: 700">3 Langkah Mencari Bantuan Sponsor</h3>
             </div>
@@ -1109,7 +1117,59 @@
             </div>
         </div>
 
-    </div>
+        <hr>
+
+        <style>
+            .store {
+                width: 171px;
+            }
+    
+            .appstore {
+                width: 140px;
+                margin-left: 10px
+            }
+    
+            @media screen and (min-width: 768px) {
+                .store {
+                    width: 216px;
+                }
+    
+                .appstore {
+                    width: 185px;
+                }
+            }
+    
+        </style>
+
+        <div class="row justify-content-center">
+            <div class="col-11 mt-2 text-center">
+                <b>Download Aplikasinya!</b>
+                <p class="fw-lighter mb-0">Platform Seputar Tanah No. 1 di Indonesia</p>
+            </div>
+            <div class="col-11 mb-2 text-center">
+                <a href="#"><img src="{{asset('/')}}uploads/google-play-badge.png" class="store" alt=""></a>
+                <a href="#"><img src="{{asset('/')}}uploads/appstore-badge.png" class="appstore" alt=""></a>
+            </div>
+        </div>
+    
+        <hr>
+    
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0"
+            nonce="Ee2Zutm6"></script>
+            
+        </div>
+        <div class="row mt-4">
+            <div class="card-body text-white text-center" style="background: #61481C">
+                <p></p>
+                <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
+                <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
+                </p>
+                <hr>
+                <p style="font-size:14px" class="card-title pb-3">Sovereign Plaza. Lt. 19 <br> Jl. TB Simatupang No.
+                    36,
+                    TB Simatupang, Jakarta Selatan</p>
+            </div>
+        </div>
         
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
