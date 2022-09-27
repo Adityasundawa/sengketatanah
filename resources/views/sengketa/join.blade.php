@@ -306,8 +306,8 @@
             </div>
         </div>
 
-        <div class="row text-center pt-4 text-light-brown">
-            <h2>"Jika Anda Membutuhkan Bantuan Pendanaan Untuk Menyelesaikan Masalah Sengketa Pertanahan, Ini Adalah Aplikasi yang Tepat"</h2>
+        <div class="row text-center pt-4">
+            <h2 class="fw-bold text-brown">"Jika Anda Membutuhkan Bantuan Pendanaan Untuk Menyelesaikan Masalah Sengketa Pertanahan, Ini Adalah Aplikasi yang Tepat"</h2>
         </div>
         
 
