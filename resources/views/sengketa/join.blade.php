@@ -86,7 +86,7 @@
 
         .card.card-child {
             position: relative;
-            width: 75%;
+            width: 85%;
             bottom: 45px;
             margin-left: auto;
             margin-right: auto;
@@ -100,6 +100,12 @@
             width: 230px;
         }
         
+        @media (max-width: 1199.98px) { 
+            .card.card-child {
+                width: 90%;
+            }
+        }
+
         @media (max-width: 991.98px) { 
             .col-lg.jual-sekarang {
                 margin-top: 5px;
@@ -261,6 +267,16 @@
                             </div>
                             <div class="flex-grow-1 ms-3">
                                 Bantuan konsultasi dan mediasi
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg jual-sekarang">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                Bantuan negoisasi dan penyelesaian
                             </div>
                         </div>
                     </div>
