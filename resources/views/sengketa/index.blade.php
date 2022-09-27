@@ -869,6 +869,12 @@
                                     <div class="mt-0" style="font-size: 12px">Podcast <br> Sengketa</div>
                                 </a>
                             </div>
+                            <div class="col mb-4">
+                                <a class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png" class="p-2" width="85px" alt="">
+                                    <div class="mt-0" style="font-size: 12px">Mitra <br> BPN</div>
+                                </a>
+                            </div>
 
                         </div>
                     </div>
