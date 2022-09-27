@@ -344,7 +344,7 @@
 
         <div class="pt-5 mb-5 justify-content-center">
             <div class="col-md-12 text-center">
-                <h3 class="text-brown" style="font-weight: 700">4 Roles Dalam Penyelesaian Sengketa Tanah</h3>
+                <h3 class="text-brown" style="font-weight: 700">4 Roles Dalam Penyelesaian Sengketatanah.id</h3>
             </div>
             <div class="card mt-4">
                 <div class="card-body p-5">
