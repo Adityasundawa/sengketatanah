@@ -1447,7 +1447,7 @@
                                 </button>
                             </div>
                             <div class="col-10 arrow-desktop text-center">
-                                <div class="row mobile-scroll mt-2" id="lelang-card" style="flex-wrap: nowrap">
+                                <div class="row mobile-scroll mt-2 align-items-center" id="lelang-card" style="flex-wrap: nowrap">
 
                                     <div class="col-12 custom ">
                                         <div class="card mx-auto" style="width: 21rem;">
@@ -2387,7 +2387,21 @@
                                         </div>
                                     </div>
 
-
+                                    <div class="col-3 custom text-start">
+                                        <button class="btn btn-sm">
+                                            <div class="row p-4">
+                                                <div class="col-md-12">
+                                                    <span class="fa-stack fa-2x">
+                                                        <i class="fa fa-circle fa-stack-2x text-brown"></i>
+                                                        <i class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-12 mt-1 fw-bold">
+                                                    Lihat Semua
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
 
                                 </div>
                             </div>
@@ -2459,7 +2473,7 @@
                                 </button>
                             </div>
                             <div class="col-10 arrow-desktop text-center">
-                                <div class="row mt-2 mobile-scroll justify-content-between" id="lelang-card1"
+                                <div class="row mt-2 mobile-scroll justify-content-between align-items-center" id="lelang-card1"
                                     style="flex-wrap: nowrap">
 
                                     <div class="col-12 custom ">
@@ -2732,8 +2746,7 @@
                                                     <span class="visually-hidden">Next</span>
                                                 </button>
                                             </div>
-                                            <div class="card-header text-white px-3 py-1" style="
-                                    background: #8f8f8f">
+                                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
 
                                                 <div class="row">
 
@@ -2956,8 +2969,7 @@
                                                     <span class="visually-hidden">Next</span>
                                                 </button>
                                             </div>
-                                            <div class="card-header text-white px-3 py-1" style="
-                                    background: #8f8f8f">
+                                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
 
                                                 <div class="row">
 
@@ -3353,6 +3365,22 @@
                                         </div>
                                     </div>
 
+                                    <div class="col-3 custom text-start">
+                                        <button class="btn btn-sm">
+                                            <div class="row p-4">
+                                                <div class="col-md-12">
+                                                    <span class="fa-stack fa-2x">
+                                                        <i class="fa fa-circle fa-stack-2x text-brown"></i>
+                                                        <i class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-12 mt-1 fw-bold">
+                                                    Lihat Semua
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="col-1 arrow-desktop text-center">
@@ -3659,7 +3687,7 @@
 
                             <div class="col-10 arrow-desktop text-center">
 
-                                <div class="row mt-2 mobile-scroll justify-content-between" id="lelang-card2"
+                                <div class="row mt-2 mobile-scroll justify-content-between align-items-center" id="lelang-card2"
                                     style="flex-wrap: nowrap">
 
                                     <div class="col-12 custom ">
@@ -4604,6 +4632,22 @@
                                         </div>
                                     </div>
 
+                                    <div class="col-3 custom text-start">
+                                        <button class="btn btn-sm">
+                                            <div class="row p-4">
+                                                <div class="col-md-12">
+                                                    <span class="fa-stack fa-2x">
+                                                        <i class="fa fa-circle fa-stack-2x text-brown"></i>
+                                                        <i class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-12 mt-1 fw-bold">
+                                                    Lihat Semua
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+
                                 </div>
                             </div>
 
@@ -4670,18 +4714,20 @@
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan1.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
-                                                <div class="row g-0">
-                                                    <div class="col-12 bg-dark text-white px-4 pt-2 pb-2 mb-2">
-                                                        <h3 class="mb-0">Tanah Darat</h3>
+                                                <div class="row p-4 g-0 bg-dark text-white">
+                                                    <div class="col-12 mb-2">
+                                                        <h3 class="mb-0">1 Ha</h3>
+                                                    </div>                                                
+                                                    <div class="col mb-2">
+                                                        <h5>Rp. 450 Juta</h5>
                                                     </div>
-                                                    <div class="px-4">
-                                                        <div class="col-12 mb-2">
-                                                            <h5>Rp. 450 Juta &nbsp;&nbsp;&nbsp;<span class="text-primary fs-6">Lihat</span></h5>
-                                                        </div>
-                                                        <div class="col-12 mb-3">
-                                                            <h6 class="fw-bold">Lokasi: Bogor</h6>
-                                                        </div>
+                                                    <div class="col-4 text-end">
+                                                        <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
                                                     </div>
+                                                    <div class="col-12">
+                                                        <h6 class="fw-bold">Bogor</h6>
+                                                    </div>
+                                                
                                                 </div>
                                             </div>
                                         </div>
@@ -4692,18 +4738,20 @@
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan2.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
-                                                <div class="row g-0">
-                                                    <div class="col-12 bg-dark text-white px-4 pt-2 pb-2 mb-2">
-                                                        <h3 class="mb-0">Tanah Darat</h3>
+                                                <div class="row p-4 g-0 bg-dark text-white">
+                                                    <div class="col-12 mb-2">
+                                                        <h3 class="mb-0">5000 m</h3>
+                                                    </div>                                                
+                                                    <div class="col mb-2">
+                                                        <h5>Rp. 500 Juta</h5>
                                                     </div>
-                                                    <div class="px-4">
-                                                        <div class="col-12 mb-2">
-                                                            <h5>Rp. 500 Juta &nbsp;&nbsp;&nbsp;<span class="text-primary fs-6">Lihat</span></h5>
-                                                        </div>
-                                                        <div class="col-12 mb-3">
-                                                            <h6 class="fw-bold">Lokasi: Bogor</h6>
-                                                        </div>
+                                                    <div class="col-4 text-end">
+                                                        <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
                                                     </div>
+                                                    <div class="col-12">
+                                                        <h6 class="fw-bold">Bogor</h6>
+                                                    </div>
+                                                
                                                 </div>
                                             </div>
                                         </div>
@@ -4714,18 +4762,20 @@
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan3.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
-                                                <div class="row g-0">
-                                                    <div class="col-12 bg-dark text-white px-4 pt-2 pb-2 mb-2">
-                                                        <h3 class="mb-0">Tanah Darat</h3>
+                                                <div class="row p-4 g-0 bg-dark text-white">
+                                                    <div class="col-12 mb-2">
+                                                        <h3 class="mb-0">3.2 Ha</h3>
+                                                    </div>                                                
+                                                    <div class="col mb-2">
+                                                        <h5>Rp. 200 Juta</h5>
                                                     </div>
-                                                    <div class="px-4">
-                                                        <div class="col-12 mb-2">
-                                                            <h5>Rp. 200 Juta &nbsp;&nbsp;&nbsp;<span class="text-primary fs-6">Lihat</span></h5>
-                                                        </div>
-                                                        <div class="col-12 mb-3">
-                                                            <h6 class="fw-bold">Lokasi: Bogor</h6>
-                                                        </div>
+                                                    <div class="col-4 text-end">
+                                                        <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
                                                     </div>
+                                                    <div class="col-12">
+                                                        <h6 class="fw-bold">Bogor</h6>
+                                                    </div>
+                                                
                                                 </div>
                                             </div>
                                         </div>
@@ -4736,18 +4786,20 @@
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan4.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
-                                                <div class="row g-0">
-                                                    <div class="col-12 bg-dark text-white px-4 pt-2 pb-2 mb-2">
-                                                        <h3 class="mb-0">Tanah Darat</h3>
+                                                <div class="row p-4 g-0 bg-dark text-white">
+                                                    <div class="col-12 mb-2">
+                                                        <h3 class="mb-0">3.2 Ha</h3>
+                                                    </div>                                                
+                                                    <div class="col mb-2">
+                                                        <h5>Rp. 200 Juta</h5>
                                                     </div>
-                                                    <div class="px-4">
-                                                        <div class="col-12 mb-2">
-                                                            <h5>Rp. 200 Juta &nbsp;&nbsp;&nbsp;<span class="text-primary fs-6">Lihat</span></h5>
-                                                        </div>
-                                                        <div class="col-12 mb-3">
-                                                            <h6 class="fw-bold">Lokasi: Bogor</h6>
-                                                        </div>
+                                                    <div class="col-4 text-end">
+                                                        <a href="#" style="text-decoration: none"><h6 class="text-primary">Lihat</h6></a>
                                                     </div>
+                                                    <div class="col-12">
+                                                        <h6 class="fw-bold">Bogor</h6>
+                                                    </div>
+                                                
                                                 </div>
                                             </div>
                                         </div>
@@ -4755,7 +4807,7 @@
 
                                     <div class="col-3 custom text-start">
                                         <button class="btn btn-sm">
-                                            <div class="row g-0">
+                                            <div class="row p-4">
                                                 <div class="col-md-12">
                                                     <span class="fa-stack fa-2x">
                                                         <i class="fa fa-circle fa-stack-2x text-brown"></i>
