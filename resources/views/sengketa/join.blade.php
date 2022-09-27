@@ -899,7 +899,7 @@
                         </svg>
                         <h6 class="mt-1">
                             <b>
-                                Membantu Persengketaan Tanah
+                                Membantu Korban Sengketa
                             </b>
                         </h6>
                         <p style="font-size: small;">
