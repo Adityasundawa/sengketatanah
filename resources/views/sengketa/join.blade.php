@@ -212,7 +212,7 @@
                         <h1 style="font-weight: 700">"Solusi Tepat dan Terpercaya Untuk Membantu Masalah Pertanahan Anda"</h1>  
                     </div>
                     <div class="col-md-12 mt-4">
-                        <p class="mb-0">Kami mempertemukan korban sengketa tanah atau korban mafia tanah dengan Sponsor, Kantor Hukum, dan Pemerintah untuk menuntaskan masalah persengketaan tanah yang anda alami. Jika anda </p>  
+                        <p class="mb-0">Kami mempertemukan korban sengketa tanah atau korban mafia tanah dengan Sponsor, Kantor Hukum, dan Pemerintah untuk menuntaskan masalah persengketaan tanah yang anda alami.</p>  
                     </div>
                 </div>
             </div>
@@ -221,7 +221,10 @@
         <div class="card border-0 text-white card-child bg-brown">
             <div class="card-body">
                 <div class="row align-items-center px-2 text-child-item">
-                    <div class="col-lg jual-sekarang">
+                    <div class="col-lg-12">
+                        <h5>Apa Yang Anda Dapatkan di Sengketatanah.id</h5>
+                    </div>
+                    <div class="col-lg jual-sekarang mt-1">
                         <div class="d-flex align-items-center">
                             <div class="flex-shrink-0">
                                 <i class="fa-regular fa-circle-check"></i>
@@ -237,7 +240,7 @@
                                 <i class="fa-regular fa-circle-check"></i>
                             </div>
                             <div class="flex-grow-1 ms-3">
-                                Bantuan tenaga pengacara
+                                Bantuan pengacara dan kantor hukum
                             </div>
                         </div>
                     </div>
@@ -247,7 +250,7 @@
                                 <i class="fa-regular fa-circle-check"></i>
                             </div>
                             <div class="flex-grow-1 ms-3">
-                                Bantuan mengadvokasi permasalahan sengketa tanah anda kepada pemerintah
+                                Bantuan advokasi pada pemerintah
                             </div>
                         </div>
                     </div>
