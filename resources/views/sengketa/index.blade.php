@@ -4662,98 +4662,111 @@
 
                                 </style>
 
-                                <div class="row mt-2 justify-content-between scroll-simple" id="lelang-card2"
+                                <div class="row mt-4 justify-content-between scroll-simple align-items-center" id="lelang-card2"
                                     style="flex-wrap: nowrap; overflow-x: scroll">
+                                    
                                     <div class="col-12 custom">
                                         <div class="card mx-auto" style="width: 21rem;">
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan1.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
-                                                <div class="row p-4 pt-4">
-                                                    <div class="col-12">
+                                                <div class="row g-0">
+                                                    <div class="col-12 bg-dark text-white px-4 pt-2 pb-2 mb-2">
                                                         <h3 class="mb-0">Tanah Darat</h3>
                                                     </div>
-                                                    <div class="col-12 mb-2">
-                                                        <h5 class="fw-lighter">Rp. 450 Juta</h5>
+                                                    <div class="px-4">
+                                                        <div class="col-12 mb-2">
+                                                            <h5>Rp. 450 Juta &nbsp;&nbsp;&nbsp;<span class="text-primary fs-6">Lihat</span></h5>
+                                                        </div>
+                                                        <div class="col-12 mb-3">
+                                                            <h6 class="fw-bold">Lokasi: Bogor</h6>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-12 mb-3">
-                                                        <h6 class="fw-bold">Lokasi: Pancawati</h6>
-                                                    </div>
-                                                    <div class="col-12 text-end"><a class="fs-6 text-primary"
-                                                            style="text-decoration: none" href="#"><i
-                                                                class="fa-solid fa-eye"></i> Lihat</a></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
+                                    
                                     <div class="col-12 custom">
                                         <div class="card mx-auto" style="width: 21rem;">
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan2.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
-                                                <div class="row p-4 pt-4">
-                                                    <div class="col-12">
+                                                <div class="row g-0">
+                                                    <div class="col-12 bg-dark text-white px-4 pt-2 pb-2 mb-2">
                                                         <h3 class="mb-0">Tanah Darat</h3>
                                                     </div>
-                                                    <div class="col-12 mb-2">
-                                                        <h5 class="fw-lighter">Rp. 500 Juta</h5>
+                                                    <div class="px-4">
+                                                        <div class="col-12 mb-2">
+                                                            <h5>Rp. 500 Juta &nbsp;&nbsp;&nbsp;<span class="text-primary fs-6">Lihat</span></h5>
+                                                        </div>
+                                                        <div class="col-12 mb-3">
+                                                            <h6 class="fw-bold">Lokasi: Bogor</h6>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-12 mb-3">
-                                                        <h6 class="fw-bold">Lokasi: Pancawati</h6>
-                                                    </div>
-                                                    <div class="col-12 text-end"><a class="fs-6 text-primary"
-                                                            style="text-decoration: none" href="#"><i
-                                                                class="fa-solid fa-eye"></i> Lihat</a></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
+                                    
                                     <div class="col-12 custom">
                                         <div class="card mx-auto" style="width: 21rem;">
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan3.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
-                                                <div class="row p-4 pt-4">
-                                                    <div class="col-12">
+                                                <div class="row g-0">
+                                                    <div class="col-12 bg-dark text-white px-4 pt-2 pb-2 mb-2">
                                                         <h3 class="mb-0">Tanah Darat</h3>
                                                     </div>
-                                                    <div class="col-12 mb-2">
-                                                        <h5 class="fw-lighter">Rp. 200 Juta</h5>
+                                                    <div class="px-4">
+                                                        <div class="col-12 mb-2">
+                                                            <h5>Rp. 200 Juta &nbsp;&nbsp;&nbsp;<span class="text-primary fs-6">Lihat</span></h5>
+                                                        </div>
+                                                        <div class="col-12 mb-3">
+                                                            <h6 class="fw-bold">Lokasi: Bogor</h6>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-12 mb-3">
-                                                        <h6 class="fw-bold">Lokasi: Pancawati</h6>
-                                                    </div>
-                                                    <div class="col-12 text-end"><a class="fs-6 text-primary"
-                                                            style="text-decoration: none" href="#"><i
-                                                                class="fa-solid fa-eye"></i> Lihat</a></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
+                                    
                                     <div class="col-12 custom">
                                         <div class="card mx-auto" style="width: 21rem;">
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan4.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
-                                                <div class="row p-4 pt-4">
-                                                    <div class="col-12">
+                                                <div class="row g-0">
+                                                    <div class="col-12 bg-dark text-white px-4 pt-2 pb-2 mb-2">
                                                         <h3 class="mb-0">Tanah Darat</h3>
                                                     </div>
-                                                    <div class="col-12 mb-2">
-                                                        <h5 class="fw-lighter">Rp. 200 Juta</h5>
+                                                    <div class="px-4">
+                                                        <div class="col-12 mb-2">
+                                                            <h5>Rp. 200 Juta &nbsp;&nbsp;&nbsp;<span class="text-primary fs-6">Lihat</span></h5>
+                                                        </div>
+                                                        <div class="col-12 mb-3">
+                                                            <h6 class="fw-bold">Lokasi: Bogor</h6>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-12 mb-3">
-                                                        <h6 class="fw-bold">Lokasi: Pancawati</h6>
-                                                    </div>
-                                                    <div class="col-12 text-end"><a class="fs-6 text-primary"
-                                                            style="text-decoration: none" href="#"><i
-                                                                class="fa-solid fa-eye"></i> Lihat</a></div>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+
+                                    <div class="col-3 custom text-start">
+                                        <button class="btn btn-sm">
+                                            <div class="row g-0">
+                                                <div class="col-md-12">
+                                                    <span class="fa-stack fa-2x">
+                                                        <i class="fa fa-circle fa-stack-2x text-brown"></i>
+                                                        <i class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-12 mt-1 fw-bold">
+                                                    Lihat Semua
+                                                </div>
+                                            </div>
+                                        </button>
                                     </div>
 
                                 </div>
