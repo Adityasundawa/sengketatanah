@@ -4504,8 +4504,8 @@
 
 
                     <div class="card rounded-0 border-0 " style="margin-top:-10px">
-                        <div class="card-header bg-white border-0">
-                        </div>
+                        <!-- <div class="card-header bg-white border-0">
+                        </div> -->
                         <div class="card-body" style="background-color:#FAFAD2;">
                             <div class="row justify-content-center">
 
@@ -4658,9 +4658,9 @@
                     </div>
 
                     <div class="card rounded-0 border-0 " style="margin-top:-10px">
-                        <div class="card-header bg-white border-0">
+                        <!-- <div class="card-header bg-white border-0">
 
-                        </div>
+                        </div> -->
                         <div class="card-body" style="background-color:#FAFAD2;">
                             <div class="row justify-content-center">
 
@@ -5879,8 +5879,8 @@
 
                 </div>
                 <div class="card rounded-0 border-0 " style="margin-top:-30px">
-                    <div class="card-header bg-white border-0">
-                    </div>
+                    <!-- <div class="card-header bg-white border-0">
+                    </div> -->
                     <div class="card-body" style="background-color:#FAFAD2;">
                         <div class="row justify-content-center">
 
@@ -6030,9 +6030,9 @@
                     </div>
                 </div>
                 <div class="card rounded-0 border-0 " style="margin-top:-10px">
-                    <div class="card-header bg-white border-0">
+                    <!-- <div class="card-header bg-white border-0">
 
-                    </div>
+                    </div> -->
                     <div class="card-body" style="background-color:#FAFAD2;">
                         <div class="row justify-content-center">
 
