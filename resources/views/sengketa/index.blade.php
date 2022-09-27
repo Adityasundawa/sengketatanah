@@ -4780,7 +4780,7 @@
                             </div>
                             <div class="col-1 arrow-desktop justify-content-center">
                                 <button class="btn rounded-5 text-white right-button text-center"
-                                    style=";margin-top:200%;">
+                                    style="margin-top:200%;">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </button>
 
