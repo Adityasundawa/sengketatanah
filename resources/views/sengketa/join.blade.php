@@ -290,7 +290,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg jual-sekarang text-end"><button class="btn btn-light text-brown rounded-3 fw-bold w-100">Daftar</button></div>
+                    <div class="col-lg jual-sekarang text-end"><button class="btn btn-light text-brown rounded-3 fw-bold w-100">Daftar Sekarang</button></div>
                 </div>
             </div>
         </div>
@@ -305,7 +305,7 @@
 
         <div class="row pt-4 mb-5 justify-content-center">
             <div class="col-md-12 text-center">
-                <h3 class="text-brown" style="font-weight: 700">3 Langkah Dapat Bantuan</h3>
+                <h3 class="text-brown" style="font-weight: 700">3 Langkah Mencari Bantuan Sponsor</h3>
             </div>
             <div class="col-md-7 mt-4">
                 <div class="row justify-content-center text-center g-2">
@@ -338,7 +338,7 @@
             <div class="col-md-12 text-center">
                 <h3 class="text-brown" style="font-weight: 700">4 Roles Sengketatanah.id</h3>
             </div>
-            <div class="card kriteria mt-4">
+            <div class="card mt-4">
                 <div class="card-body p-5">
                     <div class="row">
                         
