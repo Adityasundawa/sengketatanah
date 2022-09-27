@@ -581,8 +581,8 @@
             </div>
             <div class="col-md text-center my-auto mt-3">
                 <h1>Solusi Untuk Anda</h1>
-                <h3>"Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
-                    pemerintah dalam satu platform."</h3>
+                <h3>Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
+                    pemerintah dalam satu platform.</h3>
 
                 <a class="btn rounded-5 mt-3 text-white" style="background: #BF9742"
                     href="{{url('')}}/join">Bergabung</a>
