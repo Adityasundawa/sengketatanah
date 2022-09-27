@@ -336,7 +336,7 @@
 
         <div class="pt-5 mb-5 justify-content-center">
             <div class="col-md-12 text-center">
-                <h3 class="text-brown" style="font-weight: 700">Kriteria Rumah PAS untuk Rumalaku</h3>
+                <h3 class="text-brown" style="font-weight: 700">Kriteria Korban Sengketa Tanah/Mafia Tanah</h3>
             </div>
             <div class="card kriteria mt-4">
                 <div class="card-body p-5">
@@ -350,7 +350,7 @@
                                         <i class="fa fa-circle fa-stack-2x text-light"></i>
                                         <i class="fa-solid fa-file-lines fa-stack-1x text-light-brown"></i>
                                     </span>
-                                    <div class="mt-3">Rumah Berlokasi di Jabodetabek</div>
+                                    <div class="mt-3">Memiliki surat - surat tanah asli</div>
                                 </div>
                             </div>
 
