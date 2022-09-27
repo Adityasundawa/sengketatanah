@@ -4714,11 +4714,11 @@
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan1.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
-                                                <div class="row p-4 g-0 bg-dark text-white">
+                                                <div class="row p-4 g-0 text-black" style="background: #eee">
                                                     <div class="col-12 mb-2">
                                                         <h3 class="mb-0">1 Ha</h3>
                                                     </div>                                                
-                                                    <div class="col mb-2">
+                                                    <div class="col">
                                                         <h5>Rp. 450 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
@@ -4738,11 +4738,11 @@
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan2.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
-                                                <div class="row p-4 g-0 bg-dark text-white">
+                                                <div class="row p-4 g-0 text-black" style="background: #eee">
                                                     <div class="col-12 mb-2">
                                                         <h3 class="mb-0">5000 m</h3>
                                                     </div>                                                
-                                                    <div class="col mb-2">
+                                                    <div class="col">
                                                         <h5>Rp. 500 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
@@ -4762,11 +4762,11 @@
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan3.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
-                                                <div class="row p-4 g-0 bg-dark text-white">
+                                                <div class="row p-4 g-0 text-black" style="background: #eee">
                                                     <div class="col-12 mb-2">
                                                         <h3 class="mb-0">3.2 Ha</h3>
                                                     </div>                                                
-                                                    <div class="col mb-2">
+                                                    <div class="col">
                                                         <h5>Rp. 200 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
@@ -4786,11 +4786,11 @@
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan4.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
-                                                <div class="row p-4 g-0 bg-dark text-white">
+                                                <div class="row p-4 g-0 text-black" style="background: #eee">
                                                     <div class="col-12 mb-2">
                                                         <h3 class="mb-0">3.2 Ha</h3>
                                                     </div>                                                
-                                                    <div class="col mb-2">
+                                                    <div class="col">
                                                         <h5>Rp. 200 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
