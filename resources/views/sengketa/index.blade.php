@@ -2466,9 +2466,9 @@
 
                 <div class="card mb-3 border-0 ">
                     <div class="card-body">
-                        <div class="mt-2 align-items-center">
+                        <div class="mt-2 ">
 
-                            <div class="row justify-content-center ">
+                            <div class="row justify-content-center align-items-center">
 
 
                                 <div class="col-1 arrow-desktop text-center">
@@ -3534,9 +3534,9 @@ class="btn btn-success rounded-5"                                               
 
             <div class="card mb-3 border-0 ">
                 <div class="card-body">
-                    <div class="mt-2 align-items-center">
+                    <div class="mt-2 ">
 
-                        <div class="row justify-content-center ">
+                        <div class="row justify-content-center align-items-center">
 
 
                             <div class="col-1 arrow-desktop text-center">
@@ -5004,9 +5004,9 @@ class="btn btn-success rounded-5"                                               
 
             <div class="card mb-1 border-0 mb-2 ">
                 <div class="card-body">
-                    <div class="mt-2 align-items-center">
+                    <div class="mt-2 ">
 
-                        <div class="row justify-content-center ">
+                        <div class="row justify-content-center align-items-center">
 
 
                             <div class="col-1 arrow-desktop text-center">
