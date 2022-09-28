@@ -22,7 +22,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <style>
         html,
         body {
@@ -64,15 +65,15 @@
             border: 1px solid #61481C;
         }
 
-        .text-brown{
+        .text-brown {
             color: #61481C !important;
         }
 
-        .text-light-brown{
+        .text-light-brown {
             color: #BF9742 !important;
         }
 
-        .text-lighter-brown{
+        .text-lighter-brown {
             color: #E6B325 !important;
         }
 
@@ -81,11 +82,11 @@
         }
 
         .card.card-main {
-            background-color: #E6B325; 
+            background-color: #E6B325;
         }
 
         .card.kriteria {
-            background-color: #BF9742; 
+            background-color: #BF9742;
         }
 
         .card.card-child {
@@ -103,14 +104,14 @@
         .image-collab {
             width: 230px;
         }
-        
-        @media (max-width: 1199.98px) { 
+
+        @media (max-width: 1199.98px) {
             .card.card-child {
                 width: 95%;
             }
         }
 
-        @media (max-width: 991.98px) { 
+        @media (max-width: 991.98px) {
             .col-lg.jual-sekarang {
                 margin-top: 5px;
                 margin-bottom: 5px;
@@ -131,7 +132,7 @@
             }
         }
 
-        @media (max-width: 767.98px) { 
+        @media (max-width: 767.98px) {
             .col-lg.jual-sekarang {
                 margin-top: 5px;
                 margin-bottom: 5px;
@@ -147,12 +148,12 @@
                 margin-right: auto;
             }
 
-            .card-main .card-body .p-5{
+            .card-main .card-body .p-5 {
                 padding: 0 !important;
                 padding-bottom: 3rem !important
             }
 
-            .card-main .card-body .p-5 .col-md-7.mt-5{
+            .card-main .card-body .p-5 .col-md-7.mt-5 {
                 margin-top: 1.5rem !important;
             }
         }
@@ -211,7 +212,7 @@
     </nav>
 
     <div class="container mt-5 mb-5">
-        
+
         <div class="card border-0 card-main">
             <div class="card-body">
                 <div class="row p-5 g-0">
@@ -219,15 +220,18 @@
                         <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                     </div>
                     <div class="col-md-12 text-center">
-                        <h1 style="font-weight: 700">Solusi Tepat dan Terpercaya Untuk Membantu Masalah Pertanahan Anda</h1>  
+                        <h1 style="font-weight: 700">Solusi Tepat dan Terpercaya Untuk Membantu Masalah Pertanahan Anda
+                        </h1>
                     </div>
                     <div class="col-md-12 mt-4">
-                        <p class="mb-0">Kami mempertemukan korban sengketa tanah atau korban mafia tanah dengan Sponsor, Kantor Hukum, dan Pemerintah untuk menuntaskan masalah persengketaan tanah yang anda alami.</p>  
+                        <p class="mb-0">Kami mempertemukan korban sengketa tanah atau korban mafia tanah dengan Sponsor,
+                            Kantor Hukum, dan Pemerintah untuk menuntaskan masalah persengketaan tanah yang anda alami.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <div class="card border-0 text-white card-child bg-brown">
             <div class="card-body">
                 <div class="row align-items-center px-2 text-child-item">
@@ -294,7 +298,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg jual-sekarang text-end"><button class="btn btn-light text-brown rounded-3 fw-bold w-100">Daftar Sekarang</button></div>
+                    <div class="col-lg jual-sekarang text-end"><button
+                            class="btn btn-light text-brown rounded-3 fw-bold w-100">Daftar Sekarang</button></div>
                 </div>
             </div>
         </div>
@@ -302,14 +307,16 @@
         <div class="row pt-5 mb-5">
             <div class="col-12 text-center">
                 <h3 class="text-brown" style="font-weight: 700">Bekerjasama Dengan:</h3>
-                <img class="mt-4 image-collab" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png" alt="">
+                <img class="mt-4 image-collab"
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png" alt="">
             </div>
         </div>
 
         <div class="row text-center pt-4 mb-4">
-            <h2 class="fw-bold text-brown">"Jika Anda Membutuhkan Bantuan Pendanaan Untuk Menyelesaikan Masalah Sengketa Pertanahan, Ini Adalah Aplikasi yang Tepat"</h2>
+            <h2 class="fw-bold text-brown">"Jika Anda Membutuhkan Bantuan Pendanaan Untuk Menyelesaikan Masalah Sengketa
+                Pertanahan, Ini Adalah Aplikasi yang Tepat"</h2>
         </div>
-        
+
 
         <div class="row mb-5 pt-4 justify-content-center">
             <div class="col-md-12 text-center">
@@ -349,7 +356,7 @@
             <div class="card mt-4">
                 <div class="card-body p-5">
                     <div class="row">
-                        
+
                         <div class="col-md-6 mt-2 mb-2">
 
                             <div class="card bg-white shadow p-4">
@@ -367,7 +374,8 @@
                             <div class="card bg-white shadow p-4">
                                 <div class="card-body text-center">
                                     <h3>Korban Sengketa</h3>
-                                    <div class="mt-3">Korban adalah orang yang dirugikan, dirampas, atau terancam kehilangan hak atas tanah yang
+                                    <div class="mt-3">Korban adalah orang yang dirugikan, dirampas, atau terancam
+                                        kehilangan hak atas tanah yang
                                         dimilikinya.
                                     </div>
                                 </div>
@@ -380,7 +388,8 @@
                             <div class="card bg-white shadow p-4">
                                 <div class="card-body text-center">
                                     <h3>Sponsor</h3>
-                                    <div class="mt-3">Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan hukum korban
+                                    <div class="mt-3">Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan
+                                        hukum korban
                                         sengketa tanah.
                                     </div>
                                 </div>
@@ -393,14 +402,15 @@
                             <div class="card bg-white shadow p-4">
                                 <div class="card-body text-center">
                                     <h3>Pengacara</h3>
-                                    <div class="mt-3">Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani persoalan sengketa
+                                    <div class="mt-3">Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang
+                                        menangani persoalan sengketa
                                         tanah.
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -408,21 +418,23 @@
 
         <div class="pt-3 mb-5 justify-content-center">
             <div class="col-md-12 text-center">
-                <h3 class="text-brown" style="font-weight: 700"><i class="fa-solid fa-gears"></i> Apa Saja Layanan Sengketatanah.id</h3>
+                <h3 class="text-brown" style="font-weight: 700"><i class="fa-solid fa-gears"></i> Apa Saja Layanan
+                    Sengketatanah.id</h3>
             </div>
             <div class="card kriteria mt-4">
                 <div class="card-body p-5">
                     <div class="row">
-                        
+
                         <div class="col-lg-4 mt-2 mb-2">
 
                             <a class="text-black" style="text-decoration: none" href="{{url('')}}/bid-sengketa">
                                 <div class="card bg-white shadow p-4">
                                     <div class="card-body text-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
-                                            width="86px" x="0" y="0" viewBox="0 0 50 60"
-                                            style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" width="86px" x="0" y="0"
+                                            viewBox="0 0 50 60" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve" class="">
                                             <circle r="25" cx="25" cy="30" fill="#f8f9fa" shape="circle"></circle>
                                             <g transform="matrix(0.7,0,0,0.7,7.500000286102296,9)">
                                                 <g xmlns="http://www.w3.org/2000/svg" id="Page-1" fill="none"
@@ -457,9 +469,10 @@
                                 <div class="card bg-white shadow p-4">
                                     <div class="card-body text-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
-                                            width="100px" x="0" y="0" viewBox="0 0 64 64"
-                                            style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" width="100px" x="0" y="0"
+                                            viewBox="0 0 64 64" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve" class="">
                                             <circle r="32" cx="32" cy="32" fill="#f8f9fa" shape="circle"></circle>
                                             <g transform="matrix(0.7,0,0,0.7,9.600008887052539,9.600000000000001)">
                                                 <path xmlns="http://www.w3.org/2000/svg"
@@ -492,14 +505,14 @@
                                                 <path xmlns="http://www.w3.org/2000/svg"
                                                     d="m32 13a1 1 0 0 1 1 1h2a3 3 0 0 0 -2-2.816v-1.184h-2v1.184a2.993 2.993 0 0 0 1 5.816 1 1 0 1 1 -1 1h-2a3 3 0 0 0 2 2.816v1.184h2v-1.184a2.993 2.993 0 0 0 -1-5.816 1 1 0 0 1 0-2z"
                                                     fill="#BF9742" data-original="#000000" class=""></path>
-                                                <path xmlns="http://www.w3.org/2000/svg" d="m37 13h4v2h-4z" fill="#61481c"
-                                                    data-original="#000000" class=""></path>
-                                                <path xmlns="http://www.w3.org/2000/svg" d="m37 17h4v2h-4z" fill="#61481c"
-                                                    data-original="#000000" class=""></path>
-                                                <path xmlns="http://www.w3.org/2000/svg" d="m23 13h4v2h-4z" fill="#61481c"
-                                                    data-original="#000000" class=""></path>
-                                                <path xmlns="http://www.w3.org/2000/svg" d="m23 17h4v2h-4z" fill="#61481c"
-                                                    data-original="#000000" class=""></path>
+                                                <path xmlns="http://www.w3.org/2000/svg" d="m37 13h4v2h-4z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
+                                                <path xmlns="http://www.w3.org/2000/svg" d="m37 17h4v2h-4z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
+                                                <path xmlns="http://www.w3.org/2000/svg" d="m23 13h4v2h-4z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
+                                                <path xmlns="http://www.w3.org/2000/svg" d="m23 17h4v2h-4z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
                                             </g>
                                         </svg>
                                         <div class="mt-3">Jual Beli Lahan</div>
@@ -515,10 +528,12 @@
                                 <div class="card bg-white shadow p-4">
                                     <div class="card-body text-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
-                                            width="100px" x="0" y="0" viewBox="0 0 511.99992 511"
-                                            style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-                                            <circle r="255.99996" cx="255.99996" cy="255.5" fill="#f8f9fa" shape="circle">
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" width="100px" x="0" y="0"
+                                            viewBox="0 0 511.99992 511" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve" class="">
+                                            <circle r="255.99996" cx="255.99996" cy="255.5" fill="#f8f9fa"
+                                                shape="circle">
                                             </circle>
                                             <g transform="matrix(0.7,0,0,0.7,76.79987218379975,75.92755157947542)">
                                                 <path xmlns="http://www.w3.org/2000/svg"
@@ -551,9 +566,10 @@
                                 <div class="card bg-white shadow p-4">
                                     <div class="card-body text-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
-                                            width="100px" x="0" y="0" viewBox="0 0 479.976 479.976"
-                                            style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" width="100px" x="0" y="0"
+                                            viewBox="0 0 479.976 479.976" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve" class="">
                                             <circle r="239.988" cx="239.988" cy="239.988" fill="#f8f9fa" shape="circle">
                                             </circle>
                                             <g transform="matrix(0.7,0,0,0.7,71.99629760161042,71.99643859863284)">
@@ -644,9 +660,10 @@
                                 <div class="card bg-white shadow p-4">
                                     <div class="card-body text-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
-                                            width="92px" x="0" y="0" viewBox="0 0 54 60"
-                                            style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" width="92px" x="0" y="0"
+                                            viewBox="0 0 54 60" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve" class="">
                                             <circle r="27" cx="27" cy="30" fill="#f8f9fa" shape="circle"></circle>
                                             <g transform="matrix(0.7,0,0,0.7,8.084528160095218,8.999380803108217)">
                                                 <g xmlns="http://www.w3.org/2000/svg" id="Page-1" fill="none"
@@ -678,13 +695,96 @@
 
                         <div class="col-lg-4 mt-2 mb-2">
 
+                            <a class="text-black" style="text-decoration: none" href="{{url('')}}/jasa-notaris">
+                                <div class="card bg-white shadow p-4">
+                                    <div class="card-body text-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" width="100px" x="0" y="0"
+                                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve" class="">
+                                            <circle r="256" cx="256" cy="256" fill="#ffffff" shape="circle"></circle>
+                                            <g transform="matrix(0.7,0,0,0.7,76.80001373291017,76.80002059936524)">
+                                                <g>
+                                                    <path
+                                                        d="m416.652 358.622-67.31-20.727-10.825-21.648c-1.882-3.766-5.269-6.639-9.291-7.884-3.172-.981-6.585-.887-9.693.192v-16.899c25.014-17.396 42.619-44.741 47.02-76.253h4.457c14.618 0 27.156-10.862 28.544-24.728.778-7.771-1.764-15.53-6.974-21.287-.319-.352-.646-.694-.981-1.028v-64.667c0-57.176-46.516-103.693-103.693-103.693h-72.146c-13.014 0-24.578 6.318-31.793 16.046-.091-.003-.18-.014-.272-.014-35.076 0-63.613 28.537-63.613 63.613v89.276c-4.292 4.301-7.171 9.906-7.794 16.126-.779 7.771 1.762 15.531 6.972 21.289 5.214 5.762 12.659 9.067 20.426 9.067h5.598c4.399 31.521 22.003 58.869 47.022 76.263v16.889c-3.108-1.079-6.52-1.173-9.692-.192-4.022 1.244-7.409 4.118-9.292 7.884l-10.853 21.706-67.121 20.669c-23.468 7.227-39.235 28.58-39.235 53.135v92.743c0 4.143 3.358 7.5 7.5 7.5s7.5-3.357 7.5-7.5v-92.743c0-17.93 11.513-33.522 28.649-38.799l20.4-6.282v9.565c0 12.976 10.557 23.533 23.532 23.533h6.884l-4.063 20.317c-1.799 8.998.399 18.312 6.033 25.556l49.355 63.457c1.479 1.901 3.69 2.896 5.925 2.896 1.609 0 3.23-.516 4.599-1.58 3.27-2.543 3.859-7.255 1.315-10.524l-49.355-63.457c-2.955-3.8-4.108-8.687-3.165-13.406l5.857-29.288c.44-2.203-.13-4.488-1.555-6.226-1.424-1.738-3.553-2.745-5.8-2.745h-16.032c-4.705 0-8.532-3.828-8.532-8.533v-14.184l28.952-8.915 85.235 154.972c1.318 2.396 3.836 3.886 6.572 3.886s5.253-1.489 6.572-3.886l85.259-155.014 28.928 8.908v14.234c0 4.705-3.828 8.533-8.532 8.533h-16.032c-2.247 0-4.375 1.007-5.8 2.745s-1.995 4.022-1.555 6.226l5.857 29.288c.944 4.72-.209 9.605-3.164 13.405l-49.355 63.457c-2.543 3.27-1.954 7.981 1.315 10.524 1.369 1.064 2.99 1.58 4.599 1.58 2.235 0 4.447-.994 5.925-2.896l49.356-63.457c5.634-7.244 7.833-16.559 6.033-25.556l-4.063-20.317h6.884c12.976 0 23.532-10.557 23.532-23.533v-9.615l20.56 6.331c17.136 5.277 28.649 20.869 28.649 38.799v92.744c0 4.143 3.358 7.5 7.5 7.5s7.5-3.357 7.5-7.5v-92.743c0-24.555-15.767-45.908-39.235-53.135zm-136 85.35-4.672-42.017c3.07-2.69 5.465-6.185 6.822-10.255l1.708-5.123 15.279 13.096c1.184 1.015 2.5 1.821 3.892 2.43zm-72.491-41.87c1.392-.609 2.707-1.415 3.891-2.43l15.403-13.202 1.743 5.23c1.356 4.069 3.751 7.564 6.821 10.254l-4.698 42.257zm35.268-15.145-3.676-11.028 16.167-13.858 16.291 13.964-3.64 10.922c-1.163 3.489-4.416 5.834-8.094 5.834h-8.954c-3.678 0-6.931-2.345-8.094-5.834zm81.363-64.264c.21.065.284.213.309.262l10.493 20.986-25.261 44.206c-.036.063-.121.211-.36.252-.245.04-.369-.069-.424-.116l-40.563-34.769 55.403-30.78c.047-.026.191-.106.403-.041zm-147.768-291.192c-.541 2.604-.828 5.301-.828 8.063 0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5c0-13.544 11.019-24.564 24.564-24.564h72.146c48.906 0 88.693 39.788 88.693 88.693v56.995c-1.461-.24-2.946-.366-4.444-.366h-12.025c-4.705 0-8.532-3.828-8.532-8.547l-.04-20.221c-.03-15.096-10.815-28.103-25.646-30.928l-129.797-24.723c-6.911-1.315-13.985.501-19.406 4.987s-8.53 11.094-8.53 18.13v28.722c0 17.965-14.616 32.581-32.581 32.581-.174 0-.345.012-.516.023v-80.701c.001-24.541 18.284-44.88 41.942-48.144zm-17.813 168.386c0-4.142-3.358-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v.516h-4.524c-3.537 0-6.927-1.506-9.303-4.131-2.407-2.66-3.532-6.115-3.17-9.729.63-6.292 6.612-11.221 13.619-11.221 1.188 0 2.311-.276 3.309-.768 22.173-4.037 39.038-23.493 39.038-46.813v-28.721c0-2.551 1.127-4.947 3.093-6.573 1.965-1.626 4.53-2.286 7.036-1.808l129.797 24.723c7.779 1.481 13.437 8.304 13.452 16.223l.04 20.206c0 12.976 10.557 23.533 23.532 23.533h12.024c3.537 0 6.928 1.505 9.303 4.13 2.406 2.659 3.532 6.114 3.17 9.729-.63 6.292-6.612 11.222-13.619 11.222h-3.382v-.439c0-4.141-3.356-7.499-7.497-7.5-.001 0-.002 0-.003 0-4.14 0-7.497 3.354-7.5 7.495-.039 53.286-43.421 96.638-96.706 96.638-53.325-.002-96.709-43.386-96.709-96.712zm27.528 123.068c.024-.049.099-.197.309-.262.21-.063.355.015.403.042l16.389 9.105c3.622 2.013 8.188.707 10.199-2.914 2.012-3.621.707-8.187-2.914-10.199l-3.817-2.121v-16.156c14.706 7.138 31.2 11.147 48.614 11.147 17.411 0 33.905-4.012 48.612-11.153v16.163l-48.612 27.007-18.224-10.125c-3.622-2.011-8.187-.706-10.199 2.914-2.012 3.621-.707 8.187 2.914 10.199l12.443 6.913-40.564 34.77c-.055.047-.182.159-.424.116-.24-.042-.324-.189-.36-.252l-25.26-44.206zm69.181 165.983-12.051-21.911c.007-.052.019-.101.024-.153l6.574-59.124c.352.016.701.042 1.056.042h8.954c.354 0 .704-.026 1.055-.042l6.566 59.049z"
+                                                        fill="#BF9742" data-original="#000000" class=""></path>
+                                                    <path
+                                                        d="m207.823 168.339c-4.142 0-7.5 3.358-7.5 7.5v8.016c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-8.016c0-4.142-3.358-7.5-7.5-7.5z"
+                                                        fill="#BF9742" data-original="#000000" class=""></path>
+                                                    <path
+                                                        d="m304.017 168.339c-4.142 0-7.5 3.358-7.5 7.5v8.016c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-8.016c0-4.142-3.358-7.5-7.5-7.5z"
+                                                        fill="#BF9742" data-original="#000000" class=""></path>
+                                                    <path
+                                                        d="m285.308 226.684c-2.91-2.949-7.659-2.98-10.606-.071-2.737 2.701-9.298 5.855-18.781 5.855s-16.043-3.154-18.781-5.855c-2.95-2.91-7.698-2.877-10.606.071-2.909 2.948-2.877 7.697.071 10.606 6.459 6.373 17.418 10.177 29.316 10.177s22.857-3.805 29.316-10.177c2.948-2.909 2.98-7.658.071-10.606z"
+                                                        fill="#BF9742" data-original="#000000" class=""></path>
+                                                    <path
+                                                        d="m215.84 144.291h-16.033c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h16.033c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5z"
+                                                        fill="#BF9742" data-original="#000000" class=""></path>
+                                                    <path
+                                                        d="m296.001 159.291h16.032c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5h-16.032c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5z"
+                                                        fill="#BF9742" data-original="#000000" class=""></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <div class="mt-3">Jasa Notaris</div>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <div class="col-lg-4 mt-2 mb-2">
+
+                            <a class="text-black" style="text-decoration: none" href="{{url('')}}/jasa-ppat">
+                                <div class="card bg-white shadow p-4">
+                                    <div class="card-body text-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" width="100px" x="0" y="0"
+                                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve" class="">
+                                            <circle r="256" cx="256" cy="256" fill="#ffffff" shape="circle"></circle>
+                                            <g transform="matrix(0.7,0,0,0.7,76.80001373291017,76.80002059936524)">
+                                                <g>
+                                                    <path
+                                                        d="m416.652 358.622-67.31-20.727-10.825-21.648c-1.882-3.766-5.269-6.639-9.291-7.884-3.172-.981-6.585-.887-9.693.192v-16.899c25.014-17.396 42.619-44.741 47.02-76.253h4.457c14.618 0 27.156-10.862 28.544-24.728.778-7.771-1.764-15.53-6.974-21.287-.319-.352-.646-.694-.981-1.028v-64.667c0-57.176-46.516-103.693-103.693-103.693h-72.146c-13.014 0-24.578 6.318-31.793 16.046-.091-.003-.18-.014-.272-.014-35.076 0-63.613 28.537-63.613 63.613v89.276c-4.292 4.301-7.171 9.906-7.794 16.126-.779 7.771 1.762 15.531 6.972 21.289 5.214 5.762 12.659 9.067 20.426 9.067h5.598c4.399 31.521 22.003 58.869 47.022 76.263v16.889c-3.108-1.079-6.52-1.173-9.692-.192-4.022 1.244-7.409 4.118-9.292 7.884l-10.853 21.706-67.121 20.669c-23.468 7.227-39.235 28.58-39.235 53.135v92.743c0 4.143 3.358 7.5 7.5 7.5s7.5-3.357 7.5-7.5v-92.743c0-17.93 11.513-33.522 28.649-38.799l20.4-6.282v9.565c0 12.976 10.557 23.533 23.532 23.533h6.884l-4.063 20.317c-1.799 8.998.399 18.312 6.033 25.556l49.355 63.457c1.479 1.901 3.69 2.896 5.925 2.896 1.609 0 3.23-.516 4.599-1.58 3.27-2.543 3.859-7.255 1.315-10.524l-49.355-63.457c-2.955-3.8-4.108-8.687-3.165-13.406l5.857-29.288c.44-2.203-.13-4.488-1.555-6.226-1.424-1.738-3.553-2.745-5.8-2.745h-16.032c-4.705 0-8.532-3.828-8.532-8.533v-14.184l28.952-8.915 85.235 154.972c1.318 2.396 3.836 3.886 6.572 3.886s5.253-1.489 6.572-3.886l85.259-155.014 28.928 8.908v14.234c0 4.705-3.828 8.533-8.532 8.533h-16.032c-2.247 0-4.375 1.007-5.8 2.745s-1.995 4.022-1.555 6.226l5.857 29.288c.944 4.72-.209 9.605-3.164 13.405l-49.355 63.457c-2.543 3.27-1.954 7.981 1.315 10.524 1.369 1.064 2.99 1.58 4.599 1.58 2.235 0 4.447-.994 5.925-2.896l49.356-63.457c5.634-7.244 7.833-16.559 6.033-25.556l-4.063-20.317h6.884c12.976 0 23.532-10.557 23.532-23.533v-9.615l20.56 6.331c17.136 5.277 28.649 20.869 28.649 38.799v92.744c0 4.143 3.358 7.5 7.5 7.5s7.5-3.357 7.5-7.5v-92.743c0-24.555-15.767-45.908-39.235-53.135zm-136 85.35-4.672-42.017c3.07-2.69 5.465-6.185 6.822-10.255l1.708-5.123 15.279 13.096c1.184 1.015 2.5 1.821 3.892 2.43zm-72.491-41.87c1.392-.609 2.707-1.415 3.891-2.43l15.403-13.202 1.743 5.23c1.356 4.069 3.751 7.564 6.821 10.254l-4.698 42.257zm35.268-15.145-3.676-11.028 16.167-13.858 16.291 13.964-3.64 10.922c-1.163 3.489-4.416 5.834-8.094 5.834h-8.954c-3.678 0-6.931-2.345-8.094-5.834zm81.363-64.264c.21.065.284.213.309.262l10.493 20.986-25.261 44.206c-.036.063-.121.211-.36.252-.245.04-.369-.069-.424-.116l-40.563-34.769 55.403-30.78c.047-.026.191-.106.403-.041zm-147.768-291.192c-.541 2.604-.828 5.301-.828 8.063 0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5c0-13.544 11.019-24.564 24.564-24.564h72.146c48.906 0 88.693 39.788 88.693 88.693v56.995c-1.461-.24-2.946-.366-4.444-.366h-12.025c-4.705 0-8.532-3.828-8.532-8.547l-.04-20.221c-.03-15.096-10.815-28.103-25.646-30.928l-129.797-24.723c-6.911-1.315-13.985.501-19.406 4.987s-8.53 11.094-8.53 18.13v28.722c0 17.965-14.616 32.581-32.581 32.581-.174 0-.345.012-.516.023v-80.701c.001-24.541 18.284-44.88 41.942-48.144zm-17.813 168.386c0-4.142-3.358-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v.516h-4.524c-3.537 0-6.927-1.506-9.303-4.131-2.407-2.66-3.532-6.115-3.17-9.729.63-6.292 6.612-11.221 13.619-11.221 1.188 0 2.311-.276 3.309-.768 22.173-4.037 39.038-23.493 39.038-46.813v-28.721c0-2.551 1.127-4.947 3.093-6.573 1.965-1.626 4.53-2.286 7.036-1.808l129.797 24.723c7.779 1.481 13.437 8.304 13.452 16.223l.04 20.206c0 12.976 10.557 23.533 23.532 23.533h12.024c3.537 0 6.928 1.505 9.303 4.13 2.406 2.659 3.532 6.114 3.17 9.729-.63 6.292-6.612 11.222-13.619 11.222h-3.382v-.439c0-4.141-3.356-7.499-7.497-7.5-.001 0-.002 0-.003 0-4.14 0-7.497 3.354-7.5 7.495-.039 53.286-43.421 96.638-96.706 96.638-53.325-.002-96.709-43.386-96.709-96.712zm27.528 123.068c.024-.049.099-.197.309-.262.21-.063.355.015.403.042l16.389 9.105c3.622 2.013 8.188.707 10.199-2.914 2.012-3.621.707-8.187-2.914-10.199l-3.817-2.121v-16.156c14.706 7.138 31.2 11.147 48.614 11.147 17.411 0 33.905-4.012 48.612-11.153v16.163l-48.612 27.007-18.224-10.125c-3.622-2.011-8.187-.706-10.199 2.914-2.012 3.621-.707 8.187 2.914 10.199l12.443 6.913-40.564 34.77c-.055.047-.182.159-.424.116-.24-.042-.324-.189-.36-.252l-25.26-44.206zm69.181 165.983-12.051-21.911c.007-.052.019-.101.024-.153l6.574-59.124c.352.016.701.042 1.056.042h8.954c.354 0 .704-.026 1.055-.042l6.566 59.049z"
+                                                        fill="#BF9742" data-original="#000000" class=""></path>
+                                                    <path
+                                                        d="m207.823 168.339c-4.142 0-7.5 3.358-7.5 7.5v8.016c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-8.016c0-4.142-3.358-7.5-7.5-7.5z"
+                                                        fill="#BF9742" data-original="#000000" class=""></path>
+                                                    <path
+                                                        d="m304.017 168.339c-4.142 0-7.5 3.358-7.5 7.5v8.016c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-8.016c0-4.142-3.358-7.5-7.5-7.5z"
+                                                        fill="#BF9742" data-original="#000000" class=""></path>
+                                                    <path
+                                                        d="m285.308 226.684c-2.91-2.949-7.659-2.98-10.606-.071-2.737 2.701-9.298 5.855-18.781 5.855s-16.043-3.154-18.781-5.855c-2.95-2.91-7.698-2.877-10.606.071-2.909 2.948-2.877 7.697.071 10.606 6.459 6.373 17.418 10.177 29.316 10.177s22.857-3.805 29.316-10.177c2.948-2.909 2.98-7.658.071-10.606z"
+                                                        fill="#BF9742" data-original="#000000" class=""></path>
+                                                    <path
+                                                        d="m215.84 144.291h-16.033c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h16.033c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5z"
+                                                        fill="#BF9742" data-original="#000000" class=""></path>
+                                                    <path
+                                                        d="m296.001 159.291h16.032c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5h-16.032c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5z"
+                                                        fill="#BF9742" data-original="#000000" class=""></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <div class="mt-3">Jasa PPAT</div>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <div class="col-lg-4 mt-2 mb-2">
+
                             <a class="text-black" style="text-decoration: none" href="{{url('')}}/podcast-sengketa">
                                 <div class="card bg-white shadow p-4">
                                     <div class="card-body text-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
-                                            width="100px" x="0" y="0" viewBox="0 0 512 512"
-                                            style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xmlns:svgjs="http://svgjs.com/svgjs" width="100px" x="0" y="0"
+                                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve" class="">
                                             <circle r="256" cx="256" cy="256" fill="#f8f9fa" shape="circle"></circle>
                                             <g transform="matrix(0.7,0,0,0.7,76.80000000000001,76.80000457763674)">
                                                 <g xmlns="http://www.w3.org/2000/svg" id="XMLID_81_">
@@ -732,45 +832,6 @@
 
                         <div class="col-lg-4 mt-2 mb-2">
 
-                            <a class="text-black" style="text-decoration: none" href="{{url('')}}/jasa-notaris">
-                                <div class="card bg-white shadow p-4">
-                                    <div class="card-body text-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
-                                            width="100px" x="0" y="0" viewBox="0 0 25.916 25.916"
-                                            style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-                                            <circle r="12.958" cx="12.958" cy="12.958" fill="#ffffff" shape="circle">
-                                            </circle>
-                                            <g transform="matrix(0.7,0,0,0.7,3.8875187158584605,3.88741898238659)">
-                                                <g>
-                                                    <g>
-                                                        <path style="" d="M7.938,8.13c0.09,0.414,0.228,0.682,0.389,0.849c0.383,2.666,2.776,4.938,4.698,4.843
-                                                        c2.445-0.12,4.178-2.755,4.567-4.843c0.161-0.166,0.316-0.521,0.409-0.938c0.104-0.479,0.216-1.201-0.072-1.583
-                                                        c-0.017-0.02-0.127-0.121-0.146-0.138c0.275-0.992,0.879-2.762-0.625-4.353c-0.815-0.862-1.947-1.295-2.97-1.637
-                                                        c-3.02-1.009-5.152,0.406-6.136,2.759C7.981,3.256,7.522,4.313,8.078,6.32C8.024,6.356,7.975,6.402,7.934,6.458
-                                                        C7.645,6.839,7.833,7.651,7.938,8.13z" fill="#BF9742" data-original="#030104" class=""></path>
-                                                                                                <path style="" d="M23.557,22.792c-0.084-1.835-0.188-4.743-1.791-7.122c0,0-0.457-0.623-1.541-1.037
-                                                        c0,0-2.354-0.717-3.438-1.492l-0.495,0.339l0.055,3.218l-2.972,7.934c-0.065,0.174-0.231,0.289-0.416,0.289
-                                                        s-0.351-0.115-0.416-0.289l-2.971-7.934c0,0,0.055-3.208,0.054-3.218c0.007,0.027-0.496-0.339-0.496-0.339
-                                                        c-1.082,0.775-3.437,1.492-3.437,1.492c-1.084,0.414-1.541,1.037-1.541,1.037c-1.602,2.379-1.708,5.287-1.792,7.122
-                                                        c-0.058,1.268,0.208,1.741,0.542,1.876c4.146,1.664,15.965,1.664,20.112,0C23.35,24.534,23.614,24.06,23.557,22.792z"
-                                                                                                    fill="#BF9742" data-original="#030104" class=""></path>
-                                                                                                <path style="" d="M13.065,14.847l-0.134,0.003c-0.432,0-0.868-0.084-1.296-0.232l1.178,1.803l-1.057,1.02
-                                                        l1.088,6.607c0.009,0.057,0.058,0.098,0.116,0.098c0.057,0,0.106-0.041,0.116-0.098l1.088-6.607l-1.058-1.02l1.161-1.776
-                                                        C13.888,14.756,13.487,14.83,13.065,14.847z" fill="#BF9742" data-original="#030104" class=""></path>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        <div class="mt-3">Jasa Notaris</div>
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div>
-
-                        <div class="col-lg-4 mt-2 mb-2">
-
                             <a class="text-black" style="text-decoration: none" href="https://mitra.atrbpn.go.id">
                                 <div class="card bg-white shadow p-4">
                                     <div class="card-body text-center">
@@ -783,45 +844,6 @@
 
                         </div>
 
-                        <div class="col-lg-4 mt-2 mb-2">
-
-                            <a class="text-black" style="text-decoration: none" href="{{url('')}}/jasa-ppat">
-                                <div class="card bg-white shadow p-4">
-                                    <div class="card-body text-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
-                                            width="100px" x="0" y="0" viewBox="0 0 25.916 25.916"
-                                            style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-                                            <circle r="12.958" cx="12.958" cy="12.958" fill="#ffffff" shape="circle">
-                                            </circle>
-                                            <g transform="matrix(0.7,0,0,0.7,3.8875187158584605,3.88741898238659)">
-                                                <g>
-                                                    <g>
-                                                        <path style="" d="M7.938,8.13c0.09,0.414,0.228,0.682,0.389,0.849c0.383,2.666,2.776,4.938,4.698,4.843
-                                                        c2.445-0.12,4.178-2.755,4.567-4.843c0.161-0.166,0.316-0.521,0.409-0.938c0.104-0.479,0.216-1.201-0.072-1.583
-                                                        c-0.017-0.02-0.127-0.121-0.146-0.138c0.275-0.992,0.879-2.762-0.625-4.353c-0.815-0.862-1.947-1.295-2.97-1.637
-                                                        c-3.02-1.009-5.152,0.406-6.136,2.759C7.981,3.256,7.522,4.313,8.078,6.32C8.024,6.356,7.975,6.402,7.934,6.458
-                                                        C7.645,6.839,7.833,7.651,7.938,8.13z" fill="#BF9742" data-original="#030104" class=""></path>
-                                                                                                <path style="" d="M23.557,22.792c-0.084-1.835-0.188-4.743-1.791-7.122c0,0-0.457-0.623-1.541-1.037
-                                                        c0,0-2.354-0.717-3.438-1.492l-0.495,0.339l0.055,3.218l-2.972,7.934c-0.065,0.174-0.231,0.289-0.416,0.289
-                                                        s-0.351-0.115-0.416-0.289l-2.971-7.934c0,0,0.055-3.208,0.054-3.218c0.007,0.027-0.496-0.339-0.496-0.339
-                                                        c-1.082,0.775-3.437,1.492-3.437,1.492c-1.084,0.414-1.541,1.037-1.541,1.037c-1.602,2.379-1.708,5.287-1.792,7.122
-                                                        c-0.058,1.268,0.208,1.741,0.542,1.876c4.146,1.664,15.965,1.664,20.112,0C23.35,24.534,23.614,24.06,23.557,22.792z"
-                                                                                                    fill="#BF9742" data-original="#030104" class=""></path>
-                                                                                                <path style="" d="M13.065,14.847l-0.134,0.003c-0.432,0-0.868-0.084-1.296-0.232l1.178,1.803l-1.057,1.02
-                                                        l1.088,6.607c0.009,0.057,0.058,0.098,0.116,0.098c0.057,0,0.106-0.041,0.116-0.098l1.088-6.607l-1.058-1.02l1.161-1.776
-                                                        C13.888,14.756,13.487,14.83,13.065,14.847z" fill="#BF9742" data-original="#030104" class=""></path>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        <div class="mt-3">Jasa PPAT</div>
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div>
-                        
                     </div>
                 </div>
             </div>
@@ -839,8 +861,10 @@
                         <div class="vr" style="border-color: #61481C; opacity: 1; height: 100%; width: 2px;"></div>
                     </div>
                     <div class="flex-grow-1 mt-1">
-                        <h6 class="fw-bold text-brown" style="z-index: 100000">Renovasi seperti apa yang dilakukan oleh Rumalaku?</h6>
-                        <p style="font-size: 14px">Renovasi yang dilakukan merupakan renovasi minor seperti pengecatan kembali hingga renovasi kecil lainnya menyesuaikan dengan kebutuhan rumah yang dijual.</p>
+                        <h6 class="fw-bold text-brown" style="z-index: 100000">Renovasi seperti apa yang dilakukan oleh
+                            Rumalaku?</h6>
+                        <p style="font-size: 14px">Renovasi yang dilakukan merupakan renovasi minor seperti pengecatan
+                            kembali hingga renovasi kecil lainnya menyesuaikan dengan kebutuhan rumah yang dijual.</p>
                     </div>
                 </div>
             </div>
@@ -852,8 +876,11 @@
                         <div class="vr" style="border-color: #61481C; opacity: 1; height: 100%; width: 2px;"></div>
                     </div>
                     <div class="flex-grow-1 mt-1">
-                        <h6 class="fw-bold text-brown" style="z-index: 100000">Apakah penjual perlu mengembalikan dana renovasi?</h6>
-                        <p style="font-size: 14px">Penjual akan mengembalikan dana renovasi setelah rumah berhasil terjual melalui perantara lain atau pribadi (bukan melalui Rumalaku). Jika terjual melalui Rumalaku, dana renovasi akan dipotong dari harga jual.</p>
+                        <h6 class="fw-bold text-brown" style="z-index: 100000">Apakah penjual perlu mengembalikan dana
+                            renovasi?</h6>
+                        <p style="font-size: 14px">Penjual akan mengembalikan dana renovasi setelah rumah berhasil
+                            terjual melalui perantara lain atau pribadi (bukan melalui Rumalaku). Jika terjual melalui
+                            Rumalaku, dana renovasi akan dipotong dari harga jual.</p>
                     </div>
                 </div>
             </div>
@@ -865,8 +892,10 @@
                         <div class="vr" style="border-color: #61481C; opacity: 1; height: 100%; width: 2px;"></div>
                     </div>
                     <div class="flex-grow-1 mt-1">
-                        <h6 class="fw-bold text-brown" style="z-index: 100000">Renovasi seperti apa yang dilakukan oleh Rumalaku?</h6>
-                        <p style="font-size: 14px">Renovasi yang dilakukan merupakan renovasi minor seperti pengecatan kembali hingga renovasi kecil lainnya menyesuaikan dengan kebutuhan rumah yang dijual.</p>
+                        <h6 class="fw-bold text-brown" style="z-index: 100000">Renovasi seperti apa yang dilakukan oleh
+                            Rumalaku?</h6>
+                        <p style="font-size: 14px">Renovasi yang dilakukan merupakan renovasi minor seperti pengecatan
+                            kembali hingga renovasi kecil lainnya menyesuaikan dengan kebutuhan rumah yang dijual.</p>
                     </div>
                 </div>
             </div>
@@ -1227,22 +1256,22 @@
             .store {
                 width: 171px;
             }
-    
+
             .appstore {
                 width: 140px;
                 margin-left: 10px
             }
-    
+
             @media screen and (min-width: 768px) {
                 .store {
                     width: 216px;
                 }
-    
+
                 .appstore {
                     width: 185px;
                 }
             }
-    
+
         </style>
 
         <div class="row justify-content-center">
@@ -1255,26 +1284,26 @@
                 <a href="#"><img src="{{asset('/')}}uploads/appstore-badge.png" class="appstore" alt=""></a>
             </div>
         </div>
-    
+
         <hr>
-    
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0"
-            nonce="Ee2Zutm6"></script>
-            
+
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0" nonce="Ee2Zutm6"></script>
+
+    </div>
+    <div class="row mt-4">
+        <div class="card-body text-white text-center" style="background: #61481C">
+            <p></p>
+            <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
+            <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
+            </p>
+            <hr>
+            <p style="font-size:14px" class="card-title pb-3">Sovereign Plaza. Lt. 19 <br> Jl. TB Simatupang No.
+                36,
+                TB Simatupang, Jakarta Selatan</p>
         </div>
-        <div class="row mt-4">
-            <div class="card-body text-white text-center" style="background: #61481C">
-                <p></p>
-                <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
-                <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
-                </p>
-                <hr>
-                <p style="font-size:14px" class="card-title pb-3">Sovereign Plaza. Lt. 19 <br> Jl. TB Simatupang No.
-                    36,
-                    TB Simatupang, Jakarta Selatan</p>
-            </div>
-        </div>
-        
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
