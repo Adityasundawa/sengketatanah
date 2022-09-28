@@ -532,7 +532,7 @@
 
             <div class="col-lg-12">
 
-            <div class="card mb-3 border-0 mt-4">
+            <div class="card mb-3 border-0 mt-2">
                     <div class="card-body pb-0">
                         <div class="row justify-content-between text-center"
                             style="overflow-x: auto; flex-wrap: nowrap">
