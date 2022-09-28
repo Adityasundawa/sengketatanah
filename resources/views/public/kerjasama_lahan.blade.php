@@ -622,7 +622,7 @@
                                 <div class="row">
                                     <?php $counter = 1 ?>
                                     @foreach($data_jual_beli as $bs)
-                                    <div class="col-md-6 mb-3 {{$bs['kode_objek']}}">
+                                    <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
                                         <div class="card mb-2">
 
                                             <div class="card-header text-white px-3 py-1" style="
@@ -686,16 +686,16 @@
 
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
-                                                            <img src="{{$bs['img']}}" class="d-block w-100"style="height:350px;width:auto;object-fit:cover">
+                                                            <img src="{{$bs['img']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img1']}}" class="d-block w-100"style="height:350px;width:auto;object-fit:cover">
+                                                            <img src="{{$bs['img1']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img2']}}" class="d-block w-100"style="height:350px;width:auto;object-fit:cover">
+                                                            <img src="{{$bs['img2']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img3']}}" class="d-block w-100"style="height:350px;width:auto;object-fit:cover">
+                                                            <img src="{{$bs['img3']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                     </div>
                                                     <button class="carousel-control-prev opacity-90 text-dark" type="button"

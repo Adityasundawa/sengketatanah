@@ -649,7 +649,7 @@
                                 <div class="row">
                                     <?php $counter = 1 ?>
                                     @foreach($bid_sengketa as $bs)
-                                    <div class="col-md-6 mb-3 {{$bs['kode_objek']}}">
+                                    <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
                                         <div class="card mb-2">
 
                                             <div class="card-header text-white px-3 py-1" style="
@@ -705,34 +705,51 @@
                                                 <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
                                                     data-bs-ride="carousel">
                                                     <div class="carousel-indicators">
-                                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                                            aria-label="Slide 1"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
                                                     </div>
 
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
-                                                            <img src="{{$bs['img']}}" class="d-block w-100"style="height:350px;width:auto;object-fit:cover">
+                                                            <img src="{{$bs['img']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img1']}}" class="d-block w-100"style="height:350px;width:auto;object-fit:cover">
+                                                            <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img2']}}" class="d-block w-100"style="height:350px;width:auto;object-fit:cover">
+                                                            <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img3']}}" class="d-block w-100"style="height:350px;width:auto;object-fit:cover">
+                                                            <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                     </div>
-                                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="prev">
+                                                    <button class="carousel-control-prev opacity-90 text-dark"
+                                                        type="button"
+                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                        data-bs-slide="prev">
                                                         <span class="carousel-control-prev-icon bg-dark rounded-circle"
                                                             aria-hidden="true"></span>
                                                         <span class="visually-hidden">Previous</span>
                                                     </button>
-                                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="next">
+                                                    <button class="carousel-control-next opacity-90 text-dark"
+                                                        type="button"
+                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                        data-bs-slide="next">
                                                         <span class="carousel-control-next-icon bg-dark rounded-circle"
                                                             aria-hidden="true"></span>
                                                         <span class="visually-hidden">Next</span>
@@ -740,37 +757,52 @@
                                                 </div>
                                             </div>
                                             <div class="mobile">
-                                            <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
+                                                <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
                                                     data-bs-ride="carousel">
                                                     <div class="carousel-indicators">
-                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                                            aria-label="Slide 1"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
                                                     </div>
 
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
-                                                            <img src="{{$bs['img']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                            <img src="{{$bs['img']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img1']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                            <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img2']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                            <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img3']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                            <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
                                                         </div>
                                                     </div>
-                                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                                        data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
+                                                    <button class="carousel-control-prev opacity-90 text-dark"
+                                                        type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                        data-bs-slide="prev">
                                                         <span class="carousel-control-prev-icon bg-dark rounded-circle"
                                                             aria-hidden="true"></span>
                                                         <span class="visually-hidden">Previous</span>
                                                     </button>
-                                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                                        data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
+                                                    <button class="carousel-control-next opacity-90 text-dark"
+                                                        type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                        data-bs-slide="next">
                                                         <span class="carousel-control-next-icon bg-dark rounded-circle"
                                                             aria-hidden="true"></span>
                                                         <span class="visually-hidden">Next</span>
@@ -779,7 +811,7 @@
                                             </div>
 
 
-                                              
+
                                             <table class="mt-3">
                                                 <tr>
                                                     <td>Owner/Korban</td>
@@ -839,8 +871,9 @@
                                             <div class="row g-0">
                                                 <div class="col text-center" style="border-right: 1px solid">
 
-                                                    <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
-                                                        data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                    <a href="#" class=" mx-auto btn btn-danger rounded-5"
+                                                        data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                        style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                     </a>
 
@@ -875,9 +908,9 @@
                                                 <div class="col text-center">
                                                     <span
                                                         onclick="return document.querySelector('form.form-sengketa<?=$bs['id']?>').submit()"
-                                                        class="btn btn-success rounded-5"
-                                                        style="cursor:pointer"><i
-                                                            class="fa-solid fa-play text-danger"></i> Lihat Podcast</span>
+                                                        class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                            class="fa-solid fa-play text-danger"></i> Lihat
+                                                        Podcast</span>
                                                 </div>
                                             </div>
 
@@ -1008,7 +1041,7 @@
                             <div class="row">
 
                                 @foreach($bid_pengacara as $bp)
-                                <div class="col-lg-6 mt-1 mb-1">
+                                <div class="col-lg-4 mt-1 mb-1">
 
                                     <div class="card">
                                         <div class="card-header text-white px-3 py-1" style="        
@@ -1097,8 +1130,9 @@
 
                                             <div class="row g-0">
                                                 <div class="col text-center" style="border-right: 1px solid">
-                                                    <a href="#" class="mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
-                                                        data-bs-target="#berkasPengacara" style="text-decoration:none">
+                                                    <a href="#" class="mx-auto btn btn-danger rounded-5"
+                                                        data-bs-toggle="modal" data-bs-target="#berkasPengacara"
+                                                        style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                     </a>
 
@@ -1132,9 +1166,9 @@
                                                 <div class="col text-center">
                                                     <span
                                                         onclick="return document.querySelector('form.form-sengketa<?=$bp['id']?>').submit()"
-                                                        class="btn btn-success rounded-5"
-                                                        style="cursor:pointer"><i
-                                                            class="fa-solid fa-play text-danger"></i> Lihat Podcast</span>
+                                                        class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                            class="fa-solid fa-play text-danger"></i> Lihat
+                                                        Podcast</span>
                                                 </div>
                                             </div>
                                             <form action="{{url('/')}}/bid-sengketa/podcast" class="form-sengketa90"
@@ -1214,7 +1248,7 @@
                         <div class="col-lg-12" id="dataPemerintah" style="display:none">
                             <div class="row">
                                 @foreach($bid_pemerintah as $bpm)
-                                <div class="col-lg-6 mt-2 mb-2">
+                                <div class="col-lg-4 mt-2 mb-2">
                                     <div class="card">
                                         <div class="card-header text-white px-3 py-1  bg-secondary">
                                             <div class="row">
