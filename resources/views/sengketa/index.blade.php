@@ -5277,7 +5277,7 @@ class="btn btn-success rounded-5"                                               
 
                                                 <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat De
+                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
@@ -5531,7 +5531,7 @@ class="btn btn-success rounded-5"                                               
 
                                                 <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat De
+                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
@@ -5783,7 +5783,7 @@ class="btn btn-success rounded-5"                                               
 
                                                 <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat De
+                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
@@ -6033,7 +6033,7 @@ class="btn btn-success rounded-5"                                               
 
                                                 <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat De
+                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
