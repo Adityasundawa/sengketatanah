@@ -3758,6 +3758,12 @@ class="btn btn-success rounded-5"                                               
                                                         <td>&nbsp;SHM</td>
                                                     </tr>
                                                     <tr>
+                                                        <td>Akses</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;Mobil</td>
+                                                    </tr>
+                                                    </tr>
                                                         <td>Jumlah Bid</td>
                                                         <td></td>
                                                         <td>:</td>
@@ -3975,7 +3981,12 @@ class="btn btn-success rounded-5"                                               
                                                         <td>:</td>
                                                         <td>&nbsp;HGB</td>
                                                     </tr>
-
+                                                    <tr>
+                                                        <td>Akses</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;Motor</td>
+                                                    </tr>
                                                     <tr>
                                                         <td>Jumlah Bid</td>
                                                         <td></td>
@@ -4201,7 +4212,12 @@ class="btn btn-success rounded-5"                                               
                                                         <td>:</td>
                                                         <td>&nbsp;AJB</td>
                                                     </tr>
-
+                                                    <tr>
+                                                        <td>Akses</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;Motor</td>
+                                                    </tr>
 
                                                     <tr>
                                                         <td>Jumlah Bid</td>
@@ -4428,7 +4444,12 @@ class="btn btn-success rounded-5"                                               
                                                         <td>:</td>
                                                         <td>&nbsp;PPJB</td>
                                                     </tr>
-
+                                                    <tr>
+                                                        <td>Akses</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>Mobil</td>
+                                                    </tr>
 
                                                     <tr>
                                                         <td>Jumlah Bid</td>
@@ -4654,7 +4675,12 @@ class="btn btn-success rounded-5"                                               
                                                         <td>:</td>
                                                         <td>&nbsp;Girik</td>
                                                     </tr>
-
+                                                    <tr>
+                                                        <td>Akses</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;Mobil</td>
+                                                    </tr>
                                                     <tr>
                                                         <td>Jumlah Bid</td>
                                                         <td></td>
