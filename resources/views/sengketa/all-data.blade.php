@@ -1300,13 +1300,13 @@
 
                                                                     <table class="table">
                                                                         <tr>
-                                                                            <td> Owner/Korban</td>
+                                                                            <td> Korban</td>
                                                                             <td>:</td>
                                                                             <td>&nbsp;Rival Santoso</td>
                                                                         </tr>
 
                                                                         <tr>
-                                                                            <td>Objek Sengketa</td>
+                                                                            <td>Jenis Sengketa</td>
                                                                             <td>:</td>
                                                                             <td>&nbsp;Sengketa Pertanahan</td>
                                                                         </tr>
