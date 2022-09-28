@@ -651,7 +651,6 @@
                                     @foreach($bid_sengketa as $bs)
                                     <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
                                         <div class="card mb-2">
-
                                             <div class="card-header text-white px-3 py-1" style="
                                             background: #8f8f8f">
                                                 <div class="row">
@@ -826,17 +825,18 @@
                                                     <td>&nbsp;{{$bs['objek']}}</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Luas Objek</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bs['luas']}}</td>
-                                                </tr>
-                                                <tr>
                                                     <td>Lokasi</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp;{{$bs['lokasi']}}</td>
                                                 </tr>
+                                                <tr>
+                                                    <td>Luas</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['luas']}}</td>
+                                                </tr>
+                                               
                                                 <tr>
                                                     <td>Kebutuhan Dana</td>
                                                     <td></td>
@@ -1091,17 +1091,18 @@
                                                     <td>&nbsp;{{$bp['objek']}}</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Luas Objek</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bp['luas']}}</td>
-                                                </tr>
-                                                <tr>
                                                     <td>Lokasi</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp;{{$bp['lokasi']}}</td>
                                                 </tr>
+                                                <tr>
+                                                    <td>Luas</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bp['luas']}}</td>
+                                                </tr>
+                                              
                                                 <tr>
                                                     <td>Kebutuhan</td>
                                                     <td></td>
@@ -1310,17 +1311,18 @@
                                                                             <td>&nbsp;Sengketa Pertanahan</td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td>Luas Objek</td>
-
-                                                                            <td>:</td>
-                                                                            <td>&nbsp;12.3 Ha</td>
-                                                                        </tr>
-                                                                        <tr>
                                                                             <td>Lokasi</td>
 
                                                                             <td>:</td>
                                                                             <td>&nbsp;Ngawi, Jawa Timur</td>
                                                                         </tr>
+                                                                        <tr>
+                                                                            <td>Luas</td>
+
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;12.3 Ha</td>
+                                                                        </tr>
+                                                                        
                                                                     </table>
                                                                     <div class="d-grid gap-2">
                                                                         <button class="alert alert-warning mt-2"
