@@ -628,7 +628,7 @@
                                     <div class="ribbon-pop">
                                         <i class="fa-solid fa-star"></i>&nbsp;HOT
                                     </div>
-                                    <div id="ll44{{$bs['id']}}" class="carousel slide" data-bs-ride="carousel">
+                                    <div id="ll44{{$bs['id']}}" class="carousel slide"   data-bs-interval="false">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#ll44{{$bs['id']}}" data-bs-slide-to="0"
                                                 class="active" aria-current="true" aria-label="Slide 1"></button>

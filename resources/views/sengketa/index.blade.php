@@ -1361,7 +1361,7 @@
                                             </div>
                                         </div>
                                         <div id="carouselExampleControlsPres" class="carousel slide mobile  mb-4"
-                                            data-bs-ride="carousel">
+                                        >
                                             <div class="carousel-inner  mb-5">
                                                 <div class="carousel-item active">
                                                     <div class="card-body text-center container" style="height:505px">
@@ -1548,7 +1548,7 @@
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
-                                            <div id="bidding1" class="carousel slide" data-bs-ride="carousel">
+                                            <div id="bidding1" class="carousel slide"data-bs-interval="false">
                                                 <div class="carousel-indicators">
                                                     <button type="button" data-bs-target="#bidding1"
                                                         data-bs-slide-to="0" class="active" aria-current="true"
@@ -1786,7 +1786,7 @@
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
-                                            <div id="bidding2" class="carousel slide" data-bs-ride="carousel">
+                                            <div id="bidding2" class="carousel slide"data-bs-interval="false">
                                                 <div class="carousel-indicators">
                                                     <button type="button" data-bs-target="#bidding2"
                                                         data-bs-slide-to="0" class="active" aria-current="true"
@@ -2019,7 +2019,7 @@
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
-                                            <div id="bidding3" class="carousel slide" data-bs-ride="carousel">
+                                            <div id="bidding3" class="carousel slide"data-bs-interval="false">
                                                 <div class="carousel-indicators">
                                                     <button type="button" data-bs-target="#bidding3"
                                                         data-bs-slide-to="0" class="active" aria-current="true"
@@ -2250,7 +2250,7 @@
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
-                                            <div id="bidding4" class="carousel slide" data-bs-ride="carousel">
+                                            <div id="bidding4" class="carousel slide"data-bs-interval="false">
                                                 <div class="carousel-indicators">
                                                     <button type="button" data-bs-target="#bidding4"
                                                         data-bs-slide-to="0" class="active" aria-current="true"
@@ -2652,7 +2652,7 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="ksl2" class="carousel slide" data-bs-ride="carousel">
+                                        <div id="ksl2" class="carousel slide"data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#ksl2" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -2880,15 +2880,15 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="ksl2" class="carousel slide" data-bs-ride="carousel">
+                                        <div id="ksl10" class="carousel slide"data-bs-interval="false">
                                             <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#ksl2" data-bs-slide-to="0"
+                                                <button type="button" data-bs-target="#ksl10" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#ksl2" data-bs-slide-to="1"
+                                                <button type="button" data-bs-target="#ksl10" data-bs-slide-to="1"
                                                     aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#ksl2" data-bs-slide-to="2"
+                                                <button type="button" data-bs-target="#ksl10" data-bs-slide-to="2"
                                                     aria-label="Slide 3"></button>
-                                                <button type="button" data-bs-target="#ksl2" data-bs-slide-to="3"
+                                                <button type="button" data-bs-target="#ksl10" data-bs-slide-to="3"
                                                     aria-label="Slide 4"></button>
                                             </div>
 
@@ -2911,13 +2911,13 @@
                                                 </div>
                                             </div>
                                             <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                                data-bs-target="#ksl2" data-bs-slide="prev">
+                                                data-bs-target="#ksl10" data-bs-slide="prev">
                                                 <span class="carousel-control-prev-icon bg-dark rounded-circle"
                                                     aria-hidden="true"></span>
                                                 <span class="visually-hidden">Previous</span>
                                             </button>
                                             <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                                data-bs-target="#ksl2" data-bs-slide="next">
+                                                data-bs-target="#ksl10" data-bs-slide="next">
                                                 <span class="carousel-control-next-icon bg-dark rounded-circle"
                                                     aria-hidden="true"></span>
                                                 <span class="visually-hidden">Next</span>
@@ -3108,7 +3108,7 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="ksl3" class="carousel slide" data-bs-ride="carousel">
+                                        <div id="ksl3" class="carousel slide"data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#ksl3" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -3336,7 +3336,7 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="ksl4" class="carousel slide" data-bs-ride="carousel">
+                                        <div id="ksl4" class="carousel slide"data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#ksl4" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -3563,7 +3563,7 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="ksl2" class="carousel slide" data-bs-ride="carousel">
+                                        <div id="ksl2" class="carousel slide"data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#ksl2" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -3987,7 +3987,7 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="jbl1" class="carousel slide" data-bs-ride="carousel">
+                                        <div id="jbl1" class="carousel slide"data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl1" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -4212,7 +4212,7 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="jbl2" class="carousel slide" data-bs-ride="carousel">
+                                        <div id="jbl2" class="carousel slide"data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl2" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -4443,7 +4443,7 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="jbl3" class="carousel slide" data-bs-ride="carousel">
+                                        <div id="jbl3" class="carousel slide"data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl3" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -4674,7 +4674,7 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="jbl4" class="carousel slide" data-bs-ride="carousel">
+                                        <div id="jbl4" class="carousel slide"data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl4" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -4907,7 +4907,7 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="jbl2" class="carousel slide" data-bs-ride="carousel">
+                                        <div id="jbl2" class="carousel slide"data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl2" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -5703,7 +5703,7 @@
                                     <div class="ribbon-pop">
                                         <i class="fa-solid fa-star"></i>&nbsp;HOT
                                     </div>
-                                    <div id="ll4" class="carousel slide" data-bs-ride="carousel">
+                                    <div id="ll4" class="carousel slide"data-bs-interval="false">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#ll4" data-bs-slide-to="0"
                                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -5978,7 +5978,7 @@
                                     <div class="ribbon-pop">
                                         <i class="fa-solid fa-star"></i>&nbsp;HOT
                                     </div>
-                                    <div id="ll2" class="carousel slide" data-bs-ride="carousel">
+                                    <div id="ll2" class="carousel slide"data-bs-interval="false">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#ll2" data-bs-slide-to="0"
                                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -6252,7 +6252,7 @@
                                     <div class="ribbon-pop">
                                         <i class="fa-solid fa-star"></i>&nbsp;HOT
                                     </div>
-                                    <div id="ll3" class="carousel slide" data-bs-ride="carousel">
+                                    <div id="ll3" class="carousel slide"data-bs-interval="false">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#ll3" data-bs-slide-to="0"
                                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -6524,7 +6524,7 @@
                                     <div class="ribbon-pop">
                                         <i class="fa-solid fa-star"></i>&nbsp;HOT
                                     </div>
-                                    <div id="ll44" class="carousel slide" data-bs-ride="carousel">
+                                    <div id="ll44" class="carousel slide"data-bs-interval="false">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#ll44" data-bs-slide-to="0"
                                                 class="active" aria-current="true" aria-label="Slide 1"></button>

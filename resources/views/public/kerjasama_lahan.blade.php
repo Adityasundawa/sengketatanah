@@ -676,7 +676,7 @@
 
                                             <div class="desktop-2">
                                                 <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
-                                                    data-bs-ride="carousel">
+                                                      data-bs-interval="false">
                                                     <div class="carousel-indicators">
                                                         <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                                         <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -714,7 +714,7 @@
                                             </div>
                                             <div class="mobile">
                                             <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
-                                                    data-bs-ride="carousel">
+                                                      data-bs-interval="false">
                                                     <div class="carousel-indicators">
                                                         <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                                         <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -783,7 +783,7 @@
                                                     <td>&nbsp;{{$bs['jenis_lahan']}}</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>DOKUMEN</td>
+                                                    <td>Dokumen</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp;SHM</td>
@@ -811,12 +811,14 @@
                                             <hr>
 
 
+                                         
                                             <div class="row g-0">
-                                                <div class="col text-center" style="border-right: 1px solid">
+                                                <div class="col text-center" >
 
-                                                    <a href="#" class="text-dark  mx-auto" data-bs-toggle="modal"
-                                                        data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas (12)
+                                                    <a href="#" class=" mx-auto btn btn-danger rounded-5"
+                                                        data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                        style="text-decoration:none">
+                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                     </a>
 
                                                     <!-- Modal -->
@@ -850,8 +852,9 @@
                                                 <div class="col text-center">
                                                     <span
                                                         onclick="return document.querySelector('form.form-sengketa<?=$bs['id']?>').submit()"
-                                                        style="cursor:pointer"><i
-                                                            class="fa-solid fa-play text-danger"></i> Lihat Video</span>
+                                                        class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                            class="fa-solid fa-play text-white"></i> Lihat
+                                                        Video</span>
                                                 </div>
                                             </div>
 
