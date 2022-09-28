@@ -6194,10 +6194,10 @@ class="btn btn-success rounded-5"                                               
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h3 class="mb-0">1 Ha</h3>
+                                                        <h5 class="mb-0">Nilai Limit :</h5>
                                                     </div>
-                                                    <div class="col">
-                                                        <h5 class="mb-0">Rp. 450 Juta</h5>
+                                                    <div class="col mb-2">
+                                                        <h3 class="mb-0">Rp. 450 Juta</h3>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6205,9 +6205,12 @@ class="btn btn-success rounded-5"                                               
                                                         </a>
                                                     </div>
                                                     <div class="col-12">
-                                                        <h6 class="fw-bold">Bogor</h6>
+                                                        <h6 class="fw-bold mb-0">Bogor</h6>
                                                     </div>
-
+                                                    <div class="col-12">
+                                                        <h3 class="mb-0">1 Ha</h3>
+                                                    </div>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -6220,10 +6223,10 @@ class="btn btn-success rounded-5"                                               
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h3 class="mb-0">3.2 Ha</h3>
+                                                        <h5 class="mb-0">Nilai Limit :</h5>
                                                     </div>
-                                                    <div class="col">
-                                                        <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                    <div class="col mb-2">
+                                                        <h3 class="mb-0">Rp. 200 Juta</h3>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6231,9 +6234,12 @@ class="btn btn-success rounded-5"                                               
                                                         </a>
                                                     </div>
                                                     <div class="col-12">
-                                                        <h6 class="fw-bold">Bogor</h6>
+                                                        <h6 class="fw-bold mb-0">Bogor</h6>
                                                     </div>
-
+                                                    <div class="col-12">
+                                                        <h3 class="mb-0">3.2 Ha</h3>
+                                                    </div>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -6245,10 +6251,10 @@ class="btn btn-success rounded-5"                                               
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h3 class="mb-0">5000 m</h3>
+                                                        <h5 class="mb-0">Nilai Limit :</h5>
                                                     </div>
-                                                    <div class="col">
-                                                        <h5 class="mb-0">Rp. 500 Juta</h5>
+                                                    <div class="col mb-2">
+                                                        <h3 class="mb-0">Rp. 500 Juta</h3>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6256,9 +6262,12 @@ class="btn btn-success rounded-5"                                               
                                                         </a>
                                                     </div>
                                                     <div class="col-12">
-                                                        <h6 class="fw-bold">Bogor</h6>
+                                                        <h6 class="fw-bold mb-0">Bogor</h6>
                                                     </div>
-
+                                                    <div class="col-12">
+                                                        <h3 class="mb-0">5000 m</h3>
+                                                    </div>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -6271,10 +6280,10 @@ class="btn btn-success rounded-5"                                               
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h3 class="mb-0">3.2 Ha</h3>
+                                                        <h5 class="mb-0">Nilai Limit :</h5>
                                                     </div>
-                                                    <div class="col">
-                                                        <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                    <div class="col mb-2">
+                                                        <h3 class="mb-0">Rp. 200 Juta</h3>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6282,7 +6291,10 @@ class="btn btn-success rounded-5"                                               
                                                         </a>
                                                     </div>
                                                     <div class="col-12">
-                                                        <h6 class="fw-bold">Bogor</h6>
+                                                        <h6 class="fw-bold mb-0">Bogor</h6>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <h3 class="mb-0">3.2 Ha</h3>
                                                     </div>
 
                                                 </div>
@@ -6337,10 +6349,10 @@ class="btn btn-success rounded-5"                                               
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h3 class="mb-0">3.2 Ha</h3>
+                                                        <h5 class="mb-0">Nilai Limit :</h5>
                                                     </div>
-                                                    <div class="col">
-                                                        <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                    <div class="col mb-2">
+                                                        <h3 class="mb-0">Rp. 200 Juta</h3>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6348,7 +6360,10 @@ class="btn btn-success rounded-5"                                               
                                                         </a>
                                                     </div>
                                                     <div class="col-12">
-                                                        <h6 class="fw-bold">Bogor</h6>
+                                                        <h6 class="fw-bold mb-0">Bogor</h6>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <h3 class="mb-0">3.2 Ha</h3>
                                                     </div>
 
                                                 </div>
@@ -6362,10 +6377,10 @@ class="btn btn-success rounded-5"                                               
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h3 class="mb-0">1 Ha</h3>
+                                                        <h5 class="mb-0">Nilai Limit :</h5>
                                                     </div>
-                                                    <div class="col">
-                                                        <h5 class="mb-0">Rp. 450 Juta</h5>
+                                                    <div class="col mb-2">
+                                                        <h3 class="mb-0">Rp. 450 Juta</h3>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6373,7 +6388,10 @@ class="btn btn-success rounded-5"                                               
                                                         </a>
                                                     </div>
                                                     <div class="col-12">
-                                                        <h6 class="fw-bold">Bogor</h6>
+                                                        <h6 class="fw-bold mb-0">Bogor</h6>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <h3 class="mb-0">1 Ha</h3>
                                                     </div>
 
                                                 </div>
@@ -6388,10 +6406,10 @@ class="btn btn-success rounded-5"                                               
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h3 class="mb-0">5000 m</h3>
+                                                        <h5 class="mb-0">Nilai Limit :</h5>
                                                     </div>
-                                                    <div class="col">
-                                                        <h5 class="mb-0">Rp. 500 Juta</h5>
+                                                    <div class="col mb-2">
+                                                        <h3 class="mb-0">Rp. 500 Juta</h3>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6399,7 +6417,10 @@ class="btn btn-success rounded-5"                                               
                                                         </a>
                                                     </div>
                                                     <div class="col-12">
-                                                        <h6 class="fw-bold">Bogor</h6>
+                                                        <h6 class="fw-bold mb-0">Bogor</h6>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <h3 class="mb-0">5000 m</h3>
                                                     </div>
 
                                                 </div>
@@ -6414,10 +6435,10 @@ class="btn btn-success rounded-5"                                               
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h3 class="mb-0">3.2 Ha</h3>
+                                                        <h5 class="mb-0">Nilai Limit :</h5>
                                                     </div>
-                                                    <div class="col">
-                                                        <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                    <div class="col mb-2">
+                                                        <h3 class="mb-0">Rp. 200 Juta</h3>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6425,7 +6446,10 @@ class="btn btn-success rounded-5"                                               
                                                         </a>
                                                     </div>
                                                     <div class="col-12">
-                                                        <h6 class="fw-bold">Bogor</h6>
+                                                        <h6 class="fw-bold mb-0">Bogor</h6>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <h3 class="mb-0">3.2 Ha</h3>
                                                     </div>
 
                                                 </div>
