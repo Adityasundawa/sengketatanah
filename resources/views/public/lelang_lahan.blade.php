@@ -675,7 +675,7 @@
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Lot Lelang LL-003 <img
+                                                <h5 class="mb-0 text-center">Kode Lot Lelang {{$bs['kode']}} <img
                                                         src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
                                                         style="height:20px"></h5>
                                             </div>
@@ -683,7 +683,7 @@
                                     </div>
 
                                     <div class="card-body pt-0">
-                                        <table class="mt-2 mb-2">
+                                        <table class="mt-2 mb-2"style="width:100%">
                                             <tr>
                                                 <td>
                                                     <b>Nilai Limit :</b>
@@ -706,7 +706,7 @@
                                             </tr>
                                         </table>
                                         <hr style="margin-top:-4px">
-                                        <table style="margin-top:-10px">
+                                        <table style="margin-top:-10px;width:100%">
                                             <tr>
                                                 <td>
                                                     <b>
@@ -828,7 +828,7 @@
                                                 <span
                                                     onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                     class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                        class="fa-solid fa-play text-warning"></i>
+                                                        class="fa-solid fa-play text-white"></i>
                                                     Lihat Video</span>
                                             </div>
                                         </div>

@@ -1709,7 +1709,7 @@
                                                         <span
                                                             onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                             class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                                class="fa-solid fa-play text-warning"></i>
+                                                                class="fa-solid fa-play text-white"></i>
                                                             Lihat Podcast</span>
                                                     </div>
                                                 </div>
@@ -1945,7 +1945,7 @@
                                                         <span
                                                             onclick="return document.querySelector('form.form-sengketa2').submit()"
                                                             class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                                class="fa-solid fa-play text-warning"></i>
+                                                                class="fa-solid fa-play text-white"></i>
                                                             Lihat Podcast</span>
                                                     </div>
                                                 </div>
@@ -2177,7 +2177,7 @@
                                                         <span
                                                             onclick="return document.querySelector('form.form-sengketa3').submit()"
                                                             class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                                class="fa-solid fa-play text-warning"></i>
+                                                                class="fa-solid fa-play text-white"></i>
                                                             Lihat Podcast</span>
                                                     </div>
                                                 </div>
@@ -2409,7 +2409,7 @@
                                                         <span
                                                             onclick="return document.querySelector('form.form-sengketa3').submit()"
                                                             class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                                class="fa-solid fa-play text-warning"></i>
+                                                                class="fa-solid fa-play text-white"></i>
                                                             Lihat Podcast</span>
                                                     </div>
                                                 </div>
@@ -2790,7 +2790,7 @@
                                                     <span
                                                         onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                         class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                            class="fa-solid fa-play text-warning"></i>
+                                                            class="fa-solid fa-play text-white"></i>
                                                         Lihat Video</span>
                                                 </div>
                                             </div>
@@ -3012,7 +3012,7 @@
                                                     <span
                                                         onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                         class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                            class="fa-solid fa-play text-warning"></i>
+                                                            class="fa-solid fa-play text-white"></i>
                                                         Lihat Video</span>
                                                 </div>
                                             </div>
@@ -3234,7 +3234,7 @@
                                                     <span
                                                         onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                         class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                            class="fa-solid fa-play text-warning"></i>
+                                                            class="fa-solid fa-play text-white"></i>
                                                         Lihat Video</span>
                                                 </div>
                                             </div>
@@ -3454,7 +3454,7 @@
                                                     <span
                                                         onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                         class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                            class="fa-solid fa-play text-warning"></i>
+                                                            class="fa-solid fa-play text-white"></i>
                                                         Lihat Video</span>
                                                 </div>
                                             </div>
@@ -3880,7 +3880,7 @@
                                                     <span
                                                         onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                         class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                            class="fa-solid fa-play text-warning"></i>
+                                                            class="fa-solid fa-play text-white"></i>
                                                         Lihat Video</span>
                                                 </div>
                                             </div>
@@ -3941,7 +3941,7 @@
 
                                     </div>
                                 </div>
-
+                                                
                                 <div class="col-12 custom">
                                     <div class="card mb-2 mx-auto">
                                         <div class="ribbon-pop">
@@ -4105,7 +4105,7 @@
                                                     <span
                                                         onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                         class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                            class="fa-solid fa-play text-warning"></i>
+                                                            class="fa-solid fa-play text-white"></i>
                                                         Lihat Video</span>
                                                 </div>
                                             </div>
@@ -4337,7 +4337,7 @@
                                                     <span
                                                         onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                         class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                            class="fa-solid fa-play text-warning"></i>
+                                                            class="fa-solid fa-play text-white"></i>
                                                         Lihat Video</span>
                                                 </div>
                                             </div>
@@ -4569,7 +4569,7 @@
                                                     <span
                                                         onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                         class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                            class="fa-solid fa-play text-warning"></i>
+                                                            class="fa-solid fa-play text-white"></i>
                                                         Lihat Video</span>
                                                 </div>
                                             </div>
@@ -5550,6 +5550,7 @@
                                                     <td>&nbsp;1 Ha</td>
                                                 </tr>
                                                 <tr>
+
                                                     <td>Objek Lelang</td>
                                                     <td></td>
                                                     <td>:</td>
@@ -5639,7 +5640,7 @@
                                                 <span
                                                     onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                     class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                        class="fa-solid fa-play text-warning"></i>
+                                                        class="fa-solid fa-play text-white"></i>
                                                     Lihat Video</span>
                                             </div>
                                         </div>
@@ -5914,7 +5915,7 @@
                                                 <span
                                                     onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                     class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                        class="fa-solid fa-play text-warning"></i>
+                                                        class="fa-solid fa-play text-white"></i>
                                                     Lihat Video</span>
                                             </div>
                                         </div>
@@ -6187,7 +6188,7 @@
                                                 <span
                                                     onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                     class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                        class="fa-solid fa-play text-warning"></i>
+                                                        class="fa-solid fa-play text-white"></i>
                                                     Lihat Video</span>
                                             </div>
                                         </div>
@@ -6458,7 +6459,7 @@
                                                 <span
                                                     onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                     class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                        class="fa-solid fa-play text-warning"></i>
+                                                        class="fa-solid fa-play text-white"></i>
                                                     Lihat Video</span>
                                             </div>
                                         </div>

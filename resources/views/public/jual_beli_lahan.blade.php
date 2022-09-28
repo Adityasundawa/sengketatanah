@@ -686,16 +686,16 @@
 
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
-                                                            <img src="{{$bs['img']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img1']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img1']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img2']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img2']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img3']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img3']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                     </div>
                                                     <button class="carousel-control-prev opacity-90 text-dark" type="button"
@@ -724,16 +724,16 @@
 
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
-                                                            <img src="{{$bs['img']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img1']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img1']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img2']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img2']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img3']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img3']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
                                                         </div>
                                                     </div>
                                                     <button class="carousel-control-prev opacity-90 text-dark" type="button"
@@ -770,7 +770,7 @@
                                                             </h5>
                                                         </td>
                                                         <td>
-                                                            <button class="btn btn-dark float-end"
+                                                            <button class="btn btn-info text-white float-end"
                                                                 data-bs-toggle="modal"
                                                                 data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                         </td>
@@ -786,7 +786,7 @@
                                                 </tr>
                                             
                                                 <tr>
-                                                    <td>Luas Objek</td>
+                                                    <td>Luas</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp;{{$bs['luas']}}</td>
@@ -805,11 +805,17 @@
                                                 </tr>
                                                 
                                                 <tr>
-                                                    <td>peruntukan</td>
+                                                    <td>Dokumen</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp;{{$bs['peruntukan']}}</td>
+                                                    <td>&nbsp;SHM</td>
                                                 </tr>
+                                                <tr>
+                                                        <td>Akses</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;Motor</td>
+                                                    </tr>
                                                 <tr>
                                                     <td>Jumlah Bid</td>
                                                     <td></td>
@@ -821,14 +827,14 @@
 
 
                                             <div class="row g-0">
-                                                <div class="col text-center" style="border-right: 1px solid">
+                                                <div class="col text-center">
 
-                                                    <a href="#" class="text-dark  mx-auto" data-bs-toggle="modal"
+                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                         data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas (12)
+                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
-                                                    <!-- Modal -->
+
                                                     <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
                                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
@@ -836,10 +842,11 @@
                                                                 <div class="modal-header p-0">
                                                                     <h1
                                                                         class="modal-title mx-auto text-danger display-1">
-                                                                        <i class="fa-regular fa-circle-xmark"></i></h1>
+                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                    </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus masuk sebagai sponsor sebelum melihat
+                                                                    Anda harus masukkan akun sebelum melihat
                                                                     berkas.
                                                                 </div>
                                                                 <div class="modal-footer">
@@ -858,11 +865,13 @@
                                                 </div>
                                                 <div class="col text-center">
                                                     <span
-                                                        onclick="return document.querySelector('form.form-sengketa<?=$bs['id']?>').submit()"
-                                                        style="cursor:pointer"><i
-                                                            class="fa-solid fa-play text-danger"></i> Lihat Video</span>
+                                                        onclick="return document.querySelector('form.form-sengketa1').submit()"
+                                                        class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                            class="fa-solid fa-play text-white"></i>
+                                                        Lihat Video</span>
                                                 </div>
                                             </div>
+
 
                                             <form action="{{url('/')}}/bid-sengketa/podcast"
                                                 class="form-sengketa{{$bs['id']}}" method="get">
