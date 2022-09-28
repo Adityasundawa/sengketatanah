@@ -5193,8 +5193,8 @@ class="btn btn-success rounded-5"                                               
                                                 </td>
                                                 
                                                 <td class="align-items-center" rowspan="2">
-                                                    <button class="btn btn-dark float-end" data-bs-toggle="modal"
-                                                        data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleSponsor">Ikut Lelang</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -5428,8 +5428,8 @@ class="btn btn-success rounded-5"                                               
                                                 </td>
                                                 
                                                 <td class="align-items-center" rowspan="2">
-                                                    <button class="btn btn-dark float-end" data-bs-toggle="modal"
-                                                        data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleSponsor">Ikut Lelang</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -5664,8 +5664,8 @@ class="btn btn-success rounded-5"                                               
                                                 </td>
                                                 
                                                 <td class="align-items-center" rowspan="2">
-                                                    <button class="btn btn-dark float-end" data-bs-toggle="modal"
-                                                        data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleSponsor">Ikut Lelang</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -5899,8 +5899,8 @@ class="btn btn-success rounded-5"                                               
                                                 </td>
                                                 
                                                 <td class="align-items-center" rowspan="2">
-                                                    <button class="btn btn-dark float-end" data-bs-toggle="modal"
-                                                        data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleSponsor">Ikut Lelang</button>
                                                 </td>
                                             </tr>
                                             <tr>
