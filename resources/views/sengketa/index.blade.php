@@ -4994,7 +4994,7 @@
                                                             </div>
                                                         <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
-                                                                <h3 class="mb-0">1 Ha</h3>
+                                                                <h4 class="mb-0">1 Ha</h4>
                                                             </div>
                                                             <div class="col">
                                                                 <h5 class="mb-0">Rp. 450 Juta</h5>
@@ -5023,7 +5023,7 @@
                                                             </div>
                                                         <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
-                                                                <h3 class="mb-0">3.2 Ha</h3>
+                                                                <h4 class="mb-0">3.2 Ha</h4>
                                                             </div>
                                                             <div class="col">
                                                                 <h5 class="mb-0">Rp. 200 Juta</h5>
@@ -5051,7 +5051,7 @@
                                                             </div>
                                                         <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
-                                                                <h3 class="mb-0">5000 m</h3>
+                                                                <h4 class="mb-0">5000 m</h4>
                                                             </div>
                                                             <div class="col">
                                                                 <h5 class="mb-0">Rp. 500 Juta</h5>
@@ -5080,7 +5080,7 @@
                                                             </div>
                                                         <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
-                                                                <h3 class="mb-0">3.2 Ha</h3>
+                                                                <h4 class="mb-0">3.2 Ha</h4>
                                                             </div>
                                                             <div class="col">
                                                                 <h5 class="mb-0">Rp. 200 Juta</h5>
