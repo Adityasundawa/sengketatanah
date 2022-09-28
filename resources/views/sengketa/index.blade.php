@@ -1554,44 +1554,44 @@
                                                             <td>Korban</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Bahru</td>
+                                                            <td>&nbsp;Bahru</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jenis Sengketa</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Sengketa Pertanahan</td>
+                                                            <td>&nbsp;Sengketa Pertanahan</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Lokasi</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Pancawati, Bogor</td>
+                                                            <td>&nbsp;Pancawati, Bogor</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Luas</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; 1 Ha</td>
+                                                            <td>&nbsp;1 Ha</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Kebutuhan Dana</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Rp.450.000.000</td>
+                                                            <td>&nbsp;Rp.450.000.000</td>
                                                         </tr>
 
                                                         <tr>
                                                             <td>Imbal Hasil</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Fee 50% Dari Pinjaman</td>
+                                                            <td>&nbsp;Fee 50% Dari Pinjaman</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jaminan</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Sertifikat Tanah</td>
+                                                            <td>&nbsp;Sertifikat Tanah</td>
 
                                                         </tr>
 
@@ -1789,44 +1789,44 @@
                                                             <td>Korban</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Fatah</td>
+                                                            <td>&nbsp;Fatah</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jenis Sengketa</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Konflik Pertanahan</td>
+                                                            <td>&nbsp;Konflik Pertanahan</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Lokasi</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Pancawati, Bogor</td>
+                                                            <td>&nbsp;Pancawati, Bogor</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Luas</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; 5000 m</td>
+                                                            <td>&nbsp;5000 m</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Kebutuhan Dana</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Rp.500.000.000</td>
+                                                            <td>&nbsp;Rp.500.000.000</td>
                                                         </tr>
 
                                                         <tr>
                                                             <td>Imbal Hasil</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Bagi Hasil 70/30*</td>
+                                                            <td>&nbsp;Bagi Hasil 70/30*</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jaminan</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Sertifikat Rumah</td>
+                                                            <td>&nbsp;Sertifikat Rumah</td>
 
                                                         </tr>
 
@@ -2021,44 +2021,44 @@
                                                             <td>Korban</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Ophelia Suartini</td>
+                                                            <td>&nbsp;Ophelia Suartini</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jenis Sengketa</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Perkara Pertanahan</td>
+                                                            <td>&nbsp;Perkara Pertanahan</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Lokasi</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Medan, Sumatra Utara</td>
+                                                            <td>&nbsp;Medan, Sumatra Utara</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Luas</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; 3.2 Ha</td>
+                                                            <td>&nbsp;3.2 Ha</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Kebutuhan Dana</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Rp.200.000.000</td>
+                                                            <td>&nbsp;Rp.200.000.000</td>
                                                         </tr>
 
                                                         <tr>
                                                             <td>Imbal Hasil</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Bagi Hasil 60/40*</td>
+                                                            <td>&nbsp;Bagi Hasil 60/40*</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jaminan</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Sertifikat Tanah</td>
+                                                            <td>&nbsp;Sertifikat Tanah</td>
 
                                                         </tr>
 
@@ -2253,44 +2253,44 @@
                                                             <td>Korban</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Ophelia Suartini</td>
+                                                            <td>&nbsp;Ophelia Suartini</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jenis Sengketa</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Perkara Pertanahan</td>
+                                                            <td>&nbsp;Perkara Pertanahan</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Lokasi</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Medan, Sumatra Utara</td>
+                                                            <td>&nbsp;Medan, Sumatra Utara</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Luas</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; 3.2 Ha</td>
+                                                            <td>&nbsp;3.2 Ha</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Kebutuhan Dana</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Rp.200.000.000</td>
+                                                            <td>&nbsp;Rp.200.000.000</td>
                                                         </tr>
 
                                                         <tr>
                                                             <td>Imbal Hasil</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Bagi Hasil 60/40*</td>
+                                                            <td>&nbsp;Bagi Hasil 60/40*</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jaminan</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp; Sertifikat Tanah</td>
+                                                            <td>&nbsp;Sertifikat Tanah</td>
 
                                                         </tr>
 
@@ -2649,25 +2649,18 @@
 
                                             <table>
                                                 <tbody>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>Owner</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp; Bahru</td>
-                                                    </tr>
+                                                    
                                                     <tr>
                                                         <td>Lokasi</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp; Pancawati, Bogor</td>
+                                                        <td>&nbsp;Pancawati, Bogor</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Luas</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp; 1 Ha</td>
+                                                        <td>&nbsp;1 Ha</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Jenis Lahan</td>
@@ -2874,19 +2867,19 @@ class="btn btn-success rounded-5"                                               
                                                         <td>Owner</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp; Fatah</td>
+                                                        <td>&nbsp;Fatah</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Lokasi</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp; Pancawati, Bogor</td>
+                                                        <td>&nbsp;Pancawati, Bogor</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Luas</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp; 5000 m</td>
+                                                        <td>&nbsp;5000 m</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Jenis Lahan</td>
@@ -3094,19 +3087,19 @@ class="btn btn-success rounded-5"                                               
                                                         <td>Owner</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp; Ophelia Suartini</td>
+                                                        <td>&nbsp;Ophelia Suartini</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Lokasi</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp; Medan, Sumatra Utara</td>
+                                                        <td>&nbsp;Medan, Sumatra Utara</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Luas</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp; 3.2 Ha</td>
+                                                        <td>&nbsp;3.2 Ha</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Jenis Lahan</td>
@@ -3314,19 +3307,19 @@ class="btn btn-success rounded-5"                                               
                                                         <td>Owner</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp; Ophelia Suartini</td>
+                                                        <td>&nbsp;Ophelia Suartini</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Lokasi</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp; Medan, Sumatra Utara</td>
+                                                        <td>&nbsp;Medan, Sumatra Utara</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Luas</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp; 3.2 Ha</td>
+                                                        <td>&nbsp;3.2 Ha</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Jenis Lahan</td>
@@ -3729,7 +3722,7 @@ class="btn btn-success rounded-5"                                               
                                                         </h5>
                                                     </td>
                                                     <td>
-                                                        <button class="btn btn-dark float-end" data-bs-toggle="modal"
+                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal"
                                                             data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                     </td>
                                                 </tr>
@@ -3737,25 +3730,18 @@ class="btn btn-success rounded-5"                                               
                                             <hr style="margin-top:-4px">
                                             <table>
                                                 <tbody>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>Owner</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp; Bahru</td>
-                                                    </tr>
+                                                    
                                                     <tr>
                                                         <td>Luas</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp; 1 Ha</td>
+                                                        <td>&nbsp;1 Ha</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Lokasi</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp; Pancawati, Bogor</td>
+                                                        <td>&nbsp;Pancawati, Bogor</td>
                                                     </tr>
 
 
@@ -3766,10 +3752,10 @@ class="btn btn-success rounded-5"                                               
                                                         <td>&nbsp;Tanah Darat</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Peruntukan</td>
+                                                        <td>Dokumen</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp;Permukiman</td>
+                                                        <td>&nbsp;SHM</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Jumlah Bid</td>
@@ -3787,7 +3773,7 @@ class="btn btn-success rounded-5"                                               
 
                                                     <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                         data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
@@ -3955,7 +3941,7 @@ class="btn btn-success rounded-5"                                               
                                                         </h5>
                                                     </td>
                                                     <td>
-                                                        <button class="btn btn-dark float-end" data-bs-toggle="modal"
+                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal"
                                                             data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                     </td>
                                                 </tr>
@@ -3963,24 +3949,17 @@ class="btn btn-success rounded-5"                                               
                                             <hr style="margin-top:-4px">
                                             <table>
                                                 <tbody>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Owner</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp; Fatah</td>
-                                                    </tr>
                                                     <tr>
                                                         <td>Luas</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp; 5000 m</td>
+                                                        <td>&nbsp;5000 m</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Lokasi</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp; Pancawati, Bogor</td>
+                                                        <td>&nbsp;Pancawati, Bogor</td>
                                                     </tr>
 
 
@@ -3991,10 +3970,10 @@ class="btn btn-success rounded-5"                                               
                                                         <td>&nbsp;Tanah Darat</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Peruntukan</td>
+                                                        <td>Dokumen</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp;Permukiman</td>
+                                                        <td>&nbsp;HGB</td>
                                                     </tr>
 
                                                     <tr>
@@ -4014,7 +3993,7 @@ class="btn btn-success rounded-5"                                               
 
                                                     <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                         data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
@@ -4188,7 +4167,7 @@ class="btn btn-success rounded-5"                                               
                                                         </h5>
                                                     </td>
                                                     <td>
-                                                        <button class="btn btn-dark float-end" data-bs-toggle="modal"
+                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal"
                                                             data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                     </td>
                                                 </tr>
@@ -4196,24 +4175,17 @@ class="btn btn-success rounded-5"                                               
                                             <hr style="margin-top:-4px">
                                             <table>
                                                 <tbody>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Owner</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp; Ophelia Suartini</td>
-                                                    </tr>
                                                     <tr>
                                                         <td>Luas</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp; 3.2 Ha</td>
+                                                        <td>&nbsp;3.2 Ha</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Lokasi</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp; Medan, Sumatra Utara</td>
+                                                        <td>&nbsp;Medan, Sumatra Utara</td>
                                                     </tr>
 
 
@@ -4224,10 +4196,10 @@ class="btn btn-success rounded-5"                                               
                                                         <td>&nbsp;Tanah Darat</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Peruntukan</td>
+                                                        <td>Dokumen</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp;Permukiman</td>
+                                                        <td>&nbsp;AJB</td>
                                                     </tr>
 
 
@@ -4248,7 +4220,7 @@ class="btn btn-success rounded-5"                                               
 
                                                     <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                         data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
@@ -4422,7 +4394,7 @@ class="btn btn-success rounded-5"                                               
                                                         </h5>
                                                     </td>
                                                     <td>
-                                                        <button class="btn btn-dark float-end" data-bs-toggle="modal"
+                                                        <button class="btn btn-info float-end" data-bs-toggle="modal"
                                                             data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                     </td>
                                                 </tr>
@@ -4430,24 +4402,17 @@ class="btn btn-success rounded-5"                                               
                                             <hr style="margin-top:-4px">
                                             <table>
                                                 <tbody>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Owner</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp; Ophelia Suartini</td>
-                                                    </tr>
                                                     <tr>
                                                         <td>Luas</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp; 3.2 Ha</td>
+                                                        <td>&nbsp;3.2 Ha</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Lokasi</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp; Medan, Sumatra Utara</td>
+                                                        <td>&nbsp;Medan, Sumatra Utara</td>
                                                     </tr>
 
 
@@ -4458,10 +4423,10 @@ class="btn btn-success rounded-5"                                               
                                                         <td>&nbsp;Tanah Darat</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Peruntukan</td>
+                                                        <td>Dokumen</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>&nbsp;Permukiman</td>
+                                                        <td>&nbsp;PPJB</td>
                                                     </tr>
 
 
@@ -4481,7 +4446,7 @@ class="btn btn-success rounded-5"                                               
 
                                                     <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                         data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
@@ -4540,6 +4505,233 @@ class="btn btn-success rounded-5"                                               
                                                 <div class="col-4">
 
                                                     <div class="d-grid gap-2 ">
+                                                        <!-- <button type="button"
+                                                        class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                        BID
+                                                    </button> -->
+
+
+                                                        <div class="modal fade my-auto" id="exampleSponsor"
+                                                            tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1
+                                                                            class="modal-title mx-auto text-danger display-1">
+                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus masuk sebagai sponsor sebelum
+                                                                        melakukan bid.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button"
+                                                                            class="btn btn-secondary me-auto"
+                                                                            data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success"
+                                                                            href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger"
+                                                                            href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-12 custom">
+                                    <div class="card mb-2 mx-auto">
+                                        <div class="ribbon-pop">
+                                            <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                        </div>
+                                        <div id="jbl2" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#jbl2" data-bs-slide-to="0"
+                                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#jbl2" data-bs-slide-to="1"
+                                                    aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#jbl2" data-bs-slide-to="2"
+                                                    aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#jbl2" data-bs-slide-to="3"
+                                                    aria-label="Slide 4"></button>
+                                            </div>
+
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100"
+                                                        style="height:200px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100"
+                                                        style="height:200px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100"
+                                                        style="height:200px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100"
+                                                        style="height:200px;width:auto;object-fit:cover">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                data-bs-target="#jbl2" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                    aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                data-bs-target="#jbl2" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                    aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                        <div div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                            <div class="row">
+
+                                                <div class="col-lg-12">
+                                                    <h5 class="mb-0 text-center">Kode Bidang JBL-001 <img
+                                                            src="{{asset('')}}uploads/biru_centang.png" alt=""
+                                                            class="mb-1" style="height:20px"></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body pt-0">
+                                            <table class="mt-2 mb-2">
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <h5>
+                                                            <b class="text-primary">
+                                                                Rp.500.000.000
+                                                            </b>
+                                                        </h5>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal"
+                                                            data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <hr style="margin-top:-4px">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Luas</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;2 Ha</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lokasi</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;Pancawati, Bogor</td>
+                                                    </tr>
+
+
+                                                    <tr>
+                                                        <td>Jenis Lahan</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;Tanah Darat</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Dokumen</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;Girik</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Jumlah Bid</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;4</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <hr>
+
+
+
+                                            <div class="row g-0">
+                                                <div class="col text-center">
+
+                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                                        data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                    </a>
+
+
+                                                    <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header p-0">
+                                                                    <h1
+                                                                        class="modal-title mx-auto text-danger display-1">
+                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                    </h1>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    Anda harus masukkan akun sebelum melihat
+                                                                    berkas.
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button"
+                                                                        class="btn btn-secondary me-auto"
+                                                                        data-bs-dismiss="modal">Close</button>
+                                                                    <a type="button" class="btn btn-success"
+                                                                        href="https://server.sengketatanah.id/login">Login</a>
+                                                                    <a type="button" class="btn btn-danger"
+                                                                        href="https://server.sengketatanah.id/login">Register</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col text-center">
+                                                    <span
+                                                        onclick="return document.querySelector('form.form-sengketa1').submit()"
+                                                        class="btn btn-success rounded-5"style="cursor:pointer"><i
+                                                            class="fa-solid fa-play text-danger"></i>
+                                                        Lihat Video</span>
+                                                </div>
+                                            </div>
+
+                                            <form action="http://localhost:8000/bid-sengketa/podcast"
+                                                class="form-sengketa2" method="get">
+                                                <input type="hidden" name="owner" value=" Fatah">
+                                                <input type="hidden" name="objek" value=" Konflik Pertanahan">
+                                                <input type="hidden" name="luas" value=" 5000 m">
+                                                <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
+                                                <input type="hidden" name="komentar" value="">
+                                                <input type="hidden" name="link_yt"
+                                                    value="https://www.youtube.com/embed/byby3HJ3OCI">
+                                                <input type="hidden" name="form" value="sponsor">
+                                            </form>
+
+
+                                            <hr>
+                                            <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                <div class="col-4">
+
+                                                    <div class="d-grid gap-2 ">
+
                                                         <!-- <button type="button"
                                                         class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
                                                         data-bs-toggle="modal" data-bs-target="#exampleSponsor">
@@ -5214,7 +5406,7 @@ class="btn btn-success rounded-5"                                               
                                                     <td>Lokasi</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp; Pancawati, Bogor</td>
+                                                    <td>&nbsp;Pancawati, Bogor</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Luas</td>
@@ -5467,7 +5659,7 @@ class="btn btn-success rounded-5"                                               
                                                     <td>Lokasi</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp; Pancawati, Bogor</td>
+                                                    <td>&nbsp;Pancawati, Bogor</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Luas</td>
@@ -5719,7 +5911,7 @@ class="btn btn-success rounded-5"                                               
                                                     <td>Lokasi</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp; Medan, Sumatra Utara</td>
+                                                    <td>&nbsp;Medan, Sumatra Utara</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Luas</td>
@@ -5970,7 +6162,7 @@ class="btn btn-success rounded-5"                                               
                                                     <td>Lokasi</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp; Medan, Sumatra Utara</td>
+                                                    <td>&nbsp;Medan, Sumatra Utara</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Luas</td>
