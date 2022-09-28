@@ -5254,18 +5254,18 @@ class="btn btn-success rounded-5"                                               
                                                     <td>&nbsp;28 September 2022</td>
                                                 </tr>
 
-                                                <tr>
-                                                    <td>Jumlah Bid</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;3</td>
-                                                </tr>
-
+                                                
                                                 <tr>
                                                     <td>Penyelenggara</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp;Sengketatanah.id</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jumlah Bid</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;3</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -5277,7 +5277,7 @@ class="btn btn-success rounded-5"                                               
 
                                                 <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
@@ -5507,18 +5507,18 @@ class="btn btn-success rounded-5"                                               
                                                     <td>&nbsp;9 September 2022</td>
                                                 </tr>
 
-                                                <tr>
-                                                    <td>Jumlah Bid</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;4</td>
-                                                </tr>
-
+                                                
                                                 <tr>
                                                     <td>Penyelenggara</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp;Sengketatanah.id</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jumlah Bid</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;4</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -5531,7 +5531,7 @@ class="btn btn-success rounded-5"                                               
 
                                                 <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
@@ -5759,18 +5759,18 @@ class="btn btn-success rounded-5"                                               
                                                     <td>&nbsp;22 Agustus 2022</td>
                                                 </tr>
 
-                                                <tr>
-                                                    <td>Jumlah Bid</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;6</td>
-                                                </tr>
-
+                                                
                                                 <tr>
                                                     <td>Penyelenggara</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp;Sengketatanah.id</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jumlah Bid</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;6</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -5783,7 +5783,7 @@ class="btn btn-success rounded-5"                                               
 
                                                 <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
@@ -6010,18 +6010,18 @@ class="btn btn-success rounded-5"                                               
                                                     <td>&nbsp;28 September 2022</td>
                                                 </tr>
 
-                                                <tr>
-                                                    <td>Jumlah Bid</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;6</td>
-                                                </tr>
-
+                                                
                                                 <tr>
                                                     <td>Penyelenggara</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp;Sengketatanah.id</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jumlah Bid</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;6</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -6033,7 +6033,7 @@ class="btn btn-success rounded-5"                                               
 
                                                 <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
