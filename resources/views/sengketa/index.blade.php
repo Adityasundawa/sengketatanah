@@ -6635,10 +6635,10 @@
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h5 class="mb-0">Nilai Limit :</h5>
+                                                        <h6 class="mb-0">Nilai Limit :</h6>
                                                     </div>
                                                     <div class="col mb-2">
-                                                        <h3 class="mb-0">Rp. 450 Juta</h3>
+                                                        <h5 class="mb-0">Rp. 450 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6665,10 +6665,10 @@
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h5 class="mb-0">Nilai Limit :</h5>
+                                                        <h6 class="mb-0">Nilai Limit :</h6>
                                                     </div>
                                                     <div class="col mb-2">
-                                                        <h3 class="mb-0">Rp. 200 Juta</h3>
+                                                        <h5 class="mb-0">Rp. 200 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6694,10 +6694,10 @@
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h5 class="mb-0">Nilai Limit :</h5>
+                                                        <h6 class="mb-0">Nilai Limit :</h6>
                                                     </div>
                                                     <div class="col mb-2">
-                                                        <h3 class="mb-0">Rp. 500 Juta</h3>
+                                                        <h5 class="mb-0">Rp. 500 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6724,10 +6724,10 @@
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h5 class="mb-0">Nilai Limit :</h5>
+                                                        <h6 class="mb-0">Nilai Limit :</h6>
                                                     </div>
                                                     <div class="col mb-2">
-                                                        <h3 class="mb-0">Rp. 200 Juta</h3>
+                                                        <h5 class="mb-0">Rp. 200 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6794,10 +6794,10 @@
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h5 class="mb-0">Nilai Limit :</h5>
+                                                        <h6 class="mb-0">Nilai Limit :</h6>
                                                     </div>
                                                     <div class="col mb-2">
-                                                        <h3 class="mb-0">Rp. 200 Juta</h3>
+                                                        <h5 class="mb-0">Rp. 200 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6823,10 +6823,10 @@
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h5 class="mb-0">Nilai Limit :</h5>
+                                                        <h6 class="mb-0">Nilai Limit :</h6>
                                                     </div>
                                                     <div class="col mb-2">
-                                                        <h3 class="mb-0">Rp. 450 Juta</h3>
+                                                        <h5 class="mb-0">Rp. 450 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6853,10 +6853,10 @@
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h5 class="mb-0">Nilai Limit :</h5>
+                                                        <h6 class="mb-0">Nilai Limit :</h6>
                                                     </div>
                                                     <div class="col mb-2">
-                                                        <h3 class="mb-0">Rp. 500 Juta</h3>
+                                                        <h5 class="mb-0">Rp. 500 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6883,10 +6883,10 @@
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h5 class="mb-0">Nilai Limit :</h5>
+                                                        <h6 class="mb-0">Nilai Limit :</h6>
                                                     </div>
                                                     <div class="col mb-2">
-                                                        <h3 class="mb-0">Rp. 200 Juta</h3>
+                                                        <h5 class="mb-0">Rp. 200 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
