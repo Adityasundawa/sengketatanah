@@ -828,7 +828,7 @@
                                                 <span
                                                     onclick="return document.querySelector('form.form-sengketa1').submit()"
                                                     class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                        class="fa-solid fa-play text-warning"></i>
+                                                        class="fa-solid fa-play text-white"></i>
                                                     Lihat Video</span>
                                             </div>
                                         </div>
