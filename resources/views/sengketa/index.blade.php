@@ -5188,16 +5188,22 @@ class="btn btn-success rounded-5"                                               
                                     <div class="card-body pt-0">
                                         <table class="mt-2 mb-2">
                                             <tr>
+                                                <td>
+                                                    <b>Nilai Limit :</b>
+                                                </td>
+                                                
+                                                <td class="align-items-center" rowspan="2">
+                                                    <button class="btn btn-dark float-end" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
                                                 <td class="text-start">
                                                     <h5>
                                                         <b class="text-primary">
                                                             Rp.450.000.000
                                                         </b>
                                                     </h5>
-                                                </td>
-                                                <td>
-                                                    <button class="btn btn-dark float-end" data-bs-toggle="modal"
-                                                        data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                 </td>
                                             </tr>
                                         </table>
@@ -5417,16 +5423,22 @@ class="btn btn-success rounded-5"                                               
                                     <div class="card-body pt-0">
                                         <table class="mt-2 mb-2">
                                             <tr>
+                                                <td>
+                                                    <b>Nilai Limit :</b>
+                                                </td>
+                                                
+                                                <td class="align-items-center" rowspan="2">
+                                                    <button class="btn btn-dark float-end" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
                                                 <td class="text-start">
                                                     <h5>
                                                         <b class="text-primary">
                                                             Rp.500.000.000
                                                         </b>
                                                     </h5>
-                                                </td>
-                                                <td>
-                                                    <button class="btn btn-dark float-end" data-bs-toggle="modal"
-                                                        data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                 </td>
                                             </tr>
                                         </table>
@@ -5647,16 +5659,22 @@ class="btn btn-success rounded-5"                                               
                                     <div class="card-body pt-0">
                                         <table class="mt-2 mb-2">
                                             <tr>
+                                                <td>
+                                                    <b>Nilai Limit :</b>
+                                                </td>
+                                                
+                                                <td class="align-items-center" rowspan="2">
+                                                    <button class="btn btn-dark float-end" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
                                                 <td class="text-start">
                                                     <h5>
                                                         <b class="text-primary">
                                                             Rp.100.000.000
                                                         </b>
                                                     </h5>
-                                                </td>
-                                                <td>
-                                                    <button class="btn btn-dark float-end" data-bs-toggle="modal"
-                                                        data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                 </td>
                                             </tr>
                                         </table>
@@ -5876,16 +5894,22 @@ class="btn btn-success rounded-5"                                               
                                     <div class="card-body pt-0">
                                         <table class="mt-2 mb-2">
                                             <tr>
+                                                <td>
+                                                    <b>Nilai Limit :</b>
+                                                </td>
+                                                
+                                                <td class="align-items-center" rowspan="2">
+                                                    <button class="btn btn-dark float-end" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
                                                 <td class="text-start">
                                                     <h5>
                                                         <b class="text-primary">
                                                             Rp.200.000.000
                                                         </b>
                                                     </h5>
-                                                </td>
-                                                <td>
-                                                    <button class="btn btn-dark float-end" data-bs-toggle="modal"
-                                                        data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                 </td>
                                             </tr>
                                         </table>
