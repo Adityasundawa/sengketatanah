@@ -4989,10 +4989,10 @@
                                                     <div class="card-body p-0 text-start">
                                                         <img src="{{asset('')}}images/lahan1.jpeg"
                                                             class="a-image w-100 rounded-top" alt="">
-                                                            <div class="col-12 bg-primary pt-2 px-4 pb-2 text-white">
+                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
                                                                 <h4 class="mb-0">Dijual</h4>
                                                             </div>
-                                                        <div class="row pt-1 px-4 pb-4 g-0 text-black" style="background: #dadada">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
                                                                 <h3 class="mb-0">1 Ha</h3>
                                                             </div>
@@ -5018,10 +5018,10 @@
                                                     <div class="card-body p-0 text-start">
                                                         <img src="{{asset('')}}images/lahan4.jpeg"
                                                             class="a-image w-100 rounded-top" alt="">
-                                                            <div class="col-12 bg-primary pt-2 px-4 pb-2 text-white">
+                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
                                                                 <h4 class="mb-0">Dijual</h4>
                                                             </div>
-                                                        <div class="row pt-1 px-4 pb-4 g-0 text-black" style="background: #dadada">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
                                                                 <h3 class="mb-0">3.2 Ha</h3>
                                                             </div>
@@ -5046,10 +5046,10 @@
                                                     <div class="card-body p-0 text-start">
                                                         <img src="{{asset('')}}images/lahan2.jpeg"
                                                             class="a-image w-100 rounded-top" alt="">
-                                                            <div class="col-12 bg-primary pt-2 px-4 pb-2 text-white">
+                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
                                                                 <h4 class="mb-0">Dijual</h4>
                                                             </div>
-                                                        <div class="row pt-1 px-4 pb-4 g-0 text-black" style="background: #dadada">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
                                                                 <h3 class="mb-0">5000 m</h3>
                                                             </div>
@@ -5075,10 +5075,10 @@
                                                     <div class="card-body p-0 text-start">
                                                         <img src="{{asset('')}}images/lahan3.jpeg"
                                                             class="a-image w-100 rounded-top" alt="">
-                                                            <div class="col-12 bg-primary pt-2 px-4 pb-2 text-white">
+                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
                                                                 <h4 class="mb-0">Dijual</h4>
                                                             </div>
-                                                        <div class="row pt-1 px-4 pb-4 g-0 text-black" style="background: #dadada">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
                                                                 <h3 class="mb-0">3.2 Ha</h3>
                                                             </div>
@@ -5140,10 +5140,10 @@
                                                     <div class="card-body p-0 text-start">
                                                         <img src="{{asset('')}}images/lahan4.jpeg"
                                                             class="a-image w-100 rounded-top" alt="">
-                                                            <div class="col-12 bg-primary pt-2 px-4 pb-2 text-white">
+                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
                                                                 <h4 class="mb-0">Dijual</h4>
                                                             </div>
-                                                        <div class="row pt-1 px-4 pb-4 g-0 text-black" style="background: #dadada">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
                                                                 <h3 class="mb-0">3.2 Ha</h3>
                                                             </div>
@@ -5168,10 +5168,10 @@
                                                     <div class="card-body p-0 text-start">
                                                         <img src="{{asset('')}}images/lahan1.jpeg"
                                                             class="a-image w-100 rounded-top" alt="">
-                                                            <div class="col-12 bg-primary pt-2 px-4 pb-2 text-white">
+                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
                                                                 <h4 class="mb-0">Dijual</h4>
                                                             </div>
-                                                        <div class="row pt-1 px-4 pb-4 g-0 text-black" style="background: #dadada">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
                                                                 <h3 class="mb-0">1 Ha</h3>
                                                             </div>
@@ -5197,10 +5197,10 @@
                                                     <div class="card-body p-0 text-start">
                                                         <img src="{{asset('')}}images/lahan2.jpeg"
                                                             class="a-image w-100 rounded-top" alt="">
-                                                            <div class="col-12 bg-primary pt-2 px-4 pb-2 text-white">
+                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
                                                                 <h4 class="mb-0">Dijual</h4>
                                                             </div>
-                                                        <div class="row pt-1 px-4 pb-4 g-0 text-black" style="background: #dadada">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
                                                                 <h3 class="mb-0">5000 m</h3>
                                                             </div>
@@ -5226,10 +5226,10 @@
                                                     <div class="card-body p-0 text-start">
                                                         <img src="{{asset('')}}images/lahan3.jpeg"
                                                             class="a-image w-100 rounded-top" alt="">
-                                                            <div class="col-12 bg-primary pt-2 px-4 pb-2 text-white">
+                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
                                                                 <h4 class="mb-0">Dijual</h4>
                                                             </div>
-                                                        <div class="row pt-1 px-4 pb-4 g-0 text-black" style="background: #dadada">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
                                                                 <h3 class="mb-0">3.2 Ha</h3>
                                                             </div>
@@ -6636,10 +6636,10 @@
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h5 class="mb-0">Nilai Limit :</h5>
+                                                        <h6 class="mb-0">Nilai Limit :</h6>
                                                     </div>
                                                     <div class="col mb-2">
-                                                        <h3 class="mb-0">Rp. 450 Juta</h3>
+                                                        <h5 class="mb-0">Rp. 450 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6666,10 +6666,10 @@
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h5 class="mb-0">Nilai Limit :</h5>
+                                                        <h6 class="mb-0">Nilai Limit :</h6>
                                                     </div>
                                                     <div class="col mb-2">
-                                                        <h3 class="mb-0">Rp. 200 Juta</h3>
+                                                        <h5 class="mb-0">Rp. 200 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6695,10 +6695,10 @@
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h5 class="mb-0">Nilai Limit :</h5>
+                                                        <h6 class="mb-0">Nilai Limit :</h6>
                                                     </div>
                                                     <div class="col mb-2">
-                                                        <h3 class="mb-0">Rp. 500 Juta</h3>
+                                                        <h5 class="mb-0">Rp. 500 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6725,10 +6725,10 @@
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h5 class="mb-0">Nilai Limit :</h5>
+                                                        <h6 class="mb-0">Nilai Limit :</h6>
                                                     </div>
                                                     <div class="col mb-2">
-                                                        <h3 class="mb-0">Rp. 200 Juta</h3>
+                                                        <h5 class="mb-0">Rp. 200 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6795,10 +6795,10 @@
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h5 class="mb-0">Nilai Limit :</h5>
+                                                        <h6 class="mb-0">Nilai Limit :</h6>
                                                     </div>
                                                     <div class="col mb-2">
-                                                        <h3 class="mb-0">Rp. 200 Juta</h3>
+                                                        <h5 class="mb-0">Rp. 200 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6824,10 +6824,10 @@
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h5 class="mb-0">Nilai Limit :</h5>
+                                                        <h6 class="mb-0">Nilai Limit :</h6>
                                                     </div>
                                                     <div class="col mb-2">
-                                                        <h3 class="mb-0">Rp. 450 Juta</h3>
+                                                        <h5 class="mb-0">Rp. 450 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6854,10 +6854,10 @@
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h5 class="mb-0">Nilai Limit :</h5>
+                                                        <h6 class="mb-0">Nilai Limit :</h6>
                                                     </div>
                                                     <div class="col mb-2">
-                                                        <h3 class="mb-0">Rp. 500 Juta</h3>
+                                                        <h5 class="mb-0">Rp. 500 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
@@ -6884,10 +6884,10 @@
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
-                                                        <h5 class="mb-0">Nilai Limit :</h5>
+                                                        <h6 class="mb-0">Nilai Limit :</h6>
                                                     </div>
                                                     <div class="col mb-2">
-                                                        <h3 class="mb-0">Rp. 200 Juta</h3>
+                                                        <h5 class="mb-0">Rp. 200 Juta</h5>
                                                     </div>
                                                     <div class="col-4 text-end">
                                                         <a href="#" style="text-decoration: none">
