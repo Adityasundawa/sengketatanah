@@ -869,7 +869,7 @@
 
 
                                             <div class="row g-0">
-                                                <div class="col text-center" style="border-right: 1px solid">
+                                                <div class="col text-center" >
 
                                                     <a href="#" class=" mx-auto btn btn-danger rounded-5"
                                                         data-bs-toggle="modal" data-bs-target="#berkasSponsor"
@@ -1129,7 +1129,7 @@
                                             <hr>
 
                                             <div class="row g-0">
-                                                <div class="col text-center" style="border-right: 1px solid">
+                                                <div class="col text-center">
                                                     <a href="#" class="mx-auto btn btn-danger rounded-5"
                                                         data-bs-toggle="modal" data-bs-target="#berkasPengacara"
                                                         style="text-decoration:none">
