@@ -600,7 +600,7 @@
 
             <div class="col-lg-12">
 
-                <div class="card mb-0 border-0"style="z-index:999">
+                <div class="card mb-0 border-0" style="z-index:999">
                     <div class="card-body pb-0">
                         <div class="row justify-content-between text-center"
                             style="overflow-x: auto; flex-wrap: nowrap">
@@ -969,7 +969,7 @@
 
 
 
-                <div class="card mb-3 border-0 shadow-sm"style="margin-top:-10px">
+                <div class="card mb-3 border-0 shadow-sm" style="margin-top:-10px">
                     <div class="card-body pb-1 pt-2">
                         <div class="row">
                             <div class="col-3 text-center mb-2">
@@ -1360,8 +1360,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div id="carouselExampleControlsPres" class="carousel slide mobile  mb-4"
-                                        >
+                                        <div id="carouselExampleControlsPres" class="carousel slide mobile  mb-4">
                                             <div class="carousel-inner  mb-5">
                                                 <div class="carousel-item active">
                                                     <div class="card-body text-center container" style="height:505px">
@@ -1548,7 +1547,7 @@
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
-                                            <div id="bidding1" class="carousel slide"data-bs-interval="false">
+                                            <div id="bidding1" class="carousel slide" data-bs-interval="false">
                                                 <div class="carousel-indicators">
                                                     <button type="button" data-bs-target="#bidding1"
                                                         data-bs-slide-to="0" class="active" aria-current="true"
@@ -1786,7 +1785,7 @@
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
-                                            <div id="bidding2" class="carousel slide"data-bs-interval="false">
+                                            <div id="bidding2" class="carousel slide" data-bs-interval="false">
                                                 <div class="carousel-indicators">
                                                     <button type="button" data-bs-target="#bidding2"
                                                         data-bs-slide-to="0" class="active" aria-current="true"
@@ -2019,7 +2018,7 @@
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
-                                            <div id="bidding3" class="carousel slide"data-bs-interval="false">
+                                            <div id="bidding3" class="carousel slide" data-bs-interval="false">
                                                 <div class="carousel-indicators">
                                                     <button type="button" data-bs-target="#bidding3"
                                                         data-bs-slide-to="0" class="active" aria-current="true"
@@ -2250,7 +2249,7 @@
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
-                                            <div id="bidding4" class="carousel slide"data-bs-interval="false">
+                                            <div id="bidding4" class="carousel slide" data-bs-interval="false">
                                                 <div class="carousel-indicators">
                                                     <button type="button" data-bs-target="#bidding4"
                                                         data-bs-slide-to="0" class="active" aria-current="true"
@@ -2652,7 +2651,7 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="ksl2" class="carousel slide"data-bs-interval="false">
+                                        <div id="ksl2" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#ksl2" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -2880,7 +2879,7 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="ksl10" class="carousel slide"data-bs-interval="false">
+                                        <div id="ksl10" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#ksl10" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -3108,7 +3107,7 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="ksl3" class="carousel slide"data-bs-interval="false">
+                                        <div id="ksl3" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#ksl3" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -3336,7 +3335,7 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="ksl4" class="carousel slide"data-bs-interval="false">
+                                        <div id="ksl4" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#ksl4" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -3563,7 +3562,7 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="ksl2" class="carousel slide"data-bs-interval="false">
+                                        <div id="ksl2" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#ksl2" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -3987,7 +3986,7 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="jbl1" class="carousel slide"data-bs-interval="false">
+                                        <div id="jbl1" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl1" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -4052,7 +4051,8 @@
                                                         </h5>
                                                     </td>
                                                     <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal"
+                                                        <button class="btn btn-info text-white float-end"
+                                                            data-bs-toggle="modal"
                                                             data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                     </td>
                                                 </tr>
@@ -4060,7 +4060,7 @@
                                             <hr style="margin-top:-4px">
                                             <table>
                                                 <tbody>
-                                                    
+
                                                     <tr>
                                                         <td>Luas</td>
                                                         <td></td>
@@ -4094,10 +4094,10 @@
                                                         <td>&nbsp;Mobil</td>
                                                     </tr>
                                                     </tr>
-                                                        <td>Jumlah Bid</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;3</td>
+                                                    <td>Jumlah Bid</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;3</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -4107,8 +4107,9 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
-                                                        data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5"
+                                                        data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                        style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -4206,13 +4207,13 @@
 
                                     </div>
                                 </div>
-                                                
+
                                 <div class="col-12 custom">
                                     <div class="card mb-2 mx-auto">
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="jbl2" class="carousel slide"data-bs-interval="false">
+                                        <div id="jbl2" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl2" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -4277,7 +4278,8 @@
                                                         </h5>
                                                     </td>
                                                     <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal"
+                                                        <button class="btn btn-info text-white float-end"
+                                                            data-bs-toggle="modal"
                                                             data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                     </td>
                                                 </tr>
@@ -4332,8 +4334,9 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
-                                                        data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5"
+                                                        data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                        style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -4443,7 +4446,7 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="jbl3" class="carousel slide"data-bs-interval="false">
+                                        <div id="jbl3" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl3" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -4508,7 +4511,8 @@
                                                         </h5>
                                                     </td>
                                                     <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal"
+                                                        <button class="btn btn-info text-white float-end"
+                                                            data-bs-toggle="modal"
                                                             data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                     </td>
                                                 </tr>
@@ -4564,8 +4568,9 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
-                                                        data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5"
+                                                        data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                        style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -4674,7 +4679,7 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="jbl4" class="carousel slide"data-bs-interval="false">
+                                        <div id="jbl4" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl4" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -4740,7 +4745,8 @@
                                                         </h5>
                                                     </td>
                                                     <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal"
+                                                        <button class="btn btn-info text-white float-end"
+                                                            data-bs-toggle="modal"
                                                             data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                     </td>
                                                 </tr>
@@ -4796,8 +4802,9 @@
                                                 <div class="col text-center">
 
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
-                                                        data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5"
+                                                        data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                        style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -4901,13 +4908,13 @@
                                     </div>
                                 </div>
 
-                                
+
                                 <div class="col-12 custom">
                                     <div class="card mb-2 mx-auto">
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
-                                        <div id="jbl2" class="carousel slide"data-bs-interval="false">
+                                        <div id="jbl2" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl2" data-bs-slide-to="0"
                                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -4972,7 +4979,8 @@
                                                         </h5>
                                                     </td>
                                                     <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal"
+                                                        <button class="btn btn-info text-white float-end"
+                                                            data-bs-toggle="modal"
                                                             data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                     </td>
                                                 </tr>
@@ -5027,8 +5035,9 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
-                                                        data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5"
+                                                        data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                        style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -5064,7 +5073,7 @@
                                                 <div class="col text-center">
                                                     <span
                                                         onclick="return document.querySelector('form.form-sengketa1').submit()"
-                                                        class="btn btn-success rounded-5"style="cursor:pointer"><i
+                                                        class="btn btn-success rounded-5" style="cursor:pointer"><i
                                                             class="fa-solid fa-play text-danger"></i>
                                                         Lihat Video</span>
                                                 </div>
@@ -5254,9 +5263,9 @@
                                                     <div class="card-body p-0 text-start">
                                                         <img src="{{asset('')}}images/lahan1.jpeg"
                                                             class="a-image w-100 rounded-top" alt="">
-                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                                <h4 class="mb-0">Dijual</h4>
-                                                            </div>
+                                                        <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
+                                                            <h4 class="mb-0">Dijual</h4>
+                                                        </div>
                                                         <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
                                                                 <h4 class="mb-0">1 Ha</h4>
@@ -5283,9 +5292,9 @@
                                                     <div class="card-body p-0 text-start">
                                                         <img src="{{asset('')}}images/lahan4.jpeg"
                                                             class="a-image w-100 rounded-top" alt="">
-                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                                <h4 class="mb-0">Dijual</h4>
-                                                            </div>
+                                                        <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
+                                                            <h4 class="mb-0">Dijual</h4>
+                                                        </div>
                                                         <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
                                                                 <h4 class="mb-0">3.2 Ha</h4>
@@ -5311,9 +5320,9 @@
                                                     <div class="card-body p-0 text-start">
                                                         <img src="{{asset('')}}images/lahan2.jpeg"
                                                             class="a-image w-100 rounded-top" alt="">
-                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                                <h4 class="mb-0">Dijual</h4>
-                                                            </div>
+                                                        <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
+                                                            <h4 class="mb-0">Dijual</h4>
+                                                        </div>
                                                         <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
                                                                 <h4 class="mb-0">5000 M</h4>
@@ -5340,9 +5349,9 @@
                                                     <div class="card-body p-0 text-start">
                                                         <img src="{{asset('')}}images/lahan3.jpeg"
                                                             class="a-image w-100 rounded-top" alt="">
-                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                                <h4 class="mb-0">Dijual</h4>
-                                                            </div>
+                                                        <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
+                                                            <h4 class="mb-0">Dijual</h4>
+                                                        </div>
                                                         <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
                                                                 <h4 class="mb-0">3.2 Ha</h4>
@@ -5405,9 +5414,9 @@
                                                     <div class="card-body p-0 text-start">
                                                         <img src="{{asset('')}}images/lahan4.jpeg"
                                                             class="a-image w-100 rounded-top" alt="">
-                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                                <h4 class="mb-0">Dijual</h4>
-                                                            </div>
+                                                        <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
+                                                            <h4 class="mb-0">Dijual</h4>
+                                                        </div>
                                                         <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
                                                                 <h3 class="mb-0">3.2 Ha</h3>
@@ -5433,9 +5442,9 @@
                                                     <div class="card-body p-0 text-start">
                                                         <img src="{{asset('')}}images/lahan1.jpeg"
                                                             class="a-image w-100 rounded-top" alt="">
-                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                                <h4 class="mb-0">Dijual</h4>
-                                                            </div>
+                                                        <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
+                                                            <h4 class="mb-0">Dijual</h4>
+                                                        </div>
                                                         <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
                                                                 <h3 class="mb-0">1 Ha</h3>
@@ -5462,9 +5471,9 @@
                                                     <div class="card-body p-0 text-start">
                                                         <img src="{{asset('')}}images/lahan2.jpeg"
                                                             class="a-image w-100 rounded-top" alt="">
-                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                                <h4 class="mb-0">Dijual</h4>
-                                                            </div>
+                                                        <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
+                                                            <h4 class="mb-0">Dijual</h4>
+                                                        </div>
                                                         <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
                                                                 <h3 class="mb-0">5000 M</h3>
@@ -5491,9 +5500,9 @@
                                                     <div class="card-body p-0 text-start">
                                                         <img src="{{asset('')}}images/lahan3.jpeg"
                                                             class="a-image w-100 rounded-top" alt="">
-                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                                <h4 class="mb-0">Dijual</h4>
-                                                            </div>
+                                                        <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
+                                                            <h4 class="mb-0">Dijual</h4>
+                                                        </div>
                                                         <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
                                                                 <h3 class="mb-0">3.2 Ha</h3>
@@ -5703,7 +5712,7 @@
                                     <div class="ribbon-pop">
                                         <i class="fa-solid fa-star"></i>&nbsp;HOT
                                     </div>
-                                    <div id="ll4" class="carousel slide"data-bs-interval="false">
+                                    <div id="ll4" class="carousel slide" data-bs-interval="false">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#ll4" data-bs-slide-to="0"
                                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -5803,10 +5812,10 @@
                                             <tbody>
                                                 </tr>
 
-                                                    <td>Lokasi</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;Pancawati, Bogor</td>
+                                                <td>Lokasi</td>
+                                                <td></td>
+                                                <td>:</td>
+                                                <td>&nbsp;Pancawati, Bogor</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Luas</td>
@@ -5978,7 +5987,7 @@
                                     <div class="ribbon-pop">
                                         <i class="fa-solid fa-star"></i>&nbsp;HOT
                                     </div>
-                                    <div id="ll2" class="carousel slide"data-bs-interval="false">
+                                    <div id="ll2" class="carousel slide" data-bs-interval="false">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#ll2" data-bs-slide-to="0"
                                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -6252,7 +6261,7 @@
                                     <div class="ribbon-pop">
                                         <i class="fa-solid fa-star"></i>&nbsp;HOT
                                     </div>
-                                    <div id="ll3" class="carousel slide"data-bs-interval="false">
+                                    <div id="ll3" class="carousel slide" data-bs-interval="false">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#ll3" data-bs-slide-to="0"
                                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -6524,7 +6533,7 @@
                                     <div class="ribbon-pop">
                                         <i class="fa-solid fa-star"></i>&nbsp;HOT
                                     </div>
-                                    <div id="ll44" class="carousel slide"data-bs-interval="false">
+                                    <div id="ll44" class="carousel slide" data-bs-interval="false">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#ll44" data-bs-slide-to="0"
                                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -6828,49 +6837,54 @@
         <style>
             /* common */
             .ribbon {
-              width: 150px;
-              height: 150px;
-              overflow: hidden;
-              position: absolute;
+                width: 150px;
+                height: 150px;
+                overflow: hidden;
+                position: absolute;
             }
-            
+
             .ribbon span {
-              position: absolute;
-              display: block;
-              width: 225px;
-              padding: 7px 0;
-              background-color: #E6B325;
-              box-shadow: 0 5px 10px rgba(0,0,0,.1);
-              color: #fff;
-              font: 700 18px/1 'Lato', sans-serif;
-              text-shadow: 0 1px 1px rgba(0,0,0,.2);
-              text-transform: uppercase;
-              text-align: center;
+                position: absolute;
+                display: block;
+                width: 225px;
+                padding: 7px 0;
+                background-color: #E6B325;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+                color: #fff;
+                font: 700 18px/1 'Lato', sans-serif;
+                text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+                text-transform: uppercase;
+                text-align: center;
             }
-        
+
             /* top left*/
             .ribbon-top-left {
-              top: 0px;
-              left: 0px;
+                top: 0px;
+                left: 0px;
             }
+
             .ribbon-top-left::before,
             .ribbon-top-left::after {
-              border-top-color: transparent;
-              border-left-color: transparent;
+                border-top-color: transparent;
+                border-left-color: transparent;
             }
+
             .ribbon-top-left::before {
-              top: 0;
-              right: 0;
+                top: 0;
+                right: 0;
             }
+
             .ribbon-top-left::after {
-              bottom: 0;
-              left: 0;
+                bottom: 0;
+                left: 0;
             }
+
             .ribbon-top-left span {
-              right: -5px;
-              top: 25px;
-              transform: rotate(-45deg);
+                right: -5px;
+                top: 25px;
+                transform: rotate(-45deg);
             }
+
         </style>
 
 
@@ -6917,7 +6931,7 @@
                                                     <div class="col-12">
                                                         <h3 class="mb-0">1 Ha</h3>
                                                     </div>
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>
@@ -6947,7 +6961,7 @@
                                                     <div class="col-12">
                                                         <h3 class="mb-0">3.2 Ha</h3>
                                                     </div>
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>
@@ -6976,7 +6990,7 @@
                                                     <div class="col-12">
                                                         <h3 class="mb-0">5000 M</h3>
                                                     </div>
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>
