@@ -4394,7 +4394,7 @@ class="btn btn-success rounded-5"                                               
                                                         </h5>
                                                     </td>
                                                     <td>
-                                                        <button class="btn btn-info float-end" data-bs-toggle="modal"
+                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal"
                                                             data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                     </td>
                                                 </tr>
