@@ -5177,7 +5177,7 @@ class="btn btn-success rounded-5"                                               
                                     <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Lelang LL-004 <img
+                                                <h5 class="mb-0 text-center">Kode Lot Lelang LL-004 <img
                                                         src="https://sengketatanah.id/uploads/biru_centang.png" alt=""
                                                         class="mb-1" style="height:20px"></h5>
                                             </div>
@@ -5210,15 +5210,7 @@ class="btn btn-success rounded-5"                                               
                                         <hr style="margin-top:-4px">
                                         <table>
                                             <tbody>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Owner</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Bahru</td>
-                                                </tr>
-                                                <tr>
+                                                </trr>
                                                     <td>Lokasi</td>
                                                     <td></td>
                                                     <td>:</td>
@@ -5228,22 +5220,47 @@ class="btn btn-success rounded-5"                                               
                                                     <td>Luas</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp; 1 Ha</td>
+                                                    <td>&nbsp;1 Ha</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Jenis Lahan</td>
+                                                    <td>Objek Lelang</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp;Tanah Darat</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Peruntukan</td>
+                                                    <td>Penawaran</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp;Permukiman</td>
+                                                    <td>&nbsp;Open Bidding</td>
                                                 </tr>
 
+                                                <tr>
+                                                    <td>Jaminan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;50.000.000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Batas Akhir</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;12 September 2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Pelaksanaan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;28 September 2022</td>
+                                                </tr>
 
+                                                
+                                                <tr>
+                                                    <td>Penyelenggara</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Sengketatanah.id</td>
+                                                </tr>
                                                 <tr>
                                                     <td>Jumlah Bid</td>
                                                     <td></td>
@@ -5260,7 +5277,7 @@ class="btn btn-success rounded-5"                                               
 
                                                 <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
@@ -5413,7 +5430,7 @@ class="btn btn-success rounded-5"                                               
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Lelang LL-001 <img
+                                                <h5 class="mb-0 text-center">Kode Lot Lelang LL-001 <img
                                                         src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
                                                         style="height:20px"></h5>
                                             </div>
@@ -5446,13 +5463,6 @@ class="btn btn-success rounded-5"                                               
 
                                         <table>
                                             <tbody>
-                                                </tr>
-                                                <tr>
-                                                    <td>Owner</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Fatah</td>
-                                                </tr>
                                                 <tr>
                                                     <td>Lokasi</td>
                                                     <td></td>
@@ -5463,23 +5473,47 @@ class="btn btn-success rounded-5"                                               
                                                     <td>Luas</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp; 5000 m</td>
+                                                    <td>&nbsp;5000 m</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Jenis Lahan</td>
+                                                    <td>Objek Lelang</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp;Tanah Darat</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Peruntukan</td>
+                                                    <td>Penawaran</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp;Permukiman</td>
+                                                    <td>&nbsp;Open Bidding</td>
                                                 </tr>
 
+                                                <tr>
+                                                    <td>Jaminan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;73.000.000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Batas Akhir</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;10 September 2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Pelaksanaan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;9 September 2022</td>
+                                                </tr>
 
-
+                                                
+                                                <tr>
+                                                    <td>Penyelenggara</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Sengketatanah.id</td>
+                                                </tr>
                                                 <tr>
                                                     <td>Jumlah Bid</td>
                                                     <td></td>
@@ -5497,7 +5531,7 @@ class="btn btn-success rounded-5"                                               
 
                                                 <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
@@ -5649,7 +5683,7 @@ class="btn btn-success rounded-5"                                               
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Lelang LL-002 <img
+                                                <h5 class="mb-0 text-center">Kode Lot Lelang LL-002 <img
                                                         src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
                                                         style="height:20px"></h5>
                                             </div>
@@ -5681,13 +5715,6 @@ class="btn btn-success rounded-5"                                               
                                         <hr style="margin-top:-4px">
                                         <table>
                                             <tbody>
-                                                </tr>
-                                                <tr>
-                                                    <td>Owner</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Ophelia Suartini</td>
-                                                </tr>
                                                 <tr>
                                                     <td>Lokasi</td>
                                                     <td></td>
@@ -5698,24 +5725,47 @@ class="btn btn-success rounded-5"                                               
                                                     <td>Luas</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp; 3.2 Ha</td>
+                                                    <td>&nbsp;3.2 Ha</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Jenis Lahan</td>
+                                                    <td>Objek Lelang</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp;Tanah Darat</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Peruntukan</td>
+                                                    <td>Penawaran</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp;Permukiman</td>
+                                                    <td>&nbsp;Open Bidding</td>
                                                 </tr>
 
+                                                <tr>
+                                                    <td>Jaminan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;50.000.000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Batas Akhir</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;21 Agustus 2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Pelaksanaan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;22 Agustus 2022</td>
+                                                </tr>
 
-
-
+                                                
+                                                <tr>
+                                                    <td>Penyelenggara</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Sengketatanah.id</td>
+                                                </tr>
                                                 <tr>
                                                     <td>Jumlah Bid</td>
                                                     <td></td>
@@ -5733,7 +5783,7 @@ class="btn btn-success rounded-5"                                               
 
                                                 <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
@@ -5884,7 +5934,7 @@ class="btn btn-success rounded-5"                                               
                                         <div class="row">
 
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Lelang LL-003 <img
+                                                <h5 class="mb-0 text-center">Kode Lot Lelang LL-003 <img
                                                         src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
                                                         style="height:20px"></h5>
                                             </div>
@@ -5916,13 +5966,6 @@ class="btn btn-success rounded-5"                                               
                                         <hr style="margin-top:-4px">
                                         <table>
                                             <tbody>
-                                                </tr>
-                                                <tr>
-                                                    <td>Owner</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp; Ophelia Suartini</td>
-                                                </tr>
                                                 <tr>
                                                     <td>Lokasi</td>
                                                     <td></td>
@@ -5933,24 +5976,47 @@ class="btn btn-success rounded-5"                                               
                                                     <td>Luas</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp; 3.2 Ha</td>
+                                                    <td>&nbsp;3.2 Ha</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Jenis Lahan</td>
+                                                    <td>Objek Lelang</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp;Tanah Darat</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Peruntukan</td>
+                                                    <td>Penawaran</td>
                                                     <td></td>
                                                     <td>:</td>
-                                                    <td>&nbsp;Permukiman</td>
+                                                    <td>&nbsp;Open Bidding</td>
                                                 </tr>
 
+                                                <tr>
+                                                    <td>Jaminan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;50.000.000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Batas Akhir</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;12 September 2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Pelaksanaan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;28 September 2022</td>
+                                                </tr>
 
-
-
+                                                
+                                                <tr>
+                                                    <td>Penyelenggara</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Sengketatanah.id</td>
+                                                </tr>
                                                 <tr>
                                                     <td>Jumlah Bid</td>
                                                     <td></td>
@@ -5967,7 +6033,7 @@ class="btn btn-success rounded-5"                                               
 
                                                 <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
@@ -6128,6 +6194,9 @@ class="btn btn-success rounded-5"                                               
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
+                                                        <h4>Nilai Limit :</h4>
+                                                    </div>
+                                                    <div class="col-12">
                                                         <h3 class="mb-0">1 Ha</h3>
                                                     </div>
                                                     <div class="col">
@@ -6154,6 +6223,9 @@ class="btn btn-success rounded-5"                                               
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
+                                                        <h4>Nilai Limit :</h4>
+                                                    </div>
+                                                    <div class="col-12">
                                                         <h3 class="mb-0">3.2 Ha</h3>
                                                     </div>
                                                     <div class="col">
@@ -6178,6 +6250,9 @@ class="btn btn-success rounded-5"                                               
                                                 <img src="{{asset('')}}images/lahan2.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                    <div class="col-12">
+                                                        <h4>Nilai Limit :</h4>
+                                                    </div>
                                                     <div class="col-12">
                                                         <h3 class="mb-0">5000 m</h3>
                                                     </div>
@@ -6204,6 +6279,9 @@ class="btn btn-success rounded-5"                                               
                                                 <img src="{{asset('')}}images/lahan3.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                    <div class="col-12">
+                                                        <h4>Nilai Limit :</h4>
+                                                    </div>
                                                     <div class="col-12">
                                                         <h3 class="mb-0">3.2 Ha</h3>
                                                     </div>
@@ -6271,6 +6349,9 @@ class="btn btn-success rounded-5"                                               
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
+                                                        <h4>Nilai Limit :</h4>
+                                                    </div>
+                                                    <div class="col-12">
                                                         <h3 class="mb-0">3.2 Ha</h3>
                                                     </div>
                                                     <div class="col">
@@ -6295,6 +6376,9 @@ class="btn btn-success rounded-5"                                               
                                                 <img src="{{asset('')}}images/lahan1.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                    <div class="col-12">
+                                                        <h4>Nilai Limit :</h4>
+                                                    </div>
                                                     <div class="col-12">
                                                         <h3 class="mb-0">1 Ha</h3>
                                                     </div>
@@ -6322,6 +6406,9 @@ class="btn btn-success rounded-5"                                               
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
+                                                        <h4>Nilai Limit :</h4>
+                                                    </div>
+                                                    <div class="col-12">
                                                         <h3 class="mb-0">5000 m</h3>
                                                     </div>
                                                     <div class="col">
@@ -6347,6 +6434,9 @@ class="btn btn-success rounded-5"                                               
                                                 <img src="{{asset('')}}images/lahan3.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                    <div class="col-12">
+                                                        <h4>Nilai Limit :</h4>
+                                                    </div>
                                                     <div class="col-12">
                                                         <h3 class="mb-0">3.2 Ha</h3>
                                                     </div>
