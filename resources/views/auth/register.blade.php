@@ -23,7 +23,7 @@
         border-radius: 0 72px 0 0;
     }
 </style>
-<div class="container pt-5 pb-5" style="min-height:100vh">
+<div class="container pt-5 pb-5">
     <div class="screen">
         <div class="screen__content">
             <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" class="m-4"
@@ -230,7 +230,19 @@
                     </span>
                     @enderror
                 </div>
+
+
                 <div class="login__field">
+                    <select  id="piih_layanan" class="form-select login__input rounded-0"
+                        style="border-right:0px; border-left:0px; border-top:0px; " aria-label="Default select example">
+                        <option selected disabled>Pilih Layanan</option>  
+                        <option value="st">Sengketa Tanah</option>  
+                        <option value="jbl">Jual Beli Lahan</option>  
+                        <option value="ksl">Kerja Sama lahan</option>  
+                        <option value="ll">Lelang Lahan</option>  
+                    </select>
+                </div>
+                <div class="login__field"id="st">
                     <select name="role" class="form-select login__input rounded-0"
                         style="border-right:0px; border-left:0px; border-top:0px; font-weight:700"
                         aria-label="Default select example">
@@ -240,6 +252,51 @@
                         <option value="pengacara">Pengacara</option>
                     </select>
                 </div>
+
+                <div class="login__field"id="jbl"style="display:none">
+                    <select name="role" class="form-select login__input rounded-0"
+                        style="border-right:0px; border-left:0px; border-top:0px; font-weight:700"
+                        aria-label="Default select example">
+                        <option disabled selected>Pilih Role</option>
+                        <option value="penjual">Penjual</option>
+                        <option value="pembeli">Pembeli</option>
+                    </select>
+                </div>
+                <div class="login__field"id="ll"style="display:none">
+                    <select name="role" class="form-select login__input rounded-0"
+                        style="border-right:0px; border-left:0px; border-top:0px; font-weight:700"
+                        aria-label="Default select example">
+                        <option disabled selected>Pilih Role</option>
+                        <option value="pemilik_lahan">Pemilik Lahan</option>
+                        <option value="pelelang_lahan">Pelelang Lahan</option>
+                    </select>
+                </div>
+                <div class="login__field"id="ksl"style="display:none">
+                    <select name="role" class="form-select login__input rounded-0"
+                        style="border-right:0px; border-left:0px; border-top:0px; font-weight:700"
+                        aria-label="Default select example">
+                        <option disabled selected>Pilih Role</option>
+                        <option value="pemilik_lahan">Pemilik Lahan</option>
+                        <option value="pengguna_lahan">Pengguna Lahan</option>
+                    </select>
+                </div>
+            <script>
+                $('#piih_layanan').on('change',function(e){
+                    e.preventDefault();
+                    let val = $(this).find('option:selected').val();
+                    let idL = ['jbl','ksl','st','ll'];
+                    idL.forEach(function(id){
+                        if(id == val){
+                            $('#'+val).show();
+                            // console.log($('#'+val))
+                        }else{
+                            $('#'+id).hide()
+                        }
+                    });
+                    
+
+                });
+            </script>
 
                 <div class="login__field">
                     <i class="login__icon fas fa-lock"></i>
