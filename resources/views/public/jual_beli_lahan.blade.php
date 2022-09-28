@@ -686,16 +686,16 @@
 
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
-                                                            <img src="{{$bs['img']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img1']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img1']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img2']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img2']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img3']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img3']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                     </div>
                                                     <button class="carousel-control-prev opacity-90 text-dark" type="button"
@@ -724,16 +724,16 @@
 
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
-                                                            <img src="{{$bs['img']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img1']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img1']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img2']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img2']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img3']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img3']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
                                                         </div>
                                                     </div>
                                                     <button class="carousel-control-prev opacity-90 text-dark" type="button"
