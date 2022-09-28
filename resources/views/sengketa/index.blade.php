@@ -5277,7 +5277,7 @@ class="btn btn-success rounded-5"                                               
 
                                                 <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                    <i class="fa-solid fa-eye"></i> Lihat De
                                                 </a>
 
 
@@ -5531,7 +5531,7 @@ class="btn btn-success rounded-5"                                               
 
                                                 <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                    <i class="fa-solid fa-eye"></i> Lihat De
                                                 </a>
 
 
@@ -5783,7 +5783,7 @@ class="btn btn-success rounded-5"                                               
 
                                                 <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                    <i class="fa-solid fa-eye"></i> Lihat De
                                                 </a>
 
 
@@ -6033,7 +6033,7 @@ class="btn btn-success rounded-5"                                               
 
                                                 <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
                                                     data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                    <i class="fa-solid fa-eye"></i> Lihat De
                                                 </a>
 
 
@@ -6194,6 +6194,9 @@ class="btn btn-success rounded-5"                                               
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
+                                                        <h4>Nilai Limit :</h4>
+                                                    </div>
+                                                    <div class="col-12">
                                                         <h3 class="mb-0">1 Ha</h3>
                                                     </div>
                                                     <div class="col">
@@ -6220,6 +6223,9 @@ class="btn btn-success rounded-5"                                               
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
+                                                        <h4>Nilai Limit :</h4>
+                                                    </div>
+                                                    <div class="col-12">
                                                         <h3 class="mb-0">3.2 Ha</h3>
                                                     </div>
                                                     <div class="col">
@@ -6244,6 +6250,9 @@ class="btn btn-success rounded-5"                                               
                                                 <img src="{{asset('')}}images/lahan2.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                    <div class="col-12">
+                                                        <h4>Nilai Limit :</h4>
+                                                    </div>
                                                     <div class="col-12">
                                                         <h3 class="mb-0">5000 m</h3>
                                                     </div>
@@ -6270,6 +6279,9 @@ class="btn btn-success rounded-5"                                               
                                                 <img src="{{asset('')}}images/lahan3.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                    <div class="col-12">
+                                                        <h4>Nilai Limit :</h4>
+                                                    </div>
                                                     <div class="col-12">
                                                         <h3 class="mb-0">3.2 Ha</h3>
                                                     </div>
@@ -6337,6 +6349,9 @@ class="btn btn-success rounded-5"                                               
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
+                                                        <h4>Nilai Limit :</h4>
+                                                    </div>
+                                                    <div class="col-12">
                                                         <h3 class="mb-0">3.2 Ha</h3>
                                                     </div>
                                                     <div class="col">
@@ -6361,6 +6376,9 @@ class="btn btn-success rounded-5"                                               
                                                 <img src="{{asset('')}}images/lahan1.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                    <div class="col-12">
+                                                        <h4>Nilai Limit :</h4>
+                                                    </div>
                                                     <div class="col-12">
                                                         <h3 class="mb-0">1 Ha</h3>
                                                     </div>
@@ -6388,6 +6406,9 @@ class="btn btn-success rounded-5"                                               
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
+                                                        <h4>Nilai Limit :</h4>
+                                                    </div>
+                                                    <div class="col-12">
                                                         <h3 class="mb-0">5000 m</h3>
                                                     </div>
                                                     <div class="col">
@@ -6413,6 +6434,9 @@ class="btn btn-success rounded-5"                                               
                                                 <img src="{{asset('')}}images/lahan3.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                    <div class="col-12">
+                                                        <h4>Nilai Limit :</h4>
+                                                    </div>
                                                     <div class="col-12">
                                                         <h3 class="mb-0">3.2 Ha</h3>
                                                     </div>
