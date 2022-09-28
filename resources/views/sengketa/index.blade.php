@@ -6167,6 +6167,54 @@ class="btn btn-success rounded-5"                                               
 
         </div>
 
+        <style>
+            /* common */
+            .ribbon {
+              width: 150px;
+              height: 150px;
+              overflow: hidden;
+              position: absolute;
+            }
+            
+            .ribbon span {
+              position: absolute;
+              display: block;
+              width: 225px;
+              padding: 7px 0;
+              background-color: #E6B325;
+              box-shadow: 0 5px 10px rgba(0,0,0,.1);
+              color: #fff;
+              font: 700 18px/1 'Lato', sans-serif;
+              text-shadow: 0 1px 1px rgba(0,0,0,.2);
+              text-transform: uppercase;
+              text-align: center;
+            }
+        
+            /* top left*/
+            .ribbon-top-left {
+              top: 0px;
+              left: 0px;
+            }
+            .ribbon-top-left::before,
+            .ribbon-top-left::after {
+              border-top-color: transparent;
+              border-left-color: transparent;
+            }
+            .ribbon-top-left::before {
+              top: 0;
+              right: 0;
+            }
+            .ribbon-top-left::after {
+              bottom: 0;
+              left: 0;
+            }
+            .ribbon-top-left span {
+              right: -5px;
+              top: 25px;
+              transform: rotate(-45deg);
+            }
+        </style>
+
 
         <div class="card rounded-0 border-0 " style="margin-top:-30px">
             <!-- <div class="card-header bg-white border-0">
@@ -6189,6 +6237,7 @@ class="btn btn-success rounded-5"                                               
 
                                     <div class="col-12 custom">
                                         <div class="card mx-auto">
+                                            <div class="ribbon ribbon-top-left"><span>lelang</span></div>
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan1.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
@@ -6218,6 +6267,7 @@ class="btn btn-success rounded-5"                                               
 
                                     <div class="col-12 custom">
                                         <div class="card mx-auto">
+                                            <div class="ribbon ribbon-top-left"><span>lelang</span></div>
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan4.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
@@ -6246,6 +6296,7 @@ class="btn btn-success rounded-5"                                               
                                     </div>
                                     <div class="col-12 custom">
                                         <div class="card mx-auto">
+                                            <div class="ribbon ribbon-top-left"><span>lelang</span></div>
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan2.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
@@ -6275,6 +6326,7 @@ class="btn btn-success rounded-5"                                               
 
                                     <div class="col-12 custom">
                                         <div class="card mx-auto">
+                                            <div class="ribbon ribbon-top-left"><span>lelang</span></div>
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan3.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
@@ -6344,6 +6396,7 @@ class="btn btn-success rounded-5"                                               
                                 <div class="row align-items-end" style="flex-wrap: nowrap;">
                                     <div class="col-12 custom">
                                         <div class="card mx-auto">
+                                            <div class="ribbon ribbon-top-left"><span>lelang</span></div>
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan4.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
@@ -6372,6 +6425,7 @@ class="btn btn-success rounded-5"                                               
                                     </div>
                                     <div class="col-12 custom">
                                         <div class="card mx-auto">
+                                            <div class="ribbon ribbon-top-left"><span>lelang</span></div>
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan1.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
@@ -6401,6 +6455,7 @@ class="btn btn-success rounded-5"                                               
 
                                     <div class="col-12 custom">
                                         <div class="card mx-auto">
+                                            <div class="ribbon ribbon-top-left"><span>lelang</span></div>
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan2.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
@@ -6430,6 +6485,7 @@ class="btn btn-success rounded-5"                                               
 
                                     <div class="col-12 custom">
                                         <div class="card mx-auto">
+                                            <div class="ribbon ribbon-top-left"><span>lelang</span></div>
                                             <div class="card-body p-0 text-start">
                                                 <img src="{{asset('')}}images/lahan3.jpeg"
                                                     class="a-image w-100 rounded-top" alt="">
