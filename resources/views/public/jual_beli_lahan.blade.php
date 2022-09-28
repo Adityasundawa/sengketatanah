@@ -537,7 +537,7 @@
                     <img src="{{asset('/uploads/sengketa-banner-2.jpg')}}" style="width:100%" class="mb-2">
 
                     <div class="col-6">
-                        <a class="btn btn-sm btn-dark w-100" href="{{url('')}}/register">Daftar Sekarang</a>
+                        <a class="btn btn-sm btn-dark w-100" href="{{url('')}}/register-kerjasama-lahan">Daftar Sekarang</a>
                     </div>
                     <div class="col-6">
                         <a class="btn btn-sm btn-danger w-100" data-bs-toggle="modal"

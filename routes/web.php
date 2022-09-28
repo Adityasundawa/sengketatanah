@@ -51,7 +51,7 @@ Route::get('jasa-notaris',[PublicController::class,'jasaNotaris'])->name('jasaNo
 Route::get('jasa-ppat',[PublicController::class,'jasaPPAT'])->name('jasaPPAT');
 Route::get('join',[PublicController::class,'joinSengketa'])->name('joinSengketa');
 
-
+Route::get('register-kerjasama-lahan',[PublicController::class,'registerKerjaSama'])->name('registerKerjaSama');
 
 
 Route::get('tentang-pemerintah',function ()

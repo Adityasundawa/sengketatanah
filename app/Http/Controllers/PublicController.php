@@ -66,6 +66,10 @@ class PublicController extends Controller
         return view('sengketa.jasa_ppat');
     }
 
+    public function registerKerjaSama()
+    {
+        return view('auth.jual-beli-lahan.register');
+    }
 
     private function data_jual_beli()
     {
