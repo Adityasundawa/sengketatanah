@@ -4448,7 +4448,7 @@ class="btn btn-success rounded-5"                                               
                                                         <td>Akses</td>
                                                         <td></td>
                                                         <td>:</td>
-                                                        <td>Mobil</td>
+                                                        <td>&nbsp;Mobil</td>
                                                     </tr>
 
                                                     <tr>
