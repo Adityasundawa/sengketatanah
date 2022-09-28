@@ -532,7 +532,7 @@
 
             <div class="col-lg-12">
 
-            <div class="card mb-3 border-0 mt-2">
+            <div class="card border-0 mt-2"style="z-index:999">
                     <div class="card-body pb-0">
                         <div class="row justify-content-between text-center"
                             style="overflow-x: auto; flex-wrap: nowrap">
@@ -901,7 +901,7 @@
 
 
 
-                <div class="card mb-4 border-0 shadow-sm">
+                <div class="card mb-2 border-0 shadow-sm"style="margin-top:-10px">
                     <div class="card-body pb-1 pt-2">
                         <div class="row">
                             <div class="col-3 text-center mb-2">
@@ -1447,7 +1447,7 @@
 
                 </style>
 
-                <div class="card mt-2">
+                <div class="card mt-0">
                     <div class="card-body">
                         <div class="row justify-content-center">
                             <form action="">
