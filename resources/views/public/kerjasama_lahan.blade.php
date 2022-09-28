@@ -686,16 +686,16 @@
 
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
-                                                            <img src="{{$bs['img']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img1']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img1']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img2']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img2']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img3']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img3']}}" class="d-block w-100"style="height:250px;width:auto;object-fit:cover">
                                                         </div>
                                                     </div>
                                                     <button class="carousel-control-prev opacity-90 text-dark" type="button"
@@ -724,16 +724,16 @@
 
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
-                                                            <img src="{{$bs['img']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img1']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img1']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img2']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img2']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img src="{{$bs['img3']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
+                                                            <img src="{{asset('')}}{{$bs['img3']}}" class="d-block w-100"style="height:210px;width:auto;object-fit:cover">
                                                         </div>
                                                     </div>
                                                     <button class="carousel-control-prev opacity-90 text-dark" type="button"
@@ -762,15 +762,10 @@
                                             </div>
                                         
                                             <table class="mt-3">
-                                                <tr>
-                                                    <td>Owner</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bs['owner']}}</td>
-                                                </tr>
+                                              
                                             
                                                 <tr>
-                                                    <td>Luas Objek</td>
+                                                    <td>Luas</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp;{{$bs['luas']}}</td>
@@ -787,12 +782,24 @@
                                                     <td>:</td>
                                                     <td>&nbsp;{{$bs['jenis_lahan']}}</td>
                                                 </tr>
+                                                <tr>
+                                                    <td>DOKUMEN</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;SHM</td>
+                                                </tr>
                                                 
                                                 <tr>
-                                                    <td>peruntukan</td>
+                                                    <td>Peruntukan</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp;{{$bs['peruntukan']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Akses</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;Mobil</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Jumlah Bid</td>
