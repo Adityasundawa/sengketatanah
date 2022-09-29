@@ -2624,7 +2624,7 @@
                                     </h5>
                                 </td>
                                 <td class="text-end" rowspan="2">
-                                    <a href="{{url('')}}/bid-sengketa" class="text-success fw-bold"
+                                    <a href="{{url('')}}/bidding-pengacara" class="text-success fw-bold"
                                         style="text-decoration: none">Lihat
                                         Semua</a>
                                 </td>
