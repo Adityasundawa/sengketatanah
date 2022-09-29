@@ -570,15 +570,10 @@
                                             <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Masukan Email Anda">
                                             <div id="emailHelp" class="form-text">Email yang anda masukan harus terdaftar di Website ini terlebih dahulu</div>
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="password" class="form-label">Password</label>
-                                            <input type="password" class="form-control" name="password" id="password">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="passwordconf" class="form-label">Password Confirm</label>
-                                            <input type="password" class="form-control" name="passwordConf" id="passwordConf">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <small class="text-danger">**Belum punya akun? daftar <a href="{{url('')}}/register-jual-beli-lahan" class="text-primary text-decoration-none">disini</a></small>
+                                        <br>
+                                        <button type="submit" class="btn btn-success mt-2">Hubungi</button>
+
                                     </form>
                                 </div>
                             </div>
