@@ -1015,7 +1015,7 @@
                             <form action="">
                                 <div class="row mb-2" id="titleSponsor">
                                     <div class="col">
-                                        <div class="row fw-bold">
+                                        <div class="row fw-bold pe-2 ps-2">
                                             <table style="width:100%">
                                                 <tbody>
                                                     <tr>
