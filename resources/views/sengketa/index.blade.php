@@ -2564,7 +2564,7 @@
                                                 alt="" srcset="" class="rounded-4 img-thumbnail"
                                                 style="width:70px;height:70px;object-fit:cover;background:#61481C"> <br>
 
-                                            Pengacara
+                                            Lawyer
 
                                         </div>
                                         @for($i=13;$i> 0;$i--)
