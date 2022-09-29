@@ -524,8 +524,6 @@
             background: linear-gradient(90deg, hsla(337, 85%, 31%, 1) 42%, hsla(337, 83%, 30%, 1) 64%, hsla(318, 57%, 22%, 1) 86%);
         }
 
-    </style>
-    <style>
         .scroll-simple::-webkit-scrollbar {
             width: 7px;
             height: 7px;
@@ -2772,7 +2770,7 @@
                                                                 <a href="#" class=" mx-auto btn btn-danger rounded-5"
                                                                     data-bs-toggle="modal" data-bs-target="#berkasSponsor"
                                                                     style="text-decoration:none">
-                                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                                 </a>
         
         
@@ -2805,11 +2803,9 @@
         
                                                             </div>
                                                             <div class="col text-center">
-                                                                <span
-                                                                    onclick="return document.querySelector('form.form-sengketa1').submit()"
-                                                                    class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                                        class="fa-solid fa-play text-white"></i>
-                                                                    Lihat Podcast</span>
+                                                                <a data-bs-toggle="modal" data-bs-target="#exampleSponsor"
+                                                                    class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                                    Bid</a>
                                                             </div>
                                                         </div>
         
@@ -2830,14 +2826,7 @@
                                                         <div class="row justify-content-center g-0" style="margin-top:-15px;">
                                                             <div class="col-4">
         
-                                                                <div class="d-grid gap-2 ">
-        
-                                                                    <button type="button"
-                                                                        class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                                        BID
-                                                                    </button>
-        
+                                                                <div class="d-grid gap-2 ">        
         
                                                                     <div class="modal fade my-auto" id="exampleSponsor"
                                                                         tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -2956,7 +2945,7 @@
                                                                 <a href="#" class=" mx-auto btn btn-danger rounded-5"
                                                                     data-bs-toggle="modal" data-bs-target="#berkasSponsor"
                                                                     style="text-decoration:none">
-                                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                                 </a>
         
         
@@ -2989,11 +2978,9 @@
         
                                                             </div>
                                                             <div class="col text-center">
-                                                                <span
-                                                                    onclick="return document.querySelector('form.form-sengketa1').submit()"
-                                                                    class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                                        class="fa-solid fa-play text-white"></i>
-                                                                    Lihat Podcast</span>
+                                                                <a data-bs-toggle="modal" data-bs-target="#exampleSponsor"
+                                                                    class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                                    Bid</a>
                                                             </div>
                                                         </div>
         
@@ -3014,14 +3001,7 @@
                                                         <div class="row justify-content-center g-0" style="margin-top:-15px;">
                                                             <div class="col-4">
         
-                                                                <div class="d-grid gap-2 ">
-        
-                                                                    <button type="button"
-                                                                        class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                                        BID
-                                                                    </button>
-        
+                                                                <div class="d-grid gap-2 ">        
         
                                                                     <div class="modal fade my-auto" id="exampleSponsor"
                                                                         tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -3140,7 +3120,7 @@
                                                                 <a href="#" class=" mx-auto btn btn-danger rounded-5"
                                                                     data-bs-toggle="modal" data-bs-target="#berkasSponsor"
                                                                     style="text-decoration:none">
-                                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                                 </a>
         
         
@@ -3173,11 +3153,9 @@
         
                                                             </div>
                                                             <div class="col text-center">
-                                                                <span
-                                                                    onclick="return document.querySelector('form.form-sengketa1').submit()"
-                                                                    class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                                        class="fa-solid fa-play text-white"></i>
-                                                                    Lihat Podcast</span>
+                                                                <a data-bs-toggle="modal" data-bs-target="#exampleSponsor"
+                                                                    class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                                    Bid</a>
                                                             </div>
                                                         </div>
         
@@ -3198,14 +3176,7 @@
                                                         <div class="row justify-content-center g-0" style="margin-top:-15px;">
                                                             <div class="col-4">
         
-                                                                <div class="d-grid gap-2 ">
-        
-                                                                    <button type="button"
-                                                                        class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                                        BID
-                                                                    </button>
-        
+                                                                <div class="d-grid gap-2 ">        
         
                                                                     <div class="modal fade my-auto" id="exampleSponsor"
                                                                         tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -3324,7 +3295,7 @@
                                                                 <a href="#" class=" mx-auto btn btn-danger rounded-5"
                                                                     data-bs-toggle="modal" data-bs-target="#berkasSponsor"
                                                                     style="text-decoration:none">
-                                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                                 </a>
         
         
@@ -3357,11 +3328,9 @@
         
                                                             </div>
                                                             <div class="col text-center">
-                                                                <span
-                                                                    onclick="return document.querySelector('form.form-sengketa1').submit()"
-                                                                    class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                                        class="fa-solid fa-play text-white"></i>
-                                                                    Lihat Podcast</span>
+                                                                <a data-bs-toggle="modal" data-bs-target="#exampleSponsor"
+                                                                    class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                                    Bid</a>
                                                             </div>
                                                         </div>
         
@@ -3382,14 +3351,7 @@
                                                         <div class="row justify-content-center g-0" style="margin-top:-15px;">
                                                             <div class="col-4">
         
-                                                                <div class="d-grid gap-2 ">
-        
-                                                                    <button type="button"
-                                                                        class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                                        BID
-                                                                    </button>
-        
+                                                                <div class="d-grid gap-2 ">        
         
                                                                     <div class="modal fade my-auto" id="exampleSponsor"
                                                                         tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -3524,7 +3486,7 @@
                                                                 <a href="#" class=" mx-auto btn btn-danger rounded-5"
                                                                     data-bs-toggle="modal" data-bs-target="#berkasSponsor"
                                                                     style="text-decoration:none">
-                                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                                 </a>
         
         
@@ -3557,11 +3519,9 @@
         
                                                             </div>
                                                             <div class="col text-center">
-                                                                <span
-                                                                    onclick="return document.querySelector('form.form-sengketa1').submit()"
-                                                                    class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                                        class="fa-solid fa-play text-white"></i>
-                                                                    Lihat Podcast</span>
+                                                                <a data-bs-toggle="modal" data-bs-target="#exampleSponsor"
+                                                                    class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                                    Bid</a>
                                                             </div>
                                                         </div>
         
@@ -3582,14 +3542,7 @@
                                                         <div class="row justify-content-center g-0" style="margin-top:-15px;">
                                                             <div class="col-4">
         
-                                                                <div class="d-grid gap-2 ">
-        
-                                                                    <button type="button"
-                                                                        class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                                        BID
-                                                                    </button>
-        
+                                                                <div class="d-grid gap-2 ">        
         
                                                                     <div class="modal fade my-auto" id="exampleSponsor"
                                                                         tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -3708,7 +3661,7 @@
                                                                 <a href="#" class=" mx-auto btn btn-danger rounded-5"
                                                                     data-bs-toggle="modal" data-bs-target="#berkasSponsor"
                                                                     style="text-decoration:none">
-                                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                                 </a>
         
         
@@ -3741,11 +3694,9 @@
         
                                                             </div>
                                                             <div class="col text-center">
-                                                                <span
-                                                                    onclick="return document.querySelector('form.form-sengketa1').submit()"
-                                                                    class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                                        class="fa-solid fa-play text-white"></i>
-                                                                    Lihat Podcast</span>
+                                                                <a data-bs-toggle="modal" data-bs-target="#exampleSponsor"
+                                                                    class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                                    Bid</a>
                                                             </div>
                                                         </div>
         
@@ -3766,14 +3717,7 @@
                                                         <div class="row justify-content-center g-0" style="margin-top:-15px;">
                                                             <div class="col-4">
         
-                                                                <div class="d-grid gap-2 ">
-        
-                                                                    <button type="button"
-                                                                        class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                                        BID
-                                                                    </button>
-        
+                                                                <div class="d-grid gap-2 ">        
         
                                                                     <div class="modal fade my-auto" id="exampleSponsor"
                                                                         tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -3892,7 +3836,7 @@
                                                                 <a href="#" class=" mx-auto btn btn-danger rounded-5"
                                                                     data-bs-toggle="modal" data-bs-target="#berkasSponsor"
                                                                     style="text-decoration:none">
-                                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                                 </a>
         
         
@@ -3925,11 +3869,9 @@
         
                                                             </div>
                                                             <div class="col text-center">
-                                                                <span
-                                                                    onclick="return document.querySelector('form.form-sengketa1').submit()"
-                                                                    class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                                        class="fa-solid fa-play text-white"></i>
-                                                                    Lihat Podcast</span>
+                                                                <a data-bs-toggle="modal" data-bs-target="#exampleSponsor"
+                                                                    class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                                    Bid</a>
                                                             </div>
                                                         </div>
         
@@ -3950,14 +3892,7 @@
                                                         <div class="row justify-content-center g-0" style="margin-top:-15px;">
                                                             <div class="col-4">
         
-                                                                <div class="d-grid gap-2 ">
-        
-                                                                    <button type="button"
-                                                                        class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                                        BID
-                                                                    </button>
-        
+                                                                <div class="d-grid gap-2 ">        
         
                                                                     <div class="modal fade my-auto" id="exampleSponsor"
                                                                         tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -4076,7 +4011,7 @@
                                                                 <a href="#" class=" mx-auto btn btn-danger rounded-5"
                                                                     data-bs-toggle="modal" data-bs-target="#berkasSponsor"
                                                                     style="text-decoration:none">
-                                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
                                                                 </a>
         
         
@@ -4109,11 +4044,9 @@
         
                                                             </div>
                                                             <div class="col text-center">
-                                                                <span
-                                                                    onclick="return document.querySelector('form.form-sengketa1').submit()"
-                                                                    class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                                        class="fa-solid fa-play text-white"></i>
-                                                                    Lihat Podcast</span>
+                                                                <a data-bs-toggle="modal" data-bs-target="#exampleSponsor"
+                                                                    class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                                    Bid</a>
                                                             </div>
                                                         </div>
         
@@ -4134,14 +4067,7 @@
                                                         <div class="row justify-content-center g-0" style="margin-top:-15px;">
                                                             <div class="col-4">
         
-                                                                <div class="d-grid gap-2 ">
-        
-                                                                    <button type="button"
-                                                                        class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                                        BID
-                                                                    </button>
-        
+                                                                <div class="d-grid gap-2 ">        
         
                                                                     <div class="modal fade my-auto" id="exampleSponsor"
                                                                         tabindex="-1" aria-labelledby="exampleModalLabel"
