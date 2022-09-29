@@ -616,7 +616,7 @@
                     pemerintah dalam satu platform.</h3>
 
                 <a class="btn rounded-5 mt-3 text-white" style="background: #BF9742"
-                    href="{{url('')}}/join">Bergabung</a>
+                    href="{{url('')}}/join">Bergabung Sekarang</a>
 
             </div>
         </div>
