@@ -1312,7 +1312,6 @@
                                                                         </tr>
                                                                         <tr>
                                                                             <td>Lokasi</td>
-
                                                                             <td>:</td>
                                                                             <td>&nbsp;Ngawi, Jawa Timur</td>
                                                                         </tr>
