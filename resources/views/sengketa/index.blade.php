@@ -1567,11 +1567,11 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus masuk sebagai akun sponsor sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -1764,7 +1764,7 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
@@ -1958,7 +1958,7 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
@@ -2152,7 +2152,7 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
@@ -2469,11 +2469,11 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus masuk sebagai akun sponsor sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -2623,11 +2623,11 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus masuk sebagai akun sponsor sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -2777,11 +2777,11 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus masuk sebagai akun sponsor sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -2931,7 +2931,7 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
@@ -3103,7 +3103,7 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
@@ -3257,7 +3257,7 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
@@ -3411,7 +3411,7 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
@@ -3798,7 +3798,7 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
@@ -3990,7 +3990,7 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
@@ -4182,7 +4182,7 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
@@ -4373,7 +4373,7 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
@@ -4565,7 +4565,7 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
@@ -4943,7 +4943,7 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
@@ -5142,7 +5142,7 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
@@ -5339,7 +5339,7 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
@@ -5537,7 +5537,7 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
@@ -5735,7 +5735,7 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
