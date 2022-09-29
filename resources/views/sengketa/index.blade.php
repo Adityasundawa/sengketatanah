@@ -525,6 +525,32 @@
         }
 
     </style>
+    <style>
+        .scroll-simple::-webkit-scrollbar {
+            width: 7px;
+            height: 7px;
+        }
+
+        .scroll-simple::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .scroll-simple::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .scroll-simple::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .scroll-simple::-webkit-scrollbar-thumb:active {
+            background: rgba(0, 0, 0, .9);
+        }
+
+    </style>
+
 </head>
 
 <body>
@@ -604,9 +630,9 @@
 
             <div class="col-lg-12">
 
-                <div class="card mb-0 border-0" style="z-index:999">
+                <div class="card mb-0 border-0 mb-3" style="z-index:999">
                     <div class="card-body pb-0">
-                        <div class="row justify-content-between text-center"
+                        <div class="row justify-content-between text-center scroll-simple"
                             style="overflow-x: auto; flex-wrap: nowrap">
                             <div class="col mb-4">
                                 <a href="{{url('/')}}/bid-sengketa"
@@ -6903,20 +6929,6 @@
                                 </button>
                             </div>
                             <div class="col-10">
-                                <style>
-                                    .mobile-scroll::-webkit-scrollbar {
-                                        background: transparent;
-                                    }
-
-                                    .mobile-scroll::-webkit-scrollbar-thumb {
-                                        background: transparent;
-                                    }
-
-                                    .mobile-scroll::-webkit-scrollbar-track {
-                                        background: transparent;
-                                    }
-
-                                </style>
                                 <div class="row mt-0 justify-content-center scroll-simple align-items-center mobile-scroll lelang-card"
                                     style="flex-wrap: nowrap;">
 
