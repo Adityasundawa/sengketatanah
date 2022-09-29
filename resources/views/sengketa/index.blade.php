@@ -2544,7 +2544,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p class="mb-0">Sengketa <span class="badge bg-danger">8,512</span></p>
+                                    <p class="mb-0">Total Kasus <span class="badge bg-danger">4,512</span></p>
                                 </td>
                             </tr>
                         </table>
