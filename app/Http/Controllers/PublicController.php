@@ -4,51 +4,45 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\SengketaTanah;
-use Illuminate\Http\Request;
 
 class PublicController extends Controller
 {
     public function biddingSponsor()
     {
         return view('public.bidding_sponsor');
-    
     }
     public function kerjasamaLahan()
     {
         $data['sengketa'] = SengketaTanah::get();
-      
+
         $data['data_jual_beli'] = $this->data_jual_beli();
-        return view('public.kerjasama_lahan',$data);
-    
+        return view('public.kerjasama_lahan', $data);
     }
     public function podcastSengketa()
     {
         return view('public.podcast_sengketa');
-    
     }
     public function jualBeliLahan()
     {
         $data['sengketa'] = SengketaTanah::get();
-      
+
         $data['data_jual_beli'] = $this->data_jual_beli();
-      
-      
-        return view('public.jual_beli_lahan',$data);
-    
+
+
+        return view('public.jual_beli_lahan', $data);
     }
     public function lelangLahan()
     {
         $data['sengketa'] = SengketaTanah::get();
-     
+
         $data['data_jual_beli'] = $this->data_jual_beli();
-       
-        return view('public.lelang_lahan',$data);
-    
+
+        return view('public.lelang_lahan', $data);
     }
 
     public function joinSengketa()
     {
-        return view('sengketa.join');   
+        return view('sengketa.join');
     }
 
     public function jasaTukangUkur()
@@ -78,7 +72,7 @@ class PublicController extends Controller
     {
         return view('auth.lelangLahan.register');
     }
-    
+
     public function biddingPengacara()
     {
         $data['sengketa'] = SengketaTanah::get();
@@ -87,10 +81,15 @@ class PublicController extends Controller
         return view('public.bidding_pengacara', $data);
     }
 
+    public function listTukang()
+    {
+        return view('public.list-tukang');
+    }
     private function data_jual_beli()
     {
         return [
             [
+           
                 'id'=>1,
                 'owner'=>"Bahru",
                 'objek'=>"Sengketa Pertanahan",
@@ -295,5 +294,4 @@ class PublicController extends Controller
             // ],
         ];
     }
-     
 }
