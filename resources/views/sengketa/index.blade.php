@@ -2681,32 +2681,7 @@
 
                         <div class="row align-items-center justify-content-center mt-2">
 
-                            <style>
-                                .btn-panah-kiri {
-                                    position: absolute;
-                                    z-index: 1000;
-                                    top: 250px;
-                                    left: 40px;
-                                    align-items: center;
-                                    background: rgba(0, 0, 0, 0.35);
-                                    color: #fff;
-                                }
-
-                                .btn-panah-kanan {
-                                    position: absolute;
-                                    z-index: 1000;
-                                    top: 250px;
-                                    right: 40px;
-                                    align-items: center;
-                                    background: rgba(0, 0, 0, 0.35);
-                                    color: #fff;
-                                }
-                            </style>
-
                             <div class="col-11 desktop-arrow text-center positio">
-                                <button id="left-button-peng" class="desktop btn rounded-5 btn-panah-kiri">
-                                    <i class="fa-solid fa-arrow-left"></i>
-                                </button>
                                 
                                 <div class="row mobile-scroll mt-2 align-items-center" id="lelang-card-peng" style="flex-wrap: nowrap">
                                     <div class="col-12 custom ">
@@ -3421,17 +3396,13 @@
                                     </div>
                                     
                                 </div>
-
-                                <button id="right-button-peng" class="arrow-desktop btn rounded-5 btn-panah-kanan">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
                                 
                             </div>
 
                             <div class="col-11 mt-3 text-center">
                                 
                                 <div class="row mt-2 align-items-center" id="lelang-card-peng"
-                                style="flex-wrap: wrap; overflow: hidden;">
+                                style="flex-wrap: nowrap; overflow-x: auto">
                                     <div class="col-lg-4">
                                             <div class="card mx-auto">
     
