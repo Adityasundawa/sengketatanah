@@ -534,181 +534,55 @@
 
         <div class="row justify-content-center mb-2">
             <div class="col-lg-12 mt-4">
-                <h5>
-                    Cari Tukang Ukur
-                </h5>
-                <form class="row g-1">
-                    <div class="col-auto">
-                        <select name="wilayah" id="wilayah" class="form-select rounded-0">
-                            <option value="wilayah">&nbsp;&nbsp;Wilayah&nbsp;&nbsp;</option>
-                        </select>
-                    </div>
-                    <div class="col-auto">
-                        <select name="agen" id="agen" class="form-select rounded-0">
-                            <option value="agen">&nbsp;&nbsp;Agen&nbsp;&nbsp;</option>
-                        </select>
-                    </div>
-                    <div class="col-lg">
-                        <input type="text" class="form-control rounded-0" placeholder="Search" name="search">
-                    </div>
-                    <div class="col-auto">
-                        <input type="submit" value="search" class="btn btn-primary rounded-0">
-                    </div>
-                </form>
-                <div class="card mt-2 border-0 shadow-sm">
+                <div class="card border-0 shadow-sm">
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <h4>
-                                    4532 Agen Ditemukan
-                                </h4>
-                                <p>
-                                    Jakarta
-                                </p>
-                                <div class="row">
-
-                                    <?php
-                                    $name = [
-                                        "Budi K.",
-                                        "Rudi H.",
-
-                                        "Ustman A.",
-                                        "Joko L.",
-
-                                        "James Tate",
-                                        "Robert K.",
-                                        "Hadi Ismail", 'Abdullah', 'Nugraha D.', 'Ade Syarief', "Adhi Utomo", 'Leman wan', 'Noto Adi', 'Agus Susan'
-                                    ];
-                                    ?>
-
-                                    @for($i=13;$i> 0;$i--)
-                                    <div class="col-12 " id='orang-kotak'>
-                                        <hr>
-                                        <div class="row">
-
-                                            <div class="col-sm">
-
-                                                <table style="width:100%">
-                                                    <tr>
-                                                        <td rowspan="3">
-                                                            <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" class="rounded-circle img-thumbnail " style="width:70px;height:auto;object-fit:cover;">
-                                                        </td>
-                                                        <td>
-                                                            <b class="ms-1 text-success">
-                                                                {{$name[$i]}}
-                                                            </b>
-                                                            <span class="badge bg-success pt-1 pb-1">
-                                                                aktif
-                                                            </span>
-
-                                                        </td>
-                                                        <td>
-                                                            <button class="mobile btn btn-outline-dark float-end">
-                                                                <i class="fa fa-comment"></i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">
-                                                            <small class="ms-1">
-                                                                Lorem, ipsum dolor sit amet consectetur adipisicing.
-                                                            </small>
-                                                        </td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td></td>
-                                                    </tr>
-
-                                                </table>
-                                            </div>
-                                            <div class="col-sm">
-                                                <div class="desktop">
-                                                    <div class="float-end">
-                                                        <form action="{{url('')}}/detail-petugas" method="get">
-                                                            <input type="hidden" name="name" value="{{$name[$i]}}">
-                                                            <input type="hidden" name="img" value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
-                                                            <input type="hidden" name="jenis_petugas" value="Notaris">
-                                                        </form>
-                                                        <button onclick="return $($(this).parent()).find('form').submit()" class="btn btn-outline-dark pt-1 pb-1 mt-0 mb-0">
-                                                            <i class="fa fa-comment"></i>
-
-                                                            Hubungi
-                                                        </button>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-
-
-                                    </div>
-                                    @endfor
-                                    <hr>
+                        <h3 class="display-5" style="font-size:30px">
+                            Hubungi {{$req->name}}
+                        </h3>
+                        <div class="card card-body border-0 rounded-1 p-5" style="background-color:#F2F2F2">
+                            <div class="row">
+                                <div class="col-lg-4 text-center">
+                                    <img src="{{$req->img}}" alt="" srcset="" class="rounded-circle img-thumbnail" style="width:150px;height:auto;object-fit:cover">
+                                    <br>
+                                    <b>
+                                        {{$req->name}}
+                                    </b><br>
+                                    <span class="text-danger">
+                                        #{{$req->jenis_petugas}}
+                                    </span>
                                 </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <h4>
-                                    Agen Terverifikasi
-                                </h4>
-                                <p>
-                                    Any
-                                </p>
-                                <div class="row">
-
-                                    <?php
-                                    $name = [
-                                        "Budi K.",
-                                        "Rudi H.",
-
-                                        "Ustman A.",
-                                        "Joko L.",
-
-                                        "James Tate",
-                                        "Robert K.",
-                                        "Hadi Ismail", 'Abdullah', 'Nugraha D.', 'Ade Syarief', "Adhi Utomo", 'Leman wan', 'Noto Adi', 'Agus Susan'
-                                    ];
-                                    ?>
-
-                                    @for($i=8;$i> 0;$i--)
-                                    <div class="col-lg-12" id='orang-kotak'>
-
-                                        <div class="card border-0 mt-1 shadow" style="background:#FAFAD2">
-                                            <div class="card-body p-2">
-                                                <div class="text-center">
-
-                                                    <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" class="rounded-circle img-fluid shadow " style="width:70px;height:auto;object-fit:cover;">
-                                                    <br>
-                                                    <b class="text-danger">
-                                                        {{$name[$i]}}
-                                                    </b>
-
-                                                    <small> #Notaris</small>
-                                                    <br>
-                                                    +6281XXXXXXX
-                                                    <br>
-                                                    <button class="btn btn-dark  pt-1 pb-1 mt-0 mb-0">
-                                                        <i class="fa fa-comment"></i>
-                                                        Chat
-                                                    </button>
-                                                    <button class="btn btn-dark  pt-1 pb-1 mt-0 mb-0">
-                                                        <i class="fa fa-phone"></i>
-                                                        Telepon
-                                                    </button>
-
-                                                </div>
-                                            </div>
+                                <div class="col-lg-6">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">Nama</label>
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Masukan Nama Anda">
                                         </div>
-
-
-                                    </div>
-                                    @endfor
+                                        <div class="mb-3">
+                                            <label for="Alamat" class="form-label">Alamat</label>
+                                            <input type="text" class="form-control" name="alamat" id="Alamat" placeholder="Masukan Alamat Anda">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="no_hp" class="form-label">Nomor HP</label>
+                                            <input type="number" class="form-control" name="no_hp" id="no_hp" placeholder="Masukan Nomor HP Anda">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Masukan Email Anda">
+                                            <div id="emailHelp" class="form-text">Email yang anda masukan harus terdaftar di Website ini terlebih dahulu</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="password" class="form-label">Password</label>
+                                            <input type="password" class="form-control" name="password" id="password">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="passwordconf" class="form-label">Password Confirm</label>
+                                            <input type="password" class="form-control" name="passwordConf" id="passwordConf">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
