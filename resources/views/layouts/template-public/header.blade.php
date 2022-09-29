@@ -21,12 +21,22 @@
                 <div class="vr vr-none me-2"></div>
                 <hr class="hr-none">
 
+
+                @if(Auth::check() == false)
                 <li class="nav-item me-1 ms-1">
                     <a class="nav-link btn btn-outline-brown rounded-3 login-mb" href="{{url('/')}}/login">Login</a>
                 </li>
                 <li class="nav-item me-1 ms-1">
                     <a class="nav-link btn btn-brown text-white rounded-3" href="{{url('/')}}/register">Register</a>
                 </li>
+                @else
+
+                <li class="nav-item me-1 ms-1">
+                    <a class="nav-link btn btn-brown rounded-3 login-mb">{{Auth::user()->name}}</a>
+                </li>
+
+
+                @endif
                 <!--<li class="nav-item">-->
                 <!--    <a class="nav-link" href="{{url('/')}}/contact">Hubungi Kami</a>-->
                 <!--</li>-->
