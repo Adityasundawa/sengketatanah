@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
     <style>
@@ -470,6 +470,24 @@
             background: rgba(0, 0, 0, .9);
         }
 
+        .mobile-scroll {
+            overflow-x: hidden
+        }
+
+        @media (max-width: 1199.98px) {
+            .mobile-scroll {
+                overflow-x: scroll;
+            }
+
+            .mobile-scroll::-webkit-scrollbar {
+                opacity: 100;
+            }
+
+            .mobile-scroll::-webkit-scrollbar-thumb {
+                background: transparent;
+            }
+
+
     </style>
 </head>
 
@@ -555,9 +573,9 @@
 
             <div class="col-lg-12">
 
-                <div class="row mt-2 g-2">
+                <div class="row g-0">
 
-                    <div class="card mb-0 border-0 mb-3" style="z-index:999">
+                    <div class="card mb-0 border-0 mb-2 mt-2" style="z-index:999">
                         <div class="card-body pb-0">
                             <div class="row justify-content-between text-center scroll-simple"
                                 style="overflow-x: auto; flex-wrap: nowrap">
@@ -951,10 +969,11 @@
                                             <i class="fa-solid fa-arrow-left"></i>
                                         </button>
                                     </div>
+
                                     <div class="col-lg-10">
                                         <div class="row">
-                                            <div class="col mobile-scroll" id='orang-kotak'
-                                                style="white-space:nowrap;flex-wrap:nowarp;display:flex">
+                                            <div class="col mobile-scroll" id="orang-kotak"
+                                                style="white-space:nowrap;flex-wrap:nowarp;display:flex;">
         
                                                 <?php
                                                         $name =[
@@ -989,6 +1008,7 @@
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="col-1 arrow-desktop text-center">
                                         <button id="right-orang1" class="btn rounded-5 text-white bg-secondary"
                                             style="background-color: #61481C">
@@ -1017,7 +1037,7 @@
         
                             </div>
                         </div>
-                        </div>
+                    </div>
 
                     <div class="col-6">
                         <a class="btn btn-sm btn-dark w-100" href="{{url('')}}/register">Daftar Sekarang</a>
@@ -1105,11 +1125,6 @@
                                             <a class="tab btn btn-outline-secondary rounded-0 active"
                                                 style="width:100%;border:1px solid rgba(146,111,52,1)  "
                                                 id="btnSponsor">Sponsor </a>
-                                        </div>
-                                        <div class="col mt-2">
-                                            <a class="tab btn btn-outline-abu rounded-0"
-                                                style="width:100%;border:1px solid hsla(337, 85%, 31%, 1)"
-                                                id="btnLawyer">Pengacara </a>
                                         </div>
                                         <div class="col mt-2">
                                             <a class="tab btn btn-outline-secondary rounded-0"
@@ -1473,7 +1488,7 @@
                                 @endif
                                 <?php $counter++ ?>
                                 @endforeach
-                            </div>
+                            </div>                    
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination">
                                     <li class="page-item">
@@ -1494,9 +1509,6 @@
                                 </ul>
                             </nav>
 
-
-
-
                             <input type="checkbox" id="check">
                             <label class="chat-btn" for="check">
                                 <img src="{{asset('/')}}/images/kol_senter1.jpg" alt="" srcset=""
@@ -1514,219 +1526,6 @@
                                 </div>
                             </div>
 
-                        </div>
-
-
-
-
-
-                        <div class="col-lg-12 mt-2" id="dataLawyer" style="display:none">
-                            <div class="row">
-
-                                @foreach($bid_pengacara as $bp)
-                                <div class="col-lg-4 mt-1 mb-1">
-
-                                    <div class="card">
-                                        <div class="card-header text-white px-3 py-1" style="        
-                                            background: linear-gradient(90deg, hsla(337, 85%, 31%, 1) 42%, hsla(337, 83%, 30%, 1) 64%, hsla(318, 57%, 22%, 1) 86%);
-                                            ">
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                                    <h5 class="mb-0 text-center">Kode Bid {{$bp['kode']}} <img
-                                                            src="{{url('/')}}/uploads/biru_centang.png" alt=""
-                                                            class="mb-1" style="height:20px"></h4>
-                                                        </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--<div class="card-header bg-white">-->
-                                        <!--    <div class="row">-->
-                                        <!--        <div class="col-lg-12">-->
-                                        <!--            <span class="badge bg-secondary float-end"><a-->
-                                        <!--                    href="{{url('')}}/login?title=Bid Sponsor" class="text-white"-->
-                                        <!--                    style="text-decoration:none">Lihat Berkas</a></span>-->
-                                        <!--            <span class="float-end">&nbsp;</span>-->
-                                        <!--            <span class="badge bg-dark float-end" data-bs-toggle="modal"-->
-                                        <!--                data-bs-target="#podcastLawyer">Lihat Podcast Sengketa</span>-->
-                                        <!--            <span class="float-end">&nbsp;</span>-->
-                                        <!--            <span class="badge bg-danger float-end">Terverifikasi</span>-->
-                                        <!--        </div>-->
-                                        <!--    </div>-->
-                                        <!--</div>-->
-                                        <div class="card-body">
-                                            @if($bp['id'] >3)
-                                            <div class="ribbon-pop"><i class="fa-solid fa-star"></i>&nbsp;HOT</div>
-                                            @else
-                                            @endif
-
-
-                                            <table>
-                                                <tr>
-                                                    <td>Owner/Korban</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bp['owner']}}</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Objek Sengketa</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bp['objek']}}</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Lokasi</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bp['lokasi']}}</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Luas</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bp['luas']}}</td>
-                                                </tr>
-                                              
-                                                <tr>
-                                                    <td>Kebutuhan</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bp['kebutuhan']}}</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Anggaran</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bp['anggaran']}}</td>
-                                                </tr>
-
-
-                                                <tr>
-                                                    <td>Jumlah Bid</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bp['jumlah_bid']}}</td>
-                                                </tr>
-
-                                            </table>
-
-                                            <hr>
-
-                                            <div class="row g-0">
-                                                <div class="col text-center">
-                                                    <a href="#" class="mx-auto btn btn-danger rounded-5"
-                                                        data-bs-toggle="modal" data-bs-target="#berkasPengacara"
-                                                        style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
-                                                    </a>
-
-                                                    <!-- Modal -->
-                                                    <div class="modal fade my-auto" id="berkasPengacara" tabindex="-1"
-                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header p-0">
-                                                                    <h1
-                                                                        class="modal-title mx-auto text-danger display-1">
-                                                                        <i class="fa-regular fa-circle-xmark"></i></h1>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    Anda harus masuk sebagai pengacara sebelum melihat
-                                                                    berkas.
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button"
-                                                                        class="btn btn-secondary me-auto"
-                                                                        data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success"
-                                                                        href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger"
-                                                                        href="https://server.sengketatanah.id/login">Register</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col text-center">
-                                                    <span
-                                                        onclick="return document.querySelector('form.form-sengketa<?=$bp['id']?>').submit()"
-                                                        class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                            class="fa-solid fa-play text-danger"></i> Lihat
-                                                        Podcast</span>
-                                                </div>
-                                            </div>
-                                            <form action="{{url('/')}}/bid-sengketa/podcast" class="form-sengketa90"
-                                                method="get">
-                                                <input type="hidden" name="owner" value="{{$bp['owner']}}">
-                                                <input type="hidden" name="objek" value="{{$bp['objek']}}">
-                                                <input type="hidden" name="luas" value="{{$bp['luas']}}">
-                                                <input type="hidden" name="lokasi" value="{{$bp['lokasi']}}">
-                                                <input type="hidden" name="komentar" value="">
-                                                <input type="hidden" name="link_yt" value="">
-                                                <input type="hidden" name="form" value="pengacara">
-                                            </form>
-                                            <hr>
-                                            <div class="row justify-content-center no-gutters"
-                                                style="margin-top:-15px;">
-
-                                                <div class="col-4">
-                                                    <!--<div class="d-grid gap-2">-->
-                                                    <!--    <a href="{{url('/')}}/login?title=Bid Sengketa"-->
-                                                    <!--        class="btn btn-success mt-2" type="button">Bid Pengacara</a>-->
-
-                                                    <div class="d-grid gap-2 ">
-
-                                                        <!--<a href="{{url('/')}}/login?title=Bid Sponsor"-->
-                                                        <!--            class="btn mt-3 rounded-5 text-white" style="-->
-                                                        <!--            border: 0px;-->
-                                                        <!--            background: rgb(223,189,105);-->
-                                                        <!--        background: linear-gradient(90deg, hsla(337, 85%, 31%, 1) 42%, hsla(337, 83%, 30%, 1) 64%, hsla(318, 57%, 22%, 1) 86%);-->
-                                                        <!--            height: 45px" -->
-                                                        <!--            type="button"><i class="fa-solid fa-gavel"></i> Bid Pengacara</a>-->
-                                                        <button type="button"
-                                                            class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                            data-bs-toggle="modal" data-bs-target="#examplePengacara">
-                                                            BID
-                                                        </button>
-
-                                                        <!-- Modal -->
-                                                        <div class="modal fade my-auto" id="examplePengacara"
-                                                            tabindex="-1" aria-labelledby="exampleModalLabel"
-                                                            aria-hidden="true">
-                                                            <div class="modal-dialog modal-dialog-centered">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header p-0">
-                                                                        <h1
-                                                                            class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
-                                                                        </h1>
-                                                                    </div>
-                                                                    <div class="modal-body">
-                                                                        Anda harus masuk sebagai pengacara sebelum
-                                                                        melakukan bid.
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button"
-                                                                            class="btn btn-secondary me-auto"
-                                                                            data-bs-dismiss="modal">Close</button>
-                                                                        <a type="button" class="btn btn-success"
-                                                                            href="https://server.sengketatanah.id/login">Login</a>
-                                                                        <a type="button" class="btn btn-danger"
-                                                                            href="https://server.sengketatanah.id/login">Register</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                @endforeach
-                            </div>
                         </div>
 
                         <div class="col-lg-12" id="dataPemerintah" style="display:none">
