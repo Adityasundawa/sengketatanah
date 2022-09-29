@@ -41,6 +41,7 @@ Route::get('des-kec-id',[WilayahIndoController::class,'getDesaIdKec']);
 Route::get('send-email',[EmailController::class,'sendEmail']);
 
 
+Route::get('bidding-pengacara',[PublicController::class,'biddingPengacara'])->name('biddingPengacara');
 Route::get('bidding-sponsor',[PublicController::class,'biddingSponsor'])->name('biddingSponsor');
 Route::get('kerjasama-lahan',[PublicController::class,'kerjasamaLahan'])->name('kerjasamaLahan');
 Route::get('podcast-sengketa',[PublicController::class,'podcastSengketa'])->name('podcastSengketa');

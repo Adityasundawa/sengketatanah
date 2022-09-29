@@ -5588,9 +5588,6 @@
                     </div>
                 </div>
             </div>
-
-
-
             <!-- Jual beli Lahan -->
             <div class="card mb-3 border-0 shadow-sm ">
                 <div class="card-header bg-white">
