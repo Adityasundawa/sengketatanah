@@ -1521,7 +1521,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p class="mb-0">Sengketa <span class="badge bg-danger">11,874</span></p>
+                                    <p class="mb-0">Total Sengketa <span class="badge bg-danger">11,874</span></p>
                                 </td>
                             </tr>
                         </table>
