@@ -1016,12 +1016,33 @@
                                 <div class="row mb-2" id="titleSponsor">
                                     <div class="col">
                                         <div class="row fw-bold">
-                                            <div class="col text-start">
-                                                <h4>Lelang Lahan</h4>
-                                            </div>
-                                            <div class="col-4 text-end text-primary">
-                                                <h4>11,874</h4>
-                                            </div>
+                                        <table style="width:100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td rowspan="2" style="width: 40px">
+                                                            <img src="http://sengketatanah.id/uploads/sengketa-logo_pas.png"
+                                                                style="width:30px">
+                                                        </td>
+                                                        <td>
+                                                            <h3 color="text-primary"
+                                                                style="margin-bottom: 0px !important">
+                                                               Lelang Lahan
+                                                            </h3>
+                                                        </td>
+                                                        <td class="text-end" rowspan="2">
+                                                            <h5 class="text-primary fw-bold"
+                                                                style="text-decoration: none">
+                                                                1.430
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>

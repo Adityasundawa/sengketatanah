@@ -78,6 +78,11 @@ class PublicController extends Controller
     {
         return view('auth.lelangLahan.register');
     }
+    
+    public function biddingPengacara()
+    {
+        return view('public.bidding_pengacara');
+    }
 
     private function data_jual_beli()
     {

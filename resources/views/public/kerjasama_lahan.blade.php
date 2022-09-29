@@ -1016,12 +1016,33 @@
                                 <div class="row mb-2" id="titleSponsor">
                                     <div class="col">
                                         <div class="row fw-bold">
-                                            <div class="col text-start">
-                                                <h4>Kerjasama Lahan</h4>
-                                            </div>
-                                            <div class="col-4 text-end text-primary">
-                                                <h4>11,874</h4>
-                                            </div>
+                                            <table style="width:100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td rowspan="2" style="width: 40px">
+                                                            <img src="http://sengketatanah.id/uploads/sengketa-logo_pas.png"
+                                                                style="width:30px">
+                                                        </td>
+                                                        <td>
+                                                            <h3 color="text-primary"
+                                                                style="margin-bottom: 0px !important">
+                                                               Kerja Sama Lahan
+                                                            </h3>
+                                                        </td>
+                                                        <td class="text-end" rowspan="2">
+                                                            <h5 class="text-primary fw-bold"
+                                                                style="text-decoration: none">
+                                                                1.430
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
@@ -1243,9 +1264,9 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
                                             <table class="mt-3">
-                                              
+
                                                 <tr>
                                                     <td>Luas</td>
                                                     <td></td>
@@ -1359,16 +1380,21 @@
 
                                                     <div class="d-grid gap-2 ">
 
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                        <button type="button"
+                                                            class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
+                                                            data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             BID
                                                         </button>
 
 
-                                                        <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="exampleSponsor"
+                                                            tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                            aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
-                                                                        <h1 class="modal-title mx-auto text-danger display-1">
+                                                                        <h1
+                                                                            class="modal-title mx-auto text-danger display-1">
                                                                             <i class="fa-regular fa-circle-xmark"></i>
                                                                         </h1>
                                                                     </div>
@@ -1377,9 +1403,13 @@
                                                                         melakukan bid.
                                                                     </div>
                                                                     <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                        <button type="button"
+                                                                            class="btn btn-secondary me-auto"
+                                                                            data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success"
+                                                                            href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger"
+                                                                            href="https://server.sengketatanah.id/login">Register</a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1398,7 +1428,7 @@
                             </div>
 
                         </div>
-                       
+
 
 
 
@@ -1417,21 +1447,21 @@
 
 
             <div class="card mb-2 mt-2 border-0 shadow-sm">
-                    <div class="card-body">
-                        <div class="row justify-content-center">
+                <div class="card-body">
+                    <div class="row justify-content-center">
 
                         <div class="col-1 arrow-desktop text-center">
-                                <button id="left-orang1" class="btn rounded-5 text-white bg-secondary"
-                                    style="background-color: #61481C">
-                                    <i class="fa-solid fa-arrow-left"></i>
-                                </button>
-                            </div>
-                            <div class="col-lg-10">
-                                <div class="row">
-                                    <div class="col mobile-scroll" id='orang-kotak'
-                                        style="white-space:nowrap;flex-wrap:nowarp;display:flex">
+                            <button id="left-orang1" class="btn rounded-5 text-white bg-secondary"
+                                style="background-color: #61481C">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                        </div>
+                        <div class="col-lg-10">
+                            <div class="row">
+                                <div class="col mobile-scroll" id='orang-kotak'
+                                    style="white-space:nowrap;flex-wrap:nowarp;display:flex">
 
-                                        <?php
+                                    <?php
                                                 $name =[
                                                 "Budi K.",
                                                 "Rudi H.",
@@ -1443,382 +1473,371 @@
                                                 "Robert K.",
                                                 "Hadi Ismail",'Abdullah','Nugraha D.','Ade Syarief',"Adhi Utomo",'Leman wan','Noto Adi','Agus Susan'] ;
                                             ?>
-                                        <div class="container-gambar text-center ms-1"
-                                            style='display: inline-block;flex: 0 0 auto'>
-                                            <img src="data:image/png;base64,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"
-                                                alt="" srcset="" class="rounded-4 img-thumbnail"
-                                                style="width:70px;height:70px;object-fit:cover;background:#61481C"> <br>
+                                    <div class="container-gambar text-center ms-1"
+                                        style='display: inline-block;flex: 0 0 auto'>
+                                        <img src="data:image/png;base64,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"
+                                            alt="" srcset="" class="rounded-4 img-thumbnail"
+                                            style="width:70px;height:70px;object-fit:cover;background:#61481C"> <br>
 
-                                            Notaris
+                                        Notaris
 
-                                        </div>
-                                        @for($i=13;$i> 0;$i--)
-                                        <div class="container-gambar text-center ms-1"
-                                            style='display: inline-block;flex: 0 0 auto'>
-                                            <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt=""
-                                                srcset="" class="rounded-4 img-thumbnail "
-                                                style="width:70px;height:70px;object-fit:cover;"> <br>
-                                            {{$name[$i]}}
-                                        </div>
-                                        @endfor
                                     </div>
+                                    @for($i=13;$i> 0;$i--)
+                                    <div class="container-gambar text-center ms-1"
+                                        style='display: inline-block;flex: 0 0 auto'>
+                                        <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt="" srcset=""
+                                            class="rounded-4 img-thumbnail "
+                                            style="width:70px;height:70px;object-fit:cover;"> <br>
+                                        {{$name[$i]}}
+                                    </div>
+                                    @endfor
                                 </div>
                             </div>
-                            <div class="col-1 arrow-desktop text-center">
-                                <button id="right-orang1" class="btn rounded-5 text-white bg-secondary"
-                                    style="background-color: #61481C">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                            </div>
-
-                        
                         </div>
+                        <div class="col-1 arrow-desktop text-center">
+                            <button id="right-orang1" class="btn rounded-5 text-white bg-secondary"
+                                style="background-color: #61481C">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+
                     </div>
+                </div>
             </div>
 
 
 
 
 
-                <div class="card mb-2 border-0 shadow-sm mt-2">
-                    <div class="card-body">
+            <div class="card mb-2 border-0 shadow-sm mt-2">
+                <div class="card-body">
                     <div class="col-lg-12 mt-2 show" id="dataSponsor">
-                                        <div class="row">
-                                            <?php $counter = 1 ?>
-                                            @foreach($data_jual_beli as $bs)
-                                            @if($bs['id'] < 4  )
-                                            @continue
-                                            @endif
-                                            @if($bs['id'] > 6  )
-                                            @continue
-                                            @endif
-                                            <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
-                                                <div class="card mb-2">
-        
-                                                    <div class="card-header text-white px-3 py-1" style="
+                        <div class="row">
+                            <?php $counter = 1 ?>
+                            @foreach($data_jual_beli as $bs)
+                            @if($bs['id'] < 4 ) @continue @endif @if($bs['id']> 6 )
+                                @continue
+                                @endif
+                                <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
+                                    <div class="card mb-2">
+
+                                        <div class="card-header text-white px-3 py-1" style="
                                                     background: #8f8f8f">
-                                                        <div class="row">
-        
-                                                            <div class="col-lg-12">
-                                                                <!-- <h5 class="mb-0 text-center">Kode Bid {{$bs['kode']}} <img
+                                            <div class="row">
+
+                                                <div class="col-lg-12">
+                                                    <!-- <h5 class="mb-0 text-center">Kode Bid {{$bs['kode']}} <img
                                                                         src="{{url('/')}}/uploads/biru_centang.png" alt=""
                                                                         class="mb-1" style="height:20px"></h4> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--<div class="card-header bg-white">-->
-                                                    <!--    <div class="row">-->
-                                                    <!--        <div class="col-lg-12">-->
-                                                    <!--            <span class="badge bg-secondary float-end"><a-->
-                                                    <!--                    href="{{url('')}}/login?title=Bid Sponsor" class="text-white"-->
-                                                    <!--                    style="text-decoration:none">Lihat Berkas</a></span>-->
-                                                    <!--            <span class="float-end">&nbsp;</span>-->
-                                                    <!--            <form action="{{url('/')}}/bid-sengketa/podcast"class="form-sengketa{{$bs['id']}}"method="get">-->
-                                                    <!--                <input type="hidden" name="owner"value="{{$bs['owner']}}">-->
-                                                    <!--                <input type="hidden" name="objek"value="{{$bs['objek']}}">-->
-                                                    <!--                <input type="hidden" name="luas"value="{{$bs['luas']}}">-->
-                                                    <!--                <input type="hidden" name="lokasi"value="{{$bs['lokasi']}}">-->
-                                                    <!--                <input type="hidden" name="komentar"value="">-->
-                                                    <!--                <input type="hidden" name="link_yt"value="">-->
-                                                    <!--                <input type="hidden" name="form"value="sponsor">-->
-                                                    <!--            </form>-->
-                                                    <!--            <span class="badge bg-dark float-end" onclick="return document.querySelector('form.form-sengketa<?=$bs['id']?>').submit()">Lihat Podcast Sengketa</span>-->
-                                                    <!--            <span class="float-end">&nbsp;</span>-->
-        
-                                                    <!--        </div>-->
-                                                    <!--    </div>-->
-                                                    <!--</div>-->
-        
-        
-        
-        
-                                                    <div class="card-body">
-        
-        
-                                                        @if($bs['id'] < 5) <div class="ribbon-pop"><i
-                                                                class="fa-solid fa-star"></i>&nbsp;HOT </div>
-                                                    @else
-                                                    @endif
-        
-                                                    <div class="desktop-2">
-                                                        <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
-                                                            data-interval="false">
-                                                            <div class="carousel-indicators">
-                                                                <button type="button"
-                                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                                    data-bs-slide-to="0" class="active" aria-current="true"
-                                                                    aria-label="Slide 1"></button>
-                                                                <button type="button"
-                                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                                <button type="button"
-                                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                                <button type="button"
-                                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                                    data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                                            </div>
-        
-                                                            <div class="carousel-inner">
-                                                                <div class="carousel-item active">
-                                                                    <img src="{{asset('')}}{{$bs['img']}}" class="d-block w-100"
-                                                                        style="height:250px;width:auto;object-fit:cover">
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                    <img src="{{asset('')}}{{$bs['img1']}}"
-                                                                        class="d-block w-100"
-                                                                        style="height:250px;width:auto;object-fit:cover">
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                    <img src="{{asset('')}}{{$bs['img2']}}"
-                                                                        class="d-block w-100"
-                                                                        style="height:250px;width:auto;object-fit:cover">
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                    <img src="{{asset('')}}{{$bs['img3']}}"
-                                                                        class="d-block w-100"
-                                                                        style="height:250px;width:auto;object-fit:cover">
-                                                                </div>
-                                                            </div>
-                                                            <button class="carousel-control-prev opacity-90 text-dark"
-                                                                type="button"
-                                                                data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                                data-bs-slide="prev">
-                                                                <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                                                    aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Previous</span>
-                                                            </button>
-                                                            <button class="carousel-control-next opacity-90 text-dark"
-                                                                type="button"
-                                                                data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                                data-bs-slide="next">
-                                                                <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                                                    aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Next</span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="mobile">
-                                                        <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
-                                                            data-interval="false">
-                                                            <div class="carousel-indicators">
-                                                                <button type="button"
-                                                                    data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                                    data-bs-slide-to="0" class="active" aria-current="true"
-                                                                    aria-label="Slide 1"></button>
-                                                                <button type="button"
-                                                                    data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                                <button type="button"
-                                                                    data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                                <button type="button"
-                                                                    data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                                    data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                                            </div>
-        
-                                                            <div class="carousel-inner">
-                                                                <div class="carousel-item active">
-                                                                    <img src="{{asset('')}}{{$bs['img']}}" class="d-block w-100"
-                                                                        style="height:210px;width:auto;object-fit:cover">
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                    <img src="{{asset('')}}{{$bs['img1']}}"
-                                                                        class="d-block w-100"
-                                                                        style="height:210px;width:auto;object-fit:cover">
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                    <img src="{{asset('')}}{{$bs['img2']}}"
-                                                                        class="d-block w-100"
-                                                                        style="height:210px;width:auto;object-fit:cover">
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                    <img src="{{asset('')}}{{$bs['img3']}}"
-                                                                        class="d-block w-100"
-                                                                        style="height:210px;width:auto;object-fit:cover">
-                                                                </div>
-                                                            </div>
-                                                            <button class="carousel-control-prev opacity-90 text-dark"
-                                                                type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                                data-bs-slide="prev">
-                                                                <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                                                    aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Previous</span>
-                                                            </button>
-                                                            <button class="carousel-control-next opacity-90 text-dark"
-                                                                type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                                data-bs-slide="next">
-                                                                <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                                                    aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Next</span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-        
-                                                    <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                                        <div class="row">
-                                                            <div class="col-lg-12">
-                                                                <h5 class="mb-0 text-center">Kode Bidang JBL-004 <img
-                                                                        src="{{asset('')}}uploads/biru_centang.png" alt=""
-                                                                        class="mb-1" style="height:20px"></h5>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <table class="mt-3">
-                                              
-                                                <tr>
-                                                    <td>Luas</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bs['luas']}}</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Lokasi</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bs['lokasi']}}</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jenis Lahan</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bs['jenis_lahan']}}</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Dokumen</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;SHM</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Peruntukan</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;Permukiman</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Akses</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;Mobil</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jumlah Bid</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bs['jumlah_bid']}}</td>
-                                                </tr>
-                                            </table>
-                                                    <hr>
-        
-        
-                                                    <div class="row g-0">
-                                                        <div class="col text-center">
-        
-                                                            <a href="#" class="  mx-auto btn btn-danger rounded-5"
-                                                                data-bs-toggle="modal" data-bs-target="#berkasSponsor"
-                                                                style="text-decoration:none">
-                                                                <i class="fa-solid fa-eye"></i> Lihat Detail
-                                                            </a>
-        
-        
-                                                            <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
-                                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                                <div class="modal-dialog modal-dialog-centered">
-                                                                    <div class="modal-content">
-                                                                        <div class="modal-header p-0">
-                                                                            <h1
-                                                                                class="modal-title mx-auto text-danger display-1">
-                                                                                <i class="fa-regular fa-circle-xmark"></i>
-                                                                            </h1>
-                                                                        </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus masukkan akun sebelum melihat
-                                                                            berkas.
-                                                                        </div>
-                                                                        <div class="modal-footer">
-                                                                            <button type="button"
-                                                                                class="btn btn-secondary me-auto"
-                                                                                data-bs-dismiss="modal">Close</button>
-                                                                            <a type="button" class="btn btn-success"
-                                                                                href="https://server.sengketatanah.id/login">Login</a>
-                                                                            <a type="button" class="btn btn-danger"
-                                                                                href="https://server.sengketatanah.id/login">Register</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-        
-                                                        </div>
-                                                        <div class="col text-center">
-                                                            <span
-                                                                onclick="return document.querySelector('form.form-sengketa1').submit()"
-                                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                                    class="fa-solid fa-play text-white"></i>
-                                                                Lihat Video</span>
-                                                        </div>
-                                                    </div>
-        
-        
-                                                    <form action="{{url('/')}}/bid-sengketa/podcast"
-                                                        class="form-sengketa{{$bs['id']}}" method="get">
-                                                        <input type="hidden" name="owner" value="{{$bs['owner']}}">
-                                                        <input type="hidden" name="objek" value="{{$bs['objek']}}">
-                                                        <input type="hidden" name="luas" value="{{$bs['luas']}}">
-                                                        <input type="hidden" name="lokasi" value="{{$bs['lokasi']}}">
-                                                        <input type="hidden" name="komentar" value="">
-                                                        <input type="hidden" name="link_yt" value="{{$bs['link_yt']}}">
-                                                        <input type="hidden" name="form" value="sponsor">
-                                                    </form>
-        
-        
-                                                    <hr>
-                                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                                <div class="col-4">
-
-                                                    <div class="d-grid gap-2 ">
-
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                            BID
-                                                        </button>
-
-
-                                                        <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                            <div class="modal-dialog modal-dialog-centered">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header p-0">
-                                                                        <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
-                                                                        </h1>
-                                                                    </div>
-                                                                    <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum
-                                                                        melakukan bid.
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <?php $counter++ ?>
-                                        @endforeach
+                                        <!--<div class="card-header bg-white">-->
+                                        <!--    <div class="row">-->
+                                        <!--        <div class="col-lg-12">-->
+                                        <!--            <span class="badge bg-secondary float-end"><a-->
+                                        <!--                    href="{{url('')}}/login?title=Bid Sponsor" class="text-white"-->
+                                        <!--                    style="text-decoration:none">Lihat Berkas</a></span>-->
+                                        <!--            <span class="float-end">&nbsp;</span>-->
+                                        <!--            <form action="{{url('/')}}/bid-sengketa/podcast"class="form-sengketa{{$bs['id']}}"method="get">-->
+                                        <!--                <input type="hidden" name="owner"value="{{$bs['owner']}}">-->
+                                        <!--                <input type="hidden" name="objek"value="{{$bs['objek']}}">-->
+                                        <!--                <input type="hidden" name="luas"value="{{$bs['luas']}}">-->
+                                        <!--                <input type="hidden" name="lokasi"value="{{$bs['lokasi']}}">-->
+                                        <!--                <input type="hidden" name="komentar"value="">-->
+                                        <!--                <input type="hidden" name="link_yt"value="">-->
+                                        <!--                <input type="hidden" name="form"value="sponsor">-->
+                                        <!--            </form>-->
+                                        <!--            <span class="badge bg-dark float-end" onclick="return document.querySelector('form.form-sengketa<?=$bs['id']?>').submit()">Lihat Podcast Sengketa</span>-->
+                                        <!--            <span class="float-end">&nbsp;</span>-->
+
+                                        <!--        </div>-->
+                                        <!--    </div>-->
+                                        <!--</div>-->
+
+
+
+
+                                        <div class="card-body">
+
+
+                                            @if($bs['id'] < 5) <div class="ribbon-pop"><i
+                                                    class="fa-solid fa-star"></i>&nbsp;HOT </div>
+                                        @else
+                                        @endif
+
+                                        <div class="desktop-2">
+                                            <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
+                                                data-interval="false">
+                                                <div class="carousel-indicators">
+                                                    <button type="button"
+                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button"
+                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button"
+                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button"
+                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}{{$bs['img']}}" class="d-block w-100"
+                                                            style="height:250px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}{{$bs['img1']}}" class="d-block w-100"
+                                                            style="height:250px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}{{$bs['img2']}}" class="d-block w-100"
+                                                            style="height:250px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}{{$bs['img3']}}" class="d-block w-100"
+                                                            style="height:250px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                    data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                    data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="mobile">
+                                            <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
+                                                data-interval="false">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                                        aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}{{$bs['img']}}" class="d-block w-100"
+                                                            style="height:210px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}{{$bs['img1']}}" class="d-block w-100"
+                                                            style="height:210px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}{{$bs['img2']}}" class="d-block w-100"
+                                                            style="height:210px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}{{$bs['img3']}}" class="d-block w-100"
+                                                            style="height:210px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                    data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                    data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                        aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <h5 class="mb-0 text-center">Kode Bidang JBL-004 <img
+                                                            src="{{asset('')}}uploads/biru_centang.png" alt=""
+                                                            class="mb-1" style="height:20px"></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <table class="mt-3">
+
+                                            <tr>
+                                                <td>Luas</td>
+                                                <td></td>
+                                                <td>:</td>
+                                                <td>&nbsp;{{$bs['luas']}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lokasi</td>
+                                                <td></td>
+                                                <td>:</td>
+                                                <td>&nbsp;{{$bs['lokasi']}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jenis Lahan</td>
+                                                <td></td>
+                                                <td>:</td>
+                                                <td>&nbsp;{{$bs['jenis_lahan']}}</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Dokumen</td>
+                                                <td></td>
+                                                <td>:</td>
+                                                <td>&nbsp;SHM</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Peruntukan</td>
+                                                <td></td>
+                                                <td>:</td>
+                                                <td>&nbsp;Permukiman</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Akses</td>
+                                                <td></td>
+                                                <td>:</td>
+                                                <td>&nbsp;Mobil</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jumlah Bid</td>
+                                                <td></td>
+                                                <td>:</td>
+                                                <td>&nbsp;{{$bs['jumlah_bid']}}</td>
+                                            </tr>
+                                        </table>
+                                        <hr>
+
+
+                                        <div class="row g-0">
+                                            <div class="col text-center">
+
+                                                <a href="#" class="  mx-auto btn btn-danger rounded-5"
+                                                    data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                    style="text-decoration:none">
+                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                </a>
+
+
+                                                <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header p-0">
+                                                                <h1 class="modal-title mx-auto text-danger display-1">
+                                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                                </h1>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                Anda harus masukkan akun sebelum melihat
+                                                                berkas.
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary me-auto"
+                                                                    data-bs-dismiss="modal">Close</button>
+                                                                <a type="button" class="btn btn-success"
+                                                                    href="https://server.sengketatanah.id/login">Login</a>
+                                                                <a type="button" class="btn btn-danger"
+                                                                    href="https://server.sengketatanah.id/login">Register</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col text-center">
+                                                <span
+                                                    onclick="return document.querySelector('form.form-sengketa1').submit()"
+                                                    class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                        class="fa-solid fa-play text-white"></i>
+                                                    Lihat Video</span>
+                                            </div>
+                                        </div>
+
+
+                                        <form action="{{url('/')}}/bid-sengketa/podcast"
+                                            class="form-sengketa{{$bs['id']}}" method="get">
+                                            <input type="hidden" name="owner" value="{{$bs['owner']}}">
+                                            <input type="hidden" name="objek" value="{{$bs['objek']}}">
+                                            <input type="hidden" name="luas" value="{{$bs['luas']}}">
+                                            <input type="hidden" name="lokasi" value="{{$bs['lokasi']}}">
+                                            <input type="hidden" name="komentar" value="">
+                                            <input type="hidden" name="link_yt" value="{{$bs['link_yt']}}">
+                                            <input type="hidden" name="form" value="sponsor">
+                                        </form>
+
+
+                                        <hr>
+                                        <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                            <div class="col-4">
+
+                                                <div class="d-grid gap-2 ">
+
+                                                    <button type="button"
+                                                        class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                        BID
+                                                    </button>
+
+
+                                                    <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header p-0">
+                                                                    <h1
+                                                                        class="modal-title mx-auto text-danger display-1">
+                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                    </h1>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    Anda harus masuk sebagai sponsor sebelum
+                                                                    melakukan bid.
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button"
+                                                                        class="btn btn-secondary me-auto"
+                                                                        data-bs-dismiss="modal">Close</button>
+                                                                    <a type="button" class="btn btn-success"
+                                                                        href="https://server.sengketatanah.id/login">Login</a>
+                                                                    <a type="button" class="btn btn-danger"
+                                                                        href="https://server.sengketatanah.id/login">Register</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
+                                </div>
+                        </div>
+                        <?php $counter++ ?>
+                        @endforeach
                     </div>
                 </div>
+            </div>
 
 
 
@@ -1826,27 +1845,27 @@
 
 
 
-             
+
         </div>
 
 
 
         <div class="card mb-2 mt-2 border-0 shadow-sm">
-                    <div class="card-body">
-                        <div class="row justify-content-center">
+            <div class="card-body">
+                <div class="row justify-content-center">
 
-                        <div class="col-1 arrow-desktop text-center">
-                                <button id="left-orang2" class="btn rounded-5 text-white bg-secondary"
-                                    style="background-color: #61481C">
-                                    <i class="fa-solid fa-arrow-left"></i>
-                                </button>
-                            </div>
-                            <div class="col-lg-10">
-                                <div class="row">
-                                    <div class="col mobile-scroll" id='orang-bulet2'
-                                        style="white-space:nowrap;flex-wrap:nowarp;display:flex">
+                    <div class="col-1 arrow-desktop text-center">
+                        <button id="left-orang2" class="btn rounded-5 text-white bg-secondary"
+                            style="background-color: #61481C">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="row">
+                            <div class="col mobile-scroll" id='orang-bulet2'
+                                style="white-space:nowrap;flex-wrap:nowarp;display:flex">
 
-                                        <?php
+                                <?php
                                                 $name =["Rudi H.",
                                                 "Budi K.",
                                                 "Joko Afdal",
@@ -1854,712 +1873,686 @@
                                                 "Robert K.",
                                                 "James Tate","Hadi Ismail",'Abdullah','Nugraha D.','Ade Syarief',"Adhi Utomo",'Leman wan','Pranoto Adi','Agus Susan'] ;
                                             ?>
-                                        <div class="container-gambar text-center ms-1"
-                                            style='display: inline-block;flex: 0 0 auto'>
-                                            <img src="data:image/png;base64,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"
-                                                alt="" srcset="" class="rounded-circle img-thumbnail "
-                                                style="width:70px;height:70px;object-fit:cover;background:#61481C"> <br>
+                                <div class="container-gambar text-center ms-1"
+                                    style='display: inline-block;flex: 0 0 auto'>
+                                    <img src="data:image/png;base64,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"
+                                        alt="" srcset="" class="rounded-circle img-thumbnail "
+                                        style="width:70px;height:70px;object-fit:cover;background:#61481C"> <br>
 
-                                            PPAT
+                                    PPAT
 
-                                        </div>
-                                        @for($i=0;$i< 14;$i++) <div class="container-gambar text-center ms-1"
-                                            style='display: inline-block;flex: 0 0 auto'>
-                                            <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt=""
-                                                srcset="" class="rounded-circle img-thumbnail "
-                                                style="width:70px;height:70px;object-fit:cover;"> <br>
-                                            {{$name[$i]}}
-                                    </div>
-                                    @endfor
                                 </div>
+                                @for($i=0;$i< 14;$i++) <div class="container-gambar text-center ms-1"
+                                    style='display: inline-block;flex: 0 0 auto'>
+                                    <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt="" srcset=""
+                                        class="rounded-circle img-thumbnail "
+                                        style="width:70px;height:70px;object-fit:cover;"> <br>
+                                    {{$name[$i]}}
                             </div>
+                            @endfor
                         </div>
-                        <div class="col-1 arrow-desktop text-center">
-                            <button id="right-orang2" class="btn rounded-5 text-white bg-secondary"
-                                style="background-color: #61481C">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </button>
-                        </div>
-
-                        <script>
-                            $('#right-orang2').click(function () {
-                                event.preventDefault();
-                                $('#orang-bulet2').animate({
-                                    scrollLeft: "+=300px"
-                                }, "slow");
-                            });
-
-                            $('#left-orang2').click(function () {
-                                event.preventDefault();
-                                $('#orang-bulet2').animate({
-                                    scrollLeft: "-=300px"
-                                }, "slow");
-                            });
-
-                        </script>
-                        </div>
-                    
                     </div>
+                </div>
+                <div class="col-1 arrow-desktop text-center">
+                    <button id="right-orang2" class="btn rounded-5 text-white bg-secondary"
+                        style="background-color: #61481C">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <script>
+                    $('#right-orang2').click(function () {
+                        event.preventDefault();
+                        $('#orang-bulet2').animate({
+                            scrollLeft: "+=300px"
+                        }, "slow");
+                    });
+
+                    $('#left-orang2').click(function () {
+                        event.preventDefault();
+                        $('#orang-bulet2').animate({
+                            scrollLeft: "-=300px"
+                        }, "slow");
+                    });
+
+                </script>
             </div>
 
+        </div>
+    </div>
 
 
 
-        <div class="card mb-2 border-0 shadow-sm mt-2">
-                    <div class="card-body">
-                    <div class="col-lg-12 mt-2 show" id="dataSponsor">
-                                        <div class="row">
-                                            <?php $counter = 1 ?>
-                                            @foreach($data_jual_beli as $bs)
-                                           
-                                            @if($bs['id'] < 7  )
-                                            @continue
-                                            @endif
-                                            <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
-                                                <div class="card mb-2">
-        
-                                                    <div class="card-header text-white px-3 py-1" style="
+
+    <div class="card mb-2 border-0 shadow-sm mt-2">
+        <div class="card-body">
+            <div class="col-lg-12 mt-2 show" id="dataSponsor">
+                <div class="row">
+                    <?php $counter = 1 ?>
+                    @foreach($data_jual_beli as $bs)
+
+                    @if($bs['id'] < 7 ) @continue @endif <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
+                        <div class="card mb-2">
+
+                            <div class="card-header text-white px-3 py-1" style="
                                                     background: #8f8f8f">
-                                                        <div class="row">
-        
-                                                            <div class="col-lg-12">
-                                                                <!-- <h5 class="mb-0 text-center">Kode Bid {{$bs['kode']}} <img
+                                <div class="row">
+
+                                    <div class="col-lg-12">
+                                        <!-- <h5 class="mb-0 text-center">Kode Bid {{$bs['kode']}} <img
                                                                         src="{{url('/')}}/uploads/biru_centang.png" alt=""
                                                                         class="mb-1" style="height:20px"></h4> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--<div class="card-header bg-white">-->
-                                                    <!--    <div class="row">-->
-                                                    <!--        <div class="col-lg-12">-->
-                                                    <!--            <span class="badge bg-secondary float-end"><a-->
-                                                    <!--                    href="{{url('')}}/login?title=Bid Sponsor" class="text-white"-->
-                                                    <!--                    style="text-decoration:none">Lihat Berkas</a></span>-->
-                                                    <!--            <span class="float-end">&nbsp;</span>-->
-                                                    <!--            <form action="{{url('/')}}/bid-sengketa/podcast"class="form-sengketa{{$bs['id']}}"method="get">-->
-                                                    <!--                <input type="hidden" name="owner"value="{{$bs['owner']}}">-->
-                                                    <!--                <input type="hidden" name="objek"value="{{$bs['objek']}}">-->
-                                                    <!--                <input type="hidden" name="luas"value="{{$bs['luas']}}">-->
-                                                    <!--                <input type="hidden" name="lokasi"value="{{$bs['lokasi']}}">-->
-                                                    <!--                <input type="hidden" name="komentar"value="">-->
-                                                    <!--                <input type="hidden" name="link_yt"value="">-->
-                                                    <!--                <input type="hidden" name="form"value="sponsor">-->
-                                                    <!--            </form>-->
-                                                    <!--            <span class="badge bg-dark float-end" onclick="return document.querySelector('form.form-sengketa<?=$bs['id']?>').submit()">Lihat Podcast Sengketa</span>-->
-                                                    <!--            <span class="float-end">&nbsp;</span>-->
-        
-                                                    <!--        </div>-->
-                                                    <!--    </div>-->
-                                                    <!--</div>-->
-        
-        
-        
-        
-                                                    <div class="card-body">
-        
-        
-                                                        @if($bs['id'] < 5) <div class="ribbon-pop"><i
-                                                                class="fa-solid fa-star"></i>&nbsp;HOT </div>
-                                                    @else
-                                                    @endif
-        
-                                                    <div class="desktop-2">
-                                                        <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
-                                                            data-interval="false">
-                                                            <div class="carousel-indicators">
-                                                                <button type="button"
-                                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                                    data-bs-slide-to="0" class="active" aria-current="true"
-                                                                    aria-label="Slide 1"></button>
-                                                                <button type="button"
-                                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                                <button type="button"
-                                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                                <button type="button"
-                                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                                    data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                                            </div>
-        
-                                                            <div class="carousel-inner">
-                                                                <div class="carousel-item active">
-                                                                    <img src="{{asset('')}}{{$bs['img']}}" class="d-block w-100"
-                                                                        style="height:250px;width:auto;object-fit:cover">
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                    <img src="{{asset('')}}{{$bs['img1']}}"
-                                                                        class="d-block w-100"
-                                                                        style="height:250px;width:auto;object-fit:cover">
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                    <img src="{{asset('')}}{{$bs['img2']}}"
-                                                                        class="d-block w-100"
-                                                                        style="height:250px;width:auto;object-fit:cover">
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                    <img src="{{asset('')}}{{$bs['img3']}}"
-                                                                        class="d-block w-100"
-                                                                        style="height:250px;width:auto;object-fit:cover">
-                                                                </div>
-                                                            </div>
-                                                            <button class="carousel-control-prev opacity-90 text-dark"
-                                                                type="button"
-                                                                data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                                data-bs-slide="prev">
-                                                                <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                                                    aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Previous</span>
-                                                            </button>
-                                                            <button class="carousel-control-next opacity-90 text-dark"
-                                                                type="button"
-                                                                data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                                data-bs-slide="next">
-                                                                <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                                                    aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Next</span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="mobile">
-                                                        <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
-                                                            data-interval="false">
-                                                            <div class="carousel-indicators">
-                                                                <button type="button"
-                                                                    data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                                    data-bs-slide-to="0" class="active" aria-current="true"
-                                                                    aria-label="Slide 1"></button>
-                                                                <button type="button"
-                                                                    data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                                <button type="button"
-                                                                    data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                                <button type="button"
-                                                                    data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                                    data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                                            </div>
-        
-                                                            <div class="carousel-inner">
-                                                                <div class="carousel-item active">
-                                                                    <img src="{{asset('')}}{{$bs['img']}}" class="d-block w-100"
-                                                                        style="height:210px;width:auto;object-fit:cover">
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                    <img src="{{asset('')}}{{$bs['img1']}}"
-                                                                        class="d-block w-100"
-                                                                        style="height:210px;width:auto;object-fit:cover">
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                    <img src="{{asset('')}}{{$bs['img2']}}"
-                                                                        class="d-block w-100"
-                                                                        style="height:210px;width:auto;object-fit:cover">
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                    <img src="{{asset('')}}{{$bs['img3']}}"
-                                                                        class="d-block w-100"
-                                                                        style="height:210px;width:auto;object-fit:cover">
-                                                                </div>
-                                                            </div>
-                                                            <button class="carousel-control-prev opacity-90 text-dark"
-                                                                type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                                data-bs-slide="prev">
-                                                                <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                                                    aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Previous</span>
-                                                            </button>
-                                                            <button class="carousel-control-next opacity-90 text-dark"
-                                                                type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                                data-bs-slide="next">
-                                                                <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                                                    aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Next</span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-        
-                                                    <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                                        <div class="row">
-                                                            <div class="col-lg-12">
-                                                                <h5 class="mb-0 text-center">Kode Bidang JBL-004 <img
-                                                                        src="{{asset('')}}uploads/biru_centang.png" alt=""
-                                                                        class="mb-1" style="height:20px"></h5>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                  
-                                                    <table class="mt-3">
-                                              
-                                              <tr>
-                                                  <td>Luas</td>
-                                                  <td></td>
-                                                  <td>:</td>
-                                                  <td>&nbsp;{{$bs['luas']}}</td>
-                                              </tr>
-                                              <tr>
-                                                  <td>Lokasi</td>
-                                                  <td></td>
-                                                  <td>:</td>
-                                                  <td>&nbsp;{{$bs['lokasi']}}</td>
-                                              </tr>
-                                              <tr>
-                                                  <td>Jenis Lahan</td>
-                                                  <td></td>
-                                                  <td>:</td>
-                                                  <td>&nbsp;{{$bs['jenis_lahan']}}</td>
-                                              </tr>
-
-                                              <tr>
-                                                  <td>Dokumen</td>
-                                                  <td></td>
-                                                  <td>:</td>
-                                                  <td>&nbsp;SHM</td>
-                                              </tr>
-                                              <tr>
-                                                  <td>Peruntukan</td>
-                                                  <td></td>
-                                                  <td>:</td>
-                                                  <td>&nbsp;Permukiman</td>
-                                              </tr>
-                                              <tr>
-                                                  <td>Akses</td>
-                                                  <td></td>
-                                                  <td>:</td>
-                                                  <td>&nbsp;Mobil</td>
-                                              </tr>
-                                              <tr>
-                                                  <td>Jumlah Bid</td>
-                                                  <td></td>
-                                                  <td>:</td>
-                                                  <td>&nbsp;{{$bs['jumlah_bid']}}</td>
-                                              </tr>
-                                          </table>
-                                                    <hr>
-        
-        
-                                                    <div class="row g-0">
-                                                        <div class="col text-center">
-        
-                                                            <a href="#" class="  mx-auto btn btn-danger rounded-5"
-                                                                data-bs-toggle="modal" data-bs-target="#berkasSponsor"
-                                                                style="text-decoration:none">
-                                                                <i class="fa-solid fa-eye"></i> Lihat Detail
-                                                            </a>
-        
-        
-                                                            <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
-                                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                                <div class="modal-dialog modal-dialog-centered">
-                                                                    <div class="modal-content">
-                                                                        <div class="modal-header p-0">
-                                                                            <h1
-                                                                                class="modal-title mx-auto text-danger display-1">
-                                                                                <i class="fa-regular fa-circle-xmark"></i>
-                                                                            </h1>
-                                                                        </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus masukkan akun sebelum melihat
-                                                                            berkas.
-                                                                        </div>
-                                                                        <div class="modal-footer">
-                                                                            <button type="button"
-                                                                                class="btn btn-secondary me-auto"
-                                                                                data-bs-dismiss="modal">Close</button>
-                                                                            <a type="button" class="btn btn-success"
-                                                                                href="https://server.sengketatanah.id/login">Login</a>
-                                                                            <a type="button" class="btn btn-danger"
-                                                                                href="https://server.sengketatanah.id/login">Register</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-        
-                                                        </div>
-                                                        <div class="col text-center">
-                                                            <span
-                                                                onclick="return document.querySelector('form.form-sengketa1').submit()"
-                                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                                    class="fa-solid fa-play text-white"></i>
-                                                                Lihat Video</span>
-                                                        </div>
-                                                    </div>
-        
-        
-                                                    <form action="{{url('/')}}/bid-sengketa/podcast"
-                                                        class="form-sengketa{{$bs['id']}}" method="get">
-                                                        <input type="hidden" name="owner" value="{{$bs['owner']}}">
-                                                        <input type="hidden" name="objek" value="{{$bs['objek']}}">
-                                                        <input type="hidden" name="luas" value="{{$bs['luas']}}">
-                                                        <input type="hidden" name="lokasi" value="{{$bs['lokasi']}}">
-                                                        <input type="hidden" name="komentar" value="">
-                                                        <input type="hidden" name="link_yt" value="{{$bs['link_yt']}}">
-                                                        <input type="hidden" name="form" value="sponsor">
-                                                    </form>
-        
-        
-                                                    <hr>
-                                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                                <div class="col-4">
-
-                                                    <div class="d-grid gap-2 ">
-
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                            BID
-                                                        </button>
-
-
-                                                        <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                            <div class="modal-dialog modal-dialog-centered">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header p-0">
-                                                                        <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
-                                                                        </h1>
-                                                                    </div>
-                                                                    <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum
-                                                                        melakukan bid.
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <?php $counter++ ?>
-                                        @endforeach
                                     </div>
-                    </div>
-                </div>
-        </div>
-
-
-
-        <nav aria-label="Page navigation example">
-            <ul class="pagination">
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-
-
-
-     
-
-        <div class="row justify-content-center mb-3 mt-4 text-center g-0">
-            <p class="fw-bold text-center" style="text-align: justify">Ikuti Sosial Media Kami</a></p>
-
-            <div class="col">
-                <a class="btn p-0" href="https://www.instagram.com/sengketatanah.id/" role="button">
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x"
-                            style="text-shadow: -3px 3px 5px #bbbbbb;color: #8a3ab9"></i>
-                        <i class="fa-brands fa-instagram fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-            </div>
-            <div class="col">
-                <a class="btn p-0" href="https://m.youtube.com/channel/UCXQW3lPJ68brYiThnxX18-A" role="button">
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x text-danger" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
-                        <i class="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-            </div>
-            <div class="col">
-                <a class="btn p-0" href="#" role="button">
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x text-primary" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
-                        <i class="fa-brands fa-facebook fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-            </div>
-            <div class="col">
-                <a class="btn p-0" href="https://mobile.twitter.com/sengketatanahid" role="button">
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x text-info" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
-                        <i class="fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-            </div>
-            <div class="col">
-                <div class="dropdown">
-                    <button class="btn p-0" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                        id="dropdownMenuButton1">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x " style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
-                            <i class="fa-solid fa-share fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-                                data-show-count="false"><i class="fa-brands fa-twitter"></i> Tweet</a></li>
-                        <li>
-                            <a target="_blank"
-                                onClick='window.open("https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse","Ratting","width=550,height=550,left=150,top=200,toolbar=0,status=0,");'
-                                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse"
-                                class="fb-xfbml-parse-ignore dropdown-item"><i class="fa-brands fa-facebook"></i>
-                                Facebook</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <a href="" class=""></a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-            </div>
-
-            <div class="modal fade" id="korbanSengketaModal" tabindex="-1" aria-labelledby="korbanSengketaModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header bg-dark text-white">
-                            <div class="row">
-                                <div class="col-12 text-center text-uppercase">
-                                    <h5 class="modal-title" id="formSponsoranModalLabel">Korban Sengketa Tanah</h5>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <h6 class="modal-title" style="font-size:12px">Korban adalah orang yang
-                                        dirugikan,
-                                        dirampas,
-                                        atau kehilangan hak atas tanah yang dimilikinya*</h6>
                                 </div>
                             </div>
+                            <!--<div class="card-header bg-white">-->
+                            <!--    <div class="row">-->
+                            <!--        <div class="col-lg-12">-->
+                            <!--            <span class="badge bg-secondary float-end"><a-->
+                            <!--                    href="{{url('')}}/login?title=Bid Sponsor" class="text-white"-->
+                            <!--                    style="text-decoration:none">Lihat Berkas</a></span>-->
+                            <!--            <span class="float-end">&nbsp;</span>-->
+                            <!--            <form action="{{url('/')}}/bid-sengketa/podcast"class="form-sengketa{{$bs['id']}}"method="get">-->
+                            <!--                <input type="hidden" name="owner"value="{{$bs['owner']}}">-->
+                            <!--                <input type="hidden" name="objek"value="{{$bs['objek']}}">-->
+                            <!--                <input type="hidden" name="luas"value="{{$bs['luas']}}">-->
+                            <!--                <input type="hidden" name="lokasi"value="{{$bs['lokasi']}}">-->
+                            <!--                <input type="hidden" name="komentar"value="">-->
+                            <!--                <input type="hidden" name="link_yt"value="">-->
+                            <!--                <input type="hidden" name="form"value="sponsor">-->
+                            <!--            </form>-->
+                            <!--            <span class="badge bg-dark float-end" onclick="return document.querySelector('form.form-sengketa<?=$bs['id']?>').submit()">Lihat Podcast Sengketa</span>-->
+                            <!--            <span class="float-end">&nbsp;</span>-->
+
+                            <!--        </div>-->
+                            <!--    </div>-->
+                            <!--</div>-->
+
+
+
+
+                            <div class="card-body">
+
+
+                                @if($bs['id'] < 5) <div class="ribbon-pop"><i class="fa-solid fa-star"></i>&nbsp;HOT
+                            </div>
+                            @else
+                            @endif
+
+                            <div class="desktop-2">
+                                <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
+                                    data-interval="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    </div>
+
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="{{asset('')}}{{$bs['img']}}" class="d-block w-100"
+                                                style="height:250px;width:auto;object-fit:cover">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img1']}}" class="d-block w-100"
+                                                style="height:250px;width:auto;object-fit:cover">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img2']}}" class="d-block w-100"
+                                                style="height:250px;width:auto;object-fit:cover">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img3']}}" class="d-block w-100"
+                                                style="height:250px;width:auto;object-fit:cover">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                        data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                            aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                        data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                            aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mobile">
+                                <div id="carouselmobile{{$bs['id']}}" class="carousel slide" data-interval="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    </div>
+
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="{{asset('')}}{{$bs['img']}}" class="d-block w-100"
+                                                style="height:210px;width:auto;object-fit:cover">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img1']}}" class="d-block w-100"
+                                                style="height:210px;width:auto;object-fit:cover">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img2']}}" class="d-block w-100"
+                                                style="height:210px;width:auto;object-fit:cover">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img3']}}" class="d-block w-100"
+                                                style="height:210px;width:auto;object-fit:cover">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                        data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                            aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                        data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                            aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h5 class="mb-0 text-center">Kode Bidang JBL-004 <img
+                                                src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
+                                                style="height:20px"></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <table class="mt-3">
+
+                                <tr>
+                                    <td>Luas</td>
+                                    <td></td>
+                                    <td>:</td>
+                                    <td>&nbsp;{{$bs['luas']}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Lokasi</td>
+                                    <td></td>
+                                    <td>:</td>
+                                    <td>&nbsp;{{$bs['lokasi']}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Jenis Lahan</td>
+                                    <td></td>
+                                    <td>:</td>
+                                    <td>&nbsp;{{$bs['jenis_lahan']}}</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Dokumen</td>
+                                    <td></td>
+                                    <td>:</td>
+                                    <td>&nbsp;SHM</td>
+                                </tr>
+                                <tr>
+                                    <td>Peruntukan</td>
+                                    <td></td>
+                                    <td>:</td>
+                                    <td>&nbsp;Permukiman</td>
+                                </tr>
+                                <tr>
+                                    <td>Akses</td>
+                                    <td></td>
+                                    <td>:</td>
+                                    <td>&nbsp;Mobil</td>
+                                </tr>
+                                <tr>
+                                    <td>Jumlah Bid</td>
+                                    <td></td>
+                                    <td>:</td>
+                                    <td>&nbsp;{{$bs['jumlah_bid']}}</td>
+                                </tr>
+                            </table>
+                            <hr>
+
+
+                            <div class="row g-0">
+                                <div class="col text-center">
+
+                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                        data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                        <i class="fa-solid fa-eye"></i> Lihat Detail
+                                    </a>
+
+
+                                    <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header p-0">
+                                                    <h1 class="modal-title mx-auto text-danger display-1">
+                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                    </h1>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Anda harus masukkan akun sebelum melihat
+                                                    berkas.
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary me-auto"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <a type="button" class="btn btn-success"
+                                                        href="https://server.sengketatanah.id/login">Login</a>
+                                                    <a type="button" class="btn btn-danger"
+                                                        href="https://server.sengketatanah.id/login">Register</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col text-center">
+                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()"
+                                        class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                            class="fa-solid fa-play text-white"></i>
+                                        Lihat Video</span>
+                                </div>
+                            </div>
+
+
+                            <form action="{{url('/')}}/bid-sengketa/podcast" class="form-sengketa{{$bs['id']}}"
+                                method="get">
+                                <input type="hidden" name="owner" value="{{$bs['owner']}}">
+                                <input type="hidden" name="objek" value="{{$bs['objek']}}">
+                                <input type="hidden" name="luas" value="{{$bs['luas']}}">
+                                <input type="hidden" name="lokasi" value="{{$bs['lokasi']}}">
+                                <input type="hidden" name="komentar" value="">
+                                <input type="hidden" name="link_yt" value="{{$bs['link_yt']}}">
+                                <input type="hidden" name="form" value="sponsor">
+                            </form>
+
+
+                            <hr>
+                            <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                <div class="col-4">
+
+                                    <div class="d-grid gap-2 ">
+
+                                        <button type="button"
+                                            class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
+                                            data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                            BID
+                                        </button>
+
+
+                                        <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header p-0">
+                                                        <h1 class="modal-title mx-auto text-danger display-1">
+                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                        </h1>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Anda harus masuk sebagai sponsor sebelum
+                                                        melakukan bid.
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary me-auto"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                        <a type="button" class="btn btn-success"
+                                                            href="https://server.sengketatanah.id/login">Login</a>
+                                                        <a type="button" class="btn btn-danger"
+                                                            href="https://server.sengketatanah.id/login">Register</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
-                        <form method="post" class="text-start" action="{{url('sengketa/send')}}"
-                            enctype="multipart/form-data">
-                            <div class="modal-body">
-                                @csrf
-                                @if ($errors->all())
-                                <div class="alert alert-danger">
-                                    <ul>
-                                        @foreach($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                        @endforeach
-                                    </ul>
+                </div>
+            </div>
+            <?php $counter++ ?>
+            @endforeach
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+
+
+    <div class="row justify-content-center mb-3 mt-4 text-center g-0">
+        <p class="fw-bold text-center" style="text-align: justify">Ikuti Sosial Media Kami</a></p>
+
+        <div class="col">
+            <a class="btn p-0" href="https://www.instagram.com/sengketatanah.id/" role="button">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x" style="text-shadow: -3px 3px 5px #bbbbbb;color: #8a3ab9"></i>
+                    <i class="fa-brands fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </div>
+        <div class="col">
+            <a class="btn p-0" href="https://m.youtube.com/channel/UCXQW3lPJ68brYiThnxX18-A" role="button">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x text-danger" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                    <i class="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </div>
+        <div class="col">
+            <a class="btn p-0" href="#" role="button">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x text-primary" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                    <i class="fa-brands fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </div>
+        <div class="col">
+            <a class="btn p-0" href="https://mobile.twitter.com/sengketatanahid" role="button">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x text-info" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                    <i class="fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </div>
+        <div class="col">
+            <div class="dropdown">
+                <button class="btn p-0" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    id="dropdownMenuButton1">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x " style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                        <i class="fa-solid fa-share fa-stack-1x fa-inverse"></i>
+                    </span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+                            data-show-count="false"><i class="fa-brands fa-twitter"></i> Tweet</a></li>
+                    <li>
+                        <a target="_blank"
+                            onClick='window.open("https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse","Ratting","width=550,height=550,left=150,top=200,toolbar=0,status=0,");'
+                            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse"
+                            class="fb-xfbml-parse-ignore dropdown-item"><i class="fa-brands fa-facebook"></i>
+                            Facebook</a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="" class=""></a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        </div>
+
+        <div class="modal fade" id="korbanSengketaModal" tabindex="-1" aria-labelledby="korbanSengketaModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark text-white">
+                        <div class="row">
+                            <div class="col-12 text-center text-uppercase">
+                                <h5 class="modal-title" id="formSponsoranModalLabel">Korban Sengketa Tanah</h5>
+                            </div>
+                            <div class="col-12 text-center">
+                                <h6 class="modal-title" style="font-size:12px">Korban adalah orang yang
+                                    dirugikan,
+                                    dirampas,
+                                    atau kehilangan hak atas tanah yang dimilikinya*</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <form method="post" class="text-start" action="{{url('sengketa/send')}}"
+                        enctype="multipart/form-data">
+                        <div class="modal-body">
+                            @csrf
+                            @if ($errors->all())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+
+                            @endif
+                            @if (Session::has('success'))
+                            <div class="alert alert-success">
+                                {{Session::get('success')}}
+                            </div>
+                            @endif
+
+                            <div class="mb-2">
+                                <label for="nama" class="form-label">Nama Pelapor</label>
+                                <input type="text" class="form-control rounded-0" id="nama"
+                                    placeholder="Masukkan Nama Anda" aria-describedby="input-nama" name="nama" required>
+                                <div id="input-nama" class="form-text"></div>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="Alamat" class="form-label">Alamat</label>
+                                <input type="text" class="form-control rounded-0" id="Alamat"
+                                    placeholder="Masukkan Alamat Anda" aria-describedby="input-Alamat" name="alamat"
+                                    required>
+                                <div id="input-Alamat" class="form-text"></div>
+                            </div>
+                            <div class="mb-2">
+                                <label for="no_hp" class="form-label">Nomor Hp</label>
+                                <input type="number" class="form-control rounded-0" id="no_hp"
+                                    placeholder="Masukkan Nomor HP Anda" aria-describedby="input-no_hp" name="no_hp"
+                                    required>
+                                <div id="input-no_hp" class="form-text"></div>
+                            </div>
+                            <div class="mb-2">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control rounded-0" id="email"
+                                    placeholder="Masukkan Email Anda" aria-describedby="input-email" name="email"
+                                    required>
+                                <div id="input-email" class="form-text"></div>
+                            </div>
+                            <div class="mb-2">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control rounded-0" id="password"
+                                    placeholder="buat password Anda" aria-describedby="input-password" name="password"
+                                    required>
+                                <div id="input-password" class="form-text"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-2">
+                                        <label class="form-label">Objek Sengketa</label>
+                                        <select class="form-select rounded-0" aria-label="Default select example"
+                                            name="objek_sengketa" required>
+                                            <option value="Sengketa Pertanahan">Sengketa Pertanahan</option>
+                                            <option value="Konflik Pertanahan">Konflik Pertanahan</option>
+                                            <option value="Perkara Pertanahan">Perkara Pertanahan</option>
+                                            <option value="Penjualan Lahan">Penjualan Lahan</option>
+                                        </select>
+                                    </div>
                                 </div>
 
-                                @endif
-                                @if (Session::has('success'))
-                                <div class="alert alert-success">
-                                    {{Session::get('success')}}
+                                <div class="col">
+                                    <div class="mb-2">
+                                        <label for="luas" class="form-label">Luas Tanah (meter/ha)</label>
+                                        <input type="text" class="form-control rounded-0" id="luas"
+                                            placeholder="Masukkan Luas Tanah" aria-describedby="input-luas" name="luas"
+                                            required>
+                                        <div id="input-luas" class="form-text"></div>
+                                    </div>
                                 </div>
-                                @endif
+                            </div>
 
-                                <div class="mb-2">
-                                    <label for="nama" class="form-label">Nama Pelapor</label>
-                                    <input type="text" class="form-control rounded-0" id="nama"
-                                        placeholder="Masukkan Nama Anda" aria-describedby="input-nama" name="nama"
-                                        required>
-                                    <div id="input-nama" class="form-text"></div>
-                                </div>
+                            <div class="mb-2">
+                                <label for="lokasi" class="form-label">Lokasi</label>
+                                <input type="text" class="form-control rounded-0" id="lokasi"
+                                    placeholder="Masukkan Lokasi" aria-describedby="input-lokasi" name="lokasi"
+                                    required>
+                                <div id="input-lokasi" class="form-text"></div>
+                            </div>
+                            <div class="mb-2">
+                                <label for="kronologi" class="form-label">Kronologi</label>
+                                <textarea id="kronologi" class="form-control rounded-0" placeholder="Masukkan Kronologi"
+                                    aria-describedby="input-kronologi" name="kronologi" cols="30" rows="10"
+                                    required></textarea>
+                                <div id="input-kronologi" class="form-text"></div>
+                            </div>
+                            <div class="mb-2">
+                                <label class="form-label">Status Pelapor</label>
+                                <select class="form-select rounded-0" aria-label="Default select example"
+                                    name="status_pelapor" required>
+                                    <option value="Pemilik">Pemilik</option>
+                                    <option value="Kuasa Pemilik">Kuasa Pemilik</option>
+                                </select>
+                            </div>
+                            <div class="mb-2">
+                                <label class="form-label">Pilih Jenis Pertolongan</label>
+                                <select class="form-select rounded-0" aria-label="Default select example"
+                                    name="jenis_pertolongan" required>
+                                    <option selected disabled>Pilih Pertolongan</option>
+                                    <option value="sponsor">Sponsor</option>
+                                    <option value="pengacara">Pengacara</option>
+                                    <option value="pemerintah">Pemerintah</option>
+                                </select>
+                            </div>
 
-                                <div class="mb-2">
-                                    <label for="Alamat" class="form-label">Alamat</label>
-                                    <input type="text" class="form-control rounded-0" id="Alamat"
-                                        placeholder="Masukkan Alamat Anda" aria-describedby="input-Alamat" name="alamat"
-                                        required>
-                                    <div id="input-Alamat" class="form-text"></div>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="no_hp" class="form-label">Nomor Hp</label>
-                                    <input type="number" class="form-control rounded-0" id="no_hp"
-                                        placeholder="Masukkan Nomor HP Anda" aria-describedby="input-no_hp" name="no_hp"
-                                        required>
-                                    <div id="input-no_hp" class="form-text"></div>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control rounded-0" id="email"
-                                        placeholder="Masukkan Email Anda" aria-describedby="input-email" name="email"
-                                        required>
-                                    <div id="input-email" class="form-text"></div>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="password" class="form-label">Password</label>
-                                    <input type="password" class="form-control rounded-0" id="password"
-                                        placeholder="buat password Anda" aria-describedby="input-password"
-                                        name="password" required>
-                                    <div id="input-password" class="form-text"></div>
-                                </div>
+                            <div id="pengembalian_dana" class="alert alert-danger sponsor" role="alert">
+                                <strong>
+                                    Saya membutuhkan bantuan pendanaan dari sponsor untuk menyelesaikan
+                                    permasalahan
+                                    sengketa tanah saya.
+                                </strong>
+                            </div>
+
+                            <div class="mb-2 pengacara">
+                                <label class="form-label">Pilih Tindakan Pengacara</label>
+                                <select class="form-select rounded-0" aria-label="Default select example"
+                                    name="bantuan_pengacara" required>
+                                    <option selected disabled>Pilih Bantuan Pengacara</option>
+                                    <option value="konsultasi">Konsultasi</option>
+                                    <option value="pendampingan">Pendampingan</option>
+                                    <option value="penindakan">Penindakan</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-2 pengacara">
+                                <label for="anggaran_pengacara" class="form-label">Anggaran Pengacara</label>
                                 <div class="row">
                                     <div class="col">
-                                        <div class="mb-2">
-                                            <label class="form-label">Objek Sengketa</label>
-                                            <select class="form-select rounded-0" aria-label="Default select example"
-                                                name="objek_sengketa" required>
-                                                <option value="Sengketa Pertanahan">Sengketa Pertanahan</option>
-                                                <option value="Konflik Pertanahan">Konflik Pertanahan</option>
-                                                <option value="Perkara Pertanahan">Perkara Pertanahan</option>
-                                                <option value="Penjualan Lahan">Penjualan Lahan</option>
-                                            </select>
-                                        </div>
+                                        <input type="number" class="form-control rounded-0" id="anggaran_pengacara-s"
+                                            placeholder="Anggaran mulai dari ..."
+                                            aria-describedby="input-anggaran_pengacara-s" name="anggaran_pengacara-s">
                                     </div>
-
+                                    <div class="col-1 text-center"
+                                        style="width:4% !important; padding-right: 0px !important; padding-left: 0px !important">
+                                        -
+                                    </div>
                                     <div class="col">
-                                        <div class="mb-2">
-                                            <label for="luas" class="form-label">Luas Tanah (meter/ha)</label>
-                                            <input type="text" class="form-control rounded-0" id="luas"
-                                                placeholder="Masukkan Luas Tanah" aria-describedby="input-luas"
-                                                name="luas" required>
-                                            <div id="input-luas" class="form-text"></div>
-                                        </div>
+                                        <input type="number" class="form-control rounded-0" id="anggaran_pengacara-e"
+                                            placeholder="Sampai ..." aria-describedby="input-anggaran_pengacara-e"
+                                            name="anggaran_pengacara-e">
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="mb-2">
-                                    <label for="lokasi" class="form-label">Lokasi</label>
-                                    <input type="text" class="form-control rounded-0" id="lokasi"
-                                        placeholder="Masukkan Lokasi" aria-describedby="input-lokasi" name="lokasi"
-                                        required>
-                                    <div id="input-lokasi" class="form-text"></div>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="kronologi" class="form-label">Kronologi</label>
-                                    <textarea id="kronologi" class="form-control rounded-0"
-                                        placeholder="Masukkan Kronologi" aria-describedby="input-kronologi"
-                                        name="kronologi" cols="30" rows="10" required></textarea>
-                                    <div id="input-kronologi" class="form-text"></div>
-                                </div>
-                                <div class="mb-2">
-                                    <label class="form-label">Status Pelapor</label>
-                                    <select class="form-select rounded-0" aria-label="Default select example"
-                                        name="status_pelapor" required>
-                                        <option value="Pemilik">Pemilik</option>
-                                        <option value="Kuasa Pemilik">Kuasa Pemilik</option>
-                                    </select>
-                                </div>
-                                <div class="mb-2">
-                                    <label class="form-label">Pilih Jenis Pertolongan</label>
-                                    <select class="form-select rounded-0" aria-label="Default select example"
-                                        name="jenis_pertolongan" required>
-                                        <option selected disabled>Pilih Pertolongan</option>
-                                        <option value="sponsor">Sponsor</option>
-                                        <option value="pengacara">Pengacara</option>
-                                        <option value="pemerintah">Pemerintah</option>
-                                    </select>
-                                </div>
+                            <div id="pengembalian_dana" class="alert alert-danger pemerintah" role="alert">
+                                <strong>
+                                    Saya hanya membutuhkan pertolongan agar permasalahan sengketa tanah saya
+                                    diteruskan
+                                    pada
+                                    Pemerintah.
+                                </strong>
+                            </div>
 
-                                <div id="pengembalian_dana" class="alert alert-danger sponsor" role="alert">
-                                    <strong>
-                                        Saya membutuhkan bantuan pendanaan dari sponsor untuk menyelesaikan
-                                        permasalahan
-                                        sengketa tanah saya.
-                                    </strong>
-                                </div>
+                            <div class="mb-2 sponsor">
+                                <label for="keb_dana" class="form-label">Jumlah Dana Sponsor</label>
+                                <input type="number" class="form-control rounded-0" id="keb_dana"
+                                    placeholder="Sebutkan Nilai Kebutuhan" aria-describedby="input-keb_dana"
+                                    name="keb_dana" required>
+                                <div id="input-keb_dana" class="form-text"></div>
+                            </div>
 
-                                <div class="mb-2 pengacara">
-                                    <label class="form-label">Pilih Tindakan Pengacara</label>
-                                    <select class="form-select rounded-0" aria-label="Default select example"
-                                        name="bantuan_pengacara" required>
-                                        <option selected disabled>Pilih Bantuan Pengacara</option>
-                                        <option value="konsultasi">Konsultasi</option>
-                                        <option value="pendampingan">Pendampingan</option>
-                                        <option value="penindakan">Penindakan</option>
-                                    </select>
-                                </div>
+                            <div class="mb-2 sponsor">
+                                <label class="form-label">Pengembalian Dana Sponsor</label>
+                                <select class="form-select rounded-0" aria-label="Default select example"
+                                    name="pengembalian_dana_sponsor" required>
+                                    <option selected disabled>Pilih Jenis Pengembalian</option>
+                                    <option value="70/30">Bagi Hasil 70/30*</option>
+                                    <option value="60/40">Bagi Hasil 60/40*</option>
+                                    <option value="50/50">Bagi Hasil 50/50*</option>
+                                    <option value="lain">Fee 50% Dari Pinjaman</option>
+                                    <option value="lain">Fee 75% Dari Pinjaman</option>
+                                    <option value="lain">Fee 100% Dari Pinjaman</option>
+                                </select>
+                                <small id="pengembalian_dana_sponsor" class="form-text text-muted">Bagi hasil di
+                                    rekomendasikan untuk kasus-kasus sengketa tanah yang berat. Tanda bintang(*)
+                                    adalah
+                                    pembagian untuk sponsor. </small>
+                            </div>
 
-                                <div class="mb-2 pengacara">
-                                    <label for="anggaran_pengacara" class="form-label">Anggaran Pengacara</label>
-                                    <div class="row">
-                                        <div class="col">
-                                            <input type="number" class="form-control rounded-0"
-                                                id="anggaran_pengacara-s" placeholder="Anggaran mulai dari ..."
-                                                aria-describedby="input-anggaran_pengacara-s"
-                                                name="anggaran_pengacara-s">
-                                        </div>
-                                        <div class="col-1 text-center"
-                                            style="width:4% !important; padding-right: 0px !important; padding-left: 0px !important">
-                                            -
-                                        </div>
-                                        <div class="col">
-                                            <input type="number" class="form-control rounded-0"
-                                                id="anggaran_pengacara-e" placeholder="Sampai ..."
-                                                aria-describedby="input-anggaran_pengacara-e"
-                                                name="anggaran_pengacara-e">
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="mb-2 sponsor">
+                                <label class="form-label" for="jaminan_dana">Jaminan Dana Sponsor</label>
+                                <select class="form-select rounded-0" aria-label="Default select example" name="jaminan"
+                                    required>
+                                    <option selected disabled>Pilih Jaminan</option>
+                                    <option value="ada">Ada Jaminan</option>
+                                    <option value="tidak">Tidak Ada Jaminan</option>
+                                </select>
+                            </div>
 
-                                <div id="pengembalian_dana" class="alert alert-danger pemerintah" role="alert">
-                                    <strong>
-                                        Saya hanya membutuhkan pertolongan agar permasalahan sengketa tanah saya
-                                        diteruskan
-                                        pada
-                                        Pemerintah.
-                                    </strong>
-                                </div>
-
-                                <div class="mb-2 sponsor">
-                                    <label for="keb_dana" class="form-label">Jumlah Dana Sponsor</label>
-                                    <input type="number" class="form-control rounded-0" id="keb_dana"
-                                        placeholder="Sebutkan Nilai Kebutuhan" aria-describedby="input-keb_dana"
-                                        name="keb_dana" required>
-                                    <div id="input-keb_dana" class="form-text"></div>
-                                </div>
-
-                                <div class="mb-2 sponsor">
-                                    <label class="form-label">Pengembalian Dana Sponsor</label>
-                                    <select class="form-select rounded-0" aria-label="Default select example"
-                                        name="pengembalian_dana_sponsor" required>
-                                        <option selected disabled>Pilih Jenis Pengembalian</option>
-                                        <option value="70/30">Bagi Hasil 70/30*</option>
-                                        <option value="60/40">Bagi Hasil 60/40*</option>
-                                        <option value="50/50">Bagi Hasil 50/50*</option>
-                                        <option value="lain">Fee 50% Dari Pinjaman</option>
-                                        <option value="lain">Fee 75% Dari Pinjaman</option>
-                                        <option value="lain">Fee 100% Dari Pinjaman</option>
-                                    </select>
-                                    <small id="pengembalian_dana_sponsor" class="form-text text-muted">Bagi hasil di
-                                        rekomendasikan untuk kasus-kasus sengketa tanah yang berat. Tanda bintang(*)
-                                        adalah
-                                        pembagian untuk sponsor. </small>
-                                </div>
-
-                                <div class="mb-2 sponsor">
-                                    <label class="form-label" for="jaminan_dana">Jaminan Dana Sponsor</label>
-                                    <select class="form-select rounded-0" aria-label="Default select example"
-                                        name="jaminan" required>
-                                        <option selected disabled>Pilih Jaminan</option>
-                                        <option value="ada">Ada Jaminan</option>
-                                        <option value="tidak">Tidak Ada Jaminan</option>
-                                    </select>
-                                </div>
-
-                                <div class="mb-2 jaminan_berupa">
-                                    <label for="jaminan_berupa" class="form-label">Jaminan Berupa</label>
-                                    <select class="form-select rounded-0" id="lokasi" placeholder="Masukkan Jaminan"
-                                        aria-describedby="input-jaminan" name="jaminan_berupa" required>
-                                        <option value="Sertifikat Tanah">Sertifikat Tanah</option>
-                                        <option value="Sertifikat Rumah">Sertifikat Rumah</option>
-                                    </select>
-                                </div>
-                                {{-- <div class="mb-2">
+                            <div class="mb-2 jaminan_berupa">
+                                <label for="jaminan_berupa" class="form-label">Jaminan Berupa</label>
+                                <select class="form-select rounded-0" id="lokasi" placeholder="Masukkan Jaminan"
+                                    aria-describedby="input-jaminan" name="jaminan_berupa" required>
+                                    <option value="Sertifikat Tanah">Sertifikat Tanah</option>
+                                    <option value="Sertifikat Rumah">Sertifikat Rumah</option>
+                                </select>
+                            </div>
+                            {{-- <div class="mb-2">
                                 <label for="ktp" class="form-label">Foto KTP</label>
                                 <input class="form-control rounded-0" type="file" id="ktp" name="foto_ktp" required>
                             </div>
@@ -2573,222 +2566,221 @@
                                 <input class="form-control rounded-0" type="file" id="dokumenTanah" name="dokumen_tanah"
                                     required>
                             </div> --}}
-                                <div class="mb-2 form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" style="text-align:justify"
-                                        for="exampleCheck1">Dengan
-                                        mengisi form ini saya
-                                        menyatakan bahwa semua data yang diberikan benar adanya dan laporan ini
-                                        tidak
-                                        sedang dalam penanganan hukum pihak lain. Saya bersedia melakukan wawancara
-                                        mendalam
-                                        di
-                                        <b>PODCAST SENGKETA TANAH</b> dan bekerja sama dengan
-                                        Sponsor melalui <b>PLATFORM SENGKETA TANAH</b> untuk diselesaikan.</label>
-                                </div>
+                            <div class="mb-2 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" style="text-align:justify" for="exampleCheck1">Dengan
+                                    mengisi form ini saya
+                                    menyatakan bahwa semua data yang diberikan benar adanya dan laporan ini
+                                    tidak
+                                    sedang dalam penanganan hukum pihak lain. Saya bersedia melakukan wawancara
+                                    mendalam
+                                    di
+                                    <b>PODCAST SENGKETA TANAH</b> dan bekerja sama dengan
+                                    Sponsor melalui <b>PLATFORM SENGKETA TANAH</b> untuk diselesaikan.</label>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-dark">Kirim</button>
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-dark">Kirim</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-
         </div>
 
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous"
-            src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0" nonce="Ee2Zutm6"></script>
-        <div class="row mt-4">
-            <div class="card-body bg-dark text-white text-center">
-                <p></p>
-                <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
-                <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
-                </p>
-                <hr>
-                <p style="font-size:14px" class="card-title pb-3">Sovereign Plaza. Lt. 19 <br> Jl. TB Simatupang No.
-                    36,
-                    TB Simatupang, Jakarta Selatan</p>
-            </div>
+    </div>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0"
+        nonce="Ee2Zutm6"></script>
+    <div class="row mt-4">
+        <div class="card-body bg-dark text-white text-center">
+            <p></p>
+            <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
+            <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
+            </p>
+            <hr>
+            <p style="font-size:14px" class="card-title pb-3">Sovereign Plaza. Lt. 19 <br> Jl. TB Simatupang No.
+                36,
+                TB Simatupang, Jakarta Selatan</p>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
-        </script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
 
 
 
-        <script src="https://code.jquery.com/jquery-3.6.1.js"
-            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-        <!-- <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> -->
 
-        <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/b-2.2.3/datatables.min.js">
-        </script>
-        <script>
-            $('#jenis_objek').on('change', function () {
-                let jenisObjek = $(this).find('option').filter(':selected').val();
-                if (jenisObjek == "sp") {
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/b-2.2.3/datatables.min.js">
+    </script>
+    <script>
+        $('#jenis_objek').on('change', function () {
+            let jenisObjek = $(this).find('option').filter(':selected').val();
+            if (jenisObjek == "sp") {
 
-                    $('div.col-md-6.kp').hide()
-                    $('div.col-md-6.pp').hide()
-                    $('div.col-md-6.sp').show()
-                } else if (jenisObjek == "kp") {
+                $('div.col-md-6.kp').hide()
+                $('div.col-md-6.pp').hide()
+                $('div.col-md-6.sp').show()
+            } else if (jenisObjek == "kp") {
 
-                    $('div.col-md-6.kp').show()
-                    $('div.col-md-6.pp').hide()
-                    $('div.col-md-6.sp').hide()
-                } else if (jenisObjek == "pp") {
-                    $('div.col-md-6.kp').hide()
-                    $('div.col-md-6.pp').show()
-                    $('div.col-md-6.sp').hide()
-                } else {
-                    $('div.col-md-6.kp').show()
-                    $('div.col-md-6.pp').show()
-                    $('div.col-md-6.sp').show()
-                }
+                $('div.col-md-6.kp').show()
+                $('div.col-md-6.pp').hide()
+                $('div.col-md-6.sp').hide()
+            } else if (jenisObjek == "pp") {
+                $('div.col-md-6.kp').hide()
+                $('div.col-md-6.pp').show()
+                $('div.col-md-6.sp').hide()
+            } else {
+                $('div.col-md-6.kp').show()
+                $('div.col-md-6.pp').show()
+                $('div.col-md-6.sp').show()
+            }
 
+        });
+
+        $('#btnLawyer').on('click', function () {
+            $('#dataSponsor').hide()
+            $('#dataPemerintah').hide()
+            $('#dataLawyer').show()
+
+        });
+        $('#btnSponsor').on('click', function () {
+            $('#dataSponsor').show()
+            $('#dataLawyer').hide()
+            $('#dataPemerintah').hide()
+        });
+        $('#btnPemerintah').on('click', function () {
+            $('#dataLawyer').hide()
+            $('#dataSponsor').hide()
+            $('#dataPemerintah').show()
+        });
+
+        $(document).ready(function () {
+            $(".tab").click(function () {
+                $(".tab").removeClass("active");
+                // $(".tab").addClass("active"); // instead of this do the below 
+                $(this).addClass("active");
             });
+        });
 
-            $('#btnLawyer').on('click', function () {
-                $('#dataSponsor').hide()
-                $('#dataPemerintah').hide()
-                $('#dataLawyer').show()
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
 
+        $('#btnLawyer').on('click', function () {
+            $('#titleSponsor').hide()
+            $('#titlePemerintah').hide()
+            $('#titleLawyer').show()
+
+        });
+
+        $('#btnSponsor').on('click', function () {
+            $('#titleSponsor').show()
+            $('#titleLawyer').hide()
+            $('#titlePemerintah').hide()
+        });
+        $('#btnPemerintah').on('click', function () {
+            $('#titleLawyer').hide()
+            $('#titleSponsor').hide()
+            $('#titlePemerintah').show()
+        });
+
+        $(function () {
+            $('#searchlink').on('click', function (e) {
+                $(this).toggleClass('open');
             });
-            $('#btnSponsor').on('click', function () {
-                $('#dataSponsor').show()
-                $('#dataLawyer').hide()
-                $('#dataPemerintah').hide()
-            });
-            $('#btnPemerintah').on('click', function () {
-                $('#dataLawyer').hide()
-                $('#dataSponsor').hide()
-                $('#dataPemerintah').show()
-            });
-
-            $(document).ready(function () {
-                $(".tab").click(function () {
-                    $(".tab").removeClass("active");
-                    // $(".tab").addClass("active"); // instead of this do the below 
-                    $(this).addClass("active");
-                });
-            });
-
-            $(document).ready(function () {
-                $('#myTable').DataTable();
-            });
-
-            $('#btnLawyer').on('click', function () {
-                $('#titleSponsor').hide()
-                $('#titlePemerintah').hide()
-                $('#titleLawyer').show()
-
-            });
-
-            $('#btnSponsor').on('click', function () {
-                $('#titleSponsor').show()
-                $('#titleLawyer').hide()
-                $('#titlePemerintah').hide()
-            });
-            $('#btnPemerintah').on('click', function () {
-                $('#titleLawyer').hide()
-                $('#titleSponsor').hide()
-                $('#titlePemerintah').show()
-            });
-
-            $(function () {
-                $('#searchlink').on('click', function (e) {
-                    $(this).toggleClass('open');
-                });
-            });
+        });
 
 
 
-            $(function () {
-                var hidestuff = function () {
-                    $(".jaminan_berupa").hide();
-                }
+        $(function () {
+            var hidestuff = function () {
+                $(".jaminan_berupa").hide();
+            }
 
-                $("select[name='jaminan']").change(function () {
-                    hidestuff();
-
-                    var value = $(this).val();
-                    if (value == "ada") {
-                        $(".jaminan_berupa").show();
-                    }
-                });
+            $("select[name='jaminan']").change(function () {
                 hidestuff();
-            });
 
-            $(function () {
-                var hidestuff = function () {
-                    $(".pengelolaan-platform, .pengelolaan-sendiri").hide();
+                var value = $(this).val();
+                if (value == "ada") {
+                    $(".jaminan_berupa").show();
                 }
-
-                $("select[name='pengelolaan_dana']").change(function () {
-                    hidestuff();
-
-                    var value = $(this).val();
-                    if (value == "platform") {
-                        $(".pengelolaan-platform").show();
-                    }
-                    if (value == "sendiri") {
-                        $(".pengelolaan-sendiri").show();
-                    }
-                });
-                hidestuff();
             });
+            hidestuff();
+        });
 
-            $(function () {
-                var hidestuff = function () {
-                    $(".law-firm").hide();
+        $(function () {
+            var hidestuff = function () {
+                $(".pengelolaan-platform, .pengelolaan-sendiri").hide();
+            }
+
+            $("select[name='pengelolaan_dana']").change(function () {
+                hidestuff();
+
+                var value = $(this).val();
+                if (value == "platform") {
+                    $(".pengelolaan-platform").show();
                 }
-
-                $("select[name='mewakili']").change(function () {
-                    hidestuff();
-
-                    var value = $(this).val();
-                    if (value == "law-firm") {
-                        $(".law-firm").show();
-                    }
-                });
-                hidestuff();
-            });
-
-
-            $(document).ready(function () {
-                $("#carouselExampleControls").swiperight(function () {
-                    $(this).carousel('prev');
-                });
-                $("#carouselExampleControls").swipeleft(function () {
-                    $(this).carousel('next');
-                });
-            });
-
-            $(function () {
-                var hidestuff = function () {
-                    $(".sponsor, .pengacara, .pemerintah").hide();
+                if (value == "sendiri") {
+                    $(".pengelolaan-sendiri").show();
                 }
-
-                $("select[name='jenis_pertolongan']").change(function () {
-                    hidestuff();
-
-                    var value = $(this).val();
-                    if (value == "sponsor") {
-                        $(".sponsor").show();
-                    }
-                    if (value == "pengacara") {
-                        $(".pengacara").show();
-                    }
-                    if (value == "pemerintah") {
-                        $(".pemerintah").show();
-                    }
-                });
-                hidestuff();
             });
+            hidestuff();
+        });
 
-        </script>
+        $(function () {
+            var hidestuff = function () {
+                $(".law-firm").hide();
+            }
+
+            $("select[name='mewakili']").change(function () {
+                hidestuff();
+
+                var value = $(this).val();
+                if (value == "law-firm") {
+                    $(".law-firm").show();
+                }
+            });
+            hidestuff();
+        });
+
+
+        $(document).ready(function () {
+            $("#carouselExampleControls").swiperight(function () {
+                $(this).carousel('prev');
+            });
+            $("#carouselExampleControls").swipeleft(function () {
+                $(this).carousel('next');
+            });
+        });
+
+        $(function () {
+            var hidestuff = function () {
+                $(".sponsor, .pengacara, .pemerintah").hide();
+            }
+
+            $("select[name='jenis_pertolongan']").change(function () {
+                hidestuff();
+
+                var value = $(this).val();
+                if (value == "sponsor") {
+                    $(".sponsor").show();
+                }
+                if (value == "pengacara") {
+                    $(".pengacara").show();
+                }
+                if (value == "pemerintah") {
+                    $(".pemerintah").show();
+                }
+            });
+            hidestuff();
+        });
+
+    </script>
 </body>
 
 </html>
