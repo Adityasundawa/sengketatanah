@@ -3431,8 +3431,8 @@
                             <div class="col-11 mt-3 text-center">
                                 
                                 <div class="row mt-2 align-items-center" id="lelang-card-peng"
-                                style="flex-wrap: nowrap; overflow: hidden;">
-                                    <div class="col-12 custom ">
+                                style="flex-wrap: wrap; overflow: hidden;">
+                                    <div class="col-lg-4">
                                             <div class="card mx-auto">
     
                                                 <div class="card-header bg-pengacara text-white px-3 py-1">
@@ -3604,7 +3604,7 @@
                                             </div>
                                     </div>
 
-                                    <div class="col-12 custom ">
+                                    <div class="col-lg-4 ">
                                             <div class="card mx-auto">
     
                                                 <div class="card-header bg-pengacara text-white px-3 py-1">
@@ -3779,7 +3779,7 @@
                                             </div>
                                     </div>
 
-                                    <div class="col-12 custom ">
+                                    <div class="col-lg-4 ">
                                             <div class="card mx-auto">
     
                                                 <div class="card-header bg-pengacara text-white px-3 py-1">
