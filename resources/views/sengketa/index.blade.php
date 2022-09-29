@@ -610,7 +610,17 @@
 
     </div>
 
-    <div class="card fixed-bottom rounded-0">
+    <style>
+        .aboute-bottom {
+            position: fixed;
+            bottom: 0;
+            z-index: 1030; 
+            left: 0;
+            right: 0;
+        }
+    </style>
+
+    <div class="card aboute-bottom rounded-0">
         <div class="card border-0 shadow-sm" style="margin-top:-10px">
             <div class="card-body p-0">
                 <div class="row g-0">
@@ -618,7 +628,19 @@
 
                         <button class="btn btn-sm mb-0 p-0 w-100" id="btn-panduan" type="button">
                         <div class="card rounded-0">
-                            <div class="card-body p-2">
+                            <div class="card-body p-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><circle r="256" cx="256" cy="256" fill="#ffffff" shape="circle"></circle><g transform="matrix(0.7,0,0,0.7,76.79200973510743,76.80000000000001)"><path d="m498.195312 222.695312c-.011718-.011718-.023437-.023437-.035156-.035156l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.8125-33.328126-13.8125-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.140626.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.445312 13.238281 31.277344 13.746093.480468.046876.964843.070313 1.453124.070313h8.324219v153.699219c0 30.414062 24.746094 55.160156 55.167969 55.160156h81.710938c8.28125 0 15-6.714844 15-15v-120.5c0-13.878906 11.289062-25.167969 25.167968-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.285156 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.160156v-153.699219h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.808594 18.359375-18.371093 18.367187-48.253906.023437-66.636719zm0 0" fill="#61481c" data-original="#000000" class=""></path></g></svg>
+                                <h6 class="mt-1 mb-1" style="font-size: 12px">HOME</h6>
+                            </div>
+                        </div>
+                        </button>
+                    </div>
+
+                    <div class="col text-center">
+
+                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-panduan" type="button">
+                        <div class="card rounded-0">
+                            <div class="card-body p-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                         width="45px" x="0" y="0" viewBox="0 0 296.999 296.999"
@@ -668,7 +690,7 @@
                                             </g>
                                         </g>
                                 </svg>
-                                <h6 class="mt-2 mb-0" style="font-weight:bold;">PANDUAN</h6>
+                                <h6 class="mt-1 mb-1" style="font-size: 12px">PANDUAN</h6>
                             </div>
                         </div>
                         </button>
@@ -685,7 +707,7 @@
                     <div class="col text-center">
                         <button class="btn btn-sm mb-0 p-0 w-100" id="btn-jaminan" type="button">
                             <div class="card rounded-0">
-                                <div class="card-body p-2">
+                                <div class="card-body p-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                     width="45px" x="0" y="0" viewBox="0 0 32 32"
@@ -698,7 +720,7 @@
                                     </g>
                                     </g>
                                 </svg>
-                                <h6 class="mt-2 mb-0" style="font-weight:bold;">JAMINAN</h6>
+                                <h6 class="mt-1 mb-1" style="font-size: 12px">JAMINAN</h6>
                             </div>
                         </button>
 
@@ -716,9 +738,23 @@
                     <div class="col text-center">
                         <button class="btn btn-sm mb-0 p-0 w-100" id="btn-chat" type="button">
                             <div class="card rounded-0">
-                                <div class="card-body p-2">
-                                    <img src="{{asset('')}}images/cus.svg" style="width:30px;margin-top:9px" alt="" srcset="">
-                                    <h6 class=" mb-0" style="font-weight:bold;margin-top:13px">CHAT</h6>
+                                <div class="card-body p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 361.014 361.014" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><circle r="180.507" cx="180.507" cy="180.507" fill="#ffffff" shape="circle"></circle><g transform="matrix(0.7,0,0,0.7,54.15209197998048,54.151945495605474)">
+                                        <g>
+                                            <g id="Layer_5_47_">
+                                                <path d="M331.035,126.94H318.01c-3.563,0-3.682-2.333-3.805-3.494C307.375,59.094,252.77,8.791,186.637,8.791h-12.26
+                                                    c-65.644,0-119.929,49.56-127.409,113.229c-0.191,1.631-0.291,4.92-3.291,4.92H29.978C20.987,126.94,0,136.401,0,184.18v25.075
+                                                    c0,35.436,20.987,43.609,29.978,43.609h43.584c8.991,0,16.347-7.356,16.347-16.347v-93.23c0-8.991-7.356-16.347-16.347-16.347
+                                                    c0,0-2.052-0.18-1.529-3.835c7.192-50.319,50.129-89.313,102.344-89.313h12.26c51.86,0,94.912,38.418,102.2,88.288
+                                                    c0.235,1.608,1.111,4.86-1.385,4.86c-8.991,0-16.347,7.356-16.347,16.347v93.23c0,8.991,7.356,16.347,16.347,16.347h8.184
+                                                    c2.25,0,1.868,1.798,1.667,2.704c-6.667,30.104-21.637,64.256-55.238,64.256h-24.889c-2.54,0-3.167-1.861-3.65-2.743
+                                                    c-4.032-7.367-11.851-12.364-20.841-12.364h-22.933c-13.118,0-23.753,10.634-23.753,23.753c0,13.119,10.635,23.752,23.753,23.752
+                                                    h22.933c9.112,0,17.023-5.132,21.005-12.662c0.348-0.658,0.633-2.026,3.321-2.026h25.054c22.823,0,53.365-11.341,69.259-65.373
+                                                    c1.694-5.758,3.068-11.496,4.187-17.026c0.154-0.761,0.25-2.27,2.625-2.27h12.9c8.991,0,29.978-8.174,29.978-43.609v-25.075
+                                                    C361.013,137.082,340.026,126.94,331.035,126.94z" fill="#61481c" data-original="#000000" class=""></path>
+                                            </g>
+                                        </svg>
+                                    <h6 class="mt-1 mb-1" style="font-size: 12px;margin-top:13px">CHAT</h6>
                                 </div>
                             </div>
                         </button>
@@ -736,7 +772,7 @@
                     <div class="col text-center">
                         <button class="btn btn-sm mb-0 p-0 w-100" id="btn-tentang" type="button">
                             <div class="card rounded-0">
-                                <div class="card-body p-2">
+                                <div class="card-body p-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                         width="45px" x="0" y="0" viewBox="0 0 24 24"
@@ -750,7 +786,7 @@
                                     </g>
                                         </g>
                                     </svg>
-                                    <h6 class="mt-2 mb-0" style="font-weight:bold;">TENTANG</h6>
+                                    <h6 class="mt-1 mb-1" style="font-size: 12px">TENTANG</h6>
                                 </div>
                             </div>
                         </button>
@@ -8228,7 +8264,7 @@
 
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0"
         nonce="Ee2Zutm6"></script>
-    <div class="row mt-4" style="margin-bottom: 136px">
+    <div class="row mt-4" style="margin-bottom: 80px">
         <div class="card-body text-white text-center" style="background: #61481C">
             <p></p>
             <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
