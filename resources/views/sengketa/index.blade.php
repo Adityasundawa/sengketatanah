@@ -5674,7 +5674,7 @@
                     </tr>
                     <tr>
                         <td>
-
+                            <p class="mb-0">Lahan Tersedia <span class="badge bg-danger">2,353</span></p>
                         </td>
                     </tr>
                 </table>
