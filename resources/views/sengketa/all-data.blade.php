@@ -477,6 +477,8 @@
         @media (max-width: 1199.98px) {
             .mobile-scroll {
                 overflow-x: scroll;
+
+
             }
 
             .mobile-scroll::-webkit-scrollbar {
@@ -487,6 +489,19 @@
                 background: transparent;
             }
 
+            .desktop-arrow {
+                width: 100%
+            }
+
+            .arrow-desktop {
+                display: none
+            }
+
+            .arrow-desktop {
+                display: none
+            }
+
+        }
 
     </style>
 </head>
