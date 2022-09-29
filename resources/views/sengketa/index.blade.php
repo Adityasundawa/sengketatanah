@@ -591,13 +591,8 @@
         <div class="row">
             <div class="col-md-12 text-center mt-3">
                 <div class="mobile">
-<<<<<<< HEAD
-                    <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 100px" alt="" srcset=""
-                        class="img-fluid">
-=======
 
                     <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 100px" alt="" srcset="" class="img-fluid">
->>>>>>> cfae4fa38fcd48a19a0eb4c7073f0c66f24a4f99
                 </div>
                 <div class="desktop-2">
                     <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 150px" alt="" srcset="" class="img-fluid">
@@ -1261,14 +1256,10 @@
                             <div class="col-3 text-center mb-2">
 
                                 <button class="btn btn-sm" id="btn-panduan" type="button">
-<<<<<<< HEAD
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                         width="65px" x="0" y="0" viewBox="0 0 296.999 296.999"
                                         style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-=======
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70px" x="0" y="0" viewBox="0 0 296.999 296.999" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
->>>>>>> cfae4fa38fcd48a19a0eb4c7073f0c66f24a4f99
                                         <circle r="148.4995" cx="148.4995" cy="148.4995" fill="#ffffff" shape="circle">
                                         </circle>
                                         <g transform="matrix(0.7,0,0,0.7,44.54984436035157,44.54998970031738)">
@@ -1330,14 +1321,10 @@
 
                             <div class="col-3 text-center mb-2">
                                 <button class="btn btn-sm" id="btn-jaminan" type="button">
-<<<<<<< HEAD
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                         width="65px" x="0" y="0" viewBox="0 0 32 32"
                                         style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-=======
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70px" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
->>>>>>> cfae4fa38fcd48a19a0eb4c7073f0c66f24a4f99
                                         <circle r="16" cx="16" cy="16" fill="#ffffff" shape="circle"></circle>
                                         <g transform="matrix(0.7,0,0,0.7,4.799999713897705,4.800377225875856)">
                                             <g xmlns="http://www.w3.org/2000/svg" id="_26-Guranteed" data-name="26-Guranteed">
@@ -1362,7 +1349,7 @@
 
                             <div class="col-3 text-center mb-2">
                                 <button class="btn btn-sm" id="btn-chat" type="button">
-                                    <img src="{{asset('')}}images/cus.svg" style="width:55px;margin-top:9px" alt="" srcset="">
+                                    <img src="{{asset('')}}images/cus.svg" style="width:50px;margin-top:9px" alt="" srcset="">
                                     <h6 class=" mb-0" style="font-weight:bold;margin-top:13px">CHAT</h6>
                                 </button>
 
@@ -1378,14 +1365,10 @@
 
                             <div class="col-3 text-center mb-2">
                                 <button class="btn btn-sm" id="btn-tentang" type="button" style="margin-left:-10px">
-<<<<<<< HEAD
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                         width="65px" x="0" y="0" viewBox="0 0 24 24"
                                         style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-=======
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70px" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
->>>>>>> cfae4fa38fcd48a19a0eb4c7073f0c66f24a4f99
                                         <circle r="12" cx="12" cy="12" fill="#ffffff" shape="circle"></circle>
                                         <g transform="matrix(0.7,0,0,0.7,3.600000000000003,3.600000000000003)">
                                             <g xmlns="http://www.w3.org/2000/svg" fill="rgb(0,0,0)">
@@ -1551,13 +1534,9 @@
                                     <div class="fw-bold" style="color: #61481C"> Customer Service</div>
                                 </h2>
                                 <div class="chat-form"> <input type="text" class="form-control" placeholder="Nama">
-<<<<<<< HEAD
                                     <input type="text" class="form-control" placeholder="Email"> <textarea
                                         class="form-control" placeholder="Masukan Pesan"></textarea> <button
                                         class="btn btn-brown btn-block">Kirim</button>
-=======
-                                    <input type="text" class="form-control" placeholder="Email"> <textarea class="form-control" placeholder="Masukan Pesan"></textarea> <button class="btn btn-success btn-block">Kirim</button>
->>>>>>> cfae4fa38fcd48a19a0eb4c7073f0c66f24a4f99
                                 </div>
                             </ol>
 
