@@ -3428,7 +3428,7 @@
                                 
                             </div>
 
-                            <div class="col-11 text-center">
+                            <div class="col-11 mt-3 text-center">
                                 
                                 <div class="row mt-2 align-items-center" id="lelang-card-peng"
                                 style="flex-wrap: nowrap; overflow: hidden;">
