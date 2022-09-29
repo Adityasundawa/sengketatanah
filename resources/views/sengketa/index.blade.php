@@ -2681,7 +2681,7 @@
 
                         <div class="row align-items-center justify-content-center mt-2">
 
-                            <div class="col-11 desktop-arrow text-center positio">
+                            <div class="col-11 desktop-arrow text-center">
                                 
                                 <div class="row mobile-scroll mt-2 align-items-center" id="lelang-card-peng" style="flex-wrap: nowrap">
                                     <div class="col-12 custom ">
@@ -3399,7 +3399,7 @@
                                 
                             </div>
 
-                            <div class="col-11 mt-3 text-center">
+                            <div class="col-11 desktop-arrow mt-3 text-center">
                                 
                                 <div class="row mt-2 align-items-center" id="lelang-card-peng"
                                 style="flex-wrap: nowrap; overflow-x: auto">
