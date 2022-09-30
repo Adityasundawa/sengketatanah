@@ -1585,6 +1585,11 @@
 
                                                     </div>
                                                     <div class="col text-center">
+                                                        <button type="button" class="text-center rounded-5 btn  btn-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                            BID
+                                                        </button>
+                                                    </div>
+                                                    <div class="col text-center">
                                                         <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
                                                             Lihat Podcast</span>
                                                     </div>
@@ -1607,9 +1612,9 @@
 
                                                         <div class="d-grid gap-2 ">
 
-                                                            <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                            {{-- <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                                 BID
-                                                            </button>
+                                                            </button> --}}
 
 
                                                             <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
