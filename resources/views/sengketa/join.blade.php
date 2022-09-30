@@ -164,6 +164,33 @@
             }
         }
 
+        .vr.vr-none {
+            display: none !important;
+        }
+
+        hr.hr-none {
+            display: block !important;
+            margin-top: 0px
+        }
+
+        .login-mb {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (min-width: 1000px) {
+            .vr.vr-none {
+                display: block !important;
+            }
+
+            hr.hr-none {
+                display: none !important;
+            }
+
+            .login-mb {
+                margin-bottom: 0rem;
+            }
+        }
+
     </style>
 </head>
 
