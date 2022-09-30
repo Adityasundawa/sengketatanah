@@ -6461,11 +6461,11 @@
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
                                                                 <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" alt="">
                                                                 </h1>
                                                             </div>
                                                             <div class="modal-body">
-                                                                Anda harus masukkan akun sebelum melihat
+                                                                Anda harus masukkan akun peserta lelang sebelum melihat
                                                                 detail.
                                                             </div>
                                                             <div class="modal-footer">
@@ -6516,7 +6516,7 @@
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus memiliki akun sebelum
+                                                                    Anda harus memiliki akun peserta lelang sebelum
                                                                     melakukan bid.
                                                                 </div>
                                                                 <div class="modal-footer">
@@ -6704,12 +6704,12 @@
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
                                                                 <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" alt="">
                                                                 </h1>
                                                             </div>
                                                             <div class="modal-body">
-                                                                Anda harus masukkan akun sebelum melihat
-                                                                detail.
+                                                                Anda harus memiliki akun peserta lelang sebelum
+                                                                melihat detail.
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -6760,7 +6760,7 @@
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus memiliki akun sebelum
+                                                                    Anda harus memiliki akun peserta lelang sebelum
                                                                     melakukan bid.
                                                                 </div>
                                                                 <div class="modal-footer">
@@ -6945,11 +6945,11 @@
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
                                                                 <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" alt="">
                                                                 </h1>
                                                             </div>
                                                             <div class="modal-body">
-                                                                Anda harus masukkan akun sebelum melihat
+                                                                Anda harus masukkan akun peserta lelang sebelum melihat
                                                                 detail.
                                                             </div>
                                                             <div class="modal-footer">
@@ -7000,7 +7000,7 @@
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus memiliki akun sebelum
+                                                                    Anda harus memiliki akun peserta lelang sebelum
                                                                     melakukan bid.
                                                                 </div>
                                                                 <div class="modal-footer">
@@ -7184,11 +7184,11 @@
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
                                                                 <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" alt="">
                                                                 </h1>
                                                             </div>
                                                             <div class="modal-body">
-                                                                Anda harus masukkan akun sebelum melihat
+                                                                Anda harus masukkan akun peserta lelang sebelum melihat
                                                                 detail.
                                                             </div>
                                                             <div class="modal-footer">
@@ -7239,7 +7239,7 @@
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus memiliki akun sebelum
+                                                                    Anda harus memiliki akun peserta lelang sebelum
                                                                     melakukan bid.
                                                                 </div>
                                                                 <div class="modal-footer">
