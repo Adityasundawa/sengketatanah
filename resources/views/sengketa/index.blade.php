@@ -1496,13 +1496,13 @@
                                                     <tr>
                                                         <td class="text-start">
                                                             <h5>
-                                                                <b class="text-primary">
+                                                                <b class="text-primary fs-4">
                                                                     Fee : 50%
                                                                 </b>
                                                             </h5>
                                                         </td>
                                                         <td class="align-items-center" rowspan="2">
-                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
+                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleC">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -1709,13 +1709,13 @@
                                                     <tr>
                                                         <td class="text-start">
                                                             <h5>
-                                                                <b class="text-primary">
+                                                                <b class="text-primary fs-4">
                                                                     Fee : 50%
                                                                 </b>
                                                             </h5>
                                                         </td>
                                                         <td class="align-items-center" rowspan="2">
-                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
+                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleC">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -1916,13 +1916,13 @@
                                                     <tr>
                                                         <td class="text-start">
                                                             <h5>
-                                                                <b class="text-primary">
+                                                                <b class="text-primary fs-4">
                                                                     Fee : 50%
                                                                 </b>
                                                             </h5>
                                                         </td>
                                                         <td class="align-items-center" rowspan="2">
-                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
+                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleC">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -2121,13 +2121,13 @@
                                                     <tr>
                                                         <td class="text-start">
                                                             <h5>
-                                                                <b class="text-primary">
+                                                                <b class="text-primary fs-4">
                                                                     Fee : 50%
                                                                 </b>
                                                             </h5>
                                                         </td>
                                                         <td class="align-items-center" rowspan="2">
-                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
+                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleC">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                         </td>
                                                     </tr>
                                                 </table>
