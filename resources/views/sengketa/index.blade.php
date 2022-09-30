@@ -1748,7 +1748,7 @@ visibility: hidden;
 
 
                 <div class="card mb-3">
-                    <div class="card-header bg-brown">
+                    <div class="card-header bg-danger text-white">
                         <center>
                             <h4 class="blink">Pre Launching 1 Desember 2022</h4>
                             <h4 class="blink">Pukul 09:WIB </h4>
