@@ -32,26 +32,27 @@
 
         .blink {
 
-animation: blink-animation 1s steps(5, start) infinite;
+            animation: blink-animation 1s steps(5, start) infinite;
 
--webkit-animation: blink-animation 1s steps(5, start) infinite;
+            -webkit-animation: blink-animation 1s steps(5, start) infinite;
 
-}
+        }
 
-@keyframes blink-animation {
+        @keyframes blink-animation {
 
-to {
+            to {
 
-visibility: hidden;
+                visibility: hidden;
 
-}
+            }
 
-}
-@-webkit-keyframes blink-animation {
-to {
-visibility: hidden;
-}
-}
+        }
+
+        @-webkit-keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
 
         .line-1 {
             height: 3px;
@@ -1747,12 +1748,12 @@ visibility: hidden;
                 </div>
 
 
-                <div class="card mb-3">
+                <div class="card mb-3 mobile">
                     <div class="card-header bg-danger text-white">
                         <center>
-                            <h4 class="blink">Pre Launching 1 Desember 2022</h4>
-                            <h4 class="blink">Pukul 09.00 WIB </h4>
-                            <h4 class="blink">Nantikan Kehadiran Kami</h4>
+                            <h6 class="blink">Pre Launching 1 Desember 2022</h6>
+                            <h6 class="blink">Pukul 09.00 WIB </h6>
+                            <h6 class="blink">Nantikan Kehadiran Kami</h6>
                         </center>
 
                     </div>
@@ -1805,7 +1806,8 @@ visibility: hidden;
                 <div class="card mb-3 border-0 shadow-sm desktop" style="margin-top:-10px">
                     <div class="card-body pb-1 pt-2">
                         <div class="row">
-                            <div class="col-3 text-center mb-2">
+
+                            <div class="col-2 text-center mb-2">
                                 <button class="btn btn-sm" id="btn-panduan" type="button">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
@@ -1874,7 +1876,7 @@ visibility: hidden;
                                     });
                                 </script>
                             </div>
-                            <div class="col-3 text-center mb-2">
+                            <div class="col-2 text-center mb-2">
                                 <button class="btn btn-sm" id="btn-jaminan" type="button">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
@@ -1904,7 +1906,21 @@ visibility: hidden;
                                     });
                                 </script>
                             </div>
-                            <div class="col-3 text-center mb-2">
+                            <div class="col-4 text-center mb-2">
+                                <div class="card mb-3">
+                                    <div class="card-header bg-danger text-white">
+                                        <center>
+                                            <h6 class="blink">Pre Launching 1 Desember 2022</h6>
+                                            <h6 class="blink">Pukul 09.00 WIB </h6>
+                                            <h6 class="blink">Nantikan Kehadiran Kami</h6>
+                                        </center>
+
+                                    </div>
+                            
+                                </div>
+
+                            </div>
+                            <div class="col-2 text-center mb-2">
                                 <button class="btn btn-sm" id="btn-chat" type="button">
                                     <img src="{{asset('')}}images/cus.svg" style="width:55px;margin-top:9px" alt=""
                                         srcset="">
@@ -1919,7 +1935,7 @@ visibility: hidden;
                                     });
                                 </script>
                             </div>
-                            <div class="col-3 text-center mb-2">
+                            <div class="col-2 text-center mb-2">
                                 <button class="btn btn-sm" id="btn-tentang" type="button" style="margin-left:-10px">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
