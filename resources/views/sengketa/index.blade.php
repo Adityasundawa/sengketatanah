@@ -30,6 +30,28 @@
         }
 
 
+        .blink {
+
+animation: blink-animation 1s steps(5, start) infinite;
+
+-webkit-animation: blink-animation 1s steps(5, start) infinite;
+
+}
+
+@keyframes blink-animation {
+
+to {
+
+visibility: hidden;
+
+}
+
+}
+@-webkit-keyframes blink-animation {
+to {
+visibility: hidden;
+}
+}
 
         .line-1 {
             height: 3px;
@@ -1726,9 +1748,11 @@
 
 
                 <div class="card mb-3">
-                    <div class="card-header">
+                    <div class="card-header bg-brown">
                         <center>
-                            <h4> Pre Launching 1 Desember 2022 Pukul 09:WIB Nantikan Kehadiran Kami</h4>
+                            <h4 class="blink">Pre Launching 1 Desember 2022</h4>
+                            <h4 class="blink">Pukul 09:WIB </h4>
+                            <h4 class="blink">Nantikan Kehadiran Kami</h4>
                         </center>
 
                     </div>
