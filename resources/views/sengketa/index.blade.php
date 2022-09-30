@@ -1554,10 +1554,10 @@
                                                 <hr>
 
 
-                                                <div class="row g-2">
+                                                <div class="row g-2 align-items-center">
                                                     <div class="col text-center">
 
-                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none; font-size: 12px;">
                                                             <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                         </a>
 
@@ -1584,13 +1584,13 @@
                                                         </div>
 
                                                     </div>
-                                                    <div class="col-3 text-center">
-                                                        <button type="button" class="text-center rounded-5 w-100 h-100 btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                    <div class="col-2 text-center">
+                                                        <button type="button" class="text-center h-100 btn btn-dark mb-0" style="border-radius: 50%; width: 50px; height: 50px !important; font-size: 14px" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             BID
                                                         </button>
                                                     </div>
                                                     <div class="col text-center">
-                                                        <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
+                                                        <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-md btn-success rounded-5" style="cursor:pointer; font-size: 11px;"><i class="fa-solid fa-play text-white"></i>
                                                             Lihat Podcast</span>
                                                     </div>
                                                 </div>
@@ -3774,9 +3774,11 @@
 
                                                 </div>
                                                 <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                        Lihat Video</span>
+                                                    <button type="button" class="text-center rounded-5 w-75 btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                        BID
+                                                    </button>
                                                 </div>
+                                                
                                             </div>
 
                                             <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
@@ -3795,10 +3797,6 @@
                                                 <div class="col-4">
 
                                                     <div class="d-grid gap-2 ">
-
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                            BID
-                                                        </button>
 
 
                                                         <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -3966,9 +3964,11 @@
 
                                                 </div>
                                                 <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                        Lihat Video</span>
+                                                    <button type="button" class="text-center rounded-5 w-75 btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                        BID
+                                                    </button>
                                                 </div>
+                                                
                                             </div>
 
                                             <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
@@ -3987,10 +3987,6 @@
                                                 <div class="col-4">
 
                                                     <div class="d-grid gap-2 ">
-
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                            BID
-                                                        </button>
 
 
                                                         <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -4159,9 +4155,11 @@
 
                                                 </div>
                                                 <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                        Lihat Video</span>
+                                                    <button type="button" class="text-center rounded-5 w-75 btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                        BID
+                                                    </button>
                                                 </div>
+                                                
                                             </div>
 
                                             <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3" method="get">
@@ -4180,9 +4178,6 @@
                                                 <div class="col-4">
 
                                                     <div class="d-grid gap-2 ">
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                            BID
-                                                        </button>
 
 
                                                         <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -4350,9 +4345,11 @@
 
                                                 </div>
                                                 <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                        Lihat Video</span>
+                                                    <button type="button" class="text-center rounded-5 w-75 btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                        BID
+                                                    </button>
                                                 </div>
+                                                
                                             </div>
 
                                             <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3" method="get">
@@ -4371,9 +4368,6 @@
                                                 <div class="col-4">
 
                                                     <div class="d-grid gap-2 ">
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                            BID
-                                                        </button>
 
 
                                                         <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -4541,9 +4535,11 @@
 
                                                 </div>
                                                 <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                        Lihat Video</span>
+                                                    <button type="button" class="text-center rounded-5 w-75 btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                        BID
+                                                    </button>
                                                 </div>
+                                                
                                             </div>
 
                                             <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
@@ -4562,10 +4558,6 @@
                                                 <div class="col-4">
 
                                                     <div class="d-grid gap-2 ">
-
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                            BID
-                                                        </button>
 
 
                                                         <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -4897,7 +4889,7 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -4923,10 +4915,6 @@
                                                         </div>
                                                     </div>
 
-                                                </div>
-                                                <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                        Lihat Video</span>
                                                 </div>
                                             </div>
                                             <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1" method="get">
@@ -5088,7 +5076,7 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -5114,10 +5102,6 @@
                                                         </div>
                                                     </div>
 
-                                                </div>
-                                                <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                        Lihat Video</span>
                                                 </div>
                                             </div>
 
@@ -5286,7 +5270,7 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -5312,10 +5296,6 @@
                                                         </div>
                                                     </div>
 
-                                                </div>
-                                                <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                        Lihat Video</span>
                                                 </div>
                                             </div>
 
@@ -5484,7 +5464,7 @@
                                                 <div class="col text-center">
 
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -5510,10 +5490,6 @@
                                                         </div>
                                                     </div>
 
-                                                </div>
-                                                <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                        Lihat Video</span>
                                                 </div>
                                             </div>
 
@@ -5681,7 +5657,7 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -5707,10 +5683,6 @@
                                                         </div>
                                                     </div>
 
-                                                </div>
-                                                <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-danger"></i>
-                                                        Lihat Video</span>
                                                 </div>
                                             </div>
 
@@ -6456,7 +6428,7 @@
                                         <div class="row g-0">
                                             <div class="col text-center">
 
-                                                <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
+                                                <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
@@ -6482,10 +6454,6 @@
                                                     </div>
                                                 </div>
 
-                                            </div>
-                                            <div class="col text-center">
-                                                <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                    Lihat Video</span>
                                             </div>
                                         </div>
                                         <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1" method="get">
@@ -6699,7 +6667,7 @@
                                         <div class="row g-0">
                                             <div class="col text-center">
 
-                                                <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
+                                                <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
@@ -6725,10 +6693,6 @@
                                                     </div>
                                                 </div>
 
-                                            </div>
-                                            <div class="col text-center">
-                                                <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                    Lihat Video</span>
                                             </div>
                                         </div>
 
@@ -6940,7 +6904,7 @@
                                         <div class="row g-0">
                                             <div class="col text-center">
 
-                                                <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
+                                                <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
@@ -6966,10 +6930,6 @@
                                                     </div>
                                                 </div>
 
-                                            </div>
-                                            <div class="col text-center">
-                                                <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                    Lihat Video</span>
                                             </div>
                                         </div>
 
@@ -7179,7 +7139,7 @@
                                         <div class="row g-0">
                                             <div class="col text-center">
 
-                                                <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
+                                                <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
@@ -7205,10 +7165,6 @@
                                                     </div>
                                                 </div>
 
-                                            </div>
-                                            <div class="col text-center">
-                                                <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                    Lihat Video</span>
                                             </div>
                                         </div>
 
