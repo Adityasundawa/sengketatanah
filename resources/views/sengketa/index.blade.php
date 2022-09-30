@@ -5831,14 +5831,14 @@
 
 
                                             <div class="row g-0">
-                                                <div class="col text-center">
+                                                <div class="col text-start">
 
                                                     <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
@@ -6043,14 +6043,14 @@
 
 
                                             <div class="row g-0">
-                                                <div class="col text-center">
+                                                <div class="col text-start">
 
                                                     <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
@@ -6262,14 +6262,14 @@
 
 
                                             <div class="row g-0">
-                                                <div class="col text-center">
+                                                <div class="col text-start">
 
                                                     <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
@@ -6480,7 +6480,7 @@
 
 
                                             <div class="row g-0">
-                                                <div class="col text-center">
+                                                <div class="col text-start">
 
 
                                                     <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
@@ -6488,7 +6488,7 @@
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
@@ -6699,14 +6699,14 @@
 
 
                                             <div class="row g-0">
-                                                <div class="col text-center">
+                                                <div class="col text-start">
 
                                                     <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
@@ -7374,27 +7374,25 @@
                                                     <b>Nilai Limit :</b>
                                                 </td>
 
-                                                <td class="align-items-center" rowspan="2">
-                                                            
-                                                              
-                                                    <div class="row d-flex align-items-center mb-2">
-                                                        <div class="col-4 text-end">
-                                                            <a id="fav-c1">
-                                                                <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                                    <i class="fas fa-star"></i>
-                                                                </h5>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col">
-                                                            <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                                Ikut Lelang</button>
-                                                        </div>
+                                                <td rowspan="2">
+                                                    <div class="d-flex align-items-center">
+
+                                                        <a id="fav-c1 my-auto" style="margin-right: 10px">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                        <button class="btn float-end btn-warning text-white mb-0 my-auto w-100" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                            Ikut Lelang</button>
                                                     </div>
+
+                                                    
                                                     <script>
                                                         $("#fav-c1").click(function(){
                                                             $("#fav-ch-c1").toggleClass('fav-icon');
                                                         });
                                                     </script>
+                                                    
 
                                                 </td>
                                             </tr>
@@ -7495,14 +7493,14 @@
 
 
                                         <div class="row g-0">
-                                            <div class="col text-center">
+                                            <div class="col text-start">
 
                                                 <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
-                                                <div class="modal fade my-auto" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
@@ -7638,27 +7636,25 @@
                                                     <b>Nilai Limit :</b>
                                                 </td>
 
-                                                <td class="align-items-center" rowspan="2">
-                                                            
-                                                              
-                                                    <div class="row d-flex align-items-center mb-2">
-                                                        <div class="col-4 text-end">
-                                                            <a id="fav-c2">
-                                                                <h5 class="mb-0 text-fav-disable" id="fav-ch-c2">
-                                                                    <i class="fas fa-star"></i>
-                                                                </h5>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col">
-                                                            <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                                Ikut Lelang</button>
-                                                        </div>
+                                                <td rowspan="2">
+                                                    <div class="d-flex align-items-center">
+
+                                                        <a id="fav-c1 my-auto" style="margin-right: 10px">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                        <button class="btn float-end btn-warning text-white mb-0 my-auto w-100" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                            Ikut Lelang</button>
                                                     </div>
+
+                                                    
                                                     <script>
-                                                        $("#fav-c2").click(function(){
-                                                            $("#fav-ch-c2").toggleClass('fav-icon');
+                                                        $("#fav-c1").click(function(){
+                                                            $("#fav-ch-c1").toggleClass('fav-icon');
                                                         });
                                                     </script>
+                                                    
 
                                                 </td>
                                             </tr>
@@ -7759,14 +7755,14 @@
 
 
                                         <div class="row g-0">
-                                            <div class="col text-center">
+                                            <div class="col text-start">
 
                                                 <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
-                                                <div class="modal fade my-auto" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
@@ -7901,27 +7897,25 @@
                                                     <b>Nilai Limit :</b>
                                                 </td>
 
-                                                <td class="align-items-center" rowspan="2">
-                                                            
-                                                              
-                                                    <div class="row d-flex align-items-center mb-2">
-                                                        <div class="col-4 text-end">
-                                                            <a id="fav-c3">
-                                                                <h5 class="mb-0 text-fav-disable" id="fav-ch-c3">
-                                                                    <i class="fas fa-star"></i>
-                                                                </h5>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col">
-                                                            <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                                Ikut Lelang</button>
-                                                        </div>
+                                                <td rowspan="2">
+                                                    <div class="d-flex align-items-center">
+
+                                                        <a id="fav-c1 my-auto" style="margin-right: 10px">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                        <button class="btn float-end btn-warning text-white mb-0 my-auto w-100" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                            Ikut Lelang</button>
                                                     </div>
+
+                                                    
                                                     <script>
-                                                        $("#fav-c3").click(function(){
-                                                            $("#fav-ch-c3").toggleClass('fav-icon');
+                                                        $("#fav-c1").click(function(){
+                                                            $("#fav-ch-c1").toggleClass('fav-icon');
                                                         });
                                                     </script>
+                                                    
 
                                                 </td>
                                             </tr>
@@ -8021,14 +8015,14 @@
 
 
                                         <div class="row g-0">
-                                            <div class="col text-center">
+                                            <div class="col text-start">
 
                                                 <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
-                                                <div class="modal fade my-auto" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
@@ -8162,27 +8156,25 @@
                                                     <b>Nilai Limit :</b>
                                                 </td>
 
-                                                <td class="align-items-center" rowspan="2">
-                                                            
-                                                              
-                                                    <div class="row d-flex align-items-center mb-2">
-                                                        <div class="col-4 text-end">
-                                                            <a id="fav-c4">
-                                                                <h5 class="mb-0 text-fav-disable" id="fav-ch-c4">
-                                                                    <i class="fas fa-star"></i>
-                                                                </h5>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col">
-                                                            <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                                Ikut Lelang</button>
-                                                        </div>
+                                                <td rowspan="2">
+                                                    <div class="d-flex align-items-center">
+
+                                                        <a id="fav-c1 my-auto" style="margin-right: 10px">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                        <button class="btn float-end btn-warning text-white mb-0 my-auto w-100" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                            Ikut Lelang</button>
                                                     </div>
+
+                                                    
                                                     <script>
-                                                        $("#fav-c4").click(function(){
-                                                            $("#fav-ch-c4").toggleClass('fav-icon');
+                                                        $("#fav-c1").click(function(){
+                                                            $("#fav-ch-c1").toggleClass('fav-icon');
                                                         });
                                                     </script>
+                                                    
 
                                                 </td>
                                             </tr>
@@ -8281,14 +8273,14 @@
 
 
                                         <div class="row g-0">
-                                            <div class="col text-center">
+                                            <div class="col text-start">
 
                                                 <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
-                                                <div class="modal fade my-auto" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
