@@ -1770,7 +1770,7 @@
                                         <h1 id="sec-box">5</h1>
                                     </div>
                                     <div class="col-12">
-                                        Hari
+                                        Detik
                                     </div>
                                 </div>
                             </div>
