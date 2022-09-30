@@ -540,6 +540,12 @@
         .scroll-simple::-webkit-scrollbar-thumb:active {
             background: rgba(0, 0, 0, .9);
         }
+        .fav-icon {
+            color: #ffc107 !important
+        }
+        .text-fav-disable {
+            color: rgb(199, 199, 199)
+        }
     </style>
 
 </head>
@@ -630,7 +636,7 @@
                         <div class="card rounded-0">
                             <div class="card-body p-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><circle r="256" cx="256" cy="256" fill="#ffffff" shape="circle"></circle><g transform="matrix(0.7,0,0,0.7,76.79200973510743,76.80000000000001)"><path d="m498.195312 222.695312c-.011718-.011718-.023437-.023437-.035156-.035156l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.8125-33.328126-13.8125-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.140626.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.445312 13.238281 31.277344 13.746093.480468.046876.964843.070313 1.453124.070313h8.324219v153.699219c0 30.414062 24.746094 55.160156 55.167969 55.160156h81.710938c8.28125 0 15-6.714844 15-15v-120.5c0-13.878906 11.289062-25.167969 25.167968-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.285156 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.160156v-153.699219h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.808594 18.359375-18.371093 18.367187-48.253906.023437-66.636719zm0 0" fill="#61481c" data-original="#000000" class=""></path></g></svg>
-                                <h6 class="mt-1 mb-1" style="font-size: 12px">HOME</h6>
+                                <h6 class="mt-0 mb-0" style="font-size: 12px">HOME</h6>
                             </div>
                         </div>
                         </button>
@@ -690,7 +696,7 @@
                                             </g>
                                         </g>
                                 </svg>
-                                <h6 class="mt-1 mb-1" style="font-size: 12px">PANDUAN</h6>
+                                <h6 class="mt-0 mb-0" style="font-size: 12px">PANDUAN</h6>
                             </div>
                         </div>
                         </button>
@@ -720,7 +726,7 @@
                                     </g>
                                     </g>
                                 </svg>
-                                <h6 class="mt-1 mb-1" style="font-size: 12px">JAMINAN</h6>
+                                <h6 class="mt-0 mb-0" style="font-size: 12px">JAMINAN</h6>
                             </div>
                         </button>
 
@@ -754,7 +760,7 @@
                                                     C361.013,137.082,340.026,126.94,331.035,126.94z" fill="#61481c" data-original="#000000" class=""></path>
                                             </g>
                                         </svg>
-                                    <h6 class="mt-1 mb-1" style="font-size: 12px;margin-top:13px">CHAT</h6>
+                                    <h6 class="mt-0 mb-0" style="font-size: 12px;margin-top:13px">CHAT</h6>
                                 </div>
                             </div>
                         </button>
@@ -786,7 +792,7 @@
                                     </g>
                                         </g>
                                     </svg>
-                                    <h6 class="mt-1 mb-1" style="font-size: 12px">TENTANG</h6>
+                                    <h6 class="mt-0 mb-0" style="font-size: 12px">TENTANG</h6>
                                 </div>
                             </div>
                         </button>
@@ -1492,10 +1498,41 @@
 
 
                                             <div class="card-body">
+                                                <table class="mb-2">
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-primary fs-4">
+                                                                    Fee : 50%
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                        <td class="align-items-center">
+                                                            
+                                                              
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-1">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-1">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-primary mb-0" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-1").click(function(){
+                                                                    $("#fav-ch-1").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
 
-
-
-
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
                                                 <table>
                                                     <tbody>
                                                         <tr>
@@ -1554,7 +1591,7 @@
                                                 <hr>
 
 
-                                                <div class="row g-0">
+                                                <div class="row g-2 align-items-center">
                                                     <div class="col text-center">
 
                                                         <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
@@ -1571,7 +1608,8 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus memiliki akun sponsor sebelum melihat
+                                                                        Anda harus memiliki akun sponsor sebelum
+                                                                        melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -1585,7 +1623,7 @@
 
                                                     </div>
                                                     <div class="col text-center">
-                                                        <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
+                                                        <span onclick="return document.querySelector('form.form-sengketa2').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
                                                             Lihat Podcast</span>
                                                     </div>
                                                 </div>
@@ -1607,9 +1645,9 @@
 
                                                         <div class="d-grid gap-2 ">
 
-                                                            <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                            {{-- <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                                 BID
-                                                            </button>
+                                                            </button> --}}
 
 
                                                             <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1693,6 +1731,41 @@
 
                                             <div class="card-body">
 
+                                                <table class="mb-2">
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-primary fs-4">
+                                                                    Fee : 50%
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                        <td class="align-items-center">
+                                                            
+                                                              
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-2">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-2">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-primary mb-0" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-2").click(function(){
+                                                                    $("#fav-ch-2").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
                                                 <table>
                                                     <tbody>
                                                         <tr>
@@ -1805,10 +1878,6 @@
 
                                                         <div class="d-grid gap-2 ">
 
-                                                            <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                                BID
-                                                            </button>
-
 
                                                             <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                 <div class="modal-dialog modal-dialog-centered">
@@ -1889,6 +1958,41 @@
                                             </div>
 
                                             <div class="card-body">
+                                                <table class="mb-2">
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-primary fs-4">
+                                                                    Fee : 50%
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                        <td class="align-items-center">
+                                                            
+                                                              
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-3">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-3">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-primary mb-0" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-3").click(function(){
+                                                                    $("#fav-ch-3").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
                                                 <table>
                                                     <tbody>
                                                         <tr>
@@ -2000,10 +2104,6 @@
                                                     <div class="col-4">
 
                                                         <div class="d-grid gap-2 ">
-                                                            <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                                BID
-                                                            </button>
-
 
                                                             <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                 <div class="modal-dialog modal-dialog-centered">
@@ -2083,6 +2183,41 @@
                                             </div>
 
                                             <div class="card-body">
+                                                <table class="mb-2">
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-primary fs-4">
+                                                                    Fee : 50%
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                        <td class="align-items-center">
+                                                            
+                                                              
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-4">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-4">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-primary mb-0" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-4").click(function(){
+                                                                    $("#fav-ch-4").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
                                                 <table>
                                                     <tbody>
                                                         <tr>
@@ -2194,10 +2329,6 @@
                                                     <div class="col-4">
 
                                                         <div class="d-grid gap-2 ">
-                                                            <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                                BID
-                                                            </button>
-
 
                                                             <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                 <div class="modal-dialog modal-dialog-centered">
@@ -3681,8 +3812,41 @@
                                         </div>
 
                                         <div class="card-body">
+                                            <table class="mb-2">
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <h5>
+                                                            <b class="text-danger fs-4">
+                                                                Kerja Sama
+                                                            </b>
+                                                        </h5>
+                                                    </td>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-a1">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a1">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-a1").click(function(){
+                                                                    $("#fav-ch-a1").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
 
-
+                                                        </td>
+                                                </tr>
+                                            </table>
+                                            <hr style="margin-top:-4px">
                                             <table>
                                                 <tbody>
                                                     <tr>
@@ -3741,8 +3905,8 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
+                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
@@ -3768,10 +3932,7 @@
                                                     </div>
 
                                                 </div>
-                                                <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                        Lihat Video</span>
-                                                </div>
+                                                
                                             </div>
 
                                             <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
@@ -3790,10 +3951,6 @@
                                                 <div class="col-4">
 
                                                     <div class="d-grid gap-2 ">
-
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                            BID
-                                                        </button>
 
 
                                                         <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -3874,7 +4031,41 @@
 
                                         <div class="card-body">
 
+                                            <table class="mb-2">
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <h5>
+                                                            <b class="text-danger fs-4">
+                                                                Kerja Sama
+                                                            </b>
+                                                        </h5>
+                                                    </td>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-a2">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a2">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-a2").click(function(){
+                                                                    $("#fav-ch-a2").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
 
+                                                        </td>
+                                                </tr>
+                                            </table>
+                                            <hr style="margin-top:-4px">
                                             <table>
                                                 <tbody>
                                                     <tr>
@@ -3933,8 +4124,8 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
+                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
@@ -3960,10 +4151,7 @@
                                                     </div>
 
                                                 </div>
-                                                <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                        Lihat Video</span>
-                                                </div>
+                                                
                                             </div>
 
                                             <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
@@ -3982,10 +4170,6 @@
                                                 <div class="col-4">
 
                                                     <div class="d-grid gap-2 ">
-
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                            BID
-                                                        </button>
 
 
                                                         <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -4065,8 +4249,41 @@
                                         </div>
 
                                         <div class="card-body">
+                                            <table class="mb-2">
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <h5>
+                                                            <b class="text-danger fs-4">
+                                                                Kerja Sama
+                                                            </b>
+                                                        </h5>
+                                                    </td>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-a3">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a3">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-a3").click(function(){
+                                                                    $("#fav-ch-a3").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
 
-
+                                                        </td>
+                                                </tr>
+                                            </table>
+                                            <hr style="margin-top:-4px">
                                             <table>
                                                 <tbody>
                                                     <tr>
@@ -4126,8 +4343,8 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
+                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
@@ -4153,10 +4370,7 @@
                                                     </div>
 
                                                 </div>
-                                                <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                        Lihat Video</span>
-                                                </div>
+                                                
                                             </div>
 
                                             <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3" method="get">
@@ -4175,9 +4389,6 @@
                                                 <div class="col-4">
 
                                                     <div class="d-grid gap-2 ">
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                            BID
-                                                        </button>
 
 
                                                         <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -4257,8 +4468,41 @@
                                         </div>
 
                                         <div class="card-body">
+                                            <table class="mb-2">
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <h5>
+                                                            <b class="text-danger fs-4">
+                                                                Kerja Sama
+                                                            </b>
+                                                        </h5>
+                                                    </td>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-a4">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a4">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-a4").click(function(){
+                                                                    $("#fav-ch-a4").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
 
-
+                                                        </td>
+                                                </tr>
+                                            </table>
+                                            <hr style="margin-top:-4px">
                                             <table>
                                                 <tbody>
                                                     <tr>
@@ -4317,8 +4561,8 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
+                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
@@ -4344,10 +4588,7 @@
                                                     </div>
 
                                                 </div>
-                                                <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                        Lihat Video</span>
-                                                </div>
+                                                
                                             </div>
 
                                             <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3" method="get">
@@ -4366,9 +4607,6 @@
                                                 <div class="col-4">
 
                                                     <div class="d-grid gap-2 ">
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                            BID
-                                                        </button>
 
 
                                                         <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -4448,8 +4686,41 @@
                                         </div>
 
                                         <div class="card-body">
+                                            <table class="mb-2">
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <h5>
+                                                            <b class="text-danger fs-4">
+                                                                Kerja Sama
+                                                            </b>
+                                                        </h5>
+                                                    </td>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-a5">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a5">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-a5").click(function(){
+                                                                    $("#fav-ch-a5").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
 
-
+                                                        </td>
+                                                </tr>
+                                            </table>
+                                            <hr style="margin-top:-4px">
                                             <table>
                                                 <tbody>
                                                     <tr>
@@ -4508,8 +4779,8 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
+                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
@@ -4535,10 +4806,7 @@
                                                     </div>
 
                                                 </div>
-                                                <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                        Lihat Video</span>
-                                                </div>
+                                                
                                             </div>
 
                                             <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
@@ -4557,10 +4825,6 @@
                                                 <div class="col-4">
 
                                                     <div class="d-grid gap-2 ">
-
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                            BID
-                                                        </button>
 
 
                                                         <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -4837,8 +5101,28 @@
                                                             </b>
                                                         </h5>
                                                     </td>
-                                                    <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleB">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-b1">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-b1">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-b1").click(function(){
+                                                                $("#fav-ch-b1").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+
                                                     </td>
                                                 </tr>
                                             </table>
@@ -4892,7 +5176,7 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -4918,10 +5202,6 @@
                                                         </div>
                                                     </div>
 
-                                                </div>
-                                                <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                        Lihat Video</span>
                                                 </div>
                                             </div>
                                             <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1" method="get">
@@ -5028,8 +5308,28 @@
                                                             </b>
                                                         </h5>
                                                     </td>
-                                                    <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleB">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-b2">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-b2">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-b2").click(function(){
+                                                                $("#fav-ch-b2").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+
                                                     </td>
                                                 </tr>
                                             </table>
@@ -5083,7 +5383,7 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -5109,10 +5409,6 @@
                                                         </div>
                                                     </div>
 
-                                                </div>
-                                                <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                        Lihat Video</span>
                                                 </div>
                                             </div>
 
@@ -5225,8 +5521,28 @@
                                                             </b>
                                                         </h5>
                                                     </td>
-                                                    <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleB">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-b3">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-b3">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-b3").click(function(){
+                                                                $("#fav-ch-b3").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+
                                                     </td>
                                                 </tr>
                                             </table>
@@ -5281,7 +5597,7 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -5307,10 +5623,6 @@
                                                         </div>
                                                     </div>
 
-                                                </div>
-                                                <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                        Lihat Video</span>
                                                 </div>
                                             </div>
 
@@ -5423,8 +5735,28 @@
                                                             </b>
                                                         </h5>
                                                     </td>
-                                                    <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleB">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-b4">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-b4">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-b4").click(function(){
+                                                                $("#fav-ch-b4").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+
                                                     </td>
                                                 </tr>
                                             </table>
@@ -5479,7 +5811,7 @@
                                                 <div class="col text-center">
 
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -5505,10 +5837,6 @@
                                                         </div>
                                                     </div>
 
-                                                </div>
-                                                <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                        Lihat Video</span>
                                                 </div>
                                             </div>
 
@@ -5621,8 +5949,28 @@
                                                             </b>
                                                         </h5>
                                                     </td>
-                                                    <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleB">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-b5">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-b5">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-b5").click(function(){
+                                                                $("#fav-ch-b5").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+
                                                     </td>
                                                 </tr>
                                             </table>
@@ -5676,7 +6024,7 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -5702,10 +6050,6 @@
                                                         </div>
                                                     </div>
 
-                                                </div>
-                                                <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-danger"></i>
-                                                        Lihat Video</span>
                                                 </div>
                                             </div>
 
@@ -6349,7 +6693,27 @@
                                                 </td>
 
                                                 <td class="align-items-center" rowspan="2">
-                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
+                                                            
+                                                              
+                                                    <div class="row d-flex align-items-center mb-2">
+                                                        <div class="col-4 text-end">
+                                                            <a id="fav-c1">
+                                                                <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
+                                                                    <i class="fas fa-star"></i>
+                                                                </h5>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                                Ikut Lelang</button>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        $("#fav-c1").click(function(){
+                                                            $("#fav-ch-c1").toggleClass('fav-icon');
+                                                        });
+                                                    </script>
+
                                                 </td>
                                             </tr>
                                             <tr>
@@ -6451,7 +6815,7 @@
                                         <div class="row g-0">
                                             <div class="col text-center">
 
-                                                <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
+                                                <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
@@ -6461,11 +6825,11 @@
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
                                                                 <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                 </h1>
                                                             </div>
                                                             <div class="modal-body">
-                                                                Anda harus masukkan akun sebelum melihat
+                                                                Anda harus memiliki akun peserta lelang sebelum melihat
                                                                 detail.
                                                             </div>
                                                             <div class="modal-footer">
@@ -6477,10 +6841,6 @@
                                                     </div>
                                                 </div>
 
-                                            </div>
-                                            <div class="col text-center">
-                                                <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                    Lihat Video</span>
                                             </div>
                                         </div>
                                         <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1" method="get">
@@ -6516,7 +6876,7 @@
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus memiliki akun sebelum
+                                                                    Anda harus memiliki akun peserta lelang sebelum
                                                                     melakukan bid.
                                                                 </div>
                                                                 <div class="modal-footer">
@@ -6592,7 +6952,27 @@
                                                 </td>
 
                                                 <td class="align-items-center" rowspan="2">
-                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
+                                                            
+                                                              
+                                                    <div class="row d-flex align-items-center mb-2">
+                                                        <div class="col-4 text-end">
+                                                            <a id="fav-c2">
+                                                                <h5 class="mb-0 text-fav-disable" id="fav-ch-c2">
+                                                                    <i class="fas fa-star"></i>
+                                                                </h5>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                                Ikut Lelang</button>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        $("#fav-c2").click(function(){
+                                                            $("#fav-ch-c2").toggleClass('fav-icon');
+                                                        });
+                                                    </script>
+
                                                 </td>
                                             </tr>
                                             <tr>
@@ -6694,7 +7074,7 @@
                                         <div class="row g-0">
                                             <div class="col text-center">
 
-                                                <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
+                                                <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
@@ -6704,12 +7084,12 @@
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
                                                                 <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                 </h1>
                                                             </div>
                                                             <div class="modal-body">
-                                                                Anda harus masukkan akun sebelum melihat
-                                                                detail.
+                                                                Anda harus memiliki akun peserta lelang sebelum
+                                                                melihat detail.
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -6720,10 +7100,6 @@
                                                     </div>
                                                 </div>
 
-                                            </div>
-                                            <div class="col text-center">
-                                                <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                    Lihat Video</span>
                                             </div>
                                         </div>
 
@@ -6760,7 +7136,7 @@
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus memiliki akun sebelum
+                                                                    Anda harus memiliki akun peserta lelang sebelum
                                                                     melakukan bid.
                                                                 </div>
                                                                 <div class="modal-footer">
@@ -6834,7 +7210,27 @@
                                                 </td>
 
                                                 <td class="align-items-center" rowspan="2">
-                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
+                                                            
+                                                              
+                                                    <div class="row d-flex align-items-center mb-2">
+                                                        <div class="col-4 text-end">
+                                                            <a id="fav-c3">
+                                                                <h5 class="mb-0 text-fav-disable" id="fav-ch-c3">
+                                                                    <i class="fas fa-star"></i>
+                                                                </h5>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                                Ikut Lelang</button>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        $("#fav-c3").click(function(){
+                                                            $("#fav-ch-c3").toggleClass('fav-icon');
+                                                        });
+                                                    </script>
+
                                                 </td>
                                             </tr>
                                             <tr>
@@ -6935,7 +7331,7 @@
                                         <div class="row g-0">
                                             <div class="col text-center">
 
-                                                <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
+                                                <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
@@ -6945,11 +7341,11 @@
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
                                                                 <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                 </h1>
                                                             </div>
                                                             <div class="modal-body">
-                                                                Anda harus masukkan akun sebelum melihat
+                                                                Anda harus memiliki akun peserta lelang sebelum melihat
                                                                 detail.
                                                             </div>
                                                             <div class="modal-footer">
@@ -6961,10 +7357,6 @@
                                                     </div>
                                                 </div>
 
-                                            </div>
-                                            <div class="col text-center">
-                                                <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                    Lihat Video</span>
                                             </div>
                                         </div>
 
@@ -7000,7 +7392,7 @@
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus memiliki akun sebelum
+                                                                    Anda harus memiliki akun peserta lelang sebelum
                                                                     melakukan bid.
                                                                 </div>
                                                                 <div class="modal-footer">
@@ -7074,7 +7466,27 @@
                                                 </td>
 
                                                 <td class="align-items-center" rowspan="2">
-                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
+                                                            
+                                                              
+                                                    <div class="row d-flex align-items-center mb-2">
+                                                        <div class="col-4 text-end">
+                                                            <a id="fav-c4">
+                                                                <h5 class="mb-0 text-fav-disable" id="fav-ch-c4">
+                                                                    <i class="fas fa-star"></i>
+                                                                </h5>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                                Ikut Lelang</button>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        $("#fav-c4").click(function(){
+                                                            $("#fav-ch-c4").toggleClass('fav-icon');
+                                                        });
+                                                    </script>
+
                                                 </td>
                                             </tr>
                                             <tr>
@@ -7174,7 +7586,7 @@
                                         <div class="row g-0">
                                             <div class="col text-center">
 
-                                                <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
+                                                <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
@@ -7184,11 +7596,11 @@
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
                                                                 <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                 </h1>
                                                             </div>
                                                             <div class="modal-body">
-                                                                Anda harus masukkan akun sebelum melihat
+                                                                Anda harus memiliki akun peserta lelang sebelum melihat
                                                                 detail.
                                                             </div>
                                                             <div class="modal-footer">
@@ -7200,10 +7612,6 @@
                                                     </div>
                                                 </div>
 
-                                            </div>
-                                            <div class="col text-center">
-                                                <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                    Lihat Video</span>
                                             </div>
                                         </div>
 
@@ -7239,7 +7647,7 @@
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus memiliki akun sebelum
+                                                                    Anda harus memiliki akun peserta lelang sebelum
                                                                     melakukan bid.
                                                                 </div>
                                                                 <div class="modal-footer">
