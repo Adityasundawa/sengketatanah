@@ -1751,7 +1751,7 @@ visibility: hidden;
                     <div class="card-header bg-danger text-white">
                         <center>
                             <h4 class="blink">Pre Launching 1 Desember 2022</h4>
-                            <h4 class="blink">Pukul 09:WIB </h4>
+                            <h4 class="blink">Pukul 09.00 WIB </h4>
                             <h4 class="blink">Nantikan Kehadiran Kami</h4>
                         </center>
 
