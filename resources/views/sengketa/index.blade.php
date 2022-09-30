@@ -1733,7 +1733,7 @@
 
                     </div>
                     <div class="card-body">
-                        <div class="row">
+                        <div class="row text-center">
                             <div class="col-3">
                                 <div class="row">
                                     <div class="col-12">
