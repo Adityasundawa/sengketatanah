@@ -3480,7 +3480,7 @@
                                                                     </div>
                                                                     <div class="modal-body">
                                                                         Anda harus memiliki akun pengacara sebelum melihat
-                                                                        detail.
+                                                                      detail.
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
