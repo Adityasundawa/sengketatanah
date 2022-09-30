@@ -501,6 +501,14 @@
         .bg-pengacara {
             background: linear-gradient(90deg, hsla(337, 85%, 31%, 1) 42%, hsla(337, 83%, 30%, 1) 64%, hsla(318, 57%, 22%, 1) 86%);
         }
+
+        .fav-icon {
+            color: #ffc107 !important
+        }
+
+        .text-fav-disable {
+            color: rgb(199, 199, 199)
+        }
     </style>
 
 
@@ -981,25 +989,27 @@
                                                 <hr>
 
 
-                                                <div class="row g-0">
+
+                                                <div class="row g-0 align-items-center">
                                                     <div class="col text-center">
 
-                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                            <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasPengacara" style="text-decoration:none">
+                                                            <i class="fa-solid fa-eye"></i> Lihat Detail
                                                         </a>
 
 
-                                                        <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="berkasPengacara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
-                                                                        berkas.
+                                                                        Anda harus memiliki akun pengacara sebelum
+                                                                        melihat
+                                                                        detail.
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -1011,9 +1021,21 @@
                                                         </div>
 
                                                     </div>
+                                                    <div class="col-1 text-center">
+                                                        <a id="fav-p<?= $bs['id'] ?>">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-p<?= $bs['id'] ?>">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                        <script>
+                                                            $("#fav-p<?= $bs['id'] ?>").click(function() {
+                                                                $("#fav-ch-p<?= $bs['id'] ?>").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+                                                    </div>
                                                     <div class="col text-center">
-                                                        <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                            Lihat Podcast</span>
+                                                        <a data-bs-toggle="modal" data-bs-target="#examplePengacara" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                            Bid</a>
                                                     </div>
                                                 </div>
 
@@ -1033,11 +1055,11 @@
                                                     <div class="col-4">
 
                                                         <div class="d-grid gap-2 ">
-
+                                                            <!-- 
                                                             <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                                 BID
                                                             </button>
-
+ -->
 
                                                             <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                 <div class="modal-dialog modal-dialog-centered">

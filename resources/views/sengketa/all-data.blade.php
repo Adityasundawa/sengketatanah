@@ -505,8 +505,8 @@
         .share-icon {
             position: absolute;
             z-index: 999;
-            right: 0.5rem;
-            top: 0.5rem;
+            right: 1.5rem;
+            top: 3.5rem;
         }
     </style>
 </head>
@@ -1089,6 +1089,7 @@
                                             @else
                                             @endif
 
+
                                             <div class="desktop-2">
                                                 <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide" data-bs-ride="carousel">
                                                     <div class="carousel-indicators">
@@ -1154,6 +1155,11 @@
                                                         <span class="visually-hidden">Next</span>
                                                     </button>
                                                 </div>
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
                                             </div>
                                             <table class="mb-2 mt-2" style="width:100%">
                                                 <tr>
@@ -1310,9 +1316,9 @@
                                                         <!--    height: 45px" -->
                                                         <!--    type="button"><i class="fa-solid fa-gavel"></i> Bid Sponsor</a>-->
                                                         <!-- Button trigger modal -->
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                        <!-- <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             BID
-                                                        </button>
+                                                        </button> -->
 
                                                         <!-- Modal -->
                                                         <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

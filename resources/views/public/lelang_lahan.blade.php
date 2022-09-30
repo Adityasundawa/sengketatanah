@@ -505,6 +505,13 @@
         .text-fav-disable {
             color: rgb(199, 199, 199)
         }
+
+        .share-icon {
+            position: absolute;
+            z-index: 999;
+            right: 1.5rem;
+            top: 2rem;
+        }
     </style>
 
 </head>
@@ -1035,7 +1042,11 @@
                                                     </button>
                                                 </div>
                                             </div>
-
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
                                             <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                                 <div class="row">
                                                     <div class="col-lg-12">
@@ -1451,7 +1462,11 @@
                                                 </button>
                                             </div>
                                         </div>
-
+                                        <div class="share-icon">
+                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                <i class="fa-solid fa-share-from-square"></i>
+                                            </button>
+                                        </div>
                                         <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                             <div class="row">
                                                 <div class="col-lg-12">
@@ -1870,7 +1885,11 @@
                                     </button>
                                 </div>
                             </div>
-
+                            <div class="share-icon">
+                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                    <i class="fa-solid fa-share-from-square"></i>
+                                </button>
+                            </div>
                             <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                 <div class="row">
                                     <div class="col-lg-12">
