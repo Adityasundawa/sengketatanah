@@ -14,7 +14,6 @@ class PublicController extends Controller
     public function kerjasamaLahan()
     {
         $data['sengketa'] = SengketaTanah::get();
-
         $data['data_jual_beli'] = $this->data_jual_beli();
         return view('public.kerjasama_lahan', $data);
     }
@@ -76,7 +75,6 @@ class PublicController extends Controller
     public function biddingPengacara()
     {
         $data['sengketa'] = SengketaTanah::get();
-
         $data['data_jual_beli'] = $this->data_jual_beli();
         return view('public.bidding_pengacara', $data);
     }

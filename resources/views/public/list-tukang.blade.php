@@ -555,7 +555,12 @@
 
                                                         </td>
                                                         <td>
-                                                            <button class="mobile btn btn-outline-dark float-end">
+                                                            <form action="{{url('')}}/detail-petugas" method="get">
+                                                                <input type="hidden" name="name" value="{{$name[$i]}}">
+                                                                <input type="hidden" name="img" value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
+                                                                <input type="hidden" name="jenis_petugas" value="Notaris">
+                                                            </form>
+                                                            <button class="mobile btn btn-outline-dark float-end" onclick="return $($(this).parent()).find('form').submit()">
                                                                 <i class="fa fa-comment"></i>
                                                             </button>
                                                         </td>
@@ -584,7 +589,6 @@
                                                         </form>
                                                         <button onclick="return $($(this).parent()).find('form').submit()" class="btn btn-outline-dark pt-1 pb-1 mt-0 mb-0">
                                                             <i class="fa fa-comment"></i>
-
                                                             Hubungi
                                                         </button>
                                                     </div>

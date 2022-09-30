@@ -499,26 +499,39 @@
                                     </b><br>
                                     <span class="text-danger">
                                         #{{$req->jenis_petugas}}
+                                    </span> | <span> +628XXXXXXXX </span>
+                                    <br>
+                                    <span>
+                                        user21xxx@email.com
                                     </span>
+
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, tempore.
+                                    </p>
                                 </div>
                                 <div class="col-lg-6">
-                                    <form>
+                                    <form action="{{url('')}}/email-subjek">
+                                        @csrf
                                         <div class="mb-3">
                                             <label for="name" class="form-label">Nama</label>
-                                            <input type="text" class="form-control" name="name" id="name" placeholder="Masukan Nama Anda">
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Masukan Nama Anda" value="{{Auth::check() == false ? '':Auth::user()->name}}" {{Auth::check() == false ? '':"disabled"}}>
                                         </div>
                                         <div class="mb-3">
                                             <label for="Alamat" class="form-label">Alamat</label>
-                                            <input type="text" class="form-control" name="alamat" id="Alamat" placeholder="Masukan Alamat Anda">
+                                            <input type="text" class="form-control" name="alamat" id="Alamat" placeholder="Masukan Alamat Anda" value="{{Auth::check() == false ? '':Auth::user()->address}}" {{Auth::check() == false ? '':"disabled"}}>
                                         </div>
                                         <div class="mb-3">
                                             <label for="no_hp" class="form-label">Nomor HP</label>
-                                            <input type="number" class="form-control" name="no_hp" id="no_hp" placeholder="Masukan Nomor HP Anda">
+                                            <input type="number" class="form-control" name="no_hp" id="no_hp" placeholder="Masukan Nomor HP Anda" value="{{Auth::check() == false ? '':Auth::user()->phone}}" {{Auth::check() == false ? '':"disabled"}}>
                                         </div>
                                         <div class="mb-3">
                                             <label for="email" class="form-label">Email</label>
-                                            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Masukan Email Anda">
+                                            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Masukan Email Anda" value="{{Auth::check() == false ? '':Auth::user()->email}}" {{Auth::check() == false ? '':"disabled"}}>
                                             <div id="emailHelp" class="form-text">Email yang anda masukan harus terdaftar di Website ini terlebih dahulu</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="subjek" class="form-label">subjek</label>
+                                            <textarea class="form-control" name="subjek" id="subjek" aria-describedby="subjekHelp" placeholder="Masukan subjek Anda" value="" cols="30" rows="10"></textarea>
                                         </div>
                                         <small class="text-danger">**Belum punya akun? daftar <a href="{{url('')}}/register-jual-beli-lahan" class="text-primary text-decoration-none">disini</a></small>
                                         <br>

@@ -31,6 +31,7 @@ Route::get('/', [SengketaController::class, 'index']);
 
 Route::post('sengketa/send', [SengketaController::class, 'store'])->name('sengketa.store');
 Route::get('bid-sengketa', [SengketaController::class, 'dataSengketa'])->name('bid-sengketa');
+Route::get('advokasi-pemerintah', [SengketaController::class, 'advokasiPemerintah'])->name('advokasi-pemerintah');
 Route::get('bid-sengketa/podcast', [SengketaController::class, 'podcastSengketa']);
 Route::get('form-korban', [SengketaController::class, 'formKorban']);
 Route::get('form-penyelesai', [SengketaController::class, 'formPenyelesai']);
@@ -55,10 +56,12 @@ Route::get('join', [PublicController::class, 'joinSengketa'])->name('joinSengket
 Route::get('list-tukang', [PublicController::class, 'listTukang'])->name('listTukang');
 Route::get('detail-petugas', [PublicController::class, 'detailTukang'])->name('detailTukang');
 
+
 Route::get('register-jual-beli-lahan', [PublicController::class, 'registerJualBeli'])->name('registerJualBeli');
 Route::get('register-kerjasama', [PublicController::class, 'registerKerjasama'])->name('registerKerjasama');
 Route::get('register-lelang-lahan', [PublicController::class, 'registerLelangLahan'])->name('registerLelangLahan');
 
+Route::post('email-subjek', [EmailController::class, 'sendEmailSubject'])->name('sendEmailSubject');
 
 Route::get('tentang-pemerintah', function () {
    return view('sengketa.tentang-pemerintah');
