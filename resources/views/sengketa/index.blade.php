@@ -1571,7 +1571,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai akun sponsor sebelum melihat
+                                                                        Anda harus memiliki akun sponsor sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -1617,11 +1617,11 @@
                                                                     <div class="modal-content">
                                                                         <div class="modal-header p-0">
                                                                             <h1 class="modal-title mx-auto text-danger display-1">
-                                                                                <i class="fa-regular fa-circle-xmark"></i>
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body">
-                                                                            Anda harus masuk sebagai akun sponsor
+                                                                            Anda harus memiliki akun sponsor
                                                                             sebelum
                                                                             melakukan bid.
                                                                         </div>
@@ -1768,7 +1768,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai akun sponsor sebelum
+                                                                        Anda harus memiliki akun sponsor sebelum
                                                                         melihat
                                                                         berkas.
                                                                     </div>
@@ -1815,11 +1815,11 @@
                                                                     <div class="modal-content">
                                                                         <div class="modal-header p-0">
                                                                             <h1 class="modal-title mx-auto text-danger display-1">
-                                                                                <i class="fa-regular fa-circle-xmark"></i>
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body">
-                                                                            Anda harus masuk sebagai sponsor sebelum
+                                                                            Anda harus memiliki sponsor sebelum
                                                                             melakukan bid.
                                                                         </div>
                                                                         <div class="modal-footer">
@@ -1839,6 +1839,8 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    {{-- ubah titik --}}
 
                                     <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto">
@@ -1962,7 +1964,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai akun sponsor sebelum
+                                                                        Anda harus memiliki akun sponsor sebelum
                                                                         melihat
                                                                         berkas.
                                                                     </div>
@@ -2008,11 +2010,11 @@
                                                                     <div class="modal-content">
                                                                         <div class="modal-header p-0">
                                                                             <h1 class="modal-title mx-auto text-danger display-1">
-                                                                                <i class="fa-regular fa-circle-xmark"></i>
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body">
-                                                                            Anda harus masuk sebagai sponsor sebelum
+                                                                            Anda harus memiliki sponsor sebelum
                                                                             melakukan bid.
                                                                         </div>
                                                                         <div class="modal-footer">
@@ -2156,7 +2158,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai akun sponsor sebelum
+                                                                        Anda harus memiliki akun sponsor sebelum
                                                                         melihat
                                                                         berkas.
                                                                     </div>
@@ -2202,11 +2204,11 @@
                                                                     <div class="modal-content">
                                                                         <div class="modal-header p-0">
                                                                             <h1 class="modal-title mx-auto text-danger display-1">
-                                                                                <i class="fa-regular fa-circle-xmark"></i>
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body">
-                                                                            Anda harus masuk sebagai sponsor sebelum
+                                                                            Anda harus memiliki sponsor sebelum
                                                                             melakukan bid.
                                                                         </div>
                                                                         <div class="modal-footer">
@@ -2459,12 +2461,12 @@
                                                 <div class="row g-0">
                                                     <div class="col text-center">
 
-                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                             <i class="fa-solid fa-eye"></i> Lihat Detail
                                                         </a>
 
 
-                                                        <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="berkasPengacara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
@@ -2473,8 +2475,8 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai akun sponsor sebelum melihat
-                                                                        berkas.
+                                                                        Anda harus memiliki akun pengacara sebelum melihat
+                                                                        detail.
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -2487,7 +2489,7 @@
 
                                                     </div>
                                                     <div class="col text-center">
-                                                        <a data-bs-toggle="modal" data-bs-target="#exampleSponsor" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                        <a data-bs-toggle="modal" data-bs-target="#examplePengacara" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
                                                             Bid</a>
                                                     </div>
                                                 </div>
@@ -2509,16 +2511,16 @@
 
                                                         <div class="d-grid gap-2 ">
 
-                                                            <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal fade my-auto" id="examplePengacara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                 <div class="modal-dialog modal-dialog-centered">
                                                                     <div class="modal-content">
                                                                         <div class="modal-header p-0">
                                                                             <h1 class="modal-title mx-auto text-danger display-1">
-                                                                                <i class="fa-regular fa-circle-xmark"></i>
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body">
-                                                                            Anda harus masuk sebagai akun pengacara
+                                                                            Anda harus memiliki akun pengacara
                                                                             sebelum
                                                                             melakukan bid.
                                                                         </div>
@@ -2613,12 +2615,12 @@
                                                 <div class="row g-0">
                                                     <div class="col text-center">
 
-                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                             <i class="fa-solid fa-eye"></i> Lihat Detail
                                                         </a>
 
 
-                                                        <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="berkasPengacara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
@@ -2627,8 +2629,8 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai akun sponsor sebelum melihat
-                                                                        berkas.
+                                                                        Anda harus memiliki akun pengacara sebelum melihat
+                                                                        detail.
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -2641,7 +2643,7 @@
 
                                                     </div>
                                                     <div class="col text-center">
-                                                        <a data-bs-toggle="modal" data-bs-target="#exampleSponsor" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                        <a data-bs-toggle="modal" data-bs-target="#examplePengacara" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
                                                             Bid</a>
                                                     </div>
                                                 </div>
@@ -2663,16 +2665,16 @@
 
                                                         <div class="d-grid gap-2 ">
 
-                                                            <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal fade my-auto" id="examplePengacara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                 <div class="modal-dialog modal-dialog-centered">
                                                                     <div class="modal-content">
                                                                         <div class="modal-header p-0">
                                                                             <h1 class="modal-title mx-auto text-danger display-1">
-                                                                                <i class="fa-regular fa-circle-xmark"></i>
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body">
-                                                                            Anda harus masuk sebagai akun pengacara
+                                                                            Anda harus memiliki akun pengacara
                                                                             sebelum
                                                                             melakukan bid.
                                                                         </div>
@@ -2767,12 +2769,12 @@
                                                 <div class="row g-0">
                                                     <div class="col text-center">
 
-                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                             <i class="fa-solid fa-eye"></i> Lihat Detail
                                                         </a>
 
 
-                                                        <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="berkasPengacara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
@@ -2781,8 +2783,8 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai akun sponsor sebelum melihat
-                                                                        berkas.
+                                                                        Anda harus memiliki akun pengacara sebelum melihat
+                                                                        detail.
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -2795,7 +2797,7 @@
 
                                                     </div>
                                                     <div class="col text-center">
-                                                        <a data-bs-toggle="modal" data-bs-target="#exampleSponsor" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                        <a data-bs-toggle="modal" data-bs-target="#examplePengacara" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
                                                             Bid</a>
                                                     </div>
                                                 </div>
@@ -2817,16 +2819,16 @@
 
                                                         <div class="d-grid gap-2 ">
 
-                                                            <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal fade my-auto" id="examplePengacara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                 <div class="modal-dialog modal-dialog-centered">
                                                                     <div class="modal-content">
                                                                         <div class="modal-header p-0">
                                                                             <h1 class="modal-title mx-auto text-danger display-1">
-                                                                                <i class="fa-regular fa-circle-xmark"></i>
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body">
-                                                                            Anda harus masuk sebagai akun pengacara
+                                                                            Anda harus memiliki akun pengacara
                                                                             sebelum
                                                                             melakukan bid.
                                                                         </div>
@@ -2921,12 +2923,12 @@
                                                 <div class="row g-0">
                                                     <div class="col text-center">
 
-                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                             <i class="fa-solid fa-eye"></i> Lihat Detail
                                                         </a>
 
 
-                                                        <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="berkasPengacara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
@@ -2935,8 +2937,8 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
-                                                                        berkas.
+                                                                        Anda harus memiliki pengacara sebelum melihat
+                                                                        detail.
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -2949,7 +2951,7 @@
 
                                                     </div>
                                                     <div class="col text-center">
-                                                        <a data-bs-toggle="modal" data-bs-target="#exampleSponsor" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                        <a data-bs-toggle="modal" data-bs-target="#examplePengacara" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
                                                             Bid</a>
                                                     </div>
                                                 </div>
@@ -2971,16 +2973,16 @@
 
                                                         <div class="d-grid gap-2 ">
 
-                                                            <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal fade my-auto" id="examplePengacara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                 <div class="modal-dialog modal-dialog-centered">
                                                                     <div class="modal-content">
                                                                         <div class="modal-header p-0">
                                                                             <h1 class="modal-title mx-auto text-danger display-1">
-                                                                                <i class="fa-regular fa-circle-xmark"></i>
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body">
-                                                                            Anda harus masuk sebagai akun pengacara
+                                                                            Anda harus memiliki akun pengacara
                                                                             sebelum
                                                                             melakukan bid.
                                                                         </div>
@@ -3025,6 +3027,7 @@
                             <div class="col-11 desktop-arrow mt-3 text-center">
 
                                 <div class="row mt-2 align-items-center" id="lelang-card-peng" style="flex-wrap: nowrap; overflow-x: auto">
+
                                     <div class="col-lg-4">
                                         <div class="card mx-auto">
 
@@ -3093,12 +3096,12 @@
                                                 <div class="row g-0">
                                                     <div class="col text-center">
 
-                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                             <i class="fa-solid fa-eye"></i> Lihat Detail
                                                         </a>
 
 
-                                                        <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="berkasPengacara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
@@ -3107,8 +3110,8 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
-                                                                        berkas.
+                                                                        Anda harus memiliki akun pengacara sebelum melihat
+                                                                        detail.
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -3121,7 +3124,7 @@
 
                                                     </div>
                                                     <div class="col text-center">
-                                                        <a data-bs-toggle="modal" data-bs-target="#exampleSponsor" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                        <a data-bs-toggle="modal" data-bs-target="#examplePengacara" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
                                                             Bid</a>
                                                     </div>
                                                 </div>
@@ -3143,16 +3146,16 @@
 
                                                         <div class="d-grid gap-2 ">
 
-                                                            <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal fade my-auto" id="examplePengacara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                 <div class="modal-dialog modal-dialog-centered">
                                                                     <div class="modal-content">
                                                                         <div class="modal-header p-0">
                                                                             <h1 class="modal-title mx-auto text-danger display-1">
-                                                                                <i class="fa-regular fa-circle-xmark"></i>
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body">
-                                                                            Anda harus masuk sebagai akun pengacara
+                                                                            Anda harus memiliki akun pengacara
                                                                             sebelum
                                                                             melakukan bid.
                                                                         </div>
@@ -3247,12 +3250,12 @@
                                                 <div class="row g-0">
                                                     <div class="col text-center">
 
-                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                             <i class="fa-solid fa-eye"></i> Lihat Detail
                                                         </a>
 
 
-                                                        <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="berkasPengacara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
@@ -3261,8 +3264,8 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
-                                                                        berkas.
+                                                                        Anda harus memiliki akun pengacara sebelum melihat
+                                                                        detail.
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -3275,7 +3278,7 @@
 
                                                     </div>
                                                     <div class="col text-center">
-                                                        <a data-bs-toggle="modal" data-bs-target="#exampleSponsor" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                        <a data-bs-toggle="modal" data-bs-target="#examplePengacara" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
                                                             Bid</a>
                                                     </div>
                                                 </div>
@@ -3297,16 +3300,16 @@
 
                                                         <div class="d-grid gap-2 ">
 
-                                                            <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal fade my-auto" id="examplePengacara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                 <div class="modal-dialog modal-dialog-centered">
                                                                     <div class="modal-content">
                                                                         <div class="modal-header p-0">
                                                                             <h1 class="modal-title mx-auto text-danger display-1">
-                                                                                <i class="fa-regular fa-circle-xmark"></i>
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body">
-                                                                            Anda harus masuk sebagai akun pengacara
+                                                                            Anda harus memiliki akun pengacara
                                                                             sebelum
                                                                             melakukan bid.
                                                                         </div>
@@ -3401,12 +3404,12 @@
                                                 <div class="row g-0">
                                                     <div class="col text-center">
 
-                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                             <i class="fa-solid fa-eye"></i> Lihat Detail
                                                         </a>
 
 
-                                                        <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="berkasPengacara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
@@ -3415,7 +3418,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
+                                                                        Anda harus memiliki akun pengacara sebelum melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -3429,7 +3432,7 @@
 
                                                     </div>
                                                     <div class="col text-center">
-                                                        <a data-bs-toggle="modal" data-bs-target="#exampleSponsor" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                        <a data-bs-toggle="modal" data-bs-target="#examplePengacara" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
                                                             Bid</a>
                                                     </div>
                                                 </div>
@@ -3451,16 +3454,16 @@
 
                                                         <div class="d-grid gap-2 ">
 
-                                                            <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal fade my-auto" id="examplePengacara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                 <div class="modal-dialog modal-dialog-centered">
                                                                     <div class="modal-content">
                                                                         <div class="modal-header p-0">
                                                                             <h1 class="modal-title mx-auto text-danger display-1">
-                                                                                <i class="fa-regular fa-circle-xmark"></i>
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body">
-                                                                            Anda harus masuk sebagai akun pengacara
+                                                                            Anda harus memiliki akun pengacara
                                                                             sebelum
                                                                             melakukan bid.
                                                                         </div>
@@ -3738,22 +3741,22 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
                                                                     <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus masukkan akun sebelum melihat
-                                                                    berkas.
+                                                                    Anda harus memiliki akun sebelum melihat
+                                                                    detail.
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -3788,12 +3791,12 @@
 
                                                     <div class="d-grid gap-2 ">
 
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
                                                             BID
                                                         </button>
 
 
-                                                        <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
@@ -3802,7 +3805,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum
+                                                                        Anda harus memiliki akun sebelum
                                                                         melakukan bid.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -3930,22 +3933,22 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
                                                                     <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus masukkan akun sebelum melihat
-                                                                    berkas.
+                                                                    Anda harus memiliki akun sebelum melihat
+                                                                    detail.
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -3980,12 +3983,12 @@
 
                                                     <div class="d-grid gap-2 ">
 
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
                                                             BID
                                                         </button>
 
 
-                                                        <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
@@ -3994,7 +3997,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum
+                                                                        Anda harus memiliki akun sebelum
                                                                         melakukan bid.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -4123,22 +4126,22 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
                                                                     <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus masukkan akun sebelum melihat
-                                                                    berkas.
+                                                                    Anda harus memiliki akun sebelum melihat
+                                                                    detail.
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -4172,12 +4175,12 @@
                                                 <div class="col-4">
 
                                                     <div class="d-grid gap-2 ">
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
                                                             BID
                                                         </button>
 
 
-                                                        <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
@@ -4186,7 +4189,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum
+                                                                        Anda harus memiliki akun sebelum
                                                                         melakukan bid.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -4314,22 +4317,22 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
                                                                     <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus masukkan akun sebelum melihat
-                                                                    berkas.
+                                                                    Anda harus memiliki akun sebelum melihat
+                                                                    detail.
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -4363,12 +4366,12 @@
                                                 <div class="col-4">
 
                                                     <div class="d-grid gap-2 ">
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
                                                             BID
                                                         </button>
 
 
-                                                        <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
@@ -4377,7 +4380,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum
+                                                                        Anda harus memiliki akun sebelum
                                                                         melakukan bid.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -4505,22 +4508,22 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
                                                                     <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus masukkan akun sebelum melihat
-                                                                    berkas.
+                                                                    Anda harus memiliki akun sebelum melihat
+                                                                    detail.
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -4555,12 +4558,12 @@
 
                                                     <div class="d-grid gap-2 ">
 
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
                                                             BID
                                                         </button>
 
 
-                                                        <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
@@ -4569,7 +4572,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum
+                                                                        Anda harus memiliki akun sebelum
                                                                         melakukan bid.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -4835,7 +4838,7 @@
                                                         </h5>
                                                     </td>
                                                     <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleB">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -4889,22 +4892,22 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
                                                                     <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus masukkan akun sebelum melihat
-                                                                    berkas.
+                                                                    Anda harus memiliki akun sebelum melihat
+                                                                    detail.
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -4938,7 +4941,7 @@
 
                                                     <div class="d-grid gap-2 ">
 
-                                                        <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="exampleB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
@@ -4947,7 +4950,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum
+                                                                        Anda harus memiliki akun sebelum
                                                                         melakukan bid.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -5026,7 +5029,7 @@
                                                         </h5>
                                                     </td>
                                                     <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleB">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -5080,22 +5083,22 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
                                                                     <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus masukkan akun sebelum melihat
-                                                                    berkas.
+                                                                    Anda harus memiliki akun sebelum melihat
+                                                                    detail.
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -5132,12 +5135,12 @@
 
                                                         <!-- <button type="button"
                                                         class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                        data-bs-toggle="modal" data-bs-target="#exampleB">
                                                         BID
                                                     </button> -->
 
 
-                                                        <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="exampleB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
@@ -5146,7 +5149,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum
+                                                                        Anda harus memiliki akun sebelum
                                                                         melakukan bid.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -5223,7 +5226,7 @@
                                                         </h5>
                                                     </td>
                                                     <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleB">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -5278,22 +5281,22 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
                                                                     <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus masukkan akun sebelum melihat
-                                                                    berkas.
+                                                                    Anda harus memiliki akun sebelum melihat
+                                                                    detail.
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -5329,12 +5332,12 @@
                                                     <div class="d-grid gap-2 ">
                                                         <!-- <button type="button"
                                                         class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                        data-bs-toggle="modal" data-bs-target="#exampleB">
                                                         BID
                                                     </button> -->
 
 
-                                                        <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="exampleB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
@@ -5343,7 +5346,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum
+                                                                        Anda harus memiliki akun sebelum
                                                                         melakukan bid.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -5421,7 +5424,7 @@
                                                         </h5>
                                                     </td>
                                                     <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleB">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -5476,22 +5479,22 @@
                                                 <div class="col text-center">
 
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
                                                                     <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus masukkan akun sebelum melihat
-                                                                    berkas.
+                                                                    Anda harus memiliki akun sebelum melihat
+                                                                    detail.
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -5527,12 +5530,12 @@
                                                     <div class="d-grid gap-2 ">
                                                         <!-- <button type="button"
                                                         class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                        data-bs-toggle="modal" data-bs-target="#exampleB">
                                                         BID
                                                     </button> -->
 
 
-                                                        <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="exampleB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
@@ -5541,7 +5544,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum
+                                                                        Anda harus memiliki akun sebelum
                                                                         melakukan bid.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -5619,7 +5622,7 @@
                                                         </h5>
                                                     </td>
                                                     <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleB">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -5673,22 +5676,22 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
                                                                     <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus masukkan akun sebelum melihat
-                                                                    berkas.
+                                                                    Anda harus memiliki akun sebelum melihat
+                                                                    detail.
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -5725,12 +5728,12 @@
 
                                                         <!-- <button type="button"
                                                         class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                        data-bs-toggle="modal" data-bs-target="#exampleB">
                                                         BID
                                                     </button> -->
 
 
-                                                        <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="exampleB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
@@ -5739,7 +5742,7 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum
+                                                                        Anda harus memiliki akun sebelum
                                                                         melakukan bid.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -6346,7 +6349,7 @@
                                                 </td>
 
                                                 <td class="align-items-center" rowspan="2">
-                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal" data-bs-target="#exampleSponsor">Ikut Lelang</button>
+                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -6448,12 +6451,12 @@
                                         <div class="row g-0">
                                             <div class="col text-center">
 
-                                                <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
-                                                <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade my-auto" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
@@ -6463,7 +6466,7 @@
                                                             </div>
                                                             <div class="modal-body">
                                                                 Anda harus masukkan akun sebelum melihat
-                                                                berkas.
+                                                                detail.
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -6499,21 +6502,21 @@
 
                                                     <!-- <button type="button"
                                                     class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
                                                     BID
                                                 </button> -->
 
 
-                                                    <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto" id="exampleC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
                                                                     <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus masuk sebagai sponsor sebelum
+                                                                    Anda harus memiliki akun sebelum
                                                                     melakukan bid.
                                                                 </div>
                                                                 <div class="modal-footer">
@@ -6589,7 +6592,7 @@
                                                 </td>
 
                                                 <td class="align-items-center" rowspan="2">
-                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal" data-bs-target="#exampleSponsor">Ikut Lelang</button>
+                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -6691,12 +6694,12 @@
                                         <div class="row g-0">
                                             <div class="col text-center">
 
-                                                <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
-                                                <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade my-auto" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
@@ -6706,7 +6709,7 @@
                                                             </div>
                                                             <div class="modal-body">
                                                                 Anda harus masukkan akun sebelum melihat
-                                                                berkas.
+                                                                detail.
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -6743,21 +6746,21 @@
 
                                                     <!-- <button type="button"
                                                     class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
                                                     BID
                                                 </button> -->
 
 
-                                                    <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto" id="exampleC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
                                                                     <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus masuk sebagai sponsor sebelum
+                                                                    Anda harus memiliki akun sebelum
                                                                     melakukan bid.
                                                                 </div>
                                                                 <div class="modal-footer">
@@ -6831,7 +6834,7 @@
                                                 </td>
 
                                                 <td class="align-items-center" rowspan="2">
-                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal" data-bs-target="#exampleSponsor">Ikut Lelang</button>
+                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -6932,12 +6935,12 @@
                                         <div class="row g-0">
                                             <div class="col text-center">
 
-                                                <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
-                                                <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade my-auto" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
@@ -6947,7 +6950,7 @@
                                                             </div>
                                                             <div class="modal-body">
                                                                 Anda harus masukkan akun sebelum melihat
-                                                                berkas.
+                                                                detail.
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -6983,21 +6986,21 @@
                                                 <div class="d-grid gap-2 ">
                                                     <!-- <button type="button"
                                                     class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
                                                     BID
                                                 </button> -->
 
 
-                                                    <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto" id="exampleC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
                                                                     <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus masuk sebagai sponsor sebelum
+                                                                    Anda harus memiliki akun sebelum
                                                                     melakukan bid.
                                                                 </div>
                                                                 <div class="modal-footer">
@@ -7071,7 +7074,7 @@
                                                 </td>
 
                                                 <td class="align-items-center" rowspan="2">
-                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal" data-bs-target="#exampleSponsor">Ikut Lelang</button>
+                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -7171,12 +7174,12 @@
                                         <div class="row g-0">
                                             <div class="col text-center">
 
-                                                <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                                <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
-                                                <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade my-auto" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
@@ -7186,7 +7189,7 @@
                                                             </div>
                                                             <div class="modal-body">
                                                                 Anda harus masukkan akun sebelum melihat
-                                                                berkas.
+                                                                detail.
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -7222,21 +7225,21 @@
                                                 <div class="d-grid gap-2 ">
                                                     <!-- <button type="button"
                                                     class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
                                                     BID
                                                 </button> -->
 
 
-                                                    <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto" id="exampleC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
                                                                     <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus masuk sebagai sponsor sebelum
+                                                                    Anda harus memiliki akun sebelum
                                                                     melakukan bid.
                                                                 </div>
                                                                 <div class="modal-footer">
