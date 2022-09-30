@@ -3742,7 +3742,7 @@
                                                 <div class="col text-center">
 
                                                     <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
@@ -3934,7 +3934,7 @@
                                                 <div class="col text-center">
 
                                                     <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
@@ -4127,7 +4127,7 @@
                                                 <div class="col text-center">
 
                                                     <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
@@ -4318,7 +4318,7 @@
                                                 <div class="col text-center">
 
                                                     <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
@@ -4509,7 +4509,7 @@
                                                 <div class="col text-center">
 
                                                     <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
