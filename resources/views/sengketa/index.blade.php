@@ -1733,7 +1733,7 @@
 
                     </div>
                     <div class="card-body">
-                        <div class="row text-center">
+                        <div class="row">
                             <div class="col-3">
                                 <div class="row">
                                     <div class="col-12">
@@ -1770,7 +1770,7 @@
                                         <h1 id="sec-box">5</h1>
                                     </div>
                                     <div class="col-12">
-                                        Detik
+                                        Hari
                                     </div>
                                 </div>
                             </div>
@@ -10859,7 +10859,7 @@
         let hrBox = document.getElementById("hr-box");
         let minBox = document.getElementById("min-box");
         let secBox = document.getElementById("sec-box");
-        let endDate = new Date(2022, 12, 1, 09, 00);
+        let endDate = new Date(2022, 11, 2, 09, 00);
         let endTime = endDate.getTime();
 
         function countdown() {
