@@ -540,6 +540,12 @@
         .scroll-simple::-webkit-scrollbar-thumb:active {
             background: rgba(0, 0, 0, .9);
         }
+        .fav-icon {
+            color: #ffc107 !important
+        }
+        .text-fav-disable {
+            color: rgb(199, 199, 199)
+        }
     </style>
 
 </head>
@@ -1501,8 +1507,28 @@
                                                                 </b>
                                                             </h5>
                                                         </td>
-                                                        <td class="align-items-center" rowspan="2">
-                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                        <td class="align-items-center">
+                                                            
+                                                              
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-1">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-1">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-primary mb-0" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-1").click(function(){
+                                                                    $("#fav-ch-1").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -1714,8 +1740,28 @@
                                                                 </b>
                                                             </h5>
                                                         </td>
-                                                        <td class="align-items-center" rowspan="2">
-                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                        <td class="align-items-center">
+                                                            
+                                                              
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-2">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-2">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-primary mb-0" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-2").click(function(){
+                                                                    $("#fav-ch-2").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -1921,8 +1967,28 @@
                                                                 </b>
                                                             </h5>
                                                         </td>
-                                                        <td class="align-items-center" rowspan="2">
-                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                        <td class="align-items-center">
+                                                            
+                                                              
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-3">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-3">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-primary mb-0" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-3").click(function(){
+                                                                    $("#fav-ch-3").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -2126,8 +2192,28 @@
                                                                 </b>
                                                             </h5>
                                                         </td>
-                                                        <td class="align-items-center" rowspan="2">
-                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                        <td class="align-items-center">
+                                                            
+                                                              
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-4">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-4">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-primary mb-0" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-4").click(function(){
+                                                                    $("#fav-ch-4").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -3735,9 +3821,29 @@
                                                             </b>
                                                         </h5>
                                                     </td>
-                                                    <td class="align-items-center" rowspan="2">
-                                                        <button class="btn float-end btn-danger" data-bs-toggle="modal" data-bs-target="#exampleA">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                    </td>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-a1">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a1">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-a1").click(function(){
+                                                                    $("#fav-ch-a1").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+                                                        </td>
                                                 </tr>
                                             </table>
                                             <hr style="margin-top:-4px">
@@ -3934,9 +4040,29 @@
                                                             </b>
                                                         </h5>
                                                     </td>
-                                                    <td class="align-items-center" rowspan="2">
-                                                        <button class="btn float-end btn-danger" data-bs-toggle="modal" data-bs-target="#exampleA">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                    </td>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-a2">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a2">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-a2").click(function(){
+                                                                    $("#fav-ch-a2").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+                                                        </td>
                                                 </tr>
                                             </table>
                                             <hr style="margin-top:-4px">
@@ -4132,9 +4258,29 @@
                                                             </b>
                                                         </h5>
                                                     </td>
-                                                    <td class="align-items-center" rowspan="2">
-                                                        <button class="btn float-end btn-danger" data-bs-toggle="modal" data-bs-target="#exampleA">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                    </td>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-a3">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a3">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-a3").click(function(){
+                                                                    $("#fav-ch-a3").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+                                                        </td>
                                                 </tr>
                                             </table>
                                             <hr style="margin-top:-4px">
@@ -4331,9 +4477,29 @@
                                                             </b>
                                                         </h5>
                                                     </td>
-                                                    <td class="align-items-center" rowspan="2">
-                                                        <button class="btn float-end btn-danger" data-bs-toggle="modal" data-bs-target="#exampleA">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                    </td>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-a4">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a4">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-a4").click(function(){
+                                                                    $("#fav-ch-a4").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+                                                        </td>
                                                 </tr>
                                             </table>
                                             <hr style="margin-top:-4px">
@@ -4529,9 +4695,29 @@
                                                             </b>
                                                         </h5>
                                                     </td>
-                                                    <td class="align-items-center" rowspan="2">
-                                                        <button class="btn float-end btn-danger" data-bs-toggle="modal" data-bs-target="#exampleA">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                    </td>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-a5">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a5">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-a5").click(function(){
+                                                                    $("#fav-ch-a5").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+                                                        </td>
                                                 </tr>
                                             </table>
                                             <hr style="margin-top:-4px">
@@ -4915,8 +5101,28 @@
                                                             </b>
                                                         </h5>
                                                     </td>
-                                                    <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleB">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-b1">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-b1">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-b1").click(function(){
+                                                                $("#fav-ch-b1").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+
                                                     </td>
                                                 </tr>
                                             </table>
@@ -5102,8 +5308,28 @@
                                                             </b>
                                                         </h5>
                                                     </td>
-                                                    <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleB">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-b2">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-b2">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-b2").click(function(){
+                                                                $("#fav-ch-b2").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+
                                                     </td>
                                                 </tr>
                                             </table>
@@ -5295,8 +5521,28 @@
                                                             </b>
                                                         </h5>
                                                     </td>
-                                                    <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleB">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-b3">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-b3">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-b3").click(function(){
+                                                                $("#fav-ch-b3").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+
                                                     </td>
                                                 </tr>
                                             </table>
@@ -5489,8 +5735,28 @@
                                                             </b>
                                                         </h5>
                                                     </td>
-                                                    <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleB">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-b4">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-b4">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-b4").click(function(){
+                                                                $("#fav-ch-b4").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+
                                                     </td>
                                                 </tr>
                                             </table>
@@ -5683,8 +5949,28 @@
                                                             </b>
                                                         </h5>
                                                     </td>
-                                                    <td>
-                                                        <button class="btn btn-info text-white float-end" data-bs-toggle="modal" data-bs-target="#exampleB">&nbsp;&nbsp;&nbsp;BID&nbsp;&nbsp;&nbsp;</button>
+                                                    <td class="align-items-center">
+                                                            
+                                                              
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-b5">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-b5">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-b5").click(function(){
+                                                                $("#fav-ch-b5").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+
                                                     </td>
                                                 </tr>
                                             </table>
@@ -6407,7 +6693,27 @@
                                                 </td>
 
                                                 <td class="align-items-center" rowspan="2">
-                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
+                                                            
+                                                              
+                                                    <div class="row d-flex align-items-center mb-2">
+                                                        <div class="col-4 text-end">
+                                                            <a id="fav-c1">
+                                                                <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
+                                                                    <i class="fas fa-star"></i>
+                                                                </h5>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                                Ikut Lelang</button>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        $("#fav-c1").click(function(){
+                                                            $("#fav-ch-c1").toggleClass('fav-icon');
+                                                        });
+                                                    </script>
+
                                                 </td>
                                             </tr>
                                             <tr>
@@ -6646,7 +6952,27 @@
                                                 </td>
 
                                                 <td class="align-items-center" rowspan="2">
-                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
+                                                            
+                                                              
+                                                    <div class="row d-flex align-items-center mb-2">
+                                                        <div class="col-4 text-end">
+                                                            <a id="fav-c2">
+                                                                <h5 class="mb-0 text-fav-disable" id="fav-ch-c2">
+                                                                    <i class="fas fa-star"></i>
+                                                                </h5>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                                Ikut Lelang</button>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        $("#fav-c2").click(function(){
+                                                            $("#fav-ch-c2").toggleClass('fav-icon');
+                                                        });
+                                                    </script>
+
                                                 </td>
                                             </tr>
                                             <tr>
@@ -6884,7 +7210,27 @@
                                                 </td>
 
                                                 <td class="align-items-center" rowspan="2">
-                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
+                                                            
+                                                              
+                                                    <div class="row d-flex align-items-center mb-2">
+                                                        <div class="col-4 text-end">
+                                                            <a id="fav-c3">
+                                                                <h5 class="mb-0 text-fav-disable" id="fav-ch-c3">
+                                                                    <i class="fas fa-star"></i>
+                                                                </h5>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                                Ikut Lelang</button>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        $("#fav-c3").click(function(){
+                                                            $("#fav-ch-c3").toggleClass('fav-icon');
+                                                        });
+                                                    </script>
+
                                                 </td>
                                             </tr>
                                             <tr>
@@ -7120,7 +7466,27 @@
                                                 </td>
 
                                                 <td class="align-items-center" rowspan="2">
-                                                    <button class="btn float-end" style="background: #E6B325; color: #fff" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
+                                                            
+                                                              
+                                                    <div class="row d-flex align-items-center mb-2">
+                                                        <div class="col-4 text-end">
+                                                            <a id="fav-c4">
+                                                                <h5 class="mb-0 text-fav-disable" id="fav-ch-c4">
+                                                                    <i class="fas fa-star"></i>
+                                                                </h5>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                                Ikut Lelang</button>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        $("#fav-c4").click(function(){
+                                                            $("#fav-ch-c4").toggleClass('fav-icon');
+                                                        });
+                                                    </script>
+
                                                 </td>
                                             </tr>
                                             <tr>
