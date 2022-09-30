@@ -25,6 +25,29 @@
         }
 
 
+        .blink {
+
+            animation: blink-animation 1s steps(5, start) infinite;
+
+            -webkit-animation: blink-animation 1s steps(5, start) infinite;
+
+        }
+
+        @keyframes blink-animation {
+
+            to {
+
+                visibility: hidden;
+
+            }
+
+        }
+
+        @-webkit-keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
 
         .line-1 {
             height: 3px;
@@ -82,6 +105,40 @@
             position: absolute;
             content: "";
             left: 0;
+        }
+
+        section {
+            $h1-font-size: 55px;
+
+            color: rgba(255, 255, 255, 0.738);
+            flex-direction: column;
+
+            >h2 {
+                font-size: 25px;
+            }
+
+            >h1 {
+                font-size: $h1-font-size;
+            }
+
+            ul {
+                margin-top: 15px;
+                list-style: none;
+
+                column-gap: 50px;
+
+                li {
+                    text-align: center;
+
+                    h1 {
+                        font-size: $h1-font-size;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
         }
     </style>
 
@@ -440,7 +497,7 @@
             .desktop-2 {
                 display: none;
             }
-            
+
             .puter {
                 margin-bottom: 80px;
             }
@@ -544,9 +601,11 @@
         .scroll-simple::-webkit-scrollbar-thumb:active {
             background: rgba(0, 0, 0, .9);
         }
+
         .fav-icon {
             color: #ffc107 !important
         }
+
         .text-fav-disable {
             color: rgb(199, 199, 199)
         }
@@ -620,7 +679,8 @@
                 <h3>Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
                     pemerintah dalam satu platform.</h3>
 
-                <a class="btn rounded-5 mt-3 text-white" style="background: #BF9742" href="{{url('')}}/join">Bergabung Sekarang</a>
+                <a class="btn rounded-5 mt-3 text-white" style="background: #BF9742" href="{{url('')}}/join">Bergabung
+                    Sekarang</a>
 
             </div>
         </div>
@@ -631,7 +691,7 @@
         .aboute-bottom {
             position: fixed;
             bottom: 0;
-            z-index: 1030; 
+            z-index: 1030;
             left: 0;
             right: 0;
         }
@@ -644,24 +704,26 @@
                     <div class="col text-center">
 
                         <button class="btn btn-sm mb-0 p-0 w-100" type="button">
-                        <div class="card rounded-0">
-                            <div class="card-body p-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><circle r="256" cx="256" cy="256" fill="#ffffff" shape="circle"></circle><g transform="matrix(0.7,0,0,0.7,76.79200973510743,76.80000000000001)"><path d="m498.195312 222.695312c-.011718-.011718-.023437-.023437-.035156-.035156l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.8125-33.328126-13.8125-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.140626.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.445312 13.238281 31.277344 13.746093.480468.046876.964843.070313 1.453124.070313h8.324219v153.699219c0 30.414062 24.746094 55.160156 55.167969 55.160156h81.710938c8.28125 0 15-6.714844 15-15v-120.5c0-13.878906 11.289062-25.167969 25.167968-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.285156 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.160156v-153.699219h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.808594 18.359375-18.371093 18.367187-48.253906.023437-66.636719zm0 0" fill="#61481c" data-original="#000000" class=""></path></g></svg>
-                                <h6 class="mt-0 mb-0" style="font-size: 12px">HOME</h6>
+                            <div class="card rounded-0">
+                                <div class="card-body p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="256" cx="256" cy="256" fill="#ffffff" shape="circle"></circle>
+                                        <g transform="matrix(0.7,0,0,0.7,76.79200973510743,76.80000000000001)">
+                                            <path d="m498.195312 222.695312c-.011718-.011718-.023437-.023437-.035156-.035156l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.8125-33.328126-13.8125-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.140626.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.445312 13.238281 31.277344 13.746093.480468.046876.964843.070313 1.453124.070313h8.324219v153.699219c0 30.414062 24.746094 55.160156 55.167969 55.160156h81.710938c8.28125 0 15-6.714844 15-15v-120.5c0-13.878906 11.289062-25.167969 25.167968-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.285156 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.160156v-153.699219h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.808594 18.359375-18.371093 18.367187-48.253906.023437-66.636719zm0 0" fill="#61481c" data-original="#000000" class=""></path>
+                                        </g>
+                                    </svg>
+                                    <h6 class="mt-0 mb-0" style="font-size: 12px">HOME</h6>
+                                </div>
                             </div>
-                        </div>
                         </button>
                     </div>
 
                     <div class="col text-center">
 
                         <button class="btn btn-sm mb-0 p-0 w-100" id="btn-panduan" type="button">
-                        <div class="card rounded-0">
-                            <div class="card-body p-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
-                                        width="45px" x="0" y="0" viewBox="0 0 296.999 296.999"
-                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                            <div class="card rounded-0">
+                                <div class="card-body p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 296.999 296.999" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="148.4995" cx="148.4995" cy="148.4995" fill="#ffffff" shape="circle">
                                         </circle>
                                         <g transform="matrix(0.7,0,0,0.7,44.54984436035157,44.54998970031738)">
@@ -706,10 +768,10 @@
                                             <g xmlns="http://www.w3.org/2000/svg">
                                             </g>
                                         </g>
-                                </svg>
-                                <h6 class="mt-0 mb-0" style="font-size: 12px">PANDUAN</h6>
+                                    </svg>
+                                    <h6 class="mt-0 mb-0" style="font-size: 12px">PANDUAN</h6>
+                                </div>
                             </div>
-                        </div>
                         </button>
 
                         <script>
@@ -725,20 +787,17 @@
                         <button class="btn btn-sm mb-0 p-0 w-100" id="btn-jaminan" type="button">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
-                                    width="45px" x="0" y="0" viewBox="0 0 32 32"
-                                    style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-                                    <circle r="16" cx="16" cy="16" fill="#ffffff" shape="circle"></circle>
-                                    <g transform="matrix(0.7,0,0,0.7,4.799999713897705,4.800377225875856)">
-                                    <g xmlns="http://www.w3.org/2000/svg" id="_26-Guranteed" data-name="26-Guranteed">
-                                        <path d="m27 6c-5.56 0-10.33-3.74-10.38-3.78a1 1 0 0 0 -1.24 0c-.05.04-4.8 3.78-10.38 3.78a1 1 0 0 0 -1 1v9c0 6.71 2.71 10 11.59 13.91a1 1 0 0 0 .82 0c8.88-3.91 11.59-7.2 11.59-13.91v-9a1 1 0 0 0 -1-1zm-11 18a8 8 0 1 1 8-8 8 8 0 0 1 -8 8z" fill="#61481c" data-original="#000000" class=""></path>
-                                        <path d="m18.29 13.29-3.29 3.3-1.29-1.3a1 1 0 0 0 -1.42 1.42l2 2a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0 -1.42-1.42z" fill="#61481c" data-original="#000000" class=""></path>
-                                    </g>
-                                    </g>
-                                </svg>
-                                <h6 class="mt-0 mb-0" style="font-size: 12px">JAMINAN</h6>
-                            </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="16" cx="16" cy="16" fill="#ffffff" shape="circle"></circle>
+                                        <g transform="matrix(0.7,0,0,0.7,4.799999713897705,4.800377225875856)">
+                                            <g xmlns="http://www.w3.org/2000/svg" id="_26-Guranteed" data-name="26-Guranteed">
+                                                <path d="m27 6c-5.56 0-10.33-3.74-10.38-3.78a1 1 0 0 0 -1.24 0c-.05.04-4.8 3.78-10.38 3.78a1 1 0 0 0 -1 1v9c0 6.71 2.71 10 11.59 13.91a1 1 0 0 0 .82 0c8.88-3.91 11.59-7.2 11.59-13.91v-9a1 1 0 0 0 -1-1zm-11 18a8 8 0 1 1 8-8 8 8 0 0 1 -8 8z" fill="#61481c" data-original="#000000" class=""></path>
+                                                <path d="m18.29 13.29-3.29 3.3-1.29-1.3a1 1 0 0 0 -1.42 1.42l2 2a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0 -1.42-1.42z" fill="#61481c" data-original="#000000" class=""></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <h6 class="mt-0 mb-0" style="font-size: 12px">JAMINAN</h6>
+                                </div>
                         </button>
 
                         <script>
@@ -756,10 +815,13 @@
                         <button class="btn btn-sm mb-0 p-0 w-100" id="btn-chat" type="button">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 361.014 361.014" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><circle r="180.507" cx="180.507" cy="180.507" fill="#ffffff" shape="circle"></circle><g transform="matrix(0.7,0,0,0.7,54.15209197998048,54.151945495605474)">
-                                        <g>
-                                            <g id="Layer_5_47_">
-                                                <path d="M331.035,126.94H318.01c-3.563,0-3.682-2.333-3.805-3.494C307.375,59.094,252.77,8.791,186.637,8.791h-12.26
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 361.014 361.014" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="180.507" cx="180.507" cy="180.507" fill="#ffffff" shape="circle">
+                                        </circle>
+                                        <g transform="matrix(0.7,0,0,0.7,54.15209197998048,54.151945495605474)">
+                                            <g>
+                                                <g id="Layer_5_47_">
+                                                    <path d="M331.035,126.94H318.01c-3.563,0-3.682-2.333-3.805-3.494C307.375,59.094,252.77,8.791,186.637,8.791h-12.26
                                                     c-65.644,0-119.929,49.56-127.409,113.229c-0.191,1.631-0.291,4.92-3.291,4.92H29.978C20.987,126.94,0,136.401,0,184.18v25.075
                                                     c0,35.436,20.987,43.609,29.978,43.609h43.584c8.991,0,16.347-7.356,16.347-16.347v-93.23c0-8.991-7.356-16.347-16.347-16.347
                                                     c0,0-2.052-0.18-1.529-3.835c7.192-50.319,50.129-89.313,102.344-89.313h12.26c51.86,0,94.912,38.418,102.2,88.288
@@ -769,13 +831,13 @@
                                                     h22.933c9.112,0,17.023-5.132,21.005-12.662c0.348-0.658,0.633-2.026,3.321-2.026h25.054c22.823,0,53.365-11.341,69.259-65.373
                                                     c1.694-5.758,3.068-11.496,4.187-17.026c0.154-0.761,0.25-2.27,2.625-2.27h12.9c8.991,0,29.978-8.174,29.978-43.609v-25.075
                                                     C361.013,137.082,340.026,126.94,331.035,126.94z" fill="#61481c" data-original="#000000" class=""></path>
-                                            </g>
-                                        </svg>
+                                                </g>
+                                    </svg>
                                     <h6 class="mt-0 mb-0" style="font-size: 12px;margin-top:13px">CHAT</h6>
                                 </div>
                             </div>
                         </button>
-                            
+
                         <script>
                             $("#btn-chat").click(function() {
                                 $("#panduan").removeClass('show');
@@ -790,17 +852,14 @@
                         <button class="btn btn-sm mb-0 p-0 w-100" id="btn-tentang" type="button">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
-                                        width="45px" x="0" y="0" viewBox="0 0 24 24"
-                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="12" cx="12" cy="12" fill="#ffffff" shape="circle"></circle>
                                         <g transform="matrix(0.7,0,0,0.7,3.600000000000003,3.600000000000003)">
-                                    <g xmlns="http://www.w3.org/2000/svg" fill="rgb(0,0,0)">
-                                        <path d="m12 0a12 12 0 1 0 12 12 12.013 12.013 0 0 0 -12-12zm0 22a10 10 0 1 1 10-10 10.011 10.011 0 0 1 -10 10z" fill="#61481c" data-original="#000000" class=""></path>
-                                        <path d="m12 9a1 1 0 0 0 -1 1v8a1 1 0 0 0 2 0v-8a1 1 0 0 0 -1-1z" fill="#61481c" data-original="#000000" class=""></path>
-                                        <circle cx="12" cy="6" r="1" fill="#61481c" data-original="#000000" class=""></circle>
-                                    </g>
+                                            <g xmlns="http://www.w3.org/2000/svg" fill="rgb(0,0,0)">
+                                                <path d="m12 0a12 12 0 1 0 12 12 12.013 12.013 0 0 0 -12-12zm0 22a10 10 0 1 1 10-10 10.011 10.011 0 0 1 -10 10z" fill="#61481c" data-original="#000000" class=""></path>
+                                                <path d="m12 9a1 1 0 0 0 -1 1v8a1 1 0 0 0 2 0v-8a1 1 0 0 0 -1-1z" fill="#61481c" data-original="#000000" class=""></path>
+                                                <circle cx="12" cy="6" r="1" fill="#61481c" data-original="#000000" class=""></circle>
+                                            </g>
                                         </g>
                                     </svg>
                                     <h6 class="mt-0 mb-0" style="font-size: 12px">TENTANG</h6>
@@ -819,7 +878,7 @@
 
                     </div>
 
-                    
+
 
                     <ol id="panduan" class="list-group panduan list-group-numbered shadow dropdown-menu rounded-0 p-0" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -875,7 +934,8 @@
                         <div class="col-md-12">
                             <div class="d-flex">
                                 <div class="flex-shrink-0">
-                                    <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-tie"></i></b></h5>
+                                    <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-tie"></i></b>
+                                    </h5>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
                                     <h5 style="color: #61481C" class="mb-0"><b>Sponsor Terverifikasi</b>
@@ -887,7 +947,8 @@
                         <div class="col-md-12 mt-4">
                             <div class="d-flex">
                                 <div class="flex-shrink-0">
-                                    <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-gavel"></i></b></h5>
+                                    <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-gavel"></i></b>
+                                    </h5>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <div class="flex-grow-1 ms-3">
@@ -930,7 +991,8 @@
                         <div class="col-md-12 mt-4">
                             <div class="d-flex">
                                 <div class="flex-shrink-0">
-                                    <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-handshake"></i></b></h5>
+                                    <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-handshake"></i></b>
+                                    </h5>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <div class="flex-grow-1 ms-3">
@@ -945,7 +1007,8 @@
                         <div class="col-md-12 mt-4">
                             <div class="d-flex">
                                 <div class="flex-shrink-0">
-                                    <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-gear"></i></b></h5>
+                                    <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-gear"></i></b>
+                                    </h5>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <div class="flex-grow-1 ms-3">
@@ -963,9 +1026,7 @@
                             <div class="fw-bold" style="color: #61481C"> Customer Service</div>
                         </h2>
                         <div class="chat-form"> <input type="text" class="form-control" placeholder="Nama">
-                            <input type="text" class="form-control" placeholder="Email"> <textarea
-                                class="form-control" placeholder="Masukan Pesan"></textarea> <button
-                                class="btn btn-brown btn-block">Kirim</button>
+                            <input type="text" class="form-control" placeholder="Email"> <textarea class="form-control" placeholder="Masukan Pesan"></textarea> <button class="btn btn-brown btn-block">Kirim</button>
                         </div>
                     </ol>
 
@@ -1088,8 +1149,8 @@
                                         <span class="visually-hidden">Previous</span>
                                     </button>
                                     <button class="carousel-control-next my-auto" style="background: rgba(0, 0, 0, 0.75); height: 35px; width: 10%;border-radius: 50%" type="button" data-bs-target="#carouselExampleControlsPres" data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Next</span>
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
                                     </button>
                                 </div>
                             </div>
@@ -1413,7 +1474,13 @@
                             </div>
                             <div class="col mb-4">
                                 <a href="{{url('/')}}/podcast-sengketa" class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="85px" x="0" y="0" viewBox="0 0 512 511" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><circle r="256" cx="256" cy="255.5" fill="#ffffff" shape="circle"></circle><g transform="matrix(0.7,0,0,0.7,76.80000000000001,76.48344733715058)"><path d="m256 131.46875c13.273438 0 24.066406-10.796875 24.066406-24.066406 0-13.273438-10.796875-24.070313-24.066406-24.070313s-24.066406 10.796875-24.066406 24.070313c0 13.269531 10.796875 24.066406 24.066406 24.066406zm0-33.136719c5 0 9.066406 4.070313 9.066406 9.070313 0 4.996094-4.066406 9.066406-9.066406 9.066406s-9.066406-4.066406-9.066406-9.066406 4.066406-9.070313 9.066406-9.070313zm0 0" fill="#61481c" data-original="#000000" class=""></path><path d="m504.5 461.261719h-9.066406v-25.632813c0-4.140625-3.359375-7.5-7.5-7.5h-25.632813v-25.632812c0-4.140625-3.355469-7.5-7.5-7.5h-9.0625v-164.128906h9.0625c4.144531 0 7.5-3.359376 7.5-7.5v-25.632813h25.632813c4.144531 0 7.5-3.359375 7.5-7.5v-33.132813c0-4.140624-3.355469-7.5-7.5-7.5h-14.222656l-213.441407-147.769531c-2.566406-1.7773435-5.96875-1.7773435-8.539062 0l-213.4375 147.769531h-14.226563c-4.140625 0-7.5 3.355469-7.5 7.5v33.132813c0 4.140625 3.359375 7.5 7.5 7.5h25.632813v25.632813c0 4.140624 3.359375 7.5 7.5 7.5h9.066406v164.128906h-9.066406c-4.140625 0-7.5 3.355468-7.5 7.5v25.632812h-25.632813c-4.140625 0-7.5 3.359375-7.5 7.5v25.632813h-9.066406c-4.144531 0-7.5 3.355469-7.5 7.5v33.128906c0 4.144531 3.355469 7.5 7.5 7.5h497c4.144531 0 7.5-3.355469 7.5-7.5v-33.128906c0-4.140625-3.355469-7.5-7.5-7.5zm-57.199219-33.132813h-67.832031v-18.132812h67.832031zm-51.269531-33.132812v-164.128906h34.703125v164.128906zm51.269531-179.128906h-67.832031v-18.132813h67.832031zm-75.332031 15h9.0625v164.128906h-9.0625c-4.144531 0-7.5 3.355468-7.5 7.5v25.632812h-59.550781v-25.632812c0-4.144532-3.359375-7.5-7.5-7.5h-9.066407v-164.128906h9.066407c4.140625 0 7.5-3.359376 7.5-7.5v-25.632813h59.550781v25.632813c0 4.140624 3.355469 7.5 7.5 7.5zm-149.882812-33.132813h67.832031v18.132813h-67.832031zm16.5625 33.132813h34.703124v164.128906h-34.703124zm51.269531 179.128906v18.132812h-67.832031v-18.132812zm-258.351563-245.394532h9.070313.007812.003907 121.800781c4.144531 0 7.5-3.359374 7.5-7.5 0-4.144531-3.355469-7.5-7.5-7.5h-97.804688l191.355469-132.480468 191.359375 132.480468h-254.910156c-4.140625 0-7.5 3.355469-7.5 7.5 0 4.140626 3.359375 7.5 7.5 7.5h278.816406.023437 9.144532v18.132813h-448.867188zm33.132813 33.132813h67.835937v18.132813h-67.835937zm51.269531 33.132813v164.128906h-34.703125v-164.128906zm-51.269531 179.128906h67.835937v18.132812h-67.835937zm75.335937-15h-9.066406v-164.128906h9.066406c4.140625 0 7.5-3.359376 7.5-7.5v-25.632813h59.550782v25.632813c0 4.140624 3.355468 7.5 7.5 7.5h9.0625v164.128906h-9.0625c-4.144532 0-7.5 3.355468-7.5 7.5v25.632812h-59.550782v-25.632812c0-4.144532-3.359375-7.5-7.5-7.5zm-108.46875 48.132812h448.867188v18.132813h-448.867188zm465.433594 51.265625h-482v-18.132812h482zm0 0" fill="#61481c" data-original="#000000" class=""></path></g></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="85px" x="0" y="0" viewBox="0 0 512 511" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="256" cx="256" cy="255.5" fill="#ffffff" shape="circle"></circle>
+                                        <g transform="matrix(0.7,0,0,0.7,76.80000000000001,76.48344733715058)">
+                                            <path d="m256 131.46875c13.273438 0 24.066406-10.796875 24.066406-24.066406 0-13.273438-10.796875-24.070313-24.066406-24.070313s-24.066406 10.796875-24.066406 24.070313c0 13.269531 10.796875 24.066406 24.066406 24.066406zm0-33.136719c5 0 9.066406 4.070313 9.066406 9.070313 0 4.996094-4.066406 9.066406-9.066406 9.066406s-9.066406-4.066406-9.066406-9.066406 4.066406-9.070313 9.066406-9.070313zm0 0" fill="#61481c" data-original="#000000" class=""></path>
+                                            <path d="m504.5 461.261719h-9.066406v-25.632813c0-4.140625-3.359375-7.5-7.5-7.5h-25.632813v-25.632812c0-4.140625-3.355469-7.5-7.5-7.5h-9.0625v-164.128906h9.0625c4.144531 0 7.5-3.359376 7.5-7.5v-25.632813h25.632813c4.144531 0 7.5-3.359375 7.5-7.5v-33.132813c0-4.140624-3.355469-7.5-7.5-7.5h-14.222656l-213.441407-147.769531c-2.566406-1.7773435-5.96875-1.7773435-8.539062 0l-213.4375 147.769531h-14.226563c-4.140625 0-7.5 3.355469-7.5 7.5v33.132813c0 4.140625 3.359375 7.5 7.5 7.5h25.632813v25.632813c0 4.140624 3.359375 7.5 7.5 7.5h9.066406v164.128906h-9.066406c-4.140625 0-7.5 3.355468-7.5 7.5v25.632812h-25.632813c-4.140625 0-7.5 3.359375-7.5 7.5v25.632813h-9.066406c-4.144531 0-7.5 3.355469-7.5 7.5v33.128906c0 4.144531 3.355469 7.5 7.5 7.5h497c4.144531 0 7.5-3.355469 7.5-7.5v-33.128906c0-4.140625-3.355469-7.5-7.5-7.5zm-57.199219-33.132813h-67.832031v-18.132812h67.832031zm-51.269531-33.132812v-164.128906h34.703125v164.128906zm51.269531-179.128906h-67.832031v-18.132813h67.832031zm-75.332031 15h9.0625v164.128906h-9.0625c-4.144531 0-7.5 3.355468-7.5 7.5v25.632812h-59.550781v-25.632812c0-4.144532-3.359375-7.5-7.5-7.5h-9.066407v-164.128906h9.066407c4.140625 0 7.5-3.359376 7.5-7.5v-25.632813h59.550781v25.632813c0 4.140624 3.355469 7.5 7.5 7.5zm-149.882812-33.132813h67.832031v18.132813h-67.832031zm16.5625 33.132813h34.703124v164.128906h-34.703124zm51.269531 179.128906v18.132812h-67.832031v-18.132812zm-258.351563-245.394532h9.070313.007812.003907 121.800781c4.144531 0 7.5-3.359374 7.5-7.5 0-4.144531-3.355469-7.5-7.5-7.5h-97.804688l191.355469-132.480468 191.359375 132.480468h-254.910156c-4.140625 0-7.5 3.355469-7.5 7.5 0 4.140626 3.359375 7.5 7.5 7.5h278.816406.023437 9.144532v18.132813h-448.867188zm33.132813 33.132813h67.835937v18.132813h-67.835937zm51.269531 33.132813v164.128906h-34.703125v-164.128906zm-51.269531 179.128906h67.835937v18.132812h-67.835937zm75.335937-15h-9.066406v-164.128906h9.066406c4.140625 0 7.5-3.359376 7.5-7.5v-25.632813h59.550782v25.632813c0 4.140624 3.355468 7.5 7.5 7.5h9.0625v164.128906h-9.0625c-4.144532 0-7.5 3.355468-7.5 7.5v25.632812h-59.550782v-25.632812c0-4.144532-3.359375-7.5-7.5-7.5zm-108.46875 48.132812h448.867188v18.132813h-448.867188zm465.433594 51.265625h-482v-18.132812h482zm0 0" fill="#61481c" data-original="#000000" class=""></path>
+                                        </g>
+                                    </svg>
                                     <div class="mt-0" style="font-size: 12px">Advokasi <br> Pemerintah</div>
                                 </a>
                             </div>
@@ -1428,33 +1495,78 @@
                     </div>
                 </div>
 
+
+                <div class="card mb-3">
+                    <div class="card-header bg-danger text-white">
+                        <center>
+                            <h4 class="blink">Pre Launching 1 Desember 2022</h4>
+                            <h4 class="blink">Pukul 09.00 WIB </h4>
+                            <h4 class="blink">Nantikan Kehadiran Kami</h4>
+                        </center>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <div class="col-3">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h1 id="day-box">5</h1>
+                                    </div>
+                                    <div class="col-12">
+                                        Hari
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h1 id="hr-box">5</h1>
+                                    </div>
+                                    <div class="col-12">
+                                        Jam
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h1 id="min-box">5</h1>
+                                    </div>
+                                    <div class="col-12">
+                                        Menit
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h1 id="sec-box">5</h1>
+                                    </div>
+                                    <div class="col-12">
+                                        Detik
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="card mb-3 border-0 shadow-sm desktop" style="margin-top:-10px">
                     <div class="card-body pb-1 pt-2">
                         <div class="row">
                             <div class="col-3 text-center mb-2">
                                 <button class="btn btn-sm" id="btn-panduan" type="button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
-                                        width="70px" x="0" y="0" viewBox="0 0 296.999 296.999"
-                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70px" x="0" y="0" viewBox="0 0 296.999 296.999" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="148.4995" cx="148.4995" cy="148.4995" fill="#ffffff" shape="circle">
                                         </circle>
                                         <g transform="matrix(0.7,0,0,0.7,44.54984436035157,44.54998970031738)">
                                             <g xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <g>
-                                                        <path
-                                                            d="M45.432,35.049c-0.008,0-0.017,0-0.025,0c-2.809,0-5.451,1.095-7.446,3.085c-2.017,2.012-3.128,4.691-3.128,7.543     v159.365c0,5.844,4.773,10.61,10.641,10.625c24.738,0.059,66.184,5.215,94.776,35.136V84.023c0-1.981-0.506-3.842-1.461-5.382     C115.322,40.849,70.226,35.107,45.432,35.049z"
-                                                            fill="#61481c" data-original="#000000" class=""></path>
-                                                        <path
-                                                            d="M262.167,205.042V45.676c0-2.852-1.111-5.531-3.128-7.543c-1.995-1.99-4.639-3.085-7.445-3.085c-0.009,0-0.018,0-0.026,0     c-24.793,0.059-69.889,5.801-93.357,43.593c-0.955,1.54-1.46,3.401-1.46,5.382v166.779     c28.592-29.921,70.038-35.077,94.776-35.136C257.394,215.651,262.167,210.885,262.167,205.042z"
-                                                            fill="#61481c" data-original="#000000" class=""></path>
-                                                        <path
-                                                            d="M286.373,71.801h-7.706v133.241c0,14.921-12.157,27.088-27.101,27.125c-20.983,0.05-55.581,4.153-80.084,27.344     c42.378-10.376,87.052-3.631,112.512,2.171c3.179,0.724,6.464-0.024,9.011-2.054c2.538-2.025,3.994-5.052,3.994-8.301V82.427     C297,76.568,292.232,71.801,286.373,71.801z"
-                                                            fill="#61481c" data-original="#000000" class=""></path>
-                                                        <path
-                                                            d="M18.332,205.042V71.801h-7.706C4.768,71.801,0,76.568,0,82.427v168.897c0,3.25,1.456,6.276,3.994,8.301     c2.545,2.029,5.827,2.78,9.011,2.054c25.46-5.803,70.135-12.547,112.511-2.171c-24.502-23.19-59.1-27.292-80.083-27.342     C30.49,232.13,18.332,219.963,18.332,205.042z"
-                                                            fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path d="M45.432,35.049c-0.008,0-0.017,0-0.025,0c-2.809,0-5.451,1.095-7.446,3.085c-2.017,2.012-3.128,4.691-3.128,7.543     v159.365c0,5.844,4.773,10.61,10.641,10.625c24.738,0.059,66.184,5.215,94.776,35.136V84.023c0-1.981-0.506-3.842-1.461-5.382     C115.322,40.849,70.226,35.107,45.432,35.049z" fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path d="M262.167,205.042V45.676c0-2.852-1.111-5.531-3.128-7.543c-1.995-1.99-4.639-3.085-7.445-3.085c-0.009,0-0.018,0-0.026,0     c-24.793,0.059-69.889,5.801-93.357,43.593c-0.955,1.54-1.46,3.401-1.46,5.382v166.779     c28.592-29.921,70.038-35.077,94.776-35.136C257.394,215.651,262.167,210.885,262.167,205.042z" fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path d="M286.373,71.801h-7.706v133.241c0,14.921-12.157,27.088-27.101,27.125c-20.983,0.05-55.581,4.153-80.084,27.344     c42.378-10.376,87.052-3.631,112.512,2.171c3.179,0.724,6.464-0.024,9.011-2.054c2.538-2.025,3.994-5.052,3.994-8.301V82.427     C297,76.568,292.232,71.801,286.373,71.801z" fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path d="M18.332,205.042V71.801h-7.706C4.768,71.801,0,76.568,0,82.427v168.897c0,3.25,1.456,6.276,3.994,8.301     c2.545,2.029,5.827,2.78,9.011,2.054c25.46-5.803,70.135-12.547,112.511-2.171c-24.502-23.19-59.1-27.292-80.083-27.342     C30.49,232.13,18.332,219.963,18.332,205.042z" fill="#61481c" data-original="#000000" class=""></path>
                                                     </g>
                                                 </g>
                                             </g>
@@ -1493,7 +1605,7 @@
                                     <h6 class="mt-2 mb-0" style="font-weight:bold;">PANDUAN</h6>
                                 </button>
                                 <script>
-                                    $("#btn-panduan").click(function () {
+                                    $("#btn-panduan").click(function() {
                                         $("#panduan").toggleClass('show');
                                         $("#jaminan").removeClass('show');
                                         $("#tentang").removeClass('show');
@@ -1502,27 +1614,19 @@
                             </div>
                             <div class="col-3 text-center mb-2">
                                 <button class="btn btn-sm" id="btn-jaminan" type="button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
-                                        width="70px" x="0" y="0" viewBox="0 0 32 32"
-                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70px" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="16" cx="16" cy="16" fill="#ffffff" shape="circle"></circle>
                                         <g transform="matrix(0.7,0,0,0.7,4.799999713897705,4.800377225875856)">
-                                            <g xmlns="http://www.w3.org/2000/svg" id="_26-Guranteed"
-                                                data-name="26-Guranteed">
-                                                <path
-                                                    d="m27 6c-5.56 0-10.33-3.74-10.38-3.78a1 1 0 0 0 -1.24 0c-.05.04-4.8 3.78-10.38 3.78a1 1 0 0 0 -1 1v9c0 6.71 2.71 10 11.59 13.91a1 1 0 0 0 .82 0c8.88-3.91 11.59-7.2 11.59-13.91v-9a1 1 0 0 0 -1-1zm-11 18a8 8 0 1 1 8-8 8 8 0 0 1 -8 8z"
-                                                    fill="#61481c" data-original="#000000" class=""></path>
-                                                <path
-                                                    d="m18.29 13.29-3.29 3.3-1.29-1.3a1 1 0 0 0 -1.42 1.42l2 2a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0 -1.42-1.42z"
-                                                    fill="#61481c" data-original="#000000" class=""></path>
+                                            <g xmlns="http://www.w3.org/2000/svg" id="_26-Guranteed" data-name="26-Guranteed">
+                                                <path d="m27 6c-5.56 0-10.33-3.74-10.38-3.78a1 1 0 0 0 -1.24 0c-.05.04-4.8 3.78-10.38 3.78a1 1 0 0 0 -1 1v9c0 6.71 2.71 10 11.59 13.91a1 1 0 0 0 .82 0c8.88-3.91 11.59-7.2 11.59-13.91v-9a1 1 0 0 0 -1-1zm-11 18a8 8 0 1 1 8-8 8 8 0 0 1 -8 8z" fill="#61481c" data-original="#000000" class=""></path>
+                                                <path d="m18.29 13.29-3.29 3.3-1.29-1.3a1 1 0 0 0 -1.42 1.42l2 2a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0 -1.42-1.42z" fill="#61481c" data-original="#000000" class=""></path>
                                             </g>
                                         </g>
                                     </svg>
                                     <h6 class="mt-2 mb-0" style="font-weight:bold;">JAMINAN</h6>
                                 </button>
                                 <script>
-                                    $("#btn-jaminan").click(function () {
+                                    $("#btn-jaminan").click(function() {
                                         $("#panduan").removeClass('show');
                                         $("#jaminan").toggleClass('show');
                                         $("#chat").removeClass('show');
@@ -1532,12 +1636,11 @@
                             </div>
                             <div class="col-3 text-center mb-2">
                                 <button class="btn btn-sm" id="btn-chat" type="button">
-                                    <img src="{{asset('')}}images/cus.svg" style="width:55px;margin-top:9px" alt=""
-                                        srcset="">
+                                    <img src="{{asset('')}}images/cus.svg" style="width:55px;margin-top:9px" alt="" srcset="">
                                     <h6 class=" mb-0" style="font-weight:bold;margin-top:13px">CHAT</h6>
                                 </button>
                                 <script>
-                                    $("#btn-chat").click(function () {
+                                    $("#btn-chat").click(function() {
                                         $("#panduan").removeClass('show');
                                         $("#jaminan").removeClass('show');
                                         $("#chat").toggleClass('show');
@@ -1547,27 +1650,20 @@
                             </div>
                             <div class="col-3 text-center mb-2">
                                 <button class="btn btn-sm" id="btn-tentang" type="button" style="margin-left:-10px">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
-                                        width="70px" x="0" y="0" viewBox="0 0 24 24"
-                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70px" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="12" cx="12" cy="12" fill="#ffffff" shape="circle"></circle>
                                         <g transform="matrix(0.7,0,0,0.7,3.600000000000003,3.600000000000003)">
                                             <g xmlns="http://www.w3.org/2000/svg" fill="rgb(0,0,0)">
-                                                <path
-                                                    d="m12 0a12 12 0 1 0 12 12 12.013 12.013 0 0 0 -12-12zm0 22a10 10 0 1 1 10-10 10.011 10.011 0 0 1 -10 10z"
-                                                    fill="#61481c" data-original="#000000" class=""></path>
-                                                <path d="m12 9a1 1 0 0 0 -1 1v8a1 1 0 0 0 2 0v-8a1 1 0 0 0 -1-1z"
-                                                    fill="#61481c" data-original="#000000" class=""></path>
-                                                <circle cx="12" cy="6" r="1" fill="#61481c" data-original="#000000"
-                                                    class=""></circle>
+                                                <path d="m12 0a12 12 0 1 0 12 12 12.013 12.013 0 0 0 -12-12zm0 22a10 10 0 1 1 10-10 10.011 10.011 0 0 1 -10 10z" fill="#61481c" data-original="#000000" class=""></path>
+                                                <path d="m12 9a1 1 0 0 0 -1 1v8a1 1 0 0 0 2 0v-8a1 1 0 0 0 -1-1z" fill="#61481c" data-original="#000000" class=""></path>
+                                                <circle cx="12" cy="6" r="1" fill="#61481c" data-original="#000000" class=""></circle>
                                             </g>
                                         </g>
                                     </svg>
                                     <h6 class="mt-2 mb-0" style="font-weight:bold;">TENTANG</h6>
                                 </button>
                                 <script>
-                                    $("#btn-tentang").click(function () {
+                                    $("#btn-tentang").click(function() {
                                         $("#panduan").removeClass('show');
                                         $("#jaminan").removeClass('show');
                                         $("#chat").removeClass('show');
@@ -1575,9 +1671,7 @@
                                     });
                                 </script>
                             </div>
-                            <ol id="panduan"
-                                class="list-group panduan list-group-numbered shadow dropdown-menu rounded-0 p-0"
-                                style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                            <ol id="panduan" class="list-group panduan list-group-numbered shadow dropdown-menu rounded-0 p-0" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                                 <li class="list-group-item d-flex justify-content-between align-items-start">
                                     <div class="ms-2 me-auto">
                                         <div class="fw-bold" style="color: #61481C">Buat Akun Sengketa Tanah</div>
@@ -1626,13 +1720,11 @@
                                     <i class="fa-solid fa-handshake-angle fs-6" style="color: #61481C"></i>
                                 </li>
                             </ol>
-                            <ol id="jaminan" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3"
-                                style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                            <ol id="jaminan" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                                 <div class="col-md-12">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <h5 style="color: #61481C" class="mb-0"><b><i
-                                                        class="fa-solid fa-user-tie"></i></b></h5>
+                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-tie"></i></b></h5>
                                         </div>
                                         <div class="flex-grow-1 ms-3">
                                             <h5 style="color: #61481C" class="mb-0"><b>Sponsor Terverifikasi</b>
@@ -1644,8 +1736,7 @@
                                 <div class="col-md-12 mt-4">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <h5 style="color: #61481C" class="mb-0"><b><i
-                                                        class="fa-solid fa-gavel"></i></b></h5>
+                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-gavel"></i></b></h5>
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1 ms-3">
@@ -1659,8 +1750,7 @@
                                 <div class="col-md-12 mt-4">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <h5 style="color: #61481C" class="mb-0"><b><i
-                                                        class="fa-solid fa-hand-holding-dollar"></i></b>
+                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-hand-holding-dollar"></i></b>
                                             </h5>
                                         </div>
                                         <div class="d-flex align-items-center">
@@ -1675,8 +1765,7 @@
                                 <div class="col-md-12 mt-4">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <h5 style="color: #61481C" class="mb-0"><b><i
-                                                        class="fa-solid fa-chart-line"></i></b></h5>
+                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-chart-line"></i></b></h5>
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1 ms-3">
@@ -1690,8 +1779,7 @@
                                 <div class="col-md-12 mt-4">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <h5 style="color: #61481C" class="mb-0"><b><i
-                                                        class="fa-solid fa-handshake"></i></b></h5>
+                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-handshake"></i></b></h5>
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1 ms-3">
@@ -1706,8 +1794,7 @@
                                 <div class="col-md-12 mt-4">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <h5 style="color: #61481C" class="mb-0"><b><i
-                                                        class="fa-solid fa-user-gear"></i></b></h5>
+                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-gear"></i></b></h5>
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1 ms-3">
@@ -1719,31 +1806,22 @@
                                     </div>
                                 </div>
                             </ol>
-                            <ol id="chat"
-                                class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center"
-                                style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                            <ol id="chat" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                                 <h2>
                                     <div class="fw-bold" style="color: #61481C"> Customer Service</div>
                                 </h2>
                                 <div class="chat-form"> <input type="text" class="form-control" placeholder="Nama">
-                                    <input type="text" class="form-control" placeholder="Email"> <textarea
-                                        class="form-control" placeholder="Masukan Pesan"></textarea> <button
-                                        class="btn btn-success btn-block">Kirim</button>
+                                    <input type="text" class="form-control" placeholder="Email"> <textarea class="form-control" placeholder="Masukan Pesan"></textarea> <button class="btn btn-success btn-block">Kirim</button>
                                 </div>
                             </ol>
-                            <ol id="tentang"
-                                class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center"
-                                style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                            <ol id="tentang" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                                 <div class="card mb-3">
                                     <div class="card-body">
                                         <div class="row desktop mb-4">
                                             <div class="col-md">
                                                 <div class="card-body text-center container" style="height:500px">
-                                                    <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}"
-                                                        style="width:300px; height:400px;object-fit:cover" alt=""
-                                                        srcset="" class="img-fluid">
-                                                    <div class="card rounded-0"
-                                                        style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                    <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                                    <div class="card rounded-0" style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                                                         <div class="card-body">
                                                             <p class="card-text">"Presiden Joko Widodo menegaskan kepada
                                                                 Kementerian
@@ -1758,11 +1836,8 @@
                                             </div>
                                             <div class="col-md">
                                                 <div class="card-body text-center container" style="height:500px">
-                                                    <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}"
-                                                        style="width:300px; height:400px;object-fit:cover" alt=""
-                                                        srcset="" class="img-fluid">
-                                                    <div class="card rounded-0"
-                                                        style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                    <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                                    <div class="card rounded-0" style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                                                         <div class="card-body">
                                                             <p class="card-text">"Sesuai perintah Bapak Presiden, semua
                                                                 kasus mafia
@@ -1779,11 +1854,8 @@
                                             </div>
                                             <div class="col-md">
                                                 <div class="card-body text-center container" style="height:500px">
-                                                    <img src="{{asset('/uploads/kapolri.png')}}"
-                                                        style="width:300px; height:400px;object-fit:cover" alt=""
-                                                        srcset="" class="img-fluid">
-                                                    <div class="card rounded-0"
-                                                        style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                    <img src="{{asset('/uploads/kapolri.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                                    <div class="card rounded-0" style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                                                         <div class="card-body">
                                                             <p class="card-text">"Penyidik tidak perlu ragu ragu dalam
                                                                 mengusut
@@ -1803,11 +1875,8 @@
                                             <div class="carousel-inner  mb-5">
                                                 <div class="carousel-item active">
                                                     <div class="card-body text-center container" style="height:505px">
-                                                        <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}"
-                                                            style="width:300px; height:400px;object-fit:cover" alt=""
-                                                            srcset="" class="img-fluid">
-                                                        <div class="card rounded-0"
-                                                            style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);z-index:10">
+                                                        <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                                        <div class="card rounded-0" style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);z-index:10">
                                                             <div class="card-body">
                                                                 <p class="card-text">"Presiden Joko Widodo menegaskan
                                                                     kepada Kementerian ATR/BPN untuk serius dalam
@@ -1821,11 +1890,8 @@
                                                 </div>
                                                 <div class="carousel-item">
                                                     <div class="card-body text-center container" style="height:505px">
-                                                        <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}"
-                                                            style="width:300px; height:400px;object-fit:cover" alt=""
-                                                            srcset="" class="img-fluid">
-                                                        <div class="card rounded-0"
-                                                            style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                        <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                                        <div class="card rounded-0" style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                                                             <div class="card-body">
                                                                 <p class="card-text">"Sesuai perintah Bapak Presiden,
                                                                     semua kasus
@@ -1842,11 +1908,8 @@
                                                 </div>
                                                 <div class="carousel-item">
                                                     <div class="card-body text-center container" style="height:505px">
-                                                        <img src="{{asset('/uploads/kapolri.png')}}"
-                                                            style="width:300px; height:400px;object-fit:cover" alt=""
-                                                            srcset="" class="img-fluid">
-                                                        <div class="card rounded-0"
-                                                            style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                        <img src="{{asset('/uploads/kapolri.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                                        <div class="card rounded-0" style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                                                             <div class="card-body">
                                                                 <p class="card-text">"Penyidik tidak perlu ragu ragu
                                                                     dalam mengusut
@@ -1874,8 +1937,7 @@
                                         }
                                     }
                                 </style>
-                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" class="mb-2" style="width: 75px"
-                                    alt="">
+                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" class="mb-2" style="width: 75px" alt="">
                                 <div class="container-lsa mx-auto mb-3">
                                     <h2>
                                         <div class="fw-bold" style="color: #61481C"> TENTANG KAMI</div>
@@ -2034,8 +2096,8 @@
                                                             </h5>
                                                         </td>
                                                         <td class="align-items-center">
-                                                            
-                                                              
+
+
                                                             <div class="row d-flex  align-items-center mb-2">
                                                                 <div class="col text-end">
                                                                     <a id="fav-1">
@@ -2050,7 +2112,7 @@
                                                                 </div>
                                                             </div>
                                                             <script>
-                                                                $("#fav-1").click(function(){
+                                                                $("#fav-1").click(function() {
                                                                     $("#fav-ch-1").toggleClass('fav-icon');
                                                                 });
                                                             </script>
@@ -2272,8 +2334,8 @@
                                                             </h5>
                                                         </td>
                                                         <td class="align-items-center">
-                                                            
-                                                              
+
+
                                                             <div class="row d-flex  align-items-center mb-2">
                                                                 <div class="col text-end">
                                                                     <a id="fav-2">
@@ -2288,7 +2350,7 @@
                                                                 </div>
                                                             </div>
                                                             <script>
-                                                                $("#fav-2").click(function(){
+                                                                $("#fav-2").click(function() {
                                                                     $("#fav-ch-2").toggleClass('fav-icon');
                                                                 });
                                                             </script>
@@ -2504,8 +2566,8 @@
                                                             </h5>
                                                         </td>
                                                         <td class="align-items-center">
-                                                            
-                                                              
+
+
                                                             <div class="row d-flex  align-items-center mb-2">
                                                                 <div class="col text-end">
                                                                     <a id="fav-3">
@@ -2520,7 +2582,7 @@
                                                                 </div>
                                                             </div>
                                                             <script>
-                                                                $("#fav-3").click(function(){
+                                                                $("#fav-3").click(function() {
                                                                     $("#fav-ch-3").toggleClass('fav-icon');
                                                                 });
                                                             </script>
@@ -2734,8 +2796,8 @@
                                                             </h5>
                                                         </td>
                                                         <td class="align-items-center">
-                                                            
-                                                              
+
+
                                                             <div class="row d-flex  align-items-center mb-2">
                                                                 <div class="col text-end">
                                                                     <a id="fav-4">
@@ -2750,7 +2812,7 @@
                                                                 </div>
                                                             </div>
                                                             <script>
-                                                                $("#fav-4").click(function(){
+                                                                $("#fav-4").click(function() {
                                                                     $("#fav-ch-4").toggleClass('fav-icon');
                                                                 });
                                                             </script>
@@ -2977,7 +3039,8 @@
                                             ];
                                             ?>
                                             <div class="container-gambar text-center ms-1" style='display: inline-block;flex: 0 0 auto' onclick="return window.location.href = `{{url('')}}/list-tukang`">
-                                                <img src="data:image/png;base64,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" alt="" srcset="" class="rounded-4 img-thumbnail" style="width:70px;height:70px;object-fit:cover;background:#61481C"> <br>
+                                                <img src="data:image/png;base64,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" alt="" srcset="" class="rounded-4 img-thumbnail" style="width:70px;height:70px;object-fit:cover;background:#61481C">
+                                                <br>
 
                                                 Lawyer
 
@@ -3147,7 +3210,8 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus memiliki akun pengacara sebelum melihat
+                                                                        Anda harus memiliki akun pengacara sebelum
+                                                                        melihat
                                                                         detail.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -3167,7 +3231,7 @@
                                                             </h5>
                                                         </a>
                                                         <script>
-                                                            $("#fav-p1").click(function(){
+                                                            $("#fav-p1").click(function() {
                                                                 $("#fav-ch-p1").toggleClass('fav-icon');
                                                             });
                                                         </script>
@@ -3313,7 +3377,8 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus memiliki akun pengacara sebelum melihat
+                                                                        Anda harus memiliki akun pengacara sebelum
+                                                                        melihat
                                                                         detail.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -3333,7 +3398,7 @@
                                                             </h5>
                                                         </a>
                                                         <script>
-                                                            $("#fav-p2").click(function(){
+                                                            $("#fav-p2").click(function() {
                                                                 $("#fav-ch-p2").toggleClass('fav-icon');
                                                             });
                                                         </script>
@@ -3479,8 +3544,9 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus memiliki akun pengacara sebelum melihat
-                                                                      detail.
+                                                                        Anda harus memiliki akun pengacara sebelum
+                                                                        melihat
+                                                                        detail.
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -3500,7 +3566,7 @@
                                                             </h5>
                                                         </a>
                                                         <script>
-                                                            $("#fav-p3").click(function(){
+                                                            $("#fav-p3").click(function() {
                                                                 $("#fav-ch-p3").toggleClass('fav-icon');
                                                             });
                                                         </script>
@@ -3667,7 +3733,7 @@
                                                             </h5>
                                                         </a>
                                                         <script>
-                                                            $("#fav-p4").click(function(){
+                                                            $("#fav-p4").click(function() {
                                                                 $("#fav-ch-p4").toggleClass('fav-icon');
                                                             });
                                                         </script>
@@ -3832,7 +3898,8 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus memiliki akun pengacara sebelum melihat
+                                                                        Anda harus memiliki akun pengacara sebelum
+                                                                        melihat
                                                                         detail.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -3852,7 +3919,7 @@
                                                             </h5>
                                                         </a>
                                                         <script>
-                                                            $("#fav-p5").click(function(){
+                                                            $("#fav-p5").click(function() {
                                                                 $("#fav-ch-p5").toggleClass('fav-icon');
                                                             });
                                                         </script>
@@ -3998,7 +4065,8 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus memiliki akun pengacara sebelum melihat
+                                                                        Anda harus memiliki akun pengacara sebelum
+                                                                        melihat
                                                                         detail.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -4018,7 +4086,7 @@
                                                             </h5>
                                                         </a>
                                                         <script>
-                                                            $("#fav-p6").click(function(){
+                                                            $("#fav-p6").click(function() {
                                                                 $("#fav-ch-p6").toggleClass('fav-icon');
                                                             });
                                                         </script>
@@ -4164,7 +4232,8 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus memiliki akun pengacara sebelum melihat
+                                                                        Anda harus memiliki akun pengacara sebelum
+                                                                        melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -4184,7 +4253,7 @@
                                                             </h5>
                                                         </a>
                                                         <script>
-                                                            $("#fav-p7").click(function(){
+                                                            $("#fav-p7").click(function() {
                                                                 $("#fav-ch-p7").toggleClass('fav-icon');
                                                             });
                                                         </script>
@@ -4398,10 +4467,10 @@
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
                                         <div class="share-icon">
-                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                    <i class="fa-solid fa-share-from-square"></i>
-                                                </button>
-                                            </div>
+                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                <i class="fa-solid fa-share-from-square"></i>
+                                            </button>
+                                        </div>
                                         <div id="ksl2" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#ksl2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -4454,28 +4523,28 @@
                                                         </h5>
                                                     </td>
                                                     <td class="align-items-center">
-                                                            
-                                                              
-                                                            <div class="row d-flex  align-items-center mb-2">
-                                                                <div class="col text-end">
-                                                                    <a id="fav-a1">
-                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a1">
-                                                                            <i class="fas fa-star"></i>
-                                                                        </h5>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="col">
-                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                                </div>
-                                                            </div>
-                                                            <script>
-                                                                $("#fav-a1").click(function(){
-                                                                    $("#fav-ch-a1").toggleClass('fav-icon');
-                                                                });
-                                                            </script>
 
-                                                        </td>
+
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-a1">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-a1">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-a1").click(function() {
+                                                                $("#fav-ch-a1").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+
+                                                    </td>
                                                 </tr>
                                             </table>
                                             <hr style="margin-top:-4px">
@@ -4564,7 +4633,7 @@
                                                     </div>
 
                                                 </div>
-                                                
+
                                             </div>
 
                                             <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
@@ -4621,10 +4690,10 @@
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
                                         <div class="share-icon">
-                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                    <i class="fa-solid fa-share-from-square"></i>
-                                                </button>
-                                            </div>
+                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                <i class="fa-solid fa-share-from-square"></i>
+                                            </button>
+                                        </div>
                                         <div id="ksl10" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#ksl10" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -4678,28 +4747,28 @@
                                                         </h5>
                                                     </td>
                                                     <td class="align-items-center">
-                                                            
-                                                              
-                                                            <div class="row d-flex  align-items-center mb-2">
-                                                                <div class="col text-end">
-                                                                    <a id="fav-a2">
-                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a2">
-                                                                            <i class="fas fa-star"></i>
-                                                                        </h5>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="col">
-                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                                </div>
-                                                            </div>
-                                                            <script>
-                                                                $("#fav-a2").click(function(){
-                                                                    $("#fav-ch-a2").toggleClass('fav-icon');
-                                                                });
-                                                            </script>
 
-                                                        </td>
+
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-a2">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-a2">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-a2").click(function() {
+                                                                $("#fav-ch-a2").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+
+                                                    </td>
                                                 </tr>
                                             </table>
                                             <hr style="margin-top:-4px">
@@ -4788,7 +4857,7 @@
                                                     </div>
 
                                                 </div>
-                                                
+
                                             </div>
 
                                             <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
@@ -4845,10 +4914,10 @@
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
                                         <div class="share-icon">
-                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                    <i class="fa-solid fa-share-from-square"></i>
-                                                </button>
-                                            </div>
+                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                <i class="fa-solid fa-share-from-square"></i>
+                                            </button>
+                                        </div>
                                         <div id="ksl3" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#ksl3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -4901,28 +4970,28 @@
                                                         </h5>
                                                     </td>
                                                     <td class="align-items-center">
-                                                            
-                                                              
-                                                            <div class="row d-flex  align-items-center mb-2">
-                                                                <div class="col text-end">
-                                                                    <a id="fav-a3">
-                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a3">
-                                                                            <i class="fas fa-star"></i>
-                                                                        </h5>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="col">
-                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                                </div>
-                                                            </div>
-                                                            <script>
-                                                                $("#fav-a3").click(function(){
-                                                                    $("#fav-ch-a3").toggleClass('fav-icon');
-                                                                });
-                                                            </script>
 
-                                                        </td>
+
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-a3">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-a3">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-a3").click(function() {
+                                                                $("#fav-ch-a3").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+
+                                                    </td>
                                                 </tr>
                                             </table>
                                             <hr style="margin-top:-4px">
@@ -5012,7 +5081,7 @@
                                                     </div>
 
                                                 </div>
-                                                
+
                                             </div>
 
                                             <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3" method="get">
@@ -5069,10 +5138,10 @@
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
                                         <div class="share-icon">
-                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                    <i class="fa-solid fa-share-from-square"></i>
-                                                </button>
-                                            </div>
+                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                <i class="fa-solid fa-share-from-square"></i>
+                                            </button>
+                                        </div>
                                         <div id="ksl4" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#ksl4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -5125,28 +5194,28 @@
                                                         </h5>
                                                     </td>
                                                     <td class="align-items-center">
-                                                            
-                                                              
-                                                            <div class="row d-flex  align-items-center mb-2">
-                                                                <div class="col text-end">
-                                                                    <a id="fav-a4">
-                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a4">
-                                                                            <i class="fas fa-star"></i>
-                                                                        </h5>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="col">
-                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                                </div>
-                                                            </div>
-                                                            <script>
-                                                                $("#fav-a4").click(function(){
-                                                                    $("#fav-ch-a4").toggleClass('fav-icon');
-                                                                });
-                                                            </script>
 
-                                                        </td>
+
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-a4">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-a4">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-a4").click(function() {
+                                                                $("#fav-ch-a4").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+
+                                                    </td>
                                                 </tr>
                                             </table>
                                             <hr style="margin-top:-4px">
@@ -5235,7 +5304,7 @@
                                                     </div>
 
                                                 </div>
-                                                
+
                                             </div>
 
                                             <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3" method="get">
@@ -5292,10 +5361,10 @@
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
                                         <div class="share-icon">
-                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                    <i class="fa-solid fa-share-from-square"></i>
-                                                </button>
-                                            </div>
+                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                <i class="fa-solid fa-share-from-square"></i>
+                                            </button>
+                                        </div>
                                         <div id="ksl2" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#ksl2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -5348,28 +5417,28 @@
                                                         </h5>
                                                     </td>
                                                     <td class="align-items-center">
-                                                            
-                                                              
-                                                            <div class="row d-flex  align-items-center mb-2">
-                                                                <div class="col text-end">
-                                                                    <a id="fav-a5">
-                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a5">
-                                                                            <i class="fas fa-star"></i>
-                                                                        </h5>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="col">
-                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                                </div>
-                                                            </div>
-                                                            <script>
-                                                                $("#fav-a5").click(function(){
-                                                                    $("#fav-ch-a5").toggleClass('fav-icon');
-                                                                });
-                                                            </script>
 
-                                                        </td>
+
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-a5">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-a5">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-a5").click(function() {
+                                                                $("#fav-ch-a5").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+
+                                                    </td>
                                                 </tr>
                                             </table>
                                             <hr style="margin-top:-4px">
@@ -5458,7 +5527,7 @@
                                                     </div>
 
                                                 </div>
-                                                
+
                                             </div>
 
                                             <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
@@ -5704,10 +5773,10 @@
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
                                         <div class="share-icon">
-                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                    <i class="fa-solid fa-share-from-square"></i>
-                                                </button>
-                                            </div>
+                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                <i class="fa-solid fa-share-from-square"></i>
+                                            </button>
+                                        </div>
                                         <div id="jbl1" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -5759,8 +5828,8 @@
                                                         </h5>
                                                     </td>
                                                     <td class="align-items-center">
-                                                            
-                                                              
+
+
                                                         <div class="row d-flex  align-items-center mb-2">
                                                             <div class="col text-end">
                                                                 <a id="fav-b1">
@@ -5775,7 +5844,7 @@
                                                             </div>
                                                         </div>
                                                         <script>
-                                                            $("#fav-b1").click(function(){
+                                                            $("#fav-b1").click(function() {
                                                                 $("#fav-ch-b1").toggleClass('fav-icon');
                                                             });
                                                         </script>
@@ -5916,10 +5985,10 @@
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
                                         <div class="share-icon">
-                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                    <i class="fa-solid fa-share-from-square"></i>
-                                                </button>
-                                            </div>
+                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                <i class="fa-solid fa-share-from-square"></i>
+                                            </button>
+                                        </div>
                                         <div id="jbl2" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -5971,8 +6040,8 @@
                                                         </h5>
                                                     </td>
                                                     <td class="align-items-center">
-                                                            
-                                                              
+
+
                                                         <div class="row d-flex  align-items-center mb-2">
                                                             <div class="col text-end">
                                                                 <a id="fav-b2">
@@ -5987,7 +6056,7 @@
                                                             </div>
                                                         </div>
                                                         <script>
-                                                            $("#fav-b2").click(function(){
+                                                            $("#fav-b2").click(function() {
                                                                 $("#fav-ch-b2").toggleClass('fav-icon');
                                                             });
                                                         </script>
@@ -6134,10 +6203,10 @@
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
                                         <div class="share-icon">
-                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                    <i class="fa-solid fa-share-from-square"></i>
-                                                </button>
-                                            </div>
+                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                <i class="fa-solid fa-share-from-square"></i>
+                                            </button>
+                                        </div>
                                         <div id="jbl3" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -6189,8 +6258,8 @@
                                                         </h5>
                                                     </td>
                                                     <td class="align-items-center">
-                                                            
-                                                              
+
+
                                                         <div class="row d-flex  align-items-center mb-2">
                                                             <div class="col text-end">
                                                                 <a id="fav-b3">
@@ -6205,7 +6274,7 @@
                                                             </div>
                                                         </div>
                                                         <script>
-                                                            $("#fav-b3").click(function(){
+                                                            $("#fav-b3").click(function() {
                                                                 $("#fav-ch-b3").toggleClass('fav-icon');
                                                             });
                                                         </script>
@@ -6352,10 +6421,10 @@
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
                                         <div class="share-icon">
-                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                    <i class="fa-solid fa-share-from-square"></i>
-                                                </button>
-                                            </div>
+                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                <i class="fa-solid fa-share-from-square"></i>
+                                            </button>
+                                        </div>
                                         <div id="jbl4" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -6408,8 +6477,8 @@
                                                         </h5>
                                                     </td>
                                                     <td class="align-items-center">
-                                                            
-                                                              
+
+
                                                         <div class="row d-flex  align-items-center mb-2">
                                                             <div class="col text-end">
                                                                 <a id="fav-b4">
@@ -6424,7 +6493,7 @@
                                                             </div>
                                                         </div>
                                                         <script>
-                                                            $("#fav-b4").click(function(){
+                                                            $("#fav-b4").click(function() {
                                                                 $("#fav-ch-b4").toggleClass('fav-icon');
                                                             });
                                                         </script>
@@ -6572,10 +6641,10 @@
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
                                         <div class="share-icon">
-                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                    <i class="fa-solid fa-share-from-square"></i>
-                                                </button>
-                                            </div>
+                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                <i class="fa-solid fa-share-from-square"></i>
+                                            </button>
+                                        </div>
                                         <div id="jbl2" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -6627,8 +6696,8 @@
                                                         </h5>
                                                     </td>
                                                     <td class="align-items-center">
-                                                            
-                                                              
+
+
                                                         <div class="row d-flex  align-items-center mb-2">
                                                             <div class="col text-end">
                                                                 <a id="fav-b5">
@@ -6643,7 +6712,7 @@
                                                             </div>
                                                         </div>
                                                         <script>
-                                                            $("#fav-b5").click(function(){
+                                                            $("#fav-b5").click(function() {
                                                                 $("#fav-ch-b5").toggleClass('fav-icon');
                                                             });
                                                         </script>
@@ -7323,10 +7392,10 @@
                                         <i class="fa-solid fa-star"></i>&nbsp;HOT
                                     </div>
                                     <div class="share-icon">
-                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                    <i class="fa-solid fa-share-from-square"></i>
-                                                </button>
-                                            </div>
+                                        <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                            <i class="fa-solid fa-share-from-square"></i>
+                                        </button>
+                                    </div>
                                     <div id="ll4" class="carousel slide" data-bs-interval="false">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#ll4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -7386,13 +7455,13 @@
                                                             Ikut Lelang</button>
                                                     </div>
 
-                                                    
+
                                                     <script>
-                                                        $("#fav-c1").click(function(){
+                                                        $("#fav-c1").click(function() {
                                                             $("#fav-ch-c1").toggleClass('fav-icon');
                                                         });
                                                     </script>
-                                                    
+
 
                                                 </td>
                                             </tr>
@@ -7585,10 +7654,10 @@
                                         <i class="fa-solid fa-star"></i>&nbsp;HOT
                                     </div>
                                     <div class="share-icon">
-                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                    <i class="fa-solid fa-share-from-square"></i>
-                                                </button>
-                                            </div>
+                                        <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                            <i class="fa-solid fa-share-from-square"></i>
+                                        </button>
+                                    </div>
                                     <div id="ll2" class="carousel slide" data-bs-interval="false">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#ll2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -7648,13 +7717,13 @@
                                                             Ikut Lelang</button>
                                                     </div>
 
-                                                    
+
                                                     <script>
-                                                        $("#fav-c1").click(function(){
+                                                        $("#fav-c1").click(function() {
                                                             $("#fav-ch-c1").toggleClass('fav-icon');
                                                         });
                                                     </script>
-                                                    
+
 
                                                 </td>
                                             </tr>
@@ -7846,10 +7915,10 @@
                                         <i class="fa-solid fa-star"></i>&nbsp;HOT
                                     </div>
                                     <div class="share-icon">
-                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                    <i class="fa-solid fa-share-from-square"></i>
-                                                </button>
-                                            </div>
+                                        <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                            <i class="fa-solid fa-share-from-square"></i>
+                                        </button>
+                                    </div>
                                     <div id="ll3" class="carousel slide" data-bs-interval="false">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#ll3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -7909,13 +7978,13 @@
                                                             Ikut Lelang</button>
                                                     </div>
 
-                                                    
+
                                                     <script>
-                                                        $("#fav-c1").click(function(){
+                                                        $("#fav-c1").click(function() {
                                                             $("#fav-ch-c1").toggleClass('fav-icon');
                                                         });
                                                     </script>
-                                                    
+
 
                                                 </td>
                                             </tr>
@@ -8105,10 +8174,10 @@
                                         <i class="fa-solid fa-star"></i>&nbsp;HOT
                                     </div>
                                     <div class="share-icon">
-                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                    <i class="fa-solid fa-share-from-square"></i>
-                                                </button>
-                                            </div>
+                                        <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                            <i class="fa-solid fa-share-from-square"></i>
+                                        </button>
+                                    </div>
                                     <div id="ll44" class="carousel slide" data-bs-interval="false">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#ll44" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -8168,13 +8237,13 @@
                                                             Ikut Lelang</button>
                                                     </div>
 
-                                                    
+
                                                     <script>
-                                                        $("#fav-c1").click(function(){
+                                                        $("#fav-c1").click(function() {
                                                             $("#fav-ch-c1").toggleClass('fav-icon');
                                                         });
                                                     </script>
-                                                    
+
 
                                                 </td>
                                             </tr>
@@ -9362,8 +9431,7 @@
 
     </div>
 
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0"
-        nonce="Ee2Zutm6"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0" nonce="Ee2Zutm6"></script>
     <div class="row mt-4 puter">
         <div class="card-body text-white text-center" style="background: #61481C">
             <p></p>
@@ -9548,6 +9616,43 @@
             });
             hidestuff();
         });
+    </script>
+    <script>
+        let dayBox = document.getElementById("day-box");
+        let hrBox = document.getElementById("hr-box");
+        let minBox = document.getElementById("min-box");
+        let secBox = document.getElementById("sec-box");
+        let endDate = new Date(2022, 11, 2, 09, 00);
+        let endTime = endDate.getTime();
+
+        function countdown() {
+            let todayDate = new Date();
+            let todayTime = todayDate.getTime();
+            let remainingTime = endTime - todayTime;
+            let oneMin = 60 * 1000;
+            let oneHr = 60 * oneMin;
+            let oneDay = 24 * oneHr;
+
+            let addZeroes = (num) => (num < 10 ? `0${num}` : num);
+
+            if (endTime < todayTime) {
+                clearInterval(i);
+                document.querySelector(".countdown").innerHTML = `<h1>Countdown Has Expired</h1>`;
+            } else {
+                let daysLeft = Math.floor(remainingTime / oneDay);
+                let hrsLeft = Math.floor((remainingTime % oneDay) / oneHr);
+                let minsLeft = Math.floor((remainingTime % oneHr) / oneMin);
+                let secsLeft = Math.floor((remainingTime % oneMin) / 1000);
+
+                dayBox.textContent = addZeroes(daysLeft);
+                hrBox.textContent = addZeroes(hrsLeft);
+                minBox.textContent = addZeroes(minsLeft);
+                secBox.textContent = addZeroes(secsLeft);
+            }
+        }
+
+        let i = setInterval(countdown, 1000);
+        countdown();
     </script>
 </body>
 
