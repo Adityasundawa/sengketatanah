@@ -1502,7 +1502,7 @@
                                                             </h5>
                                                         </td>
                                                         <td class="align-items-center" rowspan="2">
-                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleC">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -1715,7 +1715,7 @@
                                                             </h5>
                                                         </td>
                                                         <td class="align-items-center" rowspan="2">
-                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleC">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -1922,7 +1922,7 @@
                                                             </h5>
                                                         </td>
                                                         <td class="align-items-center" rowspan="2">
-                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleC">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -2127,7 +2127,7 @@
                                                             </h5>
                                                         </td>
                                                         <td class="align-items-center" rowspan="2">
-                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleC">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleSponsor">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -3726,8 +3726,21 @@
                                         </div>
 
                                         <div class="card-body">
-
-
+                                            <table class="mb-2">
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <h5>
+                                                            <b class="text-danger fs-4">
+                                                                Kerja Sama
+                                                            </b>
+                                                        </h5>
+                                                    </td>
+                                                    <td class="align-items-center" rowspan="2">
+                                                        <button class="btn float-end btn-danger" data-bs-toggle="modal" data-bs-target="#exampleA">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <hr style="margin-top:-4px">
                                             <table>
                                                 <tbody>
                                                     <tr>
@@ -3786,7 +3799,7 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -3812,11 +3825,6 @@
                                                         </div>
                                                     </div>
 
-                                                </div>
-                                                <div class="col text-center">
-                                                    <button type="button" class="text-center rounded-5 w-75 btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                        BID
-                                                    </button>
                                                 </div>
                                                 
                                             </div>
@@ -3917,7 +3925,21 @@
 
                                         <div class="card-body">
 
-
+                                            <table class="mb-2">
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <h5>
+                                                            <b class="text-danger fs-4">
+                                                                Kerja Sama
+                                                            </b>
+                                                        </h5>
+                                                    </td>
+                                                    <td class="align-items-center" rowspan="2">
+                                                        <button class="btn float-end btn-danger" data-bs-toggle="modal" data-bs-target="#exampleA">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <hr style="margin-top:-4px">
                                             <table>
                                                 <tbody>
                                                     <tr>
@@ -3976,7 +3998,7 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -4002,11 +4024,6 @@
                                                         </div>
                                                     </div>
 
-                                                </div>
-                                                <div class="col text-center">
-                                                    <button type="button" class="text-center rounded-5 w-75 btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                        BID
-                                                    </button>
                                                 </div>
                                                 
                                             </div>
@@ -4106,8 +4123,21 @@
                                         </div>
 
                                         <div class="card-body">
-
-
+                                            <table class="mb-2">
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <h5>
+                                                            <b class="text-danger fs-4">
+                                                                Kerja Sama
+                                                            </b>
+                                                        </h5>
+                                                    </td>
+                                                    <td class="align-items-center" rowspan="2">
+                                                        <button class="btn float-end btn-danger" data-bs-toggle="modal" data-bs-target="#exampleA">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <hr style="margin-top:-4px">
                                             <table>
                                                 <tbody>
                                                     <tr>
@@ -4167,7 +4197,7 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -4193,11 +4223,6 @@
                                                         </div>
                                                     </div>
 
-                                                </div>
-                                                <div class="col text-center">
-                                                    <button type="button" class="text-center rounded-5 w-75 btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                        BID
-                                                    </button>
                                                 </div>
                                                 
                                             </div>
@@ -4297,8 +4322,21 @@
                                         </div>
 
                                         <div class="card-body">
-
-
+                                            <table class="mb-2">
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <h5>
+                                                            <b class="text-danger fs-4">
+                                                                Kerja Sama
+                                                            </b>
+                                                        </h5>
+                                                    </td>
+                                                    <td class="align-items-center" rowspan="2">
+                                                        <button class="btn float-end btn-danger" data-bs-toggle="modal" data-bs-target="#exampleA">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <hr style="margin-top:-4px">
                                             <table>
                                                 <tbody>
                                                     <tr>
@@ -4357,7 +4395,7 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -4383,11 +4421,6 @@
                                                         </div>
                                                     </div>
 
-                                                </div>
-                                                <div class="col text-center">
-                                                    <button type="button" class="text-center rounded-5 w-75 btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                        BID
-                                                    </button>
                                                 </div>
                                                 
                                             </div>
@@ -4487,8 +4520,21 @@
                                         </div>
 
                                         <div class="card-body">
-
-
+                                            <table class="mb-2">
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <h5>
+                                                            <b class="text-danger fs-4">
+                                                                Kerja Sama
+                                                            </b>
+                                                        </h5>
+                                                    </td>
+                                                    <td class="align-items-center" rowspan="2">
+                                                        <button class="btn float-end btn-danger" data-bs-toggle="modal" data-bs-target="#exampleA">&nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <hr style="margin-top:-4px">
                                             <table>
                                                 <tbody>
                                                     <tr>
@@ -4547,7 +4593,7 @@
                                             <div class="row g-0">
                                                 <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
@@ -4573,11 +4619,6 @@
                                                         </div>
                                                     </div>
 
-                                                </div>
-                                                <div class="col text-center">
-                                                    <button type="button" class="text-center rounded-5 w-75 btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                        BID
-                                                    </button>
                                                 </div>
                                                 
                                             </div>
