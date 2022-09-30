@@ -440,6 +440,10 @@
             .desktop-2 {
                 display: none;
             }
+            
+            .puter {
+                margin-bottom: 80px;
+            }
         }
 
         .col-12.custom {
@@ -546,6 +550,13 @@
         .text-fav-disable {
             color: rgb(199, 199, 199)
         }
+
+        .share-icon {
+            position: absolute;
+            z-index: 999;
+            right: 0.5rem;
+            top: 0.5rem;
+        }
     </style>
 
 </head>
@@ -626,7 +637,7 @@
         }
     </style>
 
-    <div class="card aboute-bottom rounded-0">
+    <div class="card aboute-bottom rounded-0 mobile">
         <div class="card border-0 shadow-sm" style="margin-top:-10px">
             <div class="card-body p-0">
                 <div class="row g-0">
@@ -1401,12 +1412,522 @@
                                 </a>
                             </div>
                             <div class="col mb-4">
+                                <a href="{{url('/')}}/podcast-sengketa" class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="85px" x="0" y="0" viewBox="0 0 512 511" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><circle r="256" cx="256" cy="255.5" fill="#ffffff" shape="circle"></circle><g transform="matrix(0.7,0,0,0.7,76.80000000000001,76.48344733715058)"><path d="m256 131.46875c13.273438 0 24.066406-10.796875 24.066406-24.066406 0-13.273438-10.796875-24.070313-24.066406-24.070313s-24.066406 10.796875-24.066406 24.070313c0 13.269531 10.796875 24.066406 24.066406 24.066406zm0-33.136719c5 0 9.066406 4.070313 9.066406 9.070313 0 4.996094-4.066406 9.066406-9.066406 9.066406s-9.066406-4.066406-9.066406-9.066406 4.066406-9.070313 9.066406-9.070313zm0 0" fill="#61481c" data-original="#000000" class=""></path><path d="m504.5 461.261719h-9.066406v-25.632813c0-4.140625-3.359375-7.5-7.5-7.5h-25.632813v-25.632812c0-4.140625-3.355469-7.5-7.5-7.5h-9.0625v-164.128906h9.0625c4.144531 0 7.5-3.359376 7.5-7.5v-25.632813h25.632813c4.144531 0 7.5-3.359375 7.5-7.5v-33.132813c0-4.140624-3.355469-7.5-7.5-7.5h-14.222656l-213.441407-147.769531c-2.566406-1.7773435-5.96875-1.7773435-8.539062 0l-213.4375 147.769531h-14.226563c-4.140625 0-7.5 3.355469-7.5 7.5v33.132813c0 4.140625 3.359375 7.5 7.5 7.5h25.632813v25.632813c0 4.140624 3.359375 7.5 7.5 7.5h9.066406v164.128906h-9.066406c-4.140625 0-7.5 3.355468-7.5 7.5v25.632812h-25.632813c-4.140625 0-7.5 3.359375-7.5 7.5v25.632813h-9.066406c-4.144531 0-7.5 3.355469-7.5 7.5v33.128906c0 4.144531 3.355469 7.5 7.5 7.5h497c4.144531 0 7.5-3.355469 7.5-7.5v-33.128906c0-4.140625-3.355469-7.5-7.5-7.5zm-57.199219-33.132813h-67.832031v-18.132812h67.832031zm-51.269531-33.132812v-164.128906h34.703125v164.128906zm51.269531-179.128906h-67.832031v-18.132813h67.832031zm-75.332031 15h9.0625v164.128906h-9.0625c-4.144531 0-7.5 3.355468-7.5 7.5v25.632812h-59.550781v-25.632812c0-4.144532-3.359375-7.5-7.5-7.5h-9.066407v-164.128906h9.066407c4.140625 0 7.5-3.359376 7.5-7.5v-25.632813h59.550781v25.632813c0 4.140624 3.355469 7.5 7.5 7.5zm-149.882812-33.132813h67.832031v18.132813h-67.832031zm16.5625 33.132813h34.703124v164.128906h-34.703124zm51.269531 179.128906v18.132812h-67.832031v-18.132812zm-258.351563-245.394532h9.070313.007812.003907 121.800781c4.144531 0 7.5-3.359374 7.5-7.5 0-4.144531-3.355469-7.5-7.5-7.5h-97.804688l191.355469-132.480468 191.359375 132.480468h-254.910156c-4.140625 0-7.5 3.355469-7.5 7.5 0 4.140626 3.359375 7.5 7.5 7.5h278.816406.023437 9.144532v18.132813h-448.867188zm33.132813 33.132813h67.835937v18.132813h-67.835937zm51.269531 33.132813v164.128906h-34.703125v-164.128906zm-51.269531 179.128906h67.835937v18.132812h-67.835937zm75.335937-15h-9.066406v-164.128906h9.066406c4.140625 0 7.5-3.359376 7.5-7.5v-25.632813h59.550782v25.632813c0 4.140624 3.355468 7.5 7.5 7.5h9.0625v164.128906h-9.0625c-4.144532 0-7.5 3.355468-7.5 7.5v25.632812h-59.550782v-25.632812c0-4.144532-3.359375-7.5-7.5-7.5zm-108.46875 48.132812h448.867188v18.132813h-448.867188zm465.433594 51.265625h-482v-18.132812h482zm0 0" fill="#61481c" data-original="#000000" class=""></path></g></svg>
+                                    <div class="mt-0" style="font-size: 12px">Advokasi <br> Pemerintah</div>
+                                </a>
+                            </div>
+                            <div class="col mb-4">
                                 <a class="btn btn-outline-light text-dark w-100 rounded-4 shadow" href="https://mitra.atrbpn.go.id">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png" class="p-2" width="85px" alt="">
                                     <div class="mt-0" style="font-size: 12px">Mitra <br> BPN</div>
                                 </a>
                             </div>
 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 border-0 shadow-sm desktop" style="margin-top:-10px">
+                    <div class="card-body pb-1 pt-2">
+                        <div class="row">
+                            <div class="col-3 text-center mb-2">
+                                <button class="btn btn-sm" id="btn-panduan" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                        width="70px" x="0" y="0" viewBox="0 0 296.999 296.999"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="148.4995" cx="148.4995" cy="148.4995" fill="#ffffff" shape="circle">
+                                        </circle>
+                                        <g transform="matrix(0.7,0,0,0.7,44.54984436035157,44.54998970031738)">
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                    <g>
+                                                        <path
+                                                            d="M45.432,35.049c-0.008,0-0.017,0-0.025,0c-2.809,0-5.451,1.095-7.446,3.085c-2.017,2.012-3.128,4.691-3.128,7.543     v159.365c0,5.844,4.773,10.61,10.641,10.625c24.738,0.059,66.184,5.215,94.776,35.136V84.023c0-1.981-0.506-3.842-1.461-5.382     C115.322,40.849,70.226,35.107,45.432,35.049z"
+                                                            fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path
+                                                            d="M262.167,205.042V45.676c0-2.852-1.111-5.531-3.128-7.543c-1.995-1.99-4.639-3.085-7.445-3.085c-0.009,0-0.018,0-0.026,0     c-24.793,0.059-69.889,5.801-93.357,43.593c-0.955,1.54-1.46,3.401-1.46,5.382v166.779     c28.592-29.921,70.038-35.077,94.776-35.136C257.394,215.651,262.167,210.885,262.167,205.042z"
+                                                            fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path
+                                                            d="M286.373,71.801h-7.706v133.241c0,14.921-12.157,27.088-27.101,27.125c-20.983,0.05-55.581,4.153-80.084,27.344     c42.378-10.376,87.052-3.631,112.512,2.171c3.179,0.724,6.464-0.024,9.011-2.054c2.538-2.025,3.994-5.052,3.994-8.301V82.427     C297,76.568,292.232,71.801,286.373,71.801z"
+                                                            fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path
+                                                            d="M18.332,205.042V71.801h-7.706C4.768,71.801,0,76.568,0,82.427v168.897c0,3.25,1.456,6.276,3.994,8.301     c2.545,2.029,5.827,2.78,9.011,2.054c25.46-5.803,70.135-12.547,112.511-2.171c-24.502-23.19-59.1-27.292-80.083-27.342     C30.49,232.13,18.332,219.963,18.332,205.042z"
+                                                            fill="#61481c" data-original="#000000" class=""></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <h6 class="mt-2 mb-0" style="font-weight:bold;">PANDUAN</h6>
+                                </button>
+                                <script>
+                                    $("#btn-panduan").click(function () {
+                                        $("#panduan").toggleClass('show');
+                                        $("#jaminan").removeClass('show');
+                                        $("#tentang").removeClass('show');
+                                    });
+                                </script>
+                            </div>
+                            <div class="col-3 text-center mb-2">
+                                <button class="btn btn-sm" id="btn-jaminan" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                        width="70px" x="0" y="0" viewBox="0 0 32 32"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="16" cx="16" cy="16" fill="#ffffff" shape="circle"></circle>
+                                        <g transform="matrix(0.7,0,0,0.7,4.799999713897705,4.800377225875856)">
+                                            <g xmlns="http://www.w3.org/2000/svg" id="_26-Guranteed"
+                                                data-name="26-Guranteed">
+                                                <path
+                                                    d="m27 6c-5.56 0-10.33-3.74-10.38-3.78a1 1 0 0 0 -1.24 0c-.05.04-4.8 3.78-10.38 3.78a1 1 0 0 0 -1 1v9c0 6.71 2.71 10 11.59 13.91a1 1 0 0 0 .82 0c8.88-3.91 11.59-7.2 11.59-13.91v-9a1 1 0 0 0 -1-1zm-11 18a8 8 0 1 1 8-8 8 8 0 0 1 -8 8z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
+                                                <path
+                                                    d="m18.29 13.29-3.29 3.3-1.29-1.3a1 1 0 0 0 -1.42 1.42l2 2a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0 -1.42-1.42z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <h6 class="mt-2 mb-0" style="font-weight:bold;">JAMINAN</h6>
+                                </button>
+                                <script>
+                                    $("#btn-jaminan").click(function () {
+                                        $("#panduan").removeClass('show');
+                                        $("#jaminan").toggleClass('show');
+                                        $("#chat").removeClass('show');
+                                        $("#tentang").removeClass('show');
+                                    });
+                                </script>
+                            </div>
+                            <div class="col-3 text-center mb-2">
+                                <button class="btn btn-sm" id="btn-chat" type="button">
+                                    <img src="{{asset('')}}images/cus.svg" style="width:55px;margin-top:9px" alt=""
+                                        srcset="">
+                                    <h6 class=" mb-0" style="font-weight:bold;margin-top:13px">CHAT</h6>
+                                </button>
+                                <script>
+                                    $("#btn-chat").click(function () {
+                                        $("#panduan").removeClass('show');
+                                        $("#jaminan").removeClass('show');
+                                        $("#chat").toggleClass('show');
+                                        $("#tentang").removeClass('show');
+                                    });
+                                </script>
+                            </div>
+                            <div class="col-3 text-center mb-2">
+                                <button class="btn btn-sm" id="btn-tentang" type="button" style="margin-left:-10px">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                        width="70px" x="0" y="0" viewBox="0 0 24 24"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="12" cx="12" cy="12" fill="#ffffff" shape="circle"></circle>
+                                        <g transform="matrix(0.7,0,0,0.7,3.600000000000003,3.600000000000003)">
+                                            <g xmlns="http://www.w3.org/2000/svg" fill="rgb(0,0,0)">
+                                                <path
+                                                    d="m12 0a12 12 0 1 0 12 12 12.013 12.013 0 0 0 -12-12zm0 22a10 10 0 1 1 10-10 10.011 10.011 0 0 1 -10 10z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
+                                                <path d="m12 9a1 1 0 0 0 -1 1v8a1 1 0 0 0 2 0v-8a1 1 0 0 0 -1-1z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
+                                                <circle cx="12" cy="6" r="1" fill="#61481c" data-original="#000000"
+                                                    class=""></circle>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <h6 class="mt-2 mb-0" style="font-weight:bold;">TENTANG</h6>
+                                </button>
+                                <script>
+                                    $("#btn-tentang").click(function () {
+                                        $("#panduan").removeClass('show');
+                                        $("#jaminan").removeClass('show');
+                                        $("#chat").removeClass('show');
+                                        $("#tentang").toggleClass('show');
+                                    });
+                                </script>
+                            </div>
+                            <ol id="panduan"
+                                class="list-group panduan list-group-numbered shadow dropdown-menu rounded-0 p-0"
+                                style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold" style="color: #61481C">Buat Akun Sengketa Tanah</div>
+                                        Daftarkan diri Anda sesuai dengan role yang diinginkan (Korban, Sponsor,
+                                        Pengacara).
+                                    </div>
+                                    <i class="fa-solid fa-user-plus fs-6" style="color: #61481C"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold" style="color: #61481C">Buat Laporan Sengketa Tanah
+                                        </div>
+                                        Laporkan dengan jelas melalui formulir korban tentang masalah sengketa tanah
+                                        Anda.
+                                    </div>
+                                    <i class="fa-solid fa-file-circle-plus fs-6" style="color: #61481C"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold" style="color: #61481C">Tampilkan Dokumen</div>
+                                        Upload dan kirimkan dokumen pendukung laporan Anda.
+                                    </div>
+                                    <i class="fa-solid fa-file-lines fs-6" style="color: #61481C"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold" style="color: #61481C">Temukan Bantuan</div>
+                                        Pilih bantuan yang diinginkan mulai dari bantuan pendanaan sponsor, bantuan
+                                        hukum pengacara, dan
+                                        bantuan pemerintah.
+                                    </div>
+                                    <i class="fa fa-circle-question fs-6" style="color: #61481C"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold" style="color: #61481C">Pilih Bantuan</div>
+                                        Pilih bantuan yang masuk sesuai dengan kesepakatanmu.
+                                    </div>
+                                    <i class="fa-regular fa-circle-question fs-6" style="color: #61481C"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold" style="color: #61481C">Dapatkan Bantuan</div>
+                                        Yay! Selamat, kamu telah mendapatkan bantuan.
+                                    </div>
+                                    <i class="fa-solid fa-handshake-angle fs-6" style="color: #61481C"></i>
+                                </li>
+                            </ol>
+                            <ol id="jaminan" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3"
+                                style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                                <div class="col-md-12">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <h5 style="color: #61481C" class="mb-0"><b><i
+                                                        class="fa-solid fa-user-tie"></i></b></h5>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h5 style="color: #61481C" class="mb-0"><b>Sponsor Terverifikasi</b>
+                                            </h5>
+                                            Setiap sponsor yang terlibat di verifikasi kemampuan dan sumber dananya.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <h5 style="color: #61481C" class="mb-0"><b><i
+                                                        class="fa-solid fa-gavel"></i></b></h5>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 ms-3">
+                                                <h5 style="color: #61481C" class="mb-0"><b>Pengacara
+                                                        Terverifikasi</b></h5>
+                                                Setiap pengacara wajib memiliki sertifikasi advokat yang dibutuhkan.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <h5 style="color: #61481C" class="mb-0"><b><i
+                                                        class="fa-solid fa-hand-holding-dollar"></i></b>
+                                            </h5>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 ms-3">
+                                                <h5 style="color: #61481C" class="mb-0"><b>Pembayaran Aman</b></h5>
+                                                Setiap transaksi yang terjadi menggunakan platform pembayaran
+                                                Sengketa Tanah.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <h5 style="color: #61481C" class="mb-0"><b><i
+                                                        class="fa-solid fa-chart-line"></i></b></h5>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 ms-3">
+                                                <h5 style="color: #61481C" class="mb-0"><b>Bantuan Analisa</b></h5>
+                                                Kami memberikan bantuan analisa terhadap permasalahan yang relevan
+                                                untuk diatasi.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <h5 style="color: #61481C" class="mb-0"><b><i
+                                                        class="fa-solid fa-handshake"></i></b></h5>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 ms-3">
+                                                <h5 style="color: #61481C" class="mb-0"><b>Kesepakatan
+                                                        Terlindungi</b></h5>
+                                                Semua kesepakatan yang terjadi dilindungi perjanjian hukum yang
+                                                ketat dan mengikat.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <h5 style="color: #61481C" class="mb-0"><b><i
+                                                        class="fa-solid fa-user-gear"></i></b></h5>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 ms-3">
+                                                <h5 style="color: #61481C" class="mb-0"><b>Bantuan Customer
+                                                        Support</b></h5>
+                                                Layanan CS 24 jam siap membantu anda.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ol>
+                            <ol id="chat"
+                                class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center"
+                                style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                                <h2>
+                                    <div class="fw-bold" style="color: #61481C"> Customer Service</div>
+                                </h2>
+                                <div class="chat-form"> <input type="text" class="form-control" placeholder="Nama">
+                                    <input type="text" class="form-control" placeholder="Email"> <textarea
+                                        class="form-control" placeholder="Masukan Pesan"></textarea> <button
+                                        class="btn btn-success btn-block">Kirim</button>
+                                </div>
+                            </ol>
+                            <ol id="tentang"
+                                class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center"
+                                style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <div class="row desktop mb-4">
+                                            <div class="col-md">
+                                                <div class="card-body text-center container" style="height:500px">
+                                                    <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}"
+                                                        style="width:300px; height:400px;object-fit:cover" alt=""
+                                                        srcset="" class="img-fluid">
+                                                    <div class="card rounded-0"
+                                                        style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                        <div class="card-body">
+                                                            <p class="card-text">"Presiden Joko Widodo menegaskan kepada
+                                                                Kementerian
+                                                                ATR/BPN untuk
+                                                                serius dalam memberantas mafia tanah"
+                                                                <br> -<b> Ir. H. Joko Widodo (Presiden RI)</b>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-title fw-bolder text-dark"></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md">
+                                                <div class="card-body text-center container" style="height:500px">
+                                                    <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}"
+                                                        style="width:300px; height:400px;object-fit:cover" alt=""
+                                                        srcset="" class="img-fluid">
+                                                    <div class="card rounded-0"
+                                                        style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                        <div class="card-body">
+                                                            <p class="card-text">"Sesuai perintah Bapak Presiden, semua
+                                                                kasus mafia
+                                                                tanah yang ada
+                                                                di
+                                                                Indonesia harus
+                                                                diselesaikan" <br> -<b> Hadi Tjahjanto (Mentri ATR/BPN)
+                                                                </b>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-title fw-bolder text-dark"></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md">
+                                                <div class="card-body text-center container" style="height:500px">
+                                                    <img src="{{asset('/uploads/kapolri.png')}}"
+                                                        style="width:300px; height:400px;object-fit:cover" alt=""
+                                                        srcset="" class="img-fluid">
+                                                    <div class="card rounded-0"
+                                                        style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                        <div class="card-body">
+                                                            <p class="card-text">"Penyidik tidak perlu ragu ragu dalam
+                                                                mengusut
+                                                                tuntas masalah mafia
+                                                                tanah, penyidik agar tindak tegas siapapun dalang dan
+                                                                bekingannya"
+                                                                <br> -<b> Listyo
+                                                                    Sigit Prabowo (Kapolri) </b>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-title fw-bolder text-dark"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="carouselExampleControlsPres" class="carousel slide mobile  mb-4">
+                                            <div class="carousel-inner  mb-5">
+                                                <div class="carousel-item active">
+                                                    <div class="card-body text-center container" style="height:505px">
+                                                        <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}"
+                                                            style="width:300px; height:400px;object-fit:cover" alt=""
+                                                            srcset="" class="img-fluid">
+                                                        <div class="card rounded-0"
+                                                            style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);z-index:10">
+                                                            <div class="card-body">
+                                                                <p class="card-text">"Presiden Joko Widodo menegaskan
+                                                                    kepada Kementerian ATR/BPN untuk serius dalam
+                                                                    memberantas mafia tanah" <br> -<b>
+                                                                        Ir. H. Joko Widodo (Presiden RI)</b>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="card-title fw-bolder text-dark"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="card-body text-center container" style="height:505px">
+                                                        <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}"
+                                                            style="width:300px; height:400px;object-fit:cover" alt=""
+                                                            srcset="" class="img-fluid">
+                                                        <div class="card rounded-0"
+                                                            style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                            <div class="card-body">
+                                                                <p class="card-text">"Sesuai perintah Bapak Presiden,
+                                                                    semua kasus
+                                                                    mafia tanah yang
+                                                                    ada
+                                                                    di Indonesia harus
+                                                                    diselesaikan"<br> -<b> Hadi Tjahjanto (Mentri
+                                                                        ATR/BPN) </b>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="card-title fw-bolder text-dark"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="card-body text-center container" style="height:505px">
+                                                        <img src="{{asset('/uploads/kapolri.png')}}"
+                                                            style="width:300px; height:400px;object-fit:cover" alt=""
+                                                            srcset="" class="img-fluid">
+                                                        <div class="card rounded-0"
+                                                            style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                            <div class="card-body">
+                                                                <p class="card-text">"Penyidik tidak perlu ragu ragu
+                                                                    dalam mengusut
+                                                                    tuntas masalah
+                                                                    mafia
+                                                                    tanah, penyidik agar tindak tegas siapapun dalang
+                                                                    dan
+                                                                    bekingannya" <br> -<b>
+                                                                        Listyo
+                                                                        Sigit Prabowo (Kapolri) </b>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="card-title fw-bolder text-dark"></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <style>
+                                    @media (min-width: 1400px) {
+                                        .container-lsa {
+                                            max-width: 1000px !important;
+                                        }
+                                    }
+                                </style>
+                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" class="mb-2" style="width: 75px"
+                                    alt="">
+                                <div class="container-lsa mx-auto mb-3">
+                                    <h2>
+                                        <div class="fw-bold" style="color: #61481C"> TENTANG KAMI</div>
+                                    </h2>
+                                    SENGKETA TANAH adalah platform digital dengan spesialisasi penanganan
+                                    masalah
+                                    sengketa tanah di seluruh wilayah Indonesia. Kami mempertemukan korban sengketa
+                                    tanah
+                                    atau korban
+                                    mafia
+                                    tanah dengan Sponsor, Kantor hukum, dan Pemerintah untuk menuntaskan masalah
+                                    persengketaan tanah
+                                    tersebut.
+                                    <h2>
+                                        <div class="fw-bold mt-5" style="color: #61481C"> VISI MISI</div>
+                                    </h2>
+                                    <div class="text-start">
+                                        <h5>VISI</h5>
+                                        Membantu Masyarakat dan Pemerintah Indonesia dalam penyelesaian Sengketa
+                                        Pertanahan, Konflik Pertanahan dan Perkara Pertanahan dengan membangun ekosistem
+                                        steakholder terkait, seperti Korban Sengketa, Sponsor, Pengacara dan
+                                        Pemerintahnya itu sendiri agar semua jenis permasalahan tanah lebih cepat
+                                        diselesaikan. Tujuan utama Platform Sengketa Tanah adalah membawa persoalan
+                                        tanah yang dulunya tabu menjadi lebih terbuka dengan pendekatan ecommerce yang
+                                        profit oriented.
+                                        <h5 class="mt-3">MISI</h5>
+                                        <ol style="padding-left: 1rem">
+                                            <li>Membantu masyarakat Indonesia menyelesaikan persolan sengketa
+                                                pertanahan, konflik pertanahan dan perkara pertanahan dengan menyediakan
+                                                bantuan akses pada sponsor, pengacara dan pemerintah.</li>
+                                            <li>Membantu Pemerintah Indonesia dalam hal ini Kementrian ATR/BPN untuk
+                                                menyelesaikan persolan sengketa pertanahan, konflik pertanahan dan
+                                                perkara pertanahan dengan menyediakan sortasi data persengketaan tanah
+                                                yang terjadi di masyarakat.</li>
+                                            <li>Mengangkat semua jenis persoalan tanah dengan multi komprehensif, mulai
+                                                dari dokumen pertanahan, analisa, pengecekan sampai kepada wawancara
+                                                mendalam pada korban dan pihak terkait yang disajikan dengan audio
+                                                visual untuk memudahkan steak holder mengambil keputusan.
+                                            <li>Menjadi platform khusus pertanahan yang dipercaya publik dengan komitmen
+                                                kuat penyelesaian kasus-kasus persengketaan tanah.</li>
+                                            <li>Mengintegrasikan semua jenis bidang seputar pertanahan dalam satu
+                                                platform seperti sengketa pertanahan, jual beli lahan, kerja sama lahan
+                                                sampai dengan pelelangan lahan.</li>
+                                            <li>Menyediakan berbagai tenaga ahli pertanahan dalam platform untuk
+                                                membantu desiminasi permasalahan dalam rangka menentukan tindakan yang
+                                                akan diambil, baik untuk korban, sponsor, pengacara maupun pemerintah.
+                                            </li>
+                                            <li>Menjadi platform yang terintegrasi dengan kementrian ATR/BPN</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </ol>
                         </div>
                     </div>
                 </div>
@@ -1455,6 +1976,11 @@
                                         <div class="card mx-auto">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
                                             </div>
                                             <div id="bidding1" class="carousel slide" data-bs-interval="false">
                                                 <div class="carousel-indicators">
@@ -1688,6 +2214,11 @@
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
                                             <div id="bidding2" class="carousel slide" data-bs-interval="false">
                                                 <div class="carousel-indicators">
                                                     <button type="button" data-bs-target="#bidding2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -1916,6 +2447,11 @@
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
                                             <div id="bidding3" class="carousel slide" data-bs-interval="false">
                                                 <div class="carousel-indicators">
                                                     <button type="button" data-bs-target="#bidding3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -2139,6 +2675,11 @@
                                         <div class="card mb-2 mx-auto">
                                             <div class="ribbon-pop">
                                                 <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
                                             </div>
                                             <div id="bidding4" class="carousel slide" data-bs-interval="false">
                                                 <div class="carousel-indicators">
@@ -2589,7 +3130,7 @@
                                                 <hr>
 
 
-                                                <div class="row g-0">
+                                                <div class="row g-0 align-items-center">
                                                     <div class="col text-center">
 
                                                         <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasPengacara" style="text-decoration:none">
@@ -2618,6 +3159,18 @@
                                                             </div>
                                                         </div>
 
+                                                    </div>
+                                                    <div class="col-1 text-center">
+                                                        <a id="fav-p1">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-p1">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                        <script>
+                                                            $("#fav-p1").click(function(){
+                                                                $("#fav-ch-p1").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
                                                     </div>
                                                     <div class="col text-center">
                                                         <a data-bs-toggle="modal" data-bs-target="#examplePengacara" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
@@ -2743,7 +3296,7 @@
                                                 <hr>
 
 
-                                                <div class="row g-0">
+                                                <div class="row g-0 align-items-center">
                                                     <div class="col text-center">
 
                                                         <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasPengacara" style="text-decoration:none">
@@ -2772,6 +3325,18 @@
                                                             </div>
                                                         </div>
 
+                                                    </div>
+                                                    <div class="col-1 text-center">
+                                                        <a id="fav-p2">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-p2">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                        <script>
+                                                            $("#fav-p2").click(function(){
+                                                                $("#fav-ch-p2").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
                                                     </div>
                                                     <div class="col text-center">
                                                         <a data-bs-toggle="modal" data-bs-target="#examplePengacara" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
@@ -2897,7 +3462,7 @@
                                                 <hr>
 
 
-                                                <div class="row g-0">
+                                                <div class="row g-0 align-items-center">
                                                     <div class="col text-center">
 
                                                         <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasPengacara" style="text-decoration:none">
@@ -2927,6 +3492,20 @@
                                                         </div>
 
                                                     </div>
+
+                                                    <div class="col-1 text-center">
+                                                        <a id="fav-p3">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-p3">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                        <script>
+                                                            $("#fav-p3").click(function(){
+                                                                $("#fav-ch-p3").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+                                                    </div>
+
                                                     <div class="col text-center">
                                                         <a data-bs-toggle="modal" data-bs-target="#examplePengacara" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
                                                             Bid</a>
@@ -3051,7 +3630,7 @@
                                                 <hr>
 
 
-                                                <div class="row g-0">
+                                                <div class="row g-0 align-items-center">
                                                     <div class="col text-center">
 
                                                         <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasPengacara" style="text-decoration:none">
@@ -3080,6 +3659,18 @@
                                                             </div>
                                                         </div>
 
+                                                    </div>
+                                                    <div class="col-1 text-center">
+                                                        <a id="fav-p4">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-p4">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                        <script>
+                                                            $("#fav-p4").click(function(){
+                                                                $("#fav-ch-p4").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
                                                     </div>
                                                     <div class="col text-center">
                                                         <a data-bs-toggle="modal" data-bs-target="#examplePengacara" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
@@ -3224,7 +3815,7 @@
                                                 <hr>
 
 
-                                                <div class="row g-0">
+                                                <div class="row g-0 align-items-center">
                                                     <div class="col text-center">
 
                                                         <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasPengacara" style="text-decoration:none">
@@ -3253,6 +3844,18 @@
                                                             </div>
                                                         </div>
 
+                                                    </div>
+                                                    <div class="col-1 text-center">
+                                                        <a id="fav-p5">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-p5">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                        <script>
+                                                            $("#fav-p5").click(function(){
+                                                                $("#fav-ch-p5").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
                                                     </div>
                                                     <div class="col text-center">
                                                         <a data-bs-toggle="modal" data-bs-target="#examplePengacara" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
@@ -3378,7 +3981,7 @@
                                                 <hr>
 
 
-                                                <div class="row g-0">
+                                                <div class="row g-0 align-items-center">
                                                     <div class="col text-center">
 
                                                         <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasPengacara" style="text-decoration:none">
@@ -3407,6 +4010,18 @@
                                                             </div>
                                                         </div>
 
+                                                    </div>
+                                                    <div class="col-1 text-center">
+                                                        <a id="fav-p6">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-p6">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                        <script>
+                                                            $("#fav-p6").click(function(){
+                                                                $("#fav-ch-p6").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
                                                     </div>
                                                     <div class="col text-center">
                                                         <a data-bs-toggle="modal" data-bs-target="#examplePengacara" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
@@ -3532,7 +4147,7 @@
                                                 <hr>
 
 
-                                                <div class="row g-0">
+                                                <div class="row g-0 align-items-center">
                                                     <div class="col text-center">
 
                                                         <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasPengacara" style="text-decoration:none">
@@ -3561,6 +4176,18 @@
                                                             </div>
                                                         </div>
 
+                                                    </div>
+                                                    <div class="col-1 text-center">
+                                                        <a id="fav-p7">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-p7">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                        <script>
+                                                            $("#fav-p7").click(function(){
+                                                                $("#fav-ch-p7").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
                                                     </div>
                                                     <div class="col text-center">
                                                         <a data-bs-toggle="modal" data-bs-target="#examplePengacara" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
@@ -3770,6 +4397,11 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
+                                        <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
                                         <div id="ksl2" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#ksl2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -3903,14 +4535,14 @@
 
 
                                             <div class="row g-0">
-                                                <div class="col text-center">
+                                                <div class="col text-start">
 
                                                     <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto text-center" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
@@ -3988,6 +4620,11 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
+                                        <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
                                         <div id="ksl10" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#ksl10" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -4122,14 +4759,14 @@
 
 
                                             <div class="row g-0">
-                                                <div class="col text-center">
+                                                <div class="col text-start">
 
                                                     <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto text-center" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
@@ -4207,6 +4844,11 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
+                                        <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
                                         <div id="ksl3" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#ksl3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -4341,14 +4983,14 @@
 
 
                                             <div class="row g-0">
-                                                <div class="col text-center">
+                                                <div class="col text-start">
 
                                                     <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto text-center" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
@@ -4426,6 +5068,11 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
+                                        <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
                                         <div id="ksl4" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#ksl4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -4559,14 +5206,14 @@
 
 
                                             <div class="row g-0">
-                                                <div class="col text-center">
+                                                <div class="col text-start">
 
                                                     <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto text-center" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
@@ -4644,6 +5291,11 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
+                                        <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
                                         <div id="ksl2" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#ksl2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -4777,14 +5429,14 @@
 
 
                                             <div class="row g-0">
-                                                <div class="col text-center">
+                                                <div class="col text-start">
 
                                                     <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto text-center" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
@@ -5051,6 +5703,11 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
+                                        <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
                                         <div id="jbl1" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -5174,14 +5831,14 @@
 
 
                                             <div class="row g-0">
-                                                <div class="col text-center">
+                                                <div class="col text-start">
 
                                                     <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
@@ -5258,6 +5915,11 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
+                                        <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
                                         <div id="jbl2" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -5381,14 +6043,14 @@
 
 
                                             <div class="row g-0">
-                                                <div class="col text-center">
+                                                <div class="col text-start">
 
                                                     <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
@@ -5471,6 +6133,11 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
+                                        <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
                                         <div id="jbl3" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -5595,14 +6262,14 @@
 
 
                                             <div class="row g-0">
-                                                <div class="col text-center">
+                                                <div class="col text-start">
 
                                                     <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
@@ -5684,6 +6351,11 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
+                                        <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
                                         <div id="jbl4" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -5808,7 +6480,7 @@
 
 
                                             <div class="row g-0">
-                                                <div class="col text-center">
+                                                <div class="col text-start">
 
 
                                                     <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
@@ -5816,7 +6488,7 @@
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
@@ -5899,6 +6571,11 @@
                                         <div class="ribbon-pop">
                                             <i class="fa-solid fa-star"></i>&nbsp;HOT
                                         </div>
+                                        <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
                                         <div id="jbl2" class="carousel slide" data-bs-interval="false">
                                             <div class="carousel-indicators">
                                                 <button type="button" data-bs-target="#jbl2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -6022,14 +6699,14 @@
 
 
                                             <div class="row g-0">
-                                                <div class="col text-center">
+                                                <div class="col text-start">
 
                                                     <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
@@ -6645,6 +7322,11 @@
                                     <div class="ribbon-pop">
                                         <i class="fa-solid fa-star"></i>&nbsp;HOT
                                     </div>
+                                    <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
                                     <div id="ll4" class="carousel slide" data-bs-interval="false">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#ll4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -6692,27 +7374,25 @@
                                                     <b>Nilai Limit :</b>
                                                 </td>
 
-                                                <td class="align-items-center" rowspan="2">
-                                                            
-                                                              
-                                                    <div class="row d-flex align-items-center mb-2">
-                                                        <div class="col-4 text-end">
-                                                            <a id="fav-c1">
-                                                                <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                                    <i class="fas fa-star"></i>
-                                                                </h5>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col">
-                                                            <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                                Ikut Lelang</button>
-                                                        </div>
+                                                <td rowspan="2">
+                                                    <div class="d-flex align-items-center">
+
+                                                        <a id="fav-c1 my-auto" style="margin-right: 10px">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                        <button class="btn float-end btn-warning text-white mb-0 my-auto w-100" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                            Ikut Lelang</button>
                                                     </div>
+
+                                                    
                                                     <script>
                                                         $("#fav-c1").click(function(){
                                                             $("#fav-ch-c1").toggleClass('fav-icon');
                                                         });
                                                     </script>
+                                                    
 
                                                 </td>
                                             </tr>
@@ -6813,14 +7493,14 @@
 
 
                                         <div class="row g-0">
-                                            <div class="col text-center">
+                                            <div class="col text-start">
 
                                                 <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
-                                                <div class="modal fade my-auto" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
@@ -6904,6 +7584,11 @@
                                     <div class="ribbon-pop">
                                         <i class="fa-solid fa-star"></i>&nbsp;HOT
                                     </div>
+                                    <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
                                     <div id="ll2" class="carousel slide" data-bs-interval="false">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#ll2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -6951,27 +7636,25 @@
                                                     <b>Nilai Limit :</b>
                                                 </td>
 
-                                                <td class="align-items-center" rowspan="2">
-                                                            
-                                                              
-                                                    <div class="row d-flex align-items-center mb-2">
-                                                        <div class="col-4 text-end">
-                                                            <a id="fav-c2">
-                                                                <h5 class="mb-0 text-fav-disable" id="fav-ch-c2">
-                                                                    <i class="fas fa-star"></i>
-                                                                </h5>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col">
-                                                            <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                                Ikut Lelang</button>
-                                                        </div>
+                                                <td rowspan="2">
+                                                    <div class="d-flex align-items-center">
+
+                                                        <a id="fav-c1 my-auto" style="margin-right: 10px">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                        <button class="btn float-end btn-warning text-white mb-0 my-auto w-100" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                            Ikut Lelang</button>
                                                     </div>
+
+                                                    
                                                     <script>
-                                                        $("#fav-c2").click(function(){
-                                                            $("#fav-ch-c2").toggleClass('fav-icon');
+                                                        $("#fav-c1").click(function(){
+                                                            $("#fav-ch-c1").toggleClass('fav-icon');
                                                         });
                                                     </script>
+                                                    
 
                                                 </td>
                                             </tr>
@@ -7072,14 +7755,14 @@
 
 
                                         <div class="row g-0">
-                                            <div class="col text-center">
+                                            <div class="col text-start">
 
                                                 <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
-                                                <div class="modal fade my-auto" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
@@ -7162,6 +7845,11 @@
                                     <div class="ribbon-pop">
                                         <i class="fa-solid fa-star"></i>&nbsp;HOT
                                     </div>
+                                    <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
                                     <div id="ll3" class="carousel slide" data-bs-interval="false">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#ll3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -7209,27 +7897,25 @@
                                                     <b>Nilai Limit :</b>
                                                 </td>
 
-                                                <td class="align-items-center" rowspan="2">
-                                                            
-                                                              
-                                                    <div class="row d-flex align-items-center mb-2">
-                                                        <div class="col-4 text-end">
-                                                            <a id="fav-c3">
-                                                                <h5 class="mb-0 text-fav-disable" id="fav-ch-c3">
-                                                                    <i class="fas fa-star"></i>
-                                                                </h5>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col">
-                                                            <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                                Ikut Lelang</button>
-                                                        </div>
+                                                <td rowspan="2">
+                                                    <div class="d-flex align-items-center">
+
+                                                        <a id="fav-c1 my-auto" style="margin-right: 10px">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                        <button class="btn float-end btn-warning text-white mb-0 my-auto w-100" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                            Ikut Lelang</button>
                                                     </div>
+
+                                                    
                                                     <script>
-                                                        $("#fav-c3").click(function(){
-                                                            $("#fav-ch-c3").toggleClass('fav-icon');
+                                                        $("#fav-c1").click(function(){
+                                                            $("#fav-ch-c1").toggleClass('fav-icon');
                                                         });
                                                     </script>
+                                                    
 
                                                 </td>
                                             </tr>
@@ -7329,14 +8015,14 @@
 
 
                                         <div class="row g-0">
-                                            <div class="col text-center">
+                                            <div class="col text-start">
 
                                                 <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
-                                                <div class="modal fade my-auto" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
@@ -7418,6 +8104,11 @@
                                     <div class="ribbon-pop">
                                         <i class="fa-solid fa-star"></i>&nbsp;HOT
                                     </div>
+                                    <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
                                     <div id="ll44" class="carousel slide" data-bs-interval="false">
                                         <div class="carousel-indicators">
                                             <button type="button" data-bs-target="#ll44" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -7465,27 +8156,25 @@
                                                     <b>Nilai Limit :</b>
                                                 </td>
 
-                                                <td class="align-items-center" rowspan="2">
-                                                            
-                                                              
-                                                    <div class="row d-flex align-items-center mb-2">
-                                                        <div class="col-4 text-end">
-                                                            <a id="fav-c4">
-                                                                <h5 class="mb-0 text-fav-disable" id="fav-ch-c4">
-                                                                    <i class="fas fa-star"></i>
-                                                                </h5>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col">
-                                                            <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                                Ikut Lelang</button>
-                                                        </div>
+                                                <td rowspan="2">
+                                                    <div class="d-flex align-items-center">
+
+                                                        <a id="fav-c1 my-auto" style="margin-right: 10px">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                        <button class="btn float-end btn-warning text-white mb-0 my-auto w-100" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                            Ikut Lelang</button>
                                                     </div>
+
+                                                    
                                                     <script>
-                                                        $("#fav-c4").click(function(){
-                                                            $("#fav-ch-c4").toggleClass('fav-icon');
+                                                        $("#fav-c1").click(function(){
+                                                            $("#fav-ch-c1").toggleClass('fav-icon');
                                                         });
                                                     </script>
+                                                    
 
                                                 </td>
                                             </tr>
@@ -7584,14 +8273,14 @@
 
 
                                         <div class="row g-0">
-                                            <div class="col text-center">
+                                            <div class="col text-start">
 
                                                 <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
-                                                <div class="modal fade my-auto" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
@@ -8675,7 +9364,7 @@
 
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0"
         nonce="Ee2Zutm6"></script>
-    <div class="row mt-4" style="margin-bottom: 80px">
+    <div class="row mt-4 puter">
         <div class="card-body text-white text-center" style="background: #61481C">
             <p></p>
             <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">

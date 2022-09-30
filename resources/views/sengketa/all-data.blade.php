@@ -470,8 +470,6 @@
         @media (max-width: 1199.98px) {
             .mobile-scroll {
                 overflow-x: scroll;
-
-
             }
 
             .mobile-scroll::-webkit-scrollbar {
