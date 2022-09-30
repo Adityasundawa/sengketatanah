@@ -1840,6 +1840,8 @@
                                         </div>
                                     </div>
 
+                                    {{-- ubah titik --}}
+
                                     <div class="col-12 custom">
                                         <div class="card mb-2 mx-auto">
                                             <div class="ribbon-pop">
