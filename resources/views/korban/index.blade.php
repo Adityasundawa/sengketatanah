@@ -124,8 +124,6 @@ $project_di_setujui = KorbanUser::where([
                         <div class="d-flex align-items-center">
                             <div>
                                 <b>PROJECT</b><b class="text-danger"> SP-00{{$item['id']}}</b>
-
-
                             </div>
 
                             <div class="dropdown options ms-auto">
@@ -232,9 +230,8 @@ $project_di_setujui = KorbanUser::where([
                                     <td></td>
                                     <td>:</td>
                                     <?php
-                                    $angka = $item['jumlah_dana'];
-$format_angka = number_format($angka, "2", ",", ".");
- ?>
+                                    $angka = $item['jumlah_dana']; 
+                                    $format_angka = number_format($angka, "2", ",", "."); ?>
                                     <td>&nbsp; Rp.{{$format_angka}}</td>
                                 </tr>
 
