@@ -59,6 +59,7 @@ Route::get('register-jual-beli-lahan', [PublicController::class, 'registerJualBe
 Route::get('register-kerjasama', [PublicController::class, 'registerKerjasama'])->name('registerKerjasama');
 Route::get('register-lelang-lahan', [PublicController::class, 'registerLelangLahan'])->name('registerLelangLahan');
 
+Route::post('email-subjek', [EmailController::class, 'sendEmailSubject'])->name('sendEmailSubject');
 
 Route::get('tentang-pemerintah', function () {
    return view('sengketa.tentang-pemerintah');
