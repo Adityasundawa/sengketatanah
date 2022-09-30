@@ -493,6 +493,21 @@
             }
 
         }
+
+        .fav-icon {
+            color: #ffc107 !important
+        }
+
+        .text-fav-disable {
+            color: rgb(199, 199, 199)
+        }
+
+        .share-icon {
+            position: absolute;
+            z-index: 999;
+            right: 0.5rem;
+            top: 0.5rem;
+        }
     </style>
 </head>
 
@@ -1140,8 +1155,42 @@
                                                     </button>
                                                 </div>
                                             </div>
+                                            <table class="mb-2 mt-2" style="width:100%">
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <h5>
+                                                            <b class="text-primary fs-4">
+                                                                Fee : 50%
+                                                            </b>
+                                                        </h5>
+                                                    </td>
+                                                    <td class="align-items-center">
 
 
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-{{$bs['id']}}">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-{{$bs['id']}}">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-primary mb-0" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-<?= $bs['id'] ?>").click(function() {
+                                                                $("#fav-ch-<?= $bs['id'] ?>").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <hr>
 
                                             <table class="mt-3">
                                                 <tr>

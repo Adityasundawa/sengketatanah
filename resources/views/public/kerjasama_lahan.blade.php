@@ -497,6 +497,14 @@
         .scroll-simple::-webkit-scrollbar-thumb:active {
             background: rgba(0, 0, 0, .9);
         }
+
+        .fav-icon {
+            color: #ffc107 !important
+        }
+
+        .text-fav-disable {
+            color: rgb(199, 199, 199)
+        }
     </style>
 
 </head>
@@ -1035,6 +1043,42 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <table class="mb-2 mt-2" style="width:100%">
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <h5>
+                                                            <b class="text-danger fs-4">
+                                                                Kerja Sama
+                                                            </b>
+                                                        </h5>
+                                                    </td>
+                                                    <td class="align-items-center">
+
+
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-{{$bs['id']}}">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-{{$bs['id']}}">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-<?= $bs['id'] ?>").click(function() {
+                                                                $("#fav-ch-<?= $bs['id'] ?>").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <hr>
 
                                             <table class="mt-3">
 
@@ -1085,25 +1129,26 @@
                                             <hr>
 
 
-                                            <div class="row g-0">
-                                                <div class="col text-center">
 
-                                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                            <div class="row g-0">
+                                                <div class="col text-start">
+
+                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
                                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                                     </a>
 
 
-                                                    <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade my-auto text-center" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered">
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
                                                                     <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus masukkan akun sebelum melihat
-                                                                    berkas.
+                                                                    Anda harus memiliki akun sebelum melihat
+                                                                    detail.
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -1115,10 +1160,7 @@
                                                     </div>
 
                                                 </div>
-                                                <div class="col text-center">
-                                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                        Lihat Video</span>
-                                                </div>
+
                                             </div>
 
 
@@ -1139,9 +1181,9 @@
 
                                                     <div class="d-grid gap-2 ">
 
-                                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                        <!-- <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             BID
-                                                        </button>
+                                                        </button> -->
 
 
                                                         <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1382,6 +1424,43 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <table class="mb-2 mt-2" style="width:100%">
+                                            <tr>
+                                                <td class="text-start">
+                                                    <h5>
+                                                        <b class="text-danger fs-4">
+                                                            Kerja Sama
+                                                        </b>
+                                                    </h5>
+                                                </td>
+                                                <td class="align-items-center">
+
+
+                                                    <div class="row d-flex  align-items-center mb-2">
+                                                        <div class="col text-end">
+                                                            <a id="fav-{{$bs['id']}}">
+                                                                <h5 class="mb-0 text-fav-disable" id="fav-ch-{{$bs['id']}}">
+                                                                    <i class="fas fa-star"></i>
+                                                                </h5>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        $("#fav-<?= $bs['id'] ?>").click(function() {
+                                                            $("#fav-ch-<?= $bs['id'] ?>").toggleClass('fav-icon');
+                                                        });
+                                                    </script>
+
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <hr>
+
 
                                         <table class="mt-3">
 
@@ -1432,25 +1511,26 @@
                                         <hr>
 
 
-                                        <div class="row g-0">
-                                            <div class="col text-center">
 
-                                                <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                        <div class="row g-0">
+                                            <div class="col text-start">
+
+                                                <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
                                                     <i class="fa-solid fa-eye"></i> Lihat Detail
                                                 </a>
 
 
-                                                <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade my-auto text-center" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header p-0">
                                                                 <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                 </h1>
                                                             </div>
                                                             <div class="modal-body">
-                                                                Anda harus masukkan akun sebelum melihat
-                                                                berkas.
+                                                                Anda harus memiliki akun sebelum melihat
+                                                                detail.
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -1462,12 +1542,8 @@
                                                 </div>
 
                                             </div>
-                                            <div class="col text-center">
-                                                <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                    Lihat Video</span>
-                                            </div>
-                                        </div>
 
+                                        </div>
 
                                         <form action="{{url('/')}}/bid-sengketa/podcast" class="form-sengketa{{$bs['id']}}" method="get">
                                             <input type="hidden" name="owner" value="{{$bs['owner']}}">
@@ -1486,9 +1562,9 @@
 
                                                 <div class="d-grid gap-2 ">
 
-                                                    <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                    <!-- <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                         BID
-                                                    </button>
+                                                    </button> -->
 
 
                                                     <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1732,6 +1808,43 @@
                                     </div>
                                 </div>
                             </div>
+                            <table class="mb-2 mt-2" style="width:100%">
+                                <tr>
+                                    <td class="text-start">
+                                        <h5>
+                                            <b class="text-danger fs-4">
+                                                Kerja Sama
+                                            </b>
+                                        </h5>
+                                    </td>
+                                    <td class="align-items-center">
+
+
+                                        <div class="row d-flex  align-items-center mb-2">
+                                            <div class="col text-end">
+                                                <a id="fav-{{$bs['id']}}">
+                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-{{$bs['id']}}">
+                                                        <i class="fas fa-star"></i>
+                                                    </h5>
+                                                </a>
+                                            </div>
+                                            <div class="col">
+                                                <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                            </div>
+                                        </div>
+                                        <script>
+                                            $("#fav-<?= $bs['id'] ?>").click(function() {
+                                                $("#fav-ch-<?= $bs['id'] ?>").toggleClass('fav-icon');
+                                            });
+                                        </script>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <hr>
+
 
                             <table class="mt-3">
 
@@ -1782,25 +1895,26 @@
                             <hr>
 
 
-                            <div class="row g-0">
-                                <div class="col text-center">
 
-                                    <a href="#" class="  mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
+                            <div class="row g-0">
+                                <div class="col text-start">
+
+                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
                                         <i class="fa-solid fa-eye"></i> Lihat Detail
                                     </a>
 
 
-                                    <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal fade my-auto text-center" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered">
                                             <div class="modal-content">
                                                 <div class="modal-header p-0">
                                                     <h1 class="modal-title mx-auto text-danger display-1">
-                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                     </h1>
                                                 </div>
                                                 <div class="modal-body">
-                                                    Anda harus masukkan akun sebelum melihat
-                                                    berkas.
+                                                    Anda harus memiliki akun sebelum melihat
+                                                    detail.
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -1812,10 +1926,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col text-center">
-                                    <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                        Lihat Video</span>
-                                </div>
+
                             </div>
 
 
@@ -1836,9 +1947,9 @@
 
                                     <div class="d-grid gap-2 ">
 
-                                        <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                        <!-- <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                             BID
-                                        </button>
+                                        </button> -->
 
 
                                         <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
