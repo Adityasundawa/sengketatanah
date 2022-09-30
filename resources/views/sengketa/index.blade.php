@@ -6465,7 +6465,7 @@
                                                                 </h1>
                                                             </div>
                                                             <div class="modal-body">
-                                                                Anda harus masukkan akun peserta lelang sebelum melihat
+                                                                Anda harus memiliki akun peserta lelang sebelum melihat
                                                                 detail.
                                                             </div>
                                                             <div class="modal-footer">
@@ -6949,7 +6949,7 @@
                                                                 </h1>
                                                             </div>
                                                             <div class="modal-body">
-                                                                Anda harus masukkan akun peserta lelang sebelum melihat
+                                                                Anda harus memiliki akun peserta lelang sebelum melihat
                                                                 detail.
                                                             </div>
                                                             <div class="modal-footer">
@@ -7188,7 +7188,7 @@
                                                                 </h1>
                                                             </div>
                                                             <div class="modal-body">
-                                                                Anda harus masukkan akun peserta lelang sebelum melihat
+                                                                Anda harus memiliki akun peserta lelang sebelum melihat
                                                                 detail.
                                                             </div>
                                                             <div class="modal-footer">
