@@ -1492,10 +1492,21 @@
 
 
                                             <div class="card-body">
-
-
-
-
+                                                <table class="mb-2">
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-primary">
+                                                                    Fee : 50%
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                        <td class="align-items-center" rowspan="2">
+                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
                                                 <table>
                                                     <tbody>
                                                         <tr>
@@ -1557,7 +1568,7 @@
                                                 <div class="row g-2 align-items-center">
                                                     <div class="col text-center">
 
-                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none; font-size: 12px;">
+                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
                                                             <i class="fa-solid fa-eye"></i> Lihat Berkas
                                                         </a>
 
@@ -1571,7 +1582,8 @@
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus memiliki akun sponsor sebelum melihat
+                                                                        Anda harus memiliki akun sponsor sebelum
+                                                                        melihat
                                                                         berkas.
                                                                     </div>
                                                                     <div class="modal-footer">
@@ -1584,13 +1596,8 @@
                                                         </div>
 
                                                     </div>
-                                                    <div class="col-2 text-center">
-                                                        <button type="button" class="text-center h-100 btn btn-dark mb-0" style="border-radius: 50%; width: 50px; height: 50px !important; font-size: 14px" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                            BID
-                                                        </button>
-                                                    </div>
                                                     <div class="col text-center">
-                                                        <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-md btn-success rounded-5" style="cursor:pointer; font-size: 11px;"><i class="fa-solid fa-play text-white"></i>
+                                                        <span onclick="return document.querySelector('form.form-sengketa2').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
                                                             Lihat Podcast</span>
                                                     </div>
                                                 </div>
@@ -1698,6 +1705,21 @@
 
                                             <div class="card-body">
 
+                                                <table class="mb-2">
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-primary">
+                                                                    Fee : 50%
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                        <td class="align-items-center" rowspan="2">
+                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
                                                 <table>
                                                     <tbody>
                                                         <tr>
@@ -1810,10 +1832,6 @@
 
                                                         <div class="d-grid gap-2 ">
 
-                                                            <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                                BID
-                                                            </button>
-
 
                                                             <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                 <div class="modal-dialog modal-dialog-centered">
@@ -1894,6 +1912,21 @@
                                             </div>
 
                                             <div class="card-body">
+                                                <table class="mb-2">
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-primary">
+                                                                    Fee : 50%
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                        <td class="align-items-center" rowspan="2">
+                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
                                                 <table>
                                                     <tbody>
                                                         <tr>
@@ -2005,10 +2038,6 @@
                                                     <div class="col-4">
 
                                                         <div class="d-grid gap-2 ">
-                                                            <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                                BID
-                                                            </button>
-
 
                                                             <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                 <div class="modal-dialog modal-dialog-centered">
@@ -2088,6 +2117,21 @@
                                             </div>
 
                                             <div class="card-body">
+                                                <table class="mb-2">
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-primary">
+                                                                    Fee : 50%
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                        <td class="align-items-center" rowspan="2">
+                                                            <button class="btn float-end btn-primary" data-bs-toggle="modal" data-bs-target="#exampleC">Ikut Lelang</button>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
                                                 <table>
                                                     <tbody>
                                                         <tr>
@@ -2199,10 +2243,6 @@
                                                     <div class="col-4">
 
                                                         <div class="d-grid gap-2 ">
-                                                            <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                                BID
-                                                            </button>
-
 
                                                             <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                 <div class="modal-dialog modal-dialog-centered">
