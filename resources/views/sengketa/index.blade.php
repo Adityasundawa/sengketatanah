@@ -1554,7 +1554,7 @@
                                                 <hr>
 
 
-                                                <div class="row g-0">
+                                                <div class="row g-2">
                                                     <div class="col text-center">
 
                                                         <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
@@ -1584,8 +1584,8 @@
                                                         </div>
 
                                                     </div>
-                                                    <div class="col text-center">
-                                                        <button type="button" class="text-center rounded-5 btn  btn-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                    <div class="col-3 text-center">
+                                                        <button type="button" class="text-center rounded-5 w-100 h-100 btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             BID
                                                         </button>
                                                     </div>
