@@ -690,11 +690,11 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <a href="{{url('')}}/join">
-                            <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="d-block mx-auto" style="width: 95%" alt="...">
+                            <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="d-block mx-auto gambar-banner" style="width: 50%" alt="...">
                         </a>
                     </div>
                     <div class="carousel-item">
-                      <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" class="d-block mx-auto" style="width: 95%" alt="...">
+                      <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" class="d-block mx-auto gambar-banner" style="width: 50%" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev desktop" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -707,7 +707,7 @@
                 </button>
             </div>
 
-            {{-- <div class="col-md text-center my-auto">
+            {{-- <div class="col-md text-center my-auto"> --}}
                 <style>
                     @media (max-width: 991.98px)) { 
                         .gambar-banner{
@@ -719,7 +719,7 @@
                             width: 90%
                         }
                      }
-                </style> --}}
+                </style>
 
                 
 
@@ -1274,7 +1274,36 @@
         </div>
     </div>
 
-    <div class="container mt-4">
+    <div class="container">
+        <style>
+            .search-bar {
+                position: relative;
+                top: -23px;
+            }
+        </style>
+
+        <div class="card border-0 search-bar desktop">
+            <div class="input-group">
+                <div class="input-group-prepend my-auto">
+                    <span class="px-3">
+                        <i class="fa fa-search"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
+            </div>
+        </div>
+
+        <div class="card border-0 mt-3 mb-3 mobile">
+            <div class="input-group">
+                <div class="input-group-prepend my-auto">
+                    <span class="px-3">
+                        <i class="fa fa-search"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
+            </div>
+        </div>
+    
 
         <div class="row justify-content-center mb-4">
 
