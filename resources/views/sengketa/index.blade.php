@@ -36,10 +36,11 @@
             right: 0;
         }
 
-        .aboute-bottom svg{
+        .aboute-bottom svg {
             opacity: 75%;
         }
-        .aboute-bottom h6{
+
+        .aboute-bottom h6 {
             opacity: 75%;
         }
 
@@ -628,13 +629,20 @@
             top: 0.5rem;
         }
 
-        @media (max-width: 991.98px)) { 
-            .gambar-banner{
+        @media (max-width: 1199.98px)) {
+            .gambar-banner {
+                width: 80%
+            }
+        }
+
+        @media (max-width: 991.98px)) {
+            .gambar-banner {
                 width: 75%
             }
         }
-        @media (max-width: 575.98px) { 
-            .gambar-banner{
+
+        @media (max-width: 575.98px) {
+            .gambar-banner {
                 width: 90%
             }
         }
@@ -693,7 +701,7 @@
                 </a>
             </div>
             <div class="carousel-item">
-              <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" class="d-block mx-auto" style="width: 95%" alt="...">
+                <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" class="d-block mx-auto" style="width: 95%" alt="...">
             </div>
         </div>
     </div>
@@ -703,47 +711,47 @@
             {{-- <div class="col-md-12 text-center mt-3">
                 <div class="mobile">
                     <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 100px" alt="" srcset="" class="img-fluid">
-                </div>
-                <div class="desktop-2">
-                    <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 150px" alt="" srcset="" class="img-fluid">
-                </div>
-            </div> --}}
+        </div>
+        <div class="desktop-2">
+            <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 150px" alt="" srcset="" class="img-fluid">
+        </div>
+    </div> --}}
 
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="{{url('')}}/join">
-                            <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="d-block mx-auto gambar-banner" style="width: 50%" alt="...">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                      <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" class="d-block mx-auto gambar-banner" style="width: 50%" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev desktop" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next desktop" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="{{url('')}}/join">
+                    <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="d-block mx-auto gambar-banner" style="width: 90%" alt="...">
+                </a>
             </div>
-
-            {{-- <div class="col-md text-center my-auto"> --}}
-
-                
-
-                {{-- <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="gambar-banner" width="50%" alt="">
-                <h1>Solusi Untuk Anda</h1>
-                <h3>Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
-                    pemerintah dalam satu platform.</h3>
-
-                <a class="btn rounded-5 mt-3 text-white" style="background: #BF9742" href="{{url('')}}/join">Bergabung
-                    Sekarang</a> --}}
-
+            <div class="carousel-item">
+                <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" class="d-block mx-auto gambar-banner" style="width: 90%" alt="...">
             </div>
         </div>
+        <button class="carousel-control-prev desktop" type="button" style="left: -5%" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next desktop" type="button" style="right: -5%" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    {{-- <div class="col-md text-center my-auto"> --}}
+
+
+
+    {{-- <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="gambar-banner" width="50%" alt="">
+    <h1>Solusi Untuk Anda</h1>
+    <h3>Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
+        pemerintah dalam satu platform.</h3>
+
+    <a class="btn rounded-5 mt-3 text-white" style="background: #BF9742" href="{{url('')}}/join">Bergabung
+        Sekarang</a> --}}
+
+    </div>
+    </div>
 
     </div>
 
@@ -1292,7 +1300,7 @@
                     </span>
                 </div>
                 <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
-                <button class="btn h-100 btn-primary mb-0">Search</button>
+                <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
             </div>
         </div>
 
@@ -1306,7 +1314,7 @@
                 <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
             </div>
         </div>
-    
+
 
         <div class="row justify-content-center mb-4">
 
@@ -8953,21 +8961,58 @@
 
             <div class="modal fade" id="image-modal" tabindex="-1" aria-labelledby="image-modalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content border-0" style="background:transparent">
+                    <div class="modal-content border-0">
                         <div class="modal-body">
-                            <img src="" style="width:100%;height:auto;" class="rounded-3" />
+                            <div class="row">
+                                <div class="col-12">
+                                    <img src="{{asset('')}}images/lahan4.jpeg" style="width:100%;height:auto;" class="rounded-3 foto-utama" />
+                                </div>
+                                <div class="col-12">
+                                    <div class="row mt-2 justify-content-center">
+
+                                        <div class="col-lg mobile-scroll align-center" id='gambar-lain-modal' style="white-space:nowrap;flex-wrap:nowarp;display:flex">
+                                            <div class="container-gambar ms-1 me-1" style='display: inline-block;flex: 0 0 auto'>
+                                                <img src="{{asset('')}}images/lahan4.jpeg" alt="" srcset="" class="rounded-1 img-fluid " style="width:150px;height:100px;object-fit:cover;"> <br>
+                                            </div>
+                                            <div class="container-gamba ms-1 me-1" style='display: inline-block;flex: 0 0 auto'>
+                                                <img src="{{asset('')}}images/lahan4.jpeg" alt="" srcset="" class="rounded-1 img-fluid " style="width:150px;height:100px;object-fit:cover;"> <br>
+                                            </div>
+                                            <div class="container-gambar ms-1 me-1" style='display: inline-block;flex: 0 0 auto'>
+                                                <img src="{{asset('')}}images/lahan4.jpeg" alt="" srcset="" class="rounded-1 img-fluid " style="width:150px;height:100px;object-fit:cover;"> <br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-
             <script>
                 $('img.image-kunam').on('click', function() {
                     let dataSrc = $(this).data('src');
-                    let image = $($('#image-modal').find('img'))
+                    let dataImgLain = $($($(this).parent()).parent()).find('img')
+                    let image = $($('#image-modal').find('img.foto-utama'))
                     image.attr('src', dataSrc);
+                    let arrayGambar = [];
+                    dataImgLain.each(function(inz,
+                        lets) {
+                        if (dataSrc == $(lets).attr('src')) {
+                            return
+                        }
+                        arrayGambar.push(inz);
+                    });
+                    $('div#gambar-lain-modal').find('img').each(function(ind, el) {
+                        $(el).attr('src', $(dataImgLain[arrayGambar[ind]]).attr('src'))
+                    });
+                });
+                $('div#gambar-lain-modal').find('img').on('click', function() {
+                    const srcDataIni = $(this).attr('src');
+                    const srcDataUtama = $($('#image-modal').find('img.foto-utama')).attr('src')
+                    $(this).attr('src', srcDataUtama);
+                    $($('#image-modal').find('img.foto-utama')).attr('src', srcDataIni)
                 });
             </script>
 
