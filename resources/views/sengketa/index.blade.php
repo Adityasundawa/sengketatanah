@@ -674,13 +674,14 @@
                     <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 150px" alt="" srcset="" class="img-fluid">
                 </div>
             </div>
-            <div class="col-md text-center my-auto mt-3">
-                <h1>Solusi Untuk Anda</h1>
+            <div class="col-md text-center my-auto mt-4">
+                <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" width="650px" alt="">
+                {{-- <h1>Solusi Untuk Anda</h1>
                 <h3>Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
                     pemerintah dalam satu platform.</h3>
 
                 <a class="btn rounded-5 mt-3 text-white" style="background: #BF9742" href="{{url('')}}/join">Bergabung
-                    Sekarang</a>
+                    Sekarang</a> --}}
 
             </div>
         </div>
@@ -1552,7 +1553,7 @@
 
                 <div class="card mb-3 border-0 shadow-sm desktop" style="margin-top:-10px">
                     <div class="card-body pb-1 pt-2">
-                        <div class="row">
+                        <div class="row align-items-center">
 
                             <div class="col-2 text-center mb-2">
                                 <button class="btn btn-sm" id="btn-panduan" type="button">
@@ -1635,8 +1636,8 @@
                                 </script>
                             </div>
                             <div class="col-4 text-center mb-2">
-                                <div class="card mb-3">
-                                    <div class="card-header bg-brown text-white">
+                                <div class="card ">
+                                    <div class="card-header bg-danger text-white">
                                         <center>
                                             <h5 class="blink">Pre Launching 1 Desember 2022</h5>
                                             <h5 class="blink">Pukul 09.00 WIB </h5>
