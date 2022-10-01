@@ -629,14 +629,15 @@
             top: 0.5rem;
         }
 
-        @media (max-width: 1199.98px)) {
-            .gambar-banner {
+        @media (max-width: 1199.98px) { 
+            .gambar-banner{
                 width: 80%
             }
         }
 
-        @media (max-width: 991.98px)) {
-            .gambar-banner {
+
+        @media (max-width: 991.98px) { 
+            .gambar-banner{
                 width: 75%
             }
         }
@@ -716,7 +717,6 @@
             <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 150px" alt="" srcset="" class="img-fluid">
         </div>
     </div> --}}
-
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
