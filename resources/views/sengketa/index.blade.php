@@ -1497,11 +1497,11 @@
 
 
                 <div class="card mb-3 mobile">
-                    <div class="card-header bg-danger text-white">
+                    <div class="card-header bg-brown text-white">
                         <center>
-                            <h6 class="blink">Pre Launching 1 Desember 2022</h6>
-                            <h6 class="blink">Pukul 09.00 WIB </h6>
-                            <h6 class="blink">Nantikan Kehadiran Kami</h6>
+                            <h5 class="blink">Pre Launching 1 Desember 2022</h5>
+                            <h5 class="blink">Pukul 09.00 WIB </h5>
+                            <h5 class="blink">Nantikan Kehadiran Kami</h5>
                         </center>
 
                     </div>
@@ -1637,11 +1637,11 @@
                             </div>
                             <div class="col-4 text-center mb-2">
                                 <div class="card mb-3">
-                                    <div class="card-header bg-danger text-white">
+                                    <div class="card-header bg-brown text-white">
                                         <center>
-                                            <h6 class="blink">Pre Launching 1 Desember 2022</h6>
-                                            <h6 class="blink">Pukul 09.00 WIB </h6>
-                                            <h6 class="blink">Nantikan Kehadiran Kami</h6>
+                                            <h5 class="blink">Pre Launching 1 Desember 2022</h5>
+                                            <h5 class="blink">Pukul 09.00 WIB </h5>
+                                            <h5 class="blink">Nantikan Kehadiran Kami</h5>
                                         </center>
 
                                     </div>
