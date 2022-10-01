@@ -629,15 +629,15 @@
             top: 0.5rem;
         }
 
-        @media (max-width: 1199.98px) { 
-            .gambar-banner{
+        @media (max-width: 1199.98px) {
+            .gambar-banner {
                 width: 80%
             }
         }
 
 
-        @media (max-width: 991.98px) { 
-            .gambar-banner{
+        @media (max-width: 991.98px) {
+            .gambar-banner {
                 width: 75%
             }
         }
