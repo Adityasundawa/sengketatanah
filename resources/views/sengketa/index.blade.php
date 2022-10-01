@@ -665,15 +665,15 @@
 
     <div class="text-white rounded-0 jumbotron">
         <div class="row">
-            <div class="col-md-12 text-center mt-3">
+            {{-- <div class="col-md-12 text-center mt-3">
                 <div class="mobile">
                     <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 100px" alt="" srcset="" class="img-fluid">
                 </div>
                 <div class="desktop-2">
                     <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 150px" alt="" srcset="" class="img-fluid">
                 </div>
-            </div>
-            <div class="col-md text-center my-auto mt-4">
+            </div> --}}
+            <div class="col-md text-center my-auto">
                 <style>
                     @media (max-width: 991.98px)) { 
                         .gambar-banner{
