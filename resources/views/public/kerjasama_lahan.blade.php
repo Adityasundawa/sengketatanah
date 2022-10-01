@@ -17,12 +17,31 @@
 
 
     <style>
-        html,
         body {
             width: 100%;
             margin: 0px;
             padding: 0px;
             overflow-x: hidden;
+        }
+
+        .blink {
+            animation: blink-animation 1s steps(5, start) infinite;
+            -webkit-animation: blink-animation 1s steps(5, start) infinite;
+        }
+
+        .aboute-bottom {
+            position: fixed;
+            bottom: 0;
+            z-index: 1030;
+            left: 0;
+            right: 0;
+        }
+
+        .aboute-bottom svg{
+            opacity: 75%;
+        }
+        .aboute-bottom h6{
+            opacity: 75%;
         }
 
         .line-1 {
@@ -522,6 +541,534 @@
 
 
 
+    <div class="card aboute-bottom rounded-0 mobile">
+        <div class="card border-0 shadow-sm" style="margin-top:-10px">
+            <div class="card-body p-0">
+                <div class="row g-0">
+                    <div class="col text-center">
+
+                        <a class="btn btn-sm mb-0 p-0 w-100" href="{{url('')}}/">
+                            <div class="card rounded-0">
+                                <div class="card-body p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="256" cx="256" cy="256" fill="#ffffff" shape="circle"></circle>
+                                        <g transform="matrix(0.7,0,0,0.7,76.79200973510743,76.80000000000001)">
+                                            <path d="m498.195312 222.695312c-.011718-.011718-.023437-.023437-.035156-.035156l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.8125-33.328126-13.8125-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.140626.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.445312 13.238281 31.277344 13.746093.480468.046876.964843.070313 1.453124.070313h8.324219v153.699219c0 30.414062 24.746094 55.160156 55.167969 55.160156h81.710938c8.28125 0 15-6.714844 15-15v-120.5c0-13.878906 11.289062-25.167969 25.167968-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.285156 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.160156v-153.699219h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.808594 18.359375-18.371093 18.367187-48.253906.023437-66.636719zm0 0" fill="#61481c" data-original="#000000" class=""></path>
+                                        </g>
+                                    </svg>
+                                    <h6 class="mt-0 mb-0" style="font-size: 12px">HOME</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col text-center">
+
+                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-panduan-m" type="button">
+                            <div class="card rounded-0">
+                                <div class="card-body p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 296.999 296.999" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="148.4995" cx="148.4995" cy="148.4995" fill="#ffffff" shape="circle">
+                                        </circle>
+                                        <g transform="matrix(0.7,0,0,0.7,44.54984436035157,44.54998970031738)">
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                    <g>
+                                                        <path d="M45.432,35.049c-0.008,0-0.017,0-0.025,0c-2.809,0-5.451,1.095-7.446,3.085c-2.017,2.012-3.128,4.691-3.128,7.543     v159.365c0,5.844,4.773,10.61,10.641,10.625c24.738,0.059,66.184,5.215,94.776,35.136V84.023c0-1.981-0.506-3.842-1.461-5.382     C115.322,40.849,70.226,35.107,45.432,35.049z" fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path d="M262.167,205.042V45.676c0-2.852-1.111-5.531-3.128-7.543c-1.995-1.99-4.639-3.085-7.445-3.085c-0.009,0-0.018,0-0.026,0     c-24.793,0.059-69.889,5.801-93.357,43.593c-0.955,1.54-1.46,3.401-1.46,5.382v166.779     c28.592-29.921,70.038-35.077,94.776-35.136C257.394,215.651,262.167,210.885,262.167,205.042z" fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path d="M286.373,71.801h-7.706v133.241c0,14.921-12.157,27.088-27.101,27.125c-20.983,0.05-55.581,4.153-80.084,27.344     c42.378-10.376,87.052-3.631,112.512,2.171c3.179,0.724,6.464-0.024,9.011-2.054c2.538-2.025,3.994-5.052,3.994-8.301V82.427     C297,76.568,292.232,71.801,286.373,71.801z" fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path d="M18.332,205.042V71.801h-7.706C4.768,71.801,0,76.568,0,82.427v168.897c0,3.25,1.456,6.276,3.994,8.301     c2.545,2.029,5.827,2.78,9.011,2.054c25.46-5.803,70.135-12.547,112.511-2.171c-24.502-23.19-59.1-27.292-80.083-27.342     C30.49,232.13,18.332,219.963,18.332,205.042z" fill="#61481c" data-original="#000000" class=""></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <h6 class="mt-0 mb-0" style="font-size: 12px">PANDUAN</h6>
+                                </div>
+                            </div>
+                        </button>
+
+                        <script>
+                            $("#btn-panduan-m").click(function() {
+                                $("#panduan-m").toggleClass('show');
+                                $("#jaminan-m").removeClass('show');
+                                $("#chat-m").removeClass('show');
+                                $("#tentang-m").removeClass('show');
+                            });
+                        </script>
+                    </div>
+
+                    <div class="col text-center">
+                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-jaminan-m" type="button">
+                            <div class="card rounded-0">
+                                <div class="card-body p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="16" cx="16" cy="16" fill="#ffffff" shape="circle"></circle>
+                                        <g transform="matrix(0.7,0,0,0.7,4.799999713897705,4.800377225875856)">
+                                            <g xmlns="http://www.w3.org/2000/svg" id="_26-Guranteed" data-name="26-Guranteed">
+                                                <path d="m27 6c-5.56 0-10.33-3.74-10.38-3.78a1 1 0 0 0 -1.24 0c-.05.04-4.8 3.78-10.38 3.78a1 1 0 0 0 -1 1v9c0 6.71 2.71 10 11.59 13.91a1 1 0 0 0 .82 0c8.88-3.91 11.59-7.2 11.59-13.91v-9a1 1 0 0 0 -1-1zm-11 18a8 8 0 1 1 8-8 8 8 0 0 1 -8 8z" fill="#61481c" data-original="#000000" class=""></path>
+                                                <path d="m18.29 13.29-3.29 3.3-1.29-1.3a1 1 0 0 0 -1.42 1.42l2 2a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0 -1.42-1.42z" fill="#61481c" data-original="#000000" class=""></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <h6 class="mt-0 mb-0" style="font-size: 12px">JAMINAN</h6>
+                                </div>
+                        </button>
+
+                        <script>
+                            $("#btn-jaminan-m").click(function() {
+                                $("#panduan-m").removeClass('show');
+                                $("#jaminan-m").toggleClass('show');
+                                $("#chat-m").removeClass('show');
+                                $("#tentang-m").removeClass('show');
+                            });
+                        </script>
+
+                    </div>
+
+                    <div class="col text-center">
+                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-chat-m" type="button">
+                            <div class="card rounded-0">
+                                <div class="card-body p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 361.014 361.014" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="180.507" cx="180.507" cy="180.507" fill="#ffffff" shape="circle">
+                                        </circle>
+                                        <g transform="matrix(0.7,0,0,0.7,54.15209197998048,54.151945495605474)">
+                                            <g>
+                                                <g id="Layer_5_47_">
+                                                    <path d="M331.035,126.94H318.01c-3.563,0-3.682-2.333-3.805-3.494C307.375,59.094,252.77,8.791,186.637,8.791h-12.26
+                                                    c-65.644,0-119.929,49.56-127.409,113.229c-0.191,1.631-0.291,4.92-3.291,4.92H29.978C20.987,126.94,0,136.401,0,184.18v25.075
+                                                    c0,35.436,20.987,43.609,29.978,43.609h43.584c8.991,0,16.347-7.356,16.347-16.347v-93.23c0-8.991-7.356-16.347-16.347-16.347
+                                                    c0,0-2.052-0.18-1.529-3.835c7.192-50.319,50.129-89.313,102.344-89.313h12.26c51.86,0,94.912,38.418,102.2,88.288
+                                                    c0.235,1.608,1.111,4.86-1.385,4.86c-8.991,0-16.347,7.356-16.347,16.347v93.23c0,8.991,7.356,16.347,16.347,16.347h8.184
+                                                    c2.25,0,1.868,1.798,1.667,2.704c-6.667,30.104-21.637,64.256-55.238,64.256h-24.889c-2.54,0-3.167-1.861-3.65-2.743
+                                                    c-4.032-7.367-11.851-12.364-20.841-12.364h-22.933c-13.118,0-23.753,10.634-23.753,23.753c0,13.119,10.635,23.752,23.753,23.752
+                                                    h22.933c9.112,0,17.023-5.132,21.005-12.662c0.348-0.658,0.633-2.026,3.321-2.026h25.054c22.823,0,53.365-11.341,69.259-65.373
+                                                    c1.694-5.758,3.068-11.496,4.187-17.026c0.154-0.761,0.25-2.27,2.625-2.27h12.9c8.991,0,29.978-8.174,29.978-43.609v-25.075
+                                                    C361.013,137.082,340.026,126.94,331.035,126.94z" fill="#61481c" data-original="#000000" class=""></path>
+                                                </g>
+                                    </svg>
+                                    <h6 class="mt-0 mb-0" style="font-size: 12px;margin-top:13px">CHAT</h6>
+                                </div>
+                            </div>
+                        </button>
+
+                        <script>
+                            $("#btn-chat-m").click(function() {
+                                $("#panduan-m").removeClass('show');
+                                $("#jaminan-m").removeClass('show');
+                                $("#chat-m").toggleClass('show');
+                                $("#tentang-m").removeClass('show');
+                            });
+                        </script>
+                    </div>
+
+                    <div class="col text-center">
+                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-tentang-m" type="button">
+                            <div class="card rounded-0">
+                                <div class="card-body p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="12" cx="12" cy="12" fill="#ffffff" shape="circle"></circle>
+                                        <g transform="matrix(0.7,0,0,0.7,3.600000000000003,3.600000000000003)">
+                                            <g xmlns="http://www.w3.org/2000/svg" fill="rgb(0,0,0)">
+                                                <path d="m12 0a12 12 0 1 0 12 12 12.013 12.013 0 0 0 -12-12zm0 22a10 10 0 1 1 10-10 10.011 10.011 0 0 1 -10 10z" fill="#61481c" data-original="#000000" class=""></path>
+                                                <path d="m12 9a1 1 0 0 0 -1 1v8a1 1 0 0 0 2 0v-8a1 1 0 0 0 -1-1z" fill="#61481c" data-original="#000000" class=""></path>
+                                                <circle cx="12" cy="6" r="1" fill="#61481c" data-original="#000000" class=""></circle>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <h6 class="mt-0 mb-0" style="font-size: 12px">TENTANG</h6>
+                                </div>
+                            </div>
+                        </button>
+
+                        <script>
+                            $("#btn-tentang-m").click(function() {
+                                $("#panduan-m").removeClass('show');
+                                $("#jaminan-m").removeClass('show');
+                                $("#chat-m").removeClass('show');
+                                $("#tentang-m").toggleClass('show');
+                            });
+                        </script>
+
+                    </div>
+
+
+
+                    <ol id="panduan-m" class="list-group panduan list-group-numbered shadow dropdown-menu rounded-0 p-0" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold" style="color: #61481C">Buat Akun Sengketa Tanah</div>
+                                Daftarkan diri Anda sesuai dengan role yang diinginkan (Korban, Sponsor,
+                                Pengacara).
+                            </div>
+                            <i class="fa-solid fa-user-plus fs-6" style="color: #61481C"></i>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold" style="color: #61481C">Buat Laporan Sengketa Tanah
+                                </div>
+                                Laporkan dengan jelas melalui formulir korban tentang masalah sengketa tanah
+                                Anda.
+                            </div>
+                            <i class="fa-solid fa-file-circle-plus fs-6" style="color: #61481C"></i>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold" style="color: #61481C">Tampilkan Dokumen</div>
+                                Upload dan kirimkan dokumen pendukung laporan Anda.
+                            </div>
+                            <i class="fa-solid fa-file-lines fs-6" style="color: #61481C"></i>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold" style="color: #61481C">Temukan Bantuan</div>
+                                Pilih bantuan yang diinginkan mulai dari bantuan pendanaan sponsor, bantuan
+                                hukum pengacara, dan
+                                bantuan pemerintah.
+                            </div>
+                            <i class="fa fa-circle-question fs-6" style="color: #61481C"></i>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold" style="color: #61481C">Pilih Bantuan</div>
+                                Pilih bantuan yang masuk sesuai dengan kesepakatanmu.
+                            </div>
+                            <i class="fa-regular fa-circle-question fs-6" style="color: #61481C"></i>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold" style="color: #61481C">Dapatkan Bantuan</div>
+                                Yay! Selamat, kamu telah mendapatkan bantuan.
+                            </div>
+                            <i class="fa-solid fa-handshake-angle fs-6" style="color: #61481C"></i>
+                        </li>
+                    </ol>
+
+                    <ol id="jaminan-m" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                        <div class="col-md-12">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-tie"></i></b>
+                                    </h5>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 style="color: #61481C" class="mb-0"><b>Sponsor Terverifikasi</b>
+                                    </h5>
+                                    Setiap sponsor yang terlibat di verifikasi kemampuan dan sumber dananya.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mt-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-gavel"></i></b>
+                                    </h5>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5 style="color: #61481C" class="mb-0"><b>Pengacara
+                                                Terverifikasi</b></h5>
+                                        Setiap pengacara wajib memiliki sertifikasi advokat yang dibutuhkan.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mt-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-hand-holding-dollar"></i></b>
+                                    </h5>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5 style="color: #61481C" class="mb-0"><b>Pembayaran Aman</b></h5>
+                                        Setiap transaksi yang terjadi menggunakan platform pembayaran
+                                        Sengketa Tanah.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mt-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-chart-line"></i></b></h5>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5 style="color: #61481C" class="mb-0"><b>Bantuan Analisa</b></h5>
+                                        Kami memberikan bantuan analisa terhadap permasalahan yang relevan
+                                        untuk diatasi.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mt-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-handshake"></i></b>
+                                    </h5>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5 style="color: #61481C" class="mb-0"><b>Kesepakatan
+                                                Terlindungi</b></h5>
+                                        Semua kesepakatan yang terjadi dilindungi perjanjian hukum yang
+                                        ketat dan mengikat.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mt-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-gear"></i></b>
+                                    </h5>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-grow-1 ms-3">
+                                        <h5 style="color: #61481C" class="mb-0"><b>Bantuan Customer
+                                                Support</b></h5>
+                                        Layanan CS 24 jam siap membantu anda.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ol>
+
+                    <ol id="chat-m" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                        <h2>
+                            <div class="fw-bold" style="color: #61481C"> Customer Service</div>
+                        </h2>
+                        <div class="chat-form"> <input type="text" class="form-control" placeholder="Nama">
+                            <input type="text" class="form-control" placeholder="Email"> <textarea class="form-control" placeholder="Masukan Pesan"></textarea> <button class="btn btn-brown btn-block">Kirim</button>
+                        </div>
+                    </ol>
+
+                    <ol id="tentang-m" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center" style="inset: auto auto 0px 0px; margin: 0px; border-top: none; max-height: 500px; overflow-y: auto">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="row desktop mb-4">
+                                    <div class="col-md">
+                                        <div class="card-body text-center container" style="height:500px">
+                                            <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                            <div class="card rounded-0" style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                <div class="card-body">
+                                                    <p class="card-text">"Presiden Joko Widodo menegaskan kepada
+                                                        Kementerian
+                                                        ATR/BPN untuk
+                                                        serius dalam memberantas mafia tanah"
+                                                        <br> -<b> Ir. H. Joko Widodo (Presiden RI)</b>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p class="card-title fw-bolder text-dark"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="card-body text-center container" style="height:500px">
+                                            <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                            <div class="card rounded-0" style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                <div class="card-body">
+                                                    <p class="card-text">"Sesuai perintah Bapak Presiden, semua
+                                                        kasus mafia
+                                                        tanah yang ada
+                                                        di
+                                                        Indonesia harus
+                                                        diselesaikan" <br> -<b> Hadi Tjahjanto (Mentri ATR/BPN)
+                                                        </b>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p class="card-title fw-bolder text-dark"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="card-body text-center container" style="height:500px">
+                                            <img src="{{asset('/uploads/kapolri.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                            <div class="card rounded-0" style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                <div class="card-body">
+                                                    <p class="card-text">"Penyidik tidak perlu ragu ragu dalam
+                                                        mengusut
+                                                        tuntas masalah mafia
+                                                        tanah, penyidik agar tindak tegas siapapun dalang dan
+                                                        bekingannya"
+                                                        <br> -<b> Listyo
+                                                            Sigit Prabowo (Kapolri) </b>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p class="card-title fw-bolder text-dark"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="carouselExampleControlsPres" class="carousel slide mobile mb-4">
+                                    <div class="carousel-inner mb-5">
+                                        <div class="carousel-item active">
+                                            <div class="card-body text-center container" style="height:505px">
+                                                <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                                <div class="card rounded-0" style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);z-index:10">
+                                                    <div class="card-body">
+                                                        <p class="card-text">"Presiden Joko Widodo menegaskan
+                                                            kepada Kementerian ATR/BPN untuk serius dalam
+                                                            memberantas mafia tanah" <br> -<b>
+                                                                Ir. H. Joko Widodo (Presiden RI)</b>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="card-title fw-bolder text-dark"></p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card-body text-center container" style="height:505px">
+                                                <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                                <div class="card rounded-0" style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                    <div class="card-body">
+                                                        <p class="card-text">"Sesuai perintah Bapak Presiden,
+                                                            semua kasus
+                                                            mafia tanah yang
+                                                            ada
+                                                            di Indonesia harus
+                                                            diselesaikan"<br> -<b> Hadi Tjahjanto (Mentri
+                                                                ATR/BPN) </b>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="card-title fw-bolder text-dark"></p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card-body text-center container" style="height:505px">
+                                                <img src="{{asset('/uploads/kapolri.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                                <div class="card rounded-0" style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                    <div class="card-body">
+                                                        <p class="card-text">"Penyidik tidak perlu ragu ragu
+                                                            dalam mengusut
+                                                            tuntas masalah
+                                                            mafia
+
+                                                            tanah, penyidik agar tindak tegas siapapun dalang
+                                                            dan
+                                                            bekingannya" <br> -<b>
+                                                                Listyo
+                                                                Sigit Prabowo (Kapolri) </b>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <p class="card-title fw-bolder text-dark"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev my-auto" style="background: rgba(0, 0, 0, 0.75); height: 35px; width: 10%;border-radius: 50%" type="button" data-bs-target="#carouselExampleControlsPres" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next my-auto" style="background: rgba(0, 0, 0, 0.75); height: 35px; width: 10%;border-radius: 50%" type="button" data-bs-target="#carouselExampleControlsPres" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <style>
+                            @media (min-width: 1400px) {
+                                .container-lsa {
+                                    max-width: 1000px !important;
+                                }
+                            }
+                        </style>
+                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" class="mb-2" style="width: 75px" alt="">
+                        <div class="container-lsa mx-auto mb-3">
+                            <h2>
+                                <div class="fw-bold" style="color: #61481C"> TENTANG KAMI</div>
+                            </h2>
+                            SENGKETA TANAH adalah platform digital dengan spesialisasi penanganan
+                            masalah
+                            sengketa tanah di seluruh wilayah Indonesia. Kami mempertemukan korban sengketa
+                            tanah
+                            atau korban
+                            mafia
+                            tanah dengan Sponsor, Kantor hukum, dan Pemerintah untuk menuntaskan masalah
+                            persengketaan tanah
+                            tersebut.
+
+                            <h2>
+                                <div class="fw-bold mt-5" style="color: #61481C"> VISI MISI</div>
+                            </h2>
+                            <div class="text-start">
+                                <h5>VISI</h5>
+                                Membantu Masyarakat dan Pemerintah Indonesia dalam penyelesaian Sengketa
+                                Pertanahan, Konflik Pertanahan dan Perkara Pertanahan dengan membangun ekosistem
+                                steakholder terkait, seperti Korban Sengketa, Sponsor, Pengacara dan
+                                Pemerintahnya itu sendiri agar semua jenis permasalahan tanah lebih cepat
+                                diselesaikan. Tujuan utama Platform Sengketa Tanah adalah membawa persoalan
+                                tanah yang dulunya tabu menjadi lebih terbuka dengan pendekatan ecommerce yang
+                                profit oriented.
+                                <h5 class="mt-3">MISI</h5>
+                                <ol style="padding-left: 1rem">
+                                    <li>Membantu masyarakat Indonesia menyelesaikan persolan sengketa
+                                        pertanahan, konflik pertanahan dan perkara pertanahan dengan menyediakan
+                                        bantuan akses pada sponsor, pengacara dan pemerintah.</li>
+                                    <li>Membantu Pemerintah Indonesia dalam hal ini Kementrian ATR/BPN untuk
+                                        menyelesaikan persolan sengketa pertanahan, konflik pertanahan dan
+                                        perkara pertanahan dengan menyediakan sortasi data persengketaan tanah
+                                        yang terjadi di masyarakat.</li>
+                                    <li>Mengangkat semua jenis persoalan tanah dengan multi komprehensif, mulai
+                                        dari dokumen pertanahan, analisa, pengecekan sampai kepada wawancara
+                                        mendalam pada korban dan pihak terkait yang disajikan dengan audio
+                                        visual untuk memudahkan steak holder mengambil keputusan.
+                                    <li>Menjadi platform khusus pertanahan yang dipercaya publik dengan komitmen
+                                        kuat penyelesaian kasus-kasus persengketaan tanah.</li>
+                                    <li>Mengintegrasikan semua jenis bidang seputar pertanahan dalam satu
+                                        platform seperti sengketa pertanahan, jual beli lahan, kerja sama lahan
+                                        sampai dengan pelelangan lahan.</li>
+                                    <li>Menyediakan berbagai tenaga ahli pertanahan dalam platform untuk
+                                        membantu desiminasi permasalahan dalam rangka menentukan tindakan yang
+                                        akan diambil, baik untuk korban, sponsor, pengacara maupun pemerintah.
+                                    </li>
+                                    <li>Menjadi platform yang terintegrasi dengan kementrian ATR/BPN</li>
+                                </ol>
+
+                            </div>
+                        </div>
+
+                    </ol>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <div class="container">
 
@@ -529,7 +1076,7 @@
 
             <div class="col-lg-12">
 
-                <div class="card mb-0 border-0 mt-2 mb-2" style="z-index:999">
+                <div class="card mb-0 border-0 mb-3 mt-3" style="z-index:999">
                     <div class="card-body pb-0">
                         <div class="row justify-content-between text-center scroll-simple" style="overflow-x: auto; flex-wrap: nowrap">
                             <div class="col mb-4">
@@ -584,22 +1131,6 @@
                                         </g>
                                     </svg>
                                     <div class="mt-0" style="font-size: 12px">Jual Beli <br> Lahan</div>
-                                </a>
-                            </div>
-                            <div class="col mb-4">
-                                <a href="{{url('/')}}/kerjasama-lahan" class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="85px" x="0" y="0" viewBox="0 0 511.99992 511" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-                                        <circle r="255.99996" cx="255.99996" cy="255.5" fill="#ffffff" shape="circle">
-                                        </circle>
-                                        <g transform="matrix(0.7,0,0,0.7,76.79987218379975,75.92755157947542)">
-                                            <path xmlns="http://www.w3.org/2000/svg" d="m509.914062 214.859375-85.695312-111.320313c-3.171875-4.117187-8.957031-5.132812-13.34375-2.34375l-55.328125 35.1875h-72.160156c-.933594 0-1.863281.199219-2.761719.460938l-55.949219 16.105469-58.054687-15.878907-56.410156-35.875c-4.3125-2.742187-9.992188-1.8125-13.199219 2.164063l-94.785157 117.40625c-3.40625 4.21875-2.84375 10.378906 1.265626 13.914063l49.679687 42.753906 44.570313 60.0625c-13.035157 13.886718-12.78125 35.789062.78125 49.355468 6.011718 6.007813 13.65625 9.402344 21.519531 10.191407-.273438 1.78125-.414063 3.589843-.414063 5.425781 0 9.476562 3.691406 18.386719 10.390625 25.085938 6.703125 6.703124 15.613281 10.394531 25.089844 10.394531.128906 0 .253906-.007813.378906-.011719-.003906.242188-.015625.480469-.015625.722656 0 9.476563 3.691406 18.386719 10.390625 25.089844 6.703125 6.699219 15.613281 10.390625 25.089844 10.390625 1.871094 0 3.722656-.152344 5.539063-.433594.769531 7.890625 4.171874 15.570313 10.203124 21.601563 6.914063 6.917968 16 10.375 25.085938 10.375s18.171875-3.457032 25.089844-10.375l5.425781-5.425782 2.277344 1.835938c6.859375 6.644531 15.765625 9.964844 24.671875 9.964844 9.085937 0 18.171875-3.457032 25.085937-10.375 7.058594-7.058594 10.515625-16.375 10.371094-25.644532 9.265625.140626 18.585937-3.3125 25.644531-10.367187 7.050782-7.054687 10.507813-16.363281 10.371094-25.628906 9.652344.152343 18.808594-3.554688 25.640625-10.386719 7.058594-7.058594 10.515625-16.375 10.371094-25.644531 9.273437.140625 18.585937-3.3125 25.644531-10.371094 12.046875-12.046875 13.597656-30.667969 4.664062-44.414063l32.542969-68.15625 48.925781-42.101562c4.042969-3.480469 4.660157-9.511719 1.40625-13.734375zm-402.914062-91.910156 40.5625 25.792969-88.238281 107.5-35.359375-30.433594zm5.722656 227.921875 12.242188-12.242188c.371094-.371094.761718-.722656 1.160156-1.050781 2.394531-1.953125 5.292969-3.117187 8.363281-3.394531.085938-.007813.175781-.007813.261719-.011719.4375-.035156.875-.058594 1.316406-.054687 4.195313.058593 8.09375 1.773437 10.984375 4.824218 5.671875 5.996094 5.367188 15.792969-.679687 21.839844l-11.871094 11.871094c-6.003906 6.003906-15.773438 6.003906-21.777344 0-6.003906-6.007813-6.003906-15.777344 0-21.78125zm31.496094 62.484375c-2.910156-2.90625-4.511719-6.773438-4.511719-10.886719s1.601563-7.980469 4.511719-10.890625l23.738281-23.738281c4.546875-4.546875 11.695313-5.792969 17.507813-3.023438 5.992187 2.855469 9.363281 9.359375 8.484375 15.902344-.46875 3.492188-2.09375 6.78125-4.585938 9.277344l-23.363281 23.359375c-2.910156 2.910156-6.777344 4.511719-10.890625 4.511719s-7.980469-1.601563-10.890625-4.511719zm35.84375 36.191406c-2.910156-2.90625-4.511719-6.773437-4.511719-10.886719 0-4.113281 1.601563-7.980468 4.511719-10.890625l23.734375-23.738281c4.863281-4.859375 12.664063-5.90625 18.617187-2.441406 5.4375 3.164062 8.285157 9.375 7.351563 15.5625-.511719 3.402344-2.128906 6.601562-4.5625 9.035156l-23.359375 23.359375c-2.910156 2.910156-6.777344 4.511719-10.890625 4.511719s-7.980469-1.601563-10.890625-4.511719zm40.828125 31.5625c-6.003906-6.003906-6.003906-15.773437 0-21.777344l12.242187-12.242187c.371094-.371094.757813-.71875 1.15625-1.046875.011719-.007813.019532-.015625.027344-.023438 1.992188-1.617187 4.332032-2.699219 6.828125-3.171875.058594-.007812.117188-.015625.175781-.023437.429688-.078125.867188-.140625 1.304688-.179688.175781-.015625.351562-.015625.53125-.027343.359375-.019532.714844-.042969 1.078125-.039063 4.191406.058594 8.09375 1.769531 10.984375 4.824219.355469.375.6875.765625.992188 1.167968 4.617187 6.035157 3.996093 15-1.734376 20.734376l-11.808593 11.808593c-6.003907 6.003907-15.773438 6-21.777344-.003906zm187.285156-112.042969c-6.003906 6.007813-15.773437 6.003906-21.777343 0-.21875-.21875-.449219-.421875-.683594-.613281l-64.554688-65.234375c-3.902344-3.941406-10.257812-3.972656-14.199218-.070312-3.941407 3.898437-3.972657 10.253906-.074219 14.195312l65.253906 65.933594c.007813.007812.015625.015625.023437.023437 6.003907 6.003907 6.003907 15.777344 0 21.78125-2.910156 2.910157-6.777343 4.511719-10.890624 4.511719-4.117188 0-7.984376-1.601562-10.890626-4.511719l-43.652343-44.105469c-3.898438-3.941406-10.253907-3.972656-14.195313-.074218-3.941406 3.902344-3.972656 10.257812-.074218 14.199218l42.984374 43.429688c.21875.273438.453126.535156.703126.785156 6.003906 6.003906 6.003906 15.777344 0 21.78125-6.007813 6.003906-15.78125 6-21.785157-.003906l-23.824219-24.074219c-3.902343-3.941406-10.257812-3.976562-14.199218-.074219-3.941406 3.898438-3.972656 10.253907-.074219 14.195313l23.160156 23.398437c.21875.273438.453125.539063.707031.789063 6.003907 6.003906 6.003907 15.777344 0 21.78125-6.003906 6.007813-15.773437 6.003906-21.777343 0-.691407-.691406-1.503907-1.222656-2.277344-1.816406-.65625-.5-.828125-.847657-.5-1.644531.332031-.808594.828125-1.539063 1.160156-2.351563.367188-.90625.664063-1.839844.953125-2.777344 1.539063-4.960937 1.992188-10.296875 1.300782-15.445312-1.328126-9.878907-6.761719-18.792969-14.996094-24.433594-4.449219-3.042969-9.597656-5.039063-14.933594-5.789063 2.585938-11.40625-.519531-23.773437-8.597656-32.308593-6.648438-7.023438-15.628906-10.964844-25.289063-11.097657-.351562-.003906-.703125-.003906-1.058593 0 .214843-9.21875-3.136719-18.378906-9.492188-25.09375-6.652344-7.023437-15.632812-10.964843-25.289062-11.097656-2.871094-.039062-5.769532.265625-8.566407.910156-1.195312-8.316406-5.386719-16.011718-11.734375-21.515624-6.308594-5.460938-14.242187-8.492188-22.691406-8.609376-8.894531-.128906-17.632812 3.152344-24.238281 9.117188l-38.808594-52.292969 92.84375-113.109375 29.589844 8.09375-38.644531 68.191406c-4.671876 8.246094-5.851563 17.816407-3.324219 26.949219 2.527343 9.136719 8.457031 16.738281 16.703125 21.410157.515625.292968 1.035156.570312 1.5625.835937.039062.019531.078125.039063.121094.058594 1.386718.691406 2.8125 1.285156 4.257812 1.785156 6.730469 2.332031 14 2.585937 21.011719.648437 9.132812-2.527343 16.734375-8.460937 21.40625-16.703124l25.113281-44.316407 44.839844 3.179688 119.402344 119.398437c6 6.007813 6 15.777344-.003907 21.78125zm4.160157-46.019531-112.011719-112.007813c-.210938-.214843-.433594-.417968-.664063-.609374-1.613281-1.34375-3.613281-2.15625-5.722656-2.304688l-54.902344-3.894531c-3.796875-.261719-7.570312 1.757812-9.445312 5.066406l-28.234375 49.828125c-2.027344 3.578125-5.328125 6.152344-9.292969 7.25-3.960938 1.097656-8.117188.582031-11.699219-1.445312-3.578125-2.027344-6.152343-5.328126-7.25-9.292969-1.097656-3.964844-.585937-8.121094 1.445313-11.699219l37.691406-66.519531 15.273438-4.394531c.101562-.03125.199218-.070313.300781-.101563l57.003906-16.460937h68.875l85.984375 109.304687zm40.503906-73.039063-79.515625-101.136718 40.582031-25.808594 74.300781 96.511719zm0 0" fill="#61481c" data-original="#000000" class=""></path>
-                                            <path xmlns="http://www.w3.org/2000/svg" d="m310.183594 117.53125c2.570312 0 5.140625-.980469 7.101562-2.941406l68.578125-68.578125c3.921875-3.921875 3.921875-10.277344 0-14.199219s-10.277343-3.921875-14.199219 0l-68.578124 68.578125c-3.921876 3.921875-3.921876 10.277344 0 14.199219 1.960937 1.960937 4.53125 2.941406 7.097656 2.941406zm0 0" fill="#61481c" data-original="#000000" class=""></path>
-                                            <path xmlns="http://www.w3.org/2000/svg" d="m194.714844 114.589844c1.960937 1.960937 4.53125 2.941406 7.101562 2.941406 2.566406 0 5.136719-.980469 7.097656-2.941406 3.921876-3.921875 3.921876-10.277344 0-14.199219l-68.578124-68.578125c-3.921876-3.921875-10.277344-3.921875-14.199219 0s-3.921875 10.277344 0 14.199219zm0 0" fill="#61481c" data-original="#000000" class=""></path>
-                                            <path xmlns="http://www.w3.org/2000/svg" d="m256 117.53125c5.542969 0 10.039062-4.496094 10.039062-10.039062v-56.753907c0-5.542969-4.496093-10.039062-10.039062-10.039062s-10.039062 4.496093-10.039062 10.039062v56.753907c0 5.542968 4.496093 10.039062 10.039062 10.039062zm0 0" fill="#61481c" data-original="#000000" class=""></path>
-                                            <path xmlns="http://www.w3.org/2000/svg" d="m246.734375 14.351562c1.59375 3.863282 5.566406 6.398438 9.757813 6.179688 4.140624-.214844 7.777343-3.011719 9.058593-6.953125 1.285157-3.972656-.113281-8.5-3.441406-11.03125-3.394531-2.5859375-8.128906-2.730469-11.679687-.382813-3.960938 2.617188-5.496094 7.828126-3.695313 12.1875zm0 0" fill="#61481c" data-original="#000000" class=""></path>
-                                        </g>
-                                    </svg>
-                                    <div class="mt-0" style="font-size: 12px">Kerjasama <br> Lahan</div>
                                 </a>
                             </div>
                             <div class="col mb-4">
@@ -688,7 +1219,7 @@
                                             </g>
                                         </g>
                                     </svg>
-                                    <div class="mt-0" style="font-size: 12px">Jasa <br> Tukang Ukur</div>
+                                    <div class="mt-0" style="font-size: 12px">Jasa <br> Petugas Ukur</div>
                                 </a>
                             </div>
                             <div class="col mb-4">
@@ -771,6 +1302,18 @@
                                 </a>
                             </div>
                             <div class="col mb-4">
+                                <a href="{{url('/')}}/advokasi-pemerintah" class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="85px" x="0" y="0" viewBox="0 0 512 511" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="256" cx="256" cy="255.5" fill="#ffffff" shape="circle"></circle>
+                                        <g transform="matrix(0.7,0,0,0.7,76.80000000000001,76.48344733715058)">
+                                            <path d="m256 131.46875c13.273438 0 24.066406-10.796875 24.066406-24.066406 0-13.273438-10.796875-24.070313-24.066406-24.070313s-24.066406 10.796875-24.066406 24.070313c0 13.269531 10.796875 24.066406 24.066406 24.066406zm0-33.136719c5 0 9.066406 4.070313 9.066406 9.070313 0 4.996094-4.066406 9.066406-9.066406 9.066406s-9.066406-4.066406-9.066406-9.066406 4.066406-9.070313 9.066406-9.070313zm0 0" fill="#61481c" data-original="#000000" class=""></path>
+                                            <path d="m504.5 461.261719h-9.066406v-25.632813c0-4.140625-3.359375-7.5-7.5-7.5h-25.632813v-25.632812c0-4.140625-3.355469-7.5-7.5-7.5h-9.0625v-164.128906h9.0625c4.144531 0 7.5-3.359376 7.5-7.5v-25.632813h25.632813c4.144531 0 7.5-3.359375 7.5-7.5v-33.132813c0-4.140624-3.355469-7.5-7.5-7.5h-14.222656l-213.441407-147.769531c-2.566406-1.7773435-5.96875-1.7773435-8.539062 0l-213.4375 147.769531h-14.226563c-4.140625 0-7.5 3.355469-7.5 7.5v33.132813c0 4.140625 3.359375 7.5 7.5 7.5h25.632813v25.632813c0 4.140624 3.359375 7.5 7.5 7.5h9.066406v164.128906h-9.066406c-4.140625 0-7.5 3.355468-7.5 7.5v25.632812h-25.632813c-4.140625 0-7.5 3.359375-7.5 7.5v25.632813h-9.066406c-4.144531 0-7.5 3.355469-7.5 7.5v33.128906c0 4.144531 3.355469 7.5 7.5 7.5h497c4.144531 0 7.5-3.355469 7.5-7.5v-33.128906c0-4.140625-3.355469-7.5-7.5-7.5zm-57.199219-33.132813h-67.832031v-18.132812h67.832031zm-51.269531-33.132812v-164.128906h34.703125v164.128906zm51.269531-179.128906h-67.832031v-18.132813h67.832031zm-75.332031 15h9.0625v164.128906h-9.0625c-4.144531 0-7.5 3.355468-7.5 7.5v25.632812h-59.550781v-25.632812c0-4.144532-3.359375-7.5-7.5-7.5h-9.066407v-164.128906h9.066407c4.140625 0 7.5-3.359376 7.5-7.5v-25.632813h59.550781v25.632813c0 4.140624 3.355469 7.5 7.5 7.5zm-149.882812-33.132813h67.832031v18.132813h-67.832031zm16.5625 33.132813h34.703124v164.128906h-34.703124zm51.269531 179.128906v18.132812h-67.832031v-18.132812zm-258.351563-245.394532h9.070313.007812.003907 121.800781c4.144531 0 7.5-3.359374 7.5-7.5 0-4.144531-3.355469-7.5-7.5-7.5h-97.804688l191.355469-132.480468 191.359375 132.480468h-254.910156c-4.140625 0-7.5 3.355469-7.5 7.5 0 4.140626 3.359375 7.5 7.5 7.5h278.816406.023437 9.144532v18.132813h-448.867188zm33.132813 33.132813h67.835937v18.132813h-67.835937zm51.269531 33.132813v164.128906h-34.703125v-164.128906zm-51.269531 179.128906h67.835937v18.132812h-67.835937zm75.335937-15h-9.066406v-164.128906h9.066406c4.140625 0 7.5-3.359376 7.5-7.5v-25.632813h59.550782v25.632813c0 4.140624 3.355468 7.5 7.5 7.5h9.0625v164.128906h-9.0625c-4.144532 0-7.5 3.355468-7.5 7.5v25.632812h-59.550782v-25.632812c0-4.144532-3.359375-7.5-7.5-7.5zm-108.46875 48.132812h448.867188v18.132813h-448.867188zm465.433594 51.265625h-482v-18.132812h482zm0 0" fill="#61481c" data-original="#000000" class=""></path>
+                                        </g>
+                                    </svg>
+                                    <div class="mt-0" style="font-size: 12px">Advokasi <br> Pemerintah</div>
+                                </a>
+                            </div>
+                            <div class="col mb-4">
                                 <a class="btn btn-outline-light text-dark w-100 rounded-4 shadow" href="https://mitra.atrbpn.go.id">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png" class="p-2" width="85px" alt="">
                                     <div class="mt-0" style="font-size: 12px">Mitra <br> BPN</div>
@@ -781,11 +1324,464 @@
                     </div>
                 </div>
 
+                <div class="card border-0">
+                    <div class="input-group">
+                        <div class="input-group-prepend my-auto">
+                            <span class="px-3">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
+                        <button class="btn h-100 btn-primary mb-0 desktop">Search</button>
+                    </div>
+                </div>
 
+                <div class="card mt-3 border-0 shadow-sm desktop" style="margin-top:-10px">
+                    <div class="card-body pb-1 pt-2">
+                        <div class="row align-items-center g-0">
 
+                            <div class="col-3 text-center">
+                                <button class="btn btn-sm" id="btn-panduan" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70px" x="0" y="0" viewBox="0 0 296.999 296.999" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="148.4995" cx="148.4995" cy="148.4995" fill="#ffffff" shape="circle">
+                                        </circle>
+                                        <g transform="matrix(0.7,0,0,0.7,44.54984436035157,44.54998970031738)">
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                    <g>
+                                                        <path d="M45.432,35.049c-0.008,0-0.017,0-0.025,0c-2.809,0-5.451,1.095-7.446,3.085c-2.017,2.012-3.128,4.691-3.128,7.543     v159.365c0,5.844,4.773,10.61,10.641,10.625c24.738,0.059,66.184,5.215,94.776,35.136V84.023c0-1.981-0.506-3.842-1.461-5.382     C115.322,40.849,70.226,35.107,45.432,35.049z" fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path d="M262.167,205.042V45.676c0-2.852-1.111-5.531-3.128-7.543c-1.995-1.99-4.639-3.085-7.445-3.085c-0.009,0-0.018,0-0.026,0     c-24.793,0.059-69.889,5.801-93.357,43.593c-0.955,1.54-1.46,3.401-1.46,5.382v166.779     c28.592-29.921,70.038-35.077,94.776-35.136C257.394,215.651,262.167,210.885,262.167,205.042z" fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path d="M286.373,71.801h-7.706v133.241c0,14.921-12.157,27.088-27.101,27.125c-20.983,0.05-55.581,4.153-80.084,27.344     c42.378-10.376,87.052-3.631,112.512,2.171c3.179,0.724,6.464-0.024,9.011-2.054c2.538-2.025,3.994-5.052,3.994-8.301V82.427     C297,76.568,292.232,71.801,286.373,71.801z" fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path d="M18.332,205.042V71.801h-7.706C4.768,71.801,0,76.568,0,82.427v168.897c0,3.25,1.456,6.276,3.994,8.301     c2.545,2.029,5.827,2.78,9.011,2.054c25.46-5.803,70.135-12.547,112.511-2.171c-24.502-23.19-59.1-27.292-80.083-27.342     C30.49,232.13,18.332,219.963,18.332,205.042z" fill="#61481c" data-original="#000000" class=""></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                            <g xmlns="http://www.w3.org/2000/svg">
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <h6 class="mt-2 mb-0" style="font-weight:bold;">PANDUAN</h6>
+                                </button>
+                                <script>
+                                    $("#btn-panduan").click(function() {
+                                        $("#panduan").toggleClass('show');
+                                        $("#jaminan").removeClass('show');
+                                        $("#chat").removeClass('show');
+                                        $("#tentang").removeClass('show');
+                                    });
+                                </script>
+                            </div>
+                            <div class="col-3 text-center">
+                                <button class="btn btn-sm" id="btn-jaminan" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70px" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="16" cx="16" cy="16" fill="#ffffff" shape="circle"></circle>
+                                        <g transform="matrix(0.7,0,0,0.7,4.799999713897705,4.800377225875856)">
+                                            <g xmlns="http://www.w3.org/2000/svg" id="_26-Guranteed" data-name="26-Guranteed">
+                                                <path d="m27 6c-5.56 0-10.33-3.74-10.38-3.78a1 1 0 0 0 -1.24 0c-.05.04-4.8 3.78-10.38 3.78a1 1 0 0 0 -1 1v9c0 6.71 2.71 10 11.59 13.91a1 1 0 0 0 .82 0c8.88-3.91 11.59-7.2 11.59-13.91v-9a1 1 0 0 0 -1-1zm-11 18a8 8 0 1 1 8-8 8 8 0 0 1 -8 8z" fill="#61481c" data-original="#000000" class=""></path>
+                                                <path d="m18.29 13.29-3.29 3.3-1.29-1.3a1 1 0 0 0 -1.42 1.42l2 2a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0 -1.42-1.42z" fill="#61481c" data-original="#000000" class=""></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <h6 class="mt-2 mb-0" style="font-weight:bold;">JAMINAN</h6>
+                                </button>
+                                <script>
+                                    $("#btn-jaminan").click(function() {
+                                        $("#panduan").removeClass('show');
+                                        $("#jaminan").toggleClass('show');
+                                        $("#chat").removeClass('show');
+                                        $("#tentang").removeClass('show');
+                                    });
+                                </script>
+                            </div>
+                            <div class="col-3 text-center">
+                                <button class="btn btn-sm" id="btn-chat" type="button">
+                                    <img src="{{asset('')}}images/cus.svg" style="width:55px;margin-top:9px" alt="" srcset="">
+                                    <h6 class=" mb-0" style="font-weight:bold;margin-top:13px">CHAT</h6>
+                                </button>
+                                <script>
+                                    $("#btn-chat").click(function() {
+                                        $("#panduan").removeClass('show');
+                                        $("#jaminan").removeClass('show');
+                                        $("#chat").toggleClass('show');
+                                        $("#tentang").removeClass('show');
+                                    });
+                                </script>
+                            </div>
+                            <div class="col-3 text-center">
+                                <button class="btn btn-sm" id="btn-tentang" type="button" style="margin-left:-10px">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70px" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="12" cx="12" cy="12" fill="#ffffff" shape="circle"></circle>
+                                        <g transform="matrix(0.7,0,0,0.7,3.600000000000003,3.600000000000003)">
+                                            <g xmlns="http://www.w3.org/2000/svg" fill="rgb(0,0,0)">
+                                                <path d="m12 0a12 12 0 1 0 12 12 12.013 12.013 0 0 0 -12-12zm0 22a10 10 0 1 1 10-10 10.011 10.011 0 0 1 -10 10z" fill="#61481c" data-original="#000000" class=""></path>
+                                                <path d="m12 9a1 1 0 0 0 -1 1v8a1 1 0 0 0 2 0v-8a1 1 0 0 0 -1-1z" fill="#61481c" data-original="#000000" class=""></path>
+                                                <circle cx="12" cy="6" r="1" fill="#61481c" data-original="#000000" class=""></circle>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <h6 class="mt-2 mb-0" style="font-weight:bold;">TENTANG</h6>
+                                </button>
+                                <script>
+                                    $("#btn-tentang").click(function() {
+                                        $("#panduan").removeClass('show');
+                                        $("#jaminan").removeClass('show');
+                                        $("#chat").removeClass('show');
+                                        $("#tentang").toggleClass('show');
+                                    });
+                                </script>
+                            </div>
+                            <ol id="panduan" class="list-group panduan list-group-numbered shadow dropdown-menu rounded-0 p-0" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold" style="color: #61481C">Buat Akun Sengketa Tanah</div>
+                                        Daftarkan diri Anda sesuai dengan role yang diinginkan (Korban, Sponsor,
+                                        Pengacara).
+                                    </div>
+                                    <i class="fa-solid fa-user-plus fs-6" style="color: #61481C"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold" style="color: #61481C">Buat Laporan Sengketa Tanah
+                                        </div>
+                                        Laporkan dengan jelas melalui formulir korban tentang masalah sengketa tanah
+                                        Anda.
+                                    </div>
+                                    <i class="fa-solid fa-file-circle-plus fs-6" style="color: #61481C"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold" style="color: #61481C">Tampilkan Dokumen</div>
+                                        Upload dan kirimkan dokumen pendukung laporan Anda.
+                                    </div>
+                                    <i class="fa-solid fa-file-lines fs-6" style="color: #61481C"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold" style="color: #61481C">Temukan Bantuan</div>
+                                        Pilih bantuan yang diinginkan mulai dari bantuan pendanaan sponsor, bantuan
+                                        hukum pengacara, dan
+                                        bantuan pemerintah.
+                                    </div>
+                                    <i class="fa fa-circle-question fs-6" style="color: #61481C"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold" style="color: #61481C">Pilih Bantuan</div>
+                                        Pilih bantuan yang masuk sesuai dengan kesepakatanmu.
+                                    </div>
+                                    <i class="fa-regular fa-circle-question fs-6" style="color: #61481C"></i>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold" style="color: #61481C">Dapatkan Bantuan</div>
+                                        Yay! Selamat, kamu telah mendapatkan bantuan.
+                                    </div>
+                                    <i class="fa-solid fa-handshake-angle fs-6" style="color: #61481C"></i>
+                                </li>
+                            </ol>
+                            <ol id="jaminan" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                                <div class="col-md-12">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-tie"></i></b></h5>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h5 style="color: #61481C" class="mb-0"><b>Sponsor Terverifikasi</b>
+                                            </h5>
+                                            Setiap sponsor yang terlibat di verifikasi kemampuan dan sumber dananya.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-gavel"></i></b></h5>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 ms-3">
+                                                <h5 style="color: #61481C" class="mb-0"><b>Pengacara
+                                                        Terverifikasi</b></h5>
+                                                Setiap pengacara wajib memiliki sertifikasi advokat yang dibutuhkan.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-hand-holding-dollar"></i></b>
+                                            </h5>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 ms-3">
+                                                <h5 style="color: #61481C" class="mb-0"><b>Pembayaran Aman</b></h5>
+                                                Setiap transaksi yang terjadi menggunakan platform pembayaran
+                                                Sengketa Tanah.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-chart-line"></i></b></h5>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 ms-3">
+                                                <h5 style="color: #61481C" class="mb-0"><b>Bantuan Analisa</b></h5>
+                                                Kami memberikan bantuan analisa terhadap permasalahan yang relevan
+                                                untuk diatasi.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-handshake"></i></b></h5>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 ms-3">
+                                                <h5 style="color: #61481C" class="mb-0"><b>Kesepakatan
+                                                        Terlindungi</b></h5>
+                                                Semua kesepakatan yang terjadi dilindungi perjanjian hukum yang
+                                                ketat dan mengikat.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-gear"></i></b></h5>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-grow-1 ms-3">
+                                                <h5 style="color: #61481C" class="mb-0"><b>Bantuan Customer
+                                                        Support</b></h5>
+                                                Layanan CS 24 jam siap membantu anda.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ol>
+                            <ol id="chat" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                                <h2>
+                                    <div class="fw-bold" style="color: #61481C"> Customer Service</div>
+                                </h2>
+                                <div class="chat-form"> <input type="text" class="form-control" placeholder="Nama">
+                                    <input type="text" class="form-control" placeholder="Email"> <textarea class="form-control" placeholder="Masukan Pesan"></textarea> <button class="btn btn-success btn-block">Kirim</button>
+                                </div>
+                            </ol>
+                            <ol id="tentang" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <div class="row desktop mb-4">
+                                            <div class="col-md">
+                                                <div class="card-body text-center container" style="height:500px">
+                                                    <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                                    <div class="card rounded-0" style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                        <div class="card-body">
+                                                            <p class="card-text">"Presiden Joko Widodo menegaskan kepada
+                                                                Kementerian
+                                                                ATR/BPN untuk
+                                                                serius dalam memberantas mafia tanah"
+                                                                <br> -<b> Ir. H. Joko Widodo (Presiden RI)</b>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-title fw-bolder text-dark"></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md">
+                                                <div class="card-body text-center container" style="height:500px">
+                                                    <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                                    <div class="card rounded-0" style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                        <div class="card-body">
+                                                            <p class="card-text">"Sesuai perintah Bapak Presiden, semua
+                                                                kasus mafia
+                                                                tanah yang ada
+                                                                di
+                                                                Indonesia harus
+                                                                diselesaikan" <br> -<b> Hadi Tjahjanto (Mentri ATR/BPN)
+                                                                </b>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-title fw-bolder text-dark"></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md">
+                                                <div class="card-body text-center container" style="height:500px">
+                                                    <img src="{{asset('/uploads/kapolri.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                                    <div class="card rounded-0" style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                        <div class="card-body">
+                                                            <p class="card-text">"Penyidik tidak perlu ragu ragu dalam
+                                                                mengusut
+                                                                tuntas masalah mafia
+                                                                tanah, penyidik agar tindak tegas siapapun dalang dan
+                                                                bekingannya"
+                                                                <br> -<b> Listyo
+                                                                    Sigit Prabowo (Kapolri) </b>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-title fw-bolder text-dark"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="carouselExampleControlsPres" class="carousel slide mobile  mb-4">
+                                            <div class="carousel-inner  mb-5">
+                                                <div class="carousel-item active">
+                                                    <div class="card-body text-center container" style="height:505px">
+                                                        <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                                        <div class="card rounded-0" style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);z-index:10">
+                                                            <div class="card-body">
+                                                                <p class="card-text">"Presiden Joko Widodo menegaskan
+                                                                    kepada Kementerian ATR/BPN untuk serius dalam
+                                                                    memberantas mafia tanah" <br> -<b>
+                                                                        Ir. H. Joko Widodo (Presiden RI)</b>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="card-title fw-bolder text-dark"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="card-body text-center container" style="height:505px">
+                                                        <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                                        <div class="card rounded-0" style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                            <div class="card-body">
+                                                                <p class="card-text">"Sesuai perintah Bapak Presiden,
+                                                                    semua kasus
+                                                                    mafia tanah yang
+                                                                    ada
+                                                                    di Indonesia harus
+                                                                    diselesaikan"<br> -<b> Hadi Tjahjanto (Mentri
+                                                                        ATR/BPN) </b>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="card-title fw-bolder text-dark"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="card-body text-center container" style="height:505px">
+                                                        <img src="{{asset('/uploads/kapolri.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
+                                                        <div class="card rounded-0" style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                            <div class="card-body">
+                                                                <p class="card-text">"Penyidik tidak perlu ragu ragu
+                                                                    dalam mengusut
+                                                                    tuntas masalah
+                                                                    mafia
+                                                                    tanah, penyidik agar tindak tegas siapapun dalang
+                                                                    dan
+                                                                    bekingannya" <br> -<b>
+                                                                        Listyo
+                                                                        Sigit Prabowo (Kapolri) </b>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="card-title fw-bolder text-dark"></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <style>
+                                    @media (min-width: 1400px) {
+                                        .container-lsa {
+                                            max-width: 1000px !important;
+                                        }
+                                    }
+                                </style>
+                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" class="mb-2" style="width: 75px" alt="">
+                                <div class="container-lsa mx-auto mb-3">
+                                    <h2>
+                                        <div class="fw-bold" style="color: #61481C"> TENTANG KAMI</div>
+                                    </h2>
+                                    SENGKETA TANAH adalah platform digital dengan spesialisasi penanganan
+                                    masalah
+                                    sengketa tanah di seluruh wilayah Indonesia. Kami mempertemukan korban sengketa
+                                    tanah
+                                    atau korban
+                                    mafia
+                                    tanah dengan Sponsor, Kantor hukum, dan Pemerintah untuk menuntaskan masalah
+                                    persengketaan tanah
+                                    tersebut.
+                                    <h2>
+                                        <div class="fw-bold mt-5" style="color: #61481C"> VISI MISI</div>
+                                    </h2>
+                                    <div class="text-start">
+                                        <h5>VISI</h5>
+                                        Membantu Masyarakat dan Pemerintah Indonesia dalam penyelesaian Sengketa
+                                        Pertanahan, Konflik Pertanahan dan Perkara Pertanahan dengan membangun ekosistem
+                                        steakholder terkait, seperti Korban Sengketa, Sponsor, Pengacara dan
+                                        Pemerintahnya itu sendiri agar semua jenis permasalahan tanah lebih cepat
+                                        diselesaikan. Tujuan utama Platform Sengketa Tanah adalah membawa persoalan
+                                        tanah yang dulunya tabu menjadi lebih terbuka dengan pendekatan ecommerce yang
+                                        profit oriented.
+                                        <h5 class="mt-3">MISI</h5>
+                                        <ol style="padding-left: 1rem">
+                                            <li>Membantu masyarakat Indonesia menyelesaikan persolan sengketa
+                                                pertanahan, konflik pertanahan dan perkara pertanahan dengan menyediakan
+                                                bantuan akses pada sponsor, pengacara dan pemerintah.</li>
+                                            <li>Membantu Pemerintah Indonesia dalam hal ini Kementrian ATR/BPN untuk
+                                                menyelesaikan persolan sengketa pertanahan, konflik pertanahan dan
+                                                perkara pertanahan dengan menyediakan sortasi data persengketaan tanah
+                                                yang terjadi di masyarakat.</li>
+                                            <li>Mengangkat semua jenis persoalan tanah dengan multi komprehensif, mulai
+                                                dari dokumen pertanahan, analisa, pengecekan sampai kepada wawancara
+                                                mendalam pada korban dan pihak terkait yang disajikan dengan audio
+                                                visual untuk memudahkan steak holder mengambil keputusan.
+                                            <li>Menjadi platform khusus pertanahan yang dipercaya publik dengan komitmen
+                                                kuat penyelesaian kasus-kasus persengketaan tanah.</li>
+                                            <li>Mengintegrasikan semua jenis bidang seputar pertanahan dalam satu
+                                                platform seperti sengketa pertanahan, jual beli lahan, kerja sama lahan
+                                                sampai dengan pelelangan lahan.</li>
+                                            <li>Menyediakan berbagai tenaga ahli pertanahan dalam platform untuk
+                                                membantu desiminasi permasalahan dalam rangka menentukan tindakan yang
+                                                akan diambil, baik untuk korban, sponsor, pengacara maupun pemerintah.
+                                            </li>
+                                            <li>Menjadi platform yang terintegrasi dengan kementrian ATR/BPN</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
 
-
-                <div class="card mb-2 border-0 shadow-sm">
+                <div class="card mb-3 mt-3 border-0 shadow-sm">
                     <div class="card-body">
                         <div class="row justify-content-center">
                             <div class="col-1 arrow-desktop text-center">
@@ -883,44 +1879,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row mb-2" id="titleLawyer" style="display:none">
-                                    <div class="col">
-                                        <div class="row fw-bold">
-                                            <div class="col text-start">
-                                                <h4>Kasus Terbaru</h4>
-                                            </div>
-                                            <div class="col-4 text-end text-primary">
-                                                <h4>8,512</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mb-2" id="titlePemerintah" style="display:none">
-                                    <div class="col">
-                                        <div class="row fw-bold">
-                                            <div class="col text-start">
-                                                <h4>Data Terbaru</h4>
-                                            </div>
-                                            <div class="col-4 text-end text-primary">
-                                                <h4>3,462</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </form>
                             <hr>
-
-                            <div class=" mb-3">
-
-                            </div>
-
-                            <form action="">
-                                <div class="row">
-                                    <div class="col" style="margin-top : -12px">
-                                        <input type="text" class="form-control" placeholder="Search">
-                                    </div>
-                                </div>
-                            </form>
 
                             <div class="col-lg-12 mt-2 show" id="dataSponsor">
                                 <div class="row">

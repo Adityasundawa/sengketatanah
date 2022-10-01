@@ -17,12 +17,24 @@
 
 
     <style>
-        html,
         body {
             width: 100%;
             margin: 0px;
             padding: 0px;
             overflow-x: hidden;
+        }
+
+        .blink {
+            animation: blink-animation 1s steps(5, start) infinite;
+            -webkit-animation: blink-animation 1s steps(5, start) infinite;
+        }
+
+        .aboute-bottom {
+            position: fixed;
+            bottom: 0;
+            z-index: 1030;
+            left: 0;
+            right: 0;
         }
 
         .line-1 {

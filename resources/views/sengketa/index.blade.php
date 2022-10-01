@@ -16,7 +16,6 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
     <style>
-        html,
         body {
             width: 100%;
             margin: 0px;
@@ -24,14 +23,26 @@
             overflow-x: hidden;
         }
 
-
         .blink {
-
             animation: blink-animation 1s steps(5, start) infinite;
-
             -webkit-animation: blink-animation 1s steps(5, start) infinite;
-
         }
+
+        .aboute-bottom {
+            position: fixed;
+            bottom: 0;
+            z-index: 1030;
+            left: 0;
+            right: 0;
+        }
+
+        .aboute-bottom svg{
+            opacity: 75%;
+        }
+        .aboute-bottom h6{
+            opacity: 75%;
+        }
+
 
         @keyframes blink-animation {
 
@@ -616,6 +627,17 @@
             right: 0.5rem;
             top: 0.5rem;
         }
+
+        @media (max-width: 991.98px)) { 
+            .gambar-banner{
+                width: 75%
+            }
+        }
+        @media (max-width: 575.98px) { 
+            .gambar-banner{
+                width: 90%
+            }
+        }
     </style>
 
 </head>
@@ -663,39 +685,67 @@
         </div>
     </nav>
 
-    <div class="text-white rounded-0 jumbotron">
-        <div class="row">
-            <div class="col-md-12 text-center mt-3">
-                <div class="mobile">
+    <div id="carouselMobile" class="carousel slide mobile" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="{{url('')}}/join">
+                    <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="d-block mx-auto" style="width: 95%" alt="...">
+                </a>
+            </div>
+            <div class="carousel-item">
+              <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" class="d-block mx-auto" style="width: 95%" alt="...">
+            </div>
+        </div>
+    </div>
 
+    <div class="text-white rounded-0 jumbotron desktop">
+        <div class="row">
+            {{-- <div class="col-md-12 text-center mt-3">
+                <div class="mobile">
                     <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 100px" alt="" srcset="" class="img-fluid">
                 </div>
                 <div class="desktop-2">
                     <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 150px" alt="" srcset="" class="img-fluid">
                 </div>
+            </div> --}}
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="{{url('')}}/join">
+                            <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="d-block mx-auto gambar-banner" style="width: 50%" alt="...">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" class="d-block mx-auto gambar-banner" style="width: 50%" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev desktop" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next desktop" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="col-md text-center my-auto mt-3">
+
+            {{-- <div class="col-md text-center my-auto"> --}}
+
+                
+
+                {{-- <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="gambar-banner" width="50%" alt="">
                 <h1>Solusi Untuk Anda</h1>
                 <h3>Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
                     pemerintah dalam satu platform.</h3>
 
                 <a class="btn rounded-5 mt-3 text-white" style="background: #BF9742" href="{{url('')}}/join">Bergabung
-                    Sekarang</a>
+                    Sekarang</a> --}}
 
             </div>
         </div>
 
     </div>
-
-    <style>
-        .aboute-bottom {
-            position: fixed;
-            bottom: 0;
-            z-index: 1030;
-            left: 0;
-            right: 0;
-        }
-    </style>
 
     <div class="card aboute-bottom rounded-0 mobile">
         <div class="card border-0 shadow-sm" style="margin-top:-10px">
@@ -703,7 +753,7 @@
                 <div class="row g-0">
                     <div class="col text-center">
 
-                        <button class="btn btn-sm mb-0 p-0 w-100" type="button">
+                        <a class="btn btn-sm mb-0 p-0 w-100" href="{{url('')}}/">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
@@ -715,12 +765,12 @@
                                     <h6 class="mt-0 mb-0" style="font-size: 12px">HOME</h6>
                                 </div>
                             </div>
-                        </button>
+                        </a>
                     </div>
 
                     <div class="col text-center">
 
-                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-panduan" type="button">
+                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-panduan-m" type="button">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 296.999 296.999" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
@@ -775,16 +825,17 @@
                         </button>
 
                         <script>
-                            $("#btn-panduan").click(function() {
-                                $("#panduan").toggleClass('show');
-                                $("#jaminan").removeClass('show');
-                                $("#tentang").removeClass('show');
+                            $("#btn-panduan-m").click(function() {
+                                $("#panduan-m").toggleClass('show');
+                                $("#jaminan-m").removeClass('show');
+                                $("#chat-m").removeClass('show');
+                                $("#tentang-m").removeClass('show');
                             });
                         </script>
                     </div>
 
                     <div class="col text-center">
-                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-jaminan" type="button">
+                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-jaminan-m" type="button">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
@@ -801,18 +852,18 @@
                         </button>
 
                         <script>
-                            $("#btn-jaminan").click(function() {
-                                $("#panduan").removeClass('show');
-                                $("#jaminan").toggleClass('show');
-                                $("#chat").removeClass('show');
-                                $("#tentang").removeClass('show');
+                            $("#btn-jaminan-m").click(function() {
+                                $("#panduan-m").removeClass('show');
+                                $("#jaminan-m").toggleClass('show');
+                                $("#chat-m").removeClass('show');
+                                $("#tentang-m").removeClass('show');
                             });
                         </script>
 
                     </div>
 
                     <div class="col text-center">
-                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-chat" type="button">
+                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-chat-m" type="button">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 361.014 361.014" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
@@ -839,17 +890,17 @@
                         </button>
 
                         <script>
-                            $("#btn-chat").click(function() {
-                                $("#panduan").removeClass('show');
-                                $("#jaminan").removeClass('show');
-                                $("#chat").toggleClass('show');
-                                $("#tentang").removeClass('show');
+                            $("#btn-chat-m").click(function() {
+                                $("#panduan-m").removeClass('show');
+                                $("#jaminan-m").removeClass('show');
+                                $("#chat-m").toggleClass('show');
+                                $("#tentang-m").removeClass('show');
                             });
                         </script>
                     </div>
 
                     <div class="col text-center">
-                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-tentang" type="button">
+                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-tentang-m" type="button">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
@@ -868,11 +919,11 @@
                         </button>
 
                         <script>
-                            $("#btn-tentang").click(function() {
-                                $("#panduan").removeClass('show');
-                                $("#jaminan").removeClass('show');
-                                $("#chat").removeClass('show');
-                                $("#tentang").toggleClass('show');
+                            $("#btn-tentang-m").click(function() {
+                                $("#panduan-m").removeClass('show');
+                                $("#jaminan-m").removeClass('show');
+                                $("#chat-m").removeClass('show');
+                                $("#tentang-m").toggleClass('show');
                             });
                         </script>
 
@@ -880,7 +931,7 @@
 
 
 
-                    <ol id="panduan" class="list-group panduan list-group-numbered shadow dropdown-menu rounded-0 p-0" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                    <ol id="panduan-m" class="list-group panduan list-group-numbered shadow dropdown-menu rounded-0 p-0" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                             <div class="ms-2 me-auto">
                                 <div class="fw-bold" style="color: #61481C">Buat Akun Sengketa Tanah</div>
@@ -930,7 +981,7 @@
                         </li>
                     </ol>
 
-                    <ol id="jaminan" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                    <ol id="jaminan-m" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                         <div class="col-md-12">
                             <div class="d-flex">
                                 <div class="flex-shrink-0">
@@ -1021,7 +1072,7 @@
                         </div>
                     </ol>
 
-                    <ol id="chat" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                    <ol id="chat-m" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                         <h2>
                             <div class="fw-bold" style="color: #61481C"> Customer Service</div>
                         </h2>
@@ -1030,7 +1081,7 @@
                         </div>
                     </ol>
 
-                    <ol id="tentang" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center" style="inset: auto auto 0px 0px; margin: 0px; border-top: none; max-height: 500px; overflow-y: auto">
+                    <ol id="tentang-m" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center" style="inset: auto auto 0px 0px; margin: 0px; border-top: none; max-height: 500px; overflow-y: auto">
                         <div class="card mb-3">
                             <div class="card-body">
                                 <div class="row desktop mb-4">
@@ -1225,7 +1276,37 @@
         </div>
     </div>
 
-    <div class="container mt-4">
+    <div class="container">
+        <style>
+            .search-bar {
+                position: relative;
+                top: -23px;
+            }
+        </style>
+
+        <div class="card border-0 search-bar desktop">
+            <div class="input-group">
+                <div class="input-group-prepend my-auto">
+                    <span class="px-3">
+                        <i class="fa fa-search"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
+                <button class="btn h-100 btn-primary mb-0">Search</button>
+            </div>
+        </div>
+
+        <div class="card border-0 mt-3 mb-3 mobile">
+            <div class="input-group">
+                <div class="input-group-prepend my-auto">
+                    <span class="px-3">
+                        <i class="fa fa-search"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
+            </div>
+        </div>
+    
 
         <div class="row justify-content-center mb-4">
 
@@ -1473,7 +1554,7 @@
                                 </a>
                             </div>
                             <div class="col mb-4">
-                                <a href="{{url('/')}}/podcast-sengketa" class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                                <a href="{{url('/')}}/advokasi-pemerintah" class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="85px" x="0" y="0" viewBox="0 0 512 511" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="256" cx="256" cy="255.5" fill="#ffffff" shape="circle"></circle>
                                         <g transform="matrix(0.7,0,0,0.7,76.80000000000001,76.48344733715058)">
@@ -1495,16 +1576,16 @@
                     </div>
                 </div>
 
-
                 <div class="card mb-3 mobile">
-                    <div class="card-header bg-danger text-white">
+                    <div class="card-header bg-brown text-white">
                         <center>
-                            <h6 class="blink">Pre Launching 1 Desember 2022</h6>
-                            <h6 class="blink">Pukul 09.00 WIB </h6>
-                            <h6 class="blink">Nantikan Kehadiran Kami</h6>
+                            <h5 class="blink">Pre Launching 1 Desember 2022</h5>
+                            <h5 class="blink">Pukul 09.00 WIB </h5>
+                            <h5 class="blink">Nantikan Kehadiran Kami</h5>
                         </center>
 
                     </div>
+
                     <div class="card-body">
                         <div class="row text-center">
                             <div class="col-3">
@@ -1551,11 +1632,11 @@
                     </div>
                 </div>
 
-                <div class="card mb-3 border-0 shadow-sm desktop" style="margin-top:-10px">
+                <div class="card mb-3 mt-2 border-0 shadow-sm desktop" style="margin-top:-10px">
                     <div class="card-body pb-1 pt-2">
-                        <div class="row">
+                        <div class="row align-items-center">
 
-                            <div class="col-2 text-center mb-2">
+                            <div class="col-2 text-center">
                                 <button class="btn btn-sm" id="btn-panduan" type="button">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70px" x="0" y="0" viewBox="0 0 296.999 296.999" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="148.4995" cx="148.4995" cy="148.4995" fill="#ffffff" shape="circle">
@@ -1609,11 +1690,12 @@
                                     $("#btn-panduan").click(function() {
                                         $("#panduan").toggleClass('show');
                                         $("#jaminan").removeClass('show');
+                                        $("#chat").removeClass('show');
                                         $("#tentang").removeClass('show');
                                     });
                                 </script>
                             </div>
-                            <div class="col-2 text-center mb-2">
+                            <div class="col-2 text-center">
                                 <button class="btn btn-sm" id="btn-jaminan" type="button">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70px" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="16" cx="16" cy="16" fill="#ffffff" shape="circle"></circle>
@@ -1635,13 +1717,13 @@
                                     });
                                 </script>
                             </div>
-                            <div class="col-4 text-center mb-2">
-                                <div class="card mb-3">
-                                    <div class="card-header bg-danger text-white">
+                            <div class="col-4 text-center">
+                                <div class="card ">
+                                    <div class="card-header bg-brown text-white">
                                         <center>
-                                            <h6 class="blink">Pre Launching 1 Desember 2022</h6>
-                                            <h6 class="blink">Pukul 09.00 WIB </h6>
-                                            <h6 class="blink">Nantikan Kehadiran Kami</h6>
+                                            <h5 class="blink">Pre Launching 1 Desember 2022</h5>
+                                            <h5 class="blink">Pukul 09.00 WIB </h5>
+                                            <h5 class="blink">Nantikan Kehadiran Kami</h5>
                                         </center>
 
                                     </div>
@@ -1649,7 +1731,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-2 text-center mb-2">
+                            <div class="col-2 text-center">
                                 <button class="btn btn-sm" id="btn-chat" type="button">
                                     <img src="{{asset('')}}images/cus.svg" style="width:55px;margin-top:9px" alt="" srcset="">
                                     <h6 class=" mb-0" style="font-weight:bold;margin-top:13px">CHAT</h6>
@@ -1663,7 +1745,7 @@
                                     });
                                 </script>
                             </div>
-                            <div class="col-2 text-center mb-2">
+                            <div class="col-2 text-center">
                                 <button class="btn btn-sm" id="btn-tentang" type="button" style="margin-left:-10px">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70px" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="12" cx="12" cy="12" fill="#ffffff" shape="circle"></circle>

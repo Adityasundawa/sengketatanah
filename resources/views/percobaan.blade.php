@@ -27,18 +27,28 @@
     </button>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content modal-lg modal-dialog-centered border-0" style="background:transparent">
 
+    <div class="modal fade" id="image-modal" tabindex="-1" aria-labelledby="image-modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0" style="background:transparent">
                 <div class="modal-body">
-
-                    <img src="https://manuelstofer.github.io/pinchzoom/demo/frog.jpg" style="width:300px;height:auto" />
-
+                    <img src="" style="width:100%;height:auto;" class="rounded-3" />
                 </div>
             </div>
         </div>
     </div>
+
+
+
+    <script>
+        $('img.image-kunam').on('click', function() {
+            let dataSrc = $(this).data('src');
+            let image = $($('#image-modal').find('img'))
+            image.attr('src', dataSrc);
+        });
+    </script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script type="text/javascript">
         var el = document.querySelector('img');
