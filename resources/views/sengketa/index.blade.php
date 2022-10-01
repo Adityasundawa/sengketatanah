@@ -1727,7 +1727,7 @@
                                         </center>
 
                                     </div>
-                            
+
                                 </div>
 
                             </div>
@@ -2151,16 +2151,16 @@
 
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active">
-                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                     </div>
                                                 </div>
                                                 <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#bidding1" data-bs-slide="prev">
@@ -2388,16 +2388,16 @@
 
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active">
-                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                     </div>
                                                 </div>
                                                 <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#bidding2" data-bs-slide="prev">
@@ -2621,16 +2621,16 @@
 
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active">
-                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                     </div>
                                                 </div>
                                                 <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#bidding3" data-bs-slide="prev">
@@ -2850,16 +2850,16 @@
 
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active">
-                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                     </div>
                                                 </div>
                                                 <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#bidding4" data-bs-slide="prev">
@@ -4578,16 +4578,16 @@
 
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                             </div>
                                             <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ksl2" data-bs-slide="prev">
@@ -4801,16 +4801,16 @@
 
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                             </div>
                                             <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ksl10" data-bs-slide="prev">
@@ -5025,16 +5025,16 @@
 
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                             </div>
                                             <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ksl3" data-bs-slide="prev">
@@ -5249,16 +5249,16 @@
 
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                             </div>
                                             <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ksl4" data-bs-slide="prev">
@@ -5472,16 +5472,16 @@
 
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                             </div>
                                             <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ksl2" data-bs-slide="prev">
@@ -5884,16 +5884,16 @@
 
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                             </div>
                                             <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#jbl1" data-bs-slide="prev">
@@ -6096,16 +6096,16 @@
 
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                             </div>
                                             <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#jbl2" data-bs-slide="prev">
@@ -6314,16 +6314,16 @@
 
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                             </div>
                                             <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#jbl3" data-bs-slide="prev">
@@ -6532,16 +6532,16 @@
 
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                             </div>
                                             <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#jbl4" data-bs-slide="prev">
@@ -6752,16 +6752,16 @@
 
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                                 </div>
                                             </div>
                                             <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#jbl2" data-bs-slide="prev">
@@ -7050,7 +7050,7 @@
                                             <div class="col-12 custom">
                                                 <div class="card mx-auto">
                                                     <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="a-image w-100 rounded-top" alt="">
                                                         <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
                                                             <h4 class="mb-0">Dijual</h4>
                                                         </div>
@@ -7078,7 +7078,7 @@
                                             <div class="col-12 custom">
                                                 <div class="card mx-auto">
                                                     <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="a-image w-100 rounded-top" alt="">
                                                         <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
                                                             <h4 class="mb-0">Dijual</h4>
                                                         </div>
@@ -7105,7 +7105,7 @@
                                             <div class="col-12 custom">
                                                 <div class="card mx-auto">
                                                     <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="a-image w-100 rounded-top" alt="">
                                                         <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
                                                             <h4 class="mb-0">Dijual</h4>
                                                         </div>
@@ -7133,7 +7133,7 @@
                                             <div class="col-12 custom">
                                                 <div class="card mx-auto">
                                                     <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="a-image w-100 rounded-top" alt="">
                                                         <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
                                                             <h4 class="mb-0">Dijual</h4>
                                                         </div>
@@ -7194,7 +7194,7 @@
                                             <div class="col-12 custom">
                                                 <div class="card mx-auto">
                                                     <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan4.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="a-image w-100 rounded-top" alt="">
                                                         <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
                                                             <h4 class="mb-0">Dijual</h4>
                                                         </div>
@@ -7221,7 +7221,7 @@
                                             <div class="col-12 custom">
                                                 <div class="card mx-auto">
                                                     <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan1.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="a-image w-100 rounded-top" alt="">
                                                         <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
                                                             <h4 class="mb-0">Dijual</h4>
                                                         </div>
@@ -7249,7 +7249,7 @@
                                             <div class="col-12 custom">
                                                 <div class="card mx-auto">
                                                     <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan2.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="a-image w-100 rounded-top" alt="">
                                                         <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
                                                             <h4 class="mb-0">Dijual</h4>
                                                         </div>
@@ -7277,7 +7277,7 @@
                                             <div class="col-12 custom">
                                                 <div class="card mx-auto">
                                                     <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan3.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="a-image w-100 rounded-top" alt="">
                                                         <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
                                                             <h4 class="mb-0">Dijual</h4>
                                                         </div>
@@ -7503,16 +7503,16 @@
 
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                             </div>
                                         </div>
                                         <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ll4" data-bs-slide="prev">
@@ -7765,16 +7765,16 @@
 
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                             </div>
                                         </div>
                                         <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ll2" data-bs-slide="prev">
@@ -8026,16 +8026,16 @@
 
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                             </div>
                                         </div>
                                         <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ll3" data-bs-slide="prev">
@@ -8285,16 +8285,16 @@
 
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" style="height:200px;width:auto;object-fit:cover">
+                                                <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
                                             </div>
                                         </div>
                                         <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ll44" data-bs-slide="prev">
@@ -8630,7 +8630,7 @@
                                         <div class="card mx-auto">
                                             <div class="ribbon ribbon-top-left"><span>lelang</span></div>
                                             <div class="card-body p-0 text-start">
-                                                <img src="{{asset('')}}images/lahan1.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
                                                         <h6 class="mb-0">Nilai Limit :</h6>
@@ -8659,7 +8659,7 @@
                                         <div class="card mx-auto">
                                             <div class="ribbon ribbon-top-left"><span>lelang</span></div>
                                             <div class="card-body p-0 text-start">
-                                                <img src="{{asset('')}}images/lahan4.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
                                                         <h6 class="mb-0">Nilai Limit :</h6>
@@ -8687,7 +8687,7 @@
                                         <div class="card mx-auto">
                                             <div class="ribbon ribbon-top-left"><span>lelang</span></div>
                                             <div class="card-body p-0 text-start">
-                                                <img src="{{asset('')}}images/lahan2.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
                                                         <h6 class="mb-0">Nilai Limit :</h6>
@@ -8716,7 +8716,7 @@
                                         <div class="card mx-auto">
                                             <div class="ribbon ribbon-top-left"><span>lelang</span></div>
                                             <div class="card-body p-0 text-start">
-                                                <img src="{{asset('')}}images/lahan3.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
                                                         <h6 class="mb-0">Nilai Limit :</h6>
@@ -8782,7 +8782,7 @@
                                         <div class="card mx-auto">
                                             <div class="ribbon ribbon-top-left"><span>lelang</span></div>
                                             <div class="card-body p-0 text-start">
-                                                <img src="{{asset('')}}images/lahan4.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
                                                         <h6 class="mb-0">Nilai Limit :</h6>
@@ -8810,7 +8810,7 @@
                                         <div class="card mx-auto">
                                             <div class="ribbon ribbon-top-left"><span>lelang</span></div>
                                             <div class="card-body p-0 text-start">
-                                                <img src="{{asset('')}}images/lahan1.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
                                                         <h6 class="mb-0">Nilai Limit :</h6>
@@ -8839,7 +8839,7 @@
                                         <div class="card mx-auto">
                                             <div class="ribbon ribbon-top-left"><span>lelang</span></div>
                                             <div class="card-body p-0 text-start">
-                                                <img src="{{asset('')}}images/lahan2.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
                                                         <h6 class="mb-0">Nilai Limit :</h6>
@@ -8868,7 +8868,7 @@
                                         <div class="card mx-auto">
                                             <div class="ribbon ribbon-top-left"><span>lelang</span></div>
                                             <div class="card-body p-0 text-start">
-                                                <img src="{{asset('')}}images/lahan3.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="a-image w-100 rounded-top" alt="">
                                                 <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                     <div class="col-12">
                                                         <h6 class="mb-0">Nilai Limit :</h6>
@@ -8949,6 +8949,28 @@
                 </table>
 
             </div>
+
+
+            <div class="modal fade" id="image-modal" tabindex="-1" aria-labelledby="image-modalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content border-0" style="background:transparent">
+                        <div class="modal-body">
+                            <img src="" style="width:100%;height:auto;" class="rounded-3" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <script>
+                $('img.image-kunam').on('click', function() {
+                    let dataSrc = $(this).data('src');
+                    let image = $($('#image-modal').find('img'))
+                    image.attr('src', dataSrc);
+                });
+            </script>
+
 
             <div class="card-body" style="background-color:#000;">
                 <style>
@@ -9751,6 +9773,10 @@
         let i = setInterval(countdown, 1000);
         countdown();
     </script>
+
+
+
+
 </body>
 
 </html>
