@@ -16,7 +16,6 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
     <style>
-        html,
         body {
             width: 100%;
             margin: 0px;
@@ -24,14 +23,19 @@
             overflow-x: hidden;
         }
 
-
         .blink {
-
             animation: blink-animation 1s steps(5, start) infinite;
-
             -webkit-animation: blink-animation 1s steps(5, start) infinite;
-
         }
+
+        .aboute-bottom {
+            position: fixed;
+            bottom: 0;
+            z-index: 1030;
+            left: 0;
+            right: 0;
+        }
+
 
         @keyframes blink-animation {
 
@@ -616,6 +620,17 @@
             right: 0.5rem;
             top: 0.5rem;
         }
+
+        @media (max-width: 991.98px)) { 
+            .gambar-banner{
+                width: 75%
+            }
+        }
+        @media (max-width: 575.98px) { 
+            .gambar-banner{
+                width: 90%
+            }
+        }
     </style>
 
 </head>
@@ -675,6 +690,7 @@
             </div>
         </div>
     </div>
+    
     <div class="text-white rounded-0 jumbotron desktop">
         <div class="row">
             {{-- <div class="col-md-12 text-center mt-3">
@@ -708,18 +724,6 @@
             </div>
 
             {{-- <div class="col-md text-center my-auto"> --}}
-                <style>
-                    @media (max-width: 991.98px)) { 
-                        .gambar-banner{
-                            width: 75%
-                        }
-                     }
-                    @media (max-width: 575.98px) { 
-                        .gambar-banner{
-                            width: 90%
-                        }
-                     }
-                </style>
 
                 
 
@@ -736,23 +740,13 @@
 
     </div>
 
-    <style>
-        .aboute-bottom {
-            position: fixed;
-            bottom: 0;
-            z-index: 1030;
-            left: 0;
-            right: 0;
-        }
-    </style>
-
     <div class="card aboute-bottom rounded-0 mobile">
         <div class="card border-0 shadow-sm" style="margin-top:-10px">
             <div class="card-body p-0">
                 <div class="row g-0">
                     <div class="col text-center">
 
-                        <button class="btn btn-sm mb-0 p-0 w-100" href="#" type="button">
+                        <a class="btn btn-sm mb-0 p-0 w-100" href="{{url('')}}/">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
@@ -764,7 +758,7 @@
                                     <h6 class="mt-0 mb-0" style="font-size: 12px">HOME</h6>
                                 </div>
                             </div>
-                        </button>
+                        </a>
                     </div>
 
                     <div class="col text-center">
@@ -1631,11 +1625,11 @@
                     </div>
                 </div>
 
-                <div class="card mb-3 border-0 shadow-sm desktop" style="margin-top:-10px">
+                <div class="card mb-3 mt-2 border-0 shadow-sm desktop" style="margin-top:-10px">
                     <div class="card-body pb-1 pt-2">
                         <div class="row align-items-center">
 
-                            <div class="col-2 text-center mb-2">
+                            <div class="col-2 text-center">
                                 <button class="btn btn-sm" id="btn-panduan" type="button">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70px" x="0" y="0" viewBox="0 0 296.999 296.999" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="148.4995" cx="148.4995" cy="148.4995" fill="#ffffff" shape="circle">
@@ -1694,7 +1688,7 @@
                                     });
                                 </script>
                             </div>
-                            <div class="col-2 text-center mb-2">
+                            <div class="col-2 text-center">
                                 <button class="btn btn-sm" id="btn-jaminan" type="button">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70px" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="16" cx="16" cy="16" fill="#ffffff" shape="circle"></circle>
@@ -1716,7 +1710,7 @@
                                     });
                                 </script>
                             </div>
-                            <div class="col-4 text-center mb-2">
+                            <div class="col-4 text-center">
                                 <div class="card ">
                                     <div class="card-header bg-brown text-white">
                                         <center>
@@ -1730,7 +1724,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-2 text-center mb-2">
+                            <div class="col-2 text-center">
                                 <button class="btn btn-sm" id="btn-chat" type="button">
                                     <img src="{{asset('')}}images/cus.svg" style="width:55px;margin-top:9px" alt="" srcset="">
                                     <h6 class=" mb-0" style="font-weight:bold;margin-top:13px">CHAT</h6>
@@ -1744,7 +1738,7 @@
                                     });
                                 </script>
                             </div>
-                            <div class="col-2 text-center mb-2">
+                            <div class="col-2 text-center">
                                 <button class="btn btn-sm" id="btn-tentang" type="button" style="margin-left:-10px">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70px" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="12" cx="12" cy="12" fill="#ffffff" shape="circle"></circle>
