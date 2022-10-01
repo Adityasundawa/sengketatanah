@@ -628,6 +628,12 @@
             top: 0.5rem;
         }
 
+        @media (max-width: 1199.98px)) { 
+            .gambar-banner{
+                width: 80%
+            }
+        }
+
         @media (max-width: 991.98px)) { 
             .gambar-banner{
                 width: 75%
@@ -713,18 +719,18 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <a href="{{url('')}}/join">
-                            <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="d-block mx-auto gambar-banner" style="width: 100%" alt="...">
+                            <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="d-block mx-auto gambar-banner" style="width: 90%" alt="...">
                         </a>
                     </div>
                     <div class="carousel-item">
-                      <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" class="d-block mx-auto gambar-banner" style="width: 100%" alt="...">
+                      <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" class="d-block mx-auto gambar-banner" style="width: 90%" alt="...">
                     </div>
                 </div>
-                <button class="carousel-control-prev desktop" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <button class="carousel-control-prev desktop" type="button" style="left: -5%" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next desktop" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <button class="carousel-control-next desktop" type="button" style="right: -5%" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
