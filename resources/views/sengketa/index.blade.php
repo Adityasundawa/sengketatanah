@@ -667,7 +667,6 @@
         <div class="row">
             <div class="col-md-12 text-center mt-3">
                 <div class="mobile">
-
                     <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 100px" alt="" srcset="" class="img-fluid">
                 </div>
                 <div class="desktop-2">
@@ -675,7 +674,20 @@
                 </div>
             </div>
             <div class="col-md text-center my-auto mt-4">
-                <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" width="650px" alt="">
+                <style>
+                    @media (min-width: 992px) { 
+                        .gambar-banner{
+                            width: 50%
+                        }
+                     }
+                    @media (min-width: 576px) { 
+                        .gambar-banner{
+                            width: 75%
+                        }
+                     }
+                </style>
+
+                <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="gambar-banner" width="90%" alt="">
                 {{-- <h1>Solusi Untuk Anda</h1>
                 <h3>Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
                     pemerintah dalam satu platform.</h3>
