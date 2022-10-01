@@ -8957,28 +8957,55 @@
                 </table>
 
             </div>
+            <style>
+                .modal-backdrop {
+                    opacity: 0.9 !important;
+                }
 
+                .mobile-size {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+
+                @media (min-width:800px) {
+                    .mobile-size {
+                        width: 100%;
+                        height: 500px;
+                        object-fit: cover;
+                    }
+                }
+            </style>
 
             <div class="modal fade" id="image-modal" tabindex="-1" aria-labelledby="image-modalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content border-0">
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-12">
-                                    <img src="{{asset('')}}images/lahan4.jpeg" style="width:100%;height:auto;" class="rounded-3 foto-utama" />
-                                </div>
-                                <div class="col-12">
-                                    <div class="row mt-2 justify-content-center">
+                <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+                    <div class="modal-content border-0" style="background-color:transparent">
 
-                                        <div class="col-lg mobile-scroll align-center" id='gambar-lain-modal' style="white-space:nowrap;flex-wrap:nowarp;display:flex">
-                                            <div class="container-gambar ms-1 me-1" style='display: inline-block;flex: 0 0 auto'>
-                                                <img src="{{asset('')}}images/lahan4.jpeg" alt="" srcset="" class="rounded-1 img-fluid " style="width:150px;height:100px;object-fit:cover;"> <br>
-                                            </div>
-                                            <div class="container-gamba ms-1 me-1" style='display: inline-block;flex: 0 0 auto'>
-                                                <img src="{{asset('')}}images/lahan4.jpeg" alt="" srcset="" class="rounded-1 img-fluid " style="width:150px;height:100px;object-fit:cover;"> <br>
-                                            </div>
-                                            <div class="container-gambar ms-1 me-1" style='display: inline-block;flex: 0 0 auto'>
-                                                <img src="{{asset('')}}images/lahan4.jpeg" alt="" srcset="" class="rounded-1 img-fluid " style="width:150px;height:100px;object-fit:cover;"> <br>
+                        <div class="modal-header bg-dark text-white border-0">
+                            <h5 class="modal-title title-bidang">Modal title</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" style="background-color:transparent">
+                            <div class="container">
+                                <div class="row justify-content-center">
+
+
+                                    <div class="col-lg-8">
+                                        <img src="{{asset('')}}images/lahan4.jpeg" class="rounded-1 foto-utama mobile-size" />
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="row mt-2 justify-content-center">
+
+                                            <div class="col-lg mobile-scroll align-center" id='gambar-lain-modal' style="white-space:nowrap;flex-wrap:nowarp;display:flex">
+                                                <div class="container-gambar ms-1 me-1" style='display: inline-block;flex: 0 0 auto'>
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" alt="" srcset="" class="rounded-1 img-fluid " style="width:150px;height:100px;object-fit:cover;"> <br>
+                                                </div>
+                                                <div class="container-gamba ms-1 me-1" style='display: inline-block;flex: 0 0 auto'>
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" alt="" srcset="" class="rounded-1 img-fluid " style="width:150px;height:100px;object-fit:cover;"> <br>
+                                                </div>
+                                                <div class="container-gambar ms-1 me-1" style='display: inline-block;flex: 0 0 auto'>
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" alt="" srcset="" class="rounded-1 img-fluid " style="width:150px;height:100px;object-fit:cover;"> <br>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -8994,6 +9021,8 @@
                 $('img.image-kunam').on('click', function() {
                     let dataSrc = $(this).data('src');
                     let dataImgLain = $($($(this).parent()).parent()).find('img')
+                    let judulB = $($($($($(this).parent()).parent()).parent()).parent()).find('h5.text-center').html()
+                    $('h5.title-bidang').html(judulB)
                     let image = $($('#image-modal').find('img.foto-utama'))
                     image.attr('src', dataSrc);
                     let arrayGambar = [];
