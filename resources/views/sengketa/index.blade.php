@@ -675,19 +675,19 @@
             </div>
             <div class="col-md text-center my-auto mt-4">
                 <style>
-                    @media (min-width: 992px) { 
-                        .gambar-banner{
-                            width: 50%
-                        }
-                     }
-                    @media (min-width: 576px) { 
+                    @media (max-width: 991.98px)) { 
                         .gambar-banner{
                             width: 75%
                         }
                      }
+                    @media (max-width: 575.98px) { 
+                        .gambar-banner{
+                            width: 90%
+                        }
+                     }
                 </style>
 
-                <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="gambar-banner" width="90%" alt="">
+                <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="gambar-banner" width="50%" alt="">
                 {{-- <h1>Solusi Untuk Anda</h1>
                 <h3>Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
                     pemerintah dalam satu platform.</h3>
