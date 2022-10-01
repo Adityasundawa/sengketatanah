@@ -752,7 +752,7 @@
                 <div class="row g-0">
                     <div class="col text-center">
 
-                        <button class="btn btn-sm mb-0 p-0 w-100" type="button">
+                        <button class="btn btn-sm mb-0 p-0 w-100" href="#" type="button">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
@@ -769,7 +769,7 @@
 
                     <div class="col text-center">
 
-                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-panduan" type="button">
+                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-panduan-m" type="button">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 296.999 296.999" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
@@ -824,16 +824,17 @@
                         </button>
 
                         <script>
-                            $("#btn-panduan").click(function() {
-                                $("#panduan").toggleClass('show');
-                                $("#jaminan").removeClass('show');
-                                $("#tentang").removeClass('show');
+                            $("#btn-panduan-m").click(function() {
+                                $("#panduan-m").toggleClass('show');
+                                $("#jaminan-m").removeClass('show');
+                                $("#chat-m").removeClass('show');
+                                $("#tentang-m").removeClass('show');
                             });
                         </script>
                     </div>
 
                     <div class="col text-center">
-                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-jaminan" type="button">
+                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-jaminan-m" type="button">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
@@ -850,18 +851,18 @@
                         </button>
 
                         <script>
-                            $("#btn-jaminan").click(function() {
-                                $("#panduan").removeClass('show');
-                                $("#jaminan").toggleClass('show');
-                                $("#chat").removeClass('show');
-                                $("#tentang").removeClass('show');
+                            $("#btn-jaminan-m").click(function() {
+                                $("#panduan-m").removeClass('show');
+                                $("#jaminan-m").toggleClass('show');
+                                $("#chat-m").removeClass('show');
+                                $("#tentang-m").removeClass('show');
                             });
                         </script>
 
                     </div>
 
                     <div class="col text-center">
-                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-chat" type="button">
+                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-chat-m" type="button">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 361.014 361.014" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
@@ -888,17 +889,17 @@
                         </button>
 
                         <script>
-                            $("#btn-chat").click(function() {
-                                $("#panduan").removeClass('show');
-                                $("#jaminan").removeClass('show');
-                                $("#chat").toggleClass('show');
-                                $("#tentang").removeClass('show');
+                            $("#btn-chat-m").click(function() {
+                                $("#panduan-m").removeClass('show');
+                                $("#jaminan-m").removeClass('show');
+                                $("#chat-m").toggleClass('show');
+                                $("#tentang-m").removeClass('show');
                             });
                         </script>
                     </div>
 
                     <div class="col text-center">
-                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-tentang" type="button">
+                        <button class="btn btn-sm mb-0 p-0 w-100" id="btn-tentang-m" type="button">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
@@ -917,11 +918,11 @@
                         </button>
 
                         <script>
-                            $("#btn-tentang").click(function() {
-                                $("#panduan").removeClass('show');
-                                $("#jaminan").removeClass('show');
-                                $("#chat").removeClass('show');
-                                $("#tentang").toggleClass('show');
+                            $("#btn-tentang-m").click(function() {
+                                $("#panduan-m").removeClass('show');
+                                $("#jaminan-m").removeClass('show');
+                                $("#chat-m").removeClass('show');
+                                $("#tentang-m").toggleClass('show');
                             });
                         </script>
 
@@ -929,7 +930,7 @@
 
 
 
-                    <ol id="panduan" class="list-group panduan list-group-numbered shadow dropdown-menu rounded-0 p-0" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                    <ol id="panduan-m" class="list-group panduan list-group-numbered shadow dropdown-menu rounded-0 p-0" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                             <div class="ms-2 me-auto">
                                 <div class="fw-bold" style="color: #61481C">Buat Akun Sengketa Tanah</div>
@@ -979,7 +980,7 @@
                         </li>
                     </ol>
 
-                    <ol id="jaminan" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                    <ol id="jaminan-m" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                         <div class="col-md-12">
                             <div class="d-flex">
                                 <div class="flex-shrink-0">
@@ -1070,7 +1071,7 @@
                         </div>
                     </ol>
 
-                    <ol id="chat" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                    <ol id="chat-m" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                         <h2>
                             <div class="fw-bold" style="color: #61481C"> Customer Service</div>
                         </h2>
@@ -1079,7 +1080,7 @@
                         </div>
                     </ol>
 
-                    <ol id="tentang" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center" style="inset: auto auto 0px 0px; margin: 0px; border-top: none; max-height: 500px; overflow-y: auto">
+                    <ol id="tentang-m" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center" style="inset: auto auto 0px 0px; margin: 0px; border-top: none; max-height: 500px; overflow-y: auto">
                         <div class="card mb-3">
                             <div class="card-body">
                                 <div class="row desktop mb-4">
@@ -1582,6 +1583,7 @@
                         </center>
 
                     </div>
+
                     <div class="card-body">
                         <div class="row text-center">
                             <div class="col-3">
@@ -1686,6 +1688,7 @@
                                     $("#btn-panduan").click(function() {
                                         $("#panduan").toggleClass('show');
                                         $("#jaminan").removeClass('show');
+                                        $("#chat").removeClass('show');
                                         $("#tentang").removeClass('show');
                                     });
                                 </script>
