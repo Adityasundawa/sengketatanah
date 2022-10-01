@@ -512,6 +512,35 @@
             right: 1.5rem;
             top: 2rem;
         }
+
+        div.page {
+            max-width: 100vw;
+            text-align: left;
+        }
+
+        .pinch-zoom-parent {
+            height: 80vh;
+            width: 90vw;
+        }
+
+        img.zooming {
+            height: 90vh;
+        }
+
+        div.pinch-zoom div.description h1 {
+            font-size: 40px;
+            margin: 0px;
+            margin-bottom: 10px;
+        }
+
+        div.pinch-zoom div.description p {
+            margin-bottom: 1em;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
     </style>
 
 </head>
@@ -2526,6 +2555,7 @@
             hidestuff();
         });
     </script>
+    
 </body>
 
 </html>
