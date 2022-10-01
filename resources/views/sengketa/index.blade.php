@@ -663,7 +663,19 @@
         </div>
     </nav>
 
-    <div class="text-white rounded-0 jumbotron">
+    <div id="carouselMobile" class="carousel slide mobile" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="{{url('')}}/join">
+                    <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="d-block mx-auto" style="width: 100%" alt="...">
+                </a>
+            </div>
+            <div class="carousel-item">
+              <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" class="d-block mx-auto" style="width: 100%" alt="...">
+            </div>
+        </div>
+    </div>
+    <div class="text-white rounded-0 jumbotron desktop">
         <div class="row">
             {{-- <div class="col-md-12 text-center mt-3">
                 <div class="mobile">
@@ -674,9 +686,29 @@
                 </div>
             </div> --}}
 
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="{{url('')}}/join">
+                            <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="d-block mx-auto" style="width: 95%" alt="...">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" class="d-block mx-auto" style="width: 95%" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev desktop" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next desktop" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
-            <div class="col-md text-center my-auto">
-                {{-- <style>
+            {{-- <div class="col-md text-center my-auto">
+                <style>
                     @media (max-width: 991.98px)) { 
                         .gambar-banner{
                             width: 75%
@@ -689,27 +721,10 @@
                      }
                 </style> --}}
 
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="d-block mx-auto" style="width: 95%" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" class="d-block mx-auto" style="width: 95%" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev desktop" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next desktop" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+                
 
-                {{-- <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="gambar-banner" width="50%" alt=""> --}}
-                {{-- <h1>Solusi Untuk Anda</h1>
+                {{-- <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="gambar-banner" width="50%" alt="">
+                <h1>Solusi Untuk Anda</h1>
                 <h3>Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
                     pemerintah dalam satu platform.</h3>
 
