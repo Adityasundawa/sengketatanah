@@ -501,6 +501,14 @@
         .bg-pengacara {
             background: linear-gradient(90deg, hsla(337, 85%, 31%, 1) 42%, hsla(337, 83%, 30%, 1) 64%, hsla(318, 57%, 22%, 1) 86%);
         }
+
+        .fav-icon {
+            color: #ffc107 !important
+        }
+
+        .text-fav-disable {
+            color: rgb(199, 199, 199)
+        }
     </style>
 
 
@@ -518,7 +526,7 @@
 
             <div class="col-lg-12">
 
-                <div class="card mb-0 border-0 mt-2 mb-2" style="z-index:999">
+                <div class="card mb-0 border-0 mb-3" style="z-index:999">
                     <div class="card-body pb-0">
                         <div class="row justify-content-between text-center scroll-simple" style="overflow-x: auto; flex-wrap: nowrap">
                             <div class="col mb-4">
@@ -677,7 +685,7 @@
                                             </g>
                                         </g>
                                     </svg>
-                                    <div class="mt-0" style="font-size: 12px">Jasa <br> Tukang Ukur</div>
+                                    <div class="mt-0" style="font-size: 12px">Jasa <br> Petugas Ukur</div>
                                 </a>
                             </div>
                             <div class="col mb-4">
@@ -757,6 +765,18 @@
                                         </g>
                                     </svg>
                                     <div class="mt-0" style="font-size: 12px">Podcast <br> Sengketa</div>
+                                </a>
+                            </div>
+                            <div class="col mb-4">
+                                <a href="{{url('/')}}/advokasi-pemerintah" class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="85px" x="0" y="0" viewBox="0 0 512 511" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                        <circle r="256" cx="256" cy="255.5" fill="#ffffff" shape="circle"></circle>
+                                        <g transform="matrix(0.7,0,0,0.7,76.80000000000001,76.48344733715058)">
+                                            <path d="m256 131.46875c13.273438 0 24.066406-10.796875 24.066406-24.066406 0-13.273438-10.796875-24.070313-24.066406-24.070313s-24.066406 10.796875-24.066406 24.070313c0 13.269531 10.796875 24.066406 24.066406 24.066406zm0-33.136719c5 0 9.066406 4.070313 9.066406 9.070313 0 4.996094-4.066406 9.066406-9.066406 9.066406s-9.066406-4.066406-9.066406-9.066406 4.066406-9.070313 9.066406-9.070313zm0 0" fill="#61481c" data-original="#000000" class=""></path>
+                                            <path d="m504.5 461.261719h-9.066406v-25.632813c0-4.140625-3.359375-7.5-7.5-7.5h-25.632813v-25.632812c0-4.140625-3.355469-7.5-7.5-7.5h-9.0625v-164.128906h9.0625c4.144531 0 7.5-3.359376 7.5-7.5v-25.632813h25.632813c4.144531 0 7.5-3.359375 7.5-7.5v-33.132813c0-4.140624-3.355469-7.5-7.5-7.5h-14.222656l-213.441407-147.769531c-2.566406-1.7773435-5.96875-1.7773435-8.539062 0l-213.4375 147.769531h-14.226563c-4.140625 0-7.5 3.355469-7.5 7.5v33.132813c0 4.140625 3.359375 7.5 7.5 7.5h25.632813v25.632813c0 4.140624 3.359375 7.5 7.5 7.5h9.066406v164.128906h-9.066406c-4.140625 0-7.5 3.355468-7.5 7.5v25.632812h-25.632813c-4.140625 0-7.5 3.359375-7.5 7.5v25.632813h-9.066406c-4.144531 0-7.5 3.355469-7.5 7.5v33.128906c0 4.144531 3.355469 7.5 7.5 7.5h497c4.144531 0 7.5-3.355469 7.5-7.5v-33.128906c0-4.140625-3.355469-7.5-7.5-7.5zm-57.199219-33.132813h-67.832031v-18.132812h67.832031zm-51.269531-33.132812v-164.128906h34.703125v164.128906zm51.269531-179.128906h-67.832031v-18.132813h67.832031zm-75.332031 15h9.0625v164.128906h-9.0625c-4.144531 0-7.5 3.355468-7.5 7.5v25.632812h-59.550781v-25.632812c0-4.144532-3.359375-7.5-7.5-7.5h-9.066407v-164.128906h9.066407c4.140625 0 7.5-3.359376 7.5-7.5v-25.632813h59.550781v25.632813c0 4.140624 3.355469 7.5 7.5 7.5zm-149.882812-33.132813h67.832031v18.132813h-67.832031zm16.5625 33.132813h34.703124v164.128906h-34.703124zm51.269531 179.128906v18.132812h-67.832031v-18.132812zm-258.351563-245.394532h9.070313.007812.003907 121.800781c4.144531 0 7.5-3.359374 7.5-7.5 0-4.144531-3.355469-7.5-7.5-7.5h-97.804688l191.355469-132.480468 191.359375 132.480468h-254.910156c-4.140625 0-7.5 3.355469-7.5 7.5 0 4.140626 3.359375 7.5 7.5 7.5h278.816406.023437 9.144532v18.132813h-448.867188zm33.132813 33.132813h67.835937v18.132813h-67.835937zm51.269531 33.132813v164.128906h-34.703125v-164.128906zm-51.269531 179.128906h67.835937v18.132812h-67.835937zm75.335937-15h-9.066406v-164.128906h9.066406c4.140625 0 7.5-3.359376 7.5-7.5v-25.632813h59.550782v25.632813c0 4.140624 3.355468 7.5 7.5 7.5h9.0625v164.128906h-9.0625c-4.144532 0-7.5 3.355468-7.5 7.5v25.632812h-59.550782v-25.632812c0-4.144532-3.359375-7.5-7.5-7.5zm-108.46875 48.132812h448.867188v18.132813h-448.867188zm465.433594 51.265625h-482v-18.132812h482zm0 0" fill="#61481c" data-original="#000000" class=""></path>
+                                        </g>
+                                    </svg>
+                                    <div class="mt-0" style="font-size: 12px">Advokasi <br> Pemerintah</div>
                                 </a>
                             </div>
                             <div class="col mb-4">
@@ -981,25 +1001,27 @@
                                                 <hr>
 
 
-                                                <div class="row g-0">
+
+                                                <div class="row g-0 align-items-center">
                                                     <div class="col text-center">
 
-                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                                            <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasPengacara" style="text-decoration:none">
+                                                            <i class="fa-solid fa-eye"></i> Lihat Detail
                                                         </a>
 
 
-                                                        <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="berkasPengacara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
                                                                         <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
-                                                                        Anda harus masuk sebagai sponsor sebelum melihat
-                                                                        berkas.
+                                                                        Anda harus memiliki akun pengacara sebelum
+                                                                        melihat
+                                                                        detail.
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -1011,9 +1033,21 @@
                                                         </div>
 
                                                     </div>
+                                                    <div class="col-1 text-center">
+                                                        <a id="fav-p<?= $bs['id'] ?>">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-p<?= $bs['id'] ?>">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                        <script>
+                                                            $("#fav-p<?= $bs['id'] ?>").click(function() {
+                                                                $("#fav-ch-p<?= $bs['id'] ?>").toggleClass('fav-icon');
+                                                            });
+                                                        </script>
+                                                    </div>
                                                     <div class="col text-center">
-                                                        <span onclick="return document.querySelector('form.form-sengketa1').submit()" class="btn btn-success rounded-5" style="cursor:pointer"><i class="fa-solid fa-play text-white"></i>
-                                                            Lihat Podcast</span>
+                                                        <a data-bs-toggle="modal" data-bs-target="#examplePengacara" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                            Bid</a>
                                                     </div>
                                                 </div>
 
@@ -1033,11 +1067,11 @@
                                                     <div class="col-4">
 
                                                         <div class="d-grid gap-2 ">
-
+                                                            <!-- 
                                                             <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                                 BID
                                                             </button>
-
+ -->
 
                                                             <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                 <div class="modal-dialog modal-dialog-centered">
