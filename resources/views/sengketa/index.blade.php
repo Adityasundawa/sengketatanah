@@ -1495,7 +1495,6 @@
                     </div>
                 </div>
 
-
                 <div class="card mb-3 mobile">
                     <div class="card-header bg-brown text-white">
                         <center>
