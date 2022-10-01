@@ -16,24 +16,38 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
     <style>
-            body {
-                width: 100%;
-                margin: 0px;
-                padding: 0px;
-                overflow-x: hidden;
-            }
+        body {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
 
-            .blink {
-                animation: blink-animation 1s steps(5, start) infinite;
-                -webkit-animation: blink-animation 1s steps(5, start) infinite;
-            }
+        .blink {
+            animation: blink-animation 1s steps(5, start) infinite;
+            -webkit-animation: blink-animation 1s steps(5, start) infinite;
+        }
 
-            .aboute-bottom {
-                position: fixed;
-                bottom: 0;
-                z-index: 1030;
+        .aboute-bottom {
+            position: fixed;
+            bottom: 0;
+            z-index: 1030;
             left: 0;
             right: 0;
+        }
+
+        .aboute-bottom svg{
+            opacity: 75%;
+        }
+        .aboute-bottom h6{
+            opacity: 75%;
+        }
+
+        .aboute-bottom svg{
+            opacity: 75%;
+        }
+        .aboute-bottom h6{
+            opacity: 75%;
         }
 
         .blink {

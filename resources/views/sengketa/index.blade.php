@@ -36,6 +36,13 @@
             right: 0;
         }
 
+        .aboute-bottom svg{
+            opacity: 75%;
+        }
+        .aboute-bottom h6{
+            opacity: 75%;
+        }
+
 
         @keyframes blink-animation {
 
@@ -690,7 +697,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="text-white rounded-0 jumbotron desktop">
         <div class="row">
             {{-- <div class="col-md-12 text-center mt-3">
