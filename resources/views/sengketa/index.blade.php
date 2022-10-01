@@ -1637,7 +1637,7 @@
                             </div>
                             <div class="col-4 text-center mb-2">
                                 <div class="card ">
-                                    <div class="card-header bg-danger text-white">
+                                    <div class="card-header bg-brown text-white">
                                         <center>
                                             <h5 class="blink">Pre Launching 1 Desember 2022</h5>
                                             <h5 class="blink">Pukul 09.00 WIB </h5>
