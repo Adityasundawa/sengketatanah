@@ -1291,6 +1291,7 @@
                     </span>
                 </div>
                 <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
+                <button class="btn h-100 btn-primary mb-0">Search</button>
             </div>
         </div>
 

@@ -529,7 +529,7 @@
 
             <div class="col-lg-12">
 
-                <div class="card mb-0 border-0 mb-3" style="z-index:999">
+                <div class="card mb-0 border-0 mb-3 mt-3" style="z-index:999">
                     <div class="card-body pb-0">
                         <div class="row justify-content-between text-center scroll-simple" style="overflow-x: auto; flex-wrap: nowrap">
                             <div class="col mb-4">
@@ -793,11 +793,19 @@
                     </div>
                 </div>
 
+                <div class="card border-0">
+                    <div class="input-group">
+                        <div class="input-group-prepend my-auto">
+                            <span class="px-3">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
+                        <button class="btn h-100 btn-primary mb-0 desktop">Search</button>
+                    </div>
+                </div>
 
-
-
-
-                <div class="card mb-2 border-0 shadow-sm">
+                <div class="card mb-3 mt-3 border-0 shadow-sm">
                     <div class="card-body">
                         <div class="row justify-content-center">
                             <div class="col-1 arrow-desktop text-center">
@@ -895,44 +903,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row mb-2" id="titleLawyer" style="display:none">
-                                    <div class="col">
-                                        <div class="row fw-bold">
-                                            <div class="col text-start">
-                                                <h4>Kasus Terbaru</h4>
-                                            </div>
-                                            <div class="col-4 text-end text-primary">
-                                                <h4>8,512</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mb-2" id="titlePemerintah" style="display:none">
-                                    <div class="col">
-                                        <div class="row fw-bold">
-                                            <div class="col text-start">
-                                                <h4>Data Terbaru</h4>
-                                            </div>
-                                            <div class="col-4 text-end text-primary">
-                                                <h4>3,462</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </form>
                             <hr>
-
-                            <div class=" mb-3">
-
-                            </div>
-
-                            <form action="">
-                                <div class="row">
-                                    <div class="col" style="margin-top : -12px">
-                                        <input type="text" class="form-control" placeholder="Search">
-                                    </div>
-                                </div>
-                            </form>
 
                             <div class="col-lg-12 mt-2 show" id="dataSponsor">
                                 <div class="row">
