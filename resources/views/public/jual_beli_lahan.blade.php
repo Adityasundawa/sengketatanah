@@ -1104,30 +1104,6 @@
                                 </a>
                             </div>
                             <div class="col mb-4">
-                                <a href="{{url('/')}}/jual-beli-lahan" class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="85px" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-                                        <circle r="32" cx="32" cy="32" fill="#ffffff" shape="circle"></circle>
-                                        <g transform="matrix(0.7,0,0,0.7,9.600008887052539,9.600000000000001)">
-                                            <path xmlns="http://www.w3.org/2000/svg" d="m62.9 52.553-10-20a1 1 0 0 0 -.9-.553h-17v-6h12a1 1 0 0 0 1-1v-18a1 1 0 0 0 -1-1h-30a1 1 0 0 0 -1 1v18a1 1 0 0 0 1 1h12v6h-17a1 1 0 0 0 -.895.553l-10 20a1 1 0 0 0 -.105.447v4a1 1 0 0 0 1 1h60a1 1 0 0 0 1-1v-4a1 1 0 0 0 -.1-.447zm-59.282-.553 4-8h10.6l-2 8zm16.662-8h10.72v8h-12.72zm20.939-10 2 8h-10.219v-8zm-10.219 8h-10.22l2-8h8.22zm2 2h10.719l2 8h-12.719zm14.779 8-2-8h10.6l4 8zm7.6-10h-10.1l-2-8h8.1zm-37.379-34h28v16h-28zm13 18h2v6h-2zm-18.382 8h8.1l-2 8h-10.1zm-9.618 22v-2h58v2z" fill="#61481c" data-original="#000000" class=""></path>
-                                            <path xmlns="http://www.w3.org/2000/svg" d="m26.293 39.707a1 1 0 0 0 1.414 0l2-2-1.414-1.414-1.293 1.293-1.293-1.293-1.414 1.414z" fill="#61481c" data-original="#000000" class=""></path>
-                                            <path xmlns="http://www.w3.org/2000/svg" d="m26.293 46.293-1.293 1.293-1.293-1.293-1.414 1.414 2 2a1 1 0 0 0 1.414 0l2-2z" fill="#61481c" data-original="#000000" class=""></path>
-                                            <path xmlns="http://www.w3.org/2000/svg" d="m39.293 46.293-1.293 1.293-1.293-1.293-1.414 1.414 2 2a1 1 0 0 0 1.414 0l2-2z" fill="#61481c" data-original="#000000" class=""></path>
-                                            <path xmlns="http://www.w3.org/2000/svg" d="m37.293 39.707a1 1 0 0 0 1.414 0l2-2-1.414-1.414-1.293 1.293-1.293-1.293-1.414 1.414z" fill="#61481c" data-original="#000000" class=""></path>
-                                            <path xmlns="http://www.w3.org/2000/svg" d="m48.293 39.707a1 1 0 0 0 1.414 0l2-2-1.414-1.414-1.293 1.293-1.293-1.293-1.414 1.414z" fill="#61481c" data-original="#000000" class=""></path>
-                                            <path xmlns="http://www.w3.org/2000/svg" d="m53.293 46.293-1.293 1.293-1.293-1.293-1.414 1.414 2 2a1 1 0 0 0 1.414 0l2-2z" fill="#61481c" data-original="#000000" class=""></path>
-                                            <path xmlns="http://www.w3.org/2000/svg" d="m13.293 46.293-1.293 1.293-1.293-1.293-1.414 1.414 2 2a1 1 0 0 0 1.414 0l2-2z" fill="#61481c" data-original="#000000" class=""></path>
-                                            <path xmlns="http://www.w3.org/2000/svg" d="m14.293 39.707a1 1 0 0 0 1.414 0l2-2-1.414-1.414-1.293 1.293-1.293-1.293-1.414 1.414z" fill="#61481c" data-original="#000000" class=""></path>
-                                            <path xmlns="http://www.w3.org/2000/svg" d="m32 13a1 1 0 0 1 1 1h2a3 3 0 0 0 -2-2.816v-1.184h-2v1.184a2.993 2.993 0 0 0 1 5.816 1 1 0 1 1 -1 1h-2a3 3 0 0 0 2 2.816v1.184h2v-1.184a2.993 2.993 0 0 0 -1-5.816 1 1 0 0 1 0-2z" fill="#61481c" data-original="#000000" class=""></path>
-                                            <path xmlns="http://www.w3.org/2000/svg" d="m37 13h4v2h-4z" fill="#61481c" data-original="#000000" class=""></path>
-                                            <path xmlns="http://www.w3.org/2000/svg" d="m37 17h4v2h-4z" fill="#61481c" data-original="#000000" class=""></path>
-                                            <path xmlns="http://www.w3.org/2000/svg" d="m23 13h4v2h-4z" fill="#61481c" data-original="#000000" class=""></path>
-                                            <path xmlns="http://www.w3.org/2000/svg" d="m23 17h4v2h-4z" fill="#61481c" data-original="#000000" class=""></path>
-                                        </g>
-                                    </svg>
-                                    <div class="mt-0" style="font-size: 12px">Jual Beli <br> Lahan</div>
-                                </a>
-                            </div>
-                            <div class="col mb-4">
                                 <a href="{{url('/')}}/kerjasama-lahan" class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="85px" x="0" y="0" viewBox="0 0 511.99992 511" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="255.99996" cx="255.99996" cy="255.5" fill="#ffffff" shape="circle">
