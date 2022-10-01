@@ -667,11 +667,11 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <a href="{{url('')}}/join">
-                    <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="d-block mx-auto" style="width: 100%" alt="...">
+                    <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="d-block mx-auto" style="width: 95%" alt="...">
                 </a>
             </div>
             <div class="carousel-item">
-              <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" class="d-block mx-auto" style="width: 100%" alt="...">
+              <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" class="d-block mx-auto" style="width: 95%" alt="...">
             </div>
         </div>
     </div>
