@@ -1594,50 +1594,7 @@
 
                     </div>
 
-                    <div class="card-body">
-                        <div class="row text-center">
-                            <div class="col-3">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h1 id="day-box">5</h1>
-                                    </div>
-                                    <div class="col-12">
-                                        Hari
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h1 id="hr-box">5</h1>
-                                    </div>
-                                    <div class="col-12">
-                                        Jam
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h1 id="min-box">5</h1>
-                                    </div>
-                                    <div class="col-12">
-                                        Menit
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h1 id="sec-box">5</h1>
-                                    </div>
-                                    <div class="col-12">
-                                        Detik
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
 
                 <div class="card mb-3 mt-2 border-0 shadow-sm desktop" style="margin-top:-10px">
