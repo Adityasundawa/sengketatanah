@@ -10527,16 +10527,16 @@
                                 <div id="carouselExampleIndicators" class="carousel slide mt-2" data-bs-ride="false">
     
                                     <div class="carousel-inner">
-                                        <div class="carousel-item active">
+                                        <div class="carousel-item zoom active">
                                             <img src="{{asset('')}}images/lahan1.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px" alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item zoom">
                                             <img src="{{asset('')}}images/lahan2.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px " alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item zoom">
                                             <img src="{{asset('')}}images/lahan3.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px " alt="...">
                                         </div>
-                                        <div class="carousel-item">
+                                        <div class="carousel-item zoom">
                                             <img src="{{asset('')}}images/lahan4.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px " alt="...">
                                         </div>
                                     </div>
@@ -10622,7 +10622,7 @@
                 //         // $(this).addClass('active');
                 //     }
                 // })   
-                var el = document.querySelector('.image-kunam-2');
+                var el = document.querySelector('.carousel-item.zoom');
                 new PinchZoom.default(el, {});
                 
 
