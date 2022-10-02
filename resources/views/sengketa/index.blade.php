@@ -10613,9 +10613,12 @@
                     </div>
                 </div>
             </div>
-
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.3/js/jquery.magnify.min.js"></script>
 
             <script>
+                $(document).ready(function() {
+                    $('.image-kunam-2').magnify();
+                });
                 // $('img.image-kunam').on('click', function () {
                 //     let dataSrc = $(this).data('src');
                 //     let dataImgLain = $($($(this).parent()).parent()).find('img')
