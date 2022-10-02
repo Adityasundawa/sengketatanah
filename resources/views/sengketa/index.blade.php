@@ -10501,6 +10501,13 @@
                                     .carousel-indicators.custom.scroll-simple::-webkit-scrollbar-thumb:active {
                                         background: rgba(255, 255, 255, 0.9);
                                     }
+
+                                    @media (max-width: 767.98px) { 
+                                        .image-kunam {
+                                            width: 100%
+                                        }
+                                     }
+
                                 </style>
 
                                 <div id="carouselExampleIndicators" class="carousel slide mt-2" data-bs-ride="false">
