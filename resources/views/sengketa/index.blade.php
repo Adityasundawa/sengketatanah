@@ -10528,7 +10528,7 @@
     
                                     <div class="carousel-inner">
                                         <div class="carousel-item zoom active">
-                                            <img src="{{asset('')}}images/lahan1.jpeg"  id="my-id" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px" alt="...">
+                                            <img src="{{asset('')}}images/lahan1.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px" alt="...">
                                         </div>
                                         <div class="carousel-item zoom">
                                             <img src="{{asset('')}}images/lahan2.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px " alt="...">
@@ -10615,15 +10615,6 @@
 
 
             <script>
-
-                // $('img.image-kunam').on('click' ,function(){
-                //     if ($(this).attr('src') == $('.carousel-item img.image-kunam-2').attr('src')){
-                //         console.log($('img.img-kunam-2'));
-                //         // $(this).addClass('active');
-                //     }
-                // })   
-                let el = document.querySelector('#my-id');
-                let pz = new PinchZoom(el, options);
                 
 
                 $('img.image-kunam').on('click', function () {
