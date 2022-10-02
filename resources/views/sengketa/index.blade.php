@@ -10451,6 +10451,9 @@
 
             </style>
 
+            <style>
+            </style>
+
             <div class="modal fade" id="image-modal" tabindex="-1" aria-labelledby="image-modalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen modal-dialog-centered">
@@ -10461,42 +10464,127 @@
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
                         </div>
-                        <div class="modal-body" style="background-color:transparent">
-                            <div class="container">
-                                <div class="row justify-content-center">
+                        <div class="modal-body d-flex" style="background-color:transparent">
+                            <div class="container" >
 
+                                <style>
+                                    .carousel-indicators.custom {
+                                        position: relative;
+                                        margin-bottom: 0;
+                                        justify-content: start;
+                                        overflow-x: auto;
+                                        display: flex;
+                                        flex-wrap: nowrap;
+                                    }
+
+                                    .carousel-indicators.custom [data-bs-target] {
+                                        flex: 0 0 auto;
+                                        width: 20%;
+                                        height: auto;
+
+                                    }
+                                
+                                    .carousel-indicators.custom.scroll-simple::-webkit-scrollbar-track {
+                                        border-radius: 10px;
+                                        background: rgba(255, 255, 255, 0.1);
+                                    }
+                                
+                                    .carousel-indicators.custom.scroll-simple::-webkit-scrollbar-thumb {
+                                        border-radius: 10px;
+                                        background: rgba(255, 255, 255, 0.2);
+                                    }
+                                
+                                    .carousel-indicators.custom.scroll-simple::-webkit-scrollbar-thumb:hover {
+                                        background: rgba(255, 255, 255, 0.4);
+                                    }
+                                
+                                    .carousel-indicators.custom.scroll-simple::-webkit-scrollbar-thumb:active {
+                                        background: rgba(255, 255, 255, 0.9);
+                                    }
+                                </style>
+
+                                <div id="carouselExampleIndicators" class="carousel slide mt-2" data-bs-ride="true">
+    
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="{{asset('')}}images/lahan1.jpeg" class="d-block mx-auto" style="width: 70%; max-height: 600px" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}images/lahan2.jpeg" class="d-block mx-auto" style="width: 70%; max-height: 600px " alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}images/lahan3.jpeg" class="d-block mx-auto" style="width: 70%; max-height: 600px " alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}images/lahan4.jpeg" class="d-block mx-auto" style="width: 70%; max-height: 600px " alt="...">
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-indicators custom  scroll-simple">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                                            <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" alt="...">
+                                        </button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+                                            <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" alt="...">
+                                        </button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+                                            <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" alt="...">
+                                        </button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">
+                                            <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" alt="...">
+                                        </button>
+                                    </div>
+
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                
+                                
+                                {{-- <div class="row justify-content-center">
 
                                     <div class="col-lg-8">
                                         <img src="{{asset('')}}images/lahan4.jpeg"
                                             class="rounded-1 foto-utama mobile-size" />
                                     </div>
+
                                     <div class="col-lg-8">
                                         <div class="row mt-2 justify-content-center">
 
                                             <div class="col-lg mobile-scroll align-center" id='gambar-lain-modal'
                                                 style="white-space:nowrap;flex-wrap:nowarp;display:flex">
+                                                
                                                 <div class="container-gambar ms-1 me-1"
                                                     style='display: inline-block;flex: 0 0 auto'>
                                                     <img src="{{asset('')}}images/lahan4.jpeg" alt="" srcset=""
                                                         class="rounded-1 img-fluid "
                                                         style="width:150px;height:100px;object-fit:cover;"> <br>
                                                 </div>
-                                                <div class="container-gamba ms-1 me-1"
-                                                    style='display: inline-block;flex: 0 0 auto'>
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" alt="" srcset=""
-                                                        class="rounded-1 img-fluid "
-                                                        style="width:150px;height:100px;object-fit:cover;"> <br>
-                                                </div>
                                                 <div class="container-gambar ms-1 me-1"
                                                     style='display: inline-block;flex: 0 0 auto'>
                                                     <img src="{{asset('')}}images/lahan4.jpeg" alt="" srcset=""
                                                         class="rounded-1 img-fluid "
                                                         style="width:150px;height:100px;object-fit:cover;"> <br>
                                                 </div>
+
+                                                <div class="container-gambar ms-1 me-1"
+                                                    style='display: inline-block;flex: 0 0 auto'>
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" alt="" srcset=""
+                                                        class="rounded-1 img-fluid "
+                                                        style="width:150px;height:100px;object-fit:cover;"> <br>
+                                                </div>
+
                                             </div>
+
                                         </div>
+
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
