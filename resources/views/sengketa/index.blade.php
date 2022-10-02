@@ -10599,7 +10599,7 @@
                 //         console.log($('img.img-kunam-2'));
                 //         // $(this).addClass('active');
                 //     }
-                // })
+                // })   
                 
                 const elem = document.getElementById('panzoom-element')
                 const panzoom = Panzoom(elem, {
