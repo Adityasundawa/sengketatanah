@@ -10524,7 +10524,7 @@
 
                                 </style>
 
-                                <div id="carouselExampleIndicators" class="carousel slide mt-2" data-bs-ride="false">
+                                <div id="carouselExampleIndicators" data-touch="false" class="carousel slide mt-2" data-bs-ride="false">
     
                                     <div class="carousel-inner">
                                         <div class="carousel-item zoom active">
