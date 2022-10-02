@@ -10503,20 +10503,20 @@
                                     }
                                 </style>
 
-                                <div id="carouselExampleIndicators" class="carousel slide mt-2" data-bs-ride="true">
+                                <div id="carouselExampleIndicators" class="carousel slide mt-2" data-bs-ride="false">
     
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="{{asset('')}}images/lahan1.jpeg" class="d-block mx-auto" style="width: 70%; max-height: 600px" alt="...">
+                                            <img id="panzoom-element" src="{{asset('')}}images/lahan1.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px" alt="...">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan2.jpeg" class="d-block mx-auto" style="width: 70%; max-height: 600px " alt="...">
+                                            <img src="{{asset('')}}images/lahan2.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px " alt="...">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan3.jpeg" class="d-block mx-auto" style="width: 70%; max-height: 600px " alt="...">
+                                            <img src="{{asset('')}}images/lahan3.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px " alt="...">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" class="d-block mx-auto" style="width: 70%; max-height: 600px " alt="...">
+                                            <img src="{{asset('')}}images/lahan4.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px " alt="...">
                                         </div>
                                     </div>
 
@@ -10590,9 +10590,31 @@
                     </div>
                 </div>
             </div>
+            <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.j"></script>
 
 
             <script>
+                // $('img.image-kunam').on('click' ,function(){
+                //     if ($(this).attr('src') == $('.carousel-item img.image-kunam-2').attr('src')){
+                //         console.log($('img.img-kunam-2'));
+                //         // $(this).addClass('active');
+                //     }
+                // })
+                
+                const elem = document.getElementById('panzoom-element')
+                const panzoom = Panzoom(elem, {
+                  maxScale: 5
+                })
+                panzoom.pan(10, 10)
+                panzoom.zoom(2, { animate: true })              
+
+                // Panning and pinch zooming are bound automatically (unless disablePan is true).
+                // There are several available methods for zooming
+                // that can be bound on button clicks or mousewheel.
+                button.addEventListener('click', panzoom.zoomIn)
+                elem.parentElement.addEventListener('wheel', panzoom.zoomWithWheel)
+                
+
                 $('img.image-kunam').on('click', function () {
                     let dataSrc = $(this).data('src');
                     let dataImgLain = $($($(this).parent()).parent()).find('img')
