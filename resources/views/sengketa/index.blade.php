@@ -2095,11 +2095,11 @@
 
                         <div class="row align-items-center justify-content-center">
 
-                            <div class="col-1 arrow-desktop text-center">
+                            {{-- <div class="col-1 arrow-desktop text-center">
                                 <button id="left-button" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
                                     <i class="fa-solid fa-arrow-left"></i>
                                 </button>
-                            </div>
+                            </div> --}}
                             <div class="col-10 desktop-arrow text-center">
                                 <div class="row mobile-scroll mt-2 align-items-center bidding-card" style="flex-wrap: nowrap">
 
@@ -3032,38 +3032,23 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-3 custom text-start">
-                                        <button class="btn btn-sm">
-                                            <div class="row p-4">
-                                                <div class="col-md-12">
-                                                    <span class="fa-stack fa-2x">
-                                                        <i class="fa fa-circle fa-stack-2x text-brown"></i>
-                                                        <i class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="col-md-12 mt-1 fw-bold">
-                                                    Lihat Semua
-                                                </div>
-                                            </div>
-                                        </button>
-                                    </div>
-
                                 </div>
                             </div>
-                            <div class="col-1 arrow-desktop text-center">
+                            {{-- <div class="col-1 arrow-desktop text-center">
                                 <button id="right-button" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </button>
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="row align-items-center justify-content-center">
 
-                            <!-- <div class="col-1 arrow-desktop text-center">
+                            <div class="col-1 arrow-desktop text-center">
                                 <button id="left-button" class="btn rounded-5 text-white bg-secondary"
                                     style="background-color: #61481C">
                                     <i class="fa-solid fa-arrow-left"></i>
                                 </button>
-                            </div> -->
+                            </div>
+
                             <div class="col-10 desktop-arrow text-center">
                                 <div class="row mobile-scroll mt-2 align-items-center bidding-card2" style="flex-wrap: nowrap">
 
@@ -4014,12 +3999,12 @@
 
                                 </div>
                             </div>
-                            <!-- <div class="col-1 arrow-desktop text-center">
+                            <div class="col-1 arrow-desktop text-center">
                                 <button id="right-button" class="btn rounded-5 text-white bg-secondary"
                                     style="background-color: #61481C">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </button>
-                            </div> -->
+                            </div>
                         </div>
 
                         <script>
