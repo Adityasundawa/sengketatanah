@@ -17,9 +17,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.3/css/magnify.css"
+        rel="stylesheet">
+
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="{{asset('')}}css/image-zoom.css">
+
+        <script src="https://unpkg.com/js-image-zoom/js-image-zoom.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-image-zoom/js-image-zoom.min.js"></script>
 
 
     <style>
@@ -10524,22 +10529,52 @@
                                         }
                                      }
 
+                                     figure.zoom {
+                                      background-position: 50% 50%;
+                                      position: relative;
+                                      box-shadow: -1px 5px 15px black;
+                                      height: auto;
+                                      width: 70%;
+                                      overflow: hidden;
+                                      cursor: zoom-in;
+                                      object-fit: cover
+                                    }
+                                
+                                    figure.zoom img:hover {
+                                      opacity: 0;
+                                    }
+                                
+                                    figure.zoom img {
+                                      transition: opacity 0.5s;
+                                      display: block;
+                                      width: 100%;
+                                      height: 100%;
+                                    }
+
                                 </style>
 
                                 <div id="carouselExampleIndicators" data-bs-touch="false" class="carousel slide mt-2" data-bs-ride="false">
     
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="{{asset('')}}images/lahan1.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px" alt="...">
+                                            <figure class="mx-auto zoom" onmousemove="zoom(event)" style="background-image: url({{asset('')}}images/lahan1.jpeg); background-size: 200%">
+                                                <img src="{{asset('')}}images/lahan1.jpeg" onmousemove='zoom(event)' class="d-block image-kunam-2" alt="...">
+                                            </figure>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan2.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px " alt="...">
+                                            <figure class="mx-auto zoom" onmousemove="zoom(event)" style="background-image: url({{asset('')}}images/lahan2.jpeg); background-size: 200%">
+                                                <img src="{{asset('')}}images/lahan2.jpeg" onmousemove='zoom(event)' class="d-block image-kunam-2" alt="...">
+                                            </figure>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan3.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px " alt="...">
+                                            <figure class="mx-auto zoom" onmousemove="zoom(event)" style="background-image: url({{asset('')}}images/lahan3.jpeg); background-size: 200%">
+                                                <img src="{{asset('')}}images/lahan3.jpeg" onmousemove='zoom(event)' class="d-block image-kunam-2" alt="...">
+                                            </figure>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px " alt="...">
+                                            <figure class="mx-auto zoom" onmousemove="zoom(event)" style="background-image: url({{asset('')}}images/lahan4.jpeg); background-size: 200%">
+                                                <img src="{{asset('')}}images/lahan4.jpeg" onmousemove='zoom(event)' class="d-block image-kunam-2" alt="...">
+                                            </figure>
                                         </div>
                                     </div>
 
@@ -10613,12 +10648,19 @@
                     </div>
                 </div>
             </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.3/js/jquery.magnify.min.js"></script>
-
+            
             <script>
-                $(document).ready(function() {
-                    $('.image-kunam-2').magnify();
-                });
+                function zoom(e){
+                    var zoomer = e.currentTarget;
+                    e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX
+                    e.offsetY ? offsetY = e.offsetY : offsetY = e.touches[0].pageY
+                    x = offsetX/zoomer.offsetWidth*100
+                    y = offsetY/zoomer.offsetHeight*100
+                    zoomer.style.backgroundPosition = x + '% ' + y + '%';
+                }
+
+                
+                
                 // $('img.image-kunam').on('click', function () {
                 //     let dataSrc = $(this).data('src');
                 //     let dataImgLain = $($($(this).parent()).parent()).find('img')
