@@ -3040,6 +3040,7 @@
                                 </button>
                             </div> --}}
                         </div>
+
                         <div class="row align-items-center justify-content-center">
 
                             <div class="col-1 arrow-desktop text-center">
@@ -3118,8 +3119,8 @@
 
                                                             <div class="row d-flex  align-items-center mb-2">
                                                                 <div class="col text-end">
-                                                                    <a id="fav-1">
-                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-1">
+                                                                    <a id="fav-2-1">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-2-1">
                                                                             <i class="fas fa-star"></i>
                                                                         </h5>
                                                                     </a>
@@ -3130,8 +3131,8 @@
                                                                 </div>
                                                             </div>
                                                             <script>
-                                                                $("#fav-1").click(function() {
-                                                                    $("#fav-ch-1").toggleClass('fav-icon');
+                                                                $("#fav-2-1").click(function() {
+                                                                    $("#fav-ch-2-1").toggleClass('fav-icon');
                                                                 });
                                                             </script>
 
@@ -3356,8 +3357,8 @@
 
                                                             <div class="row d-flex  align-items-center mb-2">
                                                                 <div class="col text-end">
-                                                                    <a id="fav-2">
-                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-2">
+                                                                    <a id="fav-2-2">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-2-2">
                                                                             <i class="fas fa-star"></i>
                                                                         </h5>
                                                                     </a>
@@ -3368,8 +3369,8 @@
                                                                 </div>
                                                             </div>
                                                             <script>
-                                                                $("#fav-2").click(function() {
-                                                                    $("#fav-ch-2").toggleClass('fav-icon');
+                                                                $("#fav-2-2").click(function() {
+                                                                    $("#fav-ch-2-2").toggleClass('fav-icon');
                                                                 });
                                                             </script>
 
@@ -3588,8 +3589,8 @@
 
                                                             <div class="row d-flex  align-items-center mb-2">
                                                                 <div class="col text-end">
-                                                                    <a id="fav-3">
-                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-3">
+                                                                    <a id="fav-2-3">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-2-3">
                                                                             <i class="fas fa-star"></i>
                                                                         </h5>
                                                                     </a>
@@ -3600,8 +3601,8 @@
                                                                 </div>
                                                             </div>
                                                             <script>
-                                                                $("#fav-3").click(function() {
-                                                                    $("#fav-ch-3").toggleClass('fav-icon');
+                                                                $("#fav-2-3").click(function() {
+                                                                    $("#fav-ch-2-3").toggleClass('fav-icon');
                                                                 });
                                                             </script>
 
@@ -3818,8 +3819,8 @@
 
                                                             <div class="row d-flex  align-items-center mb-2">
                                                                 <div class="col text-end">
-                                                                    <a id="fav-4">
-                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-4">
+                                                                    <a id="fav-2-4">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-2-4">
                                                                             <i class="fas fa-star"></i>
                                                                         </h5>
                                                                     </a>
@@ -3830,8 +3831,8 @@
                                                                 </div>
                                                             </div>
                                                             <script>
-                                                                $("#fav-4").click(function() {
-                                                                    $("#fav-ch-4").toggleClass('fav-icon');
+                                                                $("#fav-2-4").click(function() {
+                                                                    $("#fav-ch-2-4").toggleClass('fav-icon');
                                                                 });
                                                             </script>
 
