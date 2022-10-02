@@ -499,7 +499,7 @@
         <div class="row justify-content-center mb-2">
             <div class="col-lg-12 mt-4">
                 <h5>
-                    Cari Jasa PPAT
+                    Cari Jasa Pengacara
                 </h5>
                 <form class="row g-1">
                     <div class="col-auto">

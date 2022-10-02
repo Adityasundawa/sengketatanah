@@ -1288,7 +1288,7 @@
                                     </a>
                                 </div>
                                 <div class="col mb-4">
-                                    <a href="{{url('/')}}/bidding-pengacara" class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                                    <a href="{{url('/')}}/jasa-pengacara" class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="85px" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                             <circle r="256" cx="256" cy="256" fill="#ffffff" shape="circle"></circle>
                                             <g transform="matrix(0.7,0,0,0.7,76.80000457763674,76.81020755767824)">

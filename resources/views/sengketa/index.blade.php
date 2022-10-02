@@ -1677,7 +1677,7 @@
                                 </a>
                             </div>
                             <div class="col mb-4">
-                                <a href="{{url('/')}}/bidding-pengacara"
+                                <a href="{{url('/')}}/jasa-pengacara"
                                     class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
@@ -10148,6 +10148,7 @@
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="col-12 custom">
                                         <div class="card mx-auto">
                                             <div class="ribbon ribbon-top-left"><span>lelang</span></div>
@@ -10233,6 +10234,7 @@
                 </div>
             </div>
         </div>
+
         <div class="card rounded-0 border-0 " style="margin-top:-10px">
             <!-- <div class="card-header bg-white border-0">
 
@@ -10409,7 +10411,6 @@
             </div>
         </div>
 
-
         <!-- podcast Sengketa -->
         <div class="card mb-3 border-0 shadow-sm mt-3">
             <div class="card-header bg-white">
@@ -10437,6 +10438,7 @@
                 </table>
 
             </div>
+
             <style>
                 .modal-backdrop {
                     opacity: 0.9 !important;
@@ -10456,9 +10458,6 @@
                     }
                 }
 
-            </style>
-
-            <style>
             </style>
 
             <div class="modal fade" id="image-modal" tabindex="-1" aria-labelledby="image-modalLabel"
@@ -10605,7 +10604,6 @@
                                     </button>
                                 </div>
                                 
-                                
                                 {{-- <div class="row justify-content-center">
 
                                     <div class="col-lg-8">
@@ -10645,6 +10643,7 @@
 
                                     </div>
                                 </div> --}}
+
                             </div>
                         </div>
                     </div>

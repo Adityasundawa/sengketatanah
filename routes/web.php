@@ -59,6 +59,7 @@ Route::get('lelang-lahan', [PublicController::class, 'lelangLahan'])->name('lela
 Route::get('jasa-tukang-ukur', [PublicController::class, 'jasaTukangUkur'])->name('jasaTukangUkur');
 Route::get('jasa-notaris', [PublicController::class, 'jasaNotaris'])->name('jasaNotaris');
 Route::get('jasa-ppat', [PublicController::class, 'jasaPPAT'])->name('jasaPPAT');
+Route::get('jasa-pengacara', [PublicController::class, 'jasaPengacara'])->name('jasaPengacara');
 Route::get('join', [PublicController::class, 'joinSengketa'])->name('joinSengketa');
 Route::get('list-tukang', [PublicController::class, 'listTukang'])->name('listTukang');
 Route::get('detail-petugas', [PublicController::class, 'detailTukang'])->name('detailTukang');
