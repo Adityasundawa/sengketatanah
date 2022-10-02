@@ -3044,8 +3044,7 @@
                         <div class="row align-items-center justify-content-center">
 
                             <div class="col-1 arrow-desktop text-center">
-                                <button id="left-button" class="btn rounded-5 text-white bg-secondary"
-                                    style="background-color: #61481C">
+                                <button id="left-button" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
                                     <i class="fa-solid fa-arrow-left"></i>
                                 </button>
                             </div>
@@ -4001,8 +4000,7 @@
                                 </div>
                             </div>
                             <div class="col-1 arrow-desktop text-center">
-                                <button id="right-button" class="btn rounded-5 text-white bg-secondary"
-                                    style="background-color: #61481C">
+                                <button id="right-button" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </button>
                             </div>
@@ -4024,6 +4022,7 @@
                                     $('div.bidding-card2').animate({
                                         scrollLeft: "+=300px"
                                     }, "slow")
+
                                 }
                             });
 
@@ -4085,10 +4084,15 @@
 
                                             </div>
                                             @for($i=13;$i> 0;$i--)
-                                            <div class="container-gambar text-center ms-1" style='display: inline-block;flex: 0 0 auto'>
-                                                <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt="" srcset="" class="rounded-4 img-thumbnail " style="width:70px;height:70px;object-fit:cover;"> <br>
+                                            <form action="{{url('')}}/detail-petugas" method="get" id="form-Lawyer-{{$i}}">
+                                                <input type="hidden" name="name" value="{{$name[$i]}}">
+                                                <input type="hidden" name="img" value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
+                                                <input type="hidden" name="jenis_petugas" value="Lawyer">
+                                            </form>
+                                            <button class="container-gambar text-center p-1 me-1 text-decoration-none border-0 bg-white" onclick="return  $('form#form-Lawyer-<?= $i ?>').submit()" style='display: inline-block;flex: 0 0 auto'>
+                                                <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt="" srcset="" class="rounded-circle img-thumbnail " style="width:70px !important;height:70px;object-fit:cover;"> <br>
                                                 {{$name[$i]}}
-                                            </div>
+                                            </button>
                                             @endfor
 
                                             <div style='display: inline-block;flex: 0 0 auto;' class="ms-3">
@@ -5406,2772 +5410,4200 @@
                                                 "James Tate", "Hadi Ismail", 'Abdullah', 'Nugraha D.', 'Ade Syarief', "Adhi Utomo", 'Leman wan', 'Pranoto Adi', 'Agus Susan'
                                             ];
                                             ?>
-                                            <div class="container-gambar text-center ms-1" style='display: inline-block;flex: 0 0 auto' onclick="return window.location.href = `{{url('')}}/list-tukang`">
+                                            <button class="container-gambar text-center p-1 me-1 text-decoration-none border-0 bg-white" style='display: inline-block;flex: 0 0 auto' onclick="return window.location.href = `{{url('')}}/list-tukang`">
                                                 <img src="data:image/png;base64,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" alt="" srcset="" class="rounded-circle img-thumbnail " style="width:70px;height:70px;object-fit:cover;background:#61481C">
                                                 <br>
 
                                                 Petugas Ukur
 
+                                            </button>
+                                            @for($i=0;$i< 14;$i++)<form action="{{url('')}}/detail-petugas" method="get" id="form-ukur-{{$i}}">
+                                                <input type="hidden" name="name" value="{{$name[$i]}}">
+                                                <input type="hidden" name="img" value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
+                                                <input type="hidden" name="jenis_petugas" value="Tukang Ukur">
+                                                </form>
+                                                <button class="container-gambar text-center p-1 me-1 text-decoration-none border-0 bg-white" onclick="return  $('form#form-ukur-<?= $i ?>').submit()" style='display: inline-block;flex: 0 0 auto'>
+                                                    <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt="" srcset="" class="rounded-circle img-thumbnail " style="width:70px !important;height:70px;object-fit:cover;"> <br>
+                                                    {{$name[$i]}}
+                                                </button>
+
+                                                @endfor
+                                                <div style='display: inline-block;flex: 0 0 auto;' class="ms-3">
+                                                    <a href="{{url('')}}/list-tukang" class="container-gambar text-center" style="text-decoration: none;">
+                                                        <img src="data:image/png;base64,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" alt="" srcset="" class="rounded-circle img-thumbnail " style="width:70px;height:70px;object-fit:cover;background-color:#007bff">
+                                                        <br>
+                                                        <span style="color:#007bff">
+                                                            Lihat Semua
+                                                        </span>
+                                                    </a>
+
+
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 arrow-desktop text-center">
+                                    <button id="right-orang" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+
+                                <script>
+                                    $('#right-orang').click(function() {
+                                        event.preventDefault();
+                                        $('#orang-bulet').animate({
+                                            scrollLeft: "+=300px"
+                                        }, "slow");
+                                    });
+
+                                    $('#left-orang').click(function() {
+                                        event.preventDefault();
+                                        $('#orang-bulet').animate({
+                                            scrollLeft: "-=300px"
+                                        }, "slow");
+                                    });
+                                </script>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Jual beli Lahan -->
+                <div class="card mb-3 border-0 shadow-sm ">
+                    <div class="card-header bg-white">
+                        <table style="width:100%">
+                            <tr>
+                                <td rowspan="2" style="width: 40px">
+                                    <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">
+                                </td>
+                                <td>
+                                    <h5 color="text-dark" style="margin-bottom: 0px !important">
+                                        Jual Beli Lahan
+                                    </h5>
+                                </td>
+                                <td class="text-end" rowspan="2">
+                                    <a href="{{url('')}}/jual-beli-lahan" class="text-success fw-bold" style="text-decoration: none">Lihat
+                                        Semua</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="mb-0">Lahan Tersedia <span class="badge bg-danger">4,323</span></p>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                    <div class="card-body" style="background-color:#FAFAD2;">
+
+                        <div class="row align-items-center justify-content-center">
+
+                            <div class="col-1 arrow-desktop text-center">
+                                <button id="left-button2" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+                            </div>
+
+                            <div class="col-10 desktop-arrow text-center">
+
+                                <div class="row mt-2 mobile-scroll justify-content-between align-items-center" id="lelang-card2" style="flex-wrap: nowrap">
+
+                                    <div class="col-12 custom ">
+                                        <div class="card mx-auto">
+                                            <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
-                                            @for($i=0;$i< 14;$i++) <div class="container-gambar text-center ms-1" style='display: inline-block;flex: 0 0 auto'>
-                                                <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt="" srcset="" class="rounded-circle img-thumbnail " style="width:70px;height:70px;object-fit:cover;"> <br>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
+                                            <div id="jbl1" class="carousel slide" data-bs-interval="false">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#jbl1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#jbl1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#jbl1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#jbl1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#jbl1" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#jbl1" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Bidang JBL-004 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="card-body pt-0">
+                                                <table class="mt-2 mb-2">
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-primary">
+                                                                    Rp.450.000.000
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                        <td class="align-items-center">
+
+
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-b1">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-b1">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-b1").click(function() {
+                                                                    $("#fav-ch-b1").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
+                                                <table>
+                                                    <tbody>
+
+                                                        <tr>
+                                                            <td>Luas</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;1 Ha</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lokasi</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Pancawati, Bogor</td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                            <td>Jenis Lahan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Tanah Darat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dokumen</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;SHM</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Akses</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Mobil</td>
+                                                        </tr>
+                                                        </tr>
+                                                        <td>Jumlah Bid</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;3</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <hr>
+
+
+                                                <div class="row g-0">
+                                                    <div class="col text-start">
+
+                                                        <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
+                                                            <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                        </a>
+
+
+                                                        <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1 class="modal-title mx-auto text-danger display-1">
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus memiliki akun sebelum melihat
+                                                                        detail.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1" method="get">
+                                                    <input type="hidden" name="owner" value=" Bahru">
+                                                    <input type="hidden" name="objek" value=" Sengketa Pertanahan">
+                                                    <input type="hidden" name="luas" value=" 1 Ha">
+                                                    <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
+                                                    <input type="hidden" name="komentar" value="">
+                                                    <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/-RkCcavzXq8">
+                                                    <input type="hidden" name="form" value="sponsor">
+                                                </form>
+
+
+                                                <hr>
+                                                <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                    <div class="col-4">
+
+                                                        <div class="d-grid gap-2 ">
+
+                                                            <div class="modal fade my-auto" id="exampleB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header p-0">
+                                                                            <h1 class="modal-title mx-auto text-danger display-1">
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                            </h1>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            Anda harus memiliki akun sebelum
+                                                                            melakukan bid.
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                            <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                            <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 custom">
+                                        <div class="card mb-2 mx-auto">
+                                            <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
+                                            <div id="jbl2" class="carousel slide" data-bs-interval="false">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#jbl2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#jbl2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#jbl2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#jbl2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#jbl2" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#jbl2" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                            <div div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                                <div class="row">
+
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Bidang JBL-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body pt-0">
+                                                <table class="mt-2 mb-2">
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-primary">
+                                                                    Rp.500.000.000
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                        <td class="align-items-center">
+
+
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-b2">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-b2">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-b2").click(function() {
+                                                                    $("#fav-ch-b2").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Luas</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;5000 M</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lokasi</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Pancawati, Bogor</td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                            <td>Jenis Lahan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Tanah Darat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dokumen</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;HGB</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Akses</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Motor</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jumlah Bid</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;4</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <hr>
+
+
+
+                                                <div class="row g-0">
+                                                    <div class="col text-start">
+
+                                                        <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
+                                                            <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                        </a>
+
+
+                                                        <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1 class="modal-title mx-auto text-danger display-1">
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus memiliki akun sebelum melihat
+                                                                        detail.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
+                                                    <input type="hidden" name="owner" value=" Fatah">
+                                                    <input type="hidden" name="objek" value=" Konflik Pertanahan">
+                                                    <input type="hidden" name="luas" value=" 5000 M">
+                                                    <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
+                                                    <input type="hidden" name="komentar" value="">
+                                                    <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/byby3HJ3OCI">
+                                                    <input type="hidden" name="form" value="sponsor">
+                                                </form>
+
+
+                                                <hr>
+                                                <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                    <div class="col-4">
+
+                                                        <div class="d-grid gap-2 ">
+
+                                                            <!-- <button type="button"
+                                                        class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleB">
+                                                        BID
+                                                    </button> -->
+
+
+                                                            <div class="modal fade my-auto" id="exampleB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header p-0">
+                                                                            <h1 class="modal-title mx-auto text-danger display-1">
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                            </h1>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            Anda harus memiliki akun sebelum
+                                                                            melakukan bid.
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                            <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                            <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 custom">
+                                        <div class="card mb-2 mx-auto">
+                                            <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
+                                            <div id="jbl3" class="carousel slide" data-bs-interval="false">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#jbl3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#jbl3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#jbl3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#jbl3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#jbl3" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#jbl3" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                                <div class="row">
+
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Bidang JBL-002 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body pt-0">
+                                                <table class="mt-2 mb-2">
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-primary">
+                                                                    Rp.200.000.000
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                        <td class="align-items-center">
+
+
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-b3">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-b3">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-b3").click(function() {
+                                                                    $("#fav-ch-b3").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Luas</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;3.2 Ha</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lokasi</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Medan, Sumatra Utara</td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                            <td>Jenis Lahan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Tanah Darat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dokumen</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;AJB</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Akses</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Motor</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Jumlah Bid</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;6</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <hr>
+
+
+
+                                                <div class="row g-0">
+                                                    <div class="col text-start">
+
+                                                        <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
+                                                            <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                        </a>
+
+
+                                                        <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1 class="modal-title mx-auto text-danger display-1">
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus memiliki akun sebelum melihat
+                                                                        detail.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3" method="get">
+                                                    <input type="hidden" name="owner" value=" Ophelia Suartini">
+                                                    <input type="hidden" name="objek" value=" Perkara Pertanahan">
+                                                    <input type="hidden" name="luas" value=" 3.2 Ha">
+                                                    <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
+                                                    <input type="hidden" name="komentar" value="">
+                                                    <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/1I4iEKK1qbQ">
+                                                    <input type="hidden" name="form" value="sponsor">
+                                                </form>
+
+
+                                                <hr>
+                                                <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                    <div class="col-4">
+
+                                                        <div class="d-grid gap-2 ">
+                                                            <!-- <button type="button"
+                                                        class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleB">
+                                                        BID
+                                                    </button> -->
+
+
+                                                            <div class="modal fade my-auto" id="exampleB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header p-0">
+                                                                            <h1 class="modal-title mx-auto text-danger display-1">
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                            </h1>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            Anda harus memiliki akun sebelum
+                                                                            melakukan bid.
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                            <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                            <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 custom">
+                                        <div class="card mb-2 mx-auto">
+                                            <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
+                                            <div id="jbl4" class="carousel slide" data-bs-interval="false">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#jbl4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#jbl4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#jbl4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#jbl4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#jbl4" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#jbl4" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+
+                                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                                <div class="row">
+
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Bidang JBL-003 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body pt-0">
+                                                <table class="mt-2 mb-2">
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-primary">
+                                                                    Rp.200.000.000
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                        <td class="align-items-center">
+
+
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-b4">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-b4">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-b4").click(function() {
+                                                                    $("#fav-ch-b4").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Luas</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;3.2 Ha</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lokasi</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Medan, Sumatra Utara</td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                            <td>Jenis Lahan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Tanah Darat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dokumen</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;PPJB</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Akses</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Mobil</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Jumlah Bid</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;6</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <hr>
+
+
+                                                <div class="row g-0">
+                                                    <div class="col text-start">
+
+
+                                                        <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
+                                                            <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                        </a>
+
+
+                                                        <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1 class="modal-title mx-auto text-danger display-1">
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus memiliki akun sebelum melihat
+                                                                        detail.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3" method="get">
+                                                    <input type="hidden" name="owner" value=" Ophelia Suartini">
+                                                    <input type="hidden" name="objek" value=" Perkara Pertanahan">
+                                                    <input type="hidden" name="luas" value=" 3.2 Ha">
+                                                    <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
+                                                    <input type="hidden" name="komentar" value="">
+                                                    <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/1I4iEKK1qbQ">
+                                                    <input type="hidden" name="form" value="sponsor">
+                                                </form>
+
+
+                                                <hr>
+                                                <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                    <div class="col-4">
+
+                                                        <div class="d-grid gap-2 ">
+                                                            <!-- <button type="button"
+                                                        class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleB">
+                                                        BID
+                                                    </button> -->
+
+
+                                                            <div class="modal fade my-auto" id="exampleB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header p-0">
+                                                                            <h1 class="modal-title mx-auto text-danger display-1">
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                            </h1>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            Anda harus memiliki akun sebelum
+                                                                            melakukan bid.
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                            <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                            <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12 custom">
+                                        <div class="card mb-2 mx-auto">
+                                            <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
+                                            <div id="jbl2" class="carousel slide" data-bs-interval="false">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#jbl2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#jbl2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#jbl2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#jbl2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#jbl2" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#jbl2" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                            <div div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                                <div class="row">
+
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Bidang JBL-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body pt-0">
+                                                <table class="mt-2 mb-2">
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-primary">
+                                                                    Rp.500.000.000
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                        <td class="align-items-center">
+
+
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-b5">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-b5">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-b5").click(function() {
+                                                                    $("#fav-ch-b5").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Luas</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;2 Ha</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lokasi</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Pancawati, Bogor</td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                            <td>Jenis Lahan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Tanah Darat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dokumen</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Girik</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Akses</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Mobil</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jumlah Bid</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;4</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <hr>
+
+
+
+                                                <div class="row g-0">
+                                                    <div class="col text-start">
+
+                                                        <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
+                                                            <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                        </a>
+
+
+                                                        <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1 class="modal-title mx-auto text-danger display-1">
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus memiliki akun sebelum melihat
+                                                                        detail.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
+                                                    <input type="hidden" name="owner" value=" Fatah">
+                                                    <input type="hidden" name="objek" value=" Konflik Pertanahan">
+                                                    <input type="hidden" name="luas" value=" 5000 M">
+                                                    <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
+                                                    <input type="hidden" name="komentar" value="">
+                                                    <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/byby3HJ3OCI">
+                                                    <input type="hidden" name="form" value="sponsor">
+                                                </form>
+
+
+                                                <hr>
+                                                <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                    <div class="col-4">
+
+                                                        <div class="d-grid gap-2 ">
+
+                                                            <!-- <button type="button"
+                                                        class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleB">
+                                                        BID
+                                                    </button> -->
+
+
+                                                            <div class="modal fade my-auto" id="exampleB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header p-0">
+                                                                            <h1 class="modal-title mx-auto text-danger display-1">
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                            </h1>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            Anda harus memiliki akun sebelum
+                                                                            melakukan bid.
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                            <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                            <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-3 custom text-start">
+                                        <button class="btn btn-sm">
+                                            <div class="row p-4">
+                                                <div class="col-md-12">
+                                                    <span class="fa-stack fa-2x">
+                                                        <i class="fa fa-circle fa-stack-2x text-brown"></i>
+                                                        <i class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-12 mt-1 fw-bold">
+                                                    Lihat Semua
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-1 arrow-desktop text-center">
+                                <button id="right-button2" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <script>
+                            $('#right-button2').click(function() {
+                                event.preventDefault();
+                                $('#lelang-card2').animate({
+                                    scrollLeft: "+=300px"
+                                }, "slow");
+                            });
+                            $('#left-button2').click(function() {
+                                event.preventDefault();
+                                $('#lelang-card2').animate({
+                                    scrollLeft: "-=300px"
+                                }, "slow");
+                            });
+                        </script>
+
+                        <div class="row align-items-center justify-content-center">
+
+                            <div class="col-10 desktop-arrow text-center">
+                                <style>
+                                    .scroll-simple::-webkit-scrollbar {
+                                        width: 7px;
+                                        height: 7px;
+                                    }
+
+                                    .scroll-simple::-webkit-scrollbar-track {
+                                        border-radius: 10px;
+                                        background: rgba(0, 0, 0, 0.1);
+                                    }
+
+                                    .scroll-simple::-webkit-scrollbar-thumb {
+                                        border-radius: 10px;
+                                        background: rgba(0, 0, 0, 0.2);
+                                    }
+
+                                    .scroll-simple::-webkit-scrollbar-thumb:hover {
+                                        background: rgba(0, 0, 0, 0.4);
+                                    }
+
+                                    .scroll-simple::-webkit-scrollbar-thumb:active {
+                                        background: rgba(0, 0, 0, .9);
+                                    }
+                                </style>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+                    <div class="card rounded-0 border-0 " style="margin-top:-10px">
+                        <!-- <div class="card-header bg-white border-0">
+                        </div> -->
+                        <div class="card-body" style="background-color:#FAFAD2;">
+                            <div class="row justify-content-center">
+
+                                <div class="col-1 arrow-desktop text-center">
+                                    <button class="btn rounded-5 text-white left-button2" style="margin-top:200%;background:transparent">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                                <div class="col-10">
+                                    <div class="row mt-0 justify-content-center scroll-simple align-items-center mobile-scroll lelang-card" style="flex-wrap: nowrap;">
+
+                                        <div class="col-12">
+                                            <div class="row align-items-end try-1" style="flex-wrap: nowrap;">
+
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
+                                                                <h4 class="mb-0">Dijual</h4>
+                                                            </div>
+                                                            <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h4 class="mb-0">1 Ha</h4>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 450 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
+                                                                <h4 class="mb-0">Dijual</h4>
+                                                            </div>
+                                                            <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h4 class="mb-0">3.2 Ha</h4>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
+                                                                <h4 class="mb-0">Dijual</h4>
+                                                            </div>
+                                                            <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h4 class="mb-0">5000 M</h4>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 500 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
+                                                                <h4 class="mb-0">Dijual</h4>
+                                                            </div>
+                                                            <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h4 class="mb-0">3.2 Ha</h4>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-1 arrow-desktop justify-content-center">
+                                    <button class="btn rounded-5 text-white right-button text-center" style="margin-top:200%;">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card rounded-0 border-0 " style="margin-top:-10px">
+                        <!-- <div class="card-header bg-white border-0">
+
+                        </div> -->
+                        <div class="card-body" style="background-color:#FAFAD2;">
+                            <div class="row justify-content-center">
+
+                                <div class="col-1 arrow-desktop text-center">
+                                    <button class="btn rounded-5 text-white left-button1" style="margin-top:200%;background:transparent">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                                <div class="col-10">
+                                    <div class="row mt-0 mobile-scroll justify-content-between scroll-simple align-items-center lelang-card1" style="flex-wrap: nowrap;">
+
+                                        <div class="col-12">
+                                            <div class="row align-items-end" style="flex-wrap: nowrap;">
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
+                                                                <h4 class="mb-0">Dijual</h4>
+                                                            </div>
+                                                            <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h3 class="mb-0">3.2 Ha</h3>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
+                                                                <h4 class="mb-0">Dijual</h4>
+                                                            </div>
+                                                            <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h3 class="mb-0">1 Ha</h3>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 450 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
+                                                                <h4 class="mb-0">Dijual</h4>
+                                                            </div>
+                                                            <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h3 class="mb-0">5000 M</h3>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 500 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 custom">
+                                                    <div class="card mx-auto">
+                                                        <div class="card-body p-0 text-start">
+                                                            <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
+                                                                <h4 class="mb-0">Dijual</h4>
+                                                            </div>
+                                                            <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                                <div class="col-12">
+                                                                    <h3 class="mb-0">3.2 Ha</h3>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                                </div>
+                                                                <div class="col-4 text-end">
+                                                                    <a href="#" style="text-decoration: none">
+                                                                        <h6 class="text-primary">Lihat</h6>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <h6 class="fw-bold">Bogor</h6>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-4 custom text-center" style="margin-bottom: 7rem">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-1 arrow-desktop justify-content-center">
+                                    <button class="btn rounded-5 text-white right-button1 text-center" style="margin-top:200%;background:transparent">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <script>
+                        $('button.right-button').click(function() {
+                            event.preventDefault();
+                            $('div.lelang-card').animate({
+                                scrollLeft: "+=300px"
+                            }, "slow");
+                        });
+
+                        $('button.left-button2').click(function() {
+                            event.preventDefault();
+                            $('div.lelang-card').animate({
+                                scrollLeft: "-=300px"
+                            }, "slow");
+                        });
+
+                        $('button.right-button1').click(function() {
+                            event.preventDefault();
+                            $('div.lelang-card1').animate({
+                                scrollLeft: "+=300px"
+                            }, "slow");
+                        });
+
+                        $('button.left-button1').click(function() {
+                            event.preventDefault();
+                            $('div.lelang-card1').animate({
+                                scrollLeft: "-=300px"
+                            }, "slow");
+                        });
+                    </script>
+
+
+
+
+
+                </div>
+
+                <style>
+                    .dropdown-item.ini {
+                        box-shadow: 0px 6px 23px 0px rgb(0 0 0 / 25%);
+                        background-color: white;
+                        margin-bottom: 2px;
+                        border-left: 5px solid #06ad5f;
+                    }
+
+                    .dropdown-menu.ini {
+                        position: relative !important;
+                        margin-top: 10px !important;
+                        transform: translate(0px, 0px) !important;
+                    }
+                </style>
+
+                <!-- orang kotak 1 -->
+
+                <div class="card mb-3 border-0 ">
+                    <div class="card-body">
+                        <div class="mt-2 ">
+
+                            <div class="row justify-content-center align-items-center">
+
+
+                                <div class="col-1 arrow-desktop text-center">
+                                    <button id="button-nota-kiri" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                                <div class="col-lg-10">
+                                    <div class="row">
+                                        <div class="col mobile-scroll" id='orang-kotak2' style="white-space:nowrap;flex-wrap:nowarp;display:flex">
+
+                                            <?php
+                                            $name = [
+                                                "Budi K.",
+                                                "Rudi H.",
+
+                                                "Ustman A.",
+                                                "Joko L.",
+
+                                                "James Tate",
+                                                "Robert K.",
+                                                "Hadi Ismail", 'Abdullah', 'Nugraha D.', 'Ade Syarief', "Adhi Utomo", 'Leman wan', 'Noto Adi', 'Agus Susan'
+                                            ];
+                                            ?>
+                                            <div class="container-gambar text-center ms-1" style='display: inline-block;flex: 0 0 auto' onclick="return window.location.href = `{{url('')}}/list-tukang`">
+                                                <img src="data:image/png;base64,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" alt="" srcset="" class="rounded-4 img-thumbnail" style="width:70px;height:70px;object-fit:cover;background:#61481C"> <br>
+
+                                                Notaris
+
+                                            </div>
+                                            @for($i=13;$i> 0;$i--)
+                                            <form action="{{url('')}}/detail-petugas" method="get" id="form-NOTARIS-{{$i}}">
+                                                <input type="hidden" name="name" value="{{$name[$i]}}">
+                                                <input type="hidden" name="img" value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
+                                                <input type="hidden" name="jenis_petugas" value="NOTARIS">
+                                            </form>
+                                            <button class="container-gambar text-center p-1 me-1 text-decoration-none border-0 bg-white" onclick="return  $('form#form-ppat-<?= $i ?>').submit()" style='display: inline-block;flex: 0 0 auto'>
+                                                <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt="" srcset="" class="rounded-4 img-thumbnail " style="width:70px !important;height:70px;object-fit:cover;"> <br>
                                                 {{$name[$i]}}
-                                        </div>
-                                        @endfor
-                                        <div style='display: inline-block;flex: 0 0 auto;' class="ms-3">
-                                            <a href="{{url('')}}/list-tukang" class="container-gambar text-center" style="text-decoration: none;">
-                                                <img src="data:image/png;base64,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" alt="" srcset="" class="rounded-circle img-thumbnail " style="width:70px;height:70px;object-fit:cover;background-color:#007bff">
-                                                <br>
-                                                <span style="color:#007bff">
-                                                    Lihat Semua
-                                                </span>
-                                            </a>
+                                            </button>
+                                            @endfor
 
+                                            <div style='display: inline-block;flex: 0 0 auto;' class="ms-3">
+                                                <a href="{{url('')}}/list-tukang" class="container-gambar text-center" style="text-decoration: none;">
+                                                    <img src="data:image/png;base64,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" alt="" srcset="" class="rounded-circle img-thumbnail " style="width:70px;height:70px;object-fit:cover;background-color:#007bff">
+                                                    <br>
+                                                    <span style="color:#007bff">
+                                                        Lihat Semua
+                                                    </span>
+                                                </a>
+                                            </div>
 
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-1 arrow-desktop text-center">
-                                <button id="right-orang" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                            </div>
-
-                            <script>
-                                $('#right-orang').click(function() {
-                                    event.preventDefault();
-                                    $('#orang-bulet').animate({
-                                        scrollLeft: "+=300px"
-                                    }, "slow");
-                                });
-
-                                $('#left-orang').click(function() {
-                                    event.preventDefault();
-                                    $('#orang-bulet').animate({
-                                        scrollLeft: "-=300px"
-                                    }, "slow");
-                                });
-                            </script>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Kerja sama lahan -->
-            <div class="card mb-3 border-0 shadow-sm ">
-                <div class="card-header bg-white">
-                    <table style="width:100%">
-                        <tr>
-                            <td rowspan="2" style="width: 40px">
-                                <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">
-                            </td>
-                            <td>
-                                <h5 color="text-dark" style="margin-bottom: 0px !important">
-                                    Kerja Sama Lahan
-                                </h5>
-                            </td>
-                            <td class="text-end" rowspan="2">
-                                <a href="{{url('')}}/kerjasama-lahan" class="text-success fw-bold" style="text-decoration: none">Lihat
-                                    Semua</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p class="mb-0">Lahan Tersedia <span class="badge bg-danger">4,323</span></p>
-                            </td>
-                        </tr>
-                    </table>
-
-                </div>
-
-                <div class="card-body" style="background-color:#FAFAD2;">
-
-
-                    <div class="row  mobile-scroll mt-2 align-items-center">
-
-                        <div class="col-1 arrow-desktop text-center">
-                            <button id="left-button1" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
-                                <i class="fa-solid fa-arrow-left"></i>
-                            </button>
-                        </div>
-                        <div class="col-10 desktop-arrow text-center">
-                            <div class="row mt-2 mobile-scroll justify-content-between align-items-center" id="lelang-card1" style="flex-wrap: nowrap">
-
-                                <div class="col-12 custom">
-                                    <div class="card mb-2 mx-auto">
-                                        <div class="ribbon-pop">
-                                            <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                        </div>
-                                        <div class="share-icon">
-                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                <i class="fa-solid fa-share-from-square"></i>
-                                            </button>
-                                        </div>
-                                        <div id="ksl2" class="carousel slide" data-bs-interval="false">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#ksl2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#ksl2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#ksl2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                <button type="button" data-bs-target="#ksl2" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                            </div>
-
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ksl2" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#ksl2" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-                                        <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-
-                                            <div class="row">
-
-                                                <div class="col-lg-12">
-                                                    <h5 class="mb-0 text-center">Kode Bidang KSL-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card-body">
-                                            <table class="mb-2">
-                                                <tr>
-                                                    <td class="text-start">
-                                                        <h5>
-                                                            <b class="text-danger fs-4">
-                                                                Kerja Sama
-                                                            </b>
-                                                        </h5>
-                                                    </td>
-                                                    <td class="align-items-center">
-
-
-                                                        <div class="row d-flex  align-items-center mb-2">
-                                                            <div class="col text-end">
-                                                                <a id="fav-a1">
-                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-a1">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </h5>
-                                                                </a>
-                                                            </div>
-                                                            <div class="col">
-                                                                <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                            </div>
-                                                        </div>
-                                                        <script>
-                                                            $("#fav-a1").click(function() {
-                                                                $("#fav-ch-a1").toggleClass('fav-icon');
-                                                            });
-                                                        </script>
-
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <hr style="margin-top:-4px">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Luas</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;1 Ha</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Lokasi</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Pancawati, Bogor</td>
-                                                    </tr>
-
-
-                                                    <tr>
-                                                        <td>Jenis Lahan</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Tanah Darat</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dokumen</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;SHM</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Peruntukan</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Permukiman</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Akses</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Mobil</td>
-                                                    </tr>
-
-
-
-                                                    <tr>
-                                                        <td>Jumlah Bid</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;4</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <hr>
-
-
-
-                                            <div class="row g-0">
-                                                <div class="col text-start">
-
-                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
-                                                    </a>
-
-
-                                                    <div class="modal fade my-auto text-center" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header p-0">
-                                                                    <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                    </h1>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    Anda harus memiliki akun sebelum melihat
-                                                                    detail.
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                            <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
-                                                <input type="hidden" name="owner" value=" Fatah">
-                                                <input type="hidden" name="objek" value=" Konflik Pertanahan">
-                                                <input type="hidden" name="luas" value=" 5000 M">
-                                                <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
-                                                <input type="hidden" name="komentar" value="">
-                                                <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/byby3HJ3OCI">
-                                                <input type="hidden" name="form" value="sponsor">
-                                            </form>
-
-
-                                            <hr>
-                                            <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                                <div class="col-4">
-
-                                                    <div class="d-grid gap-2 ">
-
-
-                                                        <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                            <div class="modal-dialog modal-dialog-centered">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header p-0">
-                                                                        <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                        </h1>
-                                                                    </div>
-                                                                    <div class="modal-body">
-                                                                        Anda harus memiliki akun sebelum
-                                                                        melakukan bid.
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 custom">
-                                    <div class="card mb-2 mx-auto">
-                                        <div class="ribbon-pop">
-                                            <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                        </div>
-                                        <div class="share-icon">
-                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                <i class="fa-solid fa-share-from-square"></i>
-                                            </button>
-                                        </div>
-                                        <div id="ksl10" class="carousel slide" data-bs-interval="false">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#ksl10" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#ksl10" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#ksl10" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                <button type="button" data-bs-target="#ksl10" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                            </div>
-
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ksl10" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#ksl10" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-                                        <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-
-                                            <div class="row">
-
-                                                <div class="col-lg-12">
-                                                    <h5 class="mb-0 text-center">Kode Bidang KSL-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card-body">
-
-                                            <table class="mb-2">
-                                                <tr>
-                                                    <td class="text-start">
-                                                        <h5>
-                                                            <b class="text-danger fs-4">
-                                                                Kerja Sama
-                                                            </b>
-                                                        </h5>
-                                                    </td>
-                                                    <td class="align-items-center">
-
-
-                                                        <div class="row d-flex  align-items-center mb-2">
-                                                            <div class="col text-end">
-                                                                <a id="fav-a2">
-                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-a2">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </h5>
-                                                                </a>
-                                                            </div>
-                                                            <div class="col">
-                                                                <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                            </div>
-                                                        </div>
-                                                        <script>
-                                                            $("#fav-a2").click(function() {
-                                                                $("#fav-ch-a2").toggleClass('fav-icon');
-                                                            });
-                                                        </script>
-
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <hr style="margin-top:-4px">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Luas</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;5000 M</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Lokasi</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Pancawati, Bogor</td>
-                                                    </tr>
-
-
-                                                    <tr>
-                                                        <td>Jenis Lahan</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Tanah Darat</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dokumen</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;HGB</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Peruntukan</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Permukiman</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Akses</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Motor</td>
-                                                    </tr>
-
-
-
-                                                    <tr>
-                                                        <td>Jumlah Bid</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;4</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <hr>
-
-
-
-                                            <div class="row g-0">
-                                                <div class="col text-start">
-
-                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
-                                                    </a>
-
-
-                                                    <div class="modal fade my-auto text-center" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header p-0">
-                                                                    <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                    </h1>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    Anda harus memiliki akun sebelum melihat
-                                                                    detail.
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                            <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
-                                                <input type="hidden" name="owner" value=" Fatah">
-                                                <input type="hidden" name="objek" value=" Konflik Pertanahan">
-                                                <input type="hidden" name="luas" value=" 5000 M">
-                                                <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
-                                                <input type="hidden" name="komentar" value="">
-                                                <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/byby3HJ3OCI">
-                                                <input type="hidden" name="form" value="sponsor">
-                                            </form>
-
-
-                                            <hr>
-                                            <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                                <div class="col-4">
-
-                                                    <div class="d-grid gap-2 ">
-
-
-                                                        <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                            <div class="modal-dialog modal-dialog-centered">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header p-0">
-                                                                        <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                        </h1>
-                                                                    </div>
-                                                                    <div class="modal-body">
-                                                                        Anda harus memiliki akun sebelum
-                                                                        melakukan bid.
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 custom">
-                                    <div class="card mb-2 mx-auto">
-                                        <div class="ribbon-pop">
-                                            <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                        </div>
-                                        <div class="share-icon">
-                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                <i class="fa-solid fa-share-from-square"></i>
-                                            </button>
-                                        </div>
-                                        <div id="ksl3" class="carousel slide" data-bs-interval="false">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#ksl3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#ksl3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#ksl3" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                <button type="button" data-bs-target="#ksl3" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                            </div>
-
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ksl3" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#ksl3" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-                                        <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-
-                                            <div class="row">
-
-                                                <div class="col-lg-12">
-                                                    <h5 class="mb-0 text-center">Kode Bidang KSL-002 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card-body">
-                                            <table class="mb-2">
-                                                <tr>
-                                                    <td class="text-start">
-                                                        <h5>
-                                                            <b class="text-danger fs-4">
-                                                                Kerja Sama
-                                                            </b>
-                                                        </h5>
-                                                    </td>
-                                                    <td class="align-items-center">
-
-
-                                                        <div class="row d-flex  align-items-center mb-2">
-                                                            <div class="col text-end">
-                                                                <a id="fav-a3">
-                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-a3">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </h5>
-                                                                </a>
-                                                            </div>
-                                                            <div class="col">
-                                                                <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                            </div>
-                                                        </div>
-                                                        <script>
-                                                            $("#fav-a3").click(function() {
-                                                                $("#fav-ch-a3").toggleClass('fav-icon');
-                                                            });
-                                                        </script>
-
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <hr style="margin-top:-4px">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Luas</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;3.2 Ha</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Lokasi</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Medan, Sumatra Utara</td>
-                                                    </tr>
-
-
-                                                    <tr>
-                                                        <td>Jenis Lahan</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Tanah Darat</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dokumen</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;AJB</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Peruntukan</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Permukiman</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Akses</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Mobil</td>
-                                                    </tr>
-
-
-
-
-                                                    <tr>
-                                                        <td>Jumlah Bid</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;6</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <hr>
-
-
-
-                                            <div class="row g-0">
-                                                <div class="col text-start">
-
-                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
-                                                    </a>
-
-
-                                                    <div class="modal fade my-auto text-center" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header p-0">
-                                                                    <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                    </h1>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    Anda harus memiliki akun sebelum melihat
-                                                                    detail.
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                            <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3" method="get">
-                                                <input type="hidden" name="owner" value=" Ophelia Suartini">
-                                                <input type="hidden" name="objek" value=" Perkara Pertanahan">
-                                                <input type="hidden" name="luas" value=" 3.2 Ha">
-                                                <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
-                                                <input type="hidden" name="komentar" value="">
-                                                <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/1I4iEKK1qbQ">
-                                                <input type="hidden" name="form" value="sponsor">
-                                            </form>
-
-
-                                            <hr>
-                                            <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                                <div class="col-4">
-
-                                                    <div class="d-grid gap-2 ">
-
-
-                                                        <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                            <div class="modal-dialog modal-dialog-centered">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header p-0">
-                                                                        <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                        </h1>
-                                                                    </div>
-                                                                    <div class="modal-body">
-                                                                        Anda harus memiliki akun sebelum
-                                                                        melakukan bid.
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 custom">
-                                    <div class="card mb-2 mx-auto">
-                                        <div class="ribbon-pop">
-                                            <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                        </div>
-                                        <div class="share-icon">
-                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                <i class="fa-solid fa-share-from-square"></i>
-                                            </button>
-                                        </div>
-                                        <div id="ksl4" class="carousel slide" data-bs-interval="false">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#ksl4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#ksl4" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#ksl4" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                <button type="button" data-bs-target="#ksl4" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                            </div>
-
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ksl4" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#ksl4" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-
-                                        <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                            <div class="row">
-
-                                                <div class="col-lg-12">
-                                                    <h5 class="mb-0 text-center">Kode Bidang KSL-003 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card-body">
-                                            <table class="mb-2">
-                                                <tr>
-                                                    <td class="text-start">
-                                                        <h5>
-                                                            <b class="text-danger fs-4">
-                                                                Kerja Sama
-                                                            </b>
-                                                        </h5>
-                                                    </td>
-                                                    <td class="align-items-center">
-
-
-                                                        <div class="row d-flex  align-items-center mb-2">
-                                                            <div class="col text-end">
-                                                                <a id="fav-a4">
-                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-a4">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </h5>
-                                                                </a>
-                                                            </div>
-                                                            <div class="col">
-                                                                <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                            </div>
-                                                        </div>
-                                                        <script>
-                                                            $("#fav-a4").click(function() {
-                                                                $("#fav-ch-a4").toggleClass('fav-icon');
-                                                            });
-                                                        </script>
-
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <hr style="margin-top:-4px">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Luas</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;3.2 Ha</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Lokasi</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Medan, Sumatra Utara</td>
-                                                    </tr>
-
-
-                                                    <tr>
-                                                        <td>Jenis Lahan</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Tanah Darat</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dokumen</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;PPJB</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Peruntukan</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Permukiman</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Akses</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Mobil</td>
-                                                    </tr>
-
-
-
-
-                                                    <tr>
-                                                        <td>Jumlah Bid</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;6</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <hr>
-
-
-                                            <div class="row g-0">
-                                                <div class="col text-start">
-
-                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
-                                                    </a>
-
-
-                                                    <div class="modal fade my-auto text-center" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header p-0">
-                                                                    <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                    </h1>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    Anda harus memiliki akun sebelum melihat
-                                                                    detail.
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                            <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3" method="get">
-                                                <input type="hidden" name="owner" value=" Ophelia Suartini">
-                                                <input type="hidden" name="objek" value=" Perkara Pertanahan">
-                                                <input type="hidden" name="luas" value=" 3.2 Ha">
-                                                <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
-                                                <input type="hidden" name="komentar" value="">
-                                                <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/1I4iEKK1qbQ">
-                                                <input type="hidden" name="form" value="sponsor">
-                                            </form>
-
-
-                                            <hr>
-                                            <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                                <div class="col-4">
-
-                                                    <div class="d-grid gap-2 ">
-
-
-                                                        <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                            <div class="modal-dialog modal-dialog-centered">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header p-0">
-                                                                        <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                        </h1>
-                                                                    </div>
-                                                                    <div class="modal-body">
-                                                                        Anda harus memiliki akun sebelum
-                                                                        melakukan bid.
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 custom">
-                                    <div class="card mb-2 mx-auto">
-                                        <div class="ribbon-pop">
-                                            <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                        </div>
-                                        <div class="share-icon">
-                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                <i class="fa-solid fa-share-from-square"></i>
-                                            </button>
-                                        </div>
-                                        <div id="ksl2" class="carousel slide" data-bs-interval="false">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#ksl2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#ksl2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#ksl2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                <button type="button" data-bs-target="#ksl2" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                            </div>
-
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ksl2" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#ksl2" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-                                        <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-
-                                            <div class="row">
-
-                                                <div class="col-lg-12">
-                                                    <h5 class="mb-0 text-center">Kode Bidang KSL-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card-body">
-                                            <table class="mb-2">
-                                                <tr>
-                                                    <td class="text-start">
-                                                        <h5>
-                                                            <b class="text-danger fs-4">
-                                                                Kerja Sama
-                                                            </b>
-                                                        </h5>
-                                                    </td>
-                                                    <td class="align-items-center">
-
-
-                                                        <div class="row d-flex  align-items-center mb-2">
-                                                            <div class="col text-end">
-                                                                <a id="fav-a5">
-                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-a5">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </h5>
-                                                                </a>
-                                                            </div>
-                                                            <div class="col">
-                                                                <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
-                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                            </div>
-                                                        </div>
-                                                        <script>
-                                                            $("#fav-a5").click(function() {
-                                                                $("#fav-ch-a5").toggleClass('fav-icon');
-                                                            });
-                                                        </script>
-
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <hr style="margin-top:-4px">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Luas</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;1 Ha</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Lokasi</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Pancawati, Bogor</td>
-                                                    </tr>
-
-
-                                                    <tr>
-                                                        <td>Jenis Lahan</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Tanah Darat</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dokumen</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Girik</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Peruntukan</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Permukiman</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Akses</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Motor</td>
-                                                    </tr>
-
-
-
-                                                    <tr>
-                                                        <td>Jumlah Bid</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;4</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <hr>
-
-
-
-                                            <div class="row g-0">
-                                                <div class="col text-start">
-
-                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
-                                                    </a>
-
-
-                                                    <div class="modal fade my-auto text-center" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header p-0">
-                                                                    <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                    </h1>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    Anda harus memiliki akun sebelum melihat
-                                                                    detail.
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-
-                                            <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
-                                                <input type="hidden" name="owner" value=" Fatah">
-                                                <input type="hidden" name="objek" value=" Konflik Pertanahan">
-                                                <input type="hidden" name="luas" value=" 5000 M">
-                                                <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
-                                                <input type="hidden" name="komentar" value="">
-                                                <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/byby3HJ3OCI">
-                                                <input type="hidden" name="form" value="sponsor">
-                                            </form>
-
-
-                                            <hr>
-                                            <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                                <div class="col-4">
-
-                                                    <div class="d-grid gap-2 ">
-
-
-                                                        <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                            <div class="modal-dialog modal-dialog-centered">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header p-0">
-                                                                        <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                        </h1>
-                                                                    </div>
-                                                                    <div class="modal-body">
-                                                                        Anda harus memiliki akun sebelum
-                                                                        melakukan bid.
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-3 custom text-start">
-                                    <button class="btn btn-sm">
-                                        <div class="row p-4">
-                                            <div class="col-md-12">
-                                                <span class="fa-stack fa-2x">
-                                                    <i class="fa fa-circle fa-stack-2x text-brown"></i>
-                                                    <i class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
-                                                </span>
-                                            </div>
-                                            <div class="col-md-12 mt-1 fw-bold">
-                                                Lihat Semua
-                                            </div>
-                                        </div>
+                                <div class="col-1 arrow-desktop text-center">
+                                    <button id="button-nota-kanan" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
+                                        <i class="fa-solid fa-arrow-right"></i>
                                     </button>
                                 </div>
 
+                                <script>
+                                    $("button#button-nota-kanan").on('click', function() {
+
+                                        $('#orang-kotak2').animate({
+                                            scrollLeft: "+=300px"
+                                        }, "slow");
+                                        // alert('asfs')
+                                    });
+
+                                    $("button#button-nota-kiri").on('click', function() {
+
+                                        $('#orang-kotak2').animate({
+                                            scrollLeft: "-=300px"
+                                        }, "slow");
+                                        // alert('asfs')
+                                    });
+                                </script>
                             </div>
-                        </div>
-                        <div class="col-1 arrow-desktop text-center">
-                            <button id="right-button1" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </button>
+
+
                         </div>
                     </div>
-
-
-
-                    <script>
-                        $('#right-button1').click(function() {
-                            event.preventDefault();
-                            $('#lelang-card1').animate({
-                                scrollLeft: "+=300px"
-                            }, "slow");
-                        });
-
-                        $('#left-button1').click(function() {
-                            event.preventDefault();
-                            $('#lelang-card1').animate({
-                                scrollLeft: "-=300px"
-                            }, "slow");
-                        });
-                    </script>
-
-
-
-
                 </div>
-            </div>
 
-            <style>
-                .dropdown-item.ini {
-                    box-shadow: 0px 6px 23px 0px rgb(0 0 0 / 25%);
-                    background-color: white;
-                    margin-bottom: 2px;
-                    border-left: 5px solid #06ad5f;
-                }
+                <!-- Kerja sama lahan -->
+                <div class="card mb-3 border-0 shadow-sm ">
+                    <div class="card-header bg-white">
+                        <table style="width:100%">
+                            <tr>
+                                <td rowspan="2" style="width: 40px">
+                                    <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">
+                                </td>
+                                <td>
+                                    <h5 color="text-dark" style="margin-bottom: 0px !important">
+                                        Kerja Sama Lahan
+                                    </h5>
+                                </td>
+                                <td class="text-end" rowspan="2">
+                                    <a href="{{url('')}}/kerjasama-lahan" class="text-success fw-bold" style="text-decoration: none">Lihat
+                                        Semua</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="mb-0">Lahan Tersedia <span class="badge bg-danger">4,323</span></p>
+                                </td>
+                            </tr>
+                        </table>
 
-                .dropdown-menu.ini {
-                    position: relative !important;
-                    margin-top: 10px !important;
-                    transform: translate(0px, 0px) !important;
-                }
-            </style>
+                    </div>
 
-            <!-- orang kotak 1 -->
+                    <div class="card-body" style="background-color:#FAFAD2;">
 
-            <div class="card mb-3 border-0 ">
-                <div class="card-body">
-                    <div class="mt-2 ">
 
-                        <div class="row justify-content-center align-items-center">
-
+                        <div class="row  mobile-scroll mt-2 align-items-center">
 
                             <div class="col-1 arrow-desktop text-center">
-                                <button id="left-orang1" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
+                                <button id="left-button1" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
                                     <i class="fa-solid fa-arrow-left"></i>
                                 </button>
                             </div>
-                            <div class="col-lg-10">
-                                <div class="row">
-                                    <div class="col mobile-scroll" id='orang-kotak' style="white-space:nowrap;flex-wrap:nowarp;display:flex">
+                            <div class="col-10 desktop-arrow text-center">
+                                <div class="row mt-2 mobile-scroll justify-content-between align-items-center" id="lelang-card1" style="flex-wrap: nowrap">
 
-                                        <?php
-                                        $name = [
-                                            "Budi K.",
-                                            "Rudi H.",
+                                    <div class="col-12 custom">
+                                        <div class="card mb-2 mx-auto">
+                                            <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
+                                            <div id="ksl2" class="carousel slide" data-bs-interval="false">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#ksl2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#ksl2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ksl2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ksl2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
 
-                                            "Ustman A.",
-                                            "Joko L.",
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ksl2" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#ksl2" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
 
-                                            "James Tate",
-                                            "Robert K.",
-                                            "Hadi Ismail", 'Abdullah', 'Nugraha D.', 'Ade Syarief', "Adhi Utomo", 'Leman wan', 'Noto Adi', 'Agus Susan'
-                                        ];
-                                        ?>
-                                        <div class="container-gambar text-center ms-1" style='display: inline-block;flex: 0 0 auto' onclick="return window.location.href = `{{url('')}}/list-tukang`">
-                                            <img src="data:image/png;base64,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" alt="" srcset="" class="rounded-4 img-thumbnail" style="width:70px;height:70px;object-fit:cover;background:#61481C"> <br>
+                                                <div class="row">
 
-                                            Notaris
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Bidang KSL-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
 
+                                            <div class="card-body">
+                                                <table class="mb-2">
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-danger fs-4">
+                                                                    Kerja Sama
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                        <td class="align-items-center">
+
+
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-a1">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a1">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-a1").click(function() {
+                                                                    $("#fav-ch-a1").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Luas</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;1 Ha</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lokasi</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Pancawati, Bogor</td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                            <td>Jenis Lahan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Tanah Darat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dokumen</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;SHM</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Peruntukan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Permukiman</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Akses</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Mobil</td>
+                                                        </tr>
+
+
+
+                                                        <tr>
+                                                            <td>Jumlah Bid</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;4</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <hr>
+
+
+
+                                                <div class="row g-0">
+                                                    <div class="col text-start">
+
+                                                        <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
+                                                            <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                        </a>
+
+
+                                                        <div class="modal fade my-auto text-center" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1 class="modal-title mx-auto text-danger display-1">
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus memiliki akun sebelum melihat
+                                                                        detail.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
+                                                    <input type="hidden" name="owner" value=" Fatah">
+                                                    <input type="hidden" name="objek" value=" Konflik Pertanahan">
+                                                    <input type="hidden" name="luas" value=" 5000 M">
+                                                    <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
+                                                    <input type="hidden" name="komentar" value="">
+                                                    <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/byby3HJ3OCI">
+                                                    <input type="hidden" name="form" value="sponsor">
+                                                </form>
+
+
+                                                <hr>
+                                                <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                    <div class="col-4">
+
+                                                        <div class="d-grid gap-2 ">
+
+
+                                                            <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header p-0">
+                                                                            <h1 class="modal-title mx-auto text-danger display-1">
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                            </h1>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            Anda harus memiliki akun sebelum
+                                                                            melakukan bid.
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                            <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                            <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
                                         </div>
-                                        @for($i=13;$i> 0;$i--)
-                                        <div class="container-gambar text-center ms-1" style='display: inline-block;flex: 0 0 auto'>
-                                            <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt="" srcset="" class="rounded-4 img-thumbnail " style="width:70px;height:70px;object-fit:cover;"> <br>
-                                            {{$name[$i]}}
-                                        </div>
-                                        @endfor
-
-                                        <div style='display: inline-block;flex: 0 0 auto;' class="ms-3">
-                                            <a href="{{url('')}}/list-tukang" class="container-gambar text-center" style="text-decoration: none;">
-                                                <img src="data:image/png;base64,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" alt="" srcset="" class="rounded-circle img-thumbnail " style="width:70px;height:70px;object-fit:cover;background-color:#007bff">
-                                                <br>
-                                                <span style="color:#007bff">
-                                                    Lihat Semua
-                                                </span>
-                                            </a>
-                                        </div>
-
                                     </div>
+
+                                    <div class="col-12 custom">
+                                        <div class="card mb-2 mx-auto">
+                                            <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
+                                            <div id="ksl10" class="carousel slide" data-bs-interval="false">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#ksl10" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#ksl10" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ksl10" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ksl10" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ksl10" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#ksl10" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+
+                                                <div class="row">
+
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Bidang KSL-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body">
+
+                                                <table class="mb-2">
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-danger fs-4">
+                                                                    Kerja Sama
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                        <td class="align-items-center">
+
+
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-a2">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a2">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-a2").click(function() {
+                                                                    $("#fav-ch-a2").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Luas</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;5000 M</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lokasi</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Pancawati, Bogor</td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                            <td>Jenis Lahan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Tanah Darat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dokumen</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;HGB</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Peruntukan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Permukiman</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Akses</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Motor</td>
+                                                        </tr>
+
+
+
+                                                        <tr>
+                                                            <td>Jumlah Bid</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;4</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <hr>
+
+
+
+                                                <div class="row g-0">
+                                                    <div class="col text-start">
+
+                                                        <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
+                                                            <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                        </a>
+
+
+                                                        <div class="modal fade my-auto text-center" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1 class="modal-title mx-auto text-danger display-1">
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus memiliki akun sebelum melihat
+                                                                        detail.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
+                                                    <input type="hidden" name="owner" value=" Fatah">
+                                                    <input type="hidden" name="objek" value=" Konflik Pertanahan">
+                                                    <input type="hidden" name="luas" value=" 5000 M">
+                                                    <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
+                                                    <input type="hidden" name="komentar" value="">
+                                                    <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/byby3HJ3OCI">
+                                                    <input type="hidden" name="form" value="sponsor">
+                                                </form>
+
+
+                                                <hr>
+                                                <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                    <div class="col-4">
+
+                                                        <div class="d-grid gap-2 ">
+
+
+                                                            <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header p-0">
+                                                                            <h1 class="modal-title mx-auto text-danger display-1">
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                            </h1>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            Anda harus memiliki akun sebelum
+                                                                            melakukan bid.
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                            <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                            <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 custom">
+                                        <div class="card mb-2 mx-auto">
+                                            <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
+                                            <div id="ksl3" class="carousel slide" data-bs-interval="false">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#ksl3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#ksl3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ksl3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ksl3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ksl3" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#ksl3" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+
+                                                <div class="row">
+
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Bidang KSL-002 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body">
+                                                <table class="mb-2">
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-danger fs-4">
+                                                                    Kerja Sama
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                        <td class="align-items-center">
+
+
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-a3">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a3">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-a3").click(function() {
+                                                                    $("#fav-ch-a3").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Luas</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;3.2 Ha</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lokasi</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Medan, Sumatra Utara</td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                            <td>Jenis Lahan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Tanah Darat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dokumen</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;AJB</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Peruntukan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Permukiman</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Akses</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Mobil</td>
+                                                        </tr>
+
+
+
+
+                                                        <tr>
+                                                            <td>Jumlah Bid</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;6</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <hr>
+
+
+
+                                                <div class="row g-0">
+                                                    <div class="col text-start">
+
+                                                        <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
+                                                            <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                        </a>
+
+
+                                                        <div class="modal fade my-auto text-center" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1 class="modal-title mx-auto text-danger display-1">
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus memiliki akun sebelum melihat
+                                                                        detail.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3" method="get">
+                                                    <input type="hidden" name="owner" value=" Ophelia Suartini">
+                                                    <input type="hidden" name="objek" value=" Perkara Pertanahan">
+                                                    <input type="hidden" name="luas" value=" 3.2 Ha">
+                                                    <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
+                                                    <input type="hidden" name="komentar" value="">
+                                                    <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/1I4iEKK1qbQ">
+                                                    <input type="hidden" name="form" value="sponsor">
+                                                </form>
+
+
+                                                <hr>
+                                                <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                    <div class="col-4">
+
+                                                        <div class="d-grid gap-2 ">
+
+
+                                                            <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header p-0">
+                                                                            <h1 class="modal-title mx-auto text-danger display-1">
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                            </h1>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            Anda harus memiliki akun sebelum
+                                                                            melakukan bid.
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                            <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                            <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 custom">
+                                        <div class="card mb-2 mx-auto">
+                                            <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
+                                            <div id="ksl4" class="carousel slide" data-bs-interval="false">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#ksl4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#ksl4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ksl4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ksl4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ksl4" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#ksl4" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+
+                                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                                <div class="row">
+
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Bidang KSL-003 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body">
+                                                <table class="mb-2">
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-danger fs-4">
+                                                                    Kerja Sama
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                        <td class="align-items-center">
+
+
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-a4">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a4">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-a4").click(function() {
+                                                                    $("#fav-ch-a4").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Luas</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;3.2 Ha</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lokasi</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Medan, Sumatra Utara</td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                            <td>Jenis Lahan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Tanah Darat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dokumen</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;PPJB</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Peruntukan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Permukiman</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Akses</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Mobil</td>
+                                                        </tr>
+
+
+
+
+                                                        <tr>
+                                                            <td>Jumlah Bid</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;6</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <hr>
+
+
+                                                <div class="row g-0">
+                                                    <div class="col text-start">
+
+                                                        <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
+                                                            <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                        </a>
+
+
+                                                        <div class="modal fade my-auto text-center" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1 class="modal-title mx-auto text-danger display-1">
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus memiliki akun sebelum melihat
+                                                                        detail.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3" method="get">
+                                                    <input type="hidden" name="owner" value=" Ophelia Suartini">
+                                                    <input type="hidden" name="objek" value=" Perkara Pertanahan">
+                                                    <input type="hidden" name="luas" value=" 3.2 Ha">
+                                                    <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
+                                                    <input type="hidden" name="komentar" value="">
+                                                    <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/1I4iEKK1qbQ">
+                                                    <input type="hidden" name="form" value="sponsor">
+                                                </form>
+
+
+                                                <hr>
+                                                <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                    <div class="col-4">
+
+                                                        <div class="d-grid gap-2 ">
+
+
+                                                            <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header p-0">
+                                                                            <h1 class="modal-title mx-auto text-danger display-1">
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                            </h1>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            Anda harus memiliki akun sebelum
+                                                                            melakukan bid.
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                            <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                            <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 custom">
+                                        <div class="card mb-2 mx-auto">
+                                            <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
+                                            <div id="ksl2" class="carousel slide" data-bs-interval="false">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#ksl2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#ksl2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ksl2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ksl2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ksl2" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#ksl2" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+
+                                                <div class="row">
+
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Bidang KSL-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body">
+                                                <table class="mb-2">
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-danger fs-4">
+                                                                    Kerja Sama
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                        <td class="align-items-center">
+
+
+                                                            <div class="row d-flex  align-items-center mb-2">
+                                                                <div class="col text-end">
+                                                                    <a id="fav-a5">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-a5">
+                                                                            <i class="fas fa-star"></i>
+                                                                        </h5>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn float-end btn-danger mb-0" data-bs-toggle="modal" data-bs-target="#exampleA">
+                                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                                </div>
+                                                            </div>
+                                                            <script>
+                                                                $("#fav-a5").click(function() {
+                                                                    $("#fav-ch-a5").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Luas</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;1 Ha</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lokasi</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Pancawati, Bogor</td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                            <td>Jenis Lahan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Tanah Darat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Dokumen</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Girik</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Peruntukan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Permukiman</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Akses</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Motor</td>
+                                                        </tr>
+
+
+
+                                                        <tr>
+                                                            <td>Jumlah Bid</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;4</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <hr>
+
+
+
+                                                <div class="row g-0">
+                                                    <div class="col text-start">
+
+                                                        <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasA" style="text-decoration:none">
+                                                            <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                        </a>
+
+
+                                                        <div class="modal fade my-auto text-center" id="berkasA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1 class="modal-title mx-auto text-danger display-1">
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus memiliki akun sebelum melihat
+                                                                        detail.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
+                                                    <input type="hidden" name="owner" value=" Fatah">
+                                                    <input type="hidden" name="objek" value=" Konflik Pertanahan">
+                                                    <input type="hidden" name="luas" value=" 5000 M">
+                                                    <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
+                                                    <input type="hidden" name="komentar" value="">
+                                                    <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/byby3HJ3OCI">
+                                                    <input type="hidden" name="form" value="sponsor">
+                                                </form>
+
+
+                                                <hr>
+                                                <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                    <div class="col-4">
+
+                                                        <div class="d-grid gap-2 ">
+
+
+                                                            <div class="modal fade my-auto" id="exampleA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header p-0">
+                                                                            <h1 class="modal-title mx-auto text-danger display-1">
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                            </h1>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            Anda harus memiliki akun sebelum
+                                                                            melakukan bid.
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                            <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                            <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-3 custom text-start">
+                                        <button class="btn btn-sm">
+                                            <div class="row p-4">
+                                                <div class="col-md-12">
+                                                    <span class="fa-stack fa-2x">
+                                                        <i class="fa fa-circle fa-stack-2x text-brown"></i>
+                                                        <i class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-12 mt-1 fw-bold">
+                                                    Lihat Semua
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="col-1 arrow-desktop text-center">
-                                <button id="right-orang1" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
+                                <button id="right-button1" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                        <script>
+                            $('#right-button1').click(function() {
+                                event.preventDefault();
+                                $('#lelang-card1').animate({
+                                    scrollLeft: "+=300px"
+                                }, "slow");
+                            });
+
+                            $('#left-button1').click(function() {
+                                event.preventDefault();
+                                $('#lelang-card1').animate({
+                                    scrollLeft: "-=300px"
+                                }, "slow");
+                            });
+                        </script>
+
+
+
+
+                    </div>
+                </div>
+
+                <!-- orang kotak 1 -->
+
+                <div class="card mb-1 border-0 mb-2 ">
+                    <div class="card-body">
+                        <div class="mt-2 ">
+
+                            <div class="row justify-content-center align-items-center">
+
+
+                                <div class="col-1 arrow-desktop text-center">
+                                    <button id="left-orang2" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                                <div class="col-lg-10">
+                                    <div class="row">
+                                        <div class="col mobile-scroll" id='orang-bulet2' style="white-space:nowrap;flex-wrap:nowarp;display:flex">
+
+                                            <?php
+                                            $name = [
+                                                "Rudi H.",
+                                                "Budi K.",
+                                                "Joko Afdal",
+                                                "Ustman A.",
+                                                "Robert K.",
+                                                "James Tate", "Hadi Ismail", 'Abdullah', 'Nugraha D.', 'Ade Syarief', "Adhi Utomo", 'Leman wan', 'Pranoto Adi', 'Agus Susan'
+                                            ];
+                                            ?>
+                                            <div class="container-gambar text-center ms-1" style='display: inline-block;flex: 0 0 auto' onclick="return window.location.href = `{{url('')}}/list-tukang`">
+                                                <img src="data:image/png;base64,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" alt="" srcset="" class="rounded-circle img-thumbnail " style="width:70px;height:70px;object-fit:cover;background:#61481C"> <br>
+
+                                                PPAT
+
+                                            </div>
+
+
+                                            @for($i=0;$i< 14;$i++) <form action="{{url('')}}/detail-petugas" method="get" id="form-ppat-{{$i}}">
+                                                <input type="hidden" name="name" value="{{$name[$i]}}">
+                                                <input type="hidden" name="img" value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
+                                                <input type="hidden" name="jenis_petugas" value="PPAT">
+                                                </form>
+                                                <button class="container-gambar text-center p-1 me-1 text-decoration-none border-0 bg-white" onclick="return  $('form#form-ppat-<?= $i ?>').submit()" style='display: inline-block;flex: 0 0 auto'>
+                                                    <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt="" srcset="" class="rounded-circle img-thumbnail " style="width:70px !important;height:70px;object-fit:cover;"> <br>
+                                                    {{$name[$i]}}
+                                                </button>
+
+                                                @endfor
+                                                <div style='display: inline-block;flex: 0 0 auto;' class="ms-3">
+                                                    <a href="{{url('')}}/list-tukang" class="container-gambar text-center" style="text-decoration: none;">
+                                                        <img src="data:image/png;base64,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" alt="" srcset="" class="rounded-circle img-thumbnail " style="width:70px;height:70px;object-fit:cover;background-color:#007bff">
+                                                        <br>
+                                                        <span style="color:#007bff">
+                                                            Lihat Semua
+                                                        </span>
+                                                    </a>
+
+
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1 arrow-desktop text-center">
+                                    <button id="right-orang2" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+
+                                <script>
+                                    $('#right-orang2').click(function() {
+                                        event.preventDefault();
+                                        $('#orang-bulet2').animate({
+                                            scrollLeft: "+=300px"
+                                        }, "slow");
+                                    });
+
+                                    $('#left-orang2').click(function() {
+                                        event.preventDefault();
+                                        $('#orang-bulet2').animate({
+                                            scrollLeft: "-=300px"
+                                        }, "slow");
+                                    });
+                                </script>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- lelang -->
+                <div class="card mb-4 border-0 shadow-sm ">
+                    <div class="card-header bg-white">
+                        <table style="width:100%">
+                            <tr>
+                                <td rowspan="2" style="width: 40px">
+                                    <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">
+                                </td>
+                                <td>
+                                    <h5 color="text-dark" style="margin-bottom: 0px !important">
+                                        Lelang Lahan
+                                    </h5>
+                                </td>
+                                <td class="text-end" rowspan="2">
+                                    <a href="{{url('')}}/lelang-lahan" class="text-success fw-bold" style="text-decoration: none">Lihat
+                                        Semua</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="mb-0">Lahan Tersedia <span class="badge bg-danger">2,353</span></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="card-body" style="background-color:#FAFAD2;">
+
+                        <div class="row align-items-center justify-content-center">
+
+                            <div class="col-1 arrow-desktop text-center">
+                                <button id="left-button3" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C;">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+                            </div>
+
+                            <div class="col-10 desktop-arrow text-center">
+
+
+
+                                <div class="row mobile-scroll justify-content-between" id="lelang-card3" style="flex-wrap: nowrap">
+
+                                    <div class="col-12 custom ">
+                                        <div class="card mx-auto">
+                                            <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
+                                            <div id="ll4" class="carousel slide" data-bs-interval="false">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#ll4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#ll4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ll4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ll4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ll4" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#ll4" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Lot Lelang LL-004 <img src="https://sengketatanah.id/uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="card-body pt-0">
+                                                <table class="mt-2 mb-2">
+                                                    <tr>
+                                                        <td>
+                                                            <b>Nilai Limit :</b>
+                                                        </td>
+
+                                                        <td rowspan="2">
+                                                            <div class="d-flex align-items-center">
+
+                                                                <a id="fav-c1 my-auto" style="margin-right: 10px">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                                <button class="btn float-end btn-warning text-white mb-0 my-auto w-100" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                                    Ikut Lelang</button>
+                                                            </div>
+
+
+                                                            <script>
+                                                                $("#fav-c1").click(function() {
+                                                                    $("#fav-ch-c1").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-primary">
+                                                                    Rp.450.000.000
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
+                                                <table style="margin-top:-10px">
+                                                    <tr>
+                                                        <td>
+                                                            <b>
+                                                                Berakhir Dalam
+                                                            </b>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="badge bg-danger float-end" style="margin-top:3px">
+                                                                &nbsp;&nbsp;
+                                                                <i class="fa-solid fa-clock"></i> &nbsp;01:08:59
+
+                                                                &nbsp;&nbsp;
+                                                            </h6>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:3px">
+                                                <table>
+                                                    <tbody>
+                                                        </tr>
+
+                                                        <td>Lokasi</td>
+                                                        <td></td>
+                                                        <td>:</td>
+                                                        <td>&nbsp;Pancawati, Bogor</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Luas</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;1 Ha</td>
+                                                        </tr>
+                                                        <tr>
+
+                                                            <td>Objek Lelang</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Tanah Darat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Penawaran</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Open Bidding</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Jaminan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;50.000.000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Batas Akhir</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;12 September 2022</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Pelaksanaan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;28 September 2022</td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                            <td>Penyelenggara</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Sengketatanah.id</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jumlah Bid</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;3</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <hr>
+
+
+                                                <div class="row g-0">
+                                                    <div class="col text-start">
+
+                                                        <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
+                                                            <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                        </a>
+
+
+                                                        <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1 class="modal-title mx-auto text-danger display-1">
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus memiliki akun peserta lelang sebelum melihat
+                                                                        detail.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1" method="get">
+                                                    <input type="hidden" name="owner" value=" Bahru">
+                                                    <input type="hidden" name="objek" value=" Sengketa Pertanahan">
+                                                    <input type="hidden" name="luas" value=" 1 Ha">
+                                                    <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
+                                                    <input type="hidden" name="komentar" value="">
+                                                    <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/-RkCcavzXq8">
+                                                    <input type="hidden" name="form" value="sponsor">
+                                                </form>
+
+
+                                                <hr>
+                                                <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                    <div class="col-4">
+
+                                                        <div class="d-grid gap-2 ">
+
+                                                            <!-- <button type="button"
+                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                    BID
+                                                </button> -->
+
+
+                                                            <div class="modal fade my-auto" id="exampleC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header p-0">
+                                                                            <h1 class="modal-title mx-auto text-danger display-1">
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                            </h1>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            Anda harus memiliki akun peserta lelang sebelum
+                                                                            melakukan bid.
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                            <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                            <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 custom">
+                                        <div class="card mb-2 mx-auto">
+                                            <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
+                                            <div id="ll2" class="carousel slide" data-bs-interval="false">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#ll2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#ll2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ll2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ll2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ll2" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#ll2" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                                <div class="row">
+
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Lot Lelang LL-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body pt-0">
+                                                <table class="mt-2 mb-2">
+                                                    <tr>
+                                                        <td>
+                                                            <b>Nilai Limit :</b>
+                                                        </td>
+
+                                                        <td rowspan="2">
+                                                            <div class="d-flex align-items-center">
+
+                                                                <a id="fav-c1 my-auto" style="margin-right: 10px">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                                <button class="btn float-end btn-warning text-white mb-0 my-auto w-100" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                                    Ikut Lelang</button>
+                                                            </div>
+
+
+                                                            <script>
+                                                                $("#fav-c1").click(function() {
+                                                                    $("#fav-ch-c1").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-primary">
+                                                                    Rp.500.000.000
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
+                                                <table style="margin-top:-10px">
+                                                    <tr>
+                                                        <td>
+                                                            <b>
+                                                                Berakhir Dalam
+                                                            </b>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="badge bg-danger float-end" style="margin-top:3px">
+                                                                &nbsp;&nbsp;
+                                                                <i class="fa-solid fa-clock"></i> &nbsp;01:08:59
+
+                                                                &nbsp;&nbsp;
+                                                            </h6>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:3px">
+
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Lokasi</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Pancawati, Bogor</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Luas</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;5000 M</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Objek Lelang</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Tanah Darat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Penawaran</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Open Bidding</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Jaminan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;73.000.000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Batas Akhir</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;10 September 2022</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Pelaksanaan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;9 September 2022</td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                            <td>Penyelenggara</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Sengketatanah.id</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jumlah Bid</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;4</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <hr>
+
+
+
+                                                <div class="row g-0">
+                                                    <div class="col text-start">
+
+                                                        <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
+                                                            <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                        </a>
+
+
+                                                        <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1 class="modal-title mx-auto text-danger display-1">
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus memiliki akun peserta lelang sebelum
+                                                                        melihat detail.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
+                                                    <input type="hidden" name="owner" value=" Fatah">
+                                                    <input type="hidden" name="objek" value=" Konflik Pertanahan">
+                                                    <input type="hidden" name="luas" value=" 5000 M">
+                                                    <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
+                                                    <input type="hidden" name="komentar" value="">
+                                                    <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/byby3HJ3OCI">
+                                                    <input type="hidden" name="form" value="sponsor">
+                                                </form>
+
+
+                                                <hr>
+                                                <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                    <div class="col-4">
+
+                                                        <div class="d-grid gap-2 ">
+
+                                                            <!-- <button type="button"
+                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                    BID
+                                                </button> -->
+
+
+                                                            <div class="modal fade my-auto" id="exampleC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header p-0">
+                                                                            <h1 class="modal-title mx-auto text-danger display-1">
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                            </h1>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            Anda harus memiliki akun peserta lelang sebelum
+                                                                            melakukan bid.
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                            <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                            <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 custom">
+                                        <div class="card mb-2 mx-auto">
+                                            <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
+                                            <div id="ll3" class="carousel slide" data-bs-interval="false">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#ll3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#ll3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ll3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ll3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ll3" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#ll3" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                                <div class="row">
+
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Lot Lelang LL-002 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body pt-0">
+                                                <table class="mt-2 mb-2">
+                                                    <tr>
+                                                        <td>
+                                                            <b>Nilai Limit :</b>
+                                                        </td>
+
+                                                        <td rowspan="2">
+                                                            <div class="d-flex align-items-center">
+
+                                                                <a id="fav-c1 my-auto" style="margin-right: 10px">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                                <button class="btn float-end btn-warning text-white mb-0 my-auto w-100" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                                    Ikut Lelang</button>
+                                                            </div>
+
+
+                                                            <script>
+                                                                $("#fav-c1").click(function() {
+                                                                    $("#fav-ch-c1").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-primary">
+                                                                    Rp.100.000.000
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
+                                                <table style="margin-top:-10px">
+                                                    <tr>
+                                                        <td>
+                                                            <b>
+                                                                Berakhir Dalam
+                                                            </b>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="badge bg-danger float-end" style="margin-top:3px">
+                                                                &nbsp;&nbsp;
+                                                                <i class="fa-solid fa-clock"></i> &nbsp;01:08:59
+
+                                                                &nbsp;&nbsp;
+                                                            </h6>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:3px">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Lokasi</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Medan, Sumatra Utara</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Luas</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;3.2 Ha</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Objek Lelang</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Tanah Darat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Penawaran</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Open Bidding</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Jaminan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;50.000.000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Batas Akhir</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;21 Agustus 2022</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Pelaksanaan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;22 Agustus 2022</td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                            <td>Penyelenggara</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Sengketatanah.id</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jumlah Bid</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;6</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <hr>
+
+
+
+                                                <div class="row g-0">
+                                                    <div class="col text-start">
+
+                                                        <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
+                                                            <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                        </a>
+
+
+                                                        <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1 class="modal-title mx-auto text-danger display-1">
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus memiliki akun peserta lelang sebelum melihat
+                                                                        detail.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3" method="get">
+                                                    <input type="hidden" name="owner" value=" Ophelia Suartini">
+                                                    <input type="hidden" name="objek" value=" Perkara Pertanahan">
+                                                    <input type="hidden" name="luas" value=" 3.2 Ha">
+                                                    <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
+                                                    <input type="hidden" name="komentar" value="">
+                                                    <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/1I4iEKK1qbQ">
+                                                    <input type="hidden" name="form" value="sponsor">
+                                                </form>
+
+
+                                                <hr>
+                                                <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                    <div class="col-4">
+
+                                                        <div class="d-grid gap-2 ">
+                                                            <!-- <button type="button"
+                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                    BID
+                                                </button> -->
+
+
+                                                            <div class="modal fade my-auto" id="exampleC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header p-0">
+                                                                            <h1 class="modal-title mx-auto text-danger display-1">
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                            </h1>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            Anda harus memiliki akun peserta lelang sebelum
+                                                                            melakukan bid.
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                            <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                            <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 custom">
+                                        <div class="card mb-2 mx-auto">
+                                            <div class="ribbon-pop">
+                                                <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
+                                            <div id="ll44" class="carousel slide" data-bs-interval="false">
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#ll44" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                    <button type="button" data-bs-target="#ll44" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                    <button type="button" data-bs-target="#ll44" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                    <button type="button" data-bs-target="#ll44" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                </div>
+
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ll44" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#ll44" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                                <div class="row">
+
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Lot Lelang LL-003 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-body pt-0">
+                                                <table class="mt-2 mb-2">
+                                                    <tr>
+                                                        <td>
+                                                            <b>Nilai Limit :</b>
+                                                        </td>
+
+                                                        <td rowspan="2">
+                                                            <div class="d-flex align-items-center">
+
+                                                                <a id="fav-c1 my-auto" style="margin-right: 10px">
+                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                                <button class="btn float-end btn-warning text-white mb-0 my-auto w-100" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                                    Ikut Lelang</button>
+                                                            </div>
+
+
+                                                            <script>
+                                                                $("#fav-c1").click(function() {
+                                                                    $("#fav-ch-c1").toggleClass('fav-icon');
+                                                                });
+                                                            </script>
+
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5>
+                                                                <b class="text-primary">
+                                                                    Rp.200.000.000
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:-4px">
+                                                <table style="margin-top:-10px">
+                                                    <tr>
+                                                        <td>
+                                                            <b>
+                                                                Berakhir Dalam
+                                                            </b>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="badge bg-danger float-end" style="margin-top:3px">
+                                                                &nbsp;&nbsp;
+                                                                <i class="fa-solid fa-clock"></i> &nbsp;01:08:59
+
+                                                                &nbsp;&nbsp;
+                                                            </h6>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <hr style="margin-top:3px">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Lokasi</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Medan, Sumatra Utara</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Luas</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;3.2 Ha</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Objek Lelang</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Tanah Darat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Penawaran</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Open Bidding</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Jaminan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;50.000.000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Batas Akhir</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;12 September 2022</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Pelaksanaan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;28 September 2022</td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                            <td>Penyelenggara</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Sengketatanah.id</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Jumlah Bid</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;6</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <hr>
+
+
+                                                <div class="row g-0">
+                                                    <div class="col text-start">
+
+                                                        <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
+                                                            <i class="fa-solid fa-eye"></i> Lihat Detail
+                                                        </a>
+
+
+                                                        <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1 class="modal-title mx-auto text-danger display-1">
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus memiliki akun peserta lelang sebelum melihat
+                                                                        detail.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3" method="get">
+                                                    <input type="hidden" name="owner" value=" Ophelia Suartini">
+                                                    <input type="hidden" name="objek" value=" Perkara Pertanahan">
+                                                    <input type="hidden" name="luas" value=" 3.2 Ha">
+                                                    <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
+                                                    <input type="hidden" name="komentar" value="">
+                                                    <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/1I4iEKK1qbQ">
+                                                    <input type="hidden" name="form" value="sponsor">
+                                                </form>
+
+
+                                                <hr>
+                                                <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                    <div class="col-4">
+
+                                                        <div class="d-grid gap-2 ">
+                                                            <!-- <button type="button"
+                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                    BID
+                                                </button> -->
+
+
+                                                            <div class="modal fade my-auto" id="exampleC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                <div class="modal-dialog modal-dialog-centered">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header p-0">
+                                                                            <h1 class="modal-title mx-auto text-danger display-1">
+                                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                            </h1>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            Anda harus memiliki akun peserta lelang sebelum
+                                                                            melakukan bid.
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                            <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                            <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-1 arrow-desktop text-center">
+                                <button id="right-button3" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </button>
                             </div>
 
-                            <script>
-                                $('#right-orang1').click(function() {
-                                    event.preventDefault();
-                                    $('#orang-kotak').animate({
-                                        scrollLeft: "+=300px"
-                                    }, "slow");
-                                });
-
-                                $('#left-orang1').click(function() {
-                                    event.preventDefault();
-                                    $('#orang-kotak').animate({
-                                        scrollLeft: "-=300px"
-                                    }, "slow");
-                                });
-                            </script>
                         </div>
+
+
+
+                        <script>
+                            $('#right-button3').click(function() {
+                                event.preventDefault();
+                                $('#lelang-card3').animate({
+                                    scrollLeft: "+=300px"
+                                }, "slow");
+                            });
+
+                            $('#left-button3').click(function() {
+                                event.preventDefault();
+                                $('#lelang-card3').animate({
+                                    scrollLeft: "-=300px"
+                                }, "slow");
+                            });
+                        </script>
 
 
                     </div>
-                </div>
-            </div>
-            <!-- Jual beli Lahan -->
-            <div class="card mb-3 border-0 shadow-sm ">
-                <div class="card-header bg-white">
-                    <table style="width:100%">
-                        <tr>
-                            <td rowspan="2" style="width: 40px">
-                                <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">
-                            </td>
-                            <td>
-                                <h5 color="text-dark" style="margin-bottom: 0px !important">
-                                    Jual Beli Lahan
-                                </h5>
-                            </td>
-                            <td class="text-end" rowspan="2">
-                                <a href="{{url('')}}/jual-beli-lahan" class="text-success fw-bold" style="text-decoration: none">Lihat
-                                    Semua</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p class="mb-0">Lahan Tersedia <span class="badge bg-danger">4,323</span></p>
-                            </td>
-                        </tr>
-                    </table>
 
                 </div>
 
-                <div class="card-body" style="background-color:#FAFAD2;">
-
-                    <div class="row align-items-center justify-content-center">
-
-                        <div class="col-1 arrow-desktop text-center">
-                            <button id="left-button2" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
-                                <i class="fa-solid fa-arrow-left"></i>
-                            </button>
-                        </div>
-
-                        <div class="col-10 desktop-arrow text-center">
-
-                            <div class="row mt-2 mobile-scroll justify-content-between align-items-center" id="lelang-card2" style="flex-wrap: nowrap">
-
-                                <div class="col-12 custom ">
-                                    <div class="card mx-auto">
-                                        <div class="ribbon-pop">
-                                            <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                        </div>
-                                        <div class="share-icon">
-                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                <i class="fa-solid fa-share-from-square"></i>
-                                            </button>
-                                        </div>
-                                        <div id="jbl1" class="carousel slide" data-bs-interval="false">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#jbl1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#jbl1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#jbl1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                <button type="button" data-bs-target="#jbl1" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                            </div>
-
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#jbl1" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#jbl1" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-                                        <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                                    <h5 class="mb-0 text-center">Kode Bidang JBL-004 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="card-body pt-0">
-                                            <table class="mt-2 mb-2">
-                                                <tr>
-                                                    <td class="text-start">
-                                                        <h5>
-                                                            <b class="text-primary">
-                                                                Rp.450.000.000
-                                                            </b>
-                                                        </h5>
-                                                    </td>
-                                                    <td class="align-items-center">
-
-
-                                                        <div class="row d-flex  align-items-center mb-2">
-                                                            <div class="col text-end">
-                                                                <a id="fav-b1">
-                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-b1">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </h5>
-                                                                </a>
-                                                            </div>
-                                                            <div class="col">
-                                                                <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
-                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                            </div>
-                                                        </div>
-                                                        <script>
-                                                            $("#fav-b1").click(function() {
-                                                                $("#fav-ch-b1").toggleClass('fav-icon');
-                                                            });
-                                                        </script>
-
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <hr style="margin-top:-4px">
-                                            <table>
-                                                <tbody>
-
-                                                    <tr>
-                                                        <td>Luas</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;1 Ha</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Lokasi</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Pancawati, Bogor</td>
-                                                    </tr>
-
-
-                                                    <tr>
-                                                        <td>Jenis Lahan</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Tanah Darat</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dokumen</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;SHM</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Akses</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Mobil</td>
-                                                    </tr>
-                                                    </tr>
-                                                    <td>Jumlah Bid</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;3</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <hr>
-
-
-                                            <div class="row g-0">
-                                                <div class="col text-start">
-
-                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
-                                                    </a>
-
-
-                                                    <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header p-0">
-                                                                    <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                    </h1>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    Anda harus memiliki akun sebelum melihat
-                                                                    detail.
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1" method="get">
-                                                <input type="hidden" name="owner" value=" Bahru">
-                                                <input type="hidden" name="objek" value=" Sengketa Pertanahan">
-                                                <input type="hidden" name="luas" value=" 1 Ha">
-                                                <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
-                                                <input type="hidden" name="komentar" value="">
-                                                <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/-RkCcavzXq8">
-                                                <input type="hidden" name="form" value="sponsor">
-                                            </form>
-
-
-                                            <hr>
-                                            <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                                <div class="col-4">
-
-                                                    <div class="d-grid gap-2 ">
-
-                                                        <div class="modal fade my-auto" id="exampleB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                            <div class="modal-dialog modal-dialog-centered">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header p-0">
-                                                                        <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                        </h1>
-                                                                    </div>
-                                                                    <div class="modal-body">
-                                                                        Anda harus memiliki akun sebelum
-                                                                        melakukan bid.
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="col-12 custom">
-                                    <div class="card mb-2 mx-auto">
-                                        <div class="ribbon-pop">
-                                            <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                        </div>
-                                        <div class="share-icon">
-                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                <i class="fa-solid fa-share-from-square"></i>
-                                            </button>
-                                        </div>
-                                        <div id="jbl2" class="carousel slide" data-bs-interval="false">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#jbl2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#jbl2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#jbl2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                <button type="button" data-bs-target="#jbl2" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                            </div>
-
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#jbl2" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#jbl2" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-                                        <div div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                            <div class="row">
-
-                                                <div class="col-lg-12">
-                                                    <h5 class="mb-0 text-center">Kode Bidang JBL-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card-body pt-0">
-                                            <table class="mt-2 mb-2">
-                                                <tr>
-                                                    <td class="text-start">
-                                                        <h5>
-                                                            <b class="text-primary">
-                                                                Rp.500.000.000
-                                                            </b>
-                                                        </h5>
-                                                    </td>
-                                                    <td class="align-items-center">
-
-
-                                                        <div class="row d-flex  align-items-center mb-2">
-                                                            <div class="col text-end">
-                                                                <a id="fav-b2">
-                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-b2">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </h5>
-                                                                </a>
-                                                            </div>
-                                                            <div class="col">
-                                                                <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
-                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                            </div>
-                                                        </div>
-                                                        <script>
-                                                            $("#fav-b2").click(function() {
-                                                                $("#fav-ch-b2").toggleClass('fav-icon');
-                                                            });
-                                                        </script>
-
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <hr style="margin-top:-4px">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Luas</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;5000 M</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Lokasi</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Pancawati, Bogor</td>
-                                                    </tr>
-
-
-                                                    <tr>
-                                                        <td>Jenis Lahan</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Tanah Darat</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dokumen</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;HGB</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Akses</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Motor</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jumlah Bid</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;4</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <hr>
-
-
-
-                                            <div class="row g-0">
-                                                <div class="col text-start">
-
-                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
-                                                    </a>
-
-
-                                                    <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header p-0">
-                                                                    <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                    </h1>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    Anda harus memiliki akun sebelum melihat
-                                                                    detail.
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-
-                                            <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
-                                                <input type="hidden" name="owner" value=" Fatah">
-                                                <input type="hidden" name="objek" value=" Konflik Pertanahan">
-                                                <input type="hidden" name="luas" value=" 5000 M">
-                                                <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
-                                                <input type="hidden" name="komentar" value="">
-                                                <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/byby3HJ3OCI">
-                                                <input type="hidden" name="form" value="sponsor">
-                                            </form>
-
-
-                                            <hr>
-                                            <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                                <div class="col-4">
-
-                                                    <div class="d-grid gap-2 ">
-
-                                                        <!-- <button type="button"
-                                                        class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleB">
-                                                        BID
-                                                    </button> -->
-
-
-                                                        <div class="modal fade my-auto" id="exampleB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                            <div class="modal-dialog modal-dialog-centered">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header p-0">
-                                                                        <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                        </h1>
-                                                                    </div>
-                                                                    <div class="modal-body">
-                                                                        Anda harus memiliki akun sebelum
-                                                                        melakukan bid.
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 custom">
-                                    <div class="card mb-2 mx-auto">
-                                        <div class="ribbon-pop">
-                                            <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                        </div>
-                                        <div class="share-icon">
-                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                <i class="fa-solid fa-share-from-square"></i>
-                                            </button>
-                                        </div>
-                                        <div id="jbl3" class="carousel slide" data-bs-interval="false">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#jbl3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#jbl3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#jbl3" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                <button type="button" data-bs-target="#jbl3" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                            </div>
-
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#jbl3" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#jbl3" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-                                        <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                            <div class="row">
-
-                                                <div class="col-lg-12">
-                                                    <h5 class="mb-0 text-center">Kode Bidang JBL-002 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card-body pt-0">
-                                            <table class="mt-2 mb-2">
-                                                <tr>
-                                                    <td class="text-start">
-                                                        <h5>
-                                                            <b class="text-primary">
-                                                                Rp.200.000.000
-                                                            </b>
-                                                        </h5>
-                                                    </td>
-                                                    <td class="align-items-center">
-
-
-                                                        <div class="row d-flex  align-items-center mb-2">
-                                                            <div class="col text-end">
-                                                                <a id="fav-b3">
-                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-b3">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </h5>
-                                                                </a>
-                                                            </div>
-                                                            <div class="col">
-                                                                <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
-                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                            </div>
-                                                        </div>
-                                                        <script>
-                                                            $("#fav-b3").click(function() {
-                                                                $("#fav-ch-b3").toggleClass('fav-icon');
-                                                            });
-                                                        </script>
-
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <hr style="margin-top:-4px">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Luas</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;3.2 Ha</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Lokasi</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Medan, Sumatra Utara</td>
-                                                    </tr>
-
-
-                                                    <tr>
-                                                        <td>Jenis Lahan</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Tanah Darat</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dokumen</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;AJB</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Akses</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Motor</td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>Jumlah Bid</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;6</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <hr>
-
-
-
-                                            <div class="row g-0">
-                                                <div class="col text-start">
-
-                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
-                                                    </a>
-
-
-                                                    <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header p-0">
-                                                                    <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                    </h1>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    Anda harus memiliki akun sebelum melihat
-                                                                    detail.
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-
-                                            <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3" method="get">
-                                                <input type="hidden" name="owner" value=" Ophelia Suartini">
-                                                <input type="hidden" name="objek" value=" Perkara Pertanahan">
-                                                <input type="hidden" name="luas" value=" 3.2 Ha">
-                                                <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
-                                                <input type="hidden" name="komentar" value="">
-                                                <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/1I4iEKK1qbQ">
-                                                <input type="hidden" name="form" value="sponsor">
-                                            </form>
-
-
-                                            <hr>
-                                            <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                                <div class="col-4">
-
-                                                    <div class="d-grid gap-2 ">
-                                                        <!-- <button type="button"
-                                                        class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleB">
-                                                        BID
-                                                    </button> -->
-
-
-                                                        <div class="modal fade my-auto" id="exampleB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                            <div class="modal-dialog modal-dialog-centered">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header p-0">
-                                                                        <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                        </h1>
-                                                                    </div>
-                                                                    <div class="modal-body">
-                                                                        Anda harus memiliki akun sebelum
-                                                                        melakukan bid.
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 custom">
-                                    <div class="card mb-2 mx-auto">
-                                        <div class="ribbon-pop">
-                                            <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                        </div>
-                                        <div class="share-icon">
-                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                <i class="fa-solid fa-share-from-square"></i>
-                                            </button>
-                                        </div>
-                                        <div id="jbl4" class="carousel slide" data-bs-interval="false">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#jbl4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#jbl4" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#jbl4" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                <button type="button" data-bs-target="#jbl4" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                            </div>
-
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#jbl4" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#jbl4" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-
-                                        <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                            <div class="row">
-
-                                                <div class="col-lg-12">
-                                                    <h5 class="mb-0 text-center">Kode Bidang JBL-003 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card-body pt-0">
-                                            <table class="mt-2 mb-2">
-                                                <tr>
-                                                    <td class="text-start">
-                                                        <h5>
-                                                            <b class="text-primary">
-                                                                Rp.200.000.000
-                                                            </b>
-                                                        </h5>
-                                                    </td>
-                                                    <td class="align-items-center">
-
-
-                                                        <div class="row d-flex  align-items-center mb-2">
-                                                            <div class="col text-end">
-                                                                <a id="fav-b4">
-                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-b4">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </h5>
-                                                                </a>
-                                                            </div>
-                                                            <div class="col">
-                                                                <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
-                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                            </div>
-                                                        </div>
-                                                        <script>
-                                                            $("#fav-b4").click(function() {
-                                                                $("#fav-ch-b4").toggleClass('fav-icon');
-                                                            });
-                                                        </script>
-
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <hr style="margin-top:-4px">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Luas</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;3.2 Ha</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Lokasi</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Medan, Sumatra Utara</td>
-                                                    </tr>
-
-
-                                                    <tr>
-                                                        <td>Jenis Lahan</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Tanah Darat</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dokumen</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;PPJB</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Akses</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Mobil</td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>Jumlah Bid</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;6</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <hr>
-
-
-                                            <div class="row g-0">
-                                                <div class="col text-start">
-
-
-                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
-                                                    </a>
-
-
-                                                    <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header p-0">
-                                                                    <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                    </h1>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    Anda harus memiliki akun sebelum melihat
-                                                                    detail.
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-
-                                            <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3" method="get">
-                                                <input type="hidden" name="owner" value=" Ophelia Suartini">
-                                                <input type="hidden" name="objek" value=" Perkara Pertanahan">
-                                                <input type="hidden" name="luas" value=" 3.2 Ha">
-                                                <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
-                                                <input type="hidden" name="komentar" value="">
-                                                <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/1I4iEKK1qbQ">
-                                                <input type="hidden" name="form" value="sponsor">
-                                            </form>
-
-
-                                            <hr>
-                                            <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                                <div class="col-4">
-
-                                                    <div class="d-grid gap-2 ">
-                                                        <!-- <button type="button"
-                                                        class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleB">
-                                                        BID
-                                                    </button> -->
-
-
-                                                        <div class="modal fade my-auto" id="exampleB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                            <div class="modal-dialog modal-dialog-centered">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header p-0">
-                                                                        <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                        </h1>
-                                                                    </div>
-                                                                    <div class="modal-body">
-                                                                        Anda harus memiliki akun sebelum
-                                                                        melakukan bid.
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-12 custom">
-                                    <div class="card mb-2 mx-auto">
-                                        <div class="ribbon-pop">
-                                            <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                        </div>
-                                        <div class="share-icon">
-                                            <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                                <i class="fa-solid fa-share-from-square"></i>
-                                            </button>
-                                        </div>
-                                        <div id="jbl2" class="carousel slide" data-bs-interval="false">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#jbl2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#jbl2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#jbl2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                <button type="button" data-bs-target="#jbl2" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                            </div>
-
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#jbl2" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#jbl2" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-                                        <div div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                            <div class="row">
-
-                                                <div class="col-lg-12">
-                                                    <h5 class="mb-0 text-center">Kode Bidang JBL-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="card-body pt-0">
-                                            <table class="mt-2 mb-2">
-                                                <tr>
-                                                    <td class="text-start">
-                                                        <h5>
-                                                            <b class="text-primary">
-                                                                Rp.500.000.000
-                                                            </b>
-                                                        </h5>
-                                                    </td>
-                                                    <td class="align-items-center">
-
-
-                                                        <div class="row d-flex  align-items-center mb-2">
-                                                            <div class="col text-end">
-                                                                <a id="fav-b5">
-                                                                    <h5 class="mb-0 text-fav-disable" id="fav-ch-b5">
-                                                                        <i class="fas fa-star"></i>
-                                                                    </h5>
-                                                                </a>
-                                                            </div>
-                                                            <div class="col">
-                                                                <button class="btn float-end btn-info text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleB">
-                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                            </div>
-                                                        </div>
-                                                        <script>
-                                                            $("#fav-b5").click(function() {
-                                                                $("#fav-ch-b5").toggleClass('fav-icon');
-                                                            });
-                                                        </script>
-
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <hr style="margin-top:-4px">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Luas</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;2 Ha</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Lokasi</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Pancawati, Bogor</td>
-                                                    </tr>
-
-
-                                                    <tr>
-                                                        <td>Jenis Lahan</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Tanah Darat</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dokumen</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Girik</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Akses</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;Mobil</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jumlah Bid</td>
-                                                        <td></td>
-                                                        <td>:</td>
-                                                        <td>&nbsp;4</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <hr>
-
-
-
-                                            <div class="row g-0">
-                                                <div class="col text-start">
-
-                                                    <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
-                                                        <i class="fa-solid fa-eye"></i> Lihat Detail
-                                                    </a>
-
-
-                                                    <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header p-0">
-                                                                    <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                    </h1>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    Anda harus memiliki akun sebelum melihat
-                                                                    detail.
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-
-                                            <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
-                                                <input type="hidden" name="owner" value=" Fatah">
-                                                <input type="hidden" name="objek" value=" Konflik Pertanahan">
-                                                <input type="hidden" name="luas" value=" 5000 M">
-                                                <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
-                                                <input type="hidden" name="komentar" value="">
-                                                <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/byby3HJ3OCI">
-                                                <input type="hidden" name="form" value="sponsor">
-                                            </form>
-
-
-                                            <hr>
-                                            <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                                <div class="col-4">
-
-                                                    <div class="d-grid gap-2 ">
-
-                                                        <!-- <button type="button"
-                                                        class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleB">
-                                                        BID
-                                                    </button> -->
-
-
-                                                        <div class="modal fade my-auto" id="exampleB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                            <div class="modal-dialog modal-dialog-centered">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header p-0">
-                                                                        <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                        </h1>
-                                                                    </div>
-                                                                    <div class="modal-body">
-                                                                        Anda harus memiliki akun sebelum
-                                                                        melakukan bid.
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-3 custom text-start">
-                                    <button class="btn btn-sm">
-                                        <div class="row p-4">
-                                            <div class="col-md-12">
-                                                <span class="fa-stack fa-2x">
-                                                    <i class="fa fa-circle fa-stack-2x text-brown"></i>
-                                                    <i class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
-                                                </span>
-                                            </div>
-                                            <div class="col-md-12 mt-1 fw-bold">
-                                                Lihat Semua
-                                            </div>
-                                        </div>
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-1 arrow-desktop text-center">
-                            <button id="right-button2" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </button>
-                        </div>
-
-                    </div>
-
-                    <script>
-                        $('#right-button2').click(function() {
-                            event.preventDefault();
-                            $('#lelang-card2').animate({
-                                scrollLeft: "+=300px"
-                            }, "slow");
-                        });
-                        $('#left-button2').click(function() {
-                            event.preventDefault();
-                            $('#lelang-card2').animate({
-                                scrollLeft: "-=300px"
-                            }, "slow");
-                        });
-                    </script>
-
-                    <div class="row align-items-center justify-content-center">
-
-                        <div class="col-10 desktop-arrow text-center">
-                            <style>
-                                .scroll-simple::-webkit-scrollbar {
-                                    width: 7px;
-                                    height: 7px;
-                                }
-
-                                .scroll-simple::-webkit-scrollbar-track {
-                                    border-radius: 10px;
-                                    background: rgba(0, 0, 0, 0.1);
-                                }
-
-                                .scroll-simple::-webkit-scrollbar-thumb {
-                                    border-radius: 10px;
-                                    background: rgba(0, 0, 0, 0.2);
-                                }
-
-                                .scroll-simple::-webkit-scrollbar-thumb:hover {
-                                    background: rgba(0, 0, 0, 0.4);
-                                }
-
-                                .scroll-simple::-webkit-scrollbar-thumb:active {
-                                    background: rgba(0, 0, 0, .9);
-                                }
-                            </style>
-
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-
-
-
-                <div class="card rounded-0 border-0 " style="margin-top:-10px">
+                <style>
+                    /* common */
+                    .ribbon {
+                        width: 150px;
+                        height: 150px;
+                        overflow: hidden;
+                        position: absolute;
+                    }
+
+                    .ribbon span {
+                        position: absolute;
+                        display: block;
+                        width: 225px;
+                        padding: 7px 0;
+                        background-color: #E6B325;
+                        box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+                        color: #fff;
+                        font: 700 18px/1 'Lato', sans-serif;
+                        text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+
+                    /* top left*/
+                    .ribbon-top-left {
+                        top: 0px;
+                        left: 0px;
+                    }
+
+                    .ribbon-top-left::before,
+                    .ribbon-top-left::after {
+                        border-top-color: transparent;
+                        border-left-color: transparent;
+                    }
+
+                    .ribbon-top-left::before {
+                        top: 0;
+                        right: 0;
+                    }
+
+                    .ribbon-top-left::after {
+                        bottom: 0;
+                        left: 0;
+                    }
+
+                    .ribbon-top-left span {
+                        right: -5px;
+                        top: 25px;
+                        transform: rotate(-45deg);
+                    }
+                </style>
+
+
+                <div class="card rounded-0 border-0 " style="margin-top:-30px">
                     <!-- <div class="card-header bg-white border-0">
-                        </div> -->
+                    </div> -->
                     <div class="card-body" style="background-color:#FAFAD2;">
                         <div class="row justify-content-center">
 
                             <div class="col-1 arrow-desktop text-center">
-                                <button class="btn rounded-5 text-white left-button2" style="margin-top:200%;background:transparent">
+                                <button class="btn rounded-5 text-white left-button3" style="margin-top:200%;background:transparent">
                                     <i class="fa-solid fa-arrow-left"></i>
                                 </button>
                             </div>
                             <div class="col-10">
-                                <div class="row mt-0 justify-content-center scroll-simple align-items-center mobile-scroll lelang-card" style="flex-wrap: nowrap;">
-
-                                    <div class="col-12">
-                                        <div class="row align-items-end try-1" style="flex-wrap: nowrap;">
-
-                                            <div class="col-12 custom">
-                                                <div class="card mx-auto">
-                                                    <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="a-image w-100 rounded-top" alt="">
-                                                        <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                            <h4 class="mb-0">Dijual</h4>
-                                                        </div>
-                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                            <div class="col-12">
-                                                                <h4 class="mb-0">1 Ha</h4>
-                                                            </div>
-                                                            <div class="col">
-                                                                <h5 class="mb-0">Rp. 450 Juta</h5>
-                                                            </div>
-                                                            <div class="col-4 text-end">
-                                                                <a href="#" style="text-decoration: none">
-                                                                    <h6 class="text-primary">Lihat</h6>
-                                                                </a>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <h6 class="fw-bold">Bogor</h6>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-12 custom">
-                                                <div class="card mx-auto">
-                                                    <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="a-image w-100 rounded-top" alt="">
-                                                        <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                            <h4 class="mb-0">Dijual</h4>
-                                                        </div>
-                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                            <div class="col-12">
-                                                                <h4 class="mb-0">3.2 Ha</h4>
-                                                            </div>
-                                                            <div class="col">
-                                                                <h5 class="mb-0">Rp. 200 Juta</h5>
-                                                            </div>
-                                                            <div class="col-4 text-end">
-                                                                <a href="#" style="text-decoration: none">
-                                                                    <h6 class="text-primary">Lihat</h6>
-                                                                </a>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <h6 class="fw-bold">Bogor</h6>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 custom">
-                                                <div class="card mx-auto">
-                                                    <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="a-image w-100 rounded-top" alt="">
-                                                        <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                            <h4 class="mb-0">Dijual</h4>
-                                                        </div>
-                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                            <div class="col-12">
-                                                                <h4 class="mb-0">5000 M</h4>
-                                                            </div>
-                                                            <div class="col">
-                                                                <h5 class="mb-0">Rp. 500 Juta</h5>
-                                                            </div>
-                                                            <div class="col-4 text-end">
-                                                                <a href="#" style="text-decoration: none">
-                                                                    <h6 class="text-primary">Lihat</h6>
-                                                                </a>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <h6 class="fw-bold">Bogor</h6>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-12 custom">
-                                                <div class="card mx-auto">
-                                                    <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="a-image w-100 rounded-top" alt="">
-                                                        <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                            <h4 class="mb-0">Dijual</h4>
-                                                        </div>
-                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                            <div class="col-12">
-                                                                <h4 class="mb-0">3.2 Ha</h4>
-                                                            </div>
-                                                            <div class="col">
-                                                                <h5 class="mb-0">Rp. 200 Juta</h5>
-                                                            </div>
-                                                            <div class="col-4 text-end">
-                                                                <a href="#" style="text-decoration: none">
-                                                                    <h6 class="text-primary">Lihat</h6>
-                                                                </a>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <h6 class="fw-bold">Bogor</h6>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-1 arrow-desktop justify-content-center">
-                                <button class="btn rounded-5 text-white right-button text-center" style="margin-top:200%;">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card rounded-0 border-0 " style="margin-top:-10px">
-                    <!-- <div class="card-header bg-white border-0">
-
-                        </div> -->
-                    <div class="card-body" style="background-color:#FAFAD2;">
-                        <div class="row justify-content-center">
-
-                            <div class="col-1 arrow-desktop text-center">
-                                <button class="btn rounded-5 text-white left-button1" style="margin-top:200%;background:transparent">
-                                    <i class="fa-solid fa-arrow-left"></i>
-                                </button>
-                            </div>
-                            <div class="col-10">
-                                <div class="row mt-0 mobile-scroll justify-content-between scroll-simple align-items-center lelang-card1" style="flex-wrap: nowrap;">
+                                <div class="row mt-0 mobile-scroll justify-content-between scroll-simple align-items-center lelang-card3" style="flex-wrap: nowrap;">
 
                                     <div class="col-12">
                                         <div class="row align-items-end" style="flex-wrap: nowrap;">
-                                            <div class="col-12 custom">
-                                                <div class="card mx-auto">
-                                                    <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="a-image w-100 rounded-top" alt="">
-                                                        <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                            <h4 class="mb-0">Dijual</h4>
-                                                        </div>
-                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                            <div class="col-12">
-                                                                <h3 class="mb-0">3.2 Ha</h3>
-                                                            </div>
-                                                            <div class="col">
-                                                                <h5 class="mb-0">Rp. 200 Juta</h5>
-                                                            </div>
-                                                            <div class="col-4 text-end">
-                                                                <a href="#" style="text-decoration: none">
-                                                                    <h6 class="text-primary">Lihat</h6>
-                                                                </a>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <h6 class="fw-bold">Bogor</h6>
-                                                            </div>
 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                             <div class="col-12 custom">
                                                 <div class="card mx-auto">
+                                                    <div class="ribbon ribbon-top-left"><span>lelang</span></div>
                                                     <div class="card-body p-0 text-start">
                                                         <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="a-image w-100 rounded-top" alt="">
-                                                        <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                            <h4 class="mb-0">Dijual</h4>
-                                                        </div>
                                                         <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
-                                                                <h3 class="mb-0">1 Ha</h3>
+                                                                <h6 class="mb-0">Nilai Limit :</h6>
                                                             </div>
-                                                            <div class="col">
+                                                            <div class="col mb-2">
                                                                 <h5 class="mb-0">Rp. 450 Juta</h5>
                                                             </div>
                                                             <div class="col-4 text-end">
@@ -8180,7 +9612,10 @@
                                                                 </a>
                                                             </div>
                                                             <div class="col-12">
-                                                                <h6 class="fw-bold">Bogor</h6>
+                                                                <h6 class="fw-bold mb-0">Bogor</h6>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">1 Ha</h3>
                                                             </div>
 
                                                         </div>
@@ -8190,44 +9625,14 @@
 
                                             <div class="col-12 custom">
                                                 <div class="card mx-auto">
+                                                    <div class="ribbon ribbon-top-left"><span>lelang</span></div>
                                                     <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="a-image w-100 rounded-top" alt="">
-                                                        <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                            <h4 class="mb-0">Dijual</h4>
-                                                        </div>
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="a-image w-100 rounded-top" alt="">
                                                         <div class="row p-4 g-0 text-black" style="background: #dadada">
                                                             <div class="col-12">
-                                                                <h3 class="mb-0">5000 M</h3>
+                                                                <h6 class="mb-0">Nilai Limit :</h6>
                                                             </div>
-                                                            <div class="col">
-                                                                <h5 class="mb-0">Rp. 500 Juta</h5>
-                                                            </div>
-                                                            <div class="col-4 text-end">
-                                                                <a href="#" style="text-decoration: none">
-                                                                    <h6 class="text-primary">Lihat</h6>
-                                                                </a>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <h6 class="fw-bold">Bogor</h6>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-12 custom">
-                                                <div class="card mx-auto">
-                                                    <div class="card-body p-0 text-start">
-                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="a-image w-100 rounded-top" alt="">
-                                                        <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                            <h4 class="mb-0">Dijual</h4>
-                                                        </div>
-                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                            <div class="col-12">
-                                                                <h3 class="mb-0">3.2 Ha</h3>
-                                                            </div>
-                                                            <div class="col">
+                                                            <div class="col mb-2">
                                                                 <h5 class="mb-0">Rp. 200 Juta</h5>
                                                             </div>
                                                             <div class="col-4 text-end">
@@ -8236,7 +9641,10 @@
                                                                 </a>
                                                             </div>
                                                             <div class="col-12">
-                                                                <h6 class="fw-bold">Bogor</h6>
+                                                                <h6 class="fw-bold mb-0">Bogor</h6>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">3.2 Ha</h3>
                                                             </div>
 
                                                         </div>
@@ -8244,1601 +9652,219 @@
                                                 </div>
                                             </div>
 
+                                            <div class="col-12 custom">
+                                                <div class="card mx-auto">
+                                                    <div class="ribbon ribbon-top-left"><span>lelang</span></div>
+                                                    <div class="card-body p-0 text-start">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                            <div class="col-12">
+                                                                <h6 class="mb-0">Nilai Limit :</h6>
+                                                            </div>
+                                                            <div class="col mb-2">
+                                                                <h5 class="mb-0">Rp. 500 Juta</h5>
+                                                            </div>
+                                                            <div class="col-4 text-end">
+                                                                <a href="#" style="text-decoration: none">
+                                                                    <h6 class="text-primary">Lihat</h6>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h6 class="fw-bold mb-0">Bogor</h6>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">5000 M</h3>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 custom">
+                                                <div class="card mx-auto">
+                                                    <div class="ribbon ribbon-top-left"><span>lelang</span></div>
+                                                    <div class="card-body p-0 text-start">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                            <div class="col-12">
+                                                                <h6 class="mb-0">Nilai Limit :</h6>
+                                                            </div>
+                                                            <div class="col mb-2">
+                                                                <h5 class="mb-0">Rp. 200 Juta</h5>
+                                                            </div>
+                                                            <div class="col-4 text-end">
+                                                                <a href="#" style="text-decoration: none">
+                                                                    <h6 class="text-primary">Lihat</h6>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h6 class="fw-bold mb-0">Bogor</h6>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">3.2 Ha</h3>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
                                             <div class="col-4 custom text-center" style="margin-bottom: 7rem">
 
                                             </div>
                                         </div>
+
+
+
                                     </div>
 
                                 </div>
                             </div>
                             <div class="col-1 arrow-desktop justify-content-center">
-                                <button class="btn rounded-5 text-white right-button1 text-center" style="margin-top:200%;background:transparent">
+                                <button class="btn rounded-5 text-white right-button3 text-center" style="margin-top:200%;background:transparent">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </button>
 
                             </div>
                         </div>
-
-
                     </div>
                 </div>
 
-                <script>
-                    $('button.right-button').click(function() {
-                        event.preventDefault();
-                        $('div.lelang-card').animate({
-                            scrollLeft: "+=300px"
-                        }, "slow");
-                    });
+                <div class="card rounded-0 border-0 " style="margin-top:-10px">
+                    <!-- <div class="card-header bg-white border-0">
 
-                    $('button.left-button2').click(function() {
-                        event.preventDefault();
-                        $('div.lelang-card').animate({
-                            scrollLeft: "-=300px"
-                        }, "slow");
-                    });
-
-                    $('button.right-button1').click(function() {
-                        event.preventDefault();
-                        $('div.lelang-card1').animate({
-                            scrollLeft: "+=300px"
-                        }, "slow");
-                    });
-
-                    $('button.left-button1').click(function() {
-                        event.preventDefault();
-                        $('div.lelang-card1').animate({
-                            scrollLeft: "-=300px"
-                        }, "slow");
-                    });
-                </script>
-
-
-
-
-
-            </div>
-            <!-- orang kotak 1 -->
-
-            <div class="card mb-1 border-0 mb-2 ">
-                <div class="card-body">
-                    <div class="mt-2 ">
-
-                        <div class="row justify-content-center align-items-center">
-
+                    </div> -->
+                    <div class="card-body" style="background-color:#FAFAD2;">
+                        <div class="row justify-content-center">
 
                             <div class="col-1 arrow-desktop text-center">
-                                <button id="left-orang2" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
+                                <button class="btn rounded-5 text-white left-button4" style="margin-top:200%;background:transparent">
                                     <i class="fa-solid fa-arrow-left"></i>
                                 </button>
                             </div>
-                            <div class="col-lg-10">
-                                <div class="row">
-                                    <div class="col mobile-scroll" id='orang-bulet2' style="white-space:nowrap;flex-wrap:nowarp;display:flex">
+                            <div class="col-10">
+                                <div class="row mt-0 mobile-scroll justify-content-between scroll-simple align-items-center lelang-card4" style="flex-wrap: nowrap;">
 
-                                        <?php
-                                        $name = [
-                                            "Rudi H.",
-                                            "Budi K.",
-                                            "Joko Afdal",
-                                            "Ustman A.",
-                                            "Robert K.",
-                                            "James Tate", "Hadi Ismail", 'Abdullah', 'Nugraha D.', 'Ade Syarief', "Adhi Utomo", 'Leman wan', 'Pranoto Adi', 'Agus Susan'
-                                        ];
-                                        ?>
-                                        <div class="container-gambar text-center ms-1" style='display: inline-block;flex: 0 0 auto' onclick="return window.location.href = `{{url('')}}/list-tukang`">
-                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///8AAAD39/d/f3/Z2dnp6ek6Ojrm5uYyMjK5ublmZmbW1tZzc3Opqan7+/u8vLxra2vf399DQ0N8fHydnZ1hYWGKioqWlpZcXFxRUVHv7+8QEBAhISGPj4+rq6vIyMgaGhorKys/Pz8dHR3FxcVUVFRJSUktLS0HxAU+AAALF0lEQVR4nO2da5uyLBCAK7M0zWMn7eDWVvv//+G7CSialjOA9j7LfV37bRVI5sAwDKORRqPRaDQajUaj0Wg0Go1Go9FoNNKZMIbuiGzS0LG3RrC7zRi3XWBsbSdMh+6aOPNstY4O4zYO0XqVzYfuJJrQDn5ax8bzE9jh0J2FkxlfnUbH+DKyobsMwV+ARsdY+EN3vBtO3Nj9gxUlgeu6q9+/IImsZuGMnaG7/450eal3+py4y8yZe7X/9OZOtnSTc/3fL8tPVrChUevuPfbD18ZvEvrxvfaU8al6Z1qVPsu4mh2fNK+GVZXIqdKe4qiOzzqG9Wn5Gi88Wh89RjPgu7fBTbNww78k6DoDeoHv2l1E5/u8TG6k9U8Um+tVLKolQt7Y2FL6J8p8V3Rov5Exs8zNvnjj7gOc1iU3q2RZspSb9UtJ78TCfcBYpmYw4w/5jKUE3mRr9+ntE6Sx+KH3KnxmvxDHWMHbu5DOWA9cNWGJicsamA3iq2bFLFK3HnCKNgZYPZ5Y2wHMPYPhFb7SSWErjRz7arn4JY+KG6rBlkkz9Q7ylIm7obwpDraOWPcR+ZysaWuLHhojeLueJw4TibVKkefwmP/fn/AzYbz3M0T2BftU4Mw0rftojMlgv1ExZhl7kEWqRfd9h/2cfU8a9TjQAMshKlZvp0GmKIFNVKUKLhtwgOUQFaq4dDg3OIf9wOpWGrOBnOACKiQzVe93B3GBK1BF56p5u92j0W2F+qhKAhtzOkOGTTOYUElREZ6iztrQ+wlT0o2d/Dcvh9YyDKptpMdR6RwNZL8XQaBmntI5KrR6mThX+8HVEZJlT8k8tUV9mWxV3em9r/Bug6NCn4qZoas7bsK9It9HX4d8uhGyZNqjJld63DeOL3/jEeWATcgbJS6kTNIfTOg+3bQOj4DasPLJs/L2goj2uiGeXLV/v+I7rhDvJds20jQ7NbJwWz+N+JEEm9N0bprmfHraBPzII8SbsV1qhkRm4BtA3Obpz3ZaNTTedMul9cHNN9n2khS1mSInfZl+smi2Mg73H9CXmzI/IukHNDHCK9K/1u2/jcnC2eML1JfYyPuIIZEioMpLWf7P7LWX4LBdCQvaAJFkGQliBuYTskVOh+eYOYEuy8hzEmxiipFCj23Cd/FarvR/b7CJSiVRPGazxChS6ladu82h8Ez+HegUxkg1XOeCmO7UTFw65yZeMEaDKIgL6JkGiB9/RzQNUU5UbQB/SLJaEY3dkqkA80gtuOhSobJA7fgYAXqCtAx6ZEWega3/aLAX5qMiOveEDzcVVPlugS1tEapxg5hgdRZw8SDzOgI3FcHnHBF4Mb8GLh00ZAWXfxqbAAWYLOFpSqQDFMbfYExbjguXiCNC4qsQjw3iwE8OCLVPIHPuAHHeyLJHxHPLzy5ZEG+KqCbc4jsAKw4vn6ZfqNZyQvhPtBOwwkQSQXFQAz1jCCRKCon5pflXx3pSufP2BTEYxGvHR04DsG+SIex2yRasOEwBoXiQR1JAPukGrJp4pnBtmvumP8j2qGkD2eBcDL+xDY6+wYIYw40oRwbWbcRW4HeJ12B74QtZxBVYUZlCYshahAh+KNRi/oue4RYY7wr7cA/jLDJrcl84gTxhC1jDBw5c+SePJ+B+fk56AHuYJyG5Z7oNtJOee7MHXDyKTHFQ7IQYNPxGMdneBS0tlwJejQNXU2SEqNYI8BFmAoKBEKoBRogQ3YItXKiWUuQQJBhz+I9SkPvtB5BQ2UJOG7M2oA/i5foQt0TM/W5YfM+RYg9hQpUvEXG+9w5uaUz4LKuwBPs01GrjkmtuYINPTSg++LVAGLfc5GNyDOgGGfDz57/KGdNczhnR21yYUBmTZITAoJlYVAERNaFOTX8jvAoJIhFDYKZUzyMkqga2VVVyRyga4RFCV147gWlKJilULa76/YZ0dYEzwESIoTm6Pc9Sute5x2ScmeRR6EKo7xHS0BCmLAmJ04E3PEVHCHaH6BY3XBKxD+LtIcanKVpEOBkkQQW+aYX3aTB+6QO6gQi1iTR/A77yEvBLEWuLHAMz3egcRShhgbUFYn1IoPUEIaIxIY98wRsTWR8i1vgEmlcBSDdkiYyI2LXIGh8f/KTJeEnXrzhJxmgbIxKnQcTaGDRt9N7Neqf0KAYqci0Sa0PESxmsdI3VpWWH5lDhitCIxEsRMe+C+fe4q9Fg2eDfuBCdSMwbsW9RYrJk/OS1i2pSEcS5siOxfQvE3hOHWRQo3bTrVK84b3JADlBs7wm+f8jjsa/zO8bm7pvleZoEu9chtn8I3wOuwh0I2p3qkpKeylJvAhUSxfaAEfv4Va7nchDje3xy5mY6Sc25c6pUZT1jz7CNRPfxEbkYNbync2tfVr1G9P4ocmxTLBcDkU9TJbTdDie7XIFq3qL5NPCcKA6nVjn3FZaB3BkXzYlCRWjJk5v3H6/2KVGFa0Xz2hC5iTnXenXnbkTg2SKcm4jIL/3FfipGfp7tFkadxW52rv/jATjfxPNLETnCflX6ouDXRrT+86/dCKLK/1sg8yueIwzO83YSrrcH1+9iqOa+y3/1BKB0xPO8gbn6E74me5ABzsxkfLVso6srLCNXH3TeIis/xWEFXc+kK+7pjvNOxnkLyLGUohzm+BtXH+T0Xbyh228K6Fw7nc89paXGwNc/KUp5jqMOc0DOuaeuZ9ecwsKLVVIv1yPvFY6cs2sdzx8WRaHvoqerp4W38M42Sjp/2O0MaXHyHhe3rLJlL3sT45F1hrTLOeAVUAe+IWMa5+XSXdo54A5nudkAE2lV55MOQ5R2lvv9eXymAGVWWGIOQLtalnge/11NBXbYXO5tFMy4ttopiTUV3tTFmErUMTxM37ToZql1MV7WNkkPagZYDLElnC21tsnLYjA0JKiiliKdqI3bu5Lr07zYmqdqVE2lRrddoUquMdReJ4qe3UXubbyFGo1nv0x6najWWl+0TJCqiqnU23gKh8qv9dVWr+3Y9hvLwmmWcgX12ppr7s1VqdESqlCrwRAlNfca6yYSccfu3XUjehZ0NXUTm2pfZpI1diPULPAuvaLalw31S8nKUfXVYcQ741aBquqXPtegJRobu4PeGeo0FZZKXQ3apzrCiaqfssayIokq6wjXakEThYbd5QdAduqZGldZC7pWzzvo6ROyj0h0nNp63pWa7MSR++7jzhCPBDUeLprqmux8XX3icqs09iXE7K/6qKvP3Y1wVyfvTxAdd+/jboRimuxtZSq7CWKo7P2TSVZBuTmhTqM9wV8Dqv7iAn4Drafrl5gnmtPDzV1lWVVVC99nyn3XXu7tKqqq9n+jVU9XTxR3duErfEBhUfWe7uwaeewr/qv3ro3+/bvzRn/g/sM/cIflH7iH9A/cJfsH7gMe/ft3Oo/+wL3cf+Bu9VHligfUdSNN8Beb9BEJegP3GfctR0dgmFwG9eAfkMAvUGPR5Igw5t42qARW4K/LuYvoVZ/PEFe9YQDC5DNgx6i0+0eCP/+SQKbmksF0wXfPOoYwZ84Lj5UE8cXQd/Q1UR3j2DKune9GuNZOn3zk+B6ExrjKPfbD1x7dJPTj+ukMQ0oqlyLS5aXW3fE5cZeZM69PWm/uZEs3Odf//bIcygftjBPXO51zsKIkcF139fsXJJH1dOwkJx7mpmEw/qKx++9YqPDflZEZ9XOGr/kyhrpGWYDQDn7eD+2Xn0DgBOLQhNlqHTWL3INDtF5l/9/RFaShY2+NYHebMW67wNjaTvjxahPKhDF0RzQajUaj0Wg0Go1Go9FoNBqNRvMv8h+9a3wkKw0kSAAAAABJRU5ErkJggg==" alt="" srcset="" class="rounded-circle img-thumbnail " style="width:70px;height:70px;object-fit:cover;background:#61481C"> <br>
-
-                                            PPAT
-
-                                        </div>
-                                        @for($i=0;$i< 14;$i++) <div class="container-gambar text-center ms-1" style='display: inline-block;flex: 0 0 auto'>
-                                            <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt="" srcset="" class="rounded-circle img-thumbnail " style="width:70px;height:70px;object-fit:cover;"> <br>
-                                            {{$name[$i]}}
-                                    </div>
-                                    @endfor
-                                    <div style='display: inline-block;flex: 0 0 auto;' class="ms-3">
-                                        <a href="{{url('')}}/list-tukang" class="container-gambar text-center" style="text-decoration: none;">
-                                            <img src="data:image/png;base64,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" alt="" srcset="" class="rounded-circle img-thumbnail " style="width:70px;height:70px;object-fit:cover;background-color:#007bff">
-                                            <br>
-                                            <span style="color:#007bff">
-                                                Lihat Semua
-                                            </span>
-                                        </a>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-1 arrow-desktop text-center">
-                            <button id="right-orang2" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </button>
-                        </div>
-
-                        <script>
-                            $('#right-orang2').click(function() {
-                                event.preventDefault();
-                                $('#orang-bulet2').animate({
-                                    scrollLeft: "+=300px"
-                                }, "slow");
-                            });
-
-                            $('#left-orang2').click(function() {
-                                event.preventDefault();
-                                $('#orang-bulet2').animate({
-                                    scrollLeft: "-=300px"
-                                }, "slow");
-                            });
-                        </script>
-                    </div>
-
-
-                </div>
-            </div>
-
-        </div>
-
-
-        <!-- lelang -->
-        <div class="card mb-4 border-0 shadow-sm ">
-            <div class="card-header bg-white">
-                <table style="width:100%">
-                    <tr>
-                        <td rowspan="2" style="width: 40px">
-                            <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">
-                        </td>
-                        <td>
-                            <h5 color="text-dark" style="margin-bottom: 0px !important">
-                                Lelang Lahan
-                            </h5>
-                        </td>
-                        <td class="text-end" rowspan="2">
-                            <a href="{{url('')}}/lelang-lahan" class="text-success fw-bold" style="text-decoration: none">Lihat
-                                Semua</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p class="mb-0">Lahan Tersedia <span class="badge bg-danger">2,353</span></p>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="card-body" style="background-color:#FAFAD2;">
-
-                <div class="row align-items-center justify-content-center">
-
-                    <div class="col-1 arrow-desktop text-center">
-                        <button id="left-button3" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C;">
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </button>
-                    </div>
-
-                    <div class="col-10 desktop-arrow text-center">
-
-
-
-                        <div class="row mobile-scroll justify-content-between" id="lelang-card3" style="flex-wrap: nowrap">
-
-                            <div class="col-12 custom ">
-                                <div class="card mx-auto">
-                                    <div class="ribbon-pop">
-                                        <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                    </div>
-                                    <div class="share-icon">
-                                        <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                            <i class="fa-solid fa-share-from-square"></i>
-                                        </button>
-                                    </div>
-                                    <div id="ll4" class="carousel slide" data-bs-interval="false">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#ll4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#ll4" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#ll4" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#ll4" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                        </div>
-
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ll4" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#ll4" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                    <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Lot Lelang LL-004 <img src="https://sengketatanah.id/uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="card-body pt-0">
-                                        <table class="mt-2 mb-2">
-                                            <tr>
-                                                <td>
-                                                    <b>Nilai Limit :</b>
-                                                </td>
-
-                                                <td rowspan="2">
-                                                    <div class="d-flex align-items-center">
-
-                                                        <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                                <i class="fas fa-star"></i>
-                                                            </h5>
-                                                        </a>
-                                                        <button class="btn float-end btn-warning text-white mb-0 my-auto w-100" data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                            Ikut Lelang</button>
-                                                    </div>
-
-
-                                                    <script>
-                                                        $("#fav-c1").click(function() {
-                                                            $("#fav-ch-c1").toggleClass('fav-icon');
-                                                        });
-                                                    </script>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-start">
-                                                    <h5>
-                                                        <b class="text-primary">
-                                                            Rp.450.000.000
-                                                        </b>
-                                                    </h5>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <hr style="margin-top:-4px">
-                                        <table style="margin-top:-10px">
-                                            <tr>
-                                                <td>
-                                                    <b>
-                                                        Berakhir Dalam
-                                                    </b>
-                                                </td>
-                                                <td>
-                                                    <h6 class="badge bg-danger float-end" style="margin-top:3px">
-                                                        &nbsp;&nbsp;
-                                                        <i class="fa-solid fa-clock"></i> &nbsp;01:08:59
-
-                                                        &nbsp;&nbsp;
-                                                    </h6>
-
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <hr style="margin-top:3px">
-                                        <table>
-                                            <tbody>
-                                                </tr>
-
-                                                <td>Lokasi</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Pancawati, Bogor</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Luas</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;1 Ha</td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td>Objek Lelang</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;Tanah Darat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Penawaran</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;Open Bidding</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Jaminan</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;50.000.000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Batas Akhir</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;12 September 2022</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Pelaksanaan</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;28 September 2022</td>
-                                                </tr>
-
-
-                                                <tr>
-                                                    <td>Penyelenggara</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;Sengketatanah.id</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jumlah Bid</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;3</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <hr>
-
-
-                                        <div class="row g-0">
-                                            <div class="col text-start">
-
-                                                <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
-                                                </a>
-
-
-                                                <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                </h1>
+                                    <div class="col-12">
+                                        <div class="row align-items-end" style="flex-wrap: nowrap;">
+                                            <div class="col-12 custom">
+                                                <div class="card mx-auto">
+                                                    <div class="ribbon ribbon-top-left"><span>lelang</span></div>
+                                                    <div class="card-body p-0 text-start">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                            <div class="col-12">
+                                                                <h6 class="mb-0">Nilai Limit :</h6>
                                                             </div>
-                                                            <div class="modal-body">
-                                                                Anda harus memiliki akun peserta lelang sebelum melihat
-                                                                detail.
+                                                            <div class="col mb-2">
+                                                                <h5 class="mb-0">Rp. 200 Juta</h5>
                                                             </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                            <div class="col-4 text-end">
+                                                                <a href="#" style="text-decoration: none">
+                                                                    <h6 class="text-primary">Lihat</h6>
+                                                                </a>
                                                             </div>
+                                                            <div class="col-12">
+                                                                <h6 class="fw-bold mb-0">Bogor</h6>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">3.2 Ha</h3>
+                                                            </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
-
                                             </div>
-                                        </div>
-                                        <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1" method="get">
-                                            <input type="hidden" name="owner" value=" Bahru">
-                                            <input type="hidden" name="objek" value=" Sengketa Pertanahan">
-                                            <input type="hidden" name="luas" value=" 1 Ha">
-                                            <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
-                                            <input type="hidden" name="komentar" value="">
-                                            <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/-RkCcavzXq8">
-                                            <input type="hidden" name="form" value="sponsor">
-                                        </form>
-
-
-                                        <hr>
-                                        <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                            <div class="col-4">
-
-                                                <div class="d-grid gap-2 ">
-
-                                                    <!-- <button type="button"
-                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                    BID
-                                                </button> -->
-
-
-                                                    <div class="modal fade my-auto" id="exampleC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header p-0">
-                                                                    <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                    </h1>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    Anda harus memiliki akun peserta lelang sebelum
-                                                                    melakukan bid.
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                </div>
+                                            <div class="col-12 custom">
+                                                <div class="card mx-auto">
+                                                    <div class="ribbon ribbon-top-left"><span>lelang</span></div>
+                                                    <div class="card-body p-0 text-start">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                            <div class="col-12">
+                                                                <h6 class="mb-0">Nilai Limit :</h6>
                                                             </div>
-                                                        </div>
-                                                    </div>
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="col-12 custom">
-                                <div class="card mb-2 mx-auto">
-                                    <div class="ribbon-pop">
-                                        <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                    </div>
-                                    <div class="share-icon">
-                                        <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                            <i class="fa-solid fa-share-from-square"></i>
-                                        </button>
-                                    </div>
-                                    <div id="ll2" class="carousel slide" data-bs-interval="false">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#ll2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#ll2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#ll2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#ll2" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                        </div>
-
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ll2" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#ll2" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                    <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                        <div class="row">
-
-                                            <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Lot Lelang LL-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card-body pt-0">
-                                        <table class="mt-2 mb-2">
-                                            <tr>
-                                                <td>
-                                                    <b>Nilai Limit :</b>
-                                                </td>
-
-                                                <td rowspan="2">
-                                                    <div class="d-flex align-items-center">
-
-                                                        <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                                <i class="fas fa-star"></i>
-                                                            </h5>
-                                                        </a>
-                                                        <button class="btn float-end btn-warning text-white mb-0 my-auto w-100" data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                            Ikut Lelang</button>
-                                                    </div>
-
-
-                                                    <script>
-                                                        $("#fav-c1").click(function() {
-                                                            $("#fav-ch-c1").toggleClass('fav-icon');
-                                                        });
-                                                    </script>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-start">
-                                                    <h5>
-                                                        <b class="text-primary">
-                                                            Rp.500.000.000
-                                                        </b>
-                                                    </h5>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <hr style="margin-top:-4px">
-                                        <table style="margin-top:-10px">
-                                            <tr>
-                                                <td>
-                                                    <b>
-                                                        Berakhir Dalam
-                                                    </b>
-                                                </td>
-                                                <td>
-                                                    <h6 class="badge bg-danger float-end" style="margin-top:3px">
-                                                        &nbsp;&nbsp;
-                                                        <i class="fa-solid fa-clock"></i> &nbsp;01:08:59
-
-                                                        &nbsp;&nbsp;
-                                                    </h6>
-
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <hr style="margin-top:3px">
-
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Lokasi</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;Pancawati, Bogor</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Luas</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;5000 M</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Objek Lelang</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;Tanah Darat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Penawaran</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;Open Bidding</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Jaminan</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;73.000.000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Batas Akhir</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;10 September 2022</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Pelaksanaan</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;9 September 2022</td>
-                                                </tr>
-
-
-                                                <tr>
-                                                    <td>Penyelenggara</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;Sengketatanah.id</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jumlah Bid</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;4</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <hr>
-
-
-
-                                        <div class="row g-0">
-                                            <div class="col text-start">
-
-                                                <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
-                                                </a>
-
-
-                                                <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                </h1>
+                                                            <div class="col mb-2">
+                                                                <h5 class="mb-0">Rp. 450 Juta</h5>
                                                             </div>
-                                                            <div class="modal-body">
-                                                                Anda harus memiliki akun peserta lelang sebelum
-                                                                melihat detail.
+                                                            <div class="col-4 text-end">
+                                                                <a href="#" style="text-decoration: none">
+                                                                    <h6 class="text-primary">Lihat</h6>
+                                                                </a>
                                                             </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                            <div class="col-12">
+                                                                <h6 class="fw-bold mb-0">Bogor</h6>
                                                             </div>
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">1 Ha</h3>
+                                                            </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
-
                                             </div>
-                                        </div>
 
-                                        <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2" method="get">
-                                            <input type="hidden" name="owner" value=" Fatah">
-                                            <input type="hidden" name="objek" value=" Konflik Pertanahan">
-                                            <input type="hidden" name="luas" value=" 5000 M">
-                                            <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
-                                            <input type="hidden" name="komentar" value="">
-                                            <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/byby3HJ3OCI">
-                                            <input type="hidden" name="form" value="sponsor">
-                                        </form>
-
-
-                                        <hr>
-                                        <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                            <div class="col-4">
-
-                                                <div class="d-grid gap-2 ">
-
-                                                    <!-- <button type="button"
-                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                    BID
-                                                </button> -->
-
-
-                                                    <div class="modal fade my-auto" id="exampleC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header p-0">
-                                                                    <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                    </h1>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    Anda harus memiliki akun peserta lelang sebelum
-                                                                    melakukan bid.
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                </div>
+                                            <div class="col-12 custom">
+                                                <div class="card mx-auto">
+                                                    <div class="ribbon ribbon-top-left"><span>lelang</span></div>
+                                                    <div class="card-body p-0 text-start">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                            <div class="col-12">
+                                                                <h6 class="mb-0">Nilai Limit :</h6>
                                                             </div>
-                                                        </div>
-                                                    </div>
-
-
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 custom">
-                                <div class="card mb-2 mx-auto">
-                                    <div class="ribbon-pop">
-                                        <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                    </div>
-                                    <div class="share-icon">
-                                        <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                            <i class="fa-solid fa-share-from-square"></i>
-                                        </button>
-                                    </div>
-                                    <div id="ll3" class="carousel slide" data-bs-interval="false">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#ll3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#ll3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#ll3" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#ll3" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                        </div>
-
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ll3" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#ll3" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                    <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                        <div class="row">
-
-                                            <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Lot Lelang LL-002 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card-body pt-0">
-                                        <table class="mt-2 mb-2">
-                                            <tr>
-                                                <td>
-                                                    <b>Nilai Limit :</b>
-                                                </td>
-
-                                                <td rowspan="2">
-                                                    <div class="d-flex align-items-center">
-
-                                                        <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                                <i class="fas fa-star"></i>
-                                                            </h5>
-                                                        </a>
-                                                        <button class="btn float-end btn-warning text-white mb-0 my-auto w-100" data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                            Ikut Lelang</button>
-                                                    </div>
-
-
-                                                    <script>
-                                                        $("#fav-c1").click(function() {
-                                                            $("#fav-ch-c1").toggleClass('fav-icon');
-                                                        });
-                                                    </script>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-start">
-                                                    <h5>
-                                                        <b class="text-primary">
-                                                            Rp.100.000.000
-                                                        </b>
-                                                    </h5>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <hr style="margin-top:-4px">
-                                        <table style="margin-top:-10px">
-                                            <tr>
-                                                <td>
-                                                    <b>
-                                                        Berakhir Dalam
-                                                    </b>
-                                                </td>
-                                                <td>
-                                                    <h6 class="badge bg-danger float-end" style="margin-top:3px">
-                                                        &nbsp;&nbsp;
-                                                        <i class="fa-solid fa-clock"></i> &nbsp;01:08:59
-
-                                                        &nbsp;&nbsp;
-                                                    </h6>
-
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <hr style="margin-top:3px">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Lokasi</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;Medan, Sumatra Utara</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Luas</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;3.2 Ha</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Objek Lelang</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;Tanah Darat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Penawaran</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;Open Bidding</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Jaminan</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;50.000.000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Batas Akhir</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;21 Agustus 2022</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Pelaksanaan</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;22 Agustus 2022</td>
-                                                </tr>
-
-
-                                                <tr>
-                                                    <td>Penyelenggara</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;Sengketatanah.id</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jumlah Bid</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;6</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <hr>
-
-
-
-                                        <div class="row g-0">
-                                            <div class="col text-start">
-
-                                                <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
-                                                </a>
-
-
-                                                <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                </h1>
+                                                            <div class="col mb-2">
+                                                                <h5 class="mb-0">Rp. 500 Juta</h5>
                                                             </div>
-                                                            <div class="modal-body">
-                                                                Anda harus memiliki akun peserta lelang sebelum melihat
-                                                                detail.
+                                                            <div class="col-4 text-end">
+                                                                <a href="#" style="text-decoration: none">
+                                                                    <h6 class="text-primary">Lihat</h6>
+                                                                </a>
                                                             </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                            <div class="col-12">
+                                                                <h6 class="fw-bold mb-0">Bogor</h6>
                                                             </div>
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">5000 M</h3>
+                                                            </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
-
                                             </div>
-                                        </div>
 
-                                        <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3" method="get">
-                                            <input type="hidden" name="owner" value=" Ophelia Suartini">
-                                            <input type="hidden" name="objek" value=" Perkara Pertanahan">
-                                            <input type="hidden" name="luas" value=" 3.2 Ha">
-                                            <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
-                                            <input type="hidden" name="komentar" value="">
-                                            <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/1I4iEKK1qbQ">
-                                            <input type="hidden" name="form" value="sponsor">
-                                        </form>
-
-
-                                        <hr>
-                                        <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                            <div class="col-4">
-
-                                                <div class="d-grid gap-2 ">
-                                                    <!-- <button type="button"
-                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                    BID
-                                                </button> -->
-
-
-                                                    <div class="modal fade my-auto" id="exampleC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header p-0">
-                                                                    <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                    </h1>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    Anda harus memiliki akun peserta lelang sebelum
-                                                                    melakukan bid.
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                </div>
+                                            <div class="col-12 custom">
+                                                <div class="card mx-auto">
+                                                    <div class="ribbon ribbon-top-left"><span>lelang</span></div>
+                                                    <div class="card-body p-0 text-start">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="a-image w-100 rounded-top" alt="">
+                                                        <div class="row p-4 g-0 text-black" style="background: #dadada">
+                                                            <div class="col-12">
+                                                                <h6 class="mb-0">Nilai Limit :</h6>
                                                             </div>
-                                                        </div>
-                                                    </div>
-
-
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 custom">
-                                <div class="card mb-2 mx-auto">
-                                    <div class="ribbon-pop">
-                                        <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                    </div>
-                                    <div class="share-icon">
-                                        <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                            <i class="fa-solid fa-share-from-square"></i>
-                                        </button>
-                                    </div>
-                                    <div id="ll44" class="carousel slide" data-bs-interval="false">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#ll44" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#ll44" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#ll44" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#ll44" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                        </div>
-
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam w-100" style="height:200px;width:auto;object-fit:cover">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#ll44" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#ll44" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                    <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                        <div class="row">
-
-                                            <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Lot Lelang LL-003 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px"></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card-body pt-0">
-                                        <table class="mt-2 mb-2">
-                                            <tr>
-                                                <td>
-                                                    <b>Nilai Limit :</b>
-                                                </td>
-
-                                                <td rowspan="2">
-                                                    <div class="d-flex align-items-center">
-
-                                                        <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                                <i class="fas fa-star"></i>
-                                                            </h5>
-                                                        </a>
-                                                        <button class="btn float-end btn-warning text-white mb-0 my-auto w-100" data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                            Ikut Lelang</button>
-                                                    </div>
-
-
-                                                    <script>
-                                                        $("#fav-c1").click(function() {
-                                                            $("#fav-ch-c1").toggleClass('fav-icon');
-                                                        });
-                                                    </script>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-start">
-                                                    <h5>
-                                                        <b class="text-primary">
-                                                            Rp.200.000.000
-                                                        </b>
-                                                    </h5>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <hr style="margin-top:-4px">
-                                        <table style="margin-top:-10px">
-                                            <tr>
-                                                <td>
-                                                    <b>
-                                                        Berakhir Dalam
-                                                    </b>
-                                                </td>
-                                                <td>
-                                                    <h6 class="badge bg-danger float-end" style="margin-top:3px">
-                                                        &nbsp;&nbsp;
-                                                        <i class="fa-solid fa-clock"></i> &nbsp;01:08:59
-
-                                                        &nbsp;&nbsp;
-                                                    </h6>
-
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <hr style="margin-top:3px">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Lokasi</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;Medan, Sumatra Utara</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Luas</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;3.2 Ha</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Objek Lelang</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;Tanah Darat</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Penawaran</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;Open Bidding</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Jaminan</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;50.000.000</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Batas Akhir</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;12 September 2022</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Pelaksanaan</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;28 September 2022</td>
-                                                </tr>
-
-
-                                                <tr>
-                                                    <td>Penyelenggara</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;Sengketatanah.id</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Jumlah Bid</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;6</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <hr>
-
-
-                                        <div class="row g-0">
-                                            <div class="col text-start">
-
-                                                <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasC" style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Detail
-                                                </a>
-
-
-                                                <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                </h1>
+                                                            <div class="col mb-2">
+                                                                <h5 class="mb-0">Rp. 200 Juta</h5>
                                                             </div>
-                                                            <div class="modal-body">
-                                                                Anda harus memiliki akun peserta lelang sebelum melihat
-                                                                detail.
+                                                            <div class="col-4 text-end">
+                                                                <a href="#" style="text-decoration: none">
+                                                                    <h6 class="text-primary">Lihat</h6>
+                                                                </a>
                                                             </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                            <div class="col-12">
+                                                                <h6 class="fw-bold mb-0">Bogor</h6>
                                                             </div>
+                                                            <div class="col-12">
+                                                                <h3 class="mb-0">3.2 Ha</h3>
+                                                            </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
-
-                                            </div>
-                                        </div>
-
-                                        <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3" method="get">
-                                            <input type="hidden" name="owner" value=" Ophelia Suartini">
-                                            <input type="hidden" name="objek" value=" Perkara Pertanahan">
-                                            <input type="hidden" name="luas" value=" 3.2 Ha">
-                                            <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
-                                            <input type="hidden" name="komentar" value="">
-                                            <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/1I4iEKK1qbQ">
-                                            <input type="hidden" name="form" value="sponsor">
-                                        </form>
-
-
-                                        <hr>
-                                        <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                            <div class="col-4">
-
-                                                <div class="d-grid gap-2 ">
-                                                    <!-- <button type="button"
-                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                    BID
-                                                </button> -->
-
-
-                                                    <div class="modal fade my-auto" id="exampleC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header p-0">
-                                                                    <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
-                                                                    </h1>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    Anda harus memiliki akun peserta lelang sebelum
-                                                                    melakukan bid.
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-
-                                                </div>
                                             </div>
 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-1 arrow-desktop text-center">
-                        <button id="right-button3" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </div>
-
-                </div>
-
-
-
-                <script>
-                    $('#right-button3').click(function() {
-                        event.preventDefault();
-                        $('#lelang-card3').animate({
-                            scrollLeft: "+=300px"
-                        }, "slow");
-                    });
-
-                    $('#left-button3').click(function() {
-                        event.preventDefault();
-                        $('#lelang-card3').animate({
-                            scrollLeft: "-=300px"
-                        }, "slow");
-                    });
-                </script>
-
-
-            </div>
-
-        </div>
-
-        <style>
-            /* common */
-            .ribbon {
-                width: 150px;
-                height: 150px;
-                overflow: hidden;
-                position: absolute;
-            }
-
-            .ribbon span {
-                position: absolute;
-                display: block;
-                width: 225px;
-                padding: 7px 0;
-                background-color: #E6B325;
-                box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
-                color: #fff;
-                font: 700 18px/1 'Lato', sans-serif;
-                text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-                text-transform: uppercase;
-                text-align: center;
-            }
-
-            /* top left*/
-            .ribbon-top-left {
-                top: 0px;
-                left: 0px;
-            }
-
-            .ribbon-top-left::before,
-            .ribbon-top-left::after {
-                border-top-color: transparent;
-                border-left-color: transparent;
-            }
-
-            .ribbon-top-left::before {
-                top: 0;
-                right: 0;
-            }
-
-            .ribbon-top-left::after {
-                bottom: 0;
-                left: 0;
-            }
-
-            .ribbon-top-left span {
-                right: -5px;
-                top: 25px;
-                transform: rotate(-45deg);
-            }
-        </style>
-
-
-        <div class="card rounded-0 border-0 " style="margin-top:-30px">
-            <!-- <div class="card-header bg-white border-0">
-                    </div> -->
-            <div class="card-body" style="background-color:#FAFAD2;">
-                <div class="row justify-content-center">
-
-                    <div class="col-1 arrow-desktop text-center">
-                        <button class="btn rounded-5 text-white left-button3" style="margin-top:200%;background:transparent">
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </button>
-                    </div>
-                    <div class="col-10">
-                        <div class="row mt-0 mobile-scroll justify-content-between scroll-simple align-items-center lelang-card3" style="flex-wrap: nowrap;">
-
-                            <div class="col-12">
-                                <div class="row align-items-end" style="flex-wrap: nowrap;">
-
-                                    <div class="col-12 custom">
-                                        <div class="card mx-auto">
-                                            <div class="ribbon ribbon-top-left"><span>lelang</span></div>
-                                            <div class="card-body p-0 text-start">
-                                                <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="a-image w-100 rounded-top" alt="">
-                                                <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                    <div class="col-12">
-                                                        <h6 class="mb-0">Nilai Limit :</h6>
-                                                    </div>
-                                                    <div class="col mb-2">
-                                                        <h5 class="mb-0">Rp. 450 Juta</h5>
-                                                    </div>
-                                                    <div class="col-4 text-end">
-                                                        <a href="#" style="text-decoration: none">
-                                                            <h6 class="text-primary">Lihat</h6>
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <h6 class="fw-bold mb-0">Bogor</h6>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <h3 class="mb-0">1 Ha</h3>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 custom">
-                                        <div class="card mx-auto">
-                                            <div class="ribbon ribbon-top-left"><span>lelang</span></div>
-                                            <div class="card-body p-0 text-start">
-                                                <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="a-image w-100 rounded-top" alt="">
-                                                <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                    <div class="col-12">
-                                                        <h6 class="mb-0">Nilai Limit :</h6>
-                                                    </div>
-                                                    <div class="col mb-2">
-                                                        <h5 class="mb-0">Rp. 200 Juta</h5>
-                                                    </div>
-                                                    <div class="col-4 text-end">
-                                                        <a href="#" style="text-decoration: none">
-                                                            <h6 class="text-primary">Lihat</h6>
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <h6 class="fw-bold mb-0">Bogor</h6>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <h3 class="mb-0">3.2 Ha</h3>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 custom">
-                                        <div class="card mx-auto">
-                                            <div class="ribbon ribbon-top-left"><span>lelang</span></div>
-                                            <div class="card-body p-0 text-start">
-                                                <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="a-image w-100 rounded-top" alt="">
-                                                <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                    <div class="col-12">
-                                                        <h6 class="mb-0">Nilai Limit :</h6>
-                                                    </div>
-                                                    <div class="col mb-2">
-                                                        <h5 class="mb-0">Rp. 500 Juta</h5>
-                                                    </div>
-                                                    <div class="col-4 text-end">
-                                                        <a href="#" style="text-decoration: none">
-                                                            <h6 class="text-primary">Lihat</h6>
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <h6 class="fw-bold mb-0">Bogor</h6>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <h3 class="mb-0">5000 M</h3>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 custom">
-                                        <div class="card mx-auto">
-                                            <div class="ribbon ribbon-top-left"><span>lelang</span></div>
-                                            <div class="card-body p-0 text-start">
-                                                <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="a-image w-100 rounded-top" alt="">
-                                                <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                    <div class="col-12">
-                                                        <h6 class="mb-0">Nilai Limit :</h6>
-                                                    </div>
-                                                    <div class="col mb-2">
-                                                        <h5 class="mb-0">Rp. 200 Juta</h5>
-                                                    </div>
-                                                    <div class="col-4 text-end">
-                                                        <a href="#" style="text-decoration: none">
-                                                            <h6 class="text-primary">Lihat</h6>
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <h6 class="fw-bold mb-0">Bogor</h6>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <h3 class="mb-0">3.2 Ha</h3>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-4 custom text-center" style="margin-bottom: 7rem">
-
-                                    </div>
-                                </div>
-
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-1 arrow-desktop justify-content-center">
-                        <button class="btn rounded-5 text-white right-button3 text-center" style="margin-top:200%;background:transparent">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card rounded-0 border-0 " style="margin-top:-10px">
-            <!-- <div class="card-header bg-white border-0">
-
-                    </div> -->
-            <div class="card-body" style="background-color:#FAFAD2;">
-                <div class="row justify-content-center">
-
-                    <div class="col-1 arrow-desktop text-center">
-                        <button class="btn rounded-5 text-white left-button4" style="margin-top:200%;background:transparent">
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </button>
-                    </div>
-                    <div class="col-10">
-                        <div class="row mt-0 mobile-scroll justify-content-between scroll-simple align-items-center lelang-card4" style="flex-wrap: nowrap;">
-
-                            <div class="col-12">
-                                <div class="row align-items-end" style="flex-wrap: nowrap;">
-                                    <div class="col-12 custom">
-                                        <div class="card mx-auto">
-                                            <div class="ribbon ribbon-top-left"><span>lelang</span></div>
-                                            <div class="card-body p-0 text-start">
-                                                <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg" class="a-image w-100 rounded-top" alt="">
-                                                <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                    <div class="col-12">
-                                                        <h6 class="mb-0">Nilai Limit :</h6>
-                                                    </div>
-                                                    <div class="col mb-2">
-                                                        <h5 class="mb-0">Rp. 200 Juta</h5>
-                                                    </div>
-                                                    <div class="col-4 text-end">
-                                                        <a href="#" style="text-decoration: none">
-                                                            <h6 class="text-primary">Lihat</h6>
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <h6 class="fw-bold mb-0">Bogor</h6>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <h3 class="mb-0">3.2 Ha</h3>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 custom">
-                                        <div class="card mx-auto">
-                                            <div class="ribbon ribbon-top-left"><span>lelang</span></div>
-                                            <div class="card-body p-0 text-start">
-                                                <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg" class="a-image w-100 rounded-top" alt="">
-                                                <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                    <div class="col-12">
-                                                        <h6 class="mb-0">Nilai Limit :</h6>
-                                                    </div>
-                                                    <div class="col mb-2">
-                                                        <h5 class="mb-0">Rp. 450 Juta</h5>
-                                                    </div>
-                                                    <div class="col-4 text-end">
-                                                        <a href="#" style="text-decoration: none">
-                                                            <h6 class="text-primary">Lihat</h6>
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <h6 class="fw-bold mb-0">Bogor</h6>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <h3 class="mb-0">1 Ha</h3>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 custom">
-                                        <div class="card mx-auto">
-                                            <div class="ribbon ribbon-top-left"><span>lelang</span></div>
-                                            <div class="card-body p-0 text-start">
-                                                <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg" class="a-image w-100 rounded-top" alt="">
-                                                <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                    <div class="col-12">
-                                                        <h6 class="mb-0">Nilai Limit :</h6>
-                                                    </div>
-                                                    <div class="col mb-2">
-                                                        <h5 class="mb-0">Rp. 500 Juta</h5>
-                                                    </div>
-                                                    <div class="col-4 text-end">
-                                                        <a href="#" style="text-decoration: none">
-                                                            <h6 class="text-primary">Lihat</h6>
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <h6 class="fw-bold mb-0">Bogor</h6>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <h3 class="mb-0">5000 M</h3>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 custom">
-                                        <div class="card mx-auto">
-                                            <div class="ribbon ribbon-top-left"><span>lelang</span></div>
-                                            <div class="card-body p-0 text-start">
-                                                <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg" class="a-image w-100 rounded-top" alt="">
-                                                <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                    <div class="col-12">
-                                                        <h6 class="mb-0">Nilai Limit :</h6>
-                                                    </div>
-                                                    <div class="col mb-2">
-                                                        <h5 class="mb-0">Rp. 200 Juta</h5>
-                                                    </div>
-                                                    <div class="col-4 text-end">
-                                                        <a href="#" style="text-decoration: none">
-                                                            <h6 class="text-primary">Lihat</h6>
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <h6 class="fw-bold mb-0">Bogor</h6>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <h3 class="mb-0">3.2 Ha</h3>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <!-- <div class="col-4 custom text-center" style="margin-bottom: 7rem">
+                                            <!-- <div class="col-4 custom text-center" style="margin-bottom: 7rem">
                                                 <button class="btn btn-sm">
                                                     <span class="fa-stack fa-2x">
                                                         <i class="fa fa-circle fa-stack-2x text-brown"></i>
@@ -9849,430 +9875,430 @@
                                                     </b>
                                                 </button>
                                             </div> -->
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
+                            <div class="col-1 arrow-desktop justify-content-center">
+                                <button class="btn rounded-5 text-white right-button4 text-center" style="margin-top:200%;background:transparent">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
 
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-1 arrow-desktop justify-content-center">
-                        <button class="btn rounded-5 text-white right-button4 text-center" style="margin-top:200%;background:transparent">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
+
 
                     </div>
                 </div>
 
+                <!-- podcast Sengketa -->
+                <div class="card mb-3 border-0 shadow-sm mt-3">
+                    <div class="card-header bg-white">
+                        <table style="width:100%">
+                            <tr>
+                                <td rowspan="2" style="width: 40px">
+                                    <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">
+                                </td>
+                                <td>
+                                    <h5 color="text-dark" style="margin-bottom: 0px !important">
+                                        Podcast Sengketa
+                                    </h5>
+                                </td>
+                                <td class="text-end" rowspan="2">
+                                    <a href="{{url('')}}/podcast-sengketa" class="text-success fw-bold" style="text-decoration: none">Lihat
+                                        Semua</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="mb-0">Video <span class="badge bg-danger">10</span></p>
+                                </td>
+                            </tr>
+                        </table>
 
-            </div>
-        </div>
+                    </div>
 
-        <!-- podcast Sengketa -->
-        <div class="card mb-3 border-0 shadow-sm mt-3">
-            <div class="card-header bg-white">
-                <table style="width:100%">
-                    <tr>
-                        <td rowspan="2" style="width: 40px">
-                            <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">
-                        </td>
-                        <td>
-                            <h5 color="text-dark" style="margin-bottom: 0px !important">
-                                Podcast Sengketa
-                            </h5>
-                        </td>
-                        <td class="text-end" rowspan="2">
-                            <a href="{{url('')}}/podcast-sengketa" class="text-success fw-bold" style="text-decoration: none">Lihat
-                                Semua</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p class="mb-0">Video <span class="badge bg-danger">10</span></p>
-                        </td>
-                    </tr>
-                </table>
+                    <style>
+                        .modal-backdrop {
+                            opacity: 0.9 !important;
+                        }
 
-            </div>
+                        .mobile-size {
+                            width: 100%;
+                            height: 200px;
+                            object-fit: cover;
+                        }
 
-            <style>
-                .modal-backdrop {
-                    opacity: 0.9 !important;
-                }
+                        @media (min-width:800px) {
+                            .mobile-size {
+                                width: 100%;
+                                height: 500px;
+                                object-fit: cover;
+                            }
+                        }
+                    </style>
 
-                .mobile-size {
-                    width: 100%;
-                    height: 200px;
-                    object-fit: cover;
-                }
+                    <div class="modal fade" id="image-modal" tabindex="-1" aria-labelledby="image-modalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+                            <div class="modal-content border-0" style="background-color:transparent">
 
-                @media (min-width:800px) {
-                    .mobile-size {
-                        width: 100%;
-                        height: 500px;
-                        object-fit: cover;
-                    }
-                }
-            </style>
-
-            <div class="modal fade" id="image-modal" tabindex="-1" aria-labelledby="image-modalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-fullscreen modal-dialog-centered">
-                    <div class="modal-content border-0" style="background-color:transparent">
-
-                        <div class="modal-header bg-dark text-white border-0">
-                            <h5 class="modal-title title-bidang">Modal title</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body d-flex" style="background-color:transparent">
-                            <div class="container">
-
-                                <style>
-                                    .carousel-indicators.custom {
-                                        position: relative;
-                                        margin-bottom: 0;
-                                        justify-content: start;
-                                        overflow-x: auto;
-                                        display: flex;
-                                        flex-wrap: nowrap;
-                                    }
-
-                                    .carousel-indicators.custom [data-bs-target] {
-                                        flex: 0 0 auto;
-                                        width: 20%;
-                                        height: auto;
-                                    }
-
-                                    .carousel-indicators.custom.scroll-simple::-webkit-scrollbar-track {
-                                        border-radius: 10px;
-                                        background: rgba(255, 255, 255, 0.1);
-                                    }
-
-                                    .carousel-indicators.custom.scroll-simple::-webkit-scrollbar-thumb {
-                                        border-radius: 10px;
-                                        background: rgba(255, 255, 255, 0.2);
-                                    }
-
-                                    .carousel-indicators.custom.scroll-simple::-webkit-scrollbar-thumb:hover {
-                                        background: rgba(255, 255, 255, 0.4);
-                                    }
-
-                                    .carousel-indicators.custom.scroll-simple::-webkit-scrollbar-thumb:active {
-                                        background: rgba(255, 255, 255, 0.9);
-                                    }
-
-                                    figure.zoom {
-                                        background-position: 50% 50%;
-                                        position: relative;
-                                        box-shadow: -1px 5px 15px black;
-                                        height: auto;
-                                        width: 70%;
-                                        overflow: hidden;
-                                        cursor: zoom-in;
-                                        object-fit: cover
-                                    }
-
-                                    figure.zoom img:hover {
-                                        opacity: 0;
-                                    }
-
-                                    figure.zoom img {
-                                        transition: opacity 0.5s;
-                                        display: block;
-                                        width: 100%;
-                                        height: 100%;
-                                    }
-
-                                    @media (max-width: 767.98px) {
-                                        .carousel-indicators.custom {
-                                            position: relative;
-                                            margin-bottom: 0;
-                                            justify-content: start;
-                                            overflow-x: auto;
-                                            display: flex;
-                                            flex-wrap: nowrap;
-                                            margin-right: 0;
-                                            margin-left: 0;
-                                        }
-
-                                        .carousel-indicators.custom [data-bs-target] {
-                                            width: 30% !important;
-
-                                        }
-
-                                        figure.zoom {
-                                            width: 100%;
-                                        }
-                                    }
-                                </style>
-
-                                <div id="carouselExampleIndicators" data-bs-touch="false" class="carousel slide mt-2 desktop" data-bs-ride="false">
-    
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <figure class="mx-auto zoom" onmousemove="zoom(event)" style="background-image: url({{asset('')}}images/lahan1.jpeg); background-size: 200%">
-                                                <img src="{{asset('')}}images/lahan1.jpeg" onmousemove='zoom(event)' class="d-block image-kunam-2" alt="...">
-                                            </figure>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <figure class="mx-auto zoom" onmousemove="zoom(event)" style="background-image: url({{asset('')}}images/lahan2.jpeg); background-size: 200%">
-                                                <img src="{{asset('')}}images/lahan2.jpeg" onmousemove='zoom(event)' class="d-block image-kunam-2" alt="...">
-                                            </figure>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <figure class="mx-auto zoom" onmousemove="zoom(event)" style="background-image: url({{asset('')}}images/lahan3.jpeg); background-size: 200%">
-                                                <img src="{{asset('')}}images/lahan3.jpeg" onmousemove='zoom(event)' class="d-block image-kunam-2" alt="...">
-                                            </figure>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <figure class="mx-auto zoom" onmousemove="zoom(event)" style="background-image: url({{asset('')}}images/lahan4.jpeg); background-size: 200%">
-                                                <img src="{{asset('')}}images/lahan4.jpeg" onmousemove='zoom(event)' class="d-block image-kunam-2" alt="...">
-                                            </figure>
-                                        </div>
-                                    </div>
-
-                                    <div class="carousel-indicators custom scroll-simple">
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-                                            <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" alt="...">
-                                        </button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
-                                            <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" alt="...">
-                                        </button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
-                                            <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" alt="...">
-                                        </button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" alt="...">
-                                        </button>
-                                    </div>
-
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
+                                <div class="modal-header bg-dark text-white border-0">
+                                    <h5 class="modal-title title-bidang">Modal title</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
+                                <div class="modal-body d-flex" style="background-color:transparent">
+                                    <div class="container">
 
-                                <div id="carouselExampleIndicatorsM" data-bs-touch="false" class="carousel slide mt-2 mobile" data-bs-ride="false">
-    
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam-2" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam-2" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam-2" alt="...">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam-2" alt="...">
-                                        </div>
-                                    </div>
+                                        <style>
+                                            .carousel-indicators.custom {
+                                                position: relative;
+                                                margin-bottom: 0;
+                                                justify-content: start;
+                                                overflow-x: auto;
+                                                display: flex;
+                                                flex-wrap: nowrap;
+                                            }
 
-                                    <div class="carousel-indicators custom scroll-simple">
-                                        <button type="button" data-bs-target="#carouselExampleIndicatorsM" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-                                            <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" alt="...">
-                                        </button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicatorsM" data-bs-slide-to="1" aria-label="Slide 2">
-                                            <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" alt="...">
-                                        </button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicatorsM" data-bs-slide-to="2" aria-label="Slide 3">
-                                            <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" alt="...">
-                                        </button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicatorsM" data-bs-slide-to="3" aria-label="Slide 4">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" alt="...">
-                                        </button>
-                                    </div>
+                                            .carousel-indicators.custom [data-bs-target] {
+                                                flex: 0 0 auto;
+                                                width: 20%;
+                                                height: auto;
+                                            }
 
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsM" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsM" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                
-                                {{-- <div class="row justify-content-center">
+                                            .carousel-indicators.custom.scroll-simple::-webkit-scrollbar-track {
+                                                border-radius: 10px;
+                                                background: rgba(255, 255, 255, 0.1);
+                                            }
+
+                                            .carousel-indicators.custom.scroll-simple::-webkit-scrollbar-thumb {
+                                                border-radius: 10px;
+                                                background: rgba(255, 255, 255, 0.2);
+                                            }
+
+                                            .carousel-indicators.custom.scroll-simple::-webkit-scrollbar-thumb:hover {
+                                                background: rgba(255, 255, 255, 0.4);
+                                            }
+
+                                            .carousel-indicators.custom.scroll-simple::-webkit-scrollbar-thumb:active {
+                                                background: rgba(255, 255, 255, 0.9);
+                                            }
+
+                                            figure.zoom {
+                                                background-position: 50% 50%;
+                                                position: relative;
+                                                box-shadow: -1px 5px 15px black;
+                                                height: auto;
+                                                width: 70%;
+                                                overflow: hidden;
+                                                cursor: zoom-in;
+                                                object-fit: cover
+                                            }
+
+                                            figure.zoom img:hover {
+                                                opacity: 0;
+                                            }
+
+                                            figure.zoom img {
+                                                transition: opacity 0.5s;
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                            }
+
+                                            @media (max-width: 767.98px) {
+                                                .carousel-indicators.custom {
+                                                    position: relative;
+                                                    margin-bottom: 0;
+                                                    justify-content: start;
+                                                    overflow-x: auto;
+                                                    display: flex;
+                                                    flex-wrap: nowrap;
+                                                    margin-right: 0;
+                                                    margin-left: 0;
+                                                }
+
+                                                .carousel-indicators.custom [data-bs-target] {
+                                                    width: 30% !important;
+
+                                                }
+
+                                                figure.zoom {
+                                                    width: 100%;
+                                                }
+                                            }
+                                        </style>
+
+                                        <div id="carouselExampleIndicators" data-bs-touch="false" class="carousel slide mt-2 desktop" data-bs-ride="false">
+
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <figure class="mx-auto zoom" onmousemove="zoom(event)" style="background-image: url({{asset('')}}images/lahan1.jpeg); background-size: 200%">
+                                                        <img src="{{asset('')}}images/lahan1.jpeg" onmousemove='zoom(event)' class="d-block image-kunam-2" alt="...">
+                                                    </figure>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <figure class="mx-auto zoom" onmousemove="zoom(event)" style="background-image: url({{asset('')}}images/lahan2.jpeg); background-size: 200%">
+                                                        <img src="{{asset('')}}images/lahan2.jpeg" onmousemove='zoom(event)' class="d-block image-kunam-2" alt="...">
+                                                    </figure>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <figure class="mx-auto zoom" onmousemove="zoom(event)" style="background-image: url({{asset('')}}images/lahan3.jpeg); background-size: 200%">
+                                                        <img src="{{asset('')}}images/lahan3.jpeg" onmousemove='zoom(event)' class="d-block image-kunam-2" alt="...">
+                                                    </figure>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <figure class="mx-auto zoom" onmousemove="zoom(event)" style="background-image: url({{asset('')}}images/lahan4.jpeg); background-size: 200%">
+                                                        <img src="{{asset('')}}images/lahan4.jpeg" onmousemove='zoom(event)' class="d-block image-kunam-2" alt="...">
+                                                    </figure>
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-indicators custom scroll-simple">
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                                                    <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" alt="...">
+                                                </button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+                                                    <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" alt="...">
+                                                </button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+                                                    <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" alt="...">
+                                                </button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" alt="...">
+                                                </button>
+                                            </div>
+
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+
+                                        <div id="carouselExampleIndicatorsM" data-bs-touch="false" class="carousel slide mt-2 mobile" data-bs-ride="false">
+
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam-2" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam-2" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam-2" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam-2" alt="...">
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-indicators custom scroll-simple">
+                                                <button type="button" data-bs-target="#carouselExampleIndicatorsM" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                                                    <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" alt="...">
+                                                </button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicatorsM" data-bs-slide-to="1" aria-label="Slide 2">
+                                                    <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" alt="...">
+                                                </button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicatorsM" data-bs-slide-to="2" aria-label="Slide 3">
+                                                    <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" alt="...">
+                                                </button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicatorsM" data-bs-slide-to="3" aria-label="Slide 4">
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" alt="...">
+                                                </button>
+                                            </div>
+
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsM" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsM" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+
+                                        {{-- <div class="row justify-content-center">
 
                                     <div class="col-lg-8">
                                         <img src="{{asset('')}}images/lahan4.jpeg"
-                                class="rounded-1 foto-utama mobile-size" />
-                            </div>
+                                        class="rounded-1 foto-utama mobile-size" />
+                                    </div>
 
-                            <div class="col-lg-8">
-                                <div class="row mt-2 justify-content-center">
+                                    <div class="col-lg-8">
+                                        <div class="row mt-2 justify-content-center">
 
-                                    <div class="col-lg mobile-scroll align-center" id='gambar-lain-modal' style="white-space:nowrap;flex-wrap:nowarp;display:flex">
+                                            <div class="col-lg mobile-scroll align-center" id='gambar-lain-modal' style="white-space:nowrap;flex-wrap:nowarp;display:flex">
 
-                                        <div class="container-gambar ms-1 me-1" style='display: inline-block;flex: 0 0 auto'>
-                                            <img src="{{asset('')}}images/lahan4.jpeg" alt="" srcset="" class="rounded-1 img-fluid " style="width:150px;height:100px;object-fit:cover;"> <br>
-                                        </div>
-                                        <div class="container-gambar ms-1 me-1" style='display: inline-block;flex: 0 0 auto'>
-                                            <img src="{{asset('')}}images/lahan4.jpeg" alt="" srcset="" class="rounded-1 img-fluid " style="width:150px;height:100px;object-fit:cover;"> <br>
-                                        </div>
+                                                <div class="container-gambar ms-1 me-1" style='display: inline-block;flex: 0 0 auto'>
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" alt="" srcset="" class="rounded-1 img-fluid " style="width:150px;height:100px;object-fit:cover;"> <br>
+                                                </div>
+                                                <div class="container-gambar ms-1 me-1" style='display: inline-block;flex: 0 0 auto'>
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" alt="" srcset="" class="rounded-1 img-fluid " style="width:150px;height:100px;object-fit:cover;"> <br>
+                                                </div>
 
-                                        <div class="container-gambar ms-1 me-1" style='display: inline-block;flex: 0 0 auto'>
-                                            <img src="{{asset('')}}images/lahan4.jpeg" alt="" srcset="" class="rounded-1 img-fluid " style="width:150px;height:100px;object-fit:cover;"> <br>
+                                                <div class="container-gambar ms-1 me-1" style='display: inline-block;flex: 0 0 auto'>
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" alt="" srcset="" class="rounded-1 img-fluid " style="width:150px;height:100px;object-fit:cover;"> <br>
+                                                </div>
+
+                                            </div>
+
                                         </div>
 
                                     </div>
+                                </div> --}}
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                function zoom(e) {
+                    var zoomer = e.currentTarget;
+                    e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX
+                    e.offsetY ? offsetY = e.offsetY : offsetY = e.touches[0].pageY
+                    x = offsetX / zoomer.offsetWidth * 100
+                    y = offsetY / zoomer.offsetHeight * 100
+                    zoomer.style.backgroundPosition = x + '% ' + y + '%';
+                }
+
+
+
+                $('img.image-kunam').on('click', function() {
+                    // let dataSrc = $(this).data('src');
+                    // let dataImgLain = $($($(this).parent()).parent()).find('img')
+                    let judulB = $($($($($(this).parent()).parent()).parent()).parent()).find('h5.text-center')
+                        .html()
+                    $('h5.title-bidang').html(judulB)
+                    // let image = $($('#image-modal').find('img.foto-utama'))
+                    // image.attr('src', dataSrc);
+                    // let arrayGambar = [];
+                    // dataImgLain.each(function (inz,
+                    //     lets) {
+                    //     if (dataSrc == $(lets).attr('src')) {
+                    //         return
+                    //     }
+                    //     arrayGambar.push(inz);
+                    // });
+                    // $('div#gambar-lain-modal').find('img').each(function (ind, el) {
+                    //     $(el).attr('src', $(dataImgLain[arrayGambar[ind]]).attr('src'))
+                    // });
+                });
+                // $('div#gambar-lain-modal').find('img').on('click', function () {
+                //     const srcDataIni = $(this).attr('src');
+                //     const srcDataUtama = $($('#image-modal').find('img.foto-utama')).attr('src')
+                //     $(this).attr('src', srcDataUtama);
+                //     $($('#image-modal').find('img.foto-utama')).attr('src', srcDataIni)
+                // });
+            </script>
+
+
+            <div class="card-body" style="background-color:#000;">
+                <style>
+                    .texto {
+                        font-size: 11px;
+                    }
+
+                    @media (min-width: 992px) {
+                        #vid_frame {
+                            height: 500px !important;
+                        }
+
+                        .vid-lamo {
+                            height: 500px !important;
+                        }
+
+                        .pencet {
+                            cursor: pointer;
+                        }
+
+                        .texto {
+                            font-size: 16px
+                        }
+                    }
+                </style>
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-lg">
+                            <iframe id="vid_frame" src="https://www.youtube.com/embed/-RkCcavzXq8?rel=0&amp;showinfo=0&amp;autohide=1" width="100%" height="250px" frameborder="0"></iframe>
+                        </div>
+                        <div class="vr desktop"></div>
+                        <div class="col-lg-5 vid-lamo" style="height: 320px; overflow-y: scroll">
+                            <hr class="border-light">
+
+                            <div class="row mb-3 g-0">
+                                <div class="row g-2 pencet" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/-RkCcavzXq8?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <div class="col-4"><img class="imago" width="100%" src="https://i.ytimg.com/vi/-RkCcavzXq8/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDYuRgylXJIKoNUa4El8SsT1f88ng">
+                                    </div>
+                                    <div class="col-8 text-white texto">Mafia Tanah Sikat Lahan Garapan Petani
+                                        Pancawati Bogor #PetaniMengadu</div>
                                 </div>
-
                             </div>
-                        </div> --}}
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                            <hr class="border-light">
 
-    <script>
-        function zoom(e) {
-            var zoomer = e.currentTarget;
-            e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX
-            e.offsetY ? offsetY = e.offsetY : offsetY = e.touches[0].pageY
-            x = offsetX / zoomer.offsetWidth * 100
-            y = offsetY / zoomer.offsetHeight * 100
-            zoomer.style.backgroundPosition = x + '% ' + y + '%';
-        }
-
-
-
-        $('img.image-kunam').on('click', function() {
-            // let dataSrc = $(this).data('src');
-            // let dataImgLain = $($($(this).parent()).parent()).find('img')
-            let judulB = $($($($($(this).parent()).parent()).parent()).parent()).find('h5.text-center')
-                .html()
-            $('h5.title-bidang').html(judulB)
-            // let image = $($('#image-modal').find('img.foto-utama'))
-            // image.attr('src', dataSrc);
-            // let arrayGambar = [];
-            // dataImgLain.each(function (inz,
-            //     lets) {
-            //     if (dataSrc == $(lets).attr('src')) {
-            //         return
-            //     }
-            //     arrayGambar.push(inz);
-            // });
-            // $('div#gambar-lain-modal').find('img').each(function (ind, el) {
-            //     $(el).attr('src', $(dataImgLain[arrayGambar[ind]]).attr('src'))
-            // });
-        });
-        // $('div#gambar-lain-modal').find('img').on('click', function () {
-        //     const srcDataIni = $(this).attr('src');
-        //     const srcDataUtama = $($('#image-modal').find('img.foto-utama')).attr('src')
-        //     $(this).attr('src', srcDataUtama);
-        //     $($('#image-modal').find('img.foto-utama')).attr('src', srcDataIni)
-        // });
-    </script>
-
-
-    <div class="card-body" style="background-color:#000;">
-        <style>
-            .texto {
-                font-size: 11px;
-            }
-
-            @media (min-width: 992px) {
-                #vid_frame {
-                    height: 500px !important;
-                }
-
-                .vid-lamo {
-                    height: 500px !important;
-                }
-
-                .pencet {
-                    cursor: pointer;
-                }
-
-                .texto {
-                    font-size: 16px
-                }
-            }
-        </style>
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg">
-                    <iframe id="vid_frame" src="https://www.youtube.com/embed/-RkCcavzXq8?rel=0&amp;showinfo=0&amp;autohide=1" width="100%" height="250px" frameborder="0"></iframe>
-                </div>
-                <div class="vr desktop"></div>
-                <div class="col-lg-5 vid-lamo" style="height: 320px; overflow-y: scroll">
-                    <hr class="border-light">
-
-                    <div class="row mb-3 g-0">
-                        <div class="row g-2 pencet" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/-RkCcavzXq8?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
-                            <div class="col-4"><img class="imago" width="100%" src="https://i.ytimg.com/vi/-RkCcavzXq8/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDYuRgylXJIKoNUa4El8SsT1f88ng">
+                            <div class="row mb-3 g-0">
+                                <div class="row g-2 pencet" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/byby3HJ3OCI?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <div class="col-4"><img class="imago" width="100%" height="100%" src="https://i.ytimg.com/vi/byby3HJ3OCI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCHbyFGnyjuYbXClrL-dy7-iFeVOQ">
+                                    </div>
+                                    <div class="col-8 text-white texto">Mafia Tanah Sikat Lahan Garapan Petani
+                                        Pancawati Bogor #PodcastSengketaTanah1</div>
+                                </div>
                             </div>
-                            <div class="col-8 text-white texto">Mafia Tanah Sikat Lahan Garapan Petani
-                                Pancawati Bogor #PetaniMengadu</div>
+
+                            <hr class="border-light">
+
+                            <div class="row mb-3 g-0">
+                                <div class="row g-2 pencet" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/-RkCcavzXq8?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <div class="col-4"><img class="imago" width="100%" src="https://i.ytimg.com/vi/-RkCcavzXq8/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDYuRgylXJIKoNUa4El8SsT1f88ng">
+                                    </div>
+                                    <div class="col-8 text-white texto">Mafia Tanah Sikat Lahan Garapan Petani
+                                        Pancawati Bogor #PetaniMengadu</div>
+                                </div>
+                            </div>
+
+                            <hr class="border-light">
+
+                            <div class="row mb-3 g-0">
+                                <div class="row g-2 pencet" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/byby3HJ3OCI?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <div class="col-4"><img class="imago" width="100%" src="https://i.ytimg.com/vi/byby3HJ3OCI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCHbyFGnyjuYbXClrL-dy7-iFeVOQ">
+                                    </div>
+                                    <div class="col-8 text-white texto">Mafia Tanah Sikat Lahan Garapan Petani
+                                        Pancawati Bogor #PodcastSengketaTanah1</div>
+                                </div>
+                            </div>
+
+                            <hr class="border-light">
+
+                            <div class="row mb-3 g-0">
+                                <div class="row g-2 pencet" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/-RkCcavzXq8?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <div class="col-4"><img class="imago" width="100%" src="https://i.ytimg.com/vi/-RkCcavzXq8/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDYuRgylXJIKoNUa4El8SsT1f88ng">
+                                    </div>
+                                    <div class="col-8 text-white texto">Mafia Tanah Sikat Lahan Garapan Petani
+                                        Pancawati Bogor #PetaniMengadu</div>
+                                </div>
+                            </div>
+
+                            <hr class="border-light">
+
+                            <div class="row mb-3 g-0">
+                                <div class="row g-2 pencet" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/byby3HJ3OCI?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <div class="col-4"><img class="imago" width="100%" src="https://i.ytimg.com/vi/byby3HJ3OCI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCHbyFGnyjuYbXClrL-dy7-iFeVOQ">
+                                    </div>
+                                    <div class="col-8 text-white texto">Mafia Tanah Sikat Lahan Garapan Petani
+                                        Pancawati Bogor #PodcastSengketaTanah1</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <hr class="border-light">
-
-                    <div class="row mb-3 g-0">
-                        <div class="row g-2 pencet" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/byby3HJ3OCI?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
-                            <div class="col-4"><img class="imago" width="100%" height="100%" src="https://i.ytimg.com/vi/byby3HJ3OCI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCHbyFGnyjuYbXClrL-dy7-iFeVOQ">
-                            </div>
-                            <div class="col-8 text-white texto">Mafia Tanah Sikat Lahan Garapan Petani
-                                Pancawati Bogor #PodcastSengketaTanah1</div>
-                        </div>
-                    </div>
-
-                    <hr class="border-light">
-
-                    <div class="row mb-3 g-0">
-                        <div class="row g-2 pencet" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/-RkCcavzXq8?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
-                            <div class="col-4"><img class="imago" width="100%" src="https://i.ytimg.com/vi/-RkCcavzXq8/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDYuRgylXJIKoNUa4El8SsT1f88ng">
-                            </div>
-                            <div class="col-8 text-white texto">Mafia Tanah Sikat Lahan Garapan Petani
-                                Pancawati Bogor #PetaniMengadu</div>
-                        </div>
-                    </div>
-
-                    <hr class="border-light">
-
-                    <div class="row mb-3 g-0">
-                        <div class="row g-2 pencet" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/byby3HJ3OCI?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
-                            <div class="col-4"><img class="imago" width="100%" src="https://i.ytimg.com/vi/byby3HJ3OCI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCHbyFGnyjuYbXClrL-dy7-iFeVOQ">
-                            </div>
-                            <div class="col-8 text-white texto">Mafia Tanah Sikat Lahan Garapan Petani
-                                Pancawati Bogor #PodcastSengketaTanah1</div>
-                        </div>
-                    </div>
-
-                    <hr class="border-light">
-
-                    <div class="row mb-3 g-0">
-                        <div class="row g-2 pencet" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/-RkCcavzXq8?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
-                            <div class="col-4"><img class="imago" width="100%" src="https://i.ytimg.com/vi/-RkCcavzXq8/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDYuRgylXJIKoNUa4El8SsT1f88ng">
-                            </div>
-                            <div class="col-8 text-white texto">Mafia Tanah Sikat Lahan Garapan Petani
-                                Pancawati Bogor #PetaniMengadu</div>
-                        </div>
-                    </div>
-
-                    <hr class="border-light">
-
-                    <div class="row mb-3 g-0">
-                        <div class="row g-2 pencet" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/byby3HJ3OCI?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
-                            <div class="col-4"><img class="imago" width="100%" src="https://i.ytimg.com/vi/byby3HJ3OCI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCHbyFGnyjuYbXClrL-dy7-iFeVOQ">
-                            </div>
-                            <div class="col-8 text-white texto">Mafia Tanah Sikat Lahan Garapan Petani
-                                Pancawati Bogor #PodcastSengketaTanah1</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- THE PLAYLIST -->
-            {{-- <div class="vid-list-container">
+                    <!-- THE PLAYLIST -->
+                    {{-- <div class="vid-list-container">
                               <div class="vid-list">
                                    
                                    
@@ -10282,10 +10308,10 @@
                                </div>
                           </div> --}}
 
-        </div>
+                </div>
 
 
-        {{-- <div class="row mt-2 justify-content-between" id="lelang-card"
+                {{-- <div class="row mt-2 justify-content-between" id="lelang-card"
                             style="overflow-x: auto; flex-wrap: nowrap">
 
                             <div class="col-12 custom bid">
@@ -10340,8 +10366,8 @@
                             </div>
                         </div> --}}
 
-    </div>
-    </div>
+            </div>
+        </div>
 
 
     </div>
@@ -10937,41 +10963,41 @@
         });
     </script>
     <script>
-        let dayBox = document.getElementById("day-box");
-        let hrBox = document.getElementById("hr-box");
-        let minBox = document.getElementById("min-box");
-        let secBox = document.getElementById("sec-box");
-        let endDate = new Date(2022, 11, 2, 09, 00);
-        let endTime = endDate.getTime();
+        // let dayBox = document.getElementById("day-box");
+        // let hrBox = document.getElementById("hr-box");
+        // let minBox = document.getElementById("min-box");
+        // let secBox = document.getElementById("sec-box");
+        // let endDate = new Date(2022, 11, 2, 09, 00);
+        // let endTime = endDate.getTime();
 
-        function countdown() {
-            let todayDate = new Date();
-            let todayTime = todayDate.getTime();
-            let remainingTime = endTime - todayTime;
-            let oneMin = 60 * 1000;
-            let oneHr = 60 * oneMin;
-            let oneDay = 24 * oneHr;
+        // function countdown() {
+        //     let todayDate = new Date();
+        //     let todayTime = todayDate.getTime();
+        //     let remainingTime = endTime - todayTime;
+        //     let oneMin = 60 * 1000;
+        //     let oneHr = 60 * oneMin;
+        //     let oneDay = 24 * oneHr;
 
-            let addZeroes = (num) => (num < 10 ? `0${num}` : num);
+        //     let addZeroes = (num) => (num < 10 ? `0${num}` : num);
 
-            if (endTime < todayTime) {
-                clearInterval(i);
-                document.querySelector(".countdown").innerHTML = `<h1>Countdown Has Expired</h1>`;
-            } else {
-                let daysLeft = Math.floor(remainingTime / oneDay);
-                let hrsLeft = Math.floor((remainingTime % oneDay) / oneHr);
-                let minsLeft = Math.floor((remainingTime % oneHr) / oneMin);
-                let secsLeft = Math.floor((remainingTime % oneMin) / 1000);
+        //     if (endTime < todayTime) {
+        //         clearInterval(i);
+        //         document.querySelector(".countdown").innerHTML = `<h1>Countdown Has Expired</h1>`;
+        //     } else {
+        //         let daysLeft = Math.floor(remainingTime / oneDay);
+        //         let hrsLeft = Math.floor((remainingTime % oneDay) / oneHr);
+        //         let minsLeft = Math.floor((remainingTime % oneHr) / oneMin);
+        //         let secsLeft = Math.floor((remainingTime % oneMin) / 1000);
 
-                dayBox.textContent = addZeroes(daysLeft);
-                hrBox.textContent = addZeroes(hrsLeft);
-                minBox.textContent = addZeroes(minsLeft);
-                secBox.textContent = addZeroes(secsLeft);
-            }
-        }
+        //         dayBox.textContent = addZeroes(daysLeft);
+        //         hrBox.textContent = addZeroes(hrsLeft);
+        //         minBox.textContent = addZeroes(minsLeft);
+        //         secBox.textContent = addZeroes(secsLeft);
+        //     }
+        // }
 
-        let i = setInterval(countdown, 1000);
-        countdown();
+        // let i = setInterval(countdown, 1000);
+        // countdown();
     </script>
 
 
