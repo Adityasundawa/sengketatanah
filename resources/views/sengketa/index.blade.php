@@ -10528,7 +10528,7 @@
     
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img id="panzoom-element" src="{{asset('')}}images/lahan1.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px" alt="...">
+                                            <img src="{{asset('')}}images/lahan1.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px" alt="...">
                                         </div>
                                         <div class="carousel-item">
                                             <img src="{{asset('')}}images/lahan2.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px " alt="...">
@@ -10611,29 +10611,19 @@
                     </div>
                 </div>
             </div>
-            <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.j"></script>
+            <script src="https://unpkg.com/pinch-zoom-js@2.3.5/dist/pinch-zoom.min.js"></script>
 
 
             <script>
+
                 // $('img.image-kunam').on('click' ,function(){
                 //     if ($(this).attr('src') == $('.carousel-item img.image-kunam-2').attr('src')){
                 //         console.log($('img.img-kunam-2'));
                 //         // $(this).addClass('active');
                 //     }
                 // })   
-                
-                const elem = document.getElementById('panzoom-element')
-                const panzoom = Panzoom(elem, {
-                  maxScale: 5
-                })
-                panzoom.pan(10, 10)
-                panzoom.zoom(2, { animate: true })              
-
-                // Panning and pinch zooming are bound automatically (unless disablePan is true).
-                // There are several available methods for zooming
-                // that can be bound on button clicks or mousewheel.
-                button.addEventListener('click', panzoom.zoomIn)
-                elem.parentElement.addEventListener('wheel', panzoom.zoomWithWheel)
+                var el = document.querySelector('.image-kunam-2');
+                new PinchZoom.default(el, {});
                 
 
                 $('img.image-kunam').on('click', function () {
