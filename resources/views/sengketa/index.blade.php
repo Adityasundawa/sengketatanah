@@ -10663,26 +10663,26 @@
 
                 
                 
-                // $('img.image-kunam').on('click', function () {
-                //     let dataSrc = $(this).data('src');
-                //     let dataImgLain = $($($(this).parent()).parent()).find('img')
-                //     let judulB = $($($($($(this).parent()).parent()).parent()).parent()).find('h5.text-center')
-                //         .html()
-                //     $('h5.title-bidang').html(judulB)
-                //     let image = $($('#image-modal').find('img.foto-utama'))
-                //     image.attr('src', dataSrc);
-                //     let arrayGambar = [];
-                //     dataImgLain.each(function (inz,
-                //         lets) {
-                //         if (dataSrc == $(lets).attr('src')) {
-                //             return
-                //         }
-                //         arrayGambar.push(inz);
-                //     });
-                //     $('div#gambar-lain-modal').find('img').each(function (ind, el) {
-                //         $(el).attr('src', $(dataImgLain[arrayGambar[ind]]).attr('src'))
-                //     });
-                // });
+                $('img.image-kunam').on('click', function () {
+                    // let dataSrc = $(this).data('src');
+                    // let dataImgLain = $($($(this).parent()).parent()).find('img')
+                    let judulB = $($($($($(this).parent()).parent()).parent()).parent()).find('h5.text-center')
+                        .html()
+                    $('h5.title-bidang').html(judulB)
+                    // let image = $($('#image-modal').find('img.foto-utama'))
+                    // image.attr('src', dataSrc);
+                    // let arrayGambar = [];
+                    // dataImgLain.each(function (inz,
+                    //     lets) {
+                    //     if (dataSrc == $(lets).attr('src')) {
+                    //         return
+                    //     }
+                    //     arrayGambar.push(inz);
+                    // });
+                    // $('div#gambar-lain-modal').find('img').each(function (ind, el) {
+                    //     $(el).attr('src', $(dataImgLain[arrayGambar[ind]]).attr('src'))
+                    // });
+                });
                 // $('div#gambar-lain-modal').find('img').on('click', function () {
                 //     const srcDataIni = $(this).attr('src');
                 //     const srcDataUtama = $($('#image-modal').find('img.foto-utama')).attr('src')
