@@ -10527,8 +10527,8 @@
                                 <div id="carouselExampleIndicators" data-touch="false" class="carousel slide mt-2" data-bs-ride="false">
     
                                     <div class="carousel-inner">
-                                        <div class="carousel-item zoom active" id="my-id">
-                                            <img src="{{asset('')}}images/lahan1.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px" alt="...">
+                                        <div class="carousel-item zoom active">
+                                            <img src="{{asset('')}}images/lahan1.jpeg"  id="my-id" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px" alt="...">
                                         </div>
                                         <div class="carousel-item zoom">
                                             <img src="{{asset('')}}images/lahan2.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px " alt="...">
