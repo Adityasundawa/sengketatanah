@@ -11732,7 +11732,7 @@
 
                                 </style>
 
-                                <div id="carouselExampleIndicators" data-bs-touch="false" class="carousel slide mt-2" data-bs-ride="false">
+                                <div id="carouselExampleIndicators" data-bs-touch="false" class="carousel slide mt-2 desktop" data-bs-ride="false">
     
                                     <div class="carousel-inner desktop">
                                         <div class="carousel-item active">
@@ -11757,7 +11757,19 @@
                                         </div>
                                     </div>
 
-                                    <div class="carousel-inner mobile">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+                                <div id="carouselExampleIndicators" data-bs-touch="false" class="carousel slide mt-2 mobile" data-bs-ride="false">
+
+                                    <div class="carousel-inner">
                                         <div class="carousel-item active">
                                             <img src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam-2" alt="...">
                                         </div>
