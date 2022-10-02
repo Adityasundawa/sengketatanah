@@ -11732,9 +11732,9 @@
 
                                 </style>
 
-                                <div id="carouselExampleIndicators" data-bs-touch="false" class="carousel slide mt-2" data-bs-ride="false">
+                                <div id="carouselExampleIndicators" data-bs-touch="false" class="carousel slide mt-2 desktop" data-bs-ride="false">
     
-                                    <div class="carousel-inner desktop">
+                                    <div class="carousel-inner">
                                         <div class="carousel-item active">
                                             <figure class="mx-auto zoom" onmousemove="zoom(event)" style="background-image: url({{asset('')}}images/lahan1.jpeg); background-size: 200%">
                                                 <img src="{{asset('')}}images/lahan1.jpeg" onmousemove='zoom(event)' class="d-block image-kunam-2" alt="...">
@@ -11782,7 +11782,7 @@
                                     </button>
                                 </div>
 
-                                <div id="carouselExampleIndicatorsM" data-bs-touch="false" class="carousel slide mt-2" data-bs-ride="false">
+                                <div id="carouselExampleIndicatorsM" data-bs-touch="false" class="carousel slide mt-2 mobile" data-bs-ride="false">
     
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
