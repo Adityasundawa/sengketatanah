@@ -10508,28 +10508,7 @@
                                         background: rgba(255, 255, 255, 0.9);
                                     }
 
-                                    @media (max-width: 767.98px) { 
-                                        .carousel-indicators.custom {
-                                            position: relative;
-                                            margin-bottom: 0;
-                                            justify-content: start;
-                                            overflow-x: auto;
-                                            display: flex;
-                                            flex-wrap: nowrap;
-                                            margin-right: 0;
-                                            margin-left: 0;
-                                        }
-
-                                        .carousel-indicators.custom [data-bs-target] {
-                                            width: 30% !important;
-
-                                        }
-                                        .image-kunam-2 {
-                                            width: 100% !important
-                                        }
-                                     }
-
-                                     figure.zoom {
+                                    figure.zoom {
                                       background-position: 50% 50%;
                                       position: relative;
                                       box-shadow: -1px 5px 15px black;
@@ -10550,6 +10529,29 @@
                                       width: 100%;
                                       height: 100%;
                                     }
+
+                                    @media (max-width: 767.98px) { 
+                                        .carousel-indicators.custom {
+                                            position: relative;
+                                            margin-bottom: 0;
+                                            justify-content: start;
+                                            overflow-x: auto;
+                                            display: flex;
+                                            flex-wrap: nowrap;
+                                            margin-right: 0;
+                                            margin-left: 0;
+                                        }
+
+                                        .carousel-indicators.custom [data-bs-target] {
+                                            width: 30% !important;
+
+                                        }
+                                        figure.zoom {
+                                            width: 100%;
+                                        }
+                                     }
+
+                                    
 
                                 </style>
 
