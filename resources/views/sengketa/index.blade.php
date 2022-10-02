@@ -10480,8 +10480,7 @@
                                     .carousel-indicators.custom [data-bs-target] {
                                         flex: 0 0 auto;
                                         width: 20%;
-                                        height: auto;
-
+                                        height: auto;                                        
                                     }
                                 
                                     .carousel-indicators.custom.scroll-simple::-webkit-scrollbar-track {
@@ -10503,8 +10502,23 @@
                                     }
 
                                     @media (max-width: 767.98px) { 
-                                        .image-kunam {
-                                            width: 100%
+                                        .carousel-indicators.custom {
+                                            position: relative;
+                                            margin-bottom: 0;
+                                            justify-content: start;
+                                            overflow-x: auto;
+                                            display: flex;
+                                            flex-wrap: nowrap;
+                                            margin-right: 0;
+                                            margin-left: 0;
+                                        }
+
+                                        .carousel-indicators.custom [data-bs-target] {
+                                            width: 30% !important;
+
+                                        }
+                                        .image-kunam-2 {
+                                            width: 100% !important
                                         }
                                      }
 
