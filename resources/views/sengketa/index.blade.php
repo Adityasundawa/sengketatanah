@@ -10527,7 +10527,7 @@
                                 <div id="carouselExampleIndicators" data-touch="false" class="carousel slide mt-2" data-bs-ride="false">
     
                                     <div class="carousel-inner">
-                                        <div class="carousel-item zoom active">
+                                        <div class="carousel-item zoom active" id="my-id">
                                             <img src="{{asset('')}}images/lahan1.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px" alt="...">
                                         </div>
                                         <div class="carousel-item zoom">
@@ -10622,8 +10622,8 @@
                 //         // $(this).addClass('active');
                 //     }
                 // })   
-                var el = document.querySelector('.carousel-item.zoom');
-                new PinchZoom.default(el, {});
+                let el = document.querySelector('#my-id');
+                let pz = new PinchZoom(el, options);
                 
 
                 $('img.image-kunam').on('click', function () {
