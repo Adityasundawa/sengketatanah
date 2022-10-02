@@ -19,6 +19,8 @@
         rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{{asset('')}}css/image-zoom.css">
+
 
     <style>
         body {
@@ -10527,16 +10529,16 @@
                                 <div id="carouselExampleIndicators" data-bs-touch="false" class="carousel slide mt-2" data-bs-ride="false">
     
                                     <div class="carousel-inner">
-                                        <div class="carousel-item zoom active">
+                                        <div class="carousel-item active">
                                             <img src="{{asset('')}}images/lahan1.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px" alt="...">
                                         </div>
-                                        <div class="carousel-item zoom">
+                                        <div class="carousel-item">
                                             <img src="{{asset('')}}images/lahan2.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px " alt="...">
                                         </div>
-                                        <div class="carousel-item zoom">
+                                        <div class="carousel-item">
                                             <img src="{{asset('')}}images/lahan3.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px " alt="...">
                                         </div>
-                                        <div class="carousel-item zoom">
+                                        <div class="carousel-item">
                                             <img src="{{asset('')}}images/lahan4.jpeg" class="d-block mx-auto image-kunam-2" style="width: 70%; max-height: 600px " alt="...">
                                         </div>
                                     </div>
@@ -10611,38 +10613,35 @@
                     </div>
                 </div>
             </div>
-            <script src="https://unpkg.com/pinch-zoom-js@2.3.5/dist/pinch-zoom.min.js"></script>
 
 
             <script>
-                
-
-                $('img.image-kunam').on('click', function () {
-                    let dataSrc = $(this).data('src');
-                    let dataImgLain = $($($(this).parent()).parent()).find('img')
-                    let judulB = $($($($($(this).parent()).parent()).parent()).parent()).find('h5.text-center')
-                        .html()
-                    $('h5.title-bidang').html(judulB)
-                    let image = $($('#image-modal').find('img.foto-utama'))
-                    image.attr('src', dataSrc);
-                    let arrayGambar = [];
-                    dataImgLain.each(function (inz,
-                        lets) {
-                        if (dataSrc == $(lets).attr('src')) {
-                            return
-                        }
-                        arrayGambar.push(inz);
-                    });
-                    $('div#gambar-lain-modal').find('img').each(function (ind, el) {
-                        $(el).attr('src', $(dataImgLain[arrayGambar[ind]]).attr('src'))
-                    });
-                });
-                $('div#gambar-lain-modal').find('img').on('click', function () {
-                    const srcDataIni = $(this).attr('src');
-                    const srcDataUtama = $($('#image-modal').find('img.foto-utama')).attr('src')
-                    $(this).attr('src', srcDataUtama);
-                    $($('#image-modal').find('img.foto-utama')).attr('src', srcDataIni)
-                });
+                // $('img.image-kunam').on('click', function () {
+                //     let dataSrc = $(this).data('src');
+                //     let dataImgLain = $($($(this).parent()).parent()).find('img')
+                //     let judulB = $($($($($(this).parent()).parent()).parent()).parent()).find('h5.text-center')
+                //         .html()
+                //     $('h5.title-bidang').html(judulB)
+                //     let image = $($('#image-modal').find('img.foto-utama'))
+                //     image.attr('src', dataSrc);
+                //     let arrayGambar = [];
+                //     dataImgLain.each(function (inz,
+                //         lets) {
+                //         if (dataSrc == $(lets).attr('src')) {
+                //             return
+                //         }
+                //         arrayGambar.push(inz);
+                //     });
+                //     $('div#gambar-lain-modal').find('img').each(function (ind, el) {
+                //         $(el).attr('src', $(dataImgLain[arrayGambar[ind]]).attr('src'))
+                //     });
+                // });
+                // $('div#gambar-lain-modal').find('img').on('click', function () {
+                //     const srcDataIni = $(this).attr('src');
+                //     const srcDataUtama = $($('#image-modal').find('img.foto-utama')).attr('src')
+                //     $(this).attr('src', srcDataUtama);
+                //     $($('#image-modal').find('img.foto-utama')).attr('src', srcDataIni)
+                // });
 
             </script>
 
