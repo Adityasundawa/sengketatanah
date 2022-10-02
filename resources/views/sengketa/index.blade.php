@@ -11761,6 +11761,15 @@
                                         <div class="carousel-item active">
                                             <img src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam-2" alt="...">
                                         </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam-2" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam-2" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam-2" alt="...">
+                                        </div>
                                     </div>
 
                                     <div class="carousel-indicators custom scroll-simple">
