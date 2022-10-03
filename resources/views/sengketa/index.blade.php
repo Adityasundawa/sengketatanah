@@ -2242,7 +2242,7 @@
                                                             <td>Nilai Jaminan</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp;Rp.10.000.000</td>
+                                                            <td>&nbsp;Rp.900.000.000</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
@@ -2487,7 +2487,7 @@
                                                             <td>Nilai Jaminan</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp;Rp.10.000.000</td>
+                                                            <td>&nbsp;Rp.900.000.000</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
@@ -2726,7 +2726,7 @@
                                                             <td>Nilai Jaminan</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp;Rp.10.000.000</td>
+                                                            <td>&nbsp;Rp.900.000.000</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
@@ -2962,7 +2962,7 @@
                                                             <td>Nilai Jaminan</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp;Rp.10.000.000</td>
+                                                            <td>&nbsp;Rp.900.000.000</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
@@ -3218,7 +3218,7 @@
                                                             <td>Nilai Jaminan</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp;Rp.10.000.000</td>
+                                                            <td>&nbsp;Rp.900.000.000</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
@@ -3463,7 +3463,7 @@
                                                             <td>Nilai Jaminan</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp;Rp.10.000.000</td>
+                                                            <td>&nbsp;Rp.900.000.000</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
@@ -3702,7 +3702,7 @@
                                                             <td>Nilai Jaminan</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp;Rp.10.000.000</td>
+                                                            <td>&nbsp;Rp.900.000.000</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
@@ -3938,7 +3938,7 @@
                                                             <td>Nilai Jaminan</td>
                                                             <td></td>
                                                             <td>:</td>
-                                                            <td>&nbsp;Rp.10.000.000</td>
+                                                            <td>&nbsp;Rp.900.000.000</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
