@@ -563,7 +563,7 @@
         }
 
         .jumbotron-bg-user {
-            height: 300px;
+            height: 200px;
         }
 
         .img-utama {
@@ -583,7 +583,9 @@
 
         }
     </style>
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js" integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s=" crossorigin=""></script>
 </head>
 
 <body>
@@ -591,8 +593,7 @@
 
     @include('layouts.template-public.header')
     <div class="mt-2 p-5 bg-light text-dark rounded jumbotron-bg-user">
-        <h1 class="desktop">Jumbotron Example</h1>
-        <p class="desktop">Lorem ipsum...</p>
+
     </div>
     <div class="container p-2">
         <div class="row justify-content-center">
@@ -601,16 +602,24 @@
                     <tr>
                         <td rowspan="2" class="text-end ">
 
-                            <img src="https://id2-cdn.pgimgs.com/agent/14340558/APHO.123143928.V300.jpg" class="rounded-circle img-utama">
+                            <img src="{{$req->img}}" class="rounded-circle img-utama">
                         </td>
                         <td>
                             <h1 class="ms-3 mb-1" style="margin-top:-30px">
-                                Joseph Joestar
+                                {{$req->name}}
                             </h1>
 
-                            <h5 class="ms-3" style="margin-top:-30px;display:inline">
-                                Tukang Ukur
+                            <h5 class="ms-3 text-danger" style="margin-top:-30px;display:inline">
+                                {{$req->jenis_petugas}}
                             </h5>
+                            </span class="ms-3"> | <span class="ms-3"> +628XXXXXXXX </span>
+                            <br>
+                            <span class="ms-3">
+                                user21xxx@email.com
+                            </span>
+                            <p class="ms-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, tempore.
+                            </p>
                         </td>
                         <td>
                             <div class="float-end">
@@ -640,13 +649,21 @@
                     </tr>
                 </table>
                 <div class="mobile">
-                    <img src="https://id2-cdn.pgimgs.com/agent/14340558/APHO.123143928.V300.jpg" style="margin-top:-60px;width:100px;height:100px;object-fit:cover" class="ms-2 rounded-circle">
+                    <img src="{{$req->img}}" style="margin-top:-60px;width:100px;height:100px;object-fit:cover" class="ms-2 rounded-circle">
                     <h1 class="ms-2 mb-1">
-                        Joseph Joestar
+                        {{$req->name}}
                     </h1>
 
                     <p class="ms-2" style="display:inline">
-                        Tukang Ukur
+                        #{{$req->jenis_petugas}}
+                        </span> | <span> +628XXXXXXXX </span>
+                        <br>
+                        <span>
+                            user21xxx@email.com
+                        </span>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, tempore.
                     </p>
                     <p class="ms-2">
                         <i class="fa me-3 fa-facebook"></i>
@@ -658,6 +675,79 @@
             </div>
         </div>
     </div>
+
+    @include('sengketa.detail_data_diri')
+
+
+    <div class="container">
+
+        <div class="row justify-content-center mb-2">
+            <div class="col-lg-12 mt-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="display-5" style="font-size:30px">
+                            Hubungi {{$req->name}}
+                        </h3>
+                        <div class="card card-body border-0 rounded-1 p-5" style="background-color:#F2F2F2">
+                            <div class="row">
+                                <div class="col-lg-4 text-center">
+                                    <img src="{{$req->img}}" alt="" srcset="" class="rounded-circle img-thumbnail" style="width:150px;height:auto;object-fit:cover">
+                                    <br>
+                                    <b>
+                                        {{$req->name}}
+                                    </b><br>
+                                    <span class="text-danger">
+                                        #{{$req->jenis_petugas}}
+                                    </span> | <span> +628XXXXXXXX </span>
+                                    <br>
+                                    <span>
+                                        user21xxx@email.com
+                                    </span>
+
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, tempore.
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <form action="{{url('')}}/email-subjek">
+                                        @csrf
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">Nama</label>
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Masukan Nama Anda" value="{{Auth::check() == false ? '':Auth::user()->name}}" {{Auth::check() == false ? '':"disabled"}}>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="Alamat" class="form-label">Alamat</label>
+                                            <input type="text" class="form-control" name="alamat" id="Alamat" placeholder="Masukan Alamat Anda" value="{{Auth::check() == false ? '':Auth::user()->address}}" {{Auth::check() == false ? '':"disabled"}}>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="no_hp" class="form-label">Nomor HP</label>
+                                            <input type="number" class="form-control" name="no_hp" id="no_hp" placeholder="Masukan Nomor HP Anda" value="{{Auth::check() == false ? '':Auth::user()->phone}}" {{Auth::check() == false ? '':"disabled"}}>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Masukan Email Anda" value="{{Auth::check() == false ? '':Auth::user()->email}}" {{Auth::check() == false ? '':"disabled"}}>
+                                            <div id="emailHelp" class="form-text">Email yang anda masukan harus terdaftar di Website ini terlebih dahulu</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="subjek" class="form-label">subjek</label>
+                                            <textarea class="form-control" name="subjek" id="subjek" aria-describedby="subjekHelp" placeholder="Masukan subjek Anda" value="" cols="30" rows="10"></textarea>
+                                        </div>
+                                        <small class="text-danger">**Belum punya akun? daftar <a href="{{url('')}}/register-jual-beli-lahan" class="text-primary text-decoration-none">disini</a></small>
+                                        <br>
+                                        <button type="submit" class="btn btn-success mt-2">Hubungi</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
 
 
     <div class="row justify-content-center mb-3 mt-4 text-center g-0">

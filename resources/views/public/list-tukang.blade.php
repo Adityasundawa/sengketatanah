@@ -583,12 +583,10 @@
                                                                 Lorem, ipsum dolor sit amet consectetur adipisicing.
                                                             </small>
                                                         </td>
-
                                                     </tr>
                                                     <tr>
                                                         <td></td>
                                                     </tr>
-
                                                 </table>
                                             </div>
                                             <div class="col-sm">
