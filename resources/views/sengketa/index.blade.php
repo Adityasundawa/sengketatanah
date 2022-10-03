@@ -12240,6 +12240,11 @@
                                     <div class="container">
 
                                         <style>
+                                            .image-kunam-2 {
+                                                max-height: 520px;
+                                                object-fit: cover
+                                            }
+
                                             .carousel-indicators.custom {
                                                 position: relative;
                                                 margin-bottom: 0;
@@ -12345,16 +12350,16 @@
 
                                             <div class="carousel-indicators custom scroll-simple">
                                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-                                                    <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100" alt="...">
+                                                    <img src="{{asset('')}}images/lahan1.jpeg" class="d-block w-100 image-kunam-2" alt="...">
                                                 </button>
                                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
-                                                    <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100" alt="...">
+                                                    <img src="{{asset('')}}images/lahan2.jpeg" class="d-block w-100 image-kunam-2" alt="...">
                                                 </button>
                                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
-                                                    <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100" alt="...">
+                                                    <img src="{{asset('')}}images/lahan3.jpeg" class="d-block w-100 image-kunam-2" alt="...">
                                                 </button>
                                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">
-                                                    <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100" alt="...">
+                                                    <img src="{{asset('')}}images/lahan4.jpeg" class="d-block w-100 image-kunam-2" alt="...">
                                                 </button>
                                             </div>
 
