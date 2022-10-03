@@ -5481,7 +5481,7 @@
                                 </td>
                                 <td>
                                     <h5 color="text-dark" style="margin-bottom: 0px !important">
-                                        Bid Lahan
+                                        Bidding Lahan
                                     </h5>
                                 </td>
                                 <td class="text-end" rowspan="2">
