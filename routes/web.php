@@ -54,6 +54,9 @@ Route::get('kerjasama-lahan', [PublicController::class, 'kerjasamaLahan'])->name
 Route::get('podcast-sengketa', [PublicController::class, 'podcastSengketa'])->name('podcastSengketa');
 Route::get('jual-beli-lahan', [PublicController::class, 'jualBeliLahan'])->name('jualBeliLahan');
 Route::get('lelang-lahan', [PublicController::class, 'lelangLahan'])->name('lelangLahan');
+Route::get('bid-lahan', [PublicController::class, 'bidLahan'])->name('bidLahan');
+Route::get('bid-rumah', [PublicController::class, 'bidRumah'])->name('bidRumah');
+Route::get('jasa-appraisal', [PublicController::class, 'jasaAppraisal'])->name('jasaAppraisal');
 Route::get('jasa-tukang-ukur', [PublicController::class, 'jasaTukangUkur'])->name('jasaTukangUkur');
 Route::get('jasa-notaris', [PublicController::class, 'jasaNotaris'])->name('jasaNotaris');
 Route::get('jasa-ppat', [PublicController::class, 'jasaPPAT'])->name('jasaPPAT');
@@ -61,6 +64,7 @@ Route::get('jasa-pengacara', [PublicController::class, 'jasaPengacara'])->name('
 Route::get('join', [PublicController::class, 'joinSengketa'])->name('joinSengketa');
 Route::get('list-tukang', [PublicController::class, 'listTukang'])->name('listTukang');
 Route::get('detail-petugas', [PublicController::class, 'detailTukang'])->name('detailTukang');
+Route::get('detail-data-diri', [PublicController::class, 'detailDataDiri'])->name('dataDetailDiri');
 
 
 Route::get('register-jual-beli-lahan', [PublicController::class, 'registerJualBeli'])->name('registerJualBeli');
