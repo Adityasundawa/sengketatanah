@@ -5567,7 +5567,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Limit :</b>
+                                                            <b>Nilai Kebutuhan :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -5594,10 +5594,17 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="text-start">
-                                                            <h5>
+                                                            <h5 class="mb-0">
                                                                 <b class="text-primary">
                                                                     Rp.450.000.000
                                                                 </b>
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="fw-bold">
+                                                                Fee : 30%
                                                             </h5>
                                                         </td>
                                                     </tr>
@@ -5651,32 +5658,6 @@
                                                             <td>&nbsp;Open Bidding</td>
                                                         </tr>
 
-                                                        <tr>
-                                                            <td>Jaminan</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;50.000.000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Batas Akhir</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;12 September 2022</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Pelaksanaan</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;28 September 2022</td>
-                                                        </tr>
-
-
-                                                        <tr>
-                                                            <td>Penyelenggara</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Sengketatanah.id</td>
-                                                        </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
                                                             <td></td>
@@ -5829,7 +5810,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Limit :</b>
+                                                            <b>Nilai Kebutuhan :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -5856,10 +5837,17 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="text-start">
-                                                            <h5>
+                                                            <h5 class="mb-0">
                                                                 <b class="text-primary">
                                                                     Rp.500.000.000
                                                                 </b>
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="fw-bold">
+                                                                Fee : 30%
                                                             </h5>
                                                         </td>
                                                     </tr>
@@ -5910,33 +5898,6 @@
                                                             <td></td>
                                                             <td>:</td>
                                                             <td>&nbsp;Open Bidding</td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Jaminan</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;73.000.000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Batas Akhir</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;10 September 2022</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Pelaksanaan</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;9 September 2022</td>
-                                                        </tr>
-
-
-                                                        <tr>
-                                                            <td>Penyelenggara</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Sengketatanah.id</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
@@ -6090,7 +6051,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Limit :</b>
+                                                            <b>Nilai Kebutuhan :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -6117,10 +6078,17 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="text-start">
-                                                            <h5>
+                                                            <h5 class="mb-0">
                                                                 <b class="text-primary">
                                                                     Rp.100.000.000
                                                                 </b>
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="fw-bold">
+                                                                Fee : 30%
                                                             </h5>
                                                         </td>
                                                     </tr>
@@ -6170,33 +6138,6 @@
                                                             <td></td>
                                                             <td>:</td>
                                                             <td>&nbsp;Open Bidding</td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Jaminan</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;50.000.000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Batas Akhir</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;21 Agustus 2022</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Pelaksanaan</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;22 Agustus 2022</td>
-                                                        </tr>
-
-
-                                                        <tr>
-                                                            <td>Penyelenggara</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Sengketatanah.id</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
@@ -6349,7 +6290,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Limit :</b>
+                                                            <b>Nilai Kebutuhan :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -6376,10 +6317,17 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="text-start">
-                                                            <h5>
+                                                            <h5 class="mb-0">
                                                                 <b class="text-primary">
                                                                     Rp.200.000.000
                                                                 </b>
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="fw-bold">
+                                                                Fee : 30%
                                                             </h5>
                                                         </td>
                                                     </tr>
@@ -6429,33 +6377,6 @@
                                                             <td></td>
                                                             <td>:</td>
                                                             <td>&nbsp;Open Bidding</td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Jaminan</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;50.000.000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Batas Akhir</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;12 September 2022</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Pelaksanaan</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;28 September 2022</td>
-                                                        </tr>
-
-
-                                                        <tr>
-                                                            <td>Penyelenggara</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Sengketatanah.id</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
