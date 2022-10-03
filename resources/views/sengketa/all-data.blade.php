@@ -1804,6 +1804,7 @@
 
                         </div>
                     </div>
+                    
                 </div>
 
                 <div class="card border-0">
@@ -2329,6 +2330,7 @@
                     </div>
                 </div>
 
+                {{-- Lawyer --}}
                 <div class="card mb-3 mt-3 border-0 ">
                     <div class="card-body">
                         <div class="mt-2 ">
@@ -2419,6 +2421,7 @@
                         <a class="btn btn-sm btn-success" href="{{url('')}}/register">Daftar Sekarang</a>
                     </div>
                 </div>
+
                 <div class="col-6">
                     <div class="ms-1 d-grid gap-2">
                         <a class="btn btn-sm btn-danger" data-bs-toggle="modal"
@@ -2427,6 +2430,3384 @@
                 </div>
 
 
+            </div>
+
+            <div class="col-lg-12">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <div class="row justify-content-center">
+                            <form action="">
+                                <div class="row mb-2">
+                                    <div class="col">
+                                        <div class="row fw-bold pe-1 ps-1">
+                                            <table style="width:100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td rowspan="2" style="width: 40px">
+                                                            <img src="http://sengketatanah.id/uploads/sengketa-logo_pas.png"
+                                                                style="width:30px">
+                                                        </td>
+                                                        <td>
+                                                            <h3 color="text-primary" style="margin-bottom: 0px !important">
+                                                                Bid Sengketa
+                                                            </h3>
+                                                        </td>
+                                                        <td class="text-end" rowspan="2">
+                                                            <h5 class="text-primary fw-bold" style="text-decoration: none">
+                                                                1.430
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+    
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <hr>
+    
+                            <div class="col-lg-12 mt-2 show">
+                                <div class="row">
+                                    <?php $counter = 1 ?>
+                                    @foreach($bid_sengketa as $bs)
+                                    
+                                    @if($bs['id'] > 6)
+                                    @continue
+                                    @endif
+                                    <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
+                                        <div class="card mb-2">
+                                            <div class="card-header text-white px-3 py-1" style="
+                                                background: #8f8f8f">
+                                                <div class="row">
+    
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Bid {{$bs['kode']}} <img
+                                                                src="{{url('/')}}/uploads/biru_centang.png" alt=""
+                                                                class="mb-1" style="height:20px"></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--<div class="card-header bg-white">-->
+                                            <!--    <div class="row">-->
+                                            <!--        <div class="col-lg-12">-->
+                                            <!--            <span class="badge bg-secondary float-end"><a-->
+                                            <!--                    href="{{url('')}}/login?title=Bid Sponsor" class="text-white"-->
+                                            <!--                    style="text-decoration:none">Lihat Berkas</a></span>-->
+                                            <!--            <span class="float-end">&nbsp;</span>-->
+                                            <!--            <form action="{{url('/')}}/bid-sengketa/podcast"class="form-sengketa{{$bs['id']}}"method="get">-->
+                                            <!--                <input type="hidden" name="owner"value="{{$bs['owner']}}">-->
+                                            <!--                <input type="hidden" name="objek"value="{{$bs['objek']}}">-->
+                                            <!--                <input type="hidden" name="luas"value="{{$bs['luas']}}">-->
+                                            <!--                <input type="hidden" name="lokasi"value="{{$bs['lokasi']}}">-->
+                                            <!--                <input type="hidden" name="komentar"value="">-->
+                                            <!--                <input type="hidden" name="link_yt"value="">-->
+                                            <!--                <input type="hidden" name="form"value="sponsor">-->
+                                            <!--            </form>-->
+                                            <!--            <span class="badge bg-dark float-end" onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()">Lihat Podcast Sengketa</span>-->
+                                            <!--            <span class="float-end">&nbsp;</span>-->
+    
+                                            <!--        </div>-->
+                                            <!--    </div>-->
+                                            <!--</div>-->
+    
+    
+    
+    
+                                            <div class="card-body">
+                                                <!-- <div class="img mb-2">
+                                                        <img src="" style="width: 100%; max-height:390px;"
+                                                            alt="">
+                                                    </div> -->
+    
+                                                @if($bs['id'] < 5) <div class="ribbon-pop"><i
+                                                        class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            @else
+                                            @endif
+    
+    
+                                            <div class="desktop-2">
+                                                <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
+                                                    data-bs-ride="carousel">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                                            aria-label="Slide 1"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    </div>
+    
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="{{$bs['img']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                        data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                        data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="mobile">
+                                                <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
+                                                    data-bs-ride="carousel">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                                            aria-label="Slide 1"></button>
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    </div>
+    
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="{{$bs['img']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5"
+                                                    style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
+                                            <table class="mt-2 mb-2 w-100">
+                                                <tr>
+                                                    <td>
+                                                        <b>Nilai Kebutuhan :</b>
+                                                    </td>
+    
+                                                    <td class="align-items-center" rowspan="2">
+    
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-{{$bs['id']}}">
+                                                                    <h5 class="mb-0 text-fav-disable"
+                                                                        id="fav-ch-{{$bs['id']}}">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-primary text-white mb-0"
+                                                                    data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-<?= $bs['id'] ?>").click(function () {
+                                                                $("#fav-ch-<?= $bs['id'] ?>").toggleClass(
+                                                                    'fav-icon');
+                                                            });
+    
+                                                        </script>
+    
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <h5 class="mb-0">
+                                                            <b class="text-primary">
+                                                                {{$bs['dana']}}
+                                                            </b>
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h5 class="fw-bold">
+                                                            Fee : 30%
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                            </table>
+    
+                                            <hr>
+    
+                                            <table class="mt-3">
+                                                <tr>
+                                                    <td>Korban</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['owner']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Objek Sengketa</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['objek']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lokasi</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['lokasi']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Luas</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['luas']}}</td>
+                                                </tr>
+    
+                                                <tr>
+                                                    <td>Jaminan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['jaminan']}}</td>
+    
+                                                </tr>
+    
+                                                <tr>
+                                                    <td>Jumlah Bid</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['jumlah_bid']}}</td>
+                                                </tr>
+                                            </table>
+                                            <hr>
+    
+    
+                                            <div class="row g-0">
+                                                <div class="col text-center">
+    
+                                                    <a href="#" class=" mx-auto btn btn-danger rounded-5"
+                                                        data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                        style="text-decoration:none">
+                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                    </a>
+    
+                                                    <!-- Modal -->
+                                                    <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header p-0">
+                                                                    <h1 class="modal-title mx-auto text-danger display-1">
+                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                    </h1>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    Anda harus masuk sebagai sponsor sebelum melihat
+                                                                    berkas.
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary me-auto"
+                                                                        data-bs-dismiss="modal">Close</button>
+                                                                    <a type="button" class="btn btn-success"
+                                                                        href="https://server.sengketatanah.id/login">Login</a>
+                                                                    <a type="button" class="btn btn-danger"
+                                                                        href="https://server.sengketatanah.id/login">Register</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+                                                <div class="col text-center">
+                                                    <span
+                                                        onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
+                                                        class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                            class="fa-solid fa-play text-danger"></i> Lihat
+                                                        Podcast</span>
+                                                </div>
+                                            </div>
+    
+                                            <form action="{{url('/')}}/bid-sengketa/podcast"
+                                                class="form-sengketa{{$bs['id']}}" method="get">
+                                                <input type="hidden" name="owner" value="{{$bs['owner']}}">
+                                                <input type="hidden" name="objek" value="{{$bs['objek']}}">
+                                                <input type="hidden" name="luas" value="{{$bs['luas']}}">
+                                                <input type="hidden" name="lokasi" value="{{$bs['lokasi']}}">
+                                                <input type="hidden" name="komentar" value="">
+                                                <input type="hidden" name="link_yt" value="{{$bs['link_yt']}}">
+                                                <input type="hidden" name="form" value="sponsor">
+                                            </form>
+    
+    
+                                            <hr>
+                                            <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                <div class="col-4">
+    
+                                                    <div class="d-grid gap-2 ">
+    
+                                                        <!--<a href="{{url('/')}}/login?title=Bid Sponsor"-->
+                                                        <!--    class="btn mt-3 rounded-5 text-white" style="-->
+                                                        <!--    border: 0px;-->
+                                                        <!--    background: rgb(223,189,105);-->
+                                                        <!--    background: linear-gradient(90deg, rgba(223,189,105,1) 0%, rgba(146,111,52,1) 100%);-->
+                                                        <!--    height: 45px" -->
+                                                        <!--    type="button"><i class="fa-solid fa-gavel"></i> Bid Sponsor</a>-->
+                                                        <!-- Button trigger modal -->
+                                                        <!-- <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                BID
+                                                            </button> -->
+    
+                                                        <!-- Modal -->
+                                                        <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1
+                                                                            class="modal-title mx-auto text-danger display-1">
+                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus masuk sebagai sponsor sebelum
+                                                                        melakukan bid.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button"
+                                                                            class="btn btn-secondary me-auto"
+                                                                            data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success"
+                                                                            href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger"
+                                                                            href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+    
+    
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @if ($counter % 4 == 0)
+                                <!--<div class="col-md-12 mb-3">-->
+                                <!--    TEST-->
+                                <!--</div>-->
+                                @endif
+                                <?php $counter++ ?>
+                                @endforeach
+                            </div>
+    
+                        </div>
+    
+                        <div class="col-lg-12" id="dataPemerintah" style="display:none">
+                            <div class="row">
+                                @foreach($bid_pemerintah as $bpm)
+                                <div class="col-lg-4 mt-2 mb-2">
+                                    <div class="card">
+                                        <div class="card-header text-white px-3 py-1  bg-secondary">
+                                            <div class="row">
+                                                <div class="col-lg-12 text-center">
+                                                    <h5 class="mb-0 text-center">Data Terusan</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+    
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="podcastPemerintah" tabindex="-1"
+                                                aria-labelledby="podcastLawyer" aria-hidden="true">
+                                                <div class="modal-dialog modal-xl">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+    
+                                                            <div class="row g-0">
+                                                                <div class="col-12">
+                                                                    <h5 id="exampleModalLabel">Podcast Sengketa Tanah
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <small class="text-dark">
+                                                                        Hasil Wawancara Korban
+                                                                    </small>
+                                                                </div>
+                                                            </div>
+    
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+    
+    
+                                                            <div class="row justify-content-center">
+                                                                <div class="col-lg-6">
+    
+                                                                    <div class="card bg-dark rounded-0" width="100%"
+                                                                        style="height:200px">
+                                                                        <div class="card-body center">
+                                                                            <h3
+                                                                                class="text-white text-uppercase text-center">
+                                                                                Belum ada Video
+                                                                            </h3>
+                                                                        </div>
+                                                                    </div>
+    
+                                                                    <table class="table">
+                                                                        <tr>
+                                                                            <td> Korban</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;Rival Santoso</td>
+                                                                        </tr>
+    
+                                                                        <tr>
+                                                                            <td>Jenis Sengketa</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;Sengketa Pertanahan</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Lokasi</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;Ngawi, Jawa Timur</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Luas</td>
+    
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;12.3 Ha</td>
+                                                                        </tr>
+    
+                                                                    </table>
+                                                                    <div class="d-grid gap-2">
+                                                                        <button class="alert alert-warning mt-2"
+                                                                            type="button">Keterangan: Data sengketa
+                                                                            tanah
+                                                                            ini telah diterima oleh Platform
+                                                                            Sengketa Tanah dan akan diteruskan pada
+                                                                            instansi
+                                                                            terkait. </button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="row">
+                                                                        <div class="d-flex flex-column col-md-12">
+    
+                                                                            <div class="coment-bottom bg-white p-1">
+                                                                                <div
+                                                                                    class="d-flex flex-row add-comment-section mt-4 mb-4">
+                                                                                    <img class="img-fluid img-responsive rounded-circle me-2"
+                                                                                        src="https://i.imgur.com/qdiP4DB.jpg"
+                                                                                        width="38">
+                                                                                    <input type="text"
+                                                                                        class="form-control me-3 rounded-0"
+                                                                                        placeholder="Tambah Komentar">
+                                                                                    <button
+                                                                                        class="btn btn-primary rounded-0"
+                                                                                        type="button">Komentar</button>
+                                                                                </div>
+                                                                                <hr>
+                                                                                <div class="center">
+                                                                                    <h3
+                                                                                        class="text-dark text-uppercase text-center">
+                                                                                        Belum ada Komentar
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+    
+                                                            </div>
+    
+    
+                                                            <hr>
+                                                            <div class="row" style="margin-top:-20px">
+                                                                <div class="col-12 p-2">
+    
+                                                                    <span class="fa-stack fa-lg float-end">
+                                                                        <i class="fa fa-circle fa-stack-2x "
+                                                                            style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                                                                        <i
+                                                                            class="fa-solid fa-share fa-stack-1x fa-inverse"></i>
+    
+                                                                    </span> <span class="float-start mt-2">Bagikan Video
+                                                                        ini</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+    
+    
+    
+    
+    
+                                            <table>
+                                                <tr>
+                                                    <td>Korban</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['owner']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Objek Sengketa</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['objek']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Luas Objek</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['luas']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lokasi</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['lokasi']}}</td>
+                                                </tr>
+                                                <!--<tr>-->
+                                                <!--    <td>Status Data</td>-->
+                                                <!--    <td></td>-->
+                                                <!--    <td>:</td>-->
+                                                <!--    <td></td>-->
+                                                <!--</tr>-->
+    
+    
+    
+                                            </table>
+    
+    
+                                            <div class="row justify-content-center no-gutters">
+                                                <div class="col-12">
+                                                    <div class="d-grid gap-2">
+                                                        <button class="alert alert-warning mt-2" type="button">Keterangan:
+                                                            Data sengketa tanah ini telah diterima oleh Platform
+                                                            Sengketa Tanah dan akan diteruskan pada instansi terkait.
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+    
+    
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+    
+    
+    
+    
+                    </div>
+    
+                </div>
+            </div>
+
+            {{-- Appraisal --}}
+            <div class="col-lg-12">
+                <div class="card mb-3 mt-3 border-0 ">
+                    <div class="card-body">
+                        <div class="mt-2 ">
+            
+                            <div class="row justify-content-center align-items-center">
+            
+            
+                                <div class="col-1 arrow-desktop text-center">
+                                    <button id="left-appraisal" class="btn rounded-5 text-white bg-secondary"
+                                        style="background-color: #61481C">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </button>
+                                </div>
+            
+                                <div class="col-lg-10">
+                                    <div class="row">
+                                        <div class="col mobile-scroll" id="orang-appraisal"
+                                            style="white-space:nowrap;flex-wrap:nowarp;display:flex;">
+            
+                                            <?php
+                                                $name = [
+                                                    "Budi K.",
+                                                    "Rudi H.",
+            
+                                                    "Ustman A.",
+                                                    "Joko L.",
+            
+                                                    "James Tate",
+                                                    "Robert K.",
+                                                    "Hadi Ismail", 'Abdullah', 'Nugraha D.', 'Ade Syarief', "Adhi Utomo", 'Leman wan', 'Noto Adi', 'Agus Susan'
+                                                ];
+                                                ?>
+                                            <div class="container-gambar text-center ms-1"
+                                                style='display: inline-block;flex: 0 0 auto'>
+                                                <img src="data:image/png;base64,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"
+                                                    alt="" srcset="" class="rounded-5 img-thumbnail"
+                                                    style="width:70px;height:70px;object-fit:cover;background:#61481C">
+                                                <br>
+            
+                                                Appraisal
+            
+                                            </div>
+                                            @for($i=13;$i> 0;$i--)
+                                            <div class="container-gambar text-center ms-1"
+                                                style='display: inline-block;flex: 0 0 auto'>
+                                                <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt=""
+                                                    srcset="" class="rounded-4 img-thumbnail "
+                                                    style="width:70px;height:70px;object-fit:cover;"> <br>
+                                                {{$name[$i]}}
+                                            </div>
+                                            @endfor
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col-1 arrow-desktop text-center">
+                                    <button id="right-appraisal" class="btn rounded-5 text-white bg-secondary"
+                                        style="background-color: #61481C">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+            
+                                <script>
+                                    $('#right-appraisal').click(function () {
+                                        event.preventDefault();
+                                        $('#orang-appraisal').animate({
+                                            scrollLeft: "+=300px"
+                                        }, "slow");
+                                    });
+            
+                                    $('#left-appraisal').click(function () {
+                                        event.preventDefault();
+                                        $('#orang-appraisal').animate({
+                                            scrollLeft: "-=300px"
+                                        }, "slow");
+                                    });
+            
+                                </script>
+                            </div>
+            
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <div class="row justify-content-center">
+    
+                            <div class="col-lg-12 mt-2 show">
+                                <div class="row">
+                                    <?php $counter = 1 ?>
+                                    @foreach($bid_sengketa as $bs)
+                                    
+                                    @if($bs['id'] > 6)
+                                    @continue
+                                    @endif
+                                    <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
+                                        <div class="card mb-2">
+                                            <div class="card-header text-white px-3 py-1" style="
+                                                background: #8f8f8f">
+                                                <div class="row">
+    
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Bid {{$bs['kode']}} <img
+                                                                src="{{url('/')}}/uploads/biru_centang.png" alt=""
+                                                                class="mb-1" style="height:20px"></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--<div class="card-header bg-white">-->
+                                            <!--    <div class="row">-->
+                                            <!--        <div class="col-lg-12">-->
+                                            <!--            <span class="badge bg-secondary float-end"><a-->
+                                            <!--                    href="{{url('')}}/login?title=Bid Sponsor" class="text-white"-->
+                                            <!--                    style="text-decoration:none">Lihat Berkas</a></span>-->
+                                            <!--            <span class="float-end">&nbsp;</span>-->
+                                            <!--            <form action="{{url('/')}}/bid-sengketa/podcast"class="form-sengketa{{$bs['id']}}"method="get">-->
+                                            <!--                <input type="hidden" name="owner"value="{{$bs['owner']}}">-->
+                                            <!--                <input type="hidden" name="objek"value="{{$bs['objek']}}">-->
+                                            <!--                <input type="hidden" name="luas"value="{{$bs['luas']}}">-->
+                                            <!--                <input type="hidden" name="lokasi"value="{{$bs['lokasi']}}">-->
+                                            <!--                <input type="hidden" name="komentar"value="">-->
+                                            <!--                <input type="hidden" name="link_yt"value="">-->
+                                            <!--                <input type="hidden" name="form"value="sponsor">-->
+                                            <!--            </form>-->
+                                            <!--            <span class="badge bg-dark float-end" onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()">Lihat Podcast Sengketa</span>-->
+                                            <!--            <span class="float-end">&nbsp;</span>-->
+    
+                                            <!--        </div>-->
+                                            <!--    </div>-->
+                                            <!--</div>-->
+    
+    
+    
+    
+                                            <div class="card-body">
+                                                <!-- <div class="img mb-2">
+                                                        <img src="" style="width: 100%; max-height:390px;"
+                                                            alt="">
+                                                    </div> -->
+    
+                                                @if($bs['id'] < 5) <div class="ribbon-pop"><i
+                                                        class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            @else
+                                            @endif
+    
+    
+                                            <div class="desktop-2">
+                                                <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
+                                                    data-bs-ride="carousel">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                                            aria-label="Slide 1"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    </div>
+    
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="{{$bs['img']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                        data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                        data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="mobile">
+                                                <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
+                                                    data-bs-ride="carousel">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                                            aria-label="Slide 1"></button>
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    </div>
+    
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="{{$bs['img']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5"
+                                                    style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
+                                            <table class="mt-2 mb-2 w-100">
+                                                <tr>
+                                                    <td>
+                                                        <b>Nilai Kebutuhan :</b>
+                                                    </td>
+    
+                                                    <td class="align-items-center" rowspan="2">
+    
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-{{$bs['id']}}">
+                                                                    <h5 class="mb-0 text-fav-disable"
+                                                                        id="fav-ch-{{$bs['id']}}">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-primary text-white mb-0"
+                                                                    data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-<?= $bs['id'] ?>").click(function () {
+                                                                $("#fav-ch-<?= $bs['id'] ?>").toggleClass(
+                                                                    'fav-icon');
+                                                            });
+    
+                                                        </script>
+    
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <h5 class="mb-0">
+                                                            <b class="text-primary">
+                                                                {{$bs['dana']}}
+                                                            </b>
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h5 class="fw-bold">
+                                                            Fee : 30%
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                            </table>
+    
+                                            <hr>
+    
+                                            <table class="mt-3">
+                                                <tr>
+                                                    <td>Korban</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['owner']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Objek Sengketa</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['objek']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lokasi</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['lokasi']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Luas</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['luas']}}</td>
+                                                </tr>
+    
+                                                <tr>
+                                                    <td>Jaminan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['jaminan']}}</td>
+    
+                                                </tr>
+    
+                                                <tr>
+                                                    <td>Jumlah Bid</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['jumlah_bid']}}</td>
+                                                </tr>
+                                            </table>
+                                            <hr>
+    
+    
+                                            <div class="row g-0">
+                                                <div class="col text-center">
+    
+                                                    <a href="#" class=" mx-auto btn btn-danger rounded-5"
+                                                        data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                        style="text-decoration:none">
+                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                    </a>
+    
+                                                    <!-- Modal -->
+                                                    <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header p-0">
+                                                                    <h1 class="modal-title mx-auto text-danger display-1">
+                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                    </h1>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    Anda harus masuk sebagai sponsor sebelum melihat
+                                                                    berkas.
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary me-auto"
+                                                                        data-bs-dismiss="modal">Close</button>
+                                                                    <a type="button" class="btn btn-success"
+                                                                        href="https://server.sengketatanah.id/login">Login</a>
+                                                                    <a type="button" class="btn btn-danger"
+                                                                        href="https://server.sengketatanah.id/login">Register</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+                                                <div class="col text-center">
+                                                    <span
+                                                        onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
+                                                        class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                            class="fa-solid fa-play text-danger"></i> Lihat
+                                                        Podcast</span>
+                                                </div>
+                                            </div>
+    
+                                            <form action="{{url('/')}}/bid-sengketa/podcast"
+                                                class="form-sengketa{{$bs['id']}}" method="get">
+                                                <input type="hidden" name="owner" value="{{$bs['owner']}}">
+                                                <input type="hidden" name="objek" value="{{$bs['objek']}}">
+                                                <input type="hidden" name="luas" value="{{$bs['luas']}}">
+                                                <input type="hidden" name="lokasi" value="{{$bs['lokasi']}}">
+                                                <input type="hidden" name="komentar" value="">
+                                                <input type="hidden" name="link_yt" value="{{$bs['link_yt']}}">
+                                                <input type="hidden" name="form" value="sponsor">
+                                            </form>
+    
+    
+                                            <hr>
+                                            <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                <div class="col-4">
+    
+                                                    <div class="d-grid gap-2 ">
+    
+                                                        <!--<a href="{{url('/')}}/login?title=Bid Sponsor"-->
+                                                        <!--    class="btn mt-3 rounded-5 text-white" style="-->
+                                                        <!--    border: 0px;-->
+                                                        <!--    background: rgb(223,189,105);-->
+                                                        <!--    background: linear-gradient(90deg, rgba(223,189,105,1) 0%, rgba(146,111,52,1) 100%);-->
+                                                        <!--    height: 45px" -->
+                                                        <!--    type="button"><i class="fa-solid fa-gavel"></i> Bid Sponsor</a>-->
+                                                        <!-- Button trigger modal -->
+                                                        <!-- <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                BID
+                                                            </button> -->
+    
+                                                        <!-- Modal -->
+                                                        <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1
+                                                                            class="modal-title mx-auto text-danger display-1">
+                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus masuk sebagai sponsor sebelum
+                                                                        melakukan bid.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button"
+                                                                            class="btn btn-secondary me-auto"
+                                                                            data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success"
+                                                                            href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger"
+                                                                            href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+    
+    
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @if ($counter % 4 == 0)
+                                <!--<div class="col-md-12 mb-3">-->
+                                <!--    TEST-->
+                                <!--</div>-->
+                                @endif
+                                <?php $counter++ ?>
+                                @endforeach
+                            </div>
+    
+                        </div>
+    
+                        <div class="col-lg-12" id="dataPemerintah" style="display:none">
+                            <div class="row">
+                                @foreach($bid_pemerintah as $bpm)
+                                <div class="col-lg-4 mt-2 mb-2">
+                                    <div class="card">
+                                        <div class="card-header text-white px-3 py-1  bg-secondary">
+                                            <div class="row">
+                                                <div class="col-lg-12 text-center">
+                                                    <h5 class="mb-0 text-center">Data Terusan</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+    
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="podcastPemerintah" tabindex="-1"
+                                                aria-labelledby="podcastLawyer" aria-hidden="true">
+                                                <div class="modal-dialog modal-xl">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+    
+                                                            <div class="row g-0">
+                                                                <div class="col-12">
+                                                                    <h5 id="exampleModalLabel">Podcast Sengketa Tanah
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <small class="text-dark">
+                                                                        Hasil Wawancara Korban
+                                                                    </small>
+                                                                </div>
+                                                            </div>
+    
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+    
+    
+                                                            <div class="row justify-content-center">
+                                                                <div class="col-lg-6">
+    
+                                                                    <div class="card bg-dark rounded-0" width="100%"
+                                                                        style="height:200px">
+                                                                        <div class="card-body center">
+                                                                            <h3
+                                                                                class="text-white text-uppercase text-center">
+                                                                                Belum ada Video
+                                                                            </h3>
+                                                                        </div>
+                                                                    </div>
+    
+                                                                    <table class="table">
+                                                                        <tr>
+                                                                            <td> Korban</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;Rival Santoso</td>
+                                                                        </tr>
+    
+                                                                        <tr>
+                                                                            <td>Jenis Sengketa</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;Sengketa Pertanahan</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Lokasi</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;Ngawi, Jawa Timur</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Luas</td>
+    
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;12.3 Ha</td>
+                                                                        </tr>
+    
+                                                                    </table>
+                                                                    <div class="d-grid gap-2">
+                                                                        <button class="alert alert-warning mt-2"
+                                                                            type="button">Keterangan: Data sengketa
+                                                                            tanah
+                                                                            ini telah diterima oleh Platform
+                                                                            Sengketa Tanah dan akan diteruskan pada
+                                                                            instansi
+                                                                            terkait. </button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="row">
+                                                                        <div class="d-flex flex-column col-md-12">
+    
+                                                                            <div class="coment-bottom bg-white p-1">
+                                                                                <div
+                                                                                    class="d-flex flex-row add-comment-section mt-4 mb-4">
+                                                                                    <img class="img-fluid img-responsive rounded-circle me-2"
+                                                                                        src="https://i.imgur.com/qdiP4DB.jpg"
+                                                                                        width="38">
+                                                                                    <input type="text"
+                                                                                        class="form-control me-3 rounded-0"
+                                                                                        placeholder="Tambah Komentar">
+                                                                                    <button
+                                                                                        class="btn btn-primary rounded-0"
+                                                                                        type="button">Komentar</button>
+                                                                                </div>
+                                                                                <hr>
+                                                                                <div class="center">
+                                                                                    <h3
+                                                                                        class="text-dark text-uppercase text-center">
+                                                                                        Belum ada Komentar
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+    
+                                                            </div>
+    
+    
+                                                            <hr>
+                                                            <div class="row" style="margin-top:-20px">
+                                                                <div class="col-12 p-2">
+    
+                                                                    <span class="fa-stack fa-lg float-end">
+                                                                        <i class="fa fa-circle fa-stack-2x "
+                                                                            style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                                                                        <i
+                                                                            class="fa-solid fa-share fa-stack-1x fa-inverse"></i>
+    
+                                                                    </span> <span class="float-start mt-2">Bagikan Video
+                                                                        ini</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+    
+    
+    
+    
+    
+                                            <table>
+                                                <tr>
+                                                    <td>Korban</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['owner']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Objek Sengketa</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['objek']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Luas Objek</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['luas']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lokasi</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['lokasi']}}</td>
+                                                </tr>
+                                                <!--<tr>-->
+                                                <!--    <td>Status Data</td>-->
+                                                <!--    <td></td>-->
+                                                <!--    <td>:</td>-->
+                                                <!--    <td></td>-->
+                                                <!--</tr>-->
+    
+    
+    
+                                            </table>
+    
+    
+                                            <div class="row justify-content-center no-gutters">
+                                                <div class="col-12">
+                                                    <div class="d-grid gap-2">
+                                                        <button class="alert alert-warning mt-2" type="button">Keterangan:
+                                                            Data sengketa tanah ini telah diterima oleh Platform
+                                                            Sengketa Tanah dan akan diteruskan pada instansi terkait.
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+    
+    
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+    
+    
+    
+    
+                    </div>
+    
+                </div>
+            </div>
+
+            {{-- PPAT --}}
+            <div class="col-lg-12">
+                <div class="card mb-3 mt-3 border-0 ">
+                    <div class="card-body">
+                        <div class="mt-2 ">
+            
+                            <div class="row justify-content-center align-items-center">
+            
+            
+                                <div class="col-1 arrow-desktop text-center">
+                                    <button id="left-ppat" class="btn rounded-5 text-white bg-secondary"
+                                        style="background-color: #61481C">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </button>
+                                </div>
+            
+                                <div class="col-lg-10">
+                                    <div class="row">
+                                        <div class="col mobile-scroll" id="orang-ppat"
+                                            style="white-space:nowrap;flex-wrap:nowarp;display:flex;">
+            
+                                            <?php
+                                                $name = [
+                                                    "Budi K.",
+                                                    "Rudi H.",
+            
+                                                    "Ustman A.",
+                                                    "Joko L.",
+            
+                                                    "James Tate",
+                                                    "Robert K.",
+                                                    "Hadi Ismail", 'Abdullah', 'Nugraha D.', 'Ade Syarief', "Adhi Utomo", 'Leman wan', 'Noto Adi', 'Agus Susan'
+                                                ];
+                                                ?>
+                                            <div class="container-gambar text-center ms-1"
+                                                style='display: inline-block;flex: 0 0 auto'>
+                                                <img src="data:image/png;base64,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"
+                                                    alt="" srcset="" class="rounded-5 img-thumbnail"
+                                                    style="width:70px;height:70px;object-fit:cover;background:#61481C">
+                                                <br>
+            
+                                                PPAT
+            
+                                            </div>
+                                            @for($i=13;$i> 0;$i--)
+                                            <div class="container-gambar text-center ms-1"
+                                                style='display: inline-block;flex: 0 0 auto'>
+                                                <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt=""
+                                                    srcset="" class="rounded-4 img-thumbnail "
+                                                    style="width:70px;height:70px;object-fit:cover;"> <br>
+                                                {{$name[$i]}}
+                                            </div>
+                                            @endfor
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col-1 arrow-desktop text-center">
+                                    <button id="right-ppat" class="btn rounded-5 text-white bg-secondary"
+                                        style="background-color: #61481C">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+            
+                                <script>
+                                    $('#right-ppat').click(function () {
+                                        event.preventDefault();
+                                        $('#orang-ppat').animate({
+                                            scrollLeft: "+=300px"
+                                        }, "slow");
+                                    });
+            
+                                    $('#left-ppat').click(function () {
+                                        event.preventDefault();
+                                        $('#orang-ppat').animate({
+                                            scrollLeft: "-=300px"
+                                        }, "slow");
+                                    });
+            
+                                </script>
+                            </div>
+            
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <div class="row justify-content-center">
+    
+                            <div class="col-lg-12 mt-2 show">
+                                <div class="row">
+                                    <?php $counter = 1 ?>
+                                    @foreach($bid_sengketa as $bs)
+                                    
+                                    @if($bs['id'] > 6)
+                                    @continue
+                                    @endif
+                                    <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
+                                        <div class="card mb-2">
+                                            <div class="card-header text-white px-3 py-1" style="
+                                                background: #8f8f8f">
+                                                <div class="row">
+    
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Bid {{$bs['kode']}} <img
+                                                                src="{{url('/')}}/uploads/biru_centang.png" alt=""
+                                                                class="mb-1" style="height:20px"></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--<div class="card-header bg-white">-->
+                                            <!--    <div class="row">-->
+                                            <!--        <div class="col-lg-12">-->
+                                            <!--            <span class="badge bg-secondary float-end"><a-->
+                                            <!--                    href="{{url('')}}/login?title=Bid Sponsor" class="text-white"-->
+                                            <!--                    style="text-decoration:none">Lihat Berkas</a></span>-->
+                                            <!--            <span class="float-end">&nbsp;</span>-->
+                                            <!--            <form action="{{url('/')}}/bid-sengketa/podcast"class="form-sengketa{{$bs['id']}}"method="get">-->
+                                            <!--                <input type="hidden" name="owner"value="{{$bs['owner']}}">-->
+                                            <!--                <input type="hidden" name="objek"value="{{$bs['objek']}}">-->
+                                            <!--                <input type="hidden" name="luas"value="{{$bs['luas']}}">-->
+                                            <!--                <input type="hidden" name="lokasi"value="{{$bs['lokasi']}}">-->
+                                            <!--                <input type="hidden" name="komentar"value="">-->
+                                            <!--                <input type="hidden" name="link_yt"value="">-->
+                                            <!--                <input type="hidden" name="form"value="sponsor">-->
+                                            <!--            </form>-->
+                                            <!--            <span class="badge bg-dark float-end" onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()">Lihat Podcast Sengketa</span>-->
+                                            <!--            <span class="float-end">&nbsp;</span>-->
+    
+                                            <!--        </div>-->
+                                            <!--    </div>-->
+                                            <!--</div>-->
+    
+    
+    
+    
+                                            <div class="card-body">
+                                                <!-- <div class="img mb-2">
+                                                        <img src="" style="width: 100%; max-height:390px;"
+                                                            alt="">
+                                                    </div> -->
+    
+                                                @if($bs['id'] < 5) <div class="ribbon-pop"><i
+                                                        class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            @else
+                                            @endif
+    
+    
+                                            <div class="desktop-2">
+                                                <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
+                                                    data-bs-ride="carousel">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                                            aria-label="Slide 1"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    </div>
+    
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="{{$bs['img']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                        data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                        data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="mobile">
+                                                <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
+                                                    data-bs-ride="carousel">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                                            aria-label="Slide 1"></button>
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    </div>
+    
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="{{$bs['img']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5"
+                                                    style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
+                                            <table class="mt-2 mb-2 w-100">
+                                                <tr>
+                                                    <td>
+                                                        <b>Nilai Kebutuhan :</b>
+                                                    </td>
+    
+                                                    <td class="align-items-center" rowspan="2">
+    
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-{{$bs['id']}}">
+                                                                    <h5 class="mb-0 text-fav-disable"
+                                                                        id="fav-ch-{{$bs['id']}}">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-primary text-white mb-0"
+                                                                    data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-<?= $bs['id'] ?>").click(function () {
+                                                                $("#fav-ch-<?= $bs['id'] ?>").toggleClass(
+                                                                    'fav-icon');
+                                                            });
+    
+                                                        </script>
+    
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <h5 class="mb-0">
+                                                            <b class="text-primary">
+                                                                {{$bs['dana']}}
+                                                            </b>
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h5 class="fw-bold">
+                                                            Fee : 30%
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                            </table>
+    
+                                            <hr>
+    
+                                            <table class="mt-3">
+                                                <tr>
+                                                    <td>Korban</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['owner']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Objek Sengketa</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['objek']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lokasi</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['lokasi']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Luas</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['luas']}}</td>
+                                                </tr>
+    
+                                                <tr>
+                                                    <td>Jaminan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['jaminan']}}</td>
+    
+                                                </tr>
+    
+                                                <tr>
+                                                    <td>Jumlah Bid</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['jumlah_bid']}}</td>
+                                                </tr>
+                                            </table>
+                                            <hr>
+    
+    
+                                            <div class="row g-0">
+                                                <div class="col text-center">
+    
+                                                    <a href="#" class=" mx-auto btn btn-danger rounded-5"
+                                                        data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                        style="text-decoration:none">
+                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                    </a>
+    
+                                                    <!-- Modal -->
+                                                    <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header p-0">
+                                                                    <h1 class="modal-title mx-auto text-danger display-1">
+                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                    </h1>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    Anda harus masuk sebagai sponsor sebelum melihat
+                                                                    berkas.
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary me-auto"
+                                                                        data-bs-dismiss="modal">Close</button>
+                                                                    <a type="button" class="btn btn-success"
+                                                                        href="https://server.sengketatanah.id/login">Login</a>
+                                                                    <a type="button" class="btn btn-danger"
+                                                                        href="https://server.sengketatanah.id/login">Register</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+                                                <div class="col text-center">
+                                                    <span
+                                                        onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
+                                                        class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                            class="fa-solid fa-play text-danger"></i> Lihat
+                                                        Podcast</span>
+                                                </div>
+                                            </div>
+    
+                                            <form action="{{url('/')}}/bid-sengketa/podcast"
+                                                class="form-sengketa{{$bs['id']}}" method="get">
+                                                <input type="hidden" name="owner" value="{{$bs['owner']}}">
+                                                <input type="hidden" name="objek" value="{{$bs['objek']}}">
+                                                <input type="hidden" name="luas" value="{{$bs['luas']}}">
+                                                <input type="hidden" name="lokasi" value="{{$bs['lokasi']}}">
+                                                <input type="hidden" name="komentar" value="">
+                                                <input type="hidden" name="link_yt" value="{{$bs['link_yt']}}">
+                                                <input type="hidden" name="form" value="sponsor">
+                                            </form>
+    
+    
+                                            <hr>
+                                            <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                <div class="col-4">
+    
+                                                    <div class="d-grid gap-2 ">
+    
+                                                        <!--<a href="{{url('/')}}/login?title=Bid Sponsor"-->
+                                                        <!--    class="btn mt-3 rounded-5 text-white" style="-->
+                                                        <!--    border: 0px;-->
+                                                        <!--    background: rgb(223,189,105);-->
+                                                        <!--    background: linear-gradient(90deg, rgba(223,189,105,1) 0%, rgba(146,111,52,1) 100%);-->
+                                                        <!--    height: 45px" -->
+                                                        <!--    type="button"><i class="fa-solid fa-gavel"></i> Bid Sponsor</a>-->
+                                                        <!-- Button trigger modal -->
+                                                        <!-- <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                BID
+                                                            </button> -->
+    
+                                                        <!-- Modal -->
+                                                        <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1
+                                                                            class="modal-title mx-auto text-danger display-1">
+                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus masuk sebagai sponsor sebelum
+                                                                        melakukan bid.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button"
+                                                                            class="btn btn-secondary me-auto"
+                                                                            data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success"
+                                                                            href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger"
+                                                                            href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+    
+    
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @if ($counter % 4 == 0)
+                                <!--<div class="col-md-12 mb-3">-->
+                                <!--    TEST-->
+                                <!--</div>-->
+                                @endif
+                                <?php $counter++ ?>
+                                @endforeach
+                            </div>
+    
+                        </div>
+    
+                        <div class="col-lg-12" id="dataPemerintah" style="display:none">
+                            <div class="row">
+                                @foreach($bid_pemerintah as $bpm)
+                                <div class="col-lg-4 mt-2 mb-2">
+                                    <div class="card">
+                                        <div class="card-header text-white px-3 py-1  bg-secondary">
+                                            <div class="row">
+                                                <div class="col-lg-12 text-center">
+                                                    <h5 class="mb-0 text-center">Data Terusan</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+    
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="podcastPemerintah" tabindex="-1"
+                                                aria-labelledby="podcastLawyer" aria-hidden="true">
+                                                <div class="modal-dialog modal-xl">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+    
+                                                            <div class="row g-0">
+                                                                <div class="col-12">
+                                                                    <h5 id="exampleModalLabel">Podcast Sengketa Tanah
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <small class="text-dark">
+                                                                        Hasil Wawancara Korban
+                                                                    </small>
+                                                                </div>
+                                                            </div>
+    
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+    
+    
+                                                            <div class="row justify-content-center">
+                                                                <div class="col-lg-6">
+    
+                                                                    <div class="card bg-dark rounded-0" width="100%"
+                                                                        style="height:200px">
+                                                                        <div class="card-body center">
+                                                                            <h3
+                                                                                class="text-white text-uppercase text-center">
+                                                                                Belum ada Video
+                                                                            </h3>
+                                                                        </div>
+                                                                    </div>
+    
+                                                                    <table class="table">
+                                                                        <tr>
+                                                                            <td> Korban</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;Rival Santoso</td>
+                                                                        </tr>
+    
+                                                                        <tr>
+                                                                            <td>Jenis Sengketa</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;Sengketa Pertanahan</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Lokasi</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;Ngawi, Jawa Timur</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Luas</td>
+    
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;12.3 Ha</td>
+                                                                        </tr>
+    
+                                                                    </table>
+                                                                    <div class="d-grid gap-2">
+                                                                        <button class="alert alert-warning mt-2"
+                                                                            type="button">Keterangan: Data sengketa
+                                                                            tanah
+                                                                            ini telah diterima oleh Platform
+                                                                            Sengketa Tanah dan akan diteruskan pada
+                                                                            instansi
+                                                                            terkait. </button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="row">
+                                                                        <div class="d-flex flex-column col-md-12">
+    
+                                                                            <div class="coment-bottom bg-white p-1">
+                                                                                <div
+                                                                                    class="d-flex flex-row add-comment-section mt-4 mb-4">
+                                                                                    <img class="img-fluid img-responsive rounded-circle me-2"
+                                                                                        src="https://i.imgur.com/qdiP4DB.jpg"
+                                                                                        width="38">
+                                                                                    <input type="text"
+                                                                                        class="form-control me-3 rounded-0"
+                                                                                        placeholder="Tambah Komentar">
+                                                                                    <button
+                                                                                        class="btn btn-primary rounded-0"
+                                                                                        type="button">Komentar</button>
+                                                                                </div>
+                                                                                <hr>
+                                                                                <div class="center">
+                                                                                    <h3
+                                                                                        class="text-dark text-uppercase text-center">
+                                                                                        Belum ada Komentar
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+    
+                                                            </div>
+    
+    
+                                                            <hr>
+                                                            <div class="row" style="margin-top:-20px">
+                                                                <div class="col-12 p-2">
+    
+                                                                    <span class="fa-stack fa-lg float-end">
+                                                                        <i class="fa fa-circle fa-stack-2x "
+                                                                            style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                                                                        <i
+                                                                            class="fa-solid fa-share fa-stack-1x fa-inverse"></i>
+    
+                                                                    </span> <span class="float-start mt-2">Bagikan Video
+                                                                        ini</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+    
+    
+    
+    
+    
+                                            <table>
+                                                <tr>
+                                                    <td>Korban</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['owner']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Objek Sengketa</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['objek']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Luas Objek</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['luas']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lokasi</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['lokasi']}}</td>
+                                                </tr>
+                                                <!--<tr>-->
+                                                <!--    <td>Status Data</td>-->
+                                                <!--    <td></td>-->
+                                                <!--    <td>:</td>-->
+                                                <!--    <td></td>-->
+                                                <!--</tr>-->
+    
+    
+    
+                                            </table>
+    
+    
+                                            <div class="row justify-content-center no-gutters">
+                                                <div class="col-12">
+                                                    <div class="d-grid gap-2">
+                                                        <button class="alert alert-warning mt-2" type="button">Keterangan:
+                                                            Data sengketa tanah ini telah diterima oleh Platform
+                                                            Sengketa Tanah dan akan diteruskan pada instansi terkait.
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+    
+    
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+
+            {{-- Notaris --}}
+            <div class="col-lg-12">
+                <div class="card mb-3 mt-3 border-0 ">
+                    <div class="card-body">
+                        <div class="mt-2 ">
+            
+                            <div class="row justify-content-center align-items-center">
+            
+            
+                                <div class="col-1 arrow-desktop text-center">
+                                    <button id="left-notaris" class="btn rounded-5 text-white bg-secondary"
+                                        style="background-color: #61481C">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </button>
+                                </div>
+            
+                                <div class="col-lg-10">
+                                    <div class="row">
+                                        <div class="col mobile-scroll" id="orang-notaris"
+                                            style="white-space:nowrap;flex-wrap:nowarp;display:flex;">
+            
+                                            <?php
+                                                $name = [
+                                                    "Budi K.",
+                                                    "Rudi H.",
+            
+                                                    "Ustman A.",
+                                                    "Joko L.",
+            
+                                                    "James Tate",
+                                                    "Robert K.",
+                                                    "Hadi Ismail", 'Abdullah', 'Nugraha D.', 'Ade Syarief', "Adhi Utomo", 'Leman wan', 'Noto Adi', 'Agus Susan'
+                                                ];
+                                                ?>
+                                            <div class="container-gambar text-center ms-1"
+                                                style='display: inline-block;flex: 0 0 auto'>
+                                                <img src="data:image/png;base64,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"
+                                                    alt="" srcset="" class="rounded-5 img-thumbnail"
+                                                    style="width:70px;height:70px;object-fit:cover;background:#61481C">
+                                                <br>
+            
+                                                Notaris
+            
+                                            </div>
+                                            @for($i=13;$i> 0;$i--)
+                                            <div class="container-gambar text-center ms-1"
+                                                style='display: inline-block;flex: 0 0 auto'>
+                                                <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt=""
+                                                    srcset="" class="rounded-4 img-thumbnail "
+                                                    style="width:70px;height:70px;object-fit:cover;"> <br>
+                                                {{$name[$i]}}
+                                            </div>
+                                            @endfor
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col-1 arrow-desktop text-center">
+                                    <button id="right-notaris" class="btn rounded-5 text-white bg-secondary"
+                                        style="background-color: #61481C">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+            
+                                <script>
+                                    $('#right-notaris').click(function () {
+                                        event.preventDefault();
+                                        $('#orang-notaris').animate({
+                                            scrollLeft: "+=300px"
+                                        }, "slow");
+                                    });
+            
+                                    $('#left-notaris').click(function () {
+                                        event.preventDefault();
+                                        $('#orang-notaris').animate({
+                                            scrollLeft: "-=300px"
+                                        }, "slow");
+                                    });
+            
+                                </script>
+                            </div>
+            
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <div class="row justify-content-center">
+    
+                            <div class="col-lg-12 mt-2 show">
+                                <div class="row">
+                                    <?php $counter = 1 ?>
+                                    @foreach($bid_sengketa as $bs)
+                                    
+                                    @if($bs['id'] > 6)
+                                    @continue
+                                    @endif
+                                    <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
+                                        <div class="card mb-2">
+                                            <div class="card-header text-white px-3 py-1" style="
+                                                background: #8f8f8f">
+                                                <div class="row">
+    
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Bid {{$bs['kode']}} <img
+                                                                src="{{url('/')}}/uploads/biru_centang.png" alt=""
+                                                                class="mb-1" style="height:20px"></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--<div class="card-header bg-white">-->
+                                            <!--    <div class="row">-->
+                                            <!--        <div class="col-lg-12">-->
+                                            <!--            <span class="badge bg-secondary float-end"><a-->
+                                            <!--                    href="{{url('')}}/login?title=Bid Sponsor" class="text-white"-->
+                                            <!--                    style="text-decoration:none">Lihat Berkas</a></span>-->
+                                            <!--            <span class="float-end">&nbsp;</span>-->
+                                            <!--            <form action="{{url('/')}}/bid-sengketa/podcast"class="form-sengketa{{$bs['id']}}"method="get">-->
+                                            <!--                <input type="hidden" name="owner"value="{{$bs['owner']}}">-->
+                                            <!--                <input type="hidden" name="objek"value="{{$bs['objek']}}">-->
+                                            <!--                <input type="hidden" name="luas"value="{{$bs['luas']}}">-->
+                                            <!--                <input type="hidden" name="lokasi"value="{{$bs['lokasi']}}">-->
+                                            <!--                <input type="hidden" name="komentar"value="">-->
+                                            <!--                <input type="hidden" name="link_yt"value="">-->
+                                            <!--                <input type="hidden" name="form"value="sponsor">-->
+                                            <!--            </form>-->
+                                            <!--            <span class="badge bg-dark float-end" onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()">Lihat Podcast Sengketa</span>-->
+                                            <!--            <span class="float-end">&nbsp;</span>-->
+    
+                                            <!--        </div>-->
+                                            <!--    </div>-->
+                                            <!--</div>-->
+    
+    
+    
+    
+                                            <div class="card-body">
+                                                <!-- <div class="img mb-2">
+                                                        <img src="" style="width: 100%; max-height:390px;"
+                                                            alt="">
+                                                    </div> -->
+    
+                                                @if($bs['id'] < 5) <div class="ribbon-pop"><i
+                                                        class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            @else
+                                            @endif
+    
+    
+                                            <div class="desktop-2">
+                                                <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
+                                                    data-bs-ride="carousel">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                                            aria-label="Slide 1"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    </div>
+    
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="{{$bs['img']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                        data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                        data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="mobile">
+                                                <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
+                                                    data-bs-ride="carousel">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                                            aria-label="Slide 1"></button>
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    </div>
+    
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="{{$bs['img']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5"
+                                                    style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
+                                            <table class="mt-2 mb-2 w-100">
+                                                <tr>
+                                                    <td>
+                                                        <b>Nilai Kebutuhan :</b>
+                                                    </td>
+    
+                                                    <td class="align-items-center" rowspan="2">
+    
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-{{$bs['id']}}">
+                                                                    <h5 class="mb-0 text-fav-disable"
+                                                                        id="fav-ch-{{$bs['id']}}">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-primary text-white mb-0"
+                                                                    data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-<?= $bs['id'] ?>").click(function () {
+                                                                $("#fav-ch-<?= $bs['id'] ?>").toggleClass(
+                                                                    'fav-icon');
+                                                            });
+    
+                                                        </script>
+    
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <h5 class="mb-0">
+                                                            <b class="text-primary">
+                                                                {{$bs['dana']}}
+                                                            </b>
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h5 class="fw-bold">
+                                                            Fee : 30%
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                            </table>
+    
+                                            <hr>
+    
+                                            <table class="mt-3">
+                                                <tr>
+                                                    <td>Korban</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['owner']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Objek Sengketa</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['objek']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lokasi</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['lokasi']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Luas</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['luas']}}</td>
+                                                </tr>
+    
+                                                <tr>
+                                                    <td>Jaminan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['jaminan']}}</td>
+    
+                                                </tr>
+    
+                                                <tr>
+                                                    <td>Jumlah Bid</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['jumlah_bid']}}</td>
+                                                </tr>
+                                            </table>
+                                            <hr>
+    
+    
+                                            <div class="row g-0">
+                                                <div class="col text-center">
+    
+                                                    <a href="#" class=" mx-auto btn btn-danger rounded-5"
+                                                        data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                        style="text-decoration:none">
+                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                    </a>
+    
+                                                    <!-- Modal -->
+                                                    <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header p-0">
+                                                                    <h1 class="modal-title mx-auto text-danger display-1">
+                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                    </h1>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    Anda harus masuk sebagai sponsor sebelum melihat
+                                                                    berkas.
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary me-auto"
+                                                                        data-bs-dismiss="modal">Close</button>
+                                                                    <a type="button" class="btn btn-success"
+                                                                        href="https://server.sengketatanah.id/login">Login</a>
+                                                                    <a type="button" class="btn btn-danger"
+                                                                        href="https://server.sengketatanah.id/login">Register</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+                                                <div class="col text-center">
+                                                    <span
+                                                        onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
+                                                        class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                            class="fa-solid fa-play text-danger"></i> Lihat
+                                                        Podcast</span>
+                                                </div>
+                                            </div>
+    
+                                            <form action="{{url('/')}}/bid-sengketa/podcast"
+                                                class="form-sengketa{{$bs['id']}}" method="get">
+                                                <input type="hidden" name="owner" value="{{$bs['owner']}}">
+                                                <input type="hidden" name="objek" value="{{$bs['objek']}}">
+                                                <input type="hidden" name="luas" value="{{$bs['luas']}}">
+                                                <input type="hidden" name="lokasi" value="{{$bs['lokasi']}}">
+                                                <input type="hidden" name="komentar" value="">
+                                                <input type="hidden" name="link_yt" value="{{$bs['link_yt']}}">
+                                                <input type="hidden" name="form" value="sponsor">
+                                            </form>
+    
+    
+                                            <hr>
+                                            <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                <div class="col-4">
+    
+                                                    <div class="d-grid gap-2 ">
+    
+                                                        <!--<a href="{{url('/')}}/login?title=Bid Sponsor"-->
+                                                        <!--    class="btn mt-3 rounded-5 text-white" style="-->
+                                                        <!--    border: 0px;-->
+                                                        <!--    background: rgb(223,189,105);-->
+                                                        <!--    background: linear-gradient(90deg, rgba(223,189,105,1) 0%, rgba(146,111,52,1) 100%);-->
+                                                        <!--    height: 45px" -->
+                                                        <!--    type="button"><i class="fa-solid fa-gavel"></i> Bid Sponsor</a>-->
+                                                        <!-- Button trigger modal -->
+                                                        <!-- <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                BID
+                                                            </button> -->
+    
+                                                        <!-- Modal -->
+                                                        <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1
+                                                                            class="modal-title mx-auto text-danger display-1">
+                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus masuk sebagai sponsor sebelum
+                                                                        melakukan bid.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button"
+                                                                            class="btn btn-secondary me-auto"
+                                                                            data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success"
+                                                                            href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger"
+                                                                            href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+    
+    
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @if ($counter % 4 == 0)
+                                <!--<div class="col-md-12 mb-3">-->
+                                <!--    TEST-->
+                                <!--</div>-->
+                                @endif
+                                <?php $counter++ ?>
+                                @endforeach
+                            </div>
+    
+                        </div>
+    
+                        <div class="col-lg-12" id="dataPemerintah" style="display:none">
+                            <div class="row">
+                                @foreach($bid_pemerintah as $bpm)
+                                <div class="col-lg-4 mt-2 mb-2">
+                                    <div class="card">
+                                        <div class="card-header text-white px-3 py-1  bg-secondary">
+                                            <div class="row">
+                                                <div class="col-lg-12 text-center">
+                                                    <h5 class="mb-0 text-center">Data Terusan</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+    
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="podcastPemerintah" tabindex="-1"
+                                                aria-labelledby="podcastLawyer" aria-hidden="true">
+                                                <div class="modal-dialog modal-xl">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+    
+                                                            <div class="row g-0">
+                                                                <div class="col-12">
+                                                                    <h5 id="exampleModalLabel">Podcast Sengketa Tanah
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <small class="text-dark">
+                                                                        Hasil Wawancara Korban
+                                                                    </small>
+                                                                </div>
+                                                            </div>
+    
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+    
+    
+                                                            <div class="row justify-content-center">
+                                                                <div class="col-lg-6">
+    
+                                                                    <div class="card bg-dark rounded-0" width="100%"
+                                                                        style="height:200px">
+                                                                        <div class="card-body center">
+                                                                            <h3
+                                                                                class="text-white text-uppercase text-center">
+                                                                                Belum ada Video
+                                                                            </h3>
+                                                                        </div>
+                                                                    </div>
+    
+                                                                    <table class="table">
+                                                                        <tr>
+                                                                            <td> Korban</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;Rival Santoso</td>
+                                                                        </tr>
+    
+                                                                        <tr>
+                                                                            <td>Jenis Sengketa</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;Sengketa Pertanahan</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Lokasi</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;Ngawi, Jawa Timur</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Luas</td>
+    
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;12.3 Ha</td>
+                                                                        </tr>
+    
+                                                                    </table>
+                                                                    <div class="d-grid gap-2">
+                                                                        <button class="alert alert-warning mt-2"
+                                                                            type="button">Keterangan: Data sengketa
+                                                                            tanah
+                                                                            ini telah diterima oleh Platform
+                                                                            Sengketa Tanah dan akan diteruskan pada
+                                                                            instansi
+                                                                            terkait. </button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="row">
+                                                                        <div class="d-flex flex-column col-md-12">
+    
+                                                                            <div class="coment-bottom bg-white p-1">
+                                                                                <div
+                                                                                    class="d-flex flex-row add-comment-section mt-4 mb-4">
+                                                                                    <img class="img-fluid img-responsive rounded-circle me-2"
+                                                                                        src="https://i.imgur.com/qdiP4DB.jpg"
+                                                                                        width="38">
+                                                                                    <input type="text"
+                                                                                        class="form-control me-3 rounded-0"
+                                                                                        placeholder="Tambah Komentar">
+                                                                                    <button
+                                                                                        class="btn btn-primary rounded-0"
+                                                                                        type="button">Komentar</button>
+                                                                                </div>
+                                                                                <hr>
+                                                                                <div class="center">
+                                                                                    <h3
+                                                                                        class="text-dark text-uppercase text-center">
+                                                                                        Belum ada Komentar
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+    
+                                                            </div>
+    
+    
+                                                            <hr>
+                                                            <div class="row" style="margin-top:-20px">
+                                                                <div class="col-12 p-2">
+    
+                                                                    <span class="fa-stack fa-lg float-end">
+                                                                        <i class="fa fa-circle fa-stack-2x "
+                                                                            style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                                                                        <i
+                                                                            class="fa-solid fa-share fa-stack-1x fa-inverse"></i>
+    
+                                                                    </span> <span class="float-start mt-2">Bagikan Video
+                                                                        ini</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+    
+    
+    
+    
+    
+                                            <table>
+                                                <tr>
+                                                    <td>Korban</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['owner']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Objek Sengketa</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['objek']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Luas Objek</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['luas']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lokasi</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['lokasi']}}</td>
+                                                </tr>
+                                                <!--<tr>-->
+                                                <!--    <td>Status Data</td>-->
+                                                <!--    <td></td>-->
+                                                <!--    <td>:</td>-->
+                                                <!--    <td></td>-->
+                                                <!--</tr>-->
+    
+    
+    
+                                            </table>
+    
+    
+                                            <div class="row justify-content-center no-gutters">
+                                                <div class="col-12">
+                                                    <div class="d-grid gap-2">
+                                                        <button class="alert alert-warning mt-2" type="button">Keterangan:
+                                                            Data sengketa tanah ini telah diterima oleh Platform
+                                                            Sengketa Tanah dan akan diteruskan pada instansi terkait.
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+    
+    
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+    
+    
+    
+    
+                    </div>
+    
+                </div>
+            </div>
+
+            {{-- Tukang Ukur --}}
+            <div class="col-lg-12">
+                <div class="card mb-3 mt-3 border-0 ">
+                    <div class="card-body">
+                        <div class="mt-2 ">
+            
+                            <div class="row justify-content-center align-items-center">
+            
+            
+                                <div class="col-1 arrow-desktop text-center">
+                                    <button id="left-tukang-ukur" class="btn rounded-5 text-white bg-secondary"
+                                        style="background-color: #61481C">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </button>
+                                </div>
+            
+                                <div class="col-lg-10">
+                                    <div class="row">
+                                        <div class="col mobile-scroll" id="orang-ukur"
+                                            style="white-space:nowrap;flex-wrap:nowarp;display:flex;">
+            
+                                            <?php
+                                                $name = [
+                                                    "Budi K.",
+                                                    "Rudi H.",
+            
+                                                    "Ustman A.",
+                                                    "Joko L.",
+            
+                                                    "James Tate",
+                                                    "Robert K.",
+                                                    "Hadi Ismail", 'Abdullah', 'Nugraha D.', 'Ade Syarief', "Adhi Utomo", 'Leman wan', 'Noto Adi', 'Agus Susan'
+                                                ];
+                                                ?>
+                                            <div class="container-gambar text-center ms-1"
+                                                style='display: inline-block;flex: 0 0 auto'>
+                                                <img src="data:image/png;base64,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"
+                                                    alt="" srcset="" class="rounded-5 img-thumbnail"
+                                                    style="width:70px;height:70px;object-fit:cover;background:#61481C">
+                                                <br>
+            
+                                                Petugas Ukur
+            
+                                            </div>
+                                            @for($i=13;$i> 0;$i--)
+                                            <div class="container-gambar text-center ms-1"
+                                                style='display: inline-block;flex: 0 0 auto'>
+                                                <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt=""
+                                                    srcset="" class="rounded-4 img-thumbnail "
+                                                    style="width:70px;height:70px;object-fit:cover;"> <br>
+                                                {{$name[$i]}}
+                                            </div>
+                                            @endfor
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="col-1 arrow-desktop text-center">
+                                    <button id="right-tukang-ukur" class="btn rounded-5 text-white bg-secondary"
+                                        style="background-color: #61481C">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+            
+                                <script>
+                                    $('#right-tukang-ukur').click(function () {
+                                        event.preventDefault();
+                                        $('#orang-ukur').animate({
+                                            scrollLeft: "+=300px"
+                                        }, "slow");
+                                    });
+            
+                                    $('#left-tukang-ukur').click(function () {
+                                        event.preventDefault();
+                                        $('#orang-ukur').animate({
+                                            scrollLeft: "-=300px"
+                                        }, "slow");
+                                    });
+            
+                                </script>
+                            </div>
+            
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-12">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <div class="row justify-content-center">
+    
+                            <div class="col-lg-12 mt-2 show">
+                                <div class="row">
+                                    <?php $counter = 1 ?>
+                                    @foreach($bid_sengketa as $bs)
+                                    
+                                    @if($bs['id'] > 6)
+                                    @continue
+                                    @endif
+                                    <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
+                                        <div class="card mb-2">
+                                            <div class="card-header text-white px-3 py-1" style="
+                                                background: #8f8f8f">
+                                                <div class="row">
+    
+                                                    <div class="col-lg-12">
+                                                        <h5 class="mb-0 text-center">Kode Bid {{$bs['kode']}} <img
+                                                                src="{{url('/')}}/uploads/biru_centang.png" alt=""
+                                                                class="mb-1" style="height:20px"></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--<div class="card-header bg-white">-->
+                                            <!--    <div class="row">-->
+                                            <!--        <div class="col-lg-12">-->
+                                            <!--            <span class="badge bg-secondary float-end"><a-->
+                                            <!--                    href="{{url('')}}/login?title=Bid Sponsor" class="text-white"-->
+                                            <!--                    style="text-decoration:none">Lihat Berkas</a></span>-->
+                                            <!--            <span class="float-end">&nbsp;</span>-->
+                                            <!--            <form action="{{url('/')}}/bid-sengketa/podcast"class="form-sengketa{{$bs['id']}}"method="get">-->
+                                            <!--                <input type="hidden" name="owner"value="{{$bs['owner']}}">-->
+                                            <!--                <input type="hidden" name="objek"value="{{$bs['objek']}}">-->
+                                            <!--                <input type="hidden" name="luas"value="{{$bs['luas']}}">-->
+                                            <!--                <input type="hidden" name="lokasi"value="{{$bs['lokasi']}}">-->
+                                            <!--                <input type="hidden" name="komentar"value="">-->
+                                            <!--                <input type="hidden" name="link_yt"value="">-->
+                                            <!--                <input type="hidden" name="form"value="sponsor">-->
+                                            <!--            </form>-->
+                                            <!--            <span class="badge bg-dark float-end" onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()">Lihat Podcast Sengketa</span>-->
+                                            <!--            <span class="float-end">&nbsp;</span>-->
+    
+                                            <!--        </div>-->
+                                            <!--    </div>-->
+                                            <!--</div>-->
+    
+    
+    
+    
+                                            <div class="card-body">
+                                                <!-- <div class="img mb-2">
+                                                        <img src="" style="width: 100%; max-height:390px;"
+                                                            alt="">
+                                                    </div> -->
+    
+                                                @if($bs['id'] < 5) <div class="ribbon-pop"><i
+                                                        class="fa-solid fa-star"></i>&nbsp;HOT
+                                            </div>
+                                            @else
+                                            @endif
+    
+    
+                                            <div class="desktop-2">
+                                                <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
+                                                    data-bs-ride="carousel">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                                            aria-label="Slide 1"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        <button type="button"
+                                                            data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    </div>
+    
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="{{$bs['img']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                                style="height:250px;width:auto;object-fit:cover">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                        data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                        data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="mobile">
+                                                <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
+                                                    data-bs-ride="carousel">
+                                                    <div class="carousel-indicators">
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                                            aria-label="Slide 1"></button>
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                    </div>
+    
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img src="{{$bs['img']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                                style="height:210px;width:auto;object-fit:cover">
+                                                        </div>
+                                                    </div>
+                                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </button>
+                                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                        data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                            aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="share-icon">
+                                                <button class="btn btn-sm text-white rounded-5"
+                                                    style="background: rgba(0, 0, 0, 0.5)">
+                                                    <i class="fa-solid fa-share-from-square"></i>
+                                                </button>
+                                            </div>
+                                            <table class="mt-2 mb-2 w-100">
+                                                <tr>
+                                                    <td>
+                                                        <b>Nilai Kebutuhan :</b>
+                                                    </td>
+    
+                                                    <td class="align-items-center" rowspan="2">
+    
+                                                        <div class="row d-flex  align-items-center mb-2">
+                                                            <div class="col text-end">
+                                                                <a id="fav-{{$bs['id']}}">
+                                                                    <h5 class="mb-0 text-fav-disable"
+                                                                        id="fav-ch-{{$bs['id']}}">
+                                                                        <i class="fas fa-star"></i>
+                                                                    </h5>
+                                                                </a>
+                                                            </div>
+                                                            <div class="col">
+                                                                <button class="btn float-end btn-primary text-white mb-0"
+                                                                    data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                    &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                            $("#fav-<?= $bs['id'] ?>").click(function () {
+                                                                $("#fav-ch-<?= $bs['id'] ?>").toggleClass(
+                                                                    'fav-icon');
+                                                            });
+    
+                                                        </script>
+    
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <h5 class="mb-0">
+                                                            <b class="text-primary">
+                                                                {{$bs['dana']}}
+                                                            </b>
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h5 class="fw-bold">
+                                                            Fee : 30%
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                            </table>
+    
+                                            <hr>
+    
+                                            <table class="mt-3">
+                                                <tr>
+                                                    <td>Korban</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['owner']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Objek Sengketa</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['objek']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lokasi</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['lokasi']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Luas</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['luas']}}</td>
+                                                </tr>
+    
+                                                <tr>
+                                                    <td>Jaminan</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['jaminan']}}</td>
+    
+                                                </tr>
+    
+                                                <tr>
+                                                    <td>Jumlah Bid</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bs['jumlah_bid']}}</td>
+                                                </tr>
+                                            </table>
+                                            <hr>
+    
+    
+                                            <div class="row g-0">
+                                                <div class="col text-center">
+    
+                                                    <a href="#" class=" mx-auto btn btn-danger rounded-5"
+                                                        data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                        style="text-decoration:none">
+                                                        <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                                    </a>
+    
+                                                    <!-- Modal -->
+                                                    <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header p-0">
+                                                                    <h1 class="modal-title mx-auto text-danger display-1">
+                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                    </h1>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    Anda harus masuk sebagai sponsor sebelum melihat
+                                                                    berkas.
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary me-auto"
+                                                                        data-bs-dismiss="modal">Close</button>
+                                                                    <a type="button" class="btn btn-success"
+                                                                        href="https://server.sengketatanah.id/login">Login</a>
+                                                                    <a type="button" class="btn btn-danger"
+                                                                        href="https://server.sengketatanah.id/login">Register</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+                                                <div class="col text-center">
+                                                    <span
+                                                        onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
+                                                        class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                            class="fa-solid fa-play text-danger"></i> Lihat
+                                                        Podcast</span>
+                                                </div>
+                                            </div>
+    
+                                            <form action="{{url('/')}}/bid-sengketa/podcast"
+                                                class="form-sengketa{{$bs['id']}}" method="get">
+                                                <input type="hidden" name="owner" value="{{$bs['owner']}}">
+                                                <input type="hidden" name="objek" value="{{$bs['objek']}}">
+                                                <input type="hidden" name="luas" value="{{$bs['luas']}}">
+                                                <input type="hidden" name="lokasi" value="{{$bs['lokasi']}}">
+                                                <input type="hidden" name="komentar" value="">
+                                                <input type="hidden" name="link_yt" value="{{$bs['link_yt']}}">
+                                                <input type="hidden" name="form" value="sponsor">
+                                            </form>
+    
+    
+                                            <hr>
+                                            <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                                <div class="col-4">
+    
+                                                    <div class="d-grid gap-2 ">
+    
+                                                        <!--<a href="{{url('/')}}/login?title=Bid Sponsor"-->
+                                                        <!--    class="btn mt-3 rounded-5 text-white" style="-->
+                                                        <!--    border: 0px;-->
+                                                        <!--    background: rgb(223,189,105);-->
+                                                        <!--    background: linear-gradient(90deg, rgba(223,189,105,1) 0%, rgba(146,111,52,1) 100%);-->
+                                                        <!--    height: 45px" -->
+                                                        <!--    type="button"><i class="fa-solid fa-gavel"></i> Bid Sponsor</a>-->
+                                                        <!-- Button trigger modal -->
+                                                        <!-- <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                BID
+                                                            </button> -->
+    
+                                                        <!-- Modal -->
+                                                        <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header p-0">
+                                                                        <h1
+                                                                            class="modal-title mx-auto text-danger display-1">
+                                                                            <i class="fa-regular fa-circle-xmark"></i>
+                                                                        </h1>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Anda harus masuk sebagai sponsor sebelum
+                                                                        melakukan bid.
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button"
+                                                                            class="btn btn-secondary me-auto"
+                                                                            data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success"
+                                                                            href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger"
+                                                                            href="https://server.sengketatanah.id/login">Register</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+    
+    
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @if ($counter % 4 == 0)
+                                <!--<div class="col-md-12 mb-3">-->
+                                <!--    TEST-->
+                                <!--</div>-->
+                                @endif
+                                <?php $counter++ ?>
+                                @endforeach
+                            </div>
+    
+                        </div>
+    
+                        <div class="col-lg-12" id="dataPemerintah" style="display:none">
+                            <div class="row">
+                                @foreach($bid_pemerintah as $bpm)
+                                <div class="col-lg-4 mt-2 mb-2">
+                                    <div class="card">
+                                        <div class="card-header text-white px-3 py-1  bg-secondary">
+                                            <div class="row">
+                                                <div class="col-lg-12 text-center">
+                                                    <h5 class="mb-0 text-center">Data Terusan</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+    
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="podcastPemerintah" tabindex="-1"
+                                                aria-labelledby="podcastLawyer" aria-hidden="true">
+                                                <div class="modal-dialog modal-xl">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+    
+                                                            <div class="row g-0">
+                                                                <div class="col-12">
+                                                                    <h5 id="exampleModalLabel">Podcast Sengketa Tanah
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <small class="text-dark">
+                                                                        Hasil Wawancara Korban
+                                                                    </small>
+                                                                </div>
+                                                            </div>
+    
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+    
+    
+                                                            <div class="row justify-content-center">
+                                                                <div class="col-lg-6">
+    
+                                                                    <div class="card bg-dark rounded-0" width="100%"
+                                                                        style="height:200px">
+                                                                        <div class="card-body center">
+                                                                            <h3
+                                                                                class="text-white text-uppercase text-center">
+                                                                                Belum ada Video
+                                                                            </h3>
+                                                                        </div>
+                                                                    </div>
+    
+                                                                    <table class="table">
+                                                                        <tr>
+                                                                            <td> Korban</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;Rival Santoso</td>
+                                                                        </tr>
+    
+                                                                        <tr>
+                                                                            <td>Jenis Sengketa</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;Sengketa Pertanahan</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Lokasi</td>
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;Ngawi, Jawa Timur</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Luas</td>
+    
+                                                                            <td>:</td>
+                                                                            <td>&nbsp;12.3 Ha</td>
+                                                                        </tr>
+    
+                                                                    </table>
+                                                                    <div class="d-grid gap-2">
+                                                                        <button class="alert alert-warning mt-2"
+                                                                            type="button">Keterangan: Data sengketa
+                                                                            tanah
+                                                                            ini telah diterima oleh Platform
+                                                                            Sengketa Tanah dan akan diteruskan pada
+                                                                            instansi
+                                                                            terkait. </button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="row">
+                                                                        <div class="d-flex flex-column col-md-12">
+    
+                                                                            <div class="coment-bottom bg-white p-1">
+                                                                                <div
+                                                                                    class="d-flex flex-row add-comment-section mt-4 mb-4">
+                                                                                    <img class="img-fluid img-responsive rounded-circle me-2"
+                                                                                        src="https://i.imgur.com/qdiP4DB.jpg"
+                                                                                        width="38">
+                                                                                    <input type="text"
+                                                                                        class="form-control me-3 rounded-0"
+                                                                                        placeholder="Tambah Komentar">
+                                                                                    <button
+                                                                                        class="btn btn-primary rounded-0"
+                                                                                        type="button">Komentar</button>
+                                                                                </div>
+                                                                                <hr>
+                                                                                <div class="center">
+                                                                                    <h3
+                                                                                        class="text-dark text-uppercase text-center">
+                                                                                        Belum ada Komentar
+                                                                                    </h3>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+    
+                                                            </div>
+    
+    
+                                                            <hr>
+                                                            <div class="row" style="margin-top:-20px">
+                                                                <div class="col-12 p-2">
+    
+                                                                    <span class="fa-stack fa-lg float-end">
+                                                                        <i class="fa fa-circle fa-stack-2x "
+                                                                            style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                                                                        <i
+                                                                            class="fa-solid fa-share fa-stack-1x fa-inverse"></i>
+    
+                                                                    </span> <span class="float-start mt-2">Bagikan Video
+                                                                        ini</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+    
+    
+    
+    
+    
+                                            <table>
+                                                <tr>
+                                                    <td>Korban</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['owner']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Objek Sengketa</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['objek']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Luas Objek</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['luas']}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lokasi</td>
+                                                    <td></td>
+                                                    <td>:</td>
+                                                    <td>&nbsp;{{$bpm['lokasi']}}</td>
+                                                </tr>
+                                                <!--<tr>-->
+                                                <!--    <td>Status Data</td>-->
+                                                <!--    <td></td>-->
+                                                <!--    <td>:</td>-->
+                                                <!--    <td></td>-->
+                                                <!--</tr>-->
+    
+    
+    
+                                            </table>
+    
+    
+                                            <div class="row justify-content-center no-gutters">
+                                                <div class="col-12">
+                                                    <div class="d-grid gap-2">
+                                                        <button class="alert alert-warning mt-2" type="button">Keterangan:
+                                                            Data sengketa tanah ini telah diterima oleh Platform
+                                                            Sengketa Tanah dan akan diteruskan pada instansi terkait.
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+    
+    
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+    
+    
+    
+    
+                    </div>
+    
+                </div>
             </div>
 
             <style>
@@ -2445,670 +5826,30 @@
 
             </style>
 
-            <div class="card mt-3">
-                <div class="card-body">
-                    <div class="row justify-content-center">
-                        <form action="">
-                            <div class="row mb-2">
-                                <div class="col">
-                                    <div class="row fw-bold pe-1 ps-1">
-                                        <table style="width:100%">
-                                            <tbody>
-                                                <tr>
-                                                    <td rowspan="2" style="width: 40px">
-                                                        <img src="http://sengketatanah.id/uploads/sengketa-logo_pas.png"
-                                                            style="width:30px">
-                                                    </td>
-                                                    <td>
-                                                        <h3 color="text-primary" style="margin-bottom: 0px !important">
-                                                            Bid Sengketa
-                                                        </h3>
-                                                    </td>
-                                                    <td class="text-end" rowspan="2">
-                                                        <h5 class="text-primary fw-bold" style="text-decoration: none">
-                                                            1.430
-                                                        </h5>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                        <hr>
-
-                        <div class="col-lg-12 mt-2 show" id="dataSponsor">
-                            <div class="row">
-                                <?php $counter = 1 ?>
-                                @foreach($bid_sengketa as $bs)
-                                <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
-                                    <div class="card mb-2">
-                                        <div class="card-header text-white px-3 py-1" style="
-                                            background: #8f8f8f">
-                                            <div class="row">
-
-                                                <div class="col-lg-12">
-                                                    <h5 class="mb-0 text-center">Kode Bid {{$bs['kode']}} <img
-                                                            src="{{url('/')}}/uploads/biru_centang.png" alt=""
-                                                            class="mb-1" style="height:20px"></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--<div class="card-header bg-white">-->
-                                        <!--    <div class="row">-->
-                                        <!--        <div class="col-lg-12">-->
-                                        <!--            <span class="badge bg-secondary float-end"><a-->
-                                        <!--                    href="{{url('')}}/login?title=Bid Sponsor" class="text-white"-->
-                                        <!--                    style="text-decoration:none">Lihat Berkas</a></span>-->
-                                        <!--            <span class="float-end">&nbsp;</span>-->
-                                        <!--            <form action="{{url('/')}}/bid-sengketa/podcast"class="form-sengketa{{$bs['id']}}"method="get">-->
-                                        <!--                <input type="hidden" name="owner"value="{{$bs['owner']}}">-->
-                                        <!--                <input type="hidden" name="objek"value="{{$bs['objek']}}">-->
-                                        <!--                <input type="hidden" name="luas"value="{{$bs['luas']}}">-->
-                                        <!--                <input type="hidden" name="lokasi"value="{{$bs['lokasi']}}">-->
-                                        <!--                <input type="hidden" name="komentar"value="">-->
-                                        <!--                <input type="hidden" name="link_yt"value="">-->
-                                        <!--                <input type="hidden" name="form"value="sponsor">-->
-                                        <!--            </form>-->
-                                        <!--            <span class="badge bg-dark float-end" onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()">Lihat Podcast Sengketa</span>-->
-                                        <!--            <span class="float-end">&nbsp;</span>-->
-
-                                        <!--        </div>-->
-                                        <!--    </div>-->
-                                        <!--</div>-->
-
-
-
-
-                                        <div class="card-body">
-                                            <!-- <div class="img mb-2">
-                                                    <img src="" style="width: 100%; max-height:390px;"
-                                                        alt="">
-                                                </div> -->
-
-                                            @if($bs['id'] < 5) <div class="ribbon-pop"><i
-                                                    class="fa-solid fa-star"></i>&nbsp;HOT
-                                        </div>
-                                        @else
-                                        @endif
-
-
-                                        <div class="desktop-2">
-                                            <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
-                                                data-bs-ride="carousel">
-                                                <div class="carousel-indicators">
-                                                    <button type="button"
-                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                        data-bs-slide-to="0" class="active" aria-current="true"
-                                                        aria-label="Slide 1"></button>
-                                                    <button type="button"
-                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                    <button type="button"
-                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                    <button type="button"
-                                                        data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                                </div>
-
-                                                <div class="carousel-inner">
-                                                    <div class="carousel-item active">
-                                                        <img src="{{$bs['img']}}" class="d-block w-100"
-                                                            style="height:250px;width:auto;object-fit:cover">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="{{$bs['img1']}}" class="d-block w-100"
-                                                            style="height:250px;width:auto;object-fit:cover">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="{{$bs['img2']}}" class="d-block w-100"
-                                                            style="height:250px;width:auto;object-fit:cover">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="{{$bs['img3']}}" class="d-block w-100"
-                                                            style="height:250px;width:auto;object-fit:cover">
-                                                    </div>
-                                                </div>
-                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                    data-bs-slide="prev">
-                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                                        aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Previous</span>
-                                                </button>
-                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                    data-bs-slide="next">
-                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                                        aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Next</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="mobile">
-                                            <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
-                                                data-bs-ride="carousel">
-                                                <div class="carousel-indicators">
-                                                    <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                        data-bs-slide-to="0" class="active" aria-current="true"
-                                                        aria-label="Slide 1"></button>
-                                                    <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                    <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                    <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                                </div>
-
-                                                <div class="carousel-inner">
-                                                    <div class="carousel-item active">
-                                                        <img src="{{$bs['img']}}" class="d-block w-100"
-                                                            style="height:210px;width:auto;object-fit:cover">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="{{$bs['img1']}}" class="d-block w-100"
-                                                            style="height:210px;width:auto;object-fit:cover">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="{{$bs['img2']}}" class="d-block w-100"
-                                                            style="height:210px;width:auto;object-fit:cover">
-                                                    </div>
-                                                    <div class="carousel-item">
-                                                        <img src="{{$bs['img3']}}" class="d-block w-100"
-                                                            style="height:210px;width:auto;object-fit:cover">
-                                                    </div>
-                                                </div>
-                                                <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                                    data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
-                                                    <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                                        aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Previous</span>
-                                                </button>
-                                                <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                                    data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
-                                                    <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                                        aria-hidden="true"></span>
-                                                    <span class="visually-hidden">Next</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="share-icon">
-                                            <button class="btn btn-sm text-white rounded-5"
-                                                style="background: rgba(0, 0, 0, 0.5)">
-                                                <i class="fa-solid fa-share-from-square"></i>
-                                            </button>
-                                        </div>
-                                        <table class="mt-2 mb-2 w-100">
-                                            <tr>
-                                                <td>
-                                                    <b>Nilai Kebutuhan :</b>
-                                                </td>
-
-                                                <td class="align-items-center" rowspan="2">
-
-                                                    <div class="row d-flex  align-items-center mb-2">
-                                                        <div class="col text-end">
-                                                            <a id="fav-{{$bs['id']}}">
-                                                                <h5 class="mb-0 text-fav-disable"
-                                                                    id="fav-ch-{{$bs['id']}}">
-                                                                    <i class="fas fa-star"></i>
-                                                                </h5>
-                                                            </a>
-                                                        </div>
-                                                        <div class="col">
-                                                            <button class="btn float-end btn-primary text-white mb-0"
-                                                                data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                                &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
-                                                        </div>
-                                                    </div>
-                                                    <script>
-                                                        $("#fav-<?= $bs['id'] ?>").click(function () {
-                                                            $("#fav-ch-<?= $bs['id'] ?>").toggleClass(
-                                                                'fav-icon');
-                                                        });
-
-                                                    </script>
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-start">
-                                                    <h5 class="mb-0">
-                                                        <b class="text-primary">
-                                                            {{$bs['dana']}}
-                                                        </b>
-                                                    </h5>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h5 class="fw-bold">
-                                                        Fee : 30%
-                                                    </h5>
-                                                </td>
-                                            </tr>
-                                        </table>
-
-                                        <hr>
-
-                                        <table class="mt-3">
-                                            <tr>
-                                                <td>Korban</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;{{$bs['owner']}}</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Objek Sengketa</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;{{$bs['objek']}}</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Lokasi</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;{{$bs['lokasi']}}</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Luas</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;{{$bs['luas']}}</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>Jaminan</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;{{$bs['jaminan']}}</td>
-
-                                            </tr>
-
-                                            <tr>
-                                                <td>Jumlah Bid</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;{{$bs['jumlah_bid']}}</td>
-                                            </tr>
-                                        </table>
-                                        <hr>
-
-
-                                        <div class="row g-0">
-                                            <div class="col text-center">
-
-                                                <a href="#" class=" mx-auto btn btn-danger rounded-5"
-                                                    data-bs-toggle="modal" data-bs-target="#berkasSponsor"
-                                                    style="text-decoration:none">
-                                                    <i class="fa-solid fa-eye"></i> Lihat Berkas
-                                                </a>
-
-                                                <!-- Modal -->
-                                                <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <i class="fa-regular fa-circle-xmark"></i>
-                                                                </h1>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                Anda harus masuk sebagai sponsor sebelum melihat
-                                                                berkas.
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success"
-                                                                    href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger"
-                                                                    href="https://server.sengketatanah.id/login">Register</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="col text-center">
-                                                <span
-                                                    onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
-                                                    class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                        class="fa-solid fa-play text-danger"></i> Lihat
-                                                    Podcast</span>
-                                            </div>
-                                        </div>
-
-                                        <form action="{{url('/')}}/bid-sengketa/podcast"
-                                            class="form-sengketa{{$bs['id']}}" method="get">
-                                            <input type="hidden" name="owner" value="{{$bs['owner']}}">
-                                            <input type="hidden" name="objek" value="{{$bs['objek']}}">
-                                            <input type="hidden" name="luas" value="{{$bs['luas']}}">
-                                            <input type="hidden" name="lokasi" value="{{$bs['lokasi']}}">
-                                            <input type="hidden" name="komentar" value="">
-                                            <input type="hidden" name="link_yt" value="{{$bs['link_yt']}}">
-                                            <input type="hidden" name="form" value="sponsor">
-                                        </form>
-
-
-                                        <hr>
-                                        <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                            <div class="col-4">
-
-                                                <div class="d-grid gap-2 ">
-
-                                                    <!--<a href="{{url('/')}}/login?title=Bid Sponsor"-->
-                                                    <!--    class="btn mt-3 rounded-5 text-white" style="-->
-                                                    <!--    border: 0px;-->
-                                                    <!--    background: rgb(223,189,105);-->
-                                                    <!--    background: linear-gradient(90deg, rgba(223,189,105,1) 0%, rgba(146,111,52,1) 100%);-->
-                                                    <!--    height: 45px" -->
-                                                    <!--    type="button"><i class="fa-solid fa-gavel"></i> Bid Sponsor</a>-->
-                                                    <!-- Button trigger modal -->
-                                                    <!-- <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                            BID
-                                                        </button> -->
-
-                                                    <!-- Modal -->
-                                                    <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
-                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog modal-dialog-centered">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header p-0">
-                                                                    <h1
-                                                                        class="modal-title mx-auto text-danger display-1">
-                                                                        <i class="fa-regular fa-circle-xmark"></i>
-                                                                    </h1>
-                                                                </div>
-                                                                <div class="modal-body">
-                                                                    Anda harus masuk sebagai sponsor sebelum
-                                                                    melakukan bid.
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="button"
-                                                                        class="btn btn-secondary me-auto"
-                                                                        data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success"
-                                                                        href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger"
-                                                                        href="https://server.sengketatanah.id/login">Register</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @if ($counter % 4 == 0)
-                            <!--<div class="col-md-12 mb-3">-->
-                            <!--    TEST-->
-                            <!--</div>-->
-                            @endif
-                            <?php $counter++ ?>
-                            @endforeach
-                        </div>
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-
-                        <input type="checkbox" id="check">
-                        <label class="chat-btn" for="check">
-                            <img src="{{asset('/')}}/images/kol_senter1.jpg" alt="" srcset=""
-                                class="rounded-circle ilangono" style="width: 50px;height:auto">
-                            <i class="fa fa-close close"></i> </label>
-                        <div class="wrapper btn-chatz">
-                            <div class="header btn-chatz">
-                                <h6>Customer Service</h6>
-                            </div>
-                            <div class="text-center p-2"> <span>Masukan nama dan email dahulu!</span> </div>
-                            <div class="chat-form"> <input type="text" class="form-control" placeholder="Nama">
-                                <input type="text" class="form-control" placeholder="Email"> <textarea
-                                    class="form-control" placeholder="Masukan Pesan"></textarea> <button
-                                    class="btn btn-success btn-block">Kirim</button>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-12" id="dataPemerintah" style="display:none">
-                        <div class="row">
-                            @foreach($bid_pemerintah as $bpm)
-                            <div class="col-lg-4 mt-2 mb-2">
-                                <div class="card">
-                                    <div class="card-header text-white px-3 py-1  bg-secondary">
-                                        <div class="row">
-                                            <div class="col-lg-12 text-center">
-                                                <h5 class="mb-0 text-center">Data Terusan</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="podcastPemerintah" tabindex="-1"
-                                            aria-labelledby="podcastLawyer" aria-hidden="true">
-                                            <div class="modal-dialog modal-xl">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-
-                                                        <div class="row g-0">
-                                                            <div class="col-12">
-                                                                <h5 id="exampleModalLabel">Podcast Sengketa Tanah
-                                                                </h5>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <small class="text-dark">
-                                                                    Hasil Wawancara Korban
-                                                                </small>
-                                                            </div>
-                                                        </div>
-
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-
-
-                                                        <div class="row justify-content-center">
-                                                            <div class="col-lg-6">
-
-                                                                <div class="card bg-dark rounded-0" width="100%"
-                                                                    style="height:200px">
-                                                                    <div class="card-body center">
-                                                                        <h3
-                                                                            class="text-white text-uppercase text-center">
-                                                                            Belum ada Video
-                                                                        </h3>
-                                                                    </div>
-                                                                </div>
-
-                                                                <table class="table">
-                                                                    <tr>
-                                                                        <td> Korban</td>
-                                                                        <td>:</td>
-                                                                        <td>&nbsp;Rival Santoso</td>
-                                                                    </tr>
-
-                                                                    <tr>
-                                                                        <td>Jenis Sengketa</td>
-                                                                        <td>:</td>
-                                                                        <td>&nbsp;Sengketa Pertanahan</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Lokasi</td>
-                                                                        <td>:</td>
-                                                                        <td>&nbsp;Ngawi, Jawa Timur</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Luas</td>
-
-                                                                        <td>:</td>
-                                                                        <td>&nbsp;12.3 Ha</td>
-                                                                    </tr>
-
-                                                                </table>
-                                                                <div class="d-grid gap-2">
-                                                                    <button class="alert alert-warning mt-2"
-                                                                        type="button">Keterangan: Data sengketa
-                                                                        tanah
-                                                                        ini telah diterima oleh Platform
-                                                                        Sengketa Tanah dan akan diteruskan pada
-                                                                        instansi
-                                                                        terkait. </button>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-6">
-                                                                <div class="row">
-                                                                    <div class="d-flex flex-column col-md-12">
-
-                                                                        <div class="coment-bottom bg-white p-1">
-                                                                            <div
-                                                                                class="d-flex flex-row add-comment-section mt-4 mb-4">
-                                                                                <img class="img-fluid img-responsive rounded-circle me-2"
-                                                                                    src="https://i.imgur.com/qdiP4DB.jpg"
-                                                                                    width="38">
-                                                                                <input type="text"
-                                                                                    class="form-control me-3 rounded-0"
-                                                                                    placeholder="Tambah Komentar">
-                                                                                <button
-                                                                                    class="btn btn-primary rounded-0"
-                                                                                    type="button">Komentar</button>
-                                                                            </div>
-                                                                            <hr>
-                                                                            <div class="center">
-                                                                                <h3
-                                                                                    class="text-dark text-uppercase text-center">
-                                                                                    Belum ada Komentar
-                                                                                </h3>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-
-
-                                                        <hr>
-                                                        <div class="row" style="margin-top:-20px">
-                                                            <div class="col-12 p-2">
-
-                                                                <span class="fa-stack fa-lg float-end">
-                                                                    <i class="fa fa-circle fa-stack-2x "
-                                                                        style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
-                                                                    <i
-                                                                        class="fa-solid fa-share fa-stack-1x fa-inverse"></i>
-
-                                                                </span> <span class="float-start mt-2">Bagikan Video
-                                                                    ini</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-
-
-
-                                        <table>
-                                            <tr>
-                                                <td>Korban</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;{{$bpm['owner']}}</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Objek Sengketa</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;{{$bpm['objek']}}</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Luas Objek</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;{{$bpm['luas']}}</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Lokasi</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;{{$bpm['lokasi']}}</td>
-                                            </tr>
-                                            <!--<tr>-->
-                                            <!--    <td>Status Data</td>-->
-                                            <!--    <td></td>-->
-                                            <!--    <td>:</td>-->
-                                            <!--    <td></td>-->
-                                            <!--</tr>-->
-
-
-
-                                        </table>
-
-
-                                        <div class="row justify-content-center no-gutters">
-                                            <div class="col-12">
-                                                <div class="d-grid gap-2">
-                                                    <button class="alert alert-warning mt-2" type="button">Keterangan:
-                                                        Data sengketa tanah ini telah diterima oleh Platform
-                                                        Sengketa Tanah dan akan diteruskan pada instansi terkait.
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-
-
-                            </div>
-                            @endforeach
-                        </div>
-                    </div>
-
-
-
-
-                </div>
-
-            </div>
         </div>
     </div>
+
+    
+
+    <nav aria-label="Page navigation example" style="margin-top: 10px;">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
 
     <div class="row justify-content-center mb-3 mt-4 text-center g-0">
