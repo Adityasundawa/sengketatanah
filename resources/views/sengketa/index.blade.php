@@ -8302,7 +8302,7 @@
                                 $('#lelang-card1').animate({
                                     scrollLeft: "+=300px"
                                 }, "slow");
-                            });
+                        });
 
                             $('#left-button1').click(function() {
                                 event.preventDefault();

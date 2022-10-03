@@ -93,6 +93,11 @@ class PublicController extends Controller
         $data['req'] = $request;
         return view('public.detail-tukang',$data);
     }
+    public function detailPetugas(Request $request)
+    {
+        $data['req'] = $request;
+        return view('public.detail-petugas',$data);
+    }
     private function data_jual_beli()
     {
         return [

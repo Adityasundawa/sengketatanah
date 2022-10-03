@@ -41,9 +41,7 @@ Route::get('kota-prov-id', [WilayahIndoController::class, 'getKotaIdProv']);
 Route::get('kec-kot-id', [WilayahIndoController::class, 'getKecIdKota']);
 Route::get('des-kec-id', [WilayahIndoController::class, 'getDesaIdKec']);
 Route::get('send-email', [EmailController::class, 'sendEmail']);
-Route::get('mencube', function () {
-   return view('percobaan');
-});
+Route::get('detail-main-petugas', [PublicController::class, "detailPetugas"]);
 
 
 
