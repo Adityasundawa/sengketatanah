@@ -4988,6 +4988,7 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body">
+                                                                            <!--  -->
                                                                             Anda harus memiliki akun pengacara
                                                                             sebelum
                                                                             melakukan bid.
