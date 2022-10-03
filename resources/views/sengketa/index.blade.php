@@ -5652,7 +5652,7 @@
                                                             <td>&nbsp;Tanah Darat</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Nilai JNT BPN</td>
+                                                            <td>Nilai ZNT BPN</td>
                                                             <td></td>
                                                             <td>:</td>
                                                             <td>&nbsp;750.000/meter</td>
@@ -5900,7 +5900,7 @@
                                                             <td>&nbsp;Tanah Darat</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Nilai JNT BPN</td>
+                                                            <td>Nilai ZNT BPN</td>
                                                             <td></td>
                                                             <td>:</td>
                                                             <td>&nbsp;750.000/meter</td>
@@ -6146,7 +6146,7 @@
                                                             <td>&nbsp;Tanah Darat</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Nilai JNT BPN</td>
+                                                            <td>Nilai ZNT BPN</td>
                                                             <td></td>
                                                             <td>:</td>
                                                             <td>&nbsp;750.000/meter</td>
@@ -6391,7 +6391,7 @@
                                                             <td>&nbsp;Tanah Darat</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Nilai JNT BPN</td>
+                                                            <td>Nilai ZNT BPN</td>
                                                             <td></td>
                                                             <td>:</td>
                                                             <td>&nbsp;750.000/meter</td>
