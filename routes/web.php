@@ -56,6 +56,9 @@ Route::get('kerjasama-lahan', [PublicController::class, 'kerjasamaLahan'])->name
 Route::get('podcast-sengketa', [PublicController::class, 'podcastSengketa'])->name('podcastSengketa');
 Route::get('jual-beli-lahan', [PublicController::class, 'jualBeliLahan'])->name('jualBeliLahan');
 Route::get('lelang-lahan', [PublicController::class, 'lelangLahan'])->name('lelangLahan');
+Route::get('bid-lahan', [PublicController::class, 'bidLahan'])->name('bidLahan');
+Route::get('bid-rumah', [PublicController::class, 'bidRumah'])->name('bidRumah');
+Route::get('jasa-appraisal', [PublicController::class, 'jasaAppraisal'])->name('jasaAppraisal');
 Route::get('jasa-tukang-ukur', [PublicController::class, 'jasaTukangUkur'])->name('jasaTukangUkur');
 Route::get('jasa-notaris', [PublicController::class, 'jasaNotaris'])->name('jasaNotaris');
 Route::get('jasa-ppat', [PublicController::class, 'jasaPPAT'])->name('jasaPPAT');

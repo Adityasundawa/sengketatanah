@@ -21,6 +21,7 @@ class PublicController extends Controller
     {
         return view('public.podcast_sengketa');
     }
+    
     public function jualBeliLahan()
     {
         $data['sengketa'] = SengketaTanah::get();
@@ -30,6 +31,7 @@ class PublicController extends Controller
 
         return view('public.jual_beli_lahan', $data);
     }
+
     public function lelangLahan()
     {
         $data['sengketa'] = SengketaTanah::get();
@@ -39,9 +41,32 @@ class PublicController extends Controller
         return view('public.lelang_lahan', $data);
     }
 
+    public function bidLahan()
+    {
+        $data['sengketa'] = SengketaTanah::get();
+
+        $data['data_jual_beli'] = $this->data_jual_beli();
+
+        return view('public.bid_lahan', $data);
+    }
+
+    public function bidRumah()
+    {
+        $data['sengketa'] = SengketaTanah::get();
+
+        $data['data_jual_beli'] = $this->data_jual_beli();
+
+        return view('public.bid_rumah', $data);
+    }
+
     public function joinSengketa()
     {
         return view('sengketa.join');
+    }
+
+    public function jasaAppraisal()
+    {
+        return view('sengketa.jasa_appraisal');
     }
 
     public function jasaTukangUkur()
@@ -114,7 +139,10 @@ class PublicController extends Controller
                 "img1" => "images/lahan2.jpeg",
                 "img2" => "images/lahan3.jpeg",
                 "img3" => "images/lahan4.jpeg",
-
+                "img-rumah" => "images/rm1.jpg",
+                "img-rumah1" => "images/rm2.jpg",
+                "img-rumah2" => "images/rm3.jpg",
+                "img-rumah3" => "images/rm4.jpg",
                 "peruntukan" => "permukiman",
                 "jenis_lahan" => "Tanah Darat"
             ],
@@ -135,6 +163,10 @@ class PublicController extends Controller
                 "img1" => "images/lahan1.jpeg",
                 "img2" => "images/lahan3.jpeg",
                 "img3" => "images/lahan4.jpeg",
+                "img-rumah" => "images/rm2.jpg",
+                "img-rumah1" => "images/rm1.jpg",
+                "img-rumah2" => "images/rm3.jpg",
+                "img-rumah3" => "images/rm4.jpg",
                 "peruntukan" => "permukiman",
                 "jenis_lahan" => "Tanah Darat"
             ],
@@ -155,6 +187,10 @@ class PublicController extends Controller
                 "img1" => "images/lahan1.jpeg",
                 "img2" => "images/lahan2.jpeg",
                 "img3" => "images/lahan4.jpeg",
+                "img-rumah" => "images/rm3.jpg",
+                "img-rumah1" => "images/rm1.jpg",
+                "img-rumah2" => "images/rm2.jpg",
+                "img-rumah3" => "images/rm4.jpg",
                 "peruntukan" => "permukiman",
                 "jenis_lahan" => "Tanah Darat"
             ],
@@ -172,10 +208,13 @@ class PublicController extends Controller
                 "jumlah_bid" => 1,
                 "link_yt" => '',
                 "img" => 'images/lahan1.jpeg',
-
                 "img1" => "images/lahan2.jpeg",
                 "img2" => "images/lahan4.jpeg",
                 "img3" => "images/lahan3.jpeg",
+                "img-rumah" => "images/rm1.jpg",
+                "img-rumah1" => "images/rm2.jpg",
+                "img-rumah2" => "images/rm4.jpg",
+                "img-rumah3" => "images/rm3.jpg",
                 "peruntukan" => "permukiman",
                 "jenis_lahan" => "Tanah Darat"
             ],
@@ -193,10 +232,13 @@ class PublicController extends Controller
                 "jumlah_bid" => 12,
                 "link_yt" => '',
                 "img" => 'images/lahan3.jpeg',
-
                 "img2" => "images/lahan4.jpeg",
                 "img1" => "images/lahan2.jpeg",
                 "img3" => "images/lahan1.jpeg",
+                "img-rumah" => "images/rm3.jpg",
+                "img-rumah1" => "images/rm4.jpg",
+                "img-rumah2" => "images/rm2.jpg",
+                "img-rumah3" => "images/rm1.jpg",
                 "peruntukan" => "permukiman",
                 "jenis_lahan" => "Tanah Darat"
             ],
@@ -217,6 +259,10 @@ class PublicController extends Controller
                 "img2" => "images/lahan4.jpeg",
                 "img3" => "images/lahan3.jpeg",
                 "img1" => "images/lahan1.jpeg",
+                "img-rumah" => "images/rm2.jpg",
+                "img-rumah1" => "images/rm4.jpg",
+                "img-rumah2" => "images/rm3.jpg",
+                "img-rumah3" => "images/rm1.jpg",
                 "peruntukan" => "permukiman",
                 "jenis_lahan" => "Tanah Darat"
             ],
@@ -237,6 +283,10 @@ class PublicController extends Controller
                 "img2" => "images/lahan4.jpeg",
                 "img1" => "images/lahan2.jpeg",
                 "img3" => "images/lahan1.jpeg",
+                "img-rumah" => "images/rm3.jpg",
+                "img-rumah1" => "images/rm4.jpg",
+                "img-rumah2" => "images/rm2.jpg",
+                "img-rumah3" => "images/rm1.jpg",
                 "peruntukan" => "permukiman",
                 "jenis_lahan" => "Tanah Darat"
             ],
@@ -257,6 +307,10 @@ class PublicController extends Controller
                 "img1" => "images/lahan2.jpeg",
                 "img2" => "images/lahan4.jpeg",
                 "img3" => "images/lahan3.jpeg",
+                "img-rumah" => "images/rm1.jpg",
+                "img-rumah1" => "images/rm2.jpg",
+                "img-rumah2" => "images/rm4.jpg",
+                "img-rumah3" => "images/rm3.jpg",
                 "peruntukan" => "permukiman",
                 "jenis_lahan" => "Tanah Darat"
             ],
@@ -277,6 +331,10 @@ class PublicController extends Controller
                 "img3" => "images/lahan3.jpeg",
                 "img2" => "images/lahan4.jpeg",
                 "img1" => "images/lahan1.jpeg",
+                "img-rumah" => "images/rm2.jpg",
+                "img-rumah1" => "images/rm3.jpg",
+                "img-rumah2" => "images/rm4.jpg",
+                "img-rumah3" => "images/rm1.jpg",
                 "peruntukan" => "permukiman",
                 "jenis_lahan" => "Tanah Darat"
             ],
