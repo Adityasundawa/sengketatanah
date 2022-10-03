@@ -2238,7 +2238,12 @@
                                                             <td>&nbsp;Sertifikat Tanah</td>
 
                                                         </tr>
-
+                                                        <tr>
+                                                            <td>Nilai Jaminan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Rp.10.000.000</td>
+                                                        </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
                                                             <td></td>
@@ -2478,7 +2483,12 @@
                                                             <td>&nbsp;Sertifikat Rumah</td>
 
                                                         </tr>
-
+                                                        <tr>
+                                                            <td>Nilai Jaminan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Rp.10.000.000</td>
+                                                        </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
                                                             <td></td>
@@ -2712,7 +2722,12 @@
                                                             <td>&nbsp;Sertifikat Tanah</td>
 
                                                         </tr>
-
+                                                        <tr>
+                                                            <td>Nilai Jaminan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Rp.10.000.000</td>
+                                                        </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
                                                             <td></td>
@@ -2943,7 +2958,12 @@
                                                             <td>&nbsp;Sertifikat Tanah</td>
 
                                                         </tr>
-
+                                                        <tr>
+                                                            <td>Nilai Jaminan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Rp.10.000.000</td>
+                                                        </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
                                                             <td></td>
@@ -3194,7 +3214,12 @@
                                                             <td>&nbsp;Sertifikat Tanah</td>
 
                                                         </tr>
-
+                                                        <tr>
+                                                            <td>Nilai Jaminan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Rp.10.000.000</td>
+                                                        </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
                                                             <td></td>
@@ -3434,7 +3459,12 @@
                                                             <td>&nbsp;Sertifikat Rumah</td>
 
                                                         </tr>
-
+                                                        <tr>
+                                                            <td>Nilai Jaminan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Rp.10.000.000</td>
+                                                        </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
                                                             <td></td>
@@ -3668,7 +3698,12 @@
                                                             <td>&nbsp;Sertifikat Tanah</td>
 
                                                         </tr>
-
+                                                        <tr>
+                                                            <td>Nilai Jaminan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Rp.10.000.000</td>
+                                                        </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
                                                             <td></td>
@@ -3899,7 +3934,12 @@
                                                             <td>&nbsp;Sertifikat Tanah</td>
 
                                                         </tr>
-
+                                                        <tr>
+                                                            <td>Nilai Jaminan</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;Rp.10.000.000</td>
+                                                        </tr>
                                                         <tr>
                                                             <td>Jumlah Bid</td>
                                                             <td></td>
