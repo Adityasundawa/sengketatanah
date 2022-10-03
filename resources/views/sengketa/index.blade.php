@@ -5646,10 +5646,16 @@
                                                         </tr>
                                                         <tr>
 
-                                                            <td>Objek Lelang</td>
+                                                            <td>Objek Lahan</td>
                                                             <td></td>
                                                             <td>:</td>
                                                             <td>&nbsp;Tanah Darat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Nilai JNT BPN</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;750.000/meter</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Penawaran</td>
@@ -5888,10 +5894,16 @@
                                                             <td>&nbsp;5000 M</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Objek Lelang</td>
+                                                            <td>Objek Lahan</td>
                                                             <td></td>
                                                             <td>:</td>
                                                             <td>&nbsp;Tanah Darat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Nilai JNT BPN</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;750.000/meter</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Penawaran</td>
@@ -6128,10 +6140,16 @@
                                                             <td>&nbsp;3.2 Ha</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Objek Lelang</td>
+                                                            <td>Objek Lahan</td>
                                                             <td></td>
                                                             <td>:</td>
                                                             <td>&nbsp;Tanah Darat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Nilai JNT BPN</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;750.000/meter</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Penawaran</td>
@@ -6367,10 +6385,16 @@
                                                             <td>&nbsp;3.2 Ha</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Objek Lelang</td>
+                                                            <td>Objek Lahan</td>
                                                             <td></td>
                                                             <td>:</td>
                                                             <td>&nbsp;Tanah Darat</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Nilai JNT BPN</td>
+                                                            <td></td>
+                                                            <td>:</td>
+                                                            <td>&nbsp;750.000/meter</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Penawaran</td>
