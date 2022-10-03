@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sengketa Tanah</title>
     <link rel="icon" type="image/x-icon" href="{{asset('')}}uploads/sengketa-logo_pas.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.12.1/b-2.2.3/datatables.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/v/bs5/dt-1.12.1/b-2.2.3/datatables.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
 
     <style>
@@ -37,10 +42,11 @@
             right: 0;
         }
 
-        .aboute-bottom svg{
+        .aboute-bottom svg {
             opacity: 75%;
         }
-        .aboute-bottom h6{
+
+        .aboute-bottom h6 {
             opacity: 75%;
         }
 
@@ -101,6 +107,7 @@
             content: "";
             left: 0;
         }
+
     </style>
 
     <style>
@@ -243,6 +250,7 @@
             width: 35px;
             background-color: #f00f00;
         }
+
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -491,6 +499,7 @@
                 display: none
             }
         }
+
     </style>
 
     <style>
@@ -528,6 +537,7 @@
         .text-fav-disable {
             color: rgb(199, 199, 199)
         }
+
     </style>
 
 
@@ -548,10 +558,15 @@
                         <a class="btn btn-sm mb-0 p-0 w-100" href="{{url('')}}/">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                        width="45px" x="0" y="0" viewBox="0 0 512 512"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="256" cx="256" cy="256" fill="#ffffff" shape="circle"></circle>
                                         <g transform="matrix(0.7,0,0,0.7,76.79200973510743,76.80000000000001)">
-                                            <path d="m498.195312 222.695312c-.011718-.011718-.023437-.023437-.035156-.035156l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.8125-33.328126-13.8125-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.140626.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.445312 13.238281 31.277344 13.746093.480468.046876.964843.070313 1.453124.070313h8.324219v153.699219c0 30.414062 24.746094 55.160156 55.167969 55.160156h81.710938c8.28125 0 15-6.714844 15-15v-120.5c0-13.878906 11.289062-25.167969 25.167968-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.285156 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.160156v-153.699219h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.808594 18.359375-18.371093 18.367187-48.253906.023437-66.636719zm0 0" fill="#61481c" data-original="#000000" class=""></path>
+                                            <path
+                                                d="m498.195312 222.695312c-.011718-.011718-.023437-.023437-.035156-.035156l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.8125-33.328126-13.8125-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.140626.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.445312 13.238281 31.277344 13.746093.480468.046876.964843.070313 1.453124.070313h8.324219v153.699219c0 30.414062 24.746094 55.160156 55.167969 55.160156h81.710938c8.28125 0 15-6.714844 15-15v-120.5c0-13.878906 11.289062-25.167969 25.167968-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.285156 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.160156v-153.699219h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.808594 18.359375-18.371093 18.367187-48.253906.023437-66.636719zm0 0"
+                                                fill="#61481c" data-original="#000000" class=""></path>
                                         </g>
                                     </svg>
                                     <h6 class="mt-0 mb-0" style="font-size: 12px">HOME</h6>
@@ -565,17 +580,28 @@
                         <button class="btn btn-sm mb-0 p-0 w-100" id="btn-panduan-m" type="button">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 296.999 296.999" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                        width="45px" x="0" y="0" viewBox="0 0 296.999 296.999"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="148.4995" cx="148.4995" cy="148.4995" fill="#ffffff" shape="circle">
                                         </circle>
                                         <g transform="matrix(0.7,0,0,0.7,44.54984436035157,44.54998970031738)">
                                             <g xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <g>
-                                                        <path d="M45.432,35.049c-0.008,0-0.017,0-0.025,0c-2.809,0-5.451,1.095-7.446,3.085c-2.017,2.012-3.128,4.691-3.128,7.543     v159.365c0,5.844,4.773,10.61,10.641,10.625c24.738,0.059,66.184,5.215,94.776,35.136V84.023c0-1.981-0.506-3.842-1.461-5.382     C115.322,40.849,70.226,35.107,45.432,35.049z" fill="#61481c" data-original="#000000" class=""></path>
-                                                        <path d="M262.167,205.042V45.676c0-2.852-1.111-5.531-3.128-7.543c-1.995-1.99-4.639-3.085-7.445-3.085c-0.009,0-0.018,0-0.026,0     c-24.793,0.059-69.889,5.801-93.357,43.593c-0.955,1.54-1.46,3.401-1.46,5.382v166.779     c28.592-29.921,70.038-35.077,94.776-35.136C257.394,215.651,262.167,210.885,262.167,205.042z" fill="#61481c" data-original="#000000" class=""></path>
-                                                        <path d="M286.373,71.801h-7.706v133.241c0,14.921-12.157,27.088-27.101,27.125c-20.983,0.05-55.581,4.153-80.084,27.344     c42.378-10.376,87.052-3.631,112.512,2.171c3.179,0.724,6.464-0.024,9.011-2.054c2.538-2.025,3.994-5.052,3.994-8.301V82.427     C297,76.568,292.232,71.801,286.373,71.801z" fill="#61481c" data-original="#000000" class=""></path>
-                                                        <path d="M18.332,205.042V71.801h-7.706C4.768,71.801,0,76.568,0,82.427v168.897c0,3.25,1.456,6.276,3.994,8.301     c2.545,2.029,5.827,2.78,9.011,2.054c25.46-5.803,70.135-12.547,112.511-2.171c-24.502-23.19-59.1-27.292-80.083-27.342     C30.49,232.13,18.332,219.963,18.332,205.042z" fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path
+                                                            d="M45.432,35.049c-0.008,0-0.017,0-0.025,0c-2.809,0-5.451,1.095-7.446,3.085c-2.017,2.012-3.128,4.691-3.128,7.543     v159.365c0,5.844,4.773,10.61,10.641,10.625c24.738,0.059,66.184,5.215,94.776,35.136V84.023c0-1.981-0.506-3.842-1.461-5.382     C115.322,40.849,70.226,35.107,45.432,35.049z"
+                                                            fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path
+                                                            d="M262.167,205.042V45.676c0-2.852-1.111-5.531-3.128-7.543c-1.995-1.99-4.639-3.085-7.445-3.085c-0.009,0-0.018,0-0.026,0     c-24.793,0.059-69.889,5.801-93.357,43.593c-0.955,1.54-1.46,3.401-1.46,5.382v166.779     c28.592-29.921,70.038-35.077,94.776-35.136C257.394,215.651,262.167,210.885,262.167,205.042z"
+                                                            fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path
+                                                            d="M286.373,71.801h-7.706v133.241c0,14.921-12.157,27.088-27.101,27.125c-20.983,0.05-55.581,4.153-80.084,27.344     c42.378-10.376,87.052-3.631,112.512,2.171c3.179,0.724,6.464-0.024,9.011-2.054c2.538-2.025,3.994-5.052,3.994-8.301V82.427     C297,76.568,292.232,71.801,286.373,71.801z"
+                                                            fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path
+                                                            d="M18.332,205.042V71.801h-7.706C4.768,71.801,0,76.568,0,82.427v168.897c0,3.25,1.456,6.276,3.994,8.301     c2.545,2.029,5.827,2.78,9.011,2.054c25.46-5.803,70.135-12.547,112.511-2.171c-24.502-23.19-59.1-27.292-80.083-27.342     C30.49,232.13,18.332,219.963,18.332,205.042z"
+                                                            fill="#61481c" data-original="#000000" class=""></path>
                                                     </g>
                                                 </g>
                                             </g>
@@ -617,12 +643,13 @@
                         </button>
 
                         <script>
-                            $("#btn-panduan-m").click(function() {
+                            $("#btn-panduan-m").click(function () {
                                 $("#panduan-m").toggleClass('show');
                                 $("#jaminan-m").removeClass('show');
                                 $("#chat-m").removeClass('show');
                                 $("#tentang-m").removeClass('show');
                             });
+
                         </script>
                     </div>
 
@@ -630,12 +657,20 @@
                         <button class="btn btn-sm mb-0 p-0 w-100" id="btn-jaminan-m" type="button">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                        width="45px" x="0" y="0" viewBox="0 0 32 32"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="16" cx="16" cy="16" fill="#ffffff" shape="circle"></circle>
                                         <g transform="matrix(0.7,0,0,0.7,4.799999713897705,4.800377225875856)">
-                                            <g xmlns="http://www.w3.org/2000/svg" id="_26-Guranteed" data-name="26-Guranteed">
-                                                <path d="m27 6c-5.56 0-10.33-3.74-10.38-3.78a1 1 0 0 0 -1.24 0c-.05.04-4.8 3.78-10.38 3.78a1 1 0 0 0 -1 1v9c0 6.71 2.71 10 11.59 13.91a1 1 0 0 0 .82 0c8.88-3.91 11.59-7.2 11.59-13.91v-9a1 1 0 0 0 -1-1zm-11 18a8 8 0 1 1 8-8 8 8 0 0 1 -8 8z" fill="#61481c" data-original="#000000" class=""></path>
-                                                <path d="m18.29 13.29-3.29 3.3-1.29-1.3a1 1 0 0 0 -1.42 1.42l2 2a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0 -1.42-1.42z" fill="#61481c" data-original="#000000" class=""></path>
+                                            <g xmlns="http://www.w3.org/2000/svg" id="_26-Guranteed"
+                                                data-name="26-Guranteed">
+                                                <path
+                                                    d="m27 6c-5.56 0-10.33-3.74-10.38-3.78a1 1 0 0 0 -1.24 0c-.05.04-4.8 3.78-10.38 3.78a1 1 0 0 0 -1 1v9c0 6.71 2.71 10 11.59 13.91a1 1 0 0 0 .82 0c8.88-3.91 11.59-7.2 11.59-13.91v-9a1 1 0 0 0 -1-1zm-11 18a8 8 0 1 1 8-8 8 8 0 0 1 -8 8z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
+                                                <path
+                                                    d="m18.29 13.29-3.29 3.3-1.29-1.3a1 1 0 0 0 -1.42 1.42l2 2a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0 -1.42-1.42z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
                                             </g>
                                         </g>
                                     </svg>
@@ -644,12 +679,13 @@
                         </button>
 
                         <script>
-                            $("#btn-jaminan-m").click(function() {
+                            $("#btn-jaminan-m").click(function () {
                                 $("#panduan-m").removeClass('show');
                                 $("#jaminan-m").toggleClass('show');
                                 $("#chat-m").removeClass('show');
                                 $("#tentang-m").removeClass('show');
                             });
+
                         </script>
 
                     </div>
@@ -658,7 +694,10 @@
                         <button class="btn btn-sm mb-0 p-0 w-100" id="btn-chat-m" type="button">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 361.014 361.014" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                        width="45px" x="0" y="0" viewBox="0 0 361.014 361.014"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="180.507" cx="180.507" cy="180.507" fill="#ffffff" shape="circle">
                                         </circle>
                                         <g transform="matrix(0.7,0,0,0.7,54.15209197998048,54.151945495605474)">
@@ -673,7 +712,8 @@
                                                     c-4.032-7.367-11.851-12.364-20.841-12.364h-22.933c-13.118,0-23.753,10.634-23.753,23.753c0,13.119,10.635,23.752,23.753,23.752
                                                     h22.933c9.112,0,17.023-5.132,21.005-12.662c0.348-0.658,0.633-2.026,3.321-2.026h25.054c22.823,0,53.365-11.341,69.259-65.373
                                                     c1.694-5.758,3.068-11.496,4.187-17.026c0.154-0.761,0.25-2.27,2.625-2.27h12.9c8.991,0,29.978-8.174,29.978-43.609v-25.075
-                                                    C361.013,137.082,340.026,126.94,331.035,126.94z" fill="#61481c" data-original="#000000" class=""></path>
+                                                    C361.013,137.082,340.026,126.94,331.035,126.94z" fill="#61481c"
+                                                        data-original="#000000" class=""></path>
                                                 </g>
                                     </svg>
                                     <h6 class="mt-0 mb-0" style="font-size: 12px;margin-top:13px">CHAT</h6>
@@ -682,12 +722,13 @@
                         </button>
 
                         <script>
-                            $("#btn-chat-m").click(function() {
+                            $("#btn-chat-m").click(function () {
                                 $("#panduan-m").removeClass('show');
                                 $("#jaminan-m").removeClass('show');
                                 $("#chat-m").toggleClass('show');
                                 $("#tentang-m").removeClass('show');
                             });
+
                         </script>
                     </div>
 
@@ -695,13 +736,20 @@
                         <button class="btn btn-sm mb-0 p-0 w-100" id="btn-tentang-m" type="button">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="45px" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                        width="45px" x="0" y="0" viewBox="0 0 24 24"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="12" cx="12" cy="12" fill="#ffffff" shape="circle"></circle>
                                         <g transform="matrix(0.7,0,0,0.7,3.600000000000003,3.600000000000003)">
                                             <g xmlns="http://www.w3.org/2000/svg" fill="rgb(0,0,0)">
-                                                <path d="m12 0a12 12 0 1 0 12 12 12.013 12.013 0 0 0 -12-12zm0 22a10 10 0 1 1 10-10 10.011 10.011 0 0 1 -10 10z" fill="#61481c" data-original="#000000" class=""></path>
-                                                <path d="m12 9a1 1 0 0 0 -1 1v8a1 1 0 0 0 2 0v-8a1 1 0 0 0 -1-1z" fill="#61481c" data-original="#000000" class=""></path>
-                                                <circle cx="12" cy="6" r="1" fill="#61481c" data-original="#000000" class=""></circle>
+                                                <path
+                                                    d="m12 0a12 12 0 1 0 12 12 12.013 12.013 0 0 0 -12-12zm0 22a10 10 0 1 1 10-10 10.011 10.011 0 0 1 -10 10z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
+                                                <path d="m12 9a1 1 0 0 0 -1 1v8a1 1 0 0 0 2 0v-8a1 1 0 0 0 -1-1z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
+                                                <circle cx="12" cy="6" r="1" fill="#61481c" data-original="#000000"
+                                                    class=""></circle>
                                             </g>
                                         </g>
                                     </svg>
@@ -711,19 +759,21 @@
                         </button>
 
                         <script>
-                            $("#btn-tentang-m").click(function() {
+                            $("#btn-tentang-m").click(function () {
                                 $("#panduan-m").removeClass('show');
                                 $("#jaminan-m").removeClass('show');
                                 $("#chat-m").removeClass('show');
                                 $("#tentang-m").toggleClass('show');
                             });
+
                         </script>
 
                     </div>
 
 
 
-                    <ol id="panduan-m" class="list-group panduan list-group-numbered shadow dropdown-menu rounded-0 p-0" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                    <ol id="panduan-m" class="list-group panduan list-group-numbered shadow dropdown-menu rounded-0 p-0"
+                        style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                             <div class="ms-2 me-auto">
                                 <div class="fw-bold" style="color: #61481C">Buat Akun Sengketa Tanah</div>
@@ -773,7 +823,8 @@
                         </li>
                     </ol>
 
-                    <ol id="jaminan-m" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                    <ol id="jaminan-m" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3"
+                        style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                         <div class="col-md-12">
                             <div class="d-flex">
                                 <div class="flex-shrink-0">
@@ -805,7 +856,8 @@
                         <div class="col-md-12 mt-4">
                             <div class="d-flex">
                                 <div class="flex-shrink-0">
-                                    <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-hand-holding-dollar"></i></b>
+                                    <h5 style="color: #61481C" class="mb-0"><b><i
+                                                class="fa-solid fa-hand-holding-dollar"></i></b>
                                     </h5>
                                 </div>
                                 <div class="d-flex align-items-center">
@@ -820,7 +872,8 @@
                         <div class="col-md-12 mt-4">
                             <div class="d-flex">
                                 <div class="flex-shrink-0">
-                                    <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-chart-line"></i></b></h5>
+                                    <h5 style="color: #61481C" class="mb-0"><b><i
+                                                class="fa-solid fa-chart-line"></i></b></h5>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <div class="flex-grow-1 ms-3">
@@ -864,23 +917,32 @@
                         </div>
                     </ol>
 
-                    <ol id="chat-m" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                    <ol id="chat-m"
+                        class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center"
+                        style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                         <h2>
                             <div class="fw-bold" style="color: #61481C"> Customer Service</div>
                         </h2>
                         <div class="chat-form"> <input type="text" class="form-control" placeholder="Nama">
-                            <input type="text" class="form-control" placeholder="Email"> <textarea class="form-control" placeholder="Masukan Pesan"></textarea> <button class="btn btn-brown btn-block">Kirim</button>
+                            <input type="text" class="form-control" placeholder="Email"> <textarea class="form-control"
+                                placeholder="Masukan Pesan"></textarea> <button
+                                class="btn btn-brown btn-block">Kirim</button>
                         </div>
                     </ol>
 
-                    <ol id="tentang-m" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center" style="inset: auto auto 0px 0px; margin: 0px; border-top: none; max-height: 500px; overflow-y: auto">
+                    <ol id="tentang-m"
+                        class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center"
+                        style="inset: auto auto 0px 0px; margin: 0px; border-top: none; max-height: 500px; overflow-y: auto">
                         <div class="card mb-3">
                             <div class="card-body">
                                 <div class="row desktop mb-4">
                                     <div class="col-md">
                                         <div class="card-body text-center container" style="height:500px">
-                                            <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
-                                            <div class="card rounded-0" style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                            <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}"
+                                                style="width:300px; height:400px;object-fit:cover" alt="" srcset=""
+                                                class="img-fluid">
+                                            <div class="card rounded-0"
+                                                style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                                                 <div class="card-body">
                                                     <p class="card-text">"Presiden Joko Widodo menegaskan kepada
                                                         Kementerian
@@ -895,8 +957,11 @@
                                     </div>
                                     <div class="col-md">
                                         <div class="card-body text-center container" style="height:500px">
-                                            <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
-                                            <div class="card rounded-0" style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                            <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}"
+                                                style="width:300px; height:400px;object-fit:cover" alt="" srcset=""
+                                                class="img-fluid">
+                                            <div class="card rounded-0"
+                                                style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                                                 <div class="card-body">
                                                     <p class="card-text">"Sesuai perintah Bapak Presiden, semua
                                                         kasus mafia
@@ -913,8 +978,11 @@
                                     </div>
                                     <div class="col-md">
                                         <div class="card-body text-center container" style="height:500px">
-                                            <img src="{{asset('/uploads/kapolri.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
-                                            <div class="card rounded-0" style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                            <img src="{{asset('/uploads/kapolri.png')}}"
+                                                style="width:300px; height:400px;object-fit:cover" alt="" srcset=""
+                                                class="img-fluid">
+                                            <div class="card rounded-0"
+                                                style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                                                 <div class="card-body">
                                                     <p class="card-text">"Penyidik tidak perlu ragu ragu dalam
                                                         mengusut
@@ -934,8 +1002,11 @@
                                     <div class="carousel-inner mb-5">
                                         <div class="carousel-item active">
                                             <div class="card-body text-center container" style="height:505px">
-                                                <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
-                                                <div class="card rounded-0" style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);z-index:10">
+                                                <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}"
+                                                    style="width:300px; height:400px;object-fit:cover" alt="" srcset=""
+                                                    class="img-fluid">
+                                                <div class="card rounded-0"
+                                                    style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);z-index:10">
                                                     <div class="card-body">
                                                         <p class="card-text">"Presiden Joko Widodo menegaskan
                                                             kepada Kementerian ATR/BPN untuk serius dalam
@@ -949,8 +1020,11 @@
                                         </div>
                                         <div class="carousel-item">
                                             <div class="card-body text-center container" style="height:505px">
-                                                <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
-                                                <div class="card rounded-0" style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}"
+                                                    style="width:300px; height:400px;object-fit:cover" alt="" srcset=""
+                                                    class="img-fluid">
+                                                <div class="card rounded-0"
+                                                    style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                                                     <div class="card-body">
                                                         <p class="card-text">"Sesuai perintah Bapak Presiden,
                                                             semua kasus
@@ -967,8 +1041,11 @@
                                         </div>
                                         <div class="carousel-item">
                                             <div class="card-body text-center container" style="height:505px">
-                                                <img src="{{asset('/uploads/kapolri.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
-                                                <div class="card rounded-0" style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                <img src="{{asset('/uploads/kapolri.png')}}"
+                                                    style="width:300px; height:400px;object-fit:cover" alt="" srcset=""
+                                                    class="img-fluid">
+                                                <div class="card rounded-0"
+                                                    style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                                                     <div class="card-body">
                                                         <p class="card-text">"Penyidik tidak perlu ragu ragu
                                                             dalam mengusut
@@ -987,11 +1064,17 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="carousel-control-prev my-auto" style="background: rgba(0, 0, 0, 0.75); height: 35px; width: 10%;border-radius: 50%" type="button" data-bs-target="#carouselExampleControlsPres" data-bs-slide="prev">
+                                    <button class="carousel-control-prev my-auto"
+                                        style="background: rgba(0, 0, 0, 0.75); height: 35px; width: 10%;border-radius: 50%"
+                                        type="button" data-bs-target="#carouselExampleControlsPres"
+                                        data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next my-auto" style="background: rgba(0, 0, 0, 0.75); height: 35px; width: 10%;border-radius: 50%" type="button" data-bs-target="#carouselExampleControlsPres" data-bs-slide="next">
+                                    <button class="carousel-control-next my-auto"
+                                        style="background: rgba(0, 0, 0, 0.75); height: 35px; width: 10%;border-radius: 50%"
+                                        type="button" data-bs-target="#carouselExampleControlsPres"
+                                        data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
                                     </button>
@@ -1004,6 +1087,7 @@
                                     max-width: 1000px !important;
                                 }
                             }
+
                         </style>
                         <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" class="mb-2" style="width: 75px" alt="">
                         <div class="container-lsa mx-auto mb-3">
@@ -1317,8 +1401,26 @@
                         </div>
 
                         <div class="col mb-4">
-                            <a href="{{url('/')}}/bid-rumah" class="btn btn-outline-light text-dark w-100 rounded-4 shadow" href="https://mitra.atrbpn.go.id">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="85px" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><circle r="256" cx="256" cy="256" fill="#ffffff" shape="circle"></circle><g transform="matrix(0.7,0,0,0.7,76.79999942779543,74.40000457763674)"><path d="M471.982,417.008Q472,416.5,472,416a32.036,32.036,0,0,0-32-32V236l28.8-21.6a8,8,0,0,0-.08-12.859L400,151.322V64a8,8,0,0,0,8-8V24a8,8,0,0,0-8-8H320a8,8,0,0,0-8,8V56a8,8,0,0,0,8,8V92.861l-59.28-43.32a8,8,0,0,0-9.44,0l-208,152A8,8,0,0,0,43.2,214.4L72,236V384a32.036,32.036,0,0,0-32,32q0,.5.018,1.008A32,32,0,0,0,48,480H464a32,32,0,0,0,7.982-62.992ZM328,32h64V48H328Zm8,72V64h48v75.63L335.243,104ZM256,65.908,450.555,208.084l-18.628,13.971L260.706,97.53a8,8,0,0,0-9.412,0L80.073,222.055,61.445,208.084ZM32,448a16.019,16.019,0,0,1,15.76-16l.019,0c.409.057.818.106,1.235.133a8,8,0,0,0,8.023-10.716A15.727,15.727,0,0,1,56,416a16.019,16.019,0,0,1,16-16v64H48A16.019,16.019,0,0,1,32,448Zm344,16H280V288h96Zm16,0V280a8,8,0,0,0-8-8H272a8,8,0,0,0-8,8V464H88V236.074L256,113.892,424,236.074V464Zm72,0H440V400a16.019,16.019,0,0,1,16,16,15.727,15.727,0,0,1-1.037,5.421,8,8,0,0,0,8.023,10.716c.417-.027.826-.076,1.235-.133l.019,0a16,16,0,0,1-.24,32Z" fill="#61481c" data-original="#000000" class=""></path><path d="M224,272H128a8,8,0,0,0-8,8V392a8,8,0,0,0,8,8h96a8,8,0,0,0,8-8V280A8,8,0,0,0,224,272Zm-8,56H184V288h32Zm-48-40v40H136V288Zm-32,56h32v40H136Zm48,40V344h32v40Z" fill="#61481c" data-original="#000000" class=""></path><circle cx="304" cy="368" r="8" transform="translate(-152.323 508.032) rotate(-67.5)" fill="#61481c" data-original="#000000" class=""></circle></g></svg>
+                            <a href="{{url('/')}}/bid-rumah"
+                                class="btn btn-outline-light text-dark w-100 rounded-4 shadow"
+                                href="https://mitra.atrbpn.go.id">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                    width="85px" x="0" y="0" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                    <circle r="256" cx="256" cy="256" fill="#ffffff" shape="circle"></circle>
+                                    <g transform="matrix(0.7,0,0,0.7,76.79999942779543,74.40000457763674)">
+                                        <path
+                                            d="M471.982,417.008Q472,416.5,472,416a32.036,32.036,0,0,0-32-32V236l28.8-21.6a8,8,0,0,0-.08-12.859L400,151.322V64a8,8,0,0,0,8-8V24a8,8,0,0,0-8-8H320a8,8,0,0,0-8,8V56a8,8,0,0,0,8,8V92.861l-59.28-43.32a8,8,0,0,0-9.44,0l-208,152A8,8,0,0,0,43.2,214.4L72,236V384a32.036,32.036,0,0,0-32,32q0,.5.018,1.008A32,32,0,0,0,48,480H464a32,32,0,0,0,7.982-62.992ZM328,32h64V48H328Zm8,72V64h48v75.63L335.243,104ZM256,65.908,450.555,208.084l-18.628,13.971L260.706,97.53a8,8,0,0,0-9.412,0L80.073,222.055,61.445,208.084ZM32,448a16.019,16.019,0,0,1,15.76-16l.019,0c.409.057.818.106,1.235.133a8,8,0,0,0,8.023-10.716A15.727,15.727,0,0,1,56,416a16.019,16.019,0,0,1,16-16v64H48A16.019,16.019,0,0,1,32,448Zm344,16H280V288h96Zm16,0V280a8,8,0,0,0-8-8H272a8,8,0,0,0-8,8V464H88V236.074L256,113.892,424,236.074V464Zm72,0H440V400a16.019,16.019,0,0,1,16,16,15.727,15.727,0,0,1-1.037,5.421,8,8,0,0,0,8.023,10.716c.417-.027.826-.076,1.235-.133l.019,0a16,16,0,0,1-.24,32Z"
+                                            fill="#61481c" data-original="#000000" class=""></path>
+                                        <path
+                                            d="M224,272H128a8,8,0,0,0-8,8V392a8,8,0,0,0,8,8h96a8,8,0,0,0,8-8V280A8,8,0,0,0,224,272Zm-8,56H184V288h32Zm-48-40v40H136V288Zm-32,56h32v40H136Zm48,40V344h32v40Z"
+                                            fill="#61481c" data-original="#000000" class=""></path>
+                                        <circle cx="304" cy="368" r="8"
+                                            transform="translate(-152.323 508.032) rotate(-67.5)" fill="#61481c"
+                                            data-original="#000000" class=""></circle>
+                                    </g>
+                                </svg>
                                 <div class="mt-0" style="font-size: 12px">Bid <br> Rumah</div>
                             </a>
                         </div>
@@ -1405,6 +1507,39 @@
                         </div>
 
                         <div class="col mb-4">
+                            <a href="{{url('/')}}/jasa-pengacara"
+                                class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                    width="85px" x="0" y="0" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                    <circle r="256" cx="256" cy="256" fill="#ffffff" shape="circle"></circle>
+                                    <g transform="matrix(0.7,0,0,0.7,76.80000457763674,76.81020755767824)">
+                                        <g id="Outline">
+                                            <path
+                                                d="M459.642,296.664l-55.32-15.656L384,260.686V231.992A79.9,79.9,0,0,0,416,168v-2.414a32,32,0,0,0,0-64v-24c0-22-11.1-42.048-28.283-51.063q-.312-.163-.638-.3a133.54,133.54,0,0,0-102.158,0q-.325.135-.638.3C267.1,35.54,256,55.584,256,77.588v24a32,32,0,1,0,0,64V168a79.868,79.868,0,0,0,17.011,49.32,35.751,35.751,0,0,1-26.136-3.091,51.935,51.935,0,0,0-46.051-1.62l-1.265.577A31.359,31.359,0,0,0,200,208a32,32,0,0,0-64,0,31.359,31.359,0,0,0,.441,5.186l-1.266-.577a51.772,51.772,0,0,0-46.055,1.623,36.11,36.11,0,0,1-27.462,2.718l-3.349-1.01-4.618,15.32,3.328,1a51.822,51.822,0,0,0,12.81,2.19L16.845,340.422l.006,0A7.952,7.952,0,0,0,16,344a40.045,40.045,0,0,0,40,40h48a40.045,40.045,0,0,0,40-40,7.952,7.952,0,0,0-.851-3.575l.006,0L88.818,231.748a50.221,50.221,0,0,0,7.978-3.477,36.178,36.178,0,0,1,31.749-1.1L144,234.209V416.8a40.015,40.015,0,0,0-31.325,31.876A39.993,39.993,0,0,0,80,488a8,8,0,0,0,8,8H192V343.231a31.954,31.954,0,0,1,24.239-31.044l22.669-5.668L232.04,375.2A8,8,0,0,0,240,384h21.754l-5.515,22.06a8,8,0,0,0,3.323,8.6L328,460.281V496h16V460.281l68.438-45.625a8,8,0,0,0,3.323-8.6L410.246,384H432a8,8,0,0,0,7.96-8.8l-6.869-68.685,22.67,5.668A31.954,31.954,0,0,1,480,343.231V496h16V343.231A47.931,47.931,0,0,0,459.642,296.664ZM104,368H56a24.042,24.042,0,0,1-22.629-16h93.258A24.042,24.042,0,0,1,104,368ZM36.944,336,80,249.889,123.056,336Zm198.562-45.123L256,249.889l14.266,28.531-2.588,2.588ZM328,325.626l8-9.333,8,9.333v86.9l-8,21-8-21Zm-16,44.9-6.919-18.164L312,344.292Zm48,0V344.292l6.919,8.072Zm-61.4-35.184-17.277-45.35L296,275.314l29.1,29.1Zm74.806,0L346.9,304.418l29.1-29.1,14.68,14.68ZM368,260.686l-32,32-32-32V241.331a80.108,80.108,0,0,0,64,0Zm-80-28.694v28.694l-5.809,5.809-16.02-32.041a51.807,51.807,0,0,0,12.788-2.184l6.872-1.961Q286.9,231.169,288,231.992Zm144-98.406a16.019,16.019,0,0,1-16,16v-32A16.019,16.019,0,0,1,432,133.586Zm-160-56c0-15.994,7.611-30.369,19.419-36.736a117.457,117.457,0,0,1,89.162,0C392.389,47.219,400,61.594,400,77.588v7.267A195.151,195.151,0,0,1,386.27,58.44a8,8,0,0,0-10.15-4.347,114.855,114.855,0,0,1-80.239,0,8,8,0,0,0-10.15,4.348A195.059,195.059,0,0,1,272,84.856Zm-32,56a16.019,16.019,0,0,1,16-16v32A16.019,16.019,0,0,1,240,133.586Zm32-21.179a200.571,200.571,0,0,0,25.407-40.9,130.866,130.866,0,0,0,77.188,0,200.548,200.548,0,0,0,25.4,40.9V168a64,64,0,1,1-128,0ZM168,192a16.019,16.019,0,0,1,16,16,15.78,15.78,0,0,1-5.354,11.828A8,8,0,0,0,176,225.771V416H160V225.771a8,8,0,0,0-2.646-5.943A15.78,15.78,0,0,1,152,208,16.019,16.019,0,0,1,168,192ZM135.027,439.027A23.847,23.847,0,0,1,152,432h24v16H129.357A23.908,23.908,0,0,1,135.027,439.027ZM97.357,480A24.037,24.037,0,0,1,120,464h56v16ZM192,307.443V234.209l15.455-7.038A35.9,35.9,0,0,1,222.23,224a35.477,35.477,0,0,1,16.971,4.269,50.3,50.3,0,0,0,7.979,3.483l-32.118,64.236-2.7.676A47.929,47.929,0,0,0,192,307.443Zm81.129,97.028,6.632-26.531A8,8,0,0,0,272,368H248.84l6.6-66.049,11.81-3.936,52.361,137.447ZM400,368a8,8,0,0,0-7.761,9.94l6.632,26.531-46.486,30.991,52.361-137.447,11.81,3.936L423.16,368Z"
+                                                fill="#61481c" data-original="#000000" class=""></path>
+                                            <path d="M300,136a12,12,0,1,0-12-12A12.013,12.013,0,0,0,300,136Z"
+                                                fill="#61481c" data-original="#000000" class=""></path>
+                                            <path d="M372,136a12,12,0,1,0-12-12A12.013,12.013,0,0,0,372,136Z"
+                                                fill="#61481c" data-original="#000000" class=""></path>
+                                            <path
+                                                d="M312,184h14.891c13.9,0,27.091-3.228,37.14-9.09l-8.062-13.82c-7.529,4.391-18.127,6.91-29.078,6.91H312Z"
+                                                fill="#61481c" data-original="#000000" class=""></path>
+                                            <rect x="296" y="464" width="16" height="16" fill="#61481c"
+                                                data-original="#000000" class=""></rect>
+                                            <rect x="232" y="424" width="16" height="72" fill="#61481c"
+                                                data-original="#000000" class=""></rect>
+                                            <rect x="424" y="424" width="16" height="72" fill="#61481c"
+                                                data-original="#000000" class=""></rect>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <div class="mt-0" style="font-size: 12px">Jasa <br> Pengacara</div>
+                            </a>
+                        </div>
+
+                        <div class="col mb-4">
                             <a href="{{url('/')}}/jasa-ppat"
                                 class="btn btn-outline-light text-dark w-100 rounded-4 shadow"
                                 href="https://mitra.atrbpn.go.id">
@@ -1440,38 +1575,6 @@
                             </a>
                         </div>
 
-                        <div class="col mb-4">
-                            <a href="{{url('/')}}/jasa-pengacara"
-                                class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
-                                    width="85px" x="0" y="0" viewBox="0 0 512 512"
-                                    style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-                                    <circle r="256" cx="256" cy="256" fill="#ffffff" shape="circle"></circle>
-                                    <g transform="matrix(0.7,0,0,0.7,76.80000457763674,76.81020755767824)">
-                                        <g id="Outline">
-                                            <path
-                                                d="M459.642,296.664l-55.32-15.656L384,260.686V231.992A79.9,79.9,0,0,0,416,168v-2.414a32,32,0,0,0,0-64v-24c0-22-11.1-42.048-28.283-51.063q-.312-.163-.638-.3a133.54,133.54,0,0,0-102.158,0q-.325.135-.638.3C267.1,35.54,256,55.584,256,77.588v24a32,32,0,1,0,0,64V168a79.868,79.868,0,0,0,17.011,49.32,35.751,35.751,0,0,1-26.136-3.091,51.935,51.935,0,0,0-46.051-1.62l-1.265.577A31.359,31.359,0,0,0,200,208a32,32,0,0,0-64,0,31.359,31.359,0,0,0,.441,5.186l-1.266-.577a51.772,51.772,0,0,0-46.055,1.623,36.11,36.11,0,0,1-27.462,2.718l-3.349-1.01-4.618,15.32,3.328,1a51.822,51.822,0,0,0,12.81,2.19L16.845,340.422l.006,0A7.952,7.952,0,0,0,16,344a40.045,40.045,0,0,0,40,40h48a40.045,40.045,0,0,0,40-40,7.952,7.952,0,0,0-.851-3.575l.006,0L88.818,231.748a50.221,50.221,0,0,0,7.978-3.477,36.178,36.178,0,0,1,31.749-1.1L144,234.209V416.8a40.015,40.015,0,0,0-31.325,31.876A39.993,39.993,0,0,0,80,488a8,8,0,0,0,8,8H192V343.231a31.954,31.954,0,0,1,24.239-31.044l22.669-5.668L232.04,375.2A8,8,0,0,0,240,384h21.754l-5.515,22.06a8,8,0,0,0,3.323,8.6L328,460.281V496h16V460.281l68.438-45.625a8,8,0,0,0,3.323-8.6L410.246,384H432a8,8,0,0,0,7.96-8.8l-6.869-68.685,22.67,5.668A31.954,31.954,0,0,1,480,343.231V496h16V343.231A47.931,47.931,0,0,0,459.642,296.664ZM104,368H56a24.042,24.042,0,0,1-22.629-16h93.258A24.042,24.042,0,0,1,104,368ZM36.944,336,80,249.889,123.056,336Zm198.562-45.123L256,249.889l14.266,28.531-2.588,2.588ZM328,325.626l8-9.333,8,9.333v86.9l-8,21-8-21Zm-16,44.9-6.919-18.164L312,344.292Zm48,0V344.292l6.919,8.072Zm-61.4-35.184-17.277-45.35L296,275.314l29.1,29.1Zm74.806,0L346.9,304.418l29.1-29.1,14.68,14.68ZM368,260.686l-32,32-32-32V241.331a80.108,80.108,0,0,0,64,0Zm-80-28.694v28.694l-5.809,5.809-16.02-32.041a51.807,51.807,0,0,0,12.788-2.184l6.872-1.961Q286.9,231.169,288,231.992Zm144-98.406a16.019,16.019,0,0,1-16,16v-32A16.019,16.019,0,0,1,432,133.586Zm-160-56c0-15.994,7.611-30.369,19.419-36.736a117.457,117.457,0,0,1,89.162,0C392.389,47.219,400,61.594,400,77.588v7.267A195.151,195.151,0,0,1,386.27,58.44a8,8,0,0,0-10.15-4.347,114.855,114.855,0,0,1-80.239,0,8,8,0,0,0-10.15,4.348A195.059,195.059,0,0,1,272,84.856Zm-32,56a16.019,16.019,0,0,1,16-16v32A16.019,16.019,0,0,1,240,133.586Zm32-21.179a200.571,200.571,0,0,0,25.407-40.9,130.866,130.866,0,0,0,77.188,0,200.548,200.548,0,0,0,25.4,40.9V168a64,64,0,1,1-128,0ZM168,192a16.019,16.019,0,0,1,16,16,15.78,15.78,0,0,1-5.354,11.828A8,8,0,0,0,176,225.771V416H160V225.771a8,8,0,0,0-2.646-5.943A15.78,15.78,0,0,1,152,208,16.019,16.019,0,0,1,168,192ZM135.027,439.027A23.847,23.847,0,0,1,152,432h24v16H129.357A23.908,23.908,0,0,1,135.027,439.027ZM97.357,480A24.037,24.037,0,0,1,120,464h56v16ZM192,307.443V234.209l15.455-7.038A35.9,35.9,0,0,1,222.23,224a35.477,35.477,0,0,1,16.971,4.269,50.3,50.3,0,0,0,7.979,3.483l-32.118,64.236-2.7.676A47.929,47.929,0,0,0,192,307.443Zm81.129,97.028,6.632-26.531A8,8,0,0,0,272,368H248.84l6.6-66.049,11.81-3.936,52.361,137.447ZM400,368a8,8,0,0,0-7.761,9.94l6.632,26.531-46.486,30.991,52.361-137.447,11.81,3.936L423.16,368Z"
-                                                fill="#61481c" data-original="#000000" class=""></path>
-                                            <path d="M300,136a12,12,0,1,0-12-12A12.013,12.013,0,0,0,300,136Z"
-                                                fill="#61481c" data-original="#000000" class=""></path>
-                                            <path d="M372,136a12,12,0,1,0-12-12A12.013,12.013,0,0,0,372,136Z"
-                                                fill="#61481c" data-original="#000000" class=""></path>
-                                            <path
-                                                d="M312,184h14.891c13.9,0,27.091-3.228,37.14-9.09l-8.062-13.82c-7.529,4.391-18.127,6.91-29.078,6.91H312Z"
-                                                fill="#61481c" data-original="#000000" class=""></path>
-                                            <rect x="296" y="464" width="16" height="16" fill="#61481c"
-                                                data-original="#000000" class=""></rect>
-                                            <rect x="232" y="424" width="16" height="72" fill="#61481c"
-                                                data-original="#000000" class=""></rect>
-                                            <rect x="424" y="424" width="16" height="72" fill="#61481c"
-                                                data-original="#000000" class=""></rect>
-                                        </g>
-                                    </g>
-                                </svg>
-                                <div class="mt-0" style="font-size: 12px">Jasa <br> Pengacara</div>
-                            </a>
-                        </div>
 
                         <div class="col mb-4">
                             <a href="{{url('/')}}/jasa-notaris"
@@ -1646,17 +1749,28 @@
 
                             <div class="col-3 text-center">
                                 <button class="btn btn-sm" id="btn-panduan" type="button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70px" x="0" y="0" viewBox="0 0 296.999 296.999" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                        width="70px" x="0" y="0" viewBox="0 0 296.999 296.999"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="148.4995" cx="148.4995" cy="148.4995" fill="#ffffff" shape="circle">
                                         </circle>
                                         <g transform="matrix(0.7,0,0,0.7,44.54984436035157,44.54998970031738)">
                                             <g xmlns="http://www.w3.org/2000/svg">
                                                 <g>
                                                     <g>
-                                                        <path d="M45.432,35.049c-0.008,0-0.017,0-0.025,0c-2.809,0-5.451,1.095-7.446,3.085c-2.017,2.012-3.128,4.691-3.128,7.543     v159.365c0,5.844,4.773,10.61,10.641,10.625c24.738,0.059,66.184,5.215,94.776,35.136V84.023c0-1.981-0.506-3.842-1.461-5.382     C115.322,40.849,70.226,35.107,45.432,35.049z" fill="#61481c" data-original="#000000" class=""></path>
-                                                        <path d="M262.167,205.042V45.676c0-2.852-1.111-5.531-3.128-7.543c-1.995-1.99-4.639-3.085-7.445-3.085c-0.009,0-0.018,0-0.026,0     c-24.793,0.059-69.889,5.801-93.357,43.593c-0.955,1.54-1.46,3.401-1.46,5.382v166.779     c28.592-29.921,70.038-35.077,94.776-35.136C257.394,215.651,262.167,210.885,262.167,205.042z" fill="#61481c" data-original="#000000" class=""></path>
-                                                        <path d="M286.373,71.801h-7.706v133.241c0,14.921-12.157,27.088-27.101,27.125c-20.983,0.05-55.581,4.153-80.084,27.344     c42.378-10.376,87.052-3.631,112.512,2.171c3.179,0.724,6.464-0.024,9.011-2.054c2.538-2.025,3.994-5.052,3.994-8.301V82.427     C297,76.568,292.232,71.801,286.373,71.801z" fill="#61481c" data-original="#000000" class=""></path>
-                                                        <path d="M18.332,205.042V71.801h-7.706C4.768,71.801,0,76.568,0,82.427v168.897c0,3.25,1.456,6.276,3.994,8.301     c2.545,2.029,5.827,2.78,9.011,2.054c25.46-5.803,70.135-12.547,112.511-2.171c-24.502-23.19-59.1-27.292-80.083-27.342     C30.49,232.13,18.332,219.963,18.332,205.042z" fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path
+                                                            d="M45.432,35.049c-0.008,0-0.017,0-0.025,0c-2.809,0-5.451,1.095-7.446,3.085c-2.017,2.012-3.128,4.691-3.128,7.543     v159.365c0,5.844,4.773,10.61,10.641,10.625c24.738,0.059,66.184,5.215,94.776,35.136V84.023c0-1.981-0.506-3.842-1.461-5.382     C115.322,40.849,70.226,35.107,45.432,35.049z"
+                                                            fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path
+                                                            d="M262.167,205.042V45.676c0-2.852-1.111-5.531-3.128-7.543c-1.995-1.99-4.639-3.085-7.445-3.085c-0.009,0-0.018,0-0.026,0     c-24.793,0.059-69.889,5.801-93.357,43.593c-0.955,1.54-1.46,3.401-1.46,5.382v166.779     c28.592-29.921,70.038-35.077,94.776-35.136C257.394,215.651,262.167,210.885,262.167,205.042z"
+                                                            fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path
+                                                            d="M286.373,71.801h-7.706v133.241c0,14.921-12.157,27.088-27.101,27.125c-20.983,0.05-55.581,4.153-80.084,27.344     c42.378-10.376,87.052-3.631,112.512,2.171c3.179,0.724,6.464-0.024,9.011-2.054c2.538-2.025,3.994-5.052,3.994-8.301V82.427     C297,76.568,292.232,71.801,286.373,71.801z"
+                                                            fill="#61481c" data-original="#000000" class=""></path>
+                                                        <path
+                                                            d="M18.332,205.042V71.801h-7.706C4.768,71.801,0,76.568,0,82.427v168.897c0,3.25,1.456,6.276,3.994,8.301     c2.545,2.029,5.827,2.78,9.011,2.054c25.46-5.803,70.135-12.547,112.511-2.171c-24.502-23.19-59.1-27.292-80.083-27.342     C30.49,232.13,18.332,219.963,18.332,205.042z"
+                                                            fill="#61481c" data-original="#000000" class=""></path>
                                                     </g>
                                                 </g>
                                             </g>
@@ -1695,74 +1809,96 @@
                                     <h6 class="mt-2 mb-0" style="font-weight:bold;">PANDUAN</h6>
                                 </button>
                                 <script>
-                                    $("#btn-panduan").click(function() {
+                                    $("#btn-panduan").click(function () {
                                         $("#panduan").toggleClass('show');
                                         $("#jaminan").removeClass('show');
                                         $("#chat").removeClass('show');
                                         $("#tentang").removeClass('show');
                                     });
+
                                 </script>
                             </div>
                             <div class="col-3 text-center">
                                 <button class="btn btn-sm" id="btn-jaminan" type="button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70px" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                        width="70px" x="0" y="0" viewBox="0 0 32 32"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="16" cx="16" cy="16" fill="#ffffff" shape="circle"></circle>
                                         <g transform="matrix(0.7,0,0,0.7,4.799999713897705,4.800377225875856)">
-                                            <g xmlns="http://www.w3.org/2000/svg" id="_26-Guranteed" data-name="26-Guranteed">
-                                                <path d="m27 6c-5.56 0-10.33-3.74-10.38-3.78a1 1 0 0 0 -1.24 0c-.05.04-4.8 3.78-10.38 3.78a1 1 0 0 0 -1 1v9c0 6.71 2.71 10 11.59 13.91a1 1 0 0 0 .82 0c8.88-3.91 11.59-7.2 11.59-13.91v-9a1 1 0 0 0 -1-1zm-11 18a8 8 0 1 1 8-8 8 8 0 0 1 -8 8z" fill="#61481c" data-original="#000000" class=""></path>
-                                                <path d="m18.29 13.29-3.29 3.3-1.29-1.3a1 1 0 0 0 -1.42 1.42l2 2a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0 -1.42-1.42z" fill="#61481c" data-original="#000000" class=""></path>
+                                            <g xmlns="http://www.w3.org/2000/svg" id="_26-Guranteed"
+                                                data-name="26-Guranteed">
+                                                <path
+                                                    d="m27 6c-5.56 0-10.33-3.74-10.38-3.78a1 1 0 0 0 -1.24 0c-.05.04-4.8 3.78-10.38 3.78a1 1 0 0 0 -1 1v9c0 6.71 2.71 10 11.59 13.91a1 1 0 0 0 .82 0c8.88-3.91 11.59-7.2 11.59-13.91v-9a1 1 0 0 0 -1-1zm-11 18a8 8 0 1 1 8-8 8 8 0 0 1 -8 8z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
+                                                <path
+                                                    d="m18.29 13.29-3.29 3.3-1.29-1.3a1 1 0 0 0 -1.42 1.42l2 2a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0 -1.42-1.42z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
                                             </g>
                                         </g>
                                     </svg>
                                     <h6 class="mt-2 mb-0" style="font-weight:bold;">JAMINAN</h6>
                                 </button>
                                 <script>
-                                    $("#btn-jaminan").click(function() {
+                                    $("#btn-jaminan").click(function () {
                                         $("#panduan").removeClass('show');
                                         $("#jaminan").toggleClass('show');
                                         $("#chat").removeClass('show');
                                         $("#tentang").removeClass('show');
                                     });
+
                                 </script>
                             </div>
                             <div class="col-3 text-center">
                                 <button class="btn btn-sm" id="btn-chat" type="button">
-                                    <img src="{{asset('')}}images/cus.svg" style="width:55px;margin-top:9px" alt="" srcset="">
+                                    <img src="{{asset('')}}images/cus.svg" style="width:55px;margin-top:9px" alt=""
+                                        srcset="">
                                     <h6 class=" mb-0" style="font-weight:bold;margin-top:13px">CHAT</h6>
                                 </button>
                                 <script>
-                                    $("#btn-chat").click(function() {
+                                    $("#btn-chat").click(function () {
                                         $("#panduan").removeClass('show');
                                         $("#jaminan").removeClass('show');
                                         $("#chat").toggleClass('show');
                                         $("#tentang").removeClass('show');
                                     });
+
                                 </script>
                             </div>
                             <div class="col-3 text-center">
                                 <button class="btn btn-sm" id="btn-tentang" type="button" style="margin-left:-10px">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70px" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                                        width="70px" x="0" y="0" viewBox="0 0 24 24"
+                                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="12" cx="12" cy="12" fill="#ffffff" shape="circle"></circle>
                                         <g transform="matrix(0.7,0,0,0.7,3.600000000000003,3.600000000000003)">
                                             <g xmlns="http://www.w3.org/2000/svg" fill="rgb(0,0,0)">
-                                                <path d="m12 0a12 12 0 1 0 12 12 12.013 12.013 0 0 0 -12-12zm0 22a10 10 0 1 1 10-10 10.011 10.011 0 0 1 -10 10z" fill="#61481c" data-original="#000000" class=""></path>
-                                                <path d="m12 9a1 1 0 0 0 -1 1v8a1 1 0 0 0 2 0v-8a1 1 0 0 0 -1-1z" fill="#61481c" data-original="#000000" class=""></path>
-                                                <circle cx="12" cy="6" r="1" fill="#61481c" data-original="#000000" class=""></circle>
+                                                <path
+                                                    d="m12 0a12 12 0 1 0 12 12 12.013 12.013 0 0 0 -12-12zm0 22a10 10 0 1 1 10-10 10.011 10.011 0 0 1 -10 10z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
+                                                <path d="m12 9a1 1 0 0 0 -1 1v8a1 1 0 0 0 2 0v-8a1 1 0 0 0 -1-1z"
+                                                    fill="#61481c" data-original="#000000" class=""></path>
+                                                <circle cx="12" cy="6" r="1" fill="#61481c" data-original="#000000"
+                                                    class=""></circle>
                                             </g>
                                         </g>
                                     </svg>
                                     <h6 class="mt-2 mb-0" style="font-weight:bold;">TENTANG</h6>
                                 </button>
                                 <script>
-                                    $("#btn-tentang").click(function() {
+                                    $("#btn-tentang").click(function () {
                                         $("#panduan").removeClass('show');
                                         $("#jaminan").removeClass('show');
                                         $("#chat").removeClass('show');
                                         $("#tentang").toggleClass('show');
                                     });
+
                                 </script>
                             </div>
-                            <ol id="panduan" class="list-group panduan list-group-numbered shadow dropdown-menu rounded-0 p-0" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                            <ol id="panduan"
+                                class="list-group panduan list-group-numbered shadow dropdown-menu rounded-0 p-0"
+                                style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                                 <li class="list-group-item d-flex justify-content-between align-items-start">
                                     <div class="ms-2 me-auto">
                                         <div class="fw-bold" style="color: #61481C">Buat Akun Sengketa Tanah</div>
@@ -1811,11 +1947,13 @@
                                     <i class="fa-solid fa-handshake-angle fs-6" style="color: #61481C"></i>
                                 </li>
                             </ol>
-                            <ol id="jaminan" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                            <ol id="jaminan" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3"
+                                style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                                 <div class="col-md-12">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-tie"></i></b></h5>
+                                            <h5 style="color: #61481C" class="mb-0"><b><i
+                                                        class="fa-solid fa-user-tie"></i></b></h5>
                                         </div>
                                         <div class="flex-grow-1 ms-3">
                                             <h5 style="color: #61481C" class="mb-0"><b>Sponsor Terverifikasi</b>
@@ -1827,7 +1965,8 @@
                                 <div class="col-md-12 mt-4">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-gavel"></i></b></h5>
+                                            <h5 style="color: #61481C" class="mb-0"><b><i
+                                                        class="fa-solid fa-gavel"></i></b></h5>
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1 ms-3">
@@ -1841,7 +1980,8 @@
                                 <div class="col-md-12 mt-4">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-hand-holding-dollar"></i></b>
+                                            <h5 style="color: #61481C" class="mb-0"><b><i
+                                                        class="fa-solid fa-hand-holding-dollar"></i></b>
                                             </h5>
                                         </div>
                                         <div class="d-flex align-items-center">
@@ -1856,7 +1996,8 @@
                                 <div class="col-md-12 mt-4">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-chart-line"></i></b></h5>
+                                            <h5 style="color: #61481C" class="mb-0"><b><i
+                                                        class="fa-solid fa-chart-line"></i></b></h5>
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1 ms-3">
@@ -1870,7 +2011,8 @@
                                 <div class="col-md-12 mt-4">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-handshake"></i></b></h5>
+                                            <h5 style="color: #61481C" class="mb-0"><b><i
+                                                        class="fa-solid fa-handshake"></i></b></h5>
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1 ms-3">
@@ -1885,7 +2027,8 @@
                                 <div class="col-md-12 mt-4">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
-                                            <h5 style="color: #61481C" class="mb-0"><b><i class="fa-solid fa-user-gear"></i></b></h5>
+                                            <h5 style="color: #61481C" class="mb-0"><b><i
+                                                        class="fa-solid fa-user-gear"></i></b></h5>
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div class="flex-grow-1 ms-3">
@@ -1897,22 +2040,31 @@
                                     </div>
                                 </div>
                             </ol>
-                            <ol id="chat" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                            <ol id="chat"
+                                class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center"
+                                style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                                 <h2>
                                     <div class="fw-bold" style="color: #61481C"> Customer Service</div>
                                 </h2>
                                 <div class="chat-form"> <input type="text" class="form-control" placeholder="Nama">
-                                    <input type="text" class="form-control" placeholder="Email"> <textarea class="form-control" placeholder="Masukan Pesan"></textarea> <button class="btn btn-success btn-block">Kirim</button>
+                                    <input type="text" class="form-control" placeholder="Email"> <textarea
+                                        class="form-control" placeholder="Masukan Pesan"></textarea> <button
+                                        class="btn btn-success btn-block">Kirim</button>
                                 </div>
                             </ol>
-                            <ol id="tentang" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
+                            <ol id="tentang"
+                                class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center"
+                                style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                                 <div class="card mb-3">
                                     <div class="card-body">
                                         <div class="row desktop mb-4">
                                             <div class="col-md">
                                                 <div class="card-body text-center container" style="height:500px">
-                                                    <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
-                                                    <div class="card rounded-0" style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                    <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}"
+                                                        style="width:300px; height:400px;object-fit:cover" alt=""
+                                                        srcset="" class="img-fluid">
+                                                    <div class="card rounded-0"
+                                                        style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                                                         <div class="card-body">
                                                             <p class="card-text">"Presiden Joko Widodo menegaskan kepada
                                                                 Kementerian
@@ -1927,8 +2079,11 @@
                                             </div>
                                             <div class="col-md">
                                                 <div class="card-body text-center container" style="height:500px">
-                                                    <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
-                                                    <div class="card rounded-0" style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                    <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}"
+                                                        style="width:300px; height:400px;object-fit:cover" alt=""
+                                                        srcset="" class="img-fluid">
+                                                    <div class="card rounded-0"
+                                                        style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                                                         <div class="card-body">
                                                             <p class="card-text">"Sesuai perintah Bapak Presiden, semua
                                                                 kasus mafia
@@ -1945,8 +2100,11 @@
                                             </div>
                                             <div class="col-md">
                                                 <div class="card-body text-center container" style="height:500px">
-                                                    <img src="{{asset('/uploads/kapolri.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
-                                                    <div class="card rounded-0" style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                    <img src="{{asset('/uploads/kapolri.png')}}"
+                                                        style="width:300px; height:400px;object-fit:cover" alt=""
+                                                        srcset="" class="img-fluid">
+                                                    <div class="card rounded-0"
+                                                        style="width: 17rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                                                         <div class="card-body">
                                                             <p class="card-text">"Penyidik tidak perlu ragu ragu dalam
                                                                 mengusut
@@ -1966,8 +2124,11 @@
                                             <div class="carousel-inner  mb-5">
                                                 <div class="carousel-item active">
                                                     <div class="card-body text-center container" style="height:505px">
-                                                        <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
-                                                        <div class="card rounded-0" style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);z-index:10">
+                                                        <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}"
+                                                            style="width:300px; height:400px;object-fit:cover" alt=""
+                                                            srcset="" class="img-fluid">
+                                                        <div class="card rounded-0"
+                                                            style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);z-index:10">
                                                             <div class="card-body">
                                                                 <p class="card-text">"Presiden Joko Widodo menegaskan
                                                                     kepada Kementerian ATR/BPN untuk serius dalam
@@ -1981,8 +2142,11 @@
                                                 </div>
                                                 <div class="carousel-item">
                                                     <div class="card-body text-center container" style="height:505px">
-                                                        <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
-                                                        <div class="card rounded-0" style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                        <img src="{{asset('/uploads/atr-hadi-tjahjanto.png')}}"
+                                                            style="width:300px; height:400px;object-fit:cover" alt=""
+                                                            srcset="" class="img-fluid">
+                                                        <div class="card rounded-0"
+                                                            style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                                                             <div class="card-body">
                                                                 <p class="card-text">"Sesuai perintah Bapak Presiden,
                                                                     semua kasus
@@ -1999,8 +2163,11 @@
                                                 </div>
                                                 <div class="carousel-item">
                                                     <div class="card-body text-center container" style="height:505px">
-                                                        <img src="{{asset('/uploads/kapolri.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
-                                                        <div class="card rounded-0" style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
+                                                        <img src="{{asset('/uploads/kapolri.png')}}"
+                                                            style="width:300px; height:400px;object-fit:cover" alt=""
+                                                            srcset="" class="img-fluid">
+                                                        <div class="card rounded-0"
+                                                            style="width: 14rem; position:relative; left:50%;transform: translate(-50%, -50%);">
                                                             <div class="card-body">
                                                                 <p class="card-text">"Penyidik tidak perlu ragu ragu
                                                                     dalam mengusut
@@ -2027,8 +2194,10 @@
                                             max-width: 1000px !important;
                                         }
                                     }
+
                                 </style>
-                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" class="mb-2" style="width: 75px" alt="">
+                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" class="mb-2" style="width: 75px"
+                                    alt="">
                                 <div class="container-lsa mx-auto mb-3">
                                     <h2>
                                         <div class="fw-bold" style="color: #61481C"> TENTANG KAMI</div>
@@ -2091,13 +2260,15 @@
                     <div class="card-body">
                         <div class="row justify-content-center">
                             <div class="col-1 arrow-desktop text-center">
-                                <button id="left-orang1" class="btn rounded-5 text-white bg-secondary mt-4" style="background-color: #61481C">
+                                <button id="left-orang1" class="btn rounded-5 text-white bg-secondary mt-4"
+                                    style="background-color: #61481C">
                                     <i class="fa-solid fa-arrow-left"></i>
                                 </button>
                             </div>
                             <div class="col-lg-10">
                                 <div class="row">
-                                    <div class="col mobile-scroll" id='orang-kotak' style="white-space:nowrap;flex-wrap:nowarp;display:flex">
+                                    <div class="col mobile-scroll" id='orang-kotak'
+                                        style="white-space:nowrap;flex-wrap:nowarp;display:flex">
 
                                         <?php
                                         $name = [
@@ -2112,15 +2283,21 @@
                                             "Hadi Ismail", 'Abdullah', 'Nugraha D.', 'Ade Syarief', "Adhi Utomo", 'Leman wan', 'Noto Adi', 'Agus Susan'
                                         ];
                                         ?>
-                                        <div class="container-gambar text-center ms-1" style='display: inline-block;flex: 0 0 auto'>
-                                            <img src="data:image/png;base64,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" alt="" srcset="" class="rounded-circle img-thumbnail" style="width:70px;height:70px;object-fit:cover;background:#61481C"> <br>
+                                        <div class="container-gambar text-center ms-1"
+                                            style='display: inline-block;flex: 0 0 auto'>
+                                            <img src="data:image/png;base64,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"
+                                                alt="" srcset="" class="rounded-circle img-thumbnail"
+                                                style="width:70px;height:70px;object-fit:cover;background:#61481C"> <br>
 
                                             Lawyer
 
                                         </div>
                                         @for($i=13;$i> 0;$i--)
-                                        <div class="container-gambar text-center ms-1" style='display: inline-block;flex: 0 0 auto'>
-                                            <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt="" srcset="" class="rounded-circle img-thumbnail " style="width:70px;height:70px;object-fit:cover;"> <br>
+                                        <div class="container-gambar text-center ms-1"
+                                            style='display: inline-block;flex: 0 0 auto'>
+                                            <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt=""
+                                                srcset="" class="rounded-circle img-thumbnail "
+                                                style="width:70px;height:70px;object-fit:cover;"> <br>
                                             {{$name[$i]}}
                                         </div>
                                         @endfor
@@ -2128,7 +2305,8 @@
                                 </div>
                             </div>
                             <div class="col-1 arrow-desktop text-center">
-                                <button id="right-orang1" class="btn rounded-5 text-white bg-secondary mt-4" style="background-color: #61481C">
+                                <button id="right-orang1" class="btn rounded-5 text-white bg-secondary mt-4"
+                                    style="background-color: #61481C">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </button>
                             </div>
@@ -2137,21 +2315,22 @@
                 </div>
             </div>
 
-                <script>
-                    $('#right-orang1').click(function() {
-                        event.preventDefault();
-                        $('#orang-kotak').animate({
-                            scrollLeft: "+=300px"
-                        }, "slow");
-                    });
+            <script>
+                $('#right-orang1').click(function () {
+                    event.preventDefault();
+                    $('#orang-kotak').animate({
+                        scrollLeft: "+=300px"
+                    }, "slow");
+                });
 
-                    $('#left-orang1').click(function() {
-                        event.preventDefault();
-                        $('#orang-kotak').animate({
-                            scrollLeft: "-=300px"
-                        }, "slow");
-                    });
-                </script>
+                $('#left-orang1').click(function () {
+                    event.preventDefault();
+                    $('#orang-kotak').animate({
+                        scrollLeft: "-=300px"
+                    }, "slow");
+                });
+
+            </script>
 
             <div class="col-lg-12">
                 <div class="card mt-0">
@@ -2165,15 +2344,18 @@
                                                 <tbody>
                                                     <tr>
                                                         <td rowspan="2" style="width: 40px">
-                                                            <img src="http://sengketatanah.id/uploads/sengketa-logo_pas.png" style="width:30px">
+                                                            <img src="http://sengketatanah.id/uploads/sengketa-logo_pas.png"
+                                                                style="width:30px">
                                                         </td>
                                                         <td>
-                                                            <h3 color="text-primary" style="margin-bottom: 0px !important">
+                                                            <h3 color="text-primary"
+                                                                style="margin-bottom: 0px !important">
                                                                 Bid Pengacara
                                                             </h3>
                                                         </td>
                                                         <td class="text-end" rowspan="2">
-                                                            <h5 class="text-primary fw-bold" style="text-decoration: none">
+                                                            <h5 class="text-primary fw-bold"
+                                                                style="text-decoration: none">
                                                                 1.430
                                                             </h5>
                                                         </td>
@@ -2203,7 +2385,9 @@
                                             <div class="card-header bg-pengacara text-white px-3 py-1">
                                                 <div class="row">
                                                     <div class="col-lg-12">
-                                                        <h5 class="mb-0 text-center">Kode Bid SP-00{{$bs['id']}} <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                                        <h5 class="mb-0 text-center">Kode Bid SP-00{{$bs['id']}} <img
+                                                                src="{{asset('')}}uploads/biru_centang.png" alt=""
+                                                                class="mb-1" style="height:20px">
                                                     </div>
                                                 </div>
                                             </div>
@@ -2265,17 +2449,23 @@
                                                 <div class="row g-0 align-items-center">
                                                     <div class="col text-center">
 
-                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal" data-bs-target="#berkasPengacara" style="text-decoration:none">
+                                                        <a href="#" class=" mx-auto btn btn-danger rounded-5"
+                                                            data-bs-toggle="modal" data-bs-target="#berkasPengacara"
+                                                            style="text-decoration:none">
                                                             <i class="fa-solid fa-eye"></i> Lihat Detail
                                                         </a>
 
 
-                                                        <div class="modal fade my-auto" id="berkasPengacara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal fade my-auto" id="berkasPengacara"
+                                                            tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                            aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header p-0">
-                                                                        <h1 class="modal-title mx-auto text-danger display-1">
-                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
+                                                                        <h1
+                                                                            class="modal-title mx-auto text-danger display-1">
+                                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
+                                                                                style="width: 100px" alt="">
                                                                         </h1>
                                                                     </div>
                                                                     <div class="modal-body">
@@ -2284,9 +2474,13 @@
                                                                         detail.
                                                                     </div>
                                                                     <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                        <button type="button"
+                                                                            class="btn btn-secondary me-auto"
+                                                                            data-bs-dismiss="modal">Close</button>
+                                                                        <a type="button" class="btn btn-success"
+                                                                            href="https://server.sengketatanah.id/login">Login</a>
+                                                                        <a type="button" class="btn btn-danger"
+                                                                            href="https://server.sengketatanah.id/login">Register</a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -2295,29 +2489,36 @@
                                                     </div>
                                                     <div class="col-1 text-center">
                                                         <a id="fav-p<?= $bs['id'] ?>">
-                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-p<?= $bs['id'] ?>">
+                                                            <h5 class="mb-0 text-fav-disable"
+                                                                id="fav-ch-p<?= $bs['id'] ?>">
                                                                 <i class="fas fa-star"></i>
                                                             </h5>
                                                         </a>
                                                         <script>
-                                                            $("#fav-p<?= $bs['id'] ?>").click(function() {
-                                                                $("#fav-ch-p<?= $bs['id'] ?>").toggleClass('fav-icon');
+                                                            $("#fav-p<?= $bs['id'] ?>").click(function () {
+                                                                $("#fav-ch-p<?= $bs['id'] ?>").toggleClass(
+                                                                    'fav-icon');
                                                             });
+
                                                         </script>
                                                     </div>
                                                     <div class="col text-center">
-                                                        <a data-bs-toggle="modal" data-bs-target="#examplePengacara" class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                        <a data-bs-toggle="modal" data-bs-target="#examplePengacara"
+                                                            class="btn btn-success rounded-5"
+                                                            style="cursor:pointer; width: 125px">
                                                             Bid</a>
                                                     </div>
                                                 </div>
 
-                                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1" method="get">
+                                                <form action="http://localhost:8000/bid-sengketa/podcast"
+                                                    class="form-sengketa1" method="get">
                                                     <input type="hidden" name="owner" value=" Bahru">
                                                     <input type="hidden" name="objek" value=" Sengketa Pertanahan">
                                                     <input type="hidden" name="luas" value=" 1 Ha">
                                                     <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
                                                     <input type="hidden" name="komentar" value="">
-                                                    <input type="hidden" name="link_yt" value="https://www.youtube.com/embed/-RkCcavzXq8">
+                                                    <input type="hidden" name="link_yt"
+                                                        value="https://www.youtube.com/embed/-RkCcavzXq8">
                                                     <input type="hidden" name="form" value="sponsor">
                                                 </form>
 
@@ -2332,12 +2533,16 @@
                                                                 BID
                                                             </button>-->
 
-                                                            <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal fade my-auto" id="exampleSponsor"
+                                                                tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                                aria-hidden="true">
                                                                 <div class="modal-dialog modal-dialog-centered">
                                                                     <div class="modal-content">
                                                                         <div class="modal-header p-0">
-                                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                                <i class="fa-regular fa-circle-xmark"></i>
+                                                                            <h1
+                                                                                class="modal-title mx-auto text-danger display-1">
+                                                                                <i
+                                                                                    class="fa-regular fa-circle-xmark"></i>
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body">
@@ -2346,9 +2551,13 @@
                                                                             melakukan bid.
                                                                         </div>
                                                                         <div class="modal-footer">
-                                                                            <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                            <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                            <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                            <button type="button"
+                                                                                class="btn btn-secondary me-auto"
+                                                                                data-bs-dismiss="modal">Close</button>
+                                                                            <a type="button" class="btn btn-success"
+                                                                                href="https://server.sengketatanah.id/login">Login</a>
+                                                                            <a type="button" class="btn btn-danger"
+                                                                                href="https://server.sengketatanah.id/login">Register</a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2398,7 +2607,7 @@
                     </li>
                 </ul>
             </nav>
-            
+
         </div>
 
 
@@ -2457,16 +2666,21 @@
         </div>
         <div class="col">
             <div class="dropdown">
-                <button class="btn p-0" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1">
+                <button class="btn p-0" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    id="dropdownMenuButton1">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x " style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
                         <i class="fa-solid fa-share fa-stack-1x fa-inverse"></i>
                     </span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-show-count="false"><i class="fa-brands fa-twitter"></i> Tweet</a></li>
+                    <li><a class="dropdown-item" href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+                            data-show-count="false"><i class="fa-brands fa-twitter"></i> Tweet</a></li>
                     <li>
-                        <a target="_blank" onClick='window.open("https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse","Ratting","width=550,height=550,left=150,top=200,toolbar=0,status=0,");' href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore dropdown-item"><i class="fa-brands fa-facebook"></i>
+                        <a target="_blank"
+                            onClick='window.open("https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse","Ratting","width=550,height=550,left=150,top=200,toolbar=0,status=0,");'
+                            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse"
+                            class="fb-xfbml-parse-ignore dropdown-item"><i class="fa-brands fa-facebook"></i>
                             Facebook</a>
                     </li>
                 </ul>
@@ -2477,7 +2691,8 @@
 
         </div>
 
-        <div class="modal fade" id="korbanSengketaModal" tabindex="-1" aria-labelledby="korbanSengketaModalLabel" aria-hidden="true">
+        <div class="modal fade" id="korbanSengketaModal" tabindex="-1" aria-labelledby="korbanSengketaModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header bg-dark text-white">
@@ -2493,7 +2708,8 @@
                             </div>
                         </div>
                     </div>
-                    <form method="post" class="text-start" action="{{url('sengketa/send')}}" enctype="multipart/form-data">
+                    <form method="post" class="text-start" action="{{url('sengketa/send')}}"
+                        enctype="multipart/form-data">
                         <div class="modal-body">
                             @csrf
                             @if ($errors->all())
@@ -2514,35 +2730,45 @@
 
                             <div class="mb-2">
                                 <label for="nama" class="form-label">Nama Pelapor</label>
-                                <input type="text" class="form-control rounded-0" id="nama" placeholder="Masukkan Nama Anda" aria-describedby="input-nama" name="nama" required>
+                                <input type="text" class="form-control rounded-0" id="nama"
+                                    placeholder="Masukkan Nama Anda" aria-describedby="input-nama" name="nama" required>
                                 <div id="input-nama" class="form-text"></div>
                             </div>
 
                             <div class="mb-2">
                                 <label for="Alamat" class="form-label">Alamat</label>
-                                <input type="text" class="form-control rounded-0" id="Alamat" placeholder="Masukkan Alamat Anda" aria-describedby="input-Alamat" name="alamat" required>
+                                <input type="text" class="form-control rounded-0" id="Alamat"
+                                    placeholder="Masukkan Alamat Anda" aria-describedby="input-Alamat" name="alamat"
+                                    required>
                                 <div id="input-Alamat" class="form-text"></div>
                             </div>
                             <div class="mb-2">
                                 <label for="no_hp" class="form-label">Nomor Hp</label>
-                                <input type="number" class="form-control rounded-0" id="no_hp" placeholder="Masukkan Nomor HP Anda" aria-describedby="input-no_hp" name="no_hp" required>
+                                <input type="number" class="form-control rounded-0" id="no_hp"
+                                    placeholder="Masukkan Nomor HP Anda" aria-describedby="input-no_hp" name="no_hp"
+                                    required>
                                 <div id="input-no_hp" class="form-text"></div>
                             </div>
                             <div class="mb-2">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control rounded-0" id="email" placeholder="Masukkan Email Anda" aria-describedby="input-email" name="email" required>
+                                <input type="email" class="form-control rounded-0" id="email"
+                                    placeholder="Masukkan Email Anda" aria-describedby="input-email" name="email"
+                                    required>
                                 <div id="input-email" class="form-text"></div>
                             </div>
                             <div class="mb-2">
                                 <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control rounded-0" id="password" placeholder="buat password Anda" aria-describedby="input-password" name="password" required>
+                                <input type="password" class="form-control rounded-0" id="password"
+                                    placeholder="buat password Anda" aria-describedby="input-password" name="password"
+                                    required>
                                 <div id="input-password" class="form-text"></div>
                             </div>
                             <div class="row">
                                 <div class="col">
                                     <div class="mb-2">
                                         <label class="form-label">Objek Sengketa</label>
-                                        <select class="form-select rounded-0" aria-label="Default select example" name="objek_sengketa" required>
+                                        <select class="form-select rounded-0" aria-label="Default select example"
+                                            name="objek_sengketa" required>
                                             <option value="Sengketa Pertanahan">Sengketa Pertanahan</option>
                                             <option value="Konflik Pertanahan">Konflik Pertanahan</option>
                                             <option value="Perkara Pertanahan">Perkara Pertanahan</option>
@@ -2554,7 +2780,9 @@
                                 <div class="col">
                                     <div class="mb-2">
                                         <label for="luas" class="form-label">Luas Tanah (meter/ha)</label>
-                                        <input type="text" class="form-control rounded-0" id="luas" placeholder="Masukkan Luas Tanah" aria-describedby="input-luas" name="luas" required>
+                                        <input type="text" class="form-control rounded-0" id="luas"
+                                            placeholder="Masukkan Luas Tanah" aria-describedby="input-luas" name="luas"
+                                            required>
                                         <div id="input-luas" class="form-text"></div>
                                     </div>
                                 </div>
@@ -2562,24 +2790,30 @@
 
                             <div class="mb-2">
                                 <label for="lokasi" class="form-label">Lokasi</label>
-                                <input type="text" class="form-control rounded-0" id="lokasi" placeholder="Masukkan Lokasi" aria-describedby="input-lokasi" name="lokasi" required>
+                                <input type="text" class="form-control rounded-0" id="lokasi"
+                                    placeholder="Masukkan Lokasi" aria-describedby="input-lokasi" name="lokasi"
+                                    required>
                                 <div id="input-lokasi" class="form-text"></div>
                             </div>
                             <div class="mb-2">
                                 <label for="kronologi" class="form-label">Kronologi</label>
-                                <textarea id="kronologi" class="form-control rounded-0" placeholder="Masukkan Kronologi" aria-describedby="input-kronologi" name="kronologi" cols="30" rows="10" required></textarea>
+                                <textarea id="kronologi" class="form-control rounded-0" placeholder="Masukkan Kronologi"
+                                    aria-describedby="input-kronologi" name="kronologi" cols="30" rows="10"
+                                    required></textarea>
                                 <div id="input-kronologi" class="form-text"></div>
                             </div>
                             <div class="mb-2">
                                 <label class="form-label">Status Pelapor</label>
-                                <select class="form-select rounded-0" aria-label="Default select example" name="status_pelapor" required>
+                                <select class="form-select rounded-0" aria-label="Default select example"
+                                    name="status_pelapor" required>
                                     <option value="Pemilik">Pemilik</option>
                                     <option value="Kuasa Pemilik">Kuasa Pemilik</option>
                                 </select>
                             </div>
                             <div class="mb-2">
                                 <label class="form-label">Pilih Jenis Pertolongan</label>
-                                <select class="form-select rounded-0" aria-label="Default select example" name="jenis_pertolongan" required>
+                                <select class="form-select rounded-0" aria-label="Default select example"
+                                    name="jenis_pertolongan" required>
                                     <option selected disabled>Pilih Pertolongan</option>
                                     <option value="sponsor">Sponsor</option>
                                     <option value="pengacara">Pengacara</option>
@@ -2597,7 +2831,8 @@
 
                             <div class="mb-2 pengacara">
                                 <label class="form-label">Pilih Tindakan Pengacara</label>
-                                <select class="form-select rounded-0" aria-label="Default select example" name="bantuan_pengacara" required>
+                                <select class="form-select rounded-0" aria-label="Default select example"
+                                    name="bantuan_pengacara" required>
                                     <option selected disabled>Pilih Bantuan Pengacara</option>
                                     <option value="konsultasi">Konsultasi</option>
                                     <option value="pendampingan">Pendampingan</option>
@@ -2609,13 +2844,18 @@
                                 <label for="anggaran_pengacara" class="form-label">Anggaran Pengacara</label>
                                 <div class="row">
                                     <div class="col">
-                                        <input type="number" class="form-control rounded-0" id="anggaran_pengacara-s" placeholder="Anggaran mulai dari ..." aria-describedby="input-anggaran_pengacara-s" name="anggaran_pengacara-s">
+                                        <input type="number" class="form-control rounded-0" id="anggaran_pengacara-s"
+                                            placeholder="Anggaran mulai dari ..."
+                                            aria-describedby="input-anggaran_pengacara-s" name="anggaran_pengacara-s">
                                     </div>
-                                    <div class="col-1 text-center" style="width:4% !important; padding-right: 0px !important; padding-left: 0px !important">
+                                    <div class="col-1 text-center"
+                                        style="width:4% !important; padding-right: 0px !important; padding-left: 0px !important">
                                         -
                                     </div>
                                     <div class="col">
-                                        <input type="number" class="form-control rounded-0" id="anggaran_pengacara-e" placeholder="Sampai ..." aria-describedby="input-anggaran_pengacara-e" name="anggaran_pengacara-e">
+                                        <input type="number" class="form-control rounded-0" id="anggaran_pengacara-e"
+                                            placeholder="Sampai ..." aria-describedby="input-anggaran_pengacara-e"
+                                            name="anggaran_pengacara-e">
                                     </div>
                                 </div>
                             </div>
@@ -2631,13 +2871,16 @@
 
                             <div class="mb-2 sponsor">
                                 <label for="keb_dana" class="form-label">Jumlah Dana Sponsor</label>
-                                <input type="number" class="form-control rounded-0" id="keb_dana" placeholder="Sebutkan Nilai Kebutuhan" aria-describedby="input-keb_dana" name="keb_dana" required>
+                                <input type="number" class="form-control rounded-0" id="keb_dana"
+                                    placeholder="Sebutkan Nilai Kebutuhan" aria-describedby="input-keb_dana"
+                                    name="keb_dana" required>
                                 <div id="input-keb_dana" class="form-text"></div>
                             </div>
 
                             <div class="mb-2 sponsor">
                                 <label class="form-label">Pengembalian Dana Sponsor</label>
-                                <select class="form-select rounded-0" aria-label="Default select example" name="pengembalian_dana_sponsor" required>
+                                <select class="form-select rounded-0" aria-label="Default select example"
+                                    name="pengembalian_dana_sponsor" required>
                                     <option selected disabled>Pilih Jenis Pengembalian</option>
                                     <option value="70/30">Bagi Hasil 70/30*</option>
                                     <option value="60/40">Bagi Hasil 60/40*</option>
@@ -2654,7 +2897,8 @@
 
                             <div class="mb-2 sponsor">
                                 <label class="form-label" for="jaminan_dana">Jaminan Dana Sponsor</label>
-                                <select class="form-select rounded-0" aria-label="Default select example" name="jaminan" required>
+                                <select class="form-select rounded-0" aria-label="Default select example" name="jaminan"
+                                    required>
                                     <option selected disabled>Pilih Jaminan</option>
                                     <option value="ada">Ada Jaminan</option>
                                     <option value="tidak">Tidak Ada Jaminan</option>
@@ -2663,7 +2907,8 @@
 
                             <div class="mb-2 jaminan_berupa">
                                 <label for="jaminan_berupa" class="form-label">Jaminan Berupa</label>
-                                <select class="form-select rounded-0" id="lokasi" placeholder="Masukkan Jaminan" aria-describedby="input-jaminan" name="jaminan_berupa" required>
+                                <select class="form-select rounded-0" id="lokasi" placeholder="Masukkan Jaminan"
+                                    aria-describedby="input-jaminan" name="jaminan_berupa" required>
                                     <option value="Sertifikat Tanah">Sertifikat Tanah</option>
                                     <option value="Sertifikat Rumah">Sertifikat Rumah</option>
                                 </select>
@@ -2707,7 +2952,8 @@
     </div>
 
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0" nonce="Ee2Zutm6"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0"
+        nonce="Ee2Zutm6"></script>
     <div class="row mt-4">
         <div class="card-body bg-dark text-white text-center">
             <p></p>
@@ -2720,18 +2966,20 @@
                 TB Simatupang, Jakarta Selatan</p>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <!-- <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> -->
 
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/b-2.2.3/datatables.min.js">
     </script>
     <script>
-        $('#jenis_objek').on('change', function() {
+        $('#jenis_objek').on('change', function () {
             let jenisObjek = $(this).find('option').filter(':selected').val();
             if (jenisObjek == "sp") {
 
@@ -2755,67 +3003,67 @@
 
         });
 
-        $('#btnLawyer').on('click', function() {
+        $('#btnLawyer').on('click', function () {
             $('#dataSponsor').hide()
             $('#dataPemerintah').hide()
             $('#dataLawyer').show()
 
         });
-        $('#btnSponsor').on('click', function() {
+        $('#btnSponsor').on('click', function () {
             $('#dataSponsor').show()
             $('#dataLawyer').hide()
             $('#dataPemerintah').hide()
         });
-        $('#btnPemerintah').on('click', function() {
+        $('#btnPemerintah').on('click', function () {
             $('#dataLawyer').hide()
             $('#dataSponsor').hide()
             $('#dataPemerintah').show()
         });
 
-        $(document).ready(function() {
-            $(".tab").click(function() {
+        $(document).ready(function () {
+            $(".tab").click(function () {
                 $(".tab").removeClass("active");
                 // $(".tab").addClass("active"); // instead of this do the below 
                 $(this).addClass("active");
             });
         });
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('#myTable').DataTable();
         });
 
-        $('#btnLawyer').on('click', function() {
+        $('#btnLawyer').on('click', function () {
             $('#titleSponsor').hide()
             $('#titlePemerintah').hide()
             $('#titleLawyer').show()
 
         });
 
-        $('#btnSponsor').on('click', function() {
+        $('#btnSponsor').on('click', function () {
             $('#titleSponsor').show()
             $('#titleLawyer').hide()
             $('#titlePemerintah').hide()
         });
-        $('#btnPemerintah').on('click', function() {
+        $('#btnPemerintah').on('click', function () {
             $('#titleLawyer').hide()
             $('#titleSponsor').hide()
             $('#titlePemerintah').show()
         });
 
-        $(function() {
-            $('#searchlink').on('click', function(e) {
+        $(function () {
+            $('#searchlink').on('click', function (e) {
                 $(this).toggleClass('open');
             });
         });
 
 
 
-        $(function() {
-            var hidestuff = function() {
+        $(function () {
+            var hidestuff = function () {
                 $(".jaminan_berupa").hide();
             }
 
-            $("select[name='jaminan']").change(function() {
+            $("select[name='jaminan']").change(function () {
                 hidestuff();
 
                 var value = $(this).val();
@@ -2826,12 +3074,12 @@
             hidestuff();
         });
 
-        $(function() {
-            var hidestuff = function() {
+        $(function () {
+            var hidestuff = function () {
                 $(".pengelolaan-platform, .pengelolaan-sendiri").hide();
             }
 
-            $("select[name='pengelolaan_dana']").change(function() {
+            $("select[name='pengelolaan_dana']").change(function () {
                 hidestuff();
 
                 var value = $(this).val();
@@ -2845,12 +3093,12 @@
             hidestuff();
         });
 
-        $(function() {
-            var hidestuff = function() {
+        $(function () {
+            var hidestuff = function () {
                 $(".law-firm").hide();
             }
 
-            $("select[name='mewakili']").change(function() {
+            $("select[name='mewakili']").change(function () {
                 hidestuff();
 
                 var value = $(this).val();
@@ -2862,21 +3110,21 @@
         });
 
 
-        $(document).ready(function() {
-            $("#carouselExampleControls").swiperight(function() {
+        $(document).ready(function () {
+            $("#carouselExampleControls").swiperight(function () {
                 $(this).carousel('prev');
             });
-            $("#carouselExampleControls").swipeleft(function() {
+            $("#carouselExampleControls").swipeleft(function () {
                 $(this).carousel('next');
             });
         });
 
-        $(function() {
-            var hidestuff = function() {
+        $(function () {
+            var hidestuff = function () {
                 $(".sponsor, .pengacara, .pemerintah").hide();
             }
 
-            $("select[name='jenis_pertolongan']").change(function() {
+            $("select[name='jenis_pertolongan']").change(function () {
                 hidestuff();
 
                 var value = $(this).val();
@@ -2892,6 +3140,7 @@
             });
             hidestuff();
         });
+
     </script>
 </body>
 
