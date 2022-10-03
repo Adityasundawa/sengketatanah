@@ -2155,18 +2155,13 @@
 
 
                                             <div class="card-body">
-                                                <table class="mb-2">
+                                                <table class="mt-2 mb-2">
                                                     <tr>
-                                                        <td class="text-start">
-                                                            <h5>
-                                                                <b class="text-primary fs-4">
-                                                                    Fee : 50%
-                                                                </b>
-                                                            </h5>
+                                                        <td>
+                                                            <b>Nilai Kebutuhan :</b>
                                                         </td>
-                                                        <td class="align-items-center">
 
-
+                                                        <td rowspan="2">
                                                             <div class="row d-flex  align-items-center mb-2">
                                                                 <div class="col text-end">
                                                                     <a id="fav-1">
@@ -2180,12 +2175,31 @@
                                                                         &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                                 </div>
                                                             </div>
+
+
                                                             <script>
                                                                 $("#fav-1").click(function() {
                                                                     $("#fav-ch-1").toggleClass('fav-icon');
                                                                 });
                                                             </script>
 
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5 class="mb-0">
+                                                                <b class="text-primary">
+                                                                    Rp.450.000.000
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="fw-bold">
+                                                                Fee : 50%
+                                                            </h5>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -2216,19 +2230,7 @@
                                                             <td>:</td>
                                                             <td>&nbsp;1 Ha</td>
                                                         </tr>
-                                                        <tr>
-                                                            <td>Kebutuhan Dana</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Rp.450.000.000</td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Imbal Hasil</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Fee 50% Dari Pinjaman</td>
-                                                        </tr>
+                                                        
                                                         <tr>
                                                             <td>Jaminan</td>
                                                             <td></td>
@@ -2393,18 +2395,13 @@
 
                                             <div class="card-body">
 
-                                                <table class="mb-2">
+                                                <table class="mt-2 mb-2">
                                                     <tr>
-                                                        <td class="text-start">
-                                                            <h5>
-                                                                <b class="text-primary fs-4">
-                                                                    Fee : 50%
-                                                                </b>
-                                                            </h5>
+                                                        <td>
+                                                            <b>Nilai Kebutuhan :</b>
                                                         </td>
-                                                        <td class="align-items-center">
 
-
+                                                        <td rowspan="2">
                                                             <div class="row d-flex  align-items-center mb-2">
                                                                 <div class="col text-end">
                                                                     <a id="fav-2">
@@ -2418,12 +2415,31 @@
                                                                         &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                                 </div>
                                                             </div>
+
+
                                                             <script>
                                                                 $("#fav-2").click(function() {
                                                                     $("#fav-ch-2").toggleClass('fav-icon');
                                                                 });
                                                             </script>
 
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5 class="mb-0">
+                                                                <b class="text-primary">
+                                                                    Rp.500.000.000
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="fw-bold">
+                                                                Fee : 70/30
+                                                            </h5>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -2454,19 +2470,7 @@
                                                             <td>:</td>
                                                             <td>&nbsp;5000 M</td>
                                                         </tr>
-                                                        <tr>
-                                                            <td>Kebutuhan Dana</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Rp.500.000.000</td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Imbal Hasil</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Bagi Hasil 70/30*</td>
-                                                        </tr>
+                                                        
                                                         <tr>
                                                             <td>Jaminan</td>
                                                             <td></td>
@@ -2625,18 +2629,13 @@
                                             </div>
 
                                             <div class="card-body">
-                                                <table class="mb-2">
+                                                <table class="mt-2 mb-2">
                                                     <tr>
-                                                        <td class="text-start">
-                                                            <h5>
-                                                                <b class="text-primary fs-4">
-                                                                    Fee : 50%
-                                                                </b>
-                                                            </h5>
+                                                        <td>
+                                                            <b>Nilai Kebutuhan :</b>
                                                         </td>
-                                                        <td class="align-items-center">
 
-
+                                                        <td rowspan="2">
                                                             <div class="row d-flex  align-items-center mb-2">
                                                                 <div class="col text-end">
                                                                     <a id="fav-3">
@@ -2650,12 +2649,31 @@
                                                                         &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                                 </div>
                                                             </div>
+
+
                                                             <script>
                                                                 $("#fav-3").click(function() {
                                                                     $("#fav-ch-3").toggleClass('fav-icon');
                                                                 });
                                                             </script>
 
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5 class="mb-0">
+                                                                <b class="text-primary">
+                                                                    Rp.200.000.000
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="fw-bold">
+                                                                Fee : 60/40
+                                                            </h5>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -2686,19 +2704,7 @@
                                                             <td>:</td>
                                                             <td>&nbsp;3.2 Ha</td>
                                                         </tr>
-                                                        <tr>
-                                                            <td>Kebutuhan Dana</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Rp.200.000.000</td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Imbal Hasil</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Bagi Hasil 60/40*</td>
-                                                        </tr>
+                                                        
                                                         <tr>
                                                             <td>Jaminan</td>
                                                             <td></td>
@@ -2855,18 +2861,13 @@
                                             </div>
 
                                             <div class="card-body">
-                                                <table class="mb-2">
+                                                <table class="mt-2 mb-2">
                                                     <tr>
-                                                        <td class="text-start">
-                                                            <h5>
-                                                                <b class="text-primary fs-4">
-                                                                    Fee : 50%
-                                                                </b>
-                                                            </h5>
+                                                        <td>
+                                                            <b>Nilai Kebutuhan :</b>
                                                         </td>
-                                                        <td class="align-items-center">
 
-
+                                                        <td rowspan="2">
                                                             <div class="row d-flex  align-items-center mb-2">
                                                                 <div class="col text-end">
                                                                     <a id="fav-4">
@@ -2880,12 +2881,31 @@
                                                                         &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                                 </div>
                                                             </div>
+
+
                                                             <script>
                                                                 $("#fav-4").click(function() {
                                                                     $("#fav-ch-4").toggleClass('fav-icon');
                                                                 });
                                                             </script>
 
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5 class="mb-0">
+                                                                <b class="text-primary">
+                                                                    Rp.200.000.000
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="fw-bold">
+                                                                Fee : 60/40
+                                                            </h5>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -2915,19 +2935,6 @@
                                                             <td></td>
                                                             <td>:</td>
                                                             <td>&nbsp;3.2 Ha</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Kebutuhan Dana</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Rp.200.000.000</td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Imbal Hasil</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Bagi Hasil 60/40*</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jaminan</td>
@@ -3104,22 +3111,17 @@
 
 
                                             <div class="card-body">
-                                                <table class="mb-2">
+                                                <table class="mt-2 mb-2">
                                                     <tr>
-                                                        <td class="text-start">
-                                                            <h5>
-                                                                <b class="text-primary fs-4">
-                                                                    Fee : 50%
-                                                                </b>
-                                                            </h5>
+                                                        <td>
+                                                            <b>Nilai Kebutuhan :</b>
                                                         </td>
-                                                        <td class="align-items-center">
 
-
+                                                        <td rowspan="2">
                                                             <div class="row d-flex  align-items-center mb-2">
                                                                 <div class="col text-end">
-                                                                    <a id="fav-2-1">
-                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-2-1">
+                                                                    <a id="fav-1">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-1">
                                                                             <i class="fas fa-star"></i>
                                                                         </h5>
                                                                     </a>
@@ -3129,12 +3131,31 @@
                                                                         &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                                 </div>
                                                             </div>
+
+
                                                             <script>
-                                                                $("#fav-2-1").click(function() {
-                                                                    $("#fav-ch-2-1").toggleClass('fav-icon');
+                                                                $("#fav-1").click(function() {
+                                                                    $("#fav-ch-1").toggleClass('fav-icon');
                                                                 });
                                                             </script>
 
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5 class="mb-0">
+                                                                <b class="text-primary">
+                                                                    Rp.450.000.000
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="fw-bold">
+                                                                Fee : 50%
+                                                            </h5>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -3165,19 +3186,7 @@
                                                             <td>:</td>
                                                             <td>&nbsp;1 Ha</td>
                                                         </tr>
-                                                        <tr>
-                                                            <td>Kebutuhan Dana</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Rp.450.000.000</td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Imbal Hasil</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Fee 50% Dari Pinjaman</td>
-                                                        </tr>
+                                                        
                                                         <tr>
                                                             <td>Jaminan</td>
                                                             <td></td>
@@ -3342,22 +3351,17 @@
 
                                             <div class="card-body">
 
-                                                <table class="mb-2">
+                                                <table class="mt-2 mb-2">
                                                     <tr>
-                                                        <td class="text-start">
-                                                            <h5>
-                                                                <b class="text-primary fs-4">
-                                                                    Fee : 50%
-                                                                </b>
-                                                            </h5>
+                                                        <td>
+                                                            <b>Nilai Kebutuhan :</b>
                                                         </td>
-                                                        <td class="align-items-center">
 
-
+                                                        <td rowspan="2">
                                                             <div class="row d-flex  align-items-center mb-2">
                                                                 <div class="col text-end">
-                                                                    <a id="fav-2-2">
-                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-2-2">
+                                                                    <a id="fav-2">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-2">
                                                                             <i class="fas fa-star"></i>
                                                                         </h5>
                                                                     </a>
@@ -3367,12 +3371,31 @@
                                                                         &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                                 </div>
                                                             </div>
+
+
                                                             <script>
-                                                                $("#fav-2-2").click(function() {
-                                                                    $("#fav-ch-2-2").toggleClass('fav-icon');
+                                                                $("#fav-2").click(function() {
+                                                                    $("#fav-ch-2").toggleClass('fav-icon');
                                                                 });
                                                             </script>
 
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5 class="mb-0">
+                                                                <b class="text-primary">
+                                                                    Rp.500.000.000
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="fw-bold">
+                                                                Fee : 70/30
+                                                            </h5>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -3403,19 +3426,7 @@
                                                             <td>:</td>
                                                             <td>&nbsp;5000 M</td>
                                                         </tr>
-                                                        <tr>
-                                                            <td>Kebutuhan Dana</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Rp.500.000.000</td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Imbal Hasil</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Bagi Hasil 70/30*</td>
-                                                        </tr>
+                                                        
                                                         <tr>
                                                             <td>Jaminan</td>
                                                             <td></td>
@@ -3574,22 +3585,17 @@
                                             </div>
 
                                             <div class="card-body">
-                                                <table class="mb-2">
+                                                <table class="mt-2 mb-2">
                                                     <tr>
-                                                        <td class="text-start">
-                                                            <h5>
-                                                                <b class="text-primary fs-4">
-                                                                    Fee : 50%
-                                                                </b>
-                                                            </h5>
+                                                        <td>
+                                                            <b>Nilai Kebutuhan :</b>
                                                         </td>
-                                                        <td class="align-items-center">
 
-
+                                                        <td rowspan="2">
                                                             <div class="row d-flex  align-items-center mb-2">
                                                                 <div class="col text-end">
-                                                                    <a id="fav-2-3">
-                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-2-3">
+                                                                    <a id="fav-3">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-3">
                                                                             <i class="fas fa-star"></i>
                                                                         </h5>
                                                                     </a>
@@ -3599,12 +3605,31 @@
                                                                         &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                                 </div>
                                                             </div>
+
+
                                                             <script>
-                                                                $("#fav-2-3").click(function() {
-                                                                    $("#fav-ch-2-3").toggleClass('fav-icon');
+                                                                $("#fav-3").click(function() {
+                                                                    $("#fav-ch-3").toggleClass('fav-icon');
                                                                 });
                                                             </script>
 
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5 class="mb-0">
+                                                                <b class="text-primary">
+                                                                    Rp.200.000.000
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="fw-bold">
+                                                                Fee : 60/40
+                                                            </h5>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -3635,19 +3660,7 @@
                                                             <td>:</td>
                                                             <td>&nbsp;3.2 Ha</td>
                                                         </tr>
-                                                        <tr>
-                                                            <td>Kebutuhan Dana</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Rp.200.000.000</td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Imbal Hasil</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Bagi Hasil 60/40*</td>
-                                                        </tr>
+                                                        
                                                         <tr>
                                                             <td>Jaminan</td>
                                                             <td></td>
@@ -3804,22 +3817,17 @@
                                             </div>
 
                                             <div class="card-body">
-                                                <table class="mb-2">
+                                                <table class="mt-2 mb-2">
                                                     <tr>
-                                                        <td class="text-start">
-                                                            <h5>
-                                                                <b class="text-primary fs-4">
-                                                                    Fee : 50%
-                                                                </b>
-                                                            </h5>
+                                                        <td>
+                                                            <b>Nilai Kebutuhan :</b>
                                                         </td>
-                                                        <td class="align-items-center">
 
-
+                                                        <td rowspan="2">
                                                             <div class="row d-flex  align-items-center mb-2">
                                                                 <div class="col text-end">
-                                                                    <a id="fav-2-4">
-                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-2-4">
+                                                                    <a id="fav-4">
+                                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-4">
                                                                             <i class="fas fa-star"></i>
                                                                         </h5>
                                                                     </a>
@@ -3829,12 +3837,31 @@
                                                                         &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                                 </div>
                                                             </div>
+
+
                                                             <script>
-                                                                $("#fav-2-4").click(function() {
-                                                                    $("#fav-ch-2-4").toggleClass('fav-icon');
+                                                                $("#fav-4").click(function() {
+                                                                    $("#fav-ch-4").toggleClass('fav-icon');
                                                                 });
                                                             </script>
 
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start">
+                                                            <h5 class="mb-0">
+                                                                <b class="text-primary">
+                                                                    Rp.200.000.000
+                                                                </b>
+                                                            </h5>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="fw-bold">
+                                                                Fee : 60/40
+                                                            </h5>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -3864,19 +3891,6 @@
                                                             <td></td>
                                                             <td>:</td>
                                                             <td>&nbsp;3.2 Ha</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Kebutuhan Dana</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Rp.200.000.000</td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>Imbal Hasil</td>
-                                                            <td></td>
-                                                            <td>:</td>
-                                                            <td>&nbsp;Bagi Hasil 60/40*</td>
                                                         </tr>
                                                         <tr>
                                                             <td>Jaminan</td>
@@ -5610,25 +5624,7 @@
                                                     </tr>
                                                 </table>
                                                 <hr style="margin-top:-4px">
-                                                <table style="margin-top:-10px">
-                                                    <tr>
-                                                        <td>
-                                                            <b>
-                                                                Berakhir Dalam
-                                                            </b>
-                                                        </td>
-                                                        <td>
-                                                            <h6 class="badge bg-danger float-end" style="margin-top:3px">
-                                                                &nbsp;&nbsp;
-                                                                <i class="fa-solid fa-clock"></i> &nbsp;01:08:59
-
-                                                                &nbsp;&nbsp;
-                                                            </h6>
-
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <hr style="margin-top:3px">
+                                                
                                                 <table>
                                                     <tbody>
                                                         </tr>
@@ -5859,25 +5855,7 @@
                                                     </tr>
                                                 </table>
                                                 <hr style="margin-top:-4px">
-                                                <table style="margin-top:-10px">
-                                                    <tr>
-                                                        <td>
-                                                            <b>
-                                                                Berakhir Dalam
-                                                            </b>
-                                                        </td>
-                                                        <td>
-                                                            <h6 class="badge bg-danger float-end" style="margin-top:3px">
-                                                                &nbsp;&nbsp;
-                                                                <i class="fa-solid fa-clock"></i> &nbsp;01:08:59
-
-                                                                &nbsp;&nbsp;
-                                                            </h6>
-
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <hr style="margin-top:3px">
+                                                
 
                                                 <table>
                                                     <tbody>
@@ -6106,25 +6084,7 @@
                                                     </tr>
                                                 </table>
                                                 <hr style="margin-top:-4px">
-                                                <table style="margin-top:-10px">
-                                                    <tr>
-                                                        <td>
-                                                            <b>
-                                                                Berakhir Dalam
-                                                            </b>
-                                                        </td>
-                                                        <td>
-                                                            <h6 class="badge bg-danger float-end" style="margin-top:3px">
-                                                                &nbsp;&nbsp;
-                                                                <i class="fa-solid fa-clock"></i> &nbsp;01:08:59
-
-                                                                &nbsp;&nbsp;
-                                                            </h6>
-
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <hr style="margin-top:3px">
+                                                
                                                 <table>
                                                     <tbody>
                                                         <tr>
@@ -6351,25 +6311,7 @@
                                                     </tr>
                                                 </table>
                                                 <hr style="margin-top:-4px">
-                                                <table style="margin-top:-10px">
-                                                    <tr>
-                                                        <td>
-                                                            <b>
-                                                                Berakhir Dalam
-                                                            </b>
-                                                        </td>
-                                                        <td>
-                                                            <h6 class="badge bg-danger float-end" style="margin-top:3px">
-                                                                &nbsp;&nbsp;
-                                                                <i class="fa-solid fa-clock"></i> &nbsp;01:08:59
-
-                                                                &nbsp;&nbsp;
-                                                            </h6>
-
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <hr style="margin-top:3px">
+                                                
                                                 <table>
                                                     <tbody>
                                                         <tr>
