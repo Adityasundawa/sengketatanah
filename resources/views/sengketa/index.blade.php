@@ -2131,7 +2131,7 @@
                                                 Appraisal
 
                                             </button>
-                                            @for($i=0;$i< 14;$i++)<form action="{{url('')}}/detail-petugas" method="get" id="form-ukur-{{$i}}">
+                                            @for($i=0;$i< 14;$i++)<form action="{{url('')}}/detail-main-petugas" method="get" id="form-ukur-{{$i}}">
                                                 <input type="hidden" name="name" value="{{$name[$i]}}">
                                                 <input type="hidden" name="img" value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
                                                 <input type="hidden" name="jenis_petugas" value="Tukang Ukur">
@@ -4259,7 +4259,7 @@
 
                                             </div>
                                             @for($i=13;$i> 0;$i--)
-                                            <form action="{{url('')}}/detail-petugas" method="get" id="form-Lawyer-{{$i}}">
+                                            <form action="{{url('')}}/detail-main-petugas" method="get" id="form-Lawyer-{{$i}}">
                                                 <input type="hidden" name="name" value="{{$name[$i]}}">
                                                 <input type="hidden" name="img" value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
                                                 <input type="hidden" name="jenis_petugas" value="Lawyer">
@@ -4988,6 +4988,7 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body">
+                                                                            <!--  -->
                                                                             Anda harus memiliki akun pengacara
                                                                             sebelum
                                                                             melakukan bid.
@@ -5593,7 +5594,7 @@
                                             </div>
 
 
-                                            @for($i=0;$i< 14;$i++) <form action="{{url('')}}/detail-petugas" method="get" id="form-ppat-{{$i}}">
+                                            @for($i=0;$i< 14;$i++) <form action="{{url('')}}/detail-main-petugas" method="get" id="form-ppat-{{$i}}">
                                                 <input type="hidden" name="name" value="{{$name[$i]}}">
                                                 <input type="hidden" name="img" value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
                                                 <input type="hidden" name="jenis_petugas" value="PPAT">
@@ -8274,17 +8275,11 @@
                                                     </tbody>
                                                 </table>
                                                 <hr>
-
-
-
                                                 <div class="row g-0">
                                                     <div class="col text-start">
-
                                                         <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal" data-bs-target="#berkasB" style="text-decoration:none">
                                                             <i class="fa-solid fa-eye"></i> Lihat Detail
                                                         </a>
-
-
                                                         <div class="modal fade my-auto text-center" id="berkasB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-centered">
                                                                 <div class="modal-content">
@@ -8305,7 +8300,6 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-
                                                     </div>
                                                 </div>
 
@@ -9481,7 +9475,7 @@
 
                                             </div>
                                             @for($i=13;$i> 0;$i--)
-                                            <form action="{{url('')}}/detail-petugas" method="get" id="form-NOTARIS-{{$i}}">
+                                            <form action="{{url('')}}/detail-main-petugas" method="get" id="form-NOTARIS-{{$i}}">
                                                 <input type="hidden" name="name" value="{{$name[$i]}}">
                                                 <input type="hidden" name="img" value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
                                                 <input type="hidden" name="jenis_petugas" value="NOTARIS">
@@ -12676,7 +12670,7 @@
                                 $('#lelang-card1').animate({
                                     scrollLeft: "+=300px"
                                 }, "slow");
-                            });
+                        });
 
                             $('#left-button1').click(function() {
                                 event.preventDefault();
@@ -12728,7 +12722,7 @@
                                                 Petugas Ukur
 
                                             </button>
-                                            @for($i=0;$i< 14;$i++)<form action="{{url('')}}/detail-petugas" method="get" id="form-ukur-{{$i}}">
+                                            @for($i=0;$i< 14;$i++)<form action="{{url('')}}/detail-main-petugas" method="get" id="form-ukur-{{$i}}">
                                                 <input type="hidden" name="name" value="{{$name[$i]}}">
                                                 <input type="hidden" name="img" value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
                                                 <input type="hidden" name="jenis_petugas" value="Tukang Ukur">

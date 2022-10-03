@@ -41,9 +41,7 @@ Route::get('kota-prov-id', [WilayahIndoController::class, 'getKotaIdProv']);
 Route::get('kec-kot-id', [WilayahIndoController::class, 'getKecIdKota']);
 Route::get('des-kec-id', [WilayahIndoController::class, 'getDesaIdKec']);
 Route::get('send-email', [EmailController::class, 'sendEmail']);
-Route::get('mencube', function () {
-   return view('percobaan');
-});
+Route::get('detail-main-petugas', [PublicController::class, "detailPetugas"]);
 
 
 
@@ -66,7 +64,7 @@ Route::get('jasa-pengacara', [PublicController::class, 'jasaPengacara'])->name('
 Route::get('join', [PublicController::class, 'joinSengketa'])->name('joinSengketa');
 Route::get('list-tukang', [PublicController::class, 'listTukang'])->name('listTukang');
 Route::get('detail-petugas', [PublicController::class, 'detailTukang'])->name('detailTukang');
-Route::get('detail-data-diri', [PublicController::class, 'detailDataDiri'])->name('dataDetailDiri');
+// Route::get('detail-data-diri', [PublicController::class, 'detailDataDiri'])->name('dataDetailDiri');
 
 
 Route::get('register-jual-beli-lahan', [PublicController::class, 'registerJualBeli'])->name('registerJualBeli');

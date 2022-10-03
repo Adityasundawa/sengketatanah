@@ -37,6 +37,14 @@
             right: 0;
         }
 
+        .aboute-bottom svg {
+            opacity: 75%;
+        }
+
+        .aboute-bottom h6 {
+            opacity: 75%;
+        }
+
         .line-1 {
             height: 3px;
             background: black;
@@ -485,192 +493,252 @@
             }
         }
     </style>
+
+    <style>
+        .scroll-simple::-webkit-scrollbar {
+            width: 7px;
+            height: 7px;
+        }
+
+        .scroll-simple::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .scroll-simple::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .scroll-simple::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .scroll-simple::-webkit-scrollbar-thumb:active {
+            background: rgba(0, 0, 0, .9);
+        }
+
+        .fav-icon {
+            color: #ffc107 !important
+        }
+
+        .text-fav-disable {
+            color: rgb(199, 199, 199)
+        }
+
+        .share-icon {
+            position: absolute;
+            z-index: 999;
+            right: 1.5rem;
+            top: 2rem;
+        }
+
+        div.page {
+            max-width: 100vw;
+            text-align: left;
+        }
+
+        .pinch-zoom-parent {
+            height: 80vh;
+            width: 90vw;
+        }
+
+        img.zooming {
+            height: 90vh;
+        }
+
+        div.pinch-zoom div.description h1 {
+            font-size: 40px;
+            margin: 0px;
+            margin-bottom: 10px;
+        }
+
+        div.pinch-zoom div.description p {
+            margin-bottom: 1em;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .jumbotron-bg-user {
+            height: 200px;
+        }
+
+        .img-utama {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+
+            display: inline-block;
+        }
+
+        @media (max-width: 1000px) {
+            .jumbotron-bg-user {
+                height: 125px;
+            }
+
+
+
+        }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js" integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s=" crossorigin=""></script>
 </head>
 
 <body>
 
+
     @include('layouts.template-public.header')
+    <div class="mt-2 p-5 bg-light text-dark rounded jumbotron-bg-user">
 
+    </div>
+    <div class="container p-2">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <table style="margin-top:-75px;width:100%" class="p-2 desktop">
+                    <tr>
+                        <td rowspan="2" class="text-end ">
 
+                            <img src="{{$req->img}}" class="rounded-circle img-utama">
+                        </td>
+                        <td>
+                            <h1 class="ms-3 mb-1" style="margin-top:-30px">
+                                {{$req->name}}
+                            </h1>
+
+                            <h5 class="ms-3 text-danger" style="margin-top:-30px;display:inline">
+                                {{$req->jenis_petugas}}
+                            </h5>
+                            </span class="ms-3"> | <span class="ms-3"> +628XXXXXXXX </span>
+                            <br>
+                            <span class="ms-3">
+                                user21xxx@email.com
+                            </span>
+                            <p class="ms-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, tempore.
+                            </p>
+                        </td>
+                        <td>
+                            <div class="float-end">
+                                <form action="{{url('')}}/detail-petugas" method="get">
+                                    <input type="hidden" name="name" value="males au">
+                                    <input type="hidden" name="img" value="https://randomuser.me/api/portraits/men/2.jpg">
+                                    <input type="hidden" name="jenis_petugas" value="Notaris">
+                                </form>
+                                <div class="row g-0 p-1 mt-5">
+                                    <div class="col-12">
+                                        <button onclick="return $($(this).parent()).find('form').submit()" class="btn btn-outline-dark pt-1 pb-1 mt-4 mb-0">
+                                            <i class="fa fa-comment"></i>
+                                            Hubungi
+                                        </button>
+                                    </div>
+                                    <div class="col-12 mt-1">
+                                        <div class="text-dark">
+                                            <i class="fa ms-2 me-2 fa-facebook"></i>
+                                            <i class="fa ms-2 me-2 fa-instagram"></i>
+                                            <i class="fa ms-2 me-2 fa-twitter"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="mobile">
+                    <img src="{{$req->img}}" style="margin-top:-60px;width:100px;height:100px;object-fit:cover" class="ms-2 rounded-circle">
+                    <h1 class="ms-2 mb-1">
+                        {{$req->name}}
+                    </h1>
+
+                    <p class="ms-2" style="display:inline">
+                        #{{$req->jenis_petugas}}
+                        </span> | <span> +628XXXXXXXX </span>
+                        <br>
+                        <span>
+                            user21xxx@email.com
+                        </span>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, tempore.
+                    </p>
+                    <p class="ms-2">
+                        <i class="fa me-3 fa-facebook"></i>
+                        <i class="fa me-3 fa-instagram"></i>
+                        <i class="fa me-3 fa-twitter"></i>
+                        | <i class="fa fa-share ms-1"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @include('sengketa.detail_data_diri')
 
 
     <div class="container">
 
         <div class="row justify-content-center mb-2">
             <div class="col-lg-12 mt-4">
-                <h5>
-                    Cari Tukang Ukur
-                </h5>
-                <form class="row g-1">
-                    <div class="col-auto">
-                        <select name="wilayah" id="wilayah" class="form-select rounded-0">
-                            <option value="wilayah">&nbsp;&nbsp;Wilayah&nbsp;&nbsp;</option>
-                        </select>
-                    </div>
-                    <div class="col-auto">
-                        <select name="agen" id="agen" class="form-select rounded-0">
-                            <option value="agen">&nbsp;&nbsp;Agen&nbsp;&nbsp;</option>
-                        </select>
-                    </div>
-                    <div class="col-lg">
-                        <input type="text" class="form-control rounded-0" placeholder="Search" name="search">
-                    </div>
-                    <div class="col-auto">
-                        <input type="submit" value="search" class="btn btn-primary rounded-0">
-                    </div>
-                </form>
-                <div class="card mt-2 border-0 shadow-sm">
+                <div class="card border-0 shadow-sm">
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <h4>
-                                    4532 Agen Ditemukan
-                                </h4>
-                                <p>
-                                    Jakarta
-                                </p>
-                                <div class="row">
+                        <h3 class="display-5" style="font-size:30px">
+                            Hubungi {{$req->name}}
+                        </h3>
+                        <div class="card card-body border-0 rounded-1 p-5" style="background-color:#F2F2F2">
+                            <div class="row">
+                                <div class="col-lg-4 text-center">
+                                    <img src="{{$req->img}}" alt="" srcset="" class="rounded-circle img-thumbnail" style="width:150px;height:auto;object-fit:cover">
+                                    <br>
+                                    <b>
+                                        {{$req->name}}
+                                    </b><br>
+                                    <span class="text-danger">
+                                        #{{$req->jenis_petugas}}
+                                    </span> | <span> +628XXXXXXXX </span>
+                                    <br>
+                                    <span>
+                                        user21xxx@email.com
+                                    </span>
 
-                                    <?php
-                                    $name = [
-                                        "Budi K.",
-                                        "Rudi H.",
-
-                                        "Ustman A.",
-                                        "Joko L.",
-
-                                        "James Tate",
-                                        "Robert K.",
-                                        "Hadi Ismail", 'Abdullah', 'Nugraha D.', 'Ade Syarief', "Adhi Utomo", 'Leman wan', 'Noto Adi', 'Agus Susan'
-                                    ];
-                                    ?>
-
-                                    @for($i=13;$i> 0;$i--)
-                                    <div class="col-12 " id='orang-kotak'>
-                                        <hr>
-                                        <div class="row">
-
-                                            <div class="col-sm">
-
-                                                <table style="width:100%">
-                                                    <tr>
-                                                        <td rowspan="3">
-                                                            <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" class="rounded-circle img-thumbnail " style="width:70px;height:auto;object-fit:cover;">
-                                                        </td>
-                                                        <td>
-                                                            <b class="ms-1 text-success">
-                                                                {{$name[$i]}}
-                                                            </b>
-                                                            <span class="badge bg-success pt-1 pb-1">
-                                                                aktif
-                                                            </span>
-
-                                                        </td>
-                                                        <td>
-                                                            <form action="{{url('')}}/detail-petugas" method="get">
-                                                                <input type="hidden" name="name" value="{{$name[$i]}}">
-                                                                <input type="hidden" name="img" value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
-                                                                <input type="hidden" name="jenis_petugas" value="Notaris">
-                                                            </form>
-                                                            <button class="mobile btn btn-outline-dark float-end" onclick="return $($(this).parent()).find('form').submit()">
-                                                                <i class="fa fa-comment"></i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="2">
-                                                            <small class="ms-1">
-                                                                Lorem, ipsum dolor sit amet consectetur adipisicing.
-                                                            </small>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td></td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                            <div class="col-sm">
-                                                <div class="desktop">
-                                                    <div class="float-end">
-                                                        <form action="{{url('')}}/detail-petugas" method="get">
-                                                            <input type="hidden" name="name" value="{{$name[$i]}}">
-                                                            <input type="hidden" name="img" value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
-                                                            <input type="hidden" name="jenis_petugas" value="Notaris">
-                                                        </form>
-                                                        <button onclick="return $($(this).parent()).find('form').submit()" class="btn btn-outline-dark pt-1 pb-1 mt-0 mb-0">
-                                                            <i class="fa fa-comment"></i>
-                                                            Hubungi
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    @endfor
-                                    <hr>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, tempore.
+                                    </p>
                                 </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <h4>
-                                    Agen Terverifikasi
-                                </h4>
-                                <p>
-                                    Any
-                                </p>
-                                <div class="row">
-
-                                    <?php
-                                    $name = [
-                                        "Budi K.",
-                                        "Rudi H.",
-
-                                        "Ustman A.",
-                                        "Joko L.",
-
-                                        "James Tate",
-                                        "Robert K.",
-                                        "Hadi Ismail", 'Abdullah', 'Nugraha D.', 'Ade Syarief', "Adhi Utomo", 'Leman wan', 'Noto Adi', 'Agus Susan'
-                                    ];
-                                    ?>
-
-                                    @for($i=8;$i> 0;$i--)
-                                    <div class="col-lg-12" id='orang-kotak'>
-
-                                        <div class="card border-0 mt-1 shadow" style="background:#FAFAD2">
-                                            <div class="card-body p-2">
-                                                <div class="text-center">
-
-                                                    <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" class="rounded-circle img-fluid shadow " style="width:70px;height:auto;object-fit:cover;">
-                                                    <br>
-                                                    <b class="text-danger">
-                                                        {{$name[$i]}}
-                                                    </b>
-
-                                                    <small> #Notaris</small>
-                                                    <br>
-                                                    +6281XXXXXXX
-                                                    <br>
-                                                    <button class="btn btn-dark  pt-1 pb-1 mt-0 mb-0">
-                                                        <i class="fa fa-comment"></i>
-                                                        Chat
-                                                    </button>
-                                                    <button class="btn btn-dark  pt-1 pb-1 mt-0 mb-0">
-                                                        <i class="fa fa-phone"></i>
-                                                        Telepon
-                                                    </button>
-
-                                                </div>
-                                            </div>
+                                <div class="col-lg-6">
+                                    <form action="{{url('')}}/email-subjek">
+                                        @csrf
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">Nama</label>
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Masukan Nama Anda" value="{{Auth::check() == false ? '':Auth::user()->name}}" {{Auth::check() == false ? '':"disabled"}}>
                                         </div>
-
-
-                                    </div>
-                                    @endfor
+                                        <div class="mb-3">
+                                            <label for="Alamat" class="form-label">Alamat</label>
+                                            <input type="text" class="form-control" name="alamat" id="Alamat" placeholder="Masukan Alamat Anda" value="{{Auth::check() == false ? '':Auth::user()->address}}" {{Auth::check() == false ? '':"disabled"}}>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="no_hp" class="form-label">Nomor HP</label>
+                                            <input type="number" class="form-control" name="no_hp" id="no_hp" placeholder="Masukan Nomor HP Anda" value="{{Auth::check() == false ? '':Auth::user()->phone}}" {{Auth::check() == false ? '':"disabled"}}>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Masukan Email Anda" value="{{Auth::check() == false ? '':Auth::user()->email}}" {{Auth::check() == false ? '':"disabled"}}>
+                                            <div id="emailHelp" class="form-text">Email yang anda masukan harus terdaftar di Website ini terlebih dahulu</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="subjek" class="form-label">subjek</label>
+                                            <textarea class="form-control" name="subjek" id="subjek" aria-describedby="subjekHelp" placeholder="Masukan subjek Anda" value="" cols="30" rows="10"></textarea>
+                                        </div>
+                                        <small class="text-danger">**Belum punya akun? daftar <a href="{{url('')}}/register-jual-beli-lahan" class="text-primary text-decoration-none">disini</a></small>
+                                        <br>
+                                        <button type="submit" class="btn btn-success mt-2">Hubungi</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -682,9 +750,63 @@
 
 
 
+    <div class="row justify-content-center mb-3 mt-4 text-center g-0">
+        <p class="fw-bold text-center" style="text-align: justify">Ikuti Sosial Media Kami</a></p>
 
+        <div class="col">
+            <a class="btn p-0" href="https://www.instagram.com/sengketatanah.id/" role="button">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x" style="text-shadow: -3px 3px 5px #bbbbbb;color: #8a3ab9"></i>
+                    <i class="fa-brands fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </div>
+        <div class="col">
+            <a class="btn p-0" href="https://m.youtube.com/channel/UCXQW3lPJ68brYiThnxX18-A" role="button">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x text-danger" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                    <i class="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </div>
+        <div class="col">
+            <a class="btn p-0" href="#" role="button">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x text-primary" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                    <i class="fa-brands fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </div>
+        <div class="col">
+            <a class="btn p-0" href="https://mobile.twitter.com/sengketatanahid" role="button">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x text-info" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                    <i class="fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        </div>
+        <div class="col">
+            <div class="dropdown">
+                <button class="btn p-0" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x " style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                        <i class="fa-solid fa-share fa-stack-1x fa-inverse"></i>
+                    </span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-show-count="false"><i class="fa-brands fa-twitter"></i> Tweet</a></li>
+                    <li>
+                        <a target="_blank" onClick='window.open("https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse","Ratting","width=550,height=550,left=150,top=200,toolbar=0,status=0,");' href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore dropdown-item"><i class="fa-brands fa-facebook"></i>
+                            Facebook</a>
+                    </li>
+                </ul>
+            </div>
 
+            <a href="" class=""></a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+        </div>
+    </div>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0" nonce="Ee2Zutm6"></script>
     <div class="row mt-4">
@@ -872,6 +994,7 @@
             hidestuff();
         });
     </script>
+
 </body>
 
 </html>
