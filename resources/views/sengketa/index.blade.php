@@ -674,6 +674,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Produk</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Panduan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hubungi Kami</a>
+                    </li>
+               
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="{{url('')}}/bid-sengketa">Bid Sengketa</a>
                     </li>
@@ -1641,7 +1648,7 @@
                     <div class="card-body pb-1 pt-2">
                         <div class="row align-items-center">
 
-                            <div class="col-2 text-center">
+                           {{-- <div class="col-2 text-center">
                                 <button class="btn btn-sm" id="btn-panduan" type="button">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70px" x="0" y="0" viewBox="0 0 296.999 296.999" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="148.4995" cx="148.4995" cy="148.4995" fill="#ffffff" shape="circle">
@@ -1721,14 +1728,14 @@
                                         $("#tentang").removeClass('show');
                                     });
                                 </script>
-                            </div>
-                            <div class="col-4 text-center">
+                            </div> --}}
+                            <div class="col-12 text-center">
                                 <div class="card ">
                                     <div class="card-header bg-brown text-white">
                                         <center>
-                                            <h5 class="blink">Pre Launching 1 Desember 2022</h5>
-                                            <h5 class="blink">Pukul 09.00 WIB </h5>
-                                            <h5 class="blink">Nantikan Kehadiran Kami</h5>
+                                            <h5 class="blink"style="display:inline-block">Pre Launching 1 Desember 2022</h5>
+                                            <h5 class="blink"style="display:inline-block">Pukul 09.00 WIB </h5>
+                                            <h5 class="blink"style="display:inline-block">Nantikan Kehadiran Kami</h5>
                                         </center>
 
                                     </div>
@@ -1736,7 +1743,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-2 text-center">
+                           {{-- <div class="col-2 text-center">
                                 <button class="btn btn-sm" id="btn-chat" type="button">
                                     <img src="{{asset('')}}images/cus.svg" style="width:55px;margin-top:9px" alt="" srcset="">
                                     <h6 class=" mb-0" style="font-weight:bold;margin-top:13px">CHAT</h6>
@@ -1772,7 +1779,8 @@
                                         $("#tentang").toggleClass('show');
                                     });
                                 </script>
-                            </div>
+                            </div> --}}
+
                             <ol id="panduan" class="list-group panduan list-group-numbered shadow dropdown-menu rounded-0 p-0" style="inset: auto auto 0px 0px; margin: 0px; border-top: none">
                                 <li class="list-group-item d-flex justify-content-between align-items-start">
                                     <div class="ms-2 me-auto">
