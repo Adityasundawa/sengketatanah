@@ -576,7 +576,7 @@
 
         @media (max-width: 1000px) {
             .jumbotron-bg-user {
-                height: 2x00px;
+                height: 125px;
             }
 
 
@@ -591,13 +591,13 @@
 
     @include('layouts.template-public.header')
     <div class="mt-2 p-5 bg-light text-dark rounded jumbotron-bg-user">
-        <h1>Jumbotron Example</h1>
-        <p>Lorem ipsum...</p>
+        <h1 class="desktop">Jumbotron Example</h1>
+        <p class="desktop">Lorem ipsum...</p>
     </div>
     <div class="container p-2">
         <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <table style="margin-top:-75px;width:100%" class="p-2">
+            <div class="col-lg-12">
+                <table style="margin-top:-75px;width:100%" class="p-2 desktop">
                     <tr>
                         <td rowspan="2" class="text-end ">
 
@@ -638,9 +638,23 @@
                             </div>
                         </td>
                     </tr>
-
                 </table>
+                <div class="mobile">
+                    <img src="https://id2-cdn.pgimgs.com/agent/14340558/APHO.123143928.V300.jpg" style="margin-top:-60px;width:100px;height:100px;object-fit:cover" class="ms-2 rounded-circle">
+                    <h1 class="ms-2 mb-1">
+                        Joseph Joestar
+                    </h1>
 
+                    <p class="ms-2" style="display:inline">
+                        Tukang Ukur
+                    </p>
+                    <p class="ms-2">
+                        <i class="fa me-3 fa-facebook"></i>
+                        <i class="fa me-3 fa-instagram"></i>
+                        <i class="fa me-3 fa-twitter"></i>
+                        | <i class="fa fa-share ms-1"></i>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -703,7 +717,6 @@
 
         </div>
     </div>
-
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0" nonce="Ee2Zutm6"></script>
     <div class="row mt-4">
