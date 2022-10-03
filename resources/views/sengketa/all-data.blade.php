@@ -2118,17 +2118,13 @@
                                                     <i class="fa-solid fa-share-from-square"></i>
                                                 </button>
                                             </div>
-                                            <table class="mb-2 mt-2" style="width:100%">
+                                            <table class="mt-2 mb-2 w-100">
                                                 <tr>
-                                                    <td class="text-start">
-                                                        <h5>
-                                                            <b class="text-primary fs-4">
-                                                                Fee : 50%
-                                                            </b>
-                                                        </h5>
+                                                    <td>
+                                                        <b>Nilai Kebutuhan :</b>
                                                     </td>
-                                                    <td class="align-items-center">
 
+                                                    <td class="align-items-center" rowspan="2">
 
                                                         <div class="row d-flex  align-items-center mb-2">
                                                             <div class="col text-end">
@@ -2139,7 +2135,7 @@
                                                                 </a>
                                                             </div>
                                                             <div class="col">
-                                                                <button class="btn float-end btn-primary mb-0" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                <button class="btn float-end btn-primary text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                                     &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                             </div>
                                                         </div>
@@ -2151,13 +2147,29 @@
 
                                                     </td>
                                                 </tr>
+                                                <tr>
+                                                    <td class="text-start">
+                                                        <h5 class="mb-0">
+                                                            <b class="text-primary">
+                                                                {{$bs['dana']}}
+                                                            </b>
+                                                        </h5>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h5 class="fw-bold">
+                                                            Fee : 30%
+                                                        </h5>
+                                                    </td>
+                                                </tr>
                                             </table>
 
                                             <hr>
 
                                             <table class="mt-3">
                                                 <tr>
-                                                    <td>Owner/Korban</td>
+                                                    <td>Korban</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp;{{$bs['owner']}}</td>
@@ -2180,20 +2192,7 @@
                                                     <td>:</td>
                                                     <td>&nbsp;{{$bs['luas']}}</td>
                                                 </tr>
-
-                                                <tr>
-                                                    <td>Kebutuhan Dana</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bs['dana']}}</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Imbal Hasil</td>
-                                                    <td></td>
-                                                    <td>:</td>
-                                                    <td>&nbsp;{{$bs['imbal_hasil']}}</td>
-                                                </tr>
+                                                
                                                 <tr>
                                                     <td>Jaminan</td>
                                                     <td></td>
@@ -2481,7 +2480,7 @@
 
                                             <table>
                                                 <tr>
-                                                    <td>Owner/Korban</td>
+                                                    <td>Korban</td>
                                                     <td></td>
                                                     <td>:</td>
                                                     <td>&nbsp;{{$bpm['owner']}}</td>

@@ -89,6 +89,11 @@ class PublicController extends Controller
         return view('sengketa.jasa_pengacara');
     }
 
+    public function detailDataDiri()
+    {
+        return view('sengketa.detail_data_diri');
+    }
+
     public function registerKerjasama()
     {
         return view('auth.kerjaSama.register');
