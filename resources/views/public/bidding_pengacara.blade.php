@@ -1073,7 +1073,6 @@
         <div class="row justify-content-center mb-2">
 
             <div class="col-lg-12">
-
                 <div class="card mb-0 border-0 mb-3" style="z-index:999">
                     <div class="card-body pb-0">
                         <div class="row justify-content-between text-center scroll-simple"
@@ -1109,7 +1108,7 @@
                                     <div class="mt-0" style="font-size: 12px">Bid <br> Sengketa</div>
                                 </a>
                             </div>
-                            
+
                             {{-- <div class="col mb-4">
                                 <a href="{{url('/')}}/jual-beli-lahan" class="btn btn-outline-light text-dark w-100
                             rounded-4 shadow">
@@ -1624,7 +1623,9 @@
 
                     </div>
                 </div>
+            </div>
 
+            <div class="col-lg-12">
                 <div class="card border-0">
                     <div class="input-group">
                         <div class="input-group-prepend my-auto">
@@ -1636,7 +1637,9 @@
                         <button class="btn h-100 mb-0 desktop" style="color: #fff; background: #E6B325">Search</button>
                     </div>
                 </div>
+            </div>
 
+            <div class="col-lg-12">
                 <div class="card mt-3 border-0 shadow-sm desktop" style="margin-top:-10px">
                     <div class="card-body pb-1 pt-2">
                         <div class="row align-items-center g-0">
@@ -2081,8 +2084,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-
+            <div class="col-lg-12">
                 <div class="card mb-3 mt-3 border-0 shadow-sm">
                     <div class="card-body">
                         <div class="row justify-content-center">
@@ -2131,6 +2135,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
                 <script>
                     $('#right-orang1').click(function() {
@@ -2147,6 +2152,8 @@
                         }, "slow");
                     });
                 </script>
+
+            <div class="col-lg-12">
                 <div class="card mt-0">
                     <div class="card-body">
                         <div class="row justify-content-center">
@@ -2369,11 +2376,10 @@
 
                     </div>
                 </div>
-
             </div>
 
 
-            <nav aria-label="Page navigation example">
+            <nav aria-label="Page navigation example mt-2">
                 <ul class="pagination">
                     <li class="page-item">
                         <a class="page-link" href="#" aria-label="Previous">
@@ -2392,18 +2398,7 @@
                     </li>
                 </ul>
             </nav>
-
-
-
-
-
-
-
-
-
-
-
-
+            
         </div>
 
 

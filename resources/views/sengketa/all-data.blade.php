@@ -1151,11 +1151,9 @@
 
                 <div class="row g-0">
 
-                    <div class="card mb-0 border-0 mb-3" style="z-index:999">
+                    <div class="card mb-0 border-0 mb-3 mt-3" style="z-index:999">
                         <div class="card-body pb-0">
-                            <div class="row justify-content-between text-center scroll-simple"
-                                style="overflow-x: auto; flex-wrap: nowrap">
-    
+                            <div class="row justify-content-between text-center scroll-simple" style="overflow-x: auto; flex-wrap: nowrap">
                                 <div class="col mb-4">
                                     <a href="{{url('/')}}/bidding-pengacara"
                                         class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
@@ -1178,9 +1176,9 @@
                                 </div>
     
                                 {{-- <div class="col mb-4">
-                                    <a href="{{url('/')}}/jual-beli-lahan" class="btn btn-outline-light text-dark w-100
-                                rounded-4 shadow">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        <a href="{{url('/')}}/jual-beli-lahan" class="btn btn-outline-light text-dark w-100
+                                    rounded-4 shadow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                     width="85px" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512"
                                     xml:space="preserve" class="">
@@ -1225,12 +1223,12 @@
                                         <path xmlns="http://www.w3.org/2000/svg" d="m23 17h4v2h-4z" fill="#61481c"
                                             data-original="#000000" class=""></path>
                                     </g>
-                                </svg>
-                                <div class="mt-0" style="font-size: 12px">Jual Beli <br> Lahan</div>
-                                </a>
-                            </div>
-    
-                            <div class="col mb-4">
+                                    </svg>
+                                    <div class="mt-0" style="font-size: 12px">Jual Beli <br> Lahan</div>
+                                    </a>
+                                </div>
+                            
+                                <div class="col mb-4">
                                 <a href="{{url('/')}}/kerjasama-lahan"
                                     class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -1259,9 +1257,9 @@
                                     </svg>
                                     <div class="mt-0" style="font-size: 12px">Kerjasama <br> Lahan</div>
                                 </a>
-                            </div>
-    
-                            <div class="col mb-4">
+                                </div>
+                            
+                                <div class="col mb-4">
                                 <a href="{{url('/')}}/lelang-lahan"
                                     class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -1347,9 +1345,9 @@
                                     </svg>
                                     <div class="mt-0" style="font-size: 12px">Pelelangan <br> Lahan</div>
                                 </a>
-                            </div> --}}
-    
-                            <div class="col mb-4">
+                                </div> --}}
+                            
+                                <div class="col mb-4">
                                 <a href="{{url('/')}}/bid-lahan"
                                     class="btn btn-outline-light text-dark w-100 rounded-4 shadow"
                                     href="https://mitra.atrbpn.go.id">
@@ -1382,16 +1380,16 @@
                                     </svg>
                                     <div class="mt-0" style="font-size: 12px">Bid <br> Lahan</div>
                                 </a>
-                            </div>
-
-                            <div class="col mb-4">
+                                </div>
+                            
+                                <div class="col mb-4">
                                 <a href="{{url('/')}}/bid-rumah" class="btn btn-outline-light text-dark w-100 rounded-4 shadow" href="https://mitra.atrbpn.go.id">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="85px" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><circle r="256" cx="256" cy="256" fill="#ffffff" shape="circle"></circle><g transform="matrix(0.7,0,0,0.7,76.79999942779543,74.40000457763674)"><path d="M471.982,417.008Q472,416.5,472,416a32.036,32.036,0,0,0-32-32V236l28.8-21.6a8,8,0,0,0-.08-12.859L400,151.322V64a8,8,0,0,0,8-8V24a8,8,0,0,0-8-8H320a8,8,0,0,0-8,8V56a8,8,0,0,0,8,8V92.861l-59.28-43.32a8,8,0,0,0-9.44,0l-208,152A8,8,0,0,0,43.2,214.4L72,236V384a32.036,32.036,0,0,0-32,32q0,.5.018,1.008A32,32,0,0,0,48,480H464a32,32,0,0,0,7.982-62.992ZM328,32h64V48H328Zm8,72V64h48v75.63L335.243,104ZM256,65.908,450.555,208.084l-18.628,13.971L260.706,97.53a8,8,0,0,0-9.412,0L80.073,222.055,61.445,208.084ZM32,448a16.019,16.019,0,0,1,15.76-16l.019,0c.409.057.818.106,1.235.133a8,8,0,0,0,8.023-10.716A15.727,15.727,0,0,1,56,416a16.019,16.019,0,0,1,16-16v64H48A16.019,16.019,0,0,1,32,448Zm344,16H280V288h96Zm16,0V280a8,8,0,0,0-8-8H272a8,8,0,0,0-8,8V464H88V236.074L256,113.892,424,236.074V464Zm72,0H440V400a16.019,16.019,0,0,1,16,16,15.727,15.727,0,0,1-1.037,5.421,8,8,0,0,0,8.023,10.716c.417-.027.826-.076,1.235-.133l.019,0a16,16,0,0,1-.24,32Z" fill="#61481c" data-original="#000000" class=""></path><path d="M224,272H128a8,8,0,0,0-8,8V392a8,8,0,0,0,8,8h96a8,8,0,0,0,8-8V280A8,8,0,0,0,224,272Zm-8,56H184V288h32Zm-48-40v40H136V288Zm-32,56h32v40H136Zm48,40V344h32v40Z" fill="#61481c" data-original="#000000" class=""></path><circle cx="304" cy="368" r="8" transform="translate(-152.323 508.032) rotate(-67.5)" fill="#61481c" data-original="#000000" class=""></circle></g></svg>
                                     <div class="mt-0" style="font-size: 12px">Bid <br> Rumah</div>
                                 </a>
-                            </div>
-    
-                            <div class="col mb-4">
+                                </div>
+                            
+                                <div class="col mb-4">
                                 <a href="{{url('/')}}/jasa-appraisal"
                                     class="btn btn-outline-light text-dark w-100 rounded-4 shadow"
                                     href="https://mitra.atrbpn.go.id">
@@ -1470,9 +1468,9 @@
                                     </svg>
                                     <div class="mt-0" style="font-size: 12px">Jasa <br> Appraisal</div>
                                 </a>
-                            </div>
-    
-                            <div class="col mb-4">
+                                </div>
+                            
+                                <div class="col mb-4">
                                 <a href="{{url('/')}}/jasa-ppat"
                                     class="btn btn-outline-light text-dark w-100 rounded-4 shadow"
                                     href="https://mitra.atrbpn.go.id">
@@ -1506,9 +1504,9 @@
                                     </svg>
                                     <div class="mt-0" style="font-size: 12px">Jasa <br> PPAT</div>
                                 </a>
-                            </div>
-    
-                            <div class="col mb-4">
+                                </div>
+                            
+                                <div class="col mb-4">
                                 <a href="{{url('/')}}/jasa-pengacara"
                                     class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -1539,9 +1537,9 @@
                                     </svg>
                                     <div class="mt-0" style="font-size: 12px">Jasa <br> Pengacara</div>
                                 </a>
-                            </div>
-    
-                            <div class="col mb-4">
+                                </div>
+                            
+                                <div class="col mb-4">
                                 <a href="{{url('/')}}/jasa-notaris"
                                     class="btn btn-outline-light text-dark w-100 rounded-4 shadow"
                                     href="https://mitra.atrbpn.go.id">
@@ -1575,9 +1573,9 @@
                                     </svg>
                                     <div class="mt-0" style="font-size: 12px">Jasa <br> Notaris</div>
                                 </a>
-                            </div>
-    
-                            <div class="col mb-4">
+                                </div>
+                            
+                                <div class="col mb-4">
                                 <a href="{{url('/')}}/jasa-tukang-ukur"
                                     class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -1608,9 +1606,9 @@
                                     </svg>
                                     <div class="mt-0" style="font-size: 12px">Jasa <br> Petugas Ukur</div>
                                 </a>
-                            </div>
-    
-                            <div class="col mb-4">
+                                </div>
+                            
+                                <div class="col mb-4">
                                 <a href="{{url('/')}}/podcast-sengketa"
                                     class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -1657,9 +1655,9 @@
                                     </svg>
                                     <div class="mt-0" style="font-size: 12px">Podcast <br> Sengketa</div>
                                 </a>
-                            </div>
-    
-                            <div class="col mb-4">
+                                </div>
+                            
+                                <div class="col mb-4">
                                 <a href="{{url('/')}}/advokasi-pemerintah"
                                     class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -1678,17 +1676,18 @@
                                     </svg>
                                     <div class="mt-0" style="font-size: 12px">Advokasi <br> Pemerintah</div>
                                 </a>
-                            </div>
-    
-                            <div class="col mb-4">
+                                </div>
+                            
+                                <div class="col mb-4">
                                 <a class="btn btn-outline-light text-dark w-100 rounded-4 shadow"
                                     href="https://mitra.atrbpn.go.id">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Logo_BPN-KemenATR_%282017%29.png"
                                         class="p-2" width="85px" alt="">
                                     <div class="mt-0" style="font-size: 12px">Mitra <br> BPN</div>
                                 </a>
-                            </div>
+                                </div>
     
+                            </div>
                         </div>
                     </div>
             
