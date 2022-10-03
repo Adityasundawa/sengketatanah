@@ -515,13 +515,98 @@
 
         }
     </style>
-</head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+    crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+    integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
+    crossorigin=""></script>
 
 <body>
 
     <div class="container mt-5">
-        
+        <div class="card text-center">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-4">
+                        <h4 class="mb-0" style="font-size: 18px">Kurang dari setahun</h4>
+                        <p class="mb-0" style="font-size: 14px">Tahun Dengan TanahMerdeka.id</p>
+                    </div>
+                    <div class="col-4">
+                        <h4 class="mb-0">12</h4>
+                        <p class="mb-0">Listing untuk Dijual</p>
+                    </div>
+                    <div class="col-4">
+                        <h4 class="mb-0">0</h4>
+                        <p class="mb-0">Listing untuk Disewakan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card text-left mt-3">
+            <div class="card-body">
+                <div class="row">
+
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Lokasi Listing Oleh Johansyah</h2>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <p style="font-size: 16px" class="mb-0">Listing Aktif</p>
+                                <p style="font-size: 16px; font-weight: 500;" class="mb-0 accent-blue">12 Terjual</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row scroll-simple" style="max-height: 400px; overflow-x: auto;">
+                            <div class="col-12 mb-4">
+                                <p style="font-size: 16px" class="mb-0 accent-blue fw-bolder">Jawa Barat</p>
+                                <p style="font-size: 16px" class="mb-0">12 terjual</p>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <p style="font-size: 16px; font-weight: 500;" class="mb-0 accent-blue">Cikarang Utara</p>
+                                <p style="font-size: 16px" class="mb-0">4 Dijual</p>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <p style="font-size: 16px; font-weight: 500;" class="mb-0 accent-blue">Cikarang</p>
+                                <p style="font-size: 16px" class="mb-0">3 Dijual</p>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <p style="font-size: 16px; font-weight: 500;" class="mb-0 accent-blue">Cibitung</p>
+                                <p style="font-size: 16px" class="mb-0">3 Dijual</p>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <p style="font-size: 16px; font-weight: 500;" class="mb-0 accent-blue">Sukatani</p>
+                                <p style="font-size: 16px" class="mb-0">1 Dijual</p>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <p style="font-size: 16px; font-weight: 500;" class="mb-0 accent-blue">Cikarang Timur</p>
+                                <p style="font-size: 16px" class="mb-0">1 Dijual</p>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <p style="font-size: 16px;" class="mb-0 accent-blue fw-bolder">DKI Jakarta</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div id="map" style="height: 100%"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script>
+        var map = L.map('map').setView([-7.87699, 112.53426], 12);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <!-- <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> -->
