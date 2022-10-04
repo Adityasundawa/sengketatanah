@@ -1521,9 +1521,10 @@
                             </div>
                             <div class="col-lg-4">
                                 <h4>
-                                Pengacara VIP adalah akun berbayar.
+                                    Pengacara VIP
                                 </h4>
-                             
+                                <b>(VIP adalah akun berbayar)</b>
+
                                 <div class="row">
 
                                     <?php

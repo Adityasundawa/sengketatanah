@@ -1520,9 +1520,10 @@
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <h4>
-                             PPAT adalah akun berbayar.
+                            <h4>
+                                    PPAT VIP
                                 </h4>
+                                <b>(VIP adalah akun berbayar)</b>
                             
                                 <div class="row">
 

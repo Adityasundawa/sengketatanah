@@ -1521,9 +1521,10 @@
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <h4>
-                                Notaris VIP adalah akun berbayar.
+                            <h4>
+                                    Notaris VIP
                                 </h4>
+                                <b>(VIP adalah akun berbayar)</b>
                              
                                 <div class="row">
 

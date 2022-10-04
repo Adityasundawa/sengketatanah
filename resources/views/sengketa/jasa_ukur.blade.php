@@ -1521,8 +1521,9 @@
                             </div>
                             <div class="col-lg-4">
                                 <h4>
-                                    Petugas Ukur VIP adalah akun berbayar.
+                                    Petugas Ukur VIP
                                 </h4>
+                                <b>(VIP adalah akun berbayar)</b>
 
                                 <div class="row">
 

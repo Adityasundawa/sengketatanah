@@ -1496,8 +1496,9 @@
                             </div>
                             <div class="col-lg-4">
                                 <h4>
-                                    Appraisal VIP adalah akun berbayar
+                                    Appraisal VIP
                                 </h4>
+                                <b>(VIP adalah akun berbayar)</b>
 
                                 <div class="row">
 
