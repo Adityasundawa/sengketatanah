@@ -1514,7 +1514,7 @@
                             </span>
                         </div>
                         <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
-                        <button class="btn h-100 mb-0 desktop" style="color: #fff; background: #E6B325">Search</button>
+                        <button class="btn h-100 mb-0 rounded-0" style="color: #fff; background: #E6B325">Search</button>
                     </div>
                 </div>
 
@@ -1981,7 +1981,7 @@
 
             {{-- Orang Lawyer --}}
             <div class="col-lg-12">
-                <div class="card mb-3 mt-3 border-0 shadow-sm">
+                <div class="card mb-3 mt-2 border-0 shadow-sm">
                     <div class="card-body">
                         <div class="row justify-content-center">
                             <div class="col-1 arrow-desktop text-center">

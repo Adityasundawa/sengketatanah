@@ -1429,8 +1429,8 @@
                 </div>
             </div>
 
-            <div class="col-lg-12">
-                <div class="card mt-3 border-0 shadow-sm desktop" style="margin-top:-10px;display:none">
+            <div class="col-lg-12" style="margin-top:-10px;display:none">
+                <div class="card mt-3 border-0 shadow-sm desktop" >
                     <div class="card-body pb-1 pt-2">
                         <div class="row align-items-center g-0">
 
@@ -1878,7 +1878,7 @@
 
             {{-- Orang Lawyer --}}
             <div class="col-lg-12">
-                <div class="card mb-3 mt-3 border-0 shadow-sm">
+                <div class="card mb-3 mt-2 border-0 shadow-sm">
                     <div class="card-body">
                         <div class="row justify-content-center">
                             <div class="col-1 arrow-desktop text-center">
