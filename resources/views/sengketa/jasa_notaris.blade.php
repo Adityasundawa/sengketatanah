@@ -555,12 +555,12 @@
                                                 <table style="width:100%">
                                                     <tr>
                                                         <td rowspan="3">
-                                                            <form action="{{url('')}}/detail-main-petugas" method="get" id="form-ukur-{{$i}}">
+                                                            <form action="{{url('')}}/detail-main-petugas" method="get" id="form-notaris-{{$i}}">
                                                                 <input type="hidden" name="name" value="{{$name[$i]}}">
                                                                 <input type="hidden" name="img" value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
                                                                 <input type="hidden" name="jenis_petugas" value="Notaris">
                                                             </form>
-                                                            <img onclick="return  $('form#form-ukur-<?= $i ?>').submit()" src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" class="rounded-circle img-thumbnail " style="width:70px;height:auto;object-fit:cover;cursor: pointer;">
+                                                            <img onclick="return  $('form#form-notaris-<?= $i ?>').submit()" src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" class="rounded-circle img-thumbnail " style="width:70px;height:auto;object-fit:cover;cursor: pointer;">
                                                         </td>
                                                         <td>
                                                             <b class="ms-1 text-success">
