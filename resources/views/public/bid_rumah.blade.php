@@ -2390,7 +2390,7 @@
                                                     </td>
                                                     <td>
                                                         <h3 color="text-primary" style="margin-bottom: 0px !important">
-                                                            Bid Lahan
+                                                            Bid Rumah
                                                         </h3>
                                                     </td>
                                                     <td class="text-end" rowspan="2">
