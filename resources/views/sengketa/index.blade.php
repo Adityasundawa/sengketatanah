@@ -1637,17 +1637,16 @@
 
                     </div>
                 </div>
+
                 <div class="card mb-3 mt-2 border-0 shadow-sm desktop">
-                                    <div class="card-header bg-brown text-white">
-                                        <center>
-                                            <h5 class="blink"style="display:inline-block">Pre Launching 1 Desember 2022</h5>
-                                            <h5 class="blink"style="display:inline-block">Pukul 09.00 WIB </h5>
-                                            <h5 class="blink"style="display:inline-block">Nantikan Kehadiran Kami</h5>
-                                        </center>
-
-                                    </div>
-
-                                </div>
+                    <div class="card-header bg-brown text-white">
+                        <center>
+                            <h5 class="blink"style="display:inline-block">Pre Launching 1 Desember 2022</h5>
+                            <h5 class="blink"style="display:inline-block">Pukul 09.00 WIB </h5>
+                            <h5 class="blink"style="display:inline-block">Nantikan Kehadiran Kami</h5>
+                        </center>
+                    </div>
+                </div>
 
 
 
@@ -2444,10 +2443,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun sponsor
-                                                                            sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -2685,9 +2683,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki sponsor sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -2923,9 +2921,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki sponsor sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -3159,9 +3157,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki sponsor sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -3661,9 +3659,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki sponsor sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -3899,9 +3897,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki sponsor sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -4135,9 +4133,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki sponsor sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -4483,10 +4481,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun pengacara
-                                                                            sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun pengacara sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -4650,10 +4647,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun pengacara
-                                                                            sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun pengacara sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -4819,10 +4815,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun pengacara
-                                                                            sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun pengacara sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -5033,7 +5028,7 @@
 
                                 <div class="row mt-2 align-items-center" id="lelang-card-peng" style="flex-wrap: nowrap; overflow-x: auto">
 
-                                    <div class="col-lg-4">
+                                    <div class="col-12 custom">
                                         <div class="card mx-auto">
 
                                             <div class="card-header bg-pengacara text-white px-3 py-1">
@@ -5172,10 +5167,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun pengacara
-                                                                            sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun pengacara sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -5197,7 +5191,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-4 ">
+                                    <div class="col-12 custom ">
                                         <div class="card mx-auto">
 
                                             <div class="card-header bg-pengacara text-white px-3 py-1">
@@ -5339,10 +5333,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun pengacara
-                                                                            sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun pengacara sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -5364,7 +5357,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-4 ">
+                                    <div class="col-12 custom ">
                                         <div class="card mx-auto">
 
                                             <div class="card-header bg-pengacara text-white px-3 py-1">
@@ -5506,10 +5499,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun pengacara
-                                                                            sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun pengacara sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -5887,9 +5879,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -6118,9 +6110,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -6345,9 +6337,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -6571,9 +6563,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -6820,9 +6812,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -7051,9 +7043,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -7278,9 +7270,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -7504,9 +7496,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -9765,9 +9757,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -9996,9 +9988,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -10223,9 +10215,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -10449,9 +10441,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -10698,9 +10690,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -10929,9 +10921,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -11156,9 +11148,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -11382,9 +11374,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -13040,9 +13032,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -13303,9 +13295,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -13562,9 +13554,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -13820,9 +13812,9 @@
                                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" style="width: 100px" alt="">
                                                                             </h1>
                                                                         </div>
-                                                                        <div class="modal-body">
-                                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                                            melakukan bid.
+                                                                        <div class="modal-body" style="text-align: justify">
+                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
+                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
