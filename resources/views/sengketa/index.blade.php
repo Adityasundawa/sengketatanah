@@ -678,6 +678,9 @@
                         <a class="nav-link" href="#">Panduan</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#">Jaminan</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Hubungi Kami</a>
                     </li>
                
