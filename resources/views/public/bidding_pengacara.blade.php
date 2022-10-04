@@ -539,7 +539,6 @@
 
     @include('layouts.template-public.header')
 
-
     <div class="card aboute-bottom rounded-0 mobile">
         <div class="card border-0 shadow-sm" style="margin-top:-10px">
             <div class="card-body p-0">
@@ -1424,13 +1423,13 @@
                             </span>
                         </div>
                         <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
-                        <button class="btn h-100 mb-0 desktop" style="color: #fff; background: #E6B325">Search</button>
+                        <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-12">
-                <div class="card mt-3 border-0 shadow-sm desktop" style="margin-top:-10px;display:none">
+            <div class="col-lg-12" style="margin-top:-10px;display:none">
+                <div class="card mt-3 border-0 shadow-sm desktop" >
                     <div class="card-body pb-1 pt-2">
                         <div class="row align-items-center g-0">
 
@@ -1878,7 +1877,7 @@
 
             {{-- Orang Lawyer --}}
             <div class="col-lg-12">
-                <div class="card mb-3 mt-3 border-0 shadow-sm">
+                <div class="card mb-3 mt-2 border-0 shadow-sm">
                     <div class="card-body">
                         <div class="row justify-content-center">
                             <div class="col-1 arrow-desktop text-center">
@@ -3278,13 +3277,6 @@
         </div>
 
 
-
-    </div>
-
-
-
-
-    </div>
 
     </div>
 

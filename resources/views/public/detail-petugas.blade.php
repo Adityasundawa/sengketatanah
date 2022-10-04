@@ -600,11 +600,11 @@
             <div class="col-lg-12">
                 <table style="margin-top:-75px;width:100%" class="p-2 desktop">
                     <tr>
-                        <td rowspan="2" class="text-end ">
+                        <td class="text-end ">
 
                             <img src="{{$req->img}}" class="rounded-circle img-utama">
                         </td>
-                        <td>
+                        <td class="align-middle">
                             <h1 class="ms-3 mb-1" style="margin-top:-30px">
                                 {{$req->name}}
                             </h1>
@@ -708,7 +708,7 @@
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, tempore.
                                     </p>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg">
                                     <form action="{{url('')}}/email-subjek">
                                         @csrf
                                         <div class="mb-3">
