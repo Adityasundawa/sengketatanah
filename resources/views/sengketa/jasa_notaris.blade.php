@@ -37,6 +37,14 @@
             right: 0;
         }
 
+        .aboute-bottom svg {
+            opacity: 75%;
+        }
+
+        .aboute-bottom h6 {
+            opacity: 75%;
+        }
+
         .line-1 {
             height: 3px;
             background: black;
@@ -1579,8 +1587,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
 
 
     </div>
