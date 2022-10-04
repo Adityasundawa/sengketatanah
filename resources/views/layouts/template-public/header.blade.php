@@ -13,11 +13,18 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Produk</a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Panduan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Jaminan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hubungi Kami</a>
+                </li>
                 <li class="nav-item me-2">
                     <a class="nav-link" href="{{url('/')}}/tentang">Tentang Kami</a>
                 </li>
-
                 <div class="vr vr-none me-2"></div>
                 <hr class="hr-none">
 
