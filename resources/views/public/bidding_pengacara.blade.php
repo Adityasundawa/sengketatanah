@@ -545,7 +545,6 @@
             <div class="card-body p-0">
                 <div class="row g-0">
                     <div class="col text-center">
-
                         <a class="btn btn-sm mb-0 p-0 w-100" href="{{url('')}}/">
                             <div class="card rounded-0">
                                 <div class="card-body p-0">
@@ -931,7 +930,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id="carouselExampleControlsPres" class="carousel slide mobile mb-4">
+                                <div id="carouselExampleControlsPres" class="carousel slide mobile mb-4" data-bs-interval="false">
                                     <div class="carousel-inner mb-5">
                                         <div class="carousel-item active">
                                             <div class="card-body text-center container" style="height:505px">
@@ -1753,7 +1752,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div id="carouselExampleControlsPres" class="carousel slide mobile  mb-4">
+                                        <div id="carouselExampleControlsPres" class="carousel slide mobile  mb-4" data-bs-interval="false">
                                             <div class="carousel-inner  mb-5">
                                                 <div class="carousel-item active">
                                                     <div class="card-body text-center container" style="height:505px">
@@ -2003,7 +2002,7 @@
                                             <div class="card-header bg-pengacara text-white px-3 py-1">
                                                 <div class="row">
                                                     <div class="col-lg-12">
-                                                        <h5 class="mb-0 text-center">Kode Bid SP-00{{$bs['id']}} <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                                        <h5 class="mb-0 text-center">Kode Bid BP-00{{$bs['id']}} <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
                                                     </div>
                                                 </div>
                                             </div>
@@ -2271,7 +2270,7 @@
                                             <div class="card-header bg-pengacara text-white px-3 py-1">
                                                 <div class="row">
                                                     <div class="col-lg-12">
-                                                        <h5 class="mb-0 text-center">Kode Bid SP-00{{$bs['id']}} <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                                        <h5 class="mb-0 text-center">Kode Bid BP-00{{$bs['id']}} <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
                                                     </div>
                                                 </div>
                                             </div>
@@ -2540,7 +2539,7 @@
                                             <div class="card-header bg-pengacara text-white px-3 py-1">
                                                 <div class="row">
                                                     <div class="col-lg-12">
-                                                        <h5 class="mb-0 text-center">Kode Bid SP-00{{$bs['id']}} <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                                        <h5 class="mb-0 text-center">Kode Bid BP-00{{$bs['id']}} <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
                                                     </div>
                                                 </div>
                                             </div>
@@ -2814,7 +2813,7 @@
                                             <div class="card-header bg-pengacara text-white px-3 py-1">
                                                 <div class="row">
                                                     <div class="col-lg-12">
-                                                        <h5 class="mb-0 text-center">Kode Bid SP-00{{$bs['id']}} <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                                        <h5 class="mb-0 text-center">Kode Bid BP-00{{$bs['id']}} <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
                                                     </div>
                                                 </div>
                                             </div>
@@ -3079,7 +3078,7 @@
                                             <div class="card-header bg-pengacara text-white px-3 py-1">
                                                 <div class="row">
                                                     <div class="col-lg-12">
-                                                        <h5 class="mb-0 text-center">Kode Bid SP-00{{$bs['id']}} <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                                        <h5 class="mb-0 text-center">Kode Bid BP-00{{$bs['id']}} <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
                                                     </div>
                                                 </div>
                                             </div>
