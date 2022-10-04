@@ -1632,7 +1632,6 @@
                         <center>
                             <h5 class="blink">Pre Launching 1 Desember 2022</h5>
                             <h5 class="blink">Pukul 09.00 WIB </h5>
-                            <h5 class="blink">Nantikan Kehadiran Kami</h5>
                         </center>
 
                     </div>
@@ -1643,7 +1642,6 @@
                         <center>
                             <h5 class="blink"style="display:inline-block">Pre Launching 1 Desember 2022</h5>
                             <h5 class="blink"style="display:inline-block">Pukul 09.00 WIB </h5>
-                            <h5 class="blink"style="display:inline-block">Nantikan Kehadiran Kami</h5>
                         </center>
                     </div>
                 </div>
