@@ -1522,11 +1522,9 @@
                             </div>
                             <div class="col-lg-4">
                                 <h4>
-                                    Agen VIP
+                                Notaris VIP adalah akun berbayar.
                                 </h4>
-                                <p>
-                                    Agen VIP adalah akun berbayar.
-                                </p>
+                             
                                 <div class="row">
 
                                     <?php
