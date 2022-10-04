@@ -1883,7 +1883,7 @@
                                             @endif
 
                                             <div class="desktop-2">
-                                                <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide" data-interval="false">
+                                                <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"  data-bs-interval="false">
                                                     <div class="carousel-indicators">
                                                         <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                                         <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -1916,7 +1916,7 @@
                                                 </div>
                                             </div>
                                             <div class="mobile">
-                                                <div id="carouselmobile{{$bs['id']}}" class="carousel slide" data-interval="false">
+                                                <div id="carouselmobile{{$bs['id']}}" class="carousel slide"  data-bs-interval="false">
                                                     <div class="carousel-indicators">
                                                         <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                                         <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -2303,7 +2303,7 @@
                                         @endif
 
                                         <div class="desktop-2">
-                                            <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide" data-interval="false">
+                                            <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"  data-bs-interval="false">
                                                 <div class="carousel-indicators">
                                                     <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                                     <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -2336,7 +2336,7 @@
                                             </div>
                                         </div>
                                         <div class="mobile">
-                                            <div id="carouselmobile{{$bs['id']}}" class="carousel slide" data-interval="false">
+                                            <div id="carouselmobile{{$bs['id']}}" class="carousel slide"  data-bs-interval="false">
                                                 <div class="carousel-indicators">
                                                     <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                                     <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -2726,7 +2726,7 @@
                             @endif
 
                             <div class="desktop-2">
-                                <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide" data-interval="false">
+                                <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide" data-bs-interval="false">
                                     <div class="carousel-indicators">
                                         <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                         <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -2759,7 +2759,7 @@
                                 </div>
                             </div>
                             <div class="mobile">
-                                <div id="carouselmobile{{$bs['id']}}" class="carousel slide" data-interval="false">
+                                <div id="carouselmobile{{$bs['id']}}" class="carousel slide" data-bs-interval="false">
                                     <div class="carousel-indicators">
                                         <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                         <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>

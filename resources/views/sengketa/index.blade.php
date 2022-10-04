@@ -1637,8 +1637,21 @@
 
                     </div>
                 </div>
+                <div class="card mb-3 mt-2 border-0 shadow-sm desktop">
+                                    <div class="card-header bg-brown text-white">
+                                        <center>
+                                            <h5 class="blink"style="display:inline-block">Pre Launching 1 Desember 2022</h5>
+                                            <h5 class="blink"style="display:inline-block">Pukul 09.00 WIB </h5>
+                                            <h5 class="blink"style="display:inline-block">Nantikan Kehadiran Kami</h5>
+                                        </center>
 
-                <div class="card mb-3 mt-2 border-0 shadow-sm desktop" style="margin-top:-10px">
+                                    </div>
+
+                                </div>
+
+
+
+                <div class="card mb-3 mt-2 border-0 shadow-sm desktop" style="margin-top:-10px;display:none">
                     <div class="card-body pb-1 pt-2">
                         <div class="row align-items-center">
                                 {{--
@@ -1725,17 +1738,7 @@
                             </div>
                                 --}}
                             <div class="col-lg-12 text-center">
-                                <div class="card ">
-                                    <div class="card-header bg-brown text-white">
-                                        <center>
-                                            <h5 class="blink"style="display:inline-block">Pre Launching 1 Desember 2022</h5>
-                                            <h5 class="blink"style="display:inline-block">Pukul 09.00 WIB </h5>
-                                            <h5 class="blink"style="display:inline-block">Nantikan Kehadiran Kami</h5>
-                                        </center>
-
-                                    </div>
-
-                                </div>
+                              
 
                             </div>
                             {{--
@@ -2106,7 +2109,6 @@
                         <div class="mt-2 ">
 
                             <div class="row justify-content-center align-items-center">
-
 
                                 <div class="col-1 arrow-desktop text-center">
                                     <button id="left-orang-app" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
@@ -4348,7 +4350,7 @@
                                             <div class="card-header bg-pengacara text-white px-3 py-1">
                                                 <div class="row">
                                                     <div class="col-lg-12">
-                                                        <h5 class="mb-0 text-center">Kode Bid SP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                                        <h5 class="mb-0 text-center">Kode Bid BP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
                                                     </div>
                                                 </div>
                                             </div>
@@ -4512,7 +4514,7 @@
                                             <div class="card-header bg-pengacara text-white px-3 py-1">
                                                 <div class="row">
                                                     <div class="col-lg-12">
-                                                        <h5 class="mb-0 text-center">Kode Bid SP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                                        <h5 class="mb-0 text-center">Kode Bid BP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
                                                     </div>
                                                 </div>
                                             </div>
@@ -4679,7 +4681,7 @@
                                             <div class="card-header bg-pengacara text-white px-3 py-1">
                                                 <div class="row">
                                                     <div class="col-lg-12">
-                                                        <h5 class="mb-0 text-center">Kode Bid SP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                                        <h5 class="mb-0 text-center">Kode Bid BP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
                                                     </div>
                                                 </div>
                                             </div>
@@ -4848,7 +4850,7 @@
                                             <div class="card-header bg-pengacara text-white px-3 py-1">
                                                 <div class="row">
                                                     <div class="col-lg-12">
-                                                        <h5 class="mb-0 text-center">Kode Bid SP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                                        <h5 class="mb-0 text-center">Kode Bid BP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
                                                     </div>
                                                 </div>
                                             </div>
@@ -5037,7 +5039,7 @@
                                             <div class="card-header bg-pengacara text-white px-3 py-1">
                                                 <div class="row">
                                                     <div class="col-lg-12">
-                                                        <h5 class="mb-0 text-center">Kode Bid SP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                                        <h5 class="mb-0 text-center">Kode Bid BP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
                                                     </div>
                                                 </div>
                                             </div>
@@ -5201,7 +5203,7 @@
                                             <div class="card-header bg-pengacara text-white px-3 py-1">
                                                 <div class="row">
                                                     <div class="col-lg-12">
-                                                        <h5 class="mb-0 text-center">Kode Bid SP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                                        <h5 class="mb-0 text-center">Kode Bid BP-001 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
                                                     </div>
                                                 </div>
                                             </div>
