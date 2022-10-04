@@ -1523,11 +1523,11 @@
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <h4>
-                                    Agen Terverifikasi
+                            <h4>
+                                    Agen VIP
                                 </h4>
                                 <p>
-                                    Any
+                                    Agen VIP adalah akun berbayar.
                                 </p>
                                 <div class="row">
 
