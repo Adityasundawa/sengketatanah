@@ -301,7 +301,9 @@
             background-color: #f00f00;
         }
     </style>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         .chat-btn {
             /* position: absolute;
@@ -1627,19 +1629,28 @@
                     </div>
                 </div>
 
-                <div class="card mb-3 mobile">
-                    <div class="card-header bg-brown text-white">
+                <style>
+                    .custom.card-header:first-child {
+                        border-radius: 10px 10px !important;
+                    }
+                    .card-header:first-child {
+                        border-radius: 10px 10px 0px 0px !important;
+                    }
+                </style>
+
+                <div class="card mb-3 mobile rounded-5">
+                    <div class="custom card-header bg-brown text-white">
                         <center>
-                            <h5 class="blink">Pre Launching 1 Desember 2022</h5>
+                            <h6 class="blink mb-0">Pre Launching 1 Desember 2022</h6>
                         </center>
 
                     </div>
                 </div>
 
-                <div class="card mb-3 mt-2 border-0 shadow-sm desktop">
-                    <div class="card-header bg-brown text-white">
+                <div class="card rounded-5 mb-3 mt-2 border-0 shadow-sm desktop">
+                    <div class="custom card-header bg-brown text-white">
                         <center>
-                            <h5 class="blink"style="display:inline-block">Pre Launching 1 Desember 2022</h5>
+                            <h6 class="blink mb-0"style="display:inline-block">Pre Launching 1 Desember 2022</h6>
                         </center>
                     </div>
                 </div>
