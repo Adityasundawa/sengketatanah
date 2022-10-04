@@ -484,6 +484,29 @@
                 display: none
             }
         }
+
+        .scroll-simple::-webkit-scrollbar {
+            width: 7px;
+            height: 7px;
+        }
+
+        .scroll-simple::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .scroll-simple::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .scroll-simple::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .scroll-simple::-webkit-scrollbar-thumb:active {
+            background: rgba(0, 0, 0, .9);
+        }
     </style>
 </head>
 
@@ -723,22 +746,6 @@
 
         </div>
 
-        <div class="col-lg-12 mt-3">
-
-            <div class="card border-0">
-                <div class="input-group">
-                    <div class="input-group-prepend my-auto">
-                        <span class="px-3">
-                            <i class="fa fa-search"></i>
-                        </span>
-                    </div>
-                    <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
-                    <button class="btn h-100 mb-0 desktop" style="color: #fff; background: #E6B325">Search</button>
-                </div>
-            </div>
-
-        </div>
-
         <div class="row justify-content-center mb-2">
             <div class="col-lg-12 mt-4">
                 <h5>
@@ -750,16 +757,11 @@
                             <option value="wilayah">&nbsp;&nbsp;Wilayah&nbsp;&nbsp;</option>
                         </select>
                     </div>
-                    <div class="col-auto">
-                        <select name="agen" id="agen" class="form-select rounded-0">
-                            <option value="agen">&nbsp;&nbsp;Agen&nbsp;&nbsp;</option>
-                        </select>
-                    </div>
                     <div class="col-lg">
-                        <input type="text" class="form-control rounded-0" placeholder="Search" name="search">
-                    </div>
-                    <div class="col-auto">
-                        <input type="submit" value="search" class="btn btn-primary rounded-0">
+                        <div class="input-group">
+                            <input type="text" class="form-control rounded-0" placeholder="Search" name="search">
+                            <button type="submit" class="btn h-100 mb-0 btn-primary rounded-0">Search</button>
+                        </div>
                     </div>
                 </form>
                 <div class="card mt-2 border-0 shadow-sm">
@@ -767,7 +769,7 @@
                         <div class="row">
                             <div class="col-lg-8">
                                 <h4>
-                                    4532 Agen Ditemukan
+                                    4532 PPAT Ditemukan
                                 </h4>
                                 <p>
                                     Jakarta
