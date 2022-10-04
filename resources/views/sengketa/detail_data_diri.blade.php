@@ -18,7 +18,7 @@
         <div class="card-body">
             <div class="row">
 
-                <div class="col-lg-4">
+                <div class="col">
                     <div class="row">
                         <div class="col-12">
                             <h5>Lokasi Pengukuran Oleh {{$req->name}}</h5>
@@ -51,11 +51,13 @@
                     </div>
                 </div>
 
-                <div class="col-lg-8">
-                    <div id="map" style="height: 400px;width:100%"></div>
-                </div>
-
             </div>
+        </div>
+    </div>
+
+    <div class="card mt-4">
+        <div class="card-body">
+            <div id="map" style="height: 400px;width:100%"></div>
         </div>
     </div>
 </div>
