@@ -1445,7 +1445,7 @@
             </div>
         </div>
 
-        <div class="col-lg-12 mt-3">
+        <div class="col-lg-12">
             <div class="card border-0">
                 <div class="input-group">
                     <div class="input-group-prepend my-auto">
