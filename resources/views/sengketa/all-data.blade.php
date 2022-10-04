@@ -1981,7 +1981,7 @@
 
             {{-- Orang Lawyer --}}
             <div class="col-lg-12">
-                <div class="card mb-3 mt-2 border-0 shadow-sm">
+                <div class="card mb-3 mt-1 border-0 shadow-sm">
                     <div class="card-body">
                         <div class="row justify-content-center">
                             <div class="col-1 arrow-desktop text-center">
