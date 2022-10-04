@@ -2137,12 +2137,12 @@
                                                     Appraisal
                                                 </div>
                                             </button>
-                                            @for($i=0;$i< 14;$i++)<form action="{{url('')}}/detail-main-petugas" method="get" id="form-ukur-{{$i}}">
+                                            @for($i=0;$i< 14;$i++)<form action="{{url('')}}/detail-main-petugas" method="get" id="form-appraisal-{{$i}}">
                                                 <input type="hidden" name="name" value="{{$name[$i]}}">
                                                 <input type="hidden" name="img" value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
-                                                <input type="hidden" name="jenis_petugas" value="Tukang Ukur">
+                                                <input type="hidden" name="jenis_petugas" value="Appraisal">
                                                 </form>
-                                                <button class="mb-0 container-gambar text-center p-1 me-1 text-decoration-none border-0 bg-white" onclick="return  $('form#form-ukur-<?= $i ?>').submit()" style='display: inline-block;flex: 0 0 auto'>
+                                                <button class="mb-0 container-gambar text-center p-1 me-1 text-decoration-none border-0 bg-white" onclick="return  $('form#form-appraisal-<?= $i ?>').submit()" style='display: inline-block;flex: 0 0 auto'>
                                                     <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt="" srcset="" class="rounded-circle img-thumbnail " style="width:70px !important;height:70px;object-fit:cover;"> <br>
                                                     {{$name[$i]}}
                                                 </button>
@@ -9469,12 +9469,12 @@
                                                 </div>
                                             </button>
                                             @for($i=13;$i> 0;$i--)
-                                            <form action="{{url('')}}/detail-main-petugas" method="get" id="form-NOTARIS-{{$i}}">
+                                            <form action="{{url('')}}/detail-main-petugas" method="get" id="form-notaris-{{$i}}">
                                                 <input type="hidden" name="name" value="{{$name[$i]}}">
                                                 <input type="hidden" name="img" value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
-                                                <input type="hidden" name="jenis_petugas" value="NOTARIS">
+                                                <input type="hidden" name="jenis_petugas" value="Notaris">
                                             </form>
-                                            <button class="container-gambar text-center p-1 me-1 text-decoration-none border-0 bg-white" onclick="return  $('form#form-ppat-<?= $i ?>').submit()" style='display: inline-block;flex: 0 0 auto'>
+                                            <button class="container-gambar text-center p-1 me-1 text-decoration-none border-0 bg-white" onclick="return  $('form#form-notaris-<?= $i ?>').submit()" style='display: inline-block;flex: 0 0 auto'>
                                                 <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt="" srcset="" class="rounded-4 img-thumbnail " style="width:70px !important;height:70px;object-fit:cover;"> <br>
                                                 {{$name[$i]}}
                                             </button>
@@ -12714,7 +12714,7 @@
                                             @for($i=0;$i< 14;$i++)<form action="{{url('')}}/detail-main-petugas" method="get" id="form-ukur-{{$i}}">
                                                 <input type="hidden" name="name" value="{{$name[$i]}}">
                                                 <input type="hidden" name="img" value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
-                                                <input type="hidden" name="jenis_petugas" value="Tukang Ukur">
+                                                <input type="hidden" name="jenis_petugas" value="Petugas Ukur">
                                                 </form>
                                                 <button class=" mb-0 container-gambar text-center p-1 me-1 text-decoration-none border-0 bg-white" onclick="return  $('form#form-ukur-<?= $i ?>').submit()" style='display: inline-block;flex: 0 0 auto'>
                                                     <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt="" srcset="" class="rounded-circle img-thumbnail " style="width:70px !important;height:70px;object-fit:cover;"> <br>
