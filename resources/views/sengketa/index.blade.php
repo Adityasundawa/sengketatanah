@@ -1637,16 +1637,19 @@
 
                     </div>
                 </div>
-
-                <div class="card mb-3 mt-2 border-0 shadow-sm desktop">
-                    <div class="card-header bg-brown text-white">
-                        <center>
-                            <h5 class="blink"style="display:inline-block">Pre Launching 1 Desember 2022</h5>
-                            <h5 class="blink"style="display:inline-block">Pukul 09.00 WIB </h5>
-                            <h5 class="blink"style="display:inline-block">Nantikan Kehadiran Kami</h5>
-                        </center>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card mb-3 mt-2 border-0 shadow-sm desktop">
+                        <div class="card-header bg-brown text-white">
+                            <center>
+                                <h5 class="blink"style="display:inline-block">Pre Launching 1 Desember 2022</h5>
+                                <!-- <h5 class="blink"style="display:inline-block">Pukul 09.00 WIB </h5>
+                                <h5 class="blink"style="display:inline-block">Nantikan Kehadiran Kami</h5> -->
+                            </center>
+                        </div>
                     </div>
                 </div>
+            </div>
 
 
 
@@ -2444,9 +2447,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -2684,9 +2686,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -2922,9 +2923,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -3158,9 +3158,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -3660,9 +3659,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -3898,9 +3896,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -4134,9 +4131,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -4482,8 +4478,7 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun pengacara sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
+                                                                           Anda harus memiliki akun Pengacara sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -4648,8 +4643,7 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun pengacara sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
+                                                                           Anda harus memiliki akun Pengacara sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -4816,8 +4810,7 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun pengacara sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
+                                                                           Anda harus memiliki akun Pengacara sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -5168,8 +5161,7 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun pengacara sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
+                                                                           Anda harus memiliki akun Pengacara sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -5334,8 +5326,7 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun pengacara sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
+                                                                           Anda harus memiliki akun Pengacara sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -5500,8 +5491,7 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun pengacara sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
+                                                                           Anda harus memiliki akun Pengacara sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
@@ -5880,9 +5870,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -6111,9 +6100,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -6338,9 +6326,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -6564,9 +6551,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -6813,9 +6799,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -7044,9 +7029,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -7271,9 +7255,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -7497,9 +7480,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -9758,9 +9740,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -9989,9 +9970,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -10216,9 +10196,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -10442,9 +10421,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -10691,9 +10669,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -10922,9 +10899,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -11149,9 +11125,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -11375,9 +11350,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -13033,9 +13007,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -13296,9 +13269,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -13555,9 +13527,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -13813,9 +13784,8 @@
                                                                             </h1>
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
-                                                                            Anda harus memiliki akun lender sebelum melakukan bid terlebih dulu.
-                                                                            Bid adalah proses penawaran anda dengan owner. Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
-                                                                        </div>
+                                                                          
+                                                                    Anda harus memiliki akun lender sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
