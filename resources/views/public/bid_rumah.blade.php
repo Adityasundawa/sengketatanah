@@ -2318,7 +2318,7 @@
                                         <form action="{{url('')}}/detail-main-petugas" method="get" id="form-Appraisal-{{$i}}">
                                             <input type="hidden" name="name" value="{{$name[$i]}}">
                                             <input type="hidden" name="img" value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
-                                            <input type="hidden" name="jenis_petugas" value="Tukang Appraisal">
+                                            <input type="hidden" name="jenis_petugas" value="Appraisal">
                                         </form>
                                         <button class="mb-0 container-gambar text-center p-1 me-1 text-decoration-none border-0 bg-white" onclick="return  $('form#form-Appraisal-<?= $i ?>').submit()" style='display: inline-block;flex: 0 0 auto'>
                                             <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt="" srcset="" class="rounded-circle img-thumbnail " style="width:70px !important;height:70px;object-fit:cover;"> <br>
@@ -4260,6 +4260,41 @@
         </ul>
     </nav>
 
+    <style>
+        .store {
+            width: 171px;
+        }
+
+        .appstore {
+            width: 140px;
+            margin-left: 10px
+        }
+
+        @media screen and (min-width: 768px) {
+            .store {
+                width: 216px;
+            }
+
+            .appstore {
+                width: 185px;
+            }
+        }
+    </style>
+
+    <hr>
+
+    <div class="row justify-content-center">
+        <div class="col-11 mt-2 text-center">
+            <b>Download Aplikasinya!</b>
+            <p class="fw-lighter mb-0">Platform Seputar Tanah No. 1 di Indonesia</p>
+        </div>
+        <div class="col-11 mb-2 text-center">
+            <a href="#"><img src="{{asset('/')}}uploads/google-play-badge.png" class="store" alt=""></a>
+            <a href="#"><img src="{{asset('/')}}uploads/appstore-badge.png" class="appstore" alt=""></a>
+        </div>
+    </div>
+
+    <hr>
 
 
 

@@ -691,6 +691,41 @@
 
     </div>
 
+    <style>
+        .store {
+            width: 171px;
+        }
+
+        .appstore {
+            width: 140px;
+            margin-left: 10px
+        }
+
+        @media screen and (min-width: 768px) {
+            .store {
+                width: 216px;
+            }
+
+            .appstore {
+                width: 185px;
+            }
+        }
+    </style>
+
+    <hr>
+
+    <div class="row justify-content-center">
+        <div class="col-11 mt-2 text-center">
+            <b>Download Aplikasinya!</b>
+            <p class="fw-lighter mb-0">Platform Seputar Tanah No. 1 di Indonesia</p>
+        </div>
+        <div class="col-11 mb-2 text-center">
+            <a href="#"><img src="{{asset('/')}}uploads/google-play-badge.png" class="store" alt=""></a>
+            <a href="#"><img src="{{asset('/')}}uploads/appstore-badge.png" class="appstore" alt=""></a>
+        </div>
+    </div>
+
+    <hr>
 
 
 
