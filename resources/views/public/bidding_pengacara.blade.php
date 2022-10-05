@@ -1083,7 +1083,47 @@
 
     <div class="container">
 
-        <div class="row justify-content-center mb-2 mt-3">
+        <div class="row justify-content-center mb-2 mt-2">
+            <div class="col-lg-12 mb-2">
+                <div class="row g-2 desktop">
+
+                    <div class="col-auto">
+                        <a class="btn" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
+                    </div>
+
+                    <div class="col-auto">
+                        <a class="btn" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
+                    </div>
+
+                    <div class="col-lg">
+                        <div class="card border-0">
+                            <div class="input-group">
+                                <div class="input-group-prepend my-auto">
+                                    <span class="px-3">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
+                                <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg mobile mb-2" style="margin-top:-10px !important">
+                <div class="card border-0">
+                    <div class="input-group">
+                        <div class="input-group-prepend my-auto">
+                            <span class="px-3">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
+                        <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
+                    </div>
+                </div>
+            </div>
 
             <div class="col-lg-12">
                 <div class="card mb-0 border-0 mb-3" style="z-index:999">
@@ -1428,32 +1468,6 @@
                 </div>
             </div>
 
-
-            <div class="row g-2 desktop" style="">
-
-                <div class="col-auto">
-                    <a class="btn" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
-                </div>
-
-                <div class="col-auto">
-                    <a class="btn" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
-                </div>
-
-                <div class="col-lg">
-                    <div class="card border-0">
-                        <div class="input-group">
-                            <div class="input-group-prepend my-auto">
-                                <span class="px-3">
-                                    <i class="fa fa-search"></i>
-                                </span>
-                            </div>
-                            <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
-                            <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
 
 
             <div class="col-lg-12" style="margin-top:-10px;display:none">
@@ -1902,23 +1916,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg mobile" style="margin-top:-10px !important">
-                    <div class="card border-0">
-                        <div class="input-group">
-                            <div class="input-group-prepend my-auto">
-                                <span class="px-3">
-                                    <i class="fa fa-search"></i>
-                                </span>
-                            </div>
-                            <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
-                            <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
-                        </div>
-                    </div>
-                </div>
 
-
-            </div>
             <div class="col-lg">
                 <div class="row g-0">
                     <div class="col-6 mobile mt-2">
@@ -1998,7 +1996,7 @@
                         <a class="btn btn-sm" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
                     </div>
                 </div>
-    
+
                 <div class="col-6 mobile mb-3">
                     <div class="ms-1 d-grid gap-2">
                         <a class="btn btn-sm" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
