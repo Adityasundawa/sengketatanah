@@ -585,7 +585,6 @@
     @include('layouts.template-public.header')
 
 
-
     <div class="card aboute-bottom rounded-0 mobile">
         <div class="card border-0 shadow-sm" style="margin-top:-10px">
             <div class="card-body p-0">
@@ -1132,7 +1131,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-12 mt-2">
+            <div class="col-lg-12 mt-3">
                 <div class="row g-2 desktop">
 
                     <div class="col-auto">

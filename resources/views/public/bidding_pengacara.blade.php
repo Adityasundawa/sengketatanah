@@ -1125,7 +1125,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-12">
+            <div class="col-lg-12 ">
                 <div class="card mb-0 border-0 mb-3" style="z-index:999">
                     <div class="card-body pb-0">
                         <div class="row g-2 justify-content-between text-center scroll-simple" style="overflow-x: auto; flex-wrap: nowrap">
