@@ -1459,46 +1459,6 @@
 
         </div>
 
-<<<<<<< HEAD
-        <div class="col-lg">
-            <div class="row g-0 desktop mt-3">
-                    
-                <div class="col-auto pe-1">
-                    <a class="btn" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
-                </div>
-    
-                <div class="col-auto px-1">
-                    <a class="btn" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join" >Pelajari</a>
-                </div>
-    
-                <div class="col-lg ps-1">
-                    <div class="card border-0">
-                        <div class="input-group">
-                            <div class="input-group-prepend my-auto">
-                                <span class="px-3">
-                                    <i class="fa fa-search"></i>
-                                </span>
-                            </div>
-                            <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
-                            <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
-                        </div>
-                    </div>
-                </div>
-    
-            </div>
-        </div>
-
-        <div class="col-lg mobile mt-3">
-            <div class="card border-0">
-                <div class="input-group">
-                    <div class="input-group-prepend my-auto">
-                        <span class="px-3">
-                            <i class="fa fa-search"></i>
-                        </span>
-                    </div>
-                    <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
-                    <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
-=======
 
         <div class="row g-2 desktop">
 
@@ -1521,7 +1481,6 @@
                         <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
                         <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
                     </div>
->>>>>>> eadad04537cc5669a4aff57430a78aeeaf9944fa
                 </div>
             </div>
         </div>
@@ -4775,13 +4734,7 @@
 
                                 <div class="mb-2 sponsor">
                                     <label for="keb_dana" class="form-label">Jumlah Dana Sponsor</label>
-<<<<<<< HEAD
-                                    <input type="number" class="form-control rounded-0" id="keb_dana"
-                                        placeholder="Sebutkan Nilai Pinjaman" aria-describedby="input-keb_dana"
-                                        name="keb_dana" required>
-=======
                                     <input type="number" class="form-control rounded-0" id="keb_dana" placeholder="Sebutkan Nilai Pengajuan" aria-describedby="input-keb_dana" name="keb_dana" required>
->>>>>>> eadad04537cc5669a4aff57430a78aeeaf9944fa
                                     <div id="input-keb_dana" class="form-text"></div>
                                 </div>
 
