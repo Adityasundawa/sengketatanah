@@ -1990,19 +1990,6 @@
                 </div>
             </div>
 
-            <div class="row g-0">
-                <div class="col-6 mobile mb-3">
-                    <div class="d-grid gap-2 me-1">
-                        <a class="btn btn-sm" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
-                    </div>
-                </div>
-
-                <div class="col-6 mobile mb-3">
-                    <div class="ms-1 d-grid gap-2">
-                        <a class="btn btn-sm" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
-                    </div>
-                </div>
-            </div>
 
             <script>
                 $('#right-orang1').click(function() {
