@@ -1116,8 +1116,48 @@
     <div class="container">
 
         <div class="row justify-content-center mb-2">
+            <div class="col-lg mobile mt-1 mb-2">
+                <div class="card border-0">
+                    <div class="input-group">
+                        <div class="input-group-prepend my-auto">
+                            <span class="px-3">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
+                        <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 mt-2 desktop mb-2">
+                <div class="row g-2 ">
 
-            <div class="col-lg-12 mt-3">
+                    <div class="col-auto">
+                        <a class="btn" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
+                    </div>
+
+                    <div class="col-auto">
+                        <a class="btn" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
+                    </div>
+
+                    <div class="col-lg">
+                        <div class="card border-0">
+                            <div class="input-group">
+                                <div class="input-group-prepend my-auto">
+                                    <span class="px-3">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
+                                <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-12">
                 <div class="card mb-0 border-0 mb-3" style="z-index:999">
                     <div class="card-body pb-0">
                         <div class="row g-2 justify-content-between text-center scroll-simple" style="overflow-x: auto; flex-wrap: nowrap">
@@ -1460,47 +1500,8 @@
         </div>
 
 
-        <div class="row g-2 desktop">
 
-            <div class="col-auto">
-                <a class="btn" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
-            </div>
-
-            <div class="col-auto">
-                <a class="btn" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
-            </div>
-
-            <div class="col-lg">
-                <div class="card border-0">
-                    <div class="input-group">
-                        <div class="input-group-prepend my-auto">
-                            <span class="px-3">
-                                <i class="fa fa-search"></i>
-                            </span>
-                        </div>
-                        <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
-                        <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-lg mobile" style="margin-top:-10px">
-            <div class="card border-0">
-                <div class="input-group">
-                    <div class="input-group-prepend my-auto">
-                        <span class="px-3">
-                            <i class="fa fa-search"></i>
-                        </span>
-                    </div>
-                    <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
-                    <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-lg-12 mt-3" style="margin-top:-10px;display:none">
+        <div class="col-lg-12 mt-2" style="display:none">
             <div class="card border-0 shadow-sm desktop">
                 <div class="card-body pb-1 pt-2">
                     <div class="row align-items-center g-0">
@@ -1948,15 +1949,15 @@
             </div>
         </div>
 
-        <div class="col-lg">
+        <div class="col-lg mobile mb-2"  style="margin-top:-10px">
             <div class="row g-0">
-                <div class="col-6 mobile mt-2">
+                <div class="col-6">
                     <div class="d-grid gap-2">
                         <a class="btn btn-sm" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
                     </div>
                 </div>
 
-                <div class="col-6 mobile mt-2">
+                <div class="col-6">
                     <div class="ms-1 d-grid ">
                         <a class="btn btn-sm" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
                     </div>
@@ -1964,7 +1965,7 @@
             </div>
         </div>
         {{-- Orang Appraisal --}}
-        <div class="col-lg-12 mt-2">
+        <div class="col-lg-12 mt-0">
             <div class="card border-0 shadow-sm">
                 <div class="card-body">
                     <div class="row justify-content-center align-items-center">
@@ -2038,21 +2039,7 @@
             </div>
         </div>
 
-        <div class="col-12">
-            <div class="row g-0">
-                <div class="col-6 mobile mt-3">
-                    <div class="d-grid gap-2 me-1">
-                        <a class="btn btn-sm" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
-                    </div>
-                </div>
-    
-                <div class="col-6 mobile mt-3">
-                    <div class="ms-1 d-grid gap-2">
-                        <a class="btn btn-sm" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      
 
         <script>
             $('#right-orang1').click(function() {

@@ -695,7 +695,6 @@
                                 </div>
                             </div>
                         </button>
-
                         <script>
                             $("#btn-chat-m").click(function() {
                                 $("#panduan-m").removeClass('show');
@@ -1940,20 +1939,8 @@
 
             {{-- Orang Lawyer --}}
 
-            <div class="col-lg mobile mt-2">
-                <div class="card border-0">
-                    <div class="input-group">
-                        <div class="input-group-prepend my-auto">
-                            <span class="px-3">
-                                <i class="fa fa-search"></i>
-                            </span>
-                        </div>
-                        <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
-                        <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 mobile mt-2">
+
+            <div class="col-6 mobile" style="margin-top:5px">
                 <div class="d-grid gap-2 me-1">
                     <a class="btn btn-sm" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
                 </div>
