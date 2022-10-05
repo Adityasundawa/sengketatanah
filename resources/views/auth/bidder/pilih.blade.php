@@ -729,11 +729,7 @@
                             <h6 class="text-muted fw-normal mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nam minima quisquam.</h6>
                         </div>
                         <div class="col-md row-col">
-                            <form action="{{url('')}}/daftar-bid-a" method="get"
-                                id="form-korban">
-                                <input type="hidden" name="title" value="Korban">
-                            </form>
-                            <button onclick="return $('form#form-korban').submit()" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Korban</button>
+                            <a href="{{url('')}}/daftar-bid-a" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Korban</a>
                         </div>
                     </div>
                 </div>
@@ -747,7 +743,7 @@
                             <h6 class="text-muted fw-normal mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nam minima quisquam.</h6>
                         </div>
                         <div class="col-md row-col">
-                            <button class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Sponsor</button>
+                            <a href="{{url('')}}/pilih-s" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Sponsor</a>
                         </div>
                     </div>
                 </div>
