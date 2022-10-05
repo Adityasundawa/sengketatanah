@@ -1272,7 +1272,7 @@
         </div>
 
         <div class="row justify-content-center mb-2">
-            <div class="col-lg-12 mt-4">
+            <div class="col-lg-12 mt-2">
                 <h5>
                     Cari Jasa Appraisal
                 </h5>
