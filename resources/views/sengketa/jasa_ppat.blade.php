@@ -1347,9 +1347,9 @@
                 </div>
             </div>
         </div>
-
-        <div class="row justify-content-center mb-2">
-            <div class="col-lg-12 mt-2">
+        <hr>
+        <div class="row justify-content-center mb-3">
+            <div class="col-lg-12 mt-3">
                 <h5>
                     Cari Jasa PPAT
                 </h5>

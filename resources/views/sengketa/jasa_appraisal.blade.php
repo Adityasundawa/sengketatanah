@@ -1309,8 +1309,6 @@
                 </div>
             </div>
         </div>
-
-        
         <div class="row g-0">
             <div class="col-6 mobile" style="margin-top:5px">
                 <div class="d-grid gap-2 me-1">
@@ -1323,11 +1321,10 @@
                     <a class="btn btn-sm" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
                 </div>
             </div>
-
         </div>
-
-        <div class="row justify-content-center mb-2">
-            <div class="col-lg-12 mt-2">
+        <hr>
+        <div class="row justify-content-center mb-3">
+            <div class="col-lg-12 mt-3">
                 <h5>
                     Cari Jasa Appraisal
                 </h5>
@@ -1561,10 +1558,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <h4>
-                                    Appraisal VIP
-                                </h4>
-                                <b>(VIP adalah akun berbayar)</b>
+                                <img src="{{asset('')}}images/APPRAISAL VIP_BANNER.jpg" class="img-fluid">
 
                                 <div class="row">
 
