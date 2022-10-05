@@ -140,6 +140,12 @@ class SengketaController extends Controller
         return view('auth.bidder.daftar', $data);
     }
 
+    public function buatLaporan(Request $request)
+    {
+        $data['req'] = $request;
+        return view('auth.bidder.buat_laporan', $data);
+    }
+
     private function data_sengketa()
     {
         return [
