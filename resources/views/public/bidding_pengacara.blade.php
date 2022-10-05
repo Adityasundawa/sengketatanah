@@ -1919,13 +1919,13 @@
 
             <div class="col-lg" style="margin-top:5px">
                 <div class="row g-0">
-                    <div class="col-6 mobile mt-2">
+                    <div class="col-6 mobile">
                         <div class="d-grid gap-2">
                             <a class="btn btn-sm" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
                         </div>
                     </div>
 
-                    <div class="col-6 mobile mt-2">
+                    <div class="col-6 mobile">
                         <div class="ms-1 d-grid ">
                             <a class="btn btn-sm" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
                         </div>

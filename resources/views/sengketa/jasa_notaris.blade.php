@@ -1535,11 +1535,11 @@
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                            <h4>
+                                <h4>
                                     Notaris VIP
                                 </h4>
                                 <b>(VIP adalah akun berbayar)</b>
-                             
+
                                 <div class="row">
 
                                     <?php
@@ -1566,10 +1566,10 @@
                                                     <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" class="rounded-circle img-fluid shadow " style="width:70px;height:auto;object-fit:cover;">
                                                     <br>
                                                     <b class="text-danger">
-                                                        {{$name[$i]}}
+                                                        Notaris
                                                     </b>
 
-                                                    <small> #Notaris</small>
+
                                                     <br>
                                                     +6281XXXXXXX
                                                     <br>
