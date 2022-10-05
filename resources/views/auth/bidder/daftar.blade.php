@@ -306,10 +306,10 @@
                         </div> 
                     </div>
 
-                    <div class="row">
+                    <div class="row mt-4">
                         <div class="col-md-6"></div>
                         <div class="col-md-6">
-                            <button class="w-100 btn btn-brown">Lanjut</button>
+                            <button class="w-100 btn-lg btn btn-brown">Lanjut</button>
                         </div>
                     </div>
                 </form>
