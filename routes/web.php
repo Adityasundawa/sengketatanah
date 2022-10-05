@@ -43,6 +43,9 @@ Route::get('des-kec-id', [WilayahIndoController::class, 'getDesaIdKec']);
 Route::get('send-email', [EmailController::class, 'sendEmail']);
 Route::get('detail-main-petugas', [PublicController::class, "detailPetugas"]);
 
+Route::get('pilih-user', [SengketaController::class, "pilihUser"]);
+Route::get('daftar-bid-a', [SengketaController::class, "daftarBidF"]);
+
 
 
 

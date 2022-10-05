@@ -129,6 +129,17 @@ class SengketaController extends Controller
         return view('sengketa.role');
     }
 
+    public function pilihUser()
+    {
+        return view('auth.bidder.pilih');
+    }
+
+    public function daftarBidF(Request $request)
+    {
+        $data['req'] = $request;
+        return view('auth.bidder.daftar', $data);
+    }
+
     private function data_sengketa()
     {
         return [

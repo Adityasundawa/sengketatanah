@@ -2290,7 +2290,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Jumlah Kebutuhan :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -2533,7 +2533,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Jumlah Kebutuhan :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -2771,7 +2771,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Jumlah Kebutuhan :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -3007,7 +3007,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Jumlah Kebutuhan :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -3261,7 +3261,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Jumlah Kebutuhan :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -3506,7 +3506,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Jumlah Kebutuhan :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -3744,7 +3744,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Jumlah Kebutuhan :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -3980,7 +3980,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Jumlah Kebutuhan :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -5724,7 +5724,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Nilai Pinjaman :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -5954,7 +5954,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Nilai Pinjaman :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -6182,7 +6182,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Nilai Pinjaman :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -6408,7 +6408,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Nilai Pinjaman :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -6653,7 +6653,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Nilai Pinjaman :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -6883,7 +6883,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Nilai Pinjaman :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -7111,7 +7111,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Nilai Pinjaman :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -7337,7 +7337,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Nilai Pinjaman :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -9594,7 +9594,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Nilai Pinjaman :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -9824,7 +9824,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Nilai Pinjaman :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -10052,7 +10052,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Nilai Pinjaman :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -10278,7 +10278,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Nilai Pinjaman :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -10523,7 +10523,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Nilai Pinjaman :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -10753,7 +10753,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Nilai Pinjaman :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -10981,7 +10981,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Nilai Pinjaman :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -11207,7 +11207,7 @@
                                                 <table class="mt-2 mb-2">
                                                     <tr>
                                                         <td>
-                                                            <b>Nilai Pengajuan :</b>
+                                                            <b>Nilai Pinjaman :</b>
                                                         </td>
 
                                                         <td rowspan="2">
@@ -15254,7 +15254,7 @@
 
                             <div class="mb-2 sponsor">
                                 <label for="keb_dana" class="form-label">Jumlah Dana Sponsor</label>
-                                <input type="number" class="form-control rounded-0" id="keb_dana" placeholder="Sebutkan Nilai Pengajuan" aria-describedby="input-keb_dana" name="keb_dana" required>
+                                <input type="number" class="form-control rounded-0" id="keb_dana" placeholder="Sebutkan Nilai Pinjaman" aria-describedby="input-keb_dana" name="keb_dana" required>
                                 <div id="input-keb_dana" class="form-text"></div>
                             </div>
 

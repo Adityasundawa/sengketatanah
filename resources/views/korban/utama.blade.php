@@ -186,7 +186,7 @@ use App\Models\Bid_Sengketa;
                                     <div class="mb-2 sponsor">
                                         <label for="jumlah_dana" class="form-label">Jumlah Dana Sponsor</label>
                                         <input type="number" class="form-control rounded-0" id="jumlah_dana"
-                                            placeholder="Sebutkan Nilai Pengajuan" aria-describedby="input-jumlah_dana"
+                                            placeholder="Sebutkan Jumlah Kebutuhan" aria-describedby="input-jumlah_dana"
                                             name="jumlah_dana">
                                         <div id="input-jumlah_dana" class="form-text"></div>
                                     </div>
