@@ -1946,7 +1946,7 @@
                 </div>
             </div>
 
-            <div class="col-6 mobile mt-2">
+            <div class="col-6 mobile" style="margin-top:5px">
                 <div class="ms-1 d-grid gap-2">
                     <a class="btn btn-sm" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
                 </div>

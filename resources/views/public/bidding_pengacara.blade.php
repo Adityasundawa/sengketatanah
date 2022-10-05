@@ -1083,9 +1083,9 @@
 
     <div class="container">
 
-        <div class="row justify-content-center mb-2 mt-2">
+        <div class="row justify-content-center mb-2">
             <div class="col-lg-12 mb-2">
-                <div class="row g-2 desktop">
+                <div class="row g-2 desktop mt-2">
 
                     <div class="col-auto">
                         <a class="btn" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
@@ -1111,7 +1111,7 @@
 
                 </div>
             </div>
-            <div class="col-lg mobile mb-2" style="margin-top:-10px !important">
+            <div class="col-lg mobile mb-2">
                 <div class="card border-0">
                     <div class="input-group">
                         <div class="input-group-prepend my-auto">
