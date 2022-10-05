@@ -1277,19 +1277,19 @@
                     Cari Jasa Appraisal
                 </h5>
                 <form class="row g-1">
-                    <div class="col-6">
+                    <div class="col-6 mb-2">
                         <select id="provinsi" class="form-select rounded-0" style="border-right:0px; border-left:0px; border-top:0px; " aria-label="Default select example">
                         </select>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 mb-2">
                         <select id="kota" class="form-select rounded-0" style="border-right:0px; border-left:0px; border-top:0px; " aria-label="Default select example">
                             <option selected disabled>Pilih Kota/Kabupaten</option>
                         </select>
                     </div>
-                    <div class="col-lg">
+                    <div class="col-lg mb-2">
                         <div class="input-group">
                             <input type="text" class="form-control rounded-0 border-0" placeholder="Search" name="search">
-                            <button type="submit" class="btn h-100 mb-0 btn-primary rounded-0">Search</button>
+                            <button type="submit" class="btn h-100 mb-0 rounded-0" style="background-color: #E6B325; color: #fff">Search</button>
                         </div>
                     </div>
                 </form>
