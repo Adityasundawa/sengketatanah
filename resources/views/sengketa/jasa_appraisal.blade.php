@@ -22,6 +22,20 @@
             margin: 0px;
             padding: 0px;
             overflow-x: hidden;
+            height: auto;
+        }
+
+        @media (max-width: 1000px) {
+            .puter {
+                margin-bottom: 50px;
+                width: 100%
+            }
+        }
+
+        @media (min-width: 1000px) {
+            body {
+                height: 100vh;
+            }
         }
 
         .blink {
@@ -1062,7 +1076,7 @@
 
                 <div class="card border-0" style="z-index:999">
                     <div class="card-body pb-0">
-                        <div class="row justify-content-between text-center scroll-simple" style="overflow-x: auto; flex-wrap: nowrap">
+                        <div class="row g-2 justify-content-between text-center scroll-simple" style="overflow-x: auto; flex-wrap: nowrap">
 
                             <div class="col mb-4">
                                 <a href="{{url('/')}}/bid-sengketa" class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
@@ -1258,24 +1272,24 @@
         </div>
 
         <div class="row justify-content-center mb-2">
-            <div class="col-lg-12 mt-4">
+            <div class="col-lg-12 mt-2">
                 <h5>
                     Cari Jasa Appraisal
                 </h5>
                 <form class="row g-1">
-                    <div class="col-6">
+                    <div class="col-6 mb-2">
                         <select id="provinsi" class="form-select rounded-0" style="border-right:0px; border-left:0px; border-top:0px; " aria-label="Default select example">
                         </select>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 mb-2">
                         <select id="kota" class="form-select rounded-0" style="border-right:0px; border-left:0px; border-top:0px; " aria-label="Default select example">
                             <option selected disabled>Pilih Kota/Kabupaten</option>
                         </select>
                     </div>
-                    <div class="col-lg">
+                    <div class="col-lg mb-2">
                         <div class="input-group">
                             <input type="text" class="form-control rounded-0 border-0" placeholder="Search" name="search">
-                            <button type="submit" class="btn h-100 mb-0 btn-primary rounded-0">Search</button>
+                            <button type="submit" class="btn h-100 mb-0 rounded-0" style="background-color: #E6B325; color: #fff">Search</button>
                         </div>
                     </div>
                 </form>
@@ -1597,14 +1611,15 @@
 
         <hr>
 
+    </div>
 
 
 
 
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0" nonce="Ee2Zutm6"></script>
-        <div class="row mt-4">
-            <div class="card-body bg-dark text-white text-center">
+        <div class="row mt-4 puter g-0">
+            <div class="card-body text-white text-center" style="background: #61481C">
                 <p></p>
                 <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
                 <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved

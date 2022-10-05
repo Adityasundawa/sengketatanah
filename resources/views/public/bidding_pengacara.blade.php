@@ -22,6 +22,20 @@
             margin: 0px;
             padding: 0px;
             overflow-x: hidden;
+            height: auto;
+        }
+
+        @media (max-width: 1000px) {
+            .puter {
+                margin-bottom: 50px;
+                width: 100%
+            }
+        }
+
+        @media (min-width: 1000px) {
+            body {
+                height: 100vh;
+            }
         }
 
         .blink {
@@ -1074,7 +1088,7 @@
             <div class="col-lg-12">
                 <div class="card mb-0 border-0 mb-3" style="z-index:999">
                     <div class="card-body pb-0">
-                        <div class="row justify-content-between text-center scroll-simple" style="overflow-x: auto; flex-wrap: nowrap">
+                        <div class="row g-2 justify-content-between text-center scroll-simple" style="overflow-x: auto; flex-wrap: nowrap">
                             <div class="col mb-4">
                                 <a href="{{url('/')}}/bid-sengketa" class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="71px" x="0" y="0" viewBox="0 0 50 60" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
@@ -3602,10 +3616,12 @@
 
     </div>
 
+    </div>
+
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0" nonce="Ee2Zutm6"></script>
-    <div class="row mt-4">
-        <div class="card-body bg-dark text-white text-center">
+    <div class="row mt-4 puter g-0">
+        <div class="card-body text-white text-center" style="background: #61481C">
             <p></p>
             <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
             <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
