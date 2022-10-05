@@ -1568,10 +1568,9 @@
                                                         {{$name[$i]}}
                                                     </b>
 
-                                                    <small> #Notaris</small>
-                                                    <br>
-                                                    +6281XXXXXXX
-                                                    <br>
+                                                    <p>
+                                                        Pengacara
+                                                    </p>
                                                     <button class="btn btn-dark  pt-1 pb-1 mt-0 mb-0">
                                                         <i class="fa fa-comment"></i>
                                                         Chat

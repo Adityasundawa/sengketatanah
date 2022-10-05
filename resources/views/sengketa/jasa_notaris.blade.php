@@ -1566,13 +1566,12 @@
                                                     <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" class="rounded-circle img-fluid shadow " style="width:70px;height:auto;object-fit:cover;">
                                                     <br>
                                                     <b class="text-danger">
-                                                        Notaris
+                                                        {{$name[$i]}}
                                                     </b>
 
-
-                                                    <br>
-                                                    +6281XXXXXXX
-                                                    <br>
+                                                    <p>
+                                                      Notaris
+                                                    </p>
                                                     <button class="btn btn-dark  pt-1 pb-1 mt-0 mb-0">
                                                         <i class="fa fa-comment"></i>
                                                         Chat
