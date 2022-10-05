@@ -2388,8 +2388,7 @@
 
             <div class="col-6 mobile">
                 <div class="ms-1 d-grid gap-2">
-                    <a class="btn btn-sm" style="background-color: #A47E3B; color: #fff" data-bs-toggle="modal" data-bs-target="#korbanSengketaModal">Buat
-                        Laporan</a>
+                    <a class="btn btn-sm" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
                 </div>
             </div>
 
