@@ -211,7 +211,7 @@
                                 <div class="mb-2 sponsor">
                                     <label for="keb_dana" class="form-label">Jumlah Dana Sponsor</label>
                                     <input type="number" class="form-control rounded-0" id="keb_dana"
-                                        placeholder="Sebutkan Nilai Pengajuan"
+                                        placeholder="Sebutkan Jumlah Kebutuhan"
                                         aria-describedby="input-keb_dana" name="keb_dana">
                                     <div id="input-keb_dana" class="form-text"></div>
                                 </div>

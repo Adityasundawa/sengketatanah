@@ -1475,7 +1475,6 @@
                 </div>
 
 
-
                 <div class="card mt-2 border-0 shadow-sm desktop" style="margin-top:-10px;display:none">
                     <div class="card-body pb-1 pt-2">
                         <div class="row align-items-center">
@@ -2213,7 +2212,7 @@
                                         <table class="mt-2 mb-2 w-100">
                                             <tr>
                                                 <td>
-                                                    <b>Nilai Pengajuan :</b>
+                                                    <b>Jumlah Kebutuhan :</b>
                                                 </td>
 
                                                 <td class="align-items-center" rowspan="2">
@@ -2815,7 +2814,7 @@
                                         <table class="mt-2 mb-2 w-100">
                                             <tr>
                                                 <td>
-                                                    <b>Nilai Pengajuan :</b>
+                                                    <b>Jumlah Kebutuhan :</b>
                                                 </td>
 
                                                 <td class="align-items-center" rowspan="2">
@@ -3418,7 +3417,7 @@
                                         <table class="mt-2 mb-2 w-100">
                                             <tr>
                                                 <td>
-                                                    <b>Nilai Pengajuan :</b>
+                                                    <b>Jumlah Kebutuhan :</b>
                                                 </td>
 
                                                 <td class="align-items-center" rowspan="2">
@@ -4023,7 +4022,7 @@
                                         <table class="mt-2 mb-2 w-100">
                                             <tr>
                                                 <td>
-                                                    <b>Nilai Pengajuan :</b>
+                                                    <b>Jumlah Kebutuhan :</b>
                                                 </td>
 
                                                 <td class="align-items-center" rowspan="2">
@@ -4622,7 +4621,7 @@
                                         <table class="mt-2 mb-2 w-100">
                                             <tr>
                                                 <td>
-                                                    <b>Nilai Pengajuan :</b>
+                                                    <b>Jumlah Kebutuhan :</b>
                                                 </td>
 
                                                 <td class="align-items-center" rowspan="2">

@@ -1992,6 +1992,20 @@
                 </div>
             </div>
 
+            <div class="row g-0">
+                <div class="col-6 mobile mb-3">
+                    <div class="d-grid gap-2 me-1">
+                        <a class="btn btn-sm" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
+                    </div>
+                </div>
+    
+                <div class="col-6 mobile mb-3">
+                    <div class="ms-1 d-grid gap-2">
+                        <a class="btn btn-sm" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
+                    </div>
+                </div>
+            </div>
+
             <script>
                 $('#right-orang1').click(function() {
                     event.preventDefault();
@@ -3586,7 +3600,7 @@
 
                             <div class="mb-2 sponsor">
                                 <label for="keb_dana" class="form-label">Jumlah Dana Sponsor</label>
-                                <input type="number" class="form-control rounded-0" id="keb_dana" placeholder="Sebutkan Nilai Pengajuan" aria-describedby="input-keb_dana" name="keb_dana" required>
+                                <input type="number" class="form-control rounded-0" id="keb_dana" placeholder="Sebutkan Nilai Pinjaman" aria-describedby="input-keb_dana" name="keb_dana" required>
                                 <div id="input-keb_dana" class="form-text"></div>
                             </div>
 
