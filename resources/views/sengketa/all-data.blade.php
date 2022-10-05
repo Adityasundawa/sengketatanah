@@ -2356,13 +2356,13 @@
 
             <div class="col-6">
                 <div class="d-grid gap-2 me-1">
-                    <a class="btn btn-sm btn-success" href="{{url('')}}/register">Daftar Sekarang</a>
+                    <a class="btn btn-sm" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
                 </div>
             </div>
 
             <div class="col-6">
                 <div class="ms-1 d-grid gap-2">
-                    <a class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#korbanSengketaModal">Buat
+                    <a class="btn btn-sm" style="background-color: #A47E3B; color: #fff" data-bs-toggle="modal" data-bs-target="#korbanSengketaModal">Buat
                         Laporan</a>
                 </div>
             </div>
