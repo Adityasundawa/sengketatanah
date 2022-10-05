@@ -267,20 +267,31 @@
                             </select>
                         </div> 
 
-                        
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-12 mb-3">
                             <label for="ktp" class="mb-2" style="font-weight: 600">Nomor KTP</label>
-                            <input type="date"
+                            <input type="number"
                               class="form-control" name="ktp" id="ktp" placeholder="Contoh : 12-34-56-78-90-11-2222">
                         </div> 
 
                         <div class="col-md-6 mb-3">
+                            <div class="text-center">
+                                <img src="https://indofund.id/images/kyc-foto/ktp-true.jpg" height="250px" alt="">
+                            </div>
+                            <div class="text-center mb-2">
+                                Contoh Foto
+                            </div>
                             <label for="ft-ktp" class="mb-2" style="font-weight: 600">Foto KTP</label>
                             <input class="form-control" type="file" id="ft-ktp" aria-describedby="ft-ktp">
                             <div id="ft-ktp" class="form-text text-danger">Foto e-KTP harus jelas & terang</div>
                         </div> 
 
                         <div class="col-md-6 mb-3">
+                            <div class="text-center">
+                                <img src="https://indofund.id/images/kyc-foto/fotoselfie-true.jpg" height="250px" alt="">
+                            </div>
+                            <div class="text-center mb-2">
+                                Contoh Foto
+                            </div>
                             <label for="ft-selfie" class="mb-2" style="font-weight: 600">Foto Selfie</label>
                             <input class="form-control" type="file" id="ft-selfie" aria-describedby="ft-selfie">
                             <div id="ft-selfie" class="form-text text-danger">Foto selfie harus jelas & terang tanpa memegang foto KTP</div>
