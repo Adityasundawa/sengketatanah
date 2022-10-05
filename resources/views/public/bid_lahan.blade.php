@@ -1948,7 +1948,7 @@
             </div>
         </div>
 
-        <div class="col-lg">
+        <div class="col-lg" style="margin-top:5px">
             <div class="row g-0">
                 <div class="col-6 mobile mt-0">
                     <div class="d-grid gap-2">
@@ -2039,7 +2039,7 @@
             </div>
         </div>
 
- 
+
         <script>
             $('#right-orang1').click(function() {
                 event.preventDefault();
