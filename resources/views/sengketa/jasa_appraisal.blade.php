@@ -1466,7 +1466,7 @@
                                     4532 Appraisal Ditemukan
                                 </h4>
                                 <p>
-                                Semua Wilayah
+                                
                                 </p>
                                 <div class="row">
 
