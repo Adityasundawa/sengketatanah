@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use GuzzleHttp\Client;
 use App\Http\Controllers\WilayahIndoController;
+use Illuminate\Support\Facades\Hash;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -68,7 +70,6 @@ Route::get('join', [PublicController::class, 'joinSengketa'])->name('joinSengket
 Route::get('list-tukang', [PublicController::class, 'listTukang'])->name('listTukang');
 Route::get('detail-petugas', [PublicController::class, 'detailTukang'])->name('detailTukang');
 // Route::get('detail-data-diri', [PublicController::class, 'detailDataDiri'])->name('dataDetailDiri');
-
 
 Route::get('register-jual-beli-lahan', [PublicController::class, 'registerJualBeli'])->name('registerJualBeli');
 Route::get('register-kerjasama', [PublicController::class, 'registerKerjasama'])->name('registerKerjasama');

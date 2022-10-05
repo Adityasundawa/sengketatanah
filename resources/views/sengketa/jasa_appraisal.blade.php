@@ -1500,9 +1500,6 @@
 
                                             </div>
                                         </div>
-
-
-
                                     </div>
                                     @endfor
                                     <hr>
@@ -1615,193 +1612,193 @@
 
 
 
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0" nonce="Ee2Zutm6"></script>
-        <div class="row mt-4 puter g-0">
-            <div class="card-body text-white text-center" style="background: #61481C">
-                <p></p>
-                <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
-                <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
-                </p>
-                <hr>
-                <p style="font-size:14px" class="card-title pb-3">Sovereign Plaza. Lt. 19 <br> Jl. TB Simatupang No.
-                    36,
-                    TB Simatupang, Jakarta Selatan</p>
-            </div>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0" nonce="Ee2Zutm6"></script>
+    <div class="row mt-4 puter g-0">
+        <div class="card-body text-white text-center" style="background: #61481C">
+            <p></p>
+            <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
+            <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
+            </p>
+            <hr>
+            <p style="font-size:14px" class="card-title pb-3">Sovereign Plaza. Lt. 19 <br> Jl. TB Simatupang No.
+                36,
+                TB Simatupang, Jakarta Selatan</p>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
-        </script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
 
 
 
-        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-        <!-- <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> -->
 
-        <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/b-2.2.3/datatables.min.js">
-        </script>
-        <script>
-            $('#jenis_objek').on('change', function() {
-                let jenisObjek = $(this).find('option').filter(':selected').val();
-                if (jenisObjek == "sp") {
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/b-2.2.3/datatables.min.js">
+    </script>
+    <script>
+        $('#jenis_objek').on('change', function() {
+            let jenisObjek = $(this).find('option').filter(':selected').val();
+            if (jenisObjek == "sp") {
 
-                    $('div.col-md-6.kp').hide()
-                    $('div.col-md-6.pp').hide()
-                    $('div.col-md-6.sp').show()
-                } else if (jenisObjek == "kp") {
+                $('div.col-md-6.kp').hide()
+                $('div.col-md-6.pp').hide()
+                $('div.col-md-6.sp').show()
+            } else if (jenisObjek == "kp") {
 
-                    $('div.col-md-6.kp').show()
-                    $('div.col-md-6.pp').hide()
-                    $('div.col-md-6.sp').hide()
-                } else if (jenisObjek == "pp") {
-                    $('div.col-md-6.kp').hide()
-                    $('div.col-md-6.pp').show()
-                    $('div.col-md-6.sp').hide()
-                } else {
-                    $('div.col-md-6.kp').show()
-                    $('div.col-md-6.pp').show()
-                    $('div.col-md-6.sp').show()
-                }
+                $('div.col-md-6.kp').show()
+                $('div.col-md-6.pp').hide()
+                $('div.col-md-6.sp').hide()
+            } else if (jenisObjek == "pp") {
+                $('div.col-md-6.kp').hide()
+                $('div.col-md-6.pp').show()
+                $('div.col-md-6.sp').hide()
+            } else {
+                $('div.col-md-6.kp').show()
+                $('div.col-md-6.pp').show()
+                $('div.col-md-6.sp').show()
+            }
 
+        });
+
+        $('#btnLawyer').on('click', function() {
+            $('#dataSponsor').hide()
+            $('#dataPemerintah').hide()
+            $('#dataLawyer').show()
+
+        });
+        $('#btnSponsor').on('click', function() {
+            $('#dataSponsor').show()
+            $('#dataLawyer').hide()
+            $('#dataPemerintah').hide()
+        });
+        $('#btnPemerintah').on('click', function() {
+            $('#dataLawyer').hide()
+            $('#dataSponsor').hide()
+            $('#dataPemerintah').show()
+        });
+
+        $(document).ready(function() {
+            $(".tab").click(function() {
+                $(".tab").removeClass("active");
+                // $(".tab").addClass("active"); // instead of this do the below 
+                $(this).addClass("active");
             });
+        });
 
-            $('#btnLawyer').on('click', function() {
-                $('#dataSponsor').hide()
-                $('#dataPemerintah').hide()
-                $('#dataLawyer').show()
+        $(document).ready(function() {
+            $('#myTable').DataTable();
+        });
 
+        $('#btnLawyer').on('click', function() {
+            $('#titleSponsor').hide()
+            $('#titlePemerintah').hide()
+            $('#titleLawyer').show()
+
+        });
+
+        $('#btnSponsor').on('click', function() {
+            $('#titleSponsor').show()
+            $('#titleLawyer').hide()
+            $('#titlePemerintah').hide()
+        });
+        $('#btnPemerintah').on('click', function() {
+            $('#titleLawyer').hide()
+            $('#titleSponsor').hide()
+            $('#titlePemerintah').show()
+        });
+
+        $(function() {
+            $('#searchlink').on('click', function(e) {
+                $(this).toggleClass('open');
             });
-            $('#btnSponsor').on('click', function() {
-                $('#dataSponsor').show()
-                $('#dataLawyer').hide()
-                $('#dataPemerintah').hide()
-            });
-            $('#btnPemerintah').on('click', function() {
-                $('#dataLawyer').hide()
-                $('#dataSponsor').hide()
-                $('#dataPemerintah').show()
-            });
-
-            $(document).ready(function() {
-                $(".tab").click(function() {
-                    $(".tab").removeClass("active");
-                    // $(".tab").addClass("active"); // instead of this do the below 
-                    $(this).addClass("active");
-                });
-            });
-
-            $(document).ready(function() {
-                $('#myTable').DataTable();
-            });
-
-            $('#btnLawyer').on('click', function() {
-                $('#titleSponsor').hide()
-                $('#titlePemerintah').hide()
-                $('#titleLawyer').show()
-
-            });
-
-            $('#btnSponsor').on('click', function() {
-                $('#titleSponsor').show()
-                $('#titleLawyer').hide()
-                $('#titlePemerintah').hide()
-            });
-            $('#btnPemerintah').on('click', function() {
-                $('#titleLawyer').hide()
-                $('#titleSponsor').hide()
-                $('#titlePemerintah').show()
-            });
-
-            $(function() {
-                $('#searchlink').on('click', function(e) {
-                    $(this).toggleClass('open');
-                });
-            });
+        });
 
 
 
-            $(function() {
-                var hidestuff = function() {
-                    $(".jaminan_berupa").hide();
-                }
+        $(function() {
+            var hidestuff = function() {
+                $(".jaminan_berupa").hide();
+            }
 
-                $("select[name='jaminan']").change(function() {
-                    hidestuff();
-
-                    var value = $(this).val();
-                    if (value == "ada") {
-                        $(".jaminan_berupa").show();
-                    }
-                });
+            $("select[name='jaminan']").change(function() {
                 hidestuff();
-            });
 
-            $(function() {
-                var hidestuff = function() {
-                    $(".pengelolaan-platform, .pengelolaan-sendiri").hide();
+                var value = $(this).val();
+                if (value == "ada") {
+                    $(".jaminan_berupa").show();
                 }
-
-                $("select[name='pengelolaan_dana']").change(function() {
-                    hidestuff();
-
-                    var value = $(this).val();
-                    if (value == "platform") {
-                        $(".pengelolaan-platform").show();
-                    }
-                    if (value == "sendiri") {
-                        $(".pengelolaan-sendiri").show();
-                    }
-                });
-                hidestuff();
             });
+            hidestuff();
+        });
 
-            $(function() {
-                var hidestuff = function() {
-                    $(".law-firm").hide();
+        $(function() {
+            var hidestuff = function() {
+                $(".pengelolaan-platform, .pengelolaan-sendiri").hide();
+            }
+
+            $("select[name='pengelolaan_dana']").change(function() {
+                hidestuff();
+
+                var value = $(this).val();
+                if (value == "platform") {
+                    $(".pengelolaan-platform").show();
                 }
-
-                $("select[name='mewakili']").change(function() {
-                    hidestuff();
-
-                    var value = $(this).val();
-                    if (value == "law-firm") {
-                        $(".law-firm").show();
-                    }
-                });
-                hidestuff();
-            });
-
-
-            $(document).ready(function() {
-                $("#carouselExampleControls").swiperight(function() {
-                    $(this).carousel('prev');
-                });
-                $("#carouselExampleControls").swipeleft(function() {
-                    $(this).carousel('next');
-                });
-            });
-
-            $(function() {
-                var hidestuff = function() {
-                    $(".sponsor, .pengacara, .pemerintah").hide();
+                if (value == "sendiri") {
+                    $(".pengelolaan-sendiri").show();
                 }
-
-                $("select[name='jenis_pertolongan']").change(function() {
-                    hidestuff();
-
-                    var value = $(this).val();
-                    if (value == "sponsor") {
-                        $(".sponsor").show();
-                    }
-                    if (value == "pengacara") {
-                        $(".pengacara").show();
-                    }
-                    if (value == "pemerintah") {
-                        $(".pemerintah").show();
-                    }
-                });
-                hidestuff();
             });
-        </script>
+            hidestuff();
+        });
+
+        $(function() {
+            var hidestuff = function() {
+                $(".law-firm").hide();
+            }
+
+            $("select[name='mewakili']").change(function() {
+                hidestuff();
+
+                var value = $(this).val();
+                if (value == "law-firm") {
+                    $(".law-firm").show();
+                }
+            });
+            hidestuff();
+        });
+
+
+        $(document).ready(function() {
+            $("#carouselExampleControls").swiperight(function() {
+                $(this).carousel('prev');
+            });
+            $("#carouselExampleControls").swipeleft(function() {
+                $(this).carousel('next');
+            });
+        });
+
+        $(function() {
+            var hidestuff = function() {
+                $(".sponsor, .pengacara, .pemerintah").hide();
+            }
+
+            $("select[name='jenis_pertolongan']").change(function() {
+                hidestuff();
+
+                var value = $(this).val();
+                if (value == "sponsor") {
+                    $(".sponsor").show();
+                }
+                if (value == "pengacara") {
+                    $(".pengacara").show();
+                }
+                if (value == "pemerintah") {
+                    $(".pemerintah").show();
+                }
+            });
+            hidestuff();
+        });
+    </script>
 </body>
 
 </html>

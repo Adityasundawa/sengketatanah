@@ -9,71 +9,69 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body pt-0">
-                <h5>
-                    Sisir, Kec. Batu, Kota Batu, Jawa Timur 65314
-                </h5>
-                <h5>
-                    Detail Bangunan
-                </h5>
-                <ul>
-                    <li>
-                        Luas tanah 72 meter
-                    </li>
-                    <li>
-                        Luas bangunan 48 meter
-                    </li>
-                    <li>
-                        Kamar tidur 2
-                    </li>
-                    <li>
-                        Kamar mandi 1
-                    </li>
-                    <li>
-                        Carport 1 mobil + 1 motor
-                    </li>
-                    <li>
-                        SHM, IMB & PBB per bidang
-                    </li>
-                    <li>
-                        Listrik 1300 kwh
-                    </li>
-                    <li>
-                        Taman dan teras depan
-                    </li>
-                </ul>
-                <h5>
-                    Fasilitas
-                </h5>
-                <ul>
-                    <li>
-                        AC
-                    </li>
-                    <li>
-                        Jalur Telepon
-                    </li>
-                    <li>
-                        Keamanan
-                    </li>
-                    <li>
-                        Taman
-                    </li>
-                    <li>
-                        CCTV
-                    </li>
-                    <li>
-                        Jogging Track
-                    </li>
-                    <li>
-                        Masjid
-                    </li>
+                <div class="container">
+                    <h5>
+                        Sisir, Kec. Batu, Kota Batu, Jawa Timur 65314
+                    </h5>
+                    <h5>
+                        Detail Bangunan
+                    </h5>
+                    <ul>
+                        <li>
+                            Luas tanah 72 meter
+                        </li>
+                        <li>
+                            Luas bangunan 48 meter
+                        </li>
+                        <li>
+                            Kamar tidur 2
+                        </li>
+                        <li>
+                            Kamar mandi 1
+                        </li>
+                        <li>
+                            Carport 1 mobil + 1 motor
+                        </li>
+                        <li>
+                            SHM, IMB & PBB per bidang
+                        </li>
+                        <li>
+                            Listrik 1300 kwh
+                        </li>
+                        <li>
+                            Taman dan teras depan
+                        </li>
+                    </ul>
+                    <h5>
+                        Fasilitas
+                    </h5>
+                    <ul>
+                        <li>
+                            AC
+                        </li>
+                        <li>
+                            Jalur Telepon
+                        </li>
+                        <li>
+                            Keamanan
+                        </li>
+                        <li>
+                            Taman
+                        </li>
+                        <li>
+                            CCTV
+                        </li>
+                        <li>
+                            Jogging Track
+                        </li>
+                        <li>
+                            Masjid
+                        </li>
 
-                </ul>
+                    </ul>
+                </div>
 
             </div>
-            <!-- <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div> -->
         </div>
     </div>
 </div>
@@ -87,23 +85,21 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body pt-0">
-                <h5>
-                    Sisir, Kec. Batu, Kota Batu, Jawa Timur 65314
-                </h5>
-                <h5>
-                    Detail Lahan
-                </h5>
-                <ul>
-                    <li>
-                        Luas tanah 72 meter
-                    </li>
-                   
-                </ul>
+                <div class="container">
+                    <h5>
+                        Sisir, Kec. Batu, Kota Batu, Jawa Timur 65314
+                    </h5>
+                    <h5>
+                        Detail Lahan
+                    </h5>
+                    <ul>
+                        <li>
+                            Luas tanah 72 meter
+                        </li>
+
+                    </ul>
+                </div>
             </div>
-            <!-- <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div> -->
         </div>
     </div>
 </div>

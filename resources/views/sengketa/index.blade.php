@@ -5879,7 +5879,8 @@
                                                                         </div>
                                                                         <div class="modal-body" style="text-align: justify">
                                                                           
-                                                                    Anda harus memiliki akun <b>LENDER</b> sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
+                                                                    Anda harus memiliki akun <b>LENDER</b> sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.
+                                                                </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
                                                                             <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
@@ -13802,8 +13803,6 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-
-
                                                         </div>
                                                     </div>
 
