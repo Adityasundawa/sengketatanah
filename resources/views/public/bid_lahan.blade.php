@@ -1459,21 +1459,46 @@
 
         </div>
 
-        <div class="col-lg-12 mt-3">
+     
+                <div class="row g-2 desktop">
 
-            <div class="card border-0">
-                <div class="input-group">
-                    <div class="input-group-prepend my-auto">
-                        <span class="px-3">
-                            <i class="fa fa-search"></i>
-                        </span>
+                    <div class="col-auto">
+                        <a class="btn" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
                     </div>
-                    <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
-                    <button class="btn h-100 mb-0 border-0" style="color: #fff; background: #E6B325">Search</button>
-                </div>
-            </div>
 
-        </div>
+                    <div class="col-auto">
+                        <a class="btn" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
+                    </div>
+
+                    <div class="col-lg">
+                        <div class="card border-0">
+                            <div class="input-group">
+                                <div class="input-group-prepend my-auto">
+                                    <span class="px-3">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
+                                <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg mobile mt-2">
+                    <div class="card border-0">
+                        <div class="input-group">
+                            <div class="input-group-prepend my-auto">
+                                <span class="px-3">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
+                            <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
+                        </div>
+                    </div>
+                </div>
+       
 
         <div class="col-lg-12 mt-3" style="display:none">
             <div class="card border-0 shadow-sm desktop">
@@ -4678,9 +4703,7 @@
 
                                 <div class="mb-2 sponsor">
                                     <label for="keb_dana" class="form-label">Jumlah Dana Sponsor</label>
-                                    <input type="number" class="form-control rounded-0" id="keb_dana"
-                                        placeholder="Sebutkan Nilai Pengajuan" aria-describedby="input-keb_dana"
-                                        name="keb_dana" required>
+                                    <input type="number" class="form-control rounded-0" id="keb_dana" placeholder="Sebutkan Nilai Pengajuan" aria-describedby="input-keb_dana" name="keb_dana" required>
                                     <div id="input-keb_dana" class="form-text"></div>
                                 </div>
 
