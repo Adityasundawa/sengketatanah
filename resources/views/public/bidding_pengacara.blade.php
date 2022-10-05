@@ -887,9 +887,9 @@
                     </ol>
 
                     <ol id="tentang-m" class="list-group list-group-numbered shadow dropdown-menu rounded-0 p-3 text-center" style="inset: auto auto 0px 0px; margin: 0px; border-top: none; max-height: 500px; overflow-y: auto">
-                        <div class="card mb-3">
+                        <div class="card mb-2">
                             <div class="card-body">
-                                <div class="row desktop mb-4">
+                                <div class="row desktop mb-2">
                                     <div class="col-md">
                                         <div class="card-body text-center container" style="height:500px">
                                             <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
@@ -943,8 +943,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id="carouselExampleControlsPres" class="carousel slide mobile mb-4" data-bs-interval="false">
-                                    <div class="carousel-inner mb-5">
+                                <div id="carouselExampleControlsPres" class="carousel slide mobile mb-2" data-bs-interval="false">
+                                    <div class="carousel-inner mb-2">
                                         <div class="carousel-item active">
                                             <div class="card-body text-center container" style="height:505px">
                                                 <img src="{{asset('/uploads/sengketa-tanah-jokowi.png')}}" style="width:300px; height:400px;object-fit:cover" alt="" srcset="" class="img-fluid">
@@ -1089,7 +1089,7 @@
                 <div class="card mb-0 border-0 mb-3" style="z-index:999">
                     <div class="card-body pb-0">
                         <div class="row g-2 justify-content-between text-center scroll-simple" style="overflow-x: auto; flex-wrap: nowrap">
-                            <div class="col mb-4">
+                            <div class="col mb-2">
                                 <a href="{{url('/')}}/bid-sengketa" class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="71px" x="0" y="0" viewBox="0 0 50 60" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="25" cx="25" cy="30" fill="#ffffff" shape="circle"></circle>
@@ -1429,7 +1429,7 @@
             </div>
 
 
-            <div class="row g-2 desktop">
+            <div class="row g-2 desktop"style="">
 
                 <div class="col-auto">
                     <a class="btn" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
@@ -1470,7 +1470,7 @@
 
 
             <div class="col-lg-12" style="margin-top:-10px;display:none">
-                <div class="card mt-3 border-0 shadow-sm desktop">
+                <div class="card mt-1 border-0 shadow-sm desktop">
                     <div class="card-body pb-1 pt-2">
                         <div class="row align-items-center g-0">
 
@@ -1915,7 +1915,19 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-6 mobile mt-2">
+                    <div class="d-grid gap-2 me-1">
+                        <a class="btn btn-sm" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
+                    </div>
+                </div>
 
+                <div class="col-6 mobile mt-2">
+                    <div class="ms-1 d-grid gap-2">
+                        <a class="btn btn-sm" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
+                    </div>
+                </div>
+            </div>
             {{-- Orang Lawyer --}}
             <div class="col-lg-12">
                 <div class="card mb-3 mt-2 border-0 shadow-sm">
