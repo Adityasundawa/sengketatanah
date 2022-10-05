@@ -1490,7 +1490,7 @@
 
                     })
                 </script>
-                <div class="card mt-2 border-0 shadow-sm">
+                <div class="card mt-3 border-0 shadow-sm">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-8">
@@ -1498,7 +1498,7 @@
                                     4532 Petugas Ukur Ditemukan
                                 </h4>
                                 <p>
-                                    Jakarta
+                                    Semua Wilayah
                                 </p>
                                 <div class="row">
 
@@ -1593,10 +1593,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <h4>
-                                    Petugas Ukur VIP
-                                </h4>
-                                <b>(VIP adalah akun berbayar)</b>
+                                <img src="{{asset('')}}images/UKUR VIP_BANNER.jpg" class="img-fluid">
 
                                 <div class="row">
 

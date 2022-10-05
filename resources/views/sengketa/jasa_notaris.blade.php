@@ -1348,7 +1348,7 @@
                 </div>
             </div>
         </div>
-      
+
         <div class="row justify-content-center mb-3">
             <div class="col-lg-12 mt-3">
                 <h5>
@@ -1476,7 +1476,7 @@
 
                     })
                 </script>
-                <div class="card mt-2 border-0 shadow-sm">
+                <div class="card mt-3 border-0 shadow-sm">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-8">
@@ -1484,7 +1484,7 @@
                                     4532 Notaris Ditemukan
                                 </h4>
                                 <p>
-                                    Jakarta
+                          Semua Wilayah
                                 </p>
                                 <div class="row">
 
@@ -1579,10 +1579,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <h4>
-                                    Notaris VIP
-                                </h4>
-                                <b>(VIP adalah akun berbayar)</b>
+                                <img src="{{asset('')}}images/NOTARIS VIP_BANNER.jpg" class="img-fluid">
 
                                 <div class="row">
 
