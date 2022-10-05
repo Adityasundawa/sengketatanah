@@ -1173,7 +1173,7 @@
 
                 <div class="row g-0">
 
-                    <div class="card mb-0 border-0 mb-3 mt-3" style="z-index:999">
+                    <div class="card mb-0 border-0  mt-3" style="z-index:999">
                         <div class="card-body pb-0">
                             <div class="row g-2 justify-content-between text-center scroll-simple"
                                 style="overflow-x: auto; flex-wrap: nowrap">
@@ -1744,17 +1744,13 @@
                 </div>
 
                 <div class="row g-2 desktop">
+                    
                     <div class="col-auto">
-                        <div class="">
-                            <a class="btn" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
-                        </div>
+                        <a class="btn" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
                     </div>
         
                     <div class="col-auto">
-                        <div class="">
-                            <a class="btn" style="background-color: #A47E3B; color: #fff" data-bs-toggle="modal" data-bs-target="#korbanSengketaModal">Buat
-                                Laporan</a>
-                        </div>
+                        <a class="btn" style="background-color: #A47E3B; color: #fff" data-bs-toggle="modal" data-bs-target="#korbanSengketaModal">Buat Laporan</a>
                     </div>
     
                     <div class="col-lg">
@@ -1770,9 +1766,10 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
-                
-                <div class="col-lg mobile">
+
+                <div class="col-lg mobile mt-2">
                     <div class="card border-0">
                         <div class="input-group">
                             <div class="input-group-prepend my-auto">
