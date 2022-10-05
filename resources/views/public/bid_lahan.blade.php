@@ -2614,7 +2614,7 @@
                                         <table class="mt-2 mb-2 w-100">
                                             <tr>
                                                 <td>
-                                                    <b>Nilai Kebutuhan :</b>
+                                                    <b>Nilai Pengajuan :</b>
                                                 </td>
 
                                                 <td class="align-items-center" rowspan="2">
@@ -3094,7 +3094,7 @@
                                     <table class="mt-2 mb-2 w-100">
                                         <tr>
                                             <td>
-                                                <b>Nilai Kebutuhan :</b>
+                                                <b>Nilai Pengajuan :</b>
                                             </td>
 
                                             <td class="align-items-center" rowspan="2">
@@ -3570,7 +3570,7 @@
                                     <table class="mt-2 mb-2 w-100">
                                         <tr>
                                             <td>
-                                                <b>Nilai Kebutuhan :</b>
+                                                <b>Nilai Pengajuan :</b>
                                             </td>
 
                                             <td class="align-items-center" rowspan="2">
@@ -4038,7 +4038,7 @@
                                     <table class="mt-2 mb-2 w-100">
                                         <tr>
                                             <td>
-                                                <b>Nilai Kebutuhan :</b>
+                                                <b>Nilai Pengajuan :</b>
                                             </td>
 
                                             <td class="align-items-center" rowspan="2">
@@ -4514,7 +4514,7 @@
                                     <table class="mt-2 mb-2 w-100">
                                         <tr>
                                             <td>
-                                                <b>Nilai Kebutuhan :</b>
+                                                <b>Nilai Pengajuan :</b>
                                             </td>
 
                                             <td class="align-items-center" rowspan="2">
@@ -4983,7 +4983,7 @@
                                     <table class="mt-2 mb-2 w-100">
                                         <tr>
                                             <td>
-                                                <b>Nilai Kebutuhan :</b>
+                                                <b>Nilai Pengajuan :</b>
                                             </td>
 
                                             <td class="align-items-center" rowspan="2">
@@ -5495,7 +5495,7 @@
                                 <div class="mb-2 sponsor">
                                     <label for="keb_dana" class="form-label">Jumlah Dana Sponsor</label>
                                     <input type="number" class="form-control rounded-0" id="keb_dana"
-                                        placeholder="Sebutkan Nilai Kebutuhan" aria-describedby="input-keb_dana"
+                                        placeholder="Sebutkan Nilai Pengajuan" aria-describedby="input-keb_dana"
                                         name="keb_dana" required>
                                     <div id="input-keb_dana" class="form-text"></div>
                                 </div>
