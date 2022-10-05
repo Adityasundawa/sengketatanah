@@ -151,6 +151,12 @@ class SengketaController extends Controller
         return view('auth.bidder-sponsor.daftar', $data);
     }
 
+    public function daftarBidSBU(Request $request)
+    {
+        $data['req'] = $request;
+        return view('auth.bidder-sponsor.daftar_bu', $data);
+    }
+
     public function buatLaporan(Request $request)
     {
         $data['req'] = $request;

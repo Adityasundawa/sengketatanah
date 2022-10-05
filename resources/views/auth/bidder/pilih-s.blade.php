@@ -743,7 +743,7 @@
                             <h6 class="text-muted fw-normal mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nam minima quisquam.</h6>
                         </div>
                         <div class="col-md row-col">
-                            <button class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Badan Usaha</button>
+                            <a href="{{url('')}}/daftar-bid-ba" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Badan Usaha</a>
                         </div>
                     </div>
                 </div>
