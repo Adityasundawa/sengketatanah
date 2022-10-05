@@ -695,7 +695,6 @@
                                 </div>
                             </div>
                         </button>
-
                         <script>
                             $("#btn-chat-m").click(function() {
                                 $("#panduan-m").removeClass('show');

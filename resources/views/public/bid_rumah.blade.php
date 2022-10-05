@@ -1949,7 +1949,7 @@
             </div>
         </div>
 
-        <div class="col-lg mobile"  style="margin-top:5px">
+        <div class="col-lg mobile mb-2"  style="margin-top:-10px">
             <div class="row g-0">
                 <div class="col-6">
                     <div class="d-grid gap-2">

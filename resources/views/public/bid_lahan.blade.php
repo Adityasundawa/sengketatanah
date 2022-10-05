@@ -1143,7 +1143,7 @@
                         <a class="btn" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
                     </div>
 
-                    <div class="col-lg">
+                    <div class="col-lg mb-2">
                         <div class="card border-0">
                             <div class="input-group">
                                 <div class="input-group-prepend my-auto">
@@ -1160,7 +1160,7 @@
             </div>
 
 
-            <div class="col-lg-12 mt-2">
+            <div class="col-lg-12">
 
                 <div class="card border-0" style="z-index:999">
                     <div class="card-body pb-0">
