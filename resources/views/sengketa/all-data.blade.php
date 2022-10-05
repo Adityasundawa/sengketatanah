@@ -1743,7 +1743,36 @@
 
                 </div>
 
-                <div class="col-lg-12">
+                <div class="row g-2 desktop">
+                    <div class="col-auto">
+                        <div class="">
+                            <a class="btn" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-auto">
+                        <div class="">
+                            <a class="btn" style="background-color: #A47E3B; color: #fff" data-bs-toggle="modal" data-bs-target="#korbanSengketaModal">Buat
+                                Laporan</a>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg">
+                        <div class="card border-0">
+                            <div class="input-group">
+                                <div class="input-group-prepend my-auto">
+                                    <span class="px-3">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
+                                <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg mobile">
                     <div class="card border-0">
                         <div class="input-group">
                             <div class="input-group-prepend my-auto">
@@ -2354,13 +2383,13 @@
                 </script>
             </div>
 
-            <div class="col-6">
+            <div class="col-6 mobile">
                 <div class="d-grid gap-2 me-1">
                     <a class="btn btn-sm" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
                 </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-6 mobile">
                 <div class="ms-1 d-grid gap-2">
                     <a class="btn btn-sm" style="background-color: #A47E3B; color: #fff" data-bs-toggle="modal" data-bs-target="#korbanSengketaModal">Buat
                         Laporan</a>
