@@ -1355,7 +1355,6 @@
                 </div>
             </div>
         </div>
-        <hr>
         <div class="row justify-content-center mb-3">
             <div class="col-lg-12 mt-3">
                 <h5>
