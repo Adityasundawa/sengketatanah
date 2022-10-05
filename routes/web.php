@@ -46,7 +46,10 @@ Route::get('send-email', [EmailController::class, 'sendEmail']);
 Route::get('detail-main-petugas', [PublicController::class, "detailPetugas"]);
 
 Route::get('pilih-user', [SengketaController::class, "pilihUser"]);
+Route::get('pilih-s', [SengketaController::class, "pilihSponsor"]);
 Route::get('daftar-bid-a', [SengketaController::class, "daftarBidF"]);
+Route::get('daftar-bid-b', [SengketaController::class, "daftarBidS"]);
+Route::get('daftar-bid-ba', [SengketaController::class, "daftarBidSBU"]);
 Route::get('buat-laporan', [SengketaController::class, "buatLaporan"]);
 
 
