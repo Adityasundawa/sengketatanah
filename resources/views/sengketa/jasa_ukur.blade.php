@@ -1370,12 +1370,12 @@
                             <option selected disabled>Pilih Kota/Kabupaten</option>
                         </select>
                     </div>
-                    <div class="col-lg">
+                    <!-- <div class="col-lg">
                         <div class="input-group">
                             <input type="text" class="form-control rounded-0 border-0" placeholder="Search" name="search">
                             <button type="submit" class="btn h-100 mb-0 btn-primary rounded-0">Search</button>
                         </div>
-                    </div>
+                    </div> -->
                 </form>
                 <script>
                     fetch(`https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json`)
