@@ -201,7 +201,7 @@
     </nav>
 
     <div class="container mt-4 mb-5">
-        <h4 class="text-center">Form Sponsor (Personal)</h4>
+        <h4 class="text-center">Form Sponsor (Badan Usaha)</h4>
 
         <div class="row mt-5 text-center">
             <div class="col">
@@ -255,18 +255,6 @@
                         </div>
 
                         <div class="col-md-6 mb-3">
-                            <label for="hp" class="mb-2" style="font-weight: 600">Nomor HP</label>
-                            <input type="number" class="form-control" name="hp" id="hp"
-                                placeholder="Contoh : 0812-3452-3571">
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <label for="tp-lahir" class="mb-2" style="font-weight: 600">Tempat Lahir</label>
-                            <input type="text" class="form-control" name="tp-lahir" id="tp-lahir"
-                                placeholder="Contoh : Jakarta">
-                        </div>
-
-                        <div class="col-md-6 mb-3">
                             <label for="password" class="mb-2" style="font-weight: 600">Kata Sandi</label>
                             <input type="password" class="form-control" name="password" id="password"
                                 placeholder="Kata Sandi Anda">
@@ -279,94 +267,101 @@
                         </div>
 
                         <div class="col-md-6 mb-3">
-                            <label for="tg-lahir" class="mb-2" style="font-weight: 600">Tanggal Lahir</label>
-                            <input type="date" class="form-control" name="tg-lahir" id="tg-lahir"
-                                placeholder="Contoh : 2022-10-05">
+                            <label for="nm-npwp" class="mb-2" style="font-weight: 600">Nomor NPWP</label>
+                            <input type="text" class="form-control" name="nm-npwp" id="nm-npwp"
+                                placeholder="Contoh : 12.345.678.9-123.000">
                         </div>
 
                         <div class="col-md-6 mb-3">
-                            <label for="jk" class="mb-2" style="font-weight: 600">Jenis Kelamin</label>
-                            <select id="jk" class="form-select">
-                                <option>-- Pilih Jenis Kelamin --</option>
-                                <option value="Laki">Laki - Laki</option>
-                                <option value="Perempuan">Perempuan</option>
+                            <label for="ft-npwp" class="mb-2" style="font-weight: 600">Foto NPWP Badan Usaha</label>
+                            <input class="form-control" type="file" id="ft-npwp" aria-describedby="ft-npwp">
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="jbu" class="mb-2" style="font-weight: 600">Jenis Badan Usaha</label>
+                            <select id="jbu" class="form-select">
+                                <option>-- Pilih Jenis Badan Usaha --</option>
+                                <option value="1">PT</option>
+                                <option value="2">Koperasi</option>
+                                <option value="3">Pemerintah Pusat</option>
+                                <option value="4">Pemerintah Daerah</option>
+                                <option value="5">Lain-lain</option>
+                                <option value="6">Perorangan</option>
                             </select>
                         </div>
 
                         <div class="col-md-6 mb-3">
-                            <label for="agama" class="mb-2" style="font-weight: 600">Jenis Kelamin</label>
-                            <select id="agama" class="form-select">
-                                <option>-- Pilih Agama --</option>
-                                <option value="Islam">Islam</option>
-                                <option value="Katolik">Katolik</option>
-                                <option value="Protestan">Protestan</option>
-                                <option value="Hindhu">Hindhu</option>
-                                <option value="Budha">Budha</option>
-                                <option value="Konghucu">Konghucu</option>
-                                <option value="Lain">Lain Lain</option>
+                            <label for="su" class="mb-2" style="font-weight: 600">Sektor Usaha</label>
+                            <select id="su" class="form-select theSelect">
+                                <option>-- Pilih Sektor Usaha --</option>
+                                <option>Konsumtif</option>
+                                <option>Pertanian, Perburuan dan Kehutanan</option>
+                                <option>Perikanan</option>
+                                <option>Pertambangan dan Penggalian</option>
+                                <option>Industri Pengolahan</option>
+                                <option>Listrik, Gas, dan Air</option>
+                                <option>Konstruksi</option>
+                                <option>Perdagangan Besar dan Eceran</option>
+                                <option>Penyediaan Akomodasi dan Penyediaan Makan Minum</option>
+                                <option>Transportasi, Pergudangan, dan Komunikasi</option>
+                                <option>Perantara Keuangan</option>
+                                <option>Real Estate, Usaha Persewaan, dan Jasa Perusahaan</option>
+                                <option>Administrasi Pemerintahan, Pertahanan, dan Jaminan Sosial Wajib</option>
+                                <option>Jasa Pendidikan</option>
+                                <option>Jasa Kesehatan dan Kegiatan Sosial</option>
+                                <option>Kegiatan Organisasi Yang Tidak Diklasifikasi Ditempat Lain</option>
+                                <option>Jasa Perorangan yang Melayani Rumah Tangga</option>
+                                <option>Badan Internasional dan Badan Ekstra Internasional Lainnya</option>
+                                <option>Kegiatan yang Belum Jelas Batasannya</option>
+                                <option>Sektor Ekonomi Bukan Lapangan Usaha</option>
+                                <option>Rumah Tangga</option>
+                                <option>Bukan Lapangan Usaha Lainnya</option>
                             </select>
                         </div>
 
                         <div class="col-md-6 mb-3">
-                            <label for="status" class="mb-2" style="font-weight: 600">Status Perkawinan</label>
-                            <select id="status" class="form-select">
-                                <option>-- Pilih Status Perkawinan --</option>
-                                <option value="Sudah">Sudah Kawin</option>
-                                <option value="Belum">Belum Kawin</option>
+                            <label for="pekol" class="mb-2" style="font-weight: 600">Pekerjaan Online</label>
+                            <select id="pekol" class="form-select">
+                                <option selected disabled>-- Pilih Pekerjaan Online --</option>
+                                <option value="1">Berbasis Internet / online</option>
+                                <option value="2">Tidak Berbasis Internet / online</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="perbul" class="mb-2" style="font-weight: 600">Pendapatan per bulan</label>
+                            <select id="perbul" class="form-select">
+                                <option selected disabled>-- Pilih Pendapatan per bulan --</option>
+                                <option value="1">&lt;Rp 12.500.000</option>
+                                <option value="2">Rp 12.000.001 - Rp 50.000.000</option>
+                                <option value="3">Rp 50.000.001 - Rp 500.000.000</option>
+                                <option value="4">Rp 500.000.001 - 50.000.000.000</option>
+                                <option value="5">&gt; Rp50.000.000.000</option>
                             </select>
                         </div>
 
                         <div class="col-md-12 mb-3">
-                            <label for="ktp" class="mb-2" style="font-weight: 600">Nomor KTP</label>
-                            <input type="number" class="form-control" name="ktp" id="ktp"
-                                placeholder="Contoh : 12-34-56-78-90-11-2222">
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <div class="text-center">
-                                <img src="https://indofund.id/images/kyc-foto/ktp-true.jpg" style="width: 80%;" alt="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="total_asset" class="mb-2" style="font-weight: 600">Total Asset</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <span class="font-weight-semi-bold">Rp</span>
+                                            </span>
+                                        </div>
+                                        <input autocomplete="off" placeholder="0" class="form-control text-right" name="total_asset" type="text" value="">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="text-center mb-2">
-                                Contoh Foto
-                            </div>
-                            <label for="ft-ktp" class="mb-2" style="font-weight: 600">Foto KTP</label>
-                            <input class="form-control" type="file" id="ft-ktp" aria-describedby="ft-ktp">
-                            <div id="ft-ktp" class="form-text text-danger">Foto e-KTP harus jelas & terang</div>
                         </div>
 
-                        <div class="col-md-6 mb-3">
-                            <div class="text-center">
-                                <img src="https://indofund.id/images/kyc-foto/fotoselfie-true.jpg" style="width: 35.8%"
-                                    alt="">
-                            </div>
-                            <div class="text-center mb-2">
-                                Contoh Foto
-                            </div>
-                            <label for="ft-selfie" class="mb-2" style="font-weight: 600">Foto Selfie</label>
-                            <input class="form-control" type="file" id="ft-selfie" aria-describedby="ft-selfie">
-                            <div id="ft-selfie" class="form-text text-danger">Foto selfie harus jelas & terang tanpa
-                                memegang foto KTP</div>
+                        <div class="col-md-12">
+                            <label for="desk_usaha" class="form-label">Example textarea</label>
+                            <textarea class="form-control" id="desk_usaha" rows="6"></textarea>
                         </div>
 
-                        <div class="col-md-6 mb-3">
-                            <label for="nm-npwp" class="mb-2" style="font-weight: 600">Nomor NPWP (OPTIONAL)</label>
-                            <input type="text" class="form-control" name="nm-npwp" id="nm-npwp"
-                                placeholder="Contoh : 12.345.678.9-123.000">
-                            <div id="nm-npwp" class="form-text text-danger">Jika tidak ada, tidak perlu diisi</div>
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <label for="ft-npwp" class="mb-2" style="font-weight: 600">Foto NPWP (OPTIONAL)</label>
-                            <input class="form-control" type="file" id="ft-npwp" aria-describedby="ft-npwp">
-                            <div id="ft-npwp" class="form-text text-danger">Jika tidak ada, tidak perlu diisi</div>
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <label for="ft-kk" class="mb-2" style="font-weight: 600">Foto Kartu Keluarga
-                                (OPTIONAL)</label>
-                            <input class="form-control" type="file" id="ft-kk" aria-describedby="ft-kk">
-                            <div id="ft-kk" class="form-text text-danger">Jika tidak ada, tidak perlu diisi</div>
-                        </div>
+                        
 
                     </div>
 
@@ -385,11 +380,11 @@
                 <form action="">
                     <div class="row">
 
-                        <div class="col-12 bukan-advance">
+                        <div class="col-12">
 
                             <div class="row">
                                 <div class="col-md-12 mb-3">
-                                    <label for="alamat" class="mb-2" style="font-weight: 600">Alamat Sesuai KTP</label>
+                                    <label for="alamat" class="mb-2" style="font-weight: 600">Alamat Perusahaan</label>
                                     <input type="alamat" class="form-control" name="alamat" id="alamat"
                                         placeholder="Contoh : Jakarta">
                                 </div>
@@ -483,231 +478,6 @@
                             </div>
                         </div>
 
-                        <div class="col-12 advance" style="display: none">
-
-                            <div class="row">
-
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-md-12 mb-3">
-                                            <label for="alamat-1" class="mb-2" style="font-weight: 600">Alamat Sesuai
-                                                KTP</label>
-                                            <input type="alamat-1" class="form-control" name="alamat-1" id="alamat-1"
-                                                placeholder="Contoh : Jakarta">
-                                        </div>
-
-                                        <div class="col-md-6 mb-3">
-                                            <label for="provinsi-1" class="mb-2"
-                                                style="font-weight: 600">Provinsi</label>
-                                            <select id="provinsi-1" class="form-select theSelect">
-                                            </select>
-                                        </div>
-
-                                        <div class="col-md-6 mb-3">
-                                            <label for="kota-1" class="mb-2"
-                                                style="font-weight: 600">Kota/Kabupaten</label>
-                                            <select id="kota-1" class="form-select theSelect">
-                                                <option selected disabled>Pilih Kota</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="col-md-6 mb-3">
-                                            <label for="kelurahan-1" class="mb-2"
-                                                style="font-weight: 600">Kelurahan</label>
-                                            <input type="kelurahan-1" class="form-control" name="kelurahan-1"
-                                                id="kelurahan-1" placeholder="Contoh : Cengkareng">
-                                        </div>
-
-                                        <div class="col-md-6 mb-3">
-                                            <label for="kecamatan-1" class="mb-2"
-                                                style="font-weight: 600">Kecamatan</label>
-                                            <input type="kecamatan-1" class="form-control" name="kecamatan-1"
-                                                id="kecamatan-1" placeholder="Contoh : Cengkareng Barat">
-                                        </div>
-
-                                        <div class="col-md-6 mb-3">
-                                            <label for="pos-1" class="mb-2" style="font-weight: 600">Kode Pos</label>
-                                            <input type="pos-1" class="form-control" name="pos-1" id="pos-1"
-                                                placeholder="Contoh : 12345">
-                                        </div>
-
-                                        <input type="hidden" name="provinsi" value="">
-                                        <input type="hidden" name="kota" value="">
-
-                                        <script>
-                                            fetch(`https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json`)
-                                                .then(response => response.json())
-                                                .then(provinces => {
-                                                    let provinsi = document.getElementById('provinsi-1');
-                                                    provinsi.innerHTML += `
-                                            
-                                                <option selected disabled>Pilih Provinsi</option>  
-                                                
-                                                `;
-                                                    provinces.forEach(function (data) {
-
-                                                        provinsi.innerHTML += `
-                                                
-                                                    <option value="${data.id}">${data.name}</option>  
-                                                    
-                                                    `;
-                                                    })
-                                                });
-                                            $('select#provinsi-1').on('change', function () {
-                                                let provId = $(this).val();
-                                                $.ajax({
-                                                    url: "{{url('/')}}/kota-prov-id",
-                                                    data: {
-                                                        prov_id: $('select#provinsi-1').val()
-                                                    },
-                                                    type: "get",
-                                                    dataType: "json",
-                                                    success: function (datas) {
-                                                        let kota = document.getElementById(
-                                                            'kota-1');
-                                                        kota.innerHTML += `
-                
-                                                            
-                
-                                                            `;
-                                                        datas.forEach(function (data) {
-
-                                                            kota.innerHTML += `
-                
-                                                                <option value="${data.id}">${data.name}</option>  
-                
-                                                                `;
-                                                        })
-                                                        $('input[name=provinsi-1]').val($(
-                                                            'select#provinsi-1 option:selected'
-                                                        ).text());
-                                                    }
-                                                });
-                                            })
-
-                                        </script>
-
-                                    </div>
-
-                                </div>
-
-                                <hr class="mobile">
-
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-md-12 mb-3">
-                                            <label for="alamat-2" class="mb-2" style="font-weight: 600">Alamat Sesuai
-                                                Domisili</label>
-                                            <input type="alamat-2" class="form-control" name="alamat-2" id="alamat-2"
-                                                placeholder="Contoh : Jakarta">
-                                        </div>
-
-                                        <div class="col-md-6 mb-3">
-                                            <label for="provinsi-2" class="mb-2" style="font-weight: 600">Provinsi
-                                                Domisili</label>
-                                            <select id="provinsi-2" class="form-select theSelect">
-                                            </select>
-                                        </div>
-
-                                        <div class="col-md-6 mb-3">
-                                            <label for="kota-2" class="mb-2" style="font-weight: 600">Kota/Kabupaten
-                                                Domisili</label>
-                                            <select id="kota-2" class="form-select theSelect">
-                                                <option selected disabled>Pilih Kota</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="col-md-6 mb-3">
-                                            <label for="kelurahan-2" class="mb-2" style="font-weight: 600">Kelurahan
-                                                Domisili</label>
-                                            <input type="kelurahan-2" class="form-control" name="kelurahan-2"
-                                                id="kelurahan-2" placeholder="Contoh : Cengkareng">
-                                        </div>
-
-                                        <div class="col-md-6 mb-3">
-                                            <label for="kecamatan-2" class="mb-2" style="font-weight: 600">Kecamatan
-                                                Domisili</label>
-                                            <input type="kecamatan-2" class="form-control" name="kecamatan-2"
-                                                id="kecamatan-2" placeholder="Contoh : Cengkareng Barat">
-                                        </div>
-
-                                        <div class="col-md-6 mb-3">
-                                            <label for="pos-2" class="mb-2" style="font-weight: 600">Kode Pos
-                                                Domisili</label>
-                                            <input type="pos-2" class="form-control" name="pos-2" id="pos-2"
-                                                placeholder="Contoh : 12345">
-                                        </div>
-
-                                        <input type="hidden" name="provinsi" value="">
-                                        <input type="hidden" name="kota" value="">
-
-                                        <script>
-                                            fetch(`https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json`)
-                                                .then(response => response.json())
-                                                .then(provinces => {
-                                                    let provinsi = document.getElementById('provinsi-2');
-                                                    provinsi.innerHTML += `
-                                            
-                                                <option selected disabled>Pilih Provinsi</option>  
-                                                
-                                                `;
-                                                    provinces.forEach(function (data) {
-
-                                                        provinsi.innerHTML += `
-                                                
-                                                    <option value="${data.id}">${data.name}</option>  
-                                                    
-                                                    `;
-                                                    })
-                                                });
-                                            $('select#provinsi-2').on('change', function () {
-                                                let provId = $(this).val();
-                                                $.ajax({
-                                                    url: "{{url('/')}}/kota-prov-id",
-                                                    data: {
-                                                        prov_id: $('select#provinsi-2').val()
-                                                    },
-                                                    type: "get",
-                                                    dataType: "json",
-                                                    success: function (datas) {
-                                                        let kota = document.getElementById(
-                                                            'kota-2');
-                                                        kota.innerHTML += `
-                
-                                                            
-                
-                                                            `;
-                                                        datas.forEach(function (data) {
-
-                                                            kota.innerHTML += `
-                
-                                                                <option value="${data.id}">${data.name}</option>  
-                
-                                                                `;
-                                                        })
-                                                        $('input[name=provinsi-2]').val($(
-                                                            'select#provinsi-2 option:selected'
-                                                        ).text());
-                                                    }
-                                                });
-                                            })
-
-                                        </script>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-12 mb-3">
-                            <input class="form-check-input" type="checkbox" value="" id="advance">
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Jika alamat ktp dengan alamat domisili berbeda klik tombol ini
-                            </label>
-                        </div>
-
                     </div>
                 </form>
                 <div class="row mt-4">
@@ -725,115 +495,185 @@
             <div class="card-body">
                 <form action="">
                     <div class="row">
-
-                        <div class="col-12">
-
-                            <div class="row">
-
-                                <div class="col-md-6 mb-3">
-                                    <label for="pend" class="mb-2" style="font-weight: 600">Pendidikan Terakhir</label>
-                                    <select id="pend" class="form-select">
-                                        <option selected disabled>-- Pilih Pendidikan Terakhir --</option>
-                                        <option>SD</option>
-                                        <option>SMP</option>
-                                        <option>SMA/SMK</option>
-                                        <option>DIPLOMA</option>
-                                        <option>SARJANA</option>
-                                        <option>MAGISTER</option>
-                                        <option>DOKTOR</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-md-6 mb-3">
-                                    <label for="pend" class="mb-2" style="font-weight: 600">Pekerjaan</label>
-                                    <select id="pend" class="form-select">
-                                        <option selected disabled>-- Pilih Pendidikan Terakhir --</option>
-                                        <option value="1">PNS</option>
-                                        <option value="2">TNI/ POLRI/</option>
-                                        <option value="3">Karyawan BUMN</option>
-                                        <option value="4">Karyawan Swasta</option>
-                                        <option value="5">Wiraswasta</option>
-                                        <option value="6">Pelajar/Mahasiswa</option>
-                                        <option value="7">Lain-lain</option>
-                                        <option value="8">Tidak bekerja/bukan pelajar</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-md-6 mb-3">
-                                    <label for="pekol" class="mb-2" style="font-weight: 600">Pekerjaan Online</label>
-                                    <select id="pekol" class="form-select">
-                                        <option selected disabled>-- Pilih Pekerjaan Online --</option>
-                                        <option value="1">Berbasis Internet / online</option>
-                                        <option value="2">Tidak Berbasis Internet / online</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-md-6 mb-3">
-                                    <label for="bidpek" class="mb-2" style="font-weight: 600">Bidang Pekerjaan</label>
-                                    <select id="bidpek" class="form-select">
-                                        <option selected disabled>-- Pilih Pekerjaan Online --</option>
-                                        <option value="e2">Pertanian, Perburuan dan Kehutanan</option>
-                                        <option value="e5">Perikanan</option>
-                                        <option value="e6">Pertambangan dan Penggalian</option>
-                                        <option value="e12">Industri Pengolahan</option>
-                                        <option value="e36">Listrik, Gas, dan Air</option>
-                                        <option value="e39">Konstruksi</option>
-                                        <option value="e40">Perdagangan Besar dan Eceran</option>
-                                        <option value="e46">Penyediaan Akomodasi dan Penyediaan Makan Minum</option>
-                                        <option value="e47">Transportasi, Pergudangan, dan Komunikasi</option>
-                                        <option value="e52">Perantara Keuangan</option>
-                                        <option value="e56">Real Estate, Usaha Persewaan, dan Jasa Perusahaan</option>
-                                        <option value="e62">Administrasi Pemerintahan, Pertahanan, dan Jaminan Sosial Wajib</option>
-                                        <option value="e63">Jasa Pendidikan</option>
-                                        <option value="e64">Jasa Kesehatan dan Kegiatan Sosial</option>
-                                        <option value="e67">Kegiatan Organisasi Yang Tidak Diklasifikasi Ditempat Lain</option>
-                                        <option value="e70">Jasa Perorangan yang Melayani Rumah Tangga</option>
-                                        <option value="e71">Badan Internasional dan Badan Ekstra Internasional Lainnya</option>
-                                        <option value="e72">Kegiatan yang Belum Jelas Batasannya</option>
-                                        <option value="e00">Pelajar/Mahasiswa</option>
-                                        <option value="e01">Tidak Bekerja / Bukan Pelajar</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-md-6 mb-3">
-                                    <label for="penja" class="mb-2" style="font-weight: 600">Pengalaman Kerja</label>
-                                    <select id="penja" class="form-select">
-                                        <option selected disabled>-- Pilih Pengalaman Kerja --</option>
-                                        <option value="0">Pelajar atau belum pernah bekerja</option>
-                                        <option value="1">&lt; 1 Tahun</option>
-                                        <option value="2">1 s.d. &lt; 2 Tahun</option>
-                                        <option value="3">2 s.d. 3 Tahun</option>
-                                        <option value="4">&gt;3 Tahun</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-md-6 mb-3">
-                                    <label for="perbul" class="mb-2" style="font-weight: 600">Pendapatan per bulan</label>
-                                    <select id="perbul" class="form-select">
-                                        <option selected disabled>-- Pilih Pendapatan per bulan --</option>
-                                        <option value="p1">Rp 0 - Rp 2.967.020</option>
-                                        <option value="p2">Rp 2.967.021 - Rp 5.934.040</option>
-                                        <option value="p3">Rp 5.934.041 - Rp 11.868.080</option>
-                                        <option value="p4">Rp 11.868.081 - Rp 25.000.000</option>
-                                        <option value="p5">Rp 25.000.001 - Rp 208.333.333</option>
-                                        <option value="p6">Rp 208.333.334 - Rp 4.166.666.667</option>
-                                        <option value="p7">&gt;Rp 4.166.666.667</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-md-6 mb-3">
-                                    <label for="keprum" class="mb-2" style="font-weight: 600">Status Kepemilikan Rumah</label>
-                                    <select id="keprum" class="form-select">
-                                        <option selected disabled>-- Pilih Status Kepemilikan Rumah --</option>
-                                        <option value="1">Memiliki rumah sendiri</option>
-                                        <option value="2">Tidak memiliki rumah sendiri</option>
-                                    </select>
-                                </div>
-
-                            </div>
-
+                        <div class="col-md-6 mb-3">
+                            <label for="nama_wakil" class="mb-2" style="font-weight: 600">Nama Perwakilan</label>
+                            <input type="text" class="form-control" name="nama_wakil" id="nama_wakil"
+                                placeholder="Contoh : Lewan Wan">
                         </div>
 
+                        <div class="col-md-6 mb-3">
+                            <label for="hp" class="mb-2" style="font-weight: 600">Nomor HP</label>
+                            <input type="number" class="form-control" name="hp" id="hp"
+                                placeholder="Contoh : 0812-3452-3571">
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="jabat_wakil" class="mb-2" style="font-weight: 600">Jabatan Perwakilan</label>
+                            <input type="text" class="form-control" name="jabat_wakil" id="jabat_wakil"
+                                placeholder="Contoh : Manager">
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="bidpek" class="mb-2" style="font-weight: 600">Bidang Pekerjaan</label>
+                            <select id="bidpek" class="form-select">
+                                <option selected disabled>-- Pilih Pekerjaan Online --</option>
+                                <option value="e2">Pertanian, Perburuan dan Kehutanan</option>
+                                <option value="e5">Perikanan</option>
+                                <option value="e6">Pertambangan dan Penggalian</option>
+                                <option value="e12">Industri Pengolahan</option>
+                                <option value="e36">Listrik, Gas, dan Air</option>
+                                <option value="e39">Konstruksi</option>
+                                <option value="e40">Perdagangan Besar dan Eceran</option>
+                                <option value="e46">Penyediaan Akomodasi dan Penyediaan Makan Minum</option>
+                                <option value="e47">Transportasi, Pergudangan, dan Komunikasi</option>
+                                <option value="e52">Perantara Keuangan</option>
+                                <option value="e56">Real Estate, Usaha Persewaan, dan Jasa Perusahaan</option>
+                                <option value="e62">Administrasi Pemerintahan, Pertahanan, dan Jaminan Sosial Wajib</option>
+                                <option value="e63">Jasa Pendidikan</option>
+                                <option value="e64">Jasa Kesehatan dan Kegiatan Sosial</option>
+                                <option value="e67">Kegiatan Organisasi Yang Tidak Diklasifikasi Ditempat Lain</option>
+                                <option value="e70">Jasa Perorangan yang Melayani Rumah Tangga</option>
+                                <option value="e71">Badan Internasional dan Badan Ekstra Internasional Lainnya</option>
+                                <option value="e72">Kegiatan yang Belum Jelas Batasannya</option>
+                                <option value="e00">Pelajar/Mahasiswa</option>
+                                <option value="e01">Tidak Bekerja / Bukan Pelajar</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="tp-lahir" class="mb-2" style="font-weight: 600">Tempat Lahir</label>
+                            <input type="text" class="form-control" name="tp-lahir" id="tp-lahir"
+                                placeholder="Contoh : Jakarta">
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="tg-lahir" class="mb-2" style="font-weight: 600">Tanggal Lahir</label>
+                            <input type="date" class="form-control" name="tg-lahir" id="tg-lahir"
+                                placeholder="Contoh : 2022-10-05">
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="jk" class="mb-2" style="font-weight: 600">Jenis Kelamin</label>
+                            <select id="jk" class="form-select">
+                                <option>-- Pilih Jenis Kelamin --</option>
+                                <option value="Laki">Laki - Laki</option>
+                                <option value="Perempuan">Perempuan</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="ktp" class="mb-2" style="font-weight: 600">Nomor KTP</label>
+                            <input type="number" class="form-control" name="ktp" id="ktp"
+                                placeholder="Contoh : 12-34-56-78-90-11-2222">
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="text-center">
+                                <img src="https://indofund.id/images/kyc-foto/ktp-true.jpg" style="width: 80%;" alt="">
+                            </div>
+                            <div class="text-center mb-2">
+                                Contoh Foto
+                            </div>
+                            <label for="ft-ktp" class="mb-2" style="font-weight: 600">Foto KTP</label>
+                            <input class="form-control" type="file" id="ft-ktp" aria-describedby="ft-ktp">
+                            <div id="ft-ktp" class="form-text text-danger">Foto e-KTP harus jelas & terang</div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <div class="text-center">
+                                <img src="https://indofund.id/images/kyc-foto/fotoselfie-true.jpg" style="width: 35.8%"
+                                    alt="">
+                            </div>
+                            <div class="text-center mb-2">
+                                Contoh Foto
+                            </div>
+                            <label for="ft-selfie" class="mb-2" style="font-weight: 600">Foto Selfie</label>
+                            <input class="form-control" type="file" id="ft-selfie" aria-describedby="ft-selfie">
+                            <div id="ft-selfie" class="form-text text-danger">Foto selfie harus jelas & terang tanpa
+                                memegang foto KTP</div>
+                        </div>
+
+                        <div class="col-md-12 mb-3">
+                            <label for="alamat" class="mb-2" style="font-weight: 600">Alamat Sesuai KTP</label>
+                            <input type="alamat" class="form-control" name="alamat" id="alamat"
+                                placeholder="Contoh : Jakarta">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="provinsi-2" class="mb-2" style="font-weight: 600">Provinsi</label>
+                            <select id="provinsi-2" class="form-select theSelect">
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="kota-2" class="mb-2" style="font-weight: 600">Kota/Kabupaten</label>
+                            <select id="kota-2" class="form-select theSelect">
+                                <option selected disabled>Pilih Kota</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="kelurahan" class="mb-2" style="font-weight: 600">Kelurahan</label>
+                            <input type="kelurahan" class="form-control" name="kelurahan" id="kelurahan"
+                                placeholder="Contoh : Cengkareng">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="kecamatan" class="mb-2" style="font-weight: 600">Kecamatan</label>
+                            <input type="kecamatan" class="form-control" name="kecamatan" id="kecamatan"
+                                placeholder="Contoh : Cengkareng Barat">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="pos" class="mb-2" style="font-weight: 600">Kode Pos</label>
+                            <input type="pos" class="form-control" name="pos" id="pos"
+                                placeholder="Contoh : 12345">
+                        </div>
+                        <input type="hidden" name="provinsi-2" value="">
+                        <input type="hidden" name="kota-2" value="">
+                        <script>
+                            fetch(`https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json`)
+                                .then(response => response.json())
+                                .then(provinces => {
+                                    let provinsi = document.getElementById('provinsi-2');
+                                    provinsi.innerHTML += `
+                            
+                                <option selected disabled>Pilih Provinsi</option>  
+                                
+                                `;
+                                    provinces.forEach(function (data) {
+                                        provinsi.innerHTML += `
+                                
+                                    <option value="${data.id}">${data.name}</option>  
+                                    
+                                    `;
+                                    })
+                                });
+                            $('select#provinsi-2').on('change', function () {
+                                let provId = $(this).val();
+                                $.ajax({
+                                    url: "{{url('/')}}/kota-prov-id",
+                                    data: {
+                                        prov_id: $('select#provinsi-2').val()
+                                    },
+                                    type: "get",
+                                    dataType: "json",
+                                    success: function (datas) {
+                                        let kota = document.getElementById('kota-2');
+                                        kota.innerHTML += `
+
+                                            
+
+                                            `;
+                                        datas.forEach(function (data) {
+                                            kota.innerHTML += `
+
+                                                <option value="${data.id}">${data.name}</option>  
+
+                                                `;
+                                        })
+                                        $('input[name=provinsi-2]').val($(
+                                                'select#provinsi-2 option:selected')
+                                            .text());
+                                    }
+                                });
+                            })
+                        </script>
                     </div>
                 </form>
                 <div class="row mt-4">
@@ -852,44 +692,51 @@
                 <form action="">
                     <div class="row">
 
-                        <div class="col-12">
-
-                            <div class="row">
-
-                                <div class="col-md-6 mb-3">
-                                    <label for="nama-dar" class="mb-2" style="font-weight: 600">Nama Lengkap Darurat</label>
-                                    <input type="text" class="form-control" name="nama-dar" id="nama-dar"
-                                        placeholder="Nama Lengkap Darurat">
-                                </div>
-
-                                <div class="col-md-6 mb-3">
-                                    <label for="hp-dar" class="mb-2" style="font-weight: 600">No Handphone</label>
-                                    <input type="number" class="form-control" name="hp-dar" id="hp-dar"
-                                        placeholder="Nomor HP Darurat">
-                                </div>
-
-                                <div class="col-md-6 mb-3">
-                                    <label for="alamat-dar" class="mb-2" style="font-weight: 600">Alamat</label>
-                                    <input type="text" class="form-control" name="alamat-dar" id="alamat-dar"
-                                        placeholder="Alamat Kontak">
-                                </div>
-
-                                <div class="col-md-6 mb-3">
-                                    <label for="hub-dar" class="mb-2" style="font-weight: 600">Hubungan dengan kontak darurat</label>
-                                    <input type="text" class="form-control" name="hub-dar" id="hub-dar"
-                                        placeholder="Hubungan Kontak">
-                                </div>
-
-                                <div class="col-md-12 mb-3">
-                                    <input class="form-check-input mr-1" type="checkbox" value="" id="setuju">
-                                    <span class="form-check-label" for="setuju">
-                                        Saya menyatakan bahwa data-data yang telah saya isi diatas adalah valid, saya telah melakukan pengecekan atas kebenaran data-data tersebut, dan saya telah membaca ketentuan privacy dan cookies .
-                                    </span>
-                                </div>
-
-                            </div>
-
+                        <div class="col-md-6 mb-3">
+                            <label for="akta_pend" class="mb-2" style="font-weight: 600">Akta Pendirian</label>
+                            <input type="file" class="form-control" name="akta_pend" id="akta_pend">
                         </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="akta_per" class="mb-2" style="font-weight: 600">Akta Perubahan</label>
+                            <input type="file" class="form-control" name="akta_per" id="akta_per">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="surat_dom" class="mb-2" style="font-weight: 600">Surat Domisili</label>
+                            <input type="file" class="form-control" name="surat_dom" id="surat_dom">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="laporan_uang" class="mb-2" style="font-weight: 600">Laporan Keuangan</label>
+                            <input type="file" class="form-control" name="laporan_uang" id="laporan_uang">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="rek_koran" class="mb-2" style="font-weight: 600">Rekening Koran</label>
+                            <input type="file" class="form-control" name="rek_koran" id="rek_koran">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="alert alert-warning" role="alert">
+                            Jika tidak ada SIUP dan TDP, mohon upload NIB. <br>
+                            Jika tidak ada NIB, mohon upload SIUP dan TDP
+                        </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="nib" class="mb-2" style="font-weight: 600">NIB</label>
+                            <input type="file" class="form-control" name="nib" id="nib">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="siup" class="mb-2" style="font-weight: 600">SIUP</label>
+                            <input type="file" class="form-control" name="siup" id="siup">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="tdp" class="mb-2" style="font-weight: 600">TDP</label>
+                            <input type="file" class="form-control" name="tdp" id="tdp">
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <input class="form-check-input mr-1" type="checkbox" value="" id="setuju">
+                            <span class="form-check-label" for="setuju">
+                                Saya menyatakan bahwa data-data yang telah saya isi diatas adalah valid, saya telah melakukan pengecekan atas kebenaran data-data tersebut, dan saya telah membaca ketentuan privacy dan cookies .
+                            </span>
+                        </div>
+
 
                     </div>
                 </form>
@@ -898,7 +745,7 @@
                         <button class="w-100 btn-lg btn btn-outline-brown kem-4">Kembali</button>
                     </div>
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-brown lan-4">Lanjut</button>
+                        <a href="{{url('')}}/buat-laporan" class="w-100 btn-lg btn btn-brown lan-4">Daftar</a>
                     </div>
                 </div>
             </div>
