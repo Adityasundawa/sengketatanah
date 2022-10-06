@@ -406,18 +406,6 @@
             border: 1px solid #61481C;
         }
 
-        .btn.btn-outline-brown {
-            color: #61481C;
-            background: #fff;
-            border: 1px solid #61481C;
-        }
-
-        .btn.btn-outline-brown:hover {
-            color: #fff;
-            background: #61481C;
-            border: 1px solid #61481C;
-        }
-
         .btn.btn-brown {
             color: #fff;
             background: #61481C;
@@ -546,6 +534,18 @@
             z-index: 999;
             right: 1.5rem;
             top: 3.5rem;
+        }
+
+        .btn.btn-outline-brown {
+            color: #61481C;
+            background: rgba(173, 128, 50, 25%);
+            border: 2px solid #61481C;
+        }
+
+        .btn.btn-outline-brown:hover {
+            color: #fff;
+            background: #61481C;
+            border: 2px solid #61481C;
         }
     </style>
 </head>
@@ -1940,13 +1940,13 @@
 
             <div class="col-6 mobile" style="margin-top:5px">
                 <div class="d-grid gap-2 me-1">
-                    <a href="{{url('')}}/pilih-user" class="btn btn-sm fw-bold" style="color: #000" href="{{url('')}}/register">Daftar Sekarang</a>
+                    <a href="{{url('')}}/pilih-user" class="btn btn-sm btn-outline-brown rounded-5 fw-bold" href="{{url('')}}/register">Daftar Sekarang</a>
                 </div>
             </div>
 
             <div class="col-6 mobile" style="margin-top:5px">
                 <div class="ms-1 d-grid gap-2">
-                    <a class="btn btn-sm fw-bold" style="color: #000" href="{{url('')}}/join">Pelajari Bid Sengketa</a>
+                    <a class="btn btn-sm btn-outline-brown rounded-5 fw-bold" href="{{url('')}}/join">Pelajari Bid Sengketa</a>
                 </div>
             </div>
 
