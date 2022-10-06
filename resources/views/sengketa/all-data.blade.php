@@ -1938,13 +1938,13 @@
             {{-- Orang Lawyer --}}
 
 
-            <div class="col-6 mobile" style="margin-top:5px">
+            <div class="col-auto mobile ms-auto" style="margin-top:5px">
                 <div class="d-grid gap-2 me-1">
                     <a href="{{url('')}}/pilih-user" class="btn btn-sm btn-outline-brown rounded-5 fw-bold" href="{{url('')}}/register">Daftar Sekarang</a>
                 </div>
             </div>
 
-            <div class="col-6 mobile" style="margin-top:5px">
+            <div class="col-auto mobile me-auto" style="margin-top:5px">
                 <div class="ms-1 d-grid gap-2">
                     <a class="btn btn-sm btn-outline-brown rounded-5 fw-bold" href="{{url('')}}/join">Pelajari Bid Sengketa</a>
                 </div>

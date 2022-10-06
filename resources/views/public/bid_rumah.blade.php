@@ -1956,14 +1956,14 @@
         </div>
 
         <div class="col-lg mobile mb-2" style="margin-top:-10px">
-            <div class="row g-0">
-                <div class="col-6">
+            <div class="row g-0 justify-content-center">
+                <div class="col-auto">
                     <div class="d-grid gap-2">
                         <a class="btn btn-sm fw-bold btn-outline-brown rounded-5" href="{{url('')}}/register">Daftar Sekarang</a>
                     </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-auto">
                     <div class="ms-1 d-grid ">
                         <a class="btn btn-sm fw-bold btn-outline-brown rounded-5" href="{{url('')}}/join">Pelajari Bid Rumah</a>
                     </div>

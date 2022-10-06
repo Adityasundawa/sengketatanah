@@ -1347,14 +1347,14 @@
 
 
 
-        <div class="row g-0">
-            <div class="col-6 mobile" style="margin-top:5px">
+        <div class="row g-0 justify-content-center">
+            <div class="col-auto mobile" style="margin-top:5px">
                 <div class="d-grid gap-2 me-1">
-                    <a class="btn btn-sm fw-bold btn-outline-brown rounded-5" href="{{url('')}}/register">Daftar <br> Sekarang</a>
+                    <a class="btn btn-sm fw-bold btn-outline-brown rounded-5" href="{{url('')}}/register">Daftar Sekarang</a>
                 </div>
             </div>
 
-            <div class="col-6 mobile" style="margin-top:5px">
+            <div class="col-auto mobile" style="margin-top:5px">
                 <div class="ms-1 d-grid gap-2">
                     <a class="btn btn-sm fw-bold btn-outline-brown rounded-5" href="{{url('')}}/join">Pelajari Jasa Pengacara</a>
                 </div>
