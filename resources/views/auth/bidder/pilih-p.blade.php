@@ -716,20 +716,20 @@
     </nav>
 
     <div class="container mt-4 mb-4">
-        <h4 class="text-center">Pilih Jenis Akun</h4>
+        <h4 class="text-center">Pilih Jenis Akun Pengacara</h4>
         <h5 class="text-center text-muted fw-normal">Pilih Jenis Akun yang akan Anda Buat!</h5>
 
         <div class="wrapper mt-4">
-
+    
             <div class="card mt-2 mb-2 rounded-4">
                 <div class="card-body p-5">
                     <div class="row row-md align-items-center">
                         <div class="col-md-8">
-                            <h5>Daftar Sebagai Korban</h5>
+                            <h5>Daftar Sebagai Personal</h5>
                             <h6 class="text-muted fw-normal mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nam minima quisquam.</h6>
                         </div>
                         <div class="col-md row-col">
-                            <a href="{{url('')}}/daftar-bid-a" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Korban</a>
+                            <a href="{{url('')}}/daftar-bid-c" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Personal</a>
                         </div>
                     </div>
                 </div>
@@ -739,25 +739,11 @@
                 <div class="card-body p-5">
                     <div class="row row-md align-items-center">
                         <div class="col-md-8">
-                            <h5>Daftar Sebagai Sponsor</h5>
+                            <h5>Daftar Sebagai Kantor Hukum</h5>
                             <h6 class="text-muted fw-normal mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nam minima quisquam.</h6>
                         </div>
                         <div class="col-md row-col">
-                            <a href="{{url('')}}/pilih-s" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Sponsor</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="card mt-2 mb-2 rounded-4">
-                <div class="card-body p-5">
-                    <div class="row row-md align-items-center">
-                        <div class="col-md-8">
-                            <h5>Daftar Sebagai Pengacara</h5>
-                            <h6 class="text-muted fw-normal mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nam minima quisquam.</h6>
-                        </div>
-                        <div class="col-md row-col">
-                            <a href="{{url('')}}/pilih-p" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Pengacara</a>
+                            <a href="{{url('')}}/daftar-bid-ca" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Kantor Hukum</a>
                         </div>
                     </div>
                 </div>

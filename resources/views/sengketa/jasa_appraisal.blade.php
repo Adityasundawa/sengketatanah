@@ -404,14 +404,26 @@
 
         .btn.btn-outline-brown {
             color: #61481C;
-            background: #fff;
-            border: 1px solid #61481C;
+            background: rgba(173, 128, 50, 25%);
+            border: 2px solid #61481C;
         }
 
         .btn.btn-outline-brown:hover {
             color: #fff;
             background: #61481C;
-            border: 1px solid #61481C;
+            border: 2px solid #61481C;
+        }
+
+        .btn.btn-outline-brownie {
+            color: #A47E3B;
+            background: rgba(240, 184, 86, 25%);
+            border: 2px solid #A47E3B;
+        }
+
+        .btn.btn-outline-brownie:hover {
+            color: #fff;
+            background: #A47E3B;
+            border: 2px solid #A47E3B;
         }
 
         .btn.btn-brown {
@@ -1076,7 +1088,7 @@
             </div>
 
             <div class="col-auto">
-                <a class="btn" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
+                <a class="btn" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari Jasa Appraisal</a>
             </div>
 
             <div class="col-lg">
@@ -1309,16 +1321,16 @@
                 </div>
             </div>
         </div>
-        <div class="row g-0">
-            <div class="col-6 mobile" style="margin-top:5px">
+        <div class="row g-0 justify-content-center">
+            <div class="col-auto mobile" style="margin-top:5px">
                 <div class="d-grid gap-2 me-1">
-                    <a href="{{url('')}}/pilih-user" class="btn btn-sm" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
+                    <a class="btn btn-sm fw-bold btn-outline-brown rounded-5" href="{{url('')}}/register">Daftar Sekarang</a>
                 </div>
             </div>
 
-            <div class="col-6 mobile" style="margin-top:5px">
+            <div class="col mobile" style="margin-top:5px">
                 <div class="ms-1 d-grid gap-2">
-                    <a class="btn btn-sm" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
+                    <a class="btn btn-sm fw-bold btn-outline-brownie rounded-5" href="{{url('')}}/join">Pelajari Jasa Appraisal</a>
                 </div>
             </div>
         </div>
