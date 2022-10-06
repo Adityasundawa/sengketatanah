@@ -1959,13 +1959,13 @@
             <div class="row g-0">
                 <div class="col-6">
                     <div class="d-grid gap-2">
-                        <a class="btn btn-sm" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
+                        <a class="btn btn-sm fw-bold" style="color: #000" href="{{url('')}}/register">Daftar Sekarang</a>
                     </div>
                 </div>
 
                 <div class="col-6">
                     <div class="ms-1 d-grid ">
-                        <a class="btn btn-sm" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
+                        <a class="btn btn-sm fw-bold" style="color: #000" href="{{url('')}}/join">Pelajari</a>
                     </div>
                 </div>
             </div>

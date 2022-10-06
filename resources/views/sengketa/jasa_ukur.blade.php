@@ -1346,12 +1346,12 @@
         <div class="row g-0">
             <div class="col-6 mobile" style="margin-top:5px">
                 <div class="d-grid gap-2 me-1">
-                    <a href="{{url('')}}/pilih-user" class="btn btn-sm" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
+                    <a href="{{url('')}}/pilih-user" class="btn btn-sm fw-bold" style="color: #000" href="{{url('')}}/register">Daftar Sekarang</a>
                 </div>
             </div>
             <div class="col-6 mobile" style="margin-top:5px">
                 <div class="ms-1 d-grid gap-2">
-                    <a class="btn btn-sm" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
+                    <a class="btn btn-sm fw-bold" style="color: #000" href="{{url('')}}/join">Pelajari</a>
                 </div>
             </div>
         </div>
