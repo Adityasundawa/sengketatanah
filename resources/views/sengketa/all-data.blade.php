@@ -4157,399 +4157,399 @@
             </nav>
 
             <style>
-        .store {
-            width: 171px;
-        }
-
-        .appstore {
-            width: 140px;
-            margin-left: 10px
-        }
-
-        @media screen and (min-width: 768px) {
-            .store {
-                width: 216px;
-            }
-
-            .appstore {
-                width: 185px;
-            }
-        }
-
-    </style>
-
-    <hr>
-
-    <div class="row justify-content-center">
-        <div class="col-11 mt-2 text-center">
-            <b>Download Aplikasinya!</b>
-            <p class="fw-lighter mb-0">Platform Seputar Tanah No. 1 di Indonesia</p>
-        </div>
-        <div class="col-11 mb-2 text-center">
-            <a href="#"><img src="{{asset('/')}}uploads/google-play-badge.png" class="store" alt=""></a>
-            <a href="#"><img src="{{asset('/')}}uploads/appstore-badge.png" class="appstore" alt=""></a>
-        </div>
-    </div>
-
-    <hr>
-
-
-    <div class="row justify-content-center mb-3 mt-4 text-center g-0">
-        <p class="fw-bold text-center" style="text-align: justify">Ikuti Sosial Media Kami</a></p>
-
-        <div class="col">
-            <a class="btn p-0" href="https://www.instagram.com/sengketatanah.id/" role="button">
-                <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x" style="text-shadow: -3px 3px 5px #bbbbbb;color: #8a3ab9"></i>
-                    <i class="fa-brands fa-instagram fa-stack-1x fa-inverse"></i>
-                </span>
-            </a>
-        </div>
-        <div class="col">
-            <a class="btn p-0" href="https://m.youtube.com/channel/UCXQW3lPJ68brYiThnxX18-A" role="button">
-                <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x text-danger" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
-                    <i class="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
-                </span>
-            </a>
-        </div>
-        <div class="col">
-            <a class="btn p-0" href="#" role="button">
-                <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x text-primary" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
-                    <i class="fa-brands fa-facebook fa-stack-1x fa-inverse"></i>
-                </span>
-            </a>
-        </div>
-        <div class="col">
-            <a class="btn p-0" href="https://mobile.twitter.com/sengketatanahid" role="button">
-                <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x text-info" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
-                    <i class="fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-            </a>
-        </div>
-        <div class="col">
-            <div class="dropdown">
-                <button class="btn p-0" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                    id="dropdownMenuButton1">
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x " style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
-                        <i class="fa-solid fa-share fa-stack-1x fa-inverse"></i>
-                    </span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-                            data-show-count="false"><i class="fa-brands fa-twitter"></i> Tweet</a></li>
-                    <li>
-                        <a target="_blank"
-                            onClick='window.open("https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse","Ratting","width=550,height=550,left=150,top=200,toolbar=0,status=0,");'
-                            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse"
-                            class="fb-xfbml-parse-ignore dropdown-item"><i class="fa-brands fa-facebook"></i>
-                            Facebook</a>
-                    </li>
-                </ul>
+                .store {
+                    width: 171px;
+                }
+            
+                .appstore {
+                    width: 140px;
+                    margin-left: 10px
+                }
+            
+                @media screen and (min-width: 768px) {
+                    .store {
+                        width: 216px;
+                    }
+                
+                    .appstore {
+                        width: 185px;
+                    }
+                }
+            
+            </style>
+        
+            <hr>
+        
+            <div class="row justify-content-center">
+                <div class="col-11 mt-2 text-center">
+                    <b>Download Aplikasinya!</b>
+                    <p class="fw-lighter mb-0">Platform Seputar Tanah No. 1 di Indonesia</p>
+                </div>
+                <div class="col-11 mb-2 text-center">
+                    <a href="#"><img src="{{asset('/')}}uploads/google-play-badge.png" class="store" alt=""></a>
+                    <a href="#"><img src="{{asset('/')}}uploads/appstore-badge.png" class="appstore" alt=""></a>
+                </div>
             </div>
-
-            <a href="" class=""></a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-        </div>
-
-        <div class="modal fade" id="korbanSengketaModal" tabindex="-1" aria-labelledby="korbanSengketaModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header bg-dark text-white">
-                        <div class="row">
-                            <div class="col-12 text-center text-uppercase">
-                                <h5 class="modal-title" id="formSponsoranModalLabel">Korban Sengketa Tanah</h5>
-                            </div>
-                            <div class="col-12 text-center">
-                                <h6 class="modal-title" style="font-size:12px">Korban adalah orang yang dirugikan,
-                                    dirampas,
-                                    atau kehilangan hak atas tanah yang dimilikinya*</h6>
-                            </div>
-                        </div>
+        
+            <hr>
+        
+        
+            <div class="row justify-content-center mb-3 mt-4 text-center g-0">
+                <p class="fw-bold text-center" style="text-align: justify">Ikuti Sosial Media Kami</a></p>
+            
+                <div class="col">
+                    <a class="btn p-0" href="https://www.instagram.com/sengketatanah.id/" role="button">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x" style="text-shadow: -3px 3px 5px #bbbbbb;color: #8a3ab9"></i>
+                            <i class="fa-brands fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="btn p-0" href="https://m.youtube.com/channel/UCXQW3lPJ68brYiThnxX18-A" role="button">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x text-danger" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                            <i class="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="btn p-0" href="#" role="button">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x text-primary" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                            <i class="fa-brands fa-facebook fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="btn p-0" href="https://mobile.twitter.com/sengketatanahid" role="button">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x text-info" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                            <i class="fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="btn p-0" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            id="dropdownMenuButton1">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x " style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                                <i class="fa-solid fa-share fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+                                    data-show-count="false"><i class="fa-brands fa-twitter"></i> Tweet</a></li>
+                            <li>
+                                <a target="_blank"
+                                    onClick='window.open("https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse","Ratting","width=550,height=550,left=150,top=200,toolbar=0,status=0,");'
+                                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse"
+                                    class="fb-xfbml-parse-ignore dropdown-item"><i class="fa-brands fa-facebook"></i>
+                                    Facebook</a>
+                            </li>
+                        </ul>
                     </div>
-                    <form method="post" class="text-start" action="{{url('sengketa/send')}}"
-                        enctype="multipart/form-data">
-                        <div class="modal-body">
-                            @csrf
-                            @if ($errors->all())
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
+                
+                    <a href="" class=""></a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                
+                </div>
+            
+                <div class="modal fade" id="korbanSengketaModal" tabindex="-1" aria-labelledby="korbanSengketaModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-white">
+                                <div class="row">
+                                    <div class="col-12 text-center text-uppercase">
+                                        <h5 class="modal-title" id="formSponsoranModalLabel">Korban Sengketa Tanah</h5>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <h6 class="modal-title" style="font-size:12px">Korban adalah orang yang dirugikan,
+                                            dirampas,
+                                            atau kehilangan hak atas tanah yang dimilikinya*</h6>
+                                    </div>
+                                </div>
                             </div>
-
-                            @endif
-                            @if (Session::has('success'))
-                            <div class="alert alert-success">
-                                {{Session::get('success')}}
-                            </div>
-                            @endif
-
-                            <div class="mb-2">
-                                <label for="nama" class="form-label">Nama Pelapor</label>
-                                <input type="text" class="form-control rounded-0" id="nama"
-                                    placeholder="Masukkan Nama Anda" aria-describedby="input-nama" name="nama" required>
-                                <div id="input-nama" class="form-text"></div>
-                            </div>
-
-                            <div class="mb-2">
-                                <label for="Alamat" class="form-label">Alamat</label>
-                                <input type="text" class="form-control rounded-0" id="Alamat"
-                                    placeholder="Masukkan Alamat Anda" aria-describedby="input-Alamat" name="alamat"
-                                    required>
-                                <div id="input-Alamat" class="form-text"></div>
-                            </div>
-                            <div class="mb-2">
-                                <label for="no_hp" class="form-label">Nomor Hp</label>
-                                <input type="number" class="form-control rounded-0" id="no_hp"
-                                    placeholder="Masukkan Nomor HP Anda" aria-describedby="input-no_hp" name="no_hp"
-                                    required>
-                                <div id="input-no_hp" class="form-text"></div>
-                            </div>
-                            <div class="mb-2">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control rounded-0" id="email"
-                                    placeholder="Masukkan Email Anda" aria-describedby="input-email" name="email"
-                                    required>
-                                <div id="input-email" class="form-text"></div>
-                            </div>
-                            <div class="mb-2">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control rounded-0" id="password"
-                                    placeholder="buat password Anda" aria-describedby="input-password" name="password"
-                                    required>
-                                <div id="input-password" class="form-text"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
+                            <form method="post" class="text-start" action="{{url('sengketa/send')}}"
+                                enctype="multipart/form-data">
+                                <div class="modal-body">
+                                    @csrf
+                                    @if ($errors->all())
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                
+                                    @endif
+                                    @if (Session::has('success'))
+                                    <div class="alert alert-success">
+                                        {{Session::get('success')}}
+                                    </div>
+                                    @endif
+                                
                                     <div class="mb-2">
-                                        <label class="form-label">Objek Sengketa</label>
+                                        <label for="nama" class="form-label">Nama Pelapor</label>
+                                        <input type="text" class="form-control rounded-0" id="nama"
+                                            placeholder="Masukkan Nama Anda" aria-describedby="input-nama" name="nama" required>
+                                        <div id="input-nama" class="form-text"></div>
+                                    </div>
+                                
+                                    <div class="mb-2">
+                                        <label for="Alamat" class="form-label">Alamat</label>
+                                        <input type="text" class="form-control rounded-0" id="Alamat"
+                                            placeholder="Masukkan Alamat Anda" aria-describedby="input-Alamat" name="alamat"
+                                            required>
+                                        <div id="input-Alamat" class="form-text"></div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="no_hp" class="form-label">Nomor Hp</label>
+                                        <input type="number" class="form-control rounded-0" id="no_hp"
+                                            placeholder="Masukkan Nomor HP Anda" aria-describedby="input-no_hp" name="no_hp"
+                                            required>
+                                        <div id="input-no_hp" class="form-text"></div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control rounded-0" id="email"
+                                            placeholder="Masukkan Email Anda" aria-describedby="input-email" name="email"
+                                            required>
+                                        <div id="input-email" class="form-text"></div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control rounded-0" id="password"
+                                            placeholder="buat password Anda" aria-describedby="input-password" name="password"
+                                            required>
+                                        <div id="input-password" class="form-text"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="mb-2">
+                                                <label class="form-label">Objek Sengketa</label>
+                                                <select class="form-select rounded-0" aria-label="Default select example"
+                                                    name="objek_sengketa" required>
+                                                    <option value="Sengketa Pertanahan">Sengketa Pertanahan</option>
+                                                    <option value="Konflik Pertanahan">Konflik Pertanahan</option>
+                                                    <option value="Perkara Pertanahan">Perkara Pertanahan</option>
+                                                    <option value="Penjualan Lahan">Penjualan Lahan</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col">
+                                            <div class="mb-2">
+                                                <label for="luas" class="form-label">Luas Tanah (meter/ha)</label>
+                                                <input type="text" class="form-control rounded-0" id="luas"
+                                                    placeholder="Masukkan Luas Tanah" aria-describedby="input-luas" name="luas"
+                                                    required>
+                                                <div id="input-luas" class="form-text"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="mb-2">
+                                        <label for="lokasi" class="form-label">Lokasi</label>
+                                        <input type="text" class="form-control rounded-0" id="lokasi"
+                                            placeholder="Masukkan Lokasi" aria-describedby="input-lokasi" name="lokasi"
+                                            required>
+                                        <div id="input-lokasi" class="form-text"></div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="kronologi" class="form-label">Kronologi</label>
+                                        <textarea id="kronologi" class="form-control rounded-0" placeholder="Masukkan Kronologi"
+                                            aria-describedby="input-kronologi" name="kronologi" cols="30" rows="10"
+                                            required></textarea>
+                                        <div id="input-kronologi" class="form-text"></div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label class="form-label">Status Pelapor</label>
                                         <select class="form-select rounded-0" aria-label="Default select example"
-                                            name="objek_sengketa" required>
-                                            <option value="Sengketa Pertanahan">Sengketa Pertanahan</option>
-                                            <option value="Konflik Pertanahan">Konflik Pertanahan</option>
-                                            <option value="Perkara Pertanahan">Perkara Pertanahan</option>
-                                            <option value="Penjualan Lahan">Penjualan Lahan</option>
+                                            name="status_pelapor" required>
+                                            <option value="Pemilik">Pemilik</option>
+                                            <option value="Kuasa Pemilik">Kuasa Pemilik</option>
                                         </select>
                                     </div>
-                                </div>
-
-                                <div class="col">
                                     <div class="mb-2">
-                                        <label for="luas" class="form-label">Luas Tanah (meter/ha)</label>
-                                        <input type="text" class="form-control rounded-0" id="luas"
-                                            placeholder="Masukkan Luas Tanah" aria-describedby="input-luas" name="luas"
+                                        <label class="form-label">Pilih Jenis Pertolongan</label>
+                                        <select class="form-select rounded-0" aria-label="Default select example"
+                                            name="jenis_pertolongan" required>
+                                            <option selected disabled>Pilih Pertolongan</option>
+                                            <option value="sponsor">Sponsor</option>
+                                            <option value="pengacara">Pengacara</option>
+                                            <option value="pemerintah">Pemerintah</option>
+                                        </select>
+                                    </div>
+                                
+                                    <div id="pengembalian_dana" class="alert alert-danger sponsor" role="alert">
+                                        <strong>
+                                            Saya membutuhkan bantuan pendanaan dari sponsor untuk menyelesaikan permasalahan
+                                            sengketa tanah saya.
+                                        </strong>
+                                    </div>
+                                
+                                    <div class="mb-2 pengacara">
+                                        <label class="form-label">Pilih Tindakan Pengacara</label>
+                                        <select class="form-select rounded-0" aria-label="Default select example"
+                                            name="bantuan_pengacara" required>
+                                            <option selected disabled>Pilih Bantuan Pengacara</option>
+                                            <option value="konsultasi">Konsultasi</option>
+                                            <option value="pendampingan">Pendampingan</option>
+                                            <option value="penindakan">Penindakan</option>
+                                        </select>
+                                    </div>
+                                
+                                    <div class="mb-2 pengacara">
+                                        <label for="anggaran_pengacara" class="form-label">Anggaran Pengacara</label>
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="number" class="form-control rounded-0" id="anggaran_pengacara-s"
+                                                    placeholder="Anggaran mulai dari ..."
+                                                    aria-describedby="input-anggaran_pengacara-s" name="anggaran_pengacara-s">
+                                            </div>
+                                            <div class="col-1 text-center"
+                                                style="width:4% !important; padding-right: 0px !important; padding-left: 0px !important">
+                                                -
+                                            </div>
+                                            <div class="col">
+                                                <input type="number" class="form-control rounded-0" id="anggaran_pengacara-e"
+                                                    placeholder="Sampai ..." aria-describedby="input-anggaran_pengacara-e"
+                                                    name="anggaran_pengacara-e">
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div id="pengembalian_dana" class="alert alert-danger pemerintah" role="alert">
+                                        <strong>
+                                            Saya hanya membutuhkan pertolongan agar permasalahan sengketa tanah saya
+                                            diteruskan
+                                            pada
+                                            Pemerintah.
+                                        </strong>
+                                    </div>
+                                
+                                    <div class="mb-2 sponsor">
+                                        <label for="keb_dana" class="form-label">Jumlah Dana Sponsor</label>
+                                        <input type="number" class="form-control rounded-0" id="keb_dana"
+                                            placeholder="Sebutkan Nilai Pengajuan" aria-describedby="input-keb_dana"
+                                            name="keb_dana" required>
+                                        <div id="input-keb_dana" class="form-text"></div>
+                                    </div>
+                                
+                                    <div class="mb-2 sponsor">
+                                        <label class="form-label">Pengembalian Dana Sponsor</label>
+                                        <select class="form-select rounded-0" aria-label="Default select example"
+                                            name="pengembalian_dana_sponsor" required>
+                                            <option selected disabled>Pilih Jenis Pengembalian</option>
+                                            <option value="70/30">Bagi Hasil 70/30*</option>
+                                            <option value="60/40">Bagi Hasil 60/40*</option>
+                                            <option value="50/50">Bagi Hasil 50/50*</option>
+                                            <option value="lain">Fee 50% Dari Pinjaman</option>
+                                            <option value="lain">Fee 75% Dari Pinjaman</option>
+                                            <option value="lain">Fee 100% Dari Pinjaman</option>
+                                        </select>
+                                        <small id="pengembalian_dana_sponsor" class="form-text text-muted">Bagi hasil di
+                                            rekomendasikan untuk kasus-kasus sengketa tanah yang berat. Tanda bintang(*)
+                                            adalah
+                                            pembagian untuk sponsor. </small>
+                                    </div>
+                                
+                                    <div class="mb-2 sponsor">
+                                        <label class="form-label" for="jaminan_dana">Jaminan Dana Sponsor</label>
+                                        <select class="form-select rounded-0" aria-label="Default select example" name="jaminan"
                                             required>
-                                        <div id="input-luas" class="form-text"></div>
+                                            <option selected disabled>Pilih Jaminan</option>
+                                            <option value="ada">Ada Jaminan</option>
+                                            <option value="tidak">Tidak Ada Jaminan</option>
+                                        </select>
+                                    </div>
+                                
+                                    <div class="mb-2 jaminan_berupa">
+                                        <label for="jaminan_berupa" class="form-label">Jaminan Berupa</label>
+                                        <select class="form-select rounded-0" id="lokasi" placeholder="Masukkan Jaminan"
+                                            aria-describedby="input-jaminan" name="jaminan_berupa" required>
+                                            <option value="Sertifikat Tanah">Sertifikat Tanah</option>
+                                            <option value="Sertifikat Rumah">Sertifikat Rumah</option>
+                                        </select>
+                                    </div>
+                                    {{-- <div class="mb-2">
+                                        <label for="ktp" class="form-label">Foto KTP</label>
+                                        <input class="form-control rounded-0" type="file" id="ktp" name="foto_ktp" required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="foto_lokasi" class="form-label">Foto Lokasi</label>
+                                        <input class="form-control rounded-0" type="file" id="foto_lokasi" name="foto_lokasi"
+                                            required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="dokumenTanah" class="form-label">Foto Dokumen Hak Tanah</label>
+                                        <input class="form-control rounded-0" type="file" id="dokumenTanah" name="dokumen_tanah"
+                                            required>
+                                    </div> --}}
+                                    <div class="mb-2 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" style="text-align:justify" for="exampleCheck1">Dengan
+                                            mengisi form ini saya
+                                            menyatakan bahwa semua data yang diberikan benar adanya dan laporan ini tidak
+                                            sedang dalam penanganan hukum pihak lain. Saya bersedia melakukan wawancara
+                                            mendalam
+                                            di
+                                            <b>PODCAST SENGKETA TANAH</b> dan bekerja sama dengan
+                                            Sponsor melalui <b>PLATFORM SENGKETA TANAH</b> untuk diselesaikan.</label>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="mb-2">
-                                <label for="lokasi" class="form-label">Lokasi</label>
-                                <input type="text" class="form-control rounded-0" id="lokasi"
-                                    placeholder="Masukkan Lokasi" aria-describedby="input-lokasi" name="lokasi"
-                                    required>
-                                <div id="input-lokasi" class="form-text"></div>
-                            </div>
-                            <div class="mb-2">
-                                <label for="kronologi" class="form-label">Kronologi</label>
-                                <textarea id="kronologi" class="form-control rounded-0" placeholder="Masukkan Kronologi"
-                                    aria-describedby="input-kronologi" name="kronologi" cols="30" rows="10"
-                                    required></textarea>
-                                <div id="input-kronologi" class="form-text"></div>
-                            </div>
-                            <div class="mb-2">
-                                <label class="form-label">Status Pelapor</label>
-                                <select class="form-select rounded-0" aria-label="Default select example"
-                                    name="status_pelapor" required>
-                                    <option value="Pemilik">Pemilik</option>
-                                    <option value="Kuasa Pemilik">Kuasa Pemilik</option>
-                                </select>
-                            </div>
-                            <div class="mb-2">
-                                <label class="form-label">Pilih Jenis Pertolongan</label>
-                                <select class="form-select rounded-0" aria-label="Default select example"
-                                    name="jenis_pertolongan" required>
-                                    <option selected disabled>Pilih Pertolongan</option>
-                                    <option value="sponsor">Sponsor</option>
-                                    <option value="pengacara">Pengacara</option>
-                                    <option value="pemerintah">Pemerintah</option>
-                                </select>
-                            </div>
-
-                            <div id="pengembalian_dana" class="alert alert-danger sponsor" role="alert">
-                                <strong>
-                                    Saya membutuhkan bantuan pendanaan dari sponsor untuk menyelesaikan permasalahan
-                                    sengketa tanah saya.
-                                </strong>
-                            </div>
-
-                            <div class="mb-2 pengacara">
-                                <label class="form-label">Pilih Tindakan Pengacara</label>
-                                <select class="form-select rounded-0" aria-label="Default select example"
-                                    name="bantuan_pengacara" required>
-                                    <option selected disabled>Pilih Bantuan Pengacara</option>
-                                    <option value="konsultasi">Konsultasi</option>
-                                    <option value="pendampingan">Pendampingan</option>
-                                    <option value="penindakan">Penindakan</option>
-                                </select>
-                            </div>
-
-                            <div class="mb-2 pengacara">
-                                <label for="anggaran_pengacara" class="form-label">Anggaran Pengacara</label>
-                                <div class="row">
-                                    <div class="col">
-                                        <input type="number" class="form-control rounded-0" id="anggaran_pengacara-s"
-                                            placeholder="Anggaran mulai dari ..."
-                                            aria-describedby="input-anggaran_pengacara-s" name="anggaran_pengacara-s">
-                                    </div>
-                                    <div class="col-1 text-center"
-                                        style="width:4% !important; padding-right: 0px !important; padding-left: 0px !important">
-                                        -
-                                    </div>
-                                    <div class="col">
-                                        <input type="number" class="form-control rounded-0" id="anggaran_pengacara-e"
-                                            placeholder="Sampai ..." aria-describedby="input-anggaran_pengacara-e"
-                                            name="anggaran_pengacara-e">
-                                    </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-dark">Kirim</button>
                                 </div>
-                            </div>
-
-                            <div id="pengembalian_dana" class="alert alert-danger pemerintah" role="alert">
-                                <strong>
-                                    Saya hanya membutuhkan pertolongan agar permasalahan sengketa tanah saya
-                                    diteruskan
-                                    pada
-                                    Pemerintah.
-                                </strong>
-                            </div>
-
-                            <div class="mb-2 sponsor">
-                                <label for="keb_dana" class="form-label">Jumlah Dana Sponsor</label>
-                                <input type="number" class="form-control rounded-0" id="keb_dana"
-                                    placeholder="Sebutkan Nilai Pengajuan" aria-describedby="input-keb_dana"
-                                    name="keb_dana" required>
-                                <div id="input-keb_dana" class="form-text"></div>
-                            </div>
-
-                            <div class="mb-2 sponsor">
-                                <label class="form-label">Pengembalian Dana Sponsor</label>
-                                <select class="form-select rounded-0" aria-label="Default select example"
-                                    name="pengembalian_dana_sponsor" required>
-                                    <option selected disabled>Pilih Jenis Pengembalian</option>
-                                    <option value="70/30">Bagi Hasil 70/30*</option>
-                                    <option value="60/40">Bagi Hasil 60/40*</option>
-                                    <option value="50/50">Bagi Hasil 50/50*</option>
-                                    <option value="lain">Fee 50% Dari Pinjaman</option>
-                                    <option value="lain">Fee 75% Dari Pinjaman</option>
-                                    <option value="lain">Fee 100% Dari Pinjaman</option>
-                                </select>
-                                <small id="pengembalian_dana_sponsor" class="form-text text-muted">Bagi hasil di
-                                    rekomendasikan untuk kasus-kasus sengketa tanah yang berat. Tanda bintang(*)
-                                    adalah
-                                    pembagian untuk sponsor. </small>
-                            </div>
-
-                            <div class="mb-2 sponsor">
-                                <label class="form-label" for="jaminan_dana">Jaminan Dana Sponsor</label>
-                                <select class="form-select rounded-0" aria-label="Default select example" name="jaminan"
-                                    required>
-                                    <option selected disabled>Pilih Jaminan</option>
-                                    <option value="ada">Ada Jaminan</option>
-                                    <option value="tidak">Tidak Ada Jaminan</option>
-                                </select>
-                            </div>
-
-                            <div class="mb-2 jaminan_berupa">
-                                <label for="jaminan_berupa" class="form-label">Jaminan Berupa</label>
-                                <select class="form-select rounded-0" id="lokasi" placeholder="Masukkan Jaminan"
-                                    aria-describedby="input-jaminan" name="jaminan_berupa" required>
-                                    <option value="Sertifikat Tanah">Sertifikat Tanah</option>
-                                    <option value="Sertifikat Rumah">Sertifikat Rumah</option>
-                                </select>
-                            </div>
-                            {{-- <div class="mb-2">
-                                <label for="ktp" class="form-label">Foto KTP</label>
-                                <input class="form-control rounded-0" type="file" id="ktp" name="foto_ktp" required>
-                            </div>
-                            <div class="mb-2">
-                                <label for="foto_lokasi" class="form-label">Foto Lokasi</label>
-                                <input class="form-control rounded-0" type="file" id="foto_lokasi" name="foto_lokasi"
-                                    required>
-                            </div>
-                            <div class="mb-2">
-                                <label for="dokumenTanah" class="form-label">Foto Dokumen Hak Tanah</label>
-                                <input class="form-control rounded-0" type="file" id="dokumenTanah" name="dokumen_tanah"
-                                    required>
-                            </div> --}}
-                            <div class="mb-2 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" style="text-align:justify" for="exampleCheck1">Dengan
-                                    mengisi form ini saya
-                                    menyatakan bahwa semua data yang diberikan benar adanya dan laporan ini tidak
-                                    sedang dalam penanganan hukum pihak lain. Saya bersedia melakukan wawancara
-                                    mendalam
-                                    di
-                                    <b>PODCAST SENGKETA TANAH</b> dan bekerja sama dengan
-                                    Sponsor melalui <b>PLATFORM SENGKETA TANAH</b> untuk diselesaikan.</label>
-                            </div>
+                            </form>
                         </div>
+                    </div>
+                </div>
+            
+            </div>
+        
+            <div class="modal fade my-auto" id="exampleC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header p-0">
+                            <h1 class="modal-title mx-auto text-danger display-1">
+                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" class="mb-2" style="width: 100px"
+                                    alt="">
+                            </h1>
+                        </div>
+                        <div class="modal-body" style="text-align: justify">
+                        
+                            Anda harus memiliki akun <b>SPONSOR</b> sebelum melakukan Bid (Bid adalah proses penawaran anda
+                            dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-dark">Kirim</button>
+                            <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                            <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                            <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>
-
-    </div>
-
-    <div class="modal fade my-auto" id="exampleC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header p-0">
-                    <h1 class="modal-title mx-auto text-danger display-1">
-                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" class="mb-2" style="width: 100px"
-                            alt="">
-                    </h1>
-                </div>
-                <div class="modal-body" style="text-align: justify">
-
-                    Anda harus memiliki akun <b>SPONSOR</b> sebelum melakukan Bid (Bid adalah proses penawaran anda
-                    dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja.</div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+        
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0"
+                nonce="Ee2Zutm6"></script>
+            
+            <div class="row mt-4 puter g-0">
+                <div class="card-body text-white text-center" style="background: #61481C">
+                    <p></p>
+                    <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
+                    <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
+                    </p>
+                    <hr>
+                    <p style="font-size:14px" class="card-title pb-3">Sovereign Plaza. Lt. 19 <br> Jl. TB Simatupang No.
+                        36,
+                        TB Simatupang, Jakarta Selatan</p>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0"
-        nonce="Ee2Zutm6"></script>
-    
-    <div class="row mt-4 puter g-0">
-        <div class="card-body text-white text-center" style="background: #61481C">
-            <p></p>
-            <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
-            <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
-            </p>
-            <hr>
-            <p style="font-size:14px" class="card-title pb-3">Sovereign Plaza. Lt. 19 <br> Jl. TB Simatupang No.
-                36,
-                TB Simatupang, Jakarta Selatan</p>
-        </div>
-    </div>
 
         </div>
 

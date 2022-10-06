@@ -4560,7 +4560,7 @@
                 </div>
             </div>
 
-            <nav aria-label="Page navigation example">
+            <nav aria-label="Page navigation example" style="margin-top: 10px; margin-bottom: 10px;">
                 <ul class="pagination">
                     <li class="page-item">
                         <a class="page-link" href="#" aria-label="Previous">
