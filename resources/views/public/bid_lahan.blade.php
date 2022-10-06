@@ -1139,7 +1139,7 @@
                     </div>
 
                     <div class="col-auto">
-                        <a class="btn" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
+                        <a class="btn" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari Bid Lahan</a>
                     </div>
 
                     <div class="col-lg mb-2">
@@ -1957,7 +1957,7 @@
 
                 <div class="col-6 mobile mt-0">
                     <div class="ms-1 d-grid ">
-                        <a class="btn btn-sm fw-bold" style="color: #000" href="{{url('')}}/join">Pelajari</a>
+                        <a class="btn btn-sm fw-bold" style="color: #000" href="{{url('')}}/join">Pelajari Bid Lahan</a>
                     </div>
                 </div>
             </div>
