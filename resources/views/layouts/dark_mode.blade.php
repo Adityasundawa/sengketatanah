@@ -84,6 +84,7 @@
             $('.bg-card-dark-mode').each(function(i, el) {
                 el.classList.add('bg-dark-mode');
             });
+            // $('.fa-solid.fa-bars').css()
         } else {
             $('.bg-card-dark-mode').each(function(i, el) {
                 el.classList.remove('bg-dark-mode');
