@@ -2526,7 +2526,7 @@
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0" nonce="Ee2Zutm6"></script>
         <div class="row mt-4">
-            <div class="card-body bg-dark text-white text-center">
+            <div class="card-body bg-dark text-white text-center  bg-card-dark-mode">
                 <p></p>
                 <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
                 <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved</p>

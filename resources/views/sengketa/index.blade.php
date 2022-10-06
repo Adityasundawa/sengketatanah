@@ -689,7 +689,6 @@
             </style>
             <div class="form-check form-switch">
                 <input class="form-check-input dark-mode" type="checkbox" role="switch" id="dark-mode">
-             
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -747,7 +746,7 @@
         </div>
     </div>
 
-    <div class="text-white rounded-0 jumbotron desktop">
+    <div class="text-white rounded-0 jumbotron desktop bg-card-dark-mode">
         <div class="row">
             {{-- <div class="col-md-12 text-center mt-3">
                 <div class="mobile">
@@ -17747,7 +17746,7 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0"
         nonce="Ee2Zutm6"></script>
     <div class="row mt-4 puter g-0">
-        <div class="card-body text-white text-center" style="background: #61481C">
+        <div class="card-body text-white text-center bg-card-dark-mode" style="background: #61481C">
             <p></p>
             <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
             <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved

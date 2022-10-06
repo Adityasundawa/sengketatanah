@@ -27,7 +27,7 @@
                 contrast: 90,
                 sepia: 10
             });
-            $('div.card-body.bg-card-dark-mode').each(function(i, el) {
+            $('.bg-card-dark-mode').each(function(i, el) {
                 el.classList.add('bg-dark-mode');
                 // console.log(el)
             });
@@ -39,7 +39,7 @@
 
         } else {
             DarkReader.disable()
-            $('div.card-body.bg-card-dark-mode').each(function(i, el) {
+            $('.bg-card-dark-mode').each(function(i, el) {
                 el.classList.remove('bg-dark-mode');
             });
             setTimeout(function() {
@@ -61,7 +61,7 @@
             setTimeout(function() {
                 localStorage.setItem('dark-mode', "on");
                 console.log(localStorage.getItem('dark-mode'));
-                $('div.card-body.bg-card-dark-mode').each(function(i, el) {
+                $('.bg-card-dark-mode').each(function(i, el) {
                     el.classList.add('bg-dark-mode');
                     // console.log(el)
                 });
@@ -72,7 +72,7 @@
             localStorage.removeItem('dark-mode')
             setTimeout(function() {
                 console.log(localStorage.getItem('dark-mode'));
-                $('div.card-body.bg-card-dark-mode').each(function(i, el) {
+                $('.bg-card-dark-mode').each(function(i, el) {
                     el.classList.remove('bg-dark-mode');
                     // console.log(el)
                 });
@@ -81,11 +81,11 @@
     });
     $(document).ready(function() {
         if (DarkReader.isEnabled()) {
-            $('div.card-body.bg-card-dark-mode').each(function(i, el) {
+            $('.bg-card-dark-mode').each(function(i, el) {
                 el.classList.add('bg-dark-mode');
             });
         } else {
-            $('div.card-body.bg-card-dark-mode').each(function(i, el) {
+            $('.bg-card-dark-mode').each(function(i, el) {
                 el.classList.remove('bg-dark-mode');
             });
         }

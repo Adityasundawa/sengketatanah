@@ -1319,7 +1319,7 @@
 
     </div>
     <div class="row mt-4">
-        <div class="card-body text-white text-center" style="background: #61481C">
+        <div class="card-body text-white text-center  bg-card-dark-mode" style="background: #61481C">
             <p></p>
             <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
             <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
