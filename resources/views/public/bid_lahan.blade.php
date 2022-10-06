@@ -585,7 +585,6 @@
     @include('layouts.template-public.header')
 
 
-
     <div class="card aboute-bottom rounded-0 mobile">
         <div class="card border-0 shadow-sm" style="margin-top:-10px">
             <div class="card-body p-0">
@@ -1132,7 +1131,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-12 mt-2">
+            <div class="col-lg-12 mt-3">
                 <div class="row g-2 desktop">
 
                     <div class="col-auto">
@@ -2390,12 +2389,11 @@
                                                             <div class="modal-content">
                                                                 <div class="modal-header p-0">
                                                                     <h1 class="modal-title mx-auto text-danger display-1">
-                                                                        <i class="fa-regular fa-circle-xmark"></i>
+                                                                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" class="mb-2" style="width: 100px" alt="">
                                                                     </h1>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Anda harus masuk sebagai sponsor sebelum
-                                                                    melakukan bid.
+                                                                    Anda harus memiliki akun LENDER sebelum melakukan Bid (Bid adalah proses penawaran anda dengan owner). Jika anda belum menemukan kesepakatan anda bisa close bidding kapan saja
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>

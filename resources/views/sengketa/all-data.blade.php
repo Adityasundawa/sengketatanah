@@ -1127,8 +1127,7 @@
                     </div>
                 </div>
                 <div class="row g-0">
-
-                    <div class="card mb-0 border-0  mt-2" style="z-index:999">
+                    <div class="card mb-0 border-0 mt-2" style="z-index:999">
                         <div class="card-body pb-0">
                             <div class="row g-2 justify-content-between text-center scroll-simple" style="overflow-x: auto; flex-wrap: nowrap">
                                 <div class="col mb-4">
@@ -1470,7 +1469,6 @@
 
                         </div>
                     </div>
-
                 </div>
 
 
@@ -1946,7 +1944,7 @@
                 </div>
             </div>
 
-            <div class="col-6 mobile mt-2">
+            <div class="col-6 mobile" style="margin-top:5px">
                 <div class="ms-1 d-grid gap-2">
                     <a class="btn btn-sm fw-bold" style="background-color: #; color: #A47E3B" href="{{url('')}}/join">Pelajari</a>
                 </div>

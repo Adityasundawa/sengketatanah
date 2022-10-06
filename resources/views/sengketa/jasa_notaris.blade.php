@@ -1070,10 +1070,46 @@
     </div>
 
     <div class="container">
+        <div class="row g-2 mt-2 desktop">
+            <div class="col-auto">
+                <a href="{{url('')}}/pilih-user" class="btn" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
+            </div>
+
+            <div class="col-auto">
+                <a class="btn" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
+            </div>
+
+            <div class="col-lg">
+                <div class="card border-0">
+                    <div class="input-group">
+                        <div class="input-group-prepend my-auto">
+                            <span class="px-3">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
+                        <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg mobile mt-2">
+            <div class="card border-0">
+                <div class="input-group">
+                    <div class="input-group-prepend my-auto">
+                        <span class="px-3">
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
+                    <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
+                </div>
+            </div>
+        </div>
 
         <div class="row justify-content-center mb-2">
 
-            <div class="col-lg-12 mt-3">
+            <div class="col-lg-12 mt-2">
 
                 <div class="card border-0" style="z-index:999">
                     <div class="card-body pb-0">
@@ -1299,8 +1335,22 @@
 
         </div>
 
-        <div class="row justify-content-center mb-2">
-            <div class="col-lg-12 mt-4">
+        <div class="row g-0">
+            <div class="col-6 mobile" style="margin-top:5px">
+                <div class="d-grid gap-2 me-1">
+                    <a href="{{url('')}}/pilih-user" class="btn btn-sm" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
+                </div>
+            </div>
+
+            <div class="col-6 mobile" style="margin-top:5px">
+                <div class="ms-1 d-grid gap-2">
+                    <a class="btn btn-sm" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-3">
+            <div class="col-lg-12 mt-3">
                 <h5>
                     Cari Jasa Notaris
                 </h5>
@@ -1313,12 +1363,6 @@
                         <select id="kota" class="form-select rounded-0" style="border-right:0px; border-left:0px; border-top:0px; " aria-label="Default select example">
                             <option selected disabled>Pilih Kota/Kabupaten</option>
                         </select>
-                    </div>
-                    <div class="col-lg">
-                        <div class="input-group">
-                            <input type="text" class="form-control rounded-0 border-0" placeholder="Search" name="search">
-                            <button type="submit" class="btn h-100 mb-0 btn-primary rounded-0">Search</button>
-                        </div>
                     </div>
                 </form>
                 <script>
@@ -1432,7 +1476,7 @@
 
                     })
                 </script>
-                <div class="card mt-2 border-0 shadow-sm">
+                <div class="card mt-3 border-0 shadow-sm">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-8">
@@ -1440,7 +1484,7 @@
                                     4532 Notaris Ditemukan
                                 </h4>
                                 <p>
-                                    Jakarta
+                          Semua Wilayah
                                 </p>
                                 <div class="row">
 
@@ -1535,10 +1579,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <h4>
-                                    Notaris VIP
-                                </h4>
-                                <b>(VIP adalah akun berbayar)</b>
+                                <img src="{{asset('')}}images/NOTARIS VIP_BANNER.jpg" class="img-fluid">
 
                                 <div class="row">
 
@@ -1570,7 +1611,7 @@
                                                     </b>
 
                                                     <p>
-                                                      Notaris
+                                                        Notaris
                                                     </p>
                                                     <button class="btn btn-dark  pt-1 pb-1 mt-0 mb-0">
                                                         <i class="fa fa-comment"></i>

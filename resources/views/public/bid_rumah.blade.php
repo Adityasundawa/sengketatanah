@@ -479,11 +479,17 @@
             overflow-x: hidden
         }
 
+        .mt-desktop {
+            margin-top: -8px;
+        }
+
         @media (max-width: 1199.98px) {
             .mobile-scroll {
                 overflow-x: scroll;
+            }
 
-
+            .mt-desktop {
+                margin-top: 0px;
             }
 
             .mobile-scroll::-webkit-scrollbar {
@@ -1116,7 +1122,7 @@
     <div class="container">
 
         <div class="row justify-content-center mb-2">
-            <div class="col-lg mobile mt-1 mb-2">
+            <div class="col-lg mobile mt-2 mb-2">
                 <div class="card border-0">
                     <div class="input-group">
                         <div class="input-group-prepend my-auto">
@@ -1129,8 +1135,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-12 mt-2 desktop mb-2">
-                <div class="row g-2 ">
+            <div class="col-lg-12 desktop mb-2">
+                <div class="row g-2 mt-2">
 
                     <div class="col-auto">
                         <a class="btn" style="background-color: #61481C; color: #fff" href="{{url('')}}/register">Daftar Sekarang</a>
@@ -1501,7 +1507,7 @@
 
 
 
-        <div class="col-lg-12 mt-2" style="display:none">
+        <div class="col-lg-12" style="display:none">
             <div class="card border-0 shadow-sm desktop">
                 <div class="card-body pb-1 pt-2">
                     <div class="row align-items-center g-0">
@@ -1949,7 +1955,7 @@
             </div>
         </div>
 
-        <div class="col-lg mobile mb-2"  style="margin-top:-10px">
+        <div class="col-lg mobile mb-2" style="margin-top:-10px">
             <div class="row g-0">
                 <div class="col-6">
                     <div class="d-grid gap-2">
@@ -1965,7 +1971,7 @@
             </div>
         </div>
         {{-- Orang Appraisal --}}
-        <div class="col-lg-12 mt-0">
+        <div class="col-lg-12 mt-desktop">
             <div class="card border-0 shadow-sm">
                 <div class="card-body">
                     <div class="row justify-content-center align-items-center">
@@ -2039,7 +2045,7 @@
             </div>
         </div>
 
-      
+
 
         <script>
             $('#right-orang1').click(function() {
