@@ -4177,7 +4177,7 @@
                 }
             
             </style>
-        
+
             <hr>
         
             <div class="row justify-content-center">
@@ -4537,7 +4537,7 @@
         
             <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0"
                 nonce="Ee2Zutm6"></script>
-            
+
             <div class="row mt-4 puter g-0">
                 <div class="card-body text-white text-center" style="background: #61481C">
                     <p></p>

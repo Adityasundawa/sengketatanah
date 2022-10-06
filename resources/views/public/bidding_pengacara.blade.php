@@ -1108,7 +1108,7 @@
 
                     <div class="col-auto">
                         <a class="btn" style="background-color: #A47E3B; color: #fff" href="{{url('')}}/join">Pelajari
-                            Bid Sengketa</a>
+                            Bid Pengacara</a>
                     </div>
 
                     <div class="col-lg">
