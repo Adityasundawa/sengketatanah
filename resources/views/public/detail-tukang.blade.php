@@ -789,6 +789,7 @@
             hidestuff();
         });
     </script>
+       @include('layouts.dark_mode')
   
 </body>
 
