@@ -581,6 +581,19 @@
             background: #61481C;
             border: 2px solid #61481C;
         }
+
+        .btn.btn-outline-brownie {
+            color: #A47E3B;
+            background: rgba(240, 184, 86, 25%);
+            border: 2px solid #A47E3B;
+        }
+
+        .btn.btn-outline-brownie:hover {
+            color: #fff;
+            background: #A47E3B;
+            border: 2px solid #A47E3B;
+        }
+    </style
     </style>
 
 </head>
@@ -1963,9 +1976,9 @@
                     </div>
                 </div>
 
-                <div class="col-auto">
+                <div class="col">
                     <div class="ms-1 d-grid ">
-                        <a class="btn btn-sm fw-bold btn-outline-brown rounded-5" href="{{url('')}}/join">Pelajari Bid Rumah</a>
+                        <a class="btn btn-sm fw-bold btn-outline-brownie rounded-5" href="{{url('')}}/join">Pelajari Bid Rumah</a>
                     </div>
                 </div>
             </div>

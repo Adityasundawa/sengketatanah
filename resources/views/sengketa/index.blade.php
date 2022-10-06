@@ -1341,6 +1341,12 @@
                     <div class="card-body pb-0">
                         <div class="row g-2 justify-content-between text-center scroll-simple" style="overflow-x: auto; flex-wrap: nowrap;">
                             <div class="col mb-4">
+                                <a href="{{url('/')}}/bid-sengketa" class="btn btn-brown d-flex align-items-center h-100 rounded-4 shadow" style="width: 200px">
+                                    <div class="mt-0 fs-5 fw-bold">Cara Bergabung Di Tanah Merdeka</div>
+                                </a>
+                            </div>
+
+                            <div class="col mb-4">
                                 <a href="{{url('/')}}/bid-sengketa" class="btn btn-outline-light text-dark w-100 rounded-4 shadow">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="71px" x="0" y="0" viewBox="0 0 50 60" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                         <circle r="25" cx="25" cy="30" fill="#ffffff" shape="circle"></circle>
