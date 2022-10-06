@@ -2103,7 +2103,7 @@
             <script async defer crossorigin="anonymous"
                 src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0" nonce="Ee2Zutm6"></script>
             <div class="row mt-4 puter g-0">
-                <div class="card-body text-white text-center" style="background: #61481C">
+                <div class="card-body text-white text-center bg-card-dark-mode" style="background: #61481C">
                     <p></p>
                     <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
                     <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved

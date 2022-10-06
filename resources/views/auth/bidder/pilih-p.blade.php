@@ -28,6 +28,7 @@
             padding: 0px;
             overflow-x: hidden;
         }
+
         .blink {
             animation: blink-animation 1s steps(5, start) infinite;
             -webkit-animation: blink-animation 1s steps(5, start) infinite;
@@ -656,7 +657,8 @@
         .row-col {
             text-align: right
         }
-        @media (max-width: 767.98px) { 
+
+        @media (max-width: 767.98px) {
             .row.row-md {
                 text-align: center !important;
             }
@@ -720,7 +722,7 @@
         <h5 class="text-center text-muted fw-normal">Pilih Jenis Akun yang akan Anda Buat!</h5>
 
         <div class="wrapper mt-4">
-    
+
             <div class="card mt-2 mb-2 rounded-4">
                 <div class="card-body p-5">
                     <div class="row row-md align-items-center">
@@ -734,7 +736,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="card mt-2 mb-2 rounded-4">
                 <div class="card-body p-5">
                     <div class="row row-md align-items-center">
@@ -749,20 +751,20 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
 
     {{-- <div class="row g-0 puter w-100">
         <div class="card-body text-white text-center" style="background: #61481C">
             <p></p>
             <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
-            <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
-            </p>
-            <hr>
-            <p style="font-size:14px" class="card-title pb-3">Sovereign Plaza. Lt. 19 <br> Jl. TB Simatupang No.
-                36,
-                TB Simatupang, Jakarta Selatan</p>
-        </div>
+    <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
+    </p>
+    <hr>
+    <p style="font-size:14px" class="card-title pb-3">Sovereign Plaza. Lt. 19 <br> Jl. TB Simatupang No.
+        36,
+        TB Simatupang, Jakarta Selatan</p>
+    </div>
     </div> --}}
 
 
@@ -776,6 +778,7 @@
 
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/b-2.2.3/datatables.min.js">
     </script>
+    @include('layouts.dark_mode')
 </body>
 
 </html>

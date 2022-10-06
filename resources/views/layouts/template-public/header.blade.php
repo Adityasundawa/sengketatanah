@@ -2,6 +2,9 @@
     <div class="container-fluid">
         <a class="navbar-brand fw-bold fs-4" href="{{url('/')}}">
             <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px" class="img-fluid me-2">SENGKETA TANAH</a>
+        <div class="form-check form-switch">
+            <input class="form-check-input dark-mode" type="checkbox" role="switch" id="dark-mode">
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

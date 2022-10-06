@@ -689,7 +689,6 @@
             </style>
             <div class="form-check form-switch">
                 <input class="form-check-input dark-mode" type="checkbox" role="switch" id="dark-mode">
-             
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -749,45 +748,32 @@
 
     <div class="text-white rounded-0 jumbotron desktop" style="background: transparent !important">
 
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <a href="{{url('')}}/join">
-                    <img src="{{asset('')}}images/banner_tanah_merdeka.png" class="d-block mx-auto gambar-banner"
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="{{url('')}}/join">
+                        <img src="{{asset('')}}images/banner_tanah_merdeka.png" class="d-block mx-auto gambar-banner"
+                            style="width: 100%" alt="...">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" class="d-block mx-auto gambar-banner"
                         style="width: 100%" alt="...">
-                </a>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" class="d-block mx-auto gambar-banner"
-                    style="width: 100%" alt="...">
-            </div>
+            <button class="carousel-control-prev desktop" type="button" style="left: -5%"
+                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next desktop" type="button" style="right: -5%"
+                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev desktop" type="button" style="left: -5%"
-            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next desktop" type="button" style="right: -5%"
-            data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    {{-- <div class="col-md text-center my-auto"> --}}
-
-
-
-    {{-- <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="gambar-banner" width="50%" alt="">
-    <h1>Solusi Untuk Anda</h1>
-    <h3>Kami mempertemukan korban sengketa tanah dengan sponsor, pengacara dan
-        pemerintah dalam satu platform.</h3>
-
-    <a class="btn rounded-5 mt-3 text-white" style="background: #BF9742" href="{{url('')}}/join">Bergabung
-        Sekarang</a> --}}
-
-    {{-- </div> --}}
-    </div>
+        
+        </div>
 
     </div>
 
@@ -17736,7 +17722,7 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0"
         nonce="Ee2Zutm6"></script>
     <div class="row mt-4 puter g-0">
-        <div class="card-body text-white text-center" style="background: #61481C">
+        <div class="card-body text-white text-center bg-card-dark-mode" style="background: #61481C">
             <p></p>
             <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
             <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved

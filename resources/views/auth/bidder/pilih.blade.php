@@ -790,6 +790,7 @@
 
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/b-2.2.3/datatables.min.js">
     </script>
+      @include('layouts.dark_mode')
 </body>
 
 </html>
