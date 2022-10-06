@@ -166,6 +166,8 @@
 
         }
 
+
+
         .bdge {
             height: 21px;
             background-color: orange;
@@ -15559,7 +15561,7 @@
     </script>
 
 
-
+@include('layouts.dark_mode')
 
 </body>
 
