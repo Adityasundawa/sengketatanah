@@ -733,6 +733,7 @@
             <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 150px" alt="" srcset="" class="img-fluid">
         </div>
     </div> --}}
+
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -1343,9 +1344,8 @@
                     <div class="card-body pb-0">
                         <div class="row g-2 justify-content-between text-center scroll-simple" style="overflow-x: auto; flex-wrap: nowrap;">
                             <div class="col mb-4">
-                                <a href="{{url('/')}}/bid-sengketa" class="btn d-flex align-items-center h-100 rounded-4 shadow" style="background-color: rgba(190, 150, 66, 90%); color: white; width: 200px">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="85px" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><circle r="12" cx="12" cy="12" fill="#c4a055" shape="circle"></circle><g transform="matrix(0.7,0,0,0.7,3.6000000000000014,3.6000000000000014)"><path d="m13 23h8a1 1 0 0 0 1-1v-20a1 1 0 0 0 -1-1h-8a1 1 0 0 0 0 2h7v18h-7a1 1 0 0 0 0 2z" fill="#fff" data-original="#000000" class=""></path><path d="m2 12a1 1 0 0 0 1 1h11.586l-2.293 2.293a1 1 0 1 0 1.414 1.414l4-4a.99.99 0 0 0 .217-.326 1 1 0 0 0 0-.764.99.99 0 0 0 -.217-.326l-4-4a1 1 0 1 0 -1.414 1.414l2.293 2.295h-11.586a1 1 0 0 0 -1 1z" fill="#fff" data-original="#000000" class=""></path></g></svg>
-                                    <div class="mt-0 fw-bold" style="font-size: 14px">Cara Bergabung Di Tanah Merdeka</div>
+                                <a href="{{url('/')}}/bid-sengketa" class="btn d-flex align-items-center h-100 rounded-4 shadow btn-outline-light" style="width: 200px">
+                                    <img src="{{asset('')}}images/cara_bergabung_tanah_merdeka.png" style="width: 100%" alt=""><br>
                                 </a>
                             </div>
 
