@@ -1328,6 +1328,7 @@
                     </span>
                 </div>
                 <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
+                <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
             </div>
         </div>
 
