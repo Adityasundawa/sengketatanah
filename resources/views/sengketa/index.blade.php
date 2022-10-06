@@ -747,30 +747,19 @@
         </div>
     </div>
 
-    <div class="text-white rounded-0 jumbotron desktop">
-        <div class="row">
-            {{-- <div class="col-md-12 text-center mt-3">
-                <div class="mobile">
-                    <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 100px" alt="" srcset=""
-            class="img-fluid">
-        </div>
-        <div class="desktop-2">
-            <img src="{{asset('/uploads/sengketa-logo_pas-9.png')}}" style="width: 150px" alt="" srcset=""
-                class="img-fluid">
-        </div>
-    </div> --}}
+    <div class="text-white rounded-0 jumbotron desktop" style="background: transparent !important">
 
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <a href="{{url('')}}/join">
                     <img src="{{asset('')}}images/banner_tanah_merdeka.png" class="d-block mx-auto gambar-banner"
-                        style="width: 90%" alt="...">
+                        style="width: 100%" alt="...">
                 </a>
             </div>
             <div class="carousel-item">
                 <img src="{{asset('')}}uploads/banner_sengketa_tanah_2.png" class="d-block mx-auto gambar-banner"
-                    style="width: 90%" alt="...">
+                    style="width: 100%" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev desktop" type="button" style="left: -5%"
