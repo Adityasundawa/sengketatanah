@@ -518,9 +518,21 @@
             display: block;
         }
 
+        .gambar-sesuai {
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+        }
+
         @media (max-width: 1000px) {
             .mobile {
                 display: block;
+            }
+
+            .gambar-sesuai {
+                height: 250px;
+                width: 100%;
+                object-fit: cover;
             }
 
             .desktop {
@@ -669,6 +681,8 @@
             }
         }
 
+      
+
     </style>
 
 </head>
@@ -682,17 +696,16 @@
                     class="img-fluid me-2">SENGKETA TANAH</a>
             <style>
                 .form-check-input:checked {
-                    background-color: red
-                    border-color: pink;
+                    background-color: red border-color: pink;
                 }
 
             </style>
             <div class="form-check form-switch">
                 <input class="form-check-input dark-mode" type="checkbox" role="switch" id="dark-mode">
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button class="navbar-toggler pe-3 ps-3 pt-2 pb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fa-solid fa-bars"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -735,8 +748,8 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <a href="{{url('')}}/join">
-                    <img src="{{asset('')}}images/banner_tanah_merdeka.png" class="d-block mx-auto"
-                        style="width: 95%" alt="...">
+                    <img src="{{asset('')}}images/banner_tanah_merdeka.png" class="d-block mx-auto" style="width: 95%"
+                        alt="...">
                 </a>
             </div>
             <div class="carousel-item">
@@ -1449,8 +1462,11 @@
                         <div class="row g-2 justify-content-between text-center scroll-simple"
                             style="overflow-x: auto; flex-wrap: nowrap;">
                             <div class="col mb-4">
-                                <a href="{{url('/')}}/bid-sengketa" class="btn d-flex align-items-center h-100 rounded-4 shadow btn-outline-light" style="width: 200px">
-                                    <img src="{{asset('')}}images/tanah_merdeka_join.png" style="width: 100%" alt=""><br>
+                                <a href="{{url('/')}}/bid-sengketa"
+                                    class="btn d-flex align-items-center h-100 rounded-4 shadow btn-outline-light"
+                                    style="width: 200px">
+                                    <img src="{{asset('')}}images/tanah_merdeka_join.png" style="width: 100%"
+                                        alt=""><br>
                                 </a>
                             </div>
 
@@ -2687,7 +2703,7 @@
 
         </div>
 
-        <div class="card-body bg-card-dark-mode" style="background-color:#FAFAD2;">
+        <div class="card-body bg-card-dark-mode">
 
             <div class="row align-items-center justify-content-center">
 
@@ -2889,8 +2905,8 @@
                                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered">
                                                     <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
+                                                        <div class="modal-header p-0 pb-2">
+                                                            <h1 class="modal-title mx-auto text-danger display-1 mb-2">
                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
                                                                     style="width: 100px" alt="">
                                                             </h1>
@@ -5168,7 +5184,7 @@
 
         </div>
 
-        <div class="card-body bg-card-dark-mode" style="background-color:#FAFAD2;">
+        <div class="card-body bg-card-dark-mode">
 
             <div class="row align-items-center justify-content-center mt-2">
 
@@ -5256,8 +5272,8 @@
                                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered">
                                                     <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
+                                                    <div class="modal-header p-0 pb-2">
+                                                            <h1 class="modal-title mx-auto text-danger display-1 mb-2">
                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
                                                                     style="width: 100px" alt="">
                                                             </h1>
@@ -6641,7 +6657,7 @@
             </table>
         </div>
 
-        <div class="card-body bg-card-dark-mode" style="background-color:#FAFAD2;">
+        <div class="card-body bg-card-dark-mode">
 
             <div class="row align-items-center justify-content-center">
 
@@ -8887,7 +8903,7 @@
             {{-- <div class="card rounded-0 border-0 " style="margin-top:-10px">
                             <!-- <div class="card-header bg-white border-0">
                             </div> -->
-                            <div class="card-body bg-card-dark-mode" style="background-color:#FAFAD2;">
+                            <div class="card-body bg-card-dark-mode">
                                 <div class="row justify-content-center">
                                 
                                     <div class="col-1 arrow-desktop text-center">
@@ -9037,7 +9053,7 @@
         <!-- <div class="card-header bg-white border-0">
                             
                             </div> -->
-        <div class="card-body bg-card-dark-mode" style="background-color:#FAFAD2;">
+        <div class="card-body bg-card-dark-mode">
             <div class="row justify-content-center">
 
                 <div class="col-1 arrow-desktop text-center">
@@ -9226,7 +9242,7 @@
 
     </div>
 
-    <div class="card-body bg-card-dark-mode" style="background-color:#FAFAD2;">
+    <div class="card-body bg-card-dark-mode">
 
         <div class="row align-items-center justify-content-center">
 
@@ -10592,7 +10608,7 @@
     <div class="card rounded-0 border-0 " style="margin-top:-10px">
         <!-- <div class="card-header bg-white border-0">
                         </div> -->
-        <div class="card-body bg-card-dark-mode" style="background-color:#FAFAD2;">
+        <div class="card-body bg-card-dark-mode">
             <div class="row justify-content-center">
 
                 <div class="col-1 arrow-desktop text-center">
@@ -10747,7 +10763,7 @@
         <!-- <div class="card-header bg-white border-0">
 
                         </div> -->
-        <div class="card-body bg-card-dark-mode" style="background-color:#FAFAD2;">
+        <div class="card-body bg-card-dark-mode">
             <div class="row justify-content-center">
 
                 <div class="col-1 arrow-desktop text-center">
@@ -11084,7 +11100,7 @@
             </table>
         </div>
 
-        <div class="card-body bg-card-dark-mode" style="background-color:#FAFAD2;">
+        <div class="card-body bg-card-dark-mode">
 
             <div class="row align-items-center justify-content-center">
 
@@ -13367,7 +13383,7 @@
 
     </div>
 
-    <div class="card-body bg-card-dark-mode" style="background-color:#FAFAD2;">
+    <div class="card-body bg-card-dark-mode">
 
 
         <div class="row  mobile-scroll mt-2 align-items-center">
@@ -14858,7 +14874,7 @@
     </table>
     </div>
 
-    <div class="card-body bg-card-dark-mode" style="background-color:#FAFAD2;">
+    <div class="card-body bg-card-dark-mode">
 
         <div class="row align-items-center justify-content-center">
 
@@ -16160,7 +16176,7 @@
     {{-- <div class="card rounded-0 border-0 " style="margin-top:-30px">
                     <!-- <div class="card-header bg-white border-0">
                     </div> -->
-                    <div class="card-body bg-card-dark-mode" style="background-color:#FAFAD2;">
+                    <div class="card-body bg-card-dark-mode">
                         <div class="row justify-content-center">
 
                             <div class="col-1 arrow-desktop text-center">
@@ -16321,7 +16337,7 @@
         <!-- <div class="card-header bg-white border-0">
 
                     </div> -->
-        <div class="card-body bg-card-dark-mode" style="background-color:#FAFAD2;">
+        <div class="card-body bg-card-dark-mode">
             <div class="row justify-content-center">
 
                 <div class="col-1 arrow-desktop text-center">
@@ -16709,20 +16725,20 @@
 
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="{{asset('')}}images/lahan1.jpeg" class="d-block image-kunam-2"
-                                            alt="...">
+                                        <img src="{{asset('')}}images/lahan1.jpeg"
+                                            class="d-block image-kunam-2 gambar-sesuai" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="{{asset('')}}images/lahan2.jpeg" class="d-block image-kunam-2"
-                                            alt="...">
+                                        <img src="{{asset('')}}images/lahan2.jpeg"
+                                            class="d-block image-kunam-2 gambar-sesuai" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="{{asset('')}}images/lahan3.jpeg" class="d-block image-kunam-2"
-                                            alt="...">
+                                        <img src="{{asset('')}}images/lahan3.jpeg"
+                                            class="d-block image-kunam-2 gambar-sesuai" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="{{asset('')}}images/lahan4.jpeg" class="d-block image-kunam-2"
-                                            alt="...">
+                                        <img src="{{asset('')}}images/lahan4.jpeg"
+                                            class="d-block image-kunam-2 gambar-sesuai" alt="...">
                                     </div>
                                 </div>
 
@@ -17081,28 +17097,32 @@
                                         <figure class="mx-auto zoom" onmousemove="zoom(event)"
                                             style="background-image: url({{asset('')}}images/rm1.jpg); background-size: 200%">
                                             <img src="{{asset('')}}images/rm1.jpg" onmousemove='zoom(event)'
-                                                class="d-block image-kunam-2" alt="...">
+                                                class="d-block image-kunam-2 gambar-sesuai"
+                                                style="width:100%;;object-fit:cover" alt="...">
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure class="mx-auto zoom" onmousemove="zoom(event)"
                                             style="background-image: url({{asset('')}}images/rm2.jpg); background-size: 200%">
                                             <img src="{{asset('')}}images/rm2.jpg" onmousemove='zoom(event)'
-                                                class="d-block image-kunam-2" alt="...">
+                                                class="d-block image-kunam-2 " style="width:100%;;object-fit:cover"
+                                                alt="...">
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure class="mx-auto zoom" onmousemove="zoom(event)"
                                             style="background-image: url({{asset('')}}images/rm3.jpg); background-size: 200%">
                                             <img src="{{asset('')}}images/rm3.jpg" onmousemove='zoom(event)'
-                                                class="d-block image-kunam-2" alt="...">
+                                                class="d-block image-kunam-2 " style="width:100%;;object-fit:cover"
+                                                alt="...">
                                         </figure>
                                     </div>
                                     <div class="carousel-item">
                                         <figure class="mx-auto zoom" onmousemove="zoom(event)"
                                             style="background-image: url({{asset('')}}images/rm4.jpg); background-size: 200%">
                                             <img src="{{asset('')}}images/rm4.jpg" onmousemove='zoom(event)'
-                                                class="d-block image-kunam-2" alt="...">
+                                                class="d-block image-kunam-2 " style="width:100%;;object-fit:cover"
+                                                alt="...">
                                         </figure>
                                     </div>
                                 </div>
@@ -17147,16 +17167,20 @@
 
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="{{asset('')}}images/rm1.jpg" class="d-block image-kunam-2" alt="...">
+                                        <img src="{{asset('')}}images/rm1.jpg"
+                                            class="d-block gambar-sesuai image-kunam-2" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="{{asset('')}}images/rm2.jpg" class="d-block image-kunam-2" alt="...">
+                                        <img src="{{asset('')}}images/rm2.jpg"
+                                            class="d-block gambar-sesuai image-kunam-2" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="{{asset('')}}images/rm3.jpg" class="d-block image-kunam-2" alt="...">
+                                        <img src="{{asset('')}}images/rm3.jpg"
+                                            class="d-block gambar-sesuai image-kunam-2" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="{{asset('')}}images/rm4.jpg" class="d-block image-kunam-2" alt="...">
+                                        <img src="{{asset('')}}images/rm4.jpg"
+                                            class="d-block gambar-sesuai image-kunam-2" alt="...">
                                     </div>
                                 </div>
 
