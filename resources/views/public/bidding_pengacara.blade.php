@@ -521,7 +521,7 @@
         }
 
         .bg-pengacara {
-            background: linear-gradient(90deg, hsla(337, 85%, 31%, 1) 42%, hsla(337, 83%, 30%, 1) 64%, hsla(318, 57%, 22%, 1) 86%);
+            background: #8f8f8f;
         }
 
         .fav-icon {
