@@ -736,7 +736,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <a href="{{url('')}}/join">
-                    <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="d-block mx-auto"
+                    <img src="{{asset('')}}images/banner_tanah_merdeka.png" class="d-block mx-auto"
                         style="width: 95%" alt="...">
                 </a>
             </div>
@@ -764,7 +764,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <a href="{{url('')}}/join">
-                    <img src="{{asset('')}}uploads/banner_sengketa_tanah_1.png" class="d-block mx-auto gambar-banner"
+                    <img src="{{asset('')}}images/banner_tanah_merdeka.png" class="d-block mx-auto gambar-banner"
                         style="width: 90%" alt="...">
                 </a>
             </div>
@@ -1451,7 +1451,7 @@
                             style="overflow-x: auto; flex-wrap: nowrap;">
                             <div class="col mb-4">
                                 <a href="{{url('/')}}/bid-sengketa" class="btn d-flex align-items-center h-100 rounded-4 shadow btn-outline-light" style="width: 200px">
-                                    <img src="{{asset('')}}images/cara_bergabung_tanah_merdeka.png" style="width: 100%" alt=""><br>
+                                    <img src="{{asset('')}}images/tanah_merdeka_join.png" style="width: 100%" alt=""><br>
                                 </a>
                             </div>
 
