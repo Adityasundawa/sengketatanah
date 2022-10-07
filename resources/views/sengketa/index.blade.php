@@ -315,6 +315,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
+        .btn-secondary-custom{
+            background: #BF9742;
+            color: white;
+        }
+
         .chat-btn {
             /* position: absolute;
             right: 14px;
@@ -2783,7 +2788,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-primary mb-0"
+                                                        <button class="btn float-end btn-brown mb-0"
                                                             data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
@@ -2872,7 +2877,7 @@
                                     <div class="row g-2 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
                                                 data-bs-target="#berkasSponsor" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
@@ -2909,7 +2914,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa2').submit()"
-                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                class="btn btn-secondary-custom rounded-5" style="cursor:pointer"><i
                                                     class="fa-solid fa-play text-white"></i>
                                                 Lihat Podcast</span>
                                         </div>
@@ -3070,7 +3075,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-primary mb-0"
+                                                        <button class="btn float-end btn-brown mb-0"
                                                             data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
@@ -3159,7 +3164,7 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
                                                 data-bs-target="#berkasSponsor" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
@@ -3196,7 +3201,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa2').submit()"
-                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                class="btn btn-secondary-custom rounded-5" style="cursor:pointer"><i
                                                     class="fa-solid fa-play text-white"></i>
                                                 Lihat Podcast</span>
                                         </div>
@@ -3350,7 +3355,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-primary mb-0"
+                                                        <button class="btn float-end btn-brown mb-0"
                                                             data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
@@ -3439,7 +3444,7 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
                                                 data-bs-target="#berkasSponsor" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
@@ -3476,7 +3481,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa3').submit()"
-                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                class="btn btn-secondary-custom rounded-5" style="cursor:pointer"><i
                                                     class="fa-solid fa-play text-white"></i>
                                                 Lihat Podcast</span>
                                         </div>
@@ -3630,7 +3635,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-primary mb-0"
+                                                        <button class="btn float-end btn-brown mb-0"
                                                             data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
@@ -3718,7 +3723,7 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
                                                 data-bs-target="#berkasSponsor" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
@@ -3755,7 +3760,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa3').submit()"
-                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                class="btn btn-secondary-custom rounded-5" style="cursor:pointer"><i
                                                     class="fa-solid fa-play text-white"></i>
                                                 Lihat Podcast</span>
                                         </div>
@@ -3918,7 +3923,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-primary mb-0"
+                                                        <button class="btn float-end btn-brown mb-0"
                                                             data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
@@ -4007,7 +4012,7 @@
                                     <div class="row g-2 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
                                                 data-bs-target="#berkasSponsor" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
@@ -4044,7 +4049,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa2').submit()"
-                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                class="btn btn-secondary-custom rounded-5" style="cursor:pointer"><i
                                                     class="fa-solid fa-play text-white"></i>
                                                 Lihat Podcast</span>
                                         </div>
@@ -4204,7 +4209,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-primary mb-0"
+                                                        <button class="btn float-end btn-brown mb-0"
                                                             data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
@@ -4293,7 +4298,7 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
                                                 data-bs-target="#berkasSponsor" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
@@ -4330,7 +4335,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa2').submit()"
-                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                class="btn btn-secondary-custom rounded-5" style="cursor:pointer"><i
                                                     class="fa-solid fa-play text-white"></i>
                                                 Lihat Podcast</span>
                                         </div>
@@ -4484,7 +4489,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-primary mb-0"
+                                                        <button class="btn float-end btn-brown mb-0"
                                                             data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
@@ -4573,7 +4578,7 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
                                                 data-bs-target="#berkasSponsor" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
@@ -4610,7 +4615,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa3').submit()"
-                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                class="btn btn-secondary-custom rounded-5" style="cursor:pointer"><i
                                                     class="fa-solid fa-play text-white"></i>
                                                 Lihat Podcast</span>
                                         </div>
@@ -4764,7 +4769,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-primary mb-0"
+                                                        <button class="btn float-end btn-brown mb-0"
                                                             data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
@@ -4852,7 +4857,7 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
                                                 data-bs-target="#berkasSponsor" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
@@ -4889,7 +4894,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa3').submit()"
-                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                class="btn btn-secondary-custom rounded-5" style="cursor:pointer"><i
                                                     class="fa-solid fa-play text-white"></i>
                                                 Lihat Podcast</span>
                                         </div>
@@ -5218,7 +5223,7 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
                                                 data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
@@ -5267,7 +5272,7 @@
                                         </div>
                                         <div class="col text-center">
                                             <a data-bs-toggle="modal" data-bs-target="#examplePengacara"
-                                                class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                class="btn btn-brown rounded-5" style="cursor:pointer; width: 125px">
                                                 Bid</a>
                                         </div>
                                     </div>
@@ -5403,7 +5408,7 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
                                                 data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
@@ -5452,7 +5457,7 @@
                                         </div>
                                         <div class="col text-center">
                                             <a data-bs-toggle="modal" data-bs-target="#examplePengacara"
-                                                class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                class="btn btn-brown rounded-5" style="cursor:pointer; width: 125px">
                                                 Bid</a>
                                         </div>
                                     </div>
@@ -5588,7 +5593,7 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
                                                 data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
@@ -5639,7 +5644,7 @@
 
                                         <div class="col text-center">
                                             <a data-bs-toggle="modal" data-bs-target="#examplePengacara"
-                                                class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                class="btn btn-brown rounded-5" style="cursor:pointer; width: 125px">
                                                 Bid</a>
                                         </div>
                                     </div>
@@ -5775,7 +5780,7 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
                                                 data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
@@ -5823,7 +5828,7 @@
                                         </div>
                                         <div class="col text-center">
                                             <a data-bs-toggle="modal" data-bs-target="#examplePengacara"
-                                                class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                class="btn btn-brown rounded-5" style="cursor:pointer; width: 125px">
                                                 Bid</a>
                                         </div>
                                     </div>
@@ -5979,7 +5984,7 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
                                                 data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
@@ -6028,7 +6033,7 @@
                                         </div>
                                         <div class="col text-center">
                                             <a data-bs-toggle="modal" data-bs-target="#examplePengacara"
-                                                class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                class="btn btn-brown rounded-5" style="cursor:pointer; width: 125px">
                                                 Bid</a>
                                         </div>
                                     </div>
@@ -6164,7 +6169,7 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
                                                 data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
@@ -6213,7 +6218,7 @@
                                         </div>
                                         <div class="col text-center">
                                             <a data-bs-toggle="modal" data-bs-target="#examplePengacara"
-                                                class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                class="btn btn-brown rounded-5" style="cursor:pointer; width: 125px">
                                                 Bid</a>
                                         </div>
                                     </div>
@@ -6349,7 +6354,7 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
                                                 data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
@@ -6398,7 +6403,7 @@
                                         </div>
                                         <div class="col text-center">
                                             <a data-bs-toggle="modal" data-bs-target="#examplePengacara"
-                                                class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                class="btn btn-brown rounded-5" style="cursor:pointer; width: 125px">
                                                 Bid</a>
                                         </div>
                                     </div>
@@ -6713,7 +6718,7 @@
                                                             <i class="fas fa-star"></i>
                                                         </h5>
                                                     </a>
-                                                    <button class="btn float-end btn-info text-white mb-0 my-auto w-100"
+                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -6985,7 +6990,7 @@
                                                             <i class="fas fa-star"></i>
                                                         </h5>
                                                     </a>
-                                                    <button class="btn float-end btn-info text-white mb-0 my-auto w-100"
+                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -7254,7 +7259,7 @@
                                                             <i class="fas fa-star"></i>
                                                         </h5>
                                                     </a>
-                                                    <button class="btn float-end btn-info text-white mb-0 my-auto w-100"
+                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -7521,7 +7526,7 @@
                                                             <i class="fas fa-star"></i>
                                                         </h5>
                                                     </a>
-                                                    <button class="btn float-end btn-info text-white mb-0 my-auto w-100"
+                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -7801,7 +7806,7 @@
                                                             <i class="fas fa-star"></i>
                                                         </h5>
                                                     </a>
-                                                    <button class="btn float-end btn-info text-white mb-0 my-auto w-100"
+                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -8072,7 +8077,7 @@
                                                             <i class="fas fa-star"></i>
                                                         </h5>
                                                     </a>
-                                                    <button class="btn float-end btn-info text-white mb-0 my-auto w-100"
+                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -8341,7 +8346,7 @@
                                                             <i class="fas fa-star"></i>
                                                         </h5>
                                                     </a>
-                                                    <button class="btn float-end btn-info text-white mb-0 my-auto w-100"
+                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -8608,7 +8613,7 @@
                                                             <i class="fas fa-star"></i>
                                                         </h5>
                                                     </a>
-                                                    <button class="btn float-end btn-info text-white mb-0 my-auto w-100"
+                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -11140,7 +11145,7 @@
                                                         </h5>
                                                     </a>
                                                     <button
-                                                        class="btn float-end btn-warning text-white mb-0 my-auto w-100"
+                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -11412,7 +11417,7 @@
                                                         </h5>
                                                     </a>
                                                     <button
-                                                        class="btn float-end btn-warning text-white mb-0 my-auto w-100"
+                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -11682,7 +11687,7 @@
                                                         </h5>
                                                     </a>
                                                     <button
-                                                        class="btn float-end btn-warning text-white mb-0 my-auto w-100"
+                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -11950,7 +11955,7 @@
                                                         </h5>
                                                     </a>
                                                     <button
-                                                        class="btn float-end btn-warning text-white mb-0 my-auto w-100"
+                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -12226,7 +12231,7 @@
                                                         </h5>
                                                     </a>
                                                     <button
-                                                        class="btn float-end btn-warning text-white mb-0 my-auto w-100"
+                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -12498,7 +12503,7 @@
                                                         </h5>
                                                     </a>
                                                     <button
-                                                        class="btn float-end btn-warning text-white mb-0 my-auto w-100"
+                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -12768,7 +12773,7 @@
                                                         </h5>
                                                     </a>
                                                     <button
-                                                        class="btn float-end btn-warning text-white mb-0 my-auto w-100"
+                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -13036,7 +13041,7 @@
                                                         </h5>
                                                     </a>
                                                     <button
-                                                        class="btn float-end btn-warning text-white mb-0 my-auto w-100"
+                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
