@@ -541,8 +541,8 @@
         .share-icon {
             position: absolute;
             z-index: 999;
-            right: 1.5rem;
-            top: 2rem;
+            right: 0.5rem;
+            top: 0.5rem;
         }
 
         .btn.btn-outline-brown {
@@ -2218,7 +2218,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
-                                                class="btn rounded-5" style="cursor:pointer; background-color: #BF9742; color: #fff"><i
+                                                class="btn rounded-5" style="cursor:pointer; background-color: #E6B325; color: #fff"><i
                                                     class="fa-solid fa-play text-white"></i> Lihat
                                                 Podcast</span>
                                         </div>
@@ -2634,7 +2634,7 @@
                                         <div class="col text-center">
 
                                             <a href="#" class=" mx-auto btn rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#berkasSponsor" style="text-decoration:none;background-color: #61481C; color: #fff">
+                                                data-bs-target="#berkasSponsor" style="text-decoration:none;background-color: #BF9742; color: #fff">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
 
@@ -2669,7 +2669,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
-                                                class="btn rounded-5" style="cursor:pointer; background-color: #A47E3B; color: #fff"><i
+                                                class="btn rounded-5" style="cursor:pointer; background-color: #E6B325; color: #fff"><i
                                                     class="fa-solid fa-play text-white"></i> Lihat
                                                 Podcast</span>
                                         </div>
@@ -3084,7 +3084,7 @@
                                         <div class="col text-center">
 
                                             <a href="#" class=" mx-auto btn rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#berkasSponsor" style="text-decoration:none;background-color: #61481C; color: #fff">
+                                                data-bs-target="#berkasSponsor" style="text-decoration:none;background-color: #BF9742; color: #fff">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
 
@@ -3119,7 +3119,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
-                                                class="btn rounded-5" style="cursor:pointer; background-color: #A47E3B; color: #fff"><i
+                                                class="btn rounded-5" style="cursor:pointer; background-color: #E6B325; color: #fff"><i
                                                     class="fa-solid fa-play text-white"></i> Lihat
                                                 Podcast</span>
                                         </div>
@@ -3542,7 +3542,7 @@
                                         <div class="col text-center">
 
                                             <a href="#" class=" mx-auto btn rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#berkasSponsor" style="text-decoration:none;background-color: #61481C; color: #fff">
+                                                data-bs-target="#berkasSponsor" style="text-decoration:none;background-color: #BF9742; color: #fff">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
 
@@ -3577,7 +3577,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
-                                                class="btn rounded-5" style="cursor:pointer; background-color: #A47E3B; color: #fff"><i
+                                                class="btn rounded-5" style="cursor:pointer; background-color: #E6B325; color: #fff"><i
                                                     class="fa-solid fa-play text-white"></i> Lihat
                                                 Podcast</span>
                                         </div>
@@ -3990,7 +3990,7 @@
                                         <div class="col text-center">
 
                                             <a href="#" class=" mx-auto btn rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#berkasSponsor" style="text-decoration:none;background-color: #61481C; color: #fff">
+                                                data-bs-target="#berkasSponsor" style="text-decoration:none;background-color: #BF9742; color: #fff">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
 
@@ -4025,7 +4025,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
-                                                class="btn rounded-5" style="cursor:pointer; background-color: #A47E3B; color: #fff"><i
+                                                class="btn rounded-5" style="cursor:pointer; background-color: #E6B325; color: #fff"><i
                                                     class="fa-solid fa-play text-white"></i> Lihat
                                                 Podcast</span>
                                         </div>
