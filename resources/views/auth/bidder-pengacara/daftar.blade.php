@@ -719,7 +719,9 @@
                                         <option value="4">Karyawan Swasta</option>
                                         <option value="5">Wiraswasta</option>
                                         <option value="6">Pelajar/Mahasiswa</option>
-                                        <option value="7">Lain-lain</option>
+                                        <option value="7">Pengacara</option>
+                                        <option value="8">Konsultan Hukum</option>
+                                        <option value="9">Lain-lain</option>
                                     </select>
                                 </div>
 
