@@ -158,7 +158,7 @@
     @include('layouts.template-public.header')
 
     <div class="container mt-4 mb-5">
-        <h4 class="text-center">Form Sponsor (Personal)</h4>
+        <h4 class="text-center">Form Pemilik Lahan (Pribadi)</h4>
 
         <div class="row mt-5 g-0 text-center mote">
             <div class="col">
@@ -196,7 +196,7 @@
             <div class="col">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-5"></i>
-                    <i class="fa-solid fa-money-bill fa-stack-1x text-white" id="uncheck-5"></i>
+                    <i class="fa-solid fa-map-pin fa-stack-1x text-white" id="uncheck-5"></i>
                     <i class="fa-solid fa-check fa-stack-1x text-white" id="check-5" style="display: none"></i>
                 </span>
                 <h6>Info Lahan</h6>
