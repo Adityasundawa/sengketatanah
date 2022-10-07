@@ -162,7 +162,7 @@
         <h4 class="text-center">Form Korban Sengketa Tanah</h4>
 
         <div class="row mt-5 text-center mote">
-            <div class="col-3">
+            <div class="col">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x text-brown" id="brownie-1"></i>
                     <i class="fa-solid fa-user fa-stack-1x text-white" id="uncheck-1"></i>
@@ -170,7 +170,7 @@
                 </span>
                 <h6>Info Pribadi</h6>
             </div>
-            <div class="col-3">
+            <div class="col">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-2"></i>
                     <i class="fa-solid fa-location-dot fa-stack-1x text-white" id="uncheck-2"></i>
@@ -178,7 +178,7 @@
                 </span>
                 <h6>Alamat</h6>
             </div>
-            <div class="col-3">
+            <div class="col">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-3"></i>
                     <i class="fa-solid fa-briefcase fa-stack-1x text-white" id="uncheck-3"></i>
@@ -186,13 +186,21 @@
                 </span>
                 <h6>Pekerjaan</h6>
             </div>
-            <div class="col-3">
+            <div class="col">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-4"></i>
-                    <i class="fa-solid fa-address-book fa-stack-1x text-white" id="uncheck-3"></i>
+                    <i class="fa-solid fa-address-book fa-stack-1x text-white" id="uncheck-4"></i>
                     <i class="fa-solid fa-check fa-stack-1x text-white" id="check-4" style="display: none"></i>
                 </span>
                 <h6>Kontak Darurat</h6>
+            </div>
+            <div class="col">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-5"></i>
+                    <i class="fa-solid fa-file fa-stack-1x text-white" id="uncheck-5"></i>
+                    <i class="fa-solid fa-check fa-stack-1x text-white" id="check-5" style="display: none"></i>
+                </span>
+                <h6>Perjanjian</h6>
             </div>
         </div>
 
@@ -848,6 +856,63 @@
                         <button class="w-100 btn-lg btn btn-outline-brown kem-4 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
+                        <a class="w-100 btn-lg btn btn-brown lan-4 mt-2 mb-2">Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-5 d-none" id="5">
+            <div class="card-body">
+                <form action="">
+                    <div class="row">
+
+                        <div class="col-12">
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-3">
+                                    <label for="nama-dar" class="mb-2" style="font-weight: 600">Nama Lengkap Darurat</label>
+                                    <input type="text" class="form-control" name="nama-dar" id="nama-dar"
+                                        placeholder="Nama Lengkap Darurat">
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label for="hp-dar" class="mb-2" style="font-weight: 600">No Handphone</label>
+                                    <input type="number" class="form-control" name="hp-dar" id="hp-dar"
+                                        placeholder="Nomor HP Darurat">
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label for="alamat-dar" class="mb-2" style="font-weight: 600">Alamat</label>
+                                    <input type="text" class="form-control" name="alamat-dar" id="alamat-dar"
+                                        placeholder="Alamat Kontak">
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label for="hub-dar" class="mb-2" style="font-weight: 600">Hubungan dengan kontak darurat</label>
+                                    <input type="text" class="form-control" name="hub-dar" id="hub-dar"
+                                        placeholder="Hubungan Kontak">
+                                </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <input class="form-check-input mr-1" type="checkbox" value="" id="setuju">
+                                    <span class="form-check-label" for="setuju">
+                                        Saya menyatakan bahwa data-data yang telah saya isi diatas adalah valid, saya telah melakukan pengecekan atas kebenaran data-data tersebut, dan saya telah membaca ketentuan privacy dan cookies .
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </form>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-5 mt-2 mb-2">Kembali</button>
+                    </div>
+                    <div class="col-md-6">
                         <a class="w-100 btn-lg btn btn-brown mt-2 mb-2" 
                         data-bs-toggle="modal" data-bs-target="#daftarKorban" >Daftar</a>
                     </div>
@@ -975,6 +1040,27 @@
             $('#brownie-4').addClass('text-disable')
             $('#uncheck-3').show()
             $('#check-3').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
+        })
+
+        $(".lan-4").click(function () {
+            $('#4').addClass('d-none')
+            $('#5').removeClass('d-none')
+            $('#brownie-5').addClass('text-brown')
+            $('#brownie-5').removeClass('text-disable')
+            $('#uncheck-4').hide()
+            $('#check-4').show()
+            $("html, body").animate({scrollTop: 0}, 0);
+        })
+
+        // 5
+        $(".kem-5").click(function () {
+            $('#4').removeClass('d-none')
+            $('#5').addClass('d-none')
+            $('#brownie-5').removeClass('text-brown')
+            $('#brownie-5').addClass('text-disable')
+            $('#uncheck-4').show()
+            $('#check-4').hide()
             $("html, body").animate({scrollTop: 0}, 0);
         })
     </script>
