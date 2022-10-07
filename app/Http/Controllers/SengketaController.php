@@ -144,9 +144,14 @@ class SengketaController extends Controller
         return view('auth.bidder.pilih-p');
     }
 
-    public function pilihLahan()
+    public function pilihLahanLender()
     {
-        return view('auth.bidder.pilih-l');
+        return view('auth.bidder.pilih-lender');
+    }
+
+    public function pilihLahanBorrower()
+    {
+        return view('auth.bidder.pilih-borrower');
     }
 
     public function pilihLOB()

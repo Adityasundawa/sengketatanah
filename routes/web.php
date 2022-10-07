@@ -49,7 +49,8 @@ Route::get('pilih-user', [SengketaController::class, "pilihUser"]);
 Route::get('pilih-sponsor', [SengketaController::class, "pilihSponsor"]);
 Route::get('pilih-pengacara', [SengketaController::class, "pilihPengacara"]);
 Route::get('pilih-lob', [SengketaController::class, "pilihLOB"]);
-Route::get('pilih-lahan', [SengketaController::class, "pilihLahan"]);
+Route::get('pilih-lahan-lender', [SengketaController::class, "pilihLahanLender"]);
+Route::get('pilih-lahan-borrower', [SengketaController::class, "pilihLahanBorrower"]);
 
 Route::get('daftar-bid-korban', [SengketaController::class, "daftarBidF"]);
 
