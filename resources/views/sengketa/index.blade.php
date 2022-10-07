@@ -817,6 +817,7 @@
                             </div>
                         </a>
                     </div>
+                    
                     <div class="col text-center">
 
                         <button class="btn btn-sm mb-0 p-0 w-100" id="btn-panduan-m" type="button">
@@ -2567,7 +2568,7 @@
     </div>
 
     <!-- orang bulet appraisal -->
-    <div class="card mb-3 border-0 ">
+    <div class="card border-0 ">
         <div class="card-body">
             <div class="mt-2 ">
 
@@ -2663,7 +2664,7 @@
     </div>
 
     <!-- bidding -->
-    <div class="card mb-3 border-0 shadow-sm ">
+    <div class="card mt-3 border-0 shadow-sm ">
         <div class="card-header bg-white">
 
             <table style="width:100%">
@@ -2694,13 +2695,8 @@
         <div class="card-body bg-card-dark-mode">
 
             <div class="row align-items-center justify-content-center">
-
-                {{-- <div class="col-1 arrow-desktop text-center">
-                                <button id="left-button" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
-                                    <i class="fa-solid fa-arrow-left"></i>
-                                </button>
-                            </div> --}}
-                <div class="col-10 desktop-arrow text-center">
+                
+                <div class="col-12 desktop-arrow text-center">
                     <div class="row mobile-scroll mt-2 align-items-center bidding-card" style="flex-wrap: nowrap">
 
                         <div class="col-12 custom ">
@@ -3270,8 +3266,6 @@
                             </div>
                         </div>
 
-                        {{-- ubah titik --}}
-
                         <div class="col-12 custom">
                             <div class="card mb-2 mx-auto">
                                 <div class="ribbon-pop">
@@ -3832,23 +3826,12 @@
 
                     </div>
                 </div>
-                {{-- <div class="col-1 arrow-desktop text-center">
-                                <button id="right-button" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                            </div> --}}
+                
             </div>
 
             <div class="row align-items-center justify-content-center">
 
-                <div class="col-1 arrow-desktop text-center">
-                    <button id="left-button" class="btn rounded-5 text-white bg-secondary"
-                        style="background-color: #61481C">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-                </div>
-
-                <div class="col-10 desktop-arrow text-center">
+                <div class="col-12 desktop-arrow text-center">
                     <div class="row mobile-scroll mt-2 align-items-center bidding-card2" style="flex-wrap: nowrap">
 
                         <div class="col-12 custom ">
@@ -4416,8 +4399,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        {{-- ubah titik --}}
 
                         <div class="col-12 custom">
                             <div class="card mb-2 mx-auto">
@@ -4995,12 +4976,6 @@
 
                     </div>
                 </div>
-                <div class="col-1 arrow-desktop text-center">
-                    <button id="right-button" class="btn rounded-5 text-white bg-secondary"
-                        style="background-color: #61481C">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
             </div>
 
             <script>
@@ -5044,7 +5019,7 @@
     </div>
 
     <!-- orang kotak lawyer -->
-    <div class="card mb-3 border-0 ">
+    <div class="card mt-3 border-0 ">
         <div class="card-body">
             <div class="mt-2 ">
 
@@ -5144,7 +5119,7 @@
     </div>
 
     <!-- bidding Pengacara -->
-    <div class="card mb-3 border-0 shadow-sm ">
+    <div class="card mt-3 border-0 shadow-sm ">
         <div class="card-header bg-white">
 
             <table style="width:100%">
@@ -5176,7 +5151,7 @@
 
             <div class="row align-items-center justify-content-center mt-2">
 
-                <div class="col-11 desktop-arrow text-center">
+                <div class="col-12 desktop-arrow text-center">
 
                     <div class="row mobile-scroll mt-2 align-items-center" id="lelang-card-peng"
                         style="flex-wrap: nowrap">
@@ -5936,7 +5911,7 @@
 
                 </div>
 
-                <div class="col-11 desktop-arrow mt-3 text-center">
+                <div class="col-12 desktop-arrow mt-3 text-center">
 
                     <div class="row mt-2 align-items-center" id="lelang-card-peng"
                         style="flex-wrap: nowrap; overflow-x: auto">
@@ -6520,7 +6495,7 @@
     </div>
 
     <!-- orang kotak ppat -->
-    <div class="card mb-1 border-0 mb-2 ">
+    <div class="card mt-3 border-0 ">
         <div class="card-body">
             <div class="mt-2 ">
 
@@ -6620,7 +6595,7 @@
     </div>
 
     <!-- Bidding lahan -->
-    <div class="card mb-4 border-0 shadow-sm ">
+    <div class="card mt-3 border-0 shadow-sm ">
         <div class="card-header bg-white">
             <table style="width:100%">
                 <tr>
@@ -6654,7 +6629,7 @@
                                     <i class="fa-solid fa-arrow-left"></i>
                                 </button>
                             </div> --}}
-                <div class="col-10 desktop-arrow text-center">
+                <div class="col-12 desktop-arrow text-center">
                     <div class="row mobile-scroll mt-2 align-items-center bidding-card-a" style="flex-wrap: nowrap">
 
                         <div class="col-12 custom ">
@@ -7742,14 +7717,7 @@
 
             <div class="row align-items-center justify-content-center">
 
-                <div class="col-1 arrow-desktop text-center">
-                    <button id="left-button-bid-lahan" class="btn rounded-5 text-white bg-secondary"
-                        style="background-color: #61481C">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-                </div>
-
-                <div class="col-10 desktop-arrow text-center">
+                <div class="col-12 desktop-arrow text-center">
                     <div class="row mobile-scroll mt-2 align-items-center bidding-card-a2" style="flex-wrap: nowrap">
 
                         <div class="col-12 custom ">
@@ -8843,12 +8811,7 @@
 
                     </div>
                 </div>
-                <div class="col-1 arrow-desktop text-center">
-                    <button id="right-button-bid-lahan" class="btn rounded-5 text-white bg-secondary"
-                        style="background-color: #61481C">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
+
             </div>
 
             <script>
@@ -10961,7 +10924,7 @@
     </style>
 
     <!-- orang kotak notaris -->
-    <div class="card mb-3 border-0 ">
+    <div class="card border-0 mt-3">
         <div class="card-body">
             <div class="mt-2 ">
 
@@ -11063,7 +11026,7 @@
     </div>
 
     <!-- Bidding Rumah -->
-    <div class="card mb-4 border-0 shadow-sm ">
+    <div class="card mb-4 border-0 shadow-sm mt-3">
         <div class="card-header bg-white">
             <table style="width:100%">
                 <tr>
@@ -11092,12 +11055,7 @@
 
             <div class="row align-items-center justify-content-center">
 
-                {{-- <div class="col-1 arrow-desktop text-center">
-                                <button id="left-button" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
-                                    <i class="fa-solid fa-arrow-left"></i>
-                                </button>
-                            </div> --}}
-                <div class="col-10 desktop-arrow text-center">
+                <div class="col-12 desktop-arrow text-center">
                     <div class="row mobile-scroll mt-2 align-items-center bidding-card-b" style="flex-wrap: nowrap">
 
                         <div class="col-12 custom ">
@@ -12179,23 +12137,11 @@
 
                     </div>
                 </div>
-                {{-- <div class="col-1 arrow-desktop text-center">
-                                <button id="right-button" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                            </div> --}}
             </div>
 
             <div class="row align-items-center justify-content-center">
 
-                <div class="col-1 arrow-desktop text-center">
-                    <button id="left-button-bid-rumah" class="btn rounded-5 text-white bg-secondary"
-                        style="background-color: #61481C">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-                </div>
-
-                <div class="col-10 desktop-arrow text-center">
+                <div class="col-12 desktop-arrow text-center">
                     <div class="row mobile-scroll mt-2 align-items-center bidding-card-b2" style="flex-wrap: nowrap">
 
                         <div class="col-12 custom">
@@ -13293,12 +13239,7 @@
 
                     </div>
                 </div>
-                <div class="col-1 arrow-desktop text-center">
-                    <button id="right-button-bid-rumah" class="btn rounded-5 text-white bg-secondary"
-                        style="background-color: #61481C">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
+                
             </div>
 
             <script>
