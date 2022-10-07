@@ -1811,7 +1811,7 @@
 
                 <div class="col me-auto" style="margin-top:5px">
                     <div class="ms-1 d-grid gap-2">
-                        <a class="btn btn-sm btn-outline-brownie rounded-5 fw-bold" href="{{url('')}}/join">Pelajari Bid
+                        <a class="btn btn-sm btn-outline-brownie rounded-5 fw-bold" href="{{url('')}}/join">Pelajari Tentang Bid
                             Sengketa</a>
                     </div>
                 </div>
