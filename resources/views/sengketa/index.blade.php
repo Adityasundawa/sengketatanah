@@ -553,9 +553,9 @@
             width: 33.3333%
         }
 
-        @media (max-width: 1400px) {
+        @media (max-width: 1200px) {
             .col-12.custom {
-                width: 38% !important
+                width: 50% !important
             }
 
         }
