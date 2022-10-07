@@ -144,6 +144,11 @@ class SengketaController extends Controller
         return view('auth.bidder.pilih-p');
     }
 
+    public function pilihLahan()
+    {
+        return view('auth.bidder.pilih-l');
+    }
+
     public function daftarBidF(Request $request)
     {
         $data['req'] = $request;
@@ -172,6 +177,18 @@ class SengketaController extends Controller
     {
         $data['req'] = $request;
         return view('auth.bidder-pengacara.daftar_bh', $data);
+    }
+
+    public function daftarBidLP(Request $request)
+    {
+        $data['req'] = $request;
+        return view('auth.bidder-lahan.daftar', $data);
+    }
+
+    public function daftarBidLPR(Request $request)
+    {
+        $data['req'] = $request;
+        return view('auth.bidder-lahan.daftar_lp', $data);
     }
 
     public function buatLaporan(Request $request)

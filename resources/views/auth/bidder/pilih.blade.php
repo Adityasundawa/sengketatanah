@@ -685,7 +685,7 @@
                             <h6 class="text-muted fw-normal mb-0">Korban adalah orang yang dirugikan, dirampas, atau terancam kehilangan hak atas tanah yang dimilikinya.</h6>
                         </div>
                         <div class="col-md row-col">
-                            <a href="{{url('')}}/daftar-bid-a" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Korban</a>
+                            <a href="{{url('')}}/daftar-bid-korban" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Korban</a>
                         </div>
                     </div>
                 </div>
@@ -699,7 +699,7 @@
                             <h6 class="text-muted fw-normal mb-0">Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan hukum korban sengketa tanah.</h6>
                         </div>
                         <div class="col-md row-col">
-                            <a href="{{url('')}}/pilih-s" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Sponsor</a>
+                            <a href="{{url('')}}/pilih-sponsor" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Sponsor</a>
                         </div>
                     </div>
                 </div>
@@ -713,7 +713,7 @@
                             <h6 class="text-muted fw-normal mb-0">Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani persoalan sengketa tanah.</h6>
                         </div>
                         <div class="col-md row-col">
-                            <a href="{{url('')}}/pilih-p" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Pengacara</a>
+                            <a href="{{url('')}}/pilih-pengacara" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Pengacara</a>
                         </div>
                     </div>
                 </div>

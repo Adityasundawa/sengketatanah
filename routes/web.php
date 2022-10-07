@@ -46,13 +46,20 @@ Route::get('send-email', [EmailController::class, 'sendEmail']);
 Route::get('detail-main-petugas', [PublicController::class, "detailPetugas"]);
 
 Route::get('pilih-user', [SengketaController::class, "pilihUser"]);
-Route::get('pilih-s', [SengketaController::class, "pilihSponsor"]);
-Route::get('pilih-p', [SengketaController::class, "pilihPengacara"]);
-Route::get('daftar-bid-a', [SengketaController::class, "daftarBidF"]);
-Route::get('daftar-bid-b', [SengketaController::class, "daftarBidS"]);
-Route::get('daftar-bid-ba', [SengketaController::class, "daftarBidSBU"]);
-Route::get('daftar-bid-c', [SengketaController::class, "daftarBidP"]);
-Route::get('daftar-bid-ca', [SengketaController::class, "daftarBidPBH"]);
+Route::get('pilih-sponsor', [SengketaController::class, "pilihSponsor"]);
+Route::get('pilih-pengacara', [SengketaController::class, "pilihPengacara"]);
+Route::get('pilih-lahan', [SengketaController::class, "pilihLahan"]);
+
+Route::get('daftar-bid-korban', [SengketaController::class, "daftarBidF"]);
+
+Route::get('daftar-bid-sponsor-personal', [SengketaController::class, "daftarBidS"]);
+Route::get('daftar-bid-sponsor-badan-usaha', [SengketaController::class, "daftarBidSBU"]);
+
+Route::get('daftar-bid-pengacara-pesonal', [SengketaController::class, "daftarBidP"]);
+Route::get('daftar-bid-pengacara-badan-hukum', [SengketaController::class, "daftarBidPBH"]);
+
+Route::get('daftar-bid-lahan-pribadi', [SengketaController::class, "daftarBidLP"]);
+Route::get('daftar-bid-lahan-perusahaan', [SengketaController::class, "daftarBidLPR"]);
 Route::get('buat-laporan', [SengketaController::class, "buatLaporan"]);
 
 

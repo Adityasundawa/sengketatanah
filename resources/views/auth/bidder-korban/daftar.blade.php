@@ -161,7 +161,7 @@
     <div class="container mt-4 mb-5">
         <h4 class="text-center">Form Korban Sengketa Tanah</h4>
 
-        <div class="row mt-5 text-center mote">
+        <div class="row g-0 mt-5 text-center mote">
             <div class="col">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x text-brown" id="brownie-1"></i>

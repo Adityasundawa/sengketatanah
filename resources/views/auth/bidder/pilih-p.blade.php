@@ -690,7 +690,7 @@
                             <h6 class="text-muted fw-normal mb-0">Pengacara adalah seorang pribadi yang menangani persoalan sengketa tanah.</h6>
                         </div>
                         <div class="col-md row-col">
-                            <a href="{{url('')}}/daftar-bid-c" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Personal</a>
+                            <a href="{{url('')}}/daftar-bid-pengacara-pesonal" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Personal</a>
                         </div>
                     </div>
                 </div>
@@ -704,7 +704,7 @@
                             <h6 class="text-muted fw-normal mb-0">Pengacara adalah seorang badan hukum (Law Firm) yang menangani persoalan sengketa tanah.</h6>
                         </div>
                         <div class="col-md row-col">
-                            <a href="{{url('')}}/daftar-bid-ca" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Kantor Hukum</a>
+                            <a href="{{url('')}}/daftar-bid-pengacara-badan-hukum" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Kantor Hukum</a>
                         </div>
                     </div>
                 </div>

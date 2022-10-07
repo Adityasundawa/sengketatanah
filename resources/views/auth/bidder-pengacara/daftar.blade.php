@@ -160,7 +160,7 @@
     <div class="container mt-4 mb-5">
         <h4 class="text-center">Form Pengacara (Personal)</h4>
 
-        <div class="row mt-5 text-center mote">
+        <div class="row mt-5 g-0 text-center mote">
             <div class="col">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x text-brown" id="brownie-1"></i>
@@ -889,8 +889,7 @@
                         <button class="w-100 btn-lg btn btn-outline-brown kem-6 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
-                        <a class="w-100 btn-lg btn btn-brown mt-2 mb-2" 
-                        data-bs-toggle="modal" data-bs-target="#daftarSponsor">Daftar</a>
+                        <a class="w-100 btn-lg btn btn-brown mt-2 mb-2" href="{{url('')}}/buat-laporan">Daftar</a>
                     </div>
                 </div>
             </div>
