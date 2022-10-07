@@ -158,7 +158,7 @@
     @include('layouts.template-public.header')
 
     <div class="container mt-4 mb-5">
-        <h4 class="text-center">Form Sponsor (Badan Usaha)</h4>
+        <h4 class="text-center">Form Pemilik Lahan (Perusahaan)</h4>
 
         <div class="row g-0 mt-5 text-center mote">
             <div class="col">
