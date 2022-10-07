@@ -1677,92 +1677,91 @@
                             @endif
                             <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
                                 <div class="card mb-2">
-                                    @if($bs['id'] < 5)
-                                    <div class="ribbon-pop">
+                                    @if($bs['id'] < 5) <div class="ribbon-pop">
                                         <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                    </div>
-                                    @else
-                                    @endif
-                                    <div class="desktop-2">
-                                        <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide" data-bs-interval="false">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                            </div>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="{{asset('')}}{{$bs['img-rumah']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}{{$bs['img-rumah1']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}{{$bs['img-rumah2']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}{{$bs['img-rumah3']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
+                                </div>
+                                @else
+                                @endif
+                                <div class="desktop-2">
+                                    <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide" data-bs-interval="false">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
                                         </div>
-                                    </div>
-                                    <div class="mobile">
-                                        <div id="carouselmobile{{$bs['id']}}" class="carousel slide" data-bs-interval="false">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="{{asset('')}}{{$bs['img-rumah']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
                                             </div>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img src="{{asset('')}}{{$bs['img-rumah']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}{{$bs['img-rumah1']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}{{$bs['img-rumah2']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img src="{{asset('')}}{{$bs['img-rumah3']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
-                                                </div>
+                                            <div class="carousel-item">
+                                                <img src="{{asset('')}}{{$bs['img-rumah1']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
                                             </div>
-                                            <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
+                                            <div class="carousel-item">
+                                                <img src="{{asset('')}}{{$bs['img-rumah2']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="{{asset('')}}{{$bs['img-rumah3']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="share-icon">
-                                        <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                            <i class="fa-solid fa-share-from-square"></i>
+                                        <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
                                         </button>
                                     </div>
-                                    <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid BR-00{{$bs['id']}}
-                                                    <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
-                                                </h5>
+                                </div>
+                                <div class="mobile">
+                                    <div id="carouselmobile{{$bs['id']}}" class="carousel slide" data-bs-interval="false">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="{{asset('')}}{{$bs['img-rumah']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="{{asset('')}}{{$bs['img-rumah1']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="{{asset('')}}{{$bs['img-rumah2']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="{{asset('')}}{{$bs['img-rumah3']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
                                             </div>
                                         </div>
+                                        <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
                                     </div>
+                                </div>
+                                <div class="share-icon">
+                                    <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                        <i class="fa-solid fa-share-from-square"></i>
+                                    </button>
+                                </div>
+                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <h5 class="mb-0 text-center">Kode Bid BR-00{{$bs['id']}}
+                                                <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                    <div class="card-body">
+                                <div class="card-body">
                                     <table class="mt-2 mb-2 w-100">
                                         <tr>
                                             <td>
@@ -2022,92 +2021,91 @@
                         @endif
                         <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
                             <div class="card mb-2">
-                                @if($bs['id'] < 5)
-                                <div class="ribbon-pop">
+                                @if($bs['id'] < 5) <div class="ribbon-pop">
                                     <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                @else
-                                @endif
-                                <div class="desktop-2">
-                                    <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide" data-bs-interval="false">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                        </div>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="{{asset('')}}{{$bs['img-rumah']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}{{$bs['img-rumah1']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}{{$bs['img-rumah2']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}{{$bs['img-rumah3']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
+                            </div>
+                            @else
+                            @endif
+                            <div class="desktop-2">
+                                <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide" data-bs-interval="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
                                     </div>
-                                </div>
-                                <div class="mobile">
-                                    <div id="carouselmobile{{$bs['id']}}" class="carousel slide" data-bs-interval="false">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="{{asset('')}}{{$bs['img-rumah']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
                                         </div>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="{{asset('')}}{{$bs['img-rumah']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}{{$bs['img-rumah1']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}{{$bs['img-rumah2']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}{{$bs['img-rumah3']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
-                                            </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img-rumah1']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
                                         </div>
-                                        <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img-rumah2']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img-rumah3']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
+                                    <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
                                     </button>
                                 </div>
-                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Bid BR-00{{$bs['id']}}
-                                                <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
-                                            </h5>
+                            </div>
+                            <div class="mobile">
+                                <div id="carouselmobile{{$bs['id']}}" class="carousel slide" data-bs-interval="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="{{asset('')}}{{$bs['img-rumah']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img-rumah1']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img-rumah2']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img-rumah3']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
                                         </div>
                                     </div>
+                                    <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
                                 </div>
+                            </div>
+                            <div class="share-icon">
+                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                    <i class="fa-solid fa-share-from-square"></i>
+                                </button>
+                            </div>
+                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h5 class="mb-0 text-center">Kode Bid BR-00{{$bs['id']}}
+                                            <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
 
-                                <div class="card-body">
+                            <div class="card-body">
                                 <table class="mt-2 mb-2 w-100">
                                     <tr>
                                         <td>
@@ -2372,92 +2370,91 @@
                         @endif
                         <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
                             <div class="card mb-2">
-                                @if($bs['id'] < 5)
-                                <div class="ribbon-pop">
+                                @if($bs['id'] < 5) <div class="ribbon-pop">
                                     <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                @else
-                                @endif
-                                <div class="desktop-2">
-                                    <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide" data-bs-interval="false">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                        </div>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="{{asset('')}}{{$bs['img-rumah']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}{{$bs['img-rumah1']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}{{$bs['img-rumah2']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}{{$bs['img-rumah3']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
+                            </div>
+                            @else
+                            @endif
+                            <div class="desktop-2">
+                                <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide" data-bs-interval="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
                                     </div>
-                                </div>
-                                <div class="mobile">
-                                    <div id="carouselmobile{{$bs['id']}}" class="carousel slide" data-bs-interval="false">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="{{asset('')}}{{$bs['img-rumah']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
                                         </div>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="{{asset('')}}{{$bs['img-rumah']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}{{$bs['img-rumah1']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}{{$bs['img-rumah2']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}{{$bs['img-rumah3']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
-                                            </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img-rumah1']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
                                         </div>
-                                        <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img-rumah2']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img-rumah3']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
+                                    <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
                                     </button>
                                 </div>
-                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Bid BR-00{{$bs['id']}}
-                                                <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
-                                            </h5>
+                            </div>
+                            <div class="mobile">
+                                <div id="carouselmobile{{$bs['id']}}" class="carousel slide" data-bs-interval="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="{{asset('')}}{{$bs['img-rumah']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img-rumah1']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img-rumah2']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img-rumah3']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
                                         </div>
                                     </div>
+                                    <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
                                 </div>
+                            </div>
+                            <div class="share-icon">
+                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                    <i class="fa-solid fa-share-from-square"></i>
+                                </button>
+                            </div>
+                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h5 class="mb-0 text-center">Kode Bid BR-00{{$bs['id']}}
+                                            <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
 
-                                <div class="card-body">
+                            <div class="card-body">
                                 <table class="mt-2 mb-2 w-100">
                                     <tr>
                                         <td>
@@ -2713,92 +2710,91 @@
                         @endif
                         <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
                             <div class="card mb-2">
-                                @if($bs['id'] < 5)
-                                <div class="ribbon-pop">
+                                @if($bs['id'] < 5) <div class="ribbon-pop">
                                     <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                @else
-                                @endif
-                                <div class="desktop-2">
-                                    <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide" data-bs-interval="false">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                        </div>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="{{asset('')}}{{$bs['img-rumah']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}{{$bs['img-rumah1']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}{{$bs['img-rumah2']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}{{$bs['img-rumah3']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
+                            </div>
+                            @else
+                            @endif
+                            <div class="desktop-2">
+                                <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide" data-bs-interval="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
                                     </div>
-                                </div>
-                                <div class="mobile">
-                                    <div id="carouselmobile{{$bs['id']}}" class="carousel slide" data-bs-interval="false">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="{{asset('')}}{{$bs['img-rumah']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
                                         </div>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="{{asset('')}}{{$bs['img-rumah']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}{{$bs['img-rumah1']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}{{$bs['img-rumah2']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{asset('')}}{{$bs['img-rumah3']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
-                                            </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img-rumah1']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
                                         </div>
-                                        <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img-rumah2']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img-rumah3']}}" class="d-block w-100" style="height:250px;width:auto;object-fit:cover">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
+                                    <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
                                     </button>
                                 </div>
-                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Bid BR-00{{$bs['id']}}
-                                                <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
-                                            </h5>
+                            </div>
+                            <div class="mobile">
+                                <div id="carouselmobile{{$bs['id']}}" class="carousel slide" data-bs-interval="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="{{asset('')}}{{$bs['img-rumah']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img-rumah1']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img-rumah2']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{asset('')}}{{$bs['img-rumah3']}}" class="d-block w-100" style="height:210px;width:auto;object-fit:cover">
                                         </div>
                                     </div>
+                                    <button class="carousel-control-prev opacity-90 text-dark" type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next opacity-90 text-dark" type="button" data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
                                 </div>
+                            </div>
+                            <div class="share-icon">
+                                <button class="btn btn-sm text-white rounded-5" style="background: rgba(0, 0, 0, 0.5)">
+                                    <i class="fa-solid fa-share-from-square"></i>
+                                </button>
+                            </div>
+                            <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h5 class="mb-0 text-center">Kode Bid BR-00{{$bs['id']}}
+                                            <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
 
-                                <div class="card-body">
+                            <div class="card-body">
                                 <table class="mt-2 mb-2 w-100">
                                     <tr>
                                         <td>
@@ -3051,11 +3047,17 @@
         </div>
     </div>
 
-    
+
 
     <hr>
 
-    {{-- 
+
+
+    
+
+    
+
+    {{--
     <div class="row justify-content-center mb-3 mt-4 text-center g-0">
         <p class="fw-bold text-center" style="text-align: justify">Ikuti Sosial Media Kami</a></p>
 
@@ -3121,13 +3123,13 @@
         <div class="card-body text-white text-center  bg-card-dark-mode" style="background: #61481C">
             <p></p>
             <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
-            <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
-            </p>
-            <hr>
-            <p style="font-size:14px" class="card-title pb-3">Sovereign Plaza. Lt. 19 <br> Jl. TB Simatupang No.
-                36,
-                TB Simatupang, Jakarta Selatan</p>
-        </div>
+    <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
+    </p>
+    <hr>
+    <p style="font-size:14px" class="card-title pb-3">Sovereign Plaza. Lt. 19 <br> Jl. TB Simatupang No.
+        36,
+        TB Simatupang, Jakarta Selatan</p>
+    </div>
     </div> --}}
 
 
@@ -3136,6 +3138,8 @@
 
     @include('sengketa.modal-detail-index')
     </div>
+
+
 
     @include('layouts.template-public.footer')
 

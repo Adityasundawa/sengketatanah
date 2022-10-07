@@ -2550,7 +2550,7 @@
                                 <li>Menjadi platform khusus pertanahan yang dipercaya publik dengan komitmen
                                     kuat penyelesaian kasus-kasus persengketaan tanah.</li>
                                 <li>Mengintegrasikan semua jenis bidang seputar pertanahan dalam satu
-                                    platform seperti sengketa pertanahan, jual beli lahan, kerja sama lahan
+                                    platform seperti sengketa pertanahanl, jual beli lahan, kerja sama lahan
                                     sampai dengan pelelangan lahan.</li>
                                 <li>Menyediakan berbagai tenaga ahli pertanahan dalam platform untuk
                                     membantu desiminasi permasalahan dalam rangka menentukan tindakan yang
@@ -16487,8 +16487,8 @@
 
                     <div class="modal-header bg-dark text-white border-0">
                         <h5 class="modal-title title-bidang">Modal title</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
+                        <i type="button" class="fa-solid fa-times" data-bs-dismiss="modal"
+                            aria-label="Close"></i>
                     </div>
                     <div class="modal-body d-flex" style="background-color:transparent">
                         <div class="container">
@@ -16925,8 +16925,8 @@
 
                     <div class="modal-header bg-dark text-white border-0">
                         <h5 class="modal-title title-rumah">Modal title</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
+                        <i type="button" class="fa-solid fa-times" data-bs-dismiss="modal"
+                            aria-label="Close"></i>
                     </div>
                     <div class="modal-body d-flex" style="background-color:transparent">
                         <div class="container">
