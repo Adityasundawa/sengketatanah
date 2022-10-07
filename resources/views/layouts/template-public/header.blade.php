@@ -1,3 +1,10 @@
+<style>
+    body, html{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+</style>
+
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
         <a class="navbar-brand fw-bold fs-4" href="{{url('/')}}">

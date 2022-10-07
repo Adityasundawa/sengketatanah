@@ -21,13 +21,7 @@
     <script src="https://cdn.jsdelivr.net/npm/js-image-zoom/js-image-zoom.min.js"></script>
 
 
-    <style>
-        body {
-            width: 100%;
-            margin: 0px;
-            padding: 0px;
-            overflow-x: hidden;
-        }
+    <style>        
         .blink {
             animation: blink-animation 1s steps(5, start) infinite;
             -webkit-animation: blink-animation 1s steps(5, start) infinite;
@@ -675,6 +669,9 @@
     @include('layouts.template-public.header')
 
     <div class="container mt-4 mb-5">
+        <center>
+            <img src="{{asset('')}}uploads/sengketa-logo_pas.png" alt="" style="width: 100px" class="mb-3">
+        </center>
         <h4 class="text-center">Pilih Jenis Akun</h4>
         <h5 class="text-center text-muted fw-normal">Pilih Jenis Akun yang akan Anda Buat!</h5>
 
