@@ -758,9 +758,9 @@
                                         <option selected disabled>-- Pilih Pengalaman Kerja --</option>
                                         <option value="0">Pelajar atau belum pernah bekerja</option>
                                         <option value="1">&lt; 1 Tahun</option>
-                                        <option value="2">1 s.d. &lt; 2 Tahun</option>
+                                        <option value="2">1 s.d. 2 Tahun</option>
                                         <option value="3">2 s.d. 3 Tahun</option>
-                                        <option value="4">&gt;3 Tahun</option>
+                                        <option value="4">&gt; 3 Tahun</option>
                                     </select>
                                 </div>
 

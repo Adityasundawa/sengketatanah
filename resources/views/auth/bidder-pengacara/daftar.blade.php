@@ -752,15 +752,15 @@
                                     </select>
                                 </div>
 
-                                <div class="col-md-6 mb-3">
+                                 <div class="col-md-6 mb-3">
                                     <label for="penja" class="mb-2" style="font-weight: 600">Pengalaman Kerja</label>
                                     <select id="penja" class="form-select">
                                         <option selected disabled>-- Pilih Pengalaman Kerja --</option>
                                         <option value="0">Pelajar atau belum pernah bekerja</option>
                                         <option value="1">&lt; 1 Tahun</option>
-                                        <option value="2">1 s.d. &lt; 2 Tahun</option>
+                                        <option value="2">1 s.d. 2 Tahun</option>
                                         <option value="3">2 s.d. 3 Tahun</option>
-                                        <option value="4">&gt;3 Tahun</option>
+                                        <option value="4">&gt; 3 Tahun</option>
                                     </select>
                                 </div>
 
