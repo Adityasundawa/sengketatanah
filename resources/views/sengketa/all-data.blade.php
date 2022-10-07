@@ -2100,8 +2100,8 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-warning text-white mb-0"
-                                                            data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                        <button class="btn float-end text-white mb-0"
+                                                            data-bs-toggle="modal" style="background-color: #61481C; color: #fff" data-bs-target="#exampleC">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
                                                 </div>
