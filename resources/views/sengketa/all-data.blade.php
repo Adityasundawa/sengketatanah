@@ -542,7 +542,7 @@
             position: absolute;
             z-index: 999;
             right: 1.5rem;
-            top: 3.5rem;
+            top: 2rem;
         }
 
         .btn.btn-outline-brown {
