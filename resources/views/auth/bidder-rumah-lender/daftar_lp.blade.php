@@ -158,7 +158,7 @@
     @include('layouts.template-public.header')
 
     <div class="container mt-4 mb-5">
-        <h4 class="text-center">Form Lender (Badan Usaha)</h4>
+        <h4 class="text-center">Form Rumah (Badan Usaha)</h4>
 
         <div class="row g-0 mt-5 text-center mote">
             <div class="col">
