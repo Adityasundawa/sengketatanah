@@ -289,7 +289,7 @@
 
                         <div class="col-md-6 mb-3">
                             <div class="text-center">
-                                <img src="https://indofund.id/images/kyc-foto/ktp-true.jpg" style="width: 80%;" alt="">
+                                <img src="{{asset('')}}images/foto_ktp.jpeg" style="width: 73%;" alt="">
                             </div>
                             <div class="text-center mb-2">
                                 Contoh Foto
