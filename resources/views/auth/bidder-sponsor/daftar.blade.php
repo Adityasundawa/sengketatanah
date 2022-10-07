@@ -196,8 +196,16 @@
             <div class="col">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-5"></i>
-                    <i class="fa-solid fa-file fa-stack-1x text-white" id="uncheck-5"></i>
+                    <i class="fa-solid fa-money-bill fa-stack-1x text-white" id="uncheck-5"></i>
                     <i class="fa-solid fa-check fa-stack-1x text-white" id="check-5" style="display: none"></i>
+                </span>
+                <h6>Investasi</h6>
+            </div>
+            <div class="col">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-6"></i>
+                    <i class="fa-solid fa-file fa-stack-1x text-white" id="uncheck-6"></i>
+                    <i class="fa-solid fa-check fa-stack-1x text-white" id="check-6" style="display: none"></i>
                 </span>
                 <h6>Perjanjian</h6>
             </div>
@@ -723,8 +731,6 @@
                                     </select>
                                 </div>
 
-                                 
-
                                 <div class="col-md-6 mb-3">
                                     <label for="bidpek" class="mb-2" style="font-weight: 600">Bidang Pekerjaan</label>
                                     <select id="bidpek" class="form-select">
@@ -752,31 +758,14 @@
                                     </select>
                                 </div>
 
-                                <div class="col-md-6 mb-3">
-                                    <label for="penja" class="mb-2" style="font-weight: 600">Pengalaman Kerja</label>
-                                    <select id="penja" class="form-select">
-                                        <option selected disabled>-- Pilih Pengalaman Kerja --</option>
-                                        <option value="0">Pelajar atau belum pernah bekerja</option>
-                                        <option value="1">&lt; 1 Tahun</option>
-                                        <option value="2">1 s.d. 2 Tahun</option>
-                                        <option value="3">2 s.d. 3 Tahun</option>
-                                        <option value="4">&gt; 3 Tahun</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-md-6 mb-3">
-                                    <label for="perbul" class="mb-2" style="font-weight: 600">Pendapatan Per Bulan</label>
+                                {{-- <div class="col-md-6 mb-3">
+                                    <label for="perbul" class="mb-2" style="font-weight: 600">Rencana Pembiayaan</label>
                                     <select id="perbul" class="form-select">
-                                        <option selected disabled>-- Pilih Pendapatan per bulan --</option>
-                                        <option value="p1" style="font-size: 14px">Rp 0 - Rp 2.967.020</option>
-                                        <option value="p2" style="font-size: 14px">Rp 2.967.021 - Rp 5.934.040</option>
-                                        <option value="p3" style="font-size: 14px">Rp 5.934.041 - Rp 11.868.080</option>
-                                        <option value="p4" style="font-size: 14px">Rp 11.868.081 - Rp 25.000.000</option>
-                                        <option value="p5" style="font-size: 14px">Rp 25.000.001 - Rp 208.333.333</option>
-                                        <option value="p6" style="font-size: 14px">Rp 208.333.334 - Rp 4.166.666.667</option>
-                                        <option value="p7" style="font-size: 14px">&gt; Rp 4.166.666.667</option>
+                                        <option selected disabled>-- Pilih Pembiayaan --</option>
+                                        <option value="p1" style="font-size: 14px">Pembiayaan dikelola sendiri</option>
+                                        <option value="p2" style="font-size: 14px">Pembiayaan dikelola platform</option>
                                     </select>
-                                </div>
+                                </div> --}}
 
                                 <div class="col-md-6 mb-3">
                                     <label for="keprum" class="mb-2" style="font-weight: 600">Status Kepemilikan Rumah</label>
@@ -786,6 +775,15 @@
                                         <option value="2">Tidak memiliki rumah sendiri</option>
                                     </select>
                                 </div>
+
+                                {{-- Anda akan mengelola dana Anda sendiri dan bebas memilih sengketa pertanahan yang paling
+                                baik untuk Anda selesaikan. --}}
+
+                                {{-- Dikelola platform
+                                adalah pengelolaan sumber dana sponsor yang dijalankan oleh platform SENGKETA TANAH.
+                                Platform akan memberikan analisa seputar persengketaan tanah yang bisa diselesaikan dan
+                                menguntungkan. Semua persetujuan penggunaan dana tetap merupakan keputusan
+                                sponsor. --}}
 
                             </div>
 
@@ -864,8 +862,33 @@
         <div class="card mt-5 d-none" id="5">
             <div class="card-body">
                 <form action="">
-                    <div class="row" style="height: 500px">
-
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="pembiayaan" class="mb-2" style="font-weight: 600">Rencana Pembiayaan</label>
+                            <select id="pembiayaan" class="form-select">
+                                <option selected disabled>-- Pilih Pembiayaan --</option>
+                                <option value="sendiri">Pembiayaan dikelola sendiri</option>
+                                <option value="platform">Pembiayaan dikelola platform</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mt-3 pengelolaan-sendiri">
+                            <div class="alert alert-danger" role="alert">
+                                <p class="mb-0">
+                                    Anda akan mengelola dana Anda sendiri dan bebas memilih sengketa pertanahan yang paling
+                                    baik untuk Anda selesaikan.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-3 pengelolaan-platform">
+                            <div class="alert alert-danger" role="alert">
+                                <p class="mb-0">
+                                    Dikelola platform adalah pengelolaan sumber dana sponsor yang dijalankan oleh platform SENGKETA TANAH.
+                                    Platform akan memberikan analisa seputar persengketaan tanah yang bisa diselesaikan dan
+                                    menguntungkan. Semua persetujuan penggunaan dana tetap merupakan keputusan
+                                    sponsor.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </form>
                 <div class="row mt-4">
@@ -873,8 +896,26 @@
                         <button class="w-100 btn-lg btn btn-outline-brown kem-5 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
+                        <a class="w-100 btn-lg btn btn-brown lan-5 mt-2 mb-2">Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-5 d-none" id="6">
+            <div class="card-body">
+                <form action="">
+                    <div class="row" style="height: 500px">
+
+                    </div>
+                </form>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-6 mt-2 mb-2">Kembali</button>
+                    </div>
+                    <div class="col-md-6">
                         <a class="w-100 btn-lg btn btn-brown mt-2 mb-2" 
-                        data-bs-toggle="modal" data-bs-target="#daftarKorban">Daftar</a>
+                        data-bs-toggle="modal" data-bs-target="#daftarSponsor">Daftar</a>
                     </div>
                 </div>
             </div>
@@ -883,6 +924,30 @@
     </div>
 
     <hr>
+
+    <div class="modal fade my-auto text-center" id="daftarSponsor" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header p-2">
+                    <h1 class="modal-title mx-auto text-danger display-1 m">
+                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
+                            style="width: 100px" alt="">
+                    </h1>
+                </div>
+                <div class="modal-body">
+                    <h5 class="mb-3">Terima Kasih Anda Telah Bergabung Dengan Sengketa Tanah!</h5>
+                    Silahkan isi data tentang objek sengketa anda
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary me-auto"
+                        data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-success"
+                        href="{{url('')}}/buat-laporan" >Lanjut</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div class="row justify-content-center">
@@ -901,6 +966,23 @@
     @include('layouts.template-public.footer')
 
     <script>
+        $(function () {
+            var hidestuff = function () {
+                $(".pengelolaan-platform, .pengelolaan-sendiri").hide();
+            }
+            $("#pembiayaan").change(function () {
+                hidestuff();
+                var value = $(this).val();
+                if (value == "platform") {
+                    $(".pengelolaan-platform").show();
+                }
+                if (value == "sendiri") {
+                    $(".pengelolaan-sendiri").show();
+                }
+            });
+            hidestuff();
+        });
+
         $(".theSelect").select2({
             theme: "bootstrap-5",
         });
@@ -989,6 +1071,7 @@
             $("html, body").animate({scrollTop: 0}, 0);
         })
 
+        // 5
         $(".kem-5").click(function () {
             $('#4').removeClass('d-none')
             $('#5').addClass('d-none')
@@ -996,6 +1079,27 @@
             $('#brownie-5').addClass('text-disable')
             $('#uncheck-4').show()
             $('#check-4').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
+        })
+
+        $(".lan-5").click(function () {
+            $('#5').addClass('d-none')
+            $('#6').removeClass('d-none')
+            $('#brownie-6').addClass('text-brown')
+            $('#brownie-6').removeClass('text-disable')
+            $('#uncheck-5').hide()
+            $('#check-5').show()
+            $("html, body").animate({scrollTop: 0}, 0);
+        })
+
+        // 5
+        $(".kem-6").click(function () {
+            $('#5').removeClass('d-none')
+            $('#6').addClass('d-none')
+            $('#brownie-6').removeClass('text-brown')
+            $('#brownie-6').addClass('text-disable')
+            $('#uncheck-5').show()
+            $('#check-5').hide()
             $("html, body").animate({scrollTop: 0}, 0);
         })
         
