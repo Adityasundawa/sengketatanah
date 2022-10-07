@@ -1954,7 +1954,7 @@
                             @endif
                             <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
                                 <div class="card mb-2">
-                                    <div class="card-header text-white px-3 py-1" style="
+                                    {{-- <div class="card-header text-white px-3 py-1" style="
                                                 background: #8f8f8f">
                                         <div class="row">
 
@@ -1964,7 +1964,7 @@
                                                         style="height:20px"></h4>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
 
                                     <div class="card-body">
                                         @if($bs['id'] < 5) <div class="ribbon-pop"><i
@@ -2025,6 +2025,14 @@
                                                     aria-hidden="true"></span>
                                                 <span class="visually-hidden">Next</span>
                                             </button>
+                                           
+                                        </div>
+                                        <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <h5 class="mb-0 text-center">Kode Bid SP-001 <img src="https://sengketatanah.id/uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                                </h5></div>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -2100,8 +2108,8 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-primary text-white mb-0"
-                                                            data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                        <button class="btn float-end text-white mb-0"
+                                                            data-bs-toggle="modal" style="background-color: #61481C; color: #fff" data-bs-target="#exampleC">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
                                                 </div>
@@ -2182,8 +2190,8 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                            <a href="#" class=" mx-auto btn rounded-5" data-bs-toggle="modal"
+                                                data-bs-target="#berkasSponsor" style="text-decoration:none;background-color: #61481C; color: #fff">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
 
@@ -2218,8 +2226,8 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
-                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                    class="fa-solid fa-play text-danger"></i> Lihat
+                                                class="btn rounded-5" style="cursor:pointer; background-color: #A47E3B; color: #fff"><i
+                                                    class="fa-solid fa-play text-white"></i> Lihat
                                                 Podcast</span>
                                         </div>
                                     </div>
