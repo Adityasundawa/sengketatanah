@@ -639,10 +639,6 @@
                             <input type="file" class="form-control" name="surat_dom" id="surat_dom">
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="laporan_uang" class="mb-2" style="font-weight: 600">Laporan Keuangan</label>
-                            <input type="file" class="form-control" name="laporan_uang" id="laporan_uang">
-                        </div>
-                        <div class="col-md-6 mb-3">
                             <label for="rek_koran" class="mb-2" style="font-weight: 600">Rekening Koran</label>
                             <input type="file" class="form-control" name="rek_koran" id="rek_koran">
                         </div>
