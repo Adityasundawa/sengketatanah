@@ -1755,7 +1755,7 @@
                                     <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Objek BR-00{{$bs['id']}}
+                                                <h5 class="mb-0 text-center">Kode Bid BR-00{{$bs['id']}}
                                                     <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
                                                 </h5>
                                             </div>
@@ -2100,7 +2100,7 @@
                                 <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Objek BR-00{{$bs['id']}}
+                                            <h5 class="mb-0 text-center">Kode Bid BR-00{{$bs['id']}}
                                                 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
                                             </h5>
                                         </div>
@@ -2450,7 +2450,7 @@
                                 <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Objek BR-00{{$bs['id']}}
+                                            <h5 class="mb-0 text-center">Kode Bid BR-00{{$bs['id']}}
                                                 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
                                             </h5>
                                         </div>
@@ -2791,7 +2791,7 @@
                                 <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Objek BR-00{{$bs['id']}}
+                                            <h5 class="mb-0 text-center">Kode Bid BR-00{{$bs['id']}}
                                                 <img src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
                                             </h5>
                                         </div>
