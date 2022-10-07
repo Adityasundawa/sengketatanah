@@ -1458,7 +1458,7 @@
                         <div class="row g-2 justify-content-between text-center scroll-simple"
                             style="overflow-x: auto; flex-wrap: nowrap;">
                             <div class="col mb-4">
-                                <a href="{{url('/')}}/bid-sengketa"
+                                <a href="{{url('/')}}/join"
                                     class="btn d-flex align-items-center h-100 rounded-4 shadow btn-outline-light"
                                     style="width: 200px">
                                     <img src="{{asset('')}}images/tanah_merdeka_join.png" style="width: 100%"
