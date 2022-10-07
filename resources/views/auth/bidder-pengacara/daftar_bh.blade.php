@@ -270,6 +270,7 @@
                                 <option>Konsumtif</option>
                                 <option>Pertanian, Perburuan dan Kehutanan</option>
                                 <option>Perikanan</option>
+                                <option>Hukum</option>
                                 <option>Pertambangan dan Penggalian</option>
                                 <option>Industri Pengolahan</option>
                                 <option>Listrik, Gas, dan Air</option>
@@ -515,8 +516,7 @@
 
                         <div class="col-md-6 mb-3">
                             <div class="text-center">
-                                <img src="{{asset('')}}images/foto_selfie.jpeg" style="width: 35.8%"
-                                    alt="">
+                                <img src="{{asset('')}}images/foto_selfie.jpeg" style="width: 35.8%" alt="">
                             </div>
                             <div class="text-center mb-2">
                                 Contoh Foto

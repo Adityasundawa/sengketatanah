@@ -220,18 +220,6 @@
                         </div>
 
                         <div class="col-md-6 mb-3">
-                            <label for="hp" class="mb-2" style="font-weight: 600">Nomor HP</label>
-                            <input type="number" class="form-control" name="hp" id="hp"
-                                placeholder="Contoh : 0812-3452-3571">
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <label for="tp-lahir" class="mb-2" style="font-weight: 600">Tempat Lahir</label>
-                            <input type="text" class="form-control" name="tp-lahir" id="tp-lahir"
-                                placeholder="Contoh : Jakarta">
-                        </div>
-
-                        <div class="col-md-6 mb-3">
                             <label for="password" class="mb-2" style="font-weight: 600">Kata Sandi</label>
                             <input type="password" class="form-control" name="password" id="password"
                                 placeholder="Kata Sandi Anda">
@@ -241,6 +229,18 @@
                             <label for="password-c" class="mb-2" style="font-weight: 600">Konfirmasi Kata Sandi</label>
                             <input type="password" class="form-control" name="password-c" id="password-c"
                                 placeholder="Kata Sandi Anda">
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="hp" class="mb-2" style="font-weight: 600">Nomor HP</label>
+                            <input type="number" class="form-control" name="hp" id="hp"
+                                placeholder="Contoh : 0812-3452-3571">
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="tp-lahir" class="mb-2" style="font-weight: 600">Tempat Lahir</label>
+                            <input type="text" class="form-control" name="tp-lahir" id="tp-lahir"
+                                placeholder="Contoh : Jakarta">
                         </div>
 
                         <div class="col-md-6 mb-3">
