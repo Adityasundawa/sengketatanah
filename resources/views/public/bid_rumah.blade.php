@@ -1778,7 +1778,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                        <button class="btn float-end btn-brown text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
                                                 </div>
@@ -2123,7 +2123,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="col">
-                                                    <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                    <button class="btn float-end btn-brown text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                 </div>
                                             </div>
@@ -2473,7 +2473,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="col">
-                                                    <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                    <button class="btn float-end btn-brown text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                 </div>
                                             </div>
@@ -2814,7 +2814,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="col">
-                                                    <button class="btn float-end btn-warning text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
+                                                    <button class="btn float-end btn-brown text-white mb-0" data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                 </div>
                                             </div>
