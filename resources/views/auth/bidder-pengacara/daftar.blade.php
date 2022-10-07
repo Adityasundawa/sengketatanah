@@ -723,14 +723,7 @@
                                     </select>
                                 </div>
 
-                                <div class="col-md-6 mb-3">
-                                    <label for="pekol" class="mb-2" style="font-weight: 600">Pekerjaan Online</label>
-                                    <select id="pekol" class="form-select">
-                                        <option selected disabled>-- Pilih Pekerjaan Online --</option>
-                                        <option value="1">Berbasis Internet / online</option>
-                                        <option value="2">Tidak Berbasis Internet / online</option>
-                                    </select>
-                                </div>
+                                 
 
                                 <div class="col-md-6 mb-3">
                                     <label for="bidpek" class="mb-2" style="font-weight: 600">Bidang Pekerjaan</label>
