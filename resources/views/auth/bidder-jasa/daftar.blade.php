@@ -158,7 +158,7 @@
     @include('layouts.template-public.header')
 
     <div class="container mt-4 mb-5">
-        <h4 class="text-center">Form Jasa {{$req->title}}</h4>
+        <h4 class="text-center">Form Pendaftaran {{$req->title}}</h4>
 
         <div class="row mt-5 g-0 text-center mote">
             <div class="col">
@@ -854,7 +854,7 @@
                 <form action="">
                     <div class="row mb-4">
                         <div class="col-md-12 mb-3">
-                            <label for="sert_peng" class="mb-2" style="font-weight: 600">Sertifikat Pengacara</label>
+                            <label for="sert_peng" class="mb-2" style="font-weight: 600">Sertifikat {{$req->title}}</label>
                             <input class="form-control" type="file" id="sert_peng" aria-describedby="sert_peng">
                         </div>
                         
