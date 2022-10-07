@@ -863,8 +863,8 @@
         aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header p-0 pb-2">
-                    <h1 class="modal-title mx-auto text-danger display-1 mb-2">
+                <div class="modal-header p-2">
+                    <h1 class="modal-title mx-auto text-danger display-1 m">
                         <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
                             style="width: 100px" alt="">
                     </h1>
