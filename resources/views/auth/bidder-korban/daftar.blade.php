@@ -761,13 +761,13 @@
                                     <label for="perbul" class="mb-2" style="font-weight: 600">Pendapatan Per Bulan</label>
                                     <select id="perbul" class="form-select">
                                         <option selected disabled>-- Pilih Pendapatan per bulan --</option>
-                                        <option value="p1" style="font-size: 14px">Rp 0 - Rp 2.967.020</option>
-                                        <option value="p2" style="font-size: 14px">Rp 2.967.021 - Rp 5.934.040</option>
-                                        <option value="p3" style="font-size: 14px">Rp 5.934.041 - Rp 11.868.080</option>
-                                        <option value="p4" style="font-size: 14px">Rp 11.868.081 - Rp 25.000.000</option>
-                                        <option value="p5" style="font-size: 14px">Rp 25.000.001 - Rp 208.333.333</option>
-                                        <option value="p6" style="font-size: 14px">Rp 208.333.334 - Rp 4.166.666.667</option>
-                                        <option value="p7" style="font-size: 14px">&gt; Rp 4.166.666.667</option>
+                                        <option value="p1">Rp 0 - Rp 2.967.020</option>
+                                        <option value="p2">Rp 2.967.021 - Rp 5.934.040</option>
+                                        <option value="p3">Rp 5.934.041 - Rp 11.868.080</option>
+                                        <option value="p4">Rp 11.868.081 - Rp 25.000.000</option>
+                                        <option value="p5">Rp 25.000.001 - Rp 208.333.333</option>
+                                        <option value="p6">Rp 208.333.334 - Rp 4.166.666.667</option>
+                                        <option value="p7">&gt; Rp 4.166.666.667</option>
                                     </select>
                                 </div>
 
@@ -897,6 +897,7 @@
             $('#brownie-2').removeClass('text-disable')
             $('#uncheck-1').hide()
             $('#check-1').show()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         // 2
@@ -907,6 +908,7 @@
             $('#brownie-2').addClass('text-disable')
             $('#uncheck-1').show()
             $('#check-1').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         $(".lan-2").click(function () {
@@ -916,6 +918,7 @@
             $('#brownie-3').removeClass('text-disable')
             $('#uncheck-2').hide()
             $('#check-2').show()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         // 3
@@ -926,6 +929,7 @@
             $('#brownie-3').addClass('text-disable')
             $('#uncheck-2').show()
             $('#check-2').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         $(".lan-3").click(function () {
@@ -935,6 +939,7 @@
             $('#brownie-4').removeClass('text-disable')
             $('#uncheck-3').hide()
             $('#check-3').show()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         // 4
@@ -945,6 +950,7 @@
             $('#brownie-4').addClass('text-disable')
             $('#uncheck-3').show()
             $('#check-3').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
     </script>
 

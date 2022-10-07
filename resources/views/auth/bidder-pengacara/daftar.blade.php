@@ -925,6 +925,7 @@
             $('#brownie-2').removeClass('text-disable')
             $('#uncheck-1').hide()
             $('#check-1').show()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         // 2
@@ -935,6 +936,7 @@
             $('#brownie-2').addClass('text-disable')
             $('#uncheck-1').show()
             $('#check-1').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         $(".lan-2").click(function () {
@@ -944,6 +946,7 @@
             $('#brownie-3').removeClass('text-disable')
             $('#uncheck-2').hide()
             $('#check-2').show()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         // 3
@@ -954,6 +957,7 @@
             $('#brownie-3').addClass('text-disable')
             $('#uncheck-2').show()
             $('#check-2').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         $(".lan-3").click(function () {
@@ -963,6 +967,7 @@
             $('#brownie-4').removeClass('text-disable')
             $('#uncheck-3').hide()
             $('#check-3').show()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         // 4
@@ -973,6 +978,7 @@
             $('#brownie-4').addClass('text-disable')
             $('#uncheck-3').show()
             $('#check-3').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         $(".lan-4").click(function () {
@@ -982,6 +988,7 @@
             $('#brownie-5').removeClass('text-disable')
             $('#uncheck-4').hide()
             $('#check-4').show()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         $(".kem-5").click(function () {
@@ -991,6 +998,7 @@
             $('#brownie-5').addClass('text-disable')
             $('#uncheck-4').show()
             $('#check-4').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
         
     </script>
