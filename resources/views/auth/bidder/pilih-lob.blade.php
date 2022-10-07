@@ -678,7 +678,7 @@
         <center>
             <img src="{{asset('')}}uploads/sengketa-logo_pas.png" alt="" style="width: 100px" class="mb-3">
         </center>
-        <h4 class="text-center">BID Lahan</h4>
+        <h4 class="text-center">BID LAHAN</h4>
         <h5 class="text-center text-muted fw-normal">Pilih Jenis Akun yang akan Anda Buat!</h5>
 
         <div class="wrapper mt-4">
@@ -688,7 +688,7 @@
                     <div class="row row-md align-items-center">
                         <div class="col-md-8">
                             <h5>Daftar Sebagai Lender (Pemberi Pinjaman)</h5>
-                            <h6 class="text-muted fw-normal mb-0">Pribadi adalah orang yang memiliki lahan atas nama dirinya sendiri.</h6>
+                            <h6 class="text-muted fw-normal mb-0">Pribadi/Badan Usaha adalah pihak yang memberi pinjaman kepada pemilik lahan.</h6>
                         </div>
                         <div class="col-md row-col">
                             <a href="{{url('')}}/pilih-lahan-lender" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Lender <br> (Pemberi Pinjaman)</a>
@@ -702,7 +702,7 @@
                     <div class="row row-md align-items-center">
                         <div class="col-md-8">
                             <h5>Daftar Sebagai Borrower (Pemilik Lahan)</h5>
-                            <h6 class="text-muted fw-normal mb-0">Milik Perusahaan adalah badan hukum yang memiliki lahan atas nama perusahaan tersebut.</h6>
+                            <h6 class="text-muted fw-normal mb-0">Pribadi/Badan Usaha adalah pihak yang memiliki lahan.</h6>
                         </div>
                         <div class="col-md row-col">
                             <a href="{{url('')}}/pilih-lahan-borrower" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Borrower <br> (Pemilik Lahan)</a>

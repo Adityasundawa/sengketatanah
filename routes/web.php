@@ -54,8 +54,8 @@ Route::get('pilih-lahan-lender', [SengketaController::class, "pilihLahanLender"]
 Route::get('pilih-lahan-borrower', [SengketaController::class, "pilihLahanBorrower"]);
 
 Route::get('pilih-rumah-lob', [SengketaController::class, "pilihRumahLOB"]);
-Route::get('pilih-rumah-lahan-lender', [SengketaController::class, "pilihRumahLahanLender"]);
-Route::get('pilih-rumah-lahan-borrower', [SengketaController::class, "pilihRumahLahanBorrower"]);
+Route::get('pilih-rumah-lender', [SengketaController::class, "pilihRumahLender"]);
+Route::get('pilih-rumah-borrower', [SengketaController::class, "pilihRumahBorrower"]);
 
 Route::get('daftar-bid-korban', [SengketaController::class, "daftarBidF"]);
 
