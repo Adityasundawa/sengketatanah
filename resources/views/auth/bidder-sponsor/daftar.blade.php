@@ -314,21 +314,21 @@
                         </div>
 
                         <div class="col-md-6 mb-3">
-                            <label for="nm-npwp" class="mb-2" style="font-weight: 600">Nomor NPWP (OPTIONAL)</label>
+                            <label for="nm-npwp" class="mb-2" style="font-weight: 600">Nomor NPWP (Optional)</label>
                             <input type="text" class="form-control" name="nm-npwp" id="nm-npwp"
                                 placeholder="Contoh : 12.345.678.9-123.000">
                             <div id="nm-npwp" class="form-text text-danger">Jika tidak ada, tidak perlu diisi</div>
                         </div>
 
                         <div class="col-md-6 mb-3">
-                            <label for="ft-npwp" class="mb-2" style="font-weight: 600">Foto NPWP (OPTIONAL)</label>
+                            <label for="ft-npwp" class="mb-2" style="font-weight: 600">Foto NPWP (Optional)</label>
                             <input class="form-control" type="file" id="ft-npwp" aria-describedby="ft-npwp">
                             <div id="ft-npwp" class="form-text text-danger">Jika tidak ada, tidak perlu diisi</div>
                         </div>
 
                         <div class="col-md-6 mb-3">
                             <label for="ft-kk" class="mb-2" style="font-weight: 600">Foto Kartu Keluarga
-                                (OPTIONAL)</label>
+                                (Optional)</label>
                             <input class="form-control" type="file" id="ft-kk" aria-describedby="ft-kk">
                             <div id="ft-kk" class="form-text text-danger">Jika tidak ada, tidak perlu diisi</div>
                         </div>
