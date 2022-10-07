@@ -188,8 +188,24 @@
             <div class="col">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-4"></i>
-                    <i class="fa-solid fa-paperclip fa-stack-1x text-white" id="uncheck-4"></i>
+                    <i class="fa-solid fa-money-bill fa-stack-1x text-white" id="uncheck-4"></i>
                     <i class="fa-solid fa-check fa-stack-1x text-white" id="check-4" style="display: none"></i>
+                </span>
+                <h6>Investasi</h6>
+            </div>
+            <div class="col">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-5"></i>
+                    <i class="fa-solid fa-file fa-stack-1x text-white" id="uncheck-5"></i>
+                    <i class="fa-solid fa-check fa-stack-1x text-white" id="check-5" style="display: none"></i>
+                </span>
+                <h6>Perjanjian</h6>
+            </div>
+            <div class="col">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-6"></i>
+                    <i class="fa-solid fa-paperclip fa-stack-1x text-white" id="uncheck-6"></i>
+                    <i class="fa-solid fa-check fa-stack-1x text-white" id="check-6" style="display: none"></i>
                 </span>
                 <h6>Upload File</h6>
             </div>
@@ -648,6 +664,67 @@
             <div class="card-body">
                 <form action="">
                     <div class="row">
+                        <div class="col-12">
+                            <label for="pembiayaan" class="mb-2" style="font-weight: 600">Rencana Pembiayaan</label>
+                            <select id="pembiayaan" class="form-select">
+                                <option selected disabled>-- Pilih Pembiayaan --</option>
+                                <option value="sendiri">Pembiayaan dikelola sendiri</option>
+                                <option value="platform">Pembiayaan dikelola platform</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mt-3 pengelolaan-sendiri">
+                            <div class="alert alert-danger" role="alert">
+                                <p class="mb-0">
+                                    Anda akan mengelola dana Anda sendiri dan bebas memilih sengketa pertanahan yang paling
+                                    baik untuk Anda selesaikan.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-3 pengelolaan-platform">
+                            <div class="alert alert-danger" role="alert">
+                                <p class="mb-0">
+                                    Dikelola platform adalah pengelolaan sumber dana sponsor yang dijalankan oleh platform SENGKETA TANAH.
+                                    Platform akan memberikan analisa seputar persengketaan tanah yang bisa diselesaikan dan
+                                    menguntungkan. Semua persetujuan penggunaan dana tetap merupakan keputusan
+                                    sponsor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-4 mt-2 mb-2">Kembali</button>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="w-100 btn-lg btn btn-brown lan-4 mt-2 mb-2">Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-5 d-none" id="5">
+            <div class="card-body">
+                <form action="">
+                    <div class="row" style="height: 500px">
+
+                    </div>
+                </form>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-5 mt-2 mb-2">Kembali</button>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="w-100 btn-lg btn btn-brown lan-5 mt-2 mb-2">Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-5 d-none" id="6">
+            <div class="card-body">
+                <form action="">
+                    <div class="row">
 
                         <div class="col-md-6 mb-3">
                             <label for="akta_pend" class="mb-2" style="font-weight: 600">Akta Pendirian</label>
@@ -699,7 +776,7 @@
                 </form>
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-outline-brown kem-4 mt-2 mb-2">Kembali</button>
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-6 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
                         <a href="{{url('')}}/buat-laporan" class="w-100 btn-lg btn btn-brown lan-4 mt-2 mb-2">Daftar</a>
@@ -729,6 +806,23 @@
     @include('layouts.template-public.footer')
 
     <script>
+        $(function () {
+            var hidestuff = function () {
+                $(".pengelolaan-platform, .pengelolaan-sendiri").hide();
+            }
+            $("#pembiayaan").change(function () {
+                hidestuff();
+                var value = $(this).val();
+                if (value == "platform") {
+                    $(".pengelolaan-platform").show();
+                }
+                if (value == "sendiri") {
+                    $(".pengelolaan-sendiri").show();
+                }
+            });
+            hidestuff();
+        });
+        
         $(".theSelect").select2({
             theme: "bootstrap-5",
         });
@@ -804,6 +898,48 @@
             $('#brownie-4').addClass('text-disable')
             $('#uncheck-3').show()
             $('#check-3').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
+        })
+
+        $(".lan-4").click(function () {
+            $('#4').addClass('d-none')
+            $('#5').removeClass('d-none')
+            $('#brownie-5').addClass('text-brown')
+            $('#brownie-5').removeClass('text-disable')
+            $('#uncheck-4').hide()
+            $('#check-4').show()
+            $("html, body").animate({scrollTop: 0}, 0);
+        })
+
+        // 5
+        $(".kem-5").click(function () {
+            $('#4').removeClass('d-none')
+            $('#5').addClass('d-none')
+            $('#brownie-5').removeClass('text-brown')
+            $('#brownie-5').addClass('text-disable')
+            $('#uncheck-4').show()
+            $('#check-4').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
+        })
+
+        $(".lan-5").click(function () {
+            $('#5').addClass('d-none')
+            $('#6').removeClass('d-none')
+            $('#brownie-6').addClass('text-brown')
+            $('#brownie-6').removeClass('text-disable')
+            $('#uncheck-5').hide()
+            $('#check-5').show()
+            $("html, body").animate({scrollTop: 0}, 0);
+        })
+
+        // 6
+        $(".kem-6").click(function () {
+            $('#5').removeClass('d-none')
+            $('#6').addClass('d-none')
+            $('#brownie-6').removeClass('text-brown')
+            $('#brownie-6').addClass('text-disable')
+            $('#uncheck-5').show()
+            $('#check-5').hide()
             $("html, body").animate({scrollTop: 0}, 0);
         })
         
