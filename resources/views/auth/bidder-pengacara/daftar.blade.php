@@ -301,7 +301,7 @@
 
                         <div class="col-md-6 mb-3">
                             <div class="text-center">
-                                <img src="https://indofund.id/images/kyc-foto/fotoselfie-true.jpg" style="width: 35.8%"
+                                <img src="{{asset('')}}images/foto_selfie.jpeg" style="width: 35.8%"
                                     alt="">
                             </div>
                             <div class="text-center mb-2">
