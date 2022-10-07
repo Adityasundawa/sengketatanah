@@ -292,49 +292,10 @@
                             </select>
                         </div>
 
-                        <div class="col-md-6 mb-3">
-                            <label for="pekol" class="mb-2" style="font-weight: 600">Pekerjaan Online</label>
-                            <select id="pekol" class="form-select">
-                                <option selected disabled>-- Pilih Pekerjaan Online --</option>
-                                <option value="1">Berbasis Internet / online</option>
-                                <option value="2">Tidak Berbasis Internet / online</option>
-                            </select>
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <label for="perbul" class="mb-2" style="font-weight: 600">Pendapatan Per Bulan</label>
-                            <select id="perbul" class="form-select">
-                                <option selected disabled>-- Pilih Pendapatan Per Bulan --</option>
-                                <option value="1">&lt;Rp 12.500.000</option>
-                                <option value="2">Rp 12.000.001 - Rp 50.000.000</option>
-                                <option value="3">Rp 50.000.001 - Rp 500.000.000</option>
-                                <option value="4">Rp 500.000.001 - 50.000.000.000</option>
-                                <option value="5">&gt; Rp50.000.000.000</option>
-                            </select>
-                        </div>
-
-                        <div class="col-md-12 mb-3">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label for="total_asset" class="mb-2" style="font-weight: 600">Total Asset</label>
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">
-                                                <span class="font-weight-semi-bold">Rp</span>
-                                            </span>
-                                        </div>
-                                        <input autocomplete="off" placeholder="0" class="form-control text-right" name="total_asset" type="text" value="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="col-md-12">
-                            <label for="desk_usaha" class="form-label">Example textarea</label>
+                            <label for="desk_usaha" class="form-label" style="font-weight: 600">Deskripsi Usaha</label>
                             <textarea class="form-control" id="desk_usaha" rows="6"></textarea>
                         </div>
-
-                        
 
                     </div>
 
@@ -822,7 +783,7 @@
             });
             hidestuff();
         });
-        
+
         $(".theSelect").select2({
             theme: "bootstrap-5",
         });
