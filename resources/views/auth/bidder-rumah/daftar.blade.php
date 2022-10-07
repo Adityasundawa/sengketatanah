@@ -199,7 +199,7 @@
                     <i class="fa-solid fa-map-pin fa-stack-1x text-white" id="uncheck-5"></i>
                     <i class="fa-solid fa-check fa-stack-1x text-white" id="check-5" style="display: none"></i>
                 </span>
-                <h6>Info Lahan</h6>
+                <h6>Info Rumah</h6>
             </div>
             <div class="col">
                 <span class="fa-stack fa-2x">
