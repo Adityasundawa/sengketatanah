@@ -660,10 +660,10 @@
                         </div>
 
                         <div class="col-md-12 mb-3">
-                            <input class="form-check-input" type="checkbox" value="" id="advance">
-                            <label class="form-check-label" for="flexCheckChecked">
+                            <input class="form-check-input mr-1" type="checkbox" value="" id="advance">
+                            <span class="form-check-label" for="flexCheckChecked">
                                 Klik tombol ini jika alamat KTP dengan alamat domisili berbeda
-                            </label>
+                            </span>
                         </div>
 
                     </div>
@@ -705,7 +705,7 @@
                                 <div class="col-md-6 mb-3">
                                     <label for="pend" class="mb-2" style="font-weight: 600">Pekerjaan</label>
                                     <select id="pend" class="form-select">
-                                        <option selected disabled>-- Pilih Pendidikan Terakhir --</option>
+                                        <option selected disabled>-- Pilih Pekerjaan Terakhir --</option>
                                         <option value="1">PNS</option>
                                         <option value="2">TNI/ POLRI/</option>
                                         <option value="3">Karyawan BUMN</option>
@@ -729,7 +729,7 @@
                                 <div class="col-md-6 mb-3">
                                     <label for="bidpek" class="mb-2" style="font-weight: 600">Bidang Pekerjaan</label>
                                     <select id="bidpek" class="form-select">
-                                        <option selected disabled>-- Pilih Pekerjaan Online --</option>
+                                        <option selected disabled>-- Pilih Bidang Pekerjaan --</option>
                                         <option value="e2">Pertanian, Perburuan dan Kehutanan</option>
                                         <option value="e5">Perikanan</option>
                                         <option value="e6">Pertambangan dan Penggalian</option>
