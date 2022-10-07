@@ -201,6 +201,14 @@
                 </span>
                 <h6>Upload File</h6>
             </div>
+            <div class="col">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-6"></i>
+                    <i class="fa-solid fa-file fa-stack-1x text-white" id="uncheck-6"></i>
+                    <i class="fa-solid fa-check fa-stack-1x text-white" id="check-6" style="display: none"></i>
+                </span>
+                <h6>Perjanjian</h6>
+            </div>
         </div>
 
         <div class="card mt-5" id="1">
@@ -863,7 +871,26 @@
                         <button class="w-100 btn-lg btn btn-outline-brown kem-5 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
-                        <a href="{{url('')}}/buat-laporan" class="w-100 btn-lg btn btn-brown">Daftar</a>
+                        <button class="w-100 btn-lg btn btn-outline-brown lan-5 mt-2 mb-2">Lanjut</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-5 d-none" id="6">
+            <div class="card-body">
+                <form action="">
+                    <div class="row" style="height: 500px">
+
+                    </div>
+                </form>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-6 mt-2 mb-2">Kembali</button>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="w-100 btn-lg btn btn-brown mt-2 mb-2" 
+                        data-bs-toggle="modal" data-bs-target="#daftarSponsor">Daftar</a>
                     </div>
                 </div>
             </div>
@@ -985,6 +1012,27 @@
             $('#brownie-5').addClass('text-disable')
             $('#uncheck-4').show()
             $('#check-4').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
+        })
+
+        $(".lan-5").click(function () {
+            $('#5').addClass('d-none')
+            $('#6').removeClass('d-none')
+            $('#brownie-6').addClass('text-brown')
+            $('#brownie-6').removeClass('text-disable')
+            $('#uncheck-5').hide()
+            $('#check-5').show()
+            $("html, body").animate({scrollTop: 0}, 0);
+        })
+
+        // 5
+        $(".kem-6").click(function () {
+            $('#5').removeClass('d-none')
+            $('#6').addClass('d-none')
+            $('#brownie-6').removeClass('text-brown')
+            $('#brownie-6').addClass('text-disable')
+            $('#uncheck-5').show()
+            $('#check-5').hide()
             $("html, body").animate({scrollTop: 0}, 0);
         })
         
