@@ -160,7 +160,7 @@
     <div class="container mt-4 mb-5">
         <h4 class="text-center">Form Sponsor (Personal)</h4>
 
-        <div class="row mt-5 text-center">
+        <div class="row mt-5 text-center mote">
             <div class="col">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x text-brown" id="brownie-1"></i>
