@@ -553,13 +553,6 @@
             width: 33.3333%
         }
 
-        @media (max-width: 1200px) {
-            .col-12.custom {
-                width: 50% !important
-            }
-
-        }
-
         @media (max-width: 992px) {
             .col-12.custom {
                 width: 51% !important
