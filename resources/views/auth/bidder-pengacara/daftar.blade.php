@@ -743,6 +743,7 @@
                                         <option value="e52">Perantara Keuangan</option>
                                         <option value="e56">Real Estate, Usaha Persewaan, dan Jasa Perusahaan</option>
                                         <option value="e62">Administrasi Pemerintahan, Pertahanan, dan Jaminan Sosial Wajib</option>
+                                        <option value="e64">Jasa Hukum</option>
                                         <option value="e63">Jasa Pendidikan</option>
                                         <option value="e64">Jasa Kesehatan dan Kegiatan Sosial</option>
                                         <option value="e67">Kegiatan Organisasi Yang Tidak Diklasifikasi Ditempat Lain</option>
