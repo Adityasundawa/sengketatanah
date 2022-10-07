@@ -1171,8 +1171,12 @@
                 <div class="row g-2 mt-2 desktop">
 
                     <div class="col-auto">
-                        <a href="{{url('')}}/pilih-user" class="btn" style="background-color: #61481C; color: #fff"
-                            href="{{url('')}}/register">Daftar Sekarang</a>
+                        <form action="{{url('')}}/daftar-jasa"
+                            method="get" id="form-notaris">
+                            <input type="hidden" name="title"
+                                value="Notaris">
+                        </form>
+                        <a onclick="return $('form#form-notaris').submit()" class="btn" style="background-color: #61481C; color: #fff">Daftar Sekarang</a>
                     </div>
 
                     <div class="col-auto">
@@ -1739,8 +1743,7 @@
                 <div class="row g-0">
                     <div class="col-auto ms-auto" style="margin-top:5px">
                         <div class="d-grid gap-2 me-1">
-                            <a href="{{url('')}}/pilih-user" class="btn btn-sm btn-outline-brown rounded-5 fw-bold"
-                                href="{{url('')}}/register">Daftar Sekarang</a>
+                            <a onclick="return $('form#form-notaris').submit()" class="btn btn-sm btn-outline-brown rounded-5 fw-bold">Daftar Sekarang</a>
                         </div>
                     </div>
 

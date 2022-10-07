@@ -264,6 +264,14 @@ class SengketaController extends Controller
 
 
 
+    public function daftarBidJ(Request $request)
+    {
+        $data['req'] = $request;
+        return view('auth.bidder-jasa.daftar', $data);
+    }
+
+
+
     public function buatLaporan(Request $request)
     {
         $data['req'] = $request;
