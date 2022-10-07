@@ -2100,7 +2100,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-primary text-white mb-0"
+                                                        <button class="btn float-end btn-warning text-white mb-0"
                                                             data-bs-toggle="modal" data-bs-target="#exampleC">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
@@ -2182,8 +2182,8 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                            <a href="#" class=" mx-auto btn rounded-5" data-bs-toggle="modal"
+                                                data-bs-target="#berkasSponsor" style="text-decoration:none;background-color: #61481C; color: #fff">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
 
@@ -2218,8 +2218,8 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
-                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                    class="fa-solid fa-play text-danger"></i> Lihat
+                                                class="btn rounded-5" style="cursor:pointer; background-color: #A47E3B; color: #fff"><i
+                                                    class="fa-solid fa-play text-white"></i> Lihat
                                                 Podcast</span>
                                         </div>
                                     </div>
