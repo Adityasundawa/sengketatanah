@@ -325,7 +325,7 @@
                     <div class="row mt-4">
                         <div class="col-md-6"></div>
                         <div class="col-md-6">
-                            <button type="button" class="w-100 btn-lg btn btn-brown lan-1">Lanjut</button>
+                            <button type="button" class="w-100 btn-lg btn btn-brown lan-1 mt-2 mb-2">Lanjut</button>
                         </div>
                     </div>
                 </form>
@@ -439,10 +439,10 @@
                 </form>
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-outline-brown kem-2">Kembali</button>
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-2 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-brown lan-2">Lanjut</button>
+                        <button class="w-100 btn-lg btn btn-brown lan-2 mt-2 mb-2">Lanjut</button>
                     </div>
                 </div>
             </div>
@@ -635,10 +635,10 @@
                 </form>
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-outline-brown kem-3">Kembali</button>
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-3 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-brown lan-3">Lanjut</button>
+                        <button class="w-100 btn-lg btn btn-brown lan-3 mt-2 mb-2">Lanjut</button>
                     </div>
                 </div>
             </div>
@@ -699,10 +699,10 @@
                 </form>
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-outline-brown kem-4">Kembali</button>
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-4 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
-                        <a href="{{url('')}}/buat-laporan" class="w-100 btn-lg btn btn-brown lan-4">Daftar</a>
+                        <a href="{{url('')}}/buat-laporan" class="w-100 btn-lg btn btn-brown lan-4 mt-2 mb-2">Daftar</a>
                     </div>
                 </div>
             </div>
@@ -713,7 +713,7 @@
     <hr>
 
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mote">
         <div class="col-12 mt-2 text-center">
             <b>Download Aplikasinya!</b>
             <p class="fw-lighter mb-0">Platform Seputar Tanah No. 1 di Indonesia</p>

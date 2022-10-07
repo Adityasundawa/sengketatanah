@@ -331,7 +331,7 @@
                     <div class="row mt-4">
                         <div class="col-md-6"></div>
                         <div class="col-md-6">
-                            <button type="button" class="w-100 btn-lg btn btn-brown lan-1">Lanjut</button>
+                            <button type="button" class="w-100 btn-lg btn btn-brown lan-1 mt-2 mb-2">Lanjut</button>
                         </div>
                     </div>
                 </form>
@@ -662,7 +662,7 @@
                         <div class="col-md-12 mb-3">
                             <input class="form-check-input" type="checkbox" value="" id="advance">
                             <label class="form-check-label" for="flexCheckChecked">
-                                Jika alamat ktp dengan alamat domisili berbeda klik tombol ini
+                                Klik tombol ini jika alamat KTP dengan alamat domisili berbeda
                             </label>
                         </div>
 
@@ -670,10 +670,10 @@
                 </form>
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-outline-brown kem-2">Kembali</button>
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-2 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-brown lan-2">Lanjut</button>
+                        <button class="w-100 btn-lg btn btn-brown lan-2 mt-2 mb-2">Lanjut</button>
                     </div>
                 </div>
             </div>
@@ -796,10 +796,10 @@
                 </form>
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-outline-brown kem-3">Kembali</button>
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-3 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-brown lan-3">Lanjut</button>
+                        <button class="w-100 btn-lg btn btn-brown lan-3 mt-2 mb-2">Lanjut</button>
                     </div>
                 </div>
             </div>
@@ -853,10 +853,10 @@
                 </form>
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-outline-brown kem-4">Kembali</button>
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-4 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
-                        <a href="{{url('')}}/buat-laporan" class="w-100 btn-lg btn btn-brown">Daftar</a>
+                        <a href="{{url('')}}/buat-laporan" class="w-100 btn-lg btn btn-brown mt-2 mb-2">Daftar</a>
                     </div>
                 </div>
             </div>
