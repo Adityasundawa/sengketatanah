@@ -48,6 +48,7 @@ Route::get('detail-main-petugas', [PublicController::class, "detailPetugas"]);
 Route::get('pilih-user', [SengketaController::class, "pilihUser"]);
 Route::get('pilih-sponsor', [SengketaController::class, "pilihSponsor"]);
 Route::get('pilih-pengacara', [SengketaController::class, "pilihPengacara"]);
+Route::get('pilih-lob', [SengketaController::class, "pilihLOB"]);
 Route::get('pilih-lahan', [SengketaController::class, "pilihLahan"]);
 
 Route::get('daftar-bid-korban', [SengketaController::class, "daftarBidF"]);

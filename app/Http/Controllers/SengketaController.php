@@ -149,6 +149,11 @@ class SengketaController extends Controller
         return view('auth.bidder.pilih-l');
     }
 
+    public function pilihLOB()
+    {
+        return view('auth.bidder.pilih-lob');
+    }
+
     public function daftarBidF(Request $request)
     {
         $data['req'] = $request;

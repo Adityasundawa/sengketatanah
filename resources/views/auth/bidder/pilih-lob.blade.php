@@ -678,7 +678,7 @@
         <center>
             <img src="{{asset('')}}uploads/sengketa-logo_pas.png" alt="" style="width: 100px" class="mb-3">
         </center>
-        <h4 class="text-center">Pilih Jenis Akun Lender</h4>
+        <h4 class="text-center">Pilih Jenis Akun Yang Anda Buat</h4>
         <h5 class="text-center text-muted fw-normal">Pilih Jenis Akun yang akan Anda Buat!</h5>
 
         <div class="wrapper mt-4">
@@ -687,11 +687,11 @@
                 <div class="card-body p-5">
                     <div class="row row-md align-items-center">
                         <div class="col-md-8">
-                            <h5>Daftar Sebagai Pribadi</h5>
+                            <h5>Daftar Sebagai Lender (Pemberi Pinjaman)</h5>
                             <h6 class="text-muted fw-normal mb-0">Pribadi adalah orang yang memiliki lahan atas nama dirinya sendiri.</h6>
                         </div>
                         <div class="col-md row-col">
-                            <a href="{{url('')}}/daftar-bid-lahan-pribadi" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Pribadi</a>
+                            <a href="{{url('')}}/pilih-lahan" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Lender (Pemberi Pinjaman)</a>
                         </div>
                     </div>
                 </div>
@@ -701,11 +701,11 @@
                 <div class="card-body p-5">
                     <div class="row row-md align-items-center">
                         <div class="col-md-8">
-                            <h5>Daftar Sebagai Pemilik Perusahaan</h5>
+                            <h5>Daftar Sebagai Borrower (Pemilik Lahan)</h5>
                             <h6 class="text-muted fw-normal mb-0">Milik Perusahaan adalah badan hukum yang memiliki lahan atas nama perusahaan tersebut.</h6>
                         </div>
                         <div class="col-md row-col">
-                            <a href="{{url('')}}/daftar-bid-lahan-perusahaan" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Pemilik Perusahaan</a>
+                            <a href="{{url('')}}/pilih-lahan" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Borrower (Pemilik Lahan)</a>
                         </div>
                     </div>
                 </div>
