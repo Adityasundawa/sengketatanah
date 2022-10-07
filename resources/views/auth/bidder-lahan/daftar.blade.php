@@ -199,7 +199,7 @@
                     <i class="fa-solid fa-money-bill fa-stack-1x text-white" id="uncheck-5"></i>
                     <i class="fa-solid fa-check fa-stack-1x text-white" id="check-5" style="display: none"></i>
                 </span>
-                <h6>Investasi</h6>
+                <h6>Info Lahan</h6>
             </div>
             <div class="col">
                 <span class="fa-stack fa-2x">
@@ -863,31 +863,7 @@
             <div class="card-body">
                 <form action="">
                     <div class="row">
-                        <div class="col-12">
-                            <label for="pembiayaan" class="mb-2" style="font-weight: 600">Rencana Pembiayaan</label>
-                            <select id="pembiayaan" class="form-select">
-                                <option selected disabled>-- Pilih Pembiayaan --</option>
-                                <option value="sendiri">Pembiayaan dikelola sendiri</option>
-                                <option value="platform">Pembiayaan dikelola platform</option>
-                            </select>
-                        </div>
-                        <div class="col-12 mt-3 pengelolaan-sendiri">
-                            <div class="alert alert-danger" role="alert">
-                                <p class="mb-0">
-                                    Anda akan mengelola dana Anda sendiri dan bebas memilih sengketa pertanahan yang paling
-                                    baik untuk Anda selesaikan.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-12 mt-3 pengelolaan-platform">
-                            <div class="alert alert-danger" role="alert">
-                                <p class="mb-0">
-                                    Dikelola platform adalah pengelolaan sumber dana sponsor yang dijalankan oleh platform SENGKETA TANAH.
-                                    Platform akan memberikan analisa seputar persengketaan tanah yang bisa diselesaikan dan
-                                    menguntungkan. Semua persetujuan penggunaan dana tetap merupakan keputusan
-                                    sponsor.
-                                </p>
-                            </div>
+                        <div class="col-12" style="height: 500px">
                         </div>
                     </div>
                 </form>
