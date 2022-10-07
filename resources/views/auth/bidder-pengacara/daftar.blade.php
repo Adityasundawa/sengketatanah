@@ -720,7 +720,6 @@
                                         <option value="5">Wiraswasta</option>
                                         <option value="6">Pelajar/Mahasiswa</option>
                                         <option value="7">Lain-lain</option>
-                                        <option value="8">Tidak bekerja/bukan pelajar</option>
                                     </select>
                                 </div>
 
