@@ -153,17 +153,36 @@ class SengketaController extends Controller
     {
         return view('auth.bidder.pilih-borrower');
     }
-
+    
     public function pilihLOB()
     {
         return view('auth.bidder.pilih-lob');
     }
+
+
+    public function pilihRumahLender()
+    {
+        return view('auth.bidder.pilih-r-lender');
+    }
+
+    public function pilihRumahBorrower()
+    {
+        return view('auth.bidder.pilih-r-borrower');
+    }
+
+    public function pilihRumahLOB()
+    {
+        return view('auth.bidder.pilih-r-lob');
+    }
+
 
     public function daftarBidF(Request $request)
     {
         $data['req'] = $request;
         return view('auth.bidder-korban.daftar', $data);
     }
+
+
 
     public function daftarBidS(Request $request)
     {
@@ -177,6 +196,8 @@ class SengketaController extends Controller
         return view('auth.bidder-sponsor.daftar_bu', $data);
     }
 
+
+
     public function daftarBidP(Request $request)
     {
         $data['req'] = $request;
@@ -188,6 +209,8 @@ class SengketaController extends Controller
         $data['req'] = $request;
         return view('auth.bidder-pengacara.daftar_bh', $data);
     }
+
+
 
     public function daftarBidLP(Request $request)
     {
@@ -212,6 +235,34 @@ class SengketaController extends Controller
         $data['req'] = $request;
         return view('auth.bidder-lahan-lender.daftar_lp', $data);
     }
+
+    
+
+    public function daftarBidRP(Request $request)
+    {
+        $data['req'] = $request;
+        return view('auth.bidder-rumah.daftar', $data);
+    }
+
+    public function daftarBidRPR(Request $request)
+    {
+        $data['req'] = $request;
+        return view('auth.bidder-rumah.daftar_lp', $data);
+    }
+
+    public function daftarBidLRP(Request $request)
+    {
+        $data['req'] = $request;
+        return view('auth.bidder-rumah-lender.daftar', $data);
+    }
+
+    public function daftarBidLRPR(Request $request)
+    {
+        $data['req'] = $request;
+        return view('auth.bidder-rumah-lender.daftar_lp', $data);
+    }
+
+
 
     public function buatLaporan(Request $request)
     {

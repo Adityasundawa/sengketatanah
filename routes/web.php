@@ -48,9 +48,14 @@ Route::get('detail-main-petugas', [PublicController::class, "detailPetugas"]);
 Route::get('pilih-user', [SengketaController::class, "pilihUser"]);
 Route::get('pilih-sponsor', [SengketaController::class, "pilihSponsor"]);
 Route::get('pilih-pengacara', [SengketaController::class, "pilihPengacara"]);
+
 Route::get('pilih-lob', [SengketaController::class, "pilihLOB"]);
 Route::get('pilih-lahan-lender', [SengketaController::class, "pilihLahanLender"]);
 Route::get('pilih-lahan-borrower', [SengketaController::class, "pilihLahanBorrower"]);
+
+Route::get('pilih-rumah-lob', [SengketaController::class, "pilihRumahLOB"]);
+Route::get('pilih-rumah-lahan-lender', [SengketaController::class, "pilihRumahLahanLender"]);
+Route::get('pilih-rumah-lahan-borrower', [SengketaController::class, "pilihRumahLahanBorrower"]);
 
 Route::get('daftar-bid-korban', [SengketaController::class, "daftarBidF"]);
 
@@ -65,6 +70,13 @@ Route::get('daftar-bid-lahan-perusahaan', [SengketaController::class, "daftarBid
 
 Route::get('daftar-bid-lender-personal', [SengketaController::class, "daftarBidLLP"]);
 Route::get('daftar-bid-lender-badan-usaha', [SengketaController::class, "daftarBidLLPR"]);
+
+Route::get('daftar-bid-lahan-pribadi', [SengketaController::class, "daftarBidRP"]);
+Route::get('daftar-bid-lahan-perusahaan', [SengketaController::class, "daftarBidRPR"]);
+
+Route::get('daftar-bid-lender-personal', [SengketaController::class, "daftarBidLRP"]);
+Route::get('daftar-bid-lender-badan-usaha', [SengketaController::class, "daftarBidLRPR"]);
+
 Route::get('buat-laporan', [SengketaController::class, "buatLaporan"]);
 
 
