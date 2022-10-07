@@ -2033,7 +2033,7 @@
                                                     <h5 class="mb-0 text-center">Kode Bid SP-001 <img src="https://sengketatanah.id/uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
                                                 </h5></div>
                                             </div>
-                                        </div>z
+                                        </div>
                                     </div>
 
                                     <div class="mobile">
