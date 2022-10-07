@@ -2149,7 +2149,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-info text-white mb-0"
+                                                        <button class="btn float-end btn-brown text-white mb-0"
                                                             data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
@@ -2563,7 +2563,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="col">
-                                                    <button class="btn float-end btn-info text-white mb-0"
+                                                    <button class="btn float-end btn-brown text-white mb-0"
                                                         data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                         &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                 </div>
@@ -2977,7 +2977,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="col">
-                                                    <button class="btn float-end btn-info text-white mb-0"
+                                                    <button class="btn float-end btn-brown text-white mb-0"
                                                         data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                         &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                 </div>
@@ -3389,7 +3389,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="col">
-                                                    <button class="btn float-end btn-info text-white mb-0"
+                                                    <button class="btn float-end btn-brown text-white mb-0"
                                                         data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                         &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                 </div>
@@ -3811,7 +3811,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="col">
-                                                    <button class="btn float-end btn-info text-white mb-0"
+                                                    <button class="btn float-end btn-brown text-white mb-0"
                                                         data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                         &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                 </div>
@@ -4223,7 +4223,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="col">
-                                                    <button class="btn float-end btn-info text-white mb-0"
+                                                    <button class="btn float-end btn-brown text-white mb-0"
                                                         data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                         &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                 </div>
@@ -4487,7 +4487,7 @@
         <div class="col">
             <a class="btn p-0" href="https://mobile.twitter.com/sengketatanahid" role="button">
                 <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x text-info" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
+                    <i class="fa fa-circle fa-stack-2x text-brown" style="text-shadow: -3px 3px 5px #bbbbbb;"></i>
                     <i class="fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
                 </span>
             </a>
