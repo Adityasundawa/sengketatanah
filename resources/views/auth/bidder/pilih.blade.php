@@ -681,8 +681,8 @@
                 <div class="card-body p-5">
                     <div class="row row-md align-items-center">
                         <div class="col-md-8">
-                            <h5>Daftar Sebagai Korban</h5>
-                            <h6 class="text-muted fw-normal mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nam minima quisquam.</h6>
+                            <h5>Daftar Sebagai Korban Sengketa</h5>
+                            <h6 class="text-muted fw-normal mb-0">Korban adalah orang yang dirugikan, dirampas, atau terancam kehilangan hak atas tanah yang dimilikinya.</h6>
                         </div>
                         <div class="col-md row-col">
                             <a href="{{url('')}}/daftar-bid-a" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Korban</a>
@@ -696,7 +696,7 @@
                     <div class="row row-md align-items-center">
                         <div class="col-md-8">
                             <h5>Daftar Sebagai Sponsor</h5>
-                            <h6 class="text-muted fw-normal mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nam minima quisquam.</h6>
+                            <h6 class="text-muted fw-normal mb-0">Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan hukum korban sengketa tanah.</h6>
                         </div>
                         <div class="col-md row-col">
                             <a href="{{url('')}}/pilih-s" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Sponsor</a>
@@ -710,7 +710,7 @@
                     <div class="row row-md align-items-center">
                         <div class="col-md-8">
                             <h5>Daftar Sebagai Pengacara</h5>
-                            <h6 class="text-muted fw-normal mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique nam minima quisquam.</h6>
+                            <h6 class="text-muted fw-normal mb-0">Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani persoalan sengketa tanah.</h6>
                         </div>
                         <div class="col-md row-col">
                             <a href="{{url('')}}/pilih-p" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Pengacara</a>
