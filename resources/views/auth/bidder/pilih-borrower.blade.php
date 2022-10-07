@@ -675,9 +675,6 @@
     @include('layouts.template-public.header')
 
     <div class="container mt-4 mb-5">
-        <center>
-            <img src="{{asset('')}}uploads/sengketa-logo_pas.png" alt="" style="width: 100px" class="mb-3">
-        </center>
         <h4 class="text-center">Pilih Jenis Akun Borrower</h4>
         <h5 class="text-center text-muted fw-normal">Pilih Jenis Akun yang akan Anda Buat!</h5>
 

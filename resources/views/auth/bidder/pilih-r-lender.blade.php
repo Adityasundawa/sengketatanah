@@ -688,7 +688,7 @@
                             <h6 class="text-muted fw-normal mb-0">Pribadi adalah orang yang memberi pinjaman kepada pemilik lahan.</h6>
                         </div>
                         <div class="col-md row-col">
-                            <a href="{{url('')}}/daftar-bid-lender-personal" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Pribadi</a>
+                            <a href="{{url('')}}/daftar-bid-rumah-lender-personal" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Pribadi</a>
                         </div>
                     </div>
                 </div>
@@ -702,7 +702,7 @@
                             <h6 class="text-muted fw-normal mb-0">Badan Usaha adalah perusahaan yang memberi pinjaman kepada pemilik lahan.</h6>
                         </div>
                         <div class="col-md row-col">
-                            <a href="{{url('')}}/daftar-bid-lender-badan-usaha" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Badan Usaha</a>
+                            <a href="{{url('')}}/daftar-bid-rumah-lender-badan-usaha" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Badan Usaha</a>
                         </div>
                     </div>
                 </div>
