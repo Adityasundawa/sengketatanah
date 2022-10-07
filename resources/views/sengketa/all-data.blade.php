@@ -2218,7 +2218,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
-                                                class="btn rounded-5" style="cursor:pointer; background-color: #E6B325; color: #fff"><i
+                                                class="btn rounded-5" style="cursor:pointer; background-color: #BF9742; color: #fff"><i
                                                     class="fa-solid fa-play text-white"></i> Lihat
                                                 Podcast</span>
                                         </div>
