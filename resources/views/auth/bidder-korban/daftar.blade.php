@@ -865,46 +865,7 @@
         <div class="card mt-5 d-none" id="5">
             <div class="card-body">
                 <form action="">
-                    <div class="row">
-
-                        <div class="col-12">
-
-                            <div class="row">
-
-                                <div class="col-md-6 mb-3">
-                                    <label for="nama-dar" class="mb-2" style="font-weight: 600">Nama Lengkap Darurat</label>
-                                    <input type="text" class="form-control" name="nama-dar" id="nama-dar"
-                                        placeholder="Nama Lengkap Darurat">
-                                </div>
-
-                                <div class="col-md-6 mb-3">
-                                    <label for="hp-dar" class="mb-2" style="font-weight: 600">No Handphone</label>
-                                    <input type="number" class="form-control" name="hp-dar" id="hp-dar"
-                                        placeholder="Nomor HP Darurat">
-                                </div>
-
-                                <div class="col-md-6 mb-3">
-                                    <label for="alamat-dar" class="mb-2" style="font-weight: 600">Alamat</label>
-                                    <input type="text" class="form-control" name="alamat-dar" id="alamat-dar"
-                                        placeholder="Alamat Kontak">
-                                </div>
-
-                                <div class="col-md-6 mb-3">
-                                    <label for="hub-dar" class="mb-2" style="font-weight: 600">Hubungan dengan kontak darurat</label>
-                                    <input type="text" class="form-control" name="hub-dar" id="hub-dar"
-                                        placeholder="Hubungan Kontak">
-                                </div>
-
-                                <div class="col-md-12 mb-3">
-                                    <input class="form-check-input mr-1" type="checkbox" value="" id="setuju">
-                                    <span class="form-check-label" for="setuju">
-                                        Saya menyatakan bahwa data-data yang telah saya isi diatas adalah valid, saya telah melakukan pengecekan atas kebenaran data-data tersebut, dan saya telah membaca ketentuan privacy dan cookies .
-                                    </span>
-                                </div>
-
-                            </div>
-
-                        </div>
+                    <div class="row" style="height: 500px">
 
                     </div>
                 </form>
