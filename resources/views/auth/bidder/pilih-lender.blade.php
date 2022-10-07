@@ -685,7 +685,7 @@
                     <div class="row row-md align-items-center">
                         <div class="col-md-8">
                             <h5>Daftar Sebagai Pribadi</h5>
-                            <h6 class="text-muted fw-normal mb-0">Sponsor adalah orang yang membiayai urusan hukum korban sengketa tanah.</h6>
+                            <h6 class="text-muted fw-normal mb-0">Pribadi adalah orang yang memberi pinjaman kepada pemilik lahan.</h6>
                         </div>
                         <div class="col-md row-col">
                             <a href="{{url('')}}/daftar-bid-lender-personal" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Pribadi</a>
@@ -699,7 +699,7 @@
                     <div class="row row-md align-items-center">
                         <div class="col-md-8">
                             <h5>Daftar Sebagai Badan Usaha</h5>
-                            <h6 class="text-muted fw-normal mb-0">Sponsor adalah badan usaha/kelompok yang membiayai urusan hukum korban sengketa tanah.</h6>
+                            <h6 class="text-muted fw-normal mb-0">Badan Usaha adalah perusahaan yang memberi pinjaman kepada pemilik lahan.</h6>
                         </div>
                         <div class="col-md row-col">
                             <a href="{{url('')}}/daftar-bid-lender-badan-usaha" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Badan Usaha</a>
