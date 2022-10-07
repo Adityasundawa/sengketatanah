@@ -717,15 +717,13 @@
                                         <option value="2">TNI/ POLRI/</option>
                                         <option value="3">Karyawan BUMN</option>
                                         <option value="4">Karyawan Swasta</option>
+                                        <option value="8">Konsultan Hukum</option>
                                         <option value="5">Wiraswasta</option>
                                         <option value="6">Pelajar/Mahasiswa</option>
                                         <option value="7">Pengacara</option>
-                                        <option value="8">Konsultan Hukum</option>
                                         <option value="9">Lain-lain</option>
                                     </select>
                                 </div>
-
-                                 
 
                                 <div class="col-md-6 mb-3">
                                     <label for="bidpek" class="mb-2" style="font-weight: 600">Bidang Pekerjaan</label>
@@ -764,20 +762,6 @@
                                         <option value="2">1 s.d. 2 Tahun</option>
                                         <option value="3">2 s.d. 3 Tahun</option>
                                         <option value="4">&gt; 3 Tahun</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-md-6 mb-3">
-                                    <label for="perbul" class="mb-2" style="font-weight: 600">Pendapatan Per Bulan</label>
-                                    <select id="perbul" class="form-select">
-                                        <option selected disabled>-- Pilih Pendapatan Per Bulan --</option>
-                                        <option value="p1" style="font-size: 14px">Rp 0 - Rp 2.967.020</option>
-                                        <option value="p2" style="font-size: 14px">Rp 2.967.021 - Rp 5.934.040</option>
-                                        <option value="p3" style="font-size: 14px">Rp 5.934.041 - Rp 11.868.080</option>
-                                        <option value="p4" style="font-size: 14px">Rp 11.868.081 - Rp 25.000.000</option>
-                                        <option value="p5" style="font-size: 14px">Rp 25.000.001 - Rp 208.333.333</option>
-                                        <option value="p6" style="font-size: 14px">Rp 208.333.334 - Rp 4.166.666.667</option>
-                                        <option value="p7" style="font-size: 14px">&gt; Rp 4.166.666.667</option>
                                     </select>
                                 </div>
 
