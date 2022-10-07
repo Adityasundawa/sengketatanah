@@ -691,7 +691,7 @@
                             <h6 class="text-muted fw-normal mb-0">Pribadi adalah orang yang memiliki lahan atas nama dirinya sendiri.</h6>
                         </div>
                         <div class="col-md row-col">
-                            <a href="{{url('')}}/pilih-lahan" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Lender (Pemberi Pinjaman)</a>
+                            <a href="{{url('')}}/pilih-lahan" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Lender <br> (Pemberi Pinjaman)</a>
                         </div>
                     </div>
                 </div>
@@ -705,7 +705,7 @@
                             <h6 class="text-muted fw-normal mb-0">Milik Perusahaan adalah badan hukum yang memiliki lahan atas nama perusahaan tersebut.</h6>
                         </div>
                         <div class="col-md row-col">
-                            <a href="{{url('')}}/pilih-lahan" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Borrower (Pemilik Lahan)</a>
+                            <a href="{{url('')}}/pilih-lahan" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Borrower <br> (Pemilik Lahan)</a>
                         </div>
                     </div>
                 </div>
