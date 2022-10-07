@@ -159,9 +159,9 @@
     @include('layouts.template-public.header')
 
     <div class="container mt-4 mb-5">
-        <h4 class="text-center">Form Korban</h4>
+        <h4 class="text-center">Form Korban Sengketa Tanah</h4>
 
-        <div class="row mt-5 text-center">
+        <div class="row mt-5 text-center mote">
             <div class="col-3">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x text-brown" id="brownie-1"></i>
@@ -196,7 +196,7 @@
             </div>
         </div>
 
-        <div class="card mt-5" id="1">
+        <div class="card mt-4" id="1">
             <div class="card-body">
                 <form action="">
                     <div class="row">

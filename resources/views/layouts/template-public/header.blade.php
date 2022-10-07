@@ -3,6 +3,20 @@
         width: 100vw;
         overflow-x: hidden;
     }
+
+    .mote h6 {
+        margin-top: 7px;
+    }
+    
+    @media (max-width: 991.98px) { 
+        .mote {
+            font-size: 12px !important;
+        }
+
+        .mote h6 {
+            font-size: 14px !important
+        }
+     }
 </style>
 
 <nav class="navbar navbar-expand-lg bg-light">
