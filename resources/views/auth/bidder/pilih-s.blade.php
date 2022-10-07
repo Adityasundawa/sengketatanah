@@ -672,50 +672,9 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold fs-4" href="{{url('/')}}">
-                <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px" class="img-fluid me-2">SENGKETA TANAH</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url('/')}}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Produk</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Panduan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Jaminan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Hubungi Kami</a>
-                    </li>
-                    <li class="nav-item me-2">
-                        <a class="nav-link" href="{{url('/')}}/tentang">Tentang Kami</a>
-                    </li>
+    @include('layouts.template-public.header')
 
-                    <div class="vr vr-none me-2"></div>
-                    <hr class="hr-none">
-
-                    <li class="nav-item me-1 ms-1">
-                        <a class="nav-link btn btn-outline-brown rounded-3 login-mb" href="{{url('/')}}/login">Login</a>
-                    </li>
-                    <li class="nav-item me-1 ms-1">
-                        <a class="nav-link btn btn-brown text-white rounded-3" href="{{url('/')}}/register">Register</a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
-
-    <div class="container mt-4 mb-4">
+    <div class="container mt-4 mb-5">
         <h4 class="text-center">Pilih Jenis Akun Sponsor</h4>
         <h5 class="text-center text-muted fw-normal">Pilih Jenis Akun yang akan Anda Buat!</h5>
 
@@ -752,19 +711,23 @@
         
     </div>
 
-    {{-- <div class="row g-0 puter w-100">
-        <div class="card-body text-white text-center" style="background: #61481C">
-            <p></p>
-            <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
-            <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
-            </p>
-            <hr>
-            <p style="font-size:14px" class="card-title pb-3">Sovereign Plaza. Lt. 19 <br> Jl. TB Simatupang No.
-                36,
-                TB Simatupang, Jakarta Selatan</p>
-        </div>
-    </div> --}}
+    <hr>
 
+
+    <div class="row justify-content-center">
+        <div class="col-12 mt-2 text-center">
+            <b>Download Aplikasinya!</b>
+            <p class="fw-lighter mb-0">Platform Seputar Tanah No. 1 di Indonesia</p>
+        </div>
+        <div class="col-12 mb-2 text-center">
+            <a href="#"><img src="{{asset('/')}}uploads/google-play-badge.png" class="store" alt=""></a>
+            <a href="#"><img src="{{asset('/')}}uploads/appstore-badge.png" class="appstore" alt=""></a>
+        </div>
+    </div>
+
+    <hr>
+    
+    @include('layouts.template-public.footer')
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>

@@ -56,6 +56,28 @@
     </div>
 </nav>
 
+<style>
+    .store {
+        width: 171px;
+    }
+
+    .appstore {
+        width: 140px;
+        margin-left: 10px
+    }
+
+    @media screen and (min-width: 768px) {
+        .store {
+            width: 216px;
+        }
+
+        .appstore {
+            width: 185px;
+        }
+    }
+
+</style>
+
 <!-- <div class="mobile">
     <div class="row d-flex mb-1 mt-1">
         <div class="col text-center">
