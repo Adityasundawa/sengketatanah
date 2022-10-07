@@ -2742,11 +2742,11 @@
         <hr>
 
         <div class="row justify-content-center">
-            <div class="col-11 mt-2 text-center">
+            <div class="col-12 mt-2 text-center">
                 <b>Download Aplikasinya!</b>
                 <p class="fw-lighter mb-0">Platform Seputar Tanah No. 1 di Indonesia</p>
             </div>
-            <div class="col-11 mb-2 text-center">
+            <div class="col-12 mb-2 text-center">
                 <a href="#"><img src="{{asset('/')}}uploads/google-play-badge.png" class="store" alt=""></a>
                 <a href="#"><img src="{{asset('/')}}uploads/appstore-badge.png" class="appstore" alt=""></a>
             </div>
@@ -2754,7 +2754,7 @@
 
         <hr>
 
-        <div class="row justify-content-center mb-3 mt-4 text-center g-0">
+        {{-- <div class="row justify-content-center mb-3 mt-4 text-center g-0">
             <p class="fw-bold text-center" style="text-align: justify">Ikuti Sosial Media Kami</a></p>
 
             <div class="col">
@@ -2846,7 +2846,7 @@
                     36,
                     TB Simatupang, Jakarta Selatan</p>
             </div>
-        </div>
+        </div> --}}
 
 
 
@@ -2855,6 +2855,8 @@
 
 
     </div>
+
+    @include('layouts.template-public.footer')
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>

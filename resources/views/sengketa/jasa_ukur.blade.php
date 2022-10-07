@@ -1271,7 +1271,7 @@
                                 </div>
 
                                 {{-- <div class="col mb-4">
-                                    <a href="{{url('/')}}/jual-beli-lahan" class="btn btn-outline-light text-darkw-100rounded-4 shadow">
+                                    <a href="{{url('/')}}/jual-beli-lahan" class="btn btn-outline-light text-dark w-100rounded-4 shadow">
                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                             width="85px" x="0" y="0" viewBox="0 0 64 64"
@@ -1755,7 +1755,7 @@
                 </div>
             </div>
 
-        <div class="row justify-content-center mb-3">
+        <div class="row justify-content-center mb-3 p-0">
             <div class="col-lg-12 mt-3">
                 <h5>
                     Cari Jasa Ukur
@@ -2011,7 +2011,7 @@
                                     ];
                                     ?>
 
-                                    @for($i=8;$i> 0;$i--)
+                                    @for($i=7;$i> 0;$i--)
                                     <div class="col-lg-12" id='orang-kotak'>
 
                                         <div class="card border-0 mt-1 shadow" style="background:#FAFAD2">
@@ -2099,7 +2099,7 @@
 
 
 
-            <div id="fb-root"></div>
+            {{-- <div id="fb-root"></div>
             <script async defer crossorigin="anonymous"
                 src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0" nonce="Ee2Zutm6"></script>
             <div class="row mt-4 puter g-0">
@@ -2117,10 +2117,12 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
                 crossorigin="anonymous">
-            </script>
+            </script> --}}
 
         </div>
+    </div>
 
+    @include('layouts.template-public.footer')
 
 
             <script src="https://code.jquery.com/jquery-3.6.1.js"
