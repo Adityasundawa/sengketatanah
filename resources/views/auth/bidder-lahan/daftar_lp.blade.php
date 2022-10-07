@@ -204,8 +204,16 @@
             <div class="col">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-6"></i>
-                    <i class="fa-solid fa-file fa-stack-1x text-white" id="uncheck-6"></i>
+                    <i class="fa-solid fa-map-pin fa-stack-1x text-white" id="uncheck-6"></i>
                     <i class="fa-solid fa-check fa-stack-1x text-white" id="check-6" style="display: none"></i>
+                </span>
+                <h6>Info Lahan</h6>
+            </div>
+            <div class="col">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-7"></i>
+                    <i class="fa-solid fa-file fa-stack-1x text-white" id="uncheck-7"></i>
+                    <i class="fa-solid fa-check fa-stack-1x text-white" id="check-7" style="display: none"></i>
                 </span>
                 <h6>Perjanjian</h6>
             </div>
@@ -727,6 +735,25 @@
         <div class="card mt-5 d-none" id="6">
             <div class="card-body">
                 <form action="">
+                    <div class="row">
+                        <div class="col-12" style="height: 500px">
+                        </div>
+                    </div>
+                </form>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-5 mt-2 mb-2">Kembali</button>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="w-100 btn-lg btn btn-brown lan-5 mt-2 mb-2">Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-5 d-none" id="7">
+            <div class="card-body">
+                <form action="">
                     <div class="row" style="height: 500px">
 
                     </div>
@@ -741,8 +768,6 @@
                 </div>
             </div>
         </div>
-
-        
 
     </div>
 
@@ -899,6 +924,27 @@
             $('#brownie-6').addClass('text-disable')
             $('#uncheck-5').show()
             $('#check-5').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
+        })
+
+        $(".lan-6").click(function () {
+            $('#6').addClass('d-none')
+            $('#7').removeClass('d-none')
+            $('#brownie-7').addClass('text-brown')
+            $('#brownie-7').removeClass('text-disable')
+            $('#uncheck-6').hide()
+            $('#check-6').show()
+            $("html, body").animate({scrollTop: 0}, 0);
+        })
+
+        // 6
+        $(".kem-7").click(function () {
+            $('#6').removeClass('d-none')
+            $('#7').addClass('d-none')
+            $('#brownie-7').removeClass('text-brown')
+            $('#brownie-7').addClass('text-disable')
+            $('#uncheck-6').show()
+            $('#check-6').hide()
             $("html, body").animate({scrollTop: 0}, 0);
         })
         
