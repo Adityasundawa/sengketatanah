@@ -684,11 +684,11 @@
                 <div class="card-body p-5">
                     <div class="row row-md align-items-center">
                         <div class="col-md-8">
-                            <h5>Daftar Sebagai Personal</h5>
+                            <h5>Daftar Sebagai Pribadi</h5>
                             <h6 class="text-muted fw-normal mb-0">Sponsor adalah orang yang membiayai urusan hukum korban sengketa tanah.</h6>
                         </div>
                         <div class="col-md row-col">
-                            <a href="{{url('')}}/daftar-bid-sponsor-personal" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Personal</a>
+                            <a href="{{url('')}}/daftar-bid-sponsor-personal" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Pribadi</a>
                         </div>
                     </div>
                 </div>
