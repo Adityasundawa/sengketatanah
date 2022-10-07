@@ -21,7 +21,13 @@
     <script src="https://cdn.jsdelivr.net/npm/js-image-zoom/js-image-zoom.min.js"></script>
 
 
-    <style>        
+    <style>
+        body {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
         .blink {
             animation: blink-animation 1s steps(5, start) infinite;
             -webkit-animation: blink-animation 1s steps(5, start) infinite;
@@ -669,23 +675,20 @@
     @include('layouts.template-public.header')
 
     <div class="container mt-4 mb-5">
-        <center>
-            <img src="{{asset('')}}uploads/sengketa-logo_pas.png" alt="" style="width: 100px" class="mb-3">
-        </center>
-        <h4 class="text-center">BID SENGKETA</h4>
+        <h4 class="text-center">Pilih Jenis Akun Lender</h4>
         <h5 class="text-center text-muted fw-normal">Pilih Jenis Akun yang akan Anda Buat!</h5>
 
         <div class="wrapper mt-4">
-
+    
             <div class="card mt-2 mb-2 rounded-4">
                 <div class="card-body p-5">
                     <div class="row row-md align-items-center">
                         <div class="col-md-8">
-                            <h5>Daftar Sebagai Korban Sengketa</h5>
-                            <h6 class="text-muted fw-normal mb-0">Korban adalah orang yang dirugikan, dirampas, atau terancam kehilangan hak atas tanah yang dimilikinya.</h6>
+                            <h5>Daftar Sebagai Pribadi</h5>
+                            <h6 class="text-muted fw-normal mb-0">Pribadi adalah orang yang memberi pinjaman kepada pemilik rumah.</h6>
                         </div>
                         <div class="col-md row-col">
-                            <a href="{{url('')}}/daftar-bid-korban" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Korban</a>
+                            <a href="{{url('')}}/daftar-bid-rumah-lender-personal" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Pribadi</a>
                         </div>
                     </div>
                 </div>
@@ -695,25 +698,11 @@
                 <div class="card-body p-5">
                     <div class="row row-md align-items-center">
                         <div class="col-md-8">
-                            <h5>Daftar Sebagai Sponsor</h5>
-                            <h6 class="text-muted fw-normal mb-0">Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan hukum korban sengketa tanah.</h6>
+                            <h5>Daftar Sebagai Badan Usaha</h5>
+                            <h6 class="text-muted fw-normal mb-0">Badan Usaha adalah perusahaan yang memberi pinjaman kepada pemilik rumah.</h6>
                         </div>
                         <div class="col-md row-col">
-                            <a href="{{url('')}}/pilih-sponsor" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Sponsor</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="card mt-2 mb-2 rounded-4">
-                <div class="card-body p-5">
-                    <div class="row row-md align-items-center">
-                        <div class="col-md-8">
-                            <h5>Daftar Sebagai Pengacara</h5>
-                            <h6 class="text-muted fw-normal mb-0">Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang menangani persoalan sengketa tanah.</h6>
-                        </div>
-                        <div class="col-md row-col">
-                            <a href="{{url('')}}/pilih-pengacara" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Pengacara</a>
+                            <a href="{{url('')}}/daftar-bid-rumah-lender-badan-usaha" class="btn btn-lg btn-brown rounded-3 mt-2 w-100">Daftar Sebagai Badan Usaha</a>
                         </div>
                     </div>
                 </div>
@@ -739,7 +728,6 @@
     <hr>
     
     @include('layouts.template-public.footer')
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>

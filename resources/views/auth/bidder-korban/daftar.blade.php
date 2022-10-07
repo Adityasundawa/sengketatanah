@@ -156,56 +156,13 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold fs-4" href="{{url('/')}}">
-                <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px"
-                    class="img-fluid me-2">SENGKETA TANAH</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url('/')}}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Produk</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Panduan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Jaminan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Hubungi Kami</a>
-                    </li>
-                    <li class="nav-item me-2">
-                        <a class="nav-link" href="{{url('/')}}/tentang">Tentang Kami</a>
-                    </li>
-
-                    <div class="vr vr-none me-2"></div>
-                    <hr class="hr-none">
-
-                    <li class="nav-item me-1 ms-1">
-                        <a class="nav-link btn btn-outline-brown rounded-3 login-mb" href="{{url('/')}}/login">Login</a>
-                    </li>
-                    <li class="nav-item me-1 ms-1">
-                        <a class="nav-link btn btn-brown text-white rounded-3" href="{{url('/')}}/register">Register</a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
+    @include('layouts.template-public.header')
 
     <div class="container mt-4 mb-5">
-        <h4 class="text-center">Form Korban</h4>
+        <h4 class="text-center">Form Korban Sengketa Tanah</h4>
 
-        <div class="row mt-5 text-center">
-            <div class="col-3">
+        <div class="row g-0 mt-5 text-center mote">
+            <div class="col">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x text-brown" id="brownie-1"></i>
                     <i class="fa-solid fa-user fa-stack-1x text-white" id="uncheck-1"></i>
@@ -213,7 +170,7 @@
                 </span>
                 <h6>Info Pribadi</h6>
             </div>
-            <div class="col-3">
+            <div class="col">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-2"></i>
                     <i class="fa-solid fa-location-dot fa-stack-1x text-white" id="uncheck-2"></i>
@@ -221,7 +178,7 @@
                 </span>
                 <h6>Alamat</h6>
             </div>
-            <div class="col-3">
+            <div class="col">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-3"></i>
                     <i class="fa-solid fa-briefcase fa-stack-1x text-white" id="uncheck-3"></i>
@@ -229,17 +186,25 @@
                 </span>
                 <h6>Pekerjaan</h6>
             </div>
-            <div class="col-3">
+            <div class="col">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-4"></i>
-                    <i class="fa-solid fa-address-book fa-stack-1x text-white" id="uncheck-3"></i>
+                    <i class="fa-solid fa-address-book fa-stack-1x text-white" id="uncheck-4"></i>
                     <i class="fa-solid fa-check fa-stack-1x text-white" id="check-4" style="display: none"></i>
                 </span>
                 <h6>Kontak Darurat</h6>
             </div>
+            <div class="col">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-5"></i>
+                    <i class="fa-solid fa-file fa-stack-1x text-white" id="uncheck-5"></i>
+                    <i class="fa-solid fa-check fa-stack-1x text-white" id="check-5" style="display: none"></i>
+                </span>
+                <h6>Perjanjian</h6>
+            </div>
         </div>
 
-        <div class="card mt-5" id="1">
+        <div class="card mt-4" id="1">
             <div class="card-body">
                 <form action="">
                     <div class="row">
@@ -256,18 +221,6 @@
                         </div>
 
                         <div class="col-md-6 mb-3">
-                            <label for="hp" class="mb-2" style="font-weight: 600">Nomor HP</label>
-                            <input type="number" class="form-control" name="hp" id="hp"
-                                placeholder="Contoh : 0812-3452-3571">
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <label for="tp-lahir" class="mb-2" style="font-weight: 600">Tempat Lahir</label>
-                            <input type="text" class="form-control" name="tp-lahir" id="tp-lahir"
-                                placeholder="Contoh : Jakarta">
-                        </div>
-
-                        <div class="col-md-6 mb-3">
                             <label for="password" class="mb-2" style="font-weight: 600">Kata Sandi</label>
                             <input type="password" class="form-control" name="password" id="password"
                                 placeholder="Kata Sandi Anda">
@@ -277,6 +230,18 @@
                             <label for="password-c" class="mb-2" style="font-weight: 600">Konfirmasi Kata Sandi</label>
                             <input type="password" class="form-control" name="password-c" id="password-c"
                                 placeholder="Kata Sandi Anda">
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="hp" class="mb-2" style="font-weight: 600">Nomor HP</label>
+                            <input type="number" class="form-control" name="hp" id="hp"
+                                placeholder="Contoh : 0812-3452-3571">
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="tp-lahir" class="mb-2" style="font-weight: 600">Tempat Lahir</label>
+                            <input type="text" class="form-control" name="tp-lahir" id="tp-lahir"
+                                placeholder="Contoh : Jakarta">
                         </div>
 
                         <div class="col-md-6 mb-3">
@@ -325,7 +290,7 @@
 
                         <div class="col-md-6 mb-3">
                             <div class="text-center">
-                                <img src="https://indofund.id/images/kyc-foto/ktp-true.jpg" style="width: 80%;" alt="">
+                                <img src="{{asset('')}}images/foto_ktp.jpeg" style="width: 73%;" alt="">
                             </div>
                             <div class="text-center mb-2">
                                 Contoh Foto
@@ -337,7 +302,7 @@
 
                         <div class="col-md-6 mb-3">
                             <div class="text-center">
-                                <img src="https://indofund.id/images/kyc-foto/fotoselfie-true.jpg" style="width: 35.8%"
+                                <img src="{{asset('')}}images/foto_selfie.jpeg" style="width: 35.8%"
                                     alt="">
                             </div>
                             <div class="text-center mb-2">
@@ -350,21 +315,21 @@
                         </div>
 
                         <div class="col-md-6 mb-3">
-                            <label for="nm-npwp" class="mb-2" style="font-weight: 600">Nomor NPWP (OPTIONAL)</label>
+                            <label for="nm-npwp" class="mb-2" style="font-weight: 600">Nomor NPWP (Optional)</label>
                             <input type="text" class="form-control" name="nm-npwp" id="nm-npwp"
                                 placeholder="Contoh : 12.345.678.9-123.000">
                             <div id="nm-npwp" class="form-text text-danger">Jika tidak ada, tidak perlu diisi</div>
                         </div>
 
                         <div class="col-md-6 mb-3">
-                            <label for="ft-npwp" class="mb-2" style="font-weight: 600">Foto NPWP (OPTIONAL)</label>
+                            <label for="ft-npwp" class="mb-2" style="font-weight: 600">Foto NPWP (Optional)</label>
                             <input class="form-control" type="file" id="ft-npwp" aria-describedby="ft-npwp">
                             <div id="ft-npwp" class="form-text text-danger">Jika tidak ada, tidak perlu diisi</div>
                         </div>
 
                         <div class="col-md-6 mb-3">
                             <label for="ft-kk" class="mb-2" style="font-weight: 600">Foto Kartu Keluarga
-                                (OPTIONAL)</label>
+                                (Optional)</label>
                             <input class="form-control" type="file" id="ft-kk" aria-describedby="ft-kk">
                             <div id="ft-kk" class="form-text text-danger">Jika tidak ada, tidak perlu diisi</div>
                         </div>
@@ -374,7 +339,7 @@
                     <div class="row mt-4">
                         <div class="col-md-6"></div>
                         <div class="col-md-6">
-                            <button type="button" class="w-100 btn-lg btn btn-brown lan-1">Lanjut</button>
+                            <button type="button" class="w-100 btn-lg btn btn-brown lan-1 mt-2 mb-2">Lanjut</button>
                         </div>
                     </div>
                 </form>
@@ -703,20 +668,20 @@
                         </div>
 
                         <div class="col-md-12 mb-3">
-                            <input class="form-check-input" type="checkbox" value="" id="advance">
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Jika alamat ktp dengan alamat domisili berbeda klik tombol ini
-                            </label>
+                            <input class="form-check-input mr-1" type="checkbox" value="" id="advance">
+                            <span class="form-check-label" for="flexCheckChecked">
+                                Klik tombol ini jika alamat KTP dengan alamat domisili berbeda
+                            </span>
                         </div>
 
                     </div>
                 </form>
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-outline-brown kem-2">Kembali</button>
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-2 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-brown lan-2">Lanjut</button>
+                        <button class="w-100 btn-lg btn btn-brown lan-2 mt-2 mb-2">Lanjut</button>
                     </div>
                 </div>
             </div>
@@ -748,7 +713,7 @@
                                 <div class="col-md-6 mb-3">
                                     <label for="pend" class="mb-2" style="font-weight: 600">Pekerjaan</label>
                                     <select id="pend" class="form-select">
-                                        <option selected disabled>-- Pilih Pendidikan Terakhir --</option>
+                                        <option selected disabled>-- Pilih Pekerjaan Terakhir --</option>
                                         <option value="1">PNS</option>
                                         <option value="2">TNI/ POLRI/</option>
                                         <option value="3">Karyawan BUMN</option>
@@ -756,23 +721,15 @@
                                         <option value="5">Wiraswasta</option>
                                         <option value="6">Pelajar/Mahasiswa</option>
                                         <option value="7">Lain-lain</option>
-                                        <option value="8">Tidak bekerja/bukan pelajar</option>
                                     </select>
                                 </div>
 
-                                <div class="col-md-6 mb-3">
-                                    <label for="pekol" class="mb-2" style="font-weight: 600">Pekerjaan Online</label>
-                                    <select id="pekol" class="form-select">
-                                        <option selected disabled>-- Pilih Pekerjaan Online --</option>
-                                        <option value="1">Berbasis Internet / online</option>
-                                        <option value="2">Tidak Berbasis Internet / online</option>
-                                    </select>
-                                </div>
+                                 
 
                                 <div class="col-md-6 mb-3">
                                     <label for="bidpek" class="mb-2" style="font-weight: 600">Bidang Pekerjaan</label>
                                     <select id="bidpek" class="form-select">
-                                        <option selected disabled>-- Pilih Pekerjaan Online --</option>
+                                        <option selected disabled>-- Pilih Bidang Pekerjaan --</option>
                                         <option value="e2">Pertanian, Perburuan dan Kehutanan</option>
                                         <option value="e5">Perikanan</option>
                                         <option value="e6">Pertambangan dan Penggalian</option>
@@ -796,29 +753,29 @@
                                     </select>
                                 </div>
 
-                                <div class="col-md-6 mb-3">
+                                 <div class="col-md-6 mb-3">
                                     <label for="penja" class="mb-2" style="font-weight: 600">Pengalaman Kerja</label>
                                     <select id="penja" class="form-select">
                                         <option selected disabled>-- Pilih Pengalaman Kerja --</option>
                                         <option value="0">Pelajar atau belum pernah bekerja</option>
                                         <option value="1">&lt; 1 Tahun</option>
-                                        <option value="2">1 s.d. &lt; 2 Tahun</option>
+                                        <option value="2">1 s.d. 2 Tahun</option>
                                         <option value="3">2 s.d. 3 Tahun</option>
-                                        <option value="4">&gt;3 Tahun</option>
+                                        <option value="4">&gt; 3 Tahun</option>
                                     </select>
                                 </div>
 
                                 <div class="col-md-6 mb-3">
-                                    <label for="perbul" class="mb-2" style="font-weight: 600">Pendapatan per bulan</label>
+                                    <label for="perbul" class="mb-2" style="font-weight: 600">Pendapatan Per Bulan</label>
                                     <select id="perbul" class="form-select">
-                                        <option selected disabled>-- Pilih Pendapatan per bulan --</option>
+                                        <option selected disabled>-- Pilih Pendapatan Per Bulan --</option>
                                         <option value="p1">Rp 0 - Rp 2.967.020</option>
                                         <option value="p2">Rp 2.967.021 - Rp 5.934.040</option>
                                         <option value="p3">Rp 5.934.041 - Rp 11.868.080</option>
                                         <option value="p4">Rp 11.868.081 - Rp 25.000.000</option>
                                         <option value="p5">Rp 25.000.001 - Rp 208.333.333</option>
                                         <option value="p6">Rp 208.333.334 - Rp 4.166.666.667</option>
-                                        <option value="p7">&gt;Rp 4.166.666.667</option>
+                                        <option value="p7">&gt; Rp 4.166.666.667</option>
                                     </select>
                                 </div>
 
@@ -839,10 +796,10 @@
                 </form>
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-outline-brown kem-3">Kembali</button>
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-3 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-brown lan-3">Lanjut</button>
+                        <button class="w-100 btn-lg btn btn-brown lan-3 mt-2 mb-2">Lanjut</button>
                     </div>
                 </div>
             </div>
@@ -896,16 +853,77 @@
                 </form>
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-outline-brown kem-4">Kembali</button>
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-4 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
-                        <a href="{{url('')}}/buat-laporan" class="w-100 btn-lg btn btn-brown">Daftar</a>
+                        <a class="w-100 btn-lg btn btn-brown lan-4 mt-2 mb-2">Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-5 d-none" id="5">
+            <div class="card-body">
+                <form action="">
+                    <div class="row" style="height: 500px">
+
+                    </div>
+                </form>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-5 mt-2 mb-2">Kembali</button>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="w-100 btn-lg btn btn-brown mt-2 mb-2" 
+                        data-bs-toggle="modal" data-bs-target="#daftarKorban" >Daftar</a>
                     </div>
                 </div>
             </div>
         </div>
 
     </div>
+
+    <hr>
+
+    <div class="modal fade my-auto text-center" id="daftarKorban" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header p-2">
+                    <h1 class="modal-title mx-auto text-danger display-1 m">
+                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
+                            style="width: 100px" alt="">
+                    </h1>
+                </div>
+                <div class="modal-body">
+                    <h5 class="mb-3">Terima Kasih Anda Telah Bergabung Dengan Sengketa Tanah!</h5>
+                    Silahkan isi data tentang objek sengketa anda
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary me-auto"
+                        data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-success"
+                        href="{{url('')}}/buat-laporan" >Lanjut</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row justify-content-center">
+        <div class="col-12 mt-2 text-center">
+            <b>Download Aplikasinya!</b>
+            <p class="fw-lighter mb-0">Platform Seputar Tanah No. 1 di Indonesia</p>
+        </div>
+        <div class="col-12 mb-2 text-center">
+            <a href="#"><img src="{{asset('/')}}uploads/google-play-badge.png" class="store" alt=""></a>
+            <a href="#"><img src="{{asset('/')}}uploads/appstore-badge.png" class="appstore" alt=""></a>
+        </div>
+    </div>
+
+    <hr>
+    
+    @include('layouts.template-public.footer')
 
     <script>
         $(".theSelect").select2({
@@ -930,6 +948,7 @@
             $('#brownie-2').removeClass('text-disable')
             $('#uncheck-1').hide()
             $('#check-1').show()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         // 2
@@ -940,6 +959,7 @@
             $('#brownie-2').addClass('text-disable')
             $('#uncheck-1').show()
             $('#check-1').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         $(".lan-2").click(function () {
@@ -949,6 +969,7 @@
             $('#brownie-3').removeClass('text-disable')
             $('#uncheck-2').hide()
             $('#check-2').show()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         // 3
@@ -959,6 +980,7 @@
             $('#brownie-3').addClass('text-disable')
             $('#uncheck-2').show()
             $('#check-2').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         $(".lan-3").click(function () {
@@ -968,6 +990,7 @@
             $('#brownie-4').removeClass('text-disable')
             $('#uncheck-3').hide()
             $('#check-3').show()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         // 4
@@ -978,6 +1001,28 @@
             $('#brownie-4').addClass('text-disable')
             $('#uncheck-3').show()
             $('#check-3').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
+        })
+
+        $(".lan-4").click(function () {
+            $('#4').addClass('d-none')
+            $('#5').removeClass('d-none')
+            $('#brownie-5').addClass('text-brown')
+            $('#brownie-5').removeClass('text-disable')
+            $('#uncheck-4').hide()
+            $('#check-4').show()
+            $("html, body").animate({scrollTop: 0}, 0);
+        })
+
+        // 5
+        $(".kem-5").click(function () {
+            $('#4').removeClass('d-none')
+            $('#5').addClass('d-none')
+            $('#brownie-5').removeClass('text-brown')
+            $('#brownie-5').addClass('text-disable')
+            $('#uncheck-4').show()
+            $('#check-4').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
     </script>
 

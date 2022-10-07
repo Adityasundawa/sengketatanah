@@ -1,3 +1,24 @@
+<style>
+    body, html{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .mote h6 {
+        margin-top: 7px;
+    }
+    
+    @media (max-width: 991.98px) { 
+        .mote {
+            font-size: 12px !important;
+        }
+
+        .mote h6 {
+            font-size: 12px !important
+        }
+     }
+</style>
+
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
         <a class="navbar-brand fw-bold fs-4" href="{{url('/')}}">
@@ -55,6 +76,28 @@
         </div>
     </div>
 </nav>
+
+<style>
+    .store {
+        width: 171px;
+    }
+
+    .appstore {
+        width: 140px;
+        margin-left: 10px
+    }
+
+    @media screen and (min-width: 768px) {
+        .store {
+            width: 216px;
+        }
+
+        .appstore {
+            width: 185px;
+        }
+    }
+
+</style>
 
 <!-- <div class="mobile">
     <div class="row d-flex mb-1 mt-1">

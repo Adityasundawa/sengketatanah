@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sengketa Tanah</title>
     <link rel="icon" type="image/x-icon" href="{{asset('')}}uploads/sengketa-logo_pas.ico">
+    <meta name="keywords" content="sengketa tanah, sengketa, tanah, konflik tanah, tanah">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css"
@@ -314,6 +315,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
+        .btn-secondary-custom{
+            background: #BF9742;
+            color: white;
+        }
+
         .chat-btn {
             /* position: absolute;
             right: 14px;
@@ -550,13 +556,6 @@
 
         .col-12.custom {
             width: 33.3333%
-        }
-
-        @media (max-width: 1400px) {
-            .col-12.custom {
-                width: 38% !important
-            }
-
         }
 
         @media (max-width: 992px) {
@@ -816,6 +815,7 @@
                             </div>
                         </a>
                     </div>
+                    
                     <div class="col text-center">
 
                         <button class="btn btn-sm mb-0 p-0 w-100" id="btn-panduan-m" type="button">
@@ -1457,7 +1457,7 @@
                         <div class="row g-2 justify-content-between text-center scroll-simple"
                             style="overflow-x: auto; flex-wrap: nowrap;">
                             <div class="col mb-4">
-                                <a href="{{url('/')}}/bid-sengketa"
+                                <a href="{{url('/')}}/join"
                                     class="btn d-flex align-items-center h-100 rounded-4 shadow btn-outline-light"
                                     style="width: 200px">
                                     <img src="{{asset('')}}images/tanah_merdeka_join.png" style="width: 100%"
@@ -2566,7 +2566,7 @@
     </div>
 
     <!-- orang bulet appraisal -->
-    <div class="card mb-3 border-0 ">
+    <div class="card border-0 ">
         <div class="card-body">
             <div class="mt-2 ">
 
@@ -2662,7 +2662,7 @@
     </div>
 
     <!-- bidding -->
-    <div class="card mb-3 border-0 shadow-sm ">
+    <div class="card mt-3 border-0 shadow-sm ">
         <div class="card-header bg-white">
 
             <table style="width:100%">
@@ -2693,13 +2693,8 @@
         <div class="card-body bg-card-dark-mode">
 
             <div class="row align-items-center justify-content-center">
-
-                {{-- <div class="col-1 arrow-desktop text-center">
-                                <button id="left-button" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
-                                    <i class="fa-solid fa-arrow-left"></i>
-                                </button>
-                            </div> --}}
-                <div class="col-10 desktop-arrow text-center">
+                
+                <div class="col-12 desktop-arrow text-center">
                     <div class="row mobile-scroll mt-2 align-items-center bidding-card" style="flex-wrap: nowrap">
 
                         <div class="col-12 custom ">
@@ -2793,7 +2788,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-primary mb-0"
+                                                        <button class="btn float-end btn-brown mb-0"
                                                             data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
@@ -2882,7 +2877,7 @@
                                     <div class="row g-2 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
                                                 data-bs-target="#berkasSponsor" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
@@ -2919,7 +2914,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa2').submit()"
-                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                class="btn btn-secondary-custom rounded-5" style="cursor:pointer"><i
                                                     class="fa-solid fa-play text-white"></i>
                                                 Lihat Podcast</span>
                                         </div>
@@ -3080,7 +3075,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-primary mb-0"
+                                                        <button class="btn float-end btn-brown mb-0"
                                                             data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
@@ -3169,7 +3164,7 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
                                                 data-bs-target="#berkasSponsor" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
@@ -3206,7 +3201,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa2').submit()"
-                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                class="btn btn-secondary-custom rounded-5" style="cursor:pointer"><i
                                                     class="fa-solid fa-play text-white"></i>
                                                 Lihat Podcast</span>
                                         </div>
@@ -3268,8 +3263,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        {{-- ubah titik --}}
 
                         <div class="col-12 custom">
                             <div class="card mb-2 mx-auto">
@@ -3362,7 +3355,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-primary mb-0"
+                                                        <button class="btn float-end btn-brown mb-0"
                                                             data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
@@ -3451,7 +3444,7 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
                                                 data-bs-target="#berkasSponsor" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
@@ -3488,7 +3481,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa3').submit()"
-                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                class="btn btn-secondary-custom rounded-5" style="cursor:pointer"><i
                                                     class="fa-solid fa-play text-white"></i>
                                                 Lihat Podcast</span>
                                         </div>
@@ -3642,7 +3635,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-primary mb-0"
+                                                        <button class="btn float-end btn-brown mb-0"
                                                             data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
@@ -3730,7 +3723,7 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
                                                 data-bs-target="#berkasSponsor" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
@@ -3767,7 +3760,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa3').submit()"
-                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                class="btn btn-secondary-custom rounded-5" style="cursor:pointer"><i
                                                     class="fa-solid fa-play text-white"></i>
                                                 Lihat Podcast</span>
                                         </div>
@@ -3831,23 +3824,12 @@
 
                     </div>
                 </div>
-                {{-- <div class="col-1 arrow-desktop text-center">
-                                <button id="right-button" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                            </div> --}}
+                
             </div>
 
             <div class="row align-items-center justify-content-center">
 
-                <div class="col-1 arrow-desktop text-center">
-                    <button id="left-button" class="btn rounded-5 text-white bg-secondary"
-                        style="background-color: #61481C">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-                </div>
-
-                <div class="col-10 desktop-arrow text-center">
+                <div class="col-12 desktop-arrow text-center">
                     <div class="row mobile-scroll mt-2 align-items-center bidding-card2" style="flex-wrap: nowrap">
 
                         <div class="col-12 custom ">
@@ -3941,7 +3923,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-primary mb-0"
+                                                        <button class="btn float-end btn-brown mb-0"
                                                             data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
@@ -4030,7 +4012,7 @@
                                     <div class="row g-2 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
                                                 data-bs-target="#berkasSponsor" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
@@ -4067,7 +4049,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa2').submit()"
-                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                class="btn btn-secondary-custom rounded-5" style="cursor:pointer"><i
                                                     class="fa-solid fa-play text-white"></i>
                                                 Lihat Podcast</span>
                                         </div>
@@ -4227,7 +4209,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-primary mb-0"
+                                                        <button class="btn float-end btn-brown mb-0"
                                                             data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
@@ -4316,7 +4298,7 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
                                                 data-bs-target="#berkasSponsor" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
@@ -4353,7 +4335,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa2').submit()"
-                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                class="btn btn-secondary-custom rounded-5" style="cursor:pointer"><i
                                                     class="fa-solid fa-play text-white"></i>
                                                 Lihat Podcast</span>
                                         </div>
@@ -4415,8 +4397,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        {{-- ubah titik --}}
 
                         <div class="col-12 custom">
                             <div class="card mb-2 mx-auto">
@@ -4509,7 +4489,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-primary mb-0"
+                                                        <button class="btn float-end btn-brown mb-0"
                                                             data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
@@ -4598,7 +4578,7 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
                                                 data-bs-target="#berkasSponsor" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
@@ -4635,7 +4615,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa3').submit()"
-                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                class="btn btn-secondary-custom rounded-5" style="cursor:pointer"><i
                                                     class="fa-solid fa-play text-white"></i>
                                                 Lihat Podcast</span>
                                         </div>
@@ -4789,7 +4769,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn float-end btn-primary mb-0"
+                                                        <button class="btn float-end btn-brown mb-0"
                                                             data-bs-toggle="modal" data-bs-target="#exampleSponsor">
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
@@ -4877,7 +4857,7 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
                                                 data-bs-target="#berkasSponsor" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
@@ -4914,7 +4894,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa3').submit()"
-                                                class="btn btn-success rounded-5" style="cursor:pointer"><i
+                                                class="btn btn-secondary-custom rounded-5" style="cursor:pointer"><i
                                                     class="fa-solid fa-play text-white"></i>
                                                 Lihat Podcast</span>
                                         </div>
@@ -4994,12 +4974,6 @@
 
                     </div>
                 </div>
-                <div class="col-1 arrow-desktop text-center">
-                    <button id="right-button" class="btn rounded-5 text-white bg-secondary"
-                        style="background-color: #61481C">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
             </div>
 
             <script>
@@ -5043,7 +5017,7 @@
     </div>
 
     <!-- orang kotak lawyer -->
-    <div class="card mb-3 border-0 ">
+    <div class="card mt-3 border-0 ">
         <div class="card-body">
             <div class="mt-2 ">
 
@@ -5143,7 +5117,7 @@
     </div>
 
     <!-- bidding Pengacara -->
-    <div class="card mb-3 border-0 shadow-sm ">
+    <div class="card mt-3 border-0 shadow-sm ">
         <div class="card-header bg-white">
 
             <table style="width:100%">
@@ -5175,7 +5149,7 @@
 
             <div class="row align-items-center justify-content-center mt-2">
 
-                <div class="col-11 desktop-arrow text-center">
+                <div class="col-12 desktop-arrow text-center">
 
                     <div class="row mobile-scroll mt-2 align-items-center" id="lelang-card-peng"
                         style="flex-wrap: nowrap">
@@ -5249,7 +5223,7 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
                                                 data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
@@ -5298,7 +5272,7 @@
                                         </div>
                                         <div class="col text-center">
                                             <a data-bs-toggle="modal" data-bs-target="#examplePengacara"
-                                                class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                class="btn btn-brown rounded-5" style="cursor:pointer; width: 125px">
                                                 Bid</a>
                                         </div>
                                     </div>
@@ -5434,7 +5408,7 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
                                                 data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
@@ -5483,7 +5457,7 @@
                                         </div>
                                         <div class="col text-center">
                                             <a data-bs-toggle="modal" data-bs-target="#examplePengacara"
-                                                class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                class="btn btn-brown rounded-5" style="cursor:pointer; width: 125px">
                                                 Bid</a>
                                         </div>
                                     </div>
@@ -5619,7 +5593,7 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
                                                 data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
@@ -5670,7 +5644,7 @@
 
                                         <div class="col text-center">
                                             <a data-bs-toggle="modal" data-bs-target="#examplePengacara"
-                                                class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                class="btn btn-brown rounded-5" style="cursor:pointer; width: 125px">
                                                 Bid</a>
                                         </div>
                                     </div>
@@ -5806,7 +5780,7 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
                                                 data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
@@ -5854,7 +5828,7 @@
                                         </div>
                                         <div class="col text-center">
                                             <a data-bs-toggle="modal" data-bs-target="#examplePengacara"
-                                                class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                class="btn btn-brown rounded-5" style="cursor:pointer; width: 125px">
                                                 Bid</a>
                                         </div>
                                     </div>
@@ -5935,7 +5909,7 @@
 
                 </div>
 
-                <div class="col-11 desktop-arrow mt-3 text-center">
+                <div class="col-12 desktop-arrow mt-3 text-center">
 
                     <div class="row mt-2 align-items-center" id="lelang-card-peng"
                         style="flex-wrap: nowrap; overflow-x: auto">
@@ -6010,7 +5984,7 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
                                                 data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
@@ -6059,7 +6033,7 @@
                                         </div>
                                         <div class="col text-center">
                                             <a data-bs-toggle="modal" data-bs-target="#examplePengacara"
-                                                class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                class="btn btn-brown rounded-5" style="cursor:pointer; width: 125px">
                                                 Bid</a>
                                         </div>
                                     </div>
@@ -6195,7 +6169,7 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
                                                 data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
@@ -6244,7 +6218,7 @@
                                         </div>
                                         <div class="col text-center">
                                             <a data-bs-toggle="modal" data-bs-target="#examplePengacara"
-                                                class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                class="btn btn-brown rounded-5" style="cursor:pointer; width: 125px">
                                                 Bid</a>
                                         </div>
                                     </div>
@@ -6380,7 +6354,7 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
                                                 data-bs-target="#berkasPengacara" style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
@@ -6429,7 +6403,7 @@
                                         </div>
                                         <div class="col text-center">
                                             <a data-bs-toggle="modal" data-bs-target="#examplePengacara"
-                                                class="btn btn-success rounded-5" style="cursor:pointer; width: 125px">
+                                                class="btn btn-brown rounded-5" style="cursor:pointer; width: 125px">
                                                 Bid</a>
                                         </div>
                                     </div>
@@ -6519,7 +6493,7 @@
     </div>
 
     <!-- orang kotak ppat -->
-    <div class="card mb-1 border-0 mb-2 ">
+    <div class="card mt-3 border-0 ">
         <div class="card-body">
             <div class="mt-2 ">
 
@@ -6619,7 +6593,7 @@
     </div>
 
     <!-- Bidding lahan -->
-    <div class="card mb-4 border-0 shadow-sm ">
+    <div class="card mt-3 border-0 shadow-sm ">
         <div class="card-header bg-white">
             <table style="width:100%">
                 <tr>
@@ -6653,7 +6627,7 @@
                                     <i class="fa-solid fa-arrow-left"></i>
                                 </button>
                             </div> --}}
-                <div class="col-10 desktop-arrow text-center">
+                <div class="col-12 desktop-arrow text-center">
                     <div class="row mobile-scroll mt-2 align-items-center bidding-card-a" style="flex-wrap: nowrap">
 
                         <div class="col-12 custom ">
@@ -6744,7 +6718,7 @@
                                                             <i class="fas fa-star"></i>
                                                         </h5>
                                                     </a>
-                                                    <button class="btn float-end btn-info text-white mb-0 my-auto w-100"
+                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -7016,7 +6990,7 @@
                                                             <i class="fas fa-star"></i>
                                                         </h5>
                                                     </a>
-                                                    <button class="btn float-end btn-info text-white mb-0 my-auto w-100"
+                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -7285,7 +7259,7 @@
                                                             <i class="fas fa-star"></i>
                                                         </h5>
                                                     </a>
-                                                    <button class="btn float-end btn-info text-white mb-0 my-auto w-100"
+                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -7552,7 +7526,7 @@
                                                             <i class="fas fa-star"></i>
                                                         </h5>
                                                     </a>
-                                                    <button class="btn float-end btn-info text-white mb-0 my-auto w-100"
+                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -7741,14 +7715,7 @@
 
             <div class="row align-items-center justify-content-center">
 
-                <div class="col-1 arrow-desktop text-center">
-                    <button id="left-button-bid-lahan" class="btn rounded-5 text-white bg-secondary"
-                        style="background-color: #61481C">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-                </div>
-
-                <div class="col-10 desktop-arrow text-center">
+                <div class="col-12 desktop-arrow text-center">
                     <div class="row mobile-scroll mt-2 align-items-center bidding-card-a2" style="flex-wrap: nowrap">
 
                         <div class="col-12 custom ">
@@ -7839,7 +7806,7 @@
                                                             <i class="fas fa-star"></i>
                                                         </h5>
                                                     </a>
-                                                    <button class="btn float-end btn-info text-white mb-0 my-auto w-100"
+                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -8110,7 +8077,7 @@
                                                             <i class="fas fa-star"></i>
                                                         </h5>
                                                     </a>
-                                                    <button class="btn float-end btn-info text-white mb-0 my-auto w-100"
+                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -8379,7 +8346,7 @@
                                                             <i class="fas fa-star"></i>
                                                         </h5>
                                                     </a>
-                                                    <button class="btn float-end btn-info text-white mb-0 my-auto w-100"
+                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -8646,7 +8613,7 @@
                                                             <i class="fas fa-star"></i>
                                                         </h5>
                                                     </a>
-                                                    <button class="btn float-end btn-info text-white mb-0 my-auto w-100"
+                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -8842,12 +8809,7 @@
 
                     </div>
                 </div>
-                <div class="col-1 arrow-desktop text-center">
-                    <button id="right-button-bid-lahan" class="btn rounded-5 text-white bg-secondary"
-                        style="background-color: #61481C">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
+
             </div>
 
             <script>
@@ -10960,7 +10922,7 @@
     </style>
 
     <!-- orang kotak notaris -->
-    <div class="card mb-3 border-0 ">
+    <div class="card border-0 mt-3">
         <div class="card-body">
             <div class="mt-2 ">
 
@@ -11062,7 +11024,7 @@
     </div>
 
     <!-- Bidding Rumah -->
-    <div class="card mb-4 border-0 shadow-sm ">
+    <div class="card mb-4 border-0 shadow-sm mt-3">
         <div class="card-header bg-white">
             <table style="width:100%">
                 <tr>
@@ -11091,12 +11053,7 @@
 
             <div class="row align-items-center justify-content-center">
 
-                {{-- <div class="col-1 arrow-desktop text-center">
-                                <button id="left-button" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
-                                    <i class="fa-solid fa-arrow-left"></i>
-                                </button>
-                            </div> --}}
-                <div class="col-10 desktop-arrow text-center">
+                <div class="col-12 desktop-arrow text-center">
                     <div class="row mobile-scroll mt-2 align-items-center bidding-card-b" style="flex-wrap: nowrap">
 
                         <div class="col-12 custom ">
@@ -11188,7 +11145,7 @@
                                                         </h5>
                                                     </a>
                                                     <button
-                                                        class="btn float-end btn-warning text-white mb-0 my-auto w-100"
+                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -11460,7 +11417,7 @@
                                                         </h5>
                                                     </a>
                                                     <button
-                                                        class="btn float-end btn-warning text-white mb-0 my-auto w-100"
+                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -11730,7 +11687,7 @@
                                                         </h5>
                                                     </a>
                                                     <button
-                                                        class="btn float-end btn-warning text-white mb-0 my-auto w-100"
+                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -11998,7 +11955,7 @@
                                                         </h5>
                                                     </a>
                                                     <button
-                                                        class="btn float-end btn-warning text-white mb-0 my-auto w-100"
+                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -12178,23 +12135,11 @@
 
                     </div>
                 </div>
-                {{-- <div class="col-1 arrow-desktop text-center">
-                                <button id="right-button" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                            </div> --}}
             </div>
 
             <div class="row align-items-center justify-content-center">
 
-                <div class="col-1 arrow-desktop text-center">
-                    <button id="left-button-bid-rumah" class="btn rounded-5 text-white bg-secondary"
-                        style="background-color: #61481C">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-                </div>
-
-                <div class="col-10 desktop-arrow text-center">
+                <div class="col-12 desktop-arrow text-center">
                     <div class="row mobile-scroll mt-2 align-items-center bidding-card-b2" style="flex-wrap: nowrap">
 
                         <div class="col-12 custom">
@@ -12286,7 +12231,7 @@
                                                         </h5>
                                                     </a>
                                                     <button
-                                                        class="btn float-end btn-warning text-white mb-0 my-auto w-100"
+                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -12558,7 +12503,7 @@
                                                         </h5>
                                                     </a>
                                                     <button
-                                                        class="btn float-end btn-warning text-white mb-0 my-auto w-100"
+                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -12828,7 +12773,7 @@
                                                         </h5>
                                                     </a>
                                                     <button
-                                                        class="btn float-end btn-warning text-white mb-0 my-auto w-100"
+                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -13096,7 +13041,7 @@
                                                         </h5>
                                                     </a>
                                                     <button
-                                                        class="btn float-end btn-warning text-white mb-0 my-auto w-100"
+                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
                                                         data-bs-toggle="modal" data-bs-target="#exampleC">
                                                         BID</button>
                                                 </div>
@@ -13292,12 +13237,7 @@
 
                     </div>
                 </div>
-                <div class="col-1 arrow-desktop text-center">
-                    <button id="right-button-bid-rumah" class="btn rounded-5 text-white bg-secondary"
-                        style="background-color: #61481C">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
+                
             </div>
 
             <script>
@@ -17416,14 +17356,15 @@
 
     </style>
 
+    <hr>
 
 
     <div class="row justify-content-center">
-        <div class="col-11 mt-2 text-center">
+        <div class="col-12 mt-2 text-center">
             <b>Download Aplikasinya!</b>
             <p class="fw-lighter mb-0">Platform Seputar Tanah No. 1 di Indonesia</p>
         </div>
-        <div class="col-11 mb-2 text-center">
+        <div class="col-12 mb-2 text-center">
             <a href="#"><img src="{{asset('/')}}uploads/google-play-badge.png" class="store" alt=""></a>
             <a href="#"><img src="{{asset('/')}}uploads/appstore-badge.png" class="appstore" alt=""></a>
         </div>
@@ -17501,197 +17442,7 @@
         </div>
     </div>
 
-    <style>
-        ol.olcustom {
-            padding-left: 1rem;
-        }
-        ol.olcustom li {
-            margin-bottom: 10px;
-            color: #acacac; 
-            text-align: justify;
-            padding-left: 0.5rem !importan
-        }
-        @media (max-width: 991.98px) { 
-            .container-fluid.footer{
-                padding-left: 1rem !important;
-                padding-right: 1rem !important;
-            }
-        }
-    </style>
-
-    <footer class="bg-dark puter">
-        <div class="container-fluid footer p-5 text-white">
-            <div class="row justify-content-center">
-
-                <div class="col-md-3 mb-2 mt-2">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <img src="{{url('')}}/uploads/sengketa_tanah.png" style="width: 300px" alt="">
-                        </div>
-                        <div class="col-9">
-                            <div class="row justify-content-center mt-4 text-center g-0">
-                                <div class="col">
-                                    <a class="btn p-0 fs-5" href="https://www.instagram.com/sengketatanah.id/" role="button">
-                                        <i class="fa-brands fa-instagram text-white"></i>
-                                    </a>
-                                </div>
-
-                                <div class="col">
-                                    <a class="btn p-0 fs-5" href="https://m.youtube.com/channel/UCXQW3lPJ68brYiThnxX18-A" role="button">
-                                        <i class="fa-brands fa-youtube text-white"></i>
-                                    </a>
-                                </div>
-
-                                <div class="col">
-                                    <a class="btn p-0 fs-5" href="#" role="button">
-                                        <i class="fa-brands fa-facebook text-white"></i>
-                                    </a>
-                                </div>
-
-                                <div class="col">
-                                    <a class="btn p-0 fs-5" href="https://mobile.twitter.com/sengketatanahid" role="button">
-                                        <i class="fa-brands fa-twitter text-white"></i>
-                                    </a>
-                                </div>
-
-                                <div class="col">
-                                    <div class="dropdown">
-                                        <button class="btn p-0 fs-5" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                                            id="dropdownMenuButton1">
-                                            <i class="fa-solid fa-share text-white"></i>
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-                                                    data-show-count="false"><i class="fa-brands fa-twitter"></i> Tweet</a></li>
-                                            <li>
-                                                <a target="_blank"
-                                                    onClick='window.open("https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse","Ratting","width=550,height=550,left=150,top=200,toolbar=0,status=0,");'
-                                                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fserver.sengketatanah.id%2F&amp;src=sdkpreparse"
-                                                    class="fb-xfbml-parse-ignore dropdown-item"><i class="fa-brands fa-facebook"></i>
-                                                    Facebook</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                
-                                    <a href="" class=""></a>
-                                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 mb-2 mt-2">
-                    <div class="row">
-                        <div class="col-12">
-                            <h5>Kantor Kami</h5>
-                        </div>
-                        <div class="col-12" style="color: #acacac">
-                            <p class="mb-0">PT. Bursa Akselerasi Indonesia</p>
-                            <p class="mb-0">Satrio Tower Lantai 14 unit 6 Jalan</p>
-                            <p class="mb-0">Prof. DR. Satrio Kav. 1-4 Blok C4 Kel.</p>
-                            <p class="mb-0">Kuningan Timur, Kec. Setiabudi,</p>
-                            <p class="mb-0">Jakarta Selatan 12950</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 mb-2 mt-2">
-                    <div class="row">
-                        <div class="col-12">
-                            <h5>Kontak kami</h5>
-                        </div>
-                        <div class="col-12" style="color: #acacac">
-                            <p class="mb-0">PT. Bursa Akselerasi Indonesia</p>
-                            <p class="mb-0">Satrio Tower Lantai 14 unit 6 Jalan</p>
-                            <p class="mb-0">Prof. DR. Satrio Kav. 1-4 Blok C4 Kel.</p>
-                            <p class="mb-0">Kuningan Timur, Kec. Setiabudi,</p>
-                            <p class="mb-0">Jakarta Selatan 12950</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 mb-2 mt-2">
-                    <div class="row">
-                        <div class="col-12" style="color: #acacac">
-                            <p class="mb-0">FAQ</p>
-                            <p class="mb-0">Layanan pengaduan</p>
-                            <p class="mb-0">Kebijakan privasi</p>
-                            <p class="mb-0">Kebijakan cookie</p>
-                            <p class="mb-0">Draf Perjanjian Borrower</p>
-                            <p class="mb-0">Draf Perjanjian Lender</p>
-                            <p class="mb-0">Laporan keuangan</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <hr class="mb-4 mt-4" style="border: 2px solid white">
-
-            <div class="row mb-3">
-                <div class="col">
-                    <h5>Disclaimer Risiko</h5>
-                </div>
-            </div>
-            
-            <div class="row">
-
-                <div class="col-md-6">
-                    <ol class="olcustom">
-                        <li>
-                            Layanan Pinjam Meminjam Berbasis Teknologi Informasi merupakan kesepakatan perdata antara Pemberi Pinjaman dengan Penerima Pinjaman, sehingga segala risiko yang timbul dari kesepakatan tersebut ditanggung sepenuhnya oleh masing-masing pihak.
-                        </li>
-
-                        <li>
-                            Risiko kredit atau gagal bayar ditanggung sepenuhnya oleh Pemberi Pinjaman. Tidak ada lembaga atau otoritas negara yang bertanggung jawab atas risiko gagal bayar ini.
-                        </li>
-
-                        <li>
-                            Penyelenggara dengan persetujuan dari masing-masing Pengguna (Pemberi Pinjaman dan/atau Penerima Pinjaman) mengakses, memperoleh, menyimpan, mengelola dan/atau menggunakan data pribadi Pengguna "Pemanfaatan atau di dalam benda, perangkat elektronik (termasuk smartphone atau telepon seluler), perangkat keras (hardware) maupun lunak (software), dokumen elektronik, aplikasi atau sistem elektronik milik Pengguna atau yang dikuasai Pengguna, dengan memberitahukan tujuan, batasan dan mekanisme Pemanfaatan Data tersebut kepada Pengguna yang bersangkutan sebelum memperoleh persetujuan yang dimaksud.
-                        </li>
-
-                        <li>
-                            Pemberi Pinjaman yang belum memiliki pengetahuan dan pengalaman pinjam meminjam, disarankan untuk tidak menggunakan layanan ini.
-                        </li>
-
-                        <li>
-                            Penerima Pinjaman harus mempertimbangkan tingkat bunga pinjaman dan biaya lainnya sesuai dengan kemampuan dalam melunasi pinjaman.
-                        </li>
-                        <li>
-                            Setiap kecurangan tercatat secara digital di dunia maya dan dapat diketahui masyarakat luas di media sosial.
-                        </li>
-                    </ol>
-                </div>
-                
-                <div class="col-md-6">
-                    <ol class="olcustom" start="7">
-                        <li>
-                            Pengguna harus membaca dan memahami informasi ini sebelum membuat keputusan menjadi Pemberi Pinjaman atau Penerima Pinjaman.    
-                        </li>
-
-                        <li>
-                            Pemerintah yaitu dalam hal ini Otoritas Jasa Keuangan, tidak bertanggung jawab atas setiap pelanggaran atau ketidakpatuhan oleh Pengguna, baik Pemberi Pinjaman maupun Penerima Pinjaman (baik karena kesengajaan atau kelalaian Pengguna) terhadap ketentuan peraturan perundang-undangan maupun kesepakatan atau perikatan antara Penyelenggara dengan Pemberi Pinjaman dan/atau Penerima Pinjaman.
-                        </li>
-
-                        <li>
-                            Setiap transaksi dan kegiatan pinjam meminjam atau pelaksanaan kesepakatan mengenai pinjam meminjam antara atau yang melibatkan Penyelenggara, Pemberi Pinjaman dan/atau Penerima Pinjaman wajib dilakukan melalui escrow account dan virtual account sebagaimana yang diwajibkan berdasarkan Peraturan Otoritas Jasa 77/POJK.01/2016 tentang Layanan Pinjam Meminjam Uang Berbasis Teknologi Informasi dan pelanggaran atau ketidakpatuhan terhadap ketentuan tersebut merupakan bukti telah terjadinya pelanggaran hukum oleh Penyelenggara sehingga Penyelenggara wajib menanggung ganti rugi yang diderita oleh masing-masing Pengguna sebagai akibat langsung dari pelanggaran hukum tersebut di atas tanpa mengurangi hak Pengguna yang menderita kerugian menurut Kitab Undang-Undang Hukum Perdata.
-                        </li>
-                    </ol>
-                </div>
-            </div>
-
-            <hr class="mb-4 mt-4" style="border: 2px solid white">
-
-            <div class="row">
-                <div class="col-12 text-center" style="color: #acacac;">
-                    Copyright © 2017 - 2022 PT. Bursa Akselerasi Indonesia All rights reserved.
-                </div>
-            </div>
-        </div>
-
-    </footer>
+    @include('layouts.template-public.footer')
 
     {{-- <footer class="row mt-4 puter g-0">
         <div class="card-body text-white text-center bg-card-dark-mode" style="background: #61481C">

@@ -155,55 +155,12 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold fs-4" href="{{url('/')}}">
-                <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px"
-                    class="img-fluid me-2">SENGKETA TANAH</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url('/')}}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Produk</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Panduan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Jaminan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Hubungi Kami</a>
-                    </li>
-                    <li class="nav-item me-2">
-                        <a class="nav-link" href="{{url('/')}}/tentang">Tentang Kami</a>
-                    </li>
-
-                    <div class="vr vr-none me-2"></div>
-                    <hr class="hr-none">
-
-                    <li class="nav-item me-1 ms-1">
-                        <a class="nav-link btn btn-outline-brown rounded-3 login-mb" href="{{url('/')}}/login">Login</a>
-                    </li>
-                    <li class="nav-item me-1 ms-1">
-                        <a class="nav-link btn btn-brown text-white rounded-3" href="{{url('/')}}/register">Register</a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
+    @include('layouts.template-public.header')
 
     <div class="container mt-4 mb-5">
         <h4 class="text-center">Form Sponsor (Badan Usaha)</h4>
 
-        <div class="row mt-5 text-center">
+        <div class="row g-0 mt-5 text-center mote">
             <div class="col">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x text-brown" id="brownie-1"></i>
@@ -235,6 +192,22 @@
                     <i class="fa-solid fa-check fa-stack-1x text-white" id="check-4" style="display: none"></i>
                 </span>
                 <h6>Upload File</h6>
+            </div>
+            <div class="col">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-5"></i>
+                    <i class="fa-solid fa-money-bill fa-stack-1x text-white" id="uncheck-5"></i>
+                    <i class="fa-solid fa-check fa-stack-1x text-white" id="check-5" style="display: none"></i>
+                </span>
+                <h6>Investasi</h6>
+            </div>
+            <div class="col">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-6"></i>
+                    <i class="fa-solid fa-file fa-stack-1x text-white" id="uncheck-6"></i>
+                    <i class="fa-solid fa-check fa-stack-1x text-white" id="check-6" style="display: none"></i>
+                </span>
+                <h6>Perjanjian</h6>
             </div>
         </div>
 
@@ -319,56 +292,17 @@
                             </select>
                         </div>
 
-                        <div class="col-md-6 mb-3">
-                            <label for="pekol" class="mb-2" style="font-weight: 600">Pekerjaan Online</label>
-                            <select id="pekol" class="form-select">
-                                <option selected disabled>-- Pilih Pekerjaan Online --</option>
-                                <option value="1">Berbasis Internet / online</option>
-                                <option value="2">Tidak Berbasis Internet / online</option>
-                            </select>
-                        </div>
-
-                        <div class="col-md-6 mb-3">
-                            <label for="perbul" class="mb-2" style="font-weight: 600">Pendapatan per bulan</label>
-                            <select id="perbul" class="form-select">
-                                <option selected disabled>-- Pilih Pendapatan per bulan --</option>
-                                <option value="1">&lt;Rp 12.500.000</option>
-                                <option value="2">Rp 12.000.001 - Rp 50.000.000</option>
-                                <option value="3">Rp 50.000.001 - Rp 500.000.000</option>
-                                <option value="4">Rp 500.000.001 - 50.000.000.000</option>
-                                <option value="5">&gt; Rp50.000.000.000</option>
-                            </select>
-                        </div>
-
-                        <div class="col-md-12 mb-3">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label for="total_asset" class="mb-2" style="font-weight: 600">Total Asset</label>
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">
-                                                <span class="font-weight-semi-bold">Rp</span>
-                                            </span>
-                                        </div>
-                                        <input autocomplete="off" placeholder="0" class="form-control text-right" name="total_asset" type="text" value="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="col-md-12">
-                            <label for="desk_usaha" class="form-label">Example textarea</label>
+                            <label for="desk_usaha" class="form-label" style="font-weight: 600">Deskripsi Usaha</label>
                             <textarea class="form-control" id="desk_usaha" rows="6"></textarea>
                         </div>
-
-                        
 
                     </div>
 
                     <div class="row mt-4">
                         <div class="col-md-6"></div>
                         <div class="col-md-6">
-                            <button type="button" class="w-100 btn-lg btn btn-brown lan-1">Lanjut</button>
+                            <button type="button" class="w-100 btn-lg btn btn-brown lan-1 mt-2 mb-2">Lanjut</button>
                         </div>
                     </div>
                 </form>
@@ -482,10 +416,10 @@
                 </form>
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-outline-brown kem-2">Kembali</button>
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-2 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-brown lan-2">Lanjut</button>
+                        <button class="w-100 btn-lg btn btn-brown lan-2 mt-2 mb-2">Lanjut</button>
                     </div>
                 </div>
             </div>
@@ -569,7 +503,7 @@
 
                         <div class="col-md-6 mb-3">
                             <div class="text-center">
-                                <img src="https://indofund.id/images/kyc-foto/ktp-true.jpg" style="width: 80%;" alt="">
+                                <img src="{{asset('')}}images/foto_ktp.jpeg" style="width: 73%;" alt="">
                             </div>
                             <div class="text-center mb-2">
                                 Contoh Foto
@@ -581,7 +515,7 @@
 
                         <div class="col-md-6 mb-3">
                             <div class="text-center">
-                                <img src="https://indofund.id/images/kyc-foto/fotoselfie-true.jpg" style="width: 35.8%"
+                                <img src="{{asset('')}}images/foto_selfie.jpeg" style="width: 35.8%"
                                     alt="">
                             </div>
                             <div class="text-center mb-2">
@@ -678,10 +612,10 @@
                 </form>
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-outline-brown kem-3">Kembali</button>
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-3 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-brown lan-3">Lanjut</button>
+                        <button class="w-100 btn-lg btn btn-brown lan-3 mt-2 mb-2">Lanjut</button>
                     </div>
                 </div>
             </div>
@@ -703,10 +637,6 @@
                         <div class="col-md-6 mb-3">
                             <label for="surat_dom" class="mb-2" style="font-weight: 600">Surat Domisili</label>
                             <input type="file" class="form-control" name="surat_dom" id="surat_dom">
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="laporan_uang" class="mb-2" style="font-weight: 600">Laporan Keuangan</label>
-                            <input type="file" class="form-control" name="laporan_uang" id="laporan_uang">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="rek_koran" class="mb-2" style="font-weight: 600">Rekening Koran</label>
@@ -742,18 +672,116 @@
                 </form>
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-outline-brown kem-4">Kembali</button>
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-4 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
-                        <a href="{{url('')}}/buat-laporan" class="w-100 btn-lg btn btn-brown lan-4">Daftar</a>
+                        <a class="w-100 btn-lg btn btn-brown lan-4 mt-2 mb-2">Lanjut</a>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="card mt-5 d-none" id="5">
+            <div class="card-body">
+                <form action="">
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="pembiayaan" class="mb-2" style="font-weight: 600">Rencana Pembiayaan</label>
+                            <select id="pembiayaan" class="form-select">
+                                <option selected disabled>-- Pilih Pembiayaan --</option>
+                                <option value="sendiri">Pembiayaan dikelola sendiri</option>
+                                <option value="platform">Pembiayaan dikelola platform</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mt-3 pengelolaan-sendiri">
+                            <div class="alert alert-danger" role="alert">
+                                <p class="mb-0">
+                                    Anda akan mengelola dana Anda sendiri dan bebas memilih sengketa pertanahan yang paling
+                                    baik untuk Anda selesaikan.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-3 pengelolaan-platform">
+                            <div class="alert alert-danger" role="alert">
+                                <p class="mb-0">
+                                    Dikelola platform adalah pengelolaan sumber dana sponsor yang dijalankan oleh platform SENGKETA TANAH.
+                                    Platform akan memberikan analisa seputar persengketaan tanah yang bisa diselesaikan dan
+                                    menguntungkan. Semua persetujuan penggunaan dana tetap merupakan keputusan
+                                    sponsor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-5 mt-2 mb-2">Kembali</button>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="w-100 btn-lg btn btn-brown lan-5 mt-2 mb-2">Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-5 d-none" id="6">
+            <div class="card-body">
+                <form action="">
+                    <div class="row" style="height: 500px">
+
+                    </div>
+                </form>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-6 mt-2 mb-2">Kembali</button>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="{{url('')}}/buat-laporan" class="w-100 btn-lg btn btn-brown mt-2 mb-2">Daftar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
     </div>
 
+    <hr>
+
+
+    <div class="row justify-content-center mote">
+        <div class="col-12 mt-2 text-center">
+            <b>Download Aplikasinya!</b>
+            <p class="fw-lighter mb-0">Platform Seputar Tanah No. 1 di Indonesia</p>
+        </div>
+        <div class="col-12 mb-2 text-center">
+            <a href="#"><img src="{{asset('/')}}uploads/google-play-badge.png" class="store" alt=""></a>
+            <a href="#"><img src="{{asset('/')}}uploads/appstore-badge.png" class="appstore" alt=""></a>
+        </div>
+    </div>
+
+    <hr>
+    
+    @include('layouts.template-public.footer')
+
     <script>
+        $(function () {
+            var hidestuff = function () {
+                $(".pengelolaan-platform, .pengelolaan-sendiri").hide();
+            }
+            $("#pembiayaan").change(function () {
+                hidestuff();
+                var value = $(this).val();
+                if (value == "platform") {
+                    $(".pengelolaan-platform").show();
+                }
+                if (value == "sendiri") {
+                    $(".pengelolaan-sendiri").show();
+                }
+            });
+            hidestuff();
+        });
+
         $(".theSelect").select2({
             theme: "bootstrap-5",
         });
@@ -776,6 +804,7 @@
             $('#brownie-2').removeClass('text-disable')
             $('#uncheck-1').hide()
             $('#check-1').show()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         // 2
@@ -786,6 +815,7 @@
             $('#brownie-2').addClass('text-disable')
             $('#uncheck-1').show()
             $('#check-1').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         $(".lan-2").click(function () {
@@ -795,6 +825,7 @@
             $('#brownie-3').removeClass('text-disable')
             $('#uncheck-2').hide()
             $('#check-2').show()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         // 3
@@ -805,6 +836,7 @@
             $('#brownie-3').addClass('text-disable')
             $('#uncheck-2').show()
             $('#check-2').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         $(".lan-3").click(function () {
@@ -814,6 +846,7 @@
             $('#brownie-4').removeClass('text-disable')
             $('#uncheck-3').hide()
             $('#check-3').show()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
 
         // 4
@@ -824,6 +857,49 @@
             $('#brownie-4').addClass('text-disable')
             $('#uncheck-3').show()
             $('#check-3').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
+        })
+
+        $(".lan-4").click(function () {
+            $('#4').addClass('d-none')
+            $('#5').removeClass('d-none')
+            $('#brownie-5').addClass('text-brown')
+            $('#brownie-5').removeClass('text-disable')
+            $('#uncheck-4').hide()
+            $('#check-4').show()
+            $("html, body").animate({scrollTop: 0}, 0);
+        })
+
+        // 5
+        $(".kem-5").click(function () {
+            $('#4').removeClass('d-none')
+            $('#5').addClass('d-none')
+            $('#brownie-5').removeClass('text-brown')
+            $('#brownie-5').addClass('text-disable')
+            $('#uncheck-4').show()
+            $('#check-4').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
+        })
+
+        $(".lan-5").click(function () {
+            $('#5').addClass('d-none')
+            $('#6').removeClass('d-none')
+            $('#brownie-6').addClass('text-brown')
+            $('#brownie-6').removeClass('text-disable')
+            $('#uncheck-5').hide()
+            $('#check-5').show()
+            $("html, body").animate({scrollTop: 0}, 0);
+        })
+
+        // 6
+        $(".kem-6").click(function () {
+            $('#5').removeClass('d-none')
+            $('#6').addClass('d-none')
+            $('#brownie-6').removeClass('text-brown')
+            $('#brownie-6').addClass('text-disable')
+            $('#uncheck-5').show()
+            $('#check-5').hide()
+            $("html, body").animate({scrollTop: 0}, 0);
         })
         
     </script>

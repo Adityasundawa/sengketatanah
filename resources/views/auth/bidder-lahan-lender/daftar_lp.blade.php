@@ -158,7 +158,7 @@
     @include('layouts.template-public.header')
 
     <div class="container mt-4 mb-5">
-        <h4 class="text-center">Form Pengacara (Badan Hukum)</h4>
+        <h4 class="text-center">Form Lender (Badan Usaha)</h4>
 
         <div class="row g-0 mt-5 text-center mote">
             <div class="col">
@@ -196,8 +196,16 @@
             <div class="col">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-5"></i>
-                    <i class="fa-solid fa-file fa-stack-1x text-white" id="uncheck-5"></i>
+                    <i class="fa-solid fa-money-bill fa-stack-1x text-white" id="uncheck-5"></i>
                     <i class="fa-solid fa-check fa-stack-1x text-white" id="check-5" style="display: none"></i>
+                </span>
+                <h6>Investasi</h6>
+            </div>
+            <div class="col">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-6"></i>
+                    <i class="fa-solid fa-file fa-stack-1x text-white" id="uncheck-6"></i>
+                    <i class="fa-solid fa-check fa-stack-1x text-white" id="check-6" style="display: none"></i>
                 </span>
                 <h6>Perjanjian</h6>
             </div>
@@ -262,7 +270,6 @@
                                 <option>Konsumtif</option>
                                 <option>Pertanian, Perburuan dan Kehutanan</option>
                                 <option>Perikanan</option>
-                                <option>Hukum</option>
                                 <option>Pertambangan dan Penggalian</option>
                                 <option>Industri Pengolahan</option>
                                 <option>Listrik, Gas, dan Air</option>
@@ -508,7 +515,8 @@
 
                         <div class="col-md-6 mb-3">
                             <div class="text-center">
-                                <img src="{{asset('')}}images/foto_selfie.jpeg" style="width: 35.8%" alt="">
+                                <img src="{{asset('')}}images/foto_selfie.jpeg" style="width: 35.8%"
+                                    alt="">
                             </div>
                             <div class="text-center mb-2">
                                 Contoh Foto
@@ -676,13 +684,56 @@
         <div class="card mt-5 d-none" id="5">
             <div class="card-body">
                 <form action="">
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="pembiayaan" class="mb-2" style="font-weight: 600">Rencana Pembiayaan</label>
+                            <select id="pembiayaan" class="form-select">
+                                <option selected disabled>-- Pilih Pembiayaan --</option>
+                                <option value="sendiri">Pembiayaan dikelola sendiri</option>
+                                <option value="platform">Pembiayaan dikelola platform</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mt-3 pengelolaan-sendiri">
+                            <div class="alert alert-danger" role="alert">
+                                <p class="mb-0">
+                                    Anda akan mengelola dana Anda sendiri dan bebas memilih sengketa pertanahan yang paling
+                                    baik untuk Anda selesaikan.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-3 pengelolaan-platform">
+                            <div class="alert alert-danger" role="alert">
+                                <p class="mb-0">
+                                    Dikelola platform adalah pengelolaan sumber dana sponsor yang dijalankan oleh platform SENGKETA TANAH.
+                                    Platform akan memberikan analisa seputar persengketaan tanah yang bisa diselesaikan dan
+                                    menguntungkan. Semua persetujuan penggunaan dana tetap merupakan keputusan
+                                    sponsor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-5 mt-2 mb-2">Kembali</button>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="w-100 btn-lg btn btn-brown lan-5 mt-2 mb-2">Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-5 d-none" id="6">
+            <div class="card-body">
+                <form action="">
                     <div class="row" style="height: 500px">
 
                     </div>
                 </form>
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <button class="w-100 btn-lg btn btn-outline-brown kem-5 mt-2 mb-2">Kembali</button>
+                        <button class="w-100 btn-lg btn btn-outline-brown kem-6 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
                         <a href="{{url('')}}/buat-laporan" class="w-100 btn-lg btn btn-brown mt-2 mb-2">Daftar</a>

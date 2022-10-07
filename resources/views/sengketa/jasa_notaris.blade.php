@@ -1171,8 +1171,12 @@
                 <div class="row g-2 mt-2 desktop">
 
                     <div class="col-auto">
-                        <a href="{{url('')}}/pilih-user" class="btn" style="background-color: #61481C; color: #fff"
-                            href="{{url('')}}/register">Daftar Sekarang</a>
+                        <form action="{{url('')}}/daftar-jasa"
+                            method="get" id="form-notaris">
+                            <input type="hidden" name="title"
+                                value="Notaris">
+                        </form>
+                        <a onclick="return $('form#form-notaris').submit()" class="btn" style="background-color: #61481C; color: #fff">Daftar Sekarang</a>
                     </div>
 
                     <div class="col-auto">
@@ -1271,7 +1275,7 @@
                                 </div>
 
                                 {{-- <div class="col mb-4">
-                                    <a href="{{url('/')}}/jual-beli-lahan" class="btn btn-outline-light text-darkw-100rounded-4 shadow">
+                                    <a href="{{url('/')}}/jual-beli-lahan" class="btn btn-outline-light text-dark w-100rounded-4 shadow">
                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                             width="85px" x="0" y="0" viewBox="0 0 64 64"
@@ -1739,8 +1743,7 @@
                 <div class="row g-0">
                     <div class="col-auto ms-auto" style="margin-top:5px">
                         <div class="d-grid gap-2 me-1">
-                            <a href="{{url('')}}/pilih-user" class="btn btn-sm btn-outline-brown rounded-5 fw-bold"
-                                href="{{url('')}}/register">Daftar Sekarang</a>
+                            <a onclick="return $('form#form-notaris').submit()" class="btn btn-sm btn-outline-brown rounded-5 fw-bold">Daftar Sekarang</a>
                         </div>
                     </div>
 
@@ -2026,7 +2029,7 @@
                                     ];
                                     ?>
 
-                                        @for($i=8;$i> 0;$i--)
+                                        @for($i=7;$i> 0;$i--)
                                         <div class="col-lg-12" id='orang-kotak'>
 
                                             <div class="card border-0 mt-1 shadow" style="background:#FAFAD2">
@@ -2098,11 +2101,11 @@
             <hr>
 
             <div class="row justify-content-center">
-                <div class="col-11 text-center">
+                <div class="col-12 text-center">
                     <b>Download Aplikasinya!</b>
                     <p class="fw-lighter mb-0">Platform Seputar Tanah No. 1 di Indonesia</p>
                 </div>
-                <div class="col-11 mb-2 text-center">
+                <div class="col-12 mb-2 text-center">
                     <a href="#"><img src="{{asset('/')}}uploads/google-play-badge.png" class="store" alt=""></a>
                     <a href="#"><img src="{{asset('/')}}uploads/appstore-badge.png" class="appstore" alt=""></a>
                 </div>
@@ -2114,7 +2117,7 @@
 
 
 
-            <div id="fb-root"></div>
+            {{-- <div id="fb-root"></div>
             <script async defer crossorigin="anonymous"
                 src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0" nonce="Ee2Zutm6"></script>
             <div class="row mt-4 puter g-0">
@@ -2132,26 +2135,13 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
                 crossorigin="anonymous">
-            </script>
+            </script> --}}
 
         </div>
+    </div>
 
+        @include('layouts.template-public.footer')
 
-
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0" nonce="Ee2Zutm6"></script>
-        <div class="row mt-4 puter g-0">
-            <div class="card-body text-white text-center  bg-card-dark-mode" style="background: #61481C">
-                <p></p>
-                <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
-                <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
-                </p>
-                <hr>
-                <p style="font-size:14px" class="card-title pb-3">Sovereign Plaza. Lt. 19 <br> Jl. TB Simatupang No.
-                    36,
-                    TB Simatupang, Jakarta Selatan</p>
-            </div>
-        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
         </script>
             <script src="https://code.jquery.com/jquery-3.6.1.js"
