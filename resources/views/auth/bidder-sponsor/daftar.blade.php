@@ -196,10 +196,10 @@
             <div class="col">
                 <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x text-disable" id="brownie-5"></i>
-                    <i class="fa-solid fa-user-tie fa-stack-1x text-white" id="uncheck-5"></i>
+                    <i class="fa-solid fa-file fa-stack-1x text-white" id="uncheck-5"></i>
                     <i class="fa-solid fa-check fa-stack-1x text-white" id="check-5" style="display: none"></i>
                 </span>
-                <h6>Kontak Darurat</h6>
+                <h6>Perjanjian</h6>
             </div>
         </div>
 
@@ -864,15 +864,7 @@
         <div class="card mt-5 d-none" id="5">
             <div class="card-body">
                 <form action="">
-                    <div class="row">
-
-                        <div class="col-12">
-
-                            <div class="row">
-
-                            </div>
-
-                        </div>
+                    <div class="row" style="height: 500px">
 
                     </div>
                 </form>
@@ -881,7 +873,8 @@
                         <button class="w-100 btn-lg btn btn-outline-brown kem-5 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
-                        <a href="{{url('')}}/buat-laporan" class="w-100 btn-lg btn btn-brown">Daftar</a>
+                        <a class="w-100 btn-lg btn btn-brown mt-2 mb-2" 
+                        data-bs-toggle="modal" data-bs-target="#daftarKorban">Daftar</a>
                     </div>
                 </div>
             </div>
