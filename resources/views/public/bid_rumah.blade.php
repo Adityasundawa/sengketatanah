@@ -1677,20 +1677,9 @@
                             @endif
                             <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
                                 <div class="card mb-2">
-                                    <div class="card-header text-white px-3 py-1" style="
-                                                background: #8f8f8f">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <!-- <h5 class="mb-0 text-center">Kode Bid {{$bs['kode']}} <img
-                                                                src="{{url('/')}}/uploads/biru_centang.png" alt=""
-                                                                class="mb-1" style="height:20px"></h4> -->
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card-body">
-                                        @if($bs['id'] < 5) <div class="ribbon-pop">
-                                            <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                    @if($bs['id'] < 5)
+                                    <div class="ribbon-pop">
+                                        <i class="fa-solid fa-star"></i>&nbsp;HOT
                                     </div>
                                     @else
                                     @endif
@@ -1772,6 +1761,8 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="card-body">
                                     <table class="mt-2 mb-2 w-100">
                                         <tr>
                                             <td>
@@ -2031,20 +2022,9 @@
                         @endif
                         <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
                             <div class="card mb-2">
-                                <div class="card-header text-white px-3 py-1" style="
-                                                background: #8f8f8f">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <!-- <h5 class="mb-0 text-center">Kode Bid {{$bs['kode']}} <img
-                                                                src="{{url('/')}}/uploads/biru_centang.png" alt=""
-                                                                class="mb-1" style="height:20px"></h4> -->
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body">
-                                    @if($bs['id'] < 5) <div class="ribbon-pop">
-                                        <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                @if($bs['id'] < 5)
+                                <div class="ribbon-pop">
+                                    <i class="fa-solid fa-star"></i>&nbsp;HOT
                                 </div>
                                 @else
                                 @endif
@@ -2126,6 +2106,8 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="card-body">
                                 <table class="mt-2 mb-2 w-100">
                                     <tr>
                                         <td>
@@ -2259,10 +2241,10 @@
                                             <!--    type="button"><i class="fa-solid fa-gavel"></i> Bid Sponsor</a>-->
                                             <!-- Button trigger modal -->
                                             <!-- <button type="button"
-                                                                class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                                data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                                BID
-                                                            </button> -->
+                                                            class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
+                                                            data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                            BID
+                                                        </button> -->
                                             <!-- Modal -->
                                             <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered">
@@ -2390,20 +2372,9 @@
                         @endif
                         <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
                             <div class="card mb-2">
-                                <div class="card-header text-white px-3 py-1" style="
-                                                background: #8f8f8f">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <!-- <h5 class="mb-0 text-center">Kode Bid {{$bs['kode']}} <img
-                                                                src="{{url('/')}}/uploads/biru_centang.png" alt=""
-                                                                class="mb-1" style="height:20px"></h4> -->
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body">
-                                    @if($bs['id'] < 5) <div class="ribbon-pop">
-                                        <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                @if($bs['id'] < 5)
+                                <div class="ribbon-pop">
+                                    <i class="fa-solid fa-star"></i>&nbsp;HOT
                                 </div>
                                 @else
                                 @endif
@@ -2485,6 +2456,8 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="card-body">
                                 <table class="mt-2 mb-2 w-100">
                                     <tr>
                                         <td>
@@ -2618,10 +2591,10 @@
                                             <!--    type="button"><i class="fa-solid fa-gavel"></i> Bid Sponsor</a>-->
                                             <!-- Button trigger modal -->
                                             <!-- <button type="button"
-                                                                class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                                data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                                BID
-                                                            </button> -->
+                                                            class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
+                                                            data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                            BID
+                                                        </button> -->
                                             <!-- Modal -->
                                             <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered">
@@ -2740,20 +2713,9 @@
                         @endif
                         <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
                             <div class="card mb-2">
-                                <div class="card-header text-white px-3 py-1" style="
-                                                background: #8f8f8f">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <!-- <h5 class="mb-0 text-center">Kode Bid {{$bs['kode']}} <img
-                                                                src="{{url('/')}}/uploads/biru_centang.png" alt=""
-                                                                class="mb-1" style="height:20px"></h4> -->
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body">
-                                    @if($bs['id'] < 5) <div class="ribbon-pop">
-                                        <i class="fa-solid fa-star"></i>&nbsp;HOT
+                                @if($bs['id'] < 5)
+                                <div class="ribbon-pop">
+                                    <i class="fa-solid fa-star"></i>&nbsp;HOT
                                 </div>
                                 @else
                                 @endif
@@ -2835,6 +2797,8 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="card-body">
                                 <table class="mt-2 mb-2 w-100">
                                     <tr>
                                         <td>
@@ -2968,10 +2932,10 @@
                                             <!--    type="button"><i class="fa-solid fa-gavel"></i> Bid Sponsor</a>-->
                                             <!-- Button trigger modal -->
                                             <!-- <button type="button"
-                                                                class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                                data-bs-toggle="modal" data-bs-target="#exampleSponsor">
-                                                                BID
-                                                            </button> -->
+                                                            class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
+                                                            data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                            BID
+                                                        </button> -->
                                             <!-- Modal -->
                                             <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered">

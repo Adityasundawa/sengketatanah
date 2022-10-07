@@ -1954,25 +1954,13 @@
                             @endif
                             <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
                                 <div class="card mb-2">
-                                    {{-- <div class="card-header text-white px-3 py-1" style="
-                                                background: #8f8f8f">
-                                        <div class="row">
 
-                                            <div class="col-lg-12">
-                                                <h5 class="mb-0 text-center">Kode Bid {{$bs['kode']}} <img
-                                                        src="{{url('/')}}/uploads/biru_centang.png" alt="" class="mb-1"
-                                                        style="height:20px"></h4>
-                                            </div>
-                                        </div>
-                                    </div> --}}
-
-                                    <div class="card-body">
-                                        @if($bs['id'] < 5) <div class="ribbon-pop"><i
+                                    @if($bs['id'] < 5)
+                                            <div class="ribbon-pop"><i
                                                 class="fa-solid fa-star"></i>&nbsp;HOT
-                                    </div>
+                                            </div>
                                     @else
                                     @endif
-
 
                                     <div class="desktop-2">
                                         <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
@@ -2011,6 +1999,7 @@
                                                         style="height:250px;width:auto;object-fit:cover">
                                                 </div>
                                             </div>
+
                                             <button class="carousel-control-prev opacity-90 text-dark" type="button"
                                                 data-bs-target="#carouselExampleControls{{$bs['id']}}"
                                                 data-bs-slide="prev">
@@ -2027,13 +2016,14 @@
                                             </button>
                                            
                                         </div>
+
                                         <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
                                             <div class="row">
                                                 <div class="col-lg-12">
                                                     <h5 class="mb-0 text-center">Kode Bid SP-001 <img src="https://sengketatanah.id/uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
                                                 </h5></div>
                                             </div>
-                                        </div>z
+                                        </div>
                                     </div>
 
                                     <div class="mobile">
@@ -2090,6 +2080,8 @@
                                             <i class="fa-solid fa-share-from-square"></i>
                                         </button>
                                     </div>
+
+                                    <div class="card-body">
 
                                     <table class="mt-2 mb-2 w-100">
                                         <tr>
@@ -2400,311 +2392,266 @@
     </div>
 
     <div class="card mt-3">
-        <div class="card-body">
-            <div class="row justify-content-center">
+            <div class="card-body">
+                <div class="row justify-content-center">
 
-                <div class="col-lg-12 mt-2 show">
-                    <div class="row">
-                        <?php $counter = 1 ?>
-                        @foreach($bid_sengketa as $bs)
+                    <div class="col-lg-12 mt-2 show">
+                        <div class="row">
+                            <?php $counter = 1 ?>
+                            @foreach($bid_sengketa as $bs)
 
-                        @if($bs['id'] > 6)
-                        @continue
-                        @endif
-                        <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
-                            <div class="card mb-2">
-                                <div class="card-header text-white px-3 py-1" style="
-                                                background: #8f8f8f">
-                                    <div class="row">
+                            @if($bs['id'] > 6)
+                            @continue
+                            @endif
+                            <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
+                                <div class="card mb-2">
 
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Bid {{$bs['kode']}} <img
-                                                    src="{{url('/')}}/uploads/biru_centang.png" alt="" class="mb-1"
-                                                    style="height:20px"></h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body">
-                                    @if($bs['id'] < 5) <div class="ribbon-pop">
-                                        <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                @else
-                                @endif
-
-
-                                <div class="desktop-2">
-                                    <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
-                                        data-bs-interval="false">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                data-bs-slide-to="0" class="active" aria-current="true"
-                                                aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                        </div>
-
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="{{$bs['img']}}" class="d-block w-100"
-                                                    style="height:250px;width:auto;object-fit:cover">
+                                    @if($bs['id'] < 5)
+                                            <div class="ribbon-pop"><i
+                                                class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img1']}}" class="d-block w-100"
-                                                    style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img2']}}" class="d-block w-100"
-                                                    style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img3']}}" class="d-block w-100"
-                                                    style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                            data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                                aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                            data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                                aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
+                                    @else
+                                    @endif
 
-                                <div class="mobile">
-                                    <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
-                                        data-bs-interval="false">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                data-bs-slide-to="0" class="active" aria-current="true"
-                                                aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                        </div>
-
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="{{$bs['img']}}" class="d-block w-100"
-                                                    style="height:210px;width:auto;object-fit:cover">
+                                    <div class="desktop-2">
+                                        <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
+                                            data-bs-interval="false">
+                                            <div class="carousel-indicators">
+                                                <button type="button"
+                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                    data-bs-slide-to="0" class="active" aria-current="true"
+                                                    aria-label="Slide 1"></button>
+                                                <button type="button"
+                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button"
+                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button"
+                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                    data-bs-slide-to="3" aria-label="Slide 4"></button>
                                             </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img1']}}" class="d-block w-100"
-                                                    style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img2']}}" class="d-block w-100"
-                                                    style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img3']}}" class="d-block w-100"
-                                                    style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                            data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                                aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                            data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                                aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
 
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-
-                                <table class="mt-2 mb-2 w-100">
-                                    <tr>
-                                        <td>
-                                            <b>Jumlah Kebutuhan :</b>
-                                        </td>
-
-                                        <td class="align-items-center" rowspan="2">
-
-                                            <div class="row d-flex  align-items-center mb-2">
-                                                <div class="col text-end">
-                                                    <a id="fav-{{$bs['id']}}">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-{{$bs['id']}}">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="{{$bs['img']}}" class="d-block w-100"
+                                                        style="height:250px;width:auto;object-fit:cover">
                                                 </div>
-                                                <div class="col">
-                                                    <button class="btn float-end btn-primary text-white mb-0"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                        style="height:250px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                        style="height:250px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                        style="height:250px;width:auto;object-fit:cover">
                                                 </div>
                                             </div>
-                                            <script>
-                                                $("#fav-<?= $bs['id'] ?>").click(function () {
-                                                    $("#fav-ch-<?= $bs['id'] ?>").toggleClass(
-                                                        'fav-icon');
-                                                });
 
-                                            </script>
-
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-start">
-                                            <h5 class="mb-0">
-                                                <b class="text-primary">
-                                                    {{$bs['dana']}}
-                                                </b>
-                                            </h5>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h5 class="fw-bold">
-                                                Fee : 30%
-                                            </h5>
-                                        </td>
-                                    </tr>
-                                </table>
-
-                                <hr>
-
-                                <table class="mt-3">
-                                    <tr>
-                                        <td>Korban</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['owner']}}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Objek Sengketa</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['objek']}}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lokasi</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['lokasi']}}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Luas</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['luas']}}</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Jaminan</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['jaminan']}}</td>
-
-                                    </tr>
-
-                                    <tr>
-                                        <td>Jumlah Bid</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['jumlah_bid']}}</td>
-                                    </tr>
-                                </table>
-                                <hr>
-
-                                <div class="row g-0">
-                                    <div class="col text-center">
-
-                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
-                                            data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                            <i class="fa-solid fa-eye"></i> Lihat Berkas
-                                        </a>
-
-                                        <!-- Modal -->
-                                        <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
-                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-header p-0 pb-2">
-                                                        <h1 class="modal-title mx-auto text-danger display-1 mb-2">
-                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                style="width: 100px" alt="">
-                                                        </h1>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        Anda harus memiliki akun <b>SPONSOR</b> sebelum melihat
-                                                        berkas.
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary me-auto"
-                                                            data-bs-dismiss="modal">Close</button>
-                                                        <a type="button" class="btn btn-success"
-                                                            href="https://server.sengketatanah.id/login">Login</a>
-                                                        <a type="button" class="btn btn-danger"
-                                                            href="https://server.sengketatanah.id/login">Register</a>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                    aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                data-bs-slide="next">
+                                                <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                    aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                           
                                         </div>
 
+                                        <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <h5 class="mb-0 text-center">Kode Bid SP-001 <img src="https://sengketatanah.id/uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                                </h5></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col text-center">
-                                        <span
-                                            onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
-                                            class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                class="fa-solid fa-play text-danger"></i> Lihat
-                                            Podcast</span>
+
+                                    <div class="mobile">
+                                        <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
+                                            data-bs-interval="false">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                    data-bs-slide-to="0" class="active" aria-current="true"
+                                                    aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                    data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            </div>
+
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="{{$bs['img']}}" class="d-block w-100"
+                                                        style="height:210px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                        style="height:210px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                        style="height:210px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                        style="height:210px;width:auto;object-fit:cover">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                    aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                    aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <form action="{{url('/')}}/bid-sengketa/podcast" class="form-sengketa{{$bs['id']}}"
-                                    method="get">
-                                    <input type="hidden" name="owner" value="{{$bs['owner']}}">
-                                    <input type="hidden" name="objek" value="{{$bs['objek']}}">
-                                    <input type="hidden" name="luas" value="{{$bs['luas']}}">
-                                    <input type="hidden" name="lokasi" value="{{$bs['lokasi']}}">
-                                    <input type="hidden" name="komentar" value="">
-                                    <input type="hidden" name="link_yt" value="{{$bs['link_yt']}}">
-                                    <input type="hidden" name="form" value="sponsor">
-                                </form>
+                                    <div class="share-icon">
+                                        <button class="btn btn-sm text-white rounded-5"
+                                            style="background: rgba(0, 0, 0, 0.5)">
+                                            <i class="fa-solid fa-share-from-square"></i>
+                                        </button>
+                                    </div>
 
-                                <hr>
+                                    <div class="card-body">
 
-                                <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                    <div class="col-4">
+                                    <table class="mt-2 mb-2 w-100">
+                                        <tr>
+                                            <td>
+                                                <b>Jumlah Kebutuhan :</b>
+                                            </td>
 
-                                        <div class="d-grid gap-2 ">
-                                            <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
+                                            <td class="align-items-center" rowspan="2">
+
+                                                <div class="row d-flex  align-items-center mb-2">
+                                                    <div class="col text-end">
+                                                        <a id="fav-{{$bs['id']}}">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-{{$bs['id']}}">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col">
+                                                        <button class="btn float-end text-white mb-0"
+                                                            data-bs-toggle="modal" style="background-color: #61481C; color: #fff" data-bs-target="#exampleC">
+                                                            &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                    </div>
+                                                </div>
+                                                <script>
+                                                    $("#fav-<?= $bs['id'] ?>").click(function () {
+                                                        $("#fav-ch-<?= $bs['id'] ?>").toggleClass(
+                                                            'fav-icon');
+                                                    });
+
+                                                </script>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start">
+                                                <h5 class="mb-0">
+                                                    <b class="text-primary">
+                                                        {{$bs['dana']}}
+                                                    </b>
+                                                </h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h5 class="fw-bold">
+                                                    Fee : 30%
+                                                </h5>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <hr>
+
+                                    <table class="mt-3">
+                                        <tr>
+                                            <td>Korban</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['owner']}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Objek Sengketa</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['objek']}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lokasi</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['lokasi']}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Luas</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['luas']}}</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Jaminan</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['jaminan']}}</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td>Jumlah Bid</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['jumlah_bid']}}</td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+
+
+                                    <div class="row g-0">
+                                        <div class="col text-center">
+
+                                            <a href="#" class=" mx-auto btn rounded-5" data-bs-toggle="modal"
+                                                data-bs-target="#berkasSponsor" style="text-decoration:none;background-color: #61481C; color: #fff">
+                                                <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                            </a>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
                                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered">
                                                     <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <i class="fa-regular fa-circle-xmark"></i>
+                                                        <div class="modal-header p-0 pb-2">
+                                                            <h1 class="modal-title mx-auto text-danger display-1 mb-2">
+                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
+                                                                    style="width: 100px" alt="">
                                                             </h1>
                                                         </div>
                                                         <div class="modal-body">
-                                                            Anda harus masuk sebagai sponsor sebelum
-                                                            melakukan bid.
+                                                            Anda harus memiliki akun <b>SPONSOR</b> sebelum melihat
+                                                            berkas.
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary me-auto"
@@ -2718,27 +2665,94 @@
                                                 </div>
                                             </div>
 
-
+                                        </div>
+                                        <div class="col text-center">
+                                            <span
+                                                onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
+                                                class="btn rounded-5" style="cursor:pointer; background-color: #A47E3B; color: #fff"><i
+                                                    class="fa-solid fa-play text-white"></i> Lihat
+                                                Podcast</span>
                                         </div>
                                     </div>
 
+                                    <form action="{{url('/')}}/bid-sengketa/podcast" class="form-sengketa{{$bs['id']}}"
+                                        method="get">
+                                        <input type="hidden" name="owner" value="{{$bs['owner']}}">
+                                        <input type="hidden" name="objek" value="{{$bs['objek']}}">
+                                        <input type="hidden" name="luas" value="{{$bs['luas']}}">
+                                        <input type="hidden" name="lokasi" value="{{$bs['lokasi']}}">
+                                        <input type="hidden" name="komentar" value="">
+                                        <input type="hidden" name="link_yt" value="{{$bs['link_yt']}}">
+                                        <input type="hidden" name="form" value="sponsor">
+                                    </form>
+
+
+                                    <hr>
+                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                        <div class="col-4">
+
+                                            <div class="d-grid gap-2 ">
+
+                                                <!--<a href="{{url('/')}}/login?title=Bid Sponsor"-->
+                                                <!--    class="btn mt-3 rounded-5 text-white" style="-->
+                                                <!--    border: 0px;-->
+                                                <!--    background: rgb(223,189,105);-->
+                                                <!--    background: linear-gradient(90deg, rgba(223,189,105,1) 0%, rgba(146,111,52,1) 100%);-->
+                                                <!--    height: 45px" -->
+                                                <!--    type="button"><i class="fa-solid fa-gavel"></i> Bid Sponsor</a>-->
+                                                <!-- Button trigger modal -->
+                                                <!-- <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                BID
+                                                            </button> -->
+
+                                                <!-- Modal -->
+                                                <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header p-0">
+                                                                <h1 class="modal-title mx-auto text-danger display-1">
+                                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                                </h1>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                Anda harus masuk sebagai sponsor sebelum
+                                                                melakukan bid.
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary me-auto"
+                                                                    data-bs-dismiss="modal">Close</button>
+                                                                <a type="button" class="btn btn-success"
+                                                                    href="https://server.sengketatanah.id/login">Login</a>
+                                                                <a type="button" class="btn btn-danger"
+                                                                    href="https://server.sengketatanah.id/login">Register</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
-
+                        @if ($counter % 4 == 0)
+                        <!--<div class="col-md-12 mb-3">-->
+                        <!--    TEST-->
+                        <!--</div>-->
+                        @endif
+                        <?php $counter++ ?>
+                        @endforeach
                     </div>
-                    @if ($counter % 4 == 0)
-                    <!--<div class="col-md-12 mb-3">-->
-                    <!--    TEST-->
-                    <!--</div>-->
-                    @endif
-                    <?php $counter++ ?>
-                    @endforeach
                 </div>
-            </div>
-        </div>
 
-    </div>
+            </div>
+
+        </div>
     </div>
 
     {{-- Orang PPAT --}}
@@ -2828,311 +2842,266 @@
     </div>
 
     <div class="card mt-3">
-        <div class="card-body">
-            <div class="row justify-content-center">
+            <div class="card-body">
+                <div class="row justify-content-center">
 
-                <div class="col-lg-12 mt-2 show">
-                    <div class="row">
-                        <?php $counter = 1 ?>
-                        @foreach($bid_sengketa as $bs)
+                    <div class="col-lg-12 mt-2 show">
+                        <div class="row">
+                            <?php $counter = 1 ?>
+                            @foreach($bid_sengketa as $bs)
 
-                        @if($bs['id'] > 6)
-                        @continue
-                        @endif
-                        <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
-                            <div class="card mb-2">
-                                <div class="card-header text-white px-3 py-1" style="
-                                                background: #8f8f8f">
-                                    <div class="row">
+                            @if($bs['id'] > 6)
+                            @continue
+                            @endif
+                            <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
+                                <div class="card mb-2">
 
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Bid {{$bs['kode']}} <img
-                                                    src="{{url('/')}}/uploads/biru_centang.png" alt="" class="mb-1"
-                                                    style="height:20px"></h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body">
-                                    @if($bs['id'] < 5) <div class="ribbon-pop">
-                                        <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                @else
-                                @endif
-
-
-                                <div class="desktop-2">
-                                    <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
-                                        data-bs-interval="false">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                data-bs-slide-to="0" class="active" aria-current="true"
-                                                aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                        </div>
-
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="{{$bs['img']}}" class="d-block w-100"
-                                                    style="height:250px;width:auto;object-fit:cover">
+                                    @if($bs['id'] < 5)
+                                            <div class="ribbon-pop"><i
+                                                class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img1']}}" class="d-block w-100"
-                                                    style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img2']}}" class="d-block w-100"
-                                                    style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img3']}}" class="d-block w-100"
-                                                    style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                            data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                                aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                            data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                                aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
+                                    @else
+                                    @endif
 
-                                <div class="mobile">
-                                    <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
-                                        data-bs-interval="false">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                data-bs-slide-to="0" class="active" aria-current="true"
-                                                aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                        </div>
-
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="{{$bs['img']}}" class="d-block w-100"
-                                                    style="height:210px;width:auto;object-fit:cover">
+                                    <div class="desktop-2">
+                                        <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
+                                            data-bs-interval="false">
+                                            <div class="carousel-indicators">
+                                                <button type="button"
+                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                    data-bs-slide-to="0" class="active" aria-current="true"
+                                                    aria-label="Slide 1"></button>
+                                                <button type="button"
+                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button"
+                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button"
+                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                    data-bs-slide-to="3" aria-label="Slide 4"></button>
                                             </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img1']}}" class="d-block w-100"
-                                                    style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img2']}}" class="d-block w-100"
-                                                    style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img3']}}" class="d-block w-100"
-                                                    style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                            data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                                aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                            data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                                aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
 
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-
-                                <table class="mt-2 mb-2 w-100">
-                                    <tr>
-                                        <td>
-                                            <b>Jumlah Kebutuhan :</b>
-                                        </td>
-
-                                        <td class="align-items-center" rowspan="2">
-
-                                            <div class="row d-flex  align-items-center mb-2">
-                                                <div class="col text-end">
-                                                    <a id="fav-{{$bs['id']}}">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-{{$bs['id']}}">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="{{$bs['img']}}" class="d-block w-100"
+                                                        style="height:250px;width:auto;object-fit:cover">
                                                 </div>
-                                                <div class="col">
-                                                    <button class="btn float-end btn-primary text-white mb-0"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                        style="height:250px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                        style="height:250px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                        style="height:250px;width:auto;object-fit:cover">
                                                 </div>
                                             </div>
-                                            <script>
-                                                $("#fav-<?= $bs['id'] ?>").click(function () {
-                                                    $("#fav-ch-<?= $bs['id'] ?>").toggleClass(
-                                                        'fav-icon');
-                                                });
 
-                                            </script>
-
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-start">
-                                            <h5 class="mb-0">
-                                                <b class="text-primary">
-                                                    {{$bs['dana']}}
-                                                </b>
-                                            </h5>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h5 class="fw-bold">
-                                                Fee : 30%
-                                            </h5>
-                                        </td>
-                                    </tr>
-                                </table>
-
-                                <hr>
-
-                                <table class="mt-3">
-                                    <tr>
-                                        <td>Korban</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['owner']}}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Objek Sengketa</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['objek']}}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lokasi</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['lokasi']}}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Luas</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['luas']}}</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Jaminan</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['jaminan']}}</td>
-
-                                    </tr>
-
-                                    <tr>
-                                        <td>Jumlah Bid</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['jumlah_bid']}}</td>
-                                    </tr>
-                                </table>
-                                <hr>
-
-                                <div class="row g-0">
-                                    <div class="col text-center">
-
-                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
-                                            data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                            <i class="fa-solid fa-eye"></i> Lihat Berkas
-                                        </a>
-
-                                        <!-- Modal -->
-                                        <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
-                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-header p-0 pb-2">
-                                                        <h1 class="modal-title mx-auto text-danger display-1 mb-2">
-                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                style="width: 100px" alt="">
-                                                        </h1>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        Anda harus memiliki akun <b>SPONSOR</b> sebelum melihat
-                                                        berkas.
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary me-auto"
-                                                            data-bs-dismiss="modal">Close</button>
-                                                        <a type="button" class="btn btn-success"
-                                                            href="https://server.sengketatanah.id/login">Login</a>
-                                                        <a type="button" class="btn btn-danger"
-                                                            href="https://server.sengketatanah.id/login">Register</a>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                    aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                data-bs-slide="next">
+                                                <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                    aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                           
                                         </div>
 
+                                        <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <h5 class="mb-0 text-center">Kode Bid SP-001 <img src="https://sengketatanah.id/uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                                </h5></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col text-center">
-                                        <span
-                                            onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
-                                            class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                class="fa-solid fa-play text-danger"></i> Lihat
-                                            Podcast</span>
+
+                                    <div class="mobile">
+                                        <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
+                                            data-bs-interval="false">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                    data-bs-slide-to="0" class="active" aria-current="true"
+                                                    aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                    data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            </div>
+
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="{{$bs['img']}}" class="d-block w-100"
+                                                        style="height:210px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                        style="height:210px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                        style="height:210px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                        style="height:210px;width:auto;object-fit:cover">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                    aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                    aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <form action="{{url('/')}}/bid-sengketa/podcast" class="form-sengketa{{$bs['id']}}"
-                                    method="get">
-                                    <input type="hidden" name="owner" value="{{$bs['owner']}}">
-                                    <input type="hidden" name="objek" value="{{$bs['objek']}}">
-                                    <input type="hidden" name="luas" value="{{$bs['luas']}}">
-                                    <input type="hidden" name="lokasi" value="{{$bs['lokasi']}}">
-                                    <input type="hidden" name="komentar" value="">
-                                    <input type="hidden" name="link_yt" value="{{$bs['link_yt']}}">
-                                    <input type="hidden" name="form" value="sponsor">
-                                </form>
+                                    <div class="share-icon">
+                                        <button class="btn btn-sm text-white rounded-5"
+                                            style="background: rgba(0, 0, 0, 0.5)">
+                                            <i class="fa-solid fa-share-from-square"></i>
+                                        </button>
+                                    </div>
 
-                                <hr>
+                                    <div class="card-body">
 
-                                <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                    <div class="col-4">
+                                    <table class="mt-2 mb-2 w-100">
+                                        <tr>
+                                            <td>
+                                                <b>Jumlah Kebutuhan :</b>
+                                            </td>
 
-                                        <div class="d-grid gap-2 ">
-                                            <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
+                                            <td class="align-items-center" rowspan="2">
+
+                                                <div class="row d-flex  align-items-center mb-2">
+                                                    <div class="col text-end">
+                                                        <a id="fav-{{$bs['id']}}">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-{{$bs['id']}}">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col">
+                                                        <button class="btn float-end text-white mb-0"
+                                                            data-bs-toggle="modal" style="background-color: #61481C; color: #fff" data-bs-target="#exampleC">
+                                                            &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                    </div>
+                                                </div>
+                                                <script>
+                                                    $("#fav-<?= $bs['id'] ?>").click(function () {
+                                                        $("#fav-ch-<?= $bs['id'] ?>").toggleClass(
+                                                            'fav-icon');
+                                                    });
+
+                                                </script>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start">
+                                                <h5 class="mb-0">
+                                                    <b class="text-primary">
+                                                        {{$bs['dana']}}
+                                                    </b>
+                                                </h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h5 class="fw-bold">
+                                                    Fee : 30%
+                                                </h5>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <hr>
+
+                                    <table class="mt-3">
+                                        <tr>
+                                            <td>Korban</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['owner']}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Objek Sengketa</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['objek']}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lokasi</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['lokasi']}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Luas</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['luas']}}</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Jaminan</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['jaminan']}}</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td>Jumlah Bid</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['jumlah_bid']}}</td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+
+
+                                    <div class="row g-0">
+                                        <div class="col text-center">
+
+                                            <a href="#" class=" mx-auto btn rounded-5" data-bs-toggle="modal"
+                                                data-bs-target="#berkasSponsor" style="text-decoration:none;background-color: #61481C; color: #fff">
+                                                <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                            </a>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
                                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered">
                                                     <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <i class="fa-regular fa-circle-xmark"></i>
+                                                        <div class="modal-header p-0 pb-2">
+                                                            <h1 class="modal-title mx-auto text-danger display-1 mb-2">
+                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
+                                                                    style="width: 100px" alt="">
                                                             </h1>
                                                         </div>
                                                         <div class="modal-body">
-                                                            Anda harus masuk sebagai sponsor sebelum
-                                                            melakukan bid.
+                                                            Anda harus memiliki akun <b>SPONSOR</b> sebelum melihat
+                                                            berkas.
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary me-auto"
@@ -3146,27 +3115,94 @@
                                                 </div>
                                             </div>
 
-
+                                        </div>
+                                        <div class="col text-center">
+                                            <span
+                                                onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
+                                                class="btn rounded-5" style="cursor:pointer; background-color: #A47E3B; color: #fff"><i
+                                                    class="fa-solid fa-play text-white"></i> Lihat
+                                                Podcast</span>
                                         </div>
                                     </div>
 
+                                    <form action="{{url('/')}}/bid-sengketa/podcast" class="form-sengketa{{$bs['id']}}"
+                                        method="get">
+                                        <input type="hidden" name="owner" value="{{$bs['owner']}}">
+                                        <input type="hidden" name="objek" value="{{$bs['objek']}}">
+                                        <input type="hidden" name="luas" value="{{$bs['luas']}}">
+                                        <input type="hidden" name="lokasi" value="{{$bs['lokasi']}}">
+                                        <input type="hidden" name="komentar" value="">
+                                        <input type="hidden" name="link_yt" value="{{$bs['link_yt']}}">
+                                        <input type="hidden" name="form" value="sponsor">
+                                    </form>
+
+
+                                    <hr>
+                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                        <div class="col-4">
+
+                                            <div class="d-grid gap-2 ">
+
+                                                <!--<a href="{{url('/')}}/login?title=Bid Sponsor"-->
+                                                <!--    class="btn mt-3 rounded-5 text-white" style="-->
+                                                <!--    border: 0px;-->
+                                                <!--    background: rgb(223,189,105);-->
+                                                <!--    background: linear-gradient(90deg, rgba(223,189,105,1) 0%, rgba(146,111,52,1) 100%);-->
+                                                <!--    height: 45px" -->
+                                                <!--    type="button"><i class="fa-solid fa-gavel"></i> Bid Sponsor</a>-->
+                                                <!-- Button trigger modal -->
+                                                <!-- <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                BID
+                                                            </button> -->
+
+                                                <!-- Modal -->
+                                                <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header p-0">
+                                                                <h1 class="modal-title mx-auto text-danger display-1">
+                                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                                </h1>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                Anda harus masuk sebagai sponsor sebelum
+                                                                melakukan bid.
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary me-auto"
+                                                                    data-bs-dismiss="modal">Close</button>
+                                                                <a type="button" class="btn btn-success"
+                                                                    href="https://server.sengketatanah.id/login">Login</a>
+                                                                <a type="button" class="btn btn-danger"
+                                                                    href="https://server.sengketatanah.id/login">Register</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
-
+                        @if ($counter % 4 == 0)
+                        <!--<div class="col-md-12 mb-3">-->
+                        <!--    TEST-->
+                        <!--</div>-->
+                        @endif
+                        <?php $counter++ ?>
+                        @endforeach
                     </div>
-                    @if ($counter % 4 == 0)
-                    <!--<div class="col-md-12 mb-3">-->
-                    <!--    TEST-->
-                    <!--</div>-->
-                    @endif
-                    <?php $counter++ ?>
-                    @endforeach
                 </div>
-            </div>
-        </div>
 
-    </div>
+            </div>
+
+        </div>
     </div>
 
     {{-- Orang Notaris --}}
@@ -3264,311 +3300,266 @@
     </div>
 
     <div class="card mt-3">
-        <div class="card-body">
-            <div class="row justify-content-center">
+            <div class="card-body">
+                <div class="row justify-content-center">
 
-                <div class="col-lg-12 mt-2 show">
-                    <div class="row">
-                        <?php $counter = 1 ?>
-                        @foreach($bid_sengketa as $bs)
+                    <div class="col-lg-12 mt-2 show">
+                        <div class="row">
+                            <?php $counter = 1 ?>
+                            @foreach($bid_sengketa as $bs)
 
-                        @if($bs['id'] > 6)
-                        @continue
-                        @endif
-                        <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
-                            <div class="card mb-2">
-                                <div class="card-header text-white px-3 py-1" style="
-                                                background: #8f8f8f">
-                                    <div class="row">
+                            @if($bs['id'] > 6)
+                            @continue
+                            @endif
+                            <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
+                                <div class="card mb-2">
 
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Bid {{$bs['kode']}} <img
-                                                    src="{{url('/')}}/uploads/biru_centang.png" alt="" class="mb-1"
-                                                    style="height:20px"></h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body">
-                                    @if($bs['id'] < 5) <div class="ribbon-pop">
-                                        <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                @else
-                                @endif
-
-
-                                <div class="desktop-2">
-                                    <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
-                                        data-bs-interval="false">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                data-bs-slide-to="0" class="active" aria-current="true"
-                                                aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                        </div>
-
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="{{$bs['img']}}" class="d-block w-100"
-                                                    style="height:250px;width:auto;object-fit:cover">
+                                    @if($bs['id'] < 5)
+                                            <div class="ribbon-pop"><i
+                                                class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img1']}}" class="d-block w-100"
-                                                    style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img2']}}" class="d-block w-100"
-                                                    style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img3']}}" class="d-block w-100"
-                                                    style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                            data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                                aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                            data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                                aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
+                                    @else
+                                    @endif
 
-                                <div class="mobile">
-                                    <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
-                                        data-bs-interval="false">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                data-bs-slide-to="0" class="active" aria-current="true"
-                                                aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                        </div>
-
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="{{$bs['img']}}" class="d-block w-100"
-                                                    style="height:210px;width:auto;object-fit:cover">
+                                    <div class="desktop-2">
+                                        <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
+                                            data-bs-interval="false">
+                                            <div class="carousel-indicators">
+                                                <button type="button"
+                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                    data-bs-slide-to="0" class="active" aria-current="true"
+                                                    aria-label="Slide 1"></button>
+                                                <button type="button"
+                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button"
+                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button"
+                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                    data-bs-slide-to="3" aria-label="Slide 4"></button>
                                             </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img1']}}" class="d-block w-100"
-                                                    style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img2']}}" class="d-block w-100"
-                                                    style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img3']}}" class="d-block w-100"
-                                                    style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                            data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                                aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                            data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                                aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
 
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-
-                                <table class="mt-2 mb-2 w-100">
-                                    <tr>
-                                        <td>
-                                            <b>Jumlah Kebutuhan :</b>
-                                        </td>
-
-                                        <td class="align-items-center" rowspan="2">
-
-                                            <div class="row d-flex  align-items-center mb-2">
-                                                <div class="col text-end">
-                                                    <a id="fav-{{$bs['id']}}">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-{{$bs['id']}}">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="{{$bs['img']}}" class="d-block w-100"
+                                                        style="height:250px;width:auto;object-fit:cover">
                                                 </div>
-                                                <div class="col">
-                                                    <button class="btn float-end btn-primary text-white mb-0"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                        style="height:250px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                        style="height:250px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                        style="height:250px;width:auto;object-fit:cover">
                                                 </div>
                                             </div>
-                                            <script>
-                                                $("#fav-<?= $bs['id'] ?>").click(function () {
-                                                    $("#fav-ch-<?= $bs['id'] ?>").toggleClass(
-                                                        'fav-icon');
-                                                });
 
-                                            </script>
-
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-start">
-                                            <h5 class="mb-0">
-                                                <b class="text-primary">
-                                                    {{$bs['dana']}}
-                                                </b>
-                                            </h5>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h5 class="fw-bold">
-                                                Fee : 30%
-                                            </h5>
-                                        </td>
-                                    </tr>
-                                </table>
-
-                                <hr>
-
-                                <table class="mt-3">
-                                    <tr>
-                                        <td>Korban</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['owner']}}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Objek Sengketa</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['objek']}}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lokasi</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['lokasi']}}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Luas</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['luas']}}</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Jaminan</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['jaminan']}}</td>
-
-                                    </tr>
-
-                                    <tr>
-                                        <td>Jumlah Bid</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['jumlah_bid']}}</td>
-                                    </tr>
-                                </table>
-                                <hr>
-
-                                <div class="row g-0">
-                                    <div class="col text-center">
-
-                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
-                                            data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                            <i class="fa-solid fa-eye"></i> Lihat Berkas
-                                        </a>
-
-                                        <!-- Modal -->
-                                        <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
-                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-header p-0 pb-2">
-                                                        <h1 class="modal-title mx-auto text-danger display-1 mb-2">
-                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                style="width: 100px" alt="">
-                                                        </h1>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        Anda harus memiliki akun <b>SPONSOR</b> sebelum melihat
-                                                        berkas.
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary me-auto"
-                                                            data-bs-dismiss="modal">Close</button>
-                                                        <a type="button" class="btn btn-success"
-                                                            href="https://server.sengketatanah.id/login">Login</a>
-                                                        <a type="button" class="btn btn-danger"
-                                                            href="https://server.sengketatanah.id/login">Register</a>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                    aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                data-bs-slide="next">
+                                                <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                    aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                           
                                         </div>
 
+                                        <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <h5 class="mb-0 text-center">Kode Bid SP-001 <img src="https://sengketatanah.id/uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                                </h5></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col text-center">
-                                        <span
-                                            onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
-                                            class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                class="fa-solid fa-play text-danger"></i> Lihat
-                                            Podcast</span>
+
+                                    <div class="mobile">
+                                        <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
+                                            data-bs-interval="false">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                    data-bs-slide-to="0" class="active" aria-current="true"
+                                                    aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                    data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            </div>
+
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="{{$bs['img']}}" class="d-block w-100"
+                                                        style="height:210px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                        style="height:210px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                        style="height:210px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                        style="height:210px;width:auto;object-fit:cover">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                    aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                    aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <form action="{{url('/')}}/bid-sengketa/podcast" class="form-sengketa{{$bs['id']}}"
-                                    method="get">
-                                    <input type="hidden" name="owner" value="{{$bs['owner']}}">
-                                    <input type="hidden" name="objek" value="{{$bs['objek']}}">
-                                    <input type="hidden" name="luas" value="{{$bs['luas']}}">
-                                    <input type="hidden" name="lokasi" value="{{$bs['lokasi']}}">
-                                    <input type="hidden" name="komentar" value="">
-                                    <input type="hidden" name="link_yt" value="{{$bs['link_yt']}}">
-                                    <input type="hidden" name="form" value="sponsor">
-                                </form>
+                                    <div class="share-icon">
+                                        <button class="btn btn-sm text-white rounded-5"
+                                            style="background: rgba(0, 0, 0, 0.5)">
+                                            <i class="fa-solid fa-share-from-square"></i>
+                                        </button>
+                                    </div>
 
-                                <hr>
+                                    <div class="card-body">
 
-                                <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                    <div class="col-4">
+                                    <table class="mt-2 mb-2 w-100">
+                                        <tr>
+                                            <td>
+                                                <b>Jumlah Kebutuhan :</b>
+                                            </td>
 
-                                        <div class="d-grid gap-2 ">
-                                            <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
+                                            <td class="align-items-center" rowspan="2">
+
+                                                <div class="row d-flex  align-items-center mb-2">
+                                                    <div class="col text-end">
+                                                        <a id="fav-{{$bs['id']}}">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-{{$bs['id']}}">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col">
+                                                        <button class="btn float-end text-white mb-0"
+                                                            data-bs-toggle="modal" style="background-color: #61481C; color: #fff" data-bs-target="#exampleC">
+                                                            &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                    </div>
+                                                </div>
+                                                <script>
+                                                    $("#fav-<?= $bs['id'] ?>").click(function () {
+                                                        $("#fav-ch-<?= $bs['id'] ?>").toggleClass(
+                                                            'fav-icon');
+                                                    });
+
+                                                </script>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start">
+                                                <h5 class="mb-0">
+                                                    <b class="text-primary">
+                                                        {{$bs['dana']}}
+                                                    </b>
+                                                </h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h5 class="fw-bold">
+                                                    Fee : 30%
+                                                </h5>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <hr>
+
+                                    <table class="mt-3">
+                                        <tr>
+                                            <td>Korban</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['owner']}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Objek Sengketa</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['objek']}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lokasi</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['lokasi']}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Luas</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['luas']}}</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Jaminan</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['jaminan']}}</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td>Jumlah Bid</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['jumlah_bid']}}</td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+
+
+                                    <div class="row g-0">
+                                        <div class="col text-center">
+
+                                            <a href="#" class=" mx-auto btn rounded-5" data-bs-toggle="modal"
+                                                data-bs-target="#berkasSponsor" style="text-decoration:none;background-color: #61481C; color: #fff">
+                                                <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                            </a>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
                                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered">
                                                     <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <i class="fa-regular fa-circle-xmark"></i>
+                                                        <div class="modal-header p-0 pb-2">
+                                                            <h1 class="modal-title mx-auto text-danger display-1 mb-2">
+                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
+                                                                    style="width: 100px" alt="">
                                                             </h1>
                                                         </div>
                                                         <div class="modal-body">
-                                                            Anda harus masuk sebagai sponsor sebelum
-                                                            melakukan bid.
+                                                            Anda harus memiliki akun <b>SPONSOR</b> sebelum melihat
+                                                            berkas.
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary me-auto"
@@ -3582,27 +3573,94 @@
                                                 </div>
                                             </div>
 
-
+                                        </div>
+                                        <div class="col text-center">
+                                            <span
+                                                onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
+                                                class="btn rounded-5" style="cursor:pointer; background-color: #A47E3B; color: #fff"><i
+                                                    class="fa-solid fa-play text-white"></i> Lihat
+                                                Podcast</span>
                                         </div>
                                     </div>
 
+                                    <form action="{{url('/')}}/bid-sengketa/podcast" class="form-sengketa{{$bs['id']}}"
+                                        method="get">
+                                        <input type="hidden" name="owner" value="{{$bs['owner']}}">
+                                        <input type="hidden" name="objek" value="{{$bs['objek']}}">
+                                        <input type="hidden" name="luas" value="{{$bs['luas']}}">
+                                        <input type="hidden" name="lokasi" value="{{$bs['lokasi']}}">
+                                        <input type="hidden" name="komentar" value="">
+                                        <input type="hidden" name="link_yt" value="{{$bs['link_yt']}}">
+                                        <input type="hidden" name="form" value="sponsor">
+                                    </form>
+
+
+                                    <hr>
+                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                        <div class="col-4">
+
+                                            <div class="d-grid gap-2 ">
+
+                                                <!--<a href="{{url('/')}}/login?title=Bid Sponsor"-->
+                                                <!--    class="btn mt-3 rounded-5 text-white" style="-->
+                                                <!--    border: 0px;-->
+                                                <!--    background: rgb(223,189,105);-->
+                                                <!--    background: linear-gradient(90deg, rgba(223,189,105,1) 0%, rgba(146,111,52,1) 100%);-->
+                                                <!--    height: 45px" -->
+                                                <!--    type="button"><i class="fa-solid fa-gavel"></i> Bid Sponsor</a>-->
+                                                <!-- Button trigger modal -->
+                                                <!-- <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                BID
+                                                            </button> -->
+
+                                                <!-- Modal -->
+                                                <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header p-0">
+                                                                <h1 class="modal-title mx-auto text-danger display-1">
+                                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                                </h1>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                Anda harus masuk sebagai sponsor sebelum
+                                                                melakukan bid.
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary me-auto"
+                                                                    data-bs-dismiss="modal">Close</button>
+                                                                <a type="button" class="btn btn-success"
+                                                                    href="https://server.sengketatanah.id/login">Login</a>
+                                                                <a type="button" class="btn btn-danger"
+                                                                    href="https://server.sengketatanah.id/login">Register</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
-
+                        @if ($counter % 4 == 0)
+                        <!--<div class="col-md-12 mb-3">-->
+                        <!--    TEST-->
+                        <!--</div>-->
+                        @endif
+                        <?php $counter++ ?>
+                        @endforeach
                     </div>
-                    @if ($counter % 4 == 0)
-                    <!--<div class="col-md-12 mb-3">-->
-                    <!--    TEST-->
-                    <!--</div>-->
-                    @endif
-                    <?php $counter++ ?>
-                    @endforeach
                 </div>
-            </div>
-        </div>
 
-    </div>
+            </div>
+
+        </div>
     </div>
 
     {{-- Orang Petugas Ukur --}}
@@ -3690,311 +3748,266 @@
     </div>
 
     <div class="card mt-3">
-        <div class="card-body">
-            <div class="row justify-content-center">
+            <div class="card-body">
+                <div class="row justify-content-center">
 
-                <div class="col-lg-12 mt-2 show">
-                    <div class="row">
-                        <?php $counter = 1 ?>
-                        @foreach($bid_sengketa as $bs)
+                    <div class="col-lg-12 mt-2 show">
+                        <div class="row">
+                            <?php $counter = 1 ?>
+                            @foreach($bid_sengketa as $bs)
 
-                        @if($bs['id'] > 6)
-                        @continue
-                        @endif
-                        <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
-                            <div class="card mb-2">
-                                <div class="card-header text-white px-3 py-1" style="
-                                                background: #8f8f8f">
-                                    <div class="row">
+                            @if($bs['id'] > 6)
+                            @continue
+                            @endif
+                            <div class="col-md-4 mb-3 {{$bs['kode_objek']}}">
+                                <div class="card mb-2">
 
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Bid {{$bs['kode']}} <img
-                                                    src="{{url('/')}}/uploads/biru_centang.png" alt="" class="mb-1"
-                                                    style="height:20px"></h4>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body">
-                                    @if($bs['id'] < 5) <div class="ribbon-pop">
-                                        <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                @else
-                                @endif
-
-
-                                <div class="desktop-2">
-                                    <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
-                                        data-bs-interval="false">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                data-bs-slide-to="0" class="active" aria-current="true"
-                                                aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#carouselExampleControls{{$bs['id']}}"
-                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                        </div>
-
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="{{$bs['img']}}" class="d-block w-100"
-                                                    style="height:250px;width:auto;object-fit:cover">
+                                    @if($bs['id'] < 5)
+                                            <div class="ribbon-pop"><i
+                                                class="fa-solid fa-star"></i>&nbsp;HOT
                                             </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img1']}}" class="d-block w-100"
-                                                    style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img2']}}" class="d-block w-100"
-                                                    style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img3']}}" class="d-block w-100"
-                                                    style="height:250px;width:auto;object-fit:cover">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                            data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                                aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                            data-bs-target="#carouselExampleControls{{$bs['id']}}" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                                aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
+                                    @else
+                                    @endif
 
-                                <div class="mobile">
-                                    <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
-                                        data-bs-interval="false">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                data-bs-slide-to="0" class="active" aria-current="true"
-                                                aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
-                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                        </div>
-
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="{{$bs['img']}}" class="d-block w-100"
-                                                    style="height:210px;width:auto;object-fit:cover">
+                                    <div class="desktop-2">
+                                        <div id="carouselExampleControls{{$bs['id']}}" class="carousel slide"
+                                            data-bs-interval="false">
+                                            <div class="carousel-indicators">
+                                                <button type="button"
+                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                    data-bs-slide-to="0" class="active" aria-current="true"
+                                                    aria-label="Slide 1"></button>
+                                                <button type="button"
+                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button"
+                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button"
+                                                    data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                    data-bs-slide-to="3" aria-label="Slide 4"></button>
                                             </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img1']}}" class="d-block w-100"
-                                                    style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img2']}}" class="d-block w-100"
-                                                    style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="{{$bs['img3']}}" class="d-block w-100"
-                                                    style="height:210px;width:auto;object-fit:cover">
-                                            </div>
-                                        </div>
-                                        <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                            data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                                aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                            data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                                aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
 
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-
-                                <table class="mt-2 mb-2 w-100">
-                                    <tr>
-                                        <td>
-                                            <b>Jumlah Kebutuhan :</b>
-                                        </td>
-
-                                        <td class="align-items-center" rowspan="2">
-
-                                            <div class="row d-flex  align-items-center mb-2">
-                                                <div class="col text-end">
-                                                    <a id="fav-{{$bs['id']}}">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-{{$bs['id']}}">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="{{$bs['img']}}" class="d-block w-100"
+                                                        style="height:250px;width:auto;object-fit:cover">
                                                 </div>
-                                                <div class="col">
-                                                    <button class="btn float-end btn-primary text-white mb-0"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                        style="height:250px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                        style="height:250px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                        style="height:250px;width:auto;object-fit:cover">
                                                 </div>
                                             </div>
-                                            <script>
-                                                $("#fav-<?= $bs['id'] ?>").click(function () {
-                                                    $("#fav-ch-<?= $bs['id'] ?>").toggleClass(
-                                                        'fav-icon');
-                                                });
 
-                                            </script>
-
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-start">
-                                            <h5 class="mb-0">
-                                                <b class="text-primary">
-                                                    {{$bs['dana']}}
-                                                </b>
-                                            </h5>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h5 class="fw-bold">
-                                                Fee : 30%
-                                            </h5>
-                                        </td>
-                                    </tr>
-                                </table>
-
-                                <hr>
-
-                                <table class="mt-3">
-                                    <tr>
-                                        <td>Korban</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['owner']}}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Objek Sengketa</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['objek']}}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lokasi</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['lokasi']}}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Luas</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['luas']}}</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Jaminan</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['jaminan']}}</td>
-
-                                    </tr>
-
-                                    <tr>
-                                        <td>Jumlah Bid</td>
-                                        <td></td>
-                                        <td>:</td>
-                                        <td>&nbsp;{{$bs['jumlah_bid']}}</td>
-                                    </tr>
-                                </table>
-                                <hr>
-
-                                <div class="row g-0">
-                                    <div class="col text-center">
-
-                                        <a href="#" class=" mx-auto btn btn-danger rounded-5" data-bs-toggle="modal"
-                                            data-bs-target="#berkasSponsor" style="text-decoration:none">
-                                            <i class="fa-solid fa-eye"></i> Lihat Berkas
-                                        </a>
-
-                                        <!-- Modal -->
-                                        <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
-                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content">
-                                                    <div class="modal-header p-0 pb-2">
-                                                        <h1 class="modal-title mx-auto text-danger display-1 mb-2">
-                                                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                style="width: 100px" alt="">
-                                                        </h1>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        Anda harus memiliki akun <b>SPONSOR</b> sebelum melihat
-                                                        berkas.
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary me-auto"
-                                                            data-bs-dismiss="modal">Close</button>
-                                                        <a type="button" class="btn btn-success"
-                                                            href="https://server.sengketatanah.id/login">Login</a>
-                                                        <a type="button" class="btn btn-danger"
-                                                            href="https://server.sengketatanah.id/login">Register</a>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                    aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                data-bs-target="#carouselExampleControls{{$bs['id']}}"
+                                                data-bs-slide="next">
+                                                <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                    aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                           
                                         </div>
 
+                                        <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <h5 class="mb-0 text-center">Kode Bid SP-001 <img src="https://sengketatanah.id/uploads/biru_centang.png" alt="" class="mb-1" style="height:20px">
+                                                </h5></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col text-center">
-                                        <span
-                                            onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
-                                            class="btn btn-success rounded-5" style="cursor:pointer"><i
-                                                class="fa-solid fa-play text-danger"></i> Lihat
-                                            Podcast</span>
+
+                                    <div class="mobile">
+                                        <div id="carouselmobile{{$bs['id']}}" class="carousel slide"
+                                            data-bs-interval="false">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                    data-bs-slide-to="0" class="active" aria-current="true"
+                                                    aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#carouselmobile{{$bs['id']}}"
+                                                    data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            </div>
+
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="{{$bs['img']}}" class="d-block w-100"
+                                                        style="height:210px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img1']}}" class="d-block w-100"
+                                                        style="height:210px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img2']}}" class="d-block w-100"
+                                                        style="height:210px;width:auto;object-fit:cover">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="{{$bs['img3']}}" class="d-block w-100"
+                                                        style="height:210px;width:auto;object-fit:cover">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev opacity-90 text-dark" type="button"
+                                                data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon bg-dark rounded-circle"
+                                                    aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next opacity-90 text-dark" type="button"
+                                                data-bs-target="#carouselmobile{{$bs['id']}}" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon bg-dark rounded-circle"
+                                                    aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <form action="{{url('/')}}/bid-sengketa/podcast" class="form-sengketa{{$bs['id']}}"
-                                    method="get">
-                                    <input type="hidden" name="owner" value="{{$bs['owner']}}">
-                                    <input type="hidden" name="objek" value="{{$bs['objek']}}">
-                                    <input type="hidden" name="luas" value="{{$bs['luas']}}">
-                                    <input type="hidden" name="lokasi" value="{{$bs['lokasi']}}">
-                                    <input type="hidden" name="komentar" value="">
-                                    <input type="hidden" name="link_yt" value="{{$bs['link_yt']}}">
-                                    <input type="hidden" name="form" value="sponsor">
-                                </form>
+                                    <div class="share-icon">
+                                        <button class="btn btn-sm text-white rounded-5"
+                                            style="background: rgba(0, 0, 0, 0.5)">
+                                            <i class="fa-solid fa-share-from-square"></i>
+                                        </button>
+                                    </div>
 
-                                <hr>
+                                    <div class="card-body">
 
-                                <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                    <div class="col-4">
+                                    <table class="mt-2 mb-2 w-100">
+                                        <tr>
+                                            <td>
+                                                <b>Jumlah Kebutuhan :</b>
+                                            </td>
 
-                                        <div class="d-grid gap-2 ">
-                                            <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
+                                            <td class="align-items-center" rowspan="2">
+
+                                                <div class="row d-flex  align-items-center mb-2">
+                                                    <div class="col text-end">
+                                                        <a id="fav-{{$bs['id']}}">
+                                                            <h5 class="mb-0 text-fav-disable" id="fav-ch-{{$bs['id']}}">
+                                                                <i class="fas fa-star"></i>
+                                                            </h5>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col">
+                                                        <button class="btn float-end text-white mb-0"
+                                                            data-bs-toggle="modal" style="background-color: #61481C; color: #fff" data-bs-target="#exampleC">
+                                                            &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
+                                                    </div>
+                                                </div>
+                                                <script>
+                                                    $("#fav-<?= $bs['id'] ?>").click(function () {
+                                                        $("#fav-ch-<?= $bs['id'] ?>").toggleClass(
+                                                            'fav-icon');
+                                                    });
+
+                                                </script>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start">
+                                                <h5 class="mb-0">
+                                                    <b class="text-primary">
+                                                        {{$bs['dana']}}
+                                                    </b>
+                                                </h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h5 class="fw-bold">
+                                                    Fee : 30%
+                                                </h5>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <hr>
+
+                                    <table class="mt-3">
+                                        <tr>
+                                            <td>Korban</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['owner']}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Objek Sengketa</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['objek']}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lokasi</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['lokasi']}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Luas</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['luas']}}</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Jaminan</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['jaminan']}}</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td>Jumlah Bid</td>
+                                            <td></td>
+                                            <td>:</td>
+                                            <td>&nbsp;{{$bs['jumlah_bid']}}</td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+
+
+                                    <div class="row g-0">
+                                        <div class="col text-center">
+
+                                            <a href="#" class=" mx-auto btn rounded-5" data-bs-toggle="modal"
+                                                data-bs-target="#berkasSponsor" style="text-decoration:none;background-color: #61481C; color: #fff">
+                                                <i class="fa-solid fa-eye"></i> Lihat Berkas
+                                            </a>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
                                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered">
                                                     <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <i class="fa-regular fa-circle-xmark"></i>
+                                                        <div class="modal-header p-0 pb-2">
+                                                            <h1 class="modal-title mx-auto text-danger display-1 mb-2">
+                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
+                                                                    style="width: 100px" alt="">
                                                             </h1>
                                                         </div>
                                                         <div class="modal-body">
-                                                            Anda harus masuk sebagai sponsor sebelum
-                                                            melakukan bid.
+                                                            Anda harus memiliki akun <b>SPONSOR</b> sebelum melihat
+                                                            berkas.
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary me-auto"
@@ -4008,27 +4021,94 @@
                                                 </div>
                                             </div>
 
-
+                                        </div>
+                                        <div class="col text-center">
+                                            <span
+                                                onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
+                                                class="btn rounded-5" style="cursor:pointer; background-color: #A47E3B; color: #fff"><i
+                                                    class="fa-solid fa-play text-white"></i> Lihat
+                                                Podcast</span>
                                         </div>
                                     </div>
 
+                                    <form action="{{url('/')}}/bid-sengketa/podcast" class="form-sengketa{{$bs['id']}}"
+                                        method="get">
+                                        <input type="hidden" name="owner" value="{{$bs['owner']}}">
+                                        <input type="hidden" name="objek" value="{{$bs['objek']}}">
+                                        <input type="hidden" name="luas" value="{{$bs['luas']}}">
+                                        <input type="hidden" name="lokasi" value="{{$bs['lokasi']}}">
+                                        <input type="hidden" name="komentar" value="">
+                                        <input type="hidden" name="link_yt" value="{{$bs['link_yt']}}">
+                                        <input type="hidden" name="form" value="sponsor">
+                                    </form>
+
+
+                                    <hr>
+                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
+                                        <div class="col-4">
+
+                                            <div class="d-grid gap-2 ">
+
+                                                <!--<a href="{{url('/')}}/login?title=Bid Sponsor"-->
+                                                <!--    class="btn mt-3 rounded-5 text-white" style="-->
+                                                <!--    border: 0px;-->
+                                                <!--    background: rgb(223,189,105);-->
+                                                <!--    background: linear-gradient(90deg, rgba(223,189,105,1) 0%, rgba(146,111,52,1) 100%);-->
+                                                <!--    height: 45px" -->
+                                                <!--    type="button"><i class="fa-solid fa-gavel"></i> Bid Sponsor</a>-->
+                                                <!-- Button trigger modal -->
+                                                <!-- <button type="button" class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleSponsor">
+                                                                BID
+                                                            </button> -->
+
+                                                <!-- Modal -->
+                                                <div class="modal fade my-auto" id="exampleSponsor" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header p-0">
+                                                                <h1 class="modal-title mx-auto text-danger display-1">
+                                                                    <i class="fa-regular fa-circle-xmark"></i>
+                                                                </h1>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                Anda harus masuk sebagai sponsor sebelum
+                                                                melakukan bid.
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary me-auto"
+                                                                    data-bs-dismiss="modal">Close</button>
+                                                                <a type="button" class="btn btn-success"
+                                                                    href="https://server.sengketatanah.id/login">Login</a>
+                                                                <a type="button" class="btn btn-danger"
+                                                                    href="https://server.sengketatanah.id/login">Register</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
-
+                        @if ($counter % 4 == 0)
+                        <!--<div class="col-md-12 mb-3">-->
+                        <!--    TEST-->
+                        <!--</div>-->
+                        @endif
+                        <?php $counter++ ?>
+                        @endforeach
                     </div>
-                    @if ($counter % 4 == 0)
-                    <!--<div class="col-md-12 mb-3">-->
-                    <!--    TEST-->
-                    <!--</div>-->
-                    @endif
-                    <?php $counter++ ?>
-                    @endforeach
                 </div>
-            </div>
-        </div>
 
-    </div>
+            </div>
+
+        </div>
     </div>
 
     <nav aria-label="Page navigation example" style="margin-top: 10px;">
