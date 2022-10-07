@@ -848,7 +848,8 @@
                         <button class="w-100 btn-lg btn btn-outline-brown kem-4 mt-2 mb-2">Kembali</button>
                     </div>
                     <div class="col-md-6">
-                        <a href="{{url('')}}/buat-laporan" class="w-100 btn-lg btn btn-brown mt-2 mb-2">Daftar</a>
+                        <a class="w-100 btn-lg btn btn-brown mt-2 mb-2" 
+                        data-bs-toggle="modal" data-bs-target="#daftarKorban" >Daftar</a>
                     </div>
                 </div>
             </div>
@@ -857,6 +858,30 @@
     </div>
 
     <hr>
+
+    <div class="modal fade my-auto text-center" id="daftarKorban" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header p-0 pb-2">
+                    <h1 class="modal-title mx-auto text-danger display-1 mb-2">
+                        <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
+                            style="width: 100px" alt="">
+                    </h1>
+                </div>
+                <div class="modal-body">
+                    <h5 class="mb-3">Terima Kasih Anda Telah Bergabung Dengan Sengketa Tanah!</h5>
+                    Silahkan isi data tentang objek sengketa anda
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary me-auto"
+                        data-bs-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-success"
+                        href="{{url('')}}/buat-laporan" >Lanjut</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div class="row justify-content-center">

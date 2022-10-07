@@ -407,6 +407,41 @@
         </div>
     </div>
 
+    <div class="col text-center">
+        
+        <a href="#" class=" mx-auto btn rounded-5" data-bs-toggle="modal"
+            data-bs-target="#berkasSponsor" style="text-decoration:none;background-color: #BF9742; color: #fff">
+            <i class="fa-solid fa-eye"></i> Lihat Berkas
+        </a>
+        <!-- Modal -->
+
+        <div class="modal fade my-auto" id="berkasSponsor" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header p-0 pb-2">
+                        <h1 class="modal-title mx-auto text-danger display-1 mb-2">
+                            <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
+                                style="width: 100px" alt="">
+                        </h1>
+                    </div>
+                    <div class="modal-body">
+                        Anda harus memiliki akun <b>SPONSOR</b> sebelum melihat
+                        berkas.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary me-auto"
+                            data-bs-dismiss="modal">Close</button>
+                        <a type="button" class="btn btn-success"
+                            href="https://server.sengketatanah.id/login">Login</a>
+                        <a type="button" class="btn btn-danger"
+                            href="https://server.sengketatanah.id/login">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <hr>
     @include('layouts.template-public.footer')
 
