@@ -765,7 +765,7 @@
                                 </div>
 
                                 <div class="col-md-6 mb-3">
-                                    <label for="perbul" class="mb-2" style="font-weight: 600">Pendapatan per bulan</label>
+                                    <label for="perbul" class="mb-2" style="font-weight: 600">Pendapatan Per Bulan</label>
                                     <select id="perbul" class="form-select">
                                         <option selected disabled>-- Pilih Pendapatan per bulan --</option>
                                         <option value="p1">Rp 0 - Rp 2.967.020</option>
@@ -774,7 +774,7 @@
                                         <option value="p4">Rp 11.868.081 - Rp 25.000.000</option>
                                         <option value="p5">Rp 25.000.001 - Rp 208.333.333</option>
                                         <option value="p6">Rp 208.333.334 - Rp 4.166.666.667</option>
-                                        <option value="p7">&gt;Rp 4.166.666.667</option>
+                                        <option value="p7">&gt; Rp 4.166.666.667</option>
                                     </select>
                                 </div>
 
