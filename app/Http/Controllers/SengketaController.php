@@ -201,6 +201,18 @@ class SengketaController extends Controller
         return view('auth.bidder-lahan.daftar_lp', $data);
     }
 
+    public function daftarBidLLP(Request $request)
+    {
+        $data['req'] = $request;
+        return view('auth.bidder-lahan-lender.daftar', $data);
+    }
+
+    public function daftarBidLLPR(Request $request)
+    {
+        $data['req'] = $request;
+        return view('auth.bidder-lahan-lender.daftar_lp', $data);
+    }
+
     public function buatLaporan(Request $request)
     {
         $data['req'] = $request;

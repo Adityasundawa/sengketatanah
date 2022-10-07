@@ -62,6 +62,9 @@ Route::get('daftar-bid-pengacara-badan-hukum', [SengketaController::class, "daft
 
 Route::get('daftar-bid-lahan-pribadi', [SengketaController::class, "daftarBidLP"]);
 Route::get('daftar-bid-lahan-perusahaan', [SengketaController::class, "daftarBidLPR"]);
+
+Route::get('daftar-bid-lender-personal', [SengketaController::class, "daftarBidLLP"]);
+Route::get('daftar-bid-lender-badan-usaha', [SengketaController::class, "daftarBidLLPR"]);
 Route::get('buat-laporan', [SengketaController::class, "buatLaporan"]);
 
 
