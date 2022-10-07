@@ -1205,7 +1205,7 @@
                                     </span>
                                 </div>
                                 <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
-                                <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
+                                <button class="btn h-100 mb-0" style="color: #fff; background: #BF9742">Search</button>
                             </div>
                         </div>
                     </div>
@@ -1222,7 +1222,7 @@
                                     </span>
                                 </div>
                                 <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
-                                <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325">Search</button>
+                                <button class="btn h-100 mb-0" style="color: #fff; background: #BF9742">Search</button>
                             </div>
                         </div>
                     </div>
@@ -2218,7 +2218,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
-                                                class="btn rounded-5" style="cursor:pointer; background-color: #E6B325; color: #fff"><i
+                                                class="btn rounded-5" style="cursor:pointer; background-color: #BF9742; color: #fff"><i
                                                     class="fa-solid fa-play text-white"></i> Lihat
                                                 Podcast</span>
                                         </div>
@@ -2669,7 +2669,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
-                                                class="btn rounded-5" style="cursor:pointer; background-color: #E6B325; color: #fff"><i
+                                                class="btn rounded-5" style="cursor:pointer; background-color: #BF9742; color: #fff"><i
                                                     class="fa-solid fa-play text-white"></i> Lihat
                                                 Podcast</span>
                                         </div>
@@ -3119,7 +3119,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
-                                                class="btn rounded-5" style="cursor:pointer; background-color: #E6B325; color: #fff"><i
+                                                class="btn rounded-5" style="cursor:pointer; background-color: #BF9742; color: #fff"><i
                                                     class="fa-solid fa-play text-white"></i> Lihat
                                                 Podcast</span>
                                         </div>
@@ -3577,7 +3577,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
-                                                class="btn rounded-5" style="cursor:pointer; background-color: #E6B325; color: #fff"><i
+                                                class="btn rounded-5" style="cursor:pointer; background-color: #BF9742; color: #fff"><i
                                                     class="fa-solid fa-play text-white"></i> Lihat
                                                 Podcast</span>
                                         </div>
@@ -4025,7 +4025,7 @@
                                         <div class="col text-center">
                                             <span
                                                 onclick="return document.querySelector('form.form-sengketa<?= $bs['id'] ?>').submit()"
-                                                class="btn rounded-5" style="cursor:pointer; background-color: #E6B325; color: #fff"><i
+                                                class="btn rounded-5" style="cursor:pointer; background-color: #BF9742; color: #fff"><i
                                                     class="fa-solid fa-play text-white"></i> Lihat
                                                 Podcast</span>
                                         </div>
