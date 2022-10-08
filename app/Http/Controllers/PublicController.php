@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\SengketaTanah;
 use Illuminate\Http\Request;
+
 class PublicController extends Controller
 {
     public function biddingSponsor()
@@ -21,7 +22,7 @@ class PublicController extends Controller
     {
         return view('public.podcast_sengketa');
     }
-    
+
     public function jualBeliLahan()
     {
         $data['sengketa'] = SengketaTanah::get();
@@ -121,12 +122,12 @@ class PublicController extends Controller
     public function detailTukang(Request $request)
     {
         $data['req'] = $request;
-        return view('public.detail-tukang',$data);
+        return view('public.detail-tukang', $data);
     }
     public function detailPetugas(Request $request)
     {
         $data['req'] = $request;
-        return view('public.detail-petugas',$data);
+        return view('public.detail-petugas', $data);
     }
     private function data_jual_beli()
     {
@@ -216,7 +217,7 @@ class PublicController extends Controller
                 "imbal_hasil" => "Bagi Hasil 50/50*",
                 "jaminan" => "Sertifikat Rumah",
                 "jumlah_bid" => 1,
-                "link_yt" => '',
+                "link_yt" => 'https://www.youtube.com/embed/-RkCcavzXq8',
                 "img" => 'images/lahan1.jpeg',
                 "img1" => "images/lahan2.jpeg",
                 "img2" => "images/lahan4.jpeg",
@@ -240,7 +241,7 @@ class PublicController extends Controller
                 "imbal_hasil" => "Fee 75% Dari Pinjaman",
                 "jaminan" => "Sertifikat Tanah",
                 "jumlah_bid" => 12,
-                "link_yt" => '',
+                "link_yt" => 'https://www.youtube.com/embed/-RkCcavzXq8',
                 "img" => 'images/lahan3.jpeg',
                 "img2" => "images/lahan4.jpeg",
                 "img1" => "images/lahan2.jpeg",
@@ -264,7 +265,7 @@ class PublicController extends Controller
                 "imbal_hasil" => "Fee 100% Dari Pinjaman",
                 "jaminan" => "Sertifikat Rumah",
                 "jumlah_bid" => 10,
-                "link_yt" => '',
+                "link_yt" => 'https://www.youtube.com/embed/-RkCcavzXq8',
                 "img" => 'images/lahan2.jpeg',
                 "img2" => "images/lahan4.jpeg",
                 "img3" => "images/lahan3.jpeg",
@@ -288,7 +289,7 @@ class PublicController extends Controller
                 "imbal_hasil" => "Bagi Hasil 60/40*",
                 "jaminan" => "Sertifikat Tanah",
                 "jumlah_bid" => 9,
-                "link_yt" => '',
+                "link_yt" => 'https://www.youtube.com/embed/-RkCcavzXq8',
                 "img" => 'images/lahan3.jpeg',
                 "img2" => "images/lahan4.jpeg",
                 "img1" => "images/lahan2.jpeg",
@@ -312,7 +313,7 @@ class PublicController extends Controller
                 "imbal_hasil" => "Bagi Hasil 70/30*",
                 "jaminan" => "Sertifikat Rumah",
                 "jumlah_bid" => 7,
-                "link_yt" => '',
+                "link_yt" => 'https://www.youtube.com/embed/-RkCcavzXq8',
                 "img" => 'images/lahan1.jpeg',
                 "img1" => "images/lahan2.jpeg",
                 "img2" => "images/lahan4.jpeg",
@@ -336,7 +337,7 @@ class PublicController extends Controller
                 "imbal_hasil" => "Bagi Hasil 50/50*",
                 "jaminan" => "Sertifikat Tanah",
                 "jumlah_bid" => 8,
-                "link_yt" => '',
+                "link_yt" => 'https://www.youtube.com/embed/-RkCcavzXq8',
                 "img" => 'images/lahan2.jpeg',
                 "img3" => "images/lahan3.jpeg",
                 "img2" => "images/lahan4.jpeg",
