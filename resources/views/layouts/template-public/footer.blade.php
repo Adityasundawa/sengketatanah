@@ -99,10 +99,11 @@
                             <h5>Kontak kami</h5>
                         </div>
                         <div class="col-12" style="color: #acacac">
-                            <p class="mb-0">Email: cs@indofund.id</p>
-                            <p class="mb-0">Telepon: (021)-25982507</p>
-                            <p class="mb-0">Verificator 0859 2175 2830</p>
-                            <p class="mb-0">Collection 0896 2618 8206</p>
+                            <p class="mb-0">Email: cs@tanahmerdeka.id</p>
+                            <p class="mb-0">Telepon: 0812 3575 7667</p>
+                            <p class="mb-0">Whatsapp: 0812 3575 7667</p>
+                            <p class="mb-0">Verificator 0857 7369 0768</p>
+                            <p class="mb-0">Collection 0813 8465 4484</p>
                         </div>
                     </div>
                 </div>
