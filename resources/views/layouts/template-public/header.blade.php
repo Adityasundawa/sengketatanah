@@ -10,11 +10,11 @@
     
     @media (max-width: 991.98px) { 
         .mote {
-            font-size: 12px !important;
+            font-size: 10px !important;
         }
 
         .mote h6 {
-            font-size: 12px !important
+            font-size: 10px !important
         }
      }
 </style>
