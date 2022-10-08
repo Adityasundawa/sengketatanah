@@ -1742,6 +1742,30 @@
                                                             &nbsp;&nbsp;&nbsp;Bid&nbsp;&nbsp;&nbsp;</button>
                                                     </div>
                                                 </div>
+
+                                                <div class="modal fade my-auto" id="exampleC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header p-0">
+                                                                <h1 class="modal-title mx-auto text-danger display-1">
+                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png" class="mb-2" style="width: 100px" alt="">
+                                                                </h1>
+                                                            </div>
+                                                            <div class="modal-body" style="text-align: justify">
+
+                                                                Anda harus memiliki akun <b>SPONSOR</b> sebelum
+                                                                melakukan Bid (Bid adalah proses penawaran anda dengan
+                                                                owner). Jika anda belum menemukan kesepakatan anda bisa
+                                                                close bidding kapan saja.</div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
+                                                                <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
+                                                                <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                                 <script>
                                                     $("#fav-<?= $bs['id'] ?>").click(function() {
                                                         $("#fav-ch-<?= $bs['id'] ?>").toggleClass(
