@@ -129,9 +129,14 @@ class SengketaController extends Controller
         return view('sengketa.role');
     }
 
-    public function pilihUser()
+    public function pilihUserS()
     {
-        return view('auth.bidder.pilih');
+        return view('auth.bidder.pilih-sponsor');
+    }
+
+    public function pilihUserP()
+    {
+        return view('auth.bidder.pilih-pengacara');
     }
 
     public function pilihSponsor()

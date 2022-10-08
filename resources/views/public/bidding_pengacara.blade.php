@@ -1102,7 +1102,7 @@
                 <div class="row g-2 desktop mt-2">
 
                     <div class="col-auto">
-                        <a href="{{url('')}}/pilih-user" class="btn" style="background-color: #61481C; color: #fff">Daftar Sekarang</a>
+                        <a href="{{url('')}}/pilih-user-pengacara" class="btn" style="background-color: #61481C; color: #fff">Daftar Sekarang</a>
                     </div>
 
                     <div class="col-auto">
@@ -1492,7 +1492,7 @@
             <div class="row g-0">
                 <div class="col-auto ms-auto" style="margin-top:5px">
                     <div class="d-grid gap-2 me-1">
-                        <a href="{{url('')}}/pilih-user" class="btn btn-sm btn-outline-brown rounded-5 fw-bold">Daftar Sekarang</a>
+                        <a href="{{url('')}}/pilih-user-pengacara" class="btn btn-sm btn-outline-brown rounded-5 fw-bold">Daftar Sekarang</a>
                     </div>
                 </div>
 
