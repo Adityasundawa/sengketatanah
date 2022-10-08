@@ -182,7 +182,7 @@
 
             <div class="row">
                 <div class="col-12 text-center" style="color: #acacac;">
-                    Copyright © 2017 - 2022 PT. Tanah Airku Merdeka All rights reserved.
+                    Copyright © 2022 PT. Tanah Airku Merdeka All rights reserved.
                 </div>
             </div>
         </div>
