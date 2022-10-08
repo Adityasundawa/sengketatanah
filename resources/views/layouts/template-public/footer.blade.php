@@ -99,10 +99,10 @@
                             <h5>Kontak kami</h5>
                         </div>
                         <div class="col-12" style="color: #acacac">
-                            <p class="mb-0">PT. Tanah Airku Merdeka</p>
-                            <p class="mb-0">Sovereign Plaza Lantai 19,</p>
-                            <p class="mb-0">Jl. TB Simatupang No.36, RT.1/RW.2, Cilandak Bar., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus</p>
-                            <p class="mb-0">Ibukota Jakarta 12430</p>
+                            <p class="mb-0">Email: cs@indofund.id</p>
+                            <p class="mb-0">Telepon: (021)-25982507</p>
+                            <p class="mb-0">Verificator 0859 2175 2830</p>
+                            <p class="mb-0">Collection 0896 2618 8206</p>
                         </div>
                     </div>
                 </div>
