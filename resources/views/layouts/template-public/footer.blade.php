@@ -85,11 +85,10 @@
                             <h5>Kantor Kami</h5>
                         </div>
                         <div class="col-12" style="color: #acacac">
-                            <p class="mb-0">PT. Bursa Akselerasi Indonesia</p>
-                            <p class="mb-0">Satrio Tower Lantai 14 unit 6 Jalan</p>
-                            <p class="mb-0">Prof. DR. Satrio Kav. 1-4 Blok C4 Kel.</p>
-                            <p class="mb-0">Kuningan Timur, Kec. Setiabudi,</p>
-                            <p class="mb-0">Jakarta Selatan 12950</p>
+                            <p class="mb-0">PT. Tanah Airku Merdeka</p>
+                            <p class="mb-0">Sovereign Plaza Lantai 19,</p>
+                            <p class="mb-0">Jl. TB Simatupang No.36, RT.1/RW.2, Cilandak Bar., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus</p>
+                            <p class="mb-0">Ibukota Jakarta 12430</p> 
                         </div>
                     </div>
                 </div>
@@ -100,11 +99,10 @@
                             <h5>Kontak kami</h5>
                         </div>
                         <div class="col-12" style="color: #acacac">
-                            <p class="mb-0">PT. Bursa Akselerasi Indonesia</p>
-                            <p class="mb-0">Satrio Tower Lantai 14 unit 6 Jalan</p>
-                            <p class="mb-0">Prof. DR. Satrio Kav. 1-4 Blok C4 Kel.</p>
-                            <p class="mb-0">Kuningan Timur, Kec. Setiabudi,</p>
-                            <p class="mb-0">Jakarta Selatan 12950</p>
+                            <p class="mb-0">PT. Tanah Airku Merdeka</p>
+                            <p class="mb-0">Sovereign Plaza Lantai 19,</p>
+                            <p class="mb-0">Jl. TB Simatupang No.36, RT.1/RW.2, Cilandak Bar., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus</p>
+                            <p class="mb-0">Ibukota Jakarta 12430</p>
                         </div>
                     </div>
                 </div>
