@@ -2920,7 +2920,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
@@ -3207,7 +3207,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Fatah">
                                         <input type="hidden" name="objek" value=" Konflik Pertanahan">
@@ -3487,7 +3487,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Ophelia Suartini">
                                         <input type="hidden" name="objek" value=" Perkara Pertanahan">
@@ -3766,7 +3766,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Ophelia Suartini">
                                         <input type="hidden" name="objek" value=" Perkara Pertanahan">
@@ -4055,7 +4055,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
@@ -4341,7 +4341,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Fatah">
                                         <input type="hidden" name="objek" value=" Konflik Pertanahan">
@@ -4621,7 +4621,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Ophelia Suartini">
                                         <input type="hidden" name="objek" value=" Perkara Pertanahan">
@@ -4900,7 +4900,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Ophelia Suartini">
                                         <input type="hidden" name="objek" value=" Perkara Pertanahan">
@@ -5277,7 +5277,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
@@ -5462,7 +5462,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
@@ -5649,7 +5649,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
@@ -5833,7 +5833,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
@@ -6038,7 +6038,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
@@ -6223,7 +6223,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
@@ -6408,7 +6408,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
@@ -6836,7 +6836,7 @@
 
                                         </div>
                                     </div>
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
@@ -7108,7 +7108,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Fatah">
                                         <input type="hidden" name="objek" value=" Konflik Pertanahan">
@@ -7376,7 +7376,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Ophelia Suartini">
                                         <input type="hidden" name="objek" value=" Perkara Pertanahan">
@@ -7642,7 +7642,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Ophelia Suartini">
                                         <input type="hidden" name="objek" value=" Perkara Pertanahan">
@@ -7924,7 +7924,7 @@
 
                                         </div>
                                     </div>
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
@@ -8195,7 +8195,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Fatah">
                                         <input type="hidden" name="objek" value=" Konflik Pertanahan">
@@ -8463,7 +8463,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Ophelia Suartini">
                                         <input type="hidden" name="objek" value=" Perkara Pertanahan">
@@ -8729,7 +8729,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Ophelia Suartini">
                                         <input type="hidden" name="objek" value=" Perkara Pertanahan">
@@ -9400,7 +9400,7 @@
 
                                     </div>
                                 </div>
-                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1"
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
                                     method="get">
                                     <input type="hidden" name="owner" value=" Bahru">
                                     <input type="hidden" name="objek" value=" Sengketa Pertanahan">
@@ -9643,7 +9643,7 @@
                                     </div>
                                 </div>
 
-                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2"
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
                                     method="get">
                                     <input type="hidden" name="owner" value=" Fatah">
                                     <input type="hidden" name="objek" value=" Konflik Pertanahan">
@@ -9899,7 +9899,7 @@
                                     </div>
                                 </div>
 
-                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3"
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
                                     method="get">
                                     <input type="hidden" name="owner" value=" Ophelia Suartini">
                                     <input type="hidden" name="objek" value=" Perkara Pertanahan">
@@ -10155,7 +10155,7 @@
                                     </div>
                                 </div>
 
-                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3"
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
                                     method="get">
                                     <input type="hidden" name="owner" value=" Ophelia Suartini">
                                     <input type="hidden" name="objek" value=" Perkara Pertanahan">
@@ -10410,7 +10410,7 @@
                                     </div>
                                 </div>
 
-                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2"
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
                                     method="get">
                                     <input type="hidden" name="owner" value=" Fatah">
                                     <input type="hidden" name="objek" value=" Konflik Pertanahan">
@@ -11263,7 +11263,7 @@
 
                                         </div>
                                     </div>
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
@@ -11535,7 +11535,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Fatah">
                                         <input type="hidden" name="objek" value=" Konflik Pertanahan">
@@ -11804,7 +11804,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Ophelia Suartini">
                                         <input type="hidden" name="objek" value=" Perkara Pertanahan">
@@ -12071,7 +12071,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Ophelia Suartini">
                                         <input type="hidden" name="objek" value=" Perkara Pertanahan">
@@ -12349,7 +12349,7 @@
 
                                         </div>
                                     </div>
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
@@ -12621,7 +12621,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Fatah">
                                         <input type="hidden" name="objek" value=" Konflik Pertanahan">
@@ -12890,7 +12890,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Ophelia Suartini">
                                         <input type="hidden" name="objek" value=" Perkara Pertanahan">
@@ -13157,7 +13157,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3"
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
                                         method="get">
                                         <input type="hidden" name="owner" value=" Ophelia Suartini">
                                         <input type="hidden" name="objek" value=" Perkara Pertanahan">
@@ -13530,7 +13530,7 @@
 
                                 </div>
 
-                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2"
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
                                     method="get">
                                     <input type="hidden" name="owner" value=" Fatah">
                                     <input type="hidden" name="objek" value=" Konflik Pertanahan">
@@ -13791,7 +13791,7 @@
 
                                 </div>
 
-                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2"
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
                                     method="get">
                                     <input type="hidden" name="owner" value=" Fatah">
                                     <input type="hidden" name="objek" value=" Konflik Pertanahan">
@@ -14052,7 +14052,7 @@
 
                                 </div>
 
-                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3"
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
                                     method="get">
                                     <input type="hidden" name="owner" value=" Ophelia Suartini">
                                     <input type="hidden" name="objek" value=" Perkara Pertanahan">
@@ -14312,7 +14312,7 @@
 
                                 </div>
 
-                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3"
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
                                     method="get">
                                     <input type="hidden" name="owner" value=" Ophelia Suartini">
                                     <input type="hidden" name="objek" value=" Perkara Pertanahan">
@@ -14572,7 +14572,7 @@
 
                                 </div>
 
-                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2"
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
                                     method="get">
                                     <input type="hidden" name="owner" value=" Fatah">
                                     <input type="hidden" name="objek" value=" Konflik Pertanahan">
@@ -15054,7 +15054,7 @@
 
                                     </div>
                                 </div>
-                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa1"
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
                                     method="get">
                                     <input type="hidden" name="owner" value=" Bahru">
                                     <input type="hidden" name="objek" value=" Sengketa Pertanahan">
@@ -15356,7 +15356,7 @@
                                     </div>
                                 </div>
 
-                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa2"
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
                                     method="get">
                                     <input type="hidden" name="owner" value=" Fatah">
                                     <input type="hidden" name="objek" value=" Konflik Pertanahan">
@@ -15655,7 +15655,7 @@
                                     </div>
                                 </div>
 
-                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3"
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
                                     method="get">
                                     <input type="hidden" name="owner" value=" Ophelia Suartini">
                                     <input type="hidden" name="objek" value=" Perkara Pertanahan">
@@ -15952,7 +15952,7 @@
                                     </div>
                                 </div>
 
-                                <form action="http://localhost:8000/bid-sengketa/podcast" class="form-sengketa3"
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
                                     method="get">
                                     <input type="hidden" name="owner" value=" Ophelia Suartini">
                                     <input type="hidden" name="objek" value=" Perkara Pertanahan">
