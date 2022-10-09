@@ -1318,7 +1318,8 @@
             src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0" nonce="Ee2Zutm6"></script>
 
     </div>
-    <div class="row mt-4">
+    @include('layouts.template-public.footer')
+    {{-- <div class="row mt-4">
         <div class="card-body text-white text-center  bg-card-dark-mode" style="background: #61481C">
             <p></p>
             <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
@@ -1329,7 +1330,7 @@
                 36,
                 TB Simatupang, Jakarta Selatan</p>
         </div>
-    </div>
+    </div> --}}
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">

@@ -85,11 +85,10 @@
                             <h5>Kantor Kami</h5>
                         </div>
                         <div class="col-12" style="color: #acacac">
-                            <p class="mb-0">PT. Bursa Akselerasi Indonesia</p>
-                            <p class="mb-0">Satrio Tower Lantai 14 unit 6 Jalan</p>
-                            <p class="mb-0">Prof. DR. Satrio Kav. 1-4 Blok C4 Kel.</p>
-                            <p class="mb-0">Kuningan Timur, Kec. Setiabudi,</p>
-                            <p class="mb-0">Jakarta Selatan 12950</p>
+                            <p class="mb-0">PT. Tanah Airku Merdeka</p>
+                            <p class="mb-0">Sovereign Plaza Lantai 19,</p>
+                            <p class="mb-0">Jl. TB Simatupang No.36, RT.1/RW.2, Cilandak Bar., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus</p>
+                            <p class="mb-0">Ibukota Jakarta 12430</p> 
                         </div>
                     </div>
                 </div>
@@ -100,11 +99,11 @@
                             <h5>Kontak kami</h5>
                         </div>
                         <div class="col-12" style="color: #acacac">
-                            <p class="mb-0">PT. Bursa Akselerasi Indonesia</p>
-                            <p class="mb-0">Satrio Tower Lantai 14 unit 6 Jalan</p>
-                            <p class="mb-0">Prof. DR. Satrio Kav. 1-4 Blok C4 Kel.</p>
-                            <p class="mb-0">Kuningan Timur, Kec. Setiabudi,</p>
-                            <p class="mb-0">Jakarta Selatan 12950</p>
+                            <p class="mb-0">Email: cs@tanahmerdeka.id</p>
+                            <p class="mb-0">Telepon: 0812 3575 7667</p>
+                            <p class="mb-0">Whatsapp: 0812 3575 7667</p>
+                            <p class="mb-0">Verificator 0857 7369 0768</p>
+                            <p class="mb-0">Collection 0813 8465 4484</p>
                         </div>
                     </div>
                 </div>
@@ -183,7 +182,7 @@
 
             <div class="row">
                 <div class="col-12 text-center" style="color: #acacac;">
-                    Copyright © 2017 - 2022 PT. Bursa Akselerasi Indonesia All rights reserved.
+                    Copyright © 2022 PT. Tanah Airku Merdeka All rights reserved.
                 </div>
             </div>
         </div>
