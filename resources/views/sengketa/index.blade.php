@@ -315,7 +315,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-        .btn-secondary-custom{
+        .btn-secondary-custom {
             background: #BF9742;
             color: white;
         }
@@ -680,8 +680,6 @@
             }
         }
 
-      
-
     </style>
 
 </head>
@@ -702,8 +700,9 @@
             <div class="form-check form-switch">
                 <input class="form-check-input dark-mode" type="checkbox" role="switch" id="dark-mode">
             </div>
-            <button class="navbar-toggler pe-3 ps-3 pt-2 pb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler pe-3 ps-3 pt-2 pb-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
@@ -785,7 +784,7 @@
             </button>
         </div>
 
-        </div>
+    </div>
 
     </div>
 
@@ -815,7 +814,7 @@
                             </div>
                         </a>
                     </div>
-                    
+
                     <div class="col text-center">
 
                         <button class="btn btn-sm mb-0 p-0 w-100" id="btn-panduan-m" type="button">
@@ -1408,17 +1407,19 @@
 
             <div class="col-auto">
                 <div class="card rounded-5 border-0 shadow-sm desktop">
-                    <div class="card-header custom bg-brown text-white" style="padding: 6px !important; border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important">
+                    <div class="card-header custom bg-brown text-white"
+                        style="padding: 6px !important; border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important">
                         <center>
                             <h6 class="blink mb-0" style="display:inline-block">Pre Launching 1 Desember 2022</h6>
                         </center>
                     </div>
                 </div>
             </div>
-            
+
             <div class="col">
-                <div class="card border-0" style="border-top-left-radius: 0px !important; border-bottom-left-radius: 0px !important">
-                    
+                <div class="card border-0"
+                    style="border-top-left-radius: 0px !important; border-bottom-left-radius: 0px !important">
+
                     <div class="col-auto">
                         <div class="input-group">
                             <div class="input-group-prepend my-auto">
@@ -1427,7 +1428,8 @@
                                 </span>
                             </div>
                             <input type="text" class="form-control border-0" placeholder="Search" name="" id="">
-                            <button class="btn h-100 mb-0" style="color: #fff; background: #E6B325; border-top-left-radius: 0px !important; border-bottom-left-radius: 0px !important">Search</button>
+                            <button class="btn h-100 mb-0"
+                                style="color: #fff; background: #E6B325; border-top-left-radius: 0px !important; border-bottom-left-radius: 0px !important">Search</button>
                         </div>
                     </div>
                 </div>
@@ -1690,7 +1692,7 @@
                             </a>
                         </div> --}}
 
-                        <div class="col mb-4">
+                      {{--  <div class="col mb-4">
                             <a href="{{url('/')}}/bid-lahan"
                                 class="btn btn-outline-light text-dark w-100 rounded-4 shadow"
                                 href="https://mitra.atrbpn.go.id">
@@ -1723,8 +1725,8 @@
                                 </svg>
                                 <div class="mt-0" style="font-size: 12px">Bid <br> Lahan</div>
                             </a>
-                        </div>
-
+                          </div> 
+ 
                         <div class="col mb-4">
                             <a href="{{url('/')}}/bid-rumah"
                                 class="btn btn-outline-light text-dark w-100 rounded-4 shadow"
@@ -1748,7 +1750,7 @@
                                 </svg>
                                 <div class="mt-0" style="font-size: 12px">Bid <br> Rumah</div>
                             </a>
-                        </div>
+                        </div>--}}
 
                         <div class="col mb-4">
                             <a href="{{url('/')}}/jasa-appraisal"
@@ -2693,7 +2695,7 @@
         <div class="card-body bg-card-dark-mode">
 
             <div class="row align-items-center justify-content-center">
-                
+
                 <div class="col-12 desktop-arrow text-center">
                     <div class="row mobile-scroll mt-2 align-items-center bidding-card" style="flex-wrap: nowrap">
 
@@ -2877,8 +2879,9 @@
                                     <div class="row g-2 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
-                                                data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom"
+                                                data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
 
@@ -2920,8 +2923,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
-                                        method="get">
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1" method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
                                         <input type="hidden" name="luas" value=" 1 Ha">
@@ -3164,8 +3166,9 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
-                                                data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom"
+                                                data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
 
@@ -3207,8 +3210,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
-                                        method="get">
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2" method="get">
                                         <input type="hidden" name="owner" value=" Fatah">
                                         <input type="hidden" name="objek" value=" Konflik Pertanahan">
                                         <input type="hidden" name="luas" value=" 5000 M">
@@ -3444,8 +3446,9 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
-                                                data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom"
+                                                data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
 
@@ -3487,8 +3490,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
-                                        method="get">
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3" method="get">
                                         <input type="hidden" name="owner" value=" Ophelia Suartini">
                                         <input type="hidden" name="objek" value=" Perkara Pertanahan">
                                         <input type="hidden" name="luas" value=" 3.2 Ha">
@@ -3723,8 +3725,9 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
-                                                data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom"
+                                                data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
 
@@ -3766,8 +3769,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
-                                        method="get">
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3" method="get">
                                         <input type="hidden" name="owner" value=" Ophelia Suartini">
                                         <input type="hidden" name="objek" value=" Perkara Pertanahan">
                                         <input type="hidden" name="luas " value=" 3.2 Ha">
@@ -3824,7 +3826,7 @@
 
                     </div>
                 </div>
-                
+
             </div>
 
             <div class="row align-items-center justify-content-center">
@@ -4012,8 +4014,9 @@
                                     <div class="row g-2 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
-                                                data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom"
+                                                data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
 
@@ -4055,8 +4058,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
-                                        method="get">
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1" method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
                                         <input type="hidden" name="luas" value=" 1 Ha">
@@ -4298,8 +4300,9 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
-                                                data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom"
+                                                data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
 
@@ -4341,8 +4344,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
-                                        method="get">
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2" method="get">
                                         <input type="hidden" name="owner" value=" Fatah">
                                         <input type="hidden" name="objek" value=" Konflik Pertanahan">
                                         <input type="hidden" name="luas" value=" 5000 M">
@@ -4578,8 +4580,9 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
-                                                data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom"
+                                                data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
 
@@ -4621,8 +4624,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
-                                        method="get">
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3" method="get">
                                         <input type="hidden" name="owner" value=" Ophelia Suartini">
                                         <input type="hidden" name="objek" value=" Perkara Pertanahan">
                                         <input type="hidden" name="luas" value=" 3.2 Ha">
@@ -4857,8 +4859,9 @@
                                     <div class="row g-0">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom" data-bs-toggle="modal"
-                                                data-bs-target="#berkasSponsor" style="text-decoration:none">
+                                            <a href="#" class=" mx-auto btn rounded-5 btn-secondary-custom"
+                                                data-bs-toggle="modal" data-bs-target="#berkasSponsor"
+                                                style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Berkas
                                             </a>
 
@@ -4900,8 +4903,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
-                                        method="get">
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3" method="get">
                                         <input type="hidden" name="owner" value=" Ophelia Suartini">
                                         <input type="hidden" name="objek" value=" Perkara Pertanahan">
                                         <input type="hidden" name="luas " value=" 3.2 Ha">
@@ -5223,8 +5225,9 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#berkasPengacara" style="text-decoration:none">
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5"
+                                                data-bs-toggle="modal" data-bs-target="#berkasPengacara"
+                                                style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
 
@@ -5233,7 +5236,7 @@
                                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered">
                                                     <div class="modal-content">
-                                                    <div class="modal-header p-0 pb-2">
+                                                        <div class="modal-header p-0 pb-2">
                                                             <h1 class="modal-title mx-auto text-danger display-1 mb-2">
                                                                 <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
                                                                     style="width: 100px" alt="">
@@ -5277,8 +5280,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
-                                        method="get">
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1" method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
                                         <input type="hidden" name="luas" value=" 1 Ha">
@@ -5408,8 +5410,9 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#berkasPengacara" style="text-decoration:none">
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5"
+                                                data-bs-toggle="modal" data-bs-target="#berkasPengacara"
+                                                style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
 
@@ -5462,8 +5465,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
-                                        method="get">
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1" method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
                                         <input type="hidden" name="luas" value=" 1 Ha">
@@ -5593,8 +5595,9 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#berkasPengacara" style="text-decoration:none">
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5"
+                                                data-bs-toggle="modal" data-bs-target="#berkasPengacara"
+                                                style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
 
@@ -5649,8 +5652,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
-                                        method="get">
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1" method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
                                         <input type="hidden" name="luas" value=" 1 Ha">
@@ -5780,8 +5782,9 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#berkasPengacara" style="text-decoration:none">
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5"
+                                                data-bs-toggle="modal" data-bs-target="#berkasPengacara"
+                                                style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
 
@@ -5833,8 +5836,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
-                                        method="get">
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1" method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
                                         <input type="hidden" name="luas" value=" 1 Ha">
@@ -5984,8 +5986,9 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#berkasPengacara" style="text-decoration:none">
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5"
+                                                data-bs-toggle="modal" data-bs-target="#berkasPengacara"
+                                                style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
 
@@ -6038,8 +6041,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
-                                        method="get">
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1" method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
                                         <input type="hidden" name="luas" value=" 1 Ha">
@@ -6169,8 +6171,9 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#berkasPengacara" style="text-decoration:none">
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5"
+                                                data-bs-toggle="modal" data-bs-target="#berkasPengacara"
+                                                style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
 
@@ -6223,8 +6226,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
-                                        method="get">
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1" method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
                                         <input type="hidden" name="luas" value=" 1 Ha">
@@ -6354,8 +6356,9 @@
                                     <div class="row g-0 align-items-center">
                                         <div class="col text-center">
 
-                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#berkasPengacara" style="text-decoration:none">
+                                            <a href="#" class=" mx-auto btn btn-secondary-custom rounded-5"
+                                                data-bs-toggle="modal" data-bs-target="#berkasPengacara"
+                                                style="text-decoration:none">
                                                 <i class="fa-solid fa-eye"></i> Lihat Detail
                                             </a>
 
@@ -6408,8 +6411,7 @@
                                         </div>
                                     </div>
 
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
-                                        method="get">
+                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1" method="get">
                                         <input type="hidden" name="owner" value=" Bahru">
                                         <input type="hidden" name="objek" value=" Sengketa Pertanahan">
                                         <input type="hidden" name="luas" value=" 1 Ha">
@@ -6592,2576 +6594,6 @@
 
     </div>
 
-    <!-- Bidding lahan -->
-    <div class="card mt-3 border-0 shadow-sm ">
-        <div class="card-header bg-white">
-            <table style="width:100%">
-                <tr>
-                    <td rowspan="2" style="width: 40px">
-                        <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">
-                    </td>
-                    <td>
-                        <h5 color="text-dark" style="margin-bottom: 0px !important">
-                            Bidding Lahan
-                        </h5>
-                    </td>
-                    <td class="text-end" rowspan="2">
-                        <a href="{{url('')}}/bid-lahan" class="text-success fw-bold" style="text-decoration: none">Lihat
-                            Semua</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="mb-0">Lahan Tersedia <span class="badge bg-danger">2,353</span></p>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="card-body bg-card-dark-mode">
-
-            <div class="row align-items-center justify-content-center">
-
-                {{-- <div class="col-1 arrow-desktop text-center">
-                                <button id="left-button" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
-                                    <i class="fa-solid fa-arrow-left"></i>
-                                </button>
-                            </div> --}}
-                <div class="col-12 desktop-arrow text-center">
-                    <div class="row mobile-scroll mt-2 align-items-center bidding-card-a" style="flex-wrap: nowrap">
-
-                        <div class="col-12 custom ">
-                            <div class="card mx-auto">
-                                <div class="ribbon-pop">
-                                    <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-                                <div id="ll4" class="carousel slide" data-bs-interval="false">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#ll4" data-bs-slide-to="0" class="active"
-                                            aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#ll4" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#ll4" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#ll4" data-bs-slide-to="3"
-                                            aria-label="Slide 4"></button>
-                                    </div>
-
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll4" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll4" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Bidang BL-004 <img
-                                                    src="https://sengketatanah.id/uploads/biru_centang.png" alt=""
-                                                    class="mb-1" style="height:20px"></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="card-body pt-0">
-                                    <table class="mt-2 mb-2">
-                                        <tr>
-                                            <td>
-                                                <b>Nilai Pinjaman :</b>
-                                            </td>
-
-                                            <td rowspan="2">
-                                                <div class="d-flex align-items-center">
-
-                                                    <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
-                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        BID</button>
-                                                </div>
-
-
-                                                <script>
-                                                    $("#fav-c1").click(function () {
-                                                        $("#fav-ch-c1").toggleClass('fav-icon');
-                                                    });
-
-                                                </script>
-
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-start">
-                                                <h5 class="mb-0">
-                                                    <b class="text-primary">
-                                                        Rp.450.000.000
-                                                    </b>
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="fw-bold">
-                                                    Fee : 30%
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <hr style="margin-top:-4px">
-
-                                    <table>
-                                        <tbody>
-                                            </tr>
-
-                                            <td>Lokasi</td>
-                                            <td></td>
-                                            <td>:</td>
-                                            <td>&nbsp;Pancawati, Bogor</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Luas</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;1 Ha</td>
-                                            </tr>
-                                            <tr>
-
-                                                <td>Objek Lahan</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Tanah Darat</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Nilai ZNT BPN</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;750.000/meter</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Penawaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Open Bidding</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>Jumlah Bid</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;3</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <hr>
-
-
-                                    <div class="row g-0">
-                                        <div class="col text-start">
-
-                                            <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#modal-lihat-lahan" style="text-decoration:none">
-                                                <i class="fa-solid fa-eye"></i> Lihat Detail
-                                            </a>
-
-
-                                            <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                    style="width: 100px" alt="">
-                                                            </h1>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            Anda harus memiliki akun peserta lelang sebelum melihat
-                                                            detail.
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary me-auto"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <a type="button" class="btn btn-success"
-                                                                href="https://server.sengketatanah.id/login">Login</a>
-                                                            <a type="button" class="btn btn-danger"
-                                                                href="https://server.sengketatanah.id/login">Register</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
-                                        method="get">
-                                        <input type="hidden" name="owner" value=" Bahru">
-                                        <input type="hidden" name="objek" value=" Sengketa Pertanahan">
-                                        <input type="hidden" name="luas" value=" 1 Ha">
-                                        <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
-                                        <input type="hidden" name="komentar" value="">
-                                        <input type="hidden" name="link_yt"
-                                            value="https://www.youtube.com/embed/-RkCcavzXq8">
-                                        <input type="hidden" name="form" value="sponsor">
-                                    </form>
-
-
-                                    <hr>
-                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                        <div class="col-4">
-
-                                            <div class="d-grid gap-2 ">
-
-                                                <!-- <button type="button"
-                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                    BID
-                                                </button> -->
-
-
-                                                <div class="modal fade my-auto" id="exampleC" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                        class="mb-2" style="width: 100px" alt="">
-                                                                </h1>
-                                                            </div>
-                                                            <div class="modal-body" style="text-align: justify">
-
-                                                                Anda harus memiliki akun <b>LENDER</b> sebelum melakukan
-                                                                Bid (Bid adalah proses penawaran anda dengan owner).
-                                                                Jika anda belum menemukan kesepakatan anda bisa close
-                                                                bidding kapan saja.
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success"
-                                                                    href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger"
-                                                                    href="https://server.sengketatanah.id/login">Register</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-12 custom">
-                            <div class="card mb-2 mx-auto">
-                                <div class="ribbon-pop">
-                                    <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-                                <div id="ll2" class="carousel slide" data-bs-interval="false">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#ll2" data-bs-slide-to="0" class="active"
-                                            aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#ll2" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#ll2" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#ll2" data-bs-slide-to="3"
-                                            aria-label="Slide 4"></button>
-                                    </div>
-
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll2" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll2" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                    <div class="row">
-
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Bidang BL-001 <img
-                                                    src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
-                                                    style="height:20px"></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body pt-0">
-                                    <table class="mt-2 mb-2">
-                                        <tr>
-                                            <td>
-                                                <b>Nilai Pinjaman :</b>
-                                            </td>
-
-                                            <td rowspan="2">
-                                                <div class="d-flex align-items-center">
-
-                                                    <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
-                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        BID</button>
-                                                </div>
-
-
-                                                <script>
-                                                    $("#fav-c1").click(function () {
-                                                        $("#fav-ch-c1").toggleClass('fav-icon');
-                                                    });
-
-                                                </script>
-
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-start">
-                                                <h5 class="mb-0">
-                                                    <b class="text-primary">
-                                                        Rp.500.000.000
-                                                    </b>
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="fw-bold">
-                                                    Fee : 30%
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <hr style="margin-top:-4px">
-
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>Lokasi</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Pancawati, Bogor</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Luas</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;5000 M</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Objek Lahan</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Tanah Darat</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Nilai ZNT BPN</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;750.000/meter</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Penawaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Open Bidding</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jumlah Bid</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;4</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <hr>
-
-
-
-                                    <div class="row g-0">
-                                        <div class="col text-start">
-
-                                            <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#modal-lihat-lahan" style="text-decoration:none">
-                                                <i class="fa-solid fa-eye"></i> Lihat Detail
-                                            </a>
-
-
-                                            <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                    style="width: 100px" alt="">
-                                                            </h1>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                            melihat detail.
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary me-auto"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <a type="button" class="btn btn-success"
-                                                                href="https://server.sengketatanah.id/login">Login</a>
-                                                            <a type="button" class="btn btn-danger"
-                                                                href="https://server.sengketatanah.id/login">Register</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
-                                        method="get">
-                                        <input type="hidden" name="owner" value=" Fatah">
-                                        <input type="hidden" name="objek" value=" Konflik Pertanahan">
-                                        <input type="hidden" name="luas" value=" 5000 M">
-                                        <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
-                                        <input type="hidden" name="komentar" value="">
-                                        <input type="hidden" name="link_yt"
-                                            value="https://www.youtube.com/embed/byby3HJ3OCI">
-                                        <input type="hidden" name="form" value="sponsor">
-                                    </form>
-
-
-                                    <hr>
-                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                        <div class="col-4">
-
-                                            <div class="d-grid gap-2 ">
-
-                                                <!-- <button type="button"
-                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                    BID
-                                                </button> -->
-
-
-                                                <div class="modal fade my-auto" id="exampleC" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                        class="mb-2" style="width: 100px" alt="">
-                                                                </h1>
-                                                            </div>
-                                                            <div class="modal-body" style="text-align: justify">
-
-                                                                Anda harus memiliki akun <b>LENDER</b> sebelum melakukan
-                                                                Bid (Bid adalah proses penawaran anda dengan owner).
-                                                                Jika anda belum menemukan kesepakatan anda bisa close
-                                                                bidding kapan saja.</div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success"
-                                                                    href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger"
-                                                                    href="https://server.sengketatanah.id/login">Register</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 custom">
-                            <div class="card mb-2 mx-auto">
-                                <div class="ribbon-pop">
-                                    <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-                                <div id="ll3" class="carousel slide" data-bs-interval="false">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#ll3" data-bs-slide-to="0" class="active"
-                                            aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#ll3" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#ll3" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#ll3" data-bs-slide-to="3"
-                                            aria-label="Slide 4"></button>
-                                    </div>
-
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll3" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll3" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                    <div class="row">
-
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Bidang BL-002 <img
-                                                    src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
-                                                    style="height:20px"></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body pt-0">
-                                    <table class="mt-2 mb-2">
-                                        <tr>
-                                            <td>
-                                                <b>Nilai Pinjaman :</b>
-                                            </td>
-
-                                            <td rowspan="2">
-                                                <div class="d-flex align-items-center">
-
-                                                    <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
-                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        BID</button>
-                                                </div>
-
-
-                                                <script>
-                                                    $("#fav-c1").click(function () {
-                                                        $("#fav-ch-c1").toggleClass('fav-icon');
-                                                    });
-
-                                                </script>
-
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-start">
-                                                <h5 class="mb-0">
-                                                    <b class="text-primary">
-                                                        Rp.100.000.000
-                                                    </b>
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="fw-bold">
-                                                    Fee : 30%
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <hr style="margin-top:-4px">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>Lokasi</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Medan, Sumatra Utara</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Luas</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;3.2 Ha</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Objek Lahan</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Tanah Darat</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Nilai ZNT BPN</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;750.000/meter</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Penawaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Open Bidding</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jumlah Bid</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;6</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <hr>
-
-
-
-                                    <div class="row g-0">
-                                        <div class="col text-start">
-
-                                            <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#modal-lihat-lahan" style="text-decoration:none">
-                                                <i class="fa-solid fa-eye"></i> Lihat Detail
-                                            </a>
-
-
-                                            <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                    style="width: 100px" alt="">
-                                                            </h1>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            Anda harus memiliki akun peserta lelang sebelum melihat
-                                                            detail.
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary me-auto"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <a type="button" class="btn btn-success"
-                                                                href="https://server.sengketatanah.id/login">Login</a>
-                                                            <a type="button" class="btn btn-danger"
-                                                                href="https://server.sengketatanah.id/login">Register</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
-                                        method="get">
-                                        <input type="hidden" name="owner" value=" Ophelia Suartini">
-                                        <input type="hidden" name="objek" value=" Perkara Pertanahan">
-                                        <input type="hidden" name="luas" value=" 3.2 Ha">
-                                        <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
-                                        <input type="hidden" name="komentar" value="">
-                                        <input type="hidden" name="link_yt"
-                                            value="https://www.youtube.com/embed/1I4iEKK1qbQ">
-                                        <input type="hidden" name="form" value="sponsor">
-                                    </form>
-
-
-                                    <hr>
-                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                        <div class="col-4">
-
-                                            <div class="d-grid gap-2 ">
-                                                <!-- <button type="button"
-                                                                class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                                data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                                BID
-                                                            </button> -->
-
-
-                                                <div class="modal fade my-auto" id="exampleC" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                        class="mb-2" style="width: 100px" alt="">
-                                                                </h1>
-                                                            </div>
-                                                            <div class="modal-body" style="text-align: justify">
-
-                                                                Anda harus memiliki akun <b>LENDER</b> sebelum melakukan
-                                                                Bid (Bid adalah proses penawaran anda dengan owner).
-                                                                Jika anda belum menemukan kesepakatan anda bisa close
-                                                                bidding kapan saja.</div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success"
-                                                                    href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger"
-                                                                    href="https://server.sengketatanah.id/login">Register</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 custom">
-                            <div class="card mb-2 mx-auto">
-                                <div class="ribbon-pop">
-                                    <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-                                <div id="ll44" class="carousel slide" data-bs-interval="false">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#ll44" data-bs-slide-to="0" class="active"
-                                            aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#ll44" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#ll44" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#ll44" data-bs-slide-to="3"
-                                            aria-label="Slide 4"></button>
-                                    </div>
-
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll44" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll44" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                    <div class="row">
-
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Bidang BL-003 <img
-                                                    src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
-                                                    style="height:20px"></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body pt-0">
-                                    <table class="mt-2 mb-2">
-                                        <tr>
-                                            <td>
-                                                <b>Nilai Pinjaman :</b>
-                                            </td>
-
-                                            <td rowspan="2">
-                                                <div class="d-flex align-items-center">
-
-                                                    <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
-                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        BID</button>
-                                                </div>
-
-
-                                                <script>
-                                                    $("#fav-c1").click(function () {
-                                                        $("#fav-ch-c1").toggleClass('fav-icon');
-                                                    });
-
-                                                </script>
-
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-start">
-                                                <h5 class="mb-0">
-                                                    <b class="text-primary">
-                                                        Rp.200.000.000
-                                                    </b>
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="fw-bold">
-                                                    Fee : 30%
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <hr style="margin-top:-4px">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>Lokasi</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Medan, Sumatra Utara</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Luas</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;3.2 Ha</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Objek Lahan</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Tanah Darat</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Nilai ZNT BPN</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;750.000/meter</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Penawaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Open Bidding</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jumlah Bid</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;6</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <hr>
-
-
-                                    <div class="row g-0">
-                                        <div class="col text-start">
-
-                                            <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#modal-lihat-lahan" style="text-decoration:none">
-                                                <i class="fa-solid fa-eye"></i> Lihat Detail
-                                            </a>
-
-
-                                            <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                    style="width: 100px" alt="">
-                                                            </h1>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            Anda harus memiliki akun peserta lelang sebelum melihat
-                                                            detail.
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary me-auto"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <a type="button" class="btn btn-success"
-                                                                href="https://server.sengketatanah.id/login">Login</a>
-                                                            <a type="button" class="btn btn-danger"
-                                                                href="https://server.sengketatanah.id/login">Register</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
-                                        method="get">
-                                        <input type="hidden" name="owner" value=" Ophelia Suartini">
-                                        <input type="hidden" name="objek" value=" Perkara Pertanahan">
-                                        <input type="hidden" name="luas" value=" 3.2 Ha">
-                                        <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
-                                        <input type="hidden" name="komentar" value="">
-                                        <input type="hidden" name="link_yt"
-                                            value="https://www.youtube.com/embed/1I4iEKK1qbQ">
-                                        <input type="hidden" name="form" value="sponsor">
-                                    </form>
-
-
-                                    <hr>
-                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                        <div class="col-4">
-
-                                            <div class="d-grid gap-2 ">
-                                                <!-- <button type="button"
-                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                    BID
-                                                </button> -->
-
-
-                                                <div class="modal fade my-auto" id="exampleC" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                        class="mb-2" style="width: 100px" alt="">
-                                                                </h1>
-                                                            </div>
-                                                            <div class="modal-body" style="text-align: justify">
-
-                                                                Anda harus memiliki akun <b>LENDER</b> sebelum melakukan
-                                                                Bid (Bid adalah proses penawaran anda dengan owner).
-                                                                Jika anda belum menemukan kesepakatan anda bisa close
-                                                                bidding kapan saja.</div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success"
-                                                                    href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger"
-                                                                    href="https://server.sengketatanah.id/login">Register</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                {{-- <div class="col-1 arrow-desktop text-center">
-                                <button id="right-button" class="btn rounded-5 text-white bg-secondary" style="background-color: #61481C">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                            </div> --}}
-            </div>
-
-            <div class="row align-items-center justify-content-center">
-
-                <div class="col-12 desktop-arrow text-center">
-                    <div class="row mobile-scroll mt-2 align-items-center bidding-card-a2" style="flex-wrap: nowrap">
-
-                        <div class="col-12 custom ">
-                            <div class="card mx-auto">
-                                <div class="ribbon-pop">
-                                    <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-                                <div id="ll4a" class="carousel slide" data-bs-interval="false">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#ll4a" data-bs-slide-to="0" class="active"
-                                            aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#ll4a" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#ll4a" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#ll4a" data-bs-slide-to="3"
-                                            aria-label="Slide 4"></button>
-                                    </div>
-
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll4a" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll4a" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Bidang BL-004 <img
-                                                    src="https://sengketatanah.id/uploads/biru_centang.png" alt=""
-                                                    class="mb-1" style="height:20px"></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="card-body pt-0">
-                                    <table class="mt-2 mb-2">
-                                        <tr>
-                                            <td>
-                                                <b>Nilai Pinjaman :</b>
-                                            </td>
-
-                                            <td rowspan="2">
-                                                <div class="d-flex align-items-center">
-
-                                                    <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
-                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        BID</button>
-                                                </div>
-
-
-                                                <script>
-                                                    $("#fav-c1").click(function () {
-                                                        $("#fav-ch-c1").toggleClass('fav-icon');
-                                                    });
-
-                                                </script>
-
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-start">
-                                                <h5 class="mb-0">
-                                                    <b class="text-primary">
-                                                        Rp.450.000.000
-                                                    </b>
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="fw-bold">
-                                                    Fee : 30%
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <hr style="margin-top:-4px">
-
-                                    <table>
-                                        <tbody>
-                                            </tr>
-
-                                            <td>Lokasi</td>
-                                            <td></td>
-                                            <td>:</td>
-                                            <td>&nbsp;Pancawati, Bogor</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Luas</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;1 Ha</td>
-                                            </tr>
-                                            <tr>
-
-                                                <td>Objek Lahan</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Tanah Darat</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Nilai ZNT BPN</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;750.000/meter</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Penawaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Open Bidding</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>Jumlah Bid</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;3</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <hr>
-
-
-                                    <div class="row g-0">
-                                        <div class="col text-start">
-
-                                            <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#modal-lihat-lahan" style="text-decoration:none">
-                                                <i class="fa-solid fa-eye"></i> Lihat Detail
-                                            </a>
-
-
-                                            <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                    style="width: 100px" alt="">
-                                                            </h1>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            Anda harus memiliki akun peserta lelang sebelum melihat
-                                                            detail.
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary me-auto"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <a type="button" class="btn btn-success"
-                                                                href="https://server.sengketatanah.id/login">Login</a>
-                                                            <a type="button" class="btn btn-danger"
-                                                                href="https://server.sengketatanah.id/login">Register</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
-                                        method="get">
-                                        <input type="hidden" name="owner" value=" Bahru">
-                                        <input type="hidden" name="objek" value=" Sengketa Pertanahan">
-                                        <input type="hidden" name="luas" value=" 1 Ha">
-                                        <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
-                                        <input type="hidden" name="komentar" value="">
-                                        <input type="hidden" name="link_yt"
-                                            value="https://www.youtube.com/embed/-RkCcavzXq8">
-                                        <input type="hidden" name="form" value="sponsor">
-                                    </form>
-
-
-                                    <hr>
-                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                        <div class="col-4">
-
-                                            <div class="d-grid gap-2 ">
-
-                                                <!-- <button type="button"
-                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                    BID
-                                                </button> -->
-
-
-                                                <div class="modal fade my-auto" id="exampleC" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                        class="mb-2" style="width: 100px" alt="">
-                                                                </h1>
-                                                            </div>
-                                                            <div class="modal-body" style="text-align: justify">
-
-                                                                Anda harus memiliki akun <b>LENDER</b> sebelum melakukan
-                                                                Bid (Bid adalah proses penawaran anda dengan owner).
-                                                                Jika anda belum menemukan kesepakatan anda bisa close
-                                                                bidding kapan saja.</div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success"
-                                                                    href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger"
-                                                                    href="https://server.sengketatanah.id/login">Register</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-12 custom">
-                            <div class="card mb-2 mx-auto">
-                                <div class="ribbon-pop">
-                                    <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-                                <div id="ll2a" class="carousel slide" data-bs-interval="false">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#ll2a" data-bs-slide-to="0" class="active"
-                                            aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#ll2a" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#ll2a" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#ll2a" data-bs-slide-to="3"
-                                            aria-label="Slide 4"></button>
-                                    </div>
-
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll2a" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll2a" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                    <div class="row">
-
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Bidang BL-001 <img
-                                                    src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
-                                                    style="height:20px"></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body pt-0">
-                                    <table class="mt-2 mb-2">
-                                        <tr>
-                                            <td>
-                                                <b>Nilai Pinjaman :</b>
-                                            </td>
-
-                                            <td rowspan="2">
-                                                <div class="d-flex align-items-center">
-
-                                                    <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
-                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        BID</button>
-                                                </div>
-
-
-                                                <script>
-                                                    $("#fav-c1").click(function () {
-                                                        $("#fav-ch-c1").toggleClass('fav-icon');
-                                                    });
-
-                                                </script>
-
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-start">
-                                                <h5 class="mb-0">
-                                                    <b class="text-primary">
-                                                        Rp.500.000.000
-                                                    </b>
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="fw-bold">
-                                                    Fee : 30%
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <hr style="margin-top:-4px">
-
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>Lokasi</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Pancawati, Bogor</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Luas</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;5000 M</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Objek Lahan</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Tanah Darat</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Nilai ZNT BPN</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;750.000/meter</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Penawaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Open Bidding</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jumlah Bid</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;4</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <hr>
-
-
-
-                                    <div class="row g-0">
-                                        <div class="col text-start">
-
-                                            <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#modal-lihat-lahan" style="text-decoration:none">
-                                                <i class="fa-solid fa-eye"></i> Lihat Detail
-                                            </a>
-
-
-                                            <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                    style="width: 100px" alt="">
-                                                            </h1>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                            melihat detail.
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary me-auto"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <a type="button" class="btn btn-success"
-                                                                href="https://server.sengketatanah.id/login">Login</a>
-                                                            <a type="button" class="btn btn-danger"
-                                                                href="https://server.sengketatanah.id/login">Register</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
-                                        method="get">
-                                        <input type="hidden" name="owner" value=" Fatah">
-                                        <input type="hidden" name="objek" value=" Konflik Pertanahan">
-                                        <input type="hidden" name="luas" value=" 5000 M">
-                                        <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
-                                        <input type="hidden" name="komentar" value="">
-                                        <input type="hidden" name="link_yt"
-                                            value="https://www.youtube.com/embed/byby3HJ3OCI">
-                                        <input type="hidden" name="form" value="sponsor">
-                                    </form>
-
-
-                                    <hr>
-                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                        <div class="col-4">
-
-                                            <div class="d-grid gap-2 ">
-
-                                                <!-- <button type="button"
-                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                    BID
-                                                </button> -->
-
-
-                                                <div class="modal fade my-auto" id="exampleC" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                        class="mb-2" style="width: 100px" alt="">
-                                                                </h1>
-                                                            </div>
-                                                            <div class="modal-body" style="text-align: justify">
-
-                                                                Anda harus memiliki akun <b>LENDER</b> sebelum melakukan
-                                                                Bid (Bid adalah proses penawaran anda dengan owner).
-                                                                Jika anda belum menemukan kesepakatan anda bisa close
-                                                                bidding kapan saja.</div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success"
-                                                                    href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger"
-                                                                    href="https://server.sengketatanah.id/login">Register</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 custom">
-                            <div class="card mb-2 mx-auto">
-                                <div class="ribbon-pop">
-                                    <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-                                <div id="ll3a" class="carousel slide" data-bs-interval="false">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#ll3a" data-bs-slide-to="0" class="active"
-                                            aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#ll3a" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#ll3a" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#ll3a" data-bs-slide-to="3"
-                                            aria-label="Slide 4"></button>
-                                    </div>
-
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll3a" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll3a" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                    <div class="row">
-
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Bidang BL-002 <img
-                                                    src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
-                                                    style="height:20px"></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body pt-0">
-                                    <table class="mt-2 mb-2">
-                                        <tr>
-                                            <td>
-                                                <b>Nilai Pinjaman :</b>
-                                            </td>
-
-                                            <td rowspan="2">
-                                                <div class="d-flex align-items-center">
-
-                                                    <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
-                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        BID</button>
-                                                </div>
-
-
-                                                <script>
-                                                    $("#fav-c1").click(function () {
-                                                        $("#fav-ch-c1").toggleClass('fav-icon');
-                                                    });
-
-                                                </script>
-
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-start">
-                                                <h5 class="mb-0">
-                                                    <b class="text-primary">
-                                                        Rp.100.000.000
-                                                    </b>
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="fw-bold">
-                                                    Fee : 30%
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <hr style="margin-top:-4px">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>Lokasi</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Medan, Sumatra Utara</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Luas</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;3.2 Ha</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Objek Lahan</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Tanah Darat</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Nilai ZNT BPN</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;750.000/meter</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Penawaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Open Bidding</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jumlah Bid</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;6</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <hr>
-
-
-
-                                    <div class="row g-0">
-                                        <div class="col text-start">
-
-                                            <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#modal-lihat-lahan" style="text-decoration:none">
-                                                <i class="fa-solid fa-eye"></i> Lihat Detail
-                                            </a>
-
-
-                                            <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                    style="width: 100px" alt="">
-                                                            </h1>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            Anda harus memiliki akun peserta lelang sebelum melihat
-                                                            detail.
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary me-auto"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <a type="button" class="btn btn-success"
-                                                                href="https://server.sengketatanah.id/login">Login</a>
-                                                            <a type="button" class="btn btn-danger"
-                                                                href="https://server.sengketatanah.id/login">Register</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
-                                        method="get">
-                                        <input type="hidden" name="owner" value=" Ophelia Suartini">
-                                        <input type="hidden" name="objek" value=" Perkara Pertanahan">
-                                        <input type="hidden" name="luas" value=" 3.2 Ha">
-                                        <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
-                                        <input type="hidden" name="komentar" value="">
-                                        <input type="hidden" name="link_yt"
-                                            value="https://www.youtube.com/embed/1I4iEKK1qbQ">
-                                        <input type="hidden" name="form" value="sponsor">
-                                    </form>
-
-
-                                    <hr>
-                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                        <div class="col-4">
-
-                                            <div class="d-grid gap-2 ">
-                                                <!-- <button type="button"
-                                                                class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                                data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                                BID
-                                                            </button> -->
-
-
-                                                <div class="modal fade my-auto" id="exampleC" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                        class="mb-2" style="width: 100px" alt="">
-                                                                </h1>
-                                                            </div>
-                                                            <div class="modal-body" style="text-align: justify">
-
-                                                                Anda harus memiliki akun <b>LENDER</b> sebelum melakukan
-                                                                Bid (Bid adalah proses penawaran anda dengan owner).
-                                                                Jika anda belum menemukan kesepakatan anda bisa close
-                                                                bidding kapan saja.</div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success"
-                                                                    href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger"
-                                                                    href="https://server.sengketatanah.id/login">Register</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 custom">
-                            <div class="card mb-2 mx-auto">
-                                <div class="ribbon-pop">
-                                    <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-                                <div id="ll44a" class="carousel slide" data-bs-interval="false">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#ll44a" data-bs-slide-to="0"
-                                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#ll44a" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#ll44a" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#ll44a" data-bs-slide-to="3"
-                                            aria-label="Slide 4"></button>
-                                    </div>
-
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll44a" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll44a" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                    <div class="row">
-
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Bidang BL-003 <img
-                                                    src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
-                                                    style="height:20px"></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body pt-0">
-                                    <table class="mt-2 mb-2">
-                                        <tr>
-                                            <td>
-                                                <b>Nilai Pinjaman :</b>
-                                            </td>
-
-                                            <td rowspan="2">
-                                                <div class="d-flex align-items-center">
-
-                                                    <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
-                                                    <button class="btn float-end btn-brown text-white mb-0 my-auto w-100"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        BID</button>
-                                                </div>
-
-
-                                                <script>
-                                                    $("#fav-c1").click(function () {
-                                                        $("#fav-ch-c1").toggleClass('fav-icon');
-                                                    });
-
-                                                </script>
-
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-start">
-                                                <h5 class="mb-0">
-                                                    <b class="text-primary">
-                                                        Rp.200.000.000
-                                                    </b>
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="fw-bold">
-                                                    Fee : 30%
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <hr style="margin-top:-4px">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>Lokasi</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Medan, Sumatra Utara</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Luas</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;3.2 Ha</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Objek Lahan</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Tanah Darat</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Nilai ZNT BPN</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;750.000/meter</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Penawaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Open Bidding</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jumlah Bid</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;6</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <hr>
-
-
-                                    <div class="row g-0">
-                                        <div class="col text-start">
-
-                                            <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#modal-lihat-lahan" style="text-decoration:none">
-                                                <i class="fa-solid fa-eye"></i> Lihat Detail
-                                            </a>
-
-
-                                            <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                    style="width: 100px" alt="">
-                                                            </h1>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            Anda harus memiliki akun peserta lelang sebelum melihat
-                                                            detail.
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary me-auto"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <a type="button" class="btn btn-success"
-                                                                href="https://server.sengketatanah.id/login">Login</a>
-                                                            <a type="button" class="btn btn-danger"
-                                                                href="https://server.sengketatanah.id/login">Register</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
-                                        method="get">
-                                        <input type="hidden" name="owner" value=" Ophelia Suartini">
-                                        <input type="hidden" name="objek" value=" Perkara Pertanahan">
-                                        <input type="hidden" name="luas" value=" 3.2 Ha">
-                                        <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
-                                        <input type="hidden" name="komentar" value="">
-                                        <input type="hidden" name="link_yt"
-                                            value="https://www.youtube.com/embed/1I4iEKK1qbQ">
-                                        <input type="hidden" name="form" value="sponsor">
-                                    </form>
-
-
-                                    <hr>
-                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                        <div class="col-4">
-
-                                            <div class="d-grid gap-2 ">
-                                                <!-- <button type="button"
-                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                    BID
-                                                </button> -->
-
-
-                                                <div class="modal fade my-auto" id="exampleC" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                        class="mb-2" style="width: 100px" alt="">
-                                                                </h1>
-                                                            </div>
-                                                            <div class="modal-body" style="text-align: justify">
-
-                                                                Anda harus memiliki akun <b>LENDER</b> sebelum melakukan
-                                                                Bid (Bid adalah proses penawaran anda dengan owner).
-                                                                Jika anda belum menemukan kesepakatan anda bisa close
-                                                                bidding kapan saja.</div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success"
-                                                                    href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger"
-                                                                    href="https://server.sengketatanah.id/login">Register</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-3 custom text-start">
-                            <button class="btn btn-sm">
-                                <div class="row p-4">
-                                    <div class="col-md-12">
-                                        <span class="fa-stack fa-2x">
-                                            <i class="fa fa-circle fa-stack-2x text-brown"></i>
-                                            <i class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
-                                        </span>
-                                    </div>
-                                    <div class="col-md-12 mt-1 fw-bold">
-                                        Lihat Semua
-                                    </div>
-                                </div>
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <script>
-                $('#right-button-bid-lahan').click(function () {
-                    event.preventDefault();
-
-
-                    $('div.bidding-card-a').animate({
-                        scrollLeft: "+=300px"
-                    }, "slow");
-
-                    let outerWidth = Math.floor($('div.bidding-card-a').outerWidth())
-                    let scrollWidth = Math.floor($('div.bidding-card-a')[0].scrollWidth)
-                    let scrollLeft = Math.floor($('div.bidding-card-a').scrollLeft())
-                    if ((outerWidth - scrollWidth) + scrollLeft == 0) {
-                        $('div.bidding-card-a2').animate({
-                            scrollLeft: "+=300px"
-                        }, "slow")
-
-                    }
-                });
-
-                $('#left-button-bid-lahan').click(function () {
-                    event.preventDefault();
-
-                    if ($('div.bidding-card-a2').scrollLeft() > 0) {
-                        $('div.bidding-card-a2').animate({
-                            scrollLeft: "-=300px"
-                        }, "slow");
-                    } else {
-                        $('div.bidding-card-a').animate({
-                            scrollLeft: "-=300px"
-                        }, "slow");
-                    }
-
-                });
-
-            </script>
-
-            {{-- <div class="card rounded-0 border-0 " style="margin-top:-10px">
-                            <!-- <div class="card-header bg-white border-0">
-                            </div> -->
-                            <div class="card-body bg-card-dark-mode">
-                                <div class="row justify-content-center">
-                                
-                                    <div class="col-1 arrow-desktop text-center">
-                                        <button class="btn rounded-5 text-white left-button2" style="margin-top:200%;background:transparent">
-                                            <i class="fa-solid fa-arrow-left"></i>
-                                        </button>
-                                    </div>
-                                    <div class="col-10">
-                                        <div class="row mt-0 justify-content-center scroll-simple align-items-center mobile-scroll lelang-card" style="flex-wrap: nowrap;">
-                                        
-                                            <div class="col-12">
-                                                <div class="row align-items-end try-1" style="flex-wrap: nowrap;">
-                                                
-                                                    <div class="col-12 custom">
-                                                        <div class="card mx-auto">
-                                                            <div class="card-body p-0 text-start">
-                                                                <img src="{{asset('')}}images/lahan1.jpeg"
-            data-bs-toggle="modal" data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg"
-            class="a-image w-100 rounded-top" alt="">
-            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                <h4 class="mb-0">Dijual</h4>
-            </div>
-            <div class="row p-4 g-0 text-black" style="background: #dadada">
-                <div class="col-12">
-                    <h4 class="mb-0">1 Ha</h4>
-                </div>
-                <div class="col">
-                    <h5 class="mb-0">Rp. 450 Juta</h5>
-                </div>
-                <div class="col-4 text-end">
-                    <a href="#" style="text-decoration: none">
-                        <h6 class="text-primary">Lihat</h6>
-                    </a>
-                </div>
-                <div class="col-12">
-                    <h6 class="fw-bold">Bogor</h6>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <div class="col-12 custom">
-        <div class="card mx-auto">
-            <div class="card-body p-0 text-start">
-                <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal"
-                    data-src="{{asset('')}}images/lahan4.jpeg" class="a-image w-100 rounded-top" alt="">
-                <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                    <h4 class="mb-0">Dijual</h4>
-                </div>
-                <div class="row p-4 g-0 text-black" style="background: #dadada">
-                    <div class="col-12">
-                        <h4 class="mb-0">3.2 Ha</h4>
-                    </div>
-                    <div class="col">
-                        <h5 class="mb-0">Rp. 200 Juta</h5>
-                    </div>
-                    <div class="col-4 text-end">
-                        <a href="#" style="text-decoration: none">
-                            <h6 class="text-primary">Lihat</h6>
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <h6 class="fw-bold">Bogor</h6>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-12 custom">
-        <div class="card mx-auto">
-            <div class="card-body p-0 text-start">
-                <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal"
-                    data-src="{{asset('')}}images/lahan2.jpeg" class="a-image w-100 rounded-top" alt="">
-                <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                    <h4 class="mb-0">Dijual</h4>
-                </div>
-                <div class="row p-4 g-0 text-black" style="background: #dadada">
-                    <div class="col-12">
-                        <h4 class="mb-0">5000 M</h4>
-                    </div>
-                    <div class="col">
-                        <h5 class="mb-0">Rp. 500 Juta</h5>
-                    </div>
-                    <div class="col-4 text-end">
-                        <a href="#" style="text-decoration: none">
-                            <h6 class="text-primary">Lihat</h6>
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <h6 class="fw-bold">Bogor</h6>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-12 custom">
-        <div class="card mx-auto">
-            <div class="card-body p-0 text-start">
-                <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal" data-bs-target="#image-modal"
-                    data-src="{{asset('')}}images/lahan3.jpeg" class="a-image w-100 rounded-top" alt="">
-                <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                    <h4 class="mb-0">Dijual</h4>
-                </div>
-                <div class="row p-4 g-0 text-black" style="background: #dadada">
-                    <div class="col-12">
-                        <h4 class="mb-0">3.2 Ha</h4>
-                    </div>
-                    <div class="col">
-                        <h5 class="mb-0">Rp. 200 Juta</h5>
-                    </div>
-                    <div class="col-4 text-end">
-                        <a href="#" style="text-decoration: none">
-                            <h6 class="text-primary">Lihat</h6>
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <h6 class="fw-bold">Bogor</h6>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    </div>
-    </div>
-
-    </div>
-    </div>
-    <div class="col-1 arrow-desktop justify-content-center">
-        <button class="btn rounded-5 text-white right-button text-center" style="margin-top:200%;">
-            <i class="fa-solid fa-arrow-right"></i>
-        </button>
-
-    </div>
-    </div>
-    </div>
-    </div>
-
-    <div class="card rounded-0 border-0 " style="margin-top:-10px">
-        <!-- <div class="card-header bg-white border-0">
-                            
-                            </div> -->
-        <div class="card-body bg-card-dark-mode">
-            <div class="row justify-content-center">
-
-                <div class="col-1 arrow-desktop text-center">
-                    <button class="btn rounded-5 text-white left-button1"
-                        style="margin-top:200%;background:transparent">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-                </div>
-                <div class="col-10">
-                    <div class="row mt-0 mobile-scroll justify-content-between scroll-simple align-items-center lelang-card1"
-                        style="flex-wrap: nowrap;">
-
-                        <div class="col-12">
-                            <div class="row align-items-end" style="flex-wrap: nowrap;">
-                                <div class="col-12 custom">
-                                    <div class="card mx-auto">
-                                        <div class="card-body p-0 text-start">
-                                            <img src="{{asset('')}}images/lahan4.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan4.jpeg"
-                                                class="a-image w-100 rounded-top" alt="">
-                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                <h4 class="mb-0">Dijual</h4>
-                                            </div>
-                                            <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                <div class="col-12">
-                                                    <h3 class="mb-0">3.2 Ha</h3>
-                                                </div>
-                                                <div class="col">
-                                                    <h5 class="mb-0">Rp. 200 Juta</h5>
-                                                </div>
-                                                <div class="col-4 text-end">
-                                                    <a href="#" style="text-decoration: none">
-                                                        <h6 class="text-primary">Lihat</h6>
-                                                    </a>
-                                                </div>
-                                                <div class="col-12">
-                                                    <h6 class="fw-bold">Bogor</h6>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 custom">
-                                    <div class="card mx-auto">
-                                        <div class="card-body p-0 text-start">
-                                            <img src="{{asset('')}}images/lahan1.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan1.jpeg"
-                                                class="a-image w-100 rounded-top" alt="">
-                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                <h4 class="mb-0">Dijual</h4>
-                                            </div>
-                                            <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                <div class="col-12">
-                                                    <h3 class="mb-0">1 Ha</h3>
-                                                </div>
-                                                <div class="col">
-                                                    <h5 class="mb-0">Rp. 450 Juta</h5>
-                                                </div>
-                                                <div class="col-4 text-end">
-                                                    <a href="#" style="text-decoration: none">
-                                                        <h6 class="text-primary">Lihat</h6>
-                                                    </a>
-                                                </div>
-                                                <div class="col-12">
-                                                    <h6 class="fw-bold">Bogor</h6>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 custom">
-                                    <div class="card mx-auto">
-                                        <div class="card-body p-0 text-start">
-                                            <img src="{{asset('')}}images/lahan2.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan2.jpeg"
-                                                class="a-image w-100 rounded-top" alt="">
-                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                <h4 class="mb-0">Dijual</h4>
-                                            </div>
-                                            <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                <div class="col-12">
-                                                    <h3 class="mb-0">5000 M</h3>
-                                                </div>
-                                                <div class="col">
-                                                    <h5 class="mb-0">Rp. 500 Juta</h5>
-                                                </div>
-                                                <div class="col-4 text-end">
-                                                    <a href="#" style="text-decoration: none">
-                                                        <h6 class="text-primary">Lihat</h6>
-                                                    </a>
-                                                </div>
-                                                <div class="col-12">
-                                                    <h6 class="fw-bold">Bogor</h6>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 custom">
-                                    <div class="card mx-auto">
-                                        <div class="card-body p-0 text-start">
-                                            <img src="{{asset('')}}images/lahan3.jpeg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal" data-src="{{asset('')}}images/lahan3.jpeg"
-                                                class="a-image w-100 rounded-top" alt="">
-                                            <div class="col-12 bg-info pt-2 px-4 pb-2 text-white">
-                                                <h4 class="mb-0">Dijual</h4>
-                                            </div>
-                                            <div class="row p-4 g-0 text-black" style="background: #dadada">
-                                                <div class="col-12">
-                                                    <h3 class="mb-0">3.2 Ha</h3>
-                                                </div>
-                                                <div class="col">
-                                                    <h5 class="mb-0">Rp. 200 Juta</h5>
-                                                </div>
-                                                <div class="col-4 text-end">
-                                                    <a href="#" style="text-decoration: none">
-                                                        <h6 class="text-primary">Lihat</h6>
-                                                    </a>
-                                                </div>
-                                                <div class="col-12">
-                                                    <h6 class="fw-bold">Bogor</h6>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-4 custom text-center" style="margin-bottom: 7rem">
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-1 arrow-desktop justify-content-center">
-                    <button class="btn rounded-5 text-white right-button1 text-center"
-                        style="margin-top:200%;background:transparent">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-
-                </div>
-            </div>
-
-
-        </div>
-    </div> --}}
-
-
-    </div>
-
-    </div>
 
 
     <!-- Jual beli Lahan -->
@@ -9400,8 +6832,7 @@
 
                                     </div>
                                 </div>
-                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
-                                    method="get">
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1" method="get">
                                     <input type="hidden" name="owner" value=" Bahru">
                                     <input type="hidden" name="objek" value=" Sengketa Pertanahan">
                                     <input type="hidden" name="luas" value=" 1 Ha">
@@ -9643,8 +7074,7 @@
                                     </div>
                                 </div>
 
-                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
-                                    method="get">
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2" method="get">
                                     <input type="hidden" name="owner" value=" Fatah">
                                     <input type="hidden" name="objek" value=" Konflik Pertanahan">
                                     <input type="hidden" name="luas" value=" 5000 M">
@@ -9899,8 +7329,7 @@
                                     </div>
                                 </div>
 
-                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
-                                    method="get">
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3" method="get">
                                     <input type="hidden" name="owner" value=" Ophelia Suartini">
                                     <input type="hidden" name="objek" value=" Perkara Pertanahan">
                                     <input type="hidden" name="luas" value=" 3.2 Ha">
@@ -10155,8 +7584,7 @@
                                     </div>
                                 </div>
 
-                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
-                                    method="get">
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3" method="get">
                                     <input type="hidden" name="owner" value=" Ophelia Suartini">
                                     <input type="hidden" name="objek" value=" Perkara Pertanahan">
                                     <input type="hidden" name="luas" value=" 3.2 Ha">
@@ -10410,8 +7838,7 @@
                                     </div>
                                 </div>
 
-                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
-                                    method="get">
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2" method="get">
                                     <input type="hidden" name="owner" value=" Fatah">
                                     <input type="hidden" name="objek" value=" Konflik Pertanahan">
                                     <input type="hidden" name="luas" value=" 5000 M">
@@ -10921,2367 +8348,6 @@
 
     </style>
 
-    <!-- orang kotak notaris -->
-    <div class="card border-0 mt-3">
-        <div class="card-body">
-            <div class="mt-2 ">
-
-                <div class="row justify-content-center align-items-center">
-
-
-                    <div class="col-1 arrow-desktop text-center">
-                        <button id="button-nota-kiri" class="btn rounded-5 text-white bg-secondary"
-                            style="background-color: #61481C">
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </button>
-                    </div>
-                    <div class="col-lg-10">
-                        <div class="row">
-                            <div class="col mobile-scroll" id='orang-kotak2'
-                                style="white-space:nowrap;flex-wrap:nowarp;display:flex">
-
-                                <?php
-                                            $name = [
-                                                "Budi K.",
-                                                "Rudi H.",
-
-                                                "Ustman A.",
-                                                "Joko L.",
-
-                                                "James Tate",
-                                                "Robert K.",
-                                                "Hadi Ismail", 'Abdullah', 'Nugraha D.', 'Ade Syarief', "Adhi Utomo", 'Leman wan', 'Noto Adi', 'Agus Susan'
-                                            ];
-                                            ?>
-                                <button
-                                    class="container-gambar text-center p-1 me-1 text-decoration-none border-0 bg-white me-2">
-                                    <img src="data:image/png;base64,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"
-                                        alt="" srcset="" class="rounded-4 img-thumbnail "
-                                        style="width:70px;height:70px;object-fit:cover;background:#61481C">
-                                    <div style="width: 70px">
-                                        Notaris
-                                    </div>
-                                </button>
-                                @for($i=13;$i> 0;$i--)
-                                <form action="{{url('')}}/detail-main-petugas" method="get" id="form-notaris-{{$i}}">
-                                    <input type="hidden" name="name" value="{{$name[$i]}}">
-                                    <input type="hidden" name="img"
-                                        value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
-                                    <input type="hidden" name="jenis_petugas" value="Notaris">
-                                </form>
-                                <button
-                                    class="container-gambar text-center p-1 me-1 text-decoration-none border-0 bg-white"
-                                    onclick="return  $('form#form-notaris-<?= $i ?>').submit()"
-                                    style='display: inline-block;flex: 0 0 auto'>
-                                    <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt="" srcset=""
-                                        class="rounded-4 img-thumbnail "
-                                        style="width:70px !important;height:70px;object-fit:cover;"> <br>
-                                    {{$name[$i]}}
-                                </button>
-                                @endfor
-
-                                <a href="{{url('')}}/jasa-notaris"
-                                    class="container-gambar mb-0 text-center p-1 me-1 text-decoration-none border-0 bg-white me-2">
-                                    <img src="data:image/png;base64,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"
-                                        alt="" srcset="" class="rounded-circle img-thumbnail "
-                                        style="width:70px;height:70px;object-fit:cover;background-color:#007bff"> <br>
-                                    Lihat Semua
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1 arrow-desktop text-center">
-                        <button id="button-nota-kanan" class="btn rounded-5 text-white bg-secondary"
-                            style="background-color: #61481C">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </div>
-
-                    <script>
-                        $("button#button-nota-kanan").on('click', function () {
-
-                            $('#orang-kotak2').animate({
-                                scrollLeft: "+=300px"
-                            }, "slow");
-                            // alert('asfs')
-                        });
-
-                        $("button#button-nota-kiri").on('click', function () {
-
-                            $('#orang-kotak2').animate({
-                                scrollLeft: "-=300px"
-                            }, "slow");
-                            // alert('asfs')
-                        });
-
-                    </script>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Bidding Rumah -->
-    <div class="card mb-4 border-0 shadow-sm mt-3">
-        <div class="card-header bg-white">
-            <table style="width:100%">
-                <tr>
-                    <td rowspan="2" style="width: 40px">
-                        <img src="{{asset('/uploads/sengketa-logo_pas.png')}}" style="width:30px">
-                    </td>
-                    <td>
-                        <h5 color="text-dark" style="margin-bottom: 0px !important">
-                            Bidding Rumah
-                        </h5>
-                    </td>
-                    <td class="text-end" rowspan="2">
-                        <a href="{{url('')}}/bid-rumah" class="text-success fw-bold" style="text-decoration: none">Lihat
-                            Semua</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="mb-0">Lahan Tersedia <span class="badge bg-danger">2,353</span></p>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="card-body bg-card-dark-mode">
-
-            <div class="row align-items-center justify-content-center">
-
-                <div class="col-12 desktop-arrow text-center">
-                    <div class="row mobile-scroll mt-2 align-items-center bidding-card-b" style="flex-wrap: nowrap">
-
-                        <div class="col-12 custom ">
-                            <div class="card mx-auto">
-                                <div class="ribbon-pop">
-                                    <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-                                <div id="ll4b" class="carousel slide" data-bs-interval="false">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#ll4b" data-bs-slide-to="0" class="active"
-                                            aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#ll4b" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#ll4b" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#ll4b" data-bs-slide-to="3"
-                                            aria-label="Slide 4"></button>
-                                    </div>
-
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="{{asset('')}}images/rm1.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm1.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm2.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm2.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm3.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm3.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm4.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm4.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll4b" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll4b" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Objek BR-004 <img
-                                                    src="https://sengketatanah.id/uploads/biru_centang.png" alt=""
-                                                    class="mb-1" style="height:20px"></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="card-body pt-0">
-                                    <table class="mt-2 mb-2">
-                                        <tr>
-                                            <td>
-                                                <b>Nilai Pinjaman :</b>
-                                            </td>
-
-                                            <td rowspan="2">
-                                                <div class="d-flex align-items-center">
-
-                                                    <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
-                                                    <button
-                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        BID</button>
-                                                </div>
-
-
-                                                <script>
-                                                    $("#fav-c1").click(function () {
-                                                        $("#fav-ch-c1").toggleClass('fav-icon');
-                                                    });
-
-                                                </script>
-
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-start">
-                                                <h5 class="mb-0">
-                                                    <b class="text-primary">
-                                                        Rp.450.000.000
-                                                    </b>
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="fw-bold">
-                                                    Fee : 30%
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <hr style="margin-top:-4px">
-
-                                    <table>
-                                        <tbody>
-                                            </tr>
-
-                                            <td>Lokasi</td>
-                                            <td></td>
-                                            <td>:</td>
-                                            <td>&nbsp;Pancawati, Bogor</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Luas</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;1 Ha</td>
-                                            </tr>
-                                            <tr>
-
-                                                <td>Objek</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Rumah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Harga Pasaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Rp.1 Miliar</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Penawaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Open Bidding</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>Jumlah Bid</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;3</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <hr>
-
-
-                                    <div class="row g-0">
-                                        <div class="col text-start">
-
-                                            <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#modal-lihat-detail" style="text-decoration:none">
-                                                <i class="fa-solid fa-eye"></i> Lihat Detail
-                                            </a>
-
-
-                                            <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                    style="width: 100px" alt="">
-                                                            </h1>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            Anda harus memiliki akun peserta lelang sebelum melihat
-                                                            detail.
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary me-auto"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <a type="button" class="btn btn-success"
-                                                                href="https://server.sengketatanah.id/login">Login</a>
-                                                            <a type="button" class="btn btn-danger"
-                                                                href="https://server.sengketatanah.id/login">Register</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
-                                        method="get">
-                                        <input type="hidden" name="owner" value=" Bahru">
-                                        <input type="hidden" name="objek" value=" Sengketa Pertanahan">
-                                        <input type="hidden" name="luas" value=" 1 Ha">
-                                        <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
-                                        <input type="hidden" name="komentar" value="">
-                                        <input type="hidden" name="link_yt"
-                                            value="https://www.youtube.com/embed/-RkCcavzXq8">
-                                        <input type="hidden" name="form" value="sponsor">
-                                    </form>
-
-
-                                    <hr>
-                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                        <div class="col-4">
-
-                                            <div class="d-grid gap-2 ">
-
-                                                <!-- <button type="button"
-                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                    BID
-                                                </button> -->
-
-
-                                                <div class="modal fade my-auto" id="exampleC" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                        class="mb-2" style="width: 100px" alt="">
-                                                                </h1>
-                                                            </div>
-                                                            <div class="modal-body" style="text-align: justify">
-
-                                                                Anda harus memiliki akun <b>LENDER</b> sebelum melakukan
-                                                                Bid (Bid adalah proses penawaran anda dengan owner).
-                                                                Jika anda belum menemukan kesepakatan anda bisa close
-                                                                bidding kapan saja.</div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success"
-                                                                    href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger"
-                                                                    href="https://server.sengketatanah.id/login">Register</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-12 custom">
-                            <div class="card mb-2 mx-auto">
-                                <div class="ribbon-pop">
-                                    <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-                                <div id="ll2b" class="carousel slide" data-bs-interval="false">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#ll2b" data-bs-slide-to="0" class="active"
-                                            aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#ll2b" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#ll2b" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#ll2b" data-bs-slide-to="3"
-                                            aria-label="Slide 4"></button>
-                                    </div>
-
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="{{asset('')}}images/rm2.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm2.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm1.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm1.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm3.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm3.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm4.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm4.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll2b" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll2b" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                    <div class="row">
-
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Objek BR-001 <img
-                                                    src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
-                                                    style="height:20px"></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body pt-0">
-                                    <table class="mt-2 mb-2">
-                                        <tr>
-                                            <td>
-                                                <b>Nilai Pinjaman :</b>
-                                            </td>
-
-                                            <td rowspan="2">
-                                                <div class="d-flex align-items-center">
-
-                                                    <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
-                                                    <button
-                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        BID</button>
-                                                </div>
-
-
-                                                <script>
-                                                    $("#fav-c1").click(function () {
-                                                        $("#fav-ch-c1").toggleClass('fav-icon');
-                                                    });
-
-                                                </script>
-
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-start">
-                                                <h5 class="mb-0">
-                                                    <b class="text-primary">
-                                                        Rp.500.000.000
-                                                    </b>
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="fw-bold">
-                                                    Fee : 30%
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <hr style="margin-top:-4px">
-
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>Lokasi</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Pancawati, Bogor</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Luas</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;5000 M</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Objek</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Rumah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Harga Pasaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Rp.1,5 Miliar</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Penawaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Open Bidding</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jumlah Bid</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;4</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <hr>
-
-
-
-                                    <div class="row g-0">
-                                        <div class="col text-start">
-
-                                            <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#modal-lihat-detail" style="text-decoration:none">
-                                                <i class="fa-solid fa-eye"></i> Lihat Detail
-                                            </a>
-
-
-                                            <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                    style="width: 100px" alt="">
-                                                            </h1>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                            melihat detail.
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary me-auto"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <a type="button" class="btn btn-success"
-                                                                href="https://server.sengketatanah.id/login">Login</a>
-                                                            <a type="button" class="btn btn-danger"
-                                                                href="https://server.sengketatanah.id/login">Register</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
-                                        method="get">
-                                        <input type="hidden" name="owner" value=" Fatah">
-                                        <input type="hidden" name="objek" value=" Konflik Pertanahan">
-                                        <input type="hidden" name="luas" value=" 5000 M">
-                                        <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
-                                        <input type="hidden" name="komentar" value="">
-                                        <input type="hidden" name="link_yt"
-                                            value="https://www.youtube.com/embed/byby3HJ3OCI">
-                                        <input type="hidden" name="form" value="sponsor">
-                                    </form>
-
-
-                                    <hr>
-                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                        <div class="col-4">
-
-                                            <div class="d-grid gap-2 ">
-
-                                                <!-- <button type="button"
-                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                    BID
-                                                </button> -->
-
-
-                                                <div class="modal fade my-auto" id="exampleC" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                        class="mb-2" style="width: 100px" alt="">
-                                                                </h1>
-                                                            </div>
-                                                            <div class="modal-body" style="text-align: justify">
-
-                                                                Anda harus memiliki akun <b>LENDER</b> sebelum melakukan
-                                                                Bid (Bid adalah proses penawaran anda dengan owner).
-                                                                Jika anda belum menemukan kesepakatan anda bisa close
-                                                                bidding kapan saja.</div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success"
-                                                                    href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger"
-                                                                    href="https://server.sengketatanah.id/login">Register</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 custom">
-                            <div class="card mb-2 mx-auto">
-                                <div class="ribbon-pop">
-                                    <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-                                <div id="ll3b" class="carousel slide" data-bs-interval="false">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#ll3b" data-bs-slide-to="0" class="active"
-                                            aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#ll3b" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#ll3b" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#ll3b" data-bs-slide-to="3"
-                                            aria-label="Slide 4"></button>
-                                    </div>
-
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="{{asset('')}}images/rm3.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm3.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm1.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm1.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm2.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm2.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm4.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm4.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll3b" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll3b" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                    <div class="row">
-
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Objek BR-002 <img
-                                                    src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
-                                                    style="height:20px"></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body pt-0">
-                                    <table class="mt-2 mb-2">
-                                        <tr>
-                                            <td>
-                                                <b>Nilai Pinjaman :</b>
-                                            </td>
-
-                                            <td rowspan="2">
-                                                <div class="d-flex align-items-center">
-
-                                                    <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
-                                                    <button
-                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        BID</button>
-                                                </div>
-
-
-                                                <script>
-                                                    $("#fav-c1").click(function () {
-                                                        $("#fav-ch-c1").toggleClass('fav-icon');
-                                                    });
-
-                                                </script>
-
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-start">
-                                                <h5 class="mb-0">
-                                                    <b class="text-primary">
-                                                        Rp.100.000.000
-                                                    </b>
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="fw-bold">
-                                                    Fee : 30%
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <hr style="margin-top:-4px">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>Lokasi</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Medan, Sumatra Utara</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Luas</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;3.2 Ha</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Objek</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Rumah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Harga Pasaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Rp.500 Juta</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Penawaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Open Bidding</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jumlah Bid</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;6</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <hr>
-
-
-
-                                    <div class="row g-0">
-                                        <div class="col text-start">
-
-                                            <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#modal-lihat-detail" style="text-decoration:none">
-                                                <i class="fa-solid fa-eye"></i> Lihat Detail
-                                            </a>
-
-
-                                            <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                    style="width: 100px" alt="">
-                                                            </h1>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            Anda harus memiliki akun peserta lelang sebelum melihat
-                                                            detail.
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary me-auto"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <a type="button" class="btn btn-success"
-                                                                href="https://server.sengketatanah.id/login">Login</a>
-                                                            <a type="button" class="btn btn-danger"
-                                                                href="https://server.sengketatanah.id/login">Register</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
-                                        method="get">
-                                        <input type="hidden" name="owner" value=" Ophelia Suartini">
-                                        <input type="hidden" name="objek" value=" Perkara Pertanahan">
-                                        <input type="hidden" name="luas" value=" 3.2 Ha">
-                                        <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
-                                        <input type="hidden" name="komentar" value="">
-                                        <input type="hidden" name="link_yt"
-                                            value="https://www.youtube.com/embed/1I4iEKK1qbQ">
-                                        <input type="hidden" name="form" value="sponsor">
-                                    </form>
-
-
-                                    <hr>
-                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                        <div class="col-4">
-
-                                            <div class="d-grid gap-2 ">
-                                                <!-- <button type="button"
-                                                                class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                                data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                                BID
-                                                            </button> -->
-
-
-                                                <div class="modal fade my-auto" id="exampleC" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                        class="mb-2" style="width: 100px" alt="">
-                                                                </h1>
-                                                            </div>
-                                                            <div class="modal-body" style="text-align: justify">
-
-                                                                Anda harus memiliki akun <b>LENDER</b> sebelum melakukan
-                                                                Bid (Bid adalah proses penawaran anda dengan owner).
-                                                                Jika anda belum menemukan kesepakatan anda bisa close
-                                                                bidding kapan saja.</div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success"
-                                                                    href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger"
-                                                                    href="https://server.sengketatanah.id/login">Register</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 custom">
-                            <div class="card mb-2 mx-auto">
-                                <div class="ribbon-pop">
-                                    <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-                                <div id="ll44b" class="carousel slide" data-bs-interval="false">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#ll44b" data-bs-slide-to="0"
-                                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#ll44b" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#ll44b" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#ll44b" data-bs-slide-to="3"
-                                            aria-label="Slide 4"></button>
-                                    </div>
-
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="{{asset('')}}images/rm4.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm4.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm3.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm3.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm1.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm1.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm4.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm4.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll44b" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll44b" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                    <div class="row">
-
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Objek BR-003 <img
-                                                    src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
-                                                    style="height:20px"></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body pt-0">
-                                    <table class="mt-2 mb-2">
-                                        <tr>
-                                            <td>
-                                                <b>Nilai Pinjaman :</b>
-                                            </td>
-
-                                            <td rowspan="2">
-                                                <div class="d-flex align-items-center">
-
-                                                    <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
-                                                    <button
-                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        BID</button>
-                                                </div>
-
-
-                                                <script>
-                                                    $("#fav-c1").click(function () {
-                                                        $("#fav-ch-c1").toggleClass('fav-icon');
-                                                    });
-
-                                                </script>
-
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-start">
-                                                <h5 class="mb-0">
-                                                    <b class="text-primary">
-                                                        Rp.200.000.000
-                                                    </b>
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="fw-bold">
-                                                    Fee : 30%
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <hr style="margin-top:-4px">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>Lokasi</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Medan, Sumatra Utara</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Luas</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;3.2 Ha</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Objek</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Rumah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Harga Pasaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Rp.500 Juta</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Penawaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Open Bidding</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jumlah Bid</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;6</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <hr>
-
-
-                                    <div class="row g-0">
-                                        <div class="col text-start">
-
-                                            <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#modal-lihat-detail" style="text-decoration:none">
-                                                <i class="fa-solid fa-eye"></i> Lihat Detail
-                                            </a>
-
-
-                                            <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                    style="width: 100px" alt="">
-                                                            </h1>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            Anda harus memiliki akun peserta lelang sebelum melihat
-                                                            detail.
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary me-auto"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <a type="button" class="btn btn-success"
-                                                                href="https://server.sengketatanah.id/login">Login</a>
-                                                            <a type="button" class="btn btn-danger"
-                                                                href="https://server.sengketatanah.id/login">Register</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
-                                        method="get">
-                                        <input type="hidden" name="owner" value=" Ophelia Suartini">
-                                        <input type="hidden" name="objek" value=" Perkara Pertanahan">
-                                        <input type="hidden" name="luas" value=" 3.2 Ha">
-                                        <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
-                                        <input type="hidden" name="komentar" value="">
-                                        <input type="hidden" name="link_yt"
-                                            value="https://www.youtube.com/embed/1I4iEKK1qbQ">
-                                        <input type="hidden" name="form" value="sponsor">
-                                    </form>
-
-
-                                    <hr>
-                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                        <div class="col-4">
-
-                                            <div class="d-grid gap-2 ">
-                                                <!-- <button type="button"
-                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                    BID
-                                                </button> -->
-
-
-                                                <div class="modal fade my-auto" id="exampleC" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                        class="mb-2" style="width: 100px" alt="">
-                                                                </h1>
-                                                            </div>
-                                                            <div class="modal-body" style="text-align: justify">
-
-                                                                Anda harus memiliki akun <b>LENDER</b> sebelum melakukan
-                                                                Bid (Bid adalah proses penawaran anda dengan owner).
-                                                                Jika anda belum menemukan kesepakatan anda bisa close
-                                                                bidding kapan saja.</div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success"
-                                                                    href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger"
-                                                                    href="https://server.sengketatanah.id/login">Register</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="row align-items-center justify-content-center">
-
-                <div class="col-12 desktop-arrow text-center">
-                    <div class="row mobile-scroll mt-2 align-items-center bidding-card-b2" style="flex-wrap: nowrap">
-
-                        <div class="col-12 custom">
-                            <div class="card mx-auto">
-                                <div class="ribbon-pop">
-                                    <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-                                <div id="ll4c" class="carousel slide" data-bs-interval="false">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#ll4c" data-bs-slide-to="0" class="active"
-                                            aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#ll4c" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#ll4c" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#ll4c" data-bs-slide-to="3"
-                                            aria-label="Slide 4"></button>
-                                    </div>
-
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="{{asset('')}}images/rm1.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm1.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm2.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm2.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm3.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm3.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm4.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm4.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll4c" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll4c" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Objek BR-004 <img
-                                                    src="https://sengketatanah.id/uploads/biru_centang.png" alt=""
-                                                    class="mb-1" style="height:20px"></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="card-body pt-0">
-                                    <table class="mt-2 mb-2">
-                                        <tr>
-                                            <td>
-                                                <b>Nilai Pinjaman :</b>
-                                            </td>
-
-                                            <td rowspan="2">
-                                                <div class="d-flex align-items-center">
-
-                                                    <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
-                                                    <button
-                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        BID</button>
-                                                </div>
-
-
-                                                <script>
-                                                    $("#fav-c1").click(function () {
-                                                        $("#fav-ch-c1").toggleClass('fav-icon');
-                                                    });
-
-                                                </script>
-
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-start">
-                                                <h5 class="mb-0">
-                                                    <b class="text-primary">
-                                                        Rp.450.000.000
-                                                    </b>
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="fw-bold">
-                                                    Fee : 30%
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <hr style="margin-top:-4px">
-
-                                    <table>
-                                        <tbody>
-                                            </tr>
-
-                                            <td>Lokasi</td>
-                                            <td></td>
-                                            <td>:</td>
-                                            <td>&nbsp;Pancawati, Bogor</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Luas</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;1 Ha</td>
-                                            </tr>
-                                            <tr>
-
-                                                <td>Objek</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Rumah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Harga Pasaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Rp.1 Miliar</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Penawaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Open Bidding</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>Jumlah Bid</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;3</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <hr>
-
-
-                                    <div class="row g-0">
-                                        <div class="col text-start">
-
-                                            <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#modal-lihat-detail" style="text-decoration:none">
-                                                <i class="fa-solid fa-eye"></i> Lihat Detail
-                                            </a>
-
-
-                                            <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                    style="width: 100px" alt="">
-                                                            </h1>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            Anda harus memiliki akun peserta lelang sebelum melihat
-                                                            detail.
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary me-auto"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <a type="button" class="btn btn-success"
-                                                                href="https://server.sengketatanah.id/login">Login</a>
-                                                            <a type="button" class="btn btn-danger"
-                                                                href="https://server.sengketatanah.id/login">Register</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
-                                        method="get">
-                                        <input type="hidden" name="owner" value=" Bahru">
-                                        <input type="hidden" name="objek" value=" Sengketa Pertanahan">
-                                        <input type="hidden" name="luas" value=" 1 Ha">
-                                        <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
-                                        <input type="hidden" name="komentar" value="">
-                                        <input type="hidden" name="link_yt"
-                                            value="https://www.youtube.com/embed/-RkCcavzXq8">
-                                        <input type="hidden" name="form" value="sponsor">
-                                    </form>
-
-
-                                    <hr>
-                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                        <div class="col-4">
-
-                                            <div class="d-grid gap-2 ">
-
-                                                <!-- <button type="button"
-                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                    BID
-                                                </button> -->
-
-
-                                                <div class="modal fade my-auto" id="exampleC" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                        class="mb-2" style="width: 100px" alt="">
-                                                                </h1>
-                                                            </div>
-                                                            <div class="modal-body" style="text-align: justify">
-
-                                                                Anda harus memiliki akun <b>LENDER</b> sebelum melakukan
-                                                                Bid (Bid adalah proses penawaran anda dengan owner).
-                                                                Jika anda belum menemukan kesepakatan anda bisa close
-                                                                bidding kapan saja.</div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success"
-                                                                    href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger"
-                                                                    href="https://server.sengketatanah.id/login">Register</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-12 custom">
-                            <div class="card mb-2 mx-auto">
-                                <div class="ribbon-pop">
-                                    <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-                                <div id="ll2c" class="carousel slide" data-bs-interval="false">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#ll2c" data-bs-slide-to="0" class="active"
-                                            aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#ll2c" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#ll2c" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#ll2c" data-bs-slide-to="3"
-                                            aria-label="Slide 4"></button>
-                                    </div>
-
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="{{asset('')}}images/rm2.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm2.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm1.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm1.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm3.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm3.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm4.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm4.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll2c" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll2c" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                    <div class="row">
-
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Objek BR-001 <img
-                                                    src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
-                                                    style="height:20px"></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body pt-0">
-                                    <table class="mt-2 mb-2">
-                                        <tr>
-                                            <td>
-                                                <b>Nilai Pinjaman :</b>
-                                            </td>
-
-                                            <td rowspan="2">
-                                                <div class="d-flex align-items-center">
-
-                                                    <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
-                                                    <button
-                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        BID</button>
-                                                </div>
-
-
-                                                <script>
-                                                    $("#fav-c1").click(function () {
-                                                        $("#fav-ch-c1").toggleClass('fav-icon');
-                                                    });
-
-                                                </script>
-
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-start">
-                                                <h5 class="mb-0">
-                                                    <b class="text-primary">
-                                                        Rp.500.000.000
-                                                    </b>
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="fw-bold">
-                                                    Fee : 30%
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <hr style="margin-top:-4px">
-
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>Lokasi</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Pancawati, Bogor</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Luas</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;5000 M</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Objek</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Rumah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Harga Pasaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Rp.1,5 Miliar</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Penawaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Open Bidding</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jumlah Bid</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;4</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <hr>
-
-
-
-                                    <div class="row g-0">
-                                        <div class="col text-start">
-
-                                            <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#modal-lihat-detail" style="text-decoration:none">
-                                                <i class="fa-solid fa-eye"></i> Lihat Detail
-                                            </a>
-
-
-                                            <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                    style="width: 100px" alt="">
-                                                            </h1>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            Anda harus memiliki akun peserta lelang sebelum
-                                                            melihat detail.
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary me-auto"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <a type="button" class="btn btn-success"
-                                                                href="https://server.sengketatanah.id/login">Login</a>
-                                                            <a type="button" class="btn btn-danger"
-                                                                href="https://server.sengketatanah.id/login">Register</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
-                                        method="get">
-                                        <input type="hidden" name="owner" value=" Fatah">
-                                        <input type="hidden" name="objek" value=" Konflik Pertanahan">
-                                        <input type="hidden" name="luas" value=" 5000 M">
-                                        <input type="hidden" name="lokasi" value=" Pancawati, Bogor">
-                                        <input type="hidden" name="komentar" value="">
-                                        <input type="hidden" name="link_yt"
-                                            value="https://www.youtube.com/embed/byby3HJ3OCI">
-                                        <input type="hidden" name="form" value="sponsor">
-                                    </form>
-
-
-                                    <hr>
-                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                        <div class="col-4">
-
-                                            <div class="d-grid gap-2 ">
-
-                                                <!-- <button type="button"
-                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                    BID
-                                                </button> -->
-
-
-                                                <div class="modal fade my-auto" id="exampleC" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                        class="mb-2" style="width: 100px" alt="">
-                                                                </h1>
-                                                            </div>
-                                                            <div class="modal-body" style="text-align: justify">
-
-                                                                Anda harus memiliki akun <b>LENDER</b> sebelum melakukan
-                                                                Bid (Bid adalah proses penawaran anda dengan owner).
-                                                                Jika anda belum menemukan kesepakatan anda bisa close
-                                                                bidding kapan saja.</div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success"
-                                                                    href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger"
-                                                                    href="https://server.sengketatanah.id/login">Register</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 custom">
-                            <div class="card mb-2 mx-auto">
-                                <div class="ribbon-pop">
-                                    <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-                                <div id="ll3c" class="carousel slide" data-bs-interval="false">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#ll3c" data-bs-slide-to="0" class="active"
-                                            aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#ll3c" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#ll3c" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#ll3c" data-bs-slide-to="3"
-                                            aria-label="Slide 4"></button>
-                                    </div>
-
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="{{asset('')}}images/rm3.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm3.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm1.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm1.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm2.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm2.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm4.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm4.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll3c" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll3c" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                    <div class="row">
-
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Objek BR-002 <img
-                                                    src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
-                                                    style="height:20px"></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body pt-0">
-                                    <table class="mt-2 mb-2">
-                                        <tr>
-                                            <td>
-                                                <b>Nilai Pinjaman :</b>
-                                            </td>
-
-                                            <td rowspan="2">
-                                                <div class="d-flex align-items-center">
-
-                                                    <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
-                                                    <button
-                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        BID</button>
-                                                </div>
-
-
-                                                <script>
-                                                    $("#fav-c1").click(function () {
-                                                        $("#fav-ch-c1").toggleClass('fav-icon');
-                                                    });
-
-                                                </script>
-
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-start">
-                                                <h5 class="mb-0">
-                                                    <b class="text-primary">
-                                                        Rp.100.000.000
-                                                    </b>
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="fw-bold">
-                                                    Fee : 30%
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <hr style="margin-top:-4px">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>Lokasi</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Medan, Sumatra Utara</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Luas</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;3.2 Ha</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Objek</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Rumah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Harga Pasaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Rp.500 Juta</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Penawaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Open Bidding</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jumlah Bid</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;6</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <hr>
-
-
-
-                                    <div class="row g-0">
-                                        <div class="col text-start">
-
-                                            <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#modal-lihat-detail" style="text-decoration:none">
-                                                <i class="fa-solid fa-eye"></i> Lihat Detail
-                                            </a>
-
-
-                                            <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                    style="width: 100px" alt="">
-                                                            </h1>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            Anda harus memiliki akun peserta lelang sebelum melihat
-                                                            detail.
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary me-auto"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <a type="button" class="btn btn-success"
-                                                                href="https://server.sengketatanah.id/login">Login</a>
-                                                            <a type="button" class="btn btn-danger"
-                                                                href="https://server.sengketatanah.id/login">Register</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
-                                        method="get">
-                                        <input type="hidden" name="owner" value=" Ophelia Suartini">
-                                        <input type="hidden" name="objek" value=" Perkara Pertanahan">
-                                        <input type="hidden" name="luas" value=" 3.2 Ha">
-                                        <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
-                                        <input type="hidden" name="komentar" value="">
-                                        <input type="hidden" name="link_yt"
-                                            value="https://www.youtube.com/embed/1I4iEKK1qbQ">
-                                        <input type="hidden" name="form" value="sponsor">
-                                    </form>
-
-
-                                    <hr>
-                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                        <div class="col-4">
-
-                                            <div class="d-grid gap-2 ">
-                                                <!-- <button type="button"
-                                                                class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                                data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                                BID
-                                                            </button> -->
-
-
-                                                <div class="modal fade my-auto" id="exampleC" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                        class="mb-2" style="width: 100px" alt="">
-                                                                </h1>
-                                                            </div>
-                                                            <div class="modal-body" style="text-align: justify">
-
-                                                                Anda harus memiliki akun <b>LENDER</b> sebelum melakukan
-                                                                Bid (Bid adalah proses penawaran anda dengan owner).
-                                                                Jika anda belum menemukan kesepakatan anda bisa close
-                                                                bidding kapan saja.</div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success"
-                                                                    href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger"
-                                                                    href="https://server.sengketatanah.id/login">Register</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 custom">
-                            <div class="card mb-2 mx-auto">
-                                <div class="ribbon-pop">
-                                    <i class="fa-solid fa-star"></i>&nbsp;HOT
-                                </div>
-                                <div class="share-icon">
-                                    <button class="btn btn-sm text-white rounded-5"
-                                        style="background: rgba(0, 0, 0, 0.5)">
-                                        <i class="fa-solid fa-share-from-square"></i>
-                                    </button>
-                                </div>
-                                <div id="ll44c" class="carousel slide" data-bs-interval="false">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#ll44c" data-bs-slide-to="0"
-                                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#ll44c" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#ll44c" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#ll44c" data-bs-slide-to="3"
-                                            aria-label="Slide 4"></button>
-                                    </div>
-
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="{{asset('')}}images/rm4.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm4.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm3.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm3.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm1.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm1.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="{{asset('')}}images/rm4.jpg" data-bs-toggle="modal"
-                                                data-bs-target="#image-modal-2" data-src="{{asset('')}}images/rm4.jpg"
-                                                class="d-block image-kunam w-100"
-                                                style="height:200px;width:auto;object-fit:cover">
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll44c" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next opacity-90 text-dark" type="button"
-                                        data-bs-target="#ll44c" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon bg-dark rounded-circle"
-                                            aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                <div class="card-header text-white px-3 py-1" style="background: #8f8f8f">
-                                    <div class="row">
-
-                                        <div class="col-lg-12">
-                                            <h5 class="mb-0 text-center">Kode Objek BR-003 <img
-                                                    src="{{asset('')}}uploads/biru_centang.png" alt="" class="mb-1"
-                                                    style="height:20px"></h5>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-body pt-0">
-                                    <table class="mt-2 mb-2">
-                                        <tr>
-                                            <td>
-                                                <b>Nilai Pinjaman :</b>
-                                            </td>
-
-                                            <td rowspan="2">
-                                                <div class="d-flex align-items-center">
-
-                                                    <a id="fav-c1 my-auto" style="margin-right: 10px">
-                                                        <h5 class="mb-0 text-fav-disable" id="fav-ch-c1">
-                                                            <i class="fas fa-star"></i>
-                                                        </h5>
-                                                    </a>
-                                                    <button
-                                                        class="btn float-end btn-brown text-white mb-0 my-auto w-100"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                        BID</button>
-                                                </div>
-
-
-                                                <script>
-                                                    $("#fav-c1").click(function () {
-                                                        $("#fav-ch-c1").toggleClass('fav-icon');
-                                                    });
-
-                                                </script>
-
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-start">
-                                                <h5 class="mb-0">
-                                                    <b class="text-primary">
-                                                        Rp.200.000.000
-                                                    </b>
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="fw-bold">
-                                                    Fee : 30%
-                                                </h5>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <hr style="margin-top:-4px">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td>Lokasi</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Medan, Sumatra Utara</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Luas</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;3.2 Ha</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Objek</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Rumah</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Harga Pasaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Rp.500 Juta</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Penawaran</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;Open Bidding</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jumlah Bid</td>
-                                                <td></td>
-                                                <td>:</td>
-                                                <td>&nbsp;6</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <hr>
-
-
-                                    <div class="row g-0">
-                                        <div class="col text-start">
-
-                                            <a href="#" class="  mx-auto rounded-5" data-bs-toggle="modal"
-                                                data-bs-target="#modal-lihat-detail" style="text-decoration:none">
-                                                <i class="fa-solid fa-eye"></i> Lihat Detail
-                                            </a>
-
-
-                                            <div class="modal fade my-auto text-center" id="berkasC" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header p-0">
-                                                            <h1 class="modal-title mx-auto text-danger display-1">
-                                                                <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                    style="width: 100px" alt="">
-                                                            </h1>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            Anda harus memiliki akun peserta lelang sebelum melihat
-                                                            detail.
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary me-auto"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <a type="button" class="btn btn-success"
-                                                                href="https://server.sengketatanah.id/login">Login</a>
-                                                            <a type="button" class="btn btn-danger"
-                                                                href="https://server.sengketatanah.id/login">Register</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
-                                        method="get">
-                                        <input type="hidden" name="owner" value=" Ophelia Suartini">
-                                        <input type="hidden" name="objek" value=" Perkara Pertanahan">
-                                        <input type="hidden" name="luas" value=" 3.2 Ha">
-                                        <input type="hidden" name="lokasi" value=" Medan, Sumatra Utara">
-                                        <input type="hidden" name="komentar" value="">
-                                        <input type="hidden" name="link_yt"
-                                            value="https://www.youtube.com/embed/1I4iEKK1qbQ">
-                                        <input type="hidden" name="form" value="sponsor">
-                                    </form>
-
-
-                                    <hr>
-                                    <div class="row justify-content-center g-0" style="margin-top:-15px;">
-                                        <div class="col-4">
-
-                                            <div class="d-grid gap-2 ">
-                                                <!-- <button type="button"
-                                                    class="text-center mt-2 mb-0 mt-0 btn btn-sm btn-outline-dark"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleC">
-                                                    BID
-                                                </button> -->
-
-
-                                                <div class="modal fade my-auto" id="exampleC" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header p-0">
-                                                                <h1 class="modal-title mx-auto text-danger display-1">
-                                                                    <img src="{{asset('')}}uploads/sengketa-logo_pas-9.png"
-                                                                        class="mb-2" style="width: 100px" alt="">
-                                                                </h1>
-                                                            </div>
-                                                            <div class="modal-body" style="text-align: justify">
-
-                                                                Anda harus memiliki akun <b>LENDER</b> sebelum melakukan
-                                                                Bid (Bid adalah proses penawaran anda dengan owner).
-                                                                Jika anda belum menemukan kesepakatan anda bisa close
-                                                                bidding kapan saja.</div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary me-auto"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success"
-                                                                    href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger"
-                                                                    href="https://server.sengketatanah.id/login">Register</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-3 custom text-start">
-                            <button class="btn btn-sm">
-                                <div class="row p-4">
-                                    <div class="col-md-12">
-                                        <span class="fa-stack fa-2x">
-                                            <i class="fa fa-circle fa-stack-2x text-brown"></i>
-                                            <i class="fa-solid fa-arrow-right fa-stack-1x text-white"></i>
-                                        </span>
-                                    </div>
-                                    <div class="col-md-12 mt-1 fw-bold">
-                                        Lihat Semua
-                                    </div>
-                                </div>
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                
-            </div>
-
-            <script>
-                $('#right-button-bid-rumah').click(function () {
-                    event.preventDefault();
-
-
-                    $('div.bidding-card-b').animate({
-                        scrollLeft: "+=300px"
-                    }, "slow");
-
-                    let outerWidth = Math.floor($('div.bidding-card-b').outerWidth())
-                    let scrollWidth = Math.floor($('div.bidding-card-b')[0].scrollWidth)
-                    let scrollLeft = Math.floor($('div.bidding-card-b').scrollLeft())
-                    if ((outerWidth - scrollWidth) + scrollLeft == 0) {
-                        $('div.bidding-card-b2').animate({
-                            scrollLeft: "+=300px"
-                        }, "slow")
-
-                    }
-                });
-
-                $('#left-button-bid-rumah').click(function () {
-                    event.preventDefault();
-
-                    if ($('div.bidding-card-b2').scrollLeft() > 0) {
-                        $('div.bidding-card-b2').animate({
-                            scrollLeft: "-=300px"
-                        }, "slow");
-                    } else {
-                        $('div.bidding-card-b').animate({
-                            scrollLeft: "-=300px"
-                        }, "slow");
-                    }
-
-                });
-
-            </script>
-
-
-        </div>
-
-    </div>
-
 
     <!-- Kerja sama lahan -->
     {{-- <div class="card mb-3 border-0 shadow-sm ">
@@ -13530,8 +8596,7 @@
 
                                 </div>
 
-                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
-                                    method="get">
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2" method="get">
                                     <input type="hidden" name="owner" value=" Fatah">
                                     <input type="hidden" name="objek" value=" Konflik Pertanahan">
                                     <input type="hidden" name="luas" value=" 5000 M">
@@ -13791,8 +8856,7 @@
 
                                 </div>
 
-                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
-                                    method="get">
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2" method="get">
                                     <input type="hidden" name="owner" value=" Fatah">
                                     <input type="hidden" name="objek" value=" Konflik Pertanahan">
                                     <input type="hidden" name="luas" value=" 5000 M">
@@ -14052,8 +9116,7 @@
 
                                 </div>
 
-                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
-                                    method="get">
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3" method="get">
                                     <input type="hidden" name="owner" value=" Ophelia Suartini">
                                     <input type="hidden" name="objek" value=" Perkara Pertanahan">
                                     <input type="hidden" name="luas" value=" 3.2 Ha">
@@ -14312,8 +9375,7 @@
 
                                 </div>
 
-                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
-                                    method="get">
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3" method="get">
                                     <input type="hidden" name="owner" value=" Ophelia Suartini">
                                     <input type="hidden" name="objek" value=" Perkara Pertanahan">
                                     <input type="hidden" name="luas" value=" 3.2 Ha">
@@ -14572,8 +9634,7 @@
 
                                 </div>
 
-                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
-                                    method="get">
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2" method="get">
                                     <input type="hidden" name="owner" value=" Fatah">
                                     <input type="hidden" name="objek" value=" Konflik Pertanahan">
                                     <input type="hidden" name="luas" value=" 5000 M">
@@ -14678,101 +9739,6 @@
     </div>
     </div> --}}
 
-
-    <!-- orang bulet pekur -->
-    <div class="card mb-3 border-0 ">
-        <div class="card-body">
-            <div class="mt-2 ">
-
-                <div class="row justify-content-center align-items-center">
-
-
-                    <div class="col-1 arrow-desktop text-center">
-                        <button id="left-orang" class="btn rounded-5 text-white bg-secondary"
-                            style="background-color: #61481C">
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </button>
-                    </div>
-                    <div class="col-lg-10">
-                        <div class="row">
-                            <div class="col mobile-scroll" id='orang-bulet'
-                                style="white-space:nowrap;flex-wrap:nowarp;display:flex">
-
-                                <?php
-                                            $name = [
-                                                "Rudi H.",
-                                                "Budi K.",
-                                                "Joko Afdal",
-                                                "Ustman A.",
-                                                "Robert K.",
-                                                "James Tate", "Hadi Ismail", 'Abdullah', 'Nugraha D.', 'Ade Syarief', "Adhi Utomo", 'Leman wan', 'Pranoto Adi', 'Agus Susan'
-                                            ];
-                                            ?>
-                                <button
-                                    class="container-gambar mb-0 text-center p-1 me-1 text-decoration-none border-0 bg-white me-2">
-                                    <img src="data:image/png;base64,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"
-                                        alt="" srcset="" class="rounded-circle img-thumbnail "
-                                        style="width:70px;height:70px;object-fit:cover;background:#61481C"> <br>
-                                    Petugas Ukur
-                                </button>
-                                @for($i=0;$i< 14;$i++)<form action="{{url('')}}/detail-main-petugas" method="get"
-                                    id="form-ukur-{{$i}}">
-                                    <input type="hidden" name="name" value="{{$name[$i]}}">
-                                    <input type="hidden" name="img"
-                                        value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
-                                    <input type="hidden" name="jenis_petugas" value="Petugas Ukur">
-                                    </form>
-                                    <button
-                                        class=" mb-0 container-gambar text-center p-1 me-1 text-decoration-none border-0 bg-white"
-                                        onclick="return  $('form#form-ukur-<?= $i ?>').submit()"
-                                        style='display: inline-block;flex: 0 0 auto'>
-                                        <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt="" srcset=""
-                                            class="rounded-circle img-thumbnail "
-                                            style="width:70px !important;height:70px;object-fit:cover;"> <br>
-                                        {{$name[$i]}}
-                                    </button>
-
-                                    @endfor
-                                    <a href="{{url('')}}/jasa-tukang-ukur"
-                                        class="container-gambar mb-0 text-center p-1 me-1 text-decoration-none border-0 bg-white me-2">
-                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEX////zrS7ypwbzrCn++vbyqBbzqyfyqRr76MfyqRn87tvzqyPzrCL+9uv///3//Pb40ZP0sz/1vF363K73yoX626399OX2w2/0tUf98Nz++vH52af3yIH87dX405rzsDP637b1ulX2wGf2xXf76Mr0t0z40pb4zoz2wWr64b363rX3yHv869D1vmDUwVzIAAAOwUlEQVR4nO1daYOiuBYtSIdUjLJpsaiIllqWpfX//94Dl3YjNzeAQL/xzJfpmTbkZLl7kre3F1544YUXXnjhhRde+I/AGQS99+HM3WxG0+l0tNm4s+F7Lxg4bXesBjjJ1g39yOCUMiYuYIxSbnh+6G6TcdudLI34I/SsnBchRjEIEYJz4YUfid12bzXhJLPPvsmEjNodUcEo92fJP7Nog/nSo8xCkbvAYjQNf4K2O6/GeOgTjpy7x7nkxB92elvac9/Unrw7lsz053/aJiJB7BJajd4RFu1v4rbJFODd56IGekcI7m/bJnQL+8PjdUzfBRb3Jt3RIM6Es3KyBQJhfNYN/eFMUlY7vSNYOukAx6H3hPk7g7D0o2V+q4g/j9+BI/dWLfILQvO5/A4cze/WLJ1Jvz79AEGIWSv84vWzBMwjWNS8CWBvGligFxBz07B2jBfNTeARbN3oNH6Iei0YDCzRnOKwv3nj/HLw74b0f5w2I0IfIdJGVuq236SIuQUR8+cTdNtZoWdw99kEQ9oqQcOg4VP5jf2mlcQjmP/ESE4QtSVjriGip9mpg7R5LVgEKx08h2DQohC9Bek/RWskRlcI5umApH6CvQ4RzCnWPouDzizRI0i/5r0YpDDBPLmSgWOTMWBLPG9K1RJJa5Wo4wiSooTRxWiySnqr7Wzp0SoaRdB0Oduuesn7ZOQzMMZlRXXqRR/otWUuhuOLe2rHbr9k9I2wvhtfuQ/j4cIERlb49REM5ZYM4Z+PYu2jVASVpZOHluJPIJbHajPgXLktKrzC/IKzobrTSOim0Pt79+Trh9Zkhs/l3gQPZXvh3dCzfyzjXdKSAxj7vJb8TdyXj+FI/rPA06FoeYBk3ABrqAa1aMv1BP+CfjjWoGh5YHziS7qKSFo9sPEt3QYMmMEcA2kNxkM/iUJ9j6SSS3xXJTiUrhBrofrtCustU2VqYi1dD7xiBC6WCzJTbTZtcEqDqUXiwJT+utpWtOVjxxC5hD8eZp0SeBMeMZMOlrWuEg2XTwJJMQUTQ8wksiGipT9ygYdYAlLE8rWBmcIMCIKGgWpJPomGWX6dRvJFppJ+6n5pjtUA6Mu6LEGgexZSSAfyVXCGifSCvuXqFTlIj72TGzMGw8popawhHrKlD2A59Mv5iiHgMjHs0h+pvEWhsBv+IgYYilJexgpaYARrLE1UG5E9ukzFcKDVYJYpZwDEDH5pvb2r7Boq8ykeAC14EukT/IAyMHjplSgZ9rBNraFJ5BilegMHFBEWOoCgFKZYUfr25kM9QhlGN4D3D1Fa3Wf06pvDBSiW0fv5BAeOHuKX/V7JEB29hgSDvqeoFIHYhuZKWTrHNqVqSGsSbVWiV2B3z0ypD7H2SKBqiev4GJD9cBwwrP75VIUysPbf20rZJx1fWGlrCaTHYqst7z5y6F3VHOKV9NvbVlmNQJBup1Lho1W+DarDAzRii746SoYUgYBDcAZymSqFso6W7iEKSsQS01KAKU2hKKm1RCR8ONYf2GCyRxTT2hTTkpgiWooxcTuxwREEjfi/UAcTM6MUV13EESt+gQovE5x0mCuHi4hsbqjS1s0jdURYoDlpCZINlrJjedhWqLOvFCdrFHJGUOIvl2km5lXrdMSyzi/DNZdkyAinUbjMPqeKnh/Ctuly6RNF+hUna8bgFAo6PZyG3JqZ/oGTsBNqkIOn7GwXBck2Qtdzxz4mRihscQ0y/WzOs3+xkxHMkWLywmCM85JOm2YT5EEBt3xhmfvTH1YPWUDhnfVgYiqW/MDLpnl3+sN4CW1uVOwVWqT8Mtb2QhgWUO85yzpCLzan8307cOzzMtrZZBtcbp7GqWWI9cVzgKbA+lUTDIDtzH+u/uI4+zDpS8bMycuIb9OLn9ezKG56kieZpQXAPySTRcb16tsC+4iolSuQ8WW3+cJxvvK4X9TkDxEP+VP7yr8j3q30zHOggvy8PSLweb6ib7cDEMjlcyVDue3w4PY6vzwvxdjdLVVn7tFcUN6vu+TSL76/+3+TXBRRb347j3a8y4sxHust5e6+2tYC4jMFWT43P3Qh6GKWnAbZDra7NFcOIn00qP8OXkF4c5WXbxCe7rbBaXoHyWyRC86ioxZ7afRHHa+Rx8YKnZO9lw8+YSyN/O/wd+GRw0nSbGILxPb+vAGKvEtnaua/FJx4i9/w24/SQ8EQoYUnu+QRDaVLIF/iojhrP/eOR7cJsSzrkNcmgn0Wy9jT+iBpoQ0Tfx+LoC4tZXy9YlEm76Yyh/Er1RVSP+59mZ6r0Ehe3xZJzymHx8alIj34WuctHZvKWjJCmRUmT6Ar9YVckgKBTWc1W67TPu97i+lHLN8IJzcdcAHs3nDke1lL6Xo5W8kNlIFcYTCYIBCipoqMoZ0D/iunCJ4q+IRoaQAU+cAbEQhB8eoFnafWy6b7rgAwVASkgIzav8JQkWkDgmz/CkM45DYGXJN/haEhIJ2fAGZ7ZYbjZHnSFt/7quW9EEMGiRooUFqN4Xj4ebkXxKLkc1ipOYghGDaF4spVGDojg1lEcGrmoJkVZDEyrdAguEqheDxUnFCeof1lisxEiabb/KIke5xsR1FGUpib0hfRgAwhYQqlWUszTCJmMHJnyiXTzIVk3r0XhQXEkADhKAdKQpZlOGTEMt3HHw9GJiGKEJQUIMNILkwH8p+VZvhFDbYuNmljjxkUGaa+7ynA0DDkPQXTDOUYuqbBpSTsXVmKIEMu9xHAsoJSDCemYUILMZthWkb/gwyB4gcw21eG4Z7CBA8xKHzN0AUwQ3mDcDBYn6GTEqZahLvMr9e3cECGrChodwRYDVqC4YipEwnOmuBykTeAGcqXDZgq12cYZ2JUHaBNuEZNzRkgQ8CoAVOj+gxDwcAzJyfsBCYWfwuYoXxn1MswMA2GyViOqX6lNsxQnqwDy121GbpCEoC8x1Sgy2jPgBnK0+Zg2l2boUdwNQhvCSWpZtudYBgjBOkRdkQwqfxrdILhD8MWTmXf1a2dLMuw1n24E+oDWydkg6GpEssyrFWW/lroux16HPLpilBWloIMVTHvO9hrK8VaYwHRLWIGovqgPgRtGlQR1AWOpzgYet3fVFXXcQ+wQB7Y/6BdiipzuGDsWRG2pHWcEvR8HwH6CIDYAn8ndtLfFUFzDjUZgnV8gG8BV4NyrcjYU/ehA3YU8A/howOawfhfC10Mri1Lv8DSY8DHV5SD6l2YMsXrw7mmPgzg2mogTgPG2gxMDeEVhk+zaYDTyUfIZwKMl2Zg3xoUtexSMJty38tPuEARipfCR4tyiguNheoRYLlcI/ct8EMXrBWFx+CehvIWB1hkhu6LK5CyaSSw5cvZBM4sVbUwmLdQnmnIppEu5/HY+aNGTHHHWMamQRNEe844ni9N9QEOcPurD1rkLbBjkkwFilQwuUeDbJFhKuPB/CGUA9YEsfK6bIRKjHleNw5Wg+sBlFpOXfciCpaG7mxhCWUUzV4TazHbhClqflDfBs0j1EUW6m8Y7mHuBgZR3jc6ZeSovwLXqIWj4viTUphiQHdnnbI1VUXqM2qY530z2NVxOaqinkZ5LA+B61xMnniBapQygtfXWX2or2BQQlETpTx6rcbtqeodB27ksqeZQrlxyobV7/BVRZcrf+E+2TTKZqmwFvx4b/39ZVrIS3ugDsAEgfpSHIh370XOzExxFLw2Mt5wizxkF3GX9gCwPhUMEdetgCiIdayIIOwkXf8i3mT/TZBH/wp1aQ/UAZWRUXUjFtlpzojl1TOeuw2cHMF2kx4qbEYFmkt5yFoBZaYOvktBCcmB0HgpGCGCm30jNbjJBSGZ01ssEhDHTgEgwiGYs5pySD3ZwWSRmZWWRbJ/rMywXU9kfpjyKgAQiGABcGYGAcjqHW9n4dpLvXU42wIxKpT1L+/AXMkQOvekRpm6ijsgjn8DwNxfhTjI3V2GqHx5JXHdNkMgGHzBuIpt2DZD1BnSSsu0ZYbIog71We7OMkSe5cadx+8kQ+R5fNydCl1kiA6yY+7F6CRD9L0YFWRNqwzxd5tUMJxaZahz93VpB6NNhjp3DJUPSLXJUOueqNJuaJsMte76Ku2ktchQs3BMcedeBxlq385echLbY6hb+1c2XtMaQ/27L0tGn1tjqH9/qeqqyY4xLHMHLXyPcNcYlrpHuFSmrSWG5e6CBu/z7hrDkm8/lchhtMNQW1P8hfq6yU4wLH+vPvQ2QpcYVngbQT9fWcPzRMqbh+9R5X0LdRXgw9dKKN476NqL1d4ogd6ZKYT2AaZH6Cqpqu9ZahtvlRlq6qiqbwVpDym6LlgGzRhRSV1/DeDNriLoH5a8A3y3/D10ClOlAN5dKwLHZH/kAJ9keEQd765prxurykf3msNZy9t54PuHBSBGeYqaL/LW9f4h+IZlEcXST7z/6D1YW98blvA7pEVj6+/1BYC9X+jZa3W+Q6p4S/YRlrnezPc9PPbzzRp6VbXoG7W+JZufvdL6/PmBYDS0HxKu+T3g/8Cbzp17l7uCwJbi//5t9Txu0xWKpI9+YEgPg7RieW1NsNLa9+BfilFdZyKqQERPI5jpRb++QzVl8Xj3db0AnpBuBrRGU60YLvDYeQNQnsGpAdsWRSoRNblLMGLgPffnQgBvMdQKO6x+sqUMaFj9mXEshqJ5zWiJ6rFYDcSLptUGWze0Qs+wD88iNAZiujUE1TSRn8tqCixqeAJPmPSbEaqiX/167JIIwgaWKjHDmr15LeyjJ5s4hEdV8wRVMfSeyJEwyQsejcKZpM8SOSydNKfjITgTzuqfR8J4R/jlsLO1Wq+VY3Hvo3kNCOLd5/XpDsH9RpwITcSuQeuYSIveX+DeHdhb32TVSFqM+vOOLc9bjH9+CdeN0J9ABCf+8LlRmFoQzJce1Z7KbPK85fyJUbR64SSzz76JzbbkWRz+O0tKvwXRFuJh6FmMi9MjXEXUiBCcCS/8eEqQvhE4ydYN/cjglDImLmCMUm5Efuhuk39g4ynhDILe6mfibkbTHKONO/lZ9YJBd0yWF1544YUXXnjhhRdeeDL+B68+/9nQmNGwAAAAAElFTkSuQmCC"
-                                            alt="" srcset="" class="rounded-circle img-thumbnail "
-                                            style="width:70px;height:70px;object-fit:cover;background-color:#007bff">
-                                        <br>
-                                        Lihat Semua
-                                    </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1 arrow-desktop text-center">
-                        <button id="right-orang" class="btn rounded-5 text-white bg-secondary"
-                            style="background-color: #61481C">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </div>
-
-                    <script>
-                        $('#right-orang').click(function () {
-                            event.preventDefault();
-                            $('#orang-bulet').animate({
-                                scrollLeft: "+=300px"
-                            }, "slow");
-                        });
-
-                        $('#left-orang').click(function () {
-                            event.preventDefault();
-                            $('#orang-bulet').animate({
-                                scrollLeft: "-=300px"
-                            }, "slow");
-                        });
-
-                    </script>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
 
 
     <!-- lelang -->
@@ -15054,8 +10020,7 @@
 
                                     </div>
                                 </div>
-                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1"
-                                    method="get">
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa1" method="get">
                                     <input type="hidden" name="owner" value=" Bahru">
                                     <input type="hidden" name="objek" value=" Sengketa Pertanahan">
                                     <input type="hidden" name="luas" value=" 1 Ha">
@@ -15356,8 +10321,7 @@
                                     </div>
                                 </div>
 
-                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2"
-                                    method="get">
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa2" method="get">
                                     <input type="hidden" name="owner" value=" Fatah">
                                     <input type="hidden" name="objek" value=" Konflik Pertanahan">
                                     <input type="hidden" name="luas" value=" 5000 M">
@@ -15655,8 +10619,7 @@
                                     </div>
                                 </div>
 
-                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
-                                    method="get">
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3" method="get">
                                     <input type="hidden" name="owner" value=" Ophelia Suartini">
                                     <input type="hidden" name="objek" value=" Perkara Pertanahan">
                                     <input type="hidden" name="luas" value=" 3.2 Ha">
@@ -15952,8 +10915,7 @@
                                     </div>
                                 </div>
 
-                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3"
-                                    method="get">
+                                <form action="{{url('')}}/bid-sengketa/podcast" class="form-sengketa3" method="get">
                                     <input type="hidden" name="owner" value=" Ophelia Suartini">
                                     <input type="hidden" name="objek" value=" Perkara Pertanahan">
                                     <input type="hidden" name="luas" value=" 3.2 Ha">
@@ -16431,6 +11393,108 @@
 
         </div>
     </div> --}}
+    <!-- orang kotak notaris -->
+    <div class="card border-0 mt-3">
+        <div class="card-body">
+            <div class="mt-2 ">
+
+                <div class="row justify-content-center align-items-center">
+
+
+                    <div class="col-1 arrow-desktop text-center">
+                        <button id="button-nota-kiri" class="btn rounded-5 text-white bg-secondary"
+                            style="background-color: #61481C">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="row">
+                            <div class="col mobile-scroll" id='orang-kotak2'
+                                style="white-space:nowrap;flex-wrap:nowarp;display:flex">
+
+                                <?php
+                                            $name = [
+                                                "Budi K.",
+                                                "Rudi H.",
+
+                                                "Ustman A.",
+                                                "Joko L.",
+
+                                                "James Tate",
+                                                "Robert K.",
+                                                "Hadi Ismail", 'Abdullah', 'Nugraha D.', 'Ade Syarief', "Adhi Utomo", 'Leman wan', 'Noto Adi', 'Agus Susan'
+                                            ];
+                                            ?>
+                                <button
+                                    class="container-gambar text-center p-1 me-1 text-decoration-none border-0 bg-white me-2">
+                                    <img src="data:image/png;base64,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"
+                                        alt="" srcset="" class="rounded-4 img-thumbnail "
+                                        style="width:70px;height:70px;object-fit:cover;background:#61481C">
+                                    <div style="width: 70px">
+                                        Notaris
+                                    </div>
+                                </button>
+                                @for($i=13;$i> 0;$i--)
+                                <form action="{{url('')}}/detail-main-petugas" method="get" id="form-notaris-{{$i}}">
+                                    <input type="hidden" name="name" value="{{$name[$i]}}">
+                                    <input type="hidden" name="img"
+                                        value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
+                                    <input type="hidden" name="jenis_petugas" value="Notaris">
+                                </form>
+                                <button
+                                    class="container-gambar text-center p-1 me-1 text-decoration-none border-0 bg-white"
+                                    onclick="return  $('form#form-notaris-<?= $i ?>').submit()"
+                                    style='display: inline-block;flex: 0 0 auto'>
+                                    <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt="" srcset=""
+                                        class="rounded-4 img-thumbnail "
+                                        style="width:70px !important;height:70px;object-fit:cover;"> <br>
+                                    {{$name[$i]}}
+                                </button>
+                                @endfor
+
+                                <a href="{{url('')}}/jasa-notaris"
+                                    class="container-gambar mb-0 text-center p-1 me-1 text-decoration-none border-0 bg-white me-2">
+                                    <img src="data:image/png;base64,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"
+                                        alt="" srcset="" class="rounded-circle img-thumbnail "
+                                        style="width:70px;height:70px;object-fit:cover;background-color:#007bff"> <br>
+                                    Lihat Semua
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 arrow-desktop text-center">
+                        <button id="button-nota-kanan" class="btn rounded-5 text-white bg-secondary"
+                            style="background-color: #61481C">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <script>
+                        $("button#button-nota-kanan").on('click', function () {
+
+                            $('#orang-kotak2').animate({
+                                scrollLeft: "+=300px"
+                            }, "slow");
+                            // alert('asfs')
+                        });
+
+                        $("button#button-nota-kiri").on('click', function () {
+
+                            $('#orang-kotak2').animate({
+                                scrollLeft: "-=300px"
+                            }, "slow");
+                            // alert('asfs')
+                        });
+
+                    </script>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
 
     <!-- podcast Sengketa -->
     <div class="card mb-3 border-0 shadow-sm mt-3">
@@ -16487,8 +11551,7 @@
 
                     <div class="modal-header bg-dark text-white border-0">
                         <h5 class="modal-title title-bidang">Modal title</h5>
-                        <i type="button" class="fa-solid fa-times" data-bs-dismiss="modal"
-                            aria-label="Close"></i>
+                        <i type="button" class="fa-solid fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
                     </div>
                     <div class="modal-body d-flex" style="background-color:transparent">
                         <div class="container">
@@ -16744,7 +11807,10 @@
             </div>
         </div>
     </div>
+
     </div>
+
+
 
     <script>
         function zoom(e) {
@@ -16925,8 +11991,7 @@
 
                     <div class="modal-header bg-dark text-white border-0">
                         <h5 class="modal-title title-rumah">Modal title</h5>
-                        <i type="button" class="fa-solid fa-times" data-bs-dismiss="modal"
-                            aria-label="Close"></i>
+                        <i type="button" class="fa-solid fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
                     </div>
                     <div class="modal-body d-flex" style="background-color:transparent">
                         <div class="container">
@@ -17357,6 +12422,102 @@
     </style>
 
     <hr>
+    
+
+    <!-- orang bulet pekur -->
+    <div class="card mb-3 border-0 ">
+        <div class="card-body">
+            <div class="mt-2 ">
+
+                <div class="row justify-content-center align-items-center">
+
+
+                    <div class="col-1 arrow-desktop text-center">
+                        <button id="left-orang" class="btn rounded-5 text-white bg-secondary"
+                            style="background-color: #61481C">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="row">
+                            <div class="col mobile-scroll" id='orang-bulet'
+                                style="white-space:nowrap;flex-wrap:nowarp;display:flex">
+
+                                <?php
+                                            $name = [
+                                                "Rudi H.",
+                                                "Budi K.",
+                                                "Joko Afdal",
+                                                "Ustman A.",
+                                                "Robert K.",
+                                                "James Tate", "Hadi Ismail", 'Abdullah', 'Nugraha D.', 'Ade Syarief', "Adhi Utomo", 'Leman wan', 'Pranoto Adi', 'Agus Susan'
+                                            ];
+                                            ?>
+                                <button
+                                    class="container-gambar mb-0 text-center p-1 me-1 text-decoration-none border-0 bg-white me-2">
+                                    <img src="data:image/png;base64,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"
+                                        alt="" srcset="" class="rounded-circle img-thumbnail "
+                                        style="width:70px;height:70px;object-fit:cover;background:#61481C"> <br>
+                                    Petugas Ukur
+                                </button>
+                                @for($i=0;$i< 14;$i++)<form action="{{url('')}}/detail-main-petugas" method="get"
+                                    id="form-ukur-{{$i}}">
+                                    <input type="hidden" name="name" value="{{$name[$i]}}">
+                                    <input type="hidden" name="img"
+                                        value="https://randomuser.me/api/portraits/men/{{$i}}.jpg">
+                                    <input type="hidden" name="jenis_petugas" value="Petugas Ukur">
+                                    </form>
+                                    <button
+                                        class=" mb-0 container-gambar text-center p-1 me-1 text-decoration-none border-0 bg-white"
+                                        onclick="return  $('form#form-ukur-<?= $i ?>').submit()"
+                                        style='display: inline-block;flex: 0 0 auto'>
+                                        <img src="https://randomuser.me/api/portraits/men/{{$i}}.jpg" alt="" srcset=""
+                                            class="rounded-circle img-thumbnail "
+                                            style="width:70px !important;height:70px;object-fit:cover;"> <br>
+                                        {{$name[$i]}}
+                                    </button>
+
+                                    @endfor
+                                    <a href="{{url('')}}/jasa-tukang-ukur"
+                                        class="container-gambar mb-0 text-center p-1 me-1 text-decoration-none border-0 bg-white me-2">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEX////zrS7ypwbzrCn++vbyqBbzqyfyqRr76MfyqRn87tvzqyPzrCL+9uv///3//Pb40ZP0sz/1vF363K73yoX626399OX2w2/0tUf98Nz++vH52af3yIH87dX405rzsDP637b1ulX2wGf2xXf76Mr0t0z40pb4zoz2wWr64b363rX3yHv869D1vmDUwVzIAAAOwUlEQVR4nO1daYOiuBYtSIdUjLJpsaiIllqWpfX//94Dl3YjNzeAQL/xzJfpmTbkZLl7kre3F1544YUXXnjhhRde+I/AGQS99+HM3WxG0+l0tNm4s+F7Lxg4bXesBjjJ1g39yOCUMiYuYIxSbnh+6G6TcdudLI34I/SsnBchRjEIEYJz4YUfid12bzXhJLPPvsmEjNodUcEo92fJP7Nog/nSo8xCkbvAYjQNf4K2O6/GeOgTjpy7x7nkxB92elvac9/Unrw7lsz053/aJiJB7BJajd4RFu1v4rbJFODd56IGekcI7m/bJnQL+8PjdUzfBRb3Jt3RIM6Es3KyBQJhfNYN/eFMUlY7vSNYOukAx6H3hPk7g7D0o2V+q4g/j9+BI/dWLfILQvO5/A4cze/WLJ1Jvz79AEGIWSv84vWzBMwjWNS8CWBvGligFxBz07B2jBfNTeARbN3oNH6Iei0YDCzRnOKwv3nj/HLw74b0f5w2I0IfIdJGVuq236SIuQUR8+cTdNtZoWdw99kEQ9oqQcOg4VP5jf2mlcQjmP/ESE4QtSVjriGip9mpg7R5LVgEKx08h2DQohC9Bek/RWskRlcI5umApH6CvQ4RzCnWPouDzizRI0i/5r0YpDDBPLmSgWOTMWBLPG9K1RJJa5Wo4wiSooTRxWiySnqr7Wzp0SoaRdB0Oduuesn7ZOQzMMZlRXXqRR/otWUuhuOLe2rHbr9k9I2wvhtfuQ/j4cIERlb49REM5ZYM4Z+PYu2jVASVpZOHluJPIJbHajPgXLktKrzC/IKzobrTSOim0Pt79+Trh9Zkhs/l3gQPZXvh3dCzfyzjXdKSAxj7vJb8TdyXj+FI/rPA06FoeYBk3ABrqAa1aMv1BP+CfjjWoGh5YHziS7qKSFo9sPEt3QYMmMEcA2kNxkM/iUJ9j6SSS3xXJTiUrhBrofrtCustU2VqYi1dD7xiBC6WCzJTbTZtcEqDqUXiwJT+utpWtOVjxxC5hD8eZp0SeBMeMZMOlrWuEg2XTwJJMQUTQ8wksiGipT9ygYdYAlLE8rWBmcIMCIKGgWpJPomGWX6dRvJFppJ+6n5pjtUA6Mu6LEGgexZSSAfyVXCGifSCvuXqFTlIj72TGzMGw8popawhHrKlD2A59Mv5iiHgMjHs0h+pvEWhsBv+IgYYilJexgpaYARrLE1UG5E9ukzFcKDVYJYpZwDEDH5pvb2r7Boq8ykeAC14EukT/IAyMHjplSgZ9rBNraFJ5BilegMHFBEWOoCgFKZYUfr25kM9QhlGN4D3D1Fa3Wf06pvDBSiW0fv5BAeOHuKX/V7JEB29hgSDvqeoFIHYhuZKWTrHNqVqSGsSbVWiV2B3z0ypD7H2SKBqiev4GJD9cBwwrP75VIUysPbf20rZJx1fWGlrCaTHYqst7z5y6F3VHOKV9NvbVlmNQJBup1Lho1W+DarDAzRii746SoYUgYBDcAZymSqFso6W7iEKSsQS01KAKU2hKKm1RCR8ONYf2GCyRxTT2hTTkpgiWooxcTuxwREEjfi/UAcTM6MUV13EESt+gQovE5x0mCuHi4hsbqjS1s0jdURYoDlpCZINlrJjedhWqLOvFCdrFHJGUOIvl2km5lXrdMSyzi/DNZdkyAinUbjMPqeKnh/Ctuly6RNF+hUna8bgFAo6PZyG3JqZ/oGTsBNqkIOn7GwXBck2Qtdzxz4mRihscQ0y/WzOs3+xkxHMkWLywmCM85JOm2YT5EEBt3xhmfvTH1YPWUDhnfVgYiqW/MDLpnl3+sN4CW1uVOwVWqT8Mtb2QhgWUO85yzpCLzan8307cOzzMtrZZBtcbp7GqWWI9cVzgKbA+lUTDIDtzH+u/uI4+zDpS8bMycuIb9OLn9ezKG56kieZpQXAPySTRcb16tsC+4iolSuQ8WW3+cJxvvK4X9TkDxEP+VP7yr8j3q30zHOggvy8PSLweb6ib7cDEMjlcyVDue3w4PY6vzwvxdjdLVVn7tFcUN6vu+TSL76/+3+TXBRRb347j3a8y4sxHust5e6+2tYC4jMFWT43P3Qh6GKWnAbZDra7NFcOIn00qP8OXkF4c5WXbxCe7rbBaXoHyWyRC86ioxZ7afRHHa+Rx8YKnZO9lw8+YSyN/O/wd+GRw0nSbGILxPb+vAGKvEtnaua/FJx4i9/w24/SQ8EQoYUnu+QRDaVLIF/iojhrP/eOR7cJsSzrkNcmgn0Wy9jT+iBpoQ0Tfx+LoC4tZXy9YlEm76Yyh/Er1RVSP+59mZ6r0Ehe3xZJzymHx8alIj34WuctHZvKWjJCmRUmT6Ar9YVckgKBTWc1W67TPu97i+lHLN8IJzcdcAHs3nDke1lL6Xo5W8kNlIFcYTCYIBCipoqMoZ0D/iunCJ4q+IRoaQAU+cAbEQhB8eoFnafWy6b7rgAwVASkgIzav8JQkWkDgmz/CkM45DYGXJN/haEhIJ2fAGZ7ZYbjZHnSFt/7quW9EEMGiRooUFqN4Xj4ebkXxKLkc1ipOYghGDaF4spVGDojg1lEcGrmoJkVZDEyrdAguEqheDxUnFCeof1lisxEiabb/KIke5xsR1FGUpib0hfRgAwhYQqlWUszTCJmMHJnyiXTzIVk3r0XhQXEkADhKAdKQpZlOGTEMt3HHw9GJiGKEJQUIMNILkwH8p+VZvhFDbYuNmljjxkUGaa+7ynA0DDkPQXTDOUYuqbBpSTsXVmKIEMu9xHAsoJSDCemYUILMZthWkb/gwyB4gcw21eG4Z7CBA8xKHzN0AUwQ3mDcDBYn6GTEqZahLvMr9e3cECGrChodwRYDVqC4YipEwnOmuBykTeAGcqXDZgq12cYZ2JUHaBNuEZNzRkgQ8CoAVOj+gxDwcAzJyfsBCYWfwuYoXxn1MswMA2GyViOqX6lNsxQnqwDy121GbpCEoC8x1Sgy2jPgBnK0+Zg2l2boUdwNQhvCSWpZtudYBgjBOkRdkQwqfxrdILhD8MWTmXf1a2dLMuw1n24E+oDWydkg6GpEssyrFWW/lroux16HPLpilBWloIMVTHvO9hrK8VaYwHRLWIGovqgPgRtGlQR1AWOpzgYet3fVFXXcQ+wQB7Y/6BdiipzuGDsWRG2pHWcEvR8HwH6CIDYAn8ndtLfFUFzDjUZgnV8gG8BV4NyrcjYU/ehA3YU8A/howOawfhfC10Mri1Lv8DSY8DHV5SD6l2YMsXrw7mmPgzg2mogTgPG2gxMDeEVhk+zaYDTyUfIZwKMl2Zg3xoUtexSMJty38tPuEARipfCR4tyiguNheoRYLlcI/ct8EMXrBWFx+CehvIWB1hkhu6LK5CyaSSw5cvZBM4sVbUwmLdQnmnIppEu5/HY+aNGTHHHWMamQRNEe844ni9N9QEOcPurD1rkLbBjkkwFilQwuUeDbJFhKuPB/CGUA9YEsfK6bIRKjHleNw5Wg+sBlFpOXfciCpaG7mxhCWUUzV4TazHbhClqflDfBs0j1EUW6m8Y7mHuBgZR3jc6ZeSovwLXqIWj4viTUphiQHdnnbI1VUXqM2qY530z2NVxOaqinkZ5LA+B61xMnniBapQygtfXWX2or2BQQlETpTx6rcbtqeodB27ksqeZQrlxyobV7/BVRZcrf+E+2TTKZqmwFvx4b/39ZVrIS3ugDsAEgfpSHIh370XOzExxFLw2Mt5wizxkF3GX9gCwPhUMEdetgCiIdayIIOwkXf8i3mT/TZBH/wp1aQ/UAZWRUXUjFtlpzojl1TOeuw2cHMF2kx4qbEYFmkt5yFoBZaYOvktBCcmB0HgpGCGCm30jNbjJBSGZ01ssEhDHTgEgwiGYs5pySD3ZwWSRmZWWRbJ/rMywXU9kfpjyKgAQiGABcGYGAcjqHW9n4dpLvXU42wIxKpT1L+/AXMkQOvekRpm6ijsgjn8DwNxfhTjI3V2GqHx5JXHdNkMgGHzBuIpt2DZD1BnSSsu0ZYbIog71We7OMkSe5cadx+8kQ+R5fNydCl1kiA6yY+7F6CRD9L0YFWRNqwzxd5tUMJxaZahz93VpB6NNhjp3DJUPSLXJUOueqNJuaJsMte76Ku2ktchQs3BMcedeBxlq385echLbY6hb+1c2XtMaQ/27L0tGn1tjqH9/qeqqyY4xLHMHLXyPcNcYlrpHuFSmrSWG5e6CBu/z7hrDkm8/lchhtMNQW1P8hfq6yU4wLH+vPvQ2QpcYVngbQT9fWcPzRMqbh+9R5X0LdRXgw9dKKN476NqL1d4ogd6ZKYT2AaZH6Cqpqu9ZahtvlRlq6qiqbwVpDym6LlgGzRhRSV1/DeDNriLoH5a8A3y3/D10ClOlAN5dKwLHZH/kAJ9keEQd765prxurykf3msNZy9t54PuHBSBGeYqaL/LW9f4h+IZlEcXST7z/6D1YW98blvA7pEVj6+/1BYC9X+jZa3W+Q6p4S/YRlrnezPc9PPbzzRp6VbXoG7W+JZufvdL6/PmBYDS0HxKu+T3g/8Cbzp17l7uCwJbi//5t9Txu0xWKpI9+YEgPg7RieW1NsNLa9+BfilFdZyKqQERPI5jpRb++QzVl8Xj3db0AnpBuBrRGU60YLvDYeQNQnsGpAdsWRSoRNblLMGLgPffnQgBvMdQKO6x+sqUMaFj9mXEshqJ5zWiJ6rFYDcSLptUGWze0Qs+wD88iNAZiujUE1TSRn8tqCixqeAJPmPSbEaqiX/167JIIwgaWKjHDmr15LeyjJ5s4hEdV8wRVMfSeyJEwyQsejcKZpM8SOSydNKfjITgTzuqfR8J4R/jlsLO1Wq+VY3Hvo3kNCOLd5/XpDsH9RpwITcSuQeuYSIveX+DeHdhb32TVSFqM+vOOLc9bjH9+CdeN0J9ABCf+8LlRmFoQzJce1Z7KbPK85fyJUbR64SSzz76JzbbkWRz+O0tKvwXRFuJh6FmMi9MjXEXUiBCcCS/8eEqQvhE4ydYN/cjglDImLmCMUm5Efuhuk39g4ynhDILe6mfibkbTHKONO/lZ9YJBd0yWF1544YUXXnjhhRdeeDL+B68+/9nQmNGwAAAAAElFTkSuQmCC"
+                                            alt="" srcset="" class="rounded-circle img-thumbnail "
+                                            style="width:70px;height:70px;object-fit:cover;background-color:#007bff">
+                                        <br>
+                                        Lihat Semua
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 arrow-desktop text-center">
+                        <button id="right-orang" class="btn rounded-5 text-white bg-secondary"
+                            style="background-color: #61481C">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <script>
+                        $('#right-orang').click(function () {
+                            event.preventDefault();
+                            $('#orang-bulet').animate({
+                                scrollLeft: "+=300px"
+                            }, "slow");
+                        });
+
+                        $('#left-orang').click(function () {
+                            event.preventDefault();
+                            $('#orang-bulet').animate({
+                                scrollLeft: "-=300px"
+                            }, "slow");
+                        });
+
+                    </script>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
 
 
     <div class="row justify-content-center">
@@ -17439,7 +12600,7 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v14.0"
         nonce="Ee2Zutm6"></script>
 
-        </div>
+    </div>
     </div>
 
     @include('layouts.template-public.footer')
@@ -17448,13 +12609,13 @@
         <div class="card-body text-white text-center bg-card-dark-mode" style="background: #61481C">
             <p></p>
             <img src="{{asset('/uploads/sengketa-logo.png')}}" style="width:250px" class="img-fluid">
-            <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
-            </p>
-            <hr>
-            <p style="font-size:14px" class="card-title pb-3">Sovereign Plaza. Lt. 19 <br> Jl. TB Simatupang No.
-                36,
-                TB Simatupang, Jakarta Selatan</p>
-        </div>
+    <p style="font-size:12px" class="card-title">Copyright © Sengketa Tanah 2022. All Rights Reserved
+    </p>
+    <hr>
+    <p style="font-size:14px" class="card-title pb-3">Sovereign Plaza. Lt. 19 <br> Jl. TB Simatupang No.
+        36,
+        TB Simatupang, Jakarta Selatan</p>
+    </div>
     </footer> --}}
 
 
