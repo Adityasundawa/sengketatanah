@@ -1580,8 +1580,8 @@
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                <a type="button" class="btn btn-success" href="{{url('')}}/login">Login</a>
+                                                                <a type="button" class="btn btn-danger" href="{{url('')}}/register">Register</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1637,8 +1637,8 @@
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    <a type="button" class="btn btn-success" href="{{url('')}}/login">Login</a>
+                                                                    <a type="button" class="btn btn-danger" href="{{url('')}}/register">Register</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1811,8 +1811,8 @@
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                <a type="button" class="btn btn-success" href="{{url('')}}/login">Login</a>
+                                                                <a type="button" class="btn btn-danger" href="{{url('')}}/register">Register</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1868,8 +1868,8 @@
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    <a type="button" class="btn btn-success" href="{{url('')}}/login">Login</a>
+                                                                    <a type="button" class="btn btn-danger" href="{{url('')}}/register">Register</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2041,8 +2041,8 @@
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                <a type="button" class="btn btn-success" href="{{url('')}}/login">Login</a>
+                                                                <a type="button" class="btn btn-danger" href="{{url('')}}/register">Register</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2098,8 +2098,8 @@
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    <a type="button" class="btn btn-success" href="{{url('')}}/login">Login</a>
+                                                                    <a type="button" class="btn btn-danger" href="{{url('')}}/register">Register</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2274,8 +2274,8 @@
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    <a type="button" class="btn btn-success" href="{{url('')}}/login">Login</a>
+                                                                    <a type="button" class="btn btn-danger" href="{{url('')}}/register">Register</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2332,8 +2332,8 @@
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    <a type="button" class="btn btn-success" href="{{url('')}}/login">Login</a>
+                                                                    <a type="button" class="btn btn-danger" href="{{url('')}}/register">Register</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2503,8 +2503,8 @@
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                <a type="button" class="btn btn-success" href="{{url('')}}/login">Login</a>
+                                                                <a type="button" class="btn btn-danger" href="{{url('')}}/register">Register</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2556,8 +2556,8 @@
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                        <a type="button" class="btn btn-success" href="{{url('')}}/login">Login</a>
+                                                        <a type="button" class="btn btn-danger" href="{{url('')}}/register">Register</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2587,8 +2587,8 @@
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-                                                                    <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-                                                                    <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+                                                                    <a type="button" class="btn btn-success" href="{{url('')}}/login">Login</a>
+                                                                    <a type="button" class="btn btn-danger" href="{{url('')}}/register">Register</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2735,8 +2735,8 @@
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-secondary me-auto" data-bs-dismiss="modal">Close</button>
-        <a type="button" class="btn btn-success" href="https://server.sengketatanah.id/login">Login</a>
-        <a type="button" class="btn btn-danger" href="https://server.sengketatanah.id/login">Register</a>
+        <a type="button" class="btn btn-success" href="{{url('')}}/login">Login</a>
+        <a type="button" class="btn btn-danger" href="{{url('')}}/register">Register</a>
     </div>
     </div>
     </div>
