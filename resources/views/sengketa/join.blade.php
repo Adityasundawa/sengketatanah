@@ -13,6 +13,9 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 
+    <link rel="stylesheet" type="text/css"
+        href="{{asset('')}}css/card.scss" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
@@ -24,6 +27,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+
     <style>
         html,
         body {
@@ -339,73 +343,135 @@
             </div>
         </div>
 
-        <div class="row text-center pt-4 mb-4">
+        <div class="row text-center pt-4 mb-5">
             <h2 class="fw-bold text-brown">"Jika Anda Membutuhkan Bantuan Pendanaan Untuk Menyelesaikan Masalah Sengketa
-                Pertanahan, Ini Adalah Aplikasi yang Tepat"</h2>
+                Pertanahan, Ini Adalah Aplikasi yang Tepat"
+            </h2>
         </div>
 
-        <div class="pt-5 mb-5 justify-content-center">
+        <style>
+            .cards {
+                position: relative;
+                height: 275px;
+                margin: 0 auto;
+                background: #fff;
+                border-radius: 15px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .cards .face {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .cards .face1 {
+                box-sizing: border-box;
+                padding: 20px;
+                align-items: start;
+            }
+
+            .cards h2 {
+                margin: 0;
+                padding: 0;
+            }
+
+            .cards .face2 {
+                transition: 0.5s;
+            }
+
+            .cards h2 {
+                margin: 0;
+                padding: 0;
+                color: #fff;
+                transition: 0.5s;
+                text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                z-index: 10;
+            }
+
+            .cards:hover .face.face2 {
+                height: 60px;
+            }
+
+            .cards:hover .face.face2 h2 {
+                font-size: 2em;
+            }
+
+            .cards .face.face2 {
+                background: #61481c;
+                border-radius: 15px;
+            }
+        </style>
+
+        <div class="pt-5 mb-5 justify-content-center row">
             <div class="col-md-12 text-center">
                 <h3 class="text-brown" style="font-weight: 700">4 Roles Dalam Penyelesaian Sengketatanah.id</h3>
             </div>
-            <div class="card mt-4">
-                <div class="card-body p-5">
-                    <div class="row">
 
-                        <div class="col-md-6 mt-2 mb-2">
 
-                            <div class="card bg-white shadow p-4">
-                                <div class="card-body text-center">
-                                    <h3>Pemerintah</h3>
-                                    <div class="mt-3">Kementerian ATR/BPN yang menyelenggarakan urusan di bidang
-                                        agraria/pertanahan dan tata ruang.</div>
-                                </div>
-                            </div>
-
+            <div class="col-md-3">
+                <div class="cards">
+                    <div class="face face1">
+                        <div class="content">
+                            <span class="stars"></span>
+                            <h2 class="java text-brown">Pemerintah</h2>
+                            <p class="java">Kementerian ATR/BPN yang menyelenggarakan urusan di bidang
+                            agraria/pertanahan dan tata ruang.</p>
                         </div>
-
-                        <div class="col-md-6 mt-2 mb-2">
-
-                            <div class="card bg-white shadow p-4">
-                                <div class="card-body text-center">
-                                    <h3>Korban Sengketa</h3>
-                                    <div class="mt-3">Korban adalah orang yang dirugikan, dirampas, atau terancam
-                                        kehilangan hak atas tanah yang
-                                        dimilikinya.
-                                    </div>
-                                </div>
-                            </div>
-
+                    </div>
+                    <div class="face face2">
+                        <h2>Pemerintah</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="cards">
+                    <div class="face face1">
+                        <div class="content">
+                            <span class="stars"></span>
+                            <h2 class="java text-brown">Korban Sengketa</h2>
+                            <p class="java">Korban adalah orang yang dirugikan, dirampas, atau terancam
+                            kehilangan hak atas tanah yang dimilikinya.</p>
                         </div>
-
-                        <div class="col-md-6 mt-2 mb-2">
-
-                            <div class="card bg-white shadow p-4">
-                                <div class="card-body text-center">
-                                    <h3>Sponsor</h3>
-                                    <div class="mt-3">Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan
-                                        hukum korban
-                                        sengketa tanah.
-                                    </div>
-                                </div>
-                            </div>
-
+                    </div>
+                    <div class="face face2">
+                        <h2>Korban Sengketa</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="cards">
+                    <div class="face face1">
+                        <div class="content">
+                            <span class="stars"></span>
+                            <h2 class="java text-brown">Sponsor</h2>
+                            <p class="java">Sponsor adalah orang/badan usaha/kelompok yang membiayai urusan
+                            hukum korban sengketa tanah.</p>
                         </div>
-
-                        <div class="col-md-6 mt-2 mb-2">
-
-                            <div class="card bg-white shadow p-4">
-                                <div class="card-body text-center">
-                                    <h3>Pengacara</h3>
-                                    <div class="mt-3">Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang
-                                        menangani persoalan sengketa
-                                        tanah.
-                                    </div>
-                                </div>
-                            </div>
-
+                    </div>
+                    <div class="face face2">
+                        <h2>Sponsor</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="cards">
+                    <div class="face face1">
+                        <div class="content">
+                            <span class="stars"></span>
+                            <h2 class="java text-brown">Pengacara</h2>
+                            <p class="java">Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang
+                            menangani persoalan sengketa tanah.</p>
                         </div>
-
+                    </div>
+                    <div class="face face2">
+                        <h2>Pengacara</h2>
                     </div>
                 </div>
             </div>
