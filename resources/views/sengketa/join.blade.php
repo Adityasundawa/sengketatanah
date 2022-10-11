@@ -344,38 +344,6 @@
                 Pertanahan, Ini Adalah Aplikasi yang Tepat"</h2>
         </div>
 
-
-        <div class="row mb-5 pt-4 justify-content-center">
-            <div class="col-md-12 text-center">
-                <h3 class="text-brown" style="font-weight: 700">3 Langkah Mencari Bantuan Sponsor</h3>
-            </div>
-            <div class="col-md-7 mt-4">
-                <div class="row justify-content-center text-center g-2">
-                    <div class="col">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle fa-stack-2x text-brown"></i>
-                            <i class="fa-solid fa-file-lines fa-stack-1x text-white"></i>
-                        </span>
-                        <div class="mt-3" style="font-size: 14px">Masukkan data tanah Anda</div>
-                    </div>
-                    <div class="col">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle fa-stack-2x text-white"></i>
-                            <i class="fa-solid fa-file-signature fa-stack-1x text-brown"></i>
-                        </span>
-                        <div class="mt-3" style="font-size: 14px">Tentukan kebutuhan, jaminan, dan pengembalian</div>
-                    </div>
-                    <div class="col">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle fa-stack-2x text-white"></i>
-                            <i class="fa-solid fa-handshake fa-stack-1x text-brown"></i>
-                        </span>
-                        <div class="mt-3" style="font-size: 14px">Dapatkan sponsor</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="pt-5 mb-5 justify-content-center">
             <div class="col-md-12 text-center">
                 <h3 class="text-brown" style="font-weight: 700">4 Roles Dalam Penyelesaian Sengketatanah.id</h3>
@@ -438,6 +406,37 @@
 
                         </div>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5 pt-4 justify-content-center">
+            <div class="col-md-12 text-center">
+                <h3 class="text-brown" style="font-weight: 700">3 Langkah Mencari Bantuan Sponsor</h3>
+            </div>
+            <div class="col-md-7 mt-4">
+                <div class="row justify-content-center text-center g-2">
+                    <div class="col">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x text-brown"></i>
+                            <i class="fa-solid fa-file-lines fa-stack-1x text-white"></i>
+                        </span>
+                        <div class="mt-3" style="font-size: 14px">Masukkan data tanah Anda</div>
+                    </div>
+                    <div class="col">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x text-white"></i>
+                            <i class="fa-solid fa-file-signature fa-stack-1x text-brown"></i>
+                        </span>
+                        <div class="mt-3" style="font-size: 14px">Tentukan kebutuhan, jaminan, dan pengembalian</div>
+                    </div>
+                    <div class="col">
+                        <span class="fa-stack fa-2x">
+                            <i class="fa fa-circle fa-stack-2x text-white"></i>
+                            <i class="fa-solid fa-handshake fa-stack-1x text-brown"></i>
+                        </span>
+                        <div class="mt-3" style="font-size: 14px">Dapatkan sponsor</div>
                     </div>
                 </div>
             </div>
