@@ -645,7 +645,7 @@
                     </div>
                     <div class="col-8 text-center">
                         <p class="rounded-pill bg-brown px-3 py-1" style="font-size: 16px">Pengacara</p>
-                        <p style="font-size: 14px">engacara adalah seorang pribadi atau badan hukum (Law Firm) yang
+                        <p style="font-size: 14px">Pengacara adalah seorang pribadi atau badan hukum (Law Firm) yang
                             menangani persoalan sengketa tanah.</p>
                     </div>
                 </div>
