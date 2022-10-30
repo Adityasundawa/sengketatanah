@@ -14,6 +14,180 @@
             </div>
         </div>
     </div>
+    
+    @if($req->jenis_petugas == "Appraisal")
+    <div class="card text-left mt-3 border-0 shadow-sm bg-light">
+        <div class="card-body">
+            <div class="row">
+
+                <div class="col">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5>Appraisal Oleh {{$req->name}}</h5>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <p style="font-size: 16px" class="mb-0">Portofolio Appraisal</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row" style="max-height: 200px; overflow-x: auto;">
+                        <div class="col-lg-12 mb-4">
+
+                            Appraisal di Surur-Sukodomo
+
+                            <p class="mb-0">Appraisal Lahan Milik Bapak Santoso</p>
+                        </div>
+                        <div class="col-lg-12 mb-4">
+
+                            Appraisal di GEMCity-AKR LAND
+
+                            <p class="mb-0">Appraisal Lahan Milik Ibu Sukatini</p>
+                        </div>
+                        <div class="col-lg-12 mb-4">
+
+                            Appraisal di Gembong-surabaya
+
+                            <p class="mb-0">Appraisal Lahan Milik Bapak Robert</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    @endif
+
+    @if($req->jenis_petugas == "Lawyer")
+    <div class="card text-left mt-3 border-0 shadow-sm bg-light">
+        <div class="card-body">
+            <div class="row">
+
+                <div class="col">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5>History Pengacara Oleh {{$req->name}}</h5>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <p style="font-size: 16px" class="mb-0">Portofolio Pengacara</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row" style="max-height: 200px; overflow-x: auto;">
+                        <div class="col-lg-12 mb-4">
+
+                            Kuasa Hukum Walhi (Eknas)
+
+                            <p class="mb-0">Menggugat Lumpur Lapindo</p>
+                        </div>
+                        <div class="col-lg-12 mb-4">
+
+                            Kuasa Hukum Jack Walker 
+
+                            <p class="mb-0">Kasus Narkotika 5 Kg</p>
+                        </div>
+                        <div class="col-lg-12 mb-4">
+
+                            Kuasa Hukum Venti
+
+                            <p class="mb-0">Kasus Sengketa Tanah</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    @endif
+
+    @if($req->jenis_petugas == "PPAT")
+    <div class="card text-left mt-3 border-0 shadow-sm bg-light">
+        <div class="card-body">
+            <div class="row">
+
+                <div class="col">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5>PPAT Oleh {{$req->name}}</h5>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <p style="font-size: 16px" class="mb-0">Portofolio PPAT</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row" style="max-height: 200px; overflow-x: auto;">
+                        <div class="col-lg-12 mb-4">
+                    
+                            Pembuatan Surat Tanah di Surur-Sukodomo
+                    
+                            <p class="mb-0">Surat Tanah Milik Bapak Santoso</p>
+                        </div>
+                        <div class="col-lg-12 mb-4">
+                    
+                            Pembuatan Surat Tanah di GEMCity-AKR LAND
+                    
+                            <p class="mb-0">Surat Tanah Milik Ibu Sukatini</p>
+                        </div>
+                        <div class="col-lg-12 mb-4">
+                    
+                            Pembuatan Surat Tanah di Gembong-surabaya
+                    
+                            <p class="mb-0">Surat Tanah Milik Bapak Robert</p>
+                        </div>
+                    
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    @endif
+
+    @if($req->jenis_petugas == "Notaris")
+    <div class="card text-left mt-3 border-0 shadow-sm bg-light">
+        <div class="card-body">
+            <div class="row">
+
+                <div class="col">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5>Notaris Oleh {{$req->name}}</h5>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <p style="font-size: 16px" class="mb-0">Portofolio Notaris</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row" style="max-height: 200px; overflow-x: auto;">
+                        <div class="col-lg-12 mb-4">
+                    
+                            Pembuatan AKta di Surur-Sukodomo
+                    
+                            <p class="mb-0">Pembuatan akta Milik Bapak Santoso</p>
+                        </div>
+                        <div class="col-lg-12 mb-4">
+                    
+                            Pembuatan AKta di GEMCity-AKR LAND
+                    
+                            <p class="mb-0">Pembuatan akta Milik Ibu Sukatini</p>
+                        </div>
+                        <div class="col-lg-12 mb-4">
+                    
+                            Pembuatan AKta di Gembong-surabaya
+                    
+                            <p class="mb-0">Pembuatan akta Milik Bapak Robert</p>
+                        </div>
+                    
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    @endif
+
+    @if($req->jenis_petugas == "Petugas Ukur")
     <div class="card text-left mt-3 border-0 shadow-sm bg-light">
         <div class="card-body">
             <div class="row">
@@ -54,6 +228,7 @@
             </div>
         </div>
     </div>
+    @endif
 
     <div class="card mt-4">
         <div class="card-body">
