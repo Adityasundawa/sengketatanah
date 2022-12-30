@@ -1316,7 +1316,7 @@
                 <div class="card rounded-5 border-0 shadow-sm desktop">
                     <div class="card-header custom bg-brown text-white" style="padding: 6px !important; border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important">
                         <center>
-                            <h6 class="blink mb-0" style="display:inline-block">Pre Launching 1 Desember 2022</h6>
+                            <h6 class="blink mb-0" style="display:inline-block">Pre Launching 1 Februari 2022</h6>
                         </center>
                     </div>
                 </div>
